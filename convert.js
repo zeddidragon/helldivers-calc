@@ -1,7 +1,9 @@
 import fs from 'fs'
 import pug from 'pug'
 
-const compiler = pug.compileFile('./template.pug')
+const compiler = pug.compileFile('./template.pug', {
+  pretty: true,
+})
 const file = fs.readFileSync('./weapons.json', 'utf-8').trim()
 const weapons = JSON.parse(file)
 

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-cp table.html ../zeddidragon/helldivers-2/index.html
+cp index.html ../zeddidragon/helldivers-2
 cp style.css ../zeddidragon/helldivers-2
