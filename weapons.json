@@ -106,8 +106,12 @@
     "rpm": 1380,
     "recoil": 20,
     "cap": 50,
+    "reload": 2.5,
+    "reloadEarly": 1.7,
     "mags": 7,
-    "supply": 7,
+    "magstart": 5,
+    "box": 2,
+    "supply": 5,
     "tags": ["1h"]
   },
   {
@@ -119,6 +123,7 @@
     "recoil": 120,
     "cap": 16,
     "rounds": 60,
+    "roundsbox": 30,
     "roundsupply": 60,
     "tags": ["rounds"]
   },
@@ -131,6 +136,7 @@
     "recoil": 120,
     "cap": 16,
     "rounds": 60,
+    "roundsbox": 30,
     "roundsupply": 60,
     "tags": ["rounds"]
   },
@@ -200,8 +206,8 @@
     "recoil": 35,
     "cap": 5,
     "mags": 12,
-    "supply": 4,
-    "tags": ["speculation"]
+    "box": 3,
+    "supply": 6
   },
   {
     "category": "Explosive",
@@ -226,7 +232,8 @@
     "recoil": 75,
     "cap": 5,
     "mags": 12,
-    "supply": 4,
+    "box": 3,
+    "supply": 6,
     "tags": ["jet", "shrapnel"]
   },
   {
