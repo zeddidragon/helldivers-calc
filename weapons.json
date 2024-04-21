@@ -95,6 +95,7 @@
     "recoil": 10,
     "cap": 45,
     "mags": 7,
+    "magstart": 5,
     "supply": 7,
     "tags": ["1h"]
   },
@@ -170,7 +171,11 @@
     "rpm": 300,
     "recoil": 55,
     "cap": 13,
+    "reload": 2.3,
+    "reloadEarly": 1.9,
     "mags": 7,
+    "magstart": 5,
+    "box": 3,
     "supply": 7
   },
   {
@@ -181,8 +186,12 @@
     "rpm": 330,
     "recoil": 45,
     "cap": 26,
-    "mags": 6,
-    "supply": 6
+    "reload": 3.0,
+    "reloadEarly": 2.1,
+    "mags": 8,
+    "magstart": 6,
+    "box": 4,
+    "supply": 8
   },
   {
     "category": "Shotgun",
@@ -192,7 +201,11 @@
     "rpm": 300,
     "recoil": 28,
     "cap": 25,
+    "reload": 2.3,
+    "reloadEarly": 1.9,
     "mags": 6,
+    "magstart": 4,
+    "box": 3,
     "supply": 6
   },
   {
@@ -206,6 +219,7 @@
     "recoil": 35,
     "cap": 5,
     "mags": 12,
+    "magstart": 6,
     "box": 3,
     "supply": 6
   },
@@ -243,7 +257,11 @@
     "ap": 2,
     "recoil": 1,
     "limit": 8,
+    "reload": 1.5,
+    "reloadEarly": 3.0,
     "mags": 6,
+    "magstart": 3,
+    "box": 3,
     "supply": 6
   },
   {
@@ -253,8 +271,12 @@
     "ap": 2,
     "rpm": 750,
     "recoil": 2,
-    "limit": 9,
+    "limit": 7,
+    "reload": 2.1,
+    "reloadEarly": 3.0,
     "mags": 6,
+    "magstart": 3,
+    "box": 3,
     "supply": 6
   },
   {
@@ -266,8 +288,12 @@
     "xap": 3,
     "rpm": 250,
     "recoil": 20,
+    "reload": 2.7,
+    "reloadEarly": 2.3,
     "cap": 15,
     "mags": 6,
+    "magstart": 3,
+    "box": 3,
     "supply": 6
   },
   {
@@ -503,6 +529,8 @@
     "cap": 1,
     "reload": 6.0,
     "rounds": 5,
+    "roundstart": 5,
+    "roundbox": 1,
     "roundsupply": 2
   },
   {
@@ -513,7 +541,10 @@
     "xdamage": 200,
     "xap": 5,
     "cap": 1,
+    "reload": 5.0,
     "rounds": 3,
+    "roundstart": 3,
+    "roundsbox": 1,
     "roundsupply": 2
   }
 ]
