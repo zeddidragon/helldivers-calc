@@ -5,6 +5,7 @@
     "damage": 55,
     "ap": 2,
     "rpm": 640,
+    "recoil": 15,
     "cap": 45,
     "mags": 7,
     "supply": 7
@@ -15,6 +16,7 @@
     "damage": 45,
     "ap": 3,
     "rpm": 640,
+    "recoil": 19,
     "cap": 30,
     "mags": 10,
     "supply": 10
@@ -25,9 +27,43 @@
     "damage": 55,
     "ap": 2,
     "rpm": 320,
+    "recoil": 28,
     "cap": 30,
     "mags": 10,
     "supply": 10
+  },
+  {
+    "category": "Marksman",
+    "name": "BR-1 Adjudicator",
+    "damage": 80,
+    "ap": 3,
+    "rpm": 550,
+    "recoil": 50,
+    "cap": 25,
+    "mags": 6,
+    "supply": 4
+  },
+  {
+    "category": "Marksman",
+    "name": "R-63 Diligence",
+    "damage": 112,
+    "ap": 2,
+    "rpm": 350,
+    "recoil": 35,
+    "cap": 20,
+    "mags": 8,
+    "supply": 8
+  },
+  {
+    "category": "Marksman",
+    "name": "R-63CS Diligence Counter-Sniper",
+    "damage": 128,
+    "ap": 3,
+    "rpm": 350,
+    "recoil": 53,
+    "cap": 15,
+    "mags": 6,
+    "supply": 6
   },
   {
     "category": "SMG",
@@ -35,6 +71,7 @@
     "damage": 70,
     "ap": 2,
     "rpm": 520,
+    "recoil": 10,
     "cap": 45,
     "mags": 7,
     "supply": 7,
@@ -46,40 +83,11 @@
     "damage": 50,
     "ap": 2,
     "rpm": 1380,
+    "recoil": 20,
     "cap": 50,
     "mags": 7,
     "supply": 7,
     "tags": ["1h"]
-  },
-  {
-    "category": "Marksman",
-    "name": "BR-1 Adjudicator",
-    "damage": 80,
-    "ap": 3,
-    "rpm": 550,
-    "cap": 25,
-    "mags": 6,
-    "supply": 4
-  },
-  {
-    "category": "Marksman",
-    "name": "R-63 Diligence",
-    "damage": 112,
-    "ap": 2,
-    "rpm": 350,
-    "cap": 20,
-    "mags": 8,
-    "supply": 8
-  },
-  {
-    "category": "Marksman",
-    "name": "R-63CS Diligence Counter-Sniper",
-    "damage": 128,
-    "ap": 3,
-    "rpm": 350,
-    "cap": 15,
-    "mags": 6,
-    "supply": 6
   },
   {
     "category": "Shotgun",
@@ -87,6 +95,7 @@
     "damage": 405,
     "ap": 2,
     "rpm": 80,
+    "recoil": 120,
     "cap": 16,
     "rounds": 60,
     "roundsupply": 60,
@@ -98,6 +107,7 @@
     "damage": 250,
     "ap": 3,
     "rpm": 80,
+    "recoil": 120,
     "cap": 16,
     "rounds": 60,
     "roundsupply": 60,
@@ -111,6 +121,7 @@
     "ap": 2,
     "xap": 3,
     "rpm": 80,
+    "recoil": 110,
     "cap": 8,
     "mags": 12,
     "box": 3,
@@ -121,7 +132,8 @@
     "name": "ARC-12 Blitzer",
     "damage": 250,
     "ap": 2,
-    "rpm": 30
+    "rpm": 30,
+    "recoil": 60
   },
   {
     "category": "Shotgun",
@@ -129,6 +141,7 @@
     "damage": 330,
     "ap": 2,
     "rpm": 300,
+    "recoil": 55,
     "cap": 13,
     "mags": 7,
     "supply": 7
@@ -139,6 +152,7 @@
     "damage": 192,
     "ap": 2,
     "rpm": 330,
+    "recoil": 45,
     "cap": 26,
     "mags": 6,
     "supply": 6
@@ -149,20 +163,10 @@
     "damage": 240,
     "ap": 2,
     "rpm": 300,
+    "recoil": 28,
     "cap": 25,
     "mags": 6,
     "supply": 6
-  },
-  {
-    "category": "Explosive",
-    "name": "JAR-5 Dominator",
-    "damage": 300,
-    "ap": 2,
-    "rpm": 250,
-    "cap": 15,
-    "mags": 6,
-    "supply": 6,
-    "tags": ["jet"]
   },
   {
     "category": "Explosive",
@@ -172,10 +176,23 @@
     "ap": 2,
     "xap": 2,
     "rpm": 50,
+    "recoil": 35,
     "cap": 5,
     "mags": 12,
     "supply": 4,
     "tags": ["speculation"]
+  },
+  {
+    "category": "Explosive",
+    "name": "JAR-5 Dominator",
+    "damage": 300,
+    "ap": 2,
+    "rpm": 250,
+    "recoil": 75,
+    "cap": 15,
+    "mags": 6,
+    "supply": 6,
+    "tags": ["jet"]
   },
   {
     "category": "Explosive",
@@ -185,6 +202,7 @@
     "xdamage": 150,
     "xap": 3,
     "rpm": 25,
+    "recoil": 75,
     "cap": 5,
     "mags": 12,
     "supply": 4,
@@ -192,13 +210,11 @@
   },
   {
     "category": "Energy",
-    "name": "PLAS-1 Scorcher",
-    "damage": 100,
-    "xdamage": 100,
+    "name": "LAS-5 Scythe",
+    "dps": 300,
     "ap": 2,
-    "xap": 3,
-    "rpm": 250,
-    "cap": 15,
+    "recoil": 1,
+    "limit": 8,
     "mags": 6,
     "supply": 6
   },
@@ -208,16 +224,21 @@
     "damage": 55,
     "ap": 2,
     "rpm": 750,
+    "recoil": 2,
     "limit": 9,
     "mags": 6,
     "supply": 6
   },
   {
     "category": "Energy",
-    "name": "LAS-5 Scythe",
-    "dps": 300,
+    "name": "PLAS-1 Scorcher",
+    "damage": 100,
+    "xdamage": 100,
     "ap": 2,
-    "limit": 8,
+    "xap": 3,
+    "rpm": 250,
+    "recoil": 20,
+    "cap": 15,
     "mags": 6,
     "supply": 6
   },
@@ -227,6 +248,7 @@
     "damage": 60,
     "ap": 2,
     "rpm": 900,
+    "recoil": 23,
     "cap": 15,
     "mags": 5,
     "supply": 5
@@ -237,29 +259,10 @@
     "damage": 60,
     "ap": 2,
     "rpm": 1100,
+    "recoil": 11,
     "cap": 31,
     "mags": 4,
     "supply": 4
-  },
-  {
-    "category": "Sidearm",
-    "name": "P-2 Senator",
-    "damage": 150,
-    "ap": 3,
-    "rpm": 200,
-    "cap": 6,
-    "rounds": 40,
-    "roundsupply": 40,
-    "tags": ["rounds"]
-  },
-  {
-    "category": "Sidearm",
-    "name": "LAS-7 Dagger",
-    "dps": 150,
-    "ap": 2,
-    "limit": 5,
-    "mags": 3,
-    "supply": 3
   },
   {
     "category": "Sidearm",
@@ -269,10 +272,33 @@
     "ap": 3,
     "xap": 3,
     "rpm": 900,
+    "recoil": 43,
     "cap": 1,
     "mags": 8,
     "box": 1,
     "supply": 2
+  },
+  {
+    "category": "Sidearm",
+    "name": "LAS-7 Dagger",
+    "dps": 150,
+    "ap": 2,
+    "recoil": 1,
+    "limit": 5,
+    "mags": 3,
+    "supply": 3
+  },
+  {
+    "category": "Sidearm",
+    "name": "P-2 Senator",
+    "damage": 150,
+    "ap": 3,
+    "rpm": 200,
+    "recoil": 43,
+    "cap": 6,
+    "rounds": 40,
+    "roundsupply": 40,
+    "tags": ["rounds"]
   },
   {
     "category": "Support",
