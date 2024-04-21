@@ -180,8 +180,10 @@
   {
     "category": "Explosive",
     "name": "R-36 Eruptor",
-    "damage": 380,
+    "damage": 230,
     "ap": 3,
+    "xdamage": 150,
+    "xap": 3,
     "rpm": 25,
     "cap": 5,
     "mags": 12,
