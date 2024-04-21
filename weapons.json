@@ -1,0 +1,383 @@
+[
+  {
+    "category": "Assault Rifle",
+    "name": "AR-23 Liberator",
+    "damage": 55,
+    "ap": 2,
+    "rpm": 640,
+    "cap": 45,
+    "mags": 7,
+    "supply": 7
+  },
+  {
+    "category": "Assault Rifle",
+    "name": "AR-23P Liberator Penetrator",
+    "damage": 45,
+    "ap": 3,
+    "rpm": 640,
+    "cap": 30,
+    "mags": 10,
+    "supply": 10
+  },
+  {
+    "category": "Assault Rifle",
+    "name": "AR-23C Liberator Concussive",
+    "damage": 55,
+    "ap": 2,
+    "rpm": 320,
+    "cap": 30,
+    "mags": 10,
+    "supply": 10
+  },
+  {
+    "category": "SMG",
+    "name": "SMG-37 Defender",
+    "damage": 70,
+    "ap": 2,
+    "rpm": 520,
+    "cap": 45,
+    "mags": 7,
+    "supply": 7,
+    "tags": ["1h"]
+  },
+  {
+    "category": "SMG",
+    "name": "MP-98 Knight",
+    "damage": 50,
+    "ap": 2,
+    "rpm": 1380,
+    "cap": 50,
+    "mags": 7,
+    "supply": 7,
+    "tags": ["1h"]
+  },
+  {
+    "category": "Marksman",
+    "name": "BR-1 Adjudicator",
+    "damage": 80,
+    "ap": 3,
+    "rpm": 550,
+    "cap": 25,
+    "mags": 6,
+    "supply": 4
+  },
+  {
+    "category": "Marksman",
+    "name": "R-63 Diligence",
+    "damage": 112,
+    "ap": 2,
+    "rpm": 350,
+    "cap": 20,
+    "mags": 8,
+    "supply": 8
+  },
+  {
+    "category": "Marksman",
+    "name": "R-63CS Diligence Counter-Sniper",
+    "damage": 128,
+    "ap": 3,
+    "rpm": 350,
+    "cap": 15,
+    "mags": 6,
+    "supply": 6
+  },
+  {
+    "category": "Shotgun",
+    "name": "SG-8 Punisher",
+    "damage": 405,
+    "ap": 2,
+    "rpm": 80,
+    "cap": 16,
+    "rounds": 60,
+    "roundsupply": 60,
+    "tags": ["rounds"]
+  },
+  {
+    "category": "Shotgun",
+    "name": "SG-8S Slugger",
+    "damage": 250,
+    "ap": 3,
+    "rpm": 80,
+    "cap": 16,
+    "rounds": 60,
+    "roundsupply": 60,
+    "tags": ["rounds"]
+  },
+  {
+    "category": "Shotgun",
+    "name": "SG-8P Punisher Plasma",
+    "damage": 100,
+    "xdamage": 150,
+    "ap": 2,
+    "xap": 3,
+    "rpm": 80,
+    "cap": 8,
+    "mags": 12,
+    "box": 3,
+    "supply": 6
+  },
+  {
+    "category": "Shotgun",
+    "name": "ARC-12 Blitzer",
+    "damage": 250,
+    "ap": 2,
+    "rpm": 30
+  },
+  {
+    "category": "Shotgun",
+    "name": "SG-225 Breaker",
+    "damage": 330,
+    "ap": 2,
+    "rpm": 300,
+    "cap": 13,
+    "mags": 7,
+    "supply": 7
+  },
+  {
+    "category": "Shotgun",
+    "name": "SG-225SP Breaker Spray & Pray",
+    "damage": 192,
+    "ap": 2,
+    "rpm": 330,
+    "cap": 26,
+    "mags": 6,
+    "supply": 6
+  },
+  {
+    "category": "Shotgun",
+    "name": "SG-225IE Breaker Incendiary",
+    "damage": 240,
+    "ap": 2,
+    "rpm": 300,
+    "cap": 25,
+    "mags": 6,
+    "supply": 6
+  },
+  {
+    "category": "Explosive",
+    "name": "JAR-5 Dominator",
+    "damage": 300,
+    "ap": 2,
+    "rpm": 250,
+    "cap": 15,
+    "mags": 6,
+    "supply": 6,
+    "tags": ["jet"]
+  },
+  {
+    "category": "Explosive",
+    "name": "CB-9 Exploding Crossbow",
+    "damage": 250,
+    "xdamage": 270,
+    "ap": 2,
+    "xap": 2,
+    "rpm": 50,
+    "cap": 5,
+    "mags": 12,
+    "supply": 4,
+    "tags": ["speculation"]
+  },
+  {
+    "category": "Explosive",
+    "name": "R-36 Eruptor",
+    "damage": 380,
+    "ap": 3,
+    "rpm": 25,
+    "cap": 5,
+    "mags": 12,
+    "supply": 4,
+    "tags": ["jet", "shrapnel"]
+  },
+  {
+    "category": "Energy",
+    "name": "PLAS-1 Scorcher",
+    "damage": 100,
+    "xdamage": 100,
+    "ap": 2,
+    "xap": 3,
+    "rpm": 250,
+    "cap": 15,
+    "mags": 6,
+    "supply": 6
+  },
+  {
+    "category": "Energy",
+    "name": "LAS-16 Sickle",
+    "damage": 55,
+    "ap": 2,
+    "rpm": 750,
+    "limit": 9,
+    "mags": 6,
+    "supply": 6
+  },
+  {
+    "category": "Energy",
+    "name": "LAS-5 Scythe",
+    "dps": 300,
+    "ap": 2,
+    "limit": 8,
+    "mags": 6,
+    "supply": 6
+  },
+  {
+    "category": "Sidearm",
+    "name": "P-2 Peacemaker",
+    "damage": 60,
+    "ap": 2,
+    "rpm": 900,
+    "cap": 15,
+    "mags": 5,
+    "supply": 5
+  },
+  {
+    "category": "Sidearm",
+    "name": "P-19 Redeemer",
+    "damage": 60,
+    "ap": 2,
+    "rpm": 1100,
+    "cap": 31,
+    "mags": 4,
+    "supply": 4
+  },
+  {
+    "category": "Sidearm",
+    "name": "P-2 Senator",
+    "damage": 150,
+    "ap": 3,
+    "rpm": 200,
+    "cap": 6,
+    "rounds": 40,
+    "roundsupply": 40,
+    "tags": ["rounds"]
+  },
+  {
+    "category": "Sidearm",
+    "name": "LAS-7 Dagger",
+    "dps": 150,
+    "ap": 2,
+    "limit": 5,
+    "mags": 3,
+    "supply": 3
+  },
+  {
+    "category": "Sidearm",
+    "name": "GP-31 Grenade Pistol",
+    "damage": 350,
+    "xdamage": 250,
+    "ap": 3,
+    "xap": 3,
+    "rpm": 900,
+    "cap": 1,
+    "mags": 8,
+    "box": 1,
+    "supply": 2
+  },
+  {
+    "category": "Support",
+    "name": "M-105 Stalwart",
+    "damage": 55,
+    "ap": 2,
+    "rpm": 1150,
+    "cap": 300,
+    "mags": 3,
+    "supply": 2
+  },
+  {
+    "category": "Support",
+    "name": "MG-43 Machine Gun",
+    "damage": 80,
+    "ap": 3,
+    "rpm": 900,
+    "cap": 150,
+    "mags": 2,
+    "supply": 1
+  },
+  {
+    "category": "Support",
+    "name": "MG-206 Heavy Machine Gun",
+    "damage": 100,
+    "ap": 4,
+    "rpm": 950,
+    "cap": 75,
+    "mags": 2,
+    "supply": 2
+  },
+  {
+    "category": "Support",
+    "name": "ARC-3 Arc Thrower",
+    "damage": 250,
+    "ap": 7,
+    "rpm": 60
+  },
+  {
+    "category": "Support",
+    "name": "APW-1 Anti-Material Rifle",
+    "damage": 450,
+    "ap": 4,
+    "cap": 7,
+    "mags": 6,
+    "supply": 3
+  },
+  {
+    "category": "Support",
+    "name": "GL-21 Grenade Launcher",
+    "damage": 20,
+    "ap": 0,
+    "xdamage": 350,
+    "xap": 3,
+    "cap": 10,
+    "mags": 2,
+    "supply": 2
+  },
+  {
+    "category": "Support",
+    "name": "AC-8 Autocannon",
+    "damage": 260,
+    "ap": 4,
+    "xdamage": 150,
+    "xap": 3,
+    "cap": 10,
+    "clips": 10,
+    "clipbox": 2,
+    "clipsupply": 5
+  },
+  {
+    "category": "Support",
+    "name": "EAT-17 Expendable Anti-Tank",
+    "damage": 650,
+    "ap": 6
+  },
+  {
+    "category": "Support",
+    "name": "GR-8 Recoiless Rifle",
+    "damage": 650,
+    "ap": 6,
+    "cap": 1,
+    "rounds": 5,
+    "roundsupply": 2
+  },
+  {
+    "category": "Support",
+    "name": "LAS-98 Laser Cannon",
+    "dps": 300,
+    "ap": 4,
+    "limit": 12,
+    "mags": 2,
+    "supply": 2
+  },
+  {
+    "category": "Support",
+    "name": "LAS-99 Quasar Cannon",
+    "damage": 650,
+    "ap": 6
+  },
+  {
+    "category": "Support",
+    "name": "RS-422 Railgun (Max)",
+    "damage": 600,
+    "ap": 8,
+    "cap": 1,
+    "rounds": 20,
+    "supply": 10
+  }
+]

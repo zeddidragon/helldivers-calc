@@ -1,0 +1,18 @@
+{
+  "name": "helldivers-calc",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Helldivers data sheet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "helldivers"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}

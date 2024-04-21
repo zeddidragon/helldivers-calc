@@ -1,0 +1,16 @@
+html
+  head
+    meta(charset='UTF-8')
+    title Helldivers
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="style.css", rel="stylesheet")
+  body
+    table
+      thead
+      for cat of cats
+        th(class=cat)= header(cat)
+      tbody
+        for wpn of weapons
+          tr
+            for cat of cats
+              td(class=cellClass(cat, wpn))= value(cat, wpn)
