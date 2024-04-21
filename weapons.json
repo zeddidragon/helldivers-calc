@@ -6,8 +6,12 @@
     "ap": 2,
     "rpm": 640,
     "recoil": 15,
+    "reloadEarly": 2.0,
+    "reload": 3.0,
     "cap": 45,
     "mags": 7,
+    "magstart": 5,
+    "box": 3,
     "supply": 7
   },
   {
@@ -17,8 +21,12 @@
     "ap": 3,
     "rpm": 640,
     "recoil": 19,
+    "reloadEarly": 2.0,
+    "reload": 3.0,
     "cap": 30,
     "mags": 10,
+    "magstart": 7,
+    "box": 5,
     "supply": 10
   },
   {
@@ -249,8 +257,12 @@
     "ap": 2,
     "rpm": 900,
     "recoil": 23,
+    "reload": 1.9,
+    "reloadEarly": 1.6,
     "cap": 15,
     "mags": 5,
+    "magstart": 4,
+    "box": 2,
     "supply": 5
   },
   {
@@ -260,8 +272,12 @@
     "ap": 2,
     "rpm": 1100,
     "recoil": 11,
+    "reload": 2.1,
+    "reloadEarly": 1.6,
     "cap": 31,
     "mags": 4,
+    "magstart": 4,
+    "box": 2,
     "supply": 4
   },
   {
@@ -306,8 +322,11 @@
     "damage": 55,
     "ap": 2,
     "rpm": 1150,
+    "reload": 5.9,
+    "reloadEarly": 4.6,
     "cap": 300,
     "mags": 3,
+    "box": 1,
     "supply": 2
   },
   {
@@ -318,6 +337,7 @@
     "rpm": 900,
     "cap": 150,
     "mags": 2,
+    "box": 1,
     "supply": 1
   },
   {
@@ -327,7 +347,10 @@
     "ap": 4,
     "rpm": 950,
     "cap": 75,
+    "reload": 7.1,
+    "reloadEarly": 5.0,
     "mags": 2,
+    "box": 1,
     "supply": 2
   },
   {
@@ -373,7 +396,10 @@
     "xdamage": 150,
     "xap": 3,
     "cap": 10,
+    "reload": 5.1,
+    "reloadEarly": 1.83,
     "clips": 10,
+    "clipstart": 10,
     "clipbox": 2,
     "clipsupply": 5
   },
@@ -383,7 +409,10 @@
     "damage": 400,
     "ap": 4,
     "cap": 1,
+    "charge": 0.7,
+    "reload": 1.6,
     "rounds": 20,
+    "box": 2,
     "supply": 10
   },
   {
@@ -392,7 +421,10 @@
     "damage": 600,
     "ap": 8,
     "cap": 1,
+    "charge": 3.0,
+    "reload": 1.6,
     "rounds": 20,
+    "box": 2,
     "supply": 10
   },
   {
