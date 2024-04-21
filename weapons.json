@@ -36,8 +36,11 @@
     "ap": 2,
     "rpm": 320,
     "recoil": 28,
+    "reloadEarly": 2.0,
+    "reload": 3.0,
     "cap": 30,
     "mags": 10,
+    "box": 5,
     "supply": 10
   },
   {
@@ -47,9 +50,12 @@
     "ap": 3,
     "rpm": 550,
     "recoil": 50,
+    "reload": 3.0,
+    "reloadEarly": 1.8,
     "cap": 25,
     "mags": 6,
-    "supply": 4
+    "box": 3,
+    "supply": 6
   },
   {
     "category": "Marksman",
@@ -59,7 +65,10 @@
     "rpm": 350,
     "recoil": 35,
     "cap": 20,
+    "reload": 3.0,
+    "reloadEarly": 1.9,
     "mags": 8,
+    "magstart": 5,
     "supply": 8
   },
   {
@@ -289,6 +298,7 @@
     "xap": 3,
     "rpm": 900,
     "recoil": 43,
+    "reload": 2.0,
     "cap": 1,
     "mags": 8,
     "box": 1,
@@ -300,8 +310,11 @@
     "dps": 150,
     "ap": 2,
     "recoil": 1,
+    "reload": 1.9,
+    "reloadEarly": 2.2,
     "limit": 5,
     "mags": 3,
+    "box": 3,
     "supply": 3
   },
   {
@@ -313,7 +326,10 @@
     "recoil": 43,
     "cap": 6,
     "rounds": 40,
-    "roundsupply": 40,
+    "roundstart": 32,
+    "roundbox": 10,
+    "roundsupply": 20,
+    "roundreloads": [2.9, 3.7, 4.1, 4.9, 5.3, 6.0],
     "tags": ["rounds"]
   },
   {
@@ -335,6 +351,8 @@
     "damage": 80,
     "ap": 3,
     "rpm": 900,
+    "reload": 5.0,
+    "reloadEarly": 4.5,
     "cap": 150,
     "mags": 2,
     "box": 1,
@@ -358,7 +376,8 @@
     "name": "ARC-3 Arc Thrower",
     "damage": 250,
     "ap": 7,
-    "rpm": 60
+    "rpm": 60,
+    "charge": 1
   },
   {
     "category": "Support",
@@ -366,7 +385,10 @@
     "ap": 3,
     "xap": 4,
     "limit": 12,
-    "reload": 3.75
+    "mags": 4,
+    "reload": 4.0,
+    "box": 3,
+    "supply": 4
   },
   {
     "category": "Support",
@@ -374,7 +396,10 @@
     "damage": 450,
     "ap": 4,
     "cap": 7,
+    "reload": 3.1,
+    "reloadEarly": 2.4,
     "mags": 6,
+    "box": 1,
     "supply": 3
   },
   {
@@ -385,7 +410,10 @@
     "xdamage": 350,
     "xap": 3,
     "cap": 10,
+    "reload": 3.3,
+    "reloadEarly": 3.0,
     "mags": 2,
+    "box": 1,
     "supply": 2
   },
   {
@@ -432,15 +460,20 @@
     "name": "LAS-98 Laser Cannon",
     "dps": 300,
     "ap": 4,
-    "limit": 12,
-    "mags": 2,
-    "supply": 2
+    "limit": 10,
+    "reload": 3.4,
+    "reload": 5,
+    "mags": 1,
+    "box": 1,
+    "supply": 1
   },
   {
     "category": "Support",
     "name": "LAS-99 Quasar Cannon",
     "damage": 650,
-    "ap": 6
+    "ap": 6,
+    "charge": 3.0,
+    "reload": 10
   },
   {
     "category": "Support",
@@ -455,6 +488,7 @@
     "damage": 650,
     "ap": 6,
     "cap": 1,
+    "reload": 6.0,
     "rounds": 5,
     "roundsupply": 2
   },
