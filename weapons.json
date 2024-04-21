@@ -376,7 +376,7 @@
     "cap": 6,
     "rounds": 40,
     "roundstart": 32,
-    "roundbox": 10,
+    "roundsbox": 10,
     "roundsupply": 20,
     "roundreloads": [2.9, 3.7, 4.1, 4.9, 5.3, 6.0],
     "tags": ["rounds"]
@@ -496,7 +496,7 @@
   },
   {
     "category": "Support",
-    "name": "RS-422 Railgun (Max)",
+    "name": "RS-422 Railgun",
     "damage": 600,
     "ap": 8,
     "cap": 1,
@@ -542,7 +542,7 @@
     "reload": 6.0,
     "rounds": 5,
     "roundstart": 5,
-    "roundbox": 1,
+    "roundsbox": 1,
     "roundsupply": 2
   },
   {

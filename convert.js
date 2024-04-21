@@ -5,15 +5,40 @@ const compiler = pug.compileFile('./template.pug', {
   pretty: true,
 })
 const file = fs.readFileSync('./weapons.json', 'utf-8').trim()
+function frames(stamp) {
+  if(!stamp || stamp === '') {
+    return 
+  }
+  const values = stamp.split(':')
+  return values
+    .map((v, i) => Math.pow(60, values.length - i - 1) * v)
+    .reduce((sum, v) => sum + v, 0)
+}
+const reloads = fs.readFileSync('./reloads.csv', 'utf-8').trim()
+  .split('\n')
+  .slice(1)
+  .map(r => r.split(','))
+  .map(([name, rStart, rEnd, eStart, eEnd]) => {
+    return {
+      name,
+      reload: Math.round((frames(rEnd) - frames(rStart)) / 6) / 10,
+      reloadEarly: eStart && Math.round((frames(eEnd) - frames(eStart)) / 6) / 10,
+    }
+  })
 const weapons = JSON.parse(file)
+console.log('hello')
+console.log(reloads)
 
+
+function honk() {
 const headers =  {
   rpm: () => 'RPM',
   ap: () => 'AP',
   damage: () => 'Dmg',
   xdamage: () => 'xDmg',
-  magdmg: () => 'Mag Dmg',
-  total: () => 'Total Dmg',
+  supply: () => 'Pickup',
+  magdmg: () => 'Mag',
+  total: () => 'Total',
   default: cat => {
     return cat[0].toUpperCase() + cat.slice(1)
   },
@@ -95,15 +120,15 @@ const values = {
     }
     return ''
   },
-  supply: ({ supply, clipsupply, roundsupply }) => {
+  supply: ({ box, supply, clipbox, clipsupply, roundsbox, roundsupply }) => {
     if(supply) {
-      return supply
+      return `${supply}/${box}`
     }
     if(roundsupply) {
-      return roundsupply
+      return `${roundsupply}/${roundsbox}`
     }
     if(clipsupply) {
-      return `${clipsupply}/2`
+      return `${clipsupply}/${clipbox}`
     }
     return ''
   },
@@ -150,7 +175,6 @@ console.log(compiler({
     'dps',
     'reload',
     'spare',
-    'box',
     'supply',
     'magdmg',
     'total',
@@ -166,3 +190,4 @@ console.log(compiler({
     return classes[cat]?.(cat, wpn) || classes?.default(cat, wpn)
   },
 }))
+}
