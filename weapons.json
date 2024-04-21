@@ -34,7 +34,7 @@
   },
   {
     "category": "Marksman",
-    "name": "BR-1 Adjudicator",
+    "name": "BR-14 Adjudicator",
     "damage": 80,
     "ap": 3,
     "rpm": 550,
@@ -290,7 +290,7 @@
   },
   {
     "category": "Sidearm",
-    "name": "P-2 Senator",
+    "name": "P-4 Senator",
     "damage": 150,
     "ap": 3,
     "rpm": 200,
@@ -339,6 +339,14 @@
   },
   {
     "category": "Support",
+    "name": "FLAM-40 Flame Thrower",
+    "ap": 3,
+    "xap": 4,
+    "limit": 12,
+    "reload": 3.75
+  },
+  {
+    "category": "Support",
     "name": "APW-1 Anti-Material Rifle",
     "damage": 450,
     "ap": 4,
@@ -371,18 +379,21 @@
   },
   {
     "category": "Support",
-    "name": "EAT-17 Expendable Anti-Tank",
-    "damage": 650,
-    "ap": 6
+    "name": "RS-422 Railgun (Safe)",
+    "damage": 400,
+    "ap": 4,
+    "cap": 1,
+    "rounds": 20,
+    "supply": 10
   },
   {
     "category": "Support",
-    "name": "GR-8 Recoiless Rifle",
-    "damage": 650,
-    "ap": 6,
+    "name": "RS-422 Railgun (Max)",
+    "damage": 600,
+    "ap": 8,
     "cap": 1,
-    "rounds": 5,
-    "roundsupply": 2
+    "rounds": 20,
+    "supply": 10
   },
   {
     "category": "Support",
@@ -401,11 +412,29 @@
   },
   {
     "category": "Support",
-    "name": "RS-422 Railgun (Max)",
-    "damage": 600,
-    "ap": 8,
+    "name": "EAT-17 Expendable Anti-Tank",
+    "damage": 650,
+    "ap": 6,
+    "cap": 1
+  },
+  {
+    "category": "Support",
+    "name": "GR-8 Recoiless Rifle",
+    "damage": 650,
+    "ap": 6,
     "cap": 1,
-    "rounds": 20,
-    "supply": 10
+    "rounds": 5,
+    "roundsupply": 2
+  },
+  {
+    "category": "Support",
+    "name": "FAF-14 Spear",
+    "damage": 1000,
+    "ap": 8,
+    "xdamage": 200,
+    "xap": 5,
+    "cap": 1,
+    "rounds": 3,
+    "roundsupply": 2
   }
 ]
