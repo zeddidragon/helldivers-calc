@@ -44,11 +44,15 @@ const values = {
   name: ({ name }) => {
     return name.split(/\s+/).slice(1).join(' ')
   },
-  spare: ({ mags, clips, rounds }) => {
-    if(mags) {
+  spare: ({ mags, magstart, clips, rounds, roundstart }) => {
+    if(magstart) {
+      return `x ${magstart}/${mags}`
+    } else if(mags) {
       return `x ${mags}`
     } else if(clips) {
-      return `x ${clips}/2`
+      return `x/2 ${clips}`
+    } else if(roundstart) {
+      return `+ ${roundstart}/${rounds}`
     } else if(rounds) {
       return `+ ${rounds}`
     } else {
@@ -144,9 +148,10 @@ console.log(compiler({
     'recoil',
     'rpm',
     'dps',
+    'reload',
     'spare',
-    // 'box',
-    // 'supply',
+    'box',
+    'supply',
     'magdmg',
     'total',
   ],

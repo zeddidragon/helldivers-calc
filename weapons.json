@@ -40,6 +40,7 @@
     "reload": 3.0,
     "cap": 30,
     "mags": 10,
+    "magstart": 7,
     "box": 5,
     "supply": 10
   },
@@ -54,6 +55,7 @@
     "reloadEarly": 1.8,
     "cap": 25,
     "mags": 6,
+    "magstart": 4,
     "box": 3,
     "supply": 6
   },
