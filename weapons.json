@@ -79,7 +79,11 @@
     "rpm": 350,
     "recoil": 53,
     "cap": 15,
+    "reload": 3.0,
+    "reloadEarly": 1.9,
     "mags": 6,
+    "magstart": 4,
+    "box": 3,
     "supply": 6
   },
   {
@@ -396,6 +400,7 @@
     "damage": 450,
     "ap": 4,
     "cap": 7,
+    "rpm": 350,
     "reload": 3.1,
     "reloadEarly": 2.4,
     "mags": 6,
@@ -424,6 +429,7 @@
     "xdamage": 150,
     "xap": 3,
     "cap": 10,
+    "rpm": 250,
     "reload": 5.1,
     "reloadEarly": 1.83,
     "clips": 10,
