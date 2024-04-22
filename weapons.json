@@ -6,13 +6,14 @@
     "ap": 2,
     "rpm": 640,
     "recoil": 15,
-    "reloadEarly": 2.0,
-    "reload": 3.0,
+    "reload": 3,
     "cap": 45,
     "mags": 7,
     "magstart": 5,
     "box": 3,
-    "supply": 7
+    "supply": 7,
+    "idx": 1,
+    "reloadearly": 2
   },
   {
     "category": "Assault Rifle",
@@ -21,13 +22,14 @@
     "ap": 3,
     "rpm": 640,
     "recoil": 19,
-    "reloadEarly": 2.0,
-    "reload": 3.0,
+    "reload": 3,
     "cap": 30,
     "mags": 10,
     "magstart": 7,
     "box": 5,
-    "supply": 10
+    "supply": 10,
+    "idx": 2,
+    "reloadearly": 2
   },
   {
     "category": "Assault Rifle",
@@ -36,13 +38,14 @@
     "ap": 2,
     "rpm": 320,
     "recoil": 28,
-    "reloadEarly": 2.0,
-    "reload": 3.0,
+    "reload": 3,
     "cap": 30,
     "mags": 10,
     "magstart": 7,
     "box": 5,
-    "supply": 10
+    "supply": 10,
+    "idx": 3,
+    "reloadearly": 2
   },
   {
     "category": "Marksman",
@@ -51,13 +54,14 @@
     "ap": 3,
     "rpm": 550,
     "recoil": 50,
-    "reload": 3.0,
-    "reloadEarly": 1.8,
+    "reload": 3,
     "cap": 25,
     "mags": 6,
     "magstart": 4,
     "box": 3,
-    "supply": 6
+    "supply": 6,
+    "idx": 1,
+    "reloadearly": 1.7
   },
   {
     "category": "Marksman",
@@ -67,12 +71,13 @@
     "rpm": 350,
     "recoil": 35,
     "cap": 20,
-    "reload": 3.0,
-    "reloadEarly": 1.9,
+    "reload": 3,
     "mags": 8,
     "magstart": 5,
     "box": 4,
-    "supply": 8
+    "supply": 8,
+    "idx": 2,
+    "reloadearly": 1.9
   },
   {
     "category": "Marksman",
@@ -82,12 +87,13 @@
     "rpm": 350,
     "recoil": 53,
     "cap": 15,
-    "reload": 3.0,
-    "reloadEarly": 1.9,
+    "reload": 3,
     "mags": 6,
     "magstart": 4,
     "box": 3,
-    "supply": 6
+    "supply": 6,
+    "idx": 3,
+    "reloadearly": 1.9
   },
   {
     "category": "SMG",
@@ -101,7 +107,12 @@
     "magstart": 5,
     "box": 3,
     "supply": 7,
-    "tags": ["1h"]
+    "tags": [
+      "1h"
+    ],
+    "idx": 1,
+    "reload": 2.8,
+    "reloadearly": 2
   },
   {
     "category": "SMG",
@@ -112,12 +123,15 @@
     "recoil": 20,
     "cap": 50,
     "reload": 2.5,
-    "reloadEarly": 1.7,
     "mags": 7,
     "magstart": 5,
     "box": 2,
     "supply": 5,
-    "tags": ["1h"]
+    "tags": [
+      "1h"
+    ],
+    "idx": 2,
+    "reloadearly": 1.7
   },
   {
     "category": "Shotgun",
@@ -131,7 +145,12 @@
     "roundstart": 32,
     "roundsbox": 30,
     "roundsupply": 60,
-    "tags": ["rounds"]
+    "tags": [
+      "rounds"
+    ],
+    "idx": 1,
+    "reload": 6.9,
+    "reloadone": 0.8
   },
   {
     "category": "Shotgun",
@@ -145,7 +164,12 @@
     "roundstart": 32,
     "roundsbox": 30,
     "roundsupply": 60,
-    "tags": ["rounds"]
+    "tags": [
+      "rounds"
+    ],
+    "idx": 2,
+    "reload": 6.9,
+    "reloadone": 0.8
   },
   {
     "category": "Shotgun",
@@ -160,7 +184,9 @@
     "mags": 12,
     "magstart": 6,
     "box": 3,
-    "supply": 6
+    "supply": 6,
+    "idx": 3,
+    "reload": 2.5
   },
   {
     "category": "Shotgun",
@@ -168,7 +194,8 @@
     "damage": 250,
     "ap": 2,
     "rpm": 30,
-    "recoil": 60
+    "recoil": 60,
+    "idx": 4
   },
   {
     "category": "Shotgun",
@@ -178,12 +205,13 @@
     "rpm": 300,
     "recoil": 55,
     "cap": 13,
-    "reload": 2.3,
-    "reloadEarly": 1.9,
+    "reload": 2.5,
     "mags": 7,
     "magstart": 5,
     "box": 3,
-    "supply": 7
+    "supply": 7,
+    "idx": 5,
+    "reloadearly": 1.8
   },
   {
     "category": "Shotgun",
@@ -193,12 +221,13 @@
     "rpm": 330,
     "recoil": 45,
     "cap": 26,
-    "reload": 3.0,
-    "reloadEarly": 2.1,
+    "reload": 3,
     "mags": 8,
     "magstart": 6,
     "box": 4,
-    "supply": 8
+    "supply": 8,
+    "idx": 6,
+    "reloadearly": 2.1
   },
   {
     "category": "Shotgun",
@@ -208,12 +237,13 @@
     "rpm": 300,
     "recoil": 28,
     "cap": 25,
-    "reload": 2.3,
-    "reloadEarly": 1.9,
+    "reload": 2.5,
     "mags": 6,
     "magstart": 4,
     "box": 3,
-    "supply": 6
+    "supply": 6,
+    "idx": 7,
+    "reloadearly": 1.8
   },
   {
     "category": "Explosive",
@@ -228,7 +258,8 @@
     "mags": 12,
     "magstart": 6,
     "box": 3,
-    "supply": 6
+    "supply": 6,
+    "idx": 1
   },
   {
     "category": "Explosive",
@@ -242,7 +273,12 @@
     "magstart": 4,
     "box": 3,
     "supply": 6,
-    "tags": ["jet"]
+    "tags": [
+      "jet"
+    ],
+    "idx": 2,
+    "reload": 3.8,
+    "reloadearly": 2.6
   },
   {
     "category": "Explosive",
@@ -258,7 +294,13 @@
     "magstart": 6,
     "box": 3,
     "supply": 6,
-    "tags": ["jet", "shrapnel"]
+    "tags": [
+      "jet",
+      "shrapnel"
+    ],
+    "idx": 3,
+    "reload": 4.7,
+    "reloadearly": 2.8
   },
   {
     "category": "Energy",
@@ -267,12 +309,13 @@
     "ap": 2,
     "recoil": 1,
     "limit": 8,
-    "reload": 1.5,
-    "reloadEarly": 3.0,
+    "reload": 1.8,
     "mags": 6,
     "magstart": 3,
     "box": 3,
-    "supply": 6
+    "supply": 6,
+    "idx": 1,
+    "reloadearly": 3
   },
   {
     "category": "Energy",
@@ -283,11 +326,12 @@
     "recoil": 2,
     "limit": 7,
     "reload": 2.1,
-    "reloadEarly": 3.0,
     "mags": 6,
     "magstart": 3,
     "box": 3,
-    "supply": 6
+    "supply": 6,
+    "idx": 2,
+    "reloadearly": 3
   },
   {
     "category": "Energy",
@@ -298,13 +342,14 @@
     "xap": 3,
     "rpm": 250,
     "recoil": 20,
-    "reload": 2.7,
-    "reloadEarly": 2.3,
+    "reload": 2.5,
     "cap": 15,
     "mags": 6,
     "magstart": 3,
     "box": 3,
-    "supply": 6
+    "supply": 6,
+    "idx": 3,
+    "reloadearly": 2.3
   },
   {
     "category": "Sidearm",
@@ -313,13 +358,14 @@
     "ap": 2,
     "rpm": 900,
     "recoil": 23,
-    "reload": 1.9,
-    "reloadEarly": 1.6,
+    "reload": 1.8,
     "cap": 15,
     "mags": 5,
     "magstart": 4,
     "box": 2,
-    "supply": 5
+    "supply": 5,
+    "idx": 1,
+    "reloadearly": 1.4
   },
   {
     "category": "Sidearm",
@@ -329,12 +375,13 @@
     "rpm": 1100,
     "recoil": 11,
     "reload": 2.1,
-    "reloadEarly": 1.6,
     "cap": 31,
     "mags": 4,
     "magstart": 4,
     "box": 2,
-    "supply": 4
+    "supply": 4,
+    "idx": 2,
+    "reloadearly": 1.4
   },
   {
     "category": "Sidearm",
@@ -345,12 +392,13 @@
     "xap": 3,
     "rpm": 900,
     "recoil": 43,
-    "reload": 2.0,
+    "reload": 2,
     "cap": 1,
     "rounds": 8,
     "roundstart": 4,
     "roundsbox": 1,
-    "roundsupply": 2
+    "roundsupply": 2,
+    "idx": 3
   },
   {
     "category": "Sidearm",
@@ -358,13 +406,14 @@
     "dps": 150,
     "ap": 2,
     "recoil": 1,
-    "reload": 1.9,
-    "reloadEarly": 2.2,
+    "reload": 1.8,
     "limit": 5,
     "mags": 3,
     "magstart": 3,
     "box": 3,
-    "supply": 3
+    "supply": 3,
+    "idx": 4,
+    "reloadearly": 2.3
   },
   {
     "category": "Sidearm",
@@ -378,8 +427,20 @@
     "roundstart": 32,
     "roundsbox": 10,
     "roundsupply": 20,
-    "roundreloads": [2.9, 3.7, 4.1, 4.9, 5.3, 6.0],
-    "tags": ["rounds"]
+    "roundreloads": [
+      2.9,
+      3.7,
+      4.1,
+      4.9,
+      5.3,
+      6
+    ],
+    "tags": [
+      "rounds"
+    ],
+    "idx": 5,
+    "reload": 6.1,
+    "reloadone": 2.8
   },
   {
     "category": "Support",
@@ -387,12 +448,13 @@
     "damage": 55,
     "ap": 2,
     "rpm": 1150,
-    "reload": 5.9,
-    "reloadEarly": 4.6,
+    "reload": 5.8,
     "cap": 300,
     "mags": 3,
     "box": 1,
-    "supply": 2
+    "supply": 2,
+    "idx": 1,
+    "reloadearly": 4.4
   },
   {
     "category": "Support",
@@ -400,12 +462,13 @@
     "damage": 80,
     "ap": 3,
     "rpm": 900,
-    "reload": 5.0,
-    "reloadEarly": 4.5,
+    "reload": 5,
     "cap": 150,
     "mags": 2,
     "box": 1,
-    "supply": 1
+    "supply": 1,
+    "idx": 2,
+    "reloadearly": 4.2
   },
   {
     "category": "Support",
@@ -414,11 +477,12 @@
     "ap": 4,
     "rpm": 950,
     "cap": 75,
-    "reload": 7.1,
-    "reloadEarly": 5.0,
+    "reload": 7.2,
     "mags": 2,
     "box": 1,
-    "supply": 2
+    "supply": 2,
+    "idx": 3,
+    "reloadearly": 5
   },
   {
     "category": "Support",
@@ -426,7 +490,8 @@
     "damage": 250,
     "ap": 7,
     "rpm": 60,
-    "charge": 1
+    "charge": 1,
+    "idx": 4
   },
   {
     "category": "Support",
@@ -435,9 +500,10 @@
     "xap": 4,
     "limit": 12,
     "mags": 4,
-    "reload": 4.0,
+    "reload": 3.9,
     "box": 3,
-    "supply": 4
+    "supply": 4,
+    "idx": 5
   },
   {
     "category": "Support",
@@ -446,11 +512,12 @@
     "ap": 4,
     "cap": 7,
     "rpm": 350,
-    "reload": 3.1,
-    "reloadEarly": 2.4,
+    "reload": 3.2,
     "mags": 6,
     "box": 1,
-    "supply": 3
+    "supply": 3,
+    "idx": 6,
+    "reloadearly": 2.6
   },
   {
     "category": "Support",
@@ -460,11 +527,12 @@
     "xdamage": 350,
     "xap": 3,
     "cap": 10,
-    "reload": 3.3,
-    "reloadEarly": 3.0,
+    "reload": 3.5,
     "mags": 2,
     "box": 1,
-    "supply": 2
+    "supply": 2,
+    "idx": 7,
+    "reloadearly": 3
   },
   {
     "category": "Support",
@@ -475,24 +543,14 @@
     "xap": 3,
     "cap": 10,
     "rpm": 250,
-    "reload": 5.1,
-    "reloadEarly": 1.83,
+    "reload": 5.2,
     "clips": 10,
+    "clipsize": 5,
     "clipstart": 10,
     "clipbox": 2,
-    "clipsupply": 5
-  },
-  {
-    "category": "Support",
-    "name": "RS-422 Railgun (Safe)",
-    "damage": 400,
-    "ap": 4,
-    "cap": 1,
-    "charge": 0.7,
-    "reload": 1.6,
-    "rounds": 20,
-    "box": 2,
-    "supply": 10
+    "clipsupply": 5,
+    "idx": 8,
+    "reloadearly": 1.7
   },
   {
     "category": "Support",
@@ -500,11 +558,12 @@
     "damage": 600,
     "ap": 8,
     "cap": 1,
-    "charge": 3.0,
-    "reload": 1.6,
+    "charge": 3,
+    "reload": 1.3,
     "rounds": 20,
     "box": 2,
-    "supply": 10
+    "supply": 10,
+    "idx": 10
   },
   {
     "category": "Support",
@@ -512,26 +571,30 @@
     "dps": 300,
     "ap": 4,
     "limit": 10,
-    "reload": 3.4,
-    "reload": 5,
+    "reload": 3.6,
     "mags": 1,
     "box": 1,
-    "supply": 1
+    "supply": 1,
+    "idx": 11,
+    "reloadearly": 5
   },
   {
     "category": "Support",
     "name": "LAS-99 Quasar Cannon",
     "damage": 650,
     "ap": 6,
-    "charge": 3.0,
-    "reload": 10
+    "charge": 3,
+    "reload": 10,
+    "idx": 12,
+    "reloadearly": 3.1
   },
   {
     "category": "Support",
     "name": "EAT-17 Expendable Anti-Tank",
     "damage": 650,
     "ap": 6,
-    "cap": 1
+    "cap": 1,
+    "idx": 13
   },
   {
     "category": "Support",
@@ -539,11 +602,12 @@
     "damage": 650,
     "ap": 6,
     "cap": 1,
-    "reload": 6.0,
+    "reload": 6,
     "rounds": 5,
     "roundstart": 5,
     "roundsbox": 1,
-    "roundsupply": 2
+    "roundsupply": 2,
+    "idx": 14
   },
   {
     "category": "Support",
@@ -553,10 +617,11 @@
     "xdamage": 200,
     "xap": 5,
     "cap": 1,
-    "reload": 5.0,
+    "reload": 5,
     "rounds": 3,
     "roundstart": 3,
     "roundsbox": 1,
-    "roundsupply": 2
+    "roundsupply": 2,
+    "idx": 15
   }
 ]

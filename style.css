@@ -46,13 +46,12 @@ th.ap, td.ap {
 }
 
 td.xdamage {
-  border-left: none;
-  text-align: left;
   color: #ea8;
 }
 
-td.xap {
+th.xdamage, td.xdamage, tr.xdamage, th.xap, td.xap {
   border-left: none;
+  padding-left: 0;
   text-align: left;
 }
 

@@ -7,10 +7,17 @@ html
   body
     table
       thead
-      for cat of cats
-        th(class=cat)= header(cat)
+        tr
+          for cat of cats
+            th(class=cat)= header(cat)
       tbody
         for wpn of weapons
           tr
             for cat of cats
               td(class=cellClass(cat, wpn))= value(cat, wpn)
+
+    ul
+      li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
+      li Spare is in the format (Starting mags) / (Max mags)
+      li Pickup is in the format (Supply box) / (Ammo box)
+

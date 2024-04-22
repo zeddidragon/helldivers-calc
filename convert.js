@@ -4,36 +4,12 @@ import pug from 'pug'
 const compiler = pug.compileFile('./template.pug', {
   pretty: true,
 })
-const file = fs.readFileSync('./weapons.json', 'utf-8').trim()
-function frames(stamp) {
-  if(!stamp || stamp === '') {
-    return 
-  }
-  const values = stamp.split(':')
-  return values
-    .map((v, i) => Math.pow(60, values.length - i - 1) * v)
-    .reduce((sum, v) => sum + v, 0)
-}
-const reloads = fs.readFileSync('./reloads.csv', 'utf-8').trim()
-  .split('\n')
-  .slice(1)
-  .map(r => r.split(','))
-  .map(([name, rStart, rEnd, eStart, eEnd]) => {
-    return {
-      name,
-      reload: Math.round((frames(rEnd) - frames(rStart)) / 6) / 10,
-      reloadEarly: eStart && Math.round((frames(eEnd) - frames(eStart)) / 6) / 10,
-    }
-  })
-const weapons = JSON.parse(file)
-console.log('hello')
-console.log(reloads)
+const weapons = JSON.parse(fs.readFileSync('./weapons.json', 'utf-8').trim())
 
-
-function honk() {
 const headers =  {
   rpm: () => 'RPM',
   ap: () => 'AP',
+  xap: () => ' ',
   damage: () => 'Dmg',
   xdamage: () => 'xDmg',
   supply: () => 'Pickup',
@@ -69,13 +45,25 @@ const values = {
   name: ({ name }) => {
     return name.split(/\s+/).slice(1).join(' ')
   },
-  spare: ({ mags, magstart, clips, rounds, roundstart }) => {
+  reload: ({ reload, reloadearly, reloadone }) => {
+    if(!reload) {
+      return ''
+    }
+    if(reloadone) {
+      return `${reloadone.toFixed(1)} - ${reload.toFixed(1)}`
+    }
+    if(reloadearly) {
+      return `${reload.toFixed(1)} / ${reloadearly.toFixed(1)}`
+    }
+    return reload.toFixed(1)
+  },
+  spare: ({ mags, magstart, clips, clipsize, rounds, roundstart }) => {
     if(magstart) {
       return `x ${magstart}/${mags}`
     } else if(mags) {
       return `x ${mags}`
-    } else if(clips) {
-      return `x/2 ${clips}`
+    } else if(clipsize) {
+      return `[${clipsize}]x ${clips}`
     } else if(roundstart) {
       return `+ ${roundstart}/${rounds}`
     } else if(rounds) {
@@ -169,11 +157,11 @@ console.log(compiler({
     'xdamage',
     'ap',
     'xap',
-    'cap',
     'recoil',
     'rpm',
     'dps',
     'reload',
+    'cap',
     'spare',
     'supply',
     'magdmg',
@@ -190,4 +178,3 @@ console.log(compiler({
     return classes[cat]?.(cat, wpn) || classes?.default(cat, wpn)
   },
 }))
-}
