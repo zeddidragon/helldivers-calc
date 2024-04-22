@@ -1,23 +1,18 @@
-html
-  head
-    meta(charset='UTF-8')
-    title Helldivers
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(href="style.css", rel="stylesheet")
-  body
-    table
-      thead
-        tr
-          for cat in cats
-            th(class=cat)= header(cat)
-      tbody
-        for wpn in weapons
-          tr
-            for cat in cats
-              td(class=cellClass(cat, wpn))= value(cat, wpn)
+table
+  thead
+    tr
+      for cat in cats
+        th(class=catClass(cat), onclick=`sortBy('${cat}')`)
+          span.sorter ▼
+          span= header(cat)
+  tbody
+    for wpn in sorted(weapons)
+      tr
+        for cat in cats
+          td(class=cellClass(cat, wpn))= value(cat, wpn)
 
-    ul
-      li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
-      li Spare is in the format (Starting mags) / (Max mags)
-      li Pickup is in the format (Supply box) / (Ammo box)
+ul
+  li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
+  li Spare is in the format (Starting mags) / (Max mags)
+  li Pickup is in the format (Supply box) / (Ammo box)
 

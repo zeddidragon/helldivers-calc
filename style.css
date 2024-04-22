@@ -31,7 +31,11 @@ tbody tr:nth-child(odd) {
   background-color: #000;
 }
 
-th.code, th.xdamage, th.xap {
+th {
+  cursor: pointer;
+}
+
+th.xdamage, th.xap {
   border-left: none;
   visibility: hidden;
 }
@@ -63,6 +67,16 @@ th.name, td.name {
 
 td.name {
   color: #80c3f5;
+}
+
+.sorter {
+  font-size: 0.7em;
+  color: #404040;
+  padding: 0 0.5em;
+}
+
+.sorting .sorter {
+  color: #edfedf;
 }
 
 .category.ar, .ap-5 {

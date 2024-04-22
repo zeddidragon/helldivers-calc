@@ -2,6 +2,113 @@ async function loadWeapons() {
   window.weapons = await fetch(`weapons.json`).then(res => res.json())
 }
 
+function shotDmg(wpn) {
+  return (wpn.damage || 0) + (wpn.xdamage || 0)
+}
+
+function dps(wpn) {
+  if(wpn.dps) {
+    return wpn.dps
+  }
+  if(wpn.cap === 1) {
+    return 0
+  }
+  if(!wpn.rpm) {
+    return 0
+  }
+  return shotDmg(wpn) * wpn.rpm / 60
+}
+
+function magDmg(wpn) {
+  if(wpn.dps) {
+    return (wpn.dps * wpn.limit) || 0
+  }
+  const dmg = shotDmg(wpn)
+  if(wpn.limit) { // Sickle
+    return Math.floor((dmg * wpn.rpm * wpn.limit) / 60) || 0
+  }
+  return (dmg * wpn.cap) || 0
+}
+
+function totalDmg(wpn) {
+  if(wpn.dps) {
+    return (wpn.dps * wpn.limit * (wpn.mags + 1)) || 0
+  }
+  const dmg = shotDmg(wpn)
+  if(wpn.limit) { // Sickle
+    return Math.floor((dmg * wpn.rpm * wpn.limit) / 60) * (wpn.mags + 1) || 0
+  }
+  if(wpn.rounds) {
+    return dmg * (wpn.cap + wpn.rounds) || 0
+  }
+  if(wpn.clips) {
+    return dmg * (wpn.cap + wpn.clipsize * wpn.clips) || 0
+  }
+  return dmg * wpn.cap * ((wpn.mags || 0) + 1) || 0
+}
+
+function sortText(prop) {
+  return function(a, b) {
+    return (a[prop] || '').localeCompare(b[prop] || '')
+  }
+}
+
+function sortNum(prop, {
+  fallback = 0,
+} = {}) {
+  return function(a, b) {
+    return (b[prop] || fallback) - (a[prop] || fallback)
+  }
+}
+
+function sortNums(props, {
+  maths = ['max', 'min'],
+  order = -1,
+} = {}) {
+  return function(a, b) {
+    for(const math of maths) {
+      const valA = Math[math](...props.map(p => a[p] || 0))
+      const valB = Math[math](...props.map(p => b[p] || 0))
+      const diff = (valA - valB) * order
+      if(diff) {
+        return diff
+      }
+    }
+    return sorting.damage(a, b)
+  }
+}
+
+const sorting = {
+  code: sortText('code'),
+  name: sortText('name'),
+  damage: (a, b) => {
+    return (shotDmg(b) - shotDmg(a)) || sorting.code(a, b)
+  },
+  ap: sortNums(['ap', 'xap'], ['max', 'min'], -1),
+  spare: sortNums(['mags', 'rounds', 'clips'], ['max', 'min'], -1),
+  supply: sortNums(['supply', 'roundsupply', 'clipsupply'], ['max', 'min'], -1),
+  recoil: sortNum('recoil'),
+  rpm: sortNum('rpm'),
+  dps: (a, b) => {
+    return (dps(b) - dps(a)) || sorting.damage(a, b)
+  },
+  cap: (a, b) => {
+    const aCap = (a.cap || a.limit || 0)
+    const bCap = (b.cap || b.limit || 0)
+    return (bCap - aCap) || sorting.damage(a, b)
+  },
+  magdmg: (a, b) => {
+    return (magDmg(b) - magDmg(a)) || sorting.default(a, b)
+  },
+  total: (a, b) => {
+    return (totalDmg(b) - totalDmg(a)) || sorting.default(a, b)
+  },
+  reload: sortNums(['reloadearly', 'reload']),
+  default: (a, b) => {
+    return (a.catIdx - b.catIdx) || (a.idx - b.idx)
+  },
+}
+
 const headers =  {
   category: () => 'Type',
   rpm: () => 'RPM',
@@ -36,12 +143,6 @@ const classes = {
 }
 
 const values = {
-  code: ({ name }) => {
-    return name.split(/\s+/)[0]
-  },
-  name: ({ name }) => {
-    return name.split(/\s+/).slice(1).join(' ')
-  },
   reload: ({ reload, reloadearly, reloadone }) => {
     if(!reload) {
       return ''
@@ -83,18 +184,8 @@ const values = {
       return `${limit}s`
     }
   },
-  dps: ({ damage, xdamage, cap, rpm, dps }) => {
-    if(dps) {
-      return dps
-    }
-    if(cap === 1) {
-      return ''
-    }
-    if(!rpm) {
-      return ''
-    }
-    const dmg = (damage || 0) + (xdamage || 0)
-    return Math.round(dmg * rpm / 60)
+  dps: (wpn) => {
+    return Math.round(dps(wpn)) || ''
   },
   box: ({ box, clipbox }) => {
     if(box) {
@@ -117,35 +208,21 @@ const values = {
     }
     return ''
   },
-  magdmg: ({ damage, xdamage, dps, rpm, cap, limit }) => {
-    if(dps) {
-      return dps * limit
-    }
-    const dmg = (damage || 0) + (xdamage || 0)
-    if(limit) { // Sickle
-      return Math.floor((dmg * rpm * limit) / 60)
-    }
-    return dmg * cap
+  magdmg: (wpn) => {
+    return magDmg(wpn) || ''
   },
-  total: ({ damage, xdamage, dps, rpm, cap, limit, mags, clips, rounds }) => {
-    if(dps) {
-      return dps * limit * (mags + 1)
-    }
-    const dmg = (damage || 0) + (xdamage || 0)
-    if(limit) { // Sickle
-      return Math.floor((dmg * rpm * limit) / 60) * (mags + 1)
-    }
-    if(rounds) {
-      return damage * (cap + rounds)
-    }
-    if(clips) {
-      return damage * (cap + cap * clips * 0.5)
-    }
-    return dmg * cap * (mags + 1)
+  total: (wpn) => {
+    return totalDmg(wpn) || ''
   },
 }
 
 const locals = {
+  weapons: null,
+  sortBy: 'category',
+  sorted: (weapons) => {
+    const sorter = sorting[locals.sortBy] || sorting.default
+    return weapons.sort(sorter)
+  },
   cats: [
     'category',
     'code',
@@ -164,7 +241,12 @@ const locals = {
     'magdmg',
     'total',
   ],
-  weapons: null,
+  catClass: (cat) => {
+    return [
+      cat,
+      locals.sortBy === cat ? 'sorting' : '',
+    ]
+  },
   header: (cat) => {
     return headers[cat]?.(cat) || headers.default(cat)
   },
@@ -179,6 +261,11 @@ const locals = {
 function render() {
   locals.weapons = weapons
   document.querySelector('body').innerHTML = template(locals)
+}
+
+window.sortBy = function sortBy(cat) {
+  locals.sortBy = cat
+  render()
 }
 
 loadWeapons().then(() => render())
