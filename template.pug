@@ -8,12 +8,12 @@ html
     table
       thead
         tr
-          for cat of cats
+          for cat in cats
             th(class=cat)= header(cat)
       tbody
-        for wpn of weapons
+        for wpn in weapons
           tr
-            for cat of cats
+            for cat in cats
               td(class=cellClass(cat, wpn))= value(cat, wpn)
 
     ul

@@ -1,6 +1,6 @@
 [
   {
-    "category": "Assault Rifle",
+    "category": "AR",
     "name": "AR-23 Liberator",
     "damage": 55,
     "ap": 2,
@@ -16,7 +16,7 @@
     "reloadearly": 2
   },
   {
-    "category": "Assault Rifle",
+    "category": "AR",
     "name": "AR-23P Liberator Penetrator",
     "damage": 45,
     "ap": 3,
@@ -32,7 +32,7 @@
     "reloadearly": 2
   },
   {
-    "category": "Assault Rifle",
+    "category": "AR",
     "name": "AR-23C Liberator Concussive",
     "damage": 55,
     "ap": 2,
@@ -48,7 +48,7 @@
     "reloadearly": 2
   },
   {
-    "category": "Marksman",
+    "category": "DMR",
     "name": "BR-14 Adjudicator",
     "damage": 80,
     "ap": 3,
@@ -64,7 +64,7 @@
     "reloadearly": 1.7
   },
   {
-    "category": "Marksman",
+    "category": "DMR",
     "name": "R-63 Diligence",
     "damage": 112,
     "ap": 2,
@@ -80,7 +80,7 @@
     "reloadearly": 1.9
   },
   {
-    "category": "Marksman",
+    "category": "DMR",
     "name": "R-63CS Diligence Counter-Sniper",
     "damage": 128,
     "ap": 3,
@@ -134,7 +134,7 @@
     "reloadearly": 1.7
   },
   {
-    "category": "Shotgun",
+    "category": "SG",
     "name": "SG-8 Punisher",
     "damage": 405,
     "ap": 2,
@@ -153,7 +153,7 @@
     "reloadone": 0.8
   },
   {
-    "category": "Shotgun",
+    "category": "SG",
     "name": "SG-8S Slugger",
     "damage": 250,
     "ap": 3,
@@ -172,7 +172,7 @@
     "reloadone": 0.8
   },
   {
-    "category": "Shotgun",
+    "category": "SG",
     "name": "SG-8P Punisher Plasma",
     "damage": 100,
     "xdamage": 150,
@@ -189,7 +189,7 @@
     "reload": 2.5
   },
   {
-    "category": "Shotgun",
+    "category": "SG",
     "name": "ARC-12 Blitzer",
     "damage": 250,
     "ap": 2,
@@ -198,7 +198,7 @@
     "idx": 4
   },
   {
-    "category": "Shotgun",
+    "category": "SG",
     "name": "SG-225 Breaker",
     "damage": 330,
     "ap": 2,
@@ -214,7 +214,7 @@
     "reloadearly": 1.8
   },
   {
-    "category": "Shotgun",
+    "category": "SG",
     "name": "SG-225SP Breaker Spray & Pray",
     "damage": 192,
     "ap": 2,
@@ -230,7 +230,7 @@
     "reloadearly": 2.1
   },
   {
-    "category": "Shotgun",
+    "category": "SG",
     "name": "SG-225IE Breaker Incendiary",
     "damage": 240,
     "ap": 2,
@@ -246,7 +246,7 @@
     "reloadearly": 1.8
   },
   {
-    "category": "Explosive",
+    "category": "EX",
     "name": "CB-9 Exploding Crossbow",
     "damage": 250,
     "xdamage": 270,
@@ -262,7 +262,7 @@
     "idx": 1
   },
   {
-    "category": "Explosive",
+    "category": "EX",
     "name": "JAR-5 Dominator",
     "damage": 300,
     "ap": 2,
@@ -281,7 +281,7 @@
     "reloadearly": 2.6
   },
   {
-    "category": "Explosive",
+    "category": "EX",
     "name": "R-36 Eruptor",
     "damage": 230,
     "ap": 3,
@@ -303,7 +303,7 @@
     "reloadearly": 2.8
   },
   {
-    "category": "Energy",
+    "category": "NRG",
     "name": "LAS-5 Scythe",
     "dps": 300,
     "ap": 2,
@@ -318,7 +318,7 @@
     "reloadearly": 3
   },
   {
-    "category": "Energy",
+    "category": "NRG",
     "name": "LAS-16 Sickle",
     "damage": 55,
     "ap": 2,
@@ -334,7 +334,7 @@
     "reloadearly": 3
   },
   {
-    "category": "Energy",
+    "category": "NRG",
     "name": "PLAS-1 Scorcher",
     "damage": 100,
     "xdamage": 100,
@@ -352,7 +352,7 @@
     "reloadearly": 2.3
   },
   {
-    "category": "Sidearm",
+    "category": "HG",
     "name": "P-2 Peacemaker",
     "damage": 60,
     "ap": 2,
@@ -368,7 +368,7 @@
     "reloadearly": 1.4
   },
   {
-    "category": "Sidearm",
+    "category": "HG",
     "name": "P-19 Redeemer",
     "damage": 60,
     "ap": 2,
@@ -384,7 +384,7 @@
     "reloadearly": 1.4
   },
   {
-    "category": "Sidearm",
+    "category": "HG",
     "name": "GP-31 Grenade Pistol",
     "damage": 350,
     "xdamage": 250,
@@ -401,7 +401,7 @@
     "idx": 3
   },
   {
-    "category": "Sidearm",
+    "category": "HG",
     "name": "LAS-7 Dagger",
     "dps": 150,
     "ap": 2,
@@ -416,7 +416,7 @@
     "reloadearly": 2.3
   },
   {
-    "category": "Sidearm",
+    "category": "HG",
     "name": "P-4 Senator",
     "damage": 150,
     "ap": 3,
@@ -443,7 +443,7 @@
     "reloadone": 2.8
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "M-105 Stalwart",
     "damage": 55,
     "ap": 2,
@@ -457,7 +457,7 @@
     "reloadearly": 4.4
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "MG-43 Machine Gun",
     "damage": 80,
     "ap": 3,
@@ -471,7 +471,7 @@
     "reloadearly": 4.2
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "MG-206 Heavy Machine Gun",
     "damage": 100,
     "ap": 4,
@@ -485,7 +485,7 @@
     "reloadearly": 5
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "ARC-3 Arc Thrower",
     "damage": 250,
     "ap": 7,
@@ -494,7 +494,7 @@
     "idx": 4
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "FLAM-40 Flame Thrower",
     "ap": 3,
     "xap": 4,
@@ -506,7 +506,7 @@
     "idx": 5
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "APW-1 Anti-Material Rifle",
     "damage": 450,
     "ap": 4,
@@ -520,7 +520,7 @@
     "reloadearly": 2.6
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "GL-21 Grenade Launcher",
     "damage": 20,
     "ap": 0,
@@ -535,7 +535,7 @@
     "reloadearly": 3
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "AC-8 Autocannon",
     "damage": 260,
     "ap": 4,
@@ -553,7 +553,7 @@
     "reloadearly": 1.7
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "RS-422 Railgun",
     "damage": 600,
     "ap": 8,
@@ -566,20 +566,21 @@
     "idx": 10
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "LAS-98 Laser Cannon",
     "dps": 300,
     "ap": 4,
     "limit": 10,
     "reload": 3.6,
     "mags": 1,
+    "magstart": 1,
     "box": 1,
     "supply": 1,
     "idx": 11,
     "reloadearly": 5
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "LAS-99 Quasar Cannon",
     "damage": 650,
     "ap": 6,
@@ -589,7 +590,7 @@
     "reloadearly": 3.1
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "EAT-17 Expendable Anti-Tank",
     "damage": 650,
     "ap": 6,
@@ -597,7 +598,7 @@
     "idx": 13
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "GR-8 Recoiless Rifle",
     "damage": 650,
     "ap": 6,
@@ -610,7 +611,7 @@
     "idx": 14
   },
   {
-    "category": "Support",
+    "category": "SUP",
     "name": "FAF-14 Spear",
     "damage": 1000,
     "ap": 8,

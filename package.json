@@ -5,7 +5,8 @@
   "description": "Helldivers data sheet",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "pug --client --no-debug template.pug",
+    "build": "node insert-reloads.js; node compile.js; node convert.js > index.html"
   },
   "keywords": [
     "helldivers"
@@ -14,5 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
   }
 }

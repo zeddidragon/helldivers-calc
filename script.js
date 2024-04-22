@@ -1,12 +1,9 @@
-import fs from 'fs'
-import pug from 'pug'
-
-const compiler = pug.compileFile('./template.pug', {
-  pretty: true,
-})
-const weapons = JSON.parse(fs.readFileSync('./weapons.json', 'utf-8').trim())
+async function loadWeapons() {
+  window.weapons = await fetch(`weapons.json`).then(res => res.json())
+}
 
 const headers =  {
+  category: () => 'Type',
   rpm: () => 'RPM',
   ap: () => 'AP',
   xap: () => ' ',
@@ -97,7 +94,7 @@ const values = {
       return ''
     }
     const dmg = (damage || 0) + (xdamage || 0)
-    return (dmg * rpm / 60).toFixed(1)
+    return Math.round(dmg * rpm / 60)
   },
   box: ({ box, clipbox }) => {
     if(box) {
@@ -148,7 +145,7 @@ const values = {
   },
 }
 
-console.log(compiler({
+const locals = {
   cats: [
     'category',
     'code',
@@ -167,7 +164,7 @@ console.log(compiler({
     'magdmg',
     'total',
   ],
-  weapons,
+  weapons: null,
   header: (cat) => {
     return headers[cat]?.(cat) || headers.default(cat)
   },
@@ -177,4 +174,11 @@ console.log(compiler({
   cellClass: (cat, wpn) => {
     return classes[cat]?.(cat, wpn) || classes?.default(cat, wpn)
   },
-}))
+}
+
+function render() {
+  locals.weapons = weapons
+  document.querySelector('body').innerHTML = template(locals)
+}
+
+loadWeapons().then(() => render())

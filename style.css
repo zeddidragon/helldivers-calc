@@ -65,28 +65,28 @@ td.name {
   color: #80c3f5;
 }
 
-.category.assault-rifle, .ap-5 {
+.category.ar, .ap-5 {
   color: #e88;
 }
 .category.smg, .ap-8 {
   color: #eee;
 }
-.category.shotgun, .ap-3 {
+.category.sg, .ap-3 {
   color: #8e8;
 }
-.category.marksman, .ap-2 {
+.category.dmr, .ap-2 {
   color: #88e;
 }
-.category.explosive, .ap-4 {
+.category.ex, .ap-4 {
   color: #ea8;
 }
-.category.energy, .ap-9 {
+.category.nrg, .ap-9 {
   color: #ee8;
 }
-.category.sidearm, .ap-6 {
+.category.hg, .ap-6 {
   color: #a8e;
 }
-.category.support, .ap-7 {
+.category.sup, .ap-7 {
   color: #e8a;
 }
 
