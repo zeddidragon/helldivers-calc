@@ -23,6 +23,8 @@ table
           span(class=`ap-${wpn.ap}` title="Direct Hit")= wpn.ap
           if wpn.xap
             span(class=`ap-${wpn.xap}` title="Explosion").ap-x= wpn.xap
+          if hasTag(wpn, 'fire')
+            span(class=`ap-4` title="Fire Status").ap-fire 4
         td.recoil= wpn.recoil
         td.rpm
           if wpn.charge

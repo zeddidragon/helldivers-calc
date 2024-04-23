@@ -116,7 +116,7 @@ td.name {
   color: #a98a98;
   content: "+";
 }
-.ap-x {
+.ap-x, .ap-fire {
   padding-left: 0.5em;
 }
 .reload-one:after {

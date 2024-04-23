@@ -247,6 +247,9 @@ const locals = {
       locals.sortBy === cat ? 'sorting' : '',
     ]
   },
+  hasTag: (wpn, tag) => {
+    return wpn.tags?.includes(tag)
+  },
   dps: wpn => Math.round(dps(wpn)) || '',
   magDmg,
   totalDmg,

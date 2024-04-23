@@ -301,7 +301,10 @@
     "idx": 7,
     "reloadearly": 1.8,
     "catIdx": 4,
-    "code": "SG-225IE"
+    "code": "SG-225IE",
+    "tags": [
+      "fire"
+    ]
   },
   {
     "category": "EX",
@@ -610,7 +613,6 @@
     "category": "SUP",
     "name": "Flame Thrower",
     "ap": 3,
-    "xap": 4,
     "limit": 12,
     "mags": 4,
     "reload": 3.9,
@@ -619,7 +621,8 @@
     "idx": 5,
     "catIdx": 8,
     "code": "FLAM-40",
-    "source": "support"
+    "source": "support",
+    "tags": ["fire"]
   },
   {
     "category": "SUP",
