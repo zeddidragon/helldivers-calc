@@ -69,7 +69,7 @@ td.name {
   color: #edfedf;
 }
 
-.category.AR, .ap-5, .source-main.demo-det {
+.category.AR, .ap-5, .source.demo-det {
   color: #e88;
 }
 .category.SMG, .ap-8 {
@@ -78,19 +78,19 @@ td.name {
 .category.SG, .ap-3 {
   color: #8e8;
 }
-.category.DMR, .ap-2, .source-main.cut-edge {
+.category.DMR, .ap-2, .source.cut-edge {
   color: #88e;
 }
-.category.EX, .ap-4, .source-main.steel-vets {
+.category.EX, .ap-4, .source.steel-vets {
   color: #ea8;
 }
-.category.NRG, .ap-9, .source-main.hd-mobilize {
+.category.NRG, .ap-9, .source.hd-mobilize {
   color: #ee8;
 }
 .category.HG, .ap-6 {
   color: #a8e;
 }
-.category.SUP, .ap-7, .source-main.support {
+.category.SUP, .ap-7, .source.support {
   color: #e8a;
 }
 .source-page {
@@ -150,6 +150,23 @@ td.name {
 }
 .clipsize:after {
   content: "]x";
+}
+
+ul.sources, ul.categories {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  list-style-type: none;
+}
+
+.sources .source, .categories .category {
+  width: 4em;
+  cursor: pointer;
+}
+
+.hidden {
+  text-decoration: line-through;
+  opacity: 0.7;
 }
 
 @media only screen and (max-width: 540px) {

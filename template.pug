@@ -1,15 +1,29 @@
+ul.sources
+  for source in sourceOrder
+    li.source(
+      class=sourceClass(source)
+      title=sourceFull(source)
+      onclick=`toggleSource('${source}')`
+    )= sourceLabels[source]
+ul.categories
+  for cat in cats
+    li.category(
+      class=catClass(cat)
+      title=categoryFull(cat)
+      onclick=`toggleCategory('${cat}')`
+    )= cat
 table
   thead
     tr
-      for cat in cats
-        th(class=catClass(cat) onclick=`sortBy('${cat}')`)
+      for col in cols
+        th(class=colClass(col) onclick=`sortBy('${col}')`)
           span.sorter ▼
-          span= header(cat)
+          span= header(col)
   tbody
-    for wpn in sorted(weapons)
+    for wpn in getWeapons()
       tr
         td.source(title=sourceFull(wpn))
-          span(class=wpn.source).source-main= sourceLabels[wpn.source]
+          span(class=wpn.source).source-main.source= sourceLabels[wpn.source]
           if wpn.sourcepage
             span.source-page=wpn.sourcepage
         td(class=wpn.category title=categoryFull(wpn)).category= wpn.category

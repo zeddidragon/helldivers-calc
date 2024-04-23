@@ -209,11 +209,17 @@ const values = {
 const locals = {
   weapons: null,
   sortBy: 'category',
-  sorted: (weapons) => {
+  getWeapons: () => {
     const sorter = sorting[locals.sortBy] || sorting.default
-    return weapons.sort(sorter)
+    return weapons
+      .filter(wpn => !locals.hideSources[wpn.source])
+      .filter(wpn => !locals.hideCategories[wpn.category])
+      .sort(sorter)
   },
+  hideSources: {},
+  hideCategories: {},
   sourceLabels,
+  sourceOrder,
   sourceFull: (wpn) => {
     const desc = sourceNames[wpn.source]
     if(wpn.sourcepage) {
@@ -224,7 +230,8 @@ const locals = {
   categoryFull: (wpn) => {
     return categoryNames[wpn.category]
   },
-  cats: [
+  cats: Object.keys(categoryNames),
+  cols: [
     'source',
     'category',
     'code',
@@ -241,10 +248,22 @@ const locals = {
     'magdmg',
     'total',
   ],
+  sourceClass: (source) => {
+    return [
+      source,
+      locals.hideSources[source] ? 'hidden' : '',
+    ]
+  },
   catClass: (cat) => {
     return [
       cat,
-      locals.sortBy === cat ? 'sorting' : '',
+      locals.hideCategories[cat] ? 'hidden' : '',
+    ]
+  },
+  colClass: (col) => {
+    return [
+      col,
+      locals.sortBy === col ? 'sorting' : '',
     ]
   },
   hasTag: (wpn, tag) => {
@@ -253,8 +272,8 @@ const locals = {
   dps: wpn => Math.round(dps(wpn)) || '',
   magDmg,
   totalDmg,
-  header: (cat) => {
-    return headers[cat]?.(cat) || headers.default(cat)
+  header: (col) => {
+    return headers[col]?.(col) || headers.default(col)
   },
 }
 
@@ -265,6 +284,16 @@ function render() {
 
 window.sortBy = function sortBy(cat) {
   locals.sortBy = cat
+  render()
+}
+
+window.toggleSource = function toggleSource(source) {
+  locals.hideSources[source] = !locals.hideSources[source]
+  render()
+}
+
+window.toggleCategory = function toggleCategory(cat) {
+  locals.hideCategories[cat] = !locals.hideCategories[cat]
   render()
 }
 
