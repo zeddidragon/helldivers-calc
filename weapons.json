@@ -2,6 +2,7 @@
   {
     "category": "AR",
     "name": "Liberator",
+    "source": "start",
     "damage": 55,
     "ap": 2,
     "rpm": 640,
@@ -20,6 +21,8 @@
   {
     "category": "AR",
     "name": "Liberator Penetrator",
+    "source": "hd-mobilize",
+    "sourcepage": 6,
     "damage": 45,
     "ap": 3,
     "rpm": 640,
@@ -38,6 +41,8 @@
   {
     "category": "AR",
     "name": "Liberator Concussive",
+    "source": "steel-vets",
+    "sourcepage": 1,
     "damage": 55,
     "ap": 2,
     "rpm": 320,
@@ -56,6 +61,8 @@
   {
     "category": "DMR",
     "name": "Adjudicator",
+    "source": "demo-det",
+    "sourcepage": 1,
     "damage": 80,
     "ap": 3,
     "rpm": 550,
@@ -74,6 +81,8 @@
   {
     "category": "DMR",
     "name": "Diligence",
+    "source": "hd-mobilize",
+    "sourcepage": 2,
     "damage": 112,
     "ap": 2,
     "rpm": 350,
@@ -92,6 +101,8 @@
   {
     "category": "DMR",
     "name": "Diligence Counter-Sniper",
+    "source": "hd-mobilize",
+    "sourcepage": 7,
     "damage": 128,
     "ap": 3,
     "rpm": 350,
@@ -110,6 +121,8 @@
   {
     "category": "SMG",
     "name": "Defender",
+    "source": "hd-mobilize",
+    "sourcepage": 3,
     "damage": 70,
     "ap": 2,
     "rpm": 520,
@@ -131,6 +144,7 @@
   {
     "category": "SMG",
     "name": "Knight",
+    "source": "dlc-super",
     "damage": 50,
     "ap": 2,
     "rpm": 1380,
@@ -152,6 +166,8 @@
   {
     "category": "SG",
     "name": "Punisher",
+    "source": "hd-mobilize",
+    "sourcepage": 1,
     "damage": 405,
     "ap": 2,
     "rpm": 80,
@@ -173,6 +189,8 @@
   {
     "category": "SG",
     "name": "Slugger",
+    "source": "hd-mobilize",
+    "sourcepage": 8,
     "damage": 250,
     "ap": 3,
     "rpm": 80,
@@ -194,6 +212,8 @@
   {
     "category": "SG",
     "name": "Punisher Plasma",
+    "source": "cut-edge",
+    "sourcepage": 2,
     "damage": 100,
     "xdamage": 150,
     "ap": 2,
@@ -213,6 +233,8 @@
   {
     "category": "SG",
     "name": "Blitzer",
+    "source": "cut-edge",
+    "sourcepage": 3,
     "damage": 250,
     "ap": 2,
     "rpm": 30,
@@ -224,6 +246,8 @@
   {
     "category": "SG",
     "name": "Breaker",
+    "source": "hd-mobilize",
+    "sourcepage": 4,
     "damage": 330,
     "ap": 2,
     "rpm": 300,
@@ -242,6 +266,8 @@
   {
     "category": "SG",
     "name": "Breaker Spray & Pray",
+    "source": "hd-mobilize",
+    "sourcepage": 9,
     "damage": 192,
     "ap": 2,
     "rpm": 330,
@@ -260,6 +286,8 @@
   {
     "category": "SG",
     "name": "Breaker Incendiary",
+    "source": "steel-vets",
+    "sourcepage": 2,
     "damage": 240,
     "ap": 2,
     "rpm": 300,
@@ -278,6 +306,8 @@
   {
     "category": "EX",
     "name": "Exploding Crossbow",
+    "source": "demo-det",
+    "sourcepage": 3,
     "damage": 250,
     "xdamage": 270,
     "ap": 2,
@@ -297,6 +327,8 @@
     "category": "EX",
     "name": "Dominator",
     "damage": 300,
+    "source": "steel-vets",
+    "sourcepage": 3,
     "ap": 2,
     "rpm": 250,
     "recoil": 75,
@@ -317,6 +349,8 @@
   {
     "category": "EX",
     "name": "Eruptor",
+    "source": "demo-det",
+    "sourcepage": 2,
     "damage": 230,
     "ap": 3,
     "xdamage": 150,
@@ -341,6 +375,8 @@
   {
     "category": "NRG",
     "name": "Scythe",
+    "source": "hd-mobilize",
+    "sourcepage": 5,
     "dps": 300,
     "ap": 2,
     "recoil": 1,
@@ -358,6 +394,8 @@
   {
     "category": "NRG",
     "name": "Sickle",
+    "source": "cut-edge",
+    "sourcepage": 1,
     "damage": 55,
     "ap": 2,
     "rpm": 750,
@@ -376,6 +414,8 @@
   {
     "category": "NRG",
     "name": "Scorcher",
+    "source": "hd-mobilize",
+    "sourcepage": 10,
     "damage": 100,
     "xdamage": 100,
     "ap": 2,
@@ -396,6 +436,7 @@
   {
     "category": "HG",
     "name": "Peacemaker",
+    "source": "start",
     "damage": 60,
     "ap": 2,
     "rpm": 900,
@@ -414,6 +455,8 @@
   {
     "category": "HG",
     "name": "Redeemer",
+    "source": "hd-mobilize",
+    "sourcepage": 2,
     "damage": 60,
     "ap": 2,
     "rpm": 1100,
@@ -432,6 +475,8 @@
   {
     "category": "HG",
     "name": "Grenade Pistol",
+    "source": "demo-det",
+    "sourcepage": 3,
     "damage": 350,
     "xdamage": 250,
     "ap": 3,
@@ -451,6 +496,8 @@
   {
     "category": "HG",
     "name": "Dagger",
+    "source": "cut-edge",
+    "sourcepage": 3,
     "dps": 150,
     "ap": 2,
     "recoil": 1,
@@ -468,6 +515,8 @@
   {
     "category": "HG",
     "name": "Senator",
+    "source": "steel-vets",
+    "sourcepage": 1,
     "damage": 150,
     "ap": 3,
     "rpm": 200,
@@ -508,7 +557,8 @@
     "idx": 1,
     "reloadearly": 4.4,
     "catIdx": 8,
-    "code": "M-105"
+    "code": "M-105",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -524,7 +574,8 @@
     "idx": 2,
     "reloadearly": 4.2,
     "catIdx": 8,
-    "code": "MG-43"
+    "code": "MG-43",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -540,7 +591,8 @@
     "idx": 3,
     "reloadearly": 5,
     "catIdx": 8,
-    "code": "MG-206"
+    "code": "MG-206",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -551,7 +603,8 @@
     "charge": 1,
     "idx": 4,
     "catIdx": 8,
-    "code": "ARC-3"
+    "code": "ARC-3",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -565,7 +618,8 @@
     "supply": 4,
     "idx": 5,
     "catIdx": 8,
-    "code": "FLAM-40"
+    "code": "FLAM-40",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -581,7 +635,8 @@
     "idx": 6,
     "reloadearly": 2.6,
     "catIdx": 8,
-    "code": "APW-1"
+    "code": "APW-1",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -598,7 +653,8 @@
     "idx": 7,
     "reloadearly": 3,
     "catIdx": 8,
-    "code": "GL-21"
+    "code": "GL-21",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -618,7 +674,8 @@
     "idx": 8,
     "reloadearly": 1.7,
     "catIdx": 8,
-    "code": "AC-8"
+    "code": "AC-8",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -634,7 +691,8 @@
     "roundsupply": 10,
     "idx": 10,
     "catIdx": 8,
-    "code": "RS-422"
+    "code": "RS-422",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -650,19 +708,20 @@
     "idx": 11,
     "reloadearly": 5,
     "catIdx": 8,
-    "code": "LAS-98"
+    "code": "LAS-98",
+    "source": "support"
   },
   {
     "category": "SUP",
     "name": "Quasar Cannon",
     "damage": 650,
     "ap": 6,
-    "charge": 3,
     "reload": 10,
     "idx": 12,
-    "reloadearly": 3.1,
+    "charge": 3.1,
     "catIdx": 8,
-    "code": "LAS-99"
+    "code": "LAS-99",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -672,7 +731,8 @@
     "cap": 1,
     "idx": 13,
     "catIdx": 8,
-    "code": "EAT-17"
+    "code": "EAT-17",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -687,7 +747,8 @@
     "roundsupply": 2,
     "idx": 14,
     "catIdx": 8,
-    "code": "GR-8"
+    "code": "GR-8",
+    "source": "support"
   },
   {
     "category": "SUP",
@@ -704,6 +765,7 @@
     "roundsupply": 2,
     "idx": 15,
     "catIdx": 8,
-    "code": "FAF-14"
+    "code": "FAF-14",
+    "source": "support"
   }
 ]

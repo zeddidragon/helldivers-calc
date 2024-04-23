@@ -2,15 +2,74 @@ table
   thead
     tr
       for cat in cats
-        th(class=catClass(cat), onclick=`sortBy('${cat}')`)
+        th(class=catClass(cat) onclick=`sortBy('${cat}')`)
           span.sorter ▼
           span= header(cat)
   tbody
     for wpn in sorted(weapons)
       tr
-        for cat in cats
-          td(class=cellClass(cat, wpn))= value(cat, wpn)
-
+        td.source(title=sourceFull(wpn))
+          span(class=wpn.source).source-main= sourceLabels[wpn.source]
+          if wpn.sourcepage
+            span.source-page=wpn.sourcepage
+        td(class=wpn.category title=categoryFull(wpn)).category= wpn.category
+        td.code= wpn.code
+        td.name= wpn.name
+        td.damage
+          span.damage-main(title="Direct Hit")= wpn.damage
+          if wpn.xdamage
+            span.damage-x(title="Explosion")= wpn.xdamage
+        td.ap
+          span(class=`ap-${wpn.ap}` title="Direct Hit")= wpn.ap
+          if wpn.xap
+            span(class=`ap-${wpn.xap}` title="Explosion").ap-x= wpn.xap
+        td.recoil= wpn.recoil
+        td.rpm
+          if wpn.charge
+            span.rpm-charge(title="Charge time")
+              sup.one-over 1/
+              span= wpn.charge
+          else
+            span.rpm-main= wpn.rpm
+        td.dps= dps(wpn)
+        td.reload
+          if wpn.reloadone
+            span.reload-one(title="Reload 1 round")
+              = wpn.reloadone.toFixed(1)
+          if wpn.reload
+            span.reload-main(title="Reload from empty")
+              = wpn.reload.toFixed(1)
+          if wpn.reloadearly
+            span.reload-early(title="Early Reload (not empty)")
+              = wpn.reloadearly.toFixed(1)
+        td.cap
+          if wpn.limit
+            span.cap-limit= wpn.limit
+          else if wpn.cap
+            span.cap-rounds= wpn.cap
+        td.spare
+          if wpn.clips
+            span.clipsize(title="Rounds in Clip")= wpn.clipsize
+            span.clipstart(title="Starting Clips")= wpn.clipstart
+            span.clips(title="Max Clips")= wpn.clips
+          if wpn.rounds
+            span.roundstart(title="Starting Rounds")= wpn.roundstart
+            span.rounds(title="Max Spare Rounds")= wpn.rounds
+          if wpn.mags
+            span.magstart(title="Starting Mags")= wpn.magstart || wpn.mags
+            span.mags(title="Max Mags")= wpn.mags
+        td.pickup
+          if wpn.clipsupply
+            span.clipsupply(title="Clips From Supply")= wpn.clipsupply
+            span.clipbox(title="Clips From Box")= wpn.clipbox
+          if wpn.roundsupply
+            span.roundsupply(title="Rounds From Supply")= wpn.roundsupply
+            span.roundsbox(title="Rounds From Box")= wpn.roundsbox
+          if wpn.supply
+            span.supply(title="Rounds From Supply")= wpn.supply
+            span.box(title="Rounds From Box")= wpn.box
+        td.magdmg(title="Damage From Magdump")= magDmg(wpn) || ''
+        td.total(title="Damage From All Ammo Expended")= totalDmg(wpn) || ''
 ul
   li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
   li Spare is in the format (Starting mags) / (Max mags)

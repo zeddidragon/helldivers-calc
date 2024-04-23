@@ -29,6 +29,9 @@ for(const r of reloads) {
 }
 for(const wpn of weapons) {
   const r = register[wpn.name]
+  if(!wpn.source) {
+    wpn.source = 'support'
+  }
   if(r) {
     wpn.reload = r.reload
     if(r.reloadearly && r.reloadearly !== r.reload) {

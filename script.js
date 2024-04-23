@@ -79,6 +79,14 @@ function sortNums(props, {
 }
 
 const sorting = {
+  source: (a, b) => {
+    const aSource = sourceOrder.indexOf(a.source)
+    const bSource = sourceOrder.indexOf(b.source)
+    const sourceDiff = aSource - bSource
+    if(sourceDiff) return sourceDiff
+    const pageDiff = a.sourcepage - b.sourcepage
+    if(pageDiff) return pageDiff
+  },
   code: sortText('code'),
   name: sortText('name'),
   damage: (a, b) => {
@@ -137,65 +145,53 @@ const classes = {
   category: (cat, { category }) => {
     return [cat, category.split(/\s+/g).join('-').toLowerCase()]
   },
+  source: (cat, { source }) => {
+    return [cat, source]
+  },
   default: (cat) => {
     return cat
   },
 }
 
+const sourceOrder = [
+  'dlc-super',
+  'start',
+  'hd-mobilize',
+  'steel-vets',
+  'cut-edge',
+  'demo-det',
+  'support',
+]
+const sourceLabels = {
+  'dlc-super': 'DLC',
+  'start': 'Start',
+  'hd-mobilize': 'Hell',
+  'steel-vets': 'Vets',
+  'cut-edge': 'Cut',
+  'demo-det': 'Demo',
+  'support': '',
+}
+const sourceNames = {
+  'dlc-super': 'DLC: Super Citizen',
+  'start': 'Starting Equipment',
+  'hd-mobilize': 'Helldivers: Mobilize',
+  'steel-vets': 'Steeled Veterans',
+  'cut-edge': 'Cutting Edge',
+  'demo-det': 'Democratic Detonation',
+  'support': 'Support Weapon',
+}
+const categoryNames = {
+  'AR': 'Assault Rifle',
+  'DMR': 'Designated Marksman Rifle',
+  'SMG': 'Submachine Gun',
+  'SG': 'Shotgun',
+  'EX': 'Explosive / Rocket',
+  'NRG': 'Energy-Based',
+  'HG': 'Sidearm',
+  'SUP': 'Support Weapon',
+}
+
 const values = {
-  reload: ({ reload, reloadearly, reloadone }) => {
-    if(!reload) {
-      return ''
-    }
-    if(reloadone) {
-      return `${reloadone.toFixed(1)} - ${reload.toFixed(1)}`
-    }
-    if(reloadearly) {
-      return `${reload.toFixed(1)} / ${reloadearly.toFixed(1)}`
-    }
-    return reload.toFixed(1)
-  },
-  spare: ({ mags, magstart, clips, clipsize, rounds, roundstart }) => {
-    if(magstart) {
-      return `x ${magstart}/${mags}`
-    } else if(mags) {
-      return `x ${mags}`
-    } else if(clipsize) {
-      return `[${clipsize}]x ${clips}`
-    } else if(roundstart) {
-      return `+ ${roundstart}/${rounds}`
-    } else if(rounds) {
-      return `+ ${rounds}`
-    } else {
-      return ''
-    }
-  },
-  xdamage: ({ xdamage }) => {
-    if(xdamage) {
-      return `+ ${xdamage}`
-    }
-    return null
-  },
-  cap: ({ cap, limit }) => {
-    if(cap) {
-      return cap
-    }
-    if(limit) {
-      return `${limit}s`
-    }
-  },
-  dps: (wpn) => {
-    return Math.round(dps(wpn)) || ''
-  },
-  box: ({ box, clipbox }) => {
-    if(box) {
-      return box
-    }
-    if(clipbox) {
-      return `${clipbox}/2`
-    }
-    return ''
-  },
   supply: ({ box, supply, clipbox, clipsupply, roundsbox, roundsupply }) => {
     if(supply) {
       return `${supply}/${box}`
@@ -208,12 +204,6 @@ const values = {
     }
     return ''
   },
-  magdmg: (wpn) => {
-    return magDmg(wpn) || ''
-  },
-  total: (wpn) => {
-    return totalDmg(wpn) || ''
-  },
 }
 
 const locals = {
@@ -223,14 +213,24 @@ const locals = {
     const sorter = sorting[locals.sortBy] || sorting.default
     return weapons.sort(sorter)
   },
+  sourceLabels,
+  sourceFull: (wpn) => {
+    const desc = sourceNames[wpn.source]
+    if(wpn.sourcepage) {
+      return `${desc}, page ${wpn.sourcepage}`
+    }
+    return desc
+  },
+  categoryFull: (wpn) => {
+    return categoryNames[wpn.category]
+  },
   cats: [
+    'source',
     'category',
     'code',
     'name',
     'damage',
-    'xdamage',
     'ap',
-    'xap',
     'recoil',
     'rpm',
     'dps',
@@ -247,14 +247,11 @@ const locals = {
       locals.sortBy === cat ? 'sorting' : '',
     ]
   },
+  dps: wpn => Math.round(dps(wpn)) || '',
+  magDmg,
+  totalDmg,
   header: (cat) => {
     return headers[cat]?.(cat) || headers.default(cat)
-  },
-  value: (cat, wpn) => {
-    return values[cat]?.(wpn) || wpn[cat]
-  },
-  cellClass: (cat, wpn) => {
-    return classes[cat]?.(cat, wpn) || classes?.default(cat, wpn)
   },
 }
 

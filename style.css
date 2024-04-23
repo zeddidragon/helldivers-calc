@@ -35,18 +35,8 @@ th {
   cursor: pointer;
 }
 
-th.xdamage, th.xap {
-  border-left: none;
-  visibility: hidden;
-}
-
-th.code, td.code, th.damage, td.damage {
+th.code, td.code {
   border-right: none;
-}
-
-th.ap, td.ap {
-  border-right: none;
-  text-align: right;
 }
 
 td.xdamage {
@@ -79,29 +69,87 @@ td.name {
   color: #edfedf;
 }
 
-.category.ar, .ap-5 {
+.category.AR, .ap-5, .source-main.demo-det {
   color: #e88;
 }
-.category.smg, .ap-8 {
+.category.SMG, .ap-8 {
   color: #eee;
 }
-.category.sg, .ap-3 {
+.category.SG, .ap-3 {
   color: #8e8;
 }
-.category.dmr, .ap-2 {
+.category.DMR, .ap-2, .source-main.cut-edge {
   color: #88e;
 }
-.category.ex, .ap-4 {
+.category.EX, .ap-4, .source-main.steel-vets {
   color: #ea8;
 }
-.category.nrg, .ap-9 {
+.category.NRG, .ap-9, .source-main.hd-mobilize {
   color: #ee8;
 }
-.category.hg, .ap-6 {
+.category.HG, .ap-6 {
   color: #a8e;
 }
-.category.sup, .ap-7 {
+.category.SUP, .ap-7, .source-main.support {
   color: #e8a;
+}
+.source-page {
+  font-size: 0.7em;
+  padding-left: 0.5em;
+}
+.one-over {
+  color: #a98a98;
+  font-size: 0.7em;
+}
+.rpm-charge:after {
+  color: #a98a98;
+  content: "s";
+}
+.source-page:before {
+  content: "#";
+}
+.damage-x {
+  color: #ea8;
+  padding-left: 0.5em;
+}
+.damage-x:before {
+  color: #a98a98;
+  content: "+";
+}
+.ap-x {
+  padding-left: 0.5em;
+}
+.reload-one:after {
+  color: #a98a98;
+  content: "-";
+}
+
+.cap-limit:after {
+  color: #a98a98;
+  content: "+";
+}
+.roundstart:before {
+  color: #a98a98;
+  content: "+";
+}
+.magstart:before {
+  color: #a98a98;
+  content: "×";
+}
+.reload-early:before, .clipstart:after, .roundstart:after, .magstart:after, .roundsbox:before, .clipsbox:before, .box:before {
+  color: #a98a98;
+  content: "/";
+}
+
+.clipsize {
+  font-size: 0.7em;
+  color: #a98a98;
+}
+.clipsize:before {
+  content: "[";
+}
+.clipsize:after {
+  content: "]x";
 }
 
 @media only screen and (max-width: 540px) {
