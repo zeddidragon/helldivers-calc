@@ -689,7 +689,6 @@
     "charge": 3,
     "reload": 1.3,
     "rounds": 20,
-    "roundstart": 10,
     "roundsbox": 2,
     "roundsupply": 10,
     "idx": 10,

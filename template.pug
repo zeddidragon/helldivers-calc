@@ -55,7 +55,7 @@ table
             span.clipstart(title="Starting Clips")= wpn.clipstart
             span.clips(title="Max Clips")= wpn.clips
           if wpn.rounds
-            span.roundstart(title="Starting Rounds")= wpn.roundstart
+            span.roundstart(title="Starting Rounds")= wpn.roundstart || wpn.rounds
             span.rounds(title="Max Spare Rounds")= wpn.rounds
           if wpn.mags
             span.magstart(title="Starting Mags")= wpn.magstart || wpn.mags
@@ -73,7 +73,6 @@ table
         td.magdmg(title="Damage From Magdump")= magDmg(wpn) || ''
         td.total(title="Damage From All Ammo Expended")= totalDmg(wpn) || ''
 ul
+  li Damage distribution between direct hit and explosive are approximate.
   li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
-  li Spare is in the format (Starting mags) / (Max mags)
-  li Pickup is in the format (Supply box) / (Ammo box)
-
+  li Starting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.
