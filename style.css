@@ -126,7 +126,7 @@ td.name {
 
 .cap-limit:after {
   color: #a98a98;
-  content: "+";
+  content: "s";
 }
 .roundstart:before {
   color: #a98a98;
