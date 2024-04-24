@@ -347,7 +347,8 @@
     "catIdx": 5,
     "code": "CB-9",
     "durable": 50,
-    "xdurable": 200
+    "xdurable": 200,
+    "reload": 3.3
   },
   {
     "category": "EX",
@@ -802,7 +803,10 @@
     "catIdx": 8,
     "code": "LAS-99",
     "source": "support",
-    "durable": 650
+    "durable": 650,
+    "xdamage": 150,
+    "xdurable": 150,
+    "xap": 3
   },
   {
     "category": "SUP",
@@ -814,7 +818,10 @@
     "catIdx": 8,
     "code": "EAT-17",
     "source": "support",
-    "durable": 650
+    "durable": 650,
+    "xdamage": 150,
+    "xdurable": 150,
+    "xap": 3
   },
   {
     "category": "SUP",
@@ -831,7 +838,10 @@
     "catIdx": 8,
     "code": "GR-8",
     "source": "support",
-    "durable": 650
+    "durable": 650,
+    "xdamage": 150,
+    "xdurable": 150,
+    "xap": 3
   },
   {
     "category": "SUP",
