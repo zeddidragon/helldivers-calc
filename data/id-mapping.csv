@@ -1,0 +1,49 @@
+code,property,damageid
+AR-23 Liberator,damage,48
+AR-23P Liberator Penetrator,damage,45
+AR-23C Liberator Concussive,damage,47
+BR-14 Adjudicator,damage,62
+R-63 Diligence,damage,69
+R-63CS Diligence Counter-Sniper,damage,70
+SMG-37 Defender,damage,33,GUESSING
+MP-98 Knight,damage,25
+SG-8 Punisher,damage,84
+SG-8S Slugger,damage,95
+SG-8P Punisher Plasma,damage,20
+SG-8P Punisher Plasma,xdamage,181,GUESSING
+ARC-12 Blitzer,damage,113
+SG-225 Breaker,damage,30
+SG-225SP Breaker Spray & Pray,damage,97
+SG-225IE Breaker Incendiary,damage,101
+CB-9 Exploding Crossbow,damage,120
+CB-9 Exploding Crossbow,xdamage,121,FAIRLY SURE
+JAR-5 Dominator,damage,80
+R-36 Eruptor,damage,76
+R-36 Eruptor,xdamage,198,GUESSING
+LAS-5 Scythe,damage,292
+LAS-16 Sickle,damage,19
+PLAS-1 Scorcher,damage,20
+PLAS-1 Scorcher,xdamage,180,GUESSING
+P-2 Peacemaker,damage,24
+P-19 Redeemer,damage,24
+GP-31 Grenade Pistol,damage,219,GUESSING
+GP-31 Grenade Pistol,xdamage,130
+LAS-7 Dagger,damage,291
+P-4 Senator,damage,41
+M-105 Stalwart,damage,48
+MG-43 Machine Gun,damage,62
+MG-206 Heavy Machine Gun,damage,117
+ARC-3 Arc Thrower,damage,111
+APW-1 Anti-Material Rifle,damage,118
+GL-21 Grenade Launcher,damage,11
+GL-21 Grenade Launcher,xdamage,215
+AC-8 Autocannon,damage,123
+AC-8 Autocannon,xdamage,181,GUESSING
+RS-422 Railgun (Safe),damage,21
+RS-422 Railgun,damage,22
+LAS-98 Laser Cannon,damage,296
+EAT-17 Expendable Anti-Tank,damage,131
+GR-8 Recoiless Rifle,damage,132
+LAS-99 Quasar Cannon,damage,222,GUESSING
+FAF-14 Spear,damage,145,GUESSING
+FAF-14 Spear,xdamage,231,GUESSING

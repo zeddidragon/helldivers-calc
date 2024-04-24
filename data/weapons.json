@@ -16,7 +16,8 @@
     "idx": 1,
     "reloadearly": 2,
     "catIdx": 1,
-    "code": "AR-23"
+    "code": "AR-23",
+    "durable": 5
   },
   {
     "category": "AR",
@@ -36,7 +37,8 @@
     "idx": 2,
     "reloadearly": 2,
     "catIdx": 1,
-    "code": "AR-23P"
+    "code": "AR-23P",
+    "durable": 15
   },
   {
     "category": "AR",
@@ -56,7 +58,8 @@
     "idx": 3,
     "reloadearly": 2,
     "catIdx": 1,
-    "code": "AR-23C"
+    "code": "AR-23C",
+    "durable": 10
   },
   {
     "category": "DMR",
@@ -76,7 +79,8 @@
     "idx": 1,
     "reloadearly": 1.7,
     "catIdx": 2,
-    "code": "BR-14"
+    "code": "BR-14",
+    "durable": 8
   },
   {
     "category": "DMR",
@@ -96,7 +100,8 @@
     "idx": 2,
     "reloadearly": 1.9,
     "catIdx": 2,
-    "code": "R-63"
+    "code": "R-63",
+    "durable": 11
   },
   {
     "category": "DMR",
@@ -116,7 +121,8 @@
     "idx": 3,
     "reloadearly": 1.9,
     "catIdx": 2,
-    "code": "R-63CS"
+    "code": "R-63CS",
+    "durable": 12
   },
   {
     "category": "SMG",
@@ -139,7 +145,8 @@
     "reload": 2.8,
     "reloadearly": 2,
     "catIdx": 3,
-    "code": "SMG-37"
+    "code": "SMG-37",
+    "durable": 7
   },
   {
     "category": "SMG",
@@ -161,14 +168,16 @@
     "idx": 2,
     "reloadearly": 1.7,
     "catIdx": 3,
-    "code": "MP-98"
+    "code": "MP-98",
+    "durable": 5
   },
   {
     "category": "SG",
     "name": "Punisher",
     "source": "hd-mobilize",
     "sourcepage": 1,
-    "damage": 405,
+    "pellets": 9,
+    "damage": 45,
     "ap": 2,
     "rpm": 80,
     "recoil": 120,
@@ -184,7 +193,8 @@
     "reload": 6.9,
     "reloadone": 0.8,
     "catIdx": 4,
-    "code": "SG-8"
+    "code": "SG-8",
+    "durable": 12
   },
   {
     "category": "SG",
@@ -207,7 +217,8 @@
     "reload": 6.9,
     "reloadone": 0.8,
     "catIdx": 4,
-    "code": "SG-8S"
+    "code": "SG-8S",
+    "durable": 75
   },
   {
     "category": "SG",
@@ -228,28 +239,33 @@
     "idx": 3,
     "reload": 2.5,
     "catIdx": 4,
-    "code": "SG-8P"
+    "code": "SG-8P",
+    "durable": 50,
+    "xdurable": 150
   },
   {
     "category": "SG",
     "name": "Blitzer",
     "source": "cut-edge",
     "sourcepage": 3,
-    "damage": 250,
-    "ap": 2,
+    "pellets": 5,
+    "damage": 50,
+    "ap": 3,
     "rpm": 30,
     "recoil": 60,
     "idx": 4,
     "catIdx": 4,
-    "code": "ARC-12"
+    "code": "ARC-12",
+    "durable": 35
   },
   {
     "category": "SG",
     "name": "Breaker",
     "source": "hd-mobilize",
     "sourcepage": 4,
-    "damage": 330,
-    "ap": 2,
+    "pellets": 11,
+    "damage": 38,
+    "ap": 3,
     "rpm": 300,
     "recoil": 55,
     "cap": 13,
@@ -261,14 +277,16 @@
     "idx": 5,
     "reloadearly": 1.8,
     "catIdx": 4,
-    "code": "SG-225"
+    "code": "SG-225",
+    "durable": 3
   },
   {
     "category": "SG",
     "name": "Breaker Spray & Pray",
     "source": "hd-mobilize",
     "sourcepage": 9,
-    "damage": 192,
+    "pellets": 16,
+    "damage": 12,
     "ap": 2,
     "rpm": 330,
     "recoil": 45,
@@ -281,14 +299,16 @@
     "idx": 6,
     "reloadearly": 2.1,
     "catIdx": 4,
-    "code": "SG-225SP"
+    "code": "SG-225SP",
+    "durable": 4
   },
   {
     "category": "SG",
     "name": "Breaker Incendiary",
     "source": "steel-vets",
     "sourcepage": 2,
-    "damage": 240,
+    "pellets": 12,
+    "damage": 20,
     "ap": 2,
     "rpm": 300,
     "recoil": 28,
@@ -304,16 +324,17 @@
     "code": "SG-225IE",
     "tags": [
       "fire"
-    ]
+    ],
+    "durable": 10
   },
   {
     "category": "EX",
     "name": "Exploding Crossbow",
     "source": "demo-det",
     "sourcepage": 3,
-    "damage": 250,
-    "xdamage": 170,
-    "ap": 2,
+    "damage": 150,
+    "xdamage": 270,
+    "ap": 3,
     "xap": 2,
     "rpm": 50,
     "recoil": 35,
@@ -324,7 +345,9 @@
     "supply": 6,
     "idx": 1,
     "catIdx": 5,
-    "code": "CB-9"
+    "code": "CB-9",
+    "durable": 50,
+    "xdurable": 200
   },
   {
     "category": "EX",
@@ -332,7 +355,7 @@
     "damage": 300,
     "source": "steel-vets",
     "sourcepage": 3,
-    "ap": 2,
+    "ap": 3,
     "rpm": 250,
     "recoil": 75,
     "cap": 15,
@@ -347,7 +370,8 @@
     "reload": 3.8,
     "reloadearly": 2.6,
     "catIdx": 5,
-    "code": "JAR-5"
+    "code": "JAR-5",
+    "durable": 90
   },
   {
     "category": "EX",
@@ -373,14 +397,15 @@
     "reload": 4.7,
     "reloadearly": 2.8,
     "catIdx": 5,
-    "code": "R-36"
+    "code": "R-36",
+    "durable": 115,
+    "xdurable": 150
   },
   {
     "category": "NRG",
     "name": "Scythe",
     "source": "hd-mobilize",
     "sourcepage": 5,
-    "dps": 300,
     "ap": 2,
     "recoil": 1,
     "limit": 8,
@@ -389,10 +414,16 @@
     "magstart": 3,
     "box": 3,
     "supply": 6,
+    "tags": [
+      "laser"
+    ],
     "idx": 1,
     "reloadearly": 3,
     "catIdx": 6,
-    "code": "LAS-5"
+    "code": "LAS-5",
+    "damage": 300,
+    "durable": 60,
+    "dps": 300
   },
   {
     "category": "NRG",
@@ -412,7 +443,8 @@
     "idx": 2,
     "reloadearly": 3,
     "catIdx": 6,
-    "code": "LAS-16"
+    "code": "LAS-16",
+    "durable": 5
   },
   {
     "category": "NRG",
@@ -434,7 +466,9 @@
     "idx": 3,
     "reloadearly": 2.3,
     "catIdx": 6,
-    "code": "PLAS-1"
+    "code": "PLAS-1",
+    "durable": 50,
+    "xdurable": 100
   },
   {
     "category": "HG",
@@ -453,7 +487,8 @@
     "idx": 1,
     "reloadearly": 1.4,
     "catIdx": 7,
-    "code": "P-2"
+    "code": "P-2",
+    "durable": 5
   },
   {
     "category": "HG",
@@ -473,7 +508,8 @@
     "idx": 2,
     "reloadearly": 1.4,
     "catIdx": 7,
-    "code": "P-19"
+    "code": "P-19",
+    "durable": 5
   },
   {
     "category": "HG",
@@ -494,14 +530,15 @@
     "roundsupply": 2,
     "idx": 3,
     "catIdx": 7,
-    "code": "GP-31"
+    "code": "GP-31",
+    "durable": 350,
+    "xdurable": 250
   },
   {
     "category": "HG",
     "name": "Dagger",
     "source": "cut-edge",
     "sourcepage": 3,
-    "dps": 150,
     "ap": 2,
     "recoil": 1,
     "reload": 1.8,
@@ -510,10 +547,16 @@
     "magstart": 3,
     "box": 3,
     "supply": 3,
+    "tags": [
+      "laser"
+    ],
     "idx": 4,
     "reloadearly": 2.3,
     "catIdx": 7,
-    "code": "LAS-7"
+    "code": "LAS-7",
+    "damage": 150,
+    "durable": 15,
+    "dps": 150
   },
   {
     "category": "HG",
@@ -544,7 +587,8 @@
     "reload": 6.1,
     "reloadone": 2.8,
     "catIdx": 7,
-    "code": "P-4"
+    "code": "P-4",
+    "durable": 15
   },
   {
     "category": "SUP",
@@ -553,7 +597,7 @@
     "ap": 2,
     "rpm": 1150,
     "reload": 5.8,
-    "cap": 300,
+    "cap": 250,
     "mags": 3,
     "box": 1,
     "supply": 2,
@@ -561,7 +605,8 @@
     "reloadearly": 4.4,
     "catIdx": 8,
     "code": "M-105",
-    "source": "support"
+    "source": "support",
+    "durable": 5
   },
   {
     "category": "SUP",
@@ -578,7 +623,8 @@
     "reloadearly": 4.2,
     "catIdx": 8,
     "code": "MG-43",
-    "source": "support"
+    "source": "support",
+    "durable": 8
   },
   {
     "category": "SUP",
@@ -595,7 +641,8 @@
     "reloadearly": 5,
     "catIdx": 8,
     "code": "MG-206",
-    "source": "support"
+    "source": "support",
+    "durable": 35
   },
   {
     "category": "SUP",
@@ -607,7 +654,8 @@
     "idx": 4,
     "catIdx": 8,
     "code": "ARC-3",
-    "source": "support"
+    "source": "support",
+    "durable": 50
   },
   {
     "category": "SUP",
@@ -622,7 +670,9 @@
     "catIdx": 8,
     "code": "FLAM-40",
     "source": "support",
-    "tags": ["fire"]
+    "tags": [
+      "fire"
+    ]
   },
   {
     "category": "SUP",
@@ -639,13 +689,14 @@
     "reloadearly": 2.6,
     "catIdx": 8,
     "code": "APW-1",
-    "source": "support"
+    "source": "support",
+    "durable": 135
   },
   {
     "category": "SUP",
     "name": "Grenade Launcher",
-    "damage": 20,
-    "ap": 0,
+    "damage": 5,
+    "ap": 2,
     "xdamage": 350,
     "xap": 3,
     "cap": 10,
@@ -657,7 +708,9 @@
     "reloadearly": 3,
     "catIdx": 8,
     "code": "GL-21",
-    "source": "support"
+    "source": "support",
+    "durable": 0,
+    "xdurable": 350
   },
   {
     "category": "SUP",
@@ -678,7 +731,26 @@
     "reloadearly": 1.7,
     "catIdx": 8,
     "code": "AC-8",
-    "source": "support"
+    "source": "support",
+    "durable": 260,
+    "xdurable": 150
+  },
+  {
+    "category": "SUP",
+    "name": "Railgun (Safe)",
+    "damage": 600,
+    "ap": 4,
+    "cap": 1,
+    "charge": 3,
+    "reload": 1.3,
+    "rounds": 20,
+    "roundsbox": 2,
+    "roundsupply": 10,
+    "idx": 10,
+    "catIdx": 8,
+    "code": "RS-422",
+    "source": "support",
+    "durable": 60
   },
   {
     "category": "SUP",
@@ -694,12 +766,12 @@
     "idx": 10,
     "catIdx": 8,
     "code": "RS-422",
-    "source": "support"
+    "source": "support",
+    "durable": 120
   },
   {
     "category": "SUP",
     "name": "Laser Cannon",
-    "dps": 300,
     "ap": 4,
     "limit": 10,
     "reload": 3.6,
@@ -707,11 +779,17 @@
     "magstart": 1,
     "box": 1,
     "supply": 1,
+    "tags": [
+      "laser"
+    ],
     "idx": 11,
     "reloadearly": 5,
     "catIdx": 8,
     "code": "LAS-98",
-    "source": "support"
+    "source": "support",
+    "damage": 300,
+    "durable": 300,
+    "dps": 300
   },
   {
     "category": "SUP",
@@ -723,7 +801,8 @@
     "charge": 3.1,
     "catIdx": 8,
     "code": "LAS-99",
-    "source": "support"
+    "source": "support",
+    "durable": 650
   },
   {
     "category": "SUP",
@@ -734,7 +813,8 @@
     "idx": 13,
     "catIdx": 8,
     "code": "EAT-17",
-    "source": "support"
+    "source": "support",
+    "durable": 650
   },
   {
     "category": "SUP",
@@ -750,7 +830,8 @@
     "idx": 14,
     "catIdx": 8,
     "code": "GR-8",
-    "source": "support"
+    "source": "support",
+    "durable": 650
   },
   {
     "category": "SUP",
@@ -768,6 +849,8 @@
     "idx": 15,
     "catIdx": 8,
     "code": "FAF-14",
-    "source": "support"
+    "source": "support",
+    "durable": 1000,
+    "xdurable": 200
   }
 ]

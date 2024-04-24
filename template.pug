@@ -30,9 +30,17 @@ table
         td.code= wpn.code
         td.name= wpn.name
         td.damage
+          if wpn.pellets
+            span.pellets(title="Projectiles")= wpn.pellets
           span.damage-main(title="Direct Hit")= wpn.damage
           if wpn.xdamage
             span.damage-x(title="Explosion")= wpn.xdamage
+        td.durable
+          if wpn.pellets
+            span.pellets(title="Projectiles")= wpn.pellets
+          span.durable-main(title="Direct Hit (vs Massive)")= wpn.durable
+          if wpn.xdurable
+            span.durable-x(title="Explosion (vs Massive)")= wpn.xdurable
         td.ap
           span(class=`ap-${wpn.ap}` title="Direct Hit")= wpn.ap
           if wpn.xap
@@ -41,6 +49,8 @@ table
             span(class=`ap-4` title="Fire Status").ap-fire 4
         td.recoil= wpn.recoil
         td.rpm
+          if hasTag(wpn, 'laser')
+            span.rpm-laser Beam
           if wpn.charge
             span.rpm-charge(title="Charge time")
               sup.one-over 1/
@@ -88,5 +98,6 @@ table
         td.total(title="Damage From All Ammo Expended")= totalDmg(wpn) || ''
 ul
   li Damage distribution between direct hit and explosive are approximate.
+  li Mass damage is puzzles together from an unsorted pile of numbers and guesswork. Take it with a pile of salt.
   li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
   li Starting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.

@@ -72,9 +72,21 @@ pug_html = pug_html + "\u003Ctr\u003E\u003Ctd" + (" class=\"source\""+pug_attr("
 if (wpn.sourcepage) {
 pug_html = pug_html + "\u003Cspan class=\"source-page\"\u003E" + (pug_escape(null == (pug_interp = wpn.sourcepage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd" + (pug_attr("class", pug_classes([wpn.category,"category"], [true,false]), false, false)+pug_attr("title", categoryFull(wpn), true, false)) + "\u003E" + (pug_escape(null == (pug_interp = wpn.category) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"code\"\u003E" + (pug_escape(null == (pug_interp = wpn.code) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"name\"\u003E" + (pug_escape(null == (pug_interp = wpn.name) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"damage\"\u003E\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd" + (pug_attr("class", pug_classes([wpn.category,"category"], [true,false]), false, false)+pug_attr("title", categoryFull(wpn), true, false)) + "\u003E" + (pug_escape(null == (pug_interp = wpn.category) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"code\"\u003E" + (pug_escape(null == (pug_interp = wpn.code) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"name\"\u003E" + (pug_escape(null == (pug_interp = wpn.name) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"damage\"\u003E";
+if (wpn.pellets) {
+pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xdamage) {
 pug_html = pug_html + "\u003Cspan class=\"damage-x\" title=\"Explosion\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdamage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"durable\"\u003E";
+if (wpn.pellets) {
+pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003Cspan class=\"durable-main\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+if (wpn.xdurable) {
+pug_html = pug_html + "\u003Cspan class=\"durable-x\" title=\"Explosion (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdurable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"ap\"\u003E\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.ap}`], [true]), false, false)+" title=\"Direct Hit\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xap) {
@@ -84,6 +96,9 @@ if (hasTag(wpn, 'fire')) {
 pug_html = pug_html + "\u003Cspan class=\"ap-4 ap-fire\" title=\"Fire Status\"\u003E4\u003C\u002Fspan\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"recoil\"\u003E" + (pug_escape(null == (pug_interp = wpn.recoil) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"rpm\"\u003E";
+if (hasTag(wpn, 'laser')) {
+pug_html = pug_html + "\u003Cspan class=\"rpm-laser\"\u003EBeam\u003C\u002Fspan\u003E";
+}
 if (wpn.charge) {
 pug_html = pug_html + "\u003Cspan class=\"rpm-charge\" title=\"Charge time\"\u003E\u003Csup class=\"one-over\"\u003E1\u002F\u003C\u002Fsup\u003E\u003Cspan\u003E" + (pug_escape(null == (pug_interp = wpn.charge) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E";
 }
@@ -139,9 +154,21 @@ pug_html = pug_html + "\u003Ctr\u003E\u003Ctd" + (" class=\"source\""+pug_attr("
 if (wpn.sourcepage) {
 pug_html = pug_html + "\u003Cspan class=\"source-page\"\u003E" + (pug_escape(null == (pug_interp = wpn.sourcepage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd" + (pug_attr("class", pug_classes([wpn.category,"category"], [true,false]), false, false)+pug_attr("title", categoryFull(wpn), true, false)) + "\u003E" + (pug_escape(null == (pug_interp = wpn.category) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"code\"\u003E" + (pug_escape(null == (pug_interp = wpn.code) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"name\"\u003E" + (pug_escape(null == (pug_interp = wpn.name) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"damage\"\u003E\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd" + (pug_attr("class", pug_classes([wpn.category,"category"], [true,false]), false, false)+pug_attr("title", categoryFull(wpn), true, false)) + "\u003E" + (pug_escape(null == (pug_interp = wpn.category) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"code\"\u003E" + (pug_escape(null == (pug_interp = wpn.code) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"name\"\u003E" + (pug_escape(null == (pug_interp = wpn.name) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"damage\"\u003E";
+if (wpn.pellets) {
+pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xdamage) {
 pug_html = pug_html + "\u003Cspan class=\"damage-x\" title=\"Explosion\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdamage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"durable\"\u003E";
+if (wpn.pellets) {
+pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003Cspan class=\"durable-main\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+if (wpn.xdurable) {
+pug_html = pug_html + "\u003Cspan class=\"durable-x\" title=\"Explosion (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdurable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"ap\"\u003E\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.ap}`], [true]), false, false)+" title=\"Direct Hit\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xap) {
@@ -151,6 +178,9 @@ if (hasTag(wpn, 'fire')) {
 pug_html = pug_html + "\u003Cspan class=\"ap-4 ap-fire\" title=\"Fire Status\"\u003E4\u003C\u002Fspan\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"recoil\"\u003E" + (pug_escape(null == (pug_interp = wpn.recoil) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"rpm\"\u003E";
+if (hasTag(wpn, 'laser')) {
+pug_html = pug_html + "\u003Cspan class=\"rpm-laser\"\u003EBeam\u003C\u002Fspan\u003E";
+}
 if (wpn.charge) {
 pug_html = pug_html + "\u003Cspan class=\"rpm-charge\" title=\"Charge time\"\u003E\u003Csup class=\"one-over\"\u003E1\u002F\u003C\u002Fsup\u003E\u003Cspan\u003E" + (pug_escape(null == (pug_interp = wpn.charge) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E";
 }
@@ -200,4 +230,4 @@ pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"magdmg\" title=\"Dam
   }
 }).call(this);
 
-pug_html = pug_html + "\u003C\u002Ftbody\u003E\u003C\u002Ftable\u003E\u003Cul\u003E\u003Cli\u003EDamage distribution between direct hit and explosive are approximate.\u003C\u002Fli\u003E\u003Cli\u003EReload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.\u003C\u002Fli\u003E\u003Cli\u003EStarting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.\u003C\u002Fli\u003E\u003C\u002Ful\u003E";}.call(this,"catClass" in locals_for_with?locals_for_with.catClass:typeof catClass!=="undefined"?catClass:undefined,"categoryFull" in locals_for_with?locals_for_with.categoryFull:typeof categoryFull!=="undefined"?categoryFull:undefined,"cats" in locals_for_with?locals_for_with.cats:typeof cats!=="undefined"?cats:undefined,"colClass" in locals_for_with?locals_for_with.colClass:typeof colClass!=="undefined"?colClass:undefined,"cols" in locals_for_with?locals_for_with.cols:typeof cols!=="undefined"?cols:undefined,"dps" in locals_for_with?locals_for_with.dps:typeof dps!=="undefined"?dps:undefined,"getWeapons" in locals_for_with?locals_for_with.getWeapons:typeof getWeapons!=="undefined"?getWeapons:undefined,"hasTag" in locals_for_with?locals_for_with.hasTag:typeof hasTag!=="undefined"?hasTag:undefined,"header" in locals_for_with?locals_for_with.header:typeof header!=="undefined"?header:undefined,"magDmg" in locals_for_with?locals_for_with.magDmg:typeof magDmg!=="undefined"?magDmg:undefined,"sourceClass" in locals_for_with?locals_for_with.sourceClass:typeof sourceClass!=="undefined"?sourceClass:undefined,"sourceFull" in locals_for_with?locals_for_with.sourceFull:typeof sourceFull!=="undefined"?sourceFull:undefined,"sourceLabels" in locals_for_with?locals_for_with.sourceLabels:typeof sourceLabels!=="undefined"?sourceLabels:undefined,"sourceOrder" in locals_for_with?locals_for_with.sourceOrder:typeof sourceOrder!=="undefined"?sourceOrder:undefined,"totalDmg" in locals_for_with?locals_for_with.totalDmg:typeof totalDmg!=="undefined"?totalDmg:undefined));;return pug_html;}
+pug_html = pug_html + "\u003C\u002Ftbody\u003E\u003C\u002Ftable\u003E\u003Cul\u003E\u003Cli\u003EDamage distribution between direct hit and explosive are approximate.\u003C\u002Fli\u003E\u003Cli\u003EMass damage is puzzles together from an unsorted pile of numbers and guesswork. Take it with a pile of salt.\u003C\u002Fli\u003E\u003Cli\u003EReload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.\u003C\u002Fli\u003E\u003Cli\u003EStarting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.\u003C\u002Fli\u003E\u003C\u002Ful\u003E";}.call(this,"catClass" in locals_for_with?locals_for_with.catClass:typeof catClass!=="undefined"?catClass:undefined,"categoryFull" in locals_for_with?locals_for_with.categoryFull:typeof categoryFull!=="undefined"?categoryFull:undefined,"cats" in locals_for_with?locals_for_with.cats:typeof cats!=="undefined"?cats:undefined,"colClass" in locals_for_with?locals_for_with.colClass:typeof colClass!=="undefined"?colClass:undefined,"cols" in locals_for_with?locals_for_with.cols:typeof cols!=="undefined"?cols:undefined,"dps" in locals_for_with?locals_for_with.dps:typeof dps!=="undefined"?dps:undefined,"getWeapons" in locals_for_with?locals_for_with.getWeapons:typeof getWeapons!=="undefined"?getWeapons:undefined,"hasTag" in locals_for_with?locals_for_with.hasTag:typeof hasTag!=="undefined"?hasTag:undefined,"header" in locals_for_with?locals_for_with.header:typeof header!=="undefined"?header:undefined,"magDmg" in locals_for_with?locals_for_with.magDmg:typeof magDmg!=="undefined"?magDmg:undefined,"sourceClass" in locals_for_with?locals_for_with.sourceClass:typeof sourceClass!=="undefined"?sourceClass:undefined,"sourceFull" in locals_for_with?locals_for_with.sourceFull:typeof sourceFull!=="undefined"?sourceFull:undefined,"sourceLabels" in locals_for_with?locals_for_with.sourceLabels:typeof sourceLabels!=="undefined"?sourceLabels:undefined,"sourceOrder" in locals_for_with?locals_for_with.sourceOrder:typeof sourceOrder!=="undefined"?sourceOrder:undefined,"totalDmg" in locals_for_with?locals_for_with.totalDmg:typeof totalDmg!=="undefined"?totalDmg:undefined));;return pug_html;}

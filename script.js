@@ -1,9 +1,13 @@
 async function loadWeapons() {
-  window.weapons = await fetch(`weapons.json`).then(res => res.json())
+  window.weapons = await fetch(`data/weapons.json`).then(res => res.json())
 }
 
 function shotDmg(wpn) {
   return (wpn.damage || 0) + (wpn.xdamage || 0)
+}
+
+function massDmg(wpn) {
+  return (wpn.durable || 0) + (wpn.xdurable || 0)
 }
 
 function dps(wpn) {
@@ -92,6 +96,9 @@ const sorting = {
   damage: (a, b) => {
     return (shotDmg(b) - shotDmg(a)) || sorting.code(a, b)
   },
+  durable: (a, b) => {
+    return (massDmg(b) - massDmg(a)) || sorting.damage(a, b)
+  },
   ap: sortNums(['ap', 'xap'], ['max', 'min'], -1),
   spare: sortNums(['mags', 'rounds', 'clips'], ['max', 'min'], -1),
   supply: sortNums(['supply', 'roundsupply', 'clipsupply'], ['max', 'min'], -1),
@@ -123,6 +130,7 @@ const headers =  {
   ap: () => 'AP',
   xap: () => ' ',
   damage: () => 'Dmg',
+  durable: () => 'Mass',
   xdamage: () => 'xDmg',
   supply: () => 'Pickup',
   magdmg: () => 'Mag',
@@ -237,6 +245,7 @@ const locals = {
     'code',
     'name',
     'damage',
+    'durable',
     'ap',
     'recoil',
     'rpm',

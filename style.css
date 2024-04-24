@@ -39,16 +39,6 @@ th.code, td.code {
   border-right: none;
 }
 
-td.xdamage {
-  color: #ea8;
-}
-
-th.xdamage, td.xdamage, tr.xdamage, th.xap, td.xap {
-  border-left: none;
-  padding-left: 0;
-  text-align: left;
-}
-
 th.name, td.name {
   border-left: none;
   text-align: left;
@@ -84,7 +74,7 @@ td.name {
 .category.EX, .ap-4, .source.steel-vets {
   color: #ea8;
 }
-.category.NRG, .ap-9, .source.hd-mobilize {
+.category.NRG, .ap-9, .source.hd-mobilize, .rpm-laser {
   color: #ee8;
 }
 .category.HG, .ap-6 {
@@ -108,13 +98,17 @@ td.name {
 .source-page:before {
   content: "#";
 }
-.damage-x {
+.damage-x, .durable-x {
   color: #ea8;
-  padding-left: 0.5em;
+  padding-left: 0.1em;
 }
-.damage-x:before {
+.damage-x:before, .durable-x:before {
   color: #a98a98;
   content: "+";
+}
+.pellets:after {
+  color: #a98a98;
+  content: "×";
 }
 .ap-x, .ap-fire {
   padding-left: 0.5em;
