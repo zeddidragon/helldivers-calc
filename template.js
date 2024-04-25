@@ -4,7 +4,7 @@ function pug_classes_array(r,a){for(var s,e="",u="",c=Array.isArray(a),g=0;g<r.l
 function pug_classes_object(r){var a="",n="";for(var o in r)o&&r[o]&&pug_has_own_property.call(r,o)&&(a=a+n+o,n=" ");return a}
 function pug_escape(e){var a=""+e,t=pug_match_html.exec(a);if(!t)return e;var r,c,n,s="";for(r=t.index,c=0;r<a.length;r++){switch(a.charCodeAt(r)){case 34:n="&quot;";break;case 38:n="&amp;";break;case 60:n="&lt;";break;case 62:n="&gt;";break;default:continue}c!==r&&(s+=a.substring(c,r)),c=r+1,s+=n}return c!==r?s+a.substring(c,r):s}
 var pug_has_own_property=Object.prototype.hasOwnProperty;
-var pug_match_html=/["&<>]/;function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (catClass, categoryFull, cats, colClass, cols, dps, getWeapons, hasTag, header, magDmg, sourceClass, sourceFull, sourceLabels, sourceOrder, totalDmg) {pug_html = pug_html + "\u003Cul class=\"sources\"\u003E";
+var pug_match_html=/["&<>]/;function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (catClass, categoryFull, cats, colClass, colSpan, cols, dps, getWeapons, hasTag, header, magDmg, sourceClass, sourceFull, sourceLabels, sourceOrder, totalDmg) {pug_html = pug_html + "\u003Cul class=\"sources\"\u003E";
 // iterate sourceOrder
 ;(function(){
   var $$obj = sourceOrder;
@@ -49,14 +49,14 @@ pug_html = pug_html + "\u003C\u002Ful\u003E\u003Ctable\u003E\u003Cthead\u003E\u0
   if ('number' == typeof $$obj.length) {
       for (var pug_index2 = 0, $$l = $$obj.length; pug_index2 < $$l; pug_index2++) {
         var col = $$obj[pug_index2];
-pug_html = pug_html + "\u003Cth" + (pug_attr("class", pug_classes([colClass(col)], [true]), false, false)+pug_attr("onclick", `sortBy('${col}')`, true, false)) + "\u003E\u003Cspan class=\"sorter\"\u003E▼\u003C\u002Fspan\u003E\u003Cspan\u003E" + (pug_escape(null == (pug_interp = header(col)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fth\u003E";
+pug_html = pug_html + "\u003Cth" + (pug_attr("class", pug_classes([colClass(col)], [true]), false, false)+pug_attr("colspan", colSpan(col), true, false)+pug_attr("onclick", `sortBy('${col}')`, true, false)) + "\u003E\u003Cspan class=\"sorter\"\u003E▼\u003C\u002Fspan\u003E\u003Cspan\u003E" + (pug_escape(null == (pug_interp = header(col)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fth\u003E";
       }
   } else {
     var $$l = 0;
     for (var pug_index2 in $$obj) {
       $$l++;
       var col = $$obj[pug_index2];
-pug_html = pug_html + "\u003Cth" + (pug_attr("class", pug_classes([colClass(col)], [true]), false, false)+pug_attr("onclick", `sortBy('${col}')`, true, false)) + "\u003E\u003Cspan class=\"sorter\"\u003E▼\u003C\u002Fspan\u003E\u003Cspan\u003E" + (pug_escape(null == (pug_interp = header(col)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fth\u003E";
+pug_html = pug_html + "\u003Cth" + (pug_attr("class", pug_classes([colClass(col)], [true]), false, false)+pug_attr("colspan", colSpan(col), true, false)+pug_attr("onclick", `sortBy('${col}')`, true, false)) + "\u003E\u003Cspan class=\"sorter\"\u003E▼\u003C\u002Fspan\u003E\u003Cspan\u003E" + (pug_escape(null == (pug_interp = header(col)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fth\u003E";
     }
   }
 }).call(this);
@@ -115,13 +115,13 @@ pug_html = pug_html + "\u003Cspan class=\"reload-main\" title=\"Reload from empt
 if (wpn.reloadearly) {
 pug_html = pug_html + "\u003Cspan class=\"reload-early\" title=\"Early Reload (not empty)\"\u003E" + (pug_escape(null == (pug_interp = wpn.reloadearly.toFixed(1)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"cap\"\u003E";
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"cap\"\u003E" + (pug_escape(null == (pug_interp = wpn.cap || wpn.limit) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"capextra\"\u003E";
 if (wpn.limit) {
-pug_html = pug_html + "\u003Cspan class=\"cap-limit\"\u003E" + (pug_escape(null == (pug_interp = wpn.limit) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+pug_html = pug_html + "\u003Cspan class=\"cap-limit\"\u003Es\u003C\u002Fspan\u003E";
 }
 else
-if (wpn.cap) {
-pug_html = pug_html + "\u003Cspan class=\"cap-rounds\"\u003E" + (pug_escape(null == (pug_interp = wpn.cap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+if (wpn.capplus) {
+pug_html = pug_html + "\u003Csup class=\"cap-post cap-plus\" title=\"Chambered Round from Hellpod Space Optimization or reloading early\"\u003E" + (pug_escape(null == (pug_interp = wpn.capplus) ? "" : pug_interp)) + "\u003C\u002Fsup\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"spare\"\u003E";
 if (wpn.clips) {
@@ -197,13 +197,13 @@ pug_html = pug_html + "\u003Cspan class=\"reload-main\" title=\"Reload from empt
 if (wpn.reloadearly) {
 pug_html = pug_html + "\u003Cspan class=\"reload-early\" title=\"Early Reload (not empty)\"\u003E" + (pug_escape(null == (pug_interp = wpn.reloadearly.toFixed(1)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"cap\"\u003E";
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"cap\"\u003E" + (pug_escape(null == (pug_interp = wpn.cap || wpn.limit) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"capextra\"\u003E";
 if (wpn.limit) {
-pug_html = pug_html + "\u003Cspan class=\"cap-limit\"\u003E" + (pug_escape(null == (pug_interp = wpn.limit) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+pug_html = pug_html + "\u003Cspan class=\"cap-limit\"\u003Es\u003C\u002Fspan\u003E";
 }
 else
-if (wpn.cap) {
-pug_html = pug_html + "\u003Cspan class=\"cap-rounds\"\u003E" + (pug_escape(null == (pug_interp = wpn.cap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+if (wpn.capplus) {
+pug_html = pug_html + "\u003Csup class=\"cap-post cap-plus\" title=\"Chambered Round from Hellpod Space Optimization or reloading early\"\u003E" + (pug_escape(null == (pug_interp = wpn.capplus) ? "" : pug_interp)) + "\u003C\u002Fsup\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"spare\"\u003E";
 if (wpn.clips) {
@@ -230,4 +230,4 @@ pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"magdmg\" title=\"Dam
   }
 }).call(this);
 
-pug_html = pug_html + "\u003C\u002Ftbody\u003E\u003C\u002Ftable\u003E\u003Cul\u003E\u003Cli\u003EDamage distribution between direct hit and explosive are approximate.\u003C\u002Fli\u003E\u003Cli\u003EMass damage is puzzled together from an unsorted pile of numbers and guesswork. Take it with a heaping of salt.\u003C\u002Fli\u003E\u003Cli\u003EReload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.\u003C\u002Fli\u003E\u003Cli\u003EStarting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.\u003C\u002Fli\u003E\u003C\u002Ful\u003E";}.call(this,"catClass" in locals_for_with?locals_for_with.catClass:typeof catClass!=="undefined"?catClass:undefined,"categoryFull" in locals_for_with?locals_for_with.categoryFull:typeof categoryFull!=="undefined"?categoryFull:undefined,"cats" in locals_for_with?locals_for_with.cats:typeof cats!=="undefined"?cats:undefined,"colClass" in locals_for_with?locals_for_with.colClass:typeof colClass!=="undefined"?colClass:undefined,"cols" in locals_for_with?locals_for_with.cols:typeof cols!=="undefined"?cols:undefined,"dps" in locals_for_with?locals_for_with.dps:typeof dps!=="undefined"?dps:undefined,"getWeapons" in locals_for_with?locals_for_with.getWeapons:typeof getWeapons!=="undefined"?getWeapons:undefined,"hasTag" in locals_for_with?locals_for_with.hasTag:typeof hasTag!=="undefined"?hasTag:undefined,"header" in locals_for_with?locals_for_with.header:typeof header!=="undefined"?header:undefined,"magDmg" in locals_for_with?locals_for_with.magDmg:typeof magDmg!=="undefined"?magDmg:undefined,"sourceClass" in locals_for_with?locals_for_with.sourceClass:typeof sourceClass!=="undefined"?sourceClass:undefined,"sourceFull" in locals_for_with?locals_for_with.sourceFull:typeof sourceFull!=="undefined"?sourceFull:undefined,"sourceLabels" in locals_for_with?locals_for_with.sourceLabels:typeof sourceLabels!=="undefined"?sourceLabels:undefined,"sourceOrder" in locals_for_with?locals_for_with.sourceOrder:typeof sourceOrder!=="undefined"?sourceOrder:undefined,"totalDmg" in locals_for_with?locals_for_with.totalDmg:typeof totalDmg!=="undefined"?totalDmg:undefined));;return pug_html;}
+pug_html = pug_html + "\u003C\u002Ftbody\u003E\u003C\u002Ftable\u003E\u003Cul\u003E\u003Cli\u003EDamage distribution between direct hit and explosive are approximate.\u003C\u002Fli\u003E\u003Cli\u003EMass damage is puzzled together from an unsorted pile of numbers and guesswork. Take it with a heaping of salt.\u003C\u002Fli\u003E\u003Cli\u003EReload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.\u003C\u002Fli\u003E\u003Cli\u003EStarting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.\u003C\u002Fli\u003E\u003C\u002Ful\u003E";}.call(this,"catClass" in locals_for_with?locals_for_with.catClass:typeof catClass!=="undefined"?catClass:undefined,"categoryFull" in locals_for_with?locals_for_with.categoryFull:typeof categoryFull!=="undefined"?categoryFull:undefined,"cats" in locals_for_with?locals_for_with.cats:typeof cats!=="undefined"?cats:undefined,"colClass" in locals_for_with?locals_for_with.colClass:typeof colClass!=="undefined"?colClass:undefined,"colSpan" in locals_for_with?locals_for_with.colSpan:typeof colSpan!=="undefined"?colSpan:undefined,"cols" in locals_for_with?locals_for_with.cols:typeof cols!=="undefined"?cols:undefined,"dps" in locals_for_with?locals_for_with.dps:typeof dps!=="undefined"?dps:undefined,"getWeapons" in locals_for_with?locals_for_with.getWeapons:typeof getWeapons!=="undefined"?getWeapons:undefined,"hasTag" in locals_for_with?locals_for_with.hasTag:typeof hasTag!=="undefined"?hasTag:undefined,"header" in locals_for_with?locals_for_with.header:typeof header!=="undefined"?header:undefined,"magDmg" in locals_for_with?locals_for_with.magDmg:typeof magDmg!=="undefined"?magDmg:undefined,"sourceClass" in locals_for_with?locals_for_with.sourceClass:typeof sourceClass!=="undefined"?sourceClass:undefined,"sourceFull" in locals_for_with?locals_for_with.sourceFull:typeof sourceFull!=="undefined"?sourceFull:undefined,"sourceLabels" in locals_for_with?locals_for_with.sourceLabels:typeof sourceLabels!=="undefined"?sourceLabels:undefined,"sourceOrder" in locals_for_with?locals_for_with.sourceOrder:typeof sourceOrder!=="undefined"?sourceOrder:undefined,"totalDmg" in locals_for_with?locals_for_with.totalDmg:typeof totalDmg!=="undefined"?totalDmg:undefined));;return pug_html;}

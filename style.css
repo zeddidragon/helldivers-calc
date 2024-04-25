@@ -33,13 +33,15 @@ tbody tr:nth-child(odd) {
 
 th {
   cursor: pointer;
-}
-
-th.code, td.code {
+  border-left: none;
   border-right: none;
 }
 
-th.name, td.name {
+td.code {
+  border-right: none;
+}
+
+td.name {
   border-left: none;
   text-align: left;
   overflow: hidden;
@@ -102,9 +104,27 @@ td.name {
   color: #ea8;
   padding-left: 0.1em;
 }
-.damage-x:before, .durable-x:before {
+.damage-x:before, .durable-x:before, .cap-plus:before {
   color: #a98a98;
   content: "+";
+}
+.cap-plus {
+  display: inline-block;
+  font-size: 0.7em;
+  width: 1em;
+}
+.cap-limit {
+  color: #a98a98;
+}
+td.cap {
+  border-right: none;
+  padding-right: 0;
+}
+
+th.capextra, td.capextra {
+  border-left: none;
+  text-align: left;
+  padding-left: 0;
 }
 .pellets:after {
   color: #a98a98;
@@ -116,11 +136,6 @@ td.name {
 .reload-one:after {
   color: #a98a98;
   content: "-";
-}
-
-.cap-limit:after {
-  color: #a98a98;
-  content: "s";
 }
 .roundstart:before {
   color: #a98a98;

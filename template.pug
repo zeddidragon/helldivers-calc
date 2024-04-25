@@ -16,7 +16,10 @@ table
   thead
     tr
       for col in cols
-        th(class=colClass(col) onclick=`sortBy('${col}')`)
+        th(
+          class=colClass(col)
+          colspan=colSpan(col)
+          onclick=`sortBy('${col}')`)
           span.sorter ▼
           span= header(col)
   tbody
@@ -68,11 +71,12 @@ table
           if wpn.reloadearly
             span.reload-early(title="Early Reload (not empty)")
               = wpn.reloadearly.toFixed(1)
-        td.cap
+        td.cap= wpn.cap || wpn.limit
+        td.capextra
           if wpn.limit
-            span.cap-limit= wpn.limit
-          else if wpn.cap
-            span.cap-rounds= wpn.cap
+            span.cap-limit s
+          else if wpn.capplus
+            sup.cap-post.cap-plus(title="Chambered Round from Hellpod Space Optimization or reloading early")= wpn.capplus
         td.spare
           if wpn.clips
             span.clipsize(title="Rounds in Clip")= wpn.clipsize

@@ -108,9 +108,11 @@ const sorting = {
     return (dps(b) - dps(a)) || sorting.damage(a, b)
   },
   cap: (a, b) => {
+    const aCapTotal = (a.cap || a.limit || 0) + (a.capplus || 0)
+    const bCapTotal = (b.cap || b.limit || 0) + (b.capplus || 0)
     const aCap = (a.cap || a.limit || 0)
     const bCap = (b.cap || b.limit || 0)
-    return (bCap - aCap) || sorting.damage(a, b)
+    return (bCapTotal - aCapTotal) || (bCap || aCap) || sorting.damage(a, b)
   },
   magdmg: (a, b) => {
     return (magDmg(b) - magDmg(a)) || sorting.default(a, b)
@@ -128,7 +130,6 @@ const headers =  {
   category: () => 'Type',
   rpm: () => 'RPM',
   ap: () => 'AP',
-  xap: () => ' ',
   damage: () => 'Dmg',
   durable: () => 'Mass',
   xdamage: () => 'xDmg',
@@ -274,6 +275,11 @@ const locals = {
       col,
       locals.sortBy === col ? 'sorting' : '',
     ]
+  },
+  colSpan: (col) => {
+    return {
+      cap: 2,
+    }[col]
   },
   hasTag: (wpn, tag) => {
     return wpn.tags?.includes(tag)
