@@ -274,8 +274,8 @@
     "source": "hd-mobilize",
     "sourcepage": 4,
     "pellets": 11,
-    "damage": 38,
-    "ap": 3,
+    "damage": 30,
+    "ap": 2,
     "rpm": 300,
     "recoil": 55,
     "cap": 13,
@@ -289,7 +289,7 @@
     "reloadearly": 1.8,
     "catIdx": 4,
     "code": "SG-225",
-    "durable": 3
+    "durable": 6
   },
   {
     "category": "SG",
