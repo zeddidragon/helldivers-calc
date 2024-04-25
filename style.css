@@ -47,6 +47,11 @@ td.name {
   overflow: hidden;
 }
 
+td a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
 td.name {
   color: #80c3f5;
 }

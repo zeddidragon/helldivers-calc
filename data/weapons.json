@@ -110,7 +110,7 @@
   },
   {
     "category": "DMR",
-    "name": "Diligence Counter-Sniper",
+    "name": "Diligence Counter Sniper",
     "source": "hd-mobilize",
     "sourcepage": 7,
     "damage": 128,
@@ -682,7 +682,7 @@
   },
   {
     "category": "SUP",
-    "name": "Flame Thrower",
+    "name": "Flamethrower",
     "ap": 3,
     "limit": 12,
     "mags": 4,
@@ -699,7 +699,7 @@
   },
   {
     "category": "SUP",
-    "name": "Anti-Material Rifle",
+    "name": "Anti-Materiel Rifle",
     "damage": 450,
     "ap": 4,
     "cap": 7,
@@ -763,6 +763,7 @@
   {
     "category": "SUP",
     "name": "Railgun (Safe)",
+    "urlname": "Railgun",
     "damage": 600,
     "ap": 4,
     "cap": 1,
@@ -849,7 +850,7 @@
   },
   {
     "category": "SUP",
-    "name": "Recoiless Rifle",
+    "name": "Recoilless Rifle",
     "damage": 650,
     "ap": 6,
     "cap": 1,

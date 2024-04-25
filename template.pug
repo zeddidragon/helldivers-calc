@@ -30,8 +30,10 @@ table
           if wpn.sourcepage
             span.source-page=wpn.sourcepage
         td(class=wpn.category title=categoryFull(wpn)).category= wpn.category
-        td.code= wpn.code
-        td.name= wpn.name
+        td.code
+          a(href=wikiLink(wpn) target="_blank")= wpn.code
+        td.name
+          a(href=wikiLink(wpn) target="_blank")= wpn.name
         td.damage
           if wpn.pellets
             span.pellets(title="Projectiles")= wpn.pellets

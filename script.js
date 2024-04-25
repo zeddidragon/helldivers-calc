@@ -287,6 +287,14 @@ const locals = {
   dps: wpn => Math.round(dps(wpn)) || '',
   magDmg,
   totalDmg,
+  wikiLink: (wpn) => {
+    const url = 'https://helldivers.wiki.gg/wiki'
+    const path = [
+      wpn.code,
+      ...(wpn.urlname || wpn.name).split(/\s+/),
+    ].join('_')
+    return `${url}/${path}`
+  },
   header: (col) => {
     return headers[col]?.(col) || headers.default(col)
   },
