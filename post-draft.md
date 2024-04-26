@@ -1,4 +1,4 @@
-# Damage is still not what you think: How damage works
+# Damage is still not what you think: How "Explosive" damage works
 
 A couple of months back there was a fairly popular post by u/Bluedot55 : [https://www.reddit.com/r/Helldivers/comments/1azh9fw/weapon\_damage\_isnt\_what\_you\_think\_and\_isnt\_what/](https://www.reddit.com/r/Helldivers/comments/1azh9fw/weapon_damage_isnt_what_you_think_and_isnt_what/)
 
@@ -63,10 +63,14 @@ Lib Pen exceeds the light armor and stays at 30.
 
 `8 * 30` vs `15 * 17` suggests Brood Commander's head has 240 half-durable HP or less.
 
+That leaves one oddity, which is how a 400 damage impact grenade doesn't immediately pop Brood Commander's head. I believe this to be because radial attacks have no interaction with brood commander heads, just like with helldiver heads. (Rockets headshotting you kill you because of the rocket's direct damage, the explosion is not multiplied.) Notice how some weapons like Plasma Punishere kills Brood Commander faster with body shots than headshots. The direct portion (75 half-durable) goes to the head, then the explosion (150) touches the body behind the head instead, and these two have seperate health pools.
+
 So what's the takeaway from all of this?
 
 - Weak spot multipliers vs enemies is not a real thing. If it is, no difference has been found between weapons in this department.
 - Laser Cannon enjoyers have already figured this out, but this is a great weapon for durable targets. 300 sustained, durable DPS isn't bad. Autocannon and AMR are still ahead of the pack on this in the short-term.
 - Lib Pen should be alright on gunships and spore spewers compared to competition. Use it _on medium armor durable kill spots_, as low as the supply of those are.
+- With some weapons, body shots can be preferable.
 - Chargers are still a black hole of research into which you can pour hours of your time and understand less than before you started.
+- Please show durability damage in-game.
 - My soul can finally rest, but probably won't.
