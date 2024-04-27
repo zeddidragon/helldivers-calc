@@ -109,9 +109,13 @@ td.name {
   color: #ea8;
   padding-left: 0.1em;
 }
-.damage-x:before, .durable-x:before, .cap-plus:before, .stun-x:before, .push-x:before {
+.damage-x:before, .durable-x:before, .cap-plus:before{
   color: #a98a98;
   content: "+";
+}
+.stun-x:before, .push-x:before {
+  color: #a98a98;
+  content: "/";
 }
 .cap-plus {
   display: inline-block;

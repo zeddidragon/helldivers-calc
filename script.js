@@ -103,6 +103,8 @@ const sorting = {
   },
   ap: sortNums(['ap', 'xap'], ['max', 'min'], -1),
   spare: sortNums(['mags', 'rounds', 'clips'], ['max', 'min'], -1),
+  stun: sortNums(['stun', 'xstun'], ['max', 'min'], -1),
+  push: sortNums(['push', 'xpush'], ['max', 'min'], -1),
   supply: sortNums(['supply', 'roundsupply', 'clipsupply'], ['max', 'min'], -1),
   recoil: sortNum('recoil'),
   rpm: sortNum('rpm'),
