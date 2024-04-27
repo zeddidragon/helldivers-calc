@@ -56,6 +56,14 @@ table
             span(class=`ap-${wpn.xap}` title="Explosion").ap-x= wpn.xap
           if hasTag(wpn, 'fire')
             span(class=`ap-4` title="Fire Status").ap-fire 4
+        td.stun
+          span.stun-main(title="Direct Hit Stagger")= wpn.stun
+          if wpn.xstun
+            span.stun-x(title="Explosion Stagger")= wpn.xstun
+        td.push
+          span.push-main(title="Direct Hit Knockback")= wpn.push
+          if wpn.xpush
+            span.push-x(title="Explosion Knockback")= wpn.xpush
         td.recoil= wpn.recoil
         td.rpm
           if hasTag(wpn, 'laser')
@@ -108,6 +116,6 @@ table
         td.total(title="Damage From All Ammo Expended")= totalDmg(wpn) || ''
 ul
   li Damage distribution between direct hit and explosive are approximate.
-  li Mass damage is puzzled together from an unsorted pile of numbers and guesswork. Take it with a heaping of salt.
+  li Mass damage, stun, and push are puzzled together from an unsorted pile of numbers and guesswork. Take them with a heaping of salt.
   li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
   li Starting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.

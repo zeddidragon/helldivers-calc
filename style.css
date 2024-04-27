@@ -105,11 +105,11 @@ td.name {
 .source-page:before {
   content: "#";
 }
-.damage-x, .durable-x, .pellets-x {
+.damage-x, .durable-x, .pellets-x, .stun-x, .push-x {
   color: #ea8;
   padding-left: 0.1em;
 }
-.damage-x:before, .durable-x:before, .cap-plus:before {
+.damage-x:before, .durable-x:before, .cap-plus:before, .stun-x:before, .push-x:before {
   color: #a98a98;
   content: "+";
 }

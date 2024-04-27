@@ -18,7 +18,9 @@
     "reloadearly": 2,
     "catIdx": 1,
     "code": "AR-23",
-    "durable": 5
+    "durable": 5,
+    "stun": 10,
+    "push": 10
   },
   {
     "category": "AR",
@@ -40,7 +42,9 @@
     "reloadearly": 2,
     "catIdx": 1,
     "code": "AR-23P",
-    "durable": 15
+    "durable": 15,
+    "stun": 10,
+    "push": 10
   },
   {
     "category": "AR",
@@ -62,7 +66,9 @@
     "reloadearly": 2,
     "catIdx": 1,
     "code": "AR-23C",
-    "durable": 10
+    "durable": 10,
+    "stun": 35,
+    "push": 100
   },
   {
     "category": "DMR",
@@ -84,7 +90,9 @@
     "reloadearly": 1.7,
     "catIdx": 2,
     "code": "BR-14",
-    "durable": 8
+    "durable": 8,
+    "stun": 15,
+    "push": 12
   },
   {
     "category": "DMR",
@@ -106,7 +114,9 @@
     "reloadearly": 1.9,
     "catIdx": 2,
     "code": "R-63",
-    "durable": 11
+    "durable": 11,
+    "stun": 15,
+    "push": 14
   },
   {
     "category": "DMR",
@@ -128,7 +138,9 @@
     "reloadearly": 1.9,
     "catIdx": 2,
     "code": "R-63CS",
-    "durable": 12
+    "durable": 12,
+    "stun": 15,
+    "push": 14
   },
   {
     "category": "SMG",
@@ -153,7 +165,9 @@
     "reloadearly": 2,
     "catIdx": 3,
     "code": "SMG-37",
-    "durable": 7
+    "durable": 7,
+    "stun": 10,
+    "push": 5
   },
   {
     "category": "SMG",
@@ -177,7 +191,9 @@
     "reloadearly": 1.7,
     "catIdx": 3,
     "code": "MP-98",
-    "durable": 5
+    "durable": 5,
+    "stun": 10,
+    "push": 4
   },
   {
     "category": "SG",
@@ -203,7 +219,9 @@
     "reloadone": 0.8,
     "catIdx": 4,
     "code": "SG-8",
-    "durable": 12
+    "durable": 12,
+    "stun": 35,
+    "push": 30
   },
   {
     "category": "SG",
@@ -228,7 +246,9 @@
     "reloadone": 0.8,
     "catIdx": 4,
     "code": "SG-8S",
-    "durable": 75
+    "durable": 75,
+    "stun": 20,
+    "push": 35
   },
   {
     "category": "SG",
@@ -251,7 +271,11 @@
     "catIdx": 4,
     "code": "SG-8P",
     "durable": 50,
-    "xdurable": 150
+    "xdurable": 150,
+    "stun": 20,
+    "push": 10,
+    "xstun": 10,
+    "xpush": 7
   },
   {
     "category": "SG",
@@ -266,7 +290,9 @@
     "idx": 4,
     "catIdx": 4,
     "code": "ARC-12",
-    "durable": 35
+    "durable": 35,
+    "stun": 30,
+    "push": 25
   },
   {
     "category": "SG",
@@ -289,7 +315,9 @@
     "reloadearly": 1.8,
     "catIdx": 4,
     "code": "SG-225",
-    "durable": 6
+    "durable": 6,
+    "stun": 10,
+    "push": 10
   },
   {
     "category": "SG",
@@ -312,7 +340,9 @@
     "reloadearly": 2.1,
     "catIdx": 4,
     "code": "SG-225SP",
-    "durable": 4
+    "durable": 4,
+    "stun": 3,
+    "push": 1
   },
   {
     "category": "SG",
@@ -338,7 +368,9 @@
     "tags": [
       "fire"
     ],
-    "durable": 10
+    "durable": 10,
+    "stun": 10,
+    "push": 10
   },
   {
     "category": "EX",
@@ -362,7 +394,11 @@
     "code": "CB-9",
     "durable": 50,
     "xdurable": 200,
-    "reload": 3.3
+    "reload": 3.3,
+    "stun": 20,
+    "push": 10,
+    "xstun": 25,
+    "xpush": 10
   },
   {
     "category": "EX",
@@ -387,7 +423,9 @@
     "reloadearly": 2.6,
     "catIdx": 5,
     "code": "JAR-5",
-    "durable": 90
+    "durable": 90,
+    "stun": 35,
+    "push": 15
   },
   {
     "category": "EX",
@@ -416,7 +454,11 @@
     "catIdx": 5,
     "code": "R-36",
     "durable": 115,
-    "xdurable": 150
+    "xdurable": 150,
+    "stun": 35,
+    "push": 20,
+    "xstun": 20,
+    "xpush": 15
   },
   {
     "category": "NRG",
@@ -440,7 +482,9 @@
     "code": "LAS-5",
     "damage": 300,
     "durable": 60,
-    "dps": 300
+    "dps": 300,
+    "stun": 0,
+    "push": 0
   },
   {
     "category": "NRG",
@@ -461,7 +505,9 @@
     "reloadearly": 3,
     "catIdx": 6,
     "code": "LAS-16",
-    "durable": 5
+    "durable": 5,
+    "stun": 10,
+    "push": 10
   },
   {
     "category": "NRG",
@@ -485,7 +531,11 @@
     "catIdx": 6,
     "code": "PLAS-1",
     "durable": 50,
-    "xdurable": 100
+    "xdurable": 100,
+    "stun": 20,
+    "push": 10,
+    "xstun": 10,
+    "xpush": 7
   },
   {
     "category": "HG",
@@ -506,7 +556,9 @@
     "reloadearly": 1.4,
     "catIdx": 7,
     "code": "P-2",
-    "durable": 5
+    "durable": 5,
+    "stun": 10,
+    "push": 4
   },
   {
     "category": "HG",
@@ -528,7 +580,9 @@
     "reloadearly": 1.4,
     "catIdx": 7,
     "code": "P-19",
-    "durable": 5
+    "durable": 5,
+    "stun": 10,
+    "push": 4
   },
   {
     "category": "HG",
@@ -552,7 +606,11 @@
     "catIdx": 7,
     "code": "GP-31",
     "durable": 350,
-    "xdurable": 250
+    "xdurable": 250,
+    "stun": 50,
+    "push": 40,
+    "xstun": 40,
+    "xpush": 10
   },
   {
     "category": "HG",
@@ -576,7 +634,9 @@
     "code": "LAS-7",
     "damage": 150,
     "durable": 15,
-    "dps": 150
+    "dps": 150,
+    "stun": 0,
+    "push": 0
   },
   {
     "category": "HG",
@@ -608,7 +668,9 @@
     "reloadone": 2.8,
     "catIdx": 7,
     "code": "P-4",
-    "durable": 15
+    "durable": 15,
+    "stun": 20,
+    "push": 10
   },
   {
     "category": "SUP",
@@ -627,7 +689,9 @@
     "catIdx": 8,
     "code": "M-105",
     "source": "support",
-    "durable": 5
+    "durable": 5,
+    "stun": 10,
+    "push": 10
   },
   {
     "category": "SUP",
@@ -646,7 +710,9 @@
     "catIdx": 8,
     "code": "MG-43",
     "source": "support",
-    "durable": 8
+    "durable": 8,
+    "stun": 15,
+    "push": 12
   },
   {
     "category": "SUP",
@@ -665,7 +731,9 @@
     "catIdx": 8,
     "code": "MG-206",
     "source": "support",
-    "durable": 35
+    "durable": 35,
+    "stun": 15,
+    "push": 20
   },
   {
     "category": "SUP",
@@ -678,7 +746,9 @@
     "catIdx": 8,
     "code": "ARC-3",
     "source": "support",
-    "durable": 50
+    "durable": 50,
+    "stun": 35,
+    "push": 10
   },
   {
     "category": "SUP",
@@ -735,7 +805,11 @@
     "code": "GL-21",
     "source": "support",
     "durable": 0,
-    "xdurable": 350
+    "xdurable": 350,
+    "stun": 40,
+    "push": 10,
+    "xstun": 25,
+    "xpush": 40
   },
   {
     "category": "SUP",
@@ -758,7 +832,11 @@
     "code": "AC-8",
     "source": "support",
     "durable": 260,
-    "xdurable": 150
+    "xdurable": 150,
+    "stun": 30,
+    "push": 20,
+    "xstun": 10,
+    "xpush": 7
   },
   {
     "category": "SUP",
@@ -776,7 +854,9 @@
     "catIdx": 8,
     "code": "RS-422",
     "source": "support",
-    "durable": 60
+    "durable": 60,
+    "stun": 50,
+    "push": 15
   },
   {
     "category": "SUP",
@@ -793,7 +873,9 @@
     "catIdx": 8,
     "code": "RS-422",
     "source": "support",
-    "durable": 120
+    "durable": 120,
+    "stun": 50,
+    "push": 15
   },
   {
     "category": "SUP",
@@ -815,7 +897,9 @@
     "source": "support",
     "damage": 300,
     "durable": 300,
-    "dps": 300
+    "dps": 300,
+    "stun": 0,
+    "push": 0
   },
   {
     "category": "SUP",
@@ -831,7 +915,11 @@
     "durable": 650,
     "xdamage": 150,
     "xdurable": 150,
-    "xap": 3
+    "xap": 3,
+    "stun": 50,
+    "push": 40,
+    "xstun": 50,
+    "xpush": 40
   },
   {
     "category": "SUP",
@@ -846,7 +934,11 @@
     "durable": 650,
     "xdamage": 150,
     "xdurable": 150,
-    "xap": 3
+    "xap": 3,
+    "stun": 50,
+    "push": 25,
+    "xstun": 50,
+    "xpush": 40
   },
   {
     "category": "SUP",
@@ -886,7 +978,11 @@
     "code": "FAF-14",
     "source": "support",
     "durable": 1000,
-    "xdurable": 200
+    "xdurable": 200,
+    "stun": 50,
+    "push": 25,
+    "xstun": 60,
+    "xpush": 70
   },
   {
     "category": "SUP",
@@ -907,6 +1003,10 @@
     "idx": 16,
     "catIdx": 9,
     "code": "RL-77",
-    "source": "support"
+    "source": "support",
+    "stun": 50,
+    "push": 25,
+    "xstun": 30,
+    "xpush": 40
   }
 ]

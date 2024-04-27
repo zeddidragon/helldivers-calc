@@ -69,6 +69,8 @@ for(const wpn of weapons) {
     }
     wpn[`${prefix}durable`] = dmg.secondaryDamage
     wpn[`${prefix}ap`] = dmg.pen1
+    wpn[`${prefix}stun`] = dmg.unknown2
+    wpn[`${prefix}push`] = dmg.unknown3
   }
   if(wpn.reloadearly && wpn.rounds) {
     wpn.reloadone = wpn.reloadearly
