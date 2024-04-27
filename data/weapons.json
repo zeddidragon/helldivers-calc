@@ -981,8 +981,8 @@
     "xdurable": 200,
     "stun": 50,
     "push": 25,
-    "xstun": 60,
-    "xpush": 70
+    "xstun": 30,
+    "xpush": 40
   },
   {
     "category": "SUP",
