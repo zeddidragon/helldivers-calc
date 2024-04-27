@@ -3,11 +3,13 @@ async function loadWeapons() {
 }
 
 function shotDmg(wpn) {
-  return (wpn.damage || 0) + (wpn.xdamage || 0)
+  return ((wpn.pellets || 1) * (wpn.damage || 0)
+    + (wpn.xpellets || 1) * (wpn.xdamage || 0))
 }
 
 function massDmg(wpn) {
-  return (wpn.durable || 0) + (wpn.xdurable || 0)
+  return ((wpn.pellets || 1) * (wpn.durable || 0)
+    + (wpn.xpellets || 1) * (wpn.xdurable || 0))
 }
 
 function dps(wpn) {
@@ -130,8 +132,7 @@ const headers =  {
   category: () => 'Type',
   rpm: () => 'RPM',
   ap: () => 'AP',
-  damage: () => 'Dmg',
-  durable: () => 'Mass',
+  durable: () => 'Massive',
   xdamage: () => 'xDmg',
   supply: () => 'Pickup',
   magdmg: () => 'Mag',

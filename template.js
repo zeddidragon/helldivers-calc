@@ -72,21 +72,25 @@ pug_html = pug_html + "\u003Ctr\u003E\u003Ctd" + (" class=\"source\""+pug_attr("
 if (wpn.sourcepage) {
 pug_html = pug_html + "\u003Cspan class=\"source-page\"\u003E" + (pug_escape(null == (pug_interp = wpn.sourcepage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd" + (pug_attr("class", pug_classes([wpn.category,"category"], [true,false]), false, false)+pug_attr("title", categoryFull(wpn), true, false)) + "\u003E" + (pug_escape(null == (pug_interp = wpn.category) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"code\"\u003E\u003Ca" + (pug_attr("href", wikiLink(wpn), true, false)+" target=\"_blank\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.code) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"name\"\u003E\u003Ca" + (pug_attr("href", wikiLink(wpn), true, false)+" target=\"_blank\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.name) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"damage\"\u003E";
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd" + (pug_attr("class", pug_classes([wpn.category,"category"], [true,false]), false, false)+pug_attr("title", categoryFull(wpn), true, false)) + "\u003E" + (pug_escape(null == (pug_interp = wpn.category) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"code\"\u003E\u003Ca" + (pug_attr("href", wikiLink(wpn), true, false)+" target=\"_blank\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.code) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"name\"\u003E\u003Ca" + (pug_attr("href", wikiLink(wpn), true, false)+" target=\"_blank\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.name) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"damage\"\u003E\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.pellets) {
 pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xdamage) {
 pug_html = pug_html + "\u003Cspan class=\"damage-x\" title=\"Explosion\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdamage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"durable\"\u003E";
+if (wpn.xpellets) {
+pug_html = pug_html + "\u003Cspan class=\"pellets-x\" title=\"Sub-Munitions\"\u003E" + (pug_escape(null == (pug_interp = wpn.xpellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"durable\"\u003E\u003Cspan class=\"durable-main\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.pellets) {
 pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003Cspan class=\"durable-main\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xdurable) {
 pug_html = pug_html + "\u003Cspan class=\"durable-x\" title=\"Explosion (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdurable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+if (wpn.xpellets) {
+pug_html = pug_html + "\u003Cspan class=\"pellets-x\" title=\"Sub-Munitions\"\u003E" + (pug_escape(null == (pug_interp = wpn.xpellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"ap\"\u003E\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.ap}`], [true]), false, false)+" title=\"Direct Hit\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xap) {
@@ -154,21 +158,25 @@ pug_html = pug_html + "\u003Ctr\u003E\u003Ctd" + (" class=\"source\""+pug_attr("
 if (wpn.sourcepage) {
 pug_html = pug_html + "\u003Cspan class=\"source-page\"\u003E" + (pug_escape(null == (pug_interp = wpn.sourcepage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd" + (pug_attr("class", pug_classes([wpn.category,"category"], [true,false]), false, false)+pug_attr("title", categoryFull(wpn), true, false)) + "\u003E" + (pug_escape(null == (pug_interp = wpn.category) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"code\"\u003E\u003Ca" + (pug_attr("href", wikiLink(wpn), true, false)+" target=\"_blank\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.code) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"name\"\u003E\u003Ca" + (pug_attr("href", wikiLink(wpn), true, false)+" target=\"_blank\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.name) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"damage\"\u003E";
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd" + (pug_attr("class", pug_classes([wpn.category,"category"], [true,false]), false, false)+pug_attr("title", categoryFull(wpn), true, false)) + "\u003E" + (pug_escape(null == (pug_interp = wpn.category) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"code\"\u003E\u003Ca" + (pug_attr("href", wikiLink(wpn), true, false)+" target=\"_blank\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.code) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"name\"\u003E\u003Ca" + (pug_attr("href", wikiLink(wpn), true, false)+" target=\"_blank\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.name) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"damage\"\u003E\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.pellets) {
 pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xdamage) {
 pug_html = pug_html + "\u003Cspan class=\"damage-x\" title=\"Explosion\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdamage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"durable\"\u003E";
+if (wpn.xpellets) {
+pug_html = pug_html + "\u003Cspan class=\"pellets-x\" title=\"Sub-Munitions\"\u003E" + (pug_escape(null == (pug_interp = wpn.xpellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"durable\"\u003E\u003Cspan class=\"durable-main\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.pellets) {
 pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003Cspan class=\"durable-main\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xdurable) {
 pug_html = pug_html + "\u003Cspan class=\"durable-x\" title=\"Explosion (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdurable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+if (wpn.xpellets) {
+pug_html = pug_html + "\u003Cspan class=\"pellets-x\" title=\"Sub-Munitions\"\u003E" + (pug_escape(null == (pug_interp = wpn.xpellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"ap\"\u003E\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.ap}`], [true]), false, false)+" title=\"Direct Hit\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xap) {

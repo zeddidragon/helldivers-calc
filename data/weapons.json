@@ -887,5 +887,26 @@
     "source": "support",
     "durable": 1000,
     "xdurable": 200
+  },
+  {
+    "category": "SUP",
+    "name": "Airburst Rocket Launcher",
+    "damage": 500,
+    "durable": 500,
+    "ap": 6,
+    "xpellets": 16,
+    "xdurable": 250,
+    "xdamage": 250,
+    "xap": 3,
+    "cap": 1,
+    "reload": 6.7,
+    "rounds": 5,
+    "roundstart": 5,
+    "roundsbox": 1,
+    "roundsupply": 3,
+    "idx": 16,
+    "catIdx": 9,
+    "code": "RL-77",
+    "source": "support"
   }
 ]

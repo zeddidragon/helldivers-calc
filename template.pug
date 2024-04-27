@@ -35,17 +35,21 @@ table
         td.name
           a(href=wikiLink(wpn) target="_blank")= wpn.name
         td.damage
+          span.damage-main(title="Direct Hit")= wpn.damage
           if wpn.pellets
             span.pellets(title="Projectiles")= wpn.pellets
-          span.damage-main(title="Direct Hit")= wpn.damage
           if wpn.xdamage
             span.damage-x(title="Explosion")= wpn.xdamage
+          if wpn.xpellets
+            span.pellets-x(title="Sub-Munitions")= wpn.xpellets
         td.durable
+          span.durable-main(title="Direct Hit (vs Massive)")= wpn.durable
           if wpn.pellets
             span.pellets(title="Projectiles")= wpn.pellets
-          span.durable-main(title="Direct Hit (vs Massive)")= wpn.durable
           if wpn.xdurable
             span.durable-x(title="Explosion (vs Massive)")= wpn.xdurable
+          if wpn.xpellets
+            span.pellets-x(title="Sub-Munitions")= wpn.xpellets
         td.ap
           span(class=`ap-${wpn.ap}` title="Direct Hit")= wpn.ap
           if wpn.xap
