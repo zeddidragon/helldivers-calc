@@ -69,6 +69,12 @@ for(const wpn of weapons) {
     }
     wpn[`${prefix}durable`] = dmg.secondaryDamage
     wpn[`${prefix}ap`] = dmg.pen1
+    if(dmg.pen2 < dmg.pen1) {
+      wpn[`${prefix}ap2`] = dmg.pen2
+    }
+    if(dmg.pen3 < dmg.pen2) {
+      wpn[`${prefix}ap3`] = dmg.pen3
+    }
     wpn[`${prefix}stun`] = dmg.unknown2
     wpn[`${prefix}push`] = dmg.unknown3
   }
@@ -79,3 +85,28 @@ for(const wpn of weapons) {
 }
 
 fs.writeFileSync('data/weapons.json', JSON.stringify(weapons, null, 2))
+
+const wikiTables = weapons.map(wpn => {
+  const shots = wpn.pellets || 1
+  return `# ${wpn.code} ${wpn.name}
+{{Weapon_Damage_Statistics
+  | standard_damage = ${wpn.damage * shots}
+  | durable_damage = ${wpn.durable * shots}
+  | aoe_standard_damage = ${wpn.xdamage * shots || ''}
+  | aoe_durable_damage = ${wpn.xdurable * shots || ''}
+  | pellet_amount = ${wpn.pellets || ''}
+  | pellet_standard_damage = ${wpn.damage}
+  | pellet_durable_damage = ${wpn.durable || ''}
+  | stagger_value = ${wpn.stun}
+  | aoe_stagger_value = ${wpn.xstun || ''}
+  | knockback_value = ${wpn.push || ''}
+  | aoe_knockback_value = ${wpn.xpush || ''}
+  | structure_destroyer =
+  | penetration_direct = ${wpn.ap}
+  | penetration_angle_slight = ${wpn.ap2 || ''}
+  | penetration_angle_heavy = ${wpn.ap3 || ''}
+  | penetration_aoe = ${wpn.xap || ''}
+}}`
+}).join('\n\n')
+
+fs.writeFileSync('wiki-tables.md', wikiTables)

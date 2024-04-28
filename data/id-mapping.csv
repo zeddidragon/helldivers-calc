@@ -34,7 +34,8 @@ M-105 Stalwart,damage,48
 MG-43 Machine Gun,damage,62
 MG-206 Heavy Machine Gun,damage,117
 ARC-3 Arc Thrower,damage,111
-APW-1 Anti-Material Rifle,damage,118
+# FLAM-40 Flamethrower,damage,9
+APW-1 Anti-Materiel Rifle,damage,118
 GL-21 Grenade Launcher,damage,11
 GL-21 Grenade Launcher,xdamage,215
 AC-8 Autocannon,damage,123
@@ -44,8 +45,8 @@ RS-422 Railgun,damage,22
 LAS-98 Laser Cannon,damage,296
 EAT-17 Expendable Anti-Tank,damage,131
 EAT-17 Expendable Anti-Tank,xdamage,220,GUESSING
-GR-8 Recoiless Rifle,damage,132
-GR-8 Recoiless Rifle,xdamage,221,GUESSING
+GR-8 Recoilless Rifle,damage,132
+GR-8 Recoilless Rifle,xdamage,221,GUESSING
 LAS-99 Quasar Cannon,damage,222,GUESSING
 LAS-99 Quasar Cannon,xdamage,223,GUESSING
 FAF-14 Spear,damage,145,GUESSING
