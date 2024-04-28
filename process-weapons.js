@@ -95,8 +95,8 @@ const wikiTables = weapons.map(wpn => {
   | aoe_standard_damage = ${wpn.xdamage * shots || ''}
   | aoe_durable_damage = ${wpn.xdurable * shots || ''}
   | pellet_amount = ${wpn.pellets || ''}
-  | pellet_standard_damage = ${wpn.damage}
-  | pellet_durable_damage = ${wpn.durable || ''}
+  | pellet_standard_damage = ${(wpn.pellets && wpn.damage) || ''}
+  | pellet_durable_damage = ${(wpn.pellets && wpn.durable) || ''}
   | stagger_value = ${wpn.stun}
   | aoe_stagger_value = ${wpn.xstun || ''}
   | knockback_value = ${wpn.push || ''}
