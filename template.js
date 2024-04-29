@@ -121,6 +121,9 @@ pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"dps\"\u003E" + (pug_
 if (wpn.reloadone) {
 pug_html = pug_html + "\u003Cspan class=\"reload-one\" title=\"Reload 1 round\"\u003E" + (pug_escape(null == (pug_interp = wpn.reloadone.toFixed(1)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
+if (wpn.reloadx) {
+pug_html = pug_html + "\u003Cspan" + (" class=\"reload-x\""+pug_attr("title", `Reload ${wpn.reloadxnum} rounds`, true, false)) + "\u003E" + (pug_escape(null == (pug_interp = wpn.reloadx.toFixed(1)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
 if (wpn.reload) {
 pug_html = pug_html + "\u003Cspan class=\"reload-main\" title=\"Reload from empty\"\u003E" + (pug_escape(null == (pug_interp = wpn.reload.toFixed(1)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
@@ -133,7 +136,7 @@ pug_html = pug_html + "\u003Cspan class=\"cap-limit\"\u003Es\u003C\u002Fspan\u00
 }
 else
 if (wpn.capplus) {
-pug_html = pug_html + "\u003Csup class=\"cap-post cap-plus\" title=\"Chambered Round from Hellpod Space Optimization or reloading early\"\u003E" + (pug_escape(null == (pug_interp = wpn.capplus) ? "" : pug_interp)) + "\u003C\u002Fsup\u003E";
+pug_html = pug_html + "\u003Csup class=\"cap-post cap-plus\" title=\"Chambered Round from reloading early\"\u003E" + (pug_escape(null == (pug_interp = wpn.capplus) ? "" : pug_interp)) + "\u003C\u002Fsup\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"spare\"\u003E";
 if (wpn.clips) {
@@ -215,6 +218,9 @@ pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"dps\"\u003E" + (pug_
 if (wpn.reloadone) {
 pug_html = pug_html + "\u003Cspan class=\"reload-one\" title=\"Reload 1 round\"\u003E" + (pug_escape(null == (pug_interp = wpn.reloadone.toFixed(1)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
+if (wpn.reloadx) {
+pug_html = pug_html + "\u003Cspan" + (" class=\"reload-x\""+pug_attr("title", `Reload ${wpn.reloadxnum} rounds`, true, false)) + "\u003E" + (pug_escape(null == (pug_interp = wpn.reloadx.toFixed(1)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
 if (wpn.reload) {
 pug_html = pug_html + "\u003Cspan class=\"reload-main\" title=\"Reload from empty\"\u003E" + (pug_escape(null == (pug_interp = wpn.reload.toFixed(1)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
@@ -227,7 +233,7 @@ pug_html = pug_html + "\u003Cspan class=\"cap-limit\"\u003Es\u003C\u002Fspan\u00
 }
 else
 if (wpn.capplus) {
-pug_html = pug_html + "\u003Csup class=\"cap-post cap-plus\" title=\"Chambered Round from Hellpod Space Optimization or reloading early\"\u003E" + (pug_escape(null == (pug_interp = wpn.capplus) ? "" : pug_interp)) + "\u003C\u002Fsup\u003E";
+pug_html = pug_html + "\u003Csup class=\"cap-post cap-plus\" title=\"Chambered Round from reloading early\"\u003E" + (pug_escape(null == (pug_interp = wpn.capplus) ? "" : pug_interp)) + "\u003C\u002Fsup\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"spare\"\u003E";
 if (wpn.clips) {

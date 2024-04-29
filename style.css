@@ -154,7 +154,7 @@ th.capextra, td.capextra {
   color: #a98a98;
   content: "×";
 }
-.reload-early:before, .clipstart:after, .roundstart:after, .magstart:after, .roundsbox:before, .clipsbox:before, .box:before {
+.reload-early:before, .reload-x:after, .clipstart:after, .roundstart:after, .magstart:after, .roundsbox:before, .clipsbox:before, .box:before {
   color: #a98a98;
   content: "/";
 }

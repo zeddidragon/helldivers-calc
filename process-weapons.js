@@ -30,11 +30,12 @@ const reloads = fs.readFileSync('./data/reloads.csv', 'utf-8')
   .split('\n')
   .slice(1)
   .map(r => r.split(','))
-  .map(([name, rStart, rEnd, eStart, eEnd]) => {
+  .map(([name, rStart, rEnd, eStart, eEnd, xStart, xEnd]) => {
     return {
       name,
       reload: Math.round((frames(rEnd) - frames(rStart)) / 6) / 10,
       reloadearly: eStart && Math.round((frames(eEnd) - frames(eStart)) / 6) / 10,
+      xtime: eStart && Math.round((frames(xEnd) - frames(xStart)) / 6) / 10,
     }
   })
 
@@ -57,6 +58,9 @@ for(const wpn of weapons) {
     wpn.reload = r.reload
     if(r.reloadearly && r.reloadearly !== r.reload) {
       wpn.reloadearly = r.reloadearly
+    }
+    if(r.xtime) {
+      wpn.reloadx = r.xtime
     }
   }
   if(wpn.reloadearly && wpn.rounds) {

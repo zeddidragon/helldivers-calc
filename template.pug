@@ -79,6 +79,9 @@ table
           if wpn.reloadone
             span.reload-one(title="Reload 1 round")
               = wpn.reloadone.toFixed(1)
+          if wpn.reloadx
+            span.reload-x(title=`Reload ${wpn.reloadxnum} rounds`)
+              = wpn.reloadx.toFixed(1)
           if wpn.reload
             span.reload-main(title="Reload from empty")
               = wpn.reload.toFixed(1)
@@ -90,7 +93,7 @@ table
           if wpn.limit
             span.cap-limit s
           else if wpn.capplus
-            sup.cap-post.cap-plus(title="Chambered Round from Hellpod Space Optimization or reloading early")= wpn.capplus
+            sup.cap-post.cap-plus(title="Chambered Round from reloading early")= wpn.capplus
         td.spare
           if wpn.clips
             span.clipsize(title="Rounds in Clip")= wpn.clipsize

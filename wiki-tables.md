@@ -318,6 +318,46 @@
   | penetration_aoe = 3
 }}
 
+# SG-8P Punisher Plasma
+{{Weapon_Damage_Statistics
+  | standard_damage = 100
+  | durable_damage = 50
+  | aoe_standard_damage = 150
+  | aoe_durable_damage = 150
+  | pellet_amount = 
+  | pellet_standard_damage = 
+  | pellet_durable_damage = 
+  | stagger_value = 20
+  | aoe_stagger_value = 25
+  | knockback_value = 10
+  | aoe_knockback_value = 40
+  | structure_destroyer =
+  | penetration_direct = 2
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
+  | penetration_aoe = 3
+}}
+
+# ARC-12 Blitzer
+{{Weapon_Damage_Statistics
+  | standard_damage = 250
+  | durable_damage = 175
+  | aoe_standard_damage = 
+  | aoe_durable_damage = 
+  | pellet_amount = 5
+  | pellet_standard_damage = 50
+  | pellet_durable_damage = 35
+  | stagger_value = 30
+  | aoe_stagger_value = 
+  | knockback_value = 25
+  | aoe_knockback_value = 
+  | structure_destroyer =
+  | penetration_direct = 3
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
+  | penetration_aoe = 
+}}
+
 # LAS-5 Scythe
 {{Weapon_Damage_Statistics
   | standard_damage = 350
@@ -376,46 +416,6 @@
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 3
-}}
-
-# SG-8P Punisher Plasma
-{{Weapon_Damage_Statistics
-  | standard_damage = 100
-  | durable_damage = 50
-  | aoe_standard_damage = 150
-  | aoe_durable_damage = 150
-  | pellet_amount = 
-  | pellet_standard_damage = 
-  | pellet_durable_damage = 
-  | stagger_value = 20
-  | aoe_stagger_value = 25
-  | knockback_value = 10
-  | aoe_knockback_value = 40
-  | structure_destroyer =
-  | penetration_direct = 2
-  | penetration_angle_slight = 
-  | penetration_angle_heavy = 
-  | penetration_aoe = 3
-}}
-
-# ARC-12 Blitzer
-{{Weapon_Damage_Statistics
-  | standard_damage = 250
-  | durable_damage = 175
-  | aoe_standard_damage = 
-  | aoe_durable_damage = 
-  | pellet_amount = 5
-  | pellet_standard_damage = 50
-  | pellet_durable_damage = 35
-  | stagger_value = 30
-  | aoe_stagger_value = 
-  | knockback_value = 25
-  | aoe_knockback_value = 
-  | structure_destroyer =
-  | penetration_direct = 3
-  | penetration_angle_slight = 
-  | penetration_angle_heavy = 
-  | penetration_aoe = 
 }}
 
 # P-2 Peacemaker
@@ -520,8 +520,8 @@
 
 # M-105 Stalwart
 {{Weapon_Damage_Statistics
-  | standard_damage = 55
-  | durable_damage = 5
+  | standard_damage = 60
+  | durable_damage = 6
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
