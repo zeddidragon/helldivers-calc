@@ -51,6 +51,7 @@ for(const dmg of damages) {
 for(const wpn of weapons) {
   const name = `${wpn.code} ${wpn.name}`
   const r = reloadRegister[name]
+  wpn.fullname = name
   if(!wpn.source) {
     wpn.source = 'support'
   }
