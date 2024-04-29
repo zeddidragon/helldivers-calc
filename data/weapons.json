@@ -20,7 +20,7 @@
     "code": "AR-23",
     "durable": 5,
     "stun": 10,
-    "push": 10
+    "push": 4
   },
   {
     "category": "AR",
@@ -66,7 +66,7 @@
     "reloadearly": 2,
     "catIdx": 1,
     "code": "AR-23C",
-    "durable": 10,
+    "durable": 15,
     "stun": 35,
     "push": 100
   },
@@ -99,7 +99,7 @@
     "name": "Diligence",
     "source": "hd-mobilize",
     "sourcepage": 2,
-    "damage": 112,
+    "damage": 125,
     "ap": 2,
     "rpm": 350,
     "recoil": 35,
@@ -114,7 +114,7 @@
     "reloadearly": 1.9,
     "catIdx": 2,
     "code": "R-63",
-    "durable": 11,
+    "durable": 13,
     "stun": 15,
     "push": 14
   },
@@ -138,7 +138,7 @@
     "reloadearly": 1.9,
     "catIdx": 2,
     "code": "R-63CS",
-    "durable": 12,
+    "durable": 14,
     "stun": 15,
     "push": 14
   },
@@ -333,8 +333,8 @@
     "name": "Exploding Crossbow",
     "source": "demo-det",
     "sourcepage": 3,
-    "damage": 150,
-    "xdamage": 270,
+    "damage": 270,
+    "xdamage": 150,
     "ap": 3,
     "xap": 2,
     "rpm": 50,
@@ -349,9 +349,9 @@
     "catIdx": 5,
     "code": "CB-9",
     "durable": 50,
-    "xdurable": 200,
+    "xdurable": 150,
     "reload": 3.3,
-    "stun": 20,
+    "stun": 30,
     "push": 10,
     "xstun": 25,
     "xpush": 10
@@ -411,11 +411,56 @@
     "code": "R-36",
     "durable": 115,
     "xdurable": 150,
+    "xap2": 0,
     "stun": 35,
     "push": 20,
-    "xstun": 20,
-    "xpush": 15,
-    "xap2": 0
+    "xstun": 30,
+    "xpush": 20
+  },
+  {
+    "category": "NRG",
+    "name": "Punisher Plasma",
+    "source": "cut-edge",
+    "sourcepage": 2,
+    "damage": 100,
+    "xdamage": 150,
+    "ap": 2,
+    "xap": 3,
+    "rpm": 80,
+    "recoil": 110,
+    "cap": 8,
+    "mags": 8,
+    "magstart": 6,
+    "box": 4,
+    "supply": 8,
+    "idx": 1,
+    "reload": 2.5,
+    "catIdx": 6,
+    "code": "SG-8P",
+    "durable": 50,
+    "xdurable": 150,
+    "xap2": 0,
+    "stun": 20,
+    "push": 10,
+    "xstun": 25,
+    "xpush": 40
+  },
+  {
+    "category": "NRG",
+    "name": "Blitzer",
+    "source": "cut-edge",
+    "sourcepage": 3,
+    "pellets": 5,
+    "damage": 50,
+    "ap": 3,
+    "rpm": 45,
+    "recoil": 60,
+    "idx": 2,
+    "catIdx": 6,
+    "code": "ARC-12",
+    "durable": 35,
+    "stun": 30,
+    "push": 25
   },
   {
     "category": "NRG",
@@ -433,12 +478,13 @@
     "tags": [
       "laser"
     ],
-    "idx": 1,
+    "idx": 3,
     "reloadearly": 3,
     "catIdx": 6,
     "code": "LAS-5",
     "damage": 350,
     "durable": 70,
+    "dps": 350,
     "stun": 0,
     "push": 0
   },
@@ -457,7 +503,7 @@
     "magstart": 3,
     "box": 3,
     "supply": 3,
-    "idx": 2,
+    "idx": 4,
     "reloadearly": 3,
     "catIdx": 6,
     "code": "LAS-16",
@@ -482,62 +528,17 @@
     "magstart": 3,
     "box": 3,
     "supply": 6,
-    "idx": 3,
+    "idx": 5,
     "reloadearly": 2.3,
     "catIdx": 6,
     "code": "PLAS-1",
     "durable": 50,
     "xdurable": 100,
+    "xap2": 0,
     "stun": 20,
     "push": 10,
     "xstun": 10,
-    "xpush": 7,
-    "xap2": 0
-  },
-  {
-    "category": "NRG",
-    "name": "Punisher Plasma",
-    "source": "cut-edge",
-    "sourcepage": 2,
-    "damage": 100,
-    "xdamage": 150,
-    "ap": 2,
-    "xap": 3,
-    "rpm": 80,
-    "recoil": 110,
-    "cap": 8,
-    "mags": 8,
-    "magstart": 6,
-    "box": 4,
-    "supply": 8,
-    "idx": 4,
-    "reload": 2.5,
-    "catIdx": 6,
-    "code": "SG-8P",
-    "durable": 50,
-    "xdurable": 150,
-    "stun": 20,
-    "push": 10,
-    "xstun": 10,
-    "xpush": 7,
-    "xap2": 0
-  },
-  {
-    "category": "NRG",
-    "name": "Blitzer",
-    "source": "cut-edge",
-    "sourcepage": 3,
-    "pellets": 5,
-    "damage": 50,
-    "ap": 3,
-    "rpm": 45,
-    "recoil": 60,
-    "idx": 5,
-    "catIdx": 6,
-    "code": "ARC-12",
-    "durable": 35,
-    "stun": 30,
-    "push": 25
+    "xpush": 7
   },
   {
     "category": "HG",
@@ -558,7 +559,7 @@
     "reloadearly": 1.4,
     "catIdx": 7,
     "code": "P-2",
-    "durable": 5,
+    "durable": 15,
     "stun": 10,
     "push": 4
   },
@@ -609,10 +610,11 @@
     "code": "GP-31",
     "durable": 350,
     "xdurable": 250,
+    "xap2": 0,
     "stun": 50,
     "push": 40,
-    "xstun": 40,
-    "xpush": 10
+    "xstun": 50,
+    "xpush": 40
   },
   {
     "category": "HG",
@@ -635,7 +637,8 @@
     "catIdx": 7,
     "code": "LAS-7",
     "damage": 200,
-    "durable": 15,
+    "durable": 20,
+    "dps": 200,
     "stun": 0,
     "push": 0
   },
@@ -661,7 +664,7 @@
     "reloadone": 2.8,
     "catIdx": 7,
     "code": "P-4",
-    "durable": 15,
+    "durable": 35,
     "stun": 20,
     "push": 10
   },
@@ -809,13 +812,13 @@
     "source": "support",
     "durable": 0,
     "xdurable": 350,
-    "stun": 40,
-    "push": 10,
-    "xstun": 25,
-    "xpush": 40,
     "ap2": 1,
     "ap3": 0,
-    "xap2": 0
+    "xap2": 0,
+    "stun": 40,
+    "push": 10,
+    "xstun": 50,
+    "xpush": 40
   },
   {
     "category": "SUP",
@@ -839,11 +842,11 @@
     "source": "support",
     "durable": 260,
     "xdurable": 150,
+    "xap2": 0,
     "stun": 30,
     "push": 20,
-    "xstun": 10,
-    "xpush": 7,
-    "xap2": 0
+    "xstun": 30,
+    "xpush": 20
   },
   {
     "category": "SUP",
@@ -863,7 +866,7 @@
     "code": "RS-422",
     "source": "support",
     "durable": 60,
-    "stun": 50,
+    "stun": 35,
     "push": 15
   },
   {
@@ -883,10 +886,10 @@
     "code": "RS-422",
     "source": "support",
     "durable": 120,
-    "stun": 50,
-    "push": 15,
     "ap2": 7,
-    "ap3": 6
+    "ap3": 6,
+    "stun": 50,
+    "push": 15
   },
   {
     "category": "SUP",
@@ -906,9 +909,9 @@
     "catIdx": 8,
     "code": "LAS-98",
     "source": "support",
-    "damage": 300,
-    "durable": 300,
-    "dps": 300,
+    "damage": 350,
+    "durable": 200,
+    "dps": 350,
     "stun": 0,
     "push": 0
   },
@@ -927,11 +930,11 @@
     "xdamage": 150,
     "xdurable": 150,
     "xap": 3,
+    "xap2": 0,
     "stun": 50,
     "push": 40,
     "xstun": 50,
-    "xpush": 40,
-    "xap2": 0
+    "xpush": 40
   },
   {
     "category": "SUP",
@@ -947,11 +950,11 @@
     "xdamage": 150,
     "xdurable": 150,
     "xap": 3,
+    "xap2": 0,
     "stun": 50,
     "push": 25,
     "xstun": 50,
-    "xpush": 40,
-    "xap2": 0
+    "xpush": 40
   },
   {
     "category": "SUP",
@@ -972,11 +975,11 @@
     "xdamage": 150,
     "xdurable": 150,
     "xap": 3,
+    "xap2": 0,
     "stun": 50,
     "push": 25,
-    "xstun": 60,
-    "xpush": 40,
-    "xap2": 0
+    "xstun": 50,
+    "xpush": 40
   },
   {
     "category": "SUP",
@@ -997,13 +1000,13 @@
     "source": "support",
     "durable": 1000,
     "xdurable": 200,
+    "ap2": 7,
+    "ap3": 6,
+    "xap2": 0,
     "stun": 50,
     "push": 25,
     "xstun": 30,
-    "xpush": 40,
-    "ap2": 7,
-    "ap3": 6,
-    "xap2": 0
+    "xpush": 40
   },
   {
     "category": "SUP",
@@ -1025,12 +1028,12 @@
     "catIdx": 9,
     "code": "RL-77",
     "source": "support",
-    "stun": 50,
-    "push": 25,
-    "xstun": 30,
-    "xpush": 40,
     "ap2": 5,
     "ap3": 3,
-    "xap2": 0
+    "xap2": 0,
+    "stun": 50,
+    "push": 25,
+    "xstun": 50,
+    "xpush": 40
   }
 ]

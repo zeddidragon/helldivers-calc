@@ -1,6 +1,6 @@
 # AR-23 Liberator
 {{Weapon_Damage_Statistics
-  | standard_damage = 55
+  | standard_damage = 60
   | durable_damage = 5
   | aoe_standard_damage = 
   | aoe_durable_damage = 
@@ -9,7 +9,7 @@
   | pellet_durable_damage = 
   | stagger_value = 10
   | aoe_stagger_value = 
-  | knockback_value = 10
+  | knockback_value = 4
   | aoe_knockback_value = 
   | structure_destroyer =
   | penetration_direct = 2
@@ -40,8 +40,8 @@
 
 # AR-23C Liberator Concussive
 {{Weapon_Damage_Statistics
-  | standard_damage = 55
-  | durable_damage = 10
+  | standard_damage = 65
+  | durable_damage = 15
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
@@ -80,8 +80,8 @@
 
 # R-63 Diligence
 {{Weapon_Damage_Statistics
-  | standard_damage = 112
-  | durable_damage = 11
+  | standard_damage = 125
+  | durable_damage = 13
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
@@ -100,8 +100,8 @@
 
 # R-63CS Diligence Counter Sniper
 {{Weapon_Damage_Statistics
-  | standard_damage = 128
-  | durable_damage = 12
+  | standard_damage = 140
+  | durable_damage = 14
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
@@ -198,46 +198,6 @@
   | penetration_aoe = 
 }}
 
-# SG-8P Punisher Plasma
-{{Weapon_Damage_Statistics
-  | standard_damage = 100
-  | durable_damage = 50
-  | aoe_standard_damage = 150
-  | aoe_durable_damage = 150
-  | pellet_amount = 
-  | pellet_standard_damage = 
-  | pellet_durable_damage = 
-  | stagger_value = 20
-  | aoe_stagger_value = 10
-  | knockback_value = 10
-  | aoe_knockback_value = 7
-  | structure_destroyer =
-  | penetration_direct = 2
-  | penetration_angle_slight = 
-  | penetration_angle_heavy = 
-  | penetration_aoe = 3
-}}
-
-# ARC-12 Blitzer
-{{Weapon_Damage_Statistics
-  | standard_damage = 250
-  | durable_damage = 175
-  | aoe_standard_damage = 
-  | aoe_durable_damage = 
-  | pellet_amount = 5
-  | pellet_standard_damage = 50
-  | pellet_durable_damage = 35
-  | stagger_value = 30
-  | aoe_stagger_value = 
-  | knockback_value = 25
-  | aoe_knockback_value = 
-  | structure_destroyer =
-  | penetration_direct = 3
-  | penetration_angle_slight = 
-  | penetration_angle_heavy = 
-  | penetration_aoe = 
-}}
-
 # SG-225 Breaker
 {{Weapon_Damage_Statistics
   | standard_damage = 330
@@ -300,14 +260,14 @@
 
 # CB-9 Exploding Crossbow
 {{Weapon_Damage_Statistics
-  | standard_damage = 150
+  | standard_damage = 270
   | durable_damage = 50
-  | aoe_standard_damage = 270
-  | aoe_durable_damage = 200
+  | aoe_standard_damage = 150
+  | aoe_durable_damage = 150
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
-  | stagger_value = 20
+  | stagger_value = 30
   | aoe_stagger_value = 25
   | knockback_value = 10
   | aoe_knockback_value = 10
@@ -320,7 +280,7 @@
 
 # JAR-5 Dominator
 {{Weapon_Damage_Statistics
-  | standard_damage = 300
+  | standard_damage = 275
   | durable_damage = 90
   | aoe_standard_damage = 
   | aoe_durable_damage = 
@@ -348,9 +308,9 @@
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 35
-  | aoe_stagger_value = 20
+  | aoe_stagger_value = 30
   | knockback_value = 20
-  | aoe_knockback_value = 15
+  | aoe_knockback_value = 20
   | structure_destroyer =
   | penetration_direct = 3
   | penetration_angle_slight = 
@@ -360,8 +320,8 @@
 
 # LAS-5 Scythe
 {{Weapon_Damage_Statistics
-  | standard_damage = 300
-  | durable_damage = 60
+  | standard_damage = 350
+  | durable_damage = 70
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
@@ -418,10 +378,50 @@
   | penetration_aoe = 3
 }}
 
+# SG-8P Punisher Plasma
+{{Weapon_Damage_Statistics
+  | standard_damage = 100
+  | durable_damage = 50
+  | aoe_standard_damage = 150
+  | aoe_durable_damage = 150
+  | pellet_amount = 
+  | pellet_standard_damage = 
+  | pellet_durable_damage = 
+  | stagger_value = 20
+  | aoe_stagger_value = 25
+  | knockback_value = 10
+  | aoe_knockback_value = 40
+  | structure_destroyer =
+  | penetration_direct = 2
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
+  | penetration_aoe = 3
+}}
+
+# ARC-12 Blitzer
+{{Weapon_Damage_Statistics
+  | standard_damage = 250
+  | durable_damage = 175
+  | aoe_standard_damage = 
+  | aoe_durable_damage = 
+  | pellet_amount = 5
+  | pellet_standard_damage = 50
+  | pellet_durable_damage = 35
+  | stagger_value = 30
+  | aoe_stagger_value = 
+  | knockback_value = 25
+  | aoe_knockback_value = 
+  | structure_destroyer =
+  | penetration_direct = 3
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
+  | penetration_aoe = 
+}}
+
 # P-2 Peacemaker
 {{Weapon_Damage_Statistics
-  | standard_damage = 60
-  | durable_damage = 5
+  | standard_damage = 75
+  | durable_damage = 15
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
@@ -468,9 +468,9 @@
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 50
-  | aoe_stagger_value = 40
+  | aoe_stagger_value = 50
   | knockback_value = 40
-  | aoe_knockback_value = 10
+  | aoe_knockback_value = 40
   | structure_destroyer =
   | penetration_direct = 3
   | penetration_angle_slight = 
@@ -480,8 +480,8 @@
 
 # LAS-7 Dagger
 {{Weapon_Damage_Statistics
-  | standard_damage = 150
-  | durable_damage = 15
+  | standard_damage = 200
+  | durable_damage = 20
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
@@ -500,8 +500,8 @@
 
 # P-4 Senator
 {{Weapon_Damage_Statistics
-  | standard_damage = 150
-  | durable_damage = 15
+  | standard_damage = 175
+  | durable_damage = 35
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
@@ -648,7 +648,7 @@
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 40
-  | aoe_stagger_value = 25
+  | aoe_stagger_value = 50
   | knockback_value = 10
   | aoe_knockback_value = 40
   | structure_destroyer =
@@ -668,9 +668,9 @@
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 30
-  | aoe_stagger_value = 10
+  | aoe_stagger_value = 30
   | knockback_value = 20
-  | aoe_knockback_value = 7
+  | aoe_knockback_value = 20
   | structure_destroyer =
   | penetration_direct = 4
   | penetration_angle_slight = 
@@ -687,12 +687,12 @@
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
-  | stagger_value = 50
+  | stagger_value = 35
   | aoe_stagger_value = 
   | knockback_value = 15
   | aoe_knockback_value = 
   | structure_destroyer =
-  | penetration_direct = 4
+  | penetration_direct = 5
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 
@@ -720,8 +720,8 @@
 
 # LAS-98 Laser Cannon
 {{Weapon_Damage_Statistics
-  | standard_damage = 300
-  | durable_damage = 300
+  | standard_damage = 350
+  | durable_damage = 200
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
@@ -788,7 +788,7 @@
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 50
-  | aoe_stagger_value = 60
+  | aoe_stagger_value = 50
   | knockback_value = 25
   | aoe_knockback_value = 40
   | structure_destroyer =
@@ -828,7 +828,7 @@
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 50
-  | aoe_stagger_value = 30
+  | aoe_stagger_value = 50
   | knockback_value = 25
   | aoe_knockback_value = 40
   | structure_destroyer =

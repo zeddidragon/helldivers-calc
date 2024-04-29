@@ -59,6 +59,10 @@ for(const wpn of weapons) {
       wpn.reloadearly = r.reloadearly
     }
   }
+  if(wpn.reloadearly && wpn.rounds) {
+    wpn.reloadone = wpn.reloadearly
+    delete wpn.reloadearly
+  }
   const damageIds = idMap.filter(m => m.name === name)
   for(const id of damageIds) {
     const dmg = damageRegister[id.id]
@@ -75,12 +79,8 @@ for(const wpn of weapons) {
     if(dmg.pen3 < dmg.pen2) {
       wpn[`${prefix}ap3`] = dmg.pen3
     }
-    wpn[`${prefix}stun`] = dmg.unknown2
-    wpn[`${prefix}push`] = dmg.unknown3
-  }
-  if(wpn.reloadearly && wpn.rounds) {
-    wpn.reloadone = wpn.reloadearly
-    delete wpn.reloadearly
+    wpn[`${prefix}stun`] = dmg.stun
+    wpn[`${prefix}push`] = dmg.push
   }
 }
 

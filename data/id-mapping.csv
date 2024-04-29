@@ -1,55 +1,55 @@
 code,property,damageid
-AR-23 Liberator,damage,48
-AR-23P Liberator Penetrator,damage,45
-AR-23C Liberator Concussive,damage,47
-BR-14 Adjudicator,damage,62
-R-63 Diligence,damage,69
-R-63CS Diligence Counter Sniper,damage,70
-SMG-37 Defender,damage,33,GUESSING
-MP-98 Knight,damage,25
-SG-8 Punisher,damage,84
-SG-8S Slugger,damage,95
+AR-23 Liberator,damage,25
+AR-23P Liberator Penetrator,damage,48
+AR-23C Liberator Concussive,damage,50
+BR-14 Adjudicator,damage,61
+R-63 Diligence,damage,73
+R-63CS Diligence Counter Sniper,damage,74
+SMG-37 Defender,damage,34
+MP-98 Knight,damage,26
+SG-8 Punisher,damage,88
+SG-8S Slugger,damage,99
+SG-225 Breaker,damage,102
+SG-225SP Breaker Spray & Pray,damage,101
+SG-225IE Breaker Incendiary,damage,105
+CB-9 Exploding Crossbow,damage,124
+CB-9 Exploding Crossbow,xdamage,125
+JAR-5 Dominator,damage,84
+R-36 Eruptor,damage,80
+R-36 Eruptor,xdamage,212
 SG-8P Punisher Plasma,damage,20
-SG-8P Punisher Plasma,xdamage,181,GUESSING
-ARC-12 Blitzer,damage,113
-SG-225 Breaker,damage,98,GUESSING
-SG-225SP Breaker Spray & Pray,damage,97
-SG-225IE Breaker Incendiary,damage,101
-CB-9 Exploding Crossbow,damage,120
-CB-9 Exploding Crossbow,xdamage,121,FAIRLY SURE
-JAR-5 Dominator,damage,80
-R-36 Eruptor,damage,76
-R-36 Eruptor,xdamage,198,GUESSING
-LAS-5 Scythe,damage,292
+SG-8P Punisher Plasma,xdamage,205
+ARC-12 Blitzer,damage,117
+LAS-5 Scythe,damage,297
 LAS-16 Sickle,damage,19
 PLAS-1 Scorcher,damage,20
-PLAS-1 Scorcher,xdamage,180,GUESSING
-P-2 Peacemaker,damage,24
-P-19 Redeemer,damage,24
-GP-31 Grenade Pistol,damage,219,GUESSING
-GP-31 Grenade Pistol,xdamage,130
-LAS-7 Dagger,damage,291
-P-4 Senator,damage,41
-M-105 Stalwart,damage,48
-MG-43 Machine Gun,damage,62
-MG-206 Heavy Machine Gun,damage,117
-ARC-3 Arc Thrower,damage,111
+PLAS-1 Scorcher,xdamage,184
+P-2 Peacemaker,damage,27
+P-19 Redeemer,damage,25
+GP-31 Grenade Pistol,damage,224
+GP-31 Grenade Pistol,xdamage,231
+LAS-7 Dagger,damage,296
+P-4 Senator,damage,44
+M-105 Stalwart,damage,56
+MG-43 Machine Gun,damage,65
+MG-206 Heavy Machine Gun,damage,121
+ARC-3 Arc Thrower,damage,115
 # FLAM-40 Flamethrower,damage,9
-APW-1 Anti-Materiel Rifle,damage,118
+APW-1 Anti-Materiel Rifle,damage,122
 GL-21 Grenade Launcher,damage,11
-GL-21 Grenade Launcher,xdamage,215
-AC-8 Autocannon,damage,123
-AC-8 Autocannon,xdamage,181,GUESSING
-RS-422 Railgun (Safe),damage,21
-RS-422 Railgun,damage,22
-LAS-98 Laser Cannon,damage,296
-EAT-17 Expendable Anti-Tank,damage,131
-EAT-17 Expendable Anti-Tank,xdamage,220,GUESSING
-GR-8 Recoilless Rifle,damage,132
-GR-8 Recoilless Rifle,xdamage,221,GUESSING
-LAS-99 Quasar Cannon,damage,222,GUESSING
-LAS-99 Quasar Cannon,xdamage,223,GUESSING
-FAF-14 Spear,damage,145,GUESSING
-FAF-14 Spear,xdamage,236,GUESSING
-RL-77 Airburst Rocket Launcher,damage,141
-RL-77 Airburst Rocket Launcher,xdamage,193,GUESSING
+GL-21 Grenade Launcher,xdamage,229
+AC-8 Autocannon,damage,127
+AC-8 Autocannon,xdamage,212
+RS-422 Railgun (Safe),damage,22
+RS-422 Railgun,damage,23
+LAS-98 Laser Cannon,damage,302
+EAT-17 Expendable Anti-Tank,damage,135
+EAT-17 Expendable Anti-Tank,xdamage,225
+GR-8 Recoilless Rifle,damage,136
+GR-8 Recoilless Rifle,xdamage,225
+LAS-99 Quasar Cannon,damage,227
+LAS-99 Quasar Cannon,xdamage,228
+FAF-14 Spear,damage,149
+FAF-14 Spear,xdamage,241
+RL-77 Airburst Rocket Launcher,damage,145
+RL-77 Airburst Rocket Launcher,xdamage,231
