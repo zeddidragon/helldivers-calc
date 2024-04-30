@@ -102,6 +102,7 @@ const sorting = {
     return (massDmg(b) - massDmg(a)) || sorting.damage(a, b)
   },
   ap: sortNums(['ap', 'xap'], ['max', 'min'], -1),
+  demo: sortNums(['demo', 'xdemo'], ['max', 'min'], -1),
   spare: sortNums(['mags', 'rounds', 'clips'], ['max', 'min'], -1),
   stun: sortNums(['stun', 'xstun'], ['max', 'min'], -1),
   push: sortNums(['push', 'xpush'], ['max', 'min'], -1),
