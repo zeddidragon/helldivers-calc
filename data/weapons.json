@@ -474,11 +474,11 @@
     "xap2": 0,
     "stun": 20,
     "push": 10,
-    "xstun": 25,
-    "xpush": 40,
+    "xstun": 35,
+    "xpush": 30,
     "fullname": "SG-8P Punisher Plasma",
     "demo": 10,
-    "xdemo": 20
+    "xdemo": 10
   },
   {
     "category": "NRG",
