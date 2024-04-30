@@ -56,6 +56,10 @@ table
             span(class=`ap-${wpn.xap}` title="Explosion").ap-x= wpn.xap
           if hasTag(wpn, 'fire')
             span(class=`ap-4` title="Fire Status").ap-fire 4
+        td.demo
+          span.demo-main(title="Demolition Force")= wpn.demo
+          if wpn.xdemo
+            span.demo-x(title="Explosion Demolision")= wpn.xdemo
         td.stun
           span.stun-main(title="Direct Hit Stagger")= wpn.stun
           if wpn.xstun

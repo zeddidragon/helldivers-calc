@@ -105,7 +105,7 @@ td.name {
 .source-page:before {
   content: "#";
 }
-.damage-x, .durable-x, .pellets-x, .stun-x, .push-x {
+.damage-x, .durable-x, .pellets-x, .stun-x, .push-x, .demo-x {
   color: #ea8;
   padding-left: 0.1em;
 }
@@ -113,7 +113,7 @@ td.name {
   color: #a98a98;
   content: "+";
 }
-.stun-x:before, .push-x:before {
+.demo-x:before, .stun-x:before, .push-x:before {
   color: #a98a98;
   content: "/";
 }

@@ -84,6 +84,7 @@ for(const wpn of weapons) {
     if(dmg.pen3 < dmg.pen2) {
       wpn[`${prefix}ap3`] = dmg.pen3
     }
+    wpn[`${prefix}demo`] = dmg.demolition
     wpn[`${prefix}stun`] = dmg.stun
     wpn[`${prefix}push`] = dmg.push
   }

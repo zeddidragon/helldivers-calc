@@ -99,6 +99,10 @@ pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.x
 if (hasTag(wpn, 'fire')) {
 pug_html = pug_html + "\u003Cspan class=\"ap-4 ap-fire\" title=\"Fire Status\"\u003E4\u003C\u002Fspan\u003E";
 }
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"demo\"\u003E\u003Cspan class=\"demo-main\" title=\"Demolition Force\"\u003E" + (pug_escape(null == (pug_interp = wpn.demo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+if (wpn.xdemo) {
+pug_html = pug_html + "\u003Cspan class=\"demo-x\" title=\"Explosion Demolision\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdemo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"stun\"\u003E\u003Cspan class=\"stun-main\" title=\"Direct Hit Stagger\"\u003E" + (pug_escape(null == (pug_interp = wpn.stun) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xstun) {
 pug_html = pug_html + "\u003Cspan class=\"stun-x\" title=\"Explosion Stagger\"\u003E" + (pug_escape(null == (pug_interp = wpn.xstun) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
@@ -195,6 +199,10 @@ pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.x
 }
 if (hasTag(wpn, 'fire')) {
 pug_html = pug_html + "\u003Cspan class=\"ap-4 ap-fire\" title=\"Fire Status\"\u003E4\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"demo\"\u003E\u003Cspan class=\"demo-main\" title=\"Demolition Force\"\u003E" + (pug_escape(null == (pug_interp = wpn.demo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+if (wpn.xdemo) {
+pug_html = pug_html + "\u003Cspan class=\"demo-x\" title=\"Explosion Demolision\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdemo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"stun\"\u003E\u003Cspan class=\"stun-main\" title=\"Direct Hit Stagger\"\u003E" + (pug_escape(null == (pug_interp = wpn.stun) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xstun) {

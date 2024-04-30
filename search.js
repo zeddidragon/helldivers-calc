@@ -33,6 +33,6 @@ for(const w of data.item) {
     `#${w.id}:`,
     `${w.damage}/${w.secondaryDamage}`,
     `${w.pen1}/${w.pen2}/${w.pen3}/${w.pen4}`,
-    `${w.unknown1}/${w.stun}/${w.push}`,
+    `${w.demolition}/${w.stun}/${w.push}`,
   ].join(' '))
 }
