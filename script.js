@@ -268,7 +268,7 @@ const nerdCols = [
 
 const locals = {
   weapons: null,
-  nerdMode: true,
+  nerdMode: false,
   sortBy: 'category',
   getWeapons: () => {
     const sorter = sorting[locals.sortBy] || sorting.byCol(locals.sortBy)
