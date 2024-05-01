@@ -349,19 +349,55 @@ window.sortBy = function sortBy(cat) {
   render()
 }
 
-window.toggleSource = function toggleSource(source) {
-  locals.hideSources[source] = !locals.hideSources[source]
+let doubleClickTime = 500
+let lastToggleTime = 0
+let lastToggleItem
+function toggleAction({
+  item,
+  items,
+  register,
+}) {
+  register[item] = !register[item]
+  const now = Date.now()
+  const diff = now - lastToggleTime
+  const isItem = lastToggleItem === item
+  lastToggleItem = item
+  lastToggleTime = now
+  const isDoubleClick = isItem && diff < doubleClickTime
+  const toggled = items
+    .filter(s => register[s])
+
+  if(toggled.length === items.length) {
+    for(const k of items) {
+      register[k] = false
+    }
+  } else if(isDoubleClick) {
+    for(const k of items) {
+      register[k] = true
+    }
+    register[item] = false
+  }
   render()
 }
 
+window.toggleSource = function toggleSource(source) {
+  toggleAction({
+    item: source,
+    items: sourceOrder,
+    register: locals.hideSources,
+  })
+}
+
 window.toggleCategory = function toggleCategory(cat) {
-  locals.hideCategories[cat] = !locals.hideCategories[cat]
-  render()
+  toggleAction({
+    item: cat,
+    items: locals.cats,
+    register: locals.hideCategories,
+  })
 }
 
 window.toggleNerdMode = function toggleNerdMode() {
   const checkbox = document.getElementById('nerd-mode')
-  console.log('checkbox', checkbox)
   locals.nerdMode = checkbox.checked
   render()
 }
