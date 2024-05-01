@@ -10,7 +10,7 @@ function frames(stamp) {
     .reduce((sum, v) => sum + v, 0)
 }
 
-const weapons = JSON.parse(fs.readFileSync('./data/weapons.json', 'utf-8').trim())
+let weapons = JSON.parse(fs.readFileSync('./data/weapons.json', 'utf-8').trim())
 const idMap = fs.readFileSync('data/id-mapping.csv', 'utf-8')
   .split('\n')
   .slice(1)
@@ -51,7 +51,7 @@ for(const dmg of damages) {
 for(const wpn of weapons) {
   const name = `${wpn.code} ${wpn.name}`
   const r = reloadRegister[name]
-  wpn.fullname = name
+  wpn.fullname ||= name
   if(!wpn.source) {
     wpn.source = 'support'
   }
@@ -78,21 +78,42 @@ for(const wpn of weapons) {
     }
     wpn[`${prefix}durable`] = dmg.secondaryDamage
     wpn[`${prefix}ap`] = dmg.pen1
-    if(dmg.pen2 < dmg.pen1) {
-      wpn[`${prefix}ap2`] = dmg.pen2
-    }
-    if(dmg.pen3 < dmg.pen2) {
-      wpn[`${prefix}ap3`] = dmg.pen3
-    }
+    wpn[`${prefix}ap2`] = dmg.pen2
+    wpn[`${prefix}ap3`] = dmg.pen3
+    wpn[`${prefix}ap4`] = dmg.pen4
     wpn[`${prefix}demo`] = dmg.demolition
     wpn[`${prefix}stun`] = dmg.stun
     wpn[`${prefix}push`] = dmg.push
+    wpn[`${prefix}unknown4`] = dmg.unknown4
+    wpn[`${prefix}unknown5`] = dmg.unknown5
+    wpn[`${prefix}float1`] = dmg.float1
+    wpn[`${prefix}unknown6`] = dmg.unknown6
+    wpn[`${prefix}float2`] = dmg.float2
+  }
+}
+let keys = new Set(weapons.slice(1).map(w => Object.keys(w)).flat())
+const keyObj = weapons[0]
+for(const key of keys) {
+  if(keyObj[key] == null) {
+    keyObj[key] = 0
   }
 }
 
+keys = Object.keys(keyObj)
+// Standardize key order
+weapons = weapons.map(wpn => {
+  const obj = {}
+  for(const key of keys) {
+    if(wpn[key] != null) {
+      obj[key] = wpn[key]
+    }
+  }
+  return obj
+})
+
 fs.writeFileSync('data/weapons.json', JSON.stringify(weapons, null, 2))
 
-const wikiTables = weapons.map(wpn => {
+const wikiTables = weapons.slice(1).map(wpn => {
   const shots = wpn.pellets || 1
   return `# ${wpn.code} ${wpn.name}
 {{Weapon_Damage_Statistics
@@ -109,8 +130,8 @@ const wikiTables = weapons.map(wpn => {
   | aoe_knockback_value = ${wpn.xpush || ''}
   | structure_destroyer =
   | penetration_direct = ${wpn.ap}
-  | penetration_angle_slight = ${wpn.ap2 || ''}
-  | penetration_angle_heavy = ${wpn.ap3 || ''}
+  | penetration_angle_slight = ${(wpn.ap2 < wpn.ap && wpn.ap2) || ''}
+  | penetration_angle_heavy = ${(wpn.ap3 < wpn.ap && wpn.ap3) || ''}
   | penetration_aoe = ${wpn.xap || ''}
 }}`
 }).join('\n\n')

@@ -1,5 +1,6 @@
 async function loadWeapons() {
-  window.weapons = await fetch(`data/weapons.json`).then(res => res.json())
+  window.weapons = (await fetch(`data/weapons.json`).then(res => res.json()))
+    .slice(1)
 }
 
 function shotDmg(wpn) {
@@ -135,8 +136,8 @@ const headers =  {
   category: () => 'Type',
   rpm: () => 'RPM',
   ap: () => 'AP',
-  demo: () => 'Demol.',
-  durable: () => 'Massive',
+  demo: () => 'Demo',
+  durable: () => 'Durable',
   supply: () => 'Pickup',
   magdmg: () => 'Mag',
   total: () => 'Total',
@@ -296,10 +297,7 @@ const locals = {
   totalDmg,
   wikiLink: (wpn) => {
     const url = 'https://helldivers.wiki.gg/wiki'
-    const path = [
-      wpn.code,
-      ...(wpn.urlname || wpn.name).split(/\s+/),
-    ].join('_')
+    const path = wpn.fullname.split(/\s+/).join('_')
     return `${url}/${path}`
   },
   header: (col) => {
