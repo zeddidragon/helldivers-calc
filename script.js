@@ -102,6 +102,7 @@ const sorting = {
   durable: (a, b) => {
     return (massDmg(b) - massDmg(a)) || sorting.damage(a, b)
   },
+  byCol: (col) => sortNum(col),
   ap: sortNums(['ap', 'xap'], ['max', 'min'], -1),
   demo: sortNums(['demo', 'xdemo'], ['max', 'min'], -1),
   spare: sortNums(['mags', 'rounds', 'clips'], ['max', 'min'], -1),
@@ -139,6 +140,11 @@ const headers =  {
   demo: () => 'Demo',
   durable: () => 'Durable',
   supply: () => 'Pickup',
+  unknown4: () => 'i4',
+  unknown5: () => 'i5',
+  unknown6: () => 'i6',
+  float1: () => 'f1',
+  float2: () => 'f2',
   magdmg: () => 'Mag',
   total: () => 'Total',
   default: cat => {
@@ -220,11 +226,52 @@ const values = {
   },
 }
 
+const cols = [
+  'source',
+  'category',
+  'code',
+  'name',
+  'damage',
+  'durable',
+  'ap',
+  'demo',
+  'stun',
+  'push',
+  'recoil',
+  'rpm',
+  'dps',
+  'reload',
+  'cap',
+  'spare',
+  'supply',
+  'magdmg',
+  'total',
+]
+const nerdCols = [
+  'category',
+  'fullname',
+  'damage',
+  'durable',
+  'ap',
+  'ap2',
+  'ap3',
+  'ap4',
+  'demo',
+  'stun',
+  'push',
+  'unknown4',
+  'unknown5',
+  'float1',
+  'unknown6',
+  'float2',
+]
+
 const locals = {
   weapons: null,
+  nerdMode: true,
   sortBy: 'category',
   getWeapons: () => {
-    const sorter = sorting[locals.sortBy] || sorting.default
+    const sorter = sorting[locals.sortBy] || sorting.byCol(locals.sortBy)
     return weapons
       .filter(wpn => !locals.hideSources[wpn.source])
       .filter(wpn => !locals.hideCategories[wpn.category])
@@ -245,27 +292,13 @@ const locals = {
     return categoryNames[wpn.category]
   },
   cats: Object.keys(categoryNames),
-  cols: [
-    'source',
-    'category',
-    'code',
-    'name',
-    'damage',
-    'durable',
-    'ap',
-    'demo',
-    'stun',
-    'push',
-    'recoil',
-    'rpm',
-    'dps',
-    'reload',
-    'cap',
-    'spare',
-    'supply',
-    'magdmg',
-    'total',
-  ],
+  cols: () => locals.nerdMode ? nerdCols : cols,
+  nerdValue: (col, wpn, explosive) => {
+    if(explosive && col === 'fullname') {
+      return `${wpn.name} (AoE)`
+    }
+    return wpn[col]
+  },
   sourceClass: (source) => {
     return [
       source,
@@ -322,6 +355,13 @@ window.toggleSource = function toggleSource(source) {
 
 window.toggleCategory = function toggleCategory(cat) {
   locals.hideCategories[cat] = !locals.hideCategories[cat]
+  render()
+}
+
+window.toggleNerdMode = function toggleNerdMode() {
+  const checkbox = document.getElementById('nerd-mode')
+  console.log('checkbox', checkbox)
+  locals.nerdMode = checkbox.checked
   render()
 }
 
