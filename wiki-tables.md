@@ -600,8 +600,8 @@
 
 # FLAM-40 Flamethrower
 {{Weapon_Damage_Statistics
-  | standard_damage = NaN
-  | durable_damage = NaN
+  | standard_damage = 3
+  | durable_damage = 3
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 

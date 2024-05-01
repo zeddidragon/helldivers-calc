@@ -34,7 +34,7 @@ M-105 Stalwart,damage,51
 MG-43 Machine Gun,damage,65
 MG-206 Heavy Machine Gun,damage,121
 ARC-3 Arc Thrower,damage,115
-# FLAM-40 Flamethrower,damage,9
+FLAM-40 Flamethrower,damage,9
 APW-1 Anti-Materiel Rifle,damage,122
 GL-21 Grenade Launcher,damage,11
 GL-21 Grenade Launcher,xdamage,229
