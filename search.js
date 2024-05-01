@@ -34,5 +34,6 @@ for(const w of data.item) {
     `${w.damage}/${w.secondaryDamage}`,
     `${w.pen1}/${w.pen2}/${w.pen3}/${w.pen4}`,
     `${w.demolition}/${w.stun}/${w.push}`,
+    `${w.unknown4}/${w.unknown5}(${w.float1})/${w.unknown6}(${w.float2})`,
   ].join(' '))
 }

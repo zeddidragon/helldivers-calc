@@ -27,7 +27,7 @@ PLAS-1 Scorcher,xdamage,184
 P-2 Peacemaker,damage,27
 P-19 Redeemer,damage,25
 GP-31 Grenade Pistol,damage,224
-GP-31 Grenade Pistol,xdamage,231
+GP-31 Grenade Pistol,xdamage,214
 LAS-7 Dagger,damage,296
 P-4 Senator,damage,44
 M-105 Stalwart,damage,51
@@ -52,4 +52,4 @@ LAS-99 Quasar Cannon,xdamage,228
 FAF-14 Spear,damage,149
 FAF-14 Spear,xdamage,241
 RL-77 Airburst Rocket Launcher,damage,145
-RL-77 Airburst Rocket Launcher,xdamage,231
+RL-77 Airburst Rocket Launcher,xdamage,244

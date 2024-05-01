@@ -468,9 +468,9 @@
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 50
-  | aoe_stagger_value = 50
+  | aoe_stagger_value = 40
   | knockback_value = 40
-  | aoe_knockback_value = 40
+  | aoe_knockback_value = 10
   | structure_destroyer =
   | penetration_direct = 3
   | penetration_angle_slight = 
@@ -828,7 +828,7 @@
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 50
-  | aoe_stagger_value = 50
+  | aoe_stagger_value = 30
   | knockback_value = 25
   | aoe_knockback_value = 40
   | structure_destroyer =
