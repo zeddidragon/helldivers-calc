@@ -76,6 +76,7 @@ for(const wpn of weapons) {
     if(!prefix && wpn.tags?.includes('laser')) {
       wpn.dps = dmg.damage
     }
+    wpn[`${prefix}id`] = id.id
     wpn[`${prefix}durable`] = dmg.secondaryDamage
     wpn[`${prefix}ap`] = dmg.pen1
     wpn[`${prefix}ap2`] = dmg.pen2

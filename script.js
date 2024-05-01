@@ -250,6 +250,7 @@ const cols = [
 const nerdCols = [
   'category',
   'fullname',
+  'id',
   'damage',
   'durable',
   'ap',
@@ -293,11 +294,11 @@ const locals = {
   },
   cats: Object.keys(categoryNames),
   cols: () => locals.nerdMode ? nerdCols : cols,
-  nerdValue: (col, wpn, explosive) => {
-    if(explosive && col === 'fullname') {
+  nerdValue: (col, wpn, prefix='') => {
+    if(prefix && col === 'fullname') {
       return `${wpn.name} (AoE)`
     }
-    return wpn[col]
+    return wpn[`${prefix}${col}`]
   },
   sourceClass: (source) => {
     return [
