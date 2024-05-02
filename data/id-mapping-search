@@ -1,0 +1,55 @@
+code,property,search
+AR-23 Liberator,damage,60 2
+AR-23P Liberator Penetrator,damage,45 3
+AR-23C Liberator Concussive,damage,65 2
+BR-14 Adjudicator,damage,80 2
+R-63 Diligence,damage,125 2
+R-63CS Diligence Counter Sniper,damage,140 3
+SMG-37 Defender,damage,70 2
+MP-98 Knight,damage,50 2
+SG-8 Punisher,damage,45 2
+SG-8S Slugger,damage,250 3
+SG-225 Breaker,damage,
+SG-225SP Breaker Spray & Pray,damage,
+SG-225IE Breaker Incendiary,damage,
+CB-9 Exploding Crossbow,damage,
+CB-9 Exploding Crossbow,xdamage,
+JAR-5 Dominator,damage,
+R-36 Eruptor,damage,
+R-36 Eruptor,xdamage,
+SG-8P Punisher Plasma,damage,
+SG-8P Punisher Plasma,xdamage,
+ARC-12 Blitzer,damage,
+LAS-5 Scythe,damage,
+LAS-16 Sickle,damage,
+PLAS-1 Scorcher,damage,
+PLAS-1 Scorcher,xdamage,
+P-2 Peacemaker,damage,
+P-19 Redeemer,damage,
+GP-31 Grenade Pistol,damage,
+GP-31 Grenade Pistol,xdamage,
+LAS-7 Dagger,damage,
+P-4 Senator,damage,
+M-105 Stalwart,damage,
+MG-43 Machine Gun,damage,
+MG-206 Heavy Machine Gun,damage,
+ARC-3 Arc Thrower,damage,
+FLAM-40 Flamethrower,damage,
+APW-1 Anti-Materiel Rifle,damage,
+GL-21 Grenade Launcher,damage,
+GL-21 Grenade Launcher,xdamage,
+AC-8 Autocannon,damage,
+AC-8 Autocannon,xdamage,
+RS-422 Railgun (Safe),damage,
+RS-422 Railgun,damage,
+LAS-98 Laser Cannon,damage,
+EAT-17 Expendable Anti-Tank,damage,
+EAT-17 Expendable Anti-Tank,xdamage,
+GR-8 Recoilless Rifle,damage,
+GR-8 Recoilless Rifle,xdamage,
+LAS-99 Quasar Cannon,damage,
+LAS-99 Quasar Cannon,xdamage,
+FAF-14 Spear,damage,
+FAF-14 Spear,xdamage,
+RL-77 Airburst Rocket Launcher,damage,
+RL-77 Airburst Rocket Launcher,xdamage,

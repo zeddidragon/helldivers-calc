@@ -1,0 +1,55 @@
+name,property,search
+AR-23 Liberator,damage,60 2 unknown4=0
+AR-23P Liberator Penetrator,damage,45 3 unknown4=0
+AR-23C Liberator Concussive,damage,65 2 unknown4=0
+BR-14 Adjudicator,damage,80 3 unknown4=0
+R-63 Diligence,damage,125 2 unknown4=0
+R-63CS Diligence Counter Sniper,damage,140 3 unknown4=0
+SMG-37 Defender,damage,70 2 unknown4=0
+MP-98 Knight,damage,50 2 unknown4=0
+SG-8 Punisher,damage,45 2 unknown4=0
+SG-8S Slugger,damage,250 3 unknown4=0
+SG-225 Breaker,damage,30 2 unknown4=0
+SG-225SP Breaker Spray & Pray,damage,12 2 unknown4=0
+SG-225IE Breaker Incendiary,damage,20 2 unknown4=1
+CB-9 Exploding Crossbow,damage,270 3 unknown4=0
+CB-9 Exploding Crossbow,xdamage,150 2 pen2=0 unknown4=0
+JAR-5 Dominator,damage,275 3 unknown4=0
+R-36 Eruptor,damage,230 3 unknown4=0
+R-36 Eruptor,xdamage,150 3 pen2=0 unknown4=0
+SG-8P Punisher Plasma,damage,100 2 unknown4=0
+SG-8P Punisher Plasma,xdamage,150 3 pen2=0 unknown4=0
+ARC-12 Blitzer,damage,50 3 unknown4=2
+LAS-5 Scythe,damage,350 2 unknown4=0
+LAS-16 Sickle,damage,55 2 unknown4=0
+PLAS-1 Scorcher,damage,100 2 unknown4=0
+PLAS-1 Scorcher,xdamage,100 3 pen2=0 unknown4=0
+P-2 Peacemaker,damage,75 2 unknown4=0
+P-19 Redeemer,damage,60 2 unknown4=0
+GP-31 Grenade Pistol,damage,350 3 unknown4=0
+GP-31 Grenade Pistol,xdamage,250 3 pen2=0 unknown4=0
+LAS-7 Dagger,damage,200 2 unknown4=0
+P-4 Senator,damage,175 3 unknown4=0
+M-105 Stalwart,damage,60 2 unknown4=0
+MG-43 Machine Gun,damage,80 3 unknown4=0
+MG-206 Heavy Machine Gun,damage,100 4 unknown4=0
+ARC-3 Arc Thrower,damage,250 7 unknown4=2
+FLAM-40 Flamethrower,damage,3 3 unknown4=1
+APW-1 Anti-Materiel Rifle,damage,450 4 unknown4=0
+GL-21 Grenade Launcher,damage,5 2 unknown4=0
+GL-21 Grenade Launcher,xdamage,350 3 pen2=0 unknown4=0
+AC-8 Autocannon,damage,260 4 unknown4=0
+AC-8 Autocannon,xdamage,150 3 pen2=0 unknown4=0
+RS-422 Railgun (Safe),damage,600 5 unknown4=0
+RS-422 Railgun,damage,600 8 unknown4=0
+LAS-98 Laser Cannon,damage,350 4 unknown4=0
+EAT-17 Expendable Anti-Tank,damage,650 6 unknown4=0
+EAT-17 Expendable Anti-Tank,xdamage,150 3 pen2=0 unknown4=0
+GR-8 Recoilless Rifle,damage,650 6 unknown4=0
+GR-8 Recoilless Rifle,xdamage,150 3 pen2=0 unknown4=0
+LAS-99 Quasar Cannon,damage,650 6 unknown4=0
+LAS-99 Quasar Cannon,xdamage,150 3 pen2=0 unknown4=0
+FAF-14 Spear,damage,1000 8 unknown4=0
+FAF-14 Spear,xdamage,200 5 pen2=0 unknown4=0
+RL-77 Airburst Rocket Launcher,damage,500 6 unknown4=0
+RL-77 Airburst Rocket Launcher,xdamage,250 3 pen2=0 unknown4=0

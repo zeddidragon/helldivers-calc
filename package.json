@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "pug --client --no-debug template.pug",
-    "build": "node process-weapons.js; npm run compile"
+    "build": "node scripts/process-weapons.js; npm run compile"
   },
   "keywords": [
     "helldivers"
