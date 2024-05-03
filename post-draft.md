@@ -23,7 +23,8 @@ The majority of explosions have 100% durable damage, and support weapons are all
 
 https://invadersfromplanet.space/helldivers-2/
 
-The wiki might add them once they've been verified more thorougly. The general rule of thumb is that durable damage is 10%, rounded down. Liberator is 60/5, Diligence is 125/13 (or 125/12, it's unclear to me)
+The wiki might add them once they've been verified more thorougly. The general rule of thumb is that durable damage is 10%, rounded down. Liberator is 60/5, Diligence is 125/13 (or 125/12, it's unclear to me).
+
 Some noteworthy high rollers on durable:
 |Weapon|Dmg|Dur|Ratio|Notes|
 |:-|:-|:-|:-|:-|
@@ -37,13 +38,13 @@ Some noteworthy high rollers on durable:
 |CB-9 Exploding Crossbow|420|200|47.61%|:[|
 |MG-206 Heavy Machine Gun|100|35|35.00%||
 |SG-225SP Breaker Spray & Pray|192|64|33.33%||
-|AR-23P Liberator Penetrator|45|15|33.33%||
 |JAR-5 Dominator|275|90|32.27%||
 |APW-1 Anti-Materiel Rifle|450|135|30.00%||
 |SG-8S Slugger|250|75|30.00%||
 |SG-8 Punisher|405|108|26.67%||
 |RS-422 Railgun (Unsafe)|600|120|20.00%||
 |SG-225 Breaker|330|66|20.00%||
+|AR-23P Liberator Penetrator|45|15|33.33%||
 |AR-23C Liberator Concussive|65|15|23.07%||
 |LAS-5 Scythe|350|70|20.00%||
 |ARC-3 Arc Thrower|250|50|20.00%||
