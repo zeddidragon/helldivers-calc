@@ -30,20 +30,20 @@ Some noteworthy high rollers on durable:
 |AC-8 Autocannon|410|410|100.00%||
 |SG-8P Punisher Plasma|250|200|80.00%||
 |PLAS-1 Scorcher|200|150|75.00%||
-|ARC-12 Blitzer|250|212|175|70.00%||
+|ARC-12 Blitzer|250|175|70.00%||
 |R-36 Eruptor|380|265|69.74%||
 |LAS-98 Laser Cannon|350|200|57.14%|DPS|
 |SG-225IE Breaker Incendiary|180|90|50.00%||
 |CB-9 Exploding Crossbow|420|200|47.61%|:[|
+|MG-206 Heavy Machine Gun|100|35|35.00%||
+|SG-225SP Breaker Spray & Pray|192|64|33.33%||
+|AR-23P Liberator Penetrator|45|15|33.33%||
 |JAR-5 Dominator|275|90|32.27%||
 |APW-1 Anti-Materiel Rifle|450|135|30.00%||
 |SG-8S Slugger|250|75|30.00%||
 |SG-8 Punisher|405|108|26.67%||
 |RS-422 Railgun (Unsafe)|600|120|20.00%||
 |SG-225 Breaker|330|66|20.00%||
-|SG-225SP Breaker Spray & Pray|192|64|33.33%||
-|MG-206 Heavy Machine Gun|100|35|35.00%||
-|AR-23P Liberator Penetrator|45|15|33.33%||
 |AR-23C Liberator Concussive|65|15|23.07%||
 |LAS-5 Scythe|350|70|20.00%||
 |ARC-3 Arc Thrower|250|50|20.00%||
