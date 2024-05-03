@@ -26,8 +26,8 @@ PLAS-1 Scorcher,damage,100 2 unknown4=0
 PLAS-1 Scorcher,xdamage,100 3 unknown4=0 demolition=0-14
 P-2 Peacemaker,damage,75 2 unknown4=0
 P-19 Redeemer,damage,60 2 unknown4=0
-GP-31 Grenade Pistol,damage,350 3 unknown4=0
-GP-31 Grenade Pistol,xdamage,250 3 unknown4=0
+GP-31 Grenade Pistol,damage,250 3 unknown4=0
+GP-31 Grenade Pistol,xdamage,350 3 unknown4=0
 LAS-7 Dagger,damage,200 2 unknown4=0 stun=0
 P-4 Senator,damage,175 3 unknown4=0 unknown5=0
 M-105 Stalwart,damage,60 2 secondaryDamage=6 unknown4=0

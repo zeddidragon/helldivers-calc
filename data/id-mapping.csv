@@ -8,7 +8,7 @@ R-63CS Diligence Counter Sniper,damage,74
 SMG-37 Defender,damage,34
 MP-98 Knight,damage,26
 SG-8 Punisher,damage,88
-SG-8S Slugger,damage,99
+eG-8S Slugger,damage,99
 SG-225 Breaker,damage,102
 SG-225SP Breaker Spray & Pray,damage,101
 SG-225IE Breaker Incendiary,damage,105
@@ -26,8 +26,8 @@ PLAS-1 Scorcher,damage,20
 PLAS-1 Scorcher,xdamage,184
 P-2 Peacemaker,damage,27
 P-19 Redeemer,damage,25
-GP-31 Grenade Pistol,damage,224
-GP-31 Grenade Pistol,xdamage,214
+GP-31 Grenade Pistol,damage,21
+GP-31 Grenade Pistol,xdamage,229
 LAS-7 Dagger,damage,296
 P-4 Senator,damage,44
 M-105 Stalwart,damage,51

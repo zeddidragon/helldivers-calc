@@ -460,17 +460,17 @@
 
 # GP-31 Grenade Pistol
 {{Weapon_Damage_Statistics
-  | standard_damage = 350
-  | durable_damage = 350
-  | aoe_standard_damage = 250
-  | aoe_durable_damage = 250
+  | standard_damage = 250
+  | durable_damage = 100
+  | aoe_standard_damage = 350
+  | aoe_durable_damage = 350
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
-  | stagger_value = 50
-  | aoe_stagger_value = 40
-  | knockback_value = 40
-  | aoe_knockback_value = 10
+  | stagger_value = 20
+  | aoe_stagger_value = 50
+  | knockback_value = 10
+  | aoe_knockback_value = 40
   | structure_destroyer =
   | penetration_direct = 3
   | penetration_angle_slight = 
