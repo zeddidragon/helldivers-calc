@@ -781,10 +781,10 @@
     "recoil": 1,
     "reload": 1.8,
     "reloadearly": 3,
-    "mags": 6,
-    "magstart": 3,
-    "supply": 6,
-    "box": 3,
+    "mags": 4,
+    "magstart": 2,
+    "supply": 4,
+    "box": 2,
     "limit": 8,
     "tags": [
       "laser"
