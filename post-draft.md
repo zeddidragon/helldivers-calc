@@ -64,6 +64,8 @@ Lib Pen exceeds the light armor and stays at 30.
 
 `8 * 30` vs `16 * 27` suggests Brood Commander's head has 200 HP.
 
+Now you may object and say "Maybe armor isn't 50%, it's a 60%, that's why Lib Pen needs that much less shots. Your mechanic is made up." The recent balance change brought about an interesting counter-example: Liberator Concussive. Defender (70/7) needs 13 shots to kill Brood Commander's head, but Liberator Concussive needs only 12 (65/15) owing to its secretly buffed durable damage. With two guns having an equal amount of penetration yet the lower damage gun needing fewer shots for a kill, it's clear that there _has_ to be more going on. Accounting for 60% durable, Defender is 33.2 damage per shot, and Lib Con is 35 before armor reduction.
+
 That leaves one oddity, which is how a 400 damage impact grenade doesn't immediately pop Brood Commander's head. I believe this to be because radial attacks have no interaction with brood commander heads, just like with helldiver heads. (Rockets headshotting you kill you because of the rocket's direct damage, the explosion is not multiplied.) Notice how some weapons like Plasma Punishere kills Brood Commander faster with body shots than headshots. The direct portion (70 partial) goes to the head, then the explosion (150) touches the body behind the head instead, and these two have seperate health pools.
 
 So what's the takeaway from all of this?
