@@ -1,7 +1,7 @@
 # AR-23 Liberator
 {{Weapon_Damage_Statistics
   | standard_damage = 60
-  | durable_damage = 5
+  | durable_damage = 6
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
@@ -9,7 +9,7 @@
   | pellet_durable_damage = 
   | stagger_value = 10
   | aoe_stagger_value = 
-  | knockback_value = 4
+  | knockback_value = 10
   | aoe_knockback_value = 
   | structure_destroyer =
   | penetration_direct = 2
