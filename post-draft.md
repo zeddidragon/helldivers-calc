@@ -36,7 +36,7 @@ Some noteworthy high rollers on durable:
 |SG-8P Punisher Plasma|250|200|80.00%||
 |PLAS-1 Scorcher|200|150|75.00%||
 |ARC-12 Blitzer|250|175|70.00%||
-|R-36 Eruptor|380|265|69.74%||
+|R-36 Eruptor|380|265|69.74%|Pre-nerf|
 |LAS-98 Laser Cannon|350|200|57.14%|DPS|
 |SG-225IE Breaker Incendiary|180|90|50.00%||
 |CB-9 Exploding Crossbow|420|200|47.61%|:[|
