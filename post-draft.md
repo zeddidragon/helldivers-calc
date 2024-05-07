@@ -17,13 +17,17 @@ The tests have not made a point of firing every shot at point-blank. That's fine
 
 https://www.reddit.com/r/Helldivers/comments/1bwbo78/guns_lose_damage_over_distance_as_soon_as_they/
 
-Progress in datamining by people much smarter than I am reveals a second damage number for each source of damage. It's sometimes referred to as "Durable damage". This number is 5 for Liberator (close to the 10% suggested by Pilestedt) and 15 for Penetrator (more of a 33%). For Dominator this is 90, which is about 33% of full damage. The answer to "Is Dominator doing explosive damage?" can be concluded with "yesn't". Glad I could clear it up and prevent any future debates on that one.
+Progress in datamining by people much smarter than I am reveals a second damage number for each source of damage. I was made aware of it through this thread: https://www.reddit.com/r/Helldivers/comments/1c40xkg/weapon_armor_penetration_values_helldiver/
+
+At the time I didn't know what to make of it. After joining heads with other researchers and testers at the Helldivers wiki (https://helldivers.wiki.gg/) we were able to make leaps of understanding on the matter. I couldn't have gotten to this point without their data and extensive testing.
+
+This extra damage value is sometimes referred to as "Durable damage" or "Damage vs massive body parts". This number is 6 for Liberator (close to the 10% suggested by Pilestedt) and 15 for Penetrator (more of a 33%). For Dominator this is 90, which is about 33% of full damage. The answer to "Is Dominator doing explosive damage?" can be concluded with "yesn't". Glad I could clear it up and prevent any future debates on that one.
 
 The majority of explosions have 100% durable damage, and support weapons are all over the place, generally leaning into "More than a primary, that's for sure". I have listed these values on my stat site as far as I know them:
 
 https://invadersfromplanet.space/helldivers-2/
 
-The wiki might add them once they've been verified more thorougly. The general rule of thumb is that durable damage is 10%, rounded down. Liberator is 60/5, Diligence is 125/13 (or 125/12, it's unclear to me).
+The wiki might add them once they've been verified more thorougly. The general rule of thumb is that durable damage is 10%, rounded down. Liberator is 60/6, Diligence is 125/13 (or 125/12, it's unclear to me).
 
 Some noteworthy high rollers on durable:
 |Weapon|Dmg|Dur|Ratio|Notes|
