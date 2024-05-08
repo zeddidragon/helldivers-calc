@@ -1,0 +1,27 @@
+Light (50)
+Dil Arm: 10
+Dill Leg: Death
+Redeemer Head: 5
+Redeemer Chest: 59
+Redeemer Arm: 70
+Redeemer Leg: 61
+
+Medium (100)
+Redeemer Head: 9
+Redeemer Chest: 74
+Redeemer Arm: 84
+Redeemer Leg: 77
+Dil Chest: 19
+Dil Arm: 38
+Dill Leg: 26
+
+Heavy (150)
+Redeemer Head: 31
+Redeemer Chest: 85
+Redeemer Arm: 92
+Redeemer Leg: 86
+Dil Head: Death
+Dil Chest: 41
+Dil Arm: 55
+Dill Leg: 45
+Dil Chest 100m: 47
