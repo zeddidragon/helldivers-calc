@@ -10,8 +10,8 @@ Complaining about balance is all the rage these days, but I figured I'd give it 
 |Dominator|Demolition|Low|Container|Explosive weapons should bust containers.|
 |Crossbow|Demolition|Low|Containers|Explosive weapons should bust containers.|
 |Crossbow|Explosive AP|Light|Medium|Explosion needs ability to hurt tank vents.|
-|Eruptor|Shrapnel Damage|0|10 dmg|Shrapnel important to identity of this weapon.|
-|Eruptor|Shrapnel Count|0|12|Max possible damage with "exploit" now only 120.|
+|Eruptor|Shrapnel Count|0|12|Shrapnel important to identity of this weapon.|
+|Eruptor|Shrapnel Damage|100|10|Max possible damage with "exploit" now only 120.|
 |Eruptor|Shrapnel Status|None|100 damage over time.|When used as intended, Eruptor can spread out and severely hurt many things. DoT does not stack.|
 |Punisher|Stun|Medium|High|Should stun a hulk.|
 |Breaker Incendiary|Capacity|25+1|23+1|Swap to Double-Stack Magazine Model.|
