@@ -7,7 +7,7 @@ Complaining about balance is all the rage these days, but I figured I'd give it 
 |Lib Pen|Damage|45|50|Still a bit limp-feeling.|
 |Adjudicator|vs Durable|8|12|Less weird instances of Lib Pen needing fewer hits to kill things. This will still crop up, but less.|
 |Slugger|Demolition|Low|Containers|Reducing this had no benefit to anybody.|
-|Dominator|Demolition|Low|Container|Explosive weapons should bust containers.|
+|Dominator|Demolition|Low|Containers|Explosive weapons should bust containers.|
 |Crossbow|Demolition|Low|Containers|Explosive weapons should bust containers.|
 |Crossbow|Explosive AP|Light|Medium|Explosion needs ability to hurt tank vents.|
 |Eruptor|Shrapnel Count|0|12|Shrapnel important to identity of this weapon.|
