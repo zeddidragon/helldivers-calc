@@ -302,15 +302,15 @@
 {{Weapon_Damage_Statistics
   | standard_damage = 230
   | durable_damage = 115
-  | aoe_standard_damage = 150
-  | aoe_durable_damage = 150
+  | aoe_standard_damage = 190
+  | aoe_durable_damage = 190
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 35
-  | aoe_stagger_value = 30
+  | aoe_stagger_value = 25
   | knockback_value = 20
-  | aoe_knockback_value = 20
+  | aoe_knockback_value = 40
   | structure_destroyer =
   | penetration_direct = 3
   | penetration_angle_slight = 

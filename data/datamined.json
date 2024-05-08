@@ -8717,6 +8717,29 @@
                 0,
                 0
             ]
+        },
+        {
+            "id": "bogus-eruptor",
+            "damage": 190,
+            "secondaryDamage": 190,
+            "pen1": 3,
+            "pen2": 0,
+            "pen3": 0,
+            "pen4": 0,
+            "demolition": 20,
+            "stun": 25,
+            "push": 40,
+            "unknown4": 0,
+            "unknown5": 0,
+            "float1": 0,
+            "unknown6": 0,
+            "float2": 0,
+            "empty": [
+                0,
+                0,
+                0,
+                0
+            ]
         }
     ]
 }
