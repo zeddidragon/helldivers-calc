@@ -1,6 +1,6 @@
 # Changeset Proposal
 
-Complaining about balance is all the rage these days, but I figured I'd give it a crack. It's hard to know exactly how well these would work without trying them, but had a god based on feel and numbers. I can't assert these are more correrct than other people's assertions, only that the changes were within me and I needed to get them out.
+Complaining about balance is all the rage these days, but I figured I'd give it a crack. It's hard to know exactly how well these would work without trying them, but had a go based on feel and numbers. I can't assert these are more correrct than other people's assertions, only that the changes were within me and I needed to get them out.
 
 |Weapon|Property|Before|After|Reasoning|
 |:-|:-|:-|:-|:-|
