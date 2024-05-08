@@ -2,7 +2,6 @@ async function loadWeapons() {
   window.weapons = (await fetch(`data/weapons.json`).then(res => res.json()))
     .slice(1)
 }
-
 function shotDmg(wpn) {
   return ((wpn.pellets || 1) * (wpn.damage || 0)
     + (wpn.xpellets || 1) * (wpn.xdamage || 0))
@@ -26,7 +25,24 @@ function dps(wpn) {
   return shotDmg(wpn) * wpn.rpm / 60
 }
 
+function tdps(wpn) {
+  if(!wpn.reload) {
+    return
+  }
+  let magTime = wpn.limit
+  if(wpn.rpm) {
+    magTime = ((wpn.cap || 1) - 1) * 60 / wpn.rpm
+  }
+  if(wpn.charge) {
+    magTime = wpn.charge * (wpn.cap || 1)
+  }
+  return magDmg(wpn) / (magTime + wpn.reload)
+}
+
 function magDmg(wpn) {
+  if(!wpn.reload) {
+    return 0
+  }
   if(wpn.dps) {
     return (wpn.dps * wpn.limit) || 0
   }
@@ -34,7 +50,7 @@ function magDmg(wpn) {
   if(wpn.limit) { // Sickle
     return Math.floor((dmg * wpn.rpm * wpn.limit) / 60) || 0
   }
-  return (dmg * wpn.cap) || 0
+  return (dmg * (wpn.cap || 1)) || 0
 }
 
 function totalDmg(wpn) {
@@ -239,11 +255,12 @@ const cols = [
   'push',
   'recoil',
   'rpm',
-  'dps',
   'reload',
   'cap',
   'spare',
   'supply',
+  'dps',
+  'tdps',
   'magdmg',
   'total',
 ]
@@ -327,6 +344,7 @@ const locals = {
     return wpn.tags?.includes(tag)
   },
   dps: wpn => Math.round(dps(wpn)) || '',
+  tdps: wpn => Math.round(tdps(wpn)) || '',
   magDmg,
   totalDmg,
   wikiLink: (wpn) => {
