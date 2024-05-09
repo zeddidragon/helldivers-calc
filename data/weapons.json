@@ -193,12 +193,8 @@
     "unknown4": 0,
     "rpm": 600,
     "recoil": 10,
-    "cap": 45,
+    "cap": 35,
     "capplus": 1,
-    "mags": 7,
-    "magstart": 5,
-    "supply": 7,
-    "box": 3,
     "float1": 0,
     "unknown6": 0,
     "float2": 0
