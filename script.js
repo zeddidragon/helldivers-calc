@@ -120,6 +120,20 @@ const sorting = {
   },
   byCol: (col) => sortNum(col),
   ap: sortNums(['ap', 'xap'], ['max', 'min'], -1),
+  effect: (a, b) => {
+    const aEffect = a.effect1 || 0
+    const bEffect = b.effect1 || 0
+    const effectDiff = bEffect - aEffect
+    if(effectDiff) return effectDiff
+    if(!aEffect) {
+      return sorting.damage(a, b)
+    }
+    const aParam = a.param1 || 0
+    const bParam = b.param1 || 0
+    const paramDiff = bParam - aParam
+    if(paramDiff) return paramDiff
+    return sorting.damage(a, b)
+  },
   demo: sortNums(['demo', 'xdemo'], ['max', 'min'], -1),
   spare: sortNums(['mags', 'rounds', 'clips'], ['max', 'min'], -1),
   stun: sortNums(['stun', 'xstun'], ['max', 'min'], -1),
