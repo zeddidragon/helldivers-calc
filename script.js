@@ -316,14 +316,14 @@ function getEffect(wpn, p) {
       effectCache[key] = {
         name: () => '🔥',
         value: () => param,
-        description: () => `${param}% chance of setting target on fire`,
+        description: () => `${param} (chance%/buildup?) for setting target on fire`,
       }
       break
     case 34:
       effectCache[key] = {
         name: () => '☆',
         value: () => param,
-        description: () => `Stuns target for ${param} second(s)`,
+        description: () => `Stuns target. Buildup factor of ${param}.`,
       }
       break
     default:
