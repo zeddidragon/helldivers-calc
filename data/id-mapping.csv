@@ -2,10 +2,12 @@ name,property,damageid
 AR-23 Liberator,damage,51
 AR-23P Liberator Penetrator,damage,48
 AR-23C Liberator Concussive,damage,50
+AR-61 Tenderizer,51
 BR-14 Adjudicator,damage,61
-R-63 Diligence,damage,73
+R-63 Diligence,damage,42
 R-63CS Diligence Counter Sniper,damage,74
 SMG-37 Defender,damage,34
+SMG-72 Pummeler,damage,41
 MP-98 Knight,damage,26
 SG-8 Punisher,damage,88
 eG-8S Slugger,damage,99
@@ -26,6 +28,7 @@ PLAS-1 Scorcher,damage,20
 PLAS-1 Scorcher,xdamage,184
 P-2 Peacemaker,damage,27
 P-19 Redeemer,damage,25
+P-113 Verdict,damage,73
 GP-31 Grenade Pistol,damage,21
 GP-31 Grenade Pistol,xdamage,229
 LAS-7 Dagger,damage,296

@@ -196,6 +196,7 @@ const sourceOrder = [
   'steel-vets',
   'cut-edge',
   'demo-det',
+  'polar-pat',
   'support',
 ]
 const sourceLabels = {
@@ -205,6 +206,7 @@ const sourceLabels = {
   'steel-vets': 'Vets',
   'cut-edge': 'Cut',
   'demo-det': 'Demo',
+  'polar-pat': 'Polar',
   'support': '',
 }
 const sourceNames = {
@@ -214,6 +216,7 @@ const sourceNames = {
   'steel-vets': 'Steeled Veterans',
   'cut-edge': 'Cutting Edge',
   'demo-det': 'Democratic Detonation',
+  'polar-pat': 'Polar Patriots',
   'support': 'Support Weapon',
 }
 const categoryNames = {

@@ -58,6 +58,26 @@
   | penetration_aoe = 
 }}
 
+# AR-61 Tenderizer
+{{Weapon_Damage_Statistics
+  | standard_damage = 60
+  | durable_damage = 6
+  | aoe_standard_damage = 
+  | aoe_durable_damage = 
+  | pellet_amount = 
+  | pellet_standard_damage = 
+  | pellet_durable_damage = 
+  | stagger_value = 10
+  | aoe_stagger_value = 
+  | knockback_value = 10
+  | aoe_knockback_value = 
+  | structure_destroyer =
+  | penetration_direct = 2
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
+  | penetration_aoe = 
+}}
+
 # BR-14 Adjudicator
 {{Weapon_Damage_Statistics
   | standard_damage = 80
@@ -81,15 +101,15 @@
 # R-63 Diligence
 {{Weapon_Damage_Statistics
   | standard_damage = 125
-  | durable_damage = 13
+  | durable_damage = 12
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
-  | stagger_value = 15
+  | stagger_value = 12
   | aoe_stagger_value = 
-  | knockback_value = 14
+  | knockback_value = 10
   | aoe_knockback_value = 
   | structure_destroyer =
   | penetration_direct = 2
@@ -128,6 +148,26 @@
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 10
+  | aoe_stagger_value = 
+  | knockback_value = 5
+  | aoe_knockback_value = 
+  | structure_destroyer =
+  | penetration_direct = 2
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
+  | penetration_aoe = 
+}}
+
+# SMG-72 Pummeler
+{{Weapon_Damage_Statistics
+  | standard_damage = 65
+  | durable_damage = 7
+  | aoe_standard_damage = 
+  | aoe_durable_damage = 
+  | pellet_amount = 
+  | pellet_standard_damage = 
+  | pellet_durable_damage = 
+  | stagger_value = 15
   | aoe_stagger_value = 
   | knockback_value = 5
   | aoe_knockback_value = 
@@ -418,6 +458,26 @@
   | penetration_aoe = 3
 }}
 
+# PLAS-101 Purifier
+{{Weapon_Damage_Statistics
+  | standard_damage = NaN
+  | durable_damage = NaN
+  | aoe_standard_damage = 
+  | aoe_durable_damage = 
+  | pellet_amount = 
+  | pellet_standard_damage = 
+  | pellet_durable_damage = 
+  | stagger_value = undefined
+  | aoe_stagger_value = 
+  | knockback_value = 
+  | aoe_knockback_value = 
+  | structure_destroyer =
+  | penetration_direct = 3
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
+  | penetration_aoe = 
+}}
+
 # P-2 Peacemaker
 {{Weapon_Damage_Statistics
   | standard_damage = 75
@@ -450,6 +510,26 @@
   | stagger_value = 10
   | aoe_stagger_value = 
   | knockback_value = 4
+  | aoe_knockback_value = 
+  | structure_destroyer =
+  | penetration_direct = 2
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
+  | penetration_aoe = 
+}}
+
+# P-113 Verdict
+{{Weapon_Damage_Statistics
+  | standard_damage = 125
+  | durable_damage = 13
+  | aoe_standard_damage = 
+  | aoe_durable_damage = 
+  | pellet_amount = 
+  | pellet_standard_damage = 
+  | pellet_durable_damage = 
+  | stagger_value = 15
+  | aoe_stagger_value = 
+  | knockback_value = 14
   | aoe_knockback_value = 
   | structure_destroyer =
   | penetration_direct = 2

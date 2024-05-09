@@ -71,6 +71,7 @@ for(const wpn of weapons) {
   const damageIds = idMap.filter(m => m.name === name)
   for(const id of damageIds) {
     const dmg = damageRegister[id.id]
+    if(!dmg) continue
     wpn[id.prop] = dmg.damage
     const prefix = id.prop === 'damage' ? '' : id.prop[0]
     if(!prefix && wpn.tags?.includes('laser')) {
