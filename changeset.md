@@ -1,6 +1,8 @@
 # Changeset Proposal
 
-Complaining about balance is all the rage these days, but I figured I'd give it a crack. It's hard to know exactly how well these would work without trying them, but had a go based on feel and numbers. I can't assert these are more correct than other people's suggestions, only that the changes were within me and I needed to get them out.
+Complaining about balance is all the rage these days, but I figured I'd give _doing balancing_ a crack. It's hard to know exactly how well these would work without trying them, but had a go based on feel and numbers. I can't assert these are more correct than other people's suggestions, only that the changes were within me and I needed to get them out.
+
+Polar Patriots is far too recent for me to have formed any kind of opinion, so those aren't included here.
 
 |Weapon|Property|Before|After|Reasoning|
 |:-|:-|:-|:-|:-|

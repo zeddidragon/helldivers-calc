@@ -195,6 +195,10 @@
     "recoil": 10,
     "cap": 35,
     "capplus": 1,
+    "mags": 10,
+    "magstart": 7,
+    "supply": 5,
+    "box": 2,
     "float1": 0,
     "unknown6": 0,
     "float2": 0
