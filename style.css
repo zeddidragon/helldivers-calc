@@ -102,6 +102,10 @@ td.name {
   font-size: 0.7em;
   padding-left: 0.5em;
 }
+.effect-value {
+  font-size: 0.7em;
+  padding-left: 0.5em;
+}
 .one-over {
   color: #a98a98;
   font-size: 0.7em;

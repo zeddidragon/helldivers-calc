@@ -87,11 +87,21 @@ for(const wpn of weapons) {
     wpn[`${prefix}stun`] = dmg.stun
     wpn[`${prefix}push`] = dmg.push
     wpn[`${prefix}unknown4`] = dmg.unknown4
-    wpn[`${prefix}unknown5`] = dmg.unknown5
-    wpn[`${prefix}float1`] = dmg.float1
-    wpn[`${prefix}unknown6`] = dmg.unknown6
-    wpn[`${prefix}float2`] = dmg.float2
+    wpn[`${prefix}effect1`] = dmg.unknown5
+    wpn[`${prefix}param1`] = dmg.float1
+    wpn[`${prefix}effect2`] = dmg.unknown6
+    wpn[`${prefix}param2`] = dmg.float2
   }
+}
+for(const wpn of weapons) {
+  delete wpn.unknown5
+  delete wpn.float1
+  delete wpn.unknown6
+  delete wpn.float2
+  delete wpn.xunknown5
+  delete wpn.xfloat1
+  delete wpn.xunknown6
+  delete wpn.xfloat2
 }
 let keys = new Set(weapons.slice(1).map(w => Object.keys(w)).flat())
 const keyObj = weapons[0]
