@@ -25,3 +25,82 @@ Dil Chest: 41
 Dil Arm: 55
 Dill Leg: 45
 Dil Chest 100m: 47
+
+Light (50)
+Contact Mine: -74
+Impact Grenade: -141
+Pun Head: -649
+Pun Arm: -241
+Grenade Pistol Head: -359
+Dom Head: -423
+Dom Chest: -186
+Dom Arm: -131
+Dom Leg: -167
+AMR Head: -773
+AMR Chest: -384
+AMR Arm: -294
+AMR Leg: -354
+EAT Head: -1270
+EAT Chest: -708
+EMS Mortar Chest: 95
+
+Light (64)
+Impact Grenade: -122
+Dom Head: -423
+Dom Chest: -164
+Dom Arm: -113
+Dom Leg: -146
+AMR Head: -773
+AMR Chest: -348
+AMR Arm: -260
+AMR Leg: -320
+
+Light (70)
+Impact Grenade: -114
+Dom Head: -423
+Dom Chest: -155
+Dom Arm: -106
+Dom Leg: -139
+AMR Head: -773
+AMR Chest: -334
+AMR Arm: -252
+AMR Leg: -306
+AMR Leg (4m): -303
+AMR Leg (10m): -302
+Break-Action Head: -1045
+Break-Action Chest: -465
+
+Light (79)
+Impact Grenade: -103
+Dom Head: -423
+Dom Chest: -142
+Dom Arm: -95
+Dom Arm x2: -315
+Dom Leg: -126
+AMR Head: -775
+AMR Chest: -307
+AMR Arm: -235
+AMR Leg: -287
+
+Medium (100)
+Dom Head: -423
+Dom Chest: -108
+Dom Arm: -68
+Dom Leg: -95
+AMR Head: -773
+AMR Chest: -254
+AMR Arm: -187
+AMR Leg: -235
+Hellbomb: -1875
+
+Heavy (150)
+Impact Grenade: -35
+Dom Head: -313
+Dom Chest: -62
+Dom Arm: -29
+Dom Leg: -51
+AMR Head: -587
+AMR Chest: -178
+AMR Arm: -127
+AMR Leg: -
+Grenade Pistol Leg: -15
