@@ -8719,7 +8719,7 @@
             ]
         },
         {
-            "id": "bogus-eruptor",
+            "id": "eruptor",
             "damage": 190,
             "secondaryDamage": 190,
             "pen1": 3,

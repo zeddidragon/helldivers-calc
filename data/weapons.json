@@ -19,11 +19,6 @@
     "stun": 100,
     "push": 100,
     "demo": 100,
-    "unknown4": 0,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
     "xpellets": 1,
     "xid": 0,
     "xdamage": 0,
@@ -35,11 +30,6 @@
     "xstun": 0,
     "xpush": 0,
     "xdemo": 0,
-    "xunknown4": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0,
     "rpm": 600,
     "recoil": 0,
     "charge": 0,
@@ -65,7 +55,17 @@
     "clipbox": 0,
     "clipsupply": 0,
     "tags": [],
-    "dps": 0
+    "dps": 0,
+    "dmgtype": 0,
+    "effect1": 0,
+    "param1": 0,
+    "effect2": 0,
+    "param2": 0,
+    "xdmgtype": 0,
+    "xeffect1": 0,
+    "xparam1": 0,
+    "xeffect2": 0,
+    "xparam2": 0
   },
   {
     "category": "AR",
@@ -85,7 +85,6 @@
     "stun": 10,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 640,
     "recoil": 15,
     "reload": 3,
@@ -95,11 +94,7 @@
     "mags": 7,
     "magstart": 5,
     "supply": 7,
-    "box": 3,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 3
   },
   {
     "category": "AR",
@@ -120,7 +115,6 @@
     "stun": 10,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 640,
     "recoil": 19,
     "reload": 3,
@@ -130,11 +124,7 @@
     "mags": 10,
     "magstart": 7,
     "supply": 10,
-    "box": 5,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 5
   },
   {
     "category": "AR",
@@ -155,7 +145,6 @@
     "stun": 35,
     "push": 100,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 320,
     "recoil": 28,
     "reload": 3,
@@ -165,11 +154,7 @@
     "mags": 10,
     "magstart": 7,
     "supply": 10,
-    "box": 5,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 5
   },
   {
     "category": "AR",
@@ -190,7 +175,6 @@
     "stun": 10,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 600,
     "recoil": 10,
     "cap": 35,
@@ -198,10 +182,7 @@
     "mags": 10,
     "magstart": 7,
     "supply": 5,
-    "box": 2,
-    "float1": 0,
-    "unknown6": 0,
-    "float2": 0
+    "box": 2
   },
   {
     "category": "AR",
@@ -222,7 +203,6 @@
     "stun": 15,
     "push": 12,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 550,
     "recoil": 40,
     "reload": 3,
@@ -232,11 +212,7 @@
     "mags": 8,
     "magstart": 6,
     "supply": 8,
-    "box": 4,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 4
   },
   {
     "category": "DMR",
@@ -257,7 +233,6 @@
     "stun": 12,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 350,
     "recoil": 35,
     "reload": 3,
@@ -267,11 +242,7 @@
     "mags": 8,
     "magstart": 5,
     "supply": 8,
-    "box": 4,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 4
   },
   {
     "category": "DMR",
@@ -292,7 +263,6 @@
     "stun": 15,
     "push": 14,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 350,
     "recoil": 53,
     "reload": 3,
@@ -302,11 +272,7 @@
     "mags": 6,
     "magstart": 4,
     "supply": 6,
-    "box": 3,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 3
   },
   {
     "category": "SMG",
@@ -327,7 +293,6 @@
     "stun": 10,
     "push": 5,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 520,
     "recoil": 10,
     "reload": 2.8,
@@ -340,11 +305,7 @@
     "box": 3,
     "tags": [
       "1h"
-    ],
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    ]
   },
   {
     "category": "SMG",
@@ -365,7 +326,6 @@
     "stun": 15,
     "push": 5,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 475,
     "recoil": 10,
     "cap": 45,
@@ -378,9 +338,7 @@
       "1h"
     ],
     "effect1": 34,
-    "param1": 1.5,
-    "effect2": 0,
-    "param2": 0
+    "param1": 1.5
   },
   {
     "category": "SMG",
@@ -400,7 +358,6 @@
     "stun": 10,
     "push": 4,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 1380,
     "recoil": 20,
     "reload": 2.5,
@@ -413,11 +370,7 @@
     "box": 2,
     "tags": [
       "1h"
-    ],
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    ]
   },
   {
     "category": "SG",
@@ -439,7 +392,6 @@
     "stun": 35,
     "push": 30,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 80,
     "recoil": 120,
     "reload": 6.9,
@@ -451,11 +403,7 @@
     "roundsbox": 30,
     "tags": [
       "rounds"
-    ],
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    ]
   },
   {
     "category": "SG",
@@ -476,7 +424,6 @@
     "stun": 20,
     "push": 35,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 80,
     "recoil": 120,
     "reload": 6.9,
@@ -488,11 +435,7 @@
     "roundsbox": 30,
     "tags": [
       "rounds"
-    ],
-    "float1": 0,
-    "unknown6": 0,
-    "float2": 0,
-    "unknown5": 0
+    ]
   },
   {
     "category": "SG",
@@ -514,7 +457,6 @@
     "stun": 10,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 300,
     "recoil": 55,
     "reload": 2.5,
@@ -524,11 +466,7 @@
     "mags": 7,
     "magstart": 5,
     "supply": 7,
-    "box": 3,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 3
   },
   {
     "category": "SG",
@@ -550,7 +488,6 @@
     "stun": 3,
     "push": 1,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 330,
     "recoil": 45,
     "reload": 3,
@@ -560,11 +497,7 @@
     "mags": 8,
     "magstart": 6,
     "supply": 8,
-    "box": 4,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 4
   },
   {
     "category": "SG",
@@ -586,7 +519,6 @@
     "stun": 10,
     "push": 10,
     "demo": 10,
-    "unknown4": 1,
     "rpm": 300,
     "recoil": 28,
     "reload": 2.5,
@@ -600,10 +532,9 @@
     "tags": [
       "fire"
     ],
+    "dmgtype": 1,
     "effect1": 6,
-    "param1": 100,
-    "effect2": 0,
-    "param2": 0
+    "param1": 100
   },
   {
     "category": "EX",
@@ -624,7 +555,6 @@
     "stun": 30,
     "push": 10,
     "demo": 0,
-    "unknown4": 0,
     "xid": "125",
     "xdamage": 150,
     "xdurable": 150,
@@ -635,7 +565,6 @@
     "xstun": 25,
     "xpush": 10,
     "xdemo": 15,
-    "xunknown4": 0,
     "rpm": 50,
     "recoil": 35,
     "reload": 3.3,
@@ -644,15 +573,7 @@
     "mags": 8,
     "magstart": 8,
     "supply": 8,
-    "box": 4,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "box": 4
   },
   {
     "category": "EX",
@@ -673,7 +594,6 @@
     "stun": 35,
     "push": 15,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 250,
     "recoil": 75,
     "reload": 3.8,
@@ -686,11 +606,7 @@
     "box": 3,
     "tags": [
       "jet"
-    ],
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    ]
   },
   {
     "category": "EX",
@@ -711,8 +627,7 @@
     "stun": 35,
     "push": 20,
     "demo": 30,
-    "unknown4": 0,
-    "xid": "bogus-eruptor",
+    "xid": "eruptor",
     "xdamage": 190,
     "xdurable": 190,
     "xap": 3,
@@ -722,7 +637,6 @@
     "xstun": 25,
     "xpush": 40,
     "xdemo": 20,
-    "xunknown4": 0,
     "rpm": 25,
     "recoil": 75,
     "reload": 4.7,
@@ -736,15 +650,7 @@
     "tags": [
       "jet",
       "shrapnel"
-    ],
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    ]
   },
   {
     "category": "NRG",
@@ -765,7 +671,6 @@
     "stun": 20,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "xid": "186",
     "xdamage": 150,
     "xdurable": 150,
@@ -776,7 +681,6 @@
     "xstun": 35,
     "xpush": 30,
     "xdemo": 10,
-    "xunknown4": 0,
     "rpm": 80,
     "recoil": 110,
     "reload": 2.5,
@@ -784,15 +688,7 @@
     "mags": 8,
     "magstart": 6,
     "supply": 8,
-    "box": 4,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "box": 4
   },
   {
     "category": "NRG",
@@ -814,13 +710,9 @@
     "stun": 30,
     "push": 25,
     "demo": 10,
-    "unknown4": 2,
     "rpm": 45,
     "recoil": 60,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "dmgtype": 2
   },
   {
     "category": "NRG",
@@ -841,7 +733,6 @@
     "stun": 0,
     "push": 0,
     "demo": 10,
-    "unknown4": 0,
     "recoil": 1,
     "reload": 1.8,
     "reloadearly": 3,
@@ -855,9 +746,7 @@
     ],
     "dps": 350,
     "effect1": 6,
-    "param1": 0.25,
-    "effect2": 0,
-    "param2": 0
+    "param1": 0.25
   },
   {
     "category": "NRG",
@@ -878,7 +767,6 @@
     "stun": 10,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 750,
     "recoil": 2,
     "reload": 2.1,
@@ -887,11 +775,7 @@
     "magstart": 3,
     "supply": 3,
     "box": 3,
-    "limit": 7,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "limit": 7
   },
   {
     "category": "NRG",
@@ -912,7 +796,6 @@
     "stun": 20,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "xid": "184",
     "xdamage": 100,
     "xdurable": 100,
@@ -923,7 +806,6 @@
     "xstun": 10,
     "xpush": 7,
     "xdemo": 10,
-    "xunknown4": 0,
     "rpm": 250,
     "recoil": 20,
     "reload": 2.5,
@@ -932,15 +814,7 @@
     "mags": 6,
     "magstart": 3,
     "supply": 6,
-    "box": 3,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "box": 3
   },
   {
     "category": "NRG",
@@ -982,7 +856,6 @@
     "stun": 10,
     "push": 4,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 900,
     "recoil": 23,
     "reload": 1.8,
@@ -992,11 +865,7 @@
     "mags": 5,
     "magstart": 4,
     "supply": 5,
-    "box": 2,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 2
   },
   {
     "category": "HG",
@@ -1017,7 +886,6 @@
     "stun": 10,
     "push": 4,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 1100,
     "recoil": 15,
     "reload": 2.1,
@@ -1027,11 +895,7 @@
     "mags": 4,
     "magstart": 4,
     "supply": 4,
-    "box": 2,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 2
   },
   {
     "category": "HG",
@@ -1052,15 +916,10 @@
     "stun": 15,
     "push": 14,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 450,
     "recoil": 23,
     "cap": 10,
-    "capplus": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "capplus": 1
   },
   {
     "category": "HG",
@@ -1081,7 +940,6 @@
     "stun": 20,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "xid": "229",
     "xdamage": 350,
     "xdurable": 350,
@@ -1092,7 +950,6 @@
     "xstun": 50,
     "xpush": 40,
     "xdemo": 30,
-    "xunknown4": 0,
     "rpm": 900,
     "recoil": 43,
     "reload": 2,
@@ -1100,15 +957,7 @@
     "rounds": 8,
     "roundstart": 4,
     "roundsupply": 2,
-    "roundsbox": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "roundsbox": 1
   },
   {
     "category": "HG",
@@ -1129,7 +978,6 @@
     "stun": 0,
     "push": 0,
     "demo": 10,
-    "unknown4": 0,
     "recoil": 1,
     "reload": 1.8,
     "reloadearly": 2.3,
@@ -1143,9 +991,7 @@
     ],
     "dps": 200,
     "effect1": 6,
-    "param1": 0.25,
-    "effect2": 0,
-    "param2": 0
+    "param1": 0.25
   },
   {
     "category": "HG",
@@ -1166,7 +1012,6 @@
     "stun": 20,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 200,
     "recoil": 43,
     "reload": 2.8,
@@ -1180,11 +1025,7 @@
     "roundsbox": 10,
     "tags": [
       "rounds"
-    ],
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    ]
   },
   {
     "category": "SUP",
@@ -1204,7 +1045,6 @@
     "stun": 10,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 1150,
     "reload": 5.8,
     "reloadearly": 4.4,
@@ -1213,11 +1053,7 @@
     "mags": 3,
     "magstart": 2,
     "supply": 2,
-    "box": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 1
   },
   {
     "category": "SUP",
@@ -1237,7 +1073,6 @@
     "stun": 15,
     "push": 12,
     "demo": 10,
-    "unknown4": 0,
     "rpm": 900,
     "reload": 5,
     "reloadearly": 4.2,
@@ -1246,11 +1081,7 @@
     "mags": 2,
     "magstart": 1,
     "supply": 1,
-    "box": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 1
   },
   {
     "category": "SUP",
@@ -1270,7 +1101,6 @@
     "stun": 15,
     "push": 20,
     "demo": 15,
-    "unknown4": 0,
     "rpm": 950,
     "reload": 7.2,
     "reloadearly": 5,
@@ -1279,11 +1109,7 @@
     "mags": 2,
     "magstart": 1,
     "supply": 2,
-    "box": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 1
   },
   {
     "category": "SUP",
@@ -1303,13 +1129,9 @@
     "stun": 35,
     "push": 10,
     "demo": 20,
-    "unknown4": 2,
     "rpm": 60,
     "charge": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "dmgtype": 2
   },
   {
     "category": "SUP",
@@ -1329,7 +1151,6 @@
     "stun": 5,
     "push": 5,
     "demo": 10,
-    "unknown4": 1,
     "reload": 3.9,
     "mags": 4,
     "magstart": 2,
@@ -1339,10 +1160,9 @@
     "tags": [
       "fire"
     ],
+    "dmgtype": 1,
     "effect1": 6,
-    "param1": 10,
-    "effect2": 0,
-    "param2": 0
+    "param1": 10
   },
   {
     "category": "SUP",
@@ -1362,7 +1182,6 @@
     "stun": 20,
     "push": 25,
     "demo": 20,
-    "unknown4": 0,
     "rpm": 350,
     "reload": 3.2,
     "reloadearly": 2.6,
@@ -1371,11 +1190,7 @@
     "mags": 6,
     "magstart": 4,
     "supply": 3,
-    "box": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "box": 1
   },
   {
     "category": "SUP",
@@ -1395,7 +1210,6 @@
     "stun": 40,
     "push": 10,
     "demo": 10,
-    "unknown4": 0,
     "xid": "229",
     "xdamage": 350,
     "xdurable": 350,
@@ -1406,7 +1220,6 @@
     "xstun": 50,
     "xpush": 40,
     "xdemo": 30,
-    "xunknown4": 0,
     "reload": 3.5,
     "reloadearly": 3,
     "cap": 10,
@@ -1414,15 +1227,7 @@
     "mags": 2,
     "magstart": 1,
     "supply": 2,
-    "box": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "box": 1
   },
   {
     "category": "SUP",
@@ -1442,7 +1247,6 @@
     "stun": 30,
     "push": 20,
     "demo": 30,
-    "unknown4": 0,
     "xid": "212",
     "xdamage": 150,
     "xdurable": 150,
@@ -1453,7 +1257,6 @@
     "xstun": 30,
     "xpush": 20,
     "xdemo": 30,
-    "xunknown4": 0,
     "rpm": 250,
     "reload": 5.2,
     "reloadearly": 1.7,
@@ -1462,15 +1265,7 @@
     "clipstart": 10,
     "clipsize": 5,
     "clipbox": 2,
-    "clipsupply": 5,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "clipsupply": 5
   },
   {
     "category": "SUP",
@@ -1490,18 +1285,13 @@
     "stun": 35,
     "push": 15,
     "demo": 10,
-    "unknown4": 0,
     "charge": 3,
     "reload": 1.3,
     "cap": 1,
     "rounds": 20,
     "roundstart": 10,
     "roundsupply": 10,
-    "roundsbox": 2,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0
+    "roundsbox": 2
   },
   {
     "category": "SUP",
@@ -1521,7 +1311,6 @@
     "stun": 50,
     "push": 15,
     "demo": 10,
-    "unknown4": 0,
     "charge": 3,
     "reload": 1.3,
     "cap": 1,
@@ -1530,9 +1319,7 @@
     "roundsupply": 10,
     "roundsbox": 2,
     "effect1": 34,
-    "param1": 1,
-    "effect2": 0,
-    "param2": 0
+    "param1": 1
   },
   {
     "category": "SUP",
@@ -1552,7 +1339,6 @@
     "stun": 0,
     "push": 0,
     "demo": 20,
-    "unknown4": 0,
     "reload": 3.6,
     "reloadearly": 5,
     "mags": 1,
@@ -1565,9 +1351,7 @@
     ],
     "dps": 350,
     "effect1": 6,
-    "param1": 0.25,
-    "effect2": 0,
-    "param2": 0
+    "param1": 0.25
   },
   {
     "category": "SUP",
@@ -1587,7 +1371,6 @@
     "stun": 50,
     "push": 40,
     "demo": 30,
-    "unknown4": 0,
     "xid": "228",
     "xdamage": 150,
     "xdurable": 150,
@@ -1598,17 +1381,8 @@
     "xstun": 50,
     "xpush": 40,
     "xdemo": 30,
-    "xunknown4": 0,
     "charge": 3.1,
-    "reload": 15,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "reload": 15
   },
   {
     "category": "SUP",
@@ -1628,7 +1402,6 @@
     "stun": 50,
     "push": 25,
     "demo": 30,
-    "unknown4": 0,
     "xid": "225",
     "xdamage": 150,
     "xdurable": 150,
@@ -1639,16 +1412,7 @@
     "xstun": 50,
     "xpush": 40,
     "xdemo": 30,
-    "xunknown4": 0,
-    "cap": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "cap": 1
   },
   {
     "category": "SUP",
@@ -1668,7 +1432,6 @@
     "stun": 50,
     "push": 25,
     "demo": 30,
-    "unknown4": 0,
     "xid": "225",
     "xdamage": 150,
     "xdurable": 150,
@@ -1679,21 +1442,12 @@
     "xstun": 50,
     "xpush": 40,
     "xdemo": 30,
-    "xunknown4": 0,
     "reload": 6,
     "cap": 1,
     "rounds": 5,
     "roundstart": 5,
     "roundsupply": 3,
-    "roundsbox": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "roundsbox": 1
   },
   {
     "category": "SUP",
@@ -1713,7 +1467,6 @@
     "stun": 50,
     "push": 25,
     "demo": 40,
-    "unknown4": 0,
     "xid": "241",
     "xdamage": 200,
     "xdurable": 200,
@@ -1724,21 +1477,12 @@
     "xstun": 30,
     "xpush": 40,
     "xdemo": 30,
-    "xunknown4": 0,
     "reload": 5,
     "cap": 1,
     "rounds": 3,
     "roundstart": 3,
     "roundsupply": 2,
-    "roundsbox": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "roundsbox": 1
   },
   {
     "category": "SUP",
@@ -1758,7 +1502,6 @@
     "stun": 50,
     "push": 25,
     "demo": 40,
-    "unknown4": 0,
     "xpellets": 16,
     "xid": "244",
     "xdamage": 250,
@@ -1770,20 +1513,11 @@
     "xstun": 30,
     "xpush": 40,
     "xdemo": 30,
-    "xunknown4": 0,
     "reload": 6.7,
     "cap": 1,
     "rounds": 5,
     "roundstart": 5,
     "roundsupply": 3,
-    "roundsbox": 1,
-    "effect1": 0,
-    "param1": 0,
-    "effect2": 0,
-    "param2": 0,
-    "xeffect1": 0,
-    "xparam1": 0,
-    "xeffect2": 0,
-    "xparam2": 0
+    "roundsbox": 1
   }
 ]

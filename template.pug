@@ -58,6 +58,11 @@ table
           td.name
             a(href=wikiLink(wpn) target="_blank")= wpn.name
           td.damage
+            if wpn.dmgtype
+              span.damage-type(
+                title=dmgTypeText(wpn)
+                class=dmgTypeClass(wpn)
+              )= dmgType(wpn)
             span.damage-main(title="Direct Hit")= wpn.damage
             if wpn.pellets
               span.pellets(title="Projectiles")= wpn.pellets

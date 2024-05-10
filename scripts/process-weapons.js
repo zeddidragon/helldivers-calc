@@ -86,7 +86,7 @@ for(const wpn of weapons) {
     wpn[`${prefix}demo`] = dmg.demolition
     wpn[`${prefix}stun`] = dmg.stun
     wpn[`${prefix}push`] = dmg.push
-    wpn[`${prefix}unknown4`] = dmg.unknown4
+    wpn[`${prefix}dmgtype`] = dmg.unknown4
     wpn[`${prefix}effect1`] = dmg.unknown5
     wpn[`${prefix}param1`] = dmg.float1
     wpn[`${prefix}effect2`] = dmg.unknown6
@@ -94,6 +94,7 @@ for(const wpn of weapons) {
   }
 }
 for(const wpn of weapons) {
+  delete wpn.unknown4
   delete wpn.unknown5
   delete wpn.float1
   delete wpn.unknown6
@@ -104,6 +105,25 @@ for(const wpn of weapons) {
   delete wpn.xfloat2
 }
 let keys = new Set(weapons.slice(1).map(w => Object.keys(w)).flat())
+const props = [
+  'dmgtype',
+  'effect1',
+  'effect2',
+  'param1',
+  'param2',
+  'xdmgtype',
+  'xeffect1',
+  'xeffect2',
+  'xparam1',
+  'xparam2',
+]
+for(const wpn of weapons.slice(0)) {
+  for(const prop of props) {
+    if(wpn[prop] === 0) {
+      delete wpn[prop]
+    }
+  }
+}
 const keyObj = weapons[0]
 for(const key of keys) {
   if(keyObj[key] == null) {

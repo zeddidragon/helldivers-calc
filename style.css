@@ -83,7 +83,7 @@ td.name {
 .category.SG, .ap-3 {
   color: #8e8;
 }
-.category.DMR, .ap-2, .source.cut-edge {
+.category.DMR, .ap-2, .source.cut-edge, .damage-type.arc {
   color: #88e;
 }
 .category.EX, .ap-4, .source.steel-vets {
@@ -102,8 +102,10 @@ td.name {
   font-size: 0.7em;
   padding-left: 0.5em;
 }
-.effect-value {
+.effect, .damage-type {
   font-size: 0.7em;
+}
+.effect-value {
   padding-left: 0.5em;
 }
 .one-over {
@@ -140,6 +142,9 @@ td.name {
 td.cap {
   border-right: none;
   padding-right: 0;
+}
+.damage-type {
+  padding-right: 0.2em;
 }
 
 th.capextra, td.capextra {

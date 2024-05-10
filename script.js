@@ -295,7 +295,7 @@ const nerdCols = [
   'demo',
   'stun',
   'push',
-  'unknown4',
+  'dmgtype',
   'effect1',
   'param1',
   'effect2',
@@ -347,6 +347,25 @@ const locals = {
       .filter(wpn => !locals.hideSources[wpn.source])
       .filter(wpn => !locals.hideCategories[wpn.category])
       .sort(sorter)
+  },
+  dmgTypeText: wpn => {
+    switch(wpn.dmgtype) {
+      case 1: return 'Fire Damage'
+      case 2: return 'Arc Damage'
+    }
+  },
+  dmgTypeClass: wpn => {
+    switch(wpn.dmgtype) {
+      case 1: return 'fire'
+      case 2: return 'arc'
+    }
+  },
+  dmgType: wpn => {
+    switch(wpn.dmgtype) {
+      case 1: return '🔥'
+      case 2: return '⚡'
+      default: return wpn.dmgType
+    }
   },
   hideSources: {},
   hideCategories: {},
