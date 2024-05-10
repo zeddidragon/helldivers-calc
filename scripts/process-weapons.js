@@ -105,6 +105,31 @@ for(const wpn of weapons) {
   delete wpn.xfloat2
 }
 let keys = new Set(weapons.slice(1).map(w => Object.keys(w)).flat())
+
+const types = {
+  1: 'Fire',
+  2: 'Arc',
+}
+function dmgType(wpn) {
+  const prop = wpn.dmgtype
+  if(!prop) return ''
+  return types[prop] || `Unknown (${prop})`
+}
+const effects = {
+  6: 'Burn',
+  34: 'Stun',
+}
+function effect(wpn) {
+  const prop = wpn.effect1
+  if(!prop) return ''
+  return effects[prop] || `Unknown (${prop})`
+}
+function param(wpn) {
+  const value = wpn.param1
+  if(value == null) return ''
+  return value
+}
+
 const props = [
   'dmgtype',
   'effect1',
@@ -117,13 +142,21 @@ const props = [
   'xparam1',
   'xparam2',
 ]
+
 for(const wpn of weapons.slice(0)) {
   for(const prop of props) {
     if(wpn[prop] === 0) {
       delete wpn[prop]
     }
   }
+  if(wpn.dmgtype) {
+    wpn.dmgtypename = types[wpn.dmgtype]
+  }
+  if(wpn.effect1) {
+    wpn.effect1name = effects[wpn.effect1]
+  }
 }
+
 const keyObj = weapons[0]
 for(const key of keys) {
   if(keyObj[key] == null) {
@@ -145,37 +178,13 @@ weapons = weapons.map(wpn => {
 
 fs.writeFileSync('data/weapons.json', JSON.stringify(weapons, null, 2))
 
-const types = {
-  1: 'Fire',
-  2: 'Arc',
-}
-function dmgType(wpn) {
-  const prop = wpn.dmgtype
-  if(!prop) return ''
-  return types[prop] || `Unknown (${prop})`
-}
-const effects = {
-  6: 'Fire',
-  34: 'Stun',
-}
-function effect(wpn) {
-  const prop = wpn.effect1
-  if(!prop) return ''
-  return effects[prop] || `Unknown (${prop})`
-}
-function param(wpn) {
-  const value = wpn.param1
-  if(value == null) return ''
-  return value
-}
-
 const wikiTables = weapons.slice(1).map(wpn => {
   const shots = wpn.pellets || 1
   return `# ${wpn.code} ${wpn.name}
 {{Weapon_Damage_Statistics
   | standard_damage = ${wpn.damage * shots}
   | durable_damage = ${wpn.durable * shots}
-  | damage_type = ${dmgType(wpn)}
+  | damage_type = ${wpn.dmgtypename || ''}
   | aoe_standard_damage = ${wpn.xdamage * shots || ''}
   | aoe_durable_damage = ${wpn.xdurable * shots || ''}
   | pellet_amount = ${wpn.pellets || ''}
@@ -191,8 +200,8 @@ const wikiTables = weapons.slice(1).map(wpn => {
   | penetration_angle_slight = ${(wpn.ap2 < wpn.ap && wpn.ap2) || ''}
   | penetration_angle_heavy = ${(wpn.ap3 < wpn.ap && wpn.ap3) || ''}
   | penetration_aoe = ${wpn.xap || ''}
-  | status_effect = ${effect(wpn, 1) || ''}
-  | status_param = ${param(wpn, 1) || ''}
+  | status_effect = ${wpn.effect1name || ''}
+  | status_param = ${wpn.param1 || ''}
 }}`
 }).join('\n\n')
 

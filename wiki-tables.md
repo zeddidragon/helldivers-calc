@@ -354,7 +354,7 @@
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 
-  | status_effect = Fire
+  | status_effect = Burn
   | status_param = 100
 }}
 
@@ -498,7 +498,7 @@
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 
-  | status_effect = Fire
+  | status_effect = Burn
   | status_param = 0.25
 }}
 
@@ -690,7 +690,7 @@
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 
-  | status_effect = Fire
+  | status_effect = Burn
   | status_param = 0.25
 }}
 
@@ -834,7 +834,7 @@
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 
-  | status_effect = Fire
+  | status_effect = Burn
   | status_param = 10
 }}
 
@@ -978,7 +978,7 @@
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 
-  | status_effect = Fire
+  | status_effect = Burn
   | status_param = 0.25
 }}
 
