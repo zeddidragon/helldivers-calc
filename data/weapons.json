@@ -1188,7 +1188,7 @@
     "demo": 10,
     "reload": 3.9,
     "mags": 4,
-    "magstart": 2,
+    "magstart": 3,
     "supply": 4,
     "box": 3,
     "limit": 12.5,
@@ -1225,7 +1225,7 @@
     "cap": 7,
     "capplus": 1,
     "mags": 6,
-    "magstart": 4,
+    "magstart": 5,
     "supply": 3,
     "box": 1
   },
