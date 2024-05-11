@@ -1558,5 +1558,31 @@
     "roundstart": 5,
     "roundsupply": 3,
     "roundsbox": 1
+  },
+  {
+    "category": "SUP",
+    "fullname": "Break-Action Shotgun",
+    "name": "Break-Action Shotgun",
+    "source": "support",
+    "idx": 100,
+    "catIdx": 9,
+    "pellets": 9,
+    "id": "69",
+    "damage": 65,
+    "durable": 6,
+    "ap": 2,
+    "ap2": 2,
+    "ap3": 2,
+    "ap4": 0,
+    "stun": 15,
+    "push": 12,
+    "demo": 10,
+    "reload": 2.4,
+    "reloadone": 2.3,
+    "cap": 2,
+    "rounds": 40,
+    "roundstart": 0,
+    "roundsupply": 20,
+    "roundsbox": 10
   }
 ]

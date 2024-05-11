@@ -49,7 +49,9 @@ for(const dmg of damages) {
 }
 
 for(const wpn of weapons) {
-  const name = `${wpn.code} ${wpn.name}`
+  const name = [wpn.code, wpn.name]
+    .filter(v => v)
+    .join(' ')
   const r = reloadRegister[name]
   wpn.fullname ||= name
   if(!wpn.source) {
@@ -180,7 +182,7 @@ fs.writeFileSync('data/weapons.json', JSON.stringify(weapons, null, 2))
 
 const wikiTables = weapons.slice(1).map(wpn => {
   const shots = wpn.pellets || 1
-  return `# ${wpn.code} ${wpn.name}
+  return `# ${wpn.code ||  ''} ${wpn.name}
 {{Weapon_Damage_Statistics
   | standard_damage = ${wpn.damage * shots}
   | durable_damage = ${wpn.durable * shots}

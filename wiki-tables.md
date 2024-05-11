@@ -1101,3 +1101,27 @@
   | status_effect = 
   | status_param = 
 }}
+
+#  Break-Action Shotgun
+{{Weapon_Damage_Statistics
+  | standard_damage = 585
+  | durable_damage = 54
+  | damage_type = 
+  | aoe_standard_damage = 
+  | aoe_durable_damage = 
+  | pellet_amount = 9
+  | pellet_standard_damage = 65
+  | pellet_durable_damage = 6
+  | stagger_value = 15
+  | aoe_stagger_value = 
+  | knockback_value = 12
+  | aoe_knockback_value = 
+  | demolition_force = 10
+  | aoe_demolition_force = 
+  | penetration_direct = 2
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
+  | penetration_aoe = 
+  | status_effect = 
+  | status_param = 
+}}
