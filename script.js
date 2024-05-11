@@ -16,7 +16,7 @@ function dps(wpn) {
   if(wpn.dps) {
     return wpn.dps
   }
-  if(wpn.cap === 1) {
+  if(wpn.cap < 3) {
     return 0
   }
   if(!wpn.rpm) {
