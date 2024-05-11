@@ -444,6 +444,10 @@ const locals = {
   tdps: wpn => Math.round(tdps(wpn)) || '',
   magDmg,
   totalDmg,
+  roundStart: wpn => {
+    if(wpn.roundstart == null) return wpn.rounds
+    return wpn.roundstart
+  },
   wikiLink: (wpn) => {
     const url = 'https://helldivers.wiki.gg/wiki'
     const path = wpn.fullname.split(/\s+/).join('_')

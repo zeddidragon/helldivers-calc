@@ -139,7 +139,7 @@ table
               span.clipstart(title="Starting Clips")= wpn.clipstart
               span.clips(title="Max Clips")= wpn.clips
             if wpn.rounds
-              span.roundstart(title="Starting Rounds")= wpn.roundstart || wpn.rounds
+              span.roundstart(title="Starting Rounds")= roundStart(wpn)
               span.rounds(title="Max Spare Rounds")= wpn.rounds
             if wpn.mags
               span.magstart(title="Starting Mags")= wpn.magstart || wpn.mags
