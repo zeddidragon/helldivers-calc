@@ -552,24 +552,24 @@
 
 # PLAS-101 Purifier
 {{Weapon_Damage_Statistics
-  | standard_damage = NaN
-  | durable_damage = NaN
+  | standard_damage = 100
+  | durable_damage = 50
   | damage_type = 
-  | aoe_standard_damage = 
-  | aoe_durable_damage = 
+  | aoe_standard_damage = 150
+  | aoe_durable_damage = 150
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
-  | stagger_value = undefined
-  | aoe_stagger_value = 
-  | knockback_value = 
-  | aoe_knockback_value = 
-  | demolition_force = undefined
-  | aoe_demolition_force = 
-  | penetration_direct = 3
+  | stagger_value = 20
+  | aoe_stagger_value = 35
+  | knockback_value = 10
+  | aoe_knockback_value = 30
+  | demolition_force = 10
+  | aoe_demolition_force = 10
+  | penetration_direct = 2
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
-  | penetration_aoe = 
+  | penetration_aoe = 3
   | status_effect = 
   | status_param = 
 }}

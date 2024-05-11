@@ -26,6 +26,8 @@ LAS-5 Scythe,damage,297
 LAS-16 Sickle,damage,19
 PLAS-1 Scorcher,damage,20
 PLAS-1 Scorcher,xdamage,184
+PLAS-101 Purifier,damage,20
+PLAS-101 Purifier,xdamage,186
 P-2 Peacemaker,damage,27
 P-19 Redeemer,damage,25
 P-113 Verdict,damage,73
