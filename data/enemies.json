@@ -1,0 +1,1407 @@
+{
+    "Cannon Turret": [
+        {
+            "Total Health": 800
+        },
+        {
+            "Total Health": 750,
+            "Unk004": {
+                "Health": -1,
+                "Fatal": true,
+                "Armor": 6,
+                "Main %": 100,
+                "Durable %": 100
+            },
+            "Unk485": {
+                "Health": -1,
+                "Fatal": true,
+                "Armor": 3,
+                "Main %": 100,
+                "Durable %": 100
+            }
+        }
+    ],
+    "Tesla Tower": {
+        "Total Health": 600,
+        "Unk246": {
+            "Health": 600,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 0
+        }
+    },
+    "Bile Titan": {
+        "Total Health": 3500,
+        "Head": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk428": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk290": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk188": {
+            "Health": 1500,
+            "Fatal": true,
+            "BleedsOut": 1500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk525": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk920": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk979": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk904": {
+            "Health": 1500,
+            "Fatal": true,
+            "BleedsOut": 1500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk028": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk548": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk782": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk717": {
+            "Health": 1500,
+            "Fatal": true,
+            "BleedsOut": 1500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk593": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk536": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk760": {
+            "Health": 500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk674": {
+            "Health": 1500,
+            "Fatal": true,
+            "BleedsOut": 1500,
+            "Armor": 6,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk673": {
+            "Health": 750,
+            "Fatal": true,
+            "Armor": 5,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk650": {
+            "Health": 650,
+            "Armor": 5,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk125": {
+            "Health": 650,
+            "Armor": 5,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk425": {
+            "Health": 1250,
+            "Fatal": true,
+            "Armor": 5,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk362": {
+            "Health": 400,
+            "Armor": 5,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk414": {
+            "Health": 400,
+            "Armor": 5,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk308": {
+            "Health": -1,
+            "Armor": 4,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk164": {
+            "Health": -1,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk158": {
+            "Health": 500,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk256": {
+            "Health": 500,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 100
+        }
+    },
+    "Rocket Raider": {
+        "Total Health": 125,
+        "Unk673": {
+            "Health": 40,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk064": {
+            "Health": 100,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk362": {
+            "Health": 65,
+            "Armor": 0,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk414": {
+            "Health": 65,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk060": {
+            "Health": 90,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 65,
+            "Durable %": 0
+        },
+        "Unk997": {
+            "Health": 90,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 65,
+            "Durable %": 0
+        }
+    },
+    "Raider": {
+        "Total Health": 125,
+        "Unk673": {
+            "Health": 40,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk064": {
+            "Health": 100,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk362": {
+            "Health": 65,
+            "Armor": 0,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk414": {
+            "Health": 65,
+            "Armor": 0,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk060": {
+            "Health": 90,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 65,
+            "Durable %": 0
+        },
+        "Unk997": {
+            "Health": 90,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 65,
+            "Durable %": 0
+        }
+    },
+    "Fabricator": {
+        "Total Health": 1000,
+        "Unk264": {
+            "Health": 400,
+            "Fatal": true,
+            "Armor": 4,
+            "Main %": 100,
+            "Durable %": 100
+        }
+    },
+    "Commissar": {
+        "Total Health": 125,
+        "Unk673": {
+            "Health": 40,
+            "Fatal": true,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk064": {
+            "Health": 100,
+            "Fatal": true,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk362": {
+            "Health": 65,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk414": {
+            "Health": 65,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk060": {
+            "Health": 90,
+            "Fatal": true,
+            "Armor": 1,
+            "Main %": 65,
+            "Durable %": 0
+        },
+        "Unk997": {
+            "Health": 90,
+            "Fatal": true,
+            "Armor": 1,
+            "Main %": 65,
+            "Durable %": 0
+        }
+    },
+    "HMG Emplacement": {
+        "Total Health": 1000,
+        "Unk246": {
+            "Health": 1000,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 0
+        }
+    },
+    "Automaton Mortar Emplacement": {
+        "Total Health": 400,
+        "Unk252": {
+            "Health": 200,
+            "Armor": 4,
+            "Main %": 0,
+            "Durable %": 0
+        }
+    },
+    "Bile Spewer": {
+        "Total Health": 750,
+        "Unk806": {
+            "Health": 300,
+            "Fatal": true,
+            "Armor": 3,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk588": {
+            "Health": 300,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk823": {
+            "Health": 750,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 60,
+            "Durable %": 90
+        },
+        "Unk604": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 3,
+            "Main %": 30,
+            "Durable %": 80
+        },
+        "Unk397": {
+            "Health": 300,
+            "Armor": 3,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk519": {
+            "Health": 300,
+            "Armor": 3,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk758": {
+            "Health": 300,
+            "Armor": 2,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk724": {
+            "Health": 300,
+            "Armor": 2,
+            "Main %": 50,
+            "Durable %": 0
+        }
+    },
+    "Marauder": {
+        "Total Health": 125,
+        "Unk673": {
+            "Health": 40,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk064": {
+            "Health": 100,
+            "Fatal": true,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk362": {
+            "Health": 65,
+            "Armor": 0,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk414": {
+            "Health": 65,
+            "Armor": 0,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk060": {
+            "Health": 90,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 65,
+            "Durable %": 0
+        },
+        "Unk997": {
+            "Health": 90,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 65,
+            "Durable %": 0
+        }
+    },
+    "Automaton Dropship": {
+        "Total Health": 500
+    },
+    "EMS Mortar Sentry": {
+        "Total Health": 200,
+        "Unk246": {
+            "Health": 200,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 0
+        }
+    },
+    "Bile Warrior": {
+        "Total Health": 325,
+        "Unk386": {
+            "Health": 150,
+            "Fatal": true,
+            "BleedsOut": 200,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk742": {
+            "Health": 100,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk711": {
+            "Health": 100,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk747": {
+            "Health": 100,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk086": {
+            "Health": 100,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk100": {
+            "Health": 100,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk550": {
+            "Health": 100,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        }
+    },
+    "Stalker": {
+        "Total Health": 800,
+        "Unk048": {
+            "Health": -1,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 50
+        },
+        "Unk086": {
+            "Health": -1,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 50
+        },
+        "Unk747": {
+            "Health": -1,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 50
+        },
+        "Unk948": {
+            "Health": -1,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 50
+        },
+        "Unk100": {
+            "Health": -1,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 50
+        },
+        "Unk550": {
+            "Health": -1,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 50
+        },
+        "Unk890": {
+            "Health": -1,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 50
+        },
+        "Unk806": {
+            "Health": 175,
+            "Fatal": true,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk580": {
+            "Health": -1,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 50
+        },
+        "Unk249": {
+            "Health": 125,
+            "Armor": 0,
+            "Main %": 30,
+            "Durable %": 50
+        }
+    },
+    "Assault Raider": {
+        "Total Health": 125,
+        "Unk673": {
+            "Health": 40,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk064": {
+            "Health": 100,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk362": {
+            "Health": 65,
+            "Armor": 0,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk414": {
+            "Health": 65,
+            "Armor": 0,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk926": {
+            "Health": 100,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 65,
+            "Durable %": 0
+        },
+        "Unk997": {
+            "Health": 90,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 65,
+            "Durable %": 0
+        }
+    },
+    "Scavenger": {
+        "Total Health": 80,
+        "Unk985": [
+            {
+                "Health": 30,
+                "Fatal": true,
+                "Armor": 0,
+                "Main %": 30,
+                "Durable %": 0
+            },
+            {
+                "Health": 30,
+                "Fatal": true,
+                "Armor": 0,
+                "Main %": 30,
+                "Durable %": 0
+            }
+        ],
+        "Unk867": {
+            "Health": 30,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 30,
+            "Durable %": 0
+        },
+        "Unk386": {
+            "Health": 20,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        }
+    },
+    "Nursing Spewer": {
+        "Total Health": 750,
+        "Unk806": {
+            "Health": 300,
+            "Fatal": true,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk588": {
+            "Health": 300,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk823": {
+            "Health": 750,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 60,
+            "Durable %": 90
+        },
+        "Unk604": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 2,
+            "Main %": 30,
+            "Durable %": 80
+        },
+        "Unk397": {
+            "Health": 300,
+            "Armor": 2,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk519": {
+            "Health": 300,
+            "Armor": 2,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk758": {
+            "Health": 300,
+            "Armor": 2,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk724": {
+            "Health": 300,
+            "Armor": 2,
+            "Main %": 50,
+            "Durable %": 0
+        }
+    },
+    "Emancipator Exosuit": {
+        "Total Health": 600,
+        "Unk609": {
+            "Health": 450,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk236": {
+            "Health": 450,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk877": {
+            "Health": 450,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 100
+        },
+        "Unk920": {
+            "Health": 450,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 85
+        },
+        "Unk060": {
+            "Health": 250,
+            "BleedsOut": 250,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 85
+        },
+        "Unk997": {
+            "Health": 250,
+            "BleedsOut": 250,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 85
+        },
+        "Unk022": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk897": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk385": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk586": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk924": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk249": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk945": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk818": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk925": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk680": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk168": {
+            "Health": 20,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk410": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk009": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk001": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk110": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk593": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk633": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk020": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk692": [
+            {
+                "Health": 10,
+                "Armor": 0,
+                "Main %": 0,
+                "Durable %": 0
+            },
+            {
+                "Health": 10,
+                "Armor": 0,
+                "Main %": 0,
+                "Durable %": 0
+            }
+        ],
+        "Unk455": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk123": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk335": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk764": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk345": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk795": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk080": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk519": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk643": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk508": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        },
+        "Unk111": {
+            "Health": 10,
+            "Armor": 0,
+            "Main %": 0,
+            "Durable %": 0
+        }
+    },
+    "Trooper": [
+        {
+            "Total Health": 125,
+            "Unk673": {
+                "Health": 40,
+                "Fatal": true,
+                "Armor": 0,
+                "Main %": 100,
+                "Durable %": 0
+            },
+            "Unk064": {
+                "Health": 100,
+                "Fatal": true,
+                "Armor": 0,
+                "Main %": 100,
+                "Durable %": 0
+            },
+            "Unk362": {
+                "Health": 65,
+                "Armor": 0,
+                "Main %": 50,
+                "Durable %": 0
+            },
+            "Unk414": {
+                "Health": 65,
+                "Armor": 0,
+                "Main %": 50,
+                "Durable %": 0
+            },
+            "Unk060": {
+                "Health": 90,
+                "Fatal": true,
+                "Armor": 0,
+                "Main %": 65,
+                "Durable %": 0
+            },
+            "Unk997": {
+                "Health": 90,
+                "Fatal": true,
+                "Armor": 0,
+                "Main %": 65,
+                "Durable %": 0
+            }
+        },
+        {
+            "Total Health": 125,
+            "Unk673": {
+                "Health": 40,
+                "Fatal": true,
+                "Armor": 0,
+                "Main %": 100,
+                "Durable %": 0
+            },
+            "Unk064": {
+                "Health": 100,
+                "Fatal": true,
+                "Armor": 0,
+                "Main %": 100,
+                "Durable %": 0
+            },
+            "Unk362": {
+                "Health": 65,
+                "Armor": 0,
+                "Main %": 50,
+                "Durable %": 0
+            },
+            "Unk414": {
+                "Health": 65,
+                "Armor": 0,
+                "Main %": 50,
+                "Durable %": 0
+            },
+            "Unk060": {
+                "Health": 90,
+                "Fatal": true,
+                "Armor": 0,
+                "Main %": 65,
+                "Durable %": 0
+            },
+            "Unk997": {
+                "Health": 90,
+                "Fatal": true,
+                "Armor": 0,
+                "Main %": 65,
+                "Durable %": 0
+            }
+        }
+    ],
+    "Chemical Backpack": {
+        "Total Health": 750
+    },
+    "Charger Behemoth": {
+        "Total Health": 1650,
+        "Unk673": {
+            "Health": 600,
+            "Fatal": true,
+            "Armor": 5,
+            "Main %": 70,
+            "Durable %": 75
+        },
+        "Butt": {
+            "Health": 1100,
+            "Armor": 0,
+            "Main %": 60,
+            "Durable %": 85
+        },
+        "Unk742": {
+            "Health": 650,
+            "Fatal": true,
+            "Armor": 5,
+            "Main %": 75,
+            "Durable %": 75
+        },
+        "Unk410": {
+            "Health": -1,
+            "Fatal": true,
+            "Armor": 4,
+            "Main %": 100,
+            "Durable %": 80
+        },
+        "Unk773": {
+            "Health": -1,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 50
+        },
+        "Unk777": {
+            "Health": 250,
+            "Armor": 5,
+            "Main %": 100,
+            "Durable %": 85
+        },
+        "Unk133": {
+            "Health": 250,
+            "Armor": 5,
+            "Main %": 100,
+            "Durable %": 85
+        },
+        "Unk350": {
+            "Health": 500,
+            "Armor": 5,
+            "Main %": 35,
+            "Durable %": 70
+        },
+        "Unk436": {
+            "Health": 500,
+            "Armor": 5,
+            "Main %": 35,
+            "Durable %": 70
+        },
+        "Unk600": {
+            "Health": 500,
+            "Armor": 5,
+            "Main %": 35,
+            "Durable %": 70
+        },
+        "Unk619": {
+            "Health": 500,
+            "Armor": 5,
+            "Main %": 35,
+            "Durable %": 70
+        },
+        "Unk310": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 30,
+            "Durable %": 70
+        },
+        "Unk267": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 30,
+            "Durable %": 70
+        },
+        "Unk001": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 30,
+            "Durable %": 70
+        },
+        "Unk956": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 0,
+            "Main %": 30,
+            "Durable %": 70
+        },
+        "Unk746": {
+            "Health": 500,
+            "Armor": 5,
+            "Main %": 35,
+            "Durable %": 70
+        },
+        "Unk457": {
+            "Health": 500,
+            "Armor": 5,
+            "Main %": 35,
+            "Durable %": 70
+        }
+    },
+    "Ballistic Missile": {
+        "Total Health": 750
+    },
+    "Hulk Bruiser": {
+        "Total Health": 1250,
+        "Unk362": {
+            "Health": 500,
+            "Armor": 4,
+            "Main %": 30,
+            "Durable %": 70
+        },
+        "Unk414": {
+            "Health": 500,
+            "Armor": 4,
+            "Main %": 30,
+            "Durable %": 70
+        },
+        "Unk071": {
+            "Health": 600,
+            "BleedsOut": 600,
+            "Armor": 4,
+            "Main %": 30,
+            "Durable %": 80
+        },
+        "Unk985": {
+            "Health": 600,
+            "BleedsOut": 600,
+            "Armor": 4,
+            "Main %": 30,
+            "Durable %": 80
+        },
+        "Unk673": {
+            "Health": 250,
+            "Fatal": true,
+            "Armor": 4,
+            "Main %": 100,
+            "Durable %": 25
+        },
+        "Unk718": {
+            "Health": 1000,
+            "Fatal": true,
+            "BleedsOut": 650,
+            "Armor": 1,
+            "Main %": 80,
+            "Durable %": 40
+        }
+    },
+    "Heavy Devastator": {
+        "Total Health": 800,
+        "Unk673": {
+            "Health": 125,
+            "Fatal": true,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk064": {
+            "Health": 425,
+            "Fatal": true,
+            "Armor": 3,
+            "Main %": 100,
+            "Durable %": 40
+        },
+        "Unk451": {
+            "Health": 350,
+            "Fatal": true,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk306": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 2,
+            "Main %": 75,
+            "Durable %": 0
+        },
+        "Unk531": {
+            "Health": 150,
+            "Armor": 2,
+            "Main %": 25,
+            "Durable %": 0
+        },
+        "Unk145": {
+            "Health": 150,
+            "Armor": 2,
+            "Main %": 25,
+            "Durable %": 0
+        },
+        "Unk414": {
+            "Health": 300,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk362": {
+            "Health": 300,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk860": [
+            {
+                "Health": 500,
+                "Fatal": true,
+                "Armor": 1,
+                "Main %": 75,
+                "Durable %": 0
+            },
+            {
+                "Health": 500,
+                "Fatal": true,
+                "Armor": 1,
+                "Main %": 75,
+                "Durable %": 0
+            }
+        ],
+        "Unk985": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 2,
+            "Main %": 60,
+            "Durable %": 0
+        },
+        "Unk071": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 2,
+            "Main %": 60,
+            "Durable %": 0
+        },
+        "Unk926": {
+            "Health": 600,
+            "Fatal": true,
+            "Armor": 2,
+            "Main %": 40,
+            "Durable %": 0
+        }
+    },
+    "Rocket Devastator": {
+        "Total Health": 800,
+        "Unk673": {
+            "Health": 125,
+            "Fatal": true,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk064": {
+            "Health": 425,
+            "Fatal": true,
+            "Armor": 3,
+            "Main %": 100,
+            "Durable %": 40
+        },
+        "Unk451": {
+            "Health": 350,
+            "Fatal": true,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 0
+        },
+        "Unk306": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 2,
+            "Main %": 75,
+            "Durable %": 0
+        },
+        "Unk531": {
+            "Health": 150,
+            "Armor": 2,
+            "Main %": 25,
+            "Durable %": 0
+        },
+        "Unk145": {
+            "Health": 150,
+            "Armor": 2,
+            "Main %": 25,
+            "Durable %": 0
+        },
+        "Unk414": {
+            "Health": 300,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk362": {
+            "Health": 300,
+            "Armor": 1,
+            "Main %": 50,
+            "Durable %": 0
+        },
+        "Unk860": [
+            {
+                "Health": 500,
+                "Fatal": true,
+                "Armor": 1,
+                "Main %": 75,
+                "Durable %": 0
+            },
+            {
+                "Health": 500,
+                "Fatal": true,
+                "Armor": 1,
+                "Main %": 75,
+                "Durable %": 0
+            }
+        ],
+        "Unk985": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 2,
+            "Main %": 60,
+            "Durable %": 0
+        },
+        "Unk071": {
+            "Health": 500,
+            "Fatal": true,
+            "Armor": 2,
+            "Main %": 60,
+            "Durable %": 0
+        },
+        "Unk293": {
+            "Health": 300,
+            "Armor": 1,
+            "Main %": 30,
+            "Durable %": 100
+        },
+        "Unk302": {
+            "Health": 200,
+            "Armor": 0,
+            "Main %": 100,
+            "Durable %": 0
+        }
+    },
+    "Gatling Sentry": {
+        "Total Health": 200,
+        "Unk246": {
+            "Health": 200,
+            "Armor": 2,
+            "Main %": 100,
+            "Durable %": 0
+        }
+    },
+    "Factory Strider": [
+        {
+            "Total Health": 300
+        },
+        {
+            "Total Health": 300
+        }
+    ],
+    "Shield Generator Relay": {
+        "Total Health": 450,
+        "Unk246": {
+            "Health": 450,
+            "Armor": 1,
+            "Main %": 100,
+            "Durable %": 0
+        }
+    }
+}

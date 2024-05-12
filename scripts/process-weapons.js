@@ -23,7 +23,7 @@ const idMap = fs.readFileSync('data/id-mapping.csv', 'utf-8')
     }
   })
 const {
-  item: damages,
+  strikes,
 } = JSON.parse(fs.readFileSync('./data/datamined.json', 'utf-8').trim())
 const reloads = fs.readFileSync('./data/reloads.csv', 'utf-8')
   .trim()
@@ -43,9 +43,9 @@ const reloadRegister = {}
 for(const r of reloads) {
   reloadRegister[r.name] = r
 }
-const damageRegister = {}
-for(const dmg of damages) {
-  damageRegister[dmg.id] = dmg
+const strikeRegister = {}
+for(const strike of strikes) {
+  strikeRegister[strike.id] = strike
 }
 
 for(const wpn of weapons) {
@@ -70,29 +70,29 @@ for(const wpn of weapons) {
     wpn.reloadone = wpn.reloadearly
     delete wpn.reloadearly
   }
-  const damageIds = idMap.filter(m => m.name === name)
-  for(const id of damageIds) {
-    const dmg = damageRegister[id.id]
-    if(!dmg) continue
-    wpn[id.prop] = dmg.damage
+  const strikeIds = idMap.filter(m => m.name === name)
+  for(const id of strikeIds) {
+    const strike = strikeRegister[id.id]
+    if(!strike) continue
+    wpn[id.prop] = strike.dmg
     const prefix = id.prop === 'damage' ? '' : id.prop[0]
     if(!prefix && wpn.tags?.includes('laser')) {
-      wpn.dps = dmg.damage
+      wpn.dps = strike.dmg
     }
     wpn[`${prefix}id`] = id.id
-    wpn[`${prefix}durable`] = dmg.secondaryDamage
-    wpn[`${prefix}ap`] = dmg.pen1
-    wpn[`${prefix}ap2`] = dmg.pen2
-    wpn[`${prefix}ap3`] = dmg.pen3
-    wpn[`${prefix}ap4`] = dmg.pen4
-    wpn[`${prefix}demo`] = dmg.demolition
-    wpn[`${prefix}stun`] = dmg.stun
-    wpn[`${prefix}push`] = dmg.push
-    wpn[`${prefix}dmgtype`] = dmg.unknown4
-    wpn[`${prefix}effect1`] = dmg.unknown5
-    wpn[`${prefix}param1`] = dmg.float1
-    wpn[`${prefix}effect2`] = dmg.unknown6
-    wpn[`${prefix}param2`] = dmg.float2
+    wpn[`${prefix}durable`] = strike.mass
+    wpn[`${prefix}ap`] = strike.ap1
+    wpn[`${prefix}ap2`] = strike.ap2
+    wpn[`${prefix}ap3`] = strike.ap3
+    wpn[`${prefix}ap4`] = strike.ap4
+    wpn[`${prefix}demo`] = strike.demo
+    wpn[`${prefix}stun`] = strike.stun
+    wpn[`${prefix}push`] = strike.push
+    wpn[`${prefix}dmgtype`] = strike.type
+    wpn[`${prefix}effect1`] = strike.func1
+    wpn[`${prefix}param1`] = strike.param1
+    wpn[`${prefix}effect2`] = strike.func2
+    wpn[`${prefix}param2`] = strike.param2
   }
 }
 for(const wpn of weapons) {
@@ -112,7 +112,7 @@ const types = {
   1: 'Fire',
   2: 'Arc',
 }
-function dmgType(wpn) {
+function dmgtype(wpn) {
   const prop = wpn.dmgtype
   if(!prop) return ''
   return types[prop] || `Unknown (${prop})`
