@@ -7,7 +7,8 @@
   "scripts": {
     "compile": "pug --client --no-debug template.pug",
     "build": "node scripts/process-weapons.js; npm run compile",
-    "search": "node scripts/search.js"
+    "search": "node scripts/search.js",
+    "bytes": "node scripts/get-bytes.js"
   },
   "keywords": [
     "helldivers"
