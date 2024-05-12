@@ -121,16 +121,16 @@
 # R-63 Diligence
 {{Weapon_Damage_Statistics
   | standard_damage = 125
-  | durable_damage = 12
+  | durable_damage = 13
   | damage_type = 
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
-  | stagger_value = 12
+  | stagger_value = 15
   | aoe_stagger_value = 
-  | knockback_value = 10
+  | knockback_value = 14
   | aoe_knockback_value = 
   | demolition_force = 10
   | aoe_demolition_force = 
@@ -625,16 +625,16 @@
 # P-113 Verdict
 {{Weapon_Damage_Statistics
   | standard_damage = 125
-  | durable_damage = 13
+  | durable_damage = 12
   | damage_type = 
   | aoe_standard_damage = 
   | aoe_durable_damage = 
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
-  | stagger_value = 15
+  | stagger_value = 12
   | aoe_stagger_value = 
-  | knockback_value = 14
+  | knockback_value = 10
   | aoe_knockback_value = 
   | demolition_force = 10
   | aoe_demolition_force = 
@@ -649,18 +649,18 @@
 # GP-31 Grenade Pistol
 {{Weapon_Damage_Statistics
   | standard_damage = 250
-  | durable_damage = 100
+  | durable_damage = 250
   | damage_type = 
   | aoe_standard_damage = 350
   | aoe_durable_damage = 350
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
-  | stagger_value = 20
+  | stagger_value = 40
   | aoe_stagger_value = 50
   | knockback_value = 10
   | aoe_knockback_value = 40
-  | demolition_force = 10
+  | demolition_force = 30
   | aoe_demolition_force = 30
   | penetration_direct = 3
   | penetration_angle_slight = 
@@ -864,8 +864,8 @@
 
 # GL-21 Grenade Launcher
 {{Weapon_Damage_Statistics
-  | standard_damage = 5
-  | durable_damage = 0
+  | standard_damage = 20
+  | durable_damage = 2
   | damage_type = 
   | aoe_standard_damage = 350
   | aoe_durable_damage = 350
@@ -873,13 +873,13 @@
   | pellet_standard_damage = 
   | pellet_durable_damage = 
   | stagger_value = 40
-  | aoe_stagger_value = 50
+  | aoe_stagger_value = 25
   | knockback_value = 10
   | aoe_knockback_value = 40
   | demolition_force = 10
   | aoe_demolition_force = 30
-  | penetration_direct = 2
-  | penetration_angle_slight = 1
+  | penetration_direct = 0
+  | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 3
   | status_effect = 
@@ -1080,23 +1080,23 @@
 
 # RL-77 Airburst Rocket Launcher
 {{Weapon_Damage_Statistics
-  | standard_damage = 500
-  | durable_damage = 500
+  | standard_damage = 250
+  | durable_damage = 250
   | damage_type = 
-  | aoe_standard_damage = 250
-  | aoe_durable_damage = 250
+  | aoe_standard_damage = 150
+  | aoe_durable_damage = 150
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
-  | stagger_value = 50
-  | aoe_stagger_value = 30
-  | knockback_value = 25
+  | stagger_value = 25
+  | aoe_stagger_value = 25
+  | knockback_value = 40
   | aoe_knockback_value = 40
-  | demolition_force = 40
-  | aoe_demolition_force = 30
-  | penetration_direct = 6
-  | penetration_angle_slight = 5
-  | penetration_angle_heavy = 3
+  | demolition_force = 20
+  | aoe_demolition_force = 25
+  | penetration_direct = 3
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
   | penetration_aoe = 3
   | status_effect = 
   | status_param = 

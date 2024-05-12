@@ -4,7 +4,7 @@ AR-23P Liberator Penetrator,damage,48
 AR-23C Liberator Concussive,damage,50
 AR-61 Tenderizer,51
 BR-14 Adjudicator,damage,61
-R-63 Diligence,damage,42
+R-63 Diligence,damage,73
 R-63CS Diligence Counter Sniper,damage,74
 SMG-37 Defender,damage,34
 SMG-72 Pummeler,damage,41
@@ -30,8 +30,8 @@ PLAS-101 Purifier,damage,20
 PLAS-101 Purifier,xdamage,186
 P-2 Peacemaker,damage,27
 P-19 Redeemer,damage,25
-P-113 Verdict,damage,73
-GP-31 Grenade Pistol,damage,21
+P-113 Verdict,damage,42
+GP-31 Grenade Pistol,damage,134
 GP-31 Grenade Pistol,xdamage,229
 LAS-7 Dagger,damage,296
 P-4 Senator,damage,44
@@ -41,8 +41,8 @@ MG-206 Heavy Machine Gun,damage,121
 ARC-3 Arc Thrower,damage,115
 FLAM-40 Flamethrower,damage,9
 APW-1 Anti-Materiel Rifle,damage,122
-GL-21 Grenade Launcher,damage,11
-GL-21 Grenade Launcher,xdamage,229
+GL-21 Grenade Launcher,damage,10
+GL-21 Grenade Launcher,xdamage,220
 AC-8 Autocannon,damage,127
 AC-8 Autocannon,xdamage,212
 RS-422 Railgun (Safe),damage,22
@@ -56,6 +56,7 @@ LAS-99 Quasar Cannon,damage,227
 LAS-99 Quasar Cannon,xdamage,228
 FAF-14 Spear,damage,149
 FAF-14 Spear,xdamage,241
-RL-77 Airburst Rocket Launcher,damage,145
-RL-77 Airburst Rocket Launcher,xdamage,244
+RL-77 Airburst Rocket Launcher,damage,224
+RL-77 Airburst Rocket Launcher,damage,201
+RL-77 Airburst Rocket Launcher,xdamage,202
 Break-Action Shotgun,damage,69
