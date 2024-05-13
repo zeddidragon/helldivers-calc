@@ -162,7 +162,7 @@ th.capextra, td.capextra {
 .ap-x, .ap-fire {
   padding-left: 0.5em;
 }
-.reload-one:after {
+.reload-one:after, .charge-early:after {
   color: #a98a98;
   content: "-";
 }

@@ -4,7 +4,7 @@ function pug_classes_array(r,a){for(var s,e="",u="",c=Array.isArray(a),g=0;g<r.l
 function pug_classes_object(r){var a="",n="";for(var o in r)o&&r[o]&&pug_has_own_property.call(r,o)&&(a=a+n+o,n=" ");return a}
 function pug_escape(e){var a=""+e,t=pug_match_html.exec(a);if(!t)return e;var r,c,n,s="";for(r=t.index,c=0;r<a.length;r++){switch(a.charCodeAt(r)){case 34:n="&quot;";break;case 38:n="&amp;";break;case 60:n="&lt;";break;case 62:n="&gt;";break;default:continue}c!==r&&(s+=a.substring(c,r)),c=r+1,s+=n}return c!==r?s+a.substring(c,r):s}
 var pug_has_own_property=Object.prototype.hasOwnProperty;
-var pug_match_html=/["&<>]/;function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (catClass, categoryFull, cats, colClass, colSpan, cols, dmgType, dmgTypeClass, dmgTypeText, dps, effectDescription, effectName, effectParams, effectValue, getWeapons, hasTag, header, magDmg, nerdMode, nerdValue, roundStart, sourceClass, sourceFull, sourceLabels, sourceOrder, tdps, totalDmg, wikiLink) {pug_html = pug_html + "\u003Cheader class=\"menu\"\u003E\u003Cdiv class=\"filters\"\u003E\u003Cul class=\"sources\"\u003E";
+var pug_match_html=/["&<>]/;function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (catClass, categoryFull, cats, colClass, colSpan, cols, dmgType, dmgTypeClass, dmgTypeText, dps, effectDescription, effectName, effectParams, effectValue, getWeapons, hasTag, header, magDmg, nerdMode, nerdValue, overcharge, roundStart, sourceClass, sourceFull, sourceLabels, sourceOrder, tdps, totalDmg, wikiLink) {pug_html = pug_html + "\u003Cheader class=\"menu\"\u003E\u003Cdiv class=\"filters\"\u003E\u003Cul class=\"sources\"\u003E";
 // iterate sourceOrder
 ;(function(){
   var $$obj = sourceOrder;
@@ -194,10 +194,10 @@ pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E"
 }
 pug_html = pug_html + "\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"durable\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"ap\"\u003E\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.ap}`], [true]), false, false)+" title=\"Direct Hit\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"effect\"\u003E";
 if (wpn.xdamage) {
-if (wpn.pellets) {
-pug_html = pug_html + "\u003Cspan class=\"pellets-x\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
 pug_html = pug_html + "\u003Cspan class=\"damage-x\" title=\"Explosion\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdamage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+if (wpn.chargefactor) {
+pug_html = pug_html + "\u003Cspan class=\"overcharge\" title=\"Overcharge Bonus (Damage, vs Massive, AP, Stun)\"\u003E" + (pug_escape(null == (pug_interp = `+${overcharge(wpn)}%`) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
 // iterate effectParams
 ;(function(){
@@ -228,6 +228,10 @@ pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.x
 if (wpn.statusap) {
 pug_html = pug_html + "\u003Cspan class=\"ap-4 ap-fire\" title=\"Status AP\"\u003E" + (pug_escape(null == (pug_interp = wpn.statusap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
+if (wpn.chargefactor) {
+var ap = overcharge(wpn, 'ap')
+pug_html = pug_html + "\u003Cspan" + (" class=\"xap\""+pug_attr("class`ap-${ap}`", true, true, false)+" title=\"Overcharged\"") + "\u003E" + (pug_escape(null == (pug_interp = ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"demo\"\u003E\u003Cspan class=\"demo-main\" title=\"Demolition Force\"\u003E" + (pug_escape(null == (pug_interp = wpn.demo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xdemo) {
 pug_html = pug_html + "\u003Cspan class=\"demo-x\" title=\"Explosion Demolision\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdemo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
@@ -245,7 +249,11 @@ if (hasTag(wpn, 'laser')) {
 pug_html = pug_html + "\u003Cspan class=\"rpm-laser\"\u003EBeam\u003C\u002Fspan\u003E";
 }
 if (wpn.charge) {
-pug_html = pug_html + "\u003Cspan class=\"rpm-charge\" title=\"Charge time\"\u003E\u003Csup class=\"one-over\"\u003E1\u002F\u003C\u002Fsup\u003E\u003Cspan\u003E" + (pug_escape(null == (pug_interp = wpn.charge) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E";
+pug_html = pug_html + "\u003Cspan class=\"rpm-charge\" title=\"Charge time\"\u003E\u003Csup class=\"one-over\"\u003E1\u002F\u003C\u002Fsup\u003E";
+if (wpn.chargeearly) {
+pug_html = pug_html + "\u003Cspan class=\"charge-early\"\u003E" + (pug_escape(null == (pug_interp = wpn.chargeearly) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003Cspan\u003E" + (pug_escape(null == (pug_interp = wpn.charge) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E";
 }
 else {
 pug_html = pug_html + "\u003Cspan class=\"rpm-main\"\u003E" + (pug_escape(null == (pug_interp = wpn.rpm) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
@@ -311,10 +319,10 @@ pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E"
 }
 pug_html = pug_html + "\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"durable\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"ap\"\u003E\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.ap}`], [true]), false, false)+" title=\"Direct Hit\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"effect\"\u003E";
 if (wpn.xdamage) {
-if (wpn.pellets) {
-pug_html = pug_html + "\u003Cspan class=\"pellets-x\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
 pug_html = pug_html + "\u003Cspan class=\"damage-x\" title=\"Explosion\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdamage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+if (wpn.chargefactor) {
+pug_html = pug_html + "\u003Cspan class=\"overcharge\" title=\"Overcharge Bonus (Damage, vs Massive, AP, Stun)\"\u003E" + (pug_escape(null == (pug_interp = `+${overcharge(wpn)}%`) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
 // iterate effectParams
 ;(function(){
@@ -345,6 +353,10 @@ pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.x
 if (wpn.statusap) {
 pug_html = pug_html + "\u003Cspan class=\"ap-4 ap-fire\" title=\"Status AP\"\u003E" + (pug_escape(null == (pug_interp = wpn.statusap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
+if (wpn.chargefactor) {
+var ap = overcharge(wpn, 'ap')
+pug_html = pug_html + "\u003Cspan" + (" class=\"xap\""+pug_attr("class`ap-${ap}`", true, true, false)+" title=\"Overcharged\"") + "\u003E" + (pug_escape(null == (pug_interp = ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"demo\"\u003E\u003Cspan class=\"demo-main\" title=\"Demolition Force\"\u003E" + (pug_escape(null == (pug_interp = wpn.demo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xdemo) {
 pug_html = pug_html + "\u003Cspan class=\"demo-x\" title=\"Explosion Demolision\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdemo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
@@ -362,7 +374,11 @@ if (hasTag(wpn, 'laser')) {
 pug_html = pug_html + "\u003Cspan class=\"rpm-laser\"\u003EBeam\u003C\u002Fspan\u003E";
 }
 if (wpn.charge) {
-pug_html = pug_html + "\u003Cspan class=\"rpm-charge\" title=\"Charge time\"\u003E\u003Csup class=\"one-over\"\u003E1\u002F\u003C\u002Fsup\u003E\u003Cspan\u003E" + (pug_escape(null == (pug_interp = wpn.charge) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E";
+pug_html = pug_html + "\u003Cspan class=\"rpm-charge\" title=\"Charge time\"\u003E\u003Csup class=\"one-over\"\u003E1\u002F\u003C\u002Fsup\u003E";
+if (wpn.chargeearly) {
+pug_html = pug_html + "\u003Cspan class=\"charge-early\"\u003E" + (pug_escape(null == (pug_interp = wpn.chargeearly) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+pug_html = pug_html + "\u003Cspan\u003E" + (pug_escape(null == (pug_interp = wpn.charge) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E";
 }
 else {
 pug_html = pug_html + "\u003Cspan class=\"rpm-main\"\u003E" + (pug_escape(null == (pug_interp = wpn.rpm) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
@@ -415,4 +431,4 @@ pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"dps\" title=\"Damage
 
 pug_html = pug_html + "\u003C\u002Ftbody\u003E";
 }
-pug_html = pug_html + "\u003C\u002Ftable\u003E\u003Cul\u003E\u003Cli\u003EExact details of effects are not verified.\u003C\u002Fli\u003E\u003Cli\u003EMass damage, stun, and push are puzzled together from an unsorted pile of numbers and guesswork. Take them with a heaping of salt.\u003C\u002Fli\u003E\u003Cli\u003EReload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.\u003C\u002Fli\u003E\u003Cli\u003EStarting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.\u003C\u002Fli\u003E\u003C\u002Ful\u003E";}.call(this,"catClass" in locals_for_with?locals_for_with.catClass:typeof catClass!=="undefined"?catClass:undefined,"categoryFull" in locals_for_with?locals_for_with.categoryFull:typeof categoryFull!=="undefined"?categoryFull:undefined,"cats" in locals_for_with?locals_for_with.cats:typeof cats!=="undefined"?cats:undefined,"colClass" in locals_for_with?locals_for_with.colClass:typeof colClass!=="undefined"?colClass:undefined,"colSpan" in locals_for_with?locals_for_with.colSpan:typeof colSpan!=="undefined"?colSpan:undefined,"cols" in locals_for_with?locals_for_with.cols:typeof cols!=="undefined"?cols:undefined,"dmgType" in locals_for_with?locals_for_with.dmgType:typeof dmgType!=="undefined"?dmgType:undefined,"dmgTypeClass" in locals_for_with?locals_for_with.dmgTypeClass:typeof dmgTypeClass!=="undefined"?dmgTypeClass:undefined,"dmgTypeText" in locals_for_with?locals_for_with.dmgTypeText:typeof dmgTypeText!=="undefined"?dmgTypeText:undefined,"dps" in locals_for_with?locals_for_with.dps:typeof dps!=="undefined"?dps:undefined,"effectDescription" in locals_for_with?locals_for_with.effectDescription:typeof effectDescription!=="undefined"?effectDescription:undefined,"effectName" in locals_for_with?locals_for_with.effectName:typeof effectName!=="undefined"?effectName:undefined,"effectParams" in locals_for_with?locals_for_with.effectParams:typeof effectParams!=="undefined"?effectParams:undefined,"effectValue" in locals_for_with?locals_for_with.effectValue:typeof effectValue!=="undefined"?effectValue:undefined,"getWeapons" in locals_for_with?locals_for_with.getWeapons:typeof getWeapons!=="undefined"?getWeapons:undefined,"hasTag" in locals_for_with?locals_for_with.hasTag:typeof hasTag!=="undefined"?hasTag:undefined,"header" in locals_for_with?locals_for_with.header:typeof header!=="undefined"?header:undefined,"magDmg" in locals_for_with?locals_for_with.magDmg:typeof magDmg!=="undefined"?magDmg:undefined,"nerdMode" in locals_for_with?locals_for_with.nerdMode:typeof nerdMode!=="undefined"?nerdMode:undefined,"nerdValue" in locals_for_with?locals_for_with.nerdValue:typeof nerdValue!=="undefined"?nerdValue:undefined,"roundStart" in locals_for_with?locals_for_with.roundStart:typeof roundStart!=="undefined"?roundStart:undefined,"sourceClass" in locals_for_with?locals_for_with.sourceClass:typeof sourceClass!=="undefined"?sourceClass:undefined,"sourceFull" in locals_for_with?locals_for_with.sourceFull:typeof sourceFull!=="undefined"?sourceFull:undefined,"sourceLabels" in locals_for_with?locals_for_with.sourceLabels:typeof sourceLabels!=="undefined"?sourceLabels:undefined,"sourceOrder" in locals_for_with?locals_for_with.sourceOrder:typeof sourceOrder!=="undefined"?sourceOrder:undefined,"tdps" in locals_for_with?locals_for_with.tdps:typeof tdps!=="undefined"?tdps:undefined,"totalDmg" in locals_for_with?locals_for_with.totalDmg:typeof totalDmg!=="undefined"?totalDmg:undefined,"wikiLink" in locals_for_with?locals_for_with.wikiLink:typeof wikiLink!=="undefined"?wikiLink:undefined));;return pug_html;}
+pug_html = pug_html + "\u003C\u002Ftable\u003E\u003Cul\u003E\u003Cli\u003EExact details of effects are not verified.\u003C\u002Fli\u003E\u003Cli\u003EMass damage, stun, and push are puzzled together from an unsorted pile of numbers and guesswork. Take them with a heaping of salt.\u003C\u002Fli\u003E\u003Cli\u003EReload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.\u003C\u002Fli\u003E\u003Cli\u003EStarting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.\u003C\u002Fli\u003E\u003C\u002Ful\u003E";}.call(this,"catClass" in locals_for_with?locals_for_with.catClass:typeof catClass!=="undefined"?catClass:undefined,"categoryFull" in locals_for_with?locals_for_with.categoryFull:typeof categoryFull!=="undefined"?categoryFull:undefined,"cats" in locals_for_with?locals_for_with.cats:typeof cats!=="undefined"?cats:undefined,"colClass" in locals_for_with?locals_for_with.colClass:typeof colClass!=="undefined"?colClass:undefined,"colSpan" in locals_for_with?locals_for_with.colSpan:typeof colSpan!=="undefined"?colSpan:undefined,"cols" in locals_for_with?locals_for_with.cols:typeof cols!=="undefined"?cols:undefined,"dmgType" in locals_for_with?locals_for_with.dmgType:typeof dmgType!=="undefined"?dmgType:undefined,"dmgTypeClass" in locals_for_with?locals_for_with.dmgTypeClass:typeof dmgTypeClass!=="undefined"?dmgTypeClass:undefined,"dmgTypeText" in locals_for_with?locals_for_with.dmgTypeText:typeof dmgTypeText!=="undefined"?dmgTypeText:undefined,"dps" in locals_for_with?locals_for_with.dps:typeof dps!=="undefined"?dps:undefined,"effectDescription" in locals_for_with?locals_for_with.effectDescription:typeof effectDescription!=="undefined"?effectDescription:undefined,"effectName" in locals_for_with?locals_for_with.effectName:typeof effectName!=="undefined"?effectName:undefined,"effectParams" in locals_for_with?locals_for_with.effectParams:typeof effectParams!=="undefined"?effectParams:undefined,"effectValue" in locals_for_with?locals_for_with.effectValue:typeof effectValue!=="undefined"?effectValue:undefined,"getWeapons" in locals_for_with?locals_for_with.getWeapons:typeof getWeapons!=="undefined"?getWeapons:undefined,"hasTag" in locals_for_with?locals_for_with.hasTag:typeof hasTag!=="undefined"?hasTag:undefined,"header" in locals_for_with?locals_for_with.header:typeof header!=="undefined"?header:undefined,"magDmg" in locals_for_with?locals_for_with.magDmg:typeof magDmg!=="undefined"?magDmg:undefined,"nerdMode" in locals_for_with?locals_for_with.nerdMode:typeof nerdMode!=="undefined"?nerdMode:undefined,"nerdValue" in locals_for_with?locals_for_with.nerdValue:typeof nerdValue!=="undefined"?nerdValue:undefined,"overcharge" in locals_for_with?locals_for_with.overcharge:typeof overcharge!=="undefined"?overcharge:undefined,"roundStart" in locals_for_with?locals_for_with.roundStart:typeof roundStart!=="undefined"?roundStart:undefined,"sourceClass" in locals_for_with?locals_for_with.sourceClass:typeof sourceClass!=="undefined"?sourceClass:undefined,"sourceFull" in locals_for_with?locals_for_with.sourceFull:typeof sourceFull!=="undefined"?sourceFull:undefined,"sourceLabels" in locals_for_with?locals_for_with.sourceLabels:typeof sourceLabels!=="undefined"?sourceLabels:undefined,"sourceOrder" in locals_for_with?locals_for_with.sourceOrder:typeof sourceOrder!=="undefined"?sourceOrder:undefined,"tdps" in locals_for_with?locals_for_with.tdps:typeof tdps!=="undefined"?tdps:undefined,"totalDmg" in locals_for_with?locals_for_with.totalDmg:typeof totalDmg!=="undefined"?totalDmg:undefined,"wikiLink" in locals_for_with?locals_for_with.wikiLink:typeof wikiLink!=="undefined"?wikiLink:undefined));;return pug_html;}

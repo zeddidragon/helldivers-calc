@@ -910,7 +910,7 @@
   | status_param = 
 }}
 
-# RS-422 Railgun (Safe)
+# RS-422 Railgun
 {{Weapon_Damage_Statistics
   | standard_damage = 600
   | durable_damage = 60
@@ -932,30 +932,6 @@
   | penetration_aoe = 
   | status_effect = 
   | status_param = 
-}}
-
-# RS-422 Railgun
-{{Weapon_Damage_Statistics
-  | standard_damage = 600
-  | durable_damage = 120
-  | damage_type = 
-  | aoe_standard_damage = 
-  | aoe_durable_damage = 
-  | pellet_amount = 
-  | pellet_standard_damage = 
-  | pellet_durable_damage = 
-  | stagger_value = 50
-  | aoe_stagger_value = 
-  | knockback_value = 15
-  | aoe_knockback_value = 
-  | demolition_force = 10
-  | aoe_demolition_force = 
-  | penetration_direct = 8
-  | penetration_angle_slight = 7
-  | penetration_angle_heavy = 6
-  | penetration_aoe = 
-  | status_effect = Stun
-  | status_param = 1
 }}
 
 # LAS-98 Laser Cannon

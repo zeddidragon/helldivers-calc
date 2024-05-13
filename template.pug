@@ -71,9 +71,9 @@ table
             span(class=`ap-${wpn.ap}` title="Direct Hit")= wpn.ap
           td.effect
             if wpn.xdamage
-              if wpn.pellets
-                span.pellets-x=wpn.pellets
               span.damage-x(title="Explosion")= wpn.xdamage
+            if wpn.chargefactor
+              span.overcharge(title="Overcharge Bonus (Damage, vs Massive, AP, Stun)")= `+${overcharge(wpn)}%`
             for p in effectParams
               if wpn[p.prop]
                 span.effect-main(
@@ -86,6 +86,9 @@ table
               span(class=`ap-${wpn.xap}` title="Explosion AP").ap-x= wpn.xap
             if wpn.statusap
               span(class=`ap-4` title="Status AP").ap-fire= wpn.statusap
+            if wpn.chargefactor
+              - var ap = overcharge(wpn, 'ap')
+              span.xap(class`ap-${ap}` title="Overcharged")= ap
           td.demo
             span.demo-main(title="Demolition Force")= wpn.demo
             if wpn.xdemo
@@ -105,6 +108,8 @@ table
             if wpn.charge
               span.rpm-charge(title="Charge time")
                 sup.one-over 1/
+                if wpn.chargeearly
+                  span.charge-early= wpn.chargeearly
                 span= wpn.charge
             else
               span.rpm-main= wpn.rpm

@@ -45,8 +45,7 @@ GL-21 Grenade Launcher,damage,10
 GL-21 Grenade Launcher,xdamage,220
 AC-8 Autocannon,damage,127
 AC-8 Autocannon,xdamage,212
-RS-422 Railgun (Safe),damage,22
-RS-422 Railgun,damage,23
+RS-422 Railgun,damage,22
 LAS-98 Laser Cannon,damage,302
 EAT-17 Expendable Anti-Tank,damage,135
 EAT-17 Expendable Anti-Tank,xdamage,225

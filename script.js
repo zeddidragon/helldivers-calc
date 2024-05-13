@@ -442,6 +442,12 @@ const locals = {
     const effect = getEffect(wpn, p)
     return effect.value()
   },
+  overcharge: (wpn, prop) => {
+    if(!prop) {
+      return Math.round((wpn.chargefactor - 1) * 100)
+    }
+    return Math.floor(wpn[prop] * wpn.chargefactor)
+  },
   hasTag: (wpn, tag) => {
     return wpn.tags?.includes(tag)
   },
