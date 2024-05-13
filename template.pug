@@ -63,28 +63,15 @@ table
                 title=dmgTypeText(wpn)
                 class=dmgTypeClass(wpn)
               )= dmgType(wpn)
+            if wpn.pellets
+              span.pellets(title="Projectiles")= wpn.pellets
             span.damage-main(title="Direct Hit")= wpn.damage
-            if wpn.pellets
-              span.pellets(title="Projectiles")= wpn.pellets
-            if wpn.xdamage
-              span.damage-x(title="Explosion")= wpn.xdamage
-            if wpn.xpellets
-              span.pellets-x(title="Sub-Munitions")= wpn.xpellets
-          td.durable
-            span.durable-main(title="Direct Hit (vs Massive)")= wpn.durable
-            if wpn.pellets
-              span.pellets(title="Projectiles")= wpn.pellets
-            if wpn.xdurable
-              span.durable-x(title="Explosion (vs Massive)")= wpn.xdurable
-            if wpn.xpellets
-              span.pellets-x(title="Sub-Munitions")= wpn.xpellets
+          td.durable(title="Direct Hit (vs Massive)")= wpn.durable
           td.ap
             span(class=`ap-${wpn.ap}` title="Direct Hit")= wpn.ap
-            if wpn.xap
-              span(class=`ap-${wpn.xap}` title="Explosion").ap-x= wpn.xap
-            if hasTag(wpn, 'fire')
-              span(class=`ap-4` title="Fire Status").ap-fire 4
           td.effect
+            if wpn.xdamage
+              span.damage-x(title="Explosion")= wpn.xdamage
             for p in effectParams
               if wpn[p.prop]
                 span.effect-main(
@@ -92,6 +79,11 @@ table
                   title=effectDescription(wpn, p))
                     span.effect-name= effectName(wpn, p)
                     span.effect-value= effectValue(wpn, p)
+          td.xap
+            if wpn.xap
+              span(class=`ap-${wpn.xap}` title="Explosion AP").ap-x= wpn.xap
+            if wpn.effect === 6
+              span(class=`ap-4` title="Status AP").ap-fire= wpn.statusap
           td.demo
             span.demo-main(title="Demolition Force")= wpn.demo
             if wpn.xdemo

@@ -119,13 +119,16 @@ td.name {
 .source-page:before {
   content: "#";
 }
-.damage-x, .durable-x, .pellets-x, .stun-x, .push-x, .demo-x {
+.stun-x, .push-x, .demo-x {
   color: #ea8;
   padding-left: 0.1em;
 }
-.damage-x:before, .durable-x:before, .cap-plus:before{
+.cap-plus:before {
   color: #a98a98;
   content: "+";
+}
+.damage-x {
+  color: #ea8;
 }
 .demo-x:before, .stun-x:before, .push-x:before {
   color: #a98a98;
@@ -152,7 +155,7 @@ th.capextra, td.capextra {
   text-align: left;
   padding-left: 0;
 }
-.pellets:before, .pellets-x:before {
+.pellets:after {
   color: #a98a98;
   content: "×";
 }

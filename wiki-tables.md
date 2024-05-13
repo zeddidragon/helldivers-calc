@@ -499,7 +499,7 @@
   | penetration_angle_heavy = 
   | penetration_aoe = 
   | status_effect = Burn
-  | status_param = 0.25
+  | status_param = 
 }}
 
 # LAS-16 Sickle
@@ -691,7 +691,7 @@
   | penetration_angle_heavy = 
   | penetration_aoe = 
   | status_effect = Burn
-  | status_param = 0.25
+  | status_param = 
 }}
 
 # P-4 Senator
@@ -979,7 +979,7 @@
   | penetration_angle_heavy = 
   | penetration_aoe = 
   | status_effect = Burn
-  | status_param = 0.25
+  | status_param = 
 }}
 
 # LAS-99 Quasar Cannon
@@ -1080,21 +1080,45 @@
 
 # RL-77 Airburst Rocket Launcher
 {{Weapon_Damage_Statistics
-  | standard_damage = 250
-  | durable_damage = 250
+  | standard_damage = 350
+  | durable_damage = 350
   | damage_type = 
-  | aoe_standard_damage = 150
-  | aoe_durable_damage = 150
+  | aoe_standard_damage = 250
+  | aoe_durable_damage = 250
   | pellet_amount = 
   | pellet_standard_damage = 
   | pellet_durable_damage = 
-  | stagger_value = 25
+  | stagger_value = 50
   | aoe_stagger_value = 25
   | knockback_value = 40
   | aoe_knockback_value = 40
-  | demolition_force = 20
-  | aoe_demolition_force = 25
+  | demolition_force = 30
+  | aoe_demolition_force = 20
   | penetration_direct = 3
+  | penetration_angle_slight = 
+  | penetration_angle_heavy = 
+  | penetration_aoe = 3
+  | status_effect = 
+  | status_param = 
+}}
+
+# RL-77 Airburst (Clusters)
+{{Weapon_Damage_Statistics
+  | standard_damage = NaN
+  | durable_damage = NaN
+  | damage_type = 
+  | aoe_standard_damage = 2400
+  | aoe_durable_damage = 2400
+  | pellet_amount = 16
+  | pellet_standard_damage = 
+  | pellet_durable_damage = 
+  | stagger_value = undefined
+  | aoe_stagger_value = 25
+  | knockback_value = 
+  | aoe_knockback_value = 40
+  | demolition_force = undefined
+  | aoe_demolition_force = 25
+  | penetration_direct = undefined
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 3

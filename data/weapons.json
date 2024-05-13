@@ -19,7 +19,6 @@
     "stun": 100,
     "push": 100,
     "demo": 100,
-    "xpellets": 1,
     "xid": 0,
     "xdamage": 0,
     "xdurable": 0,
@@ -58,6 +57,7 @@
     "dps": 0,
     "dmgtypename": "normal",
     "effect1name": "none",
+    "statusap": 0,
     "dmgtype": 0,
     "effect1": 0,
     "param1": 0,
@@ -541,6 +541,7 @@
     ],
     "dmgtypename": "Fire",
     "effect1name": "Burn",
+    "statusap": 4,
     "dmgtype": 1,
     "effect1": 6,
     "param1": 100
@@ -755,9 +756,7 @@
       "laser"
     ],
     "dps": 350,
-    "effect1name": "Burn",
-    "effect1": 6,
-    "param1": 0.25
+    "effect1name": "Burn"
   },
   {
     "category": "NRG",
@@ -1023,9 +1022,7 @@
       "laser"
     ],
     "dps": 200,
-    "effect1name": "Burn",
-    "effect1": 6,
-    "param1": 0.25
+    "effect1name": "Burn"
   },
   {
     "category": "HG",
@@ -1197,6 +1194,7 @@
     ],
     "dmgtypename": "Fire",
     "effect1name": "Burn",
+    "statusap": 4,
     "dmgtype": 1,
     "effect1": 6,
     "param1": 10
@@ -1388,9 +1386,7 @@
       "laser"
     ],
     "dps": 350,
-    "effect1name": "Burn",
-    "effect1": 6,
-    "param1": 0.25
+    "effect1name": "Burn"
   },
   {
     "category": "SUP",
@@ -1531,17 +1527,41 @@
     "source": "support",
     "idx": 16,
     "catIdx": 9,
-    "id": "201",
-    "damage": 250,
-    "durable": 250,
+    "id": "224",
+    "damage": 350,
+    "durable": 350,
     "ap": 3,
-    "ap2": 0,
-    "ap3": 0,
+    "ap2": 3,
+    "ap3": 3,
     "ap4": 0,
-    "stun": 25,
+    "stun": 50,
     "push": 40,
-    "demo": 20,
-    "xpellets": 16,
+    "demo": 30,
+    "xid": "201",
+    "xdamage": 250,
+    "xdurable": 250,
+    "xap": 3,
+    "xap2": 0,
+    "xap3": 0,
+    "xap4": 0,
+    "xstun": 25,
+    "xpush": 40,
+    "xdemo": 20,
+    "reload": 6.7,
+    "cap": 1,
+    "rounds": 5,
+    "roundstart": 5,
+    "roundsupply": 3,
+    "roundsbox": 1
+  },
+  {
+    "category": "SUP",
+    "fullname": "RL-77 Airburst Rocket Launcher",
+    "code": "RL-77",
+    "name": "Airburst (Clusters)",
+    "source": "support",
+    "catIdx": 9,
+    "pellets": 16,
     "xid": "202",
     "xdamage": 150,
     "xdurable": 150,

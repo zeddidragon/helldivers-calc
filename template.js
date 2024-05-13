@@ -189,34 +189,13 @@ pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd" + (pug_attr("class", pug_cl
 if (wpn.dmgtype) {
 pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes(["damage-type",dmgTypeClass(wpn)], [false,true]), false, false)+pug_attr("title", dmgTypeText(wpn), true, false)) + "\u003E" + (pug_escape(null == (pug_interp = dmgType(wpn)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.pellets) {
 pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
+pug_html = pug_html + "\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"durable\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"ap\"\u003E\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.ap}`], [true]), false, false)+" title=\"Direct Hit\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"effect\"\u003E";
 if (wpn.xdamage) {
 pug_html = pug_html + "\u003Cspan class=\"damage-x\" title=\"Explosion\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdamage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-if (wpn.xpellets) {
-pug_html = pug_html + "\u003Cspan class=\"pellets-x\" title=\"Sub-Munitions\"\u003E" + (pug_escape(null == (pug_interp = wpn.xpellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"durable\"\u003E\u003Cspan class=\"durable-main\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-if (wpn.pellets) {
-pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
-if (wpn.xdurable) {
-pug_html = pug_html + "\u003Cspan class=\"durable-x\" title=\"Explosion (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdurable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
-if (wpn.xpellets) {
-pug_html = pug_html + "\u003Cspan class=\"pellets-x\" title=\"Sub-Munitions\"\u003E" + (pug_escape(null == (pug_interp = wpn.xpellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"ap\"\u003E\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.ap}`], [true]), false, false)+" title=\"Direct Hit\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-if (wpn.xap) {
-pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.xap}`,"ap-x"], [true,false]), false, false)+" title=\"Explosion\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.xap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
-if (hasTag(wpn, 'fire')) {
-pug_html = pug_html + "\u003Cspan class=\"ap-4 ap-fire\" title=\"Fire Status\"\u003E4\u003C\u002Fspan\u003E";
-}
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"effect\"\u003E";
 // iterate effectParams
 ;(function(){
   var $$obj = effectParams;
@@ -239,6 +218,13 @@ pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes(["effect-mai
   }
 }).call(this);
 
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"xap\"\u003E";
+if (wpn.xap) {
+pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.xap}`,"ap-x"], [true,false]), false, false)+" title=\"Explosion AP\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.xap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+if (wpn.effect === 6) {
+pug_html = pug_html + "\u003Cspan class=\"ap-4 ap-fire\" title=\"Status AP\"\u003E" + (pug_escape(null == (pug_interp = wpn.statusap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"demo\"\u003E\u003Cspan class=\"demo-main\" title=\"Demolition Force\"\u003E" + (pug_escape(null == (pug_interp = wpn.demo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xdemo) {
 pug_html = pug_html + "\u003Cspan class=\"demo-x\" title=\"Explosion Demolision\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdemo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
@@ -317,34 +303,13 @@ pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd" + (pug_attr("class", pug_cl
 if (wpn.dmgtype) {
 pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes(["damage-type",dmgTypeClass(wpn)], [false,true]), false, false)+pug_attr("title", dmgTypeText(wpn), true, false)) + "\u003E" + (pug_escape(null == (pug_interp = dmgType(wpn)) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-pug_html = pug_html + "\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.pellets) {
 pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
+pug_html = pug_html + "\u003Cspan class=\"damage-main\" title=\"Direct Hit\"\u003E" + (pug_escape(null == (pug_interp = wpn.damage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"durable\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Ftd\u003E\u003Ctd class=\"ap\"\u003E\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.ap}`], [true]), false, false)+" title=\"Direct Hit\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Ftd\u003E\u003Ctd class=\"effect\"\u003E";
 if (wpn.xdamage) {
 pug_html = pug_html + "\u003Cspan class=\"damage-x\" title=\"Explosion\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdamage) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 }
-if (wpn.xpellets) {
-pug_html = pug_html + "\u003Cspan class=\"pellets-x\" title=\"Sub-Munitions\"\u003E" + (pug_escape(null == (pug_interp = wpn.xpellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"durable\"\u003E\u003Cspan class=\"durable-main\" title=\"Direct Hit (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.durable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-if (wpn.pellets) {
-pug_html = pug_html + "\u003Cspan class=\"pellets\" title=\"Projectiles\"\u003E" + (pug_escape(null == (pug_interp = wpn.pellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
-if (wpn.xdurable) {
-pug_html = pug_html + "\u003Cspan class=\"durable-x\" title=\"Explosion (vs Massive)\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdurable) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
-if (wpn.xpellets) {
-pug_html = pug_html + "\u003Cspan class=\"pellets-x\" title=\"Sub-Munitions\"\u003E" + (pug_escape(null == (pug_interp = wpn.xpellets) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"ap\"\u003E\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.ap}`], [true]), false, false)+" title=\"Direct Hit\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.ap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-if (wpn.xap) {
-pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.xap}`,"ap-x"], [true,false]), false, false)+" title=\"Explosion\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.xap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
-}
-if (hasTag(wpn, 'fire')) {
-pug_html = pug_html + "\u003Cspan class=\"ap-4 ap-fire\" title=\"Fire Status\"\u003E4\u003C\u002Fspan\u003E";
-}
-pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"effect\"\u003E";
 // iterate effectParams
 ;(function(){
   var $$obj = effectParams;
@@ -367,6 +332,13 @@ pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes(["effect-mai
   }
 }).call(this);
 
+pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"xap\"\u003E";
+if (wpn.xap) {
+pug_html = pug_html + "\u003Cspan" + (pug_attr("class", pug_classes([`ap-${wpn.xap}`,"ap-x"], [true,false]), false, false)+" title=\"Explosion AP\"") + "\u003E" + (pug_escape(null == (pug_interp = wpn.xap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
+if (wpn.effect === 6) {
+pug_html = pug_html + "\u003Cspan class=\"ap-4 ap-fire\" title=\"Status AP\"\u003E" + (pug_escape(null == (pug_interp = wpn.statusap) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
+}
 pug_html = pug_html + "\u003C\u002Ftd\u003E\u003Ctd class=\"demo\"\u003E\u003Cspan class=\"demo-main\" title=\"Demolition Force\"\u003E" + (pug_escape(null == (pug_interp = wpn.demo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";
 if (wpn.xdemo) {
 pug_html = pug_html + "\u003Cspan class=\"demo-x\" title=\"Explosion Demolision\"\u003E" + (pug_escape(null == (pug_interp = wpn.xdemo) ? "" : pug_interp)) + "\u003C\u002Fspan\u003E";

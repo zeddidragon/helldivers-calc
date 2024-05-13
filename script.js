@@ -3,13 +3,11 @@ async function loadWeapons() {
     .slice(1)
 }
 function shotDmg(wpn) {
-  return ((wpn.pellets || 1) * (wpn.damage || 0)
-    + (wpn.xpellets || 1) * (wpn.xdamage || 0))
+  return (wpn.pellets || 1) * ((wpn.damage || 0) + (wpn.xdamage || 0))
 }
 
 function massDmg(wpn) {
-  return ((wpn.pellets || 1) * (wpn.durable || 0)
-    + (wpn.xpellets || 1) * (wpn.xdurable || 0))
+  return (wpn.pellets || 1) * ((wpn.durable || 0) + (wpn.xdurable || 0))
 }
 
 function dps(wpn) {
@@ -119,7 +117,8 @@ const sorting = {
     return (massDmg(b) - massDmg(a)) || sorting.damage(a, b)
   },
   byCol: (col) => sortNum(col),
-  ap: sortNums(['ap', 'xap'], ['max', 'min'], -1),
+  ap: sortNum('ap'),
+  xap: sortNums(['xap', 'statusap'], ['max', 'min']),
   effect: (a, b) => {
     const aEffect = a.effect1 || 0
     const bEffect = b.effect1 || 0
@@ -132,6 +131,10 @@ const sorting = {
     const bParam = b.param1 || 0
     const paramDiff = bParam - aParam
     if(paramDiff) return paramDiff
+    const aXdmg = a.xdamage || 0
+    const bXdmg = a.xdamage || 0
+    const xDiff = bXdmg - aXdmg
+    if(xDiff) return xDiff
     return sorting.damage(a, b)
   },
   demo: sortNums(['demo', 'xdemo'], ['max', 'min'], -1),
@@ -167,8 +170,9 @@ const headers =  {
   category: () => 'Type',
   rpm: () => 'RPM',
   ap: () => 'AP',
+  xap: () => 'AP',
   demo: () => 'Demo',
-  durable: () => 'Durable',
+  durable: () => ' ',
   supply: () => 'Pickup',
   unknown4: () => 'i4',
   unknown5: () => 'i5',
@@ -268,6 +272,7 @@ const cols = [
   'durable',
   'ap',
   'effect',
+  'xap',
   'demo',
   'stun',
   'push',
@@ -316,7 +321,7 @@ function getEffect(wpn, p) {
       effectCache[key] = {
         name: () => '🔥',
         value: () => param,
-        description: () => `${param} (chance%/buildup?) for setting target on fire`,
+        description: () => `Burns target. Buildup factor of ${param}.`,
       }
       break
     case 34:
