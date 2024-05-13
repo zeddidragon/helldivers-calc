@@ -71,6 +71,8 @@ table
             span(class=`ap-${wpn.ap}` title="Direct Hit")= wpn.ap
           td.effect
             if wpn.xdamage
+              if wpn.pellets
+                span.pellets-x=wpn.pellets
               span.damage-x(title="Explosion")= wpn.xdamage
             for p in effectParams
               if wpn[p.prop]
@@ -82,7 +84,7 @@ table
           td.xap
             if wpn.xap
               span(class=`ap-${wpn.xap}` title="Explosion AP").ap-x= wpn.xap
-            if wpn.effect === 6
+            if wpn.statusap
               span(class=`ap-4` title="Status AP").ap-fire= wpn.statusap
           td.demo
             span.demo-main(title="Demolition Force")= wpn.demo
