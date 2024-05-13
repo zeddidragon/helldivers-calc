@@ -31,8 +31,9 @@ function tdps(wpn) {
   if(wpn.rpm) {
     magTime = ((wpn.cap || 1) - 1) * 60 / wpn.rpm
   }
-  if(wpn.charge) {
-    magTime = wpn.charge * (wpn.cap || 1)
+  const charge = wpn.chargeearly || wpn.charge
+  if(charge) {
+    magTime = charge * (wpn.cap || 1)
   }
   return magDmg(wpn) / (magTime + wpn.reload)
 }
