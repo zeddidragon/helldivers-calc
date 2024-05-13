@@ -105,13 +105,6 @@ for(const wpn of weapons) {
   delete wpn.xfloat1
   delete wpn.xunknown6
   delete wpn.xfloat2
-  if(wpn.code?.startsWith('LAS')) {
-    delete wpn.effect1
-    delete wpn.param1
-  }
-  if(wpn.effect1 === 6) {
-    wpn.statusap = 4
-  }
 }
 let keys = new Set(weapons.slice(1).map(w => Object.keys(w)).flat())
 
@@ -157,6 +150,14 @@ for(const wpn of weapons.slice(0)) {
     if(wpn[prop] === 0) {
       delete wpn[prop]
     }
+  }
+  if(wpn.code?.startsWith('LAS')) {
+    delete wpn.effect1
+    delete wpn.effect1name
+    delete wpn.param1
+  }
+  if(wpn.effect1 === 6) {
+    wpn.statusap = 4
   }
   if(wpn.dmgtype) {
     wpn.dmgtypename = types[wpn.dmgtype]

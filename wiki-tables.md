@@ -498,7 +498,7 @@
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 
-  | status_effect = Burn
+  | status_effect = 
   | status_param = 
 }}
 
@@ -690,7 +690,7 @@
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 
-  | status_effect = Burn
+  | status_effect = 
   | status_param = 
 }}
 
@@ -978,7 +978,7 @@
   | penetration_angle_slight = 
   | penetration_angle_heavy = 
   | penetration_aoe = 
-  | status_effect = Burn
+  | status_effect = 
   | status_param = 
 }}
 

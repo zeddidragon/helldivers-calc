@@ -755,8 +755,7 @@
     "tags": [
       "laser"
     ],
-    "dps": 350,
-    "effect1name": "Burn"
+    "dps": 350
   },
   {
     "category": "NRG",
@@ -1021,8 +1020,7 @@
     "tags": [
       "laser"
     ],
-    "dps": 200,
-    "effect1name": "Burn"
+    "dps": 200
   },
   {
     "category": "HG",
@@ -1385,8 +1383,7 @@
     "tags": [
       "laser"
     ],
-    "dps": 350,
-    "effect1name": "Burn"
+    "dps": 350
   },
   {
     "category": "SUP",
