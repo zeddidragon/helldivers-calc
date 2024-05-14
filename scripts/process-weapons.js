@@ -187,32 +187,3 @@ weapons = weapons.map(wpn => {
 })
 
 fs.writeFileSync('data/weapons.json', JSON.stringify(weapons, null, 2))
-
-const wikiTables = weapons.slice(1).map(wpn => {
-  const shots = wpn.pellets || 1
-  return `# ${wpn.code ||  ''} ${wpn.name}
-{{Weapon_Damage_Statistics
-  | standard_damage = ${wpn.damage * shots}
-  | durable_damage = ${wpn.durable * shots}
-  | damage_type = ${wpn.dmgtypename || ''}
-  | aoe_standard_damage = ${wpn.xdamage * shots || ''}
-  | aoe_durable_damage = ${wpn.xdurable * shots || ''}
-  | pellet_amount = ${wpn.pellets || ''}
-  | pellet_standard_damage = ${(wpn.pellets && wpn.damage) || ''}
-  | pellet_durable_damage = ${(wpn.pellets && wpn.durable) || ''}
-  | stagger_value = ${wpn.stun}
-  | aoe_stagger_value = ${wpn.xstun || ''}
-  | knockback_value = ${wpn.push || ''}
-  | aoe_knockback_value = ${wpn.xpush || ''}
-  | demolition_force = ${wpn.demo}
-  | aoe_demolition_force = ${wpn.xdemo || ''}
-  | penetration_direct = ${wpn.ap}
-  | penetration_angle_slight = ${(wpn.ap2 < wpn.ap && wpn.ap2) || ''}
-  | penetration_angle_heavy = ${(wpn.ap3 < wpn.ap && wpn.ap3) || ''}
-  | penetration_aoe = ${wpn.xap || ''}
-  | status_effect = ${wpn.effect1name || ''}
-  | status_param = ${wpn.param1 || ''}
-}}`
-}).join('\n\n')
-
-fs.writeFileSync('wiki-tables.md', wikiTables)

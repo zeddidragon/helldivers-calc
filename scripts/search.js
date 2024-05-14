@@ -1,12 +1,11 @@
 import fs from 'fs'
 import { fileURLToPath } from "url"
 
-const data = JSON.parse(fs.readFileSync('./data/datamined.json'))
+const { strikes } = JSON.parse(fs.readFileSync('./data/datamined.json'))
 
 const typical = [
-  'damage',
-  'pen1',
-  'nothirddefault'
+  'dmg',
+  'ap1',
 ]
 
 const filters = {
@@ -24,7 +23,7 @@ const filters = {
 const comparators = Object.keys(filters)
 
 export function search(args) {
-  let filtered = data.item.slice()
+  let filtered = strikes.slice()
   let i = 0
   for(const arg of args) {
     let [prop, val] = arg.split('=')
@@ -53,10 +52,10 @@ export function search(args) {
   return filtered.map(w => {
     return [
       `#${w.id}:`,
-      `${w.damage}/${w.secondaryDamage}`,
-      `${w.pen1}/${w.pen2}/${w.pen3}/${w.pen4}`,
-      `${w.demolition}/${w.stun}/${w.push}`,
-      `${w.unknown4}/${w.unknown5}(${w.float1})/${w.unknown6}(${w.float2})`,
+      `${w.dmg}/${w.mass}`,
+      `${w.ap1}/${w.ap2}/${w.ap3}/${w.ap4}`,
+      `${w.demo}/${w.stun}/${w.push}`,
+      `${w.type}/${w.func1}(${w.param1})/${w.func2}(${w.param2})`,
     ].join(' ')
   })
 }
