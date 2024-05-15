@@ -42,10 +42,10 @@ for(const [armor, overall] of Object.entries(armors)) {
   const row = [armor]
   for(const [limb, multi] of Object.entries(limbs)) {
     let base = overall
-    if(limb === 'Head') {
+    if(limb === 'Head' && armor <= 100) {
       base = 1.0
     }
-    row.push(`${(100 * base * multi).toFixed(2)}%`)
+    row.push(`${(100 * base * multi).toFixed()}%`)
   }
   rows.push(row)
 }
