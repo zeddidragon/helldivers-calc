@@ -1594,5 +1594,29 @@
     "roundstart": 0,
     "roundsupply": 20,
     "roundsbox": 10
+  },
+  {
+    "category": "GR",
+    "fullname": "G-12 High Explosive",
+    "code": "G-12",
+    "name": "High Explosive",
+    "source": "start",
+    "idx": 1,
+    "catIdx": 10,
+    "xid": "213",
+    "xdamage": 400,
+    "xdurable": 400,
+    "xap": 4,
+    "xap2": 0,
+    "xap3": 0,
+    "xap4": 0,
+    "xstun": 30,
+    "xpush": 40,
+    "xdemo": 30,
+    "cap": 2,
+    "rounds": 4,
+    "roundstart": 3,
+    "roundsupply": 4,
+    "roundsbox": 2
   }
 ]
