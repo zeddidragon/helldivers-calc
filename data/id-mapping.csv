@@ -3,7 +3,7 @@ AR-23 Liberator,damage,51
 AR-23P Liberator Penetrator,damage,48
 AR-23C Liberator Concussive,damage,50
 AR-61 Tenderizer,51
-BR-14 Adjudicator,damage,61
+BR-14 Adjudicator,damage,65
 R-63 Diligence,damage,73
 R-63CS Diligence Counter Sniper,damage,74
 SMG-37 Defender,damage,34
@@ -48,7 +48,7 @@ AC-8 Autocannon,xdamage,212
 RS-422 Railgun,damage,22
 LAS-98 Laser Cannon,damage,302
 EAT-17 Expendable Anti-Tank,damage,135
-EAT-17 Expendable Anti-Tank,xdamage,225
+EAT-17 Expendable Anti-Tank,xdamage,226
 GR-8 Recoilless Rifle,damage,136
 GR-8 Recoilless Rifle,xdamage,225
 LAS-99 Quasar Cannon,damage,227
@@ -56,6 +56,6 @@ LAS-99 Quasar Cannon,xdamage,228
 FAF-14 Spear,damage,149
 FAF-14 Spear,xdamage,241
 RL-77 Airburst Rocket Launcher,damage,224
-RL-77 Airburst Rocket Launcher,xdamage,201
-RL-77 Airburst (Clusters),xdamage,202
+RL-77 Airburst (Small Clusters),xdamage,202
+RL-77 Airburst (Big Clusters),xdamage,201
 Break-Action Shotgun,damage,93

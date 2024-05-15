@@ -19,6 +19,7 @@
     "pug": "^3.0.2"
   },
   "devDependencies": {
+    "clipboardy": "^4.0.0",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
