@@ -329,6 +329,13 @@ function getEffect(wpn, p) {
       effectCache[key] = {
         name: () => '☆',
         value: () => param,
+        description: () => `Staggers target. Buildup factor of ${param}.`,
+      }
+      break
+    case 35:
+      effectCache[key] = {
+        name: () => '★',
+        value: () => param,
         description: () => `Stuns target. Buildup factor of ${param}.`,
       }
       break

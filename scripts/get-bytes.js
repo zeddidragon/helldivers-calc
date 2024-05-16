@@ -10,7 +10,7 @@ if(args[0] === 'x') {
   args = args.slice(1)
 }
 const search = new RegExp(args[0], 'i')
-const wpn = weapons.find(wpn => search.exec(wpn.name))
+const wpn = weapons.find(wpn => search.exec(wpn.fullname))
 if(!wpn) {
   throw new Error(`No results: ${search}`)
 }

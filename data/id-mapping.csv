@@ -59,4 +59,10 @@ RL-77 Airburst Rocket Launcher,damage,224
 RL-77 Airburst (Small Clusters),xdamage,202
 RL-77 Airburst (Big Clusters),xdamage,201
 Break-Action Shotgun,damage,93
+G-6 Frag,xdamage,201
 G-12 High Explosive,xdamage,213
+G-10 Incendiary,xdamage,203
+G-16 Impact,xdamage,213
+G-13 Incendiary Impact,xdamage,203
+G-23 Stun,xdamage,169
+G-123 Thermite,xdamage,204
