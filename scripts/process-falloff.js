@@ -12,6 +12,7 @@ const base = 10000
 const results = rows.map(([cal, v, m, drag, rem, comment]) => {
   const dmg = hp - rem
   const ratio = (100 * (base - dmg) / base).toFixed(2)
+  const simulation = (2 * Math.PI * cal * cal * drag / m)
   return [
     cal,
     v,
@@ -19,13 +20,14 @@ const results = rows.map(([cal, v, m, drag, rem, comment]) => {
     drag,
     dmg,
     `${ratio}%`,
+    simulation.toFixed(2),
     comment,
   ]
 })
 
 
 const output = [
-  ['Caliber', 'Velocity', 'Mass', 'Drag', 'Damage', 'Falloff', 'Commment'],
+  ['Caliber', 'Velocity', 'Mass', 'Drag', 'Damage', 'Falloff', 'Simulation', 'Commment'],
   ...results,
 ].join('\n')
 console.log(output)
