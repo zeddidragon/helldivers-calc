@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-const nameRex = /([\W|\w]+)\W+\(w\/ (\d+)x(\d+)mm ([\W|\w/]+)\)/ 
+const nameRex = /([\W|\w]+)\W+\(w\/ (\d+\.?\d*)x(\d+\.?\d*)mm ([\W|\w/]+)\)/
 const data = fs.readFileSync('data/ballistics.txt', 'utf8')
 
 const headers = [
@@ -33,6 +33,7 @@ for(const line of data.trim().split('\n').slice(1)) {
     ammoName,
   ] = nameRex.exec(weaponWithAmmo) || [, weaponWithAmmo]
   const [
+    ,
     caliber,
     velocity,
     mass,
@@ -41,9 +42,10 @@ for(const line of data.trim().split('\n').slice(1)) {
     life,
     penSlow,
   ] = stats.split(/\//)
+  const ammo = ammoName ? `${height}x${length}mm ${ammoName}` : ''
   csv.push([
     name,
-    ammoName ? `${height}x${length}mm ${ammoName}` : '',
+    ammo,
     caliber,
     velocity,
     mass,
@@ -54,4 +56,4 @@ for(const line of data.trim().split('\n').slice(1)) {
   ].map(v => v?.trim() || ''))
 }
 
-fs.writeFileSync('data/ballistics.csv', csv.join('\n'))
+fs.writeFileSync('data/ballistics.csv', csv.map(r => r.join(',')).join('\n'))
