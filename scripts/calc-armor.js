@@ -36,7 +36,7 @@ const armors = {
   150: 0.8,
 }
 
-const headers = ['Armor', ...Object.keys(limbs)]
+const headers = ['Armor', 'Overall', ...Object.keys(limbs)]
 const rows = []
 for(const [armor, overall] of Object.entries(armors)) {
   const row = [armor]
