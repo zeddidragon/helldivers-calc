@@ -33,7 +33,6 @@ for(const line of data.trim().split('\n').slice(1)) {
     ammoName,
   ] = nameRex.exec(weaponWithAmmo) || [, weaponWithAmmo]
   const [
-    ,
     caliber,
     velocity,
     mass,
@@ -46,7 +45,7 @@ for(const line of data.trim().split('\n').slice(1)) {
   csv.push([
     name,
     ammo,
-    caliber,
+    caliber.slice(1),
     velocity,
     mass,
     drag,
