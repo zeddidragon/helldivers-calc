@@ -1,0 +1,44 @@
+Weapon,Ammo,Caliber,Velocity,Mass,Drag,Gravity,Life,HitSlow
+BR-14 Adjudicator,8x60mm Full Metal Jacket,,8,820,11,0.3,1,0,0.25
+AR-61 Tenderizer (w/ 5.5x50mm Full Metal Jacket),,,5.5,900,4.5,0.3,1,0,0.25
+AR-23 Liberator (w/ 5.5x50mm Full Metal Jacket),,,5.5,900,4.5,0.3,1,0,0.25
+AR-23C Liberator Concussive,,,5.5,800,4.5,0.3,1,0,0.25
+AR-48 Truth Whisperer (w/ 5.5x50mm Full Metal Jacket),,,5.5,900,4.5,0.3,1,0,0.25
+AR-23P Liberator Penetrator,,,5.5,1000,4.5,0.3,1,0,0.25
+AR-22C Patriot (w/ 5.5x50mm Full Metal Jacket),,,5.5,900,4.5,0.3,1,0,0.25
+SG-8P Punisher Plasma,,,20,90,100,4,3,0,0.35
+PLAS-1 Scorcher,,,20,550,100,1,0.5,0,0.35
+PLAS-101 Purifier,,,20,350,100,1,1.5,0,0.35
+LAS-16 Sickle,,,10,1300,12,0,0,6,0.25
+CB-9 Exploding Crossbow,,,15,100,100,1,0.5,0,0.25
+JAR-5 Dominator,15x100mm Standard Rocket,,15,180,100,0,0.3,0,0.25
+R-36 Eruptor,,,15,180,100,0,0.3,0.7,0.25
+AR-20L Justice,8x60mm Full Metal Jacket,,8,820,11,0.3,1,0,0.25
+R-63 Diligence,9x70mm Full Metal Jacket,,9,850,20,0.3,1,0,0.25
+R-63CS Diligence Counter Sniper,,,9,940,20,0.3,1,0,0.25
+SG-225 Breaker (w/ 12g Buckshot),,,8,360,4,0.5,1,0,0.8
+SG-225BB Breaker Bugbiter,,,12,360,8,0.5,1,0,0.8
+SG-225NS Breaker Nailspitter,,,8,360,4,0.3,1,0,0.25
+SG-225IE Breaker Incendiary,,,8,120,2,0.8,1,0,1
+SG-225SP Breaker Spray&Pray,,,3,250,1,0.5,1,0,0.8
+SMG-72 Pummeler,,,12,210,15,0.3,1,0,0.25
+MP-98 Knight,,,9,375,7,0.3,1,0,0.25
+SMG-37 Defender,12x25mm Full Metal Jacket,,12,285,15,0.3,1,0,0.25
+PLAS-3 Singe,,,10,550,10,1,0.5,0,0.35
+P-19 Redeemer,9x20mm Full Metal Jacket,,9,375,7,0.3,1,0,0.25
+P-2 Peacemaker,9x20mm Hollow Point,,9,320,7,0.7,1,0,0.25
+GP-31 Grenade Pistol,,,40,100,50,1.2,1,0,0.25
+P-4 Senator,13x40mm Full Metal Jacket,,12,550,15,0.3,1,0,0.25
+P-113 Verdict,,,12,285,15,0.3,1,0,0.25
+RS-422 Railgun,,,10,2000,50,0.3,1,5,0
+GR-8 Recoilless Rifle,,,85,250,3300,0.3,1,0,0.25
+FAF-14 Spear,,,66,70,350,0.3,1,15,0.25
+GL-21 Grenade Launcher,,,40,100,50,1.2,1,0,0.25
+RL-77 Airburst Rocket Launcher,,,85,250,3300,0.3,1,1.5,0.25
+EAT-17 Expendable Anti-Tank,,,75,200,2500,0.3,1,0,0.85
+AC-8 Autocannon,,,20,820,120,0.3,1,0,0.55
+MG-206 Heavy Machine Gun,,,12.5,980,52,0.3,1,0,0.25
+MG-43 Machine Gun,,,8,820,11,0.3,1,0,0.25
+M-105 Stalwart,,,5.5,900,4.5,0.3,1,0,0.25
+LAS-99 Quasar Cannon,,,10,1300,12,0,0,6,0.25
+APW-1 Anti-Materiel Rifle,,,12.5,880,52,0.3,1,0,0.25
