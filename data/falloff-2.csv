@@ -1,0 +1,29 @@
+Caliber,Velocity,Mass,Drag,Rem,Comment
+5.5,900,4.5,0.3,11322,Default
+5.5,200,2500,0.3,9982,EAT values 5.5mm caliber
+75,200,2500,0.3,10438,EAT values matches EAT
+5.5,900,4.5,0.3,11328,Default for control
+11,900,4.5,0.3,14095,Double Caliber
+5.5,1100,4.5,0.3,11351,Lib Pen Velocity
+5.5,900,4.5,0,9999,Zero Drag
+10,1000,10,1,14722,Test Values
+15,1000,10,1,16705,1.5x Caliber
+20,1000,10,1,17358,2.0x Caliber
+5,1000,10,1,11600,0.5x Caliber
+10,1000,10,1.5,11600,1.5x Drag
+10,1000,10,2,16453,2.0x Drag
+10,1000,10,0.5,12875,0.5x Drag
+5.5,900,4.5,0.3,11328,Restart control
+10,1000,10,1,14666,Test Values control
+10,1500,10,1,14769,1.5x Velocity
+10,2000,10,1,14896,2.0x Velocity
+10,500,10,1,14603,0.5x Velocity
+10,10000,10,1,15910,10x Velocity
+10,1000,15,1,13641,1.5x Mass
+10,1000,20,1,12906,2.0x Mass
+10,1000,5,1,16467,0.5x Mass
+10,1000,100,1,10680,10x Mass
+10,1000,200,1,10351,20x Mass
+10,1000,1000,1,10072,1000x Mass
+10,1000,1000,0.5,10036,1000x Mass 0.5x drag
+5.5,200,2500,0.3,9983,Retest Faux EAT values

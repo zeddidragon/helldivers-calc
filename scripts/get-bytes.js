@@ -66,7 +66,7 @@ const buf = Buffer.alloc(0x4c)
 for(let i = 0; i < schema.length; i++) {
   const offset = i * 0x4
   const [prop, cb] = useschema[i]
-  Int(buf, wpn[prop] || 0, offset)
+  cb(buf, wpn[prop] || 0, offset)
 }
 const str = Array.from(buf).map(byte => byte.toString(16).padStart(2, '0')).join(' ')
 console.log(str)
