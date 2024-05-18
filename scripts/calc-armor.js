@@ -33,10 +33,14 @@ const armors = {
   70: 1.2,
   79: 1.14,
   100: 1.0,
+  129: 0.885,
   150: 0.8,
 }
 
-const headers = ['Armor', 'Overall', ...Object.keys(limbs)]
+function pct(v) {
+  return (100 * v).toFixed() + '%'
+}
+const headers = ['Armor', ...Object.keys(limbs)]
 const rows = []
 for(const [armor, overall] of Object.entries(armors)) {
   const row = [armor]
@@ -45,8 +49,8 @@ for(const [armor, overall] of Object.entries(armors)) {
     if(limb === 'Head' && armor <= 100) {
       base = 1.0
     }
-    row.push(`${(100 * base * multi).toFixed()}%`)
+    row.push(pct(base * multi))
   }
   rows.push(row)
 }
-console.log([headers, ...rows].join('\n'))
+fs.writeFileSync('data/armor-values.csv', [headers, ...rows].join('\n'))

@@ -93,6 +93,12 @@ AMR Arm: -187
 AMR Leg: -235
 Hellbomb: -1875
 
+Medium (129)
+Dom Head: -361
+Dom Chest: -82
+Dom Arm: -46
+Dom Leg: -70
+
 Heavy (150)
 Impact Grenade: -35
 Dom Head: -313
