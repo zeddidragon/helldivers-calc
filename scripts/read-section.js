@@ -160,9 +160,10 @@ function unknowns(from, to) {
 
 const ballisticSchema = {
   id: Int,
-  ...unknowns(2, 51),
+  penslow: Float,
+  ...unknowns(3, 51),
   caliber: Float,
-  unk53: Int,
+  pellets: Int,
   velocity: Float,
   mass: Float,
   drag: Float,

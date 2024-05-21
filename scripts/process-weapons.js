@@ -24,6 +24,7 @@ const idMap = fs.readFileSync('data/id-mapping.csv', 'utf-8')
   })
 const {
   strikes,
+  ballistics,
 } = JSON.parse(fs.readFileSync('./data/datamined.json', 'utf-8').trim())
 const reloads = fs.readFileSync('./data/reloads.csv', 'utf-8')
   .trim()
@@ -46,6 +47,10 @@ for(const r of reloads) {
 const strikeRegister = {}
 for(const strike of strikes) {
   strikeRegister[strike.id] = strike
+}
+const ballisticsRegister = {}
+for(const b of ballistics) {
+  ballisticsRegister[b.id] = b
 }
 
 for(const wpn of weapons) {
@@ -70,10 +75,31 @@ for(const wpn of weapons) {
     wpn.reloadone = wpn.reloadearly
     delete wpn.reloadearly
   }
-  const strikeIds = idMap.filter(m => m.name === name)
-  for(const id of strikeIds) {
+  const ids = idMap.filter(m => m.name === name)
+  for(const id of ids) {
+    if(id.prop === 'ballistics') {
+      const ballistics = ballisticsRegister[id.id]
+      if(!ballistics) {
+        continue
+      }
+      wpn.ballisticid = ballistics.id
+      if(ballistics.pellets > 1) {
+        wpn.pellets = ballistics.pellets
+      }
+      wpn.velocity = ballistics.velocity
+      wpn.caliber = ballistics.caliber
+      wpn.bulletmass = ballistics.mass
+      wpn.drag = ballistics.drag
+      if(wpn.gravity != 0) {
+        wpn.gravity = ballistics.gravity
+      }
+      wpn.penslow = ballistics.penslow
+      continue
+    }
     const strike = strikeRegister[id.id]
-    if(!strike) continue
+    if(!strike) {
+      continue
+    }
     wpn[id.prop] = strike.dmg
     const prefix = id.prop === 'damage' ? '' : id.prop[0]
     if(!prefix && wpn.tags?.includes('laser')) {
