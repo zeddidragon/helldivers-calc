@@ -7960,5 +7960,1096 @@
       "func4": 0,
       "param4": 0
     }
+  ],
+  "ballistics": [
+    {
+      "id": 158,
+      "caliber": 100,
+      "unk53": 1,
+      "velocity": 1,
+      "mass": 25,
+      "drag": 0.8999999761581421,
+      "gravity": 0.009999999776482582
+    },
+    {
+      "id": 158,
+      "caliber": 100,
+      "unk53": 1,
+      "velocity": 14000,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1
+    },
+    {
+      "id": 161,
+      "caliber": 360,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 70000,
+      "drag": 0.5,
+      "gravity": 10
+    },
+    {
+      "id": 160,
+      "caliber": 360,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 70000,
+      "drag": 0.5,
+      "gravity": 10
+    },
+    {
+      "id": 160,
+      "caliber": 360,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 70000,
+      "drag": 0.5,
+      "gravity": 10
+    },
+    {
+      "id": 160,
+      "caliber": 360,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 70000,
+      "drag": 0.5,
+      "gravity": 10
+    },
+    {
+      "id": 160,
+      "caliber": 360,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 70000,
+      "drag": 0.5,
+      "gravity": 10
+    },
+    {
+      "id": 160,
+      "caliber": 360,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 70000,
+      "drag": 0.5,
+      "gravity": 10
+    },
+    {
+      "id": 160,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 280,
+      "mass": 7,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 24,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 375,
+      "mass": 7,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 25,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 375,
+      "mass": 7,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 26,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 320,
+      "mass": 7,
+      "drag": 0.699999988079071,
+      "gravity": 1
+    },
+    {
+      "id": 27,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 450,
+      "mass": 7,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 28,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 360,
+      "mass": 7,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 29,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 7,
+      "drag": 0.8999999761581421,
+      "gravity": 1
+    },
+    {
+      "id": 30,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 375,
+      "mass": 7,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 31,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 7,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 32,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 220,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 33,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 285,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 34,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 235,
+      "mass": 15,
+      "drag": 0.699999988079071,
+      "gravity": 1
+    },
+    {
+      "id": 35,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 360,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 36,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 400,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 37,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 350,
+      "mass": 15,
+      "drag": 0.8999999761581421,
+      "gravity": 1
+    },
+    {
+      "id": 38,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 285,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 39,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 210,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 40,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 210,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 41,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 285,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 42,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 550,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 43,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 550,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 44,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 350,
+      "mass": 15,
+      "drag": 0.699999988079071,
+      "gravity": 1
+    },
+    {
+      "id": 45,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 650,
+      "mass": 15,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 46,
+      "caliber": 12,
+      "unk53": 1,
+      "velocity": 350,
+      "mass": 15,
+      "drag": 0.8999999761581421,
+      "gravity": 1
+    },
+    {
+      "id": 47,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 900,
+      "mass": 4.5,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 51,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 1000,
+      "mass": 4.5,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 48,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 1200,
+      "mass": 8.5,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 49,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 800,
+      "mass": 4.5,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 50,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 800,
+      "mass": 5,
+      "drag": 0.699999988079071,
+      "gravity": 1
+    },
+    {
+      "id": 52,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 1000,
+      "mass": 4.5,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 53,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 780,
+      "mass": 7.5,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 54,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 820,
+      "mass": 5.5,
+      "drag": 0.8999999761581421,
+      "gravity": 1
+    },
+    {
+      "id": 55,
+      "caliber": 6.5,
+      "unk53": 1,
+      "velocity": 800,
+      "mass": 4.5,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 56,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 330,
+      "mass": 4.5,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 57,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 1000,
+      "mass": 4.5,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 58,
+      "caliber": 5.5,
+      "unk53": 1,
+      "velocity": 1000,
+      "mass": 4.5,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 51,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 800,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 59,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 800,
+      "mass": 14,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 60,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 950,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 62,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 720,
+      "mass": 14,
+      "drag": 0.699999988079071,
+      "gravity": 1
+    },
+    {
+      "id": 63,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 680,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 64,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 820,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 65,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 820,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 65,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 920,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 66,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 680,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 67,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 1050,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 68,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 330,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 69,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 800,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 70,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 800,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 65,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 800,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 65,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 800,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 61,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 820,
+      "mass": 11,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 71,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 920,
+      "mass": 20,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 72,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 850,
+      "mass": 20,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 73,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 940,
+      "mass": 20,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 74,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 1050,
+      "mass": 20,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 75,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 1050,
+      "mass": 20,
+      "drag": 0.20000000298023224,
+      "gravity": 1
+    },
+    {
+      "id": 76,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 850,
+      "mass": 20,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 77,
+      "caliber": 9,
+      "unk53": 1,
+      "velocity": 850,
+      "mass": 20,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 78,
+      "caliber": 12.5,
+      "unk53": 1,
+      "velocity": 880,
+      "mass": 52,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 120,
+      "caliber": 12.5,
+      "unk53": 1,
+      "velocity": 880,
+      "mass": 52,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 122,
+      "caliber": 12.5,
+      "unk53": 1,
+      "velocity": 880,
+      "mass": 52,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 123,
+      "caliber": 12.5,
+      "unk53": 1,
+      "velocity": 980,
+      "mass": 52,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 121,
+      "caliber": 15,
+      "unk53": 1,
+      "velocity": 100,
+      "mass": 100,
+      "drag": 1,
+      "gravity": 0.5
+    },
+    {
+      "id": 124,
+      "caliber": 15,
+      "unk53": 1,
+      "velocity": 180,
+      "mass": 100,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 79,
+      "caliber": 15,
+      "unk53": 1,
+      "velocity": 180,
+      "mass": 100,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 80,
+      "caliber": 15,
+      "unk53": 1,
+      "velocity": 150,
+      "mass": 100,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 81,
+      "caliber": 15,
+      "unk53": 1,
+      "velocity": 230,
+      "mass": 100,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 83,
+      "caliber": 15,
+      "unk53": 1,
+      "velocity": 280,
+      "mass": 100,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 82,
+      "caliber": 15,
+      "unk53": 1,
+      "velocity": 180,
+      "mass": 100,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 84,
+      "caliber": 15,
+      "unk53": 1,
+      "velocity": 180,
+      "mass": 100,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 85,
+      "caliber": 15,
+      "unk53": 1,
+      "velocity": 160,
+      "mass": 100,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 86,
+      "caliber": 15,
+      "unk53": 1,
+      "velocity": 180,
+      "mass": 100,
+      "drag": 0,
+      "gravity": 0.30000001192092896
+    },
+    {
+      "id": 80,
+      "caliber": 70,
+      "unk53": 1,
+      "velocity": 100,
+      "mass": 6000,
+      "drag": 0,
+      "gravity": 0.5
+    },
+    {
+      "id": 140,
+      "caliber": 70,
+      "unk53": 1,
+      "velocity": 100,
+      "mass": 6000,
+      "drag": 0,
+      "gravity": 0.5
+    },
+    {
+      "id": 140,
+      "caliber": 110,
+      "unk53": 1,
+      "velocity": 700,
+      "mass": 3300,
+      "drag": 0,
+      "gravity": 0.25
+    },
+    {
+      "id": 152,
+      "caliber": 110,
+      "unk53": 1,
+      "velocity": 700,
+      "mass": 3300,
+      "drag": 0,
+      "gravity": 0.25
+    },
+    {
+      "id": 152,
+      "caliber": 110,
+      "unk53": 1,
+      "velocity": 700,
+      "mass": 3300,
+      "drag": 0,
+      "gravity": 1
+    },
+    {
+      "id": 152,
+      "caliber": 3,
+      "unk53": 16,
+      "velocity": 250,
+      "mass": 1,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 101,
+      "caliber": 8,
+      "unk53": 11,
+      "velocity": 360,
+      "mass": 4,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 102,
+      "caliber": 12,
+      "unk53": 7,
+      "velocity": 360,
+      "mass": 8,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 103,
+      "caliber": 8,
+      "unk53": 11,
+      "velocity": 360,
+      "mass": 4,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 104,
+      "caliber": 8,
+      "unk53": 12,
+      "velocity": 120,
+      "mass": 2,
+      "drag": 0.800000011920929,
+      "gravity": 1
+    },
+    {
+      "id": 105,
+      "caliber": 8,
+      "unk53": 8,
+      "velocity": 430,
+      "mass": 12,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 106,
+      "caliber": 13,
+      "unk53": 3,
+      "velocity": 360,
+      "mass": 4,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 107,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 4,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 108,
+      "caliber": 8,
+      "unk53": 3,
+      "velocity": 450,
+      "mass": 4,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 110,
+      "caliber": 8,
+      "unk53": 16,
+      "velocity": 280,
+      "mass": 2,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 87,
+      "caliber": 8,
+      "unk53": 9,
+      "velocity": 385,
+      "mass": 6,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 88,
+      "caliber": 8,
+      "unk53": 6,
+      "velocity": 385,
+      "mass": 12,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 89,
+      "caliber": 8,
+      "unk53": 9,
+      "velocity": 385,
+      "mass": 6,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 90,
+      "caliber": 8,
+      "unk53": 5,
+      "velocity": 150,
+      "mass": 6,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 91,
+      "caliber": 18,
+      "unk53": 1,
+      "velocity": 450,
+      "mass": 98,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 92,
+      "caliber": 8,
+      "unk53": 9,
+      "velocity": 385,
+      "mass": 6,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 93,
+      "caliber": 8,
+      "unk53": 3,
+      "velocity": 385,
+      "mass": 6,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 94,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 385,
+      "mass": 6,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 95,
+      "caliber": 8,
+      "unk53": 2,
+      "velocity": 385,
+      "mass": 6,
+      "drag": 0.30000001192092896,
+      "gravity": 1
+    },
+    {
+      "id": 96,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 385,
+      "mass": 6,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 97,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 385,
+      "mass": 6,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 98,
+      "caliber": 18,
+      "unk53": 1,
+      "velocity": 390,
+      "mass": 50,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 99,
+      "caliber": 8,
+      "unk53": 3,
+      "velocity": 385,
+      "mass": 6,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 100,
+      "caliber": 10,
+      "unk53": 1,
+      "velocity": 30,
+      "mass": 100,
+      "drag": 0.4000000059604645,
+      "gravity": 1
+    },
+    {
+      "id": 111,
+      "caliber": 10,
+      "unk53": 1,
+      "velocity": 50,
+      "mass": 100,
+      "drag": 0.4000000059604645,
+      "gravity": 1
+    },
+    {
+      "id": 102,
+      "caliber": 4,
+      "unk53": 1,
+      "velocity": 1000,
+      "mass": 2,
+      "drag": 0.4000000059604645,
+      "gravity": 1
+    },
+    {
+      "id": 112,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 2,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 112,
+      "caliber": 8,
+      "unk53": 1,
+      "velocity": 300,
+      "mass": 2,
+      "drag": 0.5,
+      "gravity": 1
+    },
+    {
+      "id": 112,
+      "caliber": 10,
+      "unk53": 1,
+      "velocity": 550,
+      "mass": 10,
+      "drag": 1,
+      "gravity": 0.5
+    },
+    {
+      "id": 20,
+      "caliber": 20,
+      "unk53": 1,
+      "velocity": 550,
+      "mass": 100,
+      "drag": 1,
+      "gravity": 0.5
+    },
+    {
+      "id": 20,
+      "caliber": 20,
+      "unk53": 1,
+      "velocity": 550,
+      "mass": 100,
+      "drag": 1,
+      "gravity": 0.5
+    },
+    {
+      "id": 20,
+      "caliber": 20,
+      "unk53": 1,
+      "velocity": 550,
+      "mass": 100,
+      "drag": 1,
+      "gravity": 0.5
+    },
+    {
+      "id": 21,
+      "caliber": 20,
+      "unk53": 1,
+      "velocity": 350,
+      "mass": 100,
+      "drag": 1,
+      "gravity": 1.5
+    },
+    {
+      "id": 20,
+      "caliber": 20,
+      "unk53": 1,
+      "velocity": 90,
+      "mass": 100,
+      "drag": 4,
+      "gravity": 3
+    },
+    {
+      "id": 20,
+      "caliber": 20,
+      "unk53": 1,
+      "velocity": 45,
+      "mass": 100,
+      "drag": 3,
+      "gravity": 1.5
+    }
   ]
 }
