@@ -39,12 +39,12 @@ const armors = {
 }
 
 function pct(v) {
-  return (100 * v).toFixed() + '%'
+  return (100 * v).toFixed(1) + '%'
 }
-const headers = ['Armor', ...Object.keys(limbs)]
+const headers = ['Armor', 'Overall', ...Object.keys(limbs)]
 const rows = []
 for(const [armor, overall] of Object.entries(armors)) {
-  const row = [armor]
+  const row = [armor, pct(overall)]
   for(const [limb, multi] of Object.entries(limbs)) {
     let base = overall
     if(limb === 'Head' && armor <= 100) {
