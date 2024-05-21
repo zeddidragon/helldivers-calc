@@ -110,3 +110,9 @@ AMR Chest: -178
 AMR Arm: -127
 AMR Leg: -
 Grenade Pistol Leg: -15
+
+Heavy (200)
+Dom Head: -243
+Dom Chest: -32
+Dom Arm: -4
+Dom Leg: -23
