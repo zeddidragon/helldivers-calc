@@ -25,6 +25,14 @@ for(const line of data.split('\n')) {
     const fraction = (damage / limbs[limb]) / base
     console.log({ armor, limb, fraction })
   }
+  const grenade10k = /10k Grenade: (-?\d+)/.exec(line)
+  if(grenade10k) {
+    const base = 10000
+    const [, rem] = grenade10k
+    const damage = Math.abs(hp - rem)
+    const fraction = damage / base
+    console.log({ source: '10k', armor, fraction })
+  }
 }
 
 const armors = {
@@ -38,13 +46,24 @@ const armors = {
   200: 0.671,
 }
 
+const explosions = {
+  50: 0.665,
+  64: 0.6178,
+  70: 0.599,
+  79: 0.5707,
+  100: 0.5,
+  129: 0.4428,
+  150: 0.4,
+  200: 0.335,
+}
+
 function pct(v) {
   return (100 * v).toFixed(1) + '%'
 }
-const headers = ['Armor', 'Overall', ...Object.keys(limbs)]
+const headers = ['Armor', 'Overall', 'Explosion', ...Object.keys(limbs)]
 const rows = []
 for(const [armor, overall] of Object.entries(armors)) {
-  const row = [armor, pct(overall)]
+  const row = [armor, pct(overall), pct(overall * 0.5)]
   for(const [limb, multi] of Object.entries(limbs)) {
     let base = overall
     if(limb === 'Head' && armor <= 100) {
