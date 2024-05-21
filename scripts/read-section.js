@@ -14,7 +14,7 @@ const Float = {
   size: 0x04,
 }
 
-const schema = {
+const strikeSchema = {
   id: Int,
   dmg: Int,
   mass: Int,
@@ -35,8 +35,8 @@ const schema = {
   func4: Int,
   param4: Float,
 }
-const schemaValues = Object.values(schema)
-const BLOCK_SIZE = schemaValues.reduce((sum, v) => sum + v.size, 0)
+const strikeValues = Object.values(strikeSchema)
+const BLOCK_SIZE = strikeValues.reduce((sum, v) => sum + v.size, 0)
 
 const dominatorStrike = [
   84,
@@ -50,11 +50,27 @@ const dominatorStrike = [
   0, 0,
 ]
 
-function strikeRow(data) {
-  const buf = Buffer.alloc(BLOCK_SIZE)
+const ballisticSchema = {
+  velocity: Float,
+  mass: Float,
+  drag: Float,
+  gravity: Float,
+}
+
+const liberatorBallistics = [
+  900,
+  4.5,
+  0.3,
+  1.0,
+]
+
+function getRow(data, schema) {
+  const values = Object.values(schema)
+  const size = values.reduce((sum, v) => sum + v.size, 0)
+  const buf = Buffer.alloc(size)
   let i = 0
   let offset = 0
-  for(const { write: cb, size } of schemaValues) {
+  for(const { write: cb, size } of values) {
     const value = data[i] || 0
     cb(buf, value, offset)
     i++
@@ -67,10 +83,10 @@ function hex(v) {
   return `0x${v.toString(16).toUpperCase()}`
 }
 
-const domBytes = strikeRow(dominatorStrike)
-let idx = buffer.indexOf(domBytes.slice(schemaValues[0].size))
+const domBytes = getRow(dominatorStrike, strikeSchema)
+let idx = buffer.indexOf(domBytes.slice(strikeValues[0].size))
 if(idx < 0) {
-  throw new Error('Unable to locate Dominator!')
+  throw new Error('Unable to locate Dominator Strike!')
 }
 idx -= 0x4
 console.log(`Dominator located at: ${hex(idx)}`)
@@ -83,7 +99,7 @@ let prevId = 0
 const strikes = []
 while(true) {
   const strike = {}
-  for(const [prop, type] of Object.entries(schema)) {
+  for(const [prop, type] of Object.entries(strikeSchema)) {
     strike[prop] = type.read(buffer, idx)
     idx += type.size
   }
@@ -94,6 +110,13 @@ while(true) {
     break
   }
 }
+
+const libBytes = getRow(liberatorBallistics, ballisticSchema)
+idx = buffer.indexOf(libBytes)
+if(idx < 0) {
+  throw new Error('Unable to locate 5.5mm ballstics!')
+}
+console.log(`5.5mm located at: ${hex(idx)}`)
 
 const data = JSON.stringify({
   version,
