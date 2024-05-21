@@ -4,6 +4,24 @@ html {
   font-family: "Helvetica Neue", Meiryo, sans-serif;
 }
 
+nav ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.nav-selected {
+  border-bottom: thin solid;
+}
+
+nav a {
+  padding-left: 0.5em;
+  padding-right: 1.5em;
+  color: #80c3f5;
+  text-align: left;
+  overflow: hidden;
+}
+
 header {
   display: flex;
 }
