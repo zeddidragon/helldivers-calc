@@ -9,6 +9,17 @@ const limbs = {
   Arm: 0.7,
   Leg: 0.8,
 }
+const armors = {
+  50: 1.33,
+  64: 1.236,
+  70: 1.2,
+  79: 1.14,
+  100: 1.0,
+  129: 0.885,
+  150: 0.8,
+  200: 0.671,
+}
+
 
 let armor = 0
 for(const line of data.split('\n')) {
@@ -35,42 +46,25 @@ for(const line of data.split('\n')) {
   }
 }
 
-const armors = {
-  50: 1.33,
-  64: 1.236,
-  70: 1.2,
-  79: 1.14,
-  100: 1.0,
-  129: 0.885,
-  150: 0.8,
-  200: 0.671,
-}
-
-const explosions = {
-  50: 0.665,
-  64: 0.6178,
-  70: 0.599,
-  79: 0.5707,
-  100: 0.5,
-  129: 0.4428,
-  150: 0.4,
-  200: 0.335,
-}
-
 function pct(v) {
-  return (100 * v).toFixed(1) + '%'
+  return (100 * v).toFixed(2) + '%'
 }
-const headers = ['Armor', 'Overall', 'Explosion', ...Object.keys(limbs)]
+const headers = ['Armor', 'Overall', 'Explosion', 'Fortified', ...Object.keys(limbs)]
 const rows = []
-for(const [armor, overall] of Object.entries(armors)) {
-  const row = [armor, pct(overall), pct(overall * 0.5)]
-  for(const [limb, multi] of Object.entries(limbs)) {
-    let base = overall
-    if(limb === 'Head' && armor <= 100) {
-      base = 1.0
-    }
-    row.push(pct(base * multi))
+for(const vitality of [1, 0.8]) {
+  if(vitality < 1) {
+    rows.push('w/Vitality')
   }
-  rows.push(row)
+  for(const [armor, overall] of Object.entries(armors)) {
+    const row = [armor, ...[1, 0.5, 0.25].map(x => pct(overall * vitality * x))]
+    for(const [limb, multi] of Object.entries(limbs)) {
+      let base = overall
+      if(limb === 'Head' && armor <= 100) {
+        base = 1.0
+      }
+      row.push(pct(base * multi * vitality))
+    }
+    rows.push(row)
+  }
 }
 fs.writeFileSync('data/armor-values.csv', [headers, ...rows].join('\n'))
