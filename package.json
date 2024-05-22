@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "json-stringify-pretty-compact": "^4.0.0",
     "pug": "^3.0.2"
   },
   "devDependencies": {

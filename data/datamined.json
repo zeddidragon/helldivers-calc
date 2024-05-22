@@ -7963,1214 +7963,2490 @@
   ],
   "ballistics": [
     {
-      "id": 158,
-      "penslow": 0.25,
+      "id": 191,
+      "caliber": 25,
+      "pellets": 1,
+      "velocity": 300,
+      "mass": 100,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 142,
+      "penslow": 0.25
+    },
+    {
+      "id": 84,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 30,
+      "mass": 50,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 10,
+      "penslow": 0.25
+    },
+    {
+      "id": 113,
+      "caliber": 25,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 100,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 142,
+      "penslow": 0.25
+    },
+    {
+      "id": 219,
+      "caliber": 25,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 100,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 142,
+      "penslow": 0.25
+    },
+    {
+      "id": 76,
+      "caliber": 25,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 100,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 142,
+      "penslow": 0.25
+    },
+    {
+      "id": 206,
+      "caliber": 25,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 100,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 142,
+      "penslow": 0.25
+    },
+    {
+      "id": 91,
+      "caliber": 25,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 100,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 142,
+      "penslow": 0.25
+    },
+    {
+      "id": 107,
+      "caliber": 25,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 100,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 142,
+      "penslow": 0.25
+    },
+    {
+      "id": 83,
+      "caliber": 25,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 100,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 142,
+      "penslow": 0.25
+    },
+    {
+      "id": 129,
+      "caliber": 50,
+      "pellets": 1,
+      "velocity": 50,
+      "mass": 200,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 154,
+      "penslow": 0.25
+    },
+    {
+      "id": 157,
+      "caliber": 50,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 500,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 154,
+      "penslow": 0.25
+    },
+    {
+      "id": 99,
+      "caliber": 50,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 500,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 154,
+      "penslow": 0.25
+    },
+    {
+      "id": 196,
+      "caliber": 50,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 500,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 154,
+      "penslow": 0.25
+    },
+    {
+      "id": 50,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 50,
+      "mass": 1000,
+      "drag": 1,
+      "gravity": 1,
+      "damageid": 2,
+      "penslow": 0.25
+    },
+    {
+      "id": 90,
+      "caliber": 50,
+      "pellets": 1,
+      "velocity": 25,
+      "mass": 1000,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 1,
+      "penslow": 0.25
+    },
+    {
+      "id": 25,
+      "caliber": 50,
+      "pellets": 1,
+      "velocity": 25,
+      "mass": 1000,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 3,
+      "penslow": 0.25
+    },
+    {
+      "id": 224,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 20,
+      "mass": 1000,
+      "drag": 1,
+      "gravity": 1,
+      "damageid": 4,
+      "penslow": 0.25
+    },
+    {
+      "id": 120,
+      "caliber": 100,
+      "pellets": 1,
+      "velocity": 50,
+      "mass": 50000,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 153,
+      "penslow": 0.25
+    },
+    {
+      "id": 221,
+      "caliber": 50,
+      "pellets": 1,
+      "velocity": 30,
+      "mass": 1000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 155,
+      "penslow": 0.25
+    },
+    {
+      "id": 75,
+      "caliber": 20,
+      "pellets": 1,
+      "velocity": 820,
+      "mass": 120,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 127,
+      "penslow": 0.550000011920929
+    },
+    {
+      "id": 189,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 820,
+      "mass": 130,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 118,
+      "penslow": 0.25
+    },
+    {
+      "id": 81,
+      "caliber": 20,
+      "pellets": 1,
+      "velocity": 1200,
+      "mass": 220,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 128,
+      "penslow": 0.25
+    },
+    {
+      "id": 118,
+      "caliber": 20,
+      "pellets": 1,
+      "velocity": 820,
+      "mass": 120,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 132,
+      "penslow": 0.550000011920929
+    },
+    {
+      "id": 173,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 1021,
+      "mass": 900,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 129,
+      "penslow": 0.25
+    },
+    {
+      "id": 197,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 1021,
+      "mass": 900,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 131,
+      "penslow": 0.25
+    },
+    {
+      "id": 79,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 1021,
+      "mass": 900,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 130,
+      "penslow": 0.25
+    },
+    {
+      "id": 47,
+      "caliber": 23,
+      "pellets": 1,
+      "velocity": 1050,
+      "mass": 400,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 132,
+      "penslow": 0.25
+    },
+    {
+      "id": 13,
+      "caliber": 23,
+      "pellets": 1,
+      "velocity": 1050,
+      "mass": 400,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 132,
+      "penslow": 0.25
+    },
+    {
+      "id": 22,
+      "caliber": 23,
+      "pellets": 1,
+      "velocity": 1050,
+      "mass": 400,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 132,
+      "penslow": 0.25
+    },
+    {
+      "id": 40,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 250,
+      "mass": 10,
+      "drag": 1.5,
+      "gravity": 1,
+      "damageid": 7,
+      "penslow": 0.25
+    },
+    {
+      "id": 115,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 250,
+      "mass": 10,
+      "drag": 1.5,
+      "gravity": 1,
+      "damageid": 7,
+      "penslow": 0.25
+    },
+    {
+      "id": 30,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 350,
+      "mass": 20,
+      "drag": 1.5,
+      "gravity": 1,
+      "damageid": 119,
+      "penslow": 0.25
+    },
+    {
+      "id": 15,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 1000,
+      "mass": 20,
+      "drag": 1.5,
+      "gravity": 1,
+      "damageid": 133,
+      "penslow": 0.25
+    },
+    {
+      "id": 199,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 450,
+      "mass": 40,
+      "drag": 1.5,
+      "gravity": 1,
+      "damageid": 133,
+      "penslow": 0.8999999761581421
+    },
+    {
+      "id": 112,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 450,
+      "mass": 80,
+      "drag": 1.5,
+      "gravity": 1,
+      "damageid": 157,
+      "penslow": 0.25
+    },
+    {
+      "id": 178,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 450,
+      "mass": 80,
+      "drag": 1.5,
+      "gravity": 1,
+      "damageid": 157,
+      "penslow": 0.25
+    },
+    {
+      "id": 143,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 450,
+      "mass": 20,
+      "drag": 1.5,
+      "gravity": 1,
+      "damageid": 119,
+      "penslow": 0.25
+    },
+    {
+      "id": 193,
+      "caliber": 5,
+      "pellets": 6,
+      "velocity": 150,
+      "mass": 10,
+      "drag": 1.5,
+      "gravity": 1,
+      "damageid": 8,
+      "penslow": 0.25
+    },
+    {
+      "id": 164,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 45,
+      "mass": 3300,
+      "drag": 0,
+      "gravity": 0.009999999776482582,
+      "damageid": 6,
+      "penslow": 0.25
+    },
+    {
+      "id": 37,
+      "caliber": 400,
+      "pellets": 1,
+      "velocity": 60,
+      "mass": 33000,
+      "drag": 0,
+      "gravity": 0.10000000149011612,
+      "damageid": 6,
+      "penslow": 0.25
+    },
+    {
+      "id": 213,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 40,
+      "mass": 250,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 10,
+      "penslow": 0.25
+    },
+    {
+      "id": 20,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 40,
+      "mass": 750,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 10,
+      "penslow": 0.25
+    },
+    {
+      "id": 122,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 380,
+      "mass": 100000,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 165,
+      "penslow": 0.25
+    },
+    {
+      "id": 34,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 60,
+      "mass": 12,
+      "drag": 10,
+      "gravity": 0.10000000149011612,
+      "damageid": 5,
+      "penslow": 0.25
+    },
+    {
+      "id": 72,
+      "caliber": 406,
+      "pellets": 1,
+      "velocity": 1000,
+      "mass": 30000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 156,
+      "penslow": 0.25
+    },
+    {
+      "id": 186,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 100,
+      "mass": 50,
+      "drag": 1.2000000476837158,
+      "gravity": 1,
+      "damageid": 10,
+      "penslow": 0.25
+    },
+    {
+      "id": 144,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 100,
+      "mass": 50,
+      "drag": 1.2000000476837158,
+      "gravity": 1,
+      "damageid": 10,
+      "penslow": 0.25
+    },
+    {
+      "id": 58,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 100,
+      "mass": 50,
+      "drag": 1.2000000476837158,
+      "gravity": 1,
+      "damageid": 10,
+      "penslow": 0.25
+    },
+    {
+      "id": 54,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 100,
+      "mass": 50,
+      "drag": 1.2000000476837158,
+      "gravity": 1,
+      "damageid": 134,
+      "penslow": 0.25
+    },
+    {
+      "id": 42,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 50,
+      "mass": 50,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 10,
+      "penslow": 0.25
+    },
+    {
+      "id": 106,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 50,
+      "mass": 250,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 11,
+      "penslow": 0.25
+    },
+    {
+      "id": 223,
+      "caliber": 360,
+      "pellets": 1,
+      "velocity": 100,
+      "mass": 70000,
+      "drag": 0.25,
+      "gravity": 6,
+      "damageid": 10,
+      "penslow": 0.25
+    },
+    {
+      "id": 101,
+      "caliber": 360,
+      "pellets": 1,
+      "velocity": 100,
+      "mass": 70000,
+      "drag": 0.25,
+      "gravity": 6,
+      "damageid": 10,
+      "penslow": 0.25
+    },
+    {
+      "id": 85,
+      "caliber": 75,
+      "pellets": 1,
+      "velocity": 200,
+      "mass": 2500,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 135,
+      "penslow": 0.8500000238418579
+    },
+    {
+      "id": 27,
+      "caliber": 85,
+      "pellets": 1,
+      "velocity": 250,
+      "mass": 3300,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 143,
+      "penslow": 0.8500000238418579
+    },
+    {
+      "id": 226,
+      "caliber": 85,
+      "pellets": 1,
+      "velocity": 250,
+      "mass": 3300,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 143,
+      "penslow": 0.8500000238418579
+    },
+    {
+      "id": 100,
+      "caliber": 85,
+      "pellets": 1,
+      "velocity": 250,
+      "mass": 3300,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 136,
+      "penslow": 0.25
+    },
+    {
+      "id": 155,
+      "caliber": 85,
+      "pellets": 1,
+      "velocity": 250,
+      "mass": 3300,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 137,
+      "penslow": 0.25
+    },
+    {
+      "id": 205,
+      "caliber": 85,
+      "pellets": 1,
+      "velocity": 250,
+      "mass": 3300,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 224,
+      "penslow": 0.25
+    },
+    {
+      "id": 49,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 25,
+      "mass": 100,
+      "drag": 0.5,
+      "gravity": 4,
+      "damageid": 202,
+      "penslow": 0.25
+    },
+    {
+      "id": 55,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 150,
+      "mass": 10,
+      "drag": 1,
+      "gravity": 0,
+      "damageid": 13,
+      "penslow": 0.25
+    },
+    {
+      "id": 19,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 500,
+      "mass": 10,
+      "drag": 1,
+      "gravity": 0,
+      "damageid": 22,
+      "penslow": 0.25
+    },
+    {
+      "id": 216,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 1,
+      "mass": 10,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 22,
+      "penslow": 0.25
+    },
+    {
+      "id": 166,
+      "caliber": 5,
+      "pellets": 1,
+      "velocity": 1,
+      "mass": 5,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 22,
+      "penslow": 0.25
+    },
+    {
+      "id": 7,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 850,
+      "mass": 12,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 157,
+      "penslow": 0.25
+    },
+    {
+      "id": 80,
+      "caliber": 1000,
+      "pellets": 1,
+      "velocity": 150,
+      "mass": 8000,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 157,
+      "penslow": 0.25
+    },
+    {
+      "id": 57,
+      "caliber": 1,
+      "pellets": 1,
+      "velocity": 300,
+      "mass": 1000,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 144,
+      "penslow": 0.25
+    },
+    {
+      "id": 161,
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 50,
+      "mass": 250,
+      "drag": 0.5,
+      "gravity": 1,
+      "damageid": 11,
+      "penslow": 0.25
+    },
+    {
+      "id": 163,
+      "caliber": 66,
+      "pellets": 1,
+      "velocity": 70,
+      "mass": 350,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 145,
+      "penslow": 0.25
+    },
+    {
+      "id": 180,
+      "caliber": 66,
+      "pellets": 1,
+      "velocity": 70,
+      "mass": 350,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 146,
+      "penslow": 0.25
+    },
+    {
+      "id": 217,
+      "caliber": 66,
+      "pellets": 1,
+      "velocity": 70,
+      "mass": 350,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 151,
+      "penslow": 0.25
+    },
+    {
+      "id": 150,
+      "caliber": 66,
+      "pellets": 1,
+      "velocity": 70,
+      "mass": 350,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 149,
+      "penslow": 0.25
+    },
+    {
+      "id": 149,
+      "caliber": 66,
+      "pellets": 1,
+      "velocity": 70,
+      "mass": 350,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 150,
+      "penslow": 0.25
+    },
+    {
+      "id": 82,
+      "caliber": 75,
+      "pellets": 1,
+      "velocity": 200,
+      "mass": 2500,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 147,
+      "penslow": 0.8500000238418579
+    },
+    {
+      "id": 225,
+      "caliber": 75,
+      "pellets": 1,
+      "velocity": 200,
+      "mass": 2500,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 148,
+      "penslow": 0.8500000238418579
+    },
+    {
+      "id": 198,
+      "caliber": 110,
+      "pellets": 1,
+      "velocity": 525,
+      "mass": 3300,
+      "drag": 0,
+      "gravity": 0.25,
+      "damageid": 152,
+      "penslow": 0.25
+    },
+    {
+      "id": 136,
+      "caliber": 110,
+      "pellets": 1,
+      "velocity": 525,
+      "mass": 3300,
+      "drag": 0,
+      "gravity": 0.25,
+      "damageid": 152,
+      "penslow": 0.25
+    },
+    {
+      "id": 104,
+      "caliber": 110,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 158,
+      "penslow": 0.25
+    },
+    {
+      "id": 21,
+      "caliber": 110,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 158,
+      "penslow": 0.25
+    },
+    {
+      "id": 130,
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 159,
+      "penslow": 0.25
+    },
+    {
+      "id": 88,
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 159,
+      "penslow": 0.25
+    },
+    {
+      "id": 51,
+      "caliber": 406,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 30000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 160,
+      "penslow": 0.25
+    },
+    {
+      "id": 64,
+      "caliber": 406,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 30000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 160,
+      "penslow": 0.25
+    },
+    {
+      "id": 176,
+      "caliber": 406,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 30000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 160,
+      "penslow": 0.25
+    },
+    {
+      "id": 123,
+      "caliber": 406,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 30000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 160,
+      "penslow": 0.25
+    },
+    {
+      "id": 46,
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 162,
+      "penslow": 0.25
+    },
+    {
+      "id": 24,
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 162,
+      "penslow": 0.25
+    },
+    {
+      "id": 140,
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 162,
+      "penslow": 0.25
+    },
+    {
+      "id": 132,
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 158,
+      "penslow": 0.25
+    },
+    {
+      "id": 110,
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 158,
+      "penslow": 0.25
+    },
+    {
+      "id": 148,
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 158,
+      "penslow": 0.25
+    },
+    {
+      "id": 165,
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "damageid": 0,
+      "penslow": 0.25
+    },
+    {
+      "id": 128,
+      "caliber": 110,
+      "pellets": 1,
+      "velocity": 1000,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 158,
+      "penslow": 0.25
+    },
+    {
+      "id": 185,
       "caliber": 100,
       "pellets": 1,
       "velocity": 1,
       "mass": 25,
       "drag": 0.8999999761581421,
-      "gravity": 0.009999999776482582
+      "gravity": 0.009999999776482582,
+      "damageid": 158,
+      "penslow": 0.25
     },
     {
-      "id": 158,
-      "penslow": 0.25,
+      "id": 183,
       "caliber": 100,
       "pellets": 1,
       "velocity": 14000,
       "mass": 5000,
       "drag": 0,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 161,
+      "penslow": 0
     },
     {
-      "id": 161,
-      "penslow": 0,
+      "id": 44,
       "caliber": 360,
       "pellets": 1,
       "velocity": 300,
       "mass": 70000,
       "drag": 0.5,
-      "gravity": 10
+      "gravity": 10,
+      "damageid": 160,
+      "penslow": 0.25
     },
     {
-      "id": 160,
-      "penslow": 0.25,
+      "id": 220,
       "caliber": 360,
       "pellets": 1,
       "velocity": 300,
       "mass": 70000,
       "drag": 0.5,
-      "gravity": 10
+      "gravity": 10,
+      "damageid": 160,
+      "penslow": 0.25
     },
     {
-      "id": 160,
-      "penslow": 0.25,
+      "id": 63,
       "caliber": 360,
       "pellets": 1,
       "velocity": 300,
       "mass": 70000,
       "drag": 0.5,
-      "gravity": 10
+      "gravity": 10,
+      "damageid": 160,
+      "penslow": 0.25
     },
     {
-      "id": 160,
-      "penslow": 0.25,
+      "id": 8,
       "caliber": 360,
       "pellets": 1,
       "velocity": 300,
       "mass": 70000,
       "drag": 0.5,
-      "gravity": 10
+      "gravity": 10,
+      "damageid": 160,
+      "penslow": 0.25
     },
     {
-      "id": 160,
-      "penslow": 0.25,
+      "id": 94,
       "caliber": 360,
       "pellets": 1,
       "velocity": 300,
       "mass": 70000,
       "drag": 0.5,
-      "gravity": 10
+      "gravity": 10,
+      "damageid": 160,
+      "penslow": 0.25
     },
     {
-      "id": 160,
-      "penslow": 0.25,
+      "id": 60,
       "caliber": 360,
       "pellets": 1,
       "velocity": 300,
       "mass": 70000,
       "drag": 0.5,
-      "gravity": 10
+      "gravity": 10,
+      "damageid": 160,
+      "penslow": 0.25
     },
     {
-      "id": 160,
-      "penslow": 0.25,
+      "id": 116,
       "caliber": 9,
       "pellets": 1,
       "velocity": 280,
       "mass": 7,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 24,
+      "penslow": 0.25
     },
     {
-      "id": 24,
-      "penslow": 0.25,
+      "id": 194,
       "caliber": 9,
       "pellets": 1,
       "velocity": 375,
       "mass": 7,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 25,
+      "penslow": 0.25
     },
     {
-      "id": 25,
-      "penslow": 0.25,
+      "id": 145,
       "caliber": 9,
       "pellets": 1,
       "velocity": 375,
       "mass": 7,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 26,
+      "penslow": 0.25
     },
     {
-      "id": 26,
-      "penslow": 0.25,
+      "id": 218,
       "caliber": 9,
       "pellets": 1,
       "velocity": 320,
       "mass": 7,
       "drag": 0.699999988079071,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 27,
+      "penslow": 0.25
     },
     {
-      "id": 27,
-      "penslow": 0.25,
+      "id": 48,
       "caliber": 9,
       "pellets": 1,
       "velocity": 450,
       "mass": 7,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 28,
+      "penslow": 0.25
     },
     {
-      "id": 28,
-      "penslow": 0.25,
+      "id": 3,
       "caliber": 9,
       "pellets": 1,
       "velocity": 360,
       "mass": 7,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 29,
+      "penslow": 0.25
     },
     {
-      "id": 29,
-      "penslow": 0.25,
+      "id": 162,
       "caliber": 9,
       "pellets": 1,
       "velocity": 300,
       "mass": 7,
       "drag": 0.8999999761581421,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 30,
+      "penslow": 0.25
     },
     {
-      "id": 30,
-      "penslow": 0.25,
+      "id": 188,
       "caliber": 9,
       "pellets": 1,
       "velocity": 375,
       "mass": 7,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 31,
+      "penslow": 0.25
     },
     {
-      "id": 31,
-      "penslow": 0.25,
+      "id": 102,
       "caliber": 9,
       "pellets": 1,
       "velocity": 300,
       "mass": 7,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 32,
+      "penslow": 0.25
     },
     {
-      "id": 32,
-      "penslow": 0.25,
+      "id": 154,
       "caliber": 12,
       "pellets": 1,
       "velocity": 220,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 33,
+      "penslow": 0.25
     },
     {
-      "id": 33,
-      "penslow": 0.25,
+      "id": 2,
       "caliber": 12,
       "pellets": 1,
       "velocity": 285,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 34,
+      "penslow": 0.25
     },
     {
-      "id": 34,
-      "penslow": 0.25,
+      "id": 67,
       "caliber": 12,
       "pellets": 1,
       "velocity": 235,
       "mass": 15,
       "drag": 0.699999988079071,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 35,
+      "penslow": 0.25
     },
     {
-      "id": 35,
-      "penslow": 0.25,
+      "id": 111,
       "caliber": 12,
       "pellets": 1,
       "velocity": 360,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 36,
+      "penslow": 0.25
     },
     {
-      "id": 36,
-      "penslow": 0.25,
+      "id": 35,
       "caliber": 12,
       "pellets": 1,
       "velocity": 400,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 37,
+      "penslow": 0.25
     },
     {
-      "id": 37,
-      "penslow": 0.25,
+      "id": 70,
       "caliber": 12,
       "pellets": 1,
       "velocity": 350,
       "mass": 15,
       "drag": 0.8999999761581421,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 38,
+      "penslow": 0.25
     },
     {
-      "id": 38,
-      "penslow": 0.25,
+      "id": 192,
       "caliber": 12,
       "pellets": 1,
       "velocity": 285,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 39,
+      "penslow": 0.25
     },
     {
-      "id": 39,
-      "penslow": 0.25,
+      "id": 137,
       "caliber": 12,
       "pellets": 1,
       "velocity": 210,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 40,
+      "penslow": 0.25
     },
     {
-      "id": 40,
-      "penslow": 0.25,
+      "id": 103,
       "caliber": 12,
       "pellets": 1,
       "velocity": 210,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 41,
+      "penslow": 0.25
     },
     {
-      "id": 41,
-      "penslow": 0.25,
+      "id": 12,
       "caliber": 12,
       "pellets": 1,
       "velocity": 285,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 42,
+      "penslow": 0.25
     },
     {
-      "id": 42,
-      "penslow": 0.25,
+      "id": 74,
       "caliber": 12,
       "pellets": 1,
       "velocity": 550,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 43,
+      "penslow": 0.25
     },
     {
-      "id": 43,
-      "penslow": 0.25,
+      "id": 203,
       "caliber": 12,
       "pellets": 1,
       "velocity": 550,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 44,
+      "penslow": 0.25
     },
     {
-      "id": 44,
-      "penslow": 0.25,
+      "id": 23,
       "caliber": 12,
       "pellets": 1,
       "velocity": 350,
       "mass": 15,
       "drag": 0.699999988079071,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 45,
+      "penslow": 0.25
     },
     {
-      "id": 45,
-      "penslow": 0.25,
+      "id": 16,
       "caliber": 12,
       "pellets": 1,
       "velocity": 650,
       "mass": 15,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 46,
+      "penslow": 0.25
     },
     {
-      "id": 46,
-      "penslow": 0.25,
+      "id": 62,
       "caliber": 12,
       "pellets": 1,
       "velocity": 350,
       "mass": 15,
       "drag": 0.8999999761581421,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 47,
+      "penslow": 0.25
     },
     {
-      "id": 47,
-      "penslow": 0.25,
+      "id": 182,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 900,
       "mass": 4.5,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 51,
+      "penslow": 0.25
     },
     {
-      "id": 51,
-      "penslow": 0.25,
+      "id": 5,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 1000,
       "mass": 4.5,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 48,
+      "penslow": 0.25
     },
     {
-      "id": 48,
-      "penslow": 0.25,
+      "id": 184,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 1200,
       "mass": 8.5,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 49,
+      "penslow": 0.25
     },
     {
-      "id": 49,
-      "penslow": 0.25,
+      "id": 204,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 800,
       "mass": 4.5,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 50,
+      "penslow": 0.25
     },
     {
-      "id": 50,
-      "penslow": 0.25,
+      "id": 138,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 800,
       "mass": 5,
       "drag": 0.699999988079071,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 52,
+      "penslow": 0.25
     },
     {
-      "id": 52,
-      "penslow": 0.25,
+      "id": 222,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 1000,
       "mass": 4.5,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 53,
+      "penslow": 0.25
     },
     {
-      "id": 53,
-      "penslow": 0.25,
+      "id": 169,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 780,
       "mass": 7.5,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 54,
+      "penslow": 0.25
     },
     {
-      "id": 54,
-      "penslow": 0.25,
+      "id": 38,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 820,
       "mass": 5.5,
       "drag": 0.8999999761581421,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 55,
+      "penslow": 0.25
     },
     {
-      "id": 55,
-      "penslow": 0.25,
+      "id": 210,
       "caliber": 6.5,
       "pellets": 1,
       "velocity": 800,
       "mass": 4.5,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 56,
+      "penslow": 0.25
     },
     {
-      "id": 56,
-      "penslow": 0.25,
+      "id": 89,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 330,
       "mass": 4.5,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 57,
+      "penslow": 0.25
     },
     {
-      "id": 57,
-      "penslow": 0.25,
+      "id": 127,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 1000,
       "mass": 4.5,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 58,
+      "penslow": 0.25
     },
     {
-      "id": 58,
-      "penslow": 0.25,
+      "id": 177,
       "caliber": 5.5,
       "pellets": 1,
       "velocity": 1000,
       "mass": 4.5,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 51,
+      "penslow": 0.25
     },
     {
-      "id": 51,
-      "penslow": 0.25,
+      "id": 78,
       "caliber": 8,
       "pellets": 1,
       "velocity": 800,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 59,
+      "penslow": 0.25
     },
     {
-      "id": 59,
-      "penslow": 0.25,
+      "id": 215,
       "caliber": 8,
       "pellets": 1,
       "velocity": 800,
       "mass": 14,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 60,
+      "penslow": 0.25
     },
     {
-      "id": 60,
-      "penslow": 0.25,
+      "id": 65,
       "caliber": 8,
       "pellets": 1,
       "velocity": 950,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 62,
+      "penslow": 0.25
     },
     {
-      "id": 62,
-      "penslow": 0.25,
+      "id": 61,
       "caliber": 8,
       "pellets": 1,
       "velocity": 720,
       "mass": 14,
       "drag": 0.699999988079071,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 63,
+      "penslow": 0.25
     },
     {
-      "id": 63,
-      "penslow": 0.25,
+      "id": 69,
       "caliber": 8,
       "pellets": 1,
       "velocity": 680,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 64,
+      "penslow": 0.25
     },
     {
-      "id": 64,
-      "penslow": 0.25,
+      "id": 97,
       "caliber": 8,
       "pellets": 1,
       "velocity": 820,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 65,
+      "penslow": 0.25
     },
     {
-      "id": 65,
-      "penslow": 0.25,
+      "id": 109,
       "caliber": 8,
       "pellets": 1,
       "velocity": 820,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 65,
+      "penslow": 0.25
     },
     {
-      "id": 65,
-      "penslow": 0.25,
+      "id": 141,
       "caliber": 8,
       "pellets": 1,
       "velocity": 920,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 66,
+      "penslow": 0.25
     },
     {
-      "id": 66,
-      "penslow": 0.25,
+      "id": 142,
       "caliber": 8,
       "pellets": 1,
       "velocity": 680,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 67,
+      "penslow": 0.25
     },
     {
-      "id": 67,
-      "penslow": 0.25,
+      "id": 171,
       "caliber": 8,
       "pellets": 1,
       "velocity": 1050,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 68,
+      "penslow": 0.25
     },
     {
-      "id": 68,
-      "penslow": 0.25,
+      "id": 212,
       "caliber": 8,
       "pellets": 1,
       "velocity": 330,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 69,
+      "penslow": 0.25
     },
     {
-      "id": 69,
-      "penslow": 0.25,
+      "id": 108,
       "caliber": 8,
       "pellets": 1,
       "velocity": 800,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 70,
+      "penslow": 0.25
     },
     {
-      "id": 70,
-      "penslow": 0.25,
+      "id": 160,
       "caliber": 8,
       "pellets": 1,
       "velocity": 800,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 65,
+      "penslow": 0.25
     },
     {
-      "id": 65,
-      "penslow": 0.25,
+      "id": 68,
       "caliber": 8,
       "pellets": 1,
       "velocity": 800,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 65,
+      "penslow": 0.25
     },
     {
-      "id": 65,
-      "penslow": 0.25,
+      "id": 179,
       "caliber": 8,
       "pellets": 1,
       "velocity": 800,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 61,
+      "penslow": 0.25
     },
     {
-      "id": 61,
-      "penslow": 0.25,
+      "id": 31,
       "caliber": 8,
       "pellets": 1,
       "velocity": 820,
       "mass": 11,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 71,
+      "penslow": 0.25
     },
     {
-      "id": 71,
-      "penslow": 0.25,
+      "id": 134,
       "caliber": 9,
       "pellets": 1,
       "velocity": 920,
       "mass": 20,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 72,
+      "penslow": 0.25
     },
     {
-      "id": 72,
-      "penslow": 0.25,
+      "id": 201,
       "caliber": 9,
       "pellets": 1,
       "velocity": 850,
       "mass": 20,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 73,
+      "penslow": 0.25
     },
     {
-      "id": 73,
-      "penslow": 0.25,
+      "id": 159,
       "caliber": 9,
       "pellets": 1,
       "velocity": 940,
       "mass": 20,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 74,
+      "penslow": 0.25
     },
     {
-      "id": 74,
-      "penslow": 0.25,
+      "id": 174,
       "caliber": 9,
       "pellets": 1,
       "velocity": 1050,
       "mass": 20,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 75,
+      "penslow": 0.25
     },
     {
-      "id": 75,
-      "penslow": 0.25,
+      "id": 26,
       "caliber": 9,
       "pellets": 1,
       "velocity": 1050,
       "mass": 20,
       "drag": 0.20000000298023224,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 76,
+      "penslow": 0.25
     },
     {
-      "id": 76,
-      "penslow": 0.25,
+      "id": 87,
       "caliber": 9,
       "pellets": 1,
       "velocity": 850,
       "mass": 20,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 77,
+      "penslow": 0.25
     },
     {
-      "id": 77,
-      "penslow": 0.25,
+      "id": 66,
       "caliber": 9,
       "pellets": 1,
       "velocity": 850,
       "mass": 20,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 78,
+      "penslow": 0.25
     },
     {
-      "id": 78,
-      "penslow": 0.25,
+      "id": 53,
       "caliber": 12.5,
       "pellets": 1,
       "velocity": 880,
       "mass": 52,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 120,
+      "penslow": 0.25
     },
     {
-      "id": 120,
-      "penslow": 0.25,
+      "id": 151,
       "caliber": 12.5,
       "pellets": 1,
       "velocity": 880,
       "mass": 52,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 122,
+      "penslow": 0.25
     },
     {
-      "id": 122,
-      "penslow": 0.25,
+      "id": 71,
       "caliber": 12.5,
       "pellets": 1,
       "velocity": 880,
       "mass": 52,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 123,
+      "penslow": 0.25
     },
     {
-      "id": 123,
-      "penslow": 0.25,
+      "id": 181,
       "caliber": 12.5,
       "pellets": 1,
       "velocity": 980,
       "mass": 52,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 121,
+      "penslow": 0.25
     },
     {
-      "id": 121,
-      "penslow": 0.25,
+      "id": 167,
       "caliber": 15,
       "pellets": 1,
       "velocity": 100,
       "mass": 100,
       "drag": 1,
-      "gravity": 0.5
+      "gravity": 0.5,
+      "damageid": 124,
+      "penslow": 0.25
     },
     {
-      "id": 124,
-      "penslow": 0.25,
+      "id": 73,
       "caliber": 15,
       "pellets": 1,
       "velocity": 180,
       "mass": 100,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 79,
+      "penslow": 0.25
     },
     {
-      "id": 79,
-      "penslow": 0.25,
+      "id": 139,
       "caliber": 15,
       "pellets": 1,
       "velocity": 180,
       "mass": 100,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 80,
+      "penslow": 0.25
     },
     {
-      "id": 80,
-      "penslow": 0.25,
+      "id": 170,
       "caliber": 15,
       "pellets": 1,
       "velocity": 150,
       "mass": 100,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 81,
+      "penslow": 0.25
     },
     {
-      "id": 81,
-      "penslow": 0.25,
+      "id": 18,
       "caliber": 15,
       "pellets": 1,
       "velocity": 230,
       "mass": 100,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 83,
+      "penslow": 0.25
     },
     {
-      "id": 83,
-      "penslow": 0.25,
+      "id": 32,
       "caliber": 15,
       "pellets": 1,
       "velocity": 280,
       "mass": 100,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 82,
+      "penslow": 0.25
     },
     {
-      "id": 82,
-      "penslow": 0.25,
+      "id": 119,
       "caliber": 15,
       "pellets": 1,
       "velocity": 180,
       "mass": 100,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 84,
+      "penslow": 0.25
     },
     {
-      "id": 84,
-      "penslow": 0.25,
+      "id": 10,
       "caliber": 15,
       "pellets": 1,
       "velocity": 180,
       "mass": 100,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 85,
+      "penslow": 0.25
     },
     {
-      "id": 85,
-      "penslow": 0.25,
+      "id": 17,
       "caliber": 15,
       "pellets": 1,
       "velocity": 160,
       "mass": 100,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 86,
+      "penslow": 0.25
     },
     {
-      "id": 86,
-      "penslow": 0.25,
+      "id": 29,
       "caliber": 15,
       "pellets": 1,
       "velocity": 180,
       "mass": 100,
       "drag": 0,
-      "gravity": 0.30000001192092896
+      "gravity": 0.30000001192092896,
+      "damageid": 80,
+      "penslow": 0.25
     },
     {
-      "id": 80,
-      "penslow": 0.25,
+      "id": 200,
       "caliber": 70,
       "pellets": 1,
       "velocity": 100,
       "mass": 6000,
       "drag": 0,
-      "gravity": 0.5
+      "gravity": 0.5,
+      "damageid": 140,
+      "penslow": 0.25
     },
     {
-      "id": 140,
-      "penslow": 0.25,
+      "id": 209,
       "caliber": 70,
       "pellets": 1,
       "velocity": 100,
       "mass": 6000,
       "drag": 0,
-      "gravity": 0.5
+      "gravity": 0.5,
+      "damageid": 140,
+      "penslow": 0.25
     },
     {
-      "id": 140,
-      "penslow": 0.25,
+      "id": 52,
       "caliber": 110,
       "pellets": 1,
       "velocity": 700,
       "mass": 3300,
       "drag": 0,
-      "gravity": 0.25
+      "gravity": 0.25,
+      "damageid": 152,
+      "penslow": 0.25
     },
     {
-      "id": 152,
-      "penslow": 0.25,
+      "id": 95,
       "caliber": 110,
       "pellets": 1,
       "velocity": 700,
       "mass": 3300,
       "drag": 0,
-      "gravity": 0.25
+      "gravity": 0.25,
+      "damageid": 152,
+      "penslow": 0.25
     },
     {
-      "id": 152,
-      "penslow": 0.25,
+      "id": 4,
       "caliber": 110,
       "pellets": 1,
       "velocity": 700,
       "mass": 3300,
       "drag": 0,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 152,
+      "penslow": 0.25
     },
     {
-      "id": 152,
-      "penslow": 0.25,
+      "id": 117,
       "caliber": 3,
       "pellets": 16,
       "velocity": 250,
       "mass": 1,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 101,
+      "penslow": 0.800000011920929
     },
     {
-      "id": 101,
-      "penslow": 0.800000011920929,
+      "id": 121,
       "caliber": 8,
       "pellets": 11,
       "velocity": 360,
       "mass": 4,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 102,
+      "penslow": 0.800000011920929
     },
     {
-      "id": 102,
-      "penslow": 0.800000011920929,
+      "id": 59,
       "caliber": 12,
       "pellets": 7,
       "velocity": 360,
       "mass": 8,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 103,
+      "penslow": 0.800000011920929
     },
     {
-      "id": 103,
-      "penslow": 0.800000011920929,
+      "id": 175,
       "caliber": 8,
       "pellets": 11,
       "velocity": 360,
       "mass": 4,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 104,
+      "penslow": 0.25
     },
     {
-      "id": 104,
-      "penslow": 0.25,
+      "id": 207,
       "caliber": 8,
       "pellets": 12,
       "velocity": 120,
       "mass": 2,
       "drag": 0.800000011920929,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 105,
+      "penslow": 1
     },
     {
       "id": 105,
-      "penslow": 1,
       "caliber": 8,
       "pellets": 8,
       "velocity": 430,
       "mass": 12,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 106,
+      "penslow": 0.800000011920929
     },
     {
-      "id": 106,
-      "penslow": 0.800000011920929,
+      "id": 202,
       "caliber": 13,
       "pellets": 3,
       "velocity": 360,
       "mass": 4,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 107,
+      "penslow": 0.800000011920929
     },
     {
-      "id": 107,
-      "penslow": 0.800000011920929,
+      "id": 168,
       "caliber": 8,
       "pellets": 1,
       "velocity": 300,
       "mass": 4,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 108,
+      "penslow": 0.25
     },
     {
-      "id": 108,
-      "penslow": 0.25,
+      "id": 152,
       "caliber": 8,
       "pellets": 3,
       "velocity": 450,
       "mass": 4,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 110,
+      "penslow": 0.800000011920929
     },
     {
-      "id": 110,
-      "penslow": 0.800000011920929,
+      "id": 156,
       "caliber": 8,
       "pellets": 16,
       "velocity": 280,
       "mass": 2,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 87,
+      "penslow": 0.25
     },
     {
-      "id": 87,
-      "penslow": 0.25,
+      "id": 172,
       "caliber": 8,
       "pellets": 9,
       "velocity": 385,
       "mass": 6,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 88,
+      "penslow": 0.25
     },
     {
-      "id": 88,
-      "penslow": 0.25,
+      "id": 133,
       "caliber": 8,
       "pellets": 6,
       "velocity": 385,
       "mass": 12,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 89,
+      "penslow": 0.25
     },
     {
-      "id": 89,
-      "penslow": 0.25,
+      "id": 124,
       "caliber": 8,
       "pellets": 9,
       "velocity": 385,
       "mass": 6,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 90,
+      "penslow": 0.25
     },
     {
-      "id": 90,
-      "penslow": 0.25,
+      "id": 195,
       "caliber": 8,
       "pellets": 5,
       "velocity": 150,
       "mass": 6,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 91,
+      "penslow": 0.25
     },
     {
-      "id": 91,
-      "penslow": 0.25,
+      "id": 211,
       "caliber": 18,
       "pellets": 1,
       "velocity": 450,
       "mass": 98,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 92,
+      "penslow": 0.25
     },
     {
-      "id": 92,
-      "penslow": 0.25,
+      "id": 146,
       "caliber": 8,
       "pellets": 9,
       "velocity": 385,
       "mass": 6,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 93,
+      "penslow": 0.25
     },
     {
-      "id": 93,
-      "penslow": 0.25,
+      "id": 45,
       "caliber": 8,
       "pellets": 3,
       "velocity": 385,
       "mass": 6,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 94,
+      "penslow": 0.25
     },
     {
-      "id": 94,
-      "penslow": 0.25,
+      "id": 1,
       "caliber": 8,
       "pellets": 1,
       "velocity": 385,
       "mass": 6,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 95,
+      "penslow": 0.25
     },
     {
-      "id": 95,
-      "penslow": 0.25,
+      "id": 214,
       "caliber": 8,
       "pellets": 2,
       "velocity": 385,
       "mass": 6,
       "drag": 0.30000001192092896,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 96,
+      "penslow": 0.25
     },
     {
-      "id": 96,
-      "penslow": 0.25,
+      "id": 28,
       "caliber": 8,
       "pellets": 1,
       "velocity": 385,
       "mass": 6,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 97,
+      "penslow": 0.25
     },
     {
-      "id": 97,
-      "penslow": 0.25,
+      "id": 11,
       "caliber": 8,
       "pellets": 1,
       "velocity": 385,
       "mass": 6,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 98,
+      "penslow": 0.25
     },
     {
-      "id": 98,
-      "penslow": 0.25,
+      "id": 158,
       "caliber": 18,
       "pellets": 1,
       "velocity": 390,
       "mass": 50,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 99,
+      "penslow": 0.25
     },
     {
-      "id": 99,
-      "penslow": 0.25,
+      "id": 33,
       "caliber": 8,
       "pellets": 3,
       "velocity": 385,
       "mass": 6,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 100,
+      "penslow": 0.25
     },
     {
-      "id": 100,
-      "penslow": 0.25,
+      "id": 135,
       "caliber": 10,
       "pellets": 1,
       "velocity": 30,
       "mass": 100,
       "drag": 0.4000000059604645,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 111,
+      "penslow": 0.25
     },
     {
-      "id": 111,
-      "penslow": 0.25,
+      "id": 77,
       "caliber": 10,
       "pellets": 1,
       "velocity": 50,
       "mass": 100,
       "drag": 0.4000000059604645,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 102,
+      "penslow": 0.25
     },
     {
-      "id": 102,
-      "penslow": 0.25,
+      "id": 153,
       "caliber": 4,
       "pellets": 1,
       "velocity": 1000,
       "mass": 2,
       "drag": 0.4000000059604645,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 112,
+      "penslow": 0.25
     },
     {
-      "id": 112,
-      "penslow": 0.25,
+      "id": 9,
       "caliber": 8,
       "pellets": 1,
       "velocity": 300,
       "mass": 2,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 112,
+      "penslow": 0.25
     },
     {
-      "id": 112,
-      "penslow": 0.25,
+      "id": 126,
       "caliber": 8,
       "pellets": 1,
       "velocity": 300,
       "mass": 2,
       "drag": 0.5,
-      "gravity": 1
+      "gravity": 1,
+      "damageid": 112,
+      "penslow": 0.25
     },
     {
-      "id": 112,
-      "penslow": 0.25,
+      "id": 114,
       "caliber": 10,
       "pellets": 1,
       "velocity": 550,
       "mass": 10,
       "drag": 1,
-      "gravity": 0.5
+      "gravity": 0.5,
+      "damageid": 20,
+      "penslow": 0.3499999940395355
     },
     {
-      "id": 20,
-      "penslow": 0.3499999940395355,
+      "id": 92,
       "caliber": 20,
       "pellets": 1,
       "velocity": 550,
       "mass": 100,
       "drag": 1,
-      "gravity": 0.5
+      "gravity": 0.5,
+      "damageid": 20,
+      "penslow": 0.3499999940395355
     },
     {
-      "id": 20,
-      "penslow": 0.3499999940395355,
+      "id": 93,
       "caliber": 20,
       "pellets": 1,
       "velocity": 550,
       "mass": 100,
       "drag": 1,
-      "gravity": 0.5
+      "gravity": 0.5,
+      "damageid": 20,
+      "penslow": 0.3499999940395355
     },
     {
-      "id": 20,
-      "penslow": 0.3499999940395355,
+      "id": 187,
       "caliber": 20,
       "pellets": 1,
       "velocity": 550,
       "mass": 100,
       "drag": 1,
-      "gravity": 0.5
+      "gravity": 0.5,
+      "damageid": 21,
+      "penslow": 0.3499999940395355
     },
     {
-      "id": 21,
-      "penslow": 0.3499999940395355,
+      "id": 190,
       "caliber": 20,
       "pellets": 1,
       "velocity": 350,
       "mass": 100,
       "drag": 1,
-      "gravity": 1.5
+      "gravity": 1.5,
+      "damageid": 20,
+      "penslow": 0.3499999940395355
     },
     {
-      "id": 20,
-      "penslow": 0.3499999940395355,
+      "id": 36,
       "caliber": 20,
       "pellets": 1,
       "velocity": 90,
       "mass": 100,
       "drag": 4,
-      "gravity": 3
+      "gravity": 3,
+      "damageid": 20,
+      "penslow": 0.3499999940395355
     },
     {
-      "id": 20,
-      "penslow": 0.3499999940395355,
+      "id": 14,
       "caliber": 20,
       "pellets": 1,
       "velocity": 45,
       "mass": 100,
       "drag": 3,
-      "gravity": 1.5
+      "gravity": 1.5,
+      "damageid": 0,
+      "penslow": 0.3499999940395355
+    },
+    {
+      "id": 125,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 2000,
+      "mass": 50,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 22,
+      "penslow": 0
+    },
+    {
+      "id": 147,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 2000,
+      "mass": 50,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 23,
+      "penslow": 0
+    },
+    {
+      "id": 98,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 1300,
+      "mass": 12,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 19,
+      "penslow": 0.25
+    },
+    {
+      "id": 86,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 1300,
+      "mass": 12,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 227,
+      "penslow": 0.25
+    },
+    {
+      "id": 96,
+      "caliber": 200,
+      "pellets": 1,
+      "velocity": 1,
+      "mass": 3000,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 113,
+      "penslow": 0.25
+    },
+    {
+      "id": 6,
+      "caliber": 30,
+      "pellets": 1,
+      "velocity": 70,
+      "mass": 350,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 113,
+      "penslow": 0.25
+    },
+    {
+      "id": 39,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 60,
+      "mass": 12,
+      "drag": 10,
+      "gravity": 0.10000000149011612,
+      "damageid": 9,
+      "penslow": 0.25
+    },
+    {
+      "id": 43,
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 75,
+      "mass": 12,
+      "drag": 10,
+      "gravity": 0.10000000149011612,
+      "damageid": 9,
+      "penslow": 0.25
+    },
+    {
+      "id": 41,
+      "caliber": 1000,
+      "pellets": 1,
+      "velocity": 300,
+      "mass": 1000000,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 160,
+      "penslow": 0.25
+    },
+    {
+      "id": 56,
+      "caliber": 406,
+      "pellets": 1,
+      "velocity": 65,
+      "mass": 15000,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 163,
+      "penslow": 0.25
+    },
+    {
+      "id": 208,
+      "caliber": 406,
+      "pellets": 1,
+      "velocity": 50,
+      "mass": 15000,
+      "drag": 0,
+      "gravity": 0,
+      "damageid": 114,
+      "penslow": 0.25
+    },
+    {
+      "id": 131,
+      "caliber": 15,
+      "pellets": 1,
+      "velocity": 35,
+      "mass": 100,
+      "drag": 0.30000001192092896,
+      "gravity": 1,
+      "damageid": 167,
+      "penslow": 0.25
     }
   ]
 }

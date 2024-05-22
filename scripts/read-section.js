@@ -1,4 +1,5 @@
 import fs from 'fs'
+import json from 'json-stringify-pretty-compact'
 
 const version = process.argv[3]
 const buffer = fs.readFileSync(process.argv[2])
@@ -17,9 +18,10 @@ const Unknown = {
   read: (buf, off = 0) => {
     const float = buf.readFloatLE(off)
     const int = buf.readInt32LE(off)
-    const hex = buf.slice(off, off + 0x8)
+    let hex = Array.from(buf.slice(off, off + 0x4))
       .map(v => v.toString(16).padStart(2, '0'))
       .join('')
+    hex = `0x${hex}`
     return void 0
   },
   write: (buf, v, off = 0) => {
@@ -144,7 +146,7 @@ if(idx < 0) {
   throw new Error('Unable to locate 5.5mm ballistics!')
 }
 console.log(`5.5mm located at: ${hex(idx)}`)
-idx += 0x24 - BALLISTIC_SIZE // Hop back to ID
+idx -= 0x18 // Hop back to ID
 const libId = Int.read(buffer, idx)
 console.log(`5.5mm ID: ${hex(libId)}`)
 idx = rewind(buffer, idx, BALLISTIC_SIZE)
@@ -160,16 +162,19 @@ function unknowns(from, to) {
 
 const ballisticSchema = {
   id: Int,
-  penslow: Float,
-  ...unknowns(3, 51),
+  ...unknowns(2, 6),
   caliber: Float,
   pellets: Int,
   velocity: Float,
   mass: Float,
   drag: Float,
   gravity: Float,
-  ...unknowns(58, 60)
+  ...unknowns(13, 15),
+  damageid: Int,
+  penslow: Float,
+  ...unknowns(18, 60),
 }
+console.log('ball values:', Object.entries(ballisticSchema).length)
 
 const ballistics = []
 while(true) {
@@ -185,9 +190,9 @@ while(true) {
   }
 }
 
-const data = JSON.stringify({
+const data = json({
   version,
   strikes,
   ballistics,
-}, null, 2)
+})
 fs.writeFileSync('./data/datamined.json', data)
