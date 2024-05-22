@@ -53,7 +53,7 @@ const headers = ['Armor', 'Overall', 'Explosion', 'Fortified', ...Object.keys(li
 const rows = []
 for(const vitality of [1, 0.8]) {
   if(vitality < 1) {
-    rows.push('w/Vitality')
+    rows.push('w/Vitality', ...headers.slice(1))
   }
   for(const [armor, overall] of Object.entries(armors)) {
     const row = [armor, ...[1, 0.5, 0.25].map(x => pct(overall * vitality * x))]
