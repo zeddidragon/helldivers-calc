@@ -30,6 +30,10 @@ const Unknown = {
   size: 0x04,
 }
 
+function hexString(buf) {
+  return Array.from(buf).map(byte => byte.toString(16).padStart(2, '0')).join(' ')
+}
+
 const strikeSchema = {
   id: Int,
   dmg: Int,
@@ -124,15 +128,29 @@ console.log(`Dominator ID: ${hex(dominatorId)}`)
 idx = rewind(buffer, idx, STRIKE_SIZE) // Walk back to first row
 console.log(`Strike Data starts at: ${hex(idx)}`)
 
+const damageNames = {}
+{
+  const enumsFile = fs.readFileSync('./data/damage-info-types.cs', 'utf8')
+  const pattern  = /DamageInfoType_(\w+) = 0x([0-9A-F]+)/
+  for(const line of enumsFile.split('\n')) {
+    const [, name, id] = pattern.exec(line) || []
+    if(!name) continue
+    damageNames[parseInt(id, 16)] = name
+  }
+}
+
 const strikes = []
 while(true) {
-  const strike = {}
+  const obj = {}
+  const start = idx
   for(const [prop, type] of Object.entries(strikeSchema)) {
-    strike[prop] = type.read(buffer, idx)
+    obj[prop] = type.read(buffer, idx)
     idx += type.size
   }
-  if(strike.id) {
-    strikes.push(strike)
+  obj.raw = hexString(buffer.slice(start, idx))
+  obj.enum = damageNames[obj.id]
+  if(obj.id) {
+    strikes.push(obj)
   } else {
     break
   }
@@ -160,6 +178,17 @@ function unknowns(from, to) {
   return obj
 }
 
+const projectileNames = {}
+{
+  const enumsFile = fs.readFileSync('./data/projectile-types.cs', 'utf8')
+  const pattern  = /ProjectileType_(\w+) = 0x([0-9A-F]+)/
+  for(const line of enumsFile.split('\n')) {
+    const [, name, id] = pattern.exec(line) || []
+    if(!name) continue
+    projectileNames[parseInt(id, 16)] = name
+  }
+}
+
 const ballisticSchema = {
   id: Int,
   ...unknowns(2, 6),
@@ -174,15 +203,17 @@ const ballisticSchema = {
   penslow: Float,
   ...unknowns(18, 60),
 }
-console.log('ball values:', Object.entries(ballisticSchema).length)
 
 const ballistics = []
 while(true) {
   const obj = {}
+  const start = idx
   for(const [prop, type] of Object.entries(ballisticSchema)) {
     obj[prop] = type.read(buffer, idx)
     idx += type.size
   }
+  obj.raw = hexString(buffer.slice(start, idx))
+  obj.enum = projectileNames[obj.id]
   if(obj.id) {
     ballistics.push(obj)
   } else {
@@ -196,3 +227,4 @@ const data = json({
   ballistics,
 })
 fs.writeFileSync('./data/datamined.json', data)
+
