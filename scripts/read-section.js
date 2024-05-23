@@ -34,8 +34,7 @@ function hexString(buf) {
   return Array.from(buf).map(byte => byte.toString(16).padStart(2, '0')).join(' ')
 }
 
-const strikeSchema = {
-  id: Int,
+const strikeSearch = {
   dmg: Int,
   mass: Int,
   ap1: Int,
@@ -55,11 +54,12 @@ const strikeSchema = {
   func4: Int,
   param4: Float,
 }
-const strikeValues = Object.values(strikeSchema)
-const STRIKE_SIZE = strikeValues.reduce((sum, v) => sum + v.size, 0)
+const strikeSchema = {
+  id: Int,
+  ...strikeSearch,
+}
 
-const dominatorStrike = [
-  84,
+const dominatorDamage = [
   275, 90,
   3, 3, 3, 0,
   10, 35, 15,
@@ -68,26 +68,6 @@ const dominatorStrike = [
   0, 0,
   0, 0,
   0, 0,
-]
-
-const ballisticSearchSchema = {
-  caliber: Float,
-  i1: Int,
-  velocity: Float,
-  mass: Float,
-  drag: Float,
-  gravity: Float,
-}
-
-const liberatorBallistics = [
-  5.5,
-  1,
-  900,
-  4.5,
-  0.3,
-  1.0,
-  0,
-  0.25,
 ]
 
 function getRow(data, schema) {
@@ -116,22 +96,29 @@ function rewind(buffer, idx, blockSize) {
   return idx
 }
 
-const domBytes = getRow(dominatorStrike, strikeSchema)
-let idx = buffer.indexOf(domBytes.slice(strikeValues[0].size))
-if(idx < 0) {
-  throw new Error('Unable to locate Dominator Strike!')
-}
-idx -= 0x4 // Hop back to ID
-console.log(`Dominator located at: ${hex(idx)}`)
-const dominatorId = Int.read(buffer, idx)
-console.log(`Dominator ID: ${hex(dominatorId)}`)
-idx = rewind(buffer, idx, STRIKE_SIZE) // Walk back to first row
-console.log(`Strike Data starts at: ${hex(idx)}`)
-
 function readData({
+  searchSchema,
+  searchData,
+  searchName = 'search data',
+  searchOffset = 0,
+  buffer,
   enumFileName,
   schema,
 }) {
+  const bytes = getRow(searchData, searchSchema)
+  let idx = buffer.indexOf(bytes)
+  if(idx < 0) {
+    throw new Error(`Unable to locate ${searchName}!`)
+  }
+
+  idx -= searchOffset // Hop back to ID
+  console.log(`${searchName} located at: ${hex(idx)}`)
+  const searchId = Int.read(buffer, idx)
+  console.log(`${searchName} ID: ${hex(searchId)}`)
+  const size = Object.values(schema).reduce((sum, v) => sum + v.size, 0)
+  idx = rewind(buffer, idx, size) // Walk back to first row
+  console.log(`Data starts at: ${hex(idx)}`)
+
   const enums = {}
   const enumsFile = fs.readFileSync(`./data/${enumFileName}.cs`, 'utf8')
   const pattern  = /(\w+) = 0x([0-9A-F]+)/
@@ -161,23 +148,14 @@ function readData({
 }
 
 const strikes = readData({
+  buffer,
+  searchSchema: strikeSearch,
+  searchData: dominatorDamage,
+  searchName: 'Dominator Damage',
+  searchOffset: 0x4,
   enumFileName: 'damage-info-types',
   schema: strikeSchema,
 })
-
-const BALLISTIC_SIZE = 0xf0
-const libBytes = getRow(liberatorBallistics, ballisticSearchSchema)
-console.log(libBytes)
-idx = buffer.indexOf(libBytes)
-if(idx < 0) {
-  throw new Error('Unable to locate 5.5mm ballistics!')
-}
-console.log(`5.5mm located at: ${hex(idx)}`)
-idx -= 0x18 // Hop back to ID
-const libId = Int.read(buffer, idx)
-console.log(`5.5mm ID: ${hex(libId)}`)
-idx = rewind(buffer, idx, BALLISTIC_SIZE)
-console.log(`Ballistics Data starts at: ${hex(idx)}`)
 
 function unknowns(from, to) {
   const obj = {}
@@ -187,16 +165,25 @@ function unknowns(from, to) {
   return obj
 }
 
-const projectileNames = {}
-{
-  const enumsFile = fs.readFileSync('./data/projectile-types.cs', 'utf8')
-  const pattern  = /ProjectileType_(\w+) = 0x([0-9A-F]+)/
-  for(const line of enumsFile.split('\n')) {
-    const [, name, id] = pattern.exec(line) || []
-    if(!name) continue
-    projectileNames[parseInt(id, 16)] = name
-  }
+const projectileSearchSchema = {
+  caliber: Float,
+  i1: Int,
+  velocity: Float,
+  mass: Float,
+  drag: Float,
+  gravity: Float,
 }
+
+const liberatorFMJ = [
+  5.5,
+  1,
+  900,
+  4.5,
+  0.3,
+  1.0,
+  0,
+  0.25,
+]
 
 const projectileSchema = {
   id: Int,
@@ -214,6 +201,11 @@ const projectileSchema = {
 }
 
 const projectiles = readData({
+  buffer,
+  searchSchema: projectileSearchSchema,
+  searchData: liberatorFMJ,
+  searchName: '5.5x50mm Full Metal Jacket',
+  searchOffset: 0x18,
   enumFileName: 'projectile-types',
   schema: projectileSchema,
 })

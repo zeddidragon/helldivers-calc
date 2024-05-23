@@ -24,7 +24,7 @@ const idMap = fs.readFileSync('data/id-mapping.csv', 'utf-8')
   })
 const {
   strikes,
-  ballistics,
+  projectiles: ballistics,
 } = JSON.parse(fs.readFileSync('./data/datamined.json', 'utf-8').trim())
 const reloads = fs.readFileSync('./data/reloads.csv', 'utf-8')
   .trim()
