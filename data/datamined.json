@@ -8719,7 +8719,7 @@
       "enum": "Ability_GateCrush"
     }
   ],
-  "ballistics": [
+  "projectiles": [
     {
       "id": 191,
       "caliber": 25,

@@ -128,33 +128,42 @@ console.log(`Dominator ID: ${hex(dominatorId)}`)
 idx = rewind(buffer, idx, STRIKE_SIZE) // Walk back to first row
 console.log(`Strike Data starts at: ${hex(idx)}`)
 
-const damageNames = {}
-{
-  const enumsFile = fs.readFileSync('./data/damage-info-types.cs', 'utf8')
-  const pattern  = /DamageInfoType_(\w+) = 0x([0-9A-F]+)/
+function readData({
+  enumFileName,
+  schema,
+}) {
+  const enums = {}
+  const enumsFile = fs.readFileSync(`./data/${enumFileName}.cs`, 'utf8')
+  const pattern  = /(\w+) = 0x([0-9A-F]+)/
   for(const line of enumsFile.split('\n')) {
     const [, name, id] = pattern.exec(line) || []
     if(!name) continue
-    damageNames[parseInt(id, 16)] = name
+    enums[parseInt(id, 16)] = name.split('_').slice(1).join('_')
   }
+
+  const objects = []
+  while(true) {
+    const obj = {}
+    const start = idx
+    for(const [prop, type] of Object.entries(schema)) {
+      obj[prop] = type.read(buffer, idx)
+      idx += type.size
+    }
+    obj.raw = hexString(buffer.slice(start, idx))
+    obj.enum = enums[obj.id]
+    if(obj.id) {
+      objects.push(obj)
+    } else {
+      break
+    }
+  }
+  return objects
 }
 
-const strikes = []
-while(true) {
-  const obj = {}
-  const start = idx
-  for(const [prop, type] of Object.entries(strikeSchema)) {
-    obj[prop] = type.read(buffer, idx)
-    idx += type.size
-  }
-  obj.raw = hexString(buffer.slice(start, idx))
-  obj.enum = damageNames[obj.id]
-  if(obj.id) {
-    strikes.push(obj)
-  } else {
-    break
-  }
-}
+const strikes = readData({
+  enumFileName: 'damage-info-types',
+  schema: strikeSchema,
+})
 
 const BALLISTIC_SIZE = 0xf0
 const libBytes = getRow(liberatorBallistics, ballisticSearchSchema)
@@ -189,7 +198,7 @@ const projectileNames = {}
   }
 }
 
-const ballisticSchema = {
+const projectileSchema = {
   id: Int,
   ...unknowns(2, 6),
   caliber: Float,
@@ -204,27 +213,15 @@ const ballisticSchema = {
   ...unknowns(18, 60),
 }
 
-const ballistics = []
-while(true) {
-  const obj = {}
-  const start = idx
-  for(const [prop, type] of Object.entries(ballisticSchema)) {
-    obj[prop] = type.read(buffer, idx)
-    idx += type.size
-  }
-  obj.raw = hexString(buffer.slice(start, idx))
-  obj.enum = projectileNames[obj.id]
-  if(obj.id) {
-    ballistics.push(obj)
-  } else {
-    break
-  }
-}
+const projectiles = readData({
+  enumFileName: 'projectile-types',
+  schema: projectileSchema,
+})
 
 const data = json({
   version,
   strikes,
-  ballistics,
+  projectiles,
 })
 fs.writeFileSync('./data/datamined.json', data)
 
