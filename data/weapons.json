@@ -1895,7 +1895,7 @@
     "fullname": "Melee",
     "name": "Melee",
     "source": "start",
-    "idx": 106,
+    "idx": 201,
     "id": "326",
     "damage": 50,
     "durable": 5,
@@ -1906,5 +1906,25 @@
     "stun": 25,
     "push": 30,
     "demo": 10
+  },
+  {
+    "category": "Misc",
+    "fullname": "Burn",
+    "name": "Burn",
+    "source": "status",
+    "idx": 301,
+    "id": "309",
+    "damage": 50,
+    "durable": 25,
+    "ap": 4,
+    "ap2": 4,
+    "ap3": 4,
+    "ap4": 0,
+    "stun": 0,
+    "push": 0,
+    "demo": 0,
+    "dps": 50,
+    "dmgtypename": "Fire",
+    "dmgtype": 1
   }
 ]
