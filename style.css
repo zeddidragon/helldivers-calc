@@ -63,6 +63,13 @@ th {
   border-right: none;
 }
 
+td.damage.ap {
+  border-left: none;
+  border-right: none;
+  padding-left: 0;
+  padding-right: 0.2em;
+}
+
 td.code {
   border-right: none;
 }
@@ -92,6 +99,9 @@ td.name {
   color: #edfedf;
 }
 
+.ap-0 {
+  opacity: 0.5;
+}
 .category.AR, .ap-5, .source.demo-det {
   color: #e88;
 }
@@ -141,6 +151,11 @@ td.name {
   color: #ea8;
   padding-left: 0.1em;
 }
+td.id:before, td.damageid:before {
+  color: #a98a98;
+  content: "0x";
+  font-size: 0.7em;
+}
 .cap-plus:before {
   color: #a98a98;
   content: "+";
@@ -173,6 +188,28 @@ th.capextra, td.capextra {
   text-align: left;
   padding-left: 0;
 }
+
+td.effect {
+  border-right: none;
+  padding-right: 0;
+}
+td.effect-param {
+  padding-left: 0;
+  border-left: none;
+}
+td.effect-param:before {
+  color: #a98a98;
+  content: "(";
+}
+td.effect-param:after {
+  color: #a98a98;
+  content: ")";
+}
+
+.muted {
+  opacity: 0.5;
+}
+
 .pellets:after {
   color: #a98a98;
   content: "×";

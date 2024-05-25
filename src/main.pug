@@ -1,0 +1,85 @@
+mixin projectiles(objects)
+  tr.projectile-header
+    th.damage.id ID
+    th.projectile.name Name
+    th.projectile.damageid(title="ID of damage row") Dmg
+    th.projectile.caliber(title="Caliber") Cal
+    th.projectile.pellets(title="Pellets")
+    th.projectile.velocity(title="Muzzle Velocity") v
+    th.projectile.mass(title="Mass") m
+    th.projectile.drag(title="Drag Coefficient")
+      span c
+      sub d
+    th.projectile.gravity(title="Gravity Multiplier") g
+    th.projectile.penslow(title="Penetration Slowdown") PenSl
+  each obj in objects
+    tr.projectile-row
+      td.projectile.id= id(obj)
+      td.projectile.name= obj.name
+      td.projectile.damageid= id(obj, 'damageid')
+      td.projectile.caliber= obj.caliber
+      td.projectile.pellets(class={ muted: obj.pellets < 2 })= obj.pellets
+      td.projectile.velocity= obj.velocity
+      td.projectile.mass= obj.mass
+      td.projectile.drag= obj.drag
+      td.projectile.gravity= obj.gravity
+      td.projectile.penslow= obj.penslow
+
+mixin explosions(objects)
+  tr.explosion-header
+    th.explosion.id ID
+    th.explosion.name Name
+    th.explosion.damageid(title="ID of damage row") Dmg
+    th.explosion.r1(title="Inner Radius") R1
+    th.explosion.r2(title="Outer Radius") R2
+    th.explosion.r3(title="Non-Damage Radius") R3
+  each obj in objects
+    tr.explosion-row
+      td.explosion.id= id(obj)
+      td.explosion.name= obj.name
+      td.explosion.damageid= id(obj, 'damageid')
+      td.explosion.r1= obj.r1
+      td.explosion.r2= obj.r2
+      td.explosion.r3= obj.r3
+
+mixin damages(objects)
+  tr.damage-header
+    th.damage.id ID
+    th.damage.name Name
+    th.damage.dmg(colspan=3) Damage
+    th.damage.ap(title="Armor Penetrations" colspan=4) AP
+    th.damage.demo(title="Demolition Force") DF
+    th.damage.stun(title="Stagger Value") SV
+    th.damage.push(title="Push Force") PF
+    th.damage.effect(colspan=8) Effects
+  each obj in objects
+    tr.explosion-row
+      td.damage.id= id(obj)
+      td.damage.name= obj.name
+      td.damage.dmgtype(class={muted: !obj.type })= obj.type
+      td.damage.dmg= obj.dmg
+      td.damage.massive= obj.mass
+      each i in [1, 2, 3, 4]
+        - var ap = obj[`ap${i}`]
+        td.damage.ap(class=`ap-${ap} ap-list-${i}`)= ap
+      td.damage.demo= obj.demo
+      td.damage.stun= obj.stun
+      td.damage.push= obj.push
+      each i in [1, 2, 3, 4]
+        - var func = obj[`func${i}`]
+        - var param = obj[`param${i}`]
+        td.damage.effect(class={muted: !func})= func
+        td.damage.effect-param(class={muted: !func})= param
+
+nav.links
+  ul
+    each scope in nerdScopes
+      li
+        a(onclick=`switchScope('${scope}')`)= scope
+table
+  if nerdScope === 'damages'
+    +damages(damages)
+  else if nerdScope === 'projectiles'
+    +projectiles(projectiles)
+  else if nerdScope === 'explosions'
+    +explosions(explosions)

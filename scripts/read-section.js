@@ -40,7 +40,7 @@ function hexString(buf) {
   return Array.from(buf).map(byte => byte.toString(16).padStart(2, '0')).join(' ')
 }
 
-const strikeSearch = {
+const damageSearch = {
   dmg: Int,
   mass: Int,
   ap1: Int,
@@ -60,9 +60,9 @@ const strikeSearch = {
   func4: Int,
   param4: Float,
 }
-const strikeSchema = {
+const damageSchema = {
   id: Int,
-  ...strikeSearch,
+  ...damageSearch,
 }
 
 const dominatorDamage = [
@@ -164,14 +164,14 @@ function readData({
   return objects
 }
 
-const strikes = readData({
+const damages = readData({
   buffer,
-  searchSchema: strikeSearch,
+  searchSchema: damageSearch,
   searchData: dominatorDamage,
   searchName: 'Dominator Damage',
   searchOffset: 0x4,
   enumFileName: 'damage-info-types',
-  schema: strikeSchema,
+  schema: damageSchema,
 })
 
 function unknowns(from, to) {
@@ -263,7 +263,7 @@ const explosions = readData({
 
 const data = json({
   version,
-  strikes,
+  damages,
   projectiles,
   explosions,
 })
