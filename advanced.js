@@ -47,6 +47,8 @@ const suffixes = {
   sab: 'Sabot',
   sab2: 'Sabot Duplex',
   sabhv: 'High-Velocity Sabot',
+  snb: 'Sniper Round (HVAP)',
+  spr: 'Self-Propelled Rocket',
   slug: 'Slug',
   emp: 'EMP',
   std: 'Standard',
