@@ -9,11 +9,12 @@ const [header, ...rows] = data
 const timestep = 1 / 60
 function simulation({ cal, v, m: mass, drag }) {
   let distance = 0
-  const area = Math.pow(cal * 0.01293, 2)
+  const area = Math.PI * Math.pow(cal / 2000, 2)
+  const airFriction = 1.204
   for(let distance = 0; distance < 100;) {
-    const dragForce = airDensity * Math.pow(v, 2) * drag * area
-    const v2 = v - dragForce / mass * timestep
-    if(v2 < 0) return 0
+    const dragForce = airFriction * drag * Math.pow(v, 2) * area
+    const v2 = v - 1000 * dragForce / mass * timestep
+    if(v2 < 0.1) return 0
     distance += (+v + +v2) * 0.5 * timestep
     v = v2
   }
