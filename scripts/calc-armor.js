@@ -49,9 +49,12 @@ function pct(v) {
   return (100 * v).toFixed(2) + '%'
 }
 const headers = ['Armor', 'Overall', 'Explosion', 'Fortified', ...Object.keys(limbs)]
-const rows = []
+const tables = []
 for(const vitality of [1, 0.8]) {
-  if(vitality < 1) {
+  const rows = []
+  if(vitality === 1) {
+    rows.push(headers)
+  } else if(vitality < 1) {
     rows.push(['w/Vitality', ...headers.slice(1)])
   }
   for(const [armor, overall] of Object.entries(armors)) {
@@ -65,5 +68,19 @@ for(const vitality of [1, 0.8]) {
     }
     rows.push(row)
   }
+  tables.push(rows)
 }
-fs.writeFileSync('data/armor-values.csv', [headers, ...rows].join('\n'))
+
+
+console.log(tables)
+const csv = tables.flatMap(t => t.join('\n')).join('\n\n')
+fs.writeFileSync('data/armor-values.csv', csv)
+
+const md = tables.map(([headers, ...rows]) => {
+  return [
+    headers,
+    headers.map(h => ':-'),
+    ...rows,
+  ].map(r => `|${r.join('|')}|`).join('\n')
+}).join('\n\n')
+fs.writeFileSync('data/armor-values.md', md)
