@@ -5,7 +5,7 @@
   "description": "Helldivers data sheet",
   "main": "index.js",
   "scripts": {
-    "compile": "pug --client --no-debug template.pug; pug --client --no-debug src/main.pug -o build/",
+    "compile": "pug --client --no-debug src/template.pug -o build; pug --client --no-debug src/main.pug -o build",
     "build": "node scripts/process-ballistics.js; node scripts/process-weapons.js; npm run compile",
     "search": "node scripts/search.js",
     "bytes": "node scripts/get-bytes.js"
