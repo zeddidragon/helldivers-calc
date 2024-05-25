@@ -1,6 +1,9 @@
 import fs from 'fs'
 import json from 'json-stringify-pretty-compact'
 
+let debugUnknown = false
+let outputRaw = false
+
 const version = process.argv[3]
 const buffer = fs.readFileSync(process.argv[2])
 
@@ -22,6 +25,9 @@ const Unknown = {
       .map(v => v.toString(16).padStart(2, '0'))
       .join('')
     hex = `0x${hex}`
+    if(debugUnknown) {
+      return { float, int, hex }
+    }
     return void 0
   },
   write: (buf, v, off = 0) => {
@@ -89,8 +95,15 @@ function hex(v) {
   return `0x${v.toString(16).toUpperCase()}`
 }
 
+function isId(v) {
+  if(!v) return false
+  if(v < 0) return false
+  if(v > 10000) return false
+  return true
+}
+
 function rewind(buffer, idx, blockSize) {
-  while(buffer.readInt32LE(idx - blockSize)) {
+  while(isId(buffer.readInt32LE(idx - blockSize))) {
     idx -= blockSize
   }
   return idx
@@ -104,8 +117,10 @@ function readData({
   buffer,
   enumFileName,
   schema,
+  cutPrefix = 1,
 }) {
   const bytes = getRow(searchData, searchSchema)
+  console.log(bytes)
   let idx = buffer.indexOf(bytes)
   if(idx < 0) {
     throw new Error(`Unable to locate ${searchName}!`)
@@ -125,7 +140,7 @@ function readData({
   for(const line of enumsFile.split('\n')) {
     const [, name, id] = pattern.exec(line) || []
     if(!name) continue
-    enums[parseInt(id, 16)] = name.split('_').slice(1).join('_')
+    enums[parseInt(id, 16)] = name.split('_').slice(cutPrefix).join('_')
   }
 
   const objects = []
@@ -136,9 +151,11 @@ function readData({
       obj[prop] = type.read(buffer, idx)
       idx += type.size
     }
-    obj.raw = hexString(buffer.slice(start, idx))
+    if(outputRaw) {
+      obj.raw = hexString(buffer.slice(start, idx))
+    }
     obj.enum = enums[obj.id]
-    if(obj.id) {
+    if(isId(obj.id)) {
       objects.push(obj)
     } else {
       break
@@ -210,10 +227,44 @@ const projectiles = readData({
   schema: projectileSchema,
 })
 
+const explosionSearchSchema = {
+  r1: Float,
+  r2: Float,
+  r3: Float,
+}
+
+const eagle500kgBomb = [
+  6.7,
+  20,
+  30,
+]
+
+
+const explosionSchema = {
+  id: Int,
+  damageid: Int,
+  ...unknowns(3, 3),
+  r1: Float,
+  r2: Float,
+  r3: Float,
+  ...unknowns(7, 28),
+}
+
+const explosions = readData({
+  buffer,
+  searchSchema: explosionSearchSchema,
+  searchData: eagle500kgBomb,
+  searchName: 'Eagle 500kg Bomb',
+  searchOffset: 0xc,
+  enumFileName: 'explosion-types',
+  schema: explosionSchema,
+  cutPrefix: 0,
+})
+
 const data = json({
   version,
   strikes,
   projectiles,
+  explosions,
 })
 fs.writeFileSync('./data/datamined.json', data)
-
