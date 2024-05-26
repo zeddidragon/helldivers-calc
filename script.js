@@ -353,6 +353,9 @@ function getEffect(wpn, p) {
 const locals = {
   weapons: null,
   nerdMode: false,
+  full: {
+    full: true,
+  },
   sortBy: 'category',
   getWeapons: () => {
     const sorter = sorting[locals.sortBy] || sorting.byCol(locals.sortBy)

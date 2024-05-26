@@ -1,17 +1,85 @@
-mixin projectiles(objects)
+mixin weaponsHeader
+  th.weapon.idx(
+    title=t('table.th.wpn', 'idx', 'Internal order')
+  ) #
+  th.weapons.source(
+    title=t('table.th.wpn', 'source', 'Where to obtain')
+  ) Source
+  th.weapon.category(
+    title=t('table.th.wpn', 'category', 'Weapon Category')
+  ) Type
+  th.weapon.code(
+    title=t('table.th.wpn', 'code', 'Military code')
+  ) Code
+  th.weapon.name(
+    title=t('table.th.wpn', 'name', 'Name')
+  ) Name
+  th.weapon.rpm(
+    title=t('table.th.wpn', 'rpm', 'Rate of fire (Rounds Per Minute)')
+  ) RPM
+  th.weapon.reload(
+    title=t('table.th.wpn', 'reloads3', 'Reload times (seconds)')
+  ) Rel
+  th.weapon.cap(
+    title=t('table.th.wpn', 'cap', 'Ammo capaccity (+ in chamber)')
+    colspan=2
+  ) Cap
+  th.weapon.spare(
+    title=t('table.th.wpn', 'spare4', 'Spare mags, clips, or rounds (start/max), and resupplied (supply/ammobox')
+    colspan=2
+  ) Reserves
+
+mixin weaponsRow(wpn)
+  td.weapon.idx= wpn.idx
+  td.weapons.source
+  td.weapon.category(class=wpn.category)= wpn.category
+  td.weapon.code= wpn.code
+  td.weapon.name= wpn.noncode
+  td.weapon.rpm= wpn.rpm
+  td.weapon.reload= wpn.reload
+  td.cap= wpn.cap || wpn.limit
+  td.capextra
+    if wpn.limit
+      span.cap-limit s
+    else if wpn.capplus
+      sup.cap-post.cap-plus= wpn.capplus
+  td.spare
+    if wpn.clips
+      span.clipsize(title="Rounds in Clip")= wpn.clipsize
+      span.clipstart(title="Starting Clips")= wpn.clipstart
+      span.clips(title="Max Clips")= wpn.clips
+    if wpn.rounds
+      span.roundstart(title="Starting Rounds")= roundStart(wpn)
+      span.rounds(title="Max Spare Rounds")= wpn.rounds
+    if wpn.mags
+      span.magstart(title="Starting Mags")= wpn.magstart || wpn.mags
+      span.mags(title="Max Mags")= wpn.mags
+  td.pickup
+    if wpn.clipsupply
+      span.clipsupply(title="Clips From Supply")= wpn.clipsupply
+      span.clipbox(title="Clips From Box")= wpn.clipbox
+    if wpn.roundsupply
+      span.roundsupply(title="Rounds From Supply")= wpn.roundsupply
+      span.roundsbox(title="Rounds From Box")= wpn.roundsbox
+    if wpn.supply
+      span.supply(title="Rounds From Supply")= wpn.supply
+      span.box(title="Rounds From Box")= wpn.box
+
+mixin projectilesHeader(opts = {})
   tr.projectile-header
-    th.projectile.idx(
-      title=t('table.th.prj', 'idx', 'Internal order')
-    ) #
-    th.projectile.id(
-      title=t('table.th.prj', 'id', 'ID of projectile data (hex)')
-    ) ID
-    th.projectile.name(
-      title=t('table.th.prj', 'name', 'Translated name of projectile')
-    ) Name
-    th.projectile.damageid(
-      title=t('table.th.prj', 'damageid', 'ID of damage data used (hex)')
-    ) Dmg
+    if opts.full
+      th.projectile.idx(
+        title=t('table.th.prj', 'idx', 'Internal order')
+      ) #
+      th.projectile.id(
+        title=t('table.th.prj', 'id', 'ID of projectile data (hex)')
+      ) ID
+      th.projectile.name(
+        title=t('table.th.prj', 'name', 'Translated name of projectile')
+      ) Name
+      th.projectile.damageid(
+        title=t('table.th.prj', 'damageid', 'ID of damage data used (hex)')
+      ) Dmg
     th.projectile.caliber(
       title=t('table.th.prj', 'caliber', 'Caliber (mm)')
     ) Cal
@@ -35,12 +103,15 @@ mixin projectiles(objects)
     th.projectile.penslow(
       title=t('table.th.prj', 'penslow', 'Penetration Slowdown')
     ) PenSl
+
+mixin projectilesRows(objects, opts = {})
   each obj in objects
     tr.projectile-row
-      td.projectile.idx= obj.idx
-      td.projectile.id= id(obj)
-      td.projectile.name= obj.name
-      td.projectile.damageid= id(obj, 'damageid')
+      if opts.full
+        td.projectile.idx= obj.idx
+        td.projectile.id= id(obj)
+        td.projectile.name= obj.name
+        td.projectile.damageid= id(obj, 'damageid')
       td.projectile.caliber= obj.caliber
       td.projectile.pellets(class={ muted: obj.pellets < 2 })= obj.pellets
       td.projectile.velocity= obj.velocity
@@ -49,71 +120,79 @@ mixin projectiles(objects)
       td.projectile.gravity= obj.gravity
       td.projectile.penslow= obj.penslow
 
-mixin explosions(objects)
+mixin explosionsHeader(opts = {})
   tr.explosion-header
-    td.explosion.idx(
-      title=t('table.th.aoe', 'idx', 'Internal order')
-    ) #
-    th.explosion.id(
-      title=t('table.th.aoe', 'id', 'ID of explosion data (hex)')
-    ) ID
-    th.explosion.name(
-      title=t('table.th.aoe', 'name', 'Translated name of AoE source')
-    ) Name
-    th.explosion.damageid(
-      title=t('table.th.aoe', 'damageid', 'ID of damage data used (hex)')
-    ) Dmg
+    if opts.full
+      td.explosion.idx(
+        title=t('table.th.aoe', 'idx', 'Internal order')
+      ) #
+      th.explosion.id(
+        title=t('table.th.aoe', 'id', 'ID of explosion data (hex)')
+      ) ID
+      th.explosion.name(
+        title=t('table.th.aoe', 'name', 'Translated name of AoE source')
+      ) Name
+      th.explosion.damageid(
+        title=t('table.th.aoe', 'damageid', 'ID of damage data used (hex)')
+      ) Dmg
     th.explosion.radius(
       title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
       colspan=3
     ) Radius
+
+mixin explosionsRows(objects, opts = {})
   each obj in objects
     tr.explosion-row
-      td.explosion.idx= obj.idx
-      td.explosion.id= id(obj)
-      td.explosion.name= obj.name
-      td.explosion.damageid= id(obj, 'damageid')
+      if opts.full
+        td.explosion.idx= obj.idx
+        td.explosion.id= id(obj)
+        td.explosion.name= obj.name
+        td.explosion.damageid= id(obj, 'damageid')
       td.explosion.r1= obj.r1
       td.explosion.r2= obj.r2
       td.explosion.r3= obj.r3
 
-mixin damages(objects)
+mixin damagesHeader(objects, opts = {})
   tr.damage-header
-    td.damage.idx(
-      title=t('table.th.dmg', 'idx', 'Internal order')
-    ) #
-    th.explosion.id(
-      title=t('table.th.dmg', 'id', 'ID of damage data (hex)')
-    ) ID
-    th.explosion.name(
-      title=t('table.th.dmg', 'name', 'Translated name of damage source')
-    ) Name
-    th.explosion.dmg(
+    if opts.full
+      td.damage.idx(
+        title=t('table.th.dmg', 'idx', 'Internal order')
+      ) #
+      th.damage.id(
+        title=t('table.th.dmg', 'id', 'ID of damage data (hex)')
+      ) ID
+      th.damage.name(
+        title=t('table.th.dmg', 'name', 'Translated name of damage source')
+      ) Name
+    th.damage.dmg(
       title=t('table.th.dmg', 'dmgs3', 'Damage type / Base damage / Damage vs Massive')
       colspan=3
     ) Damage
-    th.explosion.ap(
+    th.damage.ap(
       title=t('table.th.dmg', 'ap', 'Armor Penetration, varies by context')
       colspan=4
     ) AP
-    th.explosion.demo(
+    th.damage.demo(
       title=t('table.th.dmg', 'demo', 'Demolition Force')
     ) DF
-    th.explosion.stun(
+    th.damage.stun(
       title=t('table.th.dmg', 'stun', 'Stagger Value')
     ) SV
-    th.explosion.push(
+    th.damage.push(
       title=t('table.th.dmg', 'push', 'Push Force')
     ) PF
-    th.explosion.effect(
+    th.damage.effect(
       title=t('table.th.dmg', 'effects8', 'Status Effects')
       colspan=8
     ) Effects
+
+mixin damagesRows(objects, opts = {})
   each obj in objects
-    tr.explosion-row
-      td.damage.idx= obj.idx
-      td.damage.id= id(obj)
-      td.damage.name= obj.name
+    tr.damage-row
+      if opts.full
+        td.damage.idx= obj.idx
+        td.damage.id= id(obj)
+        td.damage.name= obj.name
       td.damage.dmgtype(class={muted: !obj.type })= obj.type
       td.damage.dmg= obj.dmg
       td.damage.massive= obj.mass
@@ -129,6 +208,17 @@ mixin damages(objects)
         td.damage.effect(class={muted: !func})= func
         td.damage.effect-param(class={muted: !func})= param
 
+nav.links
+  ul
+    li
+      a(href="/") Earth Defense Force
+    li.nav-selected
+      a(href="/helldivers-2") Helldivers 2
+    li |
+    li
+      a(href="https://helldivers.wiki.gg") Helldivers Wiki
+    li
+      a(href="https://helldivers.io/") helldivers.io
 header.menu
   if nerdScope
     nav.links
@@ -140,11 +230,9 @@ header.menu
   select.select#lang-select(name="Lang" onchange="switchLang()")
     each l in langs
       option(value=l selected=(l === lang))= l
-if nerdScope
-  table
-    if nerdScope === 'damages'
-      +damages(sorted(damages))
-    else if nerdScope === 'projectiles'
-      +projectiles(sorted(projectiles))
-    else if nerdScope === 'explosions'
-      +explosions(sorted(explosions))
+table
+  tr
+    +#{`${scope}Header`}(full)
+  each obj in objects()
+    tr
+      +#{`${scope}Row`}(obj)

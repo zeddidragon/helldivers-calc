@@ -163,7 +163,7 @@ td.name {
   color: #ea8;
   padding-left: 0.1em;
 }
-td.id:before, td.damageid:before {
+td.id:before, td.damageid:before, td.projectileid:before {
   color: #a98a98;
   content: "0x";
   font-size: 0.7em;

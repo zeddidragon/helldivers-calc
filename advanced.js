@@ -67,6 +67,10 @@ function sorting(col) {
 
 window.translations = {}
 
+function sorted(arr) {
+  return arr.sort(sorting(locals.sorting))
+}
+
 window.locals = {
   sorting: 'idx',
   lang: 'en',
@@ -80,18 +84,20 @@ window.locals = {
 
     return v.toString(16).toUpperCase()
   },
-  sorted: (arr) => {
-    return arr.sort(sorting(locals.sorting))
-  },
   allExplosion: () => {
     return data.explosions
   },
-  nerdScope: 'projectiles',
+  objects: () => sorted(locals[locals.scope]),
+  scope: 'weapons',
   nerdScopes: [
     'damages',
     'projectiles',
     'explosions',
   ],
+  roundStart: wpn => {
+    if(wpn.roundstart == null) return wpn.rounds
+    return wpn.roundstart
+  },
 }
 
 locals.lang = locals.langs[0]
@@ -164,6 +170,7 @@ async function loadData() {
       penslow: round(obj.penslow),
     }
   })
+  const projectiles = register(locals.projectiles)
   locals.explosions = data.explosions.map((obj, idx) => {
     return {
       idx,
@@ -173,6 +180,18 @@ async function loadData() {
       r1: round(obj.r1),
       r2: round(obj.r2),
       r3: round(obj.r3),
+    }
+  })
+  const explosions = register(locals.explosions)
+  locals.weapons = data.weapons.map((obj, idx) => {
+    const [, code, name] = /^(\w+-\d+\w+) (.*)$/.exec(obj.name) || []
+    console.log({ code, name })
+    return {
+      idx,
+      ...obj,
+      noncode: t('wpnname', obj.name, name),
+      code,
+      projectile: projectiles[obj.projectileid],
     }
   })
   render()
@@ -202,7 +221,7 @@ window.render = function render() {
 }
 
 window.switchScope = function switchScope(scope) {
-  locals.nerdScope = scope
+  locals.scope = scope
   locals.sorting = 'idx'
   render()
 }
