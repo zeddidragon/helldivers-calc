@@ -208,8 +208,10 @@ async function loadData() {
     const projectile = projectiles[wpn.projectileid]
     const damage = damages[projectile?.damageid]
     const subobjects = wpn.subattacks?.map(({ id, type }) => {
-      console.log({ registers, type, id })
-      return registers[type][id]
+      return {
+        type,
+        [type]: registers[type][id],
+      }
     })
     return {
       idx,

@@ -40,9 +40,9 @@
       "source": "support",
       "projectileid": 205,
       "subattacks": [{
-        "type": "explosion", "id": 172,
+        "type": "explosion", "id": 172
       }, {
-        "type": "explosion", "id": 165,
+        "type": "explosion", "id": 165
       }, {
         "type": "explosion", "id": 3
       }],
