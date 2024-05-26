@@ -75,7 +75,14 @@ th:not(.th-groups) {
   border-right: none;
 }
 
-td.damage.ap, td.explosion.radius, td.damage.effect, td.damage.effect-param {
+td.damage.ap,
+td.explosion.radius,
+td.damage.effect,
+td.damage.effect-param,
+td.damage.dmgtype,
+td.damage.dmg,
+td.damage.massive
+{
   border-left: thin solid #4e566f7f;
   border-right: none;
   padding-left: 0;
@@ -94,6 +101,10 @@ td.name {
   border-left: none;
   text-align: left;
   overflow: hidden;
+}
+
+td.effect-param {
+  font-size: 0.7em;
 }
 
 td a {

@@ -28,7 +28,7 @@ mixin weaponsHeader
     title=t('table.th.wpn', 'spare4', 'Spare mags, clips, or rounds (start/max), and resupplied (supply/ammobox')
     colspan=2
   ) Reserves
-  +damagesHeader()
+  +damagesHeader({ effectsCount: 1 })
   +projectilesHeader()
 
 mixin weaponsRow(wpn, opts)
@@ -70,9 +70,9 @@ mixin weaponsRow(wpn, opts)
       span.supply(title="Rounds From Supply")= wpn.supply
       span.box(title="Rounds From Box")= wpn.box
   if wpn.damage
-    +damagesRow(wpn.damage, { explosive: !!wpn.explosion })
+    +damagesRow(wpn.damage, { explosive: !!wpn.explosion, effectsCount: 1 })
   else
-    td.damage-filler(colspan=colspans.damages)
+    td.damage-filler(colspan=colspans.damages - 6)
   if wpn.projectile
     +projectilesRow(wpn.projectile)
   else if wpn.explosion
@@ -152,7 +152,7 @@ mixin explosionsHeader(opts = {})
   ) AoE
 
 mixin explosionsStubRow(exp, opts = {})
-  td.explosion.label(colspan=3)= t('table.td.aoe.label', 'radius', 'Radius')
+  th.explosion.label(colspan=3)= t('table.td.aoe.label', 'radius', 'Radius')
   td.explosion.radius.r1= exp.r1.toFixed(1)
   td.explosion.radius.r2.rx= exp.r2.toFixed(1)
   td.explosion.radius.r3.rx= exp.r3.toFixed(1)
@@ -198,15 +198,18 @@ mixin damagesHeader(opts = {})
   ) PF
   th.damage.effect(
     title=t('table.th.dmg', 'effects8', 'Status Effects')
-    colspan=opts.effectsCount || 8
-  ) Effects
+    colspan=(opts.effectsCount || 4 ) * 2
+  ) FX
 
 mixin damagesRow(dmg, opts = {})
   if opts.full
     td.damage.idx= dmg.idx
     td.damage.id= id(dmg)
     td.damage.name= dmg.name
-  td.damage.dmgtype(class={muted: !dmg.type })= dmg.type
+  td.damage.dmgtype(
+    class={muted: !dmg.type },
+    title=t('dmg.types.full', dmg.type),
+  )= t('dmg.types', dmg.type)
   td.damage.dmg(class={ xdmg: opts.explosive })= dmg.dmg
   td.damage.massive(class={ xdmg: opts.explosive })= dmg.mass
   each i in [1, 2, 3, 4]
@@ -215,10 +218,15 @@ mixin damagesRow(dmg, opts = {})
   td.damage.demo(class={ xdemo: opts.explosive })= dmg.demo
   td.damage.stun(class={ xstun: opts.explosive })= dmg.stun
   td.damage.push(class={ xpush: opts.explosive })= dmg.push
-  each i in [1, 2, 3, 4]
+  - let i = 0
+  while i < (opts.effectsCount || 4)
+    - i++
     - var func = dmg[`func${i}`]
     - var param = dmg[`param${i}`]
-    td.damage.effect(class={ [`effect${i}`]: true, muted: !func})= func
+    td.damage.effect(
+      class={ [`effect${i}`]: true, muted: !func }
+      title=t('dmg.effects.full', func)
+    )= t('dmg.effects', func, func)
     td.damage.effect-param(class={muted: !func})= param
 
 nav.links
@@ -246,7 +254,7 @@ header.menu
 table
   tr
     th.th-groups(colspan=colspans.weapons) Weapon
-    th.th-groups(colspan=colspans.damages) Damage
+    th.th-groups(colspan=colspans.damages - 6) Damage
     th.th-groups(colspan=colspans.projectiles) Ballistics
   tr
     +#{`${scope}Header`}(full)
