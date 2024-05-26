@@ -2,6 +2,7 @@ window.locals = {
   id: (obj, prop='id') => {
     const v = obj[prop]
     if(!v) return
+
     return v.toString(16).toUpperCase()
   },
   allExplosion: () => {
@@ -71,10 +72,22 @@ const suffixes = {
   Staticfield: 'Static Field',
 }
 
+const nPointNRex = /^(\d+)p(\d+)x(\d+)mm$/
+function translate(scope, p) {
+  const suffix = suffixes[p]
+  if(suffix) return suffix
+  const pointNum = nPointNRex.exec(p)
+  if(pointNum) {
+    const [, cm, mm, length] = pointNum
+    return `${cm}.${mm}x${length}mm`
+  }
+  return p
+}
+
 function enumName(scope, obj) {
   const parts = obj.enum
     .match(/[0-9A-Z]+[a-z0-9]*|[a-zA-Z0-9]+/g)
-    .map(p =>  suffixes[p] || p)
+    .map(p => translate(scope, p))
   return parts.join(' ')
 }
 
