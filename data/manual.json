@@ -1,0 +1,45 @@
+{
+  "weapons": [
+    {
+      "category": "AR",
+      "name": "AR-23 Liberator",
+      "source": "start",
+      "projectileid": 47,
+      "rpm": 640,
+      "recoil": 15,
+      "reload": 3,
+      "reloadearly": 2,
+      "cap": 45,
+      "capplus": 1,
+      "mags": 7,
+      "magstart": 5,
+      "supply": 7,
+      "box": 3
+    },
+    {
+      "category": "NRG",
+      "name": "SG-8P Punisher Plasma",
+      "source": "cut-edge",
+      "sourcepage": 2,
+      "rpm": 80,
+      "recoil": 110,
+      "reload": 2.5,
+      "cap": 8,
+      "mags": 8,
+      "magstart": 6,
+      "supply": 8,
+      "box": 4
+    },
+    {
+      "category": "SUP",
+      "name": "RL-77 Airburst Rocket Launcher",
+      "source": "support",
+      "reload": 6.7,
+      "cap": 1,
+      "rounds": 5,
+      "roundstart": 5,
+      "roundsupply": 3,
+      "roundsbox": 1
+    }
+  ]
+}

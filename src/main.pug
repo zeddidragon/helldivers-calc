@@ -30,9 +30,7 @@ mixin explosions(objects)
     th.explosion.id ID
     th.explosion.name Name
     th.explosion.damageid(title="ID of damage row") Dmg
-    th.explosion.r1(title="Inner Radius") R1
-    th.explosion.r2(title="Outer Radius") R2
-    th.explosion.r3(title="Non-Damage Radius") R3
+    th.explosion.radius(colspan=3 title="Radius Inner/Outer/Non-Damage") Radius
   each obj in objects
     tr.explosion-row
       td.explosion.id= id(obj)
@@ -78,8 +76,8 @@ nav.links
         a(onclick=`switchScope('${scope}')`)= scope
 table
   if nerdScope === 'damages'
-    +damages(damages)
+    +damages(sorted(damages))
   else if nerdScope === 'projectiles'
-    +projectiles(projectiles)
+    +projectiles(sorted(projectiles))
   else if nerdScope === 'explosions'
-    +explosions(explosions)
+    +explosions(sorted(explosions))
