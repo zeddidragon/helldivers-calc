@@ -1,6 +1,7 @@
 mixin projectiles(objects)
   tr.projectile-header
-    th.damage.id ID
+    th.projectile.idx #
+    th.projectile.id ID
     th.projectile.name Name
     th.projectile.damageid(title="ID of damage row") Dmg
     th.projectile.caliber(title="Caliber") Cal
@@ -14,6 +15,7 @@ mixin projectiles(objects)
     th.projectile.penslow(title="Penetration Slowdown") PenSl
   each obj in objects
     tr.projectile-row
+      td.projectile.idx= obj.idx
       td.projectile.id= id(obj)
       td.projectile.name= obj.name
       td.projectile.damageid= id(obj, 'damageid')
@@ -27,12 +29,14 @@ mixin projectiles(objects)
 
 mixin explosions(objects)
   tr.explosion-header
+    td.explosion.idx #
     th.explosion.id ID
     th.explosion.name Name
     th.explosion.damageid(title="ID of damage row") Dmg
     th.explosion.radius(colspan=3 title="Radius Inner/Outer/Non-Damage") Radius
   each obj in objects
     tr.explosion-row
+      td.explosion.idx= obj.idx
       td.explosion.id= id(obj)
       td.explosion.name= obj.name
       td.explosion.damageid= id(obj, 'damageid')
@@ -42,6 +46,7 @@ mixin explosions(objects)
 
 mixin damages(objects)
   tr.damage-header
+    td.damage.idx #
     th.damage.id ID
     th.damage.name Name
     th.damage.dmg(colspan=3) Damage
@@ -52,6 +57,7 @@ mixin damages(objects)
     th.damage.effect(colspan=8) Effects
   each obj in objects
     tr.explosion-row
+      td.damage.idx= obj.idx
       td.damage.id= id(obj)
       td.damage.name= obj.name
       td.damage.dmgtype(class={muted: !obj.type })= obj.type
@@ -74,6 +80,7 @@ nav.links
     each scope in nerdScopes
       li
         a(onclick=`switchScope('${scope}')`)= scope
+
 table
   if nerdScope === 'damages'
     +damages(sorted(damages))

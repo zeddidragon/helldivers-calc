@@ -210,6 +210,11 @@ td.effect-param:after {
   opacity: 0.5;
 }
 
+.idx {
+  font-size: 0.7em;
+  opacity: 0.5;
+}
+
 .pellets:after {
   color: #a98a98;
   content: "×";

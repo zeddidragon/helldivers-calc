@@ -4,18 +4,21 @@ function val(obj, prop) {
 
 function sorting(col) {
   let dir = -1
-  if(['id', 'damageid', 'name'].includes(col)) {
+  if(['idx', 'id', 'damageid', 'name'].includes(col)) {
     dir = 1
   }
 
-  function idSort(a, b) {
+  function idxSort(a, b) {
     return a.id - b.id
   }
 
   if(col === 'name') {
     return function sortByName(a, b) {
       const diff = (a.name || '').localeCompare(b.name || '') * dir
-      return diff || idSort(a, b)
+      if(diff) return diff
+      const enumDiff = (a.enum || '').localeCompare(b.enum || '') * dir
+      if(enumDiff) return enumDiff
+      return idxSort(a, b)
     }
   }
 
@@ -25,7 +28,7 @@ function sorting(col) {
 
   if(col === 'dmg') {
     return function dmgSort(a, b) {
-      return compare(a, b, 'dmg') || compare(a, b, 'mass') || idSort(a, b)
+      return compare(a, b, 'dmg') || compare(a, b, 'mass') || idxSort(a, b)
     }
   }
   if(col === 'ap') {
@@ -34,7 +37,7 @@ function sorting(col) {
         const diff = compare(a, b, `ap${i}`)
         if(diff) return diff
       }
-      return idSort(a, b)
+      return idxSort(a, b)
     }
   }
   if(col === 'radius') {
@@ -43,7 +46,7 @@ function sorting(col) {
         const diff = compare(a, b, `r${i}`)
         if(diff) return diff
       }
-      return idSort(a, b)
+      return idxSort(a, b)
     }
   }
   if(col === 'effect') {
@@ -54,16 +57,20 @@ function sorting(col) {
         const pDiff = compare(a, b, `param${i}`)
         if(pDiff) return pDiff
       }
-      return idSort(a, b)
+      return idxSort(a, b)
     }
   }
   return function defaultSort(a, b) {
-    return compare(a, b, col) || idSort(a, b)
+    return compare(a, b, col) || idxSort(a, b)
   }
 }
 
+window.translations = {}
+
 window.locals = {
-  sorting: 'id',
+  sorting: 'idx',
+  lang: 'en',
+  langs: ['en', 'ru'],
   id: (obj, prop='id') => {
     const v = obj[prop]
     if(!v) return
@@ -84,6 +91,8 @@ window.locals = {
   ],
 }
 
+locals.lang = locals.langs[0]
+
 function register(objects) {
   const reg = {}
   for(const obj of objects) {
@@ -97,128 +106,63 @@ function round(v, decimals = 2) {
   return +v.toFixed(decimals)
 }
 
-const suffixes = {
-  ap: 'Armor Piercing',
-  buc: 'Buckshot',
-  bug: 'Bugbite',
-  fle: 'Flechette',
-  fmj: 'Full Metal Jacket',
-  smj: 'Soft Metal Jacket',
-  bir: 'Birdshot',
-  dev: 'Development',
-  hp: 'Hollow-Point ',
-  rip: 'R.I.P.',
-  exp: 'Explosive',
-  ss: 'Subsonic',
-  hv: 'High-Velocity',
-  ther: 'Thermite',
-  mag: 'Magnum',
-  sab: 'Sabot',
-  sab2: 'Sabot Duplex',
-  sabhv: 'High-Velocity Sabot',
-  snb: 'Sniper Round (HVAP)',
-  spr: 'Self-Propelled Rocket',
-  slug: 'Slug',
-  emp: 'EMP',
-  std: 'Standard',
-  frag: 'Frag',
-  airb: 'Airburst',
-  tox: 'Toxic',
-  pla: 'Plasma',
-  stun: 'Stun',
-  tracer: 'Tracer',
-  turret: 'Turret',
-  silent: 'Silent',
-  tri: 'Tri-Ball',
-  magtri: 'Tri-Ball Magnum',
-  flm: 'Flechette Magnesium',
-  Hmg: 'Heavy Machine Gun',
-  Mg: 'Machine Gun',
-  Aa: 'Anti-Air',
-  '10g': '10-Gauge',
-  '12g': '12-Gauge',
-  Staticfield: 'Static Field',
+function t(namespace, key) {
+  key = [namespace, key].join(';')
+  return translations[locals.lang]?.[key]
+    || translations.en?.[key]
+    || key
 }
-
-const nPointNRex = /^(\d+)p(\d+)x(\d+)mm$/
-function translate(scope, p) {
-  const suffix = suffixes[p]
-  if(suffix) return suffix
-  const pointNum = nPointNRex.exec(p)
-  if(pointNum) {
-    const [, cm, mm, length] = pointNum
-    return `${cm}.${mm}x${length}mm`
-  }
-  return p
-}
-
-function enumName(scope, obj) {
-  const parts = obj.enum
-    .match(/[0-9A-Z]+[a-z0-9]*|[a-zA-Z0-9]+/g)
-    .map(p => translate(scope, p))
-  return parts.join(' ')
-}
+window.t = t
 
 async function loadData() {
   const [
     manual,
     mined,
+    translations,
   ] = await Promise.all([
     fetch(`data/manual.json`).then(res => res.json()),
     fetch(`data/datamined.json`).then(res => res.json()),
+    fetch(`data/lang-${locals.lang}.json`)
+      .then(res => res.json())
+      .catch(() => ({})),
   ])
   const data = {
     ...manual,
     ...mined,
   }
   window.data = data
-  locals.damages = data.damages.map(obj => {
+  window.translations[locals.lang] = translations
+  locals.damages = data.damages.map((obj, idx) => {
     return {
+      idx,
       ...obj,
-      name: enumName('damages', obj),
+      name: t('dmg', obj.enum),
     }
   })
   const damages = register(locals.damages)
-  locals.projectiles = data.projectiles.map(obj => {
+  locals.projectiles = data.projectiles.map((obj, idx) => {
     return {
+      idx,
       ...obj,
-      name: enumName('projectiles', obj),
+      name: t('prj', obj.enum),
       damage: damages[obj.damageid],
       gravity: round(obj.gravity),
       drag: round(obj.drag),
       penslow: round(obj.penslow),
     }
   })
-  locals.explosions = data.explosions.map(obj => {
+  locals.explosions = data.explosions.map((obj, idx) => {
     return {
-      id: obj.id,
+      idx,
       ...obj,
-      name: enumName('explosions', obj),
+      name: t('aoe', obj.enum),
       damage: damages[obj.damageid],
       r1: round(obj.r1),
       r2: round(obj.r2),
       r3: round(obj.r3),
     }
   })
-
-  const t = {}
-  function addT(scope, obj) {
-    const key = [
-      scope,
-      obj.enum,
-    ].join(';')
-    t[key] = obj.name
-  }
-  for(const x of locals.damages) {
-    addT('dmg', x)
-  }
-  for(const x of locals.explosions) {
-    addT('aoe', x)
-  }
-  for(const x of locals.projectiles) {
-    addT('prj', x)
-  }
-  window.translations = t
+  render()
 }
 
 function sortBy(col) {
@@ -228,7 +172,7 @@ function sortBy(col) {
   }
 }
 
-function render() {
+window.render = function render() {
   document.querySelector('body').innerHTML = template(locals)
   const headers = document.querySelectorAll('th')
   for(const h of headers) {
@@ -246,8 +190,14 @@ function render() {
 
 window.switchScope = function switchScope(scope) {
   locals.nerdScope = scope
-  locals.sorting = 'id'
+  locals.sorting = 'idx'
   render()
 }
 
-loadData().then(() => render())
+window.switchLang = function switchLang(lang) {
+  locals.lang = lang
+  loadData()
+}
+
+
+loadData()
