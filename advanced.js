@@ -70,7 +70,10 @@ window.translations = {}
 window.locals = {
   sorting: 'idx',
   lang: 'en',
-  langs: ['en', 'ru'],
+  langs: [
+    'en',
+    'ru',
+  ],
   id: (obj, prop='id') => {
     const v = obj[prop]
     if(!v) return
@@ -106,11 +109,21 @@ function round(v, decimals = 2) {
   return +v.toFixed(decimals)
 }
 
-function t(namespace, key) {
-  key = [namespace, key].join(';')
-  return translations[locals.lang]?.[key]
-    || translations.en?.[key]
-    || key
+window.tmissing = {}
+function t(namespace, key, fallback, l = locals.lang) {
+  const fullKey = [namespace, key].join(';')
+  const val = translations[l]?.[fullKey]
+  if(val == null) {
+    if(!tmissing[l]) tmissing[l] = {}
+    tmissing[l][key] = fallback || key
+    if(l === 'en') {
+      return fallback || key
+    } else {
+      return t(namespace, key, fallback, 'en')
+    }
+  } else {
+    return val
+  }
 }
 window.t = t
 
@@ -195,7 +208,8 @@ window.switchScope = function switchScope(scope) {
 }
 
 window.switchLang = function switchLang(lang) {
-  locals.lang = lang
+  const langSel = document.getElementById('lang-select')
+  locals.lang = langSel.value
   loadData()
 }
 
