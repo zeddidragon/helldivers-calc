@@ -78,6 +78,11 @@ window.locals = {
     'en',
     'ru',
   ],
+  colspans: {
+    weapons: 6,
+    explosions: 3
+  },
+  weaponCols: new Set('damage'),
   id: (obj, prop='id') => {
     const v = obj[prop]
     if(!v) return
@@ -87,7 +92,18 @@ window.locals = {
   allExplosion: () => {
     return data.explosions
   },
-  objects: () => sorted(locals[locals.scope]),
+  objects: (scope) => {
+    let arr = locals[scope].slice()
+    if(scope === 'weapons') {
+      arr = arr.flatMap(wpn => {
+        if(wpn.subobjects) {
+          return [wpn, ...wpn.subobjects]
+        }
+        return [wpn]
+      })
+    }
+    return arr
+  },
   scope: 'weapons',
   nerdScopes: [
     'damages',
@@ -183,15 +199,26 @@ async function loadData() {
     }
   })
   const explosions = register(locals.explosions)
-  locals.weapons = data.weapons.map((obj, idx) => {
-    const [, code, name] = /^(\w+-\d+\w+) (.*)$/.exec(obj.name) || []
-    console.log({ code, name })
+  const registers = {
+    projectile: projectiles,
+    explosion: explosions,
+  }
+  locals.weapons = data.weapons.map((wpn, idx) => {
+    const [, code, name] = /^(\w+-\d+\w+) (.*)$/.exec(wpn.name) || []
+    const projectile = projectiles[wpn.projectileid]
+    const damage = damages[projectile?.damageid]
+    const subobjects = wpn.subattacks?.map(({ id, type }) => {
+      return registers[type][id]
+    })
     return {
       idx,
-      ...obj,
-      noncode: t('wpnname', obj.name, name),
+      ...wpn,
+      coded: wpn.name,
+      name: t('wpnname', wpn.name, name),
       code,
-      projectile: projectiles[obj.projectileid],
+      projectile,
+      damage,
+      subobjects,
     }
   })
   render()

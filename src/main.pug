@@ -28,13 +28,15 @@ mixin weaponsHeader
     title=t('table.th.wpn', 'spare4', 'Spare mags, clips, or rounds (start/max), and resupplied (supply/ammobox')
     colspan=2
   ) Reserves
+  +explosionsHeader()
+  +damagesHeader()
 
 mixin weaponsRow(wpn)
   td.weapon.idx= wpn.idx
   td.weapons.source
   td.weapon.category(class=wpn.category)= wpn.category
   td.weapon.code= wpn.code
-  td.weapon.name= wpn.noncode
+  td.weapon.name= wpn.name
   td.weapon.rpm= wpn.rpm
   td.weapon.reload= wpn.reload
   td.cap= wpn.cap || wpn.limit
@@ -64,149 +66,148 @@ mixin weaponsRow(wpn)
     if wpn.supply
       span.supply(title="Rounds From Supply")= wpn.supply
       span.box(title="Rounds From Box")= wpn.box
+  if wpn.r1
+    +explosionsRow(wpn)
+  else
+    td(colspan=colspans.explosions)
+  if wpn.damage
+    +damagesRow(wpn.damage, { explosive: wpn.r1 != null })
+  else
+    td(colspan=colspans.weapons)
 
 mixin projectilesHeader(opts = {})
-  tr.projectile-header
-    if opts.full
-      th.projectile.idx(
-        title=t('table.th.prj', 'idx', 'Internal order')
-      ) #
-      th.projectile.id(
-        title=t('table.th.prj', 'id', 'ID of projectile data (hex)')
-      ) ID
-      th.projectile.name(
-        title=t('table.th.prj', 'name', 'Translated name of projectile')
-      ) Name
-      th.projectile.damageid(
-        title=t('table.th.prj', 'damageid', 'ID of damage data used (hex)')
-      ) Dmg
-    th.projectile.caliber(
-      title=t('table.th.prj', 'caliber', 'Caliber (mm)')
-    ) Cal
-    th.projectile.pellets(
-      title=t('table.th.prj', 'pellets', 'Pellet Count')
-    )
-    th.projectile.velocity(
-      title=t('table.th.prj', 'velocity', 'Muzzle Velocity (m/s)')
-    ) v
-    th.projectile.mass(
-      title=t('table.th.prj', 'mass', 'Mass (grams)')
-    ) m
-    th.projectile.drag(
-      title=t('table.th.prj', 'drag', 'Drag Coefficient Multiplier')
-    )
-      span c
-      sub d
-    th.projectile.gravity(
-      title=t('table.th.prj', 'gravity', 'Gravity Multiplier')
-    ) g
-    th.projectile.penslow(
-      title=t('table.th.prj', 'penslow', 'Penetration Slowdown')
-    ) PenSl
+  if opts.full
+    th.projectile.idx(
+      title=t('table.th.prj', 'idx', 'Internal order')
+    ) #
+    th.projectile.id(
+      title=t('table.th.prj', 'id', 'ID of projectile data (hex)')
+    ) ID
+    th.projectile.name(
+      title=t('table.th.prj', 'name', 'Translated name of projectile')
+    ) Name
+    th.projectile.damageid(
+      title=t('table.th.prj', 'damageid', 'ID of damage data used (hex)')
+    ) Dmg
+  th.projectile.caliber(
+    title=t('table.th.prj', 'caliber', 'Caliber (mm)')
+  ) Cal
+  th.projectile.pellets(
+    title=t('table.th.prj', 'pellets', 'Pellet Count')
+  )
+  th.projectile.velocity(
+    title=t('table.th.prj', 'velocity', 'Muzzle Velocity (m/s)')
+  ) v
+  th.projectile.mass(
+    title=t('table.th.prj', 'mass', 'Mass (grams)')
+  ) m
+  th.projectile.drag(
+    title=t('table.th.prj', 'drag', 'Drag Coefficient Multiplier')
+  )
+    span c
+    sub d
+  th.projectile.gravity(
+    title=t('table.th.prj', 'gravity', 'Gravity Multiplier')
+  ) g
+  th.projectile.penslow(
+    title=t('table.th.prj', 'penslow', 'Penetration Slowdown')
+  ) PenSl
 
-mixin projectilesRows(objects, opts = {})
-  each obj in objects
-    tr.projectile-row
-      if opts.full
-        td.projectile.idx= obj.idx
-        td.projectile.id= id(obj)
-        td.projectile.name= obj.name
-        td.projectile.damageid= id(obj, 'damageid')
-      td.projectile.caliber= obj.caliber
-      td.projectile.pellets(class={ muted: obj.pellets < 2 })= obj.pellets
-      td.projectile.velocity= obj.velocity
-      td.projectile.mass= obj.mass
-      td.projectile.drag= obj.drag
-      td.projectile.gravity= obj.gravity
-      td.projectile.penslow= obj.penslow
+mixin projectilesRows(prj, opts = {})
+  if opts.full
+    td.projectile.idx= prj.idx
+    td.projectile.id= id(prj)
+    td.projectile.name= prj.name
+    td.projectile.damageid= id(prj, 'damageid')
+  td.projectile.caliber= prj.caliber
+  td.projectile.pellets(class={ muted: prj.pellets < 2 })= prj.pellets
+  td.projectile.velocity= prj.velocity
+  td.projectile.mass= prj.mass
+  td.projectile.drag= prj.drag
+  td.projectile.gravity= prj.gravity
+  td.projectile.penslow= prj.penslow
 
 mixin explosionsHeader(opts = {})
-  tr.explosion-header
-    if opts.full
-      td.explosion.idx(
-        title=t('table.th.aoe', 'idx', 'Internal order')
-      ) #
-      th.explosion.id(
-        title=t('table.th.aoe', 'id', 'ID of explosion data (hex)')
-      ) ID
-      th.explosion.name(
-        title=t('table.th.aoe', 'name', 'Translated name of AoE source')
-      ) Name
-      th.explosion.damageid(
-        title=t('table.th.aoe', 'damageid', 'ID of damage data used (hex)')
-      ) Dmg
-    th.explosion.radius(
-      title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
-      colspan=3
-    ) Radius
+  if opts.full
+    td.explosion.idx(
+      title=t('table.th.aoe', 'idx', 'Internal order')
+    ) #
+    th.explosion.id(
+      title=t('table.th.aoe', 'id', 'ID of explosion data (hex)')
+    ) ID
+    th.explosion.name(
+      title=t('table.th.aoe', 'name', 'Translated name of AoE source')
+    ) Name
+    th.explosion.damageid(
+      title=t('table.th.aoe', 'damageid', 'ID of damage data used (hex)')
+    ) Dmg
+  th.explosion.radius(
+    title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
+    colspan=3
+  ) AoE
 
-mixin explosionsRows(objects, opts = {})
-  each obj in objects
-    tr.explosion-row
-      if opts.full
-        td.explosion.idx= obj.idx
-        td.explosion.id= id(obj)
-        td.explosion.name= obj.name
-        td.explosion.damageid= id(obj, 'damageid')
-      td.explosion.r1= obj.r1
-      td.explosion.r2= obj.r2
-      td.explosion.r3= obj.r3
+mixin explosionsRow(exp, opts = {})
+  if opts.full
+    td.explosion.idx= exp.idx
+    td.explosion.id= id(exp)
+    td.explosion.name= exp.name
+    td.explosion.damageid= id(exp, 'damageid')
+  td.explosion.radius.r1= exp.r1
+  td.explosion.radius.r2.rx= exp.r2
+  td.explosion.radius.r3.rx= exp.r3
 
-mixin damagesHeader(objects, opts = {})
-  tr.damage-header
-    if opts.full
-      td.damage.idx(
-        title=t('table.th.dmg', 'idx', 'Internal order')
-      ) #
-      th.damage.id(
-        title=t('table.th.dmg', 'id', 'ID of damage data (hex)')
-      ) ID
-      th.damage.name(
-        title=t('table.th.dmg', 'name', 'Translated name of damage source')
-      ) Name
-    th.damage.dmg(
-      title=t('table.th.dmg', 'dmgs3', 'Damage type / Base damage / Damage vs Massive')
-      colspan=3
-    ) Damage
-    th.damage.ap(
-      title=t('table.th.dmg', 'ap', 'Armor Penetration, varies by context')
-      colspan=4
-    ) AP
-    th.damage.demo(
-      title=t('table.th.dmg', 'demo', 'Demolition Force')
-    ) DF
-    th.damage.stun(
-      title=t('table.th.dmg', 'stun', 'Stagger Value')
-    ) SV
-    th.damage.push(
-      title=t('table.th.dmg', 'push', 'Push Force')
-    ) PF
-    th.damage.effect(
-      title=t('table.th.dmg', 'effects8', 'Status Effects')
-      colspan=8
-    ) Effects
+mixin damagesHeader(opts = {})
+  if opts.full
+    td.damage.idx(
+      title=t('table.th.dmg', 'idx', 'Internal order')
+    ) #
+    th.damage.id(
+      title=t('table.th.dmg', 'id', 'ID of damage data (hex)')
+    ) ID
+    th.damage.name(
+      title=t('table.th.dmg', 'name', 'Translated name of damage source')
+    ) Name
+  th.damage.dmg(
+    title=t('table.th.dmg', 'dmgs3', 'Damage type / Base damage / Damage vs Massive')
+    colspan=3
+  ) Damage
+  th.damage.ap(
+    title=t('table.th.dmg', 'ap', 'Armor Penetration, varies by context')
+    colspan=4
+  ) AP
+  th.damage.demo(
+    title=t('table.th.dmg', 'demo', 'Demolition Force')
+  ) DF
+  th.damage.stun(
+    title=t('table.th.dmg', 'stun', 'Stagger Value')
+  ) SV
+  th.damage.push(
+    title=t('table.th.dmg', 'push', 'Push Force')
+  ) PF
+  th.damage.effect(
+    title=t('table.th.dmg', 'effects8', 'Status Effects')
+    colspan=8
+  ) Effects
 
-mixin damagesRows(objects, opts = {})
-  each obj in objects
-    tr.damage-row
-      if opts.full
-        td.damage.idx= obj.idx
-        td.damage.id= id(obj)
-        td.damage.name= obj.name
-      td.damage.dmgtype(class={muted: !obj.type })= obj.type
-      td.damage.dmg= obj.dmg
-      td.damage.massive= obj.mass
-      each i in [1, 2, 3, 4]
-        - var ap = obj[`ap${i}`]
-        td.damage.ap(class=`ap-${ap} ap-list-${i}`)= ap
-      td.damage.demo= obj.demo
-      td.damage.stun= obj.stun
-      td.damage.push= obj.push
-      each i in [1, 2, 3, 4]
-        - var func = obj[`func${i}`]
-        - var param = obj[`param${i}`]
-        td.damage.effect(class={muted: !func})= func
-        td.damage.effect-param(class={muted: !func})= param
+mixin damagesRow(dmg, opts = {})
+  if opts.full
+    td.damage.idx= dmg.idx
+    td.damage.id= id(dmg)
+    td.damage.name= dmg.name
+  td.damage.dmgtype(class={muted: !dmg.type })= dmg.type
+  td.damage.dmg(class={ xdmg: opts.explosive })= dmg.dmg
+  td.damage.massive(class={ xdmg: opts.explosive })= dmg.mass
+  each i in [1, 2, 3, 4]
+    - var ap = dmg[`ap${i}`]
+    td.damage.ap(class=`ap-${ap} ap-list-${i}`)= ap
+  td.damage.demo= dmg.demo
+  td.damage.stun= dmg.stun
+  td.damage.push= dmg.push
+  each i in [1, 2, 3, 4]
+    - var func = dmg[`func${i}`]
+    - var param = dmg[`param${i}`]
+    td.damage.effect(class={ [`effect${i}`]: true, muted: !func})= func
+    td.damage.effect-param(class={muted: !func})= param
 
 nav.links
   ul
@@ -233,6 +234,6 @@ header.menu
 table
   tr
     +#{`${scope}Header`}(full)
-  each obj in objects()
+  each obj in objects(scope)
     tr
       +#{`${scope}Row`}(obj)

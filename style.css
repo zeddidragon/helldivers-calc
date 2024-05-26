@@ -75,11 +75,15 @@ th {
   border-right: none;
 }
 
-td.damage.ap {
-  border-left: none;
+td.damage.ap, td.explosion.radius, td.damage.effect, td.damage.effect-param {
+  border-left: thin solid #4e566f7f;
   border-right: none;
   padding-left: 0;
   padding-right: 0.2em;
+}
+
+td.damage.ap.ap-list-1, td.explosion.radius.r1, td.effect.effect1 {
+  padding-left: 0.2em;
 }
 
 td.code {
@@ -172,7 +176,7 @@ td.id:before, td.damageid:before, td.projectileid:before {
   color: #a98a98;
   content: "+";
 }
-.damage-x {
+.damage-x, .xdmg {
   color: #ea8;
 }
 .demo-x:before, .stun-x:before, .push-x:before {
