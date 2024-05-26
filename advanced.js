@@ -80,7 +80,8 @@ window.locals = {
   ],
   colspans: {
     weapons: 6,
-    explosions: 3
+    explosions: 3,
+    projectiles: 7,
   },
   weaponCols: new Set('damage'),
   id: (obj, prop='id') => {

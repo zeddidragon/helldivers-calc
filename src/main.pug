@@ -30,6 +30,7 @@ mixin weaponsHeader
   ) Reserves
   +explosionsHeader()
   +damagesHeader()
+  +projectilesHeader()
 
 mixin weaponsRow(wpn, opts)
   - let obj  = wpn
@@ -72,11 +73,15 @@ mixin weaponsRow(wpn, opts)
   if wpn.explosion
     +explosionsRow(wpn.explosion)
   else
-    td(colspan=colspans.explosions)
+    td.filler(colspan=colspans.explosions)
   if obj.damage
     +damagesRow(obj.damage, { explosive: !!wpn.explosion })
   else
-    td(colspan=colspans.weapons)
+    td.filler(colspan=colspans.weapons)
+  if obj.projectile
+    +projectilesRow(obj.projectile)
+  else
+    td.filler(colspan=colspans.projectiles)
 
 mixin projectilesHeader(opts = {})
   if opts.full
@@ -116,7 +121,7 @@ mixin projectilesHeader(opts = {})
     title=t('table.th.prj', 'penslow', 'Penetration Slowdown')
   ) PenSl
 
-mixin projectilesRows(prj, opts = {})
+mixin projectilesRow(prj, opts = {})
   if opts.full
     td.projectile.idx= prj.idx
     td.projectile.id= id(prj)
