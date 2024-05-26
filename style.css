@@ -163,7 +163,7 @@ td.name {
 .source-page:before {
   content: "#";
 }
-.stun-x, .push-x, .demo-x {
+.stun-x, .push-x, .demo-x, .xstun, .xpush, .xdemo {
   color: #ea8;
   padding-left: 0.1em;
 }

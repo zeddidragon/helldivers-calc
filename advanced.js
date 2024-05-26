@@ -211,6 +211,7 @@ async function loadData() {
       return {
         type,
         [type]: registers[type][id],
+        weapon: wpn,
       }
     })
     return {

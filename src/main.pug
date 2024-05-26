@@ -1,7 +1,7 @@
 mixin weaponsHeader
   th.weapon.idx(
     title=t('table.th.wpn', 'idx', 'Internal order')
-  ) #
+ ) #
   th.weapons.source(
     title=t('table.th.wpn', 'source', 'Where to obtain')
   ) Source
@@ -31,12 +31,15 @@ mixin weaponsHeader
   +explosionsHeader()
   +damagesHeader()
 
-mixin weaponsRow(wpn)
+mixin weaponsRow(wpn, opts)
+  - let obj  = wpn
   td.weapon.idx= wpn.idx
   td.weapons.source
   td.weapon.category(class=wpn.category)= wpn.category
+  if wpn.explosion
+    - obj = wpn.explosion
   td.weapon.code= wpn.code
-  td.weapon.name= wpn.name
+  td.weapon.name= obj.name
   td.weapon.rpm= wpn.rpm
   td.weapon.reload= wpn.reload
   td.cap= wpn.cap || wpn.limit
@@ -66,12 +69,12 @@ mixin weaponsRow(wpn)
     if wpn.supply
       span.supply(title="Rounds From Supply")= wpn.supply
       span.box(title="Rounds From Box")= wpn.box
-  if wpn.r1
-    +explosionsRow(wpn)
+  if wpn.explosion
+    +explosionsRow(wpn.explosion)
   else
     td(colspan=colspans.explosions)
-  if wpn.damage
-    +damagesRow(wpn.damage, { explosive: wpn.r1 != null })
+  if obj.damage
+    +damagesRow(obj.damage, { explosive: !!wpn.explosion })
   else
     td(colspan=colspans.weapons)
 
@@ -200,9 +203,9 @@ mixin damagesRow(dmg, opts = {})
   each i in [1, 2, 3, 4]
     - var ap = dmg[`ap${i}`]
     td.damage.ap(class=`ap-${ap} ap-list-${i}`)= ap
-  td.damage.demo= dmg.demo
-  td.damage.stun= dmg.stun
-  td.damage.push= dmg.push
+  td.damage.demo(class={ xdemo: opts.explosive })= dmg.demo
+  td.damage.stun(class={ xstun: opts.explosive })= dmg.stun
+  td.damage.push(class={ xpush: opts.explosive })= dmg.push
   each i in [1, 2, 3, 4]
     - var func = dmg[`func${i}`]
     - var param = dmg[`param${i}`]
