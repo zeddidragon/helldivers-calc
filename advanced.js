@@ -115,7 +115,7 @@ function t(namespace, key, fallback, l = locals.lang) {
   const val = translations[l]?.[fullKey]
   if(val == null) {
     if(!tmissing[l]) tmissing[l] = {}
-    tmissing[l][key] = fallback || key
+    tmissing[l][fullKey] = fallback || key
     if(l === 'en') {
       return fallback || key
     } else {

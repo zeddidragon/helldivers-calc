@@ -1,18 +1,40 @@
 mixin projectiles(objects)
   tr.projectile-header
-    th.projectile.idx #
-    th.projectile.id ID
-    th.projectile.name Name
-    th.projectile.damageid(title="ID of damage row") Dmg
-    th.projectile.caliber(title="Caliber") Cal
-    th.projectile.pellets(title="Pellets")
-    th.projectile.velocity(title="Muzzle Velocity") v
-    th.projectile.mass(title="Mass") m
-    th.projectile.drag(title="Drag Coefficient")
+    th.projectile.idx(
+      title=t('table.th.prj', 'idx', 'Internal order')
+    ) #
+    th.projectile.id(
+      title=t('table.th.prj', 'id', 'ID of projectile data (hex)')
+    ) ID
+    th.projectile.name(
+      title=t('table.th.prj', 'name', 'Translated name of projectile')
+    ) Name
+    th.projectile.damageid(
+      title=t('table.th.prj', 'damageid', 'ID of damage data used (hex)')
+    ) Dmg
+    th.projectile.caliber(
+      title=t('table.th.prj', 'caliber', 'Caliber (mm)')
+    ) Cal
+    th.projectile.pellets(
+      title=t('table.th.prj', 'pellets', 'Pellet Count')
+    )
+    th.projectile.velocity(
+      title=t('table.th.prj', 'velocity', 'Muzzle Velocity (m/s)')
+    ) v
+    th.projectile.mass(
+      title=t('table.th.prj', 'mass', 'Mass (grams)')
+    ) m
+    th.projectile.drag(
+      title=t('table.th.prj', 'drag', 'Drag Coefficient Multiplier')
+    )
       span c
       sub d
-    th.projectile.gravity(title="Gravity Multiplier") g
-    th.projectile.penslow(title="Penetration Slowdown") PenSl
+    th.projectile.gravity(
+      title=t('table.th.prj', 'gravity', 'Gravity Multiplier')
+    ) g
+    th.projectile.penslow(
+      title=t('table.th.prj', 'penslow', 'Penetration Slowdown')
+    ) PenSl
   each obj in objects
     tr.projectile-row
       td.projectile.idx= obj.idx
@@ -29,11 +51,22 @@ mixin projectiles(objects)
 
 mixin explosions(objects)
   tr.explosion-header
-    td.explosion.idx #
-    th.explosion.id ID
-    th.explosion.name Name
-    th.explosion.damageid(title="ID of damage row") Dmg
-    th.explosion.radius(colspan=3 title="Radius Inner/Outer/Non-Damage") Radius
+    td.explosion.idx(
+      title=t('table.th.aoe', 'idx', 'Internal order')
+    ) #
+    th.explosion.id(
+      title=t('table.th.aoe', 'id', 'ID of explosion data (hex)')
+    ) ID
+    th.explosion.name(
+      title=t('table.th.aoe', 'name', 'Translated name of AoE source')
+    ) Name
+    th.explosion.damageid(
+      title=t('table.th.aoe', 'damageid', 'ID of damage data used (hex)')
+    ) Dmg
+    th.explosion.radius(
+      title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
+      colspan=3
+    ) Radius
   each obj in objects
     tr.explosion-row
       td.explosion.idx= obj.idx
@@ -46,15 +79,36 @@ mixin explosions(objects)
 
 mixin damages(objects)
   tr.damage-header
-    td.damage.idx #
-    th.damage.id ID
-    th.damage.name Name
-    th.damage.dmg(colspan=3) Damage
-    th.damage.ap(title="Armor Penetrations" colspan=4) AP
-    th.damage.demo(title="Demolition Force") DF
-    th.damage.stun(title="Stagger Value") SV
-    th.damage.push(title="Push Force") PF
-    th.damage.effect(colspan=8) Effects
+    td.damage.idx(
+      title=t('table.th.dmg', 'idx', 'Internal order')
+    ) #
+    th.explosion.id(
+      title=t('table.th.dmg', 'id', 'ID of damage data (hex)')
+    ) ID
+    th.explosion.name(
+      title=t('table.th.dmg', 'name', 'Translated name of damage source')
+    ) Name
+    th.explosion.dmg(
+      title=t('table.th.dmg', 'dmgs3', 'Damage type / Base damage / Damage vs Massive')
+      colspan=3
+    ) Damage
+    th.explosion.ap(
+      title=t('table.th.dmg', 'ap', 'Armor Penetration, varies by context')
+      colspan=4
+    ) AP
+    th.explosion.demo(
+      title=t('table.th.dmg', 'demo', 'Demolition Force')
+    ) DF
+    th.explosion.stun(
+      title=t('table.th.dmg', 'stun', 'Stagger Value')
+    ) SV
+    th.explosion.push(
+      title=t('table.th.dmg', 'push', 'Push Force')
+    ) PF
+    th.explosion.effect(
+      title=t('table.th.dmg', 'effects8', 'Status Effects')
+      colspan=8
+    ) Effects
   each obj in objects
     tr.explosion-row
       td.damage.idx= obj.idx
