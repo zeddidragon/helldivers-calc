@@ -75,17 +75,17 @@ mixin damages(objects)
         td.damage.effect(class={muted: !func})= func
         td.damage.effect-param(class={muted: !func})= param
 
-header
-  label(for="lang-select")
-    select#lang-select(name="Lang" onchange="switchLang()")
-      each l in langs
-        option(value=l selected=(l === lang))= l
+header.menu
   if nerdScope
     nav.links
       ul
         each scope in nerdScopes
           li
             a(onclick=`switchScope('${scope}')`)= scope
+  .spacer
+  select.select#lang-select(name="Lang" onchange="switchLang()")
+    each l in langs
+      option(value=l selected=(l === lang))= l
 if nerdScope
   table
     if nerdScope === 'damages'
