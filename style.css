@@ -187,7 +187,7 @@ td.id:before, td.damageid:before, td.projectileid:before {
   color: #a98a98;
   content: "+";
 }
-.damage-x, .xdmg {
+.damage-x, .xdmg, .name .explosion-label {
   color: #ea8;
 }
 .demo-x:before, .stun-x:before, .push-x:before {

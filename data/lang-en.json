@@ -54,7 +54,7 @@
   "wpnname;G-3 Smoke": "Smoke",
   "wpnname;G-123 Thermite": "Thermite",
   "wpnname;Melee": "Melee",
-  "wpnname;Burn": "Burn",
+  "wpnname;Status Effects#Burn": "Burn Status",
   "table.th.wpn;idx": "Internal order",
   "table.th.wpn;source": "Where to obtain",
   "table.th.wpn;category": "Weapon Category",

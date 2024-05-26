@@ -351,7 +351,7 @@
       "magstart": 6,
       "supply": 8,
       "box": 4,
-      "projectileid": 114,
+      "projectileid": 36,
       "subattacks": [{"type": "explosion", "id": 192}]
     },
     {
@@ -410,7 +410,7 @@
       "magstart": 3,
       "supply": 6,
       "box": 3,
-      "projectileid": 114,
+      "projectileid": 92,
       "subattacks": [{"type": "explosion", "id": 79}]
     },
     {
@@ -427,7 +427,7 @@
       "magstart": 3,
       "supply": 6,
       "box": 3,
-      "projectileid": 114,
+      "projectileid": 93,
       "subattacks": [{"type": "explosion", "id": 192}]
     },
     {
@@ -853,7 +853,7 @@
     },
     {
       "category": "Misc",
-      "fullname": "Burn",
+      "fullname": "Status Effects#Burn",
       "source": "status",
       "damageid": "309"
     }

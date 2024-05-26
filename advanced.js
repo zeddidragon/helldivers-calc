@@ -94,6 +94,14 @@ window.locals = {
   allExplosion: () => {
     return data.explosions
   },
+  hasTag: (wpn, tag) => {
+    return wpn.tags?.includes(tag)
+  },
+  wikiLink: (wpn) => {
+    const url = 'https://helldivers.wiki.gg/wiki'
+    const path = wpn.fullname.split(/\s+/).join('_')
+    return `${url}/${path}`
+  },
   objects: (scope) => {
     let arr = locals[scope].slice()
     if(scope === 'weapons') {

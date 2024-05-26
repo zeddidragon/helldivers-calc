@@ -38,9 +38,25 @@ mixin weaponsRow(wpn, opts)
     if wpn.sourcepage
       span.source-page=wpn.sourcepage
   td.weapon.category(class=wpn.category)= wpn.category
-  td.weapon.code= wpn.code
-  td.weapon.name= wpn.name
-  td.weapon.rpm= wpn.rpm
+  td.weapon.code
+    if wpn.code
+      a(href=wikiLink(wpn) target="_blank")= wpn.code
+  td.weapon.name
+    if wpn.name
+      a(href=wikiLink(wpn) target="_blank")= wpn.name
+    else if wpn.explosion
+      span.weapon.explosion-label= t('table.td.dmg.label;explosion',  'Explosion')
+  td.weapon.rpm
+    if hasTag(wpn, 'laser')
+      span.rpm-laser Beam
+    if wpn.charge
+      span.rpm-charge(title="Charge time")
+        sup.one-over 1/
+        if wpn.chargeearly
+          span.charge-early= wpn.chargeearly
+        span= wpn.charge
+    else
+      span.rpm-main= wpn.rpm
   td.weapon.reload= wpn.reload
   td.cap= wpn.cap || wpn.limit
   td.capextra
