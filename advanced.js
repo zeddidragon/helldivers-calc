@@ -200,6 +200,25 @@ async function loadData() {
       r3: round(obj.r3),
     }
   })
+
+  const t = {}
+  function addT(scope, obj) {
+    const key = [
+      scope,
+      obj.enum,
+    ].join(';')
+    t[key] = obj.name
+  }
+  for(const x of locals.damages) {
+    addT('dmg', x)
+  }
+  for(const x of locals.explosions) {
+    addT('aoe', x)
+  }
+  for(const x of locals.projectiles) {
+    addT('prj', x)
+  }
+  window.translations = t
 }
 
 function sortBy(col) {
