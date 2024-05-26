@@ -39,6 +39,13 @@
       "name": "RL-77 Airburst Rocket Launcher",
       "source": "support",
       "projectileid": 205,
+      "subattacks": [{
+        "type": "explosion", "id": 172,
+      }, {
+        "type": "explosion", "id": 165,
+      }, {
+        "type": "explosion", "id": 3
+      }],
       "reload": 6.7,
       "cap": 1,
       "rounds": 5,
