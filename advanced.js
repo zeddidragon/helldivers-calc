@@ -79,7 +79,8 @@ window.locals = {
     'ru',
   ],
   colspans: {
-    weapons: 6,
+    damages: 18,
+    weapons: 11,
     explosions: 3,
     projectiles: 7,
   },
@@ -156,7 +157,7 @@ async function loadData() {
     mined,
     translations,
   ] = await Promise.all([
-    fetch(`data/manual.json`).then(res => res.json()),
+    fetch(`data/advanced.json`).then(res => res.json()),
     fetch(`data/datamined.json`).then(res => res.json()),
     fetch(`data/lang-${locals.lang}.json`)
       .then(res => res.json())
@@ -205,23 +206,29 @@ async function loadData() {
     explosion: explosions,
   }
   locals.weapons = data.weapons.map((wpn, idx) => {
-    const [, code, name] = /^(\w+-\d+\w+) (.*)$/.exec(wpn.name) || []
+    const [, code, name] = /^(\w+-\d+\w*) (.*)$/.exec(wpn.fullname) || []
     const projectile = projectiles[wpn.projectileid]
-    const damage = damages[projectile?.damageid]
+    const explosion = explosions[wpn.explosionid]
+    const dmgId = projectile?.damageid
+      || explosion?.damageid
+      || wpn.damageid
+    const damage = damages[dmgId]
     const subobjects = wpn.subattacks?.map(({ id, type }) => {
+      const obj = registers[type][id]
       return {
         type,
-        [type]: registers[type][id],
+        [type]: obj,
+        damage: damages[obj.damageid],
         weapon: wpn,
       }
     })
     return {
       idx,
       ...wpn,
-      coded: wpn.name,
-      name: t('wpnname', wpn.name, name),
+      name: t('wpnname', wpn.fullname, name),
       code,
       projectile,
+      explosion,
       damage,
       subobjects,
     }
@@ -238,7 +245,7 @@ function sortBy(col) {
 
 window.render = function render() {
   document.querySelector('body').innerHTML = template(locals)
-  const headers = document.querySelectorAll('th')
+  const headers = document.querySelectorAll('th:not(.th-groups)')
   for(const h of headers) {
     const prop = h.classList[1]
     if(prop === locals.sorting) {

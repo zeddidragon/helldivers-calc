@@ -28,19 +28,18 @@ mixin weaponsHeader
     title=t('table.th.wpn', 'spare4', 'Spare mags, clips, or rounds (start/max), and resupplied (supply/ammobox')
     colspan=2
   ) Reserves
-  +explosionsHeader()
   +damagesHeader()
   +projectilesHeader()
 
 mixin weaponsRow(wpn, opts)
-  - let obj  = wpn
   td.weapon.idx= wpn.idx
-  td.weapons.source
+  td.weapons.source(title=t('wpn.source.full', wpn.source))
+    span(class=wpn.source).source-main.source= t('wpn.source.label', wpn.source)
+    if wpn.sourcepage
+      span.source-page=wpn.sourcepage
   td.weapon.category(class=wpn.category)= wpn.category
-  if wpn.explosion
-    - obj = wpn.explosion
   td.weapon.code= wpn.code
-  td.weapon.name= obj.name
+  td.weapon.name= wpn.name
   td.weapon.rpm= wpn.rpm
   td.weapon.reload= wpn.reload
   td.cap= wpn.cap || wpn.limit
@@ -70,18 +69,16 @@ mixin weaponsRow(wpn, opts)
     if wpn.supply
       span.supply(title="Rounds From Supply")= wpn.supply
       span.box(title="Rounds From Box")= wpn.box
-  if wpn.explosion
-    +explosionsRow(wpn.explosion)
+  if wpn.damage
+    +damagesRow(wpn.damage, { explosive: !!wpn.explosion })
   else
-    td.filler(colspan=colspans.explosions)
-  if obj.damage
-    +damagesRow(obj.damage, { explosive: !!wpn.explosion })
+    td.damage-filler(colspan=colspans.damages)
+  if wpn.projectile
+    +projectilesRow(wpn.projectile)
+  else if wpn.explosion
+    +explosionsStubRow(wpn.explosion)
   else
-    td.filler(colspan=colspans.weapons)
-  if obj.projectile
-    +projectilesRow(obj.projectile)
-  else
-    td.filler(colspan=colspans.projectiles)
+    td.projectile-filler(colspan=colspans.projectiles)
 
 mixin projectilesHeader(opts = {})
   if opts.full
@@ -97,12 +94,12 @@ mixin projectilesHeader(opts = {})
     th.projectile.damageid(
       title=t('table.th.prj', 'damageid', 'ID of damage data used (hex)')
     ) Dmg
-  th.projectile.caliber(
-    title=t('table.th.prj', 'caliber', 'Caliber (mm)')
-  ) Cal
   th.projectile.pellets(
     title=t('table.th.prj', 'pellets', 'Pellet Count')
   )
+  th.projectile.caliber(
+    title=t('table.th.prj', 'caliber', 'Caliber (mm)')
+  ) Cal
   th.projectile.velocity(
     title=t('table.th.prj', 'velocity', 'Muzzle Velocity (m/s)')
   ) v
@@ -127,8 +124,8 @@ mixin projectilesRow(prj, opts = {})
     td.projectile.id= id(prj)
     td.projectile.name= prj.name
     td.projectile.damageid= id(prj, 'damageid')
-  td.projectile.caliber= prj.caliber
   td.projectile.pellets(class={ muted: prj.pellets < 2 })= prj.pellets
+  td.projectile.caliber= prj.caliber
   td.projectile.velocity= prj.velocity
   td.projectile.mass= prj.mass
   td.projectile.drag= prj.drag
@@ -153,6 +150,13 @@ mixin explosionsHeader(opts = {})
     title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
     colspan=3
   ) AoE
+
+mixin explosionsStubRow(exp, opts = {})
+  td.explosion.label(colspan=3)= t('table.td.aoe.label', 'radius', 'Radius')
+  td.explosion.radius.r1= exp.r1.toFixed(1)
+  td.explosion.radius.r2.rx= exp.r2.toFixed(1)
+  td.explosion.radius.r3.rx= exp.r3.toFixed(1)
+  td.explosion.filler(colspan=1)
 
 mixin explosionsRow(exp, opts = {})
   if opts.full
@@ -194,7 +198,7 @@ mixin damagesHeader(opts = {})
   ) PF
   th.damage.effect(
     title=t('table.th.dmg', 'effects8', 'Status Effects')
-    colspan=8
+    colspan=opts.effectsCount || 8
   ) Effects
 
 mixin damagesRow(dmg, opts = {})
@@ -240,6 +244,10 @@ header.menu
     each l in langs
       option(value=l selected=(l === lang))= l
 table
+  tr
+    th.th-groups(colspan=colspans.weapons) Weapon
+    th.th-groups(colspan=colspans.damages) Damage
+    th.th-groups(colspan=colspans.projectiles) Ballistics
   tr
     +#{`${scope}Header`}(full)
   each obj in objects(scope)
