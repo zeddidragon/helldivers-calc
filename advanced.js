@@ -90,7 +90,14 @@ window.locals = {
       locals.hideSources[source] ? 'hidden' : '',
     ]
   },
+  catClass: (cat) => {
+    return [
+      cat,
+      locals.hideCategories[cat] ? 'hidden' : '',
+    ]
+  },
   hideSources: {},
+  hideCategories: {},
   weaponCols: new Set('damage'),
   id: (obj, prop='id') => {
     const v = obj[prop]
@@ -113,7 +120,13 @@ window.locals = {
     let arr = locals[scope].slice()
     if(scope === 'weapons') {
       arr = arr.filter(wpn => {
-        return !locals.hideSources[wpn.source]
+        if(locals.hideSources[wpn.source]) {
+          return false
+        }
+        if(locals.hideCategories[wpn.category]) {
+          return false
+        }
+        return true
       })
       arr = arr.flatMap(wpn => {
         if(wpn.subobjects) {
@@ -251,6 +264,7 @@ async function loadData() {
       subobjects,
     }
   })
+  locals.cats = Array.from(new Set(locals.weapons.map(wpn => wpn.category)))
   locals.sources = data.sources.slice(0, -1)
   render()
 }
@@ -326,6 +340,14 @@ window.toggleSource = function toggleSource(source) {
     item: source,
     items: locals.sources,
     register: locals.hideSources,
+  })
+}
+
+window.toggleCategory = function toggleCategory(cat) {
+  toggleAction({
+    item: cat,
+    items: locals.cats,
+    register: locals.hideCategories,
   })
 }
 

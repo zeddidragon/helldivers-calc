@@ -37,7 +37,10 @@ mixin weaponsRow(wpn, opts)
     span(class=wpn.source).source-main.source= t('wpn.source.label', wpn.source)
     if wpn.sourcepage
       span.source-page=wpn.sourcepage
-  td.weapon.category(class=wpn.category)= wpn.category
+  td.weapon.category(
+    title=t('wpn.category.full', wpn.category)
+    class=wpn.category
+  )= t('wpn.category.label', wpn.category)
   td.weapon.code
     if wpn.code
       a(href=wikiLink(wpn) target="_blank")= wpn.code
@@ -268,6 +271,13 @@ header.menu
           title=t('wpn.source.full', source)
           onclick=`toggleSource('${source}')`
         )= t('wpn.source.label', source)
+    ul.categories
+      for cat in cats
+        li.category(
+          class=catClass(cat)
+          title=t('wpn.category.full', cat)
+          onclick=`toggleCategory('${cat}')`
+        )= t('wpn.category.label', cat)
   .spacer
   select.select#lang-select(name="Lang" onchange="switchLang()")
     each l in langs
