@@ -45,7 +45,7 @@ mixin weaponsRow(wpn, opts)
     if wpn.name
       a(href=wikiLink(wpn) target="_blank")= wpn.name
     else if wpn.explosion
-      span.weapon.explosion-label= t('table.td.dmg.label;explosion',  'Explosion')
+      span.weapon.explosion-label= t('table.td.dmg.label',  'explosion', 'Explosion')
   td.weapon.rpm
     if hasTag(wpn, 'laser')
       span.rpm-laser Beam
@@ -168,7 +168,10 @@ mixin explosionsHeader(opts = {})
   ) AoE
 
 mixin explosionsStubRow(exp, opts = {})
-  th.explosion.label(colspan=3)= t('table.td.aoe.label', 'radius', 'Radius')
+  th.explosion.label(
+    title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
+    colspan=3
+  )= t('table.td.aoe.label', 'radius', 'Radius')
   td.explosion.radius.r1= exp.r1.toFixed(1)
   td.explosion.radius.r2.rx= exp.r2.toFixed(1)
   td.explosion.radius.r3.rx= exp.r3.toFixed(1)
@@ -257,12 +260,14 @@ nav.links
     li
       a(href="https://helldivers.io/") helldivers.io
 header.menu
-  if nerdScope
-    nav.links
-      ul
-        each scope in nerdScopes
-          li
-            a(onclick=`switchScope('${scope}')`)= scope
+  .filters
+    ul.sources
+      for source in sources
+        li.source(
+          class=sourceClass(source)
+          title=t('wpn.source.full', source)
+          onclick=`toggleSource('${source}')`
+        )= t('wpn.source.label', source)
   .spacer
   select.select#lang-select(name="Lang" onchange="switchLang()")
     each l in langs

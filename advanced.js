@@ -84,6 +84,13 @@ window.locals = {
     explosions: 3,
     projectiles: 7,
   },
+  sourceClass: (source) => {
+    return [
+      source,
+      locals.hideSources[source] ? 'hidden' : '',
+    ]
+  },
+  hideSources: {},
   weaponCols: new Set('damage'),
   id: (obj, prop='id') => {
     const v = obj[prop]
@@ -105,6 +112,9 @@ window.locals = {
   objects: (scope) => {
     let arr = locals[scope].slice()
     if(scope === 'weapons') {
+      arr = arr.filter(wpn => {
+        return !locals.hideSources[wpn.source]
+      })
       arr = arr.flatMap(wpn => {
         if(wpn.subobjects) {
           return [wpn, ...wpn.subobjects]
@@ -241,6 +251,7 @@ async function loadData() {
       subobjects,
     }
   })
+  locals.sources = data.sources.slice(0, -1)
   render()
 }
 
@@ -253,7 +264,7 @@ function sortBy(col) {
 
 window.render = function render() {
   document.querySelector('body').innerHTML = template(locals)
-  const headers = document.querySelectorAll('th:not(.th-groups)')
+  const headers = document.querySelectorAll('th:not(.th-groups, .label)')
   for(const h of headers) {
     const prop = h.classList[1]
     if(prop === locals.sorting) {
@@ -265,6 +276,37 @@ window.render = function render() {
     chevron.textContent = '▼'
     h.appendChild(chevron)
   }
+}
+
+let doubleClickTime = 500
+let lastToggleTime = 0
+let lastToggleItem
+function toggleAction({
+  item,
+  items,
+  register,
+}) {
+  register[item] = !register[item]
+  const now = Date.now()
+  const diff = now - lastToggleTime
+  const isItem = lastToggleItem === item
+  lastToggleItem = item
+  lastToggleTime = now
+  const isDoubleClick = isItem && diff < doubleClickTime
+  const toggled = items
+    .filter(s => register[s])
+
+  if(toggled.length === items.length) {
+    for(const k of items) {
+      register[k] = false
+    }
+  } else if(isDoubleClick) {
+    for(const k of items) {
+      register[k] = true
+    }
+    register[item] = false
+  }
+  render()
 }
 
 window.switchScope = function switchScope(scope) {
@@ -279,5 +321,12 @@ window.switchLang = function switchLang(lang) {
   loadData()
 }
 
+window.toggleSource = function toggleSource(source) {
+  toggleAction({
+    item: source,
+    items: locals.sources,
+    register: locals.hideSources,
+  })
+}
 
 loadData()

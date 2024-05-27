@@ -69,7 +69,7 @@ tbody tr:nth-child(odd) {
   flex: 1;
 }
 
-th:not(.th-groups) {
+th:not(.th-groups, .label) {
   cursor: pointer;
   border-left: none;
   border-right: none;
