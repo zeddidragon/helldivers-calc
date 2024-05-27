@@ -6,19 +6,24 @@ const [header, ...rows] = data
   .split('\n')
   .map(r => r.split(','))
 
-const timestep = 1 / 60
+const timestep = 1 / 512
 function simulation({ cal, v, m: mass, drag }) {
   let distance = 0
-  const area = Math.PI * Math.pow(cal / 2000, 2)
-  const airFriction = 1.204
+  mass = mass / 1000
+  cal = cal / 1000
+  const baseEnergy = v * v / mass
+  const cb = (cal ** 2) * drag / mass
+  const area = (Math.PI * (cal * 0.5) ** 2)
   for(let distance = 0; distance < 100;) {
-    const dragForce = airFriction * drag * Math.pow(v, 2) * area
-    const v2 = v - 1000 * dragForce / mass * timestep
+    const dragForce = 0.5 * (v ** 2) * cb
+    const v2 = v - 0.5 * dragForce * timestep
     if(v2 < 0.1) return 0
     distance += (+v + +v2) * 0.5 * timestep
     v = v2
   }
-  return v
+  const energy = v * v / mass
+  const baseDmg = 10000
+  return Math.floor(baseDmg * energy / baseEnergy)
 }
 
 const hp = 20000
@@ -51,8 +56,9 @@ console.log(results.map(r => {
   return [
     `Cal: ${+cal}`,
     `Mass: ${+m}`,
+    `Drag ${drag}`,
     `Vel: ${+v}`,
-    `Vel2: ${v - +(v * ratio / 100).toFixed()}`,
+    `Dmg: ${dmg}`,
     `Sim: ${sim}`,
   ].map(v => v.padEnd(12)).join('')
 }).join('\n'))
