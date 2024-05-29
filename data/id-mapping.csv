@@ -1,36 +1,22 @@
 name,property,rowid
 AR-23 Liberator,damage,51
-AR-23 Liberator,ballistics,47
 AR-23P Liberator Penetrator,damage,48
-AR-23P Liberator Penetrator,ballistics,51
 AR-23C Liberator Concussive,damage,50
-AR-23C Liberator Concussive,ballistics,47
 AR-61 Tenderizer,damage,51
-AR-61 Tenderizer,ballistics,47
 BR-14 Adjudicator,damage,65
-BR-14 Adjudicator,ballistics,65
 R-63 Diligence,damage,73
-R-63 Diligence,ballistics,72
 R-63CS Diligence Counter Sniper,damage,74
-R-63CS Diligence Counter Sniper,ballistics,73
 SMG-37 Defender,damage,34
-SMG-37 Defender,ballistics,33
 SMG-72 Pummeler,damage,41
-SMG-72 Pummeler,ballistics,39
 MP-98 Knight,damage,26
-MP-98 Knight,ballistics,24
 SG-8 Punisher,damage,88
 SG-8S Slugger,damage,99
 SG-225 Breaker,damage,102
 SG-225SP Breaker Spray & Pray,damage,101
-SG-225SP Breaker Spray & Pray,ballistics,152
 SG-225IE Breaker Incendiary,damage,105
-SG-225IE Breaker Incendiary,ballistics,104
 CB-9 Exploding Crossbow,damage,124
 CB-9 Exploding Crossbow,xdamage,125
-CB-9 Exploding Crossbow,ballistics,121
 JAR-5 Dominator,damage,84
-JAR-5 Dominator,ballistics,79
 R-36 Eruptor,damage,80
 R-36 Eruptor,xdamage,205
 SG-8P Punisher Plasma,damage,20
@@ -80,5 +66,6 @@ G-16 Impact,xdamage,213
 G-13 Incendiary Impact,xdamage,203
 G-23 Stun,xdamage,169
 G-123 Thermite,xdamage,204
-Melee,damage,326
+Melee,damage,357
 Burn,damage,309
+Stomp,damage,357
