@@ -25,6 +25,9 @@ const Unknown = {
       .map(v => v.toString(16).padStart(2, '0'))
       .join('')
     hex = `0x${hex}`
+    if(debugUnknown && int === 0) {
+      return void 0
+    }
     if(debugUnknown) {
       return { float, int, hex }
     }
@@ -174,10 +177,10 @@ const damages = readData({
   schema: damageSchema,
 })
 
-function unknowns(from, to) {
+function unknowns(from, to, overrides = {}) {
   const obj = {}
   for(let i = from; i <= to; i++) {
-    obj[`unk${i}`] = Unknown
+    obj[`unk${i}`] = overrides[i] || Unknown
   }
   return obj
 }
@@ -211,10 +214,28 @@ const projectileSchema = {
   mass: Float,
   drag: Float,
   gravity: Float,
-  ...unknowns(13, 15),
+  ...unknowns(13, 15, {
+    13: Int,
+  }),
   damageid: Int,
   penslow: Float,
-  ...unknowns(18, 60),
+  ...unknowns(18, 46, {
+    35: Float,
+    38: Float,
+    39: Int,
+    42: Int,
+    43: Int,
+    44: Int,
+    45: Float,
+    46: Float,
+  }),
+  life: Float,
+  ...unknowns(48, 60, {
+    48: Float,
+    49: Float,
+    55: Int,
+    57: Int,
+  }),
 }
 
 const projectiles = readData({
