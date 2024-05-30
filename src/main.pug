@@ -82,34 +82,76 @@ mixin weaponsRow(wpn, opts)
         span= wpn.charge
     else
       span.rpm-main= wpn.rpm
-  td.weapon.reload= wpn.reload
-  td.cap= wpn.cap || wpn.limit
-  td.capextra
+  td.weapon.reload
+    if wpn.reloadone
+      span.reload-one(
+        title=t('table.td.reload', '1', "Reload 1 round")
+      )= wpn.reloadone.toFixed(1)
+    if wpn.reloadx
+      span.reload-x(
+        title=t('table.td.reload', 'x', `Reload max rounds`)
+      )= wpn.reloadx.toFixed(1)
+    if wpn.reload
+      span.reload-main(
+        title=t('table.td.reload', 'empty', "Reload from empty")
+      )= wpn.reload.toFixed(1)
+    if wpn.reloadearly
+      span.reload-early(
+        title=t('table.td.reload', 'early', "Early Reload (not empty)")
+      )= wpn.reloadearly.toFixed(1)
+  td.weapon.cap= wpn.cap || wpn.limit
+  td.weapon.capextra
     if wpn.limit
       span.cap-limit s
     else if wpn.capplus
       sup.cap-post.cap-plus= wpn.capplus
-  td.spare
+  td.wepaon.spare
     if wpn.clips
-      span.clipsize(title="Rounds in Clip")= wpn.clipsize
-      span.clipstart(title="Starting Clips")= wpn.clipstart
-      span.clips(title="Max Clips")= wpn.clips
+      span.clipsize(
+        title=t('table.td.spare', 'clipsize', "Rounds in Clip")
+      )= wpn.clipsize
+      span.clipstart(
+        title=t('table.td.spare', 'clipstart', "Starting Clips")
+      )= wpn.clipstart
+      span.clips(
+        title=t('table.td.spare', 'clipsize', "Max Clips")
+      )= wpn.clips
     if wpn.rounds
-      span.roundstart(title="Starting Rounds")= roundStart(wpn)
-      span.rounds(title="Max Spare Rounds")= wpn.rounds
+      span.roundstart(
+        title=t('table.td.spare', 'roundstart', "Starting Rounds")
+      )= roundStart(wpn)
+      span.rounds(
+        title=t('table.td.spare', 'rounds', "Max Spare Rounds")
+      )= wpn.rounds
     if wpn.mags
-      span.magstart(title="Starting Mags")= wpn.magstart || wpn.mags
-      span.mags(title="Max Mags")= wpn.mags
-  td.pickup
+      span.magstart(
+        title=t('table.td.spare', 'magstart', "Starting Mags")
+      )= wpn.magstart || wpn.mags
+      span.mags(
+        title=t('table.td.spare', 'mags', "Max Mags")
+      )= wpn.mags
+  td.weapon.pickup
     if wpn.clipsupply
-      span.clipsupply(title="Clips From Supply")= wpn.clipsupply
-      span.clipbox(title="Clips From Box")= wpn.clipbox
+      span.clipsupply(
+        title=t('table.td.pickup', 'clipsupply', "Clips From Supply")
+      )=wpn.clipsupply
+      span.clipbox(
+        title=t('table.td.pickup', 'clipbox', "Clips From Box")
+      )=wpn.clipbox
     if wpn.roundsupply
-      span.roundsupply(title="Rounds From Supply")= wpn.roundsupply
-      span.roundsbox(title="Rounds From Box")= wpn.roundsbox
+      span.roundsupply(
+        title=t('table.td.pickup', 'roundsupply', "Rounds From Supply")
+      )=wpn.roundsupply
+      span.roundsbox(
+        title=t('table.td.pickup', 'roundsbox', "Rounds From Box")
+      )=wpn.roundsbox
     if wpn.supply
-      span.supply(title="Rounds From Supply")= wpn.supply
-      span.box(title="Rounds From Box")= wpn.box
+      span.supply(
+        title=t('table.td.pickup', 'supply', "Mags From Supply")
+      )=wpn.supply
+      span.box(
+        title=t('table.td.pickup', 'box', "Mags From Box")
+      )=wpn.box
   if wpn.damage
     +damagesRow(wpn.damage, { explosive: !!wpn.explosion, apCount: 1, effectsCount: 1 })
   else
