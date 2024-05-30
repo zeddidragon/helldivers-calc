@@ -83,6 +83,7 @@ for(const wpn of weapons) {
         continue
       }
       wpn.ballisticid = ballistics.id
+      continue
       if(ballistics.pellets > 1) {
         wpn.pellets = ballistics.pellets
       }
@@ -131,6 +132,12 @@ for(const wpn of weapons) {
   delete wpn.xfloat1
   delete wpn.xunknown6
   delete wpn.xfloat2
+  delete wpn.ballisticid
+  delete wpn.caliber
+  delete wpn.velocity
+  delete wpn.bulletmass
+  delete wpn.drag
+  delete wpn.penslow
 }
 let keys = new Set(weapons.slice(1).map(w => Object.keys(w)).flat())
 

@@ -14,6 +14,12 @@ mixin weaponsHeader
   th.weapon.name(
     title=t('table.th.wpn', 'name', 'Name')
   ) Name
+  th.weapon.dmg(
+    title=t('table.th.dmg', 'dmgs3')
+  ) Damage
+  th.damage.ap(
+    title=t('table.th.dmg', 'ap')
+  ) AP
   th.weapon.rpm(
     title=t('table.th.wpn', 'rpm', 'Rate of fire (Rounds Per Minute)')
   ) RPM
@@ -28,7 +34,7 @@ mixin weaponsHeader
     title=t('table.th.wpn', 'spare4', 'Spare mags, clips, or rounds (start/max), and resupplied (supply/ammobox')
     colspan=2
   ) Reserves
-  +damagesHeader({ effectsCount: 1 })
+  +damagesHeader({ apCount: 1, effectsCount: 1 })
   +projectilesHeader()
 
 mixin weaponsRow(wpn, opts)
@@ -44,11 +50,26 @@ mixin weaponsRow(wpn, opts)
   td.weapon.code
     if wpn.code
       a(href=wikiLink(wpn) target="_blank")= wpn.code
-  td.weapon.name
+  td.weapon.name(class=`name-${wpn.type}`)
     if wpn.name
       a(href=wikiLink(wpn) target="_blank")= wpn.name
     else if wpn.explosion
-      span.weapon.explosion-label= t('table.td.dmg.label',  'explosion', 'Explosion')
+      span.weapon.name= t('table.td.dmg.label',  'explosion', 'Explosion')
+  - const dmg = wpn.damage || {}
+  td.weapon.dmg(class={ xdmg: !!wpn.explosion })
+    if dmg.type
+      span.dmgtype(
+        title=t('dmg.types.full', dmg.type)
+      )= t('dmg.types', dmg.type)
+    - const n = count(wpn)
+    if n > 1
+      span.pellets= n
+    if dmg.dmg
+      span.dmg-base= dmg.dmg
+    if dmg.mass < dmg.dmg
+      span.dmg-massive= dmg.mass
+  - let ap = dmg.ap1
+  td.damage.ap(class=`ap-${ap}`)= ap
   td.weapon.rpm
     if hasTag(wpn, 'laser')
       span.rpm-laser Beam
@@ -89,7 +110,7 @@ mixin weaponsRow(wpn, opts)
       span.supply(title="Rounds From Supply")= wpn.supply
       span.box(title="Rounds From Box")= wpn.box
   if wpn.damage
-    +damagesRow(wpn.damage, { explosive: !!wpn.explosion, effectsCount: 1 })
+    +damagesRow(wpn.damage, { explosive: !!wpn.explosion, apCount: 1, effectsCount: 1 })
   else
     td.damage-filler(colspan=colspans.damages - 6)
   if wpn.projectile
@@ -201,14 +222,15 @@ mixin damagesHeader(opts = {})
     th.damage.name(
       title=t('table.th.dmg', 'name', 'Translated name of damage source')
     ) Name
-  th.damage.dmg(
-    title=t('table.th.dmg', 'dmgs3', 'Damage type / Base damage / Damage vs Massive')
-    colspan=3
-  ) Damage
-  th.damage.ap(
-    title=t('table.th.dmg', 'ap', 'Armor Penetration, varies by context')
-    colspan=4
-  ) AP
+    th.damage.dmg(
+      title=t('table.th.dmg', 'dmgs3', 'Damage type / Base damage / Damage vs Massive')
+      colspan=3
+    ) Damage
+    - const apCount = opts.apCount || 4
+    th.damage.ap(
+      title=t('table.th.dmg', 'ap', 'Armor Penetration, varies by context')
+      colspan=apCount
+    ) AP
   th.damage.demo(
     title=t('table.th.dmg', 'demo', 'Demolition Force')
   ) DF
@@ -218,29 +240,33 @@ mixin damagesHeader(opts = {})
   th.damage.push(
     title=t('table.th.dmg', 'push', 'Push Force')
   ) PF
+  - const effectsCount = opts.effectsCount || 4
   th.damage.effect(
     title=t('table.th.dmg', 'effects8', 'Status Effects')
-    colspan=(opts.effectsCount || 4 ) * 2
+    colspan=effectsCount * 2
   ) FX
 
 mixin damagesRow(dmg, opts = {})
+  - let i
   if opts.full
     td.damage.idx= dmg.idx
     td.damage.id= id(dmg)
     td.damage.name= dmg.name
-  td.damage.dmgtype(
-    class={muted: !dmg.type },
-    title=t('dmg.types.full', dmg.type),
-  )= t('dmg.types', dmg.type)
-  td.damage.dmg(class={ xdmg: opts.explosive })= dmg.dmg
-  td.damage.massive(class={ xdmg: opts.explosive })= dmg.mass
-  each i in [1, 2, 3, 4]
-    - var ap = dmg[`ap${i}`]
-    td.damage.ap(class=`ap-${ap} ap-list-${i}`)= ap
+    td.damage.dmgtype(
+      class={muted: !dmg.type },
+      title=t('dmg.types.full', dmg.type),
+    )= t('dmg.types', dmg.type)
+    td.damage.dmg(class={ xdmg: opts.explosive })= dmg.dmg
+    td.damage.massive(class={ xdmg: opts.explosive })= dmg.mass
+    - i = 0
+    while i < (opts.apCount || 4)
+      - i++
+      - var ap = dmg[`ap${i}`]
+      td.damage.ap(class=`ap-${ap} ap-list-${i}`)= ap
   td.damage.demo(class={ xdemo: opts.explosive })= dmg.demo
   td.damage.stun(class={ xstun: opts.explosive })= dmg.stun
   td.damage.push(class={ xpush: opts.explosive })= dmg.push
-  - let i = 0
+  - i = 0
   while i < (opts.effectsCount || 4)
     - i++
     - var func = dmg[`func${i}`]
@@ -283,10 +309,6 @@ header.menu
     each l in langs
       option(value=l selected=(l === lang))= l
 table
-  tr
-    th.th-groups(colspan=colspans.weapons) Weapon
-    th.th-groups(colspan=colspans.damages - 6) Damage
-    th.th-groups(colspan=colspans.projectiles) Ballistics
   tr
     +#{`${scope}Header`}(full)
   each obj in objects(scope)

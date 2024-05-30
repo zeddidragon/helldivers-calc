@@ -126,7 +126,7 @@
   "table.th.dmg;dmg": "Base damage",
   "table.th.dmg;mass": "Damage vs Massive Parts",
   "table.th.dmg;dmgs2": "Base damage / Damage vs Massive",
-  "table.th.dmg;dmgs3": "Damage type / Base damage / Damage vs Massive",
+  "table.th.dmg;dmgs3": "Damage type, Base damage, Pellet Count x (Damage / Damage vs Massive)",
   "table.th.dmg;ap": "Armor Penetration, varies by context",
   "table.th.dmg;demo": "Demolition Force",
   "table.th.dmg;stun": "Stagger Value",

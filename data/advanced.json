@@ -14,7 +14,6 @@
       "category": "AR",
       "fullname": "AR-23 Liberator",
       "source": "start",
-      "ballisticid": 47,
       "rpm": 640,
       "recoil": 15,
       "reload": 3,
@@ -32,7 +31,6 @@
       "fullname": "AR-23P Liberator Penetrator",
       "source": "hd-mobilize",
       "sourcepage": 6,
-      "ballisticid": 51,
       "rpm": 640,
       "recoil": 19,
       "reload": 3,
@@ -50,7 +48,6 @@
       "fullname": "AR-23C Liberator Concussive",
       "source": "steel-vets",
       "sourcepage": 1,
-      "ballisticid": 47,
       "rpm": 320,
       "recoil": 28,
       "reload": 3,
@@ -68,7 +65,6 @@
       "fullname": "AR-61 Tenderizer",
       "source": "polar-pat",
       "sourcepage": 1,
-      "ballisticid": 47,
       "rpm": 600,
       "recoil": 10,
       "reload": 3.3,
@@ -86,7 +82,6 @@
       "fullname": "BR-14 Adjudicator",
       "source": "demo-det",
       "sourcepage": 1,
-      "ballisticid": 65,
       "rpm": 550,
       "recoil": 40,
       "reload": 3,
@@ -104,7 +99,6 @@
       "fullname": "R-63 Diligence",
       "source": "hd-mobilize",
       "sourcepage": 2,
-      "ballisticid": 72,
       "rpm": 350,
       "recoil": 35,
       "reload": 3,
@@ -122,7 +116,6 @@
       "fullname": "R-63CS Diligence Counter Sniper",
       "source": "hd-mobilize",
       "sourcepage": 7,
-      "ballisticid": 73,
       "rpm": 350,
       "recoil": 53,
       "reload": 3,
@@ -137,10 +130,26 @@
     },
     {
       "category": "SMG",
+      "fullname": "MP-98 Knight",
+      "source": "dlc-super",
+      "rpm": 1380,
+      "recoil": 20,
+      "reload": 2.5,
+      "reloadearly": 1.8,
+      "cap": 50,
+      "capplus": 1,
+      "mags": 7,
+      "magstart": 5,
+      "supply": 5,
+      "box": 2,
+      "tags": ["1h"],
+      "projectileid": 145
+    },
+    {
+      "category": "SMG",
       "fullname": "SMG-37 Defender",
       "source": "hd-mobilize",
       "sourcepage": 3,
-      "ballisticid": 33,
       "rpm": 520,
       "recoil": 10,
       "reload": 2.8,
@@ -159,7 +168,6 @@
       "fullname": "SMG-72 Pummeler",
       "source": "polar-pat",
       "sourcepage": 2,
-      "ballisticid": 39,
       "rpm": 475,
       "recoil": 10,
       "reload": 3,
@@ -172,24 +180,6 @@
       "box": 3,
       "tags": ["1h"],
       "projectileid": 103
-    },
-    {
-      "category": "SMG",
-      "fullname": "MP-98 Knight",
-      "source": "dlc-super",
-      "ballisticid": 24,
-      "rpm": 1380,
-      "recoil": 20,
-      "reload": 2.5,
-      "reloadearly": 1.7,
-      "cap": 50,
-      "capplus": 1,
-      "mags": 7,
-      "magstart": 5,
-      "supply": 5,
-      "box": 2,
-      "tags": ["1h"],
-      "projectileid": 145
     },
     {
       "category": "SG",
@@ -247,7 +237,6 @@
       "fullname": "SG-225SP Breaker Spray & Pray",
       "source": "hd-mobilize",
       "sourcepage": 9,
-      "ballisticid": 152,
       "rpm": 330,
       "recoil": 45,
       "reload": 3,
@@ -265,7 +254,6 @@
       "fullname": "SG-225IE Breaker Incendiary",
       "source": "steel-vets",
       "sourcepage": 2,
-      "ballisticid": 104,
       "rpm": 300,
       "recoil": 28,
       "reload": 2.5,
@@ -284,7 +272,6 @@
       "fullname": "CB-9 Exploding Crossbow",
       "source": "demo-det",
       "sourcepage": 3,
-      "ballisticid": 121,
       "xid": "125",
       "rpm": 50,
       "recoil": 35,
@@ -303,7 +290,6 @@
       "fullname": "JAR-5 Dominator",
       "source": "steel-vets",
       "sourcepage": 3,
-      "ballisticid": 79,
       "rpm": 250,
       "recoil": 75,
       "reload": 3.8,
@@ -735,8 +721,8 @@
       "projectileid": 205,
       "subattacks": [
         {"type": "explosion", "id": 172},
-        {"type": "explosion", "id": 165},
-        {"type": "explosion", "id": 3}
+        {"type": "explosion", "id": 165, "count": 8, "name": true},
+        {"type": "explosion", "id": 3, "count": 8, "name": true}
       ]
     },
     {
@@ -763,7 +749,10 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "explosionid": 136
+      "explosionid": 136,
+      "subattacks": [
+        {"type": "projectile", "name": true, "id": 135, "count": 30}
+      ]
     },
     {
       "category": "GR",
@@ -849,7 +838,7 @@
       "category": "Misc",
       "fullname": "Melee",
       "source": "start",
-      "damageid": "326"
+      "damageid": "357"
     },
     {
       "category": "Misc",

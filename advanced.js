@@ -84,6 +84,12 @@ window.locals = {
     explosions: 3,
     projectiles: 7,
   },
+  count: (wpn) => {
+    if(wpn.count) {
+      return wpn.count
+    }
+    return wpn.projectile?.pellets
+  },
   sourceClass: (source) => {
     return [
       source,
@@ -244,11 +250,17 @@ async function loadData() {
       || explosion?.damageid
       || wpn.damageid
     const damage = damages[dmgId]
-    const subobjects = wpn.subattacks?.map(({ id, type }) => {
+    const subobjects = wpn.subattacks?.map(({ id, type, count, name }) => {
       const obj = registers[type][id]
+      if(name === true) {
+        name = obj.name
+      }
       return {
         type,
         [type]: obj,
+        count,
+        name,
+        fullname: wpn.fullname,
         damage: damages[obj.damageid],
         weapon: wpn,
       }

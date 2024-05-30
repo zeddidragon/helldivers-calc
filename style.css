@@ -187,10 +187,13 @@ td.id:before, td.damageid:before, td.projectileid:before {
   color: #a98a98;
   content: "+";
 }
-.damage-x, .xdmg, .name .explosion-label {
+.damage-x, .xdmg, .name.name-explosion {
   color: #ea8;
 }
-.demo-x:before, .stun-x:before, .push-x:before {
+.name.name-projectile {
+  color: #fafafa;
+}
+.demo-x:before, .stun-x:before, .push-x:before, .dmg-massive:before {
   color: #a98a98;
   content: "/";
 }
