@@ -284,7 +284,7 @@ async function loadData() {
       || explosion?.damageid
       || wpn.damageid
     const damage = damages[dmgId]
-    const count = wpn.count || 1
+    const count = wpn.count || projectile?.pellets || 1
     let totaldmg = count * (damage?.dmg || 0)
     let totaldmg2 = count * (damage?.mass || 0)
     const subobjects = wpn.subattacks?.map(({ id, type, count, name }) => {
