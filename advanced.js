@@ -4,7 +4,10 @@ function val(obj, prop) {
 
 function sorting(col) {
   let dir = -1
-  if(['idx', 'id', 'damageid', 'code', 'name'].includes(col)) {
+  if(col === 'category') {
+    col = 'idx'
+  }
+  if(['idx', 'id', 'damageid', 'code', 'name', 'source'].includes(col)) {
     dir = 1
   }
 
@@ -26,14 +29,24 @@ function sorting(col) {
     return (val(a, prop) - val(b, prop)) * dir
   }
 
+  if(col === 'source') {
+    return function sourceSort(a, b) {
+      return compare(a, b, 'sourceidx') || compare(a, b, 'sourcepage') || idxSort(a, b)
+    }
+  }
   if(col === 'damage') {
     return function dmgSort(a, b) {
-      return compare(a, b, 'totaldmg') || compare(a, b, 'totalmass') || idxSort(a, b)
+      return compare(a, b, 'totaldmg') || compare(a, b, 'totaldmg2') || idxSort(a, b)
     }
   }
   if(col === 'dmg') {
     return function dmgSort(a, b) {
-      return compare(a, b, 'dmg') || compare(a, b, 'mass') || idxSort(a, b)
+      return compare(a, b, 'dmg') || compare(a, b, 'dmg2') || idxSort(a, b)
+    }
+  }
+  if(col === 'rpm') {
+    return function dmgSort(a, b) {
+      return (effectiveRpm(a) - effectiveRpm(b)) * dir || idxSort(a, b)
     }
   }
   if(col === 'ap') {
@@ -68,6 +81,22 @@ function sorting(col) {
   return function defaultSort(a, b) {
     return compare(a, b, col) || idxSort(a, b)
   }
+}
+
+function effectiveRpm(wpn) {
+  if(wpn.tags?.includes('laser')) {
+    return Infinity
+  }
+  if(wpn.rpm) {
+    return wpn.rpm
+  }
+  if(wpn.charge) {
+    return 60 / wpn.charge
+  }
+  if(wpn.reload) {
+    return 60 / wpn.reload
+  }
+  return 0
 }
 
 window.translations = {}
@@ -257,13 +286,13 @@ async function loadData() {
     const damage = damages[dmgId]
     const count = wpn.count || 1
     let totaldmg = count * (damage?.dmg || 0)
-    let totalmass = count * (damage?.mass || 0)
+    let totaldmg2 = count * (damage?.mass || 0)
     const subobjects = wpn.subattacks?.map(({ id, type, count, name }) => {
       const obj = registers[type][id]
       const damage = damages[obj.damageid]
       const n = (count || obj.pellets || 1)
       totaldmg += n * (damage?.dmg || 0)
-      totaldmg += n * (damage?.mass || 0)
+      totaldmg2 += n * (damage?.dmg2 || 0)
       name = obj.name
       return {
         type,
@@ -281,7 +310,9 @@ async function loadData() {
       idx,
       ...wpn,
       name: t('wpnname', wpn.fullname, name),
+      sourceidx: (data.sources.indexOf(wpn.source) + 1) || Infinity,
       totaldmg,
+      totaldmg2,
       code,
       projectile,
       explosion,
