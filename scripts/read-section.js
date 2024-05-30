@@ -45,7 +45,7 @@ function hexString(buf) {
 
 const damageSearch = {
   dmg: Int,
-  mass: Int,
+  dmg2: Int,
   ap1: Int,
   ap2: Int,
   ap3: Int,

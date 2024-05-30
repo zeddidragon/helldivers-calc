@@ -14,7 +14,7 @@ mixin weaponsHeader
   th.weapon.name(
     title=t('table.th.wpn', 'name', 'Name')
   ) Name
-  th.weapon.dmg(
+  th.weapon.damage(
     title=t('table.th.dmg', 'dmgs3')
     colspan=3
   ) Damage
@@ -67,8 +67,8 @@ mixin weaponsRow(wpn, opts)
   td.weapon.dmg(class={ xdmg: !!wpn.explosion })
     if dmg.dmg
       span.dmg-base= dmg.dmg
-    if dmg.mass < dmg.dmg
-      span.dmg-massive= dmg.mass
+    if dmg.dmg2 < dmg.dmg
+      span.dmg-massive= dmg.dmg2
   - let ap = dmg.ap1
   td.damage.ap(class=`ap-${ap}`)= ap
   td.weapon.rpm

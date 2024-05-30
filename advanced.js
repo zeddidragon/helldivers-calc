@@ -4,7 +4,7 @@ function val(obj, prop) {
 
 function sorting(col) {
   let dir = -1
-  if(['idx', 'id', 'damageid', 'name'].includes(col)) {
+  if(['idx', 'id', 'damageid', 'code', 'name'].includes(col)) {
     dir = 1
   }
 
@@ -12,9 +12,9 @@ function sorting(col) {
     return a.id - b.id
   }
 
-  if(col === 'name') {
+  if(col === 'name' || col === 'code') {
     return function sortByName(a, b) {
-      const diff = (a.name || '').localeCompare(b.name || '') * dir
+      const diff = (a[col] || '').localeCompare(b[col] || '') * dir
       if(diff) return diff
       const enumDiff = (a.enum || '').localeCompare(b.enum || '') * dir
       if(enumDiff) return enumDiff
@@ -26,6 +26,11 @@ function sorting(col) {
     return (val(a, prop) - val(b, prop)) * dir
   }
 
+  if(col === 'damage') {
+    return function dmgSort(a, b) {
+      return compare(a, b, 'totaldmg') || compare(a, b, 'totalmass') || idxSort(a, b)
+    }
+  }
   if(col === 'dmg') {
     return function dmgSort(a, b) {
       return compare(a, b, 'dmg') || compare(a, b, 'mass') || idxSort(a, b)
@@ -123,7 +128,7 @@ window.locals = {
     return `${url}/${path}`
   },
   objects: (scope) => {
-    let arr = locals[scope].slice()
+    let arr = sorted(locals[scope].slice())
     if(scope === 'weapons') {
       arr = arr.filter(wpn => {
         if(locals.hideSources[wpn.source]) {
@@ -250,8 +255,15 @@ async function loadData() {
       || explosion?.damageid
       || wpn.damageid
     const damage = damages[dmgId]
+    const count = wpn.count || 1
+    let totaldmg = count * (damage?.dmg || 0)
+    let totalmass = count * (damage?.mass || 0)
     const subobjects = wpn.subattacks?.map(({ id, type, count, name }) => {
       const obj = registers[type][id]
+      const damage = damages[obj.damageid]
+      const n = (count || obj.pellets || 1)
+      totaldmg += n * (damage?.dmg || 0)
+      totaldmg += n * (damage?.mass || 0)
       name = obj.name
       return {
         type,
@@ -259,14 +271,17 @@ async function loadData() {
         count,
         name,
         fullname: wpn.fullname,
-        damage: damages[obj.damageid],
+        damage,
         weapon: wpn,
       }
     })
     return {
+      ...(projectile || {}),
+      ...(damage || {}),
       idx,
       ...wpn,
       name: t('wpnname', wpn.fullname, name),
+      totaldmg,
       code,
       projectile,
       explosion,
