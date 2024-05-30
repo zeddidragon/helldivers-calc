@@ -16,6 +16,7 @@ mixin weaponsHeader
   ) Name
   th.weapon.dmg(
     title=t('table.th.dmg', 'dmgs3')
+    colspan=3
   ) Damage
   th.damage.ap(
     title=t('table.th.dmg', 'ap')
@@ -56,14 +57,14 @@ mixin weaponsRow(wpn, opts)
     else if wpn.explosion
       span.weapon.name= t('table.td.dmg.label',  'explosion', 'Explosion')
   - const dmg = wpn.damage || {}
-  td.weapon.dmg(class={ xdmg: !!wpn.explosion })
+  td.weapon.type(class={ xdmg: !!wpn.explosion })
     if dmg.type
       span.dmgtype(
         title=t('dmg.types.full', dmg.type)
       )= t('dmg.types', dmg.type)
-    - const n = count(wpn)
-    if n > 1
-      span.pellets= n
+  - const n = count(wpn)
+  td.weapon.pellets(class={ muted: n == 1, blank: !n })= n
+  td.weapon.dmg(class={ xdmg: !!wpn.explosion })
     if dmg.dmg
       span.dmg-base= dmg.dmg
     if dmg.mass < dmg.dmg
@@ -112,7 +113,7 @@ mixin weaponsRow(wpn, opts)
   if wpn.damage
     +damagesRow(wpn.damage, { explosive: !!wpn.explosion, apCount: 1, effectsCount: 1 })
   else
-    td.damage-filler(colspan=colspans.damages - 6)
+    td.damage-filler(colspan=colspans.damages)
   if wpn.projectile
     +projectilesRow(wpn.projectile)
   else if wpn.explosion
@@ -192,7 +193,7 @@ mixin explosionsHeader(opts = {})
   ) AoE
 
 mixin explosionsStubRow(exp, opts = {})
-  th.explosion.label(
+  td.explosion.label(
     title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
     colspan=2
   )= t('table.td.aoe.label', 'radius', 'Radius')
@@ -314,3 +315,7 @@ table
   each obj in objects(scope)
     tr
       +#{`${scope}Row`}(obj)
+ul
+  li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
+  li Starting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.
+  li Laser weapons can't actually set things on fire. The data may be there to make the corpses burn.

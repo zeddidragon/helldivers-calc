@@ -79,10 +79,10 @@ window.locals = {
     'ru',
   ],
   colspans: {
-    damages: 18,
+    damages: 5,
     weapons: 11,
     explosions: 3,
-    projectiles: 7,
+    projectiles: 6,
   },
   count: (wpn) => {
     if(wpn.count) {
@@ -252,9 +252,7 @@ async function loadData() {
     const damage = damages[dmgId]
     const subobjects = wpn.subattacks?.map(({ id, type, count, name }) => {
       const obj = registers[type][id]
-      if(name === true) {
-        name = obj.name
-      }
+      name = obj.name
       return {
         type,
         [type]: obj,

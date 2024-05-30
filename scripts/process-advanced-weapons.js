@@ -74,13 +74,14 @@ const overrides = {
       "type": "explosion",
       "id": 0xA5,
       "count": 8,
-      "name": true,
     }, {
       "type": "explosion",
       "id": 0x3,
       "count": 8,
-      "name": true,
     }],
+  },
+  "ARC-12 Blitzer": {
+    "count": 5,
   },
   "PLAS-1 Scorcher": {
     "projectileid": 0x5C,
@@ -94,7 +95,6 @@ const overrides = {
   "G-6 Frag": {
     "subattacks": [{
       "type": "projectile",
-      "name": true,
       "id": 0x87,
       "count": 30,
     }]

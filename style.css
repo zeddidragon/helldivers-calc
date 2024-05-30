@@ -39,7 +39,7 @@ header {
 }
 
 table, th, td {
-  border: 1px solid #4e5d6f;
+  border: none;
   border-collapse: collapse;
 }
 
@@ -81,7 +81,10 @@ td.damage.effect,
 td.damage.effect-param,
 td.damage.dmgtype,
 td.damage.dmg,
-td.damage.massive
+td.damage.massive,
+td.weapon.type,
+td.weapon.pellets,
+td.weapon.dmg,
 {
   border-left: thin solid #4e566f7f;
   border-right: none;
@@ -91,6 +94,9 @@ td.damage.massive
 
 td.damage.ap.ap-list-1, td.explosion.radius.r1, td.effect.effect1 {
   padding-left: 0.2em;
+}
+td.explosion.label {
+  color: #a98a98;
 }
 
 td.code {
@@ -245,7 +251,7 @@ td.effect-param:after {
   opacity: 0.5;
 }
 
-.pellets:after {
+.pellets:not(.blank):after {
   color: #a98a98;
   content: "×";
 }

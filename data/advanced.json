@@ -347,7 +347,8 @@
       "sourcepage": 3,
       "rpm": 45,
       "recoil": 60,
-      "damageid": "117"
+      "damageid": "117",
+      "count": 5
     },
     {
       "category": "NRG",
@@ -594,7 +595,7 @@
       "cap": 7,
       "capplus": 1,
       "mags": 6,
-      "magstart": 5,
+      "magstart": 4,
       "supply": 3,
       "box": 1,
       "projectileid": 151
@@ -721,8 +722,8 @@
       "projectileid": 205,
       "subattacks": [
         {"type": "explosion", "id": 172},
-        {"type": "explosion", "id": 165, "count": 8, "name": true},
-        {"type": "explosion", "id": 3, "count": 8, "name": true}
+        {"type": "explosion", "id": 165, "count": 8},
+        {"type": "explosion", "id": 3, "count": 8}
       ]
     },
     {
@@ -750,9 +751,7 @@
       "roundsupply": 4,
       "roundsbox": 2,
       "explosionid": 136,
-      "subattacks": [
-        {"type": "projectile", "name": true, "id": 135, "count": 30}
-      ]
+      "subattacks": [{"type": "projectile", "id": 135, "count": 30}]
     },
     {
       "category": "GR",
