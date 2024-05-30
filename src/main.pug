@@ -134,9 +134,9 @@ mixin projectilesHeader(opts = {})
     th.projectile.damageid(
       title=t('table.th.prj', 'damageid', 'ID of damage data used (hex)')
     ) Dmg
-  th.projectile.pellets(
-    title=t('table.th.prj', 'pellets', 'Pellet Count')
-  )
+    th.projectile.pellets(
+      title=t('table.th.prj', 'pellets', 'Pellet Count')
+    )
   th.projectile.caliber(
     title=t('table.th.prj', 'caliber', 'Caliber (mm)')
   ) Cal
@@ -164,7 +164,7 @@ mixin projectilesRow(prj, opts = {})
     td.projectile.id= id(prj)
     td.projectile.name= prj.name
     td.projectile.damageid= id(prj, 'damageid')
-  td.projectile.pellets(class={ muted: prj.pellets < 2 })= prj.pellets
+    td.projectile.pellets(class={ muted: prj.pellets < 2 })= prj.pellets
   td.projectile.caliber= prj.caliber
   td.projectile.velocity= prj.velocity
   td.projectile.mass= prj.mass
@@ -194,7 +194,7 @@ mixin explosionsHeader(opts = {})
 mixin explosionsStubRow(exp, opts = {})
   th.explosion.label(
     title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
-    colspan=3
+    colspan=2
   )= t('table.td.aoe.label', 'radius', 'Radius')
   td.explosion.radius.r1= exp.r1.toFixed(1)
   td.explosion.radius.r2.rx= exp.r2.toFixed(1)

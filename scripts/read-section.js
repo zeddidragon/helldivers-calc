@@ -219,7 +219,7 @@ const projectileSchema = {
   }),
   damageid: Int,
   penslow: Float,
-  ...unknowns(18, 46, {
+  ...unknowns(18, 60, {
     35: Float,
     38: Float,
     39: Int,
@@ -228,9 +228,7 @@ const projectileSchema = {
     44: Int,
     45: Float,
     46: Float,
-  }),
-  life: Float,
-  ...unknowns(48, 60, {
+    47: Float,
     48: Float,
     49: Float,
     55: Int,
