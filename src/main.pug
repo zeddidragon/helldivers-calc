@@ -1,16 +1,17 @@
 mixin weaponsHeader
   th.weapon.idx(
     title=t('table.th.wpn', 'idx', 'Internal order')
- ) #
-  th.weapons.source(
-    title=t('table.th.wpn', 'source', 'Where to obtain')
-  ) Source
-  th.weapon.category(
-    title=t('table.th.wpn', 'category', 'Weapon Category')
-  ) Type
-  th.weapon.code(
-    title=t('table.th.wpn', 'code', 'Military code')
-  ) Code
+  ) #
+  if !hideHeaders.weapon
+    th.weapons.source(
+      title=t('table.th.wpn', 'source', 'Where to obtain')
+    ) Source
+    th.weapon.category(
+      title=t('table.th.wpn', 'category', 'Weapon Category')
+    ) Type
+    th.weapon.code(
+      title=t('table.th.wpn', 'code', 'Military code')
+    ) Code
   th.weapon.name(
     title=t('table.th.wpn', 'name', 'Name')
   ) Name
@@ -43,17 +44,18 @@ mixin weaponsHeader
 
 mixin weaponsRow(wpn, opts)
   td.weapon.idx= wpn.idx
-  td.weapons.source(title=t('wpn.source.full', wpn.source))
-    span(class=wpn.source).source-main.source= t('wpn.source.label', wpn.source)
-    if wpn.sourcepage
-      span.source-page=wpn.sourcepage
-  td.weapon.category(
-    title=t('wpn.category.full', wpn.category)
-    class=wpn.category
-  )= t('wpn.category.label', wpn.category)
-  td.weapon.code
-    if wpn.code
-      a(href=wikiLink(wpn) target="_blank")= wpn.code
+  if !hideHeaders.weapon
+    td.weapons.source(title=t('wpn.source.full', wpn.source))
+      span(class=wpn.source).source-main.source= t('wpn.source.label', wpn.source)
+      if wpn.sourcepage
+        span.source-page=wpn.sourcepage
+    td.weapon.category(
+      title=t('wpn.category.full', wpn.category)
+      class=wpn.category
+    )= t('wpn.category.label', wpn.category)
+    td.weapon.code
+      if wpn.code
+        a(href=wikiLink(wpn) target="_blank")= wpn.code
   td.weapon.name(class=`name-${wpn.type}`)
     if wpn.name
       a(href=wikiLink(wpn) target="_blank")= wpn.name
