@@ -24,7 +24,7 @@
   "wpn.header.full;dps": "Статиска урона в секунду",
   "wpn.header.label;dps": "DPS",
   "wpn.header.full;dps2": "Статиска урона в секунду по массивным частям",
-  "wpn.header.label;dps2": "DPS МЧ",
+  "wpn.header.label;dps2": "DPS(МЧ)",
   "table.td.spare;magstart": "Изначально магазинов",
   "table.td.spare;mags": "Максимально магазинов",
   "table.td.pickup;supply": "Магазинов из припасов",
