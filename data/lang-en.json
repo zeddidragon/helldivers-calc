@@ -13,6 +13,8 @@
   "nav.scopes.label;projectiles": "Prj",
   "nav.scopes.full;explosions": "Explosion Data",
   "nav.scopes.label;explosions": "AoE",
+  "nav.langs.full;en": "English",
+  "nav.langs.full;ru": "Russian",
   "wpn.header.full;weapon": "Weapon Data",
   "wpn.header.label;weapon": "Wpn",
   "wpn.header.full;damage": "Damage data",

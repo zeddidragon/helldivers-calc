@@ -405,6 +405,14 @@ nav.links
       a(href="https://helldivers.wiki.gg")= t('nav.links', 'wiki', 'Helldivers Wiki')
     li
       a(href="https://helldivers.io/")= t('nav.links', 'io', 'helldivers.io')
+    li.spacer
+    li
+      ul.langs
+        for l in langs
+          li.lang(
+            onclick=`switchLang('${l}')`
+            title=t('nav.langs.full', l)
+          )= l
 header.menu
   .filters
     if scope === 'weapons'
@@ -432,15 +440,6 @@ header.menu
               title=t('wpn.header.full', h)
               onclick=`toggleHeader('${h}')`
             )= t('wpn.header.label', h)
-    else
-      .filter-row
-        ul.scopes
-          for scope in scopes
-            li.scope(
-              class=scopeClass(scope)
-              title=t('nav.scopes.full', scope)
-              onclick=`toggleScope('${scope}')`
-            )= t('nav.scopes.label', scope)
       if nerdMode
         ul
           li=t('explanations', 'nerdModeSpoilers', 'Here there be spoilers.')
@@ -455,9 +454,6 @@ header.menu
         | 🤓
       else
         | Nerd Mode
-    select.select#lang-select(name="Lang" onchange="switchLang()")
-      for l in langs
-        option(value=l selected=(l === lang))= l
 table
   tr
     +#{`${scope}Header`}(full)

@@ -274,7 +274,6 @@ function t(namespace, key, fallback, l = locals.lang) {
 window.t = t
 
 async function loadData() {
-  readState()
   const [
     manual,
     mined,
@@ -540,7 +539,7 @@ function writeState() {
     states.push(`lang=${locals.lang}`)
   }
   try {
-    window.location.hash = states.sort().join('&')
+    window.location.hash = '#' + states.sort().join('&')
   } catch(err) {
     console.warn(err)
   }
@@ -590,8 +589,8 @@ function readState() {
 
 
 window.switchLang = function switchLang(lang) {
-  const langSel = document.getElementById('lang-select')
-  locals.lang = langSel.value
+  locals.lang = lang
+  writeState()
   loadData()
 }
 
@@ -621,16 +620,17 @@ window.toggleHeader = function toggleHeader(h) {
 
 window.toggleNerdMode = function toggleNerdMode() {
   if(locals.scope === 'weapons') {
-    toggleScope('projectiles')
+    switchScope('projectiles')
   } else {
-    toggleScope('weapons')
+    switchScope('weapons')
   }
 }
 
-window.toggleScope = function toggleScope(scope) {
+window.switchScope = function switchScope(scope) {
   locals.scope = scope
   writeState()
   render()
 }
 
+readState()
 loadData()

@@ -294,7 +294,7 @@ td.effect-param:after {
   display: flex;
 }
 
-ul.sources, ul.categories, ul.colfilters, ul.scopes {
+ul.sources, ul.categories, ul.colfilters, ul.scopes, ul.langs {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -302,7 +302,7 @@ ul.sources, ul.categories, ul.colfilters, ul.scopes {
   margin: 0.2em;
 }
 
-.sources .source, .categories .category, .colfilter, .scope {
+.sources .source, .categories .category, .colfilter, .scope, li.lang {
   width: 4em;
   cursor: pointer;
 }
