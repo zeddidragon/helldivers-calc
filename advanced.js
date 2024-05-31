@@ -118,6 +118,9 @@ function sorted(arr) {
 }
 
 window.locals = {
+  get nerdMode() {
+    return locals.scope !== 'weapons'
+  },
   sorting: 'idx',
   lang: 'en',
   langs: [
@@ -129,6 +132,9 @@ window.locals = {
     weapons: 11,
     explosions: 3,
     projectiles: 6,
+  },
+  full: {
+    full: true,
   },
   count: (wpn) => {
     if(wpn.count) {
@@ -152,6 +158,12 @@ window.locals = {
     return [
       h,
       locals.hideHeaders[h] ? 'hidden' : '',
+    ]
+  },
+  scopeClass: (scope) => {
+    return [
+      scope,
+      locals.scope === scope ? 'selected' : '',
     ]
   },
   hideSources: {},
@@ -205,7 +217,7 @@ window.locals = {
     return arr
   },
   scope: 'weapons',
-  nerdScopes: [
+  scopes: [
     'damages',
     'projectiles',
     'explosions',
@@ -520,6 +532,20 @@ window.toggleHeader = function toggleHeader(h) {
     items: locals.headers,
     register: locals.hideHeaders,
   })
+}
+
+window.toggleNerdMode = function toggleNerdMode() {
+  if(locals.scope === 'weapons') {
+    toggleScope('projectiles')
+  } else {
+    toggleScope('weapons')
+  }
+  render()
+}
+
+window.toggleScope = function toggleScope(scope) {
+  locals.scope = scope
+  render()
 }
 
 loadData()

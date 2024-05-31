@@ -10,6 +10,11 @@ nav ul {
   flex-wrap: wrap;
 }
 
+.side-menu {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-selected {
   border-bottom: thin solid;
 }
@@ -289,7 +294,7 @@ td.effect-param:after {
   display: flex;
 }
 
-ul.sources, ul.categories, ul.colfilters {
+ul.sources, ul.categories, ul.colfilters, ul.scopes {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -297,7 +302,7 @@ ul.sources, ul.categories, ul.colfilters {
   margin: 0.2em;
 }
 
-.sources .source, .categories .category, .colfilter {
+.sources .source, .categories .category, .colfilter, .scope {
   width: 4em;
   cursor: pointer;
 }

@@ -271,7 +271,7 @@ mixin projectilesRow(prj, opts = {})
 
 mixin explosionsHeader(opts = {})
   if opts.full
-    td.explosion.idx(
+    th.explosion.idx(
       title=t('table.th.aoe', 'idx', 'Internal order')
     ) #
     th.explosion.id(
@@ -315,7 +315,7 @@ mixin explosionsRow(exp, opts = {})
 
 mixin damagesHeader(opts = {})
   if opts.full
-    td.damage.idx(
+    th.damage.idx(
       title=t('table.th.dmg', 'idx', 'Internal order')
     ) #
   if opts.full || showIds
@@ -388,51 +388,72 @@ mixin damagesRow(dmg, opts = {})
 nav.links
   ul
     li
-      a(href="/") Earth Defense Force
+      a(href="/")= t('nav.links', 'edf', 'Earth Defense Force')
     li.nav-selected
-      a(href="/helldivers-2") Helldivers 2
+      a(href="/helldivers-2")= t('nav.links', 'self', 'Helldivers 2')
     li |
     li
-      a(href="https://helldivers.wiki.gg") Helldivers Wiki
+      a(href="https://helldivers.wiki.gg")= t('nav.links', 'wiki', 'Helldivers Wiki')
     li
-      a(href="https://helldivers.io/") helldivers.io
+      a(href="https://helldivers.io/")= t('nav.links', 'io', 'helldivers.io')
 header.menu
   .filters
-    .filter-row
-      ul.sources
-        for source in sources
-          li.source(
-            class=sourceClass(source)
-            title=t('wpn.source.full', source)
-            onclick=`toggleSource('${source}')`
-          )= t('wpn.source.label', source)
-    .filter-row
-      ul.categories
-        for cat in cats
-          li.category(
-            class=catClass(cat)
-            title=t('wpn.category.full', cat)
-            onclick=`toggleCategory('${cat}')`
-          )= t('wpn.category.label', cat)
-      .divider |
-      ul.colfilters
-        for h in headers
-          li.colfilter(
-            class=headerClass(h)
-            title=t('wpn.header.full', h)
-            onclick=`toggleHeader('${h}')`
-          )= t('wpn.header.label', h)
+    if scope === 'weapons'
+      .filter-row
+        ul.sources
+          for source in sources
+            li.source(
+              class=sourceClass(source)
+              title=t('wpn.source.full', source)
+              onclick=`toggleSource('${source}')`
+            )= t('wpn.source.label', source)
+      .filter-row
+        ul.categories
+          for cat in cats
+            li.category(
+              class=catClass(cat)
+              title=t('wpn.category.full', cat)
+              onclick=`toggleCategory('${cat}')`
+            )= t('wpn.category.label', cat)
+        .divider |
+        ul.colfilters
+          for h in headers
+            li.colfilter(
+              class=headerClass(h)
+              title=t('wpn.header.full', h)
+              onclick=`toggleHeader('${h}')`
+            )= t('wpn.header.label', h)
+    else
+      .filter-row
+        ul.scopes
+          for scope in scopes
+            li.scope(
+              class=scopeClass(scope)
+              title=t('nav.scopes.full', scope)
+              onclick=`toggleScope('${scope}')`
+            )= t('nav.scopes.label', scope)
   .spacer
-  select.select#lang-select(name="Lang" onchange="switchLang()")
-    each l in langs
-      option(value=l selected=(l === lang))= l
+  .side-menu
+    label
+      input#nerd-mode(
+        type="checkbox"
+        checked=nerdMode,
+        onclick=`toggleNerdMode()`)
+      if nerdMode
+        | 🤓
+      else
+        | Nerd Mode
+    select.select#lang-select(name="Lang" onchange="switchLang()")
+      for l in langs
+        option(value=l selected=(l === lang))= l
 table
   tr
     +#{`${scope}Header`}(full)
-  each obj in objects(scope)
+  for obj in objects(scope)
     tr
-      +#{`${scope}Row`}(obj)
-ul
-  li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
-  li Starting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.
-  li Laser weapons can't actually set things on fire. The data may be there to make the corpses burn.
+      +#{`${scope}Row`}(obj, full)
+if scope === 'weapons'
+  ul
+    li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
+    li Starting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.
+    li Laser weapons can't actually set things on fire. The data may be there to make the corpses burn.
