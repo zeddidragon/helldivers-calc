@@ -1,4 +1,5 @@
 {
+
   "table.td.spare;magstart": "Starting Mags",
   "table.td.spare;mags": "Max Mags",
   "table.td.pickup;supply": "Mags From Supply",
@@ -75,6 +76,7 @@
   "wpnname;GL-21 Grenade Launcher": "Grenade Launcher",
   "wpnname;AC-8 Autocannon": "Autocannon",
   "wpnname;RS-422 Railgun": "Railgun",
+  "wpnname.overcharge;RS-422 Railgun": "Railgun (100% charge)",
   "wpnname;LAS-98 Laser Cannon": "Laser Cannon",
   "wpnname;LAS-99 Quasar Cannon": "Quasar Cannon",
   "wpnname;EAT-17 Expendable Anti-Tank": "Expendable Anti-Tank",

@@ -170,7 +170,9 @@ mixin projectilesHeader(opts = {})
     ) #
     th.projectile.id(
       title=t('table.th.prj', 'id', 'ID of projectile data (hex)')
-    ) ID
+    )
+      span ID
+      sub p
     th.projectile.name(
       title=t('table.th.prj', 'name', 'Translated name of projectile')
     ) Name
@@ -180,6 +182,12 @@ mixin projectilesHeader(opts = {})
     th.projectile.pellets(
       title=t('table.th.prj', 'pellets', 'Pellet Count')
     )
+  else if showIds
+    th.projectile.id(
+      title=t('table.th.prj2', 'id', 'ID of medium (projectile or explosion data) (hex)')
+    )
+      span ID
+      sub m
   th.projectile.caliber(
     title=t('table.th.prj', 'caliber', 'Caliber (mm)')
   ) Cal
@@ -208,6 +216,8 @@ mixin projectilesRow(prj, opts = {})
     td.projectile.name= prj.name
     td.projectile.damageid= id(prj, 'damageid')
     td.projectile.pellets(class={ muted: prj.pellets < 2 })= prj.pellets
+  else if showIds
+    td.projectile.id= id(prj)
   td.projectile.caliber= prj.caliber
   td.projectile.velocity= prj.velocity
   td.projectile.mass= prj.mass
@@ -222,7 +232,9 @@ mixin explosionsHeader(opts = {})
     ) #
     th.explosion.id(
       title=t('table.th.aoe', 'id', 'ID of explosion data (hex)')
-    ) ID
+    )
+      span ID
+      sub x
     th.explosion.name(
       title=t('table.th.aoe', 'name', 'Translated name of AoE source')
     ) Name
@@ -235,9 +247,10 @@ mixin explosionsHeader(opts = {})
   ) AoE
 
 mixin explosionsStubRow(exp, opts = {})
+  if showIds
+    td.explosion.id= id(exp)
   td.explosion.label(
     title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
-    colspan=2
   )= t('table.td.aoe.label', 'radius', 'Radius')
   td.explosion.radius.r1= exp.r1.toFixed(1)
   td.explosion.radius.r2.rx= exp.r2.toFixed(1)
@@ -247,7 +260,9 @@ mixin explosionsStubRow(exp, opts = {})
 mixin explosionsRow(exp, opts = {})
   if opts.full
     td.explosion.idx= exp.idx
+  if opts.full || showIds
     td.explosion.id= id(exp)
+  if opts.full
     td.explosion.name= exp.name
     td.explosion.damageid= id(exp, 'damageid')
   td.explosion.radius.r1= exp.r1
@@ -259,9 +274,13 @@ mixin damagesHeader(opts = {})
     td.damage.idx(
       title=t('table.th.dmg', 'idx', 'Internal order')
     ) #
+  if opts.full || showIds
     th.damage.id(
       title=t('table.th.dmg', 'id', 'ID of damage data (hex)')
-    ) ID
+    )
+      span ID
+      sub d
+  if opts.full
     th.damage.name(
       title=t('table.th.dmg', 'name', 'Translated name of damage source')
     ) Name
@@ -306,6 +325,8 @@ mixin damagesRow(dmg, opts = {})
       - i++
       - var ap = dmg[`ap${i}`]
       td.damage.ap(class=`ap-${ap} ap-list-${i}`)= ap
+  else if showIds
+    td.damage.id= id(dmg)
   td.damage.demo(class={ xdemo: opts.explosive })= dmg.demo
   td.damage.stun(class={ xstun: opts.explosive })= dmg.stun
   td.damage.push(class={ xpush: opts.explosive })= dmg.push

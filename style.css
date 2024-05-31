@@ -14,10 +14,6 @@ nav ul {
   border-bottom: thin solid;
 }
 
-#lang-select {
-  display: none;
-}
-
 .select {
   all: unset;
 }
@@ -158,6 +154,9 @@ td.name {
 }
 .category.SUP, .ap-7, .source.support {
   color: #e8a;
+}
+.category.Misc {
+  color: #a98a98;
 }
 .source-page {
   font-size: 0.7em;

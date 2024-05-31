@@ -99,6 +99,10 @@ function effectiveRpm(wpn) {
   return 0
 }
 
+function charged(wpn, val) {
+  return Math.floor(val * wpn.chargefactor)
+}
+
 window.translations = {}
 
 function sorted(arr) {
@@ -287,7 +291,7 @@ async function loadData() {
     const count = wpn.count || projectile?.pellets || 1
     let totaldmg = count * (damage?.dmg || 0)
     let totaldmg2 = count * (damage?.mass || 0)
-    const subobjects = wpn.subattacks?.map(({ id, type, count, name }) => {
+    let subobjects = wpn.subattacks?.map(({ id, type, count, name }) => {
       const obj = registers[type][id]
       const damage = damages[obj.damageid]
       const n = (count || obj.pellets || 1)
@@ -304,6 +308,27 @@ async function loadData() {
         weapon: wpn,
       }
     })
+    if(wpn.chargefactor && wpn.chargeearly) {
+      subobjects ||= []
+      subobjects.push({
+        ...wpn,
+        name: t('wpnname.overcharge', wpn.fullname, `${name} (Overcharged)`),
+        charge: wpn.charge,
+        chargeearly: void 0,
+        damage: {
+          ...damage,
+          dmg: charged(wpn, damage.dmg),
+          dmg2: charged(wpn, damage.dmg2),
+          ap1: charged(wpn, damage.ap1),
+          ap2: charged(wpn, damage.ap2),
+          ap3: charged(wpn, damage.ap3),
+          ap4: charged(wpn, damage.ap4),
+          stun: charged(wpn, damage.stun),
+        },
+      })
+      wpn.charge = wpn.chargeearly
+      delete wpn.chargeearly
+    }
     return {
       ...(projectile || {}),
       ...(damage || {}),
