@@ -121,6 +121,13 @@ window.locals = {
   get nerdMode() {
     return locals.scope !== 'weapons'
   },
+  get subScope() {
+    switch(locals.scope) {
+      case 'projectiles':
+      case 'explosions':
+        return 'damages'
+    }
+  },
   sorting: 'idx',
   lang: 'en',
   langs: [
@@ -129,12 +136,17 @@ window.locals = {
   ],
   colspans: {
     damages: 5,
+    damagesHideName: 20,
     weapons: 11,
     explosions: 3,
     projectiles: 6,
   },
   full: {
     full: true,
+  },
+  hideName: {
+    full: true,
+    hideName: true,
   },
   count: (wpn) => {
     if(wpn.count) {
@@ -175,10 +187,7 @@ window.locals = {
     'dps',
     'dps2',
   ],
-  hideHeaders: {
-    projectile: true,
-    dps2: true,
-  },
+  hideHeaders: {},
   weaponCols: new Set('damage'),
   id: (obj, prop='id') => {
     const v = obj[prop]
@@ -215,6 +224,9 @@ window.locals = {
       })
     }
     return arr
+  },
+  subObj: obj => {
+    return obj.damage
   },
   scope: 'weapons',
   scopes: [
@@ -441,6 +453,7 @@ async function loadData() {
   })
   locals.cats = Array.from(new Set(locals.weapons.map(wpn => wpn.category)))
   locals.sources = data.sources.slice(0, -1)
+  readState()
   render()
 }
 
@@ -495,14 +508,80 @@ function toggleAction({
     }
     register[item] = false
   }
+
+  writeState()
   render()
 }
 
-window.switchScope = function switchScope(scope) {
-  locals.scope = scope
-  locals.sorting = 'idx'
-  render()
+function writeState() {
+  const states = []
+  for(const [h, hide] of Object.entries(locals.hideHeaders)) {
+    if(!hide) continue
+    states.push(`hh[]=${h}`)
+  }
+  for(const [c, hide] of Object.entries(locals.hideCategories)) {
+    if(!hide) continue
+    states.push(`hc[]=${c}`)
+  }
+  for(const [s, hide] of Object.entries(locals.hideSources)) {
+    if(!hide) continue
+    states.push(`hs[]=${s}`)
+  }
+  if(locals.scope !== 'weapons') {
+    states.push(`scope=${locals.scope}`)
+  }
+  if(locals.lang !== 'en') {
+    states.push(`lang=${locals.lang}`)
+  }
+  try {
+    window.location.hash = states.sort().join('&')
+  } catch(err) {
+    console.warn(err)
+  }
 }
+
+function readState() {
+  let states
+  try {
+    let hash = window.location.hash
+    if(!hash) {
+      hash = '#hc[]=Misc&hh[]=dps2&hh[]=projectile'
+    }
+    states = hash.slice(1).split('&').map(kv => kv.split('='))
+  } catch(err) {
+    console.warn(err)
+    return
+  }
+  for(const [k, v] of states) {
+    switch(k) {
+      case 'hh[]': {
+        locals.hideHeaders[v] = true
+        break
+      }
+      case 'hc[]': {
+        locals.hideCategories[v] = true
+        break
+      }
+      case 'hs[]': {
+        locals.hideSources[v] = true
+        break
+      }
+      case 'scope': {
+        locals.scope = v.toLowerCase()
+        break
+      }
+      case 'lang': {
+        locals.lang = v.toLowerCase()
+        break
+      }
+    }
+  }
+  // Sanity check important values
+  if(locals.scope !== 'weapons' && !locals.scopes.includes(locals.scope)) {
+    locals.scope = 'weapons'
+  }
+}
+
 
 window.switchLang = function switchLang(lang) {
   const langSel = document.getElementById('lang-select')
@@ -540,11 +619,11 @@ window.toggleNerdMode = function toggleNerdMode() {
   } else {
     toggleScope('weapons')
   }
-  render()
 }
 
 window.toggleScope = function toggleScope(scope) {
   locals.scope = scope
+  writeState()
   render()
 }
 

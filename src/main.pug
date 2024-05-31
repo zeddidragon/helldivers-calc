@@ -324,10 +324,12 @@ mixin damagesHeader(opts = {})
     )
       span ID
       sub d
-  if opts.full
+
+  if opts.full && !opts.hideName
     th.damage.name(
       title=t('table.th.dmg', 'name', 'Translated name of damage source')
     ) Name
+  if opts.full
     th.damage.dmg(
       title=t('table.th.dmg', 'dmgs3', 'Damage type / Base damage / Damage vs Massive')
       colspan=3
@@ -357,7 +359,8 @@ mixin damagesRow(dmg, opts = {})
   if opts.full
     td.damage.idx= dmg.idx
     td.damage.id= id(dmg)
-    td.damage.name= dmg.name
+    if !opts.hideName
+      td.damage.name= dmg.name
     td.damage.dmgtype(
       class={muted: !dmg.type },
       title=t('dmg.types.full', dmg.type),
@@ -432,6 +435,9 @@ header.menu
               title=t('nav.scopes.full', scope)
               onclick=`toggleScope('${scope}')`
             )= t('nav.scopes.label', scope)
+      if nerdMode
+        ul
+          li=t('explanations', 'nerdModeSpoilers', 'Here there be spoilers.')
   .spacer
   .side-menu
     label
@@ -449,11 +455,19 @@ header.menu
 table
   tr
     +#{`${scope}Header`}(full)
+    if subScope
+      +#{`${subScope}Header`}(hideName)
   for obj in objects(scope)
     tr
       +#{`${scope}Row`}(obj, full)
+      if subScope
+        - let obj2 = subObj(obj)
+        if obj2
+          +#{`${subScope}Row`}(obj2, hideName)
+        else
+          td.damage-filler(colspan=colspans.damagesHideName)
 if scope === 'weapons'
   ul
-    li Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.
-    li Starting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.
-    li Laser weapons can't actually set things on fire. The data may be there to make the corpses burn.
+    li= t('explanations', 'reload', 'Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.')
+    li= t('explanations', 'startingMagsDisclaimer', 'Starting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.')
+    li= t('explanations', 'laserFire', "Laser weapons can't actually set things on fire. The data may be there to make the corpses burn.")
