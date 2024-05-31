@@ -7,6 +7,8 @@
   "wpn.header.label;projectile": "Prj",
   "wpn.header.full;dps": "Damage Performance Statistics",
   "wpn.header.label;dps": "DPS",
+  "wpn.header.full;dps2": "Damage Performance Statistics (vs Massive Bodyparts)",
+  "wpn.header.label;dps2": "DPS2",
   "table.td.spare;magstart": "Starting Mags",
   "table.td.spare;mags": "Max Mags",
   "table.td.pickup;supply": "Mags From Supply",

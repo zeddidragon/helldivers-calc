@@ -41,6 +41,32 @@ mixin weaponsHeader
     +damagesHeader({ apCount: 1, effectsCount: 1 })
   if !hideHeaders.projectile
     +projectilesHeader()
+  if !hideHeaders.dps
+    th.weapon.dps(
+      title=('table.th.wpn', 'dps', 'Damage Per Second')
+    ) DPS
+    th.weapon.tdps(
+      title=('table.th.wpn', 'tdps', 'Total Damage Per Second (Including Reload Time)')
+    ) TDPS
+    th.weapon.magdump(
+      title=('table.th.weapon.wpn', 'dmag', 'Damage for Magdump')
+    ) Mag
+    th.weapon.totaldump(
+      title=('table.th.weapon.wpn', 'total', 'Damage for expending all ammo')
+    ) Total
+  if !hideHeaders.dps2
+    th.weapon.dps2(
+      title=('table.th.weapon.wpn', 'ddps', 'Damage Per Second (vs Massive)')
+    ) DPS2
+    th.weapon.tdps2(
+      title=('table.th.weapon.wpn', 'dtdps', 'Damage Per Second vs Massive (Including Reload Time)')
+    ) TDPS2
+    th.weapon.magdump2(
+      title=('table.th.weapon.wpn', 'ddmag', 'Damage vs Massive for Magdump')
+    ) Mag2
+    th.weapon.totaldump2(
+      title=('table.th.weapon.wpn', 'dtotal', 'Damage vs Massive for expending all ammo')
+    ) Total2
 
 mixin weaponsRow(wpn, opts)
   td.weapon.idx= wpn.idx
@@ -170,6 +196,16 @@ mixin weaponsRow(wpn, opts)
       +explosionsStubRow(wpn.explosion)
     else
       td.projectile-filler(colspan=colspans.projectiles)
+  if !hideHeaders.dps
+    td.dps= wpn.dps
+    td.tdps= wpn.tdps
+    td.magdump= wpn.magdump
+    td.totaldump= wpn.totaldump
+  if !hideHeaders.dps2
+    td.dps2= wpn.dps2
+    td.tdps2= wpn.tdps2
+    td.magdump2= wpn.magdump2
+    td.totaldump2= wpn.totaldump2
 
 mixin projectilesHeader(opts = {})
   if opts.full

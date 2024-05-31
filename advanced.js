@@ -36,7 +36,7 @@ function sorting(col) {
   }
   if(col === 'damage') {
     return function dmgSort(a, b) {
-      return compare(a, b, 'totaldmg') || compare(a, b, 'totaldmg2') || idxSort(a, b)
+      return compare(a, b, 'shotdmg') || compare(a, b, 'shotdmg2') || idxSort(a, b)
     }
   }
   if(col === 'dmg') {
@@ -103,6 +103,14 @@ function charged(wpn, val) {
   return Math.floor(val * wpn.chargefactor)
 }
 
+function hasTag(wpn, tag) {
+  return wpn?.tags?.includes(tag)
+}
+
+function isDps(wpn) {
+  return hasTag(wpn, 'laser')
+}
+
 window.translations = {}
 
 function sorted(arr) {
@@ -153,9 +161,11 @@ window.locals = {
     'damage',
     'projectile',
     'dps',
+    'dps2',
   ],
   hideHeaders: {
     projectile: true,
+    dps2: true,
   },
   weaponCols: new Set('damage'),
   id: (obj, prop='id') => {
@@ -167,9 +177,7 @@ window.locals = {
   allExplosion: () => {
     return data.explosions
   },
-  hasTag: (wpn, tag) => {
-    return wpn.tags?.includes(tag)
-  },
+  hasTag,
   wikiLink: (wpn) => {
     const url = 'https://helldivers.wiki.gg/wiki'
     const path = wpn.fullname.split(/\s+/).join('_')
@@ -304,14 +312,14 @@ async function loadData() {
       || wpn.damageid
     const damage = damages[dmgId]
     const count = wpn.count || projectile?.pellets || 1
-    let totaldmg = count * (damage?.dmg || 0)
-    let totaldmg2 = count * (damage?.mass || 0)
+    let shotdmg = count * (damage?.dmg || 0)
+    let shotdmg2 = count * (damage?.dmg2 || 0)
     let subobjects = wpn.subattacks?.map(({ id, type, count, name }) => {
       const obj = registers[type][id]
       const damage = damages[obj.damageid]
       const n = (count || obj.pellets || 1)
-      totaldmg += n * (damage?.dmg || 0)
-      totaldmg2 += n * (damage?.dmg2 || 0)
+      shotdmg += n * (damage?.dmg || 0)
+      shotdmg2 += n * (damage?.dmg2 || 0)
       name = obj.name
       return {
         type,
@@ -344,6 +352,57 @@ async function loadData() {
       wpn.charge = wpn.chargeearly
       delete wpn.chargeearly
     }
+
+    let dps
+    let dps2
+    let tdps
+    let tdps2
+    let magdump
+    let magdump2
+    let totaldump
+    let totaldump2
+    let magtime
+    if(hasTag(wpn, 'laser') && damage) {
+      dps = damage.dmg
+      dps2 = damage.dmg2
+      magdump = dps * wpn.limit
+      magdump2 = dps2 * wpn.limit
+      magtime = wpn.limit
+    }
+    let rpm = wpn.rpm
+    if(wpn.charge && wpn.cap > 1) {
+      rpm = 60 / wpn.charge
+    }
+    if(wpn.cap > 1 && rpm) {
+      dps = Math.floor(rpm * shotdmg / 60)
+      dps2 = Math.floor(rpm * shotdmg2 / 60)
+      magtime = wpn.cap * 60 / rpm
+    }
+    if(wpn.cap > 1 && shotdmg) {
+      magdump = shotdmg * wpn.cap
+      magdump2 = shotdmg2 * wpn.cap
+    }
+    if(wpn.limit && wpn.rpm) { // Sickle
+      magdump = shotdmg * Math.floor(wpn.rpm * wpn.limit / 60)
+      magdump2 = shotdmg2 * Math.floor(wpn.rpm * wpn.limit / 60)
+    }
+    if(magdump && wpn.mags) {
+      totaldump = magdump * (wpn.mags + 1)
+      totaldump2 = magdump2 * (wpn.mags + 1)
+    }
+    if(wpn.rounds) {
+      totaldump = shotdmg * (wpn.rounds + (wpn.cap || 0))
+      totaldump2 = shotdmg2 * (wpn.rounds + (wpn.cap || 0))
+    }
+    if(wpn.clips) {
+      totaldump = shotdmg * (wpn.clips * wpn.clipsize + wpn.cap)
+      totaldump2 = shotdmg2 * (wpn.clips * wpn.clipsize + wpn.cap)
+    }
+    if(magdump && magtime && wpn.reload) {
+      tdps = Math.floor(magdump / (magtime + wpn.reload))
+      tdps2 = Math.floor(magdump2 / (magtime + wpn.reload))
+    }
+
     return {
       ...(projectile || {}),
       ...(damage || {}),
@@ -351,8 +410,16 @@ async function loadData() {
       ...wpn,
       name: t('wpnname', wpn.fullname, name),
       sourceidx: (data.sources.indexOf(wpn.source) + 1) || Infinity,
-      totaldmg,
-      totaldmg2,
+      shotdmg,
+      shotdmg2,
+      dps,
+      tdps,
+      magdump,
+      totaldump,
+      dps2,
+      tdps2,
+      magdump2,
+      totaldump2,
       code,
       projectile,
       explosion,
