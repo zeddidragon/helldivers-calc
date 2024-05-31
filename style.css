@@ -15,7 +15,7 @@ nav ul {
   flex-direction: column;
 }
 
-.nav-selected {
+.nav-selected, .scope.selected {
   border-bottom: thin solid;
 }
 
@@ -27,7 +27,7 @@ nav ul {
   flex: 1;
 }
 
-nav a {
+nav a, .scope {
   padding-left: 0.5em;
   padding-right: 1.5em;
   color: #80c3f5;

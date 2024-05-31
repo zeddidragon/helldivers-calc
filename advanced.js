@@ -274,6 +274,7 @@ function t(namespace, key, fallback, l = locals.lang) {
 window.t = t
 
 async function loadData() {
+  readState()
   const [
     manual,
     mined,
@@ -291,6 +292,11 @@ async function loadData() {
   }
   window.data = data
   window.translations[locals.lang] = translations
+  if(locals.lang !== 'en') {
+    window.translations.en = await fetch(`data/lang-en.json`)
+      .then(res => res.json())
+      .catch(() => ({}))
+  }
   locals.damages = data.damages.map((obj, idx) => {
     return {
       idx,
