@@ -285,14 +285,19 @@ td.effect-param:after {
   content: "]x";
 }
 
-ul.sources, ul.categories {
+.filter-row {
+  display: flex;
+}
+
+ul.sources, ul.categories, ul.colfilters {
   display: flex;
   flex-direction: row;
   width: 100%;
   list-style-type: none;
+  margin: 0.2em;
 }
 
-.sources .source, .categories .category {
+.sources .source, .categories .category, .colfilter {
   width: 4em;
   cursor: pointer;
 }

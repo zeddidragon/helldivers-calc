@@ -140,8 +140,23 @@ window.locals = {
       locals.hideCategories[cat] ? 'hidden' : '',
     ]
   },
+  headerClass: (h) => {
+    return [
+      h,
+      locals.hideHeaders[h] ? 'hidden' : '',
+    ]
+  },
   hideSources: {},
   hideCategories: {},
+  headers: [
+    'weapon',
+    'damage',
+    'projectile',
+    'dps',
+  ],
+  hideHeaders: {
+    projectile: true,
+  },
   weaponCols: new Set('damage'),
   id: (obj, prop='id') => {
     const v = obj[prop]
@@ -429,6 +444,14 @@ window.toggleCategory = function toggleCategory(cat) {
     item: cat,
     items: locals.cats,
     register: locals.hideCategories,
+  })
+}
+
+window.toggleHeader = function toggleHeader(h) {
+  toggleAction({
+    item: h,
+    items: locals.headers,
+    register: locals.hideHeaders,
   })
 }
 

@@ -24,19 +24,22 @@ mixin weaponsHeader
   th.weapon.rpm(
     title=t('table.th.wpn', 'rpm', 'Rate of fire (Rounds Per Minute)')
   ) RPM
-  th.weapon.reload(
-    title=t('table.th.wpn', 'reloads3', 'Reload times (seconds)')
-  ) Rel
-  th.weapon.cap(
-    title=t('table.th.wpn', 'cap', 'Ammo capaccity (+ in chamber)')
-    colspan=2
-  ) Cap
-  th.weapon.spare(
-    title=t('table.th.wpn', 'spare4', 'Spare mags, clips, or rounds (start/max), and resupplied (supply/ammobox')
-    colspan=2
-  ) Reserves
-  +damagesHeader({ apCount: 1, effectsCount: 1 })
-  +projectilesHeader()
+  if !hideHeaders.weapon
+    th.weapon.reload(
+      title=t('table.th.wpn', 'reloads3', 'Reload times (seconds)')
+    ) Rel
+    th.weapon.cap(
+      title=t('table.th.wpn', 'cap', 'Ammo capaccity (+ in chamber)')
+      colspan=2
+    ) Cap
+    th.weapon.spare(
+      title=t('table.th.wpn', 'spare4', 'Spare mags, clips, or rounds (start/max), and resupplied (supply/ammobox')
+      colspan=2
+    ) Reserves
+  if !hideHeaders.damage
+    +damagesHeader({ apCount: 1, effectsCount: 1 })
+  if !hideHeaders.projectile
+    +projectilesHeader()
 
 mixin weaponsRow(wpn, opts)
   td.weapon.idx= wpn.idx
@@ -82,86 +85,89 @@ mixin weaponsRow(wpn, opts)
         span= wpn.charge
     else
       span.rpm-main= wpn.rpm
-  td.weapon.reload
-    if wpn.reloadone
-      span.reload-one(
-        title=t('table.td.reload', '1', "Reload 1 round")
-      )= wpn.reloadone.toFixed(1)
-    if wpn.reloadx
-      span.reload-x(
-        title=t('table.td.reload', 'x', `Reload max rounds`)
-      )= wpn.reloadx.toFixed(1)
-    if wpn.reload
-      span.reload-main(
-        title=t('table.td.reload', 'empty', "Reload from empty")
-      )= wpn.reload.toFixed(1)
-    if wpn.reloadearly
-      span.reload-early(
-        title=t('table.td.reload', 'early', "Early Reload (not empty)")
-      )= wpn.reloadearly.toFixed(1)
-  td.weapon.cap= wpn.cap || wpn.limit
-  td.weapon.capextra
-    if wpn.limit
-      span.cap-limit s
-    else if wpn.capplus
-      sup.cap-post.cap-plus= wpn.capplus
-  td.wepaon.spare
-    if wpn.clips
-      span.clipsize(
-        title=t('table.td.spare', 'clipsize', "Rounds in Clip")
-      )= wpn.clipsize
-      span.clipstart(
-        title=t('table.td.spare', 'clipstart', "Starting Clips")
-      )= wpn.clipstart
-      span.clips(
-        title=t('table.td.spare', 'clipsize', "Max Clips")
-      )= wpn.clips
-    if wpn.rounds
-      span.roundstart(
-        title=t('table.td.spare', 'roundstart', "Starting Rounds")
-      )= roundStart(wpn)
-      span.rounds(
-        title=t('table.td.spare', 'rounds', "Max Spare Rounds")
-      )= wpn.rounds
-    if wpn.mags
-      span.magstart(
-        title=t('table.td.spare', 'magstart', "Starting Mags")
-      )= wpn.magstart || wpn.mags
-      span.mags(
-        title=t('table.td.spare', 'mags', "Max Mags")
-      )= wpn.mags
-  td.weapon.pickup
-    if wpn.clipsupply
-      span.clipsupply(
-        title=t('table.td.pickup', 'clipsupply', "Clips From Supply")
-      )=wpn.clipsupply
-      span.clipbox(
-        title=t('table.td.pickup', 'clipbox', "Clips From Box")
-      )=wpn.clipbox
-    if wpn.roundsupply
-      span.roundsupply(
-        title=t('table.td.pickup', 'roundsupply', "Rounds From Supply")
-      )=wpn.roundsupply
-      span.roundsbox(
-        title=t('table.td.pickup', 'roundsbox', "Rounds From Box")
-      )=wpn.roundsbox
-    if wpn.supply
-      span.supply(
-        title=t('table.td.pickup', 'supply', "Mags From Supply")
-      )=wpn.supply
-      span.box(
-        title=t('table.td.pickup', 'box', "Mags From Box")
-      )=wpn.box
-  if wpn.damage
-    +damagesRow(wpn.damage, { explosive: !!wpn.explosion, apCount: 1, effectsCount: 1 })
-  else
-    td.damage-filler(colspan=colspans.damages)
-  if wpn.projectile
-    +projectilesRow(wpn.projectile)
-  else if wpn.explosion
-    +explosionsStubRow(wpn.explosion)
-  else
-    td.projectile-filler(colspan=colspans.projectiles)
+  if !hideHeaders.weapon
+    td.weapon.reload
+      if wpn.reloadone
+        span.reload-one(
+          title=t('table.td.reload', '1', "Reload 1 round")
+        )= wpn.reloadone.toFixed(1)
+      if wpn.reloadx
+        span.reload-x(
+          title=t('table.td.reload', 'x', `Reload max rounds`)
+        )= wpn.reloadx.toFixed(1)
+      if wpn.reload
+        span.reload-main(
+          title=t('table.td.reload', 'empty', "Reload from empty")
+        )= wpn.reload.toFixed(1)
+      if wpn.reloadearly
+        span.reload-early(
+          title=t('table.td.reload', 'early', "Early Reload (not empty)")
+        )= wpn.reloadearly.toFixed(1)
+    td.weapon.cap= wpn.cap || wpn.limit
+    td.weapon.capextra
+      if wpn.limit
+        span.cap-limit s
+      else if wpn.capplus
+        sup.cap-post.cap-plus= wpn.capplus
+    td.wepaon.spare
+      if wpn.clips
+        span.clipsize(
+          title=t('table.td.spare', 'clipsize', "Rounds in Clip")
+        )= wpn.clipsize
+        span.clipstart(
+          title=t('table.td.spare', 'clipstart', "Starting Clips")
+        )= wpn.clipstart
+        span.clips(
+          title=t('table.td.spare', 'clipsize', "Max Clips")
+        )= wpn.clips
+      if wpn.rounds
+        span.roundstart(
+          title=t('table.td.spare', 'roundstart', "Starting Rounds")
+        )= roundStart(wpn)
+        span.rounds(
+          title=t('table.td.spare', 'rounds', "Max Spare Rounds")
+        )= wpn.rounds
+      if wpn.mags
+        span.magstart(
+          title=t('table.td.spare', 'magstart', "Starting Mags")
+        )= wpn.magstart || wpn.mags
+        span.mags(
+          title=t('table.td.spare', 'mags', "Max Mags")
+        )= wpn.mags
+    td.weapon.pickup
+      if wpn.clipsupply
+        span.clipsupply(
+          title=t('table.td.pickup', 'clipsupply', "Clips From Supply")
+        )=wpn.clipsupply
+        span.clipbox(
+          title=t('table.td.pickup', 'clipbox', "Clips From Box")
+        )=wpn.clipbox
+      if wpn.roundsupply
+        span.roundsupply(
+          title=t('table.td.pickup', 'roundsupply', "Rounds From Supply")
+        )=wpn.roundsupply
+        span.roundsbox(
+          title=t('table.td.pickup', 'roundsbox', "Rounds From Box")
+        )=wpn.roundsbox
+      if wpn.supply
+        span.supply(
+          title=t('table.td.pickup', 'supply', "Mags From Supply")
+        )=wpn.supply
+        span.box(
+          title=t('table.td.pickup', 'box', "Mags From Box")
+        )=wpn.box
+  if !hideHeaders.damage
+    if wpn.damage
+      +damagesRow(wpn.damage, { explosive: !!wpn.explosion, apCount: 1, effectsCount: 1 })
+    else
+      td.damage-filler(colspan=colspans.damages)
+  if !hideHeaders.projectile
+    if wpn.projectile
+      +projectilesRow(wpn.projectile)
+    else if wpn.explosion
+      +explosionsStubRow(wpn.explosion)
+    else
+      td.projectile-filler(colspan=colspans.projectiles)
 
 mixin projectilesHeader(opts = {})
   if opts.full
@@ -354,20 +360,30 @@ nav.links
       a(href="https://helldivers.io/") helldivers.io
 header.menu
   .filters
-    ul.sources
-      for source in sources
-        li.source(
-          class=sourceClass(source)
-          title=t('wpn.source.full', source)
-          onclick=`toggleSource('${source}')`
-        )= t('wpn.source.label', source)
-    ul.categories
-      for cat in cats
-        li.category(
-          class=catClass(cat)
-          title=t('wpn.category.full', cat)
-          onclick=`toggleCategory('${cat}')`
-        )= t('wpn.category.label', cat)
+    .filter-row
+      ul.sources
+        for source in sources
+          li.source(
+            class=sourceClass(source)
+            title=t('wpn.source.full', source)
+            onclick=`toggleSource('${source}')`
+          )= t('wpn.source.label', source)
+    .filter-row
+      ul.categories
+        for cat in cats
+          li.category(
+            class=catClass(cat)
+            title=t('wpn.category.full', cat)
+            onclick=`toggleCategory('${cat}')`
+          )= t('wpn.category.label', cat)
+      .divider |
+      ul.colfilters
+        for h in headers
+          li.colfilter(
+            class=headerClass(h)
+            title=t('wpn.header.full', h)
+            onclick=`toggleHeader('${h}')`
+          )= t('wpn.header.label', h)
   .spacer
   select.select#lang-select(name="Lang" onchange="switchLang()")
     each l in langs
