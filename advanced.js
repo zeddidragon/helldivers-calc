@@ -2,7 +2,7 @@ function val(obj, prop) {
   return obj[prop] || 0
 }
 
-function sorting(col) {
+function sorting(col, mainScope) {
   let dir = -1
   if(col === 'category') {
     col = 'idx'
@@ -13,6 +13,23 @@ function sorting(col) {
 
   function idxSort(a, b) {
     return a.id - b.id
+  }
+
+  if(locals.scope === 'weapons' && mainScope === 'projectile') {
+    return function sortByProjectileName(a, b) {
+      const diff = (a.projectile?.[col] || '').localeCompare(b.projectile?.[col] || '') * dir
+      if(diff) return diff
+      return idxSort(a, b)
+    }
+  }
+
+  if(['projectiles', 'explosions'].includes(locals.scope) && mainScope === 'damage') {
+    const cb = sorting(col)
+    return function subSort(a, b) {
+      const diff = cb(a.damage || {}, b.damage || {})
+      if(diff) return diff
+      return idxSort(a, b)
+    }
   }
 
   if(col === 'name' || col === 'code') {
@@ -114,7 +131,7 @@ function isDps(wpn) {
 window.translations = {}
 
 function sorted(arr) {
-  return arr.sort(sorting(locals.sorting))
+  return arr.sort(sorting(locals.sorting, locals.mainSorting))
 }
 
 window.locals = {
@@ -462,9 +479,10 @@ async function loadData() {
   render()
 }
 
-function sortBy(col) {
+function sortBy(col, objName) {
   return function sort() {
     locals.sorting = col
+    locals.mainSorting = objName
     render()
   }
 }
@@ -473,11 +491,11 @@ window.render = function render() {
   document.querySelector('body').innerHTML = template(locals)
   const headers = document.querySelectorAll('th:not(.th-groups, .label)')
   for(const h of headers) {
-    const prop = h.classList[1]
+    const [mainProp, prop] = h.classList
     if(prop === locals.sorting) {
       h.classList.add('sorting')
     }
-    h.addEventListener('click', sortBy(prop))
+    h.addEventListener('click', sortBy(prop, mainProp))
     const chevron = document.createElement('span')
     chevron.classList.add('sorter')
     chevron.textContent = '▼'

@@ -50,23 +50,28 @@ mixin weaponsHeader
     ) TDPS
     th.weapon.magdump(
       title=('table.th.weapon.wpn', 'dmag', 'Damage for Magdump')
-    ) Mag
+    ) MD
     th.weapon.totaldump(
       title=('table.th.weapon.wpn', 'total', 'Damage for expending all ammo')
     ) Total
   if !hideHeaders.dps2
     th.weapon.dps2(
       title=('table.th.weapon.wpn', 'ddps', 'Damage Per Second (vs Massive)')
-    ) DPS2
+    )
+      sup DPS
+      sub vM
     th.weapon.tdps2(
       title=('table.th.weapon.wpn', 'dtdps', 'Damage Per Second vs Massive (Including Reload Time)')
-    ) TDPS2
+    )
+      sup TDPS
     th.weapon.magdump2(
       title=('table.th.weapon.wpn', 'ddmag', 'Damage vs Massive for Magdump')
-    ) Mag2
+    )
+      sup MD
     th.weapon.totaldump2(
       title=('table.th.weapon.wpn', 'dtotal', 'Damage vs Massive for expending all ammo')
-    ) Total2
+    )
+      sup Tot
 
 mixin weaponsRow(wpn, opts)
   td.weapon.idx= wpn.idx
@@ -443,6 +448,14 @@ header.menu
       if nerdMode
         ul
           li=t('explanations', 'nerdModeSpoilers', 'Here there be spoilers.')
+    else
+      ul.scopes
+        for scope in scopes
+          li.scope(
+            class=scopeClass(scope)
+            title=t('nav.scopes.full', scope)
+            onclick=`switchScope('${scope}')`
+          )= t('nav.scopes.label', scope)
   .spacer
   .side-menu
     label
