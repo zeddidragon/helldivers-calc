@@ -14,7 +14,7 @@ mixin weaponsHeader
     ) Code
   th.weapon.name(
     title=t('table.th.wpn', 'name', 'Name')
-  ) Name
+  ) Weapon
   th.weapon.damage(
     title=t('table.th.dmg', 'dmgs3')
     colspan=3
@@ -252,6 +252,10 @@ mixin projectilesHeader(opts = {})
   th.projectile.penslow(
     title=t('table.th.prj', 'penslow', 'Penetration Slowdown')
   ) PenSl
+  if !opts.full
+    th.projectile.name(
+      title=t('table.th.prj', 'name', 'Translated name of projectile')
+    ) Projectile
 
 mixin projectilesRow(prj, opts = {})
   if opts.full
@@ -268,6 +272,8 @@ mixin projectilesRow(prj, opts = {})
   td.projectile.drag= prj.drag
   td.projectile.gravity= prj.gravity
   td.projectile.penslow= prj.penslow
+  if !opts.full
+    td.projectile.name= prj.name
 
 mixin explosionsHeader(opts = {})
   if opts.full
@@ -281,7 +287,7 @@ mixin explosionsHeader(opts = {})
       sub x
     th.explosion.name(
       title=t('table.th.aoe', 'name', 'Translated name of AoE source')
-    ) Name
+    ) Explosion
     th.explosion.damageid(
       title=t('table.th.aoe', 'damageid', 'ID of damage data used (hex)')
     ) Dmg

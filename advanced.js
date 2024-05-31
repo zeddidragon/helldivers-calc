@@ -139,7 +139,7 @@ window.locals = {
     damagesHideName: 20,
     weapons: 11,
     explosions: 3,
-    projectiles: 6,
+    projectiles: 7,
   },
   full: {
     full: true,
@@ -551,7 +551,7 @@ function readState() {
   try {
     let hash = window.location.hash
     if(!hash) {
-      hash = '#hc[]=Misc&hh[]=dps2&hh[]=projectile'
+      hash = '#hc[]=Misc&hh[]=dps&hh[]=dps2'
     }
     states = hash.slice(1).split('&').map(kv => kv.split('='))
   } catch(err) {
