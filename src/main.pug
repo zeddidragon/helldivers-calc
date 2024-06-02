@@ -216,18 +216,20 @@ mixin projectilesHeader(opts = {})
   if opts.full
     th.projectile.idx(
       title=t('table.th.prj', 'idx', 'Internal order')
-    ) #
+    )= t('table.th.prj.label', 'idx')
     th.projectile.id(
       title=t('table.th.prj', 'id', 'ID of projectile data (hex)')
     )
-      span ID
-      sub p
+      sup= t('table.th.prj.label.sup', 'id')
+      sub= t('table.th.prj.label.sub', 'id')
     th.projectile.name(
       title=t('table.th.prj', 'name', 'Translated name of projectile')
-    ) Name
+    )= t('table.th.prj.label', 'name', 'Name')
     th.projectile.damageid(
       title=t('table.th.prj', 'damageid', 'ID of damage data used (hex)')
-    ) Dmg
+    )
+      sup= t('table.th.prj.label.sup', 'damageid')
+      sub= t('table.th.prj.label.sub', 'damageid')
     th.projectile.pellets(
       title=t('table.th.prj', 'pellets', 'Pellet Count')
     )
@@ -235,37 +237,37 @@ mixin projectilesHeader(opts = {})
     th.projectile.id(
       title=t('table.th.prj2', 'id', 'ID of medium (projectile or explosion data) (hex)')
     )
-      span ID
-      sub m
+      sup= t('table.th.prj2.label.sup', 'id', 'ID')
+      sub= t('table.th.prj2.label.sub', 'id', 'm')
   th.projectile.caliber(
     title=t('table.th.prj', 'caliber', 'Caliber (mm)')
-  ) Cal
+  )= t('table.th.prj.label', 'caliber', 'Cal')
   th.projectile.velocity(
     title=t('table.th.prj', 'velocity', 'Muzzle Velocity (m/s)')
-  ) v
+  )= t('table.th.prj.label', 'velocity', 'v')
   th.projectile.mass(
     title=t('table.th.prj', 'mass', 'Mass (grams)')
-  ) m
+  )= t('table.th.prj.label', 'mass', 'm')
   th.projectile.drag(
     title=t('table.th.prj', 'drag', 'Drag Coefficient Multiplier')
   )
-    span c
-    sub d
+    sup= t('table.th.prj.label.sup', 'drag', 'c')
+    sub= t('table.th.prj.label.sub', 'drag', 'd')
   th.projectile.gravity(
     title=t('table.th.prj', 'gravity', 'Gravity Multiplier')
-  ) g
+  )= t('table.th.prj.label', 'gravity', 'g')
   th.projectile.penslow(
     title=t('table.th.prj', 'penslow', 'Penetration Slowdown')
   )
-    span sl
-    sub p
+    sup= t('table.th.prj.label.sup', 'penslow', 'sl')
+    sub= t('table.th.prj.label.sub', 'penslow', 'p')
   th.projectile.lifetime(
     title=t('table.th.prj', 'lifetime', 'Lifetime (s)')
-  ) l
+  )= t('table.th.prj.label', 'lifetime', 'l')
   if !opts.full
     th.projectile.name(
       title=t('table.th.prj', 'name', 'Translated name of projectile')
-    ) Projectile
+    )= t('table.th.prj.label', 'name', 'Projectile')
 
 mixin projectilesRow(prj, opts = {})
   if opts.full
@@ -332,17 +334,15 @@ mixin explosionsRow(exp, opts = {})
   td.explosion.radius.r3.rx= exp.r3
 
 mixin damagesHeader(opts = {})
-  if opts.full
+  if opts.full && !opts.hideId
     th.damage.idx(
       title=t('table.th.dmg', 'idx', 'Internal order')
     )= t('table.th.dmg.label', 'idx', '#')
-  if opts.full || showIds
     th.damage.id(
       title=t('table.th.dmg', 'id', 'ID of damage data (hex)')
     )
       sup= t('table.th.dmg.label.sup', 'id', 'ID')
       sub= t('table.th.dmg.label.sub', 'id', 'dmg')
-
   if opts.full && !opts.hideName
     th.damage.name(
       title=t('table.th.dmg', 'name', 'Translated name of damage source')
@@ -374,11 +374,12 @@ mixin damagesHeader(opts = {})
 
 mixin damagesRow(dmg, opts = {})
   - let i
-  if opts.full
+  if opts.full && !opts.hideId
     td.damage.idx= dmg.idx
     td.damage.id= id(dmg)
-    if !opts.hideName
-      td.damage.name= dmg.name
+  if opts.full && !opts.hideName
+    td.damage.name= dmg.name
+  if opts.full
     td.damage.dmgtype(
       class={muted: !dmg.type },
       title=t('dmg.types.full', dmg.type),
@@ -390,8 +391,6 @@ mixin damagesRow(dmg, opts = {})
       - i++
       - var ap = dmg[`ap${i}`]
       td.damage.ap(class=`ap-${ap} ap-list-${i}`)= ap
-  else if showIds
-    td.damage.id= id(dmg)
   td.damage.demo(class={ xdemo: opts.explosive })= dmg.demo
   td.damage.stun(class={ xstun: opts.explosive })= dmg.stun
   td.damage.push(class={ xpush: opts.explosive })= dmg.push

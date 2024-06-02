@@ -164,6 +164,7 @@ window.locals = {
   hideName: {
     full: true,
     hideName: true,
+    hideId: true,
   },
   count: (wpn) => {
     if(wpn.count) {
