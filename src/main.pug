@@ -377,7 +377,7 @@ mixin damagesRow(dmg, opts = {})
       title=t('dmg.types.full', dmg.type),
     )= t('dmg.types', dmg.type)
     td.damage.dmg(class={ xdmg: opts.explosive })= dmg.dmg
-    td.damage.massive(class={ xdmg: opts.explosive })= dmg.mass
+    td.damage.dmg2(class={ xdmg: opts.explosive })= dmg.dmg2
     - i = 0
     while i < (opts.apCount || 4)
       - i++

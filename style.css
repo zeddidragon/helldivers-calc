@@ -93,9 +93,14 @@ td.weapon.dmg,
   padding-right: 0.2em;
 }
 
+td.damage.ap {
+  padding-left: 0;
+  padding-right: 0.2em;
+}
 td.damage.ap.ap-list-1, td.explosion.radius.r1, td.effect.effect1 {
   padding-left: 0.2em;
 }
+
 td.explosion.label {
   color: #a98a98;
 }
