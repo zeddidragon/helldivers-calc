@@ -1117,5 +1117,13 @@
     "table.th.dmg.label;effects8": "Эффект",
     "aoe;Frag": "Осколочная",
     "aoe;Incendiary": "Зажигательная",
-    "aoe;Thermite": "Термитная"
+    "aoe;Thermite": "Термитная",
+    "table.th.wpn;dps": "Урон в секунду",
+    "table.th.wpn;tdps": "Всего урона в секунду (включая перезарядку)",
+    "table.th.wpn;dmag": "Урон за магазин",
+    "table.th.wpn;total": "Урон за боезопас",
+    "table.th.wpn;dps": "Урон в секунду (по КЧ)",
+    "table.th.wpn;dtdps": "Total Damage Per Second (по КЧ, включая перезарядку)",
+    "table.th.wpn;ddmag": "Урон за магазин (по КЧ)",
+    "table.th.wpn;dtotal": "Урон за боезопас (по КЧ)",
 }
