@@ -4,8 +4,72 @@ import json from 'json-stringify-pretty-compact'
 let debugUnknown = false
 let outputRaw = false
 
-const version = process.argv[3]
 const buffer = fs.readFileSync(process.argv[2])
+const enumBuffer = fs.readFileSync(process.argv[3])
+const version = process.argv[4]
+
+function hex(v) {
+  return `0x${v.toString(16).toUpperCase()}`
+}
+
+function searchWords({
+  buffer,
+  first,
+  last,
+}) {
+  let idx = buffer.indexOf(first)
+  console.log(`First word "${first}" at: ${hex(idx)}`)
+  if(idx < 0) {
+    throw new Error(`Couldn't find: ${first}`)
+  }
+  let word
+  const words = []
+  let i = 0
+  while(word !== last) {
+    let nextIdx = buffer.indexOf('\0', idx)
+    word = buffer.toString('ascii', idx, nextIdx)
+    words.push(word)
+    idx = nextIdx + 1
+    i++;
+  }
+  console.log(`Found ${words.length} words`)
+  return words
+}
+
+function writeEnums(path, arr) {
+  const joined = arr.map((str, i) => {
+    return `    ${str} = ${hex(i)},`
+  }).join('\n')
+  fs.writeFileSync(path, `{\n${joined}\n}`)
+}
+
+const damageEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'DamageInfoType_None',
+  last: 'DamageInfoType',
+})
+// writeEnums('data/damage-info-types.cs', damageEnums)
+
+const projectileEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'ProjectileType_None',
+  last: 'ProjectileType',
+})
+// writeEnums('data/projectile-types.cs', projectileEnums)
+
+const explosionEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'ExplosionType_None',
+  last: 'ExplosionType',
+})
+// writeEnums('data/explosion-types.cs', explosionEnums)
+
+const abilityEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'AbilityId_Invalid',
+  last: 'AbilityId',
+})
+// writeEnums('data/explosion-types.cs', explosionEnums)
 
 const Int = {
   read: (buf, off = 0) => buf.readInt32LE(off),
@@ -94,10 +158,6 @@ function getRow(data, schema) {
   return buf
 }
 
-function hex(v) {
-  return `0x${v.toString(16).toUpperCase()}`
-}
-
 function isId(v) {
   if(!v) return false
   if(v < 0) return false
@@ -118,7 +178,7 @@ function readData({
   searchName = 'search data',
   searchOffset = 0,
   buffer,
-  enumFileName,
+  enums: enumsRaw,
   schema,
   cutPrefix = 1,
 }) {
@@ -137,14 +197,9 @@ function readData({
   idx = rewind(buffer, idx, size) // Walk back to first row
   console.log(`Data starts at: ${hex(idx)}`)
 
-  const enums = {}
-  const enumsFile = fs.readFileSync(`./data/${enumFileName}.cs`, 'utf8')
-  const pattern  = /(\w+) = 0x([0-9A-F]+)/
-  for(const line of enumsFile.split('\n')) {
-    const [, name, id] = pattern.exec(line) || []
-    if(!name) continue
-    enums[parseInt(id, 16)] = name.split('_').slice(cutPrefix).join('_')
-  }
+  const enums = enumsRaw.map(e => {
+    return e.split('_').slice(cutPrefix).join('_')
+  })
 
   const objects = []
   while(true) {
@@ -173,7 +228,7 @@ const damages = readData({
   searchData: dominatorDamage,
   searchName: 'Dominator Damage',
   searchOffset: 0x4,
-  enumFileName: 'damage-info-types',
+  enums: damageEnums,
   schema: damageSchema,
 })
 
@@ -242,7 +297,7 @@ const projectiles = readData({
   searchData: liberatorFMJ,
   searchName: '5.5x50mm Full Metal Jacket',
   searchOffset: 0x18,
-  enumFileName: 'projectile-types',
+  enums: projectileEnums,
   schema: projectileSchema,
 })
 
@@ -275,9 +330,8 @@ const explosions = readData({
   searchData: eagle500kgBomb,
   searchName: 'Eagle 500kg Bomb',
   searchOffset: 0xc,
-  enumFileName: 'explosion-types',
+  enums: explosionEnums,
   schema: explosionSchema,
-  cutPrefix: 0,
 })
 
 const data = json({
@@ -287,21 +341,4 @@ const data = json({
   explosions,
 })
 
-let idx = buffer.indexOf('PISTOL-SMG')
-let word = ''
-let words = []
-let skipped = 0
-const stop = Buffer.alloc(4)
-stop.writeInt32LE(0x0600)
-console.log(stop)
-while(true) {
-  let nextIdx = buffer.indexOf(stop, idx + 1)
-  console.log({ idx: idx.toString(16), nextIdx: nextIdx.toString(16) })
-  if(idx < 0 || (nextIdx - idx) > 200) {
-    break
-  }
-  words.push(buffer.toString('ascii', idx, nextIdx))
-  idx = nextIdx + 4
-}
-console.log(words.join('\n'), word)
-// fs.writeFileSync('./data/datamined.json', data)
+fs.writeFileSync('./data/datamined.json', data)
