@@ -1125,5 +1125,5 @@
     "table.th.wpn;dps": "Урон в секунду (по КЧ)",
     "table.th.wpn;dtdps": "Total Damage Per Second (по КЧ, включая перезарядку)",
     "table.th.wpn;ddmag": "Урон за магазин (по КЧ)",
-    "table.th.wpn;dtotal": "Урон за боезопас (по КЧ)",
+    "table.th.wpn;dtotal": "Урон за боезопас (по КЧ)"
 }
