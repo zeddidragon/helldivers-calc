@@ -286,4 +286,7 @@ const data = json({
   projectiles,
   explosions,
 })
-fs.writeFileSync('./data/datamined.json', data)
+
+const ditIdx = buffer.indexOf('MinigameStratagemArcadeComponentData')
+console.log(ditIdx.toString(16))
+// fs.writeFileSync('./data/datamined.json', data)

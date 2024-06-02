@@ -153,7 +153,7 @@
   "table.th.wpn.label;dmag": "Mag",
   "table.th.wpn.label;total": "Total",
   "table.th.wpn.label.sup;ddps": "DPS",
-  "table.th.wpn.label.sub;dtdps": "vM",
+  "table.th.wpn.label.sub;ddps": "vM",
   "table.th.wpn.label.sup;dtdps": "TDPS",
   "table.th.wpn.label.sup;ddmag": "MD",
   "table.th.wpn.label.sup;dtotal": "Tot",
