@@ -4,74 +4,74 @@ mixin weaponsHeader
   ) #
   if !hideHeaders.weapon
     th.weapons.source(
-      title=t('table.th.wpn', 'source', 'Where to obtain')
-    ) Source
+      title=t('table.th.wpn', 'source')
+    )= t('table.th.wpn.label', 'source')
     th.weapon.category(
-      title=t('table.th.wpn', 'category', 'Weapon Category')
-    ) Type
+      title=t('table.th.wpn', 'category')
+    )= t('table.th.wpn.label', 'type')
     th.weapon.code(
-      title=t('table.th.wpn', 'code', 'Military code')
-    ) Code
+      title=t('table.th.wpn', 'code')
+    )= t('table.th.wpn.label', 'code')
   th.weapon.name(
-    title=t('table.th.wpn', 'name', 'Name')
-  ) Weapon
+    title=t('table.th.wpn', 'name')
+  )= t('table.th.wpn.label', 'weapon')
   th.weapon.damage(
     title=t('table.th.dmg', 'dmgs3')
     colspan=3
-  ) Damage
+  )= t('table.th.wpn.label', 'Damage')
   th.damage.ap(
     title=t('table.th.dmg', 'ap')
-  ) AP
+  )= t('table.th.wpn.label', 'ap')
   th.weapon.rpm(
-    title=t('table.th.wpn', 'rpm', 'Rate of fire (Rounds Per Minute)')
-  ) RPM
+    title=t('table.th.wpn', 'rpm')
+  )= t('table.th.wpn.label', 'rpm')
   if !hideHeaders.weapon
     th.weapon.reload(
-      title=t('table.th.wpn', 'reloads3', 'Reload times (seconds)')
-    ) Rel
+      title=t('table.th.wpn', 'reloads3')
+    )= t('table.th.wpn.label', 'rel')
     th.weapon.cap(
-      title=t('table.th.wpn', 'cap', 'Ammo capaccity (+ in chamber)')
+      title=t('table.th.wpn', 'cap')
       colspan=2
-    ) Cap
+    )= t('table.th.wpn.label', 'cap')
     th.weapon.spare(
-      title=t('table.th.wpn', 'spare4', 'Spare mags, clips, or rounds (start/max), and resupplied (supply/ammobox')
+      title=t('table.th.wpn', 'spare4')
       colspan=2
-    ) Reserves
+    )= t('table.th.wpn.label', 'spare4')
   if !hideHeaders.damage
     +damagesHeader({ apCount: 1, effectsCount: 1 })
   if !hideHeaders.projectile
     +projectilesHeader()
   if !hideHeaders.dps
     th.weapon.dps(
-      title=('table.th.wpn', 'dps', 'Damage Per Second')
-    ) DPS
+      title=('table.th.wpn', 'dps')
+    )= t('table.th.wpn.label', 'dps')
     th.weapon.tdps(
-      title=('table.th.wpn', 'tdps', 'Total Damage Per Second (Including Reload Time)')
-    ) TDPS
+      title=('table.th.wpn', 'tdps')
+    )= t('table.th.wpn.label', 'tdps')
     th.weapon.magdump(
-      title=('table.th.weapon.wpn', 'dmag', 'Damage for Magdump')
-    ) MD
+      title=('table.th.wpn', 'dmag')
+    )= t('table.th.wpn.label', 'dmag')
     th.weapon.totaldump(
-      title=('table.th.weapon.wpn', 'total', 'Damage for expending all ammo')
-    ) Total
+      title=('table.th.wpn', 'total')
+    )= t('table.th.wpn.label', 'total')
   if !hideHeaders.dps2
     th.weapon.dps2(
-      title=('table.th.weapon.wpn', 'ddps', 'Damage Per Second (vs Massive)')
+      title=('table.th.wpn', 'ddps')
     )
-      sup DPS
-      sub vM
+      sup= t('table.th.wpn.label.sup', 'ddps')
+      sub= t('table.th.wpn.label.sub', 'ddps')
     th.weapon.tdps2(
-      title=('table.th.weapon.wpn', 'dtdps', 'Damage Per Second vs Massive (Including Reload Time)')
+      title=('table.th.weapon.wpn', 'dtdps')
     )
-      sup TDPS
+      sup= t('table.th.wpn.label.sup', 'dtdps')
     th.weapon.magdump2(
-      title=('table.th.weapon.wpn', 'ddmag', 'Damage vs Massive for Magdump')
+      title=('table.th.weapon.wpn', 'ddmag')
     )
-      sup MD
+      sup= t('table.th.wpn.label.sup', 'ddmag')
     th.weapon.totaldump2(
-      title=('table.th.weapon.wpn', 'dtotal', 'Damage vs Massive for expending all ammo')
+      title=('table.th.weapon.wpn', 'dtotal')
     )
-      sup Tot
+      sup= t('table.th.wpn.label.sup', 'dtotal')
 
 mixin weaponsRow(wpn, opts)
   td.weapon.idx= wpn.idx
@@ -471,9 +471,9 @@ header.menu
         checked=nerdMode,
         onclick=`toggleNerdMode()`)
       if nerdMode
-        | 🤓
+        = t('nav.main', 'nerdModeActive', '🤓')
       else
-        | Nerd Mode
+        = t('nav.main', 'nerdMode', 'Nerd Mode')
 table
   tr
     +#{`${scope}Header`}(full)
