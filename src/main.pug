@@ -292,22 +292,24 @@ mixin explosionsHeader(opts = {})
   if opts.full
     th.explosion.idx(
       title=t('table.th.aoe', 'idx', 'Internal order')
-    ) #
+    )= t('table.th.aoe.label', 'idx')
     th.explosion.id(
       title=t('table.th.aoe', 'id', 'ID of explosion data (hex)')
     )
-      span ID
-      sub x
+      sup= t('table.th.aoe.label.sup', 'id', 'ID')
+      sub= t('table.th.aoe.label.sub', 'id', 'x')
     th.explosion.name(
       title=t('table.th.aoe', 'name', 'Translated name of AoE source')
-    ) Explosion
+    )= t('table.th.aoe.label', 'name', 'Explosion')
     th.explosion.damageid(
       title=t('table.th.aoe', 'damageid', 'ID of damage data used (hex)')
-    ) Dmg
+    )
+      sup= t('table.th.aoe.label.sup', 'ID')
+      sub= t('table.th.aoe.label.sub', 'dmg')
   th.explosion.radius(
     title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
     colspan=3
-  ) AoE
+  )= t('table.th.aoe.label', 'radius', 'AoE')
 
 mixin explosionsStubRow(exp, opts = {})
   if showIds
