@@ -7,7 +7,6 @@ function read(file) {
 
 const data = read('datamined')
 const weapons = read('weapons')
-
 const sources = [
   'dlc-super',
   'start',
@@ -31,6 +30,7 @@ const purge = [
   "drag",
   "gravity",
   "penslow",
+  "id",
   "damage",
   "durable",
   "ap",
@@ -40,6 +40,7 @@ const purge = [
   "stun",
   "push",
   "demo",
+  "xid",
   "xdamage",
   "xdurable",
   "xap",
@@ -65,42 +66,6 @@ const purge = [
   "xparam2",
 ]
 
-const overrides = {
-  "RL-77 Airburst Rocket Launcher": {
-    "subattacks": [{
-      "type": "explosion",
-      "id": 0xAC,
-    }, {
-      "type": "explosion",
-      "id": 0xA5,
-      "count": 8,
-    }, {
-      "type": "explosion",
-      "id": 0x3,
-      "count": 8,
-    }],
-  },
-  "ARC-12 Blitzer": {
-    "count": 5,
-  },
-  "PLAS-1 Scorcher": {
-    "projectileid": 0x5C,
-  },
-  "PLAS-101 Purifier": {
-    "projectileid": 0x5D,
-  },
-  "SG-8P Punisher Plasma": {
-    "projectileid": 0x24,
-  },
-  "G-6 Frag": {
-    "subattacks": [{
-      "type": "projectile",
-      "id": 0x87,
-      "count": 30,
-    }]
-  },
-}
-
 let wps = weapons.slice(1)
 const seen = new Set()
 wps = wps.filter(f => {
@@ -110,39 +75,48 @@ wps = wps.filter(f => {
   seen.add(f.fullname)
   return true
 })
-wps = wps.map(wpn => {
+const matches = []
+const keyed = {}
+for(const wpn of wps) {
   for(const prop of purge) {
     delete wpn[prop]
   }
-  const dmgId = wpn.id
-  if(dmgId) {
-    delete wpn.id
-    const projectile = data.projectiles.find(p => p.damageid == dmgId)
-    if(projectile) {
-      wpn.projectileid = projectile.id
-    } else {
-      wpn.damageid = dmgId
-      console.error(`Projectile not found for: ${dmgId}`, wpn)
+  keyed[wpn.fullname] = wpn
+}
+
+const touched = new Set()
+fs.readFileSync('data/advanced-id-mapping.csv', 'utf8')
+  .trim()
+  .split('\n')
+  .slice(1)
+  .forEach(r => {
+    const [
+      name,
+      type,
+      enm, // "enum" is reserved
+      id,
+      count,
+    ] = r.split(',')
+    const weapon = keyed[name]
+    if(!weapon) {
+      console.error(`Weapon not found: ${r}`)
+      return
     }
-  }
-  const xId = wpn.xid
-  if(wpn.xid) {
-    const explosion = data.explosions.find(x => x.damageid == xId)
-    if(explosion && !dmgId) {
-      wpn.explosionid = explosion.id
-    } else if (explosion) {
-      wpn.subattacks = [{
-        type: 'explosion',
-        id: explosion.id,
-      }]
+    if(!touched.has(name)) {
+      touched.add(name)
+      weapon[`${type}id`] = +id
+      weapon.count = count
     } else {
-      wpn.damageid = xId
-      console.error(`Explosion not found for: ${xId}`, wpn)
+      if(!weapon.subattacks) {
+        weapon.subattacks = []
+      }
+      weapon.subattacks.push({
+        type,
+        id: +id,
+        count,
+      })
     }
-  }
-  Object.assign(wpn, overrides[wpn.fullname])
-  return wpn
-})
+  })
 
 fs.writeFileSync('data/advanced.json', json({
   sources,

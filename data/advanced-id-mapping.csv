@@ -1,0 +1,74 @@
+Weapon,Aspect,Enum,Id,Count
+AR-23 Liberator,projectile,Rifle_5p5x50mm_fmj,182
+AR-23P Liberator Penetrator,projectile,Rifle_5p5x50mm_ap,5
+AR-23C Liberator Concussive,projectile,Rifle_5p5x50mm_exp,204
+AR-61 Tenderizer,projectile,Rifle_5p5x50mm_fmj,182
+BR-14 Adjudicator,projectile,Rifle_8x60mm_fmj,97
+R-63 Diligence,projectile,Rifle_9x70mm_fmj,201
+R-63CS Diligence Counter Sniper,projectile,Rifle_9x70mm_hv,159
+MP-98 Knight,projectile,Pistol_9x20mm_smj,145
+SMG-37 Defender,projectile,Pistol_12x25mm_fmj,2
+SMG-72 Pummeler,projectile,Pistol_12x25mm_stun,103
+SG-8 Punisher,projectile,Shotgun_10g_buc,172
+SG-8S Slugger,projectile,Shotgun_10g_slug,158
+SG-225 Breaker,projectile,Shotgun_12g_buc,121
+SG-225SP Breaker Spray & Pray,projectile,Shotgun_12g_bir,117
+SG-225IE Breaker Incendiary,projectile,Shotgun_12g_flm,207
+CB-9 Exploding Crossbow,projectile,Crossbow_Bolt_exp,167
+CB-9 Exploding Crossbow,explosion,Crossbow_Bolt,30
+JAR-5 Dominator,projectile,Rocket_15x100mm_std,119
+R-36 Eruptor,projectile,Rocket_JarPhoenix_20mm,29
+R-36 Eruptor,explosion,JarPhoenix_20mm,81
+SG-8P Punisher Plasma,projectile,Plasma_Punisher_Projectile,36
+SG-8P Punisher Plasma,explosion,Punisher_Plasma_Explosion,41
+ARC-12 Blitzer,damage,Projectile_Arc_Shotgun,117
+LAS-5 Scythe,damage,DPS_BeamMedium,297
+LAS-16 Sickle,projectile,Laser_Long,98
+PLAS-1 Scorcher,projectile,Plasma_Bolt_Medium,92
+PLAS-1 Scorcher,explosion,Plasma_Bolt_Medium,79
+PLAS-101 Purifier,projectile,Plasma_Bolt_Large,190
+PLAS-101 Purifier,explosion,Plasma_Bolt_Large,192
+P-2 Peacemaker,projectile,Pistol_9x20mm_hp,218
+P-19 Redeemer,projectile,Pistol_9x20mm_fmj,194
+P-113 Verdict,projectile,Pistol_Magnum,12
+GP-31 Grenade Pistol,projectile,Grenade_40mm_HEAT,54
+GP-31 Grenade Pistol,explosion,Grenade_40mm_HE_MK2,106
+LAS-7 Dagger,damage,DPS_BeamSmall,296
+P-4 Senator,projectile,Pistol_13x40mm_fmj,203
+M-105 Stalwart,projectile,Rifle_5p5x50mm_fmj,182
+MG-43 Machine Gun,projectile,Rifle_8x60mm_apt,179
+MG-206 Heavy Machine Gun,projectile,Rifle_12p5x100mm_bchp,181
+ARC-3 Arc Thrower,damage,Projectile_Arc_Thrower,115
+FLAM-40 Flamethrower,damage,Projectile_Flamethrower,9
+APW-1 Anti-Materiel Rifle,projectile,Rifle_12p5x100mm_eit,151
+GL-21 Grenade Launcher,projectile,Grenade_40mm_HE,186
+GL-21 Grenade Launcher,explosion,Grenade_40mm_HE,185
+AC-8 Autocannon,projectile,Cannon_20mm_APHET,75
+AC-8 Autocannon,explosion,APHET_20mm,208
+RS-422 Railgun,projectile,Railgun,125
+LAS-98 Laser Cannon,damage,DPS_BeamLarge,302
+LAS-99 Quasar Cannon,projectile,Laser_Pulse,86
+LAS-99 Quasar Cannon,explosion,Laser_Pulse,32
+EAT-17 Expendable Anti-Tank,projectile,Grenade_75mm_HEAT,85
+EAT-17 Expendable Anti-Tank,explosion,Grenade_75mm_HEAT,191
+GR-8 Recoilless Rifle,projectile,Grenade_85mm_HEAT,100
+GR-8 Recoilless Rifle,explosion,Grenade_85mm_HEAT,133
+FAF-14 Spear,projectile,Missile_Faf,150
+FAF-14 Spear,explosion,Rocket_110mm,120
+RL-77 Airburst Rocket Launcher,projectile,Grenade_85mm_AirburstCluster,205
+RL-77 Airburst Rocket Launcher,explosion,Primary_Airburst,172
+RL-77 Airburst Rocket Launcher,explosion,Airburst_Cluster,165,8
+RL-77 Airburst Rocket Launcher,explosion,AirburstCluster_Bomb,3,8
+Break-Action Shotgun,projectile,Shotgun_10g_mag,146
+G-6 Frag,explosion,Frag,136
+G-6 Frag,projectile,Projectile_Shrapnel,135,30
+G-12 High Explosive,explosion,HighExplosive,91
+G-10 Incendiary,explosion,Incendiary,119
+G-16 Impact,explosion,Impact,174
+G-13 Incendiary Impact,explosion,Incendiary,119
+G-23 Stun,explosion,Flash,117
+G-123 Thermite,explosion,Thermite,107
+G-123 Thermite,damage,DPS_Thermite,310
+Melee,damage,Ability_Avatar_Melee,326
+Status Effects#Burn,damage,DPS_Fire,309
+EXO-45_Patriot_Exosuit#Stomp Attack,damage,Ability_Cyborg_Lieutenant_Stomp,357

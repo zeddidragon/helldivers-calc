@@ -13,7 +13,7 @@ const Int = {
   size: 0x04,
 }
 const Float = {
-  read: (buf, off = 0) => buf.readFloatLE(off),
+  read: (buf, off = 0) => +buf.readFloatLE(off).toFixed(3),
   write: (buf, v, off = 0) => buf.writeFloatLE(v, off),
   size: 0x04,
 }
@@ -214,9 +214,9 @@ const projectileSchema = {
   mass: Float,
   drag: Float,
   gravity: Float,
-  ...unknowns(13, 15, {
-    13: Int,
-  }),
+  ...unknowns(13, 13, { 13: Int }),
+  lifetime: Float,
+  ...unknowns(15, 15, {}),
   damageid: Int,
   penslow: Float,
   ...unknowns(18, 60, {

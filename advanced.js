@@ -348,6 +348,7 @@ async function loadData() {
   const registers = {
     projectile: projectiles,
     explosion: explosions,
+    damage: damages,
   }
   locals.weapons = data.weapons.map((wpn, idx) => {
     const [, code, name] = /^(\w+-\d+\w*) (.*)$/.exec(wpn.fullname) || []

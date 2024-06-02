@@ -272,7 +272,6 @@
       "fullname": "CB-9 Exploding Crossbow",
       "source": "demo-det",
       "sourcepage": 3,
-      "xid": "125",
       "rpm": 50,
       "recoil": 35,
       "reload": 3.3,
@@ -308,7 +307,6 @@
       "fullname": "R-36 Eruptor",
       "source": "demo-det",
       "sourcepage": 2,
-      "xid": "205",
       "rpm": 25,
       "recoil": 75,
       "reload": 4.7,
@@ -320,15 +318,14 @@
       "supply": 6,
       "box": 3,
       "tags": ["jet", "shrapnel"],
-      "projectileid": 139,
-      "subattacks": [{"type": "explosion", "id": 194}]
+      "projectileid": 29,
+      "subattacks": [{"type": "explosion", "id": 81}]
     },
     {
       "category": "NRG",
       "fullname": "SG-8P Punisher Plasma",
       "source": "cut-edge",
       "sourcepage": 2,
-      "xid": "186",
       "rpm": 80,
       "recoil": 110,
       "reload": 2.5,
@@ -338,7 +335,7 @@
       "supply": 8,
       "box": 4,
       "projectileid": 36,
-      "subattacks": [{"type": "explosion", "id": 192}]
+      "subattacks": [{"type": "explosion", "id": 41}]
     },
     {
       "category": "NRG",
@@ -347,8 +344,7 @@
       "sourcepage": 3,
       "rpm": 45,
       "recoil": 60,
-      "damageid": "117",
-      "count": 5
+      "damageid": 117
     },
     {
       "category": "NRG",
@@ -364,7 +360,7 @@
       "box": 2,
       "limit": 8,
       "tags": ["laser"],
-      "damageid": "297"
+      "damageid": 297
     },
     {
       "category": "NRG",
@@ -387,7 +383,6 @@
       "fullname": "PLAS-1 Scorcher",
       "source": "hd-mobilize",
       "sourcepage": 10,
-      "xid": "184",
       "rpm": 250,
       "recoil": 20,
       "reload": 2.5,
@@ -405,7 +400,6 @@
       "fullname": "PLAS-101 Purifier",
       "source": "polar-pat",
       "sourcepage": 3,
-      "xid": "186",
       "recoil": 20,
       "charge": 1.3,
       "reload": 2.5,
@@ -414,7 +408,7 @@
       "magstart": 3,
       "supply": 6,
       "box": 3,
-      "projectileid": 93,
+      "projectileid": 190,
       "subattacks": [{"type": "explosion", "id": 192}]
     },
     {
@@ -472,7 +466,6 @@
       "fullname": "GP-31 Grenade Pistol",
       "source": "demo-det",
       "sourcepage": 3,
-      "xid": "220",
       "rpm": 900,
       "recoil": 43,
       "reload": 2,
@@ -482,7 +475,7 @@
       "roundsupply": 2,
       "roundsbox": 1,
       "projectileid": 54,
-      "subattacks": [{"type": "explosion", "id": 185}]
+      "subattacks": [{"type": "explosion", "id": 106}]
     },
     {
       "category": "HG",
@@ -498,7 +491,7 @@
       "box": 3,
       "limit": 5,
       "tags": ["laser"],
-      "damageid": "296"
+      "damageid": 296
     },
     {
       "category": "HG",
@@ -570,7 +563,7 @@
       "source": "support",
       "rpm": 60,
       "charge": 1,
-      "damageid": "115"
+      "damageid": 115
     },
     {
       "category": "SUP",
@@ -583,7 +576,7 @@
       "box": 3,
       "limit": 12.5,
       "tags": ["fire"],
-      "projectileid": 39
+      "damageid": 9
     },
     {
       "category": "SUP",
@@ -604,7 +597,6 @@
       "category": "SUP",
       "fullname": "GL-21 Grenade Launcher",
       "source": "support",
-      "xid": "220",
       "reload": 3.5,
       "reloadearly": 3,
       "cap": 10,
@@ -613,14 +605,13 @@
       "magstart": 1,
       "supply": 2,
       "box": 1,
-      "projectileid": 84,
+      "projectileid": 186,
       "subattacks": [{"type": "explosion", "id": 185}]
     },
     {
       "category": "SUP",
       "fullname": "AC-8 Autocannon",
       "source": "support",
-      "xid": "216",
       "rpm": 250,
       "reload": 5.2,
       "reloadearly": 1.7,
@@ -646,7 +637,7 @@
       "roundstart": 10,
       "roundsupply": 10,
       "roundsbox": 2,
-      "projectileid": 19
+      "projectileid": 125
     },
     {
       "category": "SUP",
@@ -660,13 +651,12 @@
       "box": 1,
       "limit": 10,
       "tags": ["laser"],
-      "damageid": "302"
+      "damageid": 302
     },
     {
       "category": "SUP",
       "fullname": "LAS-99 Quasar Cannon",
       "source": "support",
-      "xid": "228",
       "charge": 3.1,
       "reload": 15,
       "projectileid": 86,
@@ -676,7 +666,6 @@
       "category": "SUP",
       "fullname": "EAT-17 Expendable Anti-Tank",
       "source": "support",
-      "xid": "226",
       "cap": 1,
       "projectileid": 85,
       "subattacks": [{"type": "explosion", "id": 191}]
@@ -685,7 +674,6 @@
       "category": "SUP",
       "fullname": "GR-8 Recoilless Rifle",
       "source": "support",
-      "xid": "225",
       "reload": 6,
       "cap": 1,
       "rounds": 5,
@@ -699,7 +687,6 @@
       "category": "SUP",
       "fullname": "FAF-14 Spear",
       "source": "support",
-      "xid": "241",
       "reload": 5,
       "cap": 1,
       "rounds": 3,
@@ -722,8 +709,8 @@
       "projectileid": 205,
       "subattacks": [
         {"type": "explosion", "id": 172},
-        {"type": "explosion", "id": 165, "count": 8},
-        {"type": "explosion", "id": 3, "count": 8}
+        {"type": "explosion", "id": 165, "count": "8"},
+        {"type": "explosion", "id": 3, "count": "8"}
       ]
     },
     {
@@ -745,19 +732,17 @@
       "fullname": "G-6 Frag",
       "source": "hd-mobilize",
       "sourcepage": 1,
-      "xid": "201",
       "rounds": 4,
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
       "explosionid": 136,
-      "subattacks": [{"type": "projectile", "id": 135, "count": 30}]
+      "subattacks": [{"type": "projectile", "id": 135, "count": "30"}]
     },
     {
       "category": "GR",
       "fullname": "G-12 High Explosive",
       "source": "start",
-      "xid": "213",
       "rounds": 4,
       "roundstart": 3,
       "roundsupply": 4,
@@ -769,7 +754,6 @@
       "fullname": "G-10 Incendiary",
       "source": "steel-vets",
       "sourcepage": 2,
-      "xid": "203",
       "rounds": 4,
       "roundstart": 3,
       "roundsupply": 4,
@@ -780,19 +764,17 @@
       "category": "GR",
       "fullname": "G-16 Impact",
       "source": "start",
-      "xid": "213",
       "rounds": 4,
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "explosionid": 91
+      "explosionid": 174
     },
     {
       "category": "GR",
       "fullname": "G-13 Incendiary Impact",
       "source": "polar-pat",
       "sourcepage": 2,
-      "xid": "203",
       "rounds": 4,
       "roundstart": 3,
       "roundsupply": 4,
@@ -804,7 +786,6 @@
       "fullname": "G-23 Stun",
       "source": "cut-edge",
       "sourcepage": 2,
-      "xid": "169",
       "rounds": 4,
       "roundstart": 3,
       "roundsupply": 4,
@@ -826,24 +807,24 @@
       "fullname": "G-123 Thermite",
       "source": "demo-det",
       "sourcepage": 1,
-      "xid": "204",
       "rounds": 4,
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "explosionid": 107
+      "explosionid": 107,
+      "subattacks": [{"type": "damage", "id": 310}]
     },
     {
       "category": "Misc",
       "fullname": "Melee",
       "source": "start",
-      "damageid": "357"
+      "damageid": 326
     },
     {
       "category": "Misc",
       "fullname": "Status Effects#Burn",
       "source": "status",
-      "damageid": "309"
+      "damageid": 309
     }
   ]
 }

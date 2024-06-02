@@ -256,7 +256,12 @@ mixin projectilesHeader(opts = {})
   ) g
   th.projectile.penslow(
     title=t('table.th.prj', 'penslow', 'Penetration Slowdown')
-  ) PenSl
+  )
+    span sl
+    sub p
+  th.projectile.lifetime(
+    title=t('table.th.prj', 'lifetime', 'Lifetime (s)')
+  ) l
   if !opts.full
     th.projectile.name(
       title=t('table.th.prj', 'name', 'Translated name of projectile')
@@ -277,6 +282,7 @@ mixin projectilesRow(prj, opts = {})
   td.projectile.drag= prj.drag
   td.projectile.gravity= prj.gravity
   td.projectile.penslow= prj.penslow
+  td.projectile.lifetime(class={ muted: !prj.lifetime })= prj.lifetime
   if !opts.full
     td.projectile.name= prj.name
 
@@ -306,11 +312,12 @@ mixin explosionsStubRow(exp, opts = {})
     td.explosion.id= id(exp)
   td.explosion.label(
     title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
+    colspan=2
   )= t('table.td.aoe.label', 'radius', 'Radius')
   td.explosion.radius.stub.r1= exp.r1.toFixed(1)
   td.explosion.radius.stub.r2.rx= exp.r2.toFixed(1)
   td.explosion.radius.stub.r3.rx= exp.r3.toFixed(1)
-  td.explosion.filler(colspan=1)
+  td.explosion.filler(colspan=4)
 
 mixin explosionsRow(exp, opts = {})
   if opts.full
