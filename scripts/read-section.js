@@ -287,6 +287,21 @@ const data = json({
   explosions,
 })
 
-const ditIdx = buffer.indexOf('MinigameStratagemArcadeComponentData')
-console.log(ditIdx.toString(16))
+let idx = buffer.indexOf('PISTOL-SMG')
+let word = ''
+let words = []
+let skipped = 0
+const stop = Buffer.alloc(4)
+stop.writeInt32LE(0x0600)
+console.log(stop)
+while(true) {
+  let nextIdx = buffer.indexOf(stop, idx + 1)
+  console.log({ idx: idx.toString(16), nextIdx: nextIdx.toString(16) })
+  if(idx < 0 || (nextIdx - idx) > 200) {
+    break
+  }
+  words.push(buffer.toString('ascii', idx, nextIdx))
+  idx = nextIdx + 4
+}
+console.log(words.join('\n'), word)
 // fs.writeFileSync('./data/datamined.json', data)
