@@ -156,7 +156,7 @@ window.locals = {
     damagesHideName: 20,
     weapons: 11,
     explosions: 3,
-    projectiles: 7,
+    projectiles: 8,
   },
   full: {
     full: true,
