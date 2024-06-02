@@ -43,33 +43,33 @@ mixin weaponsHeader
     +projectilesHeader()
   if !hideHeaders.dps
     th.weapon.dps(
-      title=('table.th.wpn', 'dps')
+      title=t('table.th.wpn', 'dps')
     )= t('table.th.wpn.label', 'dps')
     th.weapon.tdps(
-      title=('table.th.wpn', 'tdps')
+      title=t('table.th.wpn', 'tdps')
     )= t('table.th.wpn.label', 'tdps')
     th.weapon.magdump(
-      title=('table.th.wpn', 'dmag')
+      title=t('table.th.wpn', 'dmag')
     )= t('table.th.wpn.label', 'dmag')
     th.weapon.totaldump(
-      title=('table.th.wpn', 'total')
+      title=t('table.th.wpn', 'total')
     )= t('table.th.wpn.label', 'total')
   if !hideHeaders.dps2
     th.weapon.dps2(
-      title=('table.th.wpn', 'ddps')
+      title=t('table.th.wpn', 'dtdps')
     )
-      sup= t('table.th.wpn.label.sup', 'ddps')
-      sub= t('table.th.wpn.label.sub', 'ddps')
+      sup= t('table.th.wpn.label.sup', 'dtdps')
+      sub= t('table.th.wpn.label.sub', 'dtdps')
     th.weapon.tdps2(
-      title=('table.th.weapon.wpn', 'dtdps')
+      title=t('table.th.wpn', 'dtdps')
     )
       sup= t('table.th.wpn.label.sup', 'dtdps')
     th.weapon.magdump2(
-      title=('table.th.weapon.wpn', 'ddmag')
+      title=t('table.th.wpn', 'ddmag')
     )
       sup= t('table.th.wpn.label.sup', 'ddmag')
     th.weapon.totaldump2(
-      title=('table.th.weapon.wpn', 'dtotal')
+      title=t('table.th.wpn', 'dtotal')
     )
       sup= t('table.th.wpn.label.sup', 'dtotal')
 
