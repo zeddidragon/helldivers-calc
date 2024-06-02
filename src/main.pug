@@ -335,42 +335,42 @@ mixin damagesHeader(opts = {})
   if opts.full
     th.damage.idx(
       title=t('table.th.dmg', 'idx', 'Internal order')
-    ) #
+    )= t('table.th.dmg.label', 'idx', '#')
   if opts.full || showIds
     th.damage.id(
       title=t('table.th.dmg', 'id', 'ID of damage data (hex)')
     )
-      span ID
-      sub d
+      sup= t('table.th.dmg.label.sup', 'id', 'ID')
+      sub= t('table.th.dmg.label.sub', 'id', 'dmg')
 
   if opts.full && !opts.hideName
     th.damage.name(
       title=t('table.th.dmg', 'name', 'Translated name of damage source')
-    ) Name
+    )= t('table.th.dmg.label', 'name', 'Name')
   if opts.full
     th.damage.dmg(
       title=t('table.th.dmg', 'dmgs3', 'Damage type / Base damage / Damage vs Massive')
       colspan=3
-    ) Damage
+    )= t('table.th.dmg.label', 'dmgs3', 'Damage')
     - const apCount = opts.apCount || 4
     th.damage.ap(
       title=t('table.th.dmg', 'ap', 'Armor Penetration, varies by context')
       colspan=apCount
-    ) AP
+    )= t('table.th.dmg.label', 'ap', 'AP')
   th.damage.demo(
     title=t('table.th.dmg', 'demo', 'Demolition Force')
-  ) DF
+  )= t('table.th.dmg.label', 'demo', 'DF')
   th.damage.stun(
     title=t('table.th.dmg', 'stun', 'Stagger Value')
-  ) SV
+  )= t('table.th.dmg.label', 'stun', 'SV')
   th.damage.push(
     title=t('table.th.dmg', 'push', 'Push Force')
-  ) PF
+  )= t('table.th.dmg.label', 'push', 'PF')
   - const effectsCount = opts.effectsCount || 4
   th.damage.effect(
     title=t('table.th.dmg', 'effects8', 'Status Effects')
     colspan=effectsCount * 2
-  ) FX
+  )= t('table.th.dmg.label', 'effects8', 'FX')
 
 mixin damagesRow(dmg, opts = {})
   - let i
