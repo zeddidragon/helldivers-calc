@@ -307,9 +307,9 @@ mixin explosionsStubRow(exp, opts = {})
   td.explosion.label(
     title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
   )= t('table.td.aoe.label', 'radius', 'Radius')
-  td.explosion.radius.r1= exp.r1.toFixed(1)
-  td.explosion.radius.r2.rx= exp.r2.toFixed(1)
-  td.explosion.radius.r3.rx= exp.r3.toFixed(1)
+  td.explosion.radius.stub.r1= exp.r1.toFixed(1)
+  td.explosion.radius.stub.r2.rx= exp.r2.toFixed(1)
+  td.explosion.radius.stub.r3.rx= exp.r3.toFixed(1)
   td.explosion.filler(colspan=1)
 
 mixin explosionsRow(exp, opts = {})
