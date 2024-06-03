@@ -62,7 +62,7 @@ const beamEnums = searchWords({
   last: 'BeamType',
 })
 
-const arcEnum = searchWords({
+const arcEnums = searchWords({
   buffer: enumBuffer,
   first: 'ArcType_None',
   last: 'ArcType',
@@ -398,12 +398,68 @@ const beams = readData({
   schema: beamSchema,
 })
 
+const arcSchema = {
+  id: Int,
+  ...unknowns(2, 2, {
+    2: Float,
+  }),
+  range: Float,
+  ...unknowns(4, 9, {
+    4: Float,
+    5: Float,
+    6: Float,
+    7: Float,
+    8: Int,
+  }),
+  damageid: Int,
+  ...unknowns(11, 24, {
+    19: Int,
+  }),
+}
+// Not very future-proof
+const arcSearchSchema = {
+  id: Int,
+  f2: Float,
+  f3: Float,
+  f4: Float,
+  f5: Float,
+  f6: Float,
+  f7: Float,
+  i8: Int,
+  i9: Int,
+}
+const blitzer = [
+  0x3,
+  300,
+  25,
+  10,
+  10,
+  10,
+  10,
+  1,
+  0,
+  117,
+  0,
+  0,
+]
+
+const arcs = readData({
+  buffer,
+  searchSchema: arcSearchSchema,
+  searchData: blitzer,
+  searchName: 'Blitzer',
+  searchOffset: 0x0,
+  enums: arcEnums,
+  schema: arcSchema,
+})
+
 const data = json({
   version,
   damages,
   projectiles,
   explosions,
   beams,
+  arcs,
 })
 
 fs.writeFileSync('./data/datamined.json', data)

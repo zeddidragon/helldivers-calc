@@ -101,7 +101,7 @@ td.damage.ap.ap-list-1, td.explosion.radius.r1, td.effect.effect1 {
   padding-left: 0.2em;
 }
 
-td.explosion.label, td.beam.label {
+td.explosion.label, td.beam.label, td.arc.label {
   color: #a98a98;
 }
 
@@ -205,8 +205,11 @@ td.id:before, td.damageid:before, td.projectileid:before {
 .damage-x, .xdmg, .name.name-explosion, .stub.radius {
   color: #ea8;
 }
-.stub.range {
+.beam.stub.range {
   color: #ee8;
+}
+.arc.stub.range {
+  color: #88e;
 }
 .name.name-projectile {
   color: #fafafa;

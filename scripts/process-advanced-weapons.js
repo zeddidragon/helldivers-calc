@@ -105,7 +105,7 @@ fs.readFileSync('data/advanced-id-mapping.csv', 'utf8')
     if(!touched.has(name)) {
       touched.add(name)
       weapon[`${type}id`] = +id
-      weapon.count = count
+      weapon.count = count && +count
     } else {
       if(!weapon.subattacks) {
         weapon.subattacks = []
@@ -113,7 +113,7 @@ fs.readFileSync('data/advanced-id-mapping.csv', 'utf8')
       weapon.subattacks.push({
         type,
         id: +id,
-        count,
+        count: count && +count,
       })
     }
   })

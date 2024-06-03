@@ -143,6 +143,7 @@ window.locals = {
       case 'projectiles':
       case 'explosions':
       case 'beams':
+      case 'arcs':
         return 'damages'
     }
   },
@@ -253,6 +254,7 @@ window.locals = {
     'projectiles',
     'explosions',
     'beams',
+    'arcs',
   ],
   roundStart: wpn => {
     if(wpn.roundstart == null) return wpn.rounds
@@ -347,6 +349,7 @@ async function loadData() {
       r3: round(obj.r3),
     }
   })
+  const explosions = register(locals.explosions)
   locals.beams = data.beams.map((obj, idx) => {
     return {
       idx,
@@ -355,20 +358,31 @@ async function loadData() {
       damage: damages[obj.damageid],
     }
   })
-  const explosions = register(locals.explosions)
   const beams = register(locals.beams)
+  locals.arcs = data.arcs.map((obj, idx) => {
+    return {
+      idx,
+      ...obj,
+      name: t('arc', obj.enum),
+      damage: damages[obj.damageid],
+    }
+  })
+  const arcs = register(locals.arcs)
   const registers = {
     projectile: projectiles,
     explosion: explosions,
     damage: damages,
     beam: beams,
+    arc: arcs,
   }
   locals.weapons = data.weapons.map((wpn, idx) => {
     const [, code, name] = /^(\w+-\d+\w*) (.*)$/.exec(wpn.fullname) || []
+    const arc = arcs[wpn.arcid]
     const beam = beams[wpn.beamid]
     const projectile = projectiles[wpn.projectileid]
     const explosion = explosions[wpn.explosionid]
     const dmgId = projectile?.damageid
+      || arc?.damageid
       || beam?.damageid
       || explosion?.damageid
       || wpn.damageid
@@ -484,6 +498,7 @@ async function loadData() {
       totaldump2,
       code,
       projectile,
+      arc,
       beam,
       explosion,
       damage,

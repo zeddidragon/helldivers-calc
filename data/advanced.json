@@ -344,7 +344,8 @@
       "sourcepage": 3,
       "rpm": 45,
       "recoil": 60,
-      "damageid": 117
+      "arcid": 3,
+      "count": 5
     },
     {
       "category": "NRG",
@@ -563,7 +564,7 @@
       "source": "support",
       "rpm": 60,
       "charge": 1,
-      "damageid": 115
+      "arcid": 6
     },
     {
       "category": "SUP",
@@ -709,8 +710,8 @@
       "projectileid": 205,
       "subattacks": [
         {"type": "explosion", "id": 172},
-        {"type": "explosion", "id": 165, "count": "8"},
-        {"type": "explosion", "id": 3, "count": "8"}
+        {"type": "explosion", "id": 165, "count": 8},
+        {"type": "explosion", "id": 3, "count": 8}
       ]
     },
     {
@@ -737,7 +738,7 @@
       "roundsupply": 4,
       "roundsbox": 2,
       "explosionid": 136,
-      "subattacks": [{"type": "projectile", "id": 135, "count": "30"}]
+      "subattacks": [{"type": "projectile", "id": 135, "count": 30}]
     },
     {
       "category": "GR",

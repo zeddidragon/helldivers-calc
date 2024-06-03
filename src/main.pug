@@ -199,6 +199,8 @@ mixin weaponsRow(wpn, opts)
       +projectilesRow(wpn.projectile)
     else if wpn.explosion
       +explosionsStubRow(wpn.explosion)
+    else if wpn.arc
+      +arcsStubRow(wpn.arc)
     else if wpn.beam
       +beamsStubRow(wpn.beam)
     else
@@ -371,9 +373,47 @@ mixin beamsStubRow(beam, opts = {})
   td.beam.label(
     title=t('table.th.beam', 'range', 'Beam range (m)')
   )= t('table.td.beam.label', 'range', 'Beam')
-  td.beam.radius.stub.range= beam.range
+  td.beam.range.stub= beam.range
   td.beam.filler(colspan=5)
   td.beam.stub.name= beam.name
+
+mixin arcsHeader(opts = {})
+  th.arc.idx(
+    title=t('table.th.arc', 'idx', 'Internal order')
+  )= t('table.th.arc.label', 'idx')
+  th.arc.id(
+    title=t('table.th.arc', 'id', 'ID of arc data (hex)')
+  )
+    sup= t('table.th.arc.label.sup', 'id', 'ID')
+    sub= t('table.th.arc.label.sub', 'id', 'b')
+  th.arc.name(
+    title=t('table.th.arc', 'name', 'Translated name of arc')
+  )= t('table.th.arc.label', 'name', 'arc')
+  th.arc.damageid(
+    title=t('table.th.arc', 'damageid', 'ID of damage data used (hex)')
+  )
+    sup= t('table.th.arc.label.sup', 'ID')
+    sub= t('table.th.arc.label.sub', 'dmg')
+  th.arc.range(
+    title=t('table.th.arc', 'range', 'Max range (m)')
+  )= t('table.th.arc.label', 'range', 'Range')
+
+mixin arcsRow(arc, opts = {})
+  td.arc.idx= arc.idx
+  td.arc.id= id(arc)
+  td.arc.name= arc.name
+  td.arc.damageid= id(arc, 'damageid')
+  td.arc.range= arc.range
+
+mixin arcsStubRow(arc, opts = {})
+  if showIds
+    td.arc.id= id(arc)
+  td.arc.label(
+    title=t('table.th.arc', 'range', 'Arc range (m)')
+  )= t('table.td.arc.label', 'range', 'Arc')
+  td.arc.range.stub= arc.range
+  td.arc.filler(colspan=5)
+  td.arc.stub.name= arc.name
 
 mixin damagesHeader(opts = {})
   if opts.full && !opts.hideId

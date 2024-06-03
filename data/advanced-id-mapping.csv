@@ -21,7 +21,7 @@ R-36 Eruptor,projectile,Rocket_JarPhoenix_20mm,29
 R-36 Eruptor,explosion,JarPhoenix_20mm,81
 SG-8P Punisher Plasma,projectile,Plasma_Punisher_Projectile,36
 SG-8P Punisher Plasma,explosion,Punisher_Plasma_Explosion,41
-ARC-12 Blitzer,damage,Projectile_Arc_Shotgun,117
+ARC-12 Blitzer,arc,ArcShotgun,3,5
 LAS-5 Scythe,beam,Medium,4
 LAS-16 Sickle,projectile,Laser_Long,98
 PLAS-1 Scorcher,projectile,Plasma_Bolt_Medium,92
@@ -38,7 +38,7 @@ P-4 Senator,projectile,Pistol_13x40mm_fmj,203
 M-105 Stalwart,projectile,Rifle_5p5x50mm_fmj,182
 MG-43 Machine Gun,projectile,Rifle_8x60mm_apt,179
 MG-206 Heavy Machine Gun,projectile,Rifle_12p5x100mm_bchp,181
-ARC-3 Arc Thrower,damage,Projectile_Arc_Thrower,115
+ARC-3 Arc Thrower,arc,ArcThrower,6
 FLAM-40 Flamethrower,damage,Projectile_Flamethrower,9
 APW-1 Anti-Materiel Rifle,projectile,Rifle_12p5x100mm_eit,151
 GL-21 Grenade Launcher,projectile,Grenade_40mm_HE,186
