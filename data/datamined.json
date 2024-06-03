@@ -1,5 +1,5 @@
 {
-  "version": "01.000.303",
+  "version": "01.000.305",
   "damages": [
     {
       "id": 1,
@@ -16100,6 +16100,134 @@
       "r2": 14,
       "r3": 18,
       "enum": "HMD_Generator_Crumble"
+    }
+  ],
+  "beams": [
+    {
+      "id": 6,
+      "unk3": 1000,
+      "damageid": 296,
+      "unk7": 22,
+      "unk17": 0,
+      "unk19": 7,
+      "enum": "Small"
+    },
+    {
+      "id": 4,
+      "unk3": 1000,
+      "damageid": 297,
+      "unk7": 24,
+      "unk17": 0,
+      "unk19": 7,
+      "enum": "Medium"
+    },
+    {
+      "id": 12,
+      "unk3": 1000,
+      "damageid": 298,
+      "unk7": 24,
+      "unk17": 0,
+      "unk19": 7,
+      "enum": "MediumDrone"
+    },
+    {
+      "id": 14,
+      "unk3": 1000,
+      "damageid": 301,
+      "unk7": 24,
+      "unk17": 0,
+      "unk19": 7,
+      "enum": "Medium_Focused"
+    },
+    {
+      "id": 3,
+      "unk3": 1000,
+      "damageid": 299,
+      "unk7": 24,
+      "unk17": 0,
+      "unk19": 7,
+      "enum": "Medium_Wide"
+    },
+    {
+      "id": 11,
+      "unk3": 200,
+      "damageid": 302,
+      "unk7": 25,
+      "unk17": 0,
+      "unk19": 8,
+      "enum": "Large"
+    },
+    {
+      "id": 1,
+      "unk3": 200,
+      "damageid": 302,
+      "unk7": 23,
+      "unk17": 0,
+      "unk19": 8,
+      "enum": "LaserCannon"
+    },
+    {
+      "id": 10,
+      "unk3": 200,
+      "damageid": 304,
+      "unk7": 25,
+      "unk17": 0,
+      "unk19": 8,
+      "enum": "Large_Light"
+    },
+    {
+      "id": 9,
+      "unk3": 200,
+      "damageid": 303,
+      "unk7": 25,
+      "unk17": 0,
+      "unk19": 8,
+      "enum": "Large_Heavy"
+    },
+    {
+      "id": 2,
+      "unk3": 9.5,
+      "damageid": 308,
+      "unk7": 25,
+      "unk17": 0,
+      "unk19": 7,
+      "enum": "BotTorch"
+    },
+    {
+      "id": 7,
+      "unk3": 1000,
+      "damageid": 323,
+      "unk7": 27,
+      "unk17": 0,
+      "unk19": 8,
+      "enum": "TripodEye"
+    },
+    {
+      "id": 5,
+      "unk3": 30,
+      "damageid": 296,
+      "unk7": 22,
+      "unk17": 0,
+      "unk19": 7,
+      "enum": "ObserverEye"
+    },
+    {
+      "id": 8,
+      "unk3": 10000,
+      "damageid": 0,
+      "unk7": 0,
+      "unk17": 0,
+      "unk19": 0,
+      "enum": "PhysGun"
+    },
+    {
+      "id": 13,
+      "unk3": 1000,
+      "damageid": 0,
+      "unk7": 0,
+      "unk17": 6,
+      "unk19": 0,
+      "enum": "OutcastFlashbeamChargeup"
     }
   ]
 }

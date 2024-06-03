@@ -33,6 +33,7 @@ function searchWords({
     i++;
   }
   console.log(`Found ${words.length} words`)
+  writeEnums(`tmp/${last}.cs`, words)
   return words
 }
 
@@ -48,28 +49,42 @@ const damageEnums = searchWords({
   first: 'DamageInfoType_None',
   last: 'DamageInfoType',
 })
-// writeEnums('data/damage-info-types.cs', damageEnums)
 
 const projectileEnums = searchWords({
   buffer: enumBuffer,
   first: 'ProjectileType_None',
   last: 'ProjectileType',
 })
-// writeEnums('data/projectile-types.cs', projectileEnums)
+
+const beamEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'BeamType_None',
+  last: 'BeamType',
+})
+
+const arcEnum = searchWords({
+  buffer: enumBuffer,
+  first: 'ArcType_None',
+  last: 'ArcType',
+})
 
 const explosionEnums = searchWords({
   buffer: enumBuffer,
   first: 'ExplosionType_None',
   last: 'ExplosionType',
 })
-// writeEnums('data/explosion-types.cs', explosionEnums)
 
 const abilityEnums = searchWords({
   buffer: enumBuffer,
   first: 'AbilityId_Invalid',
   last: 'AbilityId',
 })
-// writeEnums('data/explosion-types.cs', explosionEnums)
+
+const strategemEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'StratagemType',
+  last: 'StratagemType',
+})
 
 const Int = {
   read: (buf, off = 0) => buf.readInt32LE(off),
@@ -177,19 +192,26 @@ function readData({
   searchData,
   searchName = 'search data',
   searchOffset = 0,
+  searchIdx,
   buffer,
   enums: enumsRaw,
   schema,
   cutPrefix = 1,
 }) {
-  const bytes = getRow(searchData, searchSchema)
-  console.log(bytes)
-  let idx = buffer.indexOf(bytes)
-  if(idx < 0) {
+  let idx = searchIdx
+  if(!idx) {
+    const bytes = getRow(searchData, searchSchema)
+    console.log(bytes)
+    idx = buffer.indexOf(bytes)
+    if(idx > 0) {
+      idx -= searchOffset // Hop back to ID
+    }
+  }
+  if(!idx || idx < 0) {
     throw new Error(`Unable to locate ${searchName}!`)
   }
+  console.log({ idx })
 
-  idx -= searchOffset // Hop back to ID
   console.log(`${searchName} located at: ${hex(idx)}`)
   const searchId = Int.read(buffer, idx)
   console.log(`${searchName} ID: ${hex(searchId)}`)
@@ -334,11 +356,54 @@ const explosions = readData({
   schema: explosionSchema,
 })
 
+const beamSchema = {
+  id: Int,
+  ...unknowns(2, 2),
+  range: Float,
+  damageid: Int,
+  ...unknowns(5, 20, {
+    7: Int,
+    17: Int,
+    19: Int,
+  }),
+}
+// Not very future-proof
+const beamSearchSchema = {
+  im2: Int,
+  im1: Int,
+  id: Int,
+  i2: Int,
+  range: Float,
+  damageid: Int,
+  i5: Int,
+}
+const tripodEye = [
+  7,
+  0,
+  7, // Try updating this  with tripod eye's ID if it changes
+  0,
+  1000, // Range?
+  323,
+  0,
+]
+
+const beams = readData({
+  buffer,
+  searchSchema: beamSearchSchema,
+  searchData: tripodEye,
+  // searchIdx: 0x2f01bc,
+  searchName: 'Tripod Eye',
+  searchOffset: -0x8,
+  enums: beamEnums,
+  schema: beamSchema,
+})
+
 const data = json({
   version,
   damages,
   projectiles,
   explosions,
+  beams,
 })
 
 fs.writeFileSync('./data/datamined.json', data)
