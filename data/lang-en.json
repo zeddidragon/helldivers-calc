@@ -267,7 +267,7 @@
   "table.th.arc;range": "Max range of first hit (m) / Auto-Aim Angle (°)",
   "table.th.arc.label;range": "Range",
   "table.td.arc.label;range": "Arc",
-  "table.th.arc;angle": "Aim angle (m°",
+  "table.th.arc;angle": "Aim angle (°)",
   "table.th.arc.label;angle": "∠",
   "dmg.effects;0": "",
   "dmg.effects;2": "🩸",
