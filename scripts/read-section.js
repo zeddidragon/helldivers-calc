@@ -404,11 +404,13 @@ const arcSchema = {
     2: Float,
   }),
   range: Float,
-  ...unknowns(4, 9, {
+  ...unknowns(4, 6, {
     4: Float,
     5: Float,
     6: Float,
-    7: Float,
+  }),
+  angle: Float,
+  ...unknowns(8, 9, {
     8: Int,
   }),
   damageid: Int,

@@ -375,7 +375,7 @@ mixin beamsStubRow(beam, opts = {})
   )= t('table.td.beam.label', 'range', 'Beam')
   td.beam.range.stub= beam.range
   td.beam.filler(colspan=5)
-  td.beam.stub.name= beam.name
+  td.beam.name= beam.name
 
 mixin arcsHeader(opts = {})
   th.arc.idx(
@@ -397,6 +397,9 @@ mixin arcsHeader(opts = {})
   th.arc.range(
     title=t('table.th.arc', 'range', 'Max range (m)')
   )= t('table.th.arc.label', 'range', 'Range')
+  th.arc.angle(
+    title=t('table.th.arc', 'angle', 'Aim angle (m°')
+  )= t('table.th.arc.label', 'angle', '∠')
 
 mixin arcsRow(arc, opts = {})
   td.arc.idx= arc.idx
@@ -404,6 +407,7 @@ mixin arcsRow(arc, opts = {})
   td.arc.name= arc.name
   td.arc.damageid= id(arc, 'damageid')
   td.arc.range= arc.range
+  td.arc.angle= `${arc.angle}°`
 
 mixin arcsStubRow(arc, opts = {})
   if showIds
@@ -412,8 +416,9 @@ mixin arcsStubRow(arc, opts = {})
     title=t('table.th.arc', 'range', 'Arc range (m)')
   )= t('table.td.arc.label', 'range', 'Arc')
   td.arc.range.stub= arc.range
-  td.arc.filler(colspan=5)
-  td.arc.stub.name= arc.name
+  td.arc.angle.stub= `${arc.angle}°`
+  td.arc.filler(colspan=4)
+  td.arc.name= arc.name
 
 mixin damagesHeader(opts = {})
   if opts.full && !opts.hideId
