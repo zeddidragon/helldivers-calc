@@ -399,11 +399,11 @@ async function loadData() {
       name = obj.name
       return {
         type,
+        damage,
         [type]: obj,
         count,
         name,
         fullname: wpn.fullname,
-        damage,
         weapon: wpn,
       }
     })
