@@ -418,16 +418,14 @@ const beams = readData({
 
 const arcSchema = {
   id: Int,
-  ...unknowns(2, 2, {
-    2: Float,
-  }),
+  velocity: Float,
   range: Float,
-  ...unknowns(4, 6, {
+  ...unknowns(4, 5, {
     4: Float,
     5: Float,
-    6: Float,
   }),
-  angle: Float,
+  chainangle: Float,
+  aimangle: Float,
   ...unknowns(8, 9, {
     8: Int,
   }),
@@ -439,14 +437,15 @@ const arcSchema = {
 // Not very future-proof
 const arcSearchSchema = {
   id: Int,
-  f2: Float,
-  f3: Float,
+  velocity: Float,
+  range: Float,
   f4: Float,
   f5: Float,
-  f6: Float,
-  f7: Float,
+  chainangle: Float,
+  aimangle: Float,
   i8: Int,
   i9: Int,
+  damageid: Int,
 }
 const blitzer = [
   0x3,

@@ -394,30 +394,45 @@ mixin arcsHeader(opts = {})
   )
     sup= t('table.th.arc.label.sup', 'ID')
     sub= t('table.th.arc.label.sub', 'dmg')
+  th.arc.velocity(
+    title=t('table.th.arc', 'velocity', 'Velocity (m/s)')
+  )= t('table.th.arc.label', 'velocity', 'v')
   th.arc.range(
     title=t('table.th.arc', 'range', 'Max range (m)')
   )= t('table.th.arc.label', 'range', 'Range')
-  th.arc.angle(
-    title=t('table.th.arc', 'angle', 'Aim angle (m°')
-  )= t('table.th.arc.label', 'angle', '∠')
+  th.arc.aimangle(
+    title=t('table.th.arc', 'aimangle', 'Aim angle (°)')
+  )
+    sup= t('table.th.arc.label.sup', 'aimangle', '∠')
+    sub= t('table.th.arc.label.sub', 'aimangle', 'aim')
+
+  th.arc.chainangle(
+    title=t('table.th.arc', 'chainangle', 'Chain angle (°)')
+  )
+    sup= t('table.th.arc.label.sup', 'chainangle', '∠')
+    sub= t('table.th.arc.label.sub', 'chainangle', 'ch')
 
 mixin arcsRow(arc, opts = {})
   td.arc.idx= arc.idx
   td.arc.id= id(arc)
   td.arc.name= arc.name
   td.arc.damageid= id(arc, 'damageid')
+  td.arc.velocity= arc.velocity
   td.arc.range= arc.range
-  td.arc.angle= `${arc.angle}°`
+  td.arc.aimangle= `${arc.aimangle}°`
+  td.arc.chainangle= `${arc.chainangle}°`
 
 mixin arcsStubRow(arc, opts = {})
   if showIds
     td.arc.id= id(arc)
   td.arc.label(
-    title=t('table.th.arc', 'range', 'Arc range (m)')
+    title=t('table.td.arc', 'range', 'Arc range (m)')
   )= t('table.td.arc.label', 'range', 'Arc')
+  td.arc.velocity.stub= arc.velocity
   td.arc.range.stub= arc.range
-  td.arc.angle.stub= `${arc.angle}°`
-  td.arc.filler(colspan=4)
+  td.arc.aimangle.stub= `${arc.aimangle}°`
+  td.arc.chainangle.stub= `${arc.chainangle}°`
+  td.arc.filler(colspan=2)
   td.arc.name= arc.name
 
 mixin damagesHeader(opts = {})
