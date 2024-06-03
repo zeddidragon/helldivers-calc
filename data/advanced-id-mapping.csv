@@ -22,7 +22,7 @@ R-36 Eruptor,explosion,JarPhoenix_20mm,81
 SG-8P Punisher Plasma,projectile,Plasma_Punisher_Projectile,36
 SG-8P Punisher Plasma,explosion,Punisher_Plasma_Explosion,41
 ARC-12 Blitzer,damage,Projectile_Arc_Shotgun,117
-LAS-5 Scythe,damage,DPS_BeamMedium,297
+LAS-5 Scythe,beam,Medium,4
 LAS-16 Sickle,projectile,Laser_Long,98
 PLAS-1 Scorcher,projectile,Plasma_Bolt_Medium,92
 PLAS-1 Scorcher,explosion,Plasma_Bolt_Medium,79
@@ -33,7 +33,7 @@ P-19 Redeemer,projectile,Pistol_9x20mm_fmj,194
 P-113 Verdict,projectile,Pistol_Magnum,12
 GP-31 Grenade Pistol,projectile,Grenade_40mm_HEAT,54
 GP-31 Grenade Pistol,explosion,Grenade_40mm_HE_MK2,106
-LAS-7 Dagger,damage,DPS_BeamSmall,296
+LAS-7 Dagger,beam,Small,6
 P-4 Senator,projectile,Pistol_13x40mm_fmj,203
 M-105 Stalwart,projectile,Rifle_5p5x50mm_fmj,182
 MG-43 Machine Gun,projectile,Rifle_8x60mm_apt,179
@@ -46,7 +46,7 @@ GL-21 Grenade Launcher,explosion,Grenade_40mm_HE,185
 AC-8 Autocannon,projectile,Cannon_20mm_APHET,75
 AC-8 Autocannon,explosion,APHET_20mm,208
 RS-422 Railgun,projectile,Railgun,125
-LAS-98 Laser Cannon,damage,DPS_BeamLarge,302
+LAS-98 Laser Cannon,beam,LaserCannon,1
 LAS-99 Quasar Cannon,projectile,Laser_Pulse,86
 LAS-99 Quasar Cannon,explosion,Laser_Pulse,32
 EAT-17 Expendable Anti-Tank,projectile,Grenade_75mm_HEAT,85

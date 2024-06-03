@@ -360,7 +360,7 @@
       "box": 2,
       "limit": 8,
       "tags": ["laser"],
-      "damageid": 297
+      "beamid": 4
     },
     {
       "category": "NRG",
@@ -491,7 +491,7 @@
       "box": 3,
       "limit": 5,
       "tags": ["laser"],
-      "damageid": 296
+      "beamid": 6
     },
     {
       "category": "HG",
@@ -651,7 +651,7 @@
       "box": 1,
       "limit": 10,
       "tags": ["laser"],
-      "damageid": 302
+      "beamid": 1
     },
     {
       "category": "SUP",

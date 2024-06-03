@@ -345,17 +345,29 @@ async function loadData() {
       r3: round(obj.r3),
     }
   })
+  locals.beams = data.beams.map((obj, idx) => {
+    return {
+      idx,
+      ...obj,
+      name: t('beam', obj.enum),
+      damage: damages[obj.damageid],
+    }
+  })
   const explosions = register(locals.explosions)
+  const beams = register(locals.beams)
   const registers = {
     projectile: projectiles,
     explosion: explosions,
     damage: damages,
+    beam: beams,
   }
   locals.weapons = data.weapons.map((wpn, idx) => {
     const [, code, name] = /^(\w+-\d+\w*) (.*)$/.exec(wpn.fullname) || []
+    const beam = beams[wpn.beamid]
     const projectile = projectiles[wpn.projectileid]
     const explosion = explosions[wpn.explosionid]
     const dmgId = projectile?.damageid
+      || beam?.damageid
       || explosion?.damageid
       || wpn.damageid
     const damage = damages[dmgId]
@@ -470,6 +482,7 @@ async function loadData() {
       totaldump2,
       code,
       projectile,
+      beam,
       explosion,
       damage,
       subobjects,

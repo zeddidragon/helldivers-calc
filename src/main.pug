@@ -199,6 +199,8 @@ mixin weaponsRow(wpn, opts)
       +projectilesRow(wpn.projectile)
     else if wpn.explosion
       +explosionsStubRow(wpn.explosion)
+    else if wpn.beam
+      +beamsStubRow(wpn.beam)
     else
       td.projectile-filler(colspan=colspans.projectiles)
   if !hideHeaders.dps
@@ -316,8 +318,8 @@ mixin explosionsStubRow(exp, opts = {})
     td.explosion.id= id(exp)
   td.explosion.label(
     title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
-    colspan=2
   )= t('table.td.aoe.label', 'radius', 'Radius')
+  td.explosion.filler
   td.explosion.radius.stub.r1= exp.r1.toFixed(1)
   td.explosion.radius.stub.r2.rx= exp.r2.toFixed(1)
   td.explosion.radius.stub.r3.rx= exp.r3.toFixed(1)
@@ -334,6 +336,16 @@ mixin explosionsRow(exp, opts = {})
   td.explosion.radius.r1= exp.r1
   td.explosion.radius.r2.rx= exp.r2
   td.explosion.radius.r3.rx= exp.r3
+
+mixin beamsStubRow(beam, opts = {})
+  if showIds
+    td.beam.id= id(beam)
+  td.beam.label(
+    title=t('table.th.beam', 'range', 'Beam range (m)')
+  )= t('table.td.beam.label', 'range', 'Beam')
+  td.beam.radius.stub.range= beam.range
+  td.beam.filler(colspan=5)
+  td.beam.stub.name= beam.name
 
 mixin damagesHeader(opts = {})
   if opts.full && !opts.hideId
