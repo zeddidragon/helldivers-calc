@@ -337,6 +337,34 @@ mixin explosionsRow(exp, opts = {})
   td.explosion.radius.r2.rx= exp.r2
   td.explosion.radius.r3.rx= exp.r3
 
+mixin beamsHeader(opts = {})
+  th.beam.idx(
+    title=t('table.th.beam', 'idx', 'Internal order')
+  )= t('table.th.beam.label', 'idx')
+  th.beam.id(
+    title=t('table.th.beam', 'id', 'ID of beam data (hex)')
+  )
+    sup= t('table.th.beam.label.sup', 'id', 'ID')
+    sub= t('table.th.beam.label.sub', 'id', 'b')
+  th.beam.name(
+    title=t('table.th.beam', 'name', 'Translated name of beam')
+  )= t('table.th.beam.label', 'name', 'beam')
+  th.beam.damageid(
+    title=t('table.th.beam', 'damageid', 'ID of damage data used (hex)')
+  )
+    sup= t('table.th.beam.label.sup', 'ID')
+    sub= t('table.th.beam.label.sub', 'dmg')
+  th.beam.range(
+    title=t('table.th.beam', 'range', 'Max range (m)')
+  )= t('table.th.beam.label', 'range', 'Range')
+
+mixin beamsRow(beam, opts = {})
+  td.beam.idx= beam.idx
+  td.beam.id= id(beam)
+  td.beam.name= beam.name
+  td.beam.damageid= id(beam, 'damageid')
+  td.beam.range= beam.range
+
 mixin beamsStubRow(beam, opts = {})
   if showIds
     td.beam.id= id(beam)

@@ -142,6 +142,7 @@ window.locals = {
     switch(locals.scope) {
       case 'projectiles':
       case 'explosions':
+      case 'beams':
         return 'damages'
     }
   },
@@ -251,6 +252,7 @@ window.locals = {
     'damages',
     'projectiles',
     'explosions',
+    'beams',
   ],
   roundStart: wpn => {
     if(wpn.roundstart == null) return wpn.rounds
