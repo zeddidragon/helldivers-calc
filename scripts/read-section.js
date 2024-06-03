@@ -86,6 +86,24 @@ const strategemEnums = searchWords({
   last: 'StratagemType',
 })
 
+const statusEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'StatusEffectType_None',
+  last: 'StatusEffectType',
+})
+
+const damageTypeEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'HitEffectDamageType_None',
+  last: 'HitEffectDamageType',
+})
+
+const injuryEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'InjuryEffectType_None',
+  last: 'InjuryEffectType',
+})
+
 const Int = {
   read: (buf, off = 0) => buf.readInt32LE(off),
   write: (buf, v, off = 0) => buf.writeInt32LE(v, off),
