@@ -222,7 +222,11 @@ function readData({
   enums: enumsRaw,
   schema,
   cutPrefix = 1,
+  dbg,
+  raw,
 }) {
+  if(dbg) debugUnknown = true
+  if(raw) outputRaw = true
   let idx = searchIdx
   if(!idx) {
     const bytes = getRow(searchData, searchSchema)
@@ -266,6 +270,8 @@ function readData({
       break
     }
   }
+  if(raw) outputRaw = false
+  if(dbg) debugUnknown = false
   return objects
 }
 
