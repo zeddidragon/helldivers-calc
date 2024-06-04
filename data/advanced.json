@@ -657,7 +657,7 @@
       "clips": 10,
       "clipstart": 10,
       "clipsize": 5,
-      "clipbox": 2,
+      "clipsbox": 2,
       "clipsupply": 5,
       "projectileid": 75,
       "type": "projectile",

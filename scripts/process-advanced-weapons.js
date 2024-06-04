@@ -174,6 +174,7 @@ for(const wpn of wps) {
       type: type || 'damage',
       name: register[type][id].enum,
       id,
+      count: wpn.count,
     })
   }
   if(wpn.subattacks) {
@@ -181,11 +182,13 @@ for(const wpn of wps) {
       const {
         type,
         id,
+        count,
       } = sub
       return {
         type,
         name: register[type][id].enum,
         id,
+        count,
       }
     }))
   }

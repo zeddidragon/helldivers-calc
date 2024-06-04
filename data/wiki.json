@@ -16808,7 +16808,7 @@
       "rpm": 45,
       "recoil": 60,
       "count": 5,
-      "attacks": [{"type": "arc", "name": "ArcShotgun", "id": 3}]
+      "attacks": [{"type": "arc", "name": "ArcShotgun", "id": 3, "count": 5}]
     },
     "LAS-5 Scythe": {
       "category": "NRG",
@@ -17085,7 +17085,7 @@
       "clips": 10,
       "clipstart": 10,
       "clipsize": 5,
-      "clipbox": 2,
+      "clipsbox": 2,
       "clipsupply": 5,
       "attacks": [
         {"type": "projectile", "name": "Cannon_20mm_APHET", "id": 75},
@@ -17182,8 +17182,13 @@
           "id": 205
         },
         {"type": "explosion", "name": "Primary_Airburst", "id": 172},
-        {"type": "explosion", "name": "AirburstCluster", "id": 165},
-        {"type": "explosion", "name": "AirburstCluster_Bomb", "id": 3}
+        {"type": "explosion", "name": "AirburstCluster", "id": 165, "count": 8},
+        {
+          "type": "explosion",
+          "name": "AirburstCluster_Bomb",
+          "id": 3,
+          "count": 8
+        }
       ]
     },
     "Break-Action Shotgun": {
@@ -17209,7 +17214,7 @@
       "roundsbox": 2,
       "attacks": [
         {"type": "explosion", "name": "Frag", "id": 136},
-        {"type": "projectile", "name": "Shrapnel", "id": 135}
+        {"type": "projectile", "name": "Shrapnel", "id": 135, "count": 30}
       ]
     },
     "G-12 High Explosive": {

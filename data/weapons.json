@@ -54,7 +54,7 @@
     "clips": 0,
     "clipstart": 0,
     "clipsize": 0,
-    "clipbox": 0,
+    "clipsbox": 0,
     "clipsupply": 0,
     "tags": [],
     "dps": 0,
@@ -1314,7 +1314,7 @@
     "clips": 10,
     "clipstart": 10,
     "clipsize": 5,
-    "clipbox": 2,
+    "clipsbox": 2,
     "clipsupply": 5
   },
   {
