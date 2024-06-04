@@ -7,6 +7,7 @@ function read(file) {
 
 const data = read('datamined')
 const weapons = read('weapons')
+const names = read('lang-en')
 const sources = [
   'dlc-super',
   'start',
@@ -133,6 +134,13 @@ const wikiRegister = {
   weapon: {},
 }
 const register = {}
+const tkeys = {
+  damage: 'dmg',
+  projectile: 'prj',
+  explosion: 'aoe',
+  beam: 'beam',
+  arc: 'arc',
+}
 
 for(const prop of Object.keys(wikiRegister)) {
   const reg = wikiRegister[prop]
@@ -144,6 +152,7 @@ for(const prop of Object.keys(wikiRegister)) {
       ...obj,
       enum: void 0,
       damageid: void 0,
+      name: names[`dmg;${obj.enum}`],
       damage_name: register.damage[obj.damageid]?.enum,
     }
   }
