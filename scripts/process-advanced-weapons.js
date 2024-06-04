@@ -105,6 +105,7 @@ fs.readFileSync('data/advanced-id-mapping.csv', 'utf8')
     if(!touched.has(name)) {
       touched.add(name)
       weapon[`${type}id`] = +id
+      weapon.type = type
       weapon.count = count && +count
     } else {
       if(!weapon.subattacks) {
@@ -122,3 +123,63 @@ fs.writeFileSync('data/advanced.json', json({
   sources,
   weapons: wps,
 }))
+
+const wikiRegister = {
+  damage: {},
+  projectile: {},
+  explosion: {},
+  beam: {},
+  arc: {},
+  weapon: {},
+}
+const register = {}
+
+for(const prop of Object.keys(wikiRegister)) {
+  const reg = wikiRegister[prop]
+  const plural = `${prop}s`
+  register[prop] = {}
+  for(const obj of (data[plural] || [])) {
+    register[prop][obj.id] = obj
+    reg[obj.enum] = {
+      ...obj,
+      enum: void 0,
+      damageid: void 0,
+      damage_name: register.damage[obj.damageid]?.enum,
+    }
+  }
+}
+
+for(const wpn of wps) {
+  const reg = wikiRegister.weapon
+  const type = wpn.type
+  const id = wpn.projectileid
+    || wpn.beamid
+    || wpn.arcid
+    || wpn.explosionid
+    || wpn.damageid
+  const attacks = []
+  if(id) {
+    attacks.push({
+      type: type || 'damage',
+      name: register[type][id].enum,
+      id,
+    })
+  }
+  if(wpn.subattacks) {
+    attacks.push(...wpn.subattacks)
+  }
+  reg[wpn.fullname] = {
+    ...wpn,
+    fullname: void 0,
+    type: void 0,
+    damageid: void 0,
+    beamid: void 0,
+    arcid: void 0,
+    projectileid: void 0,
+    explosionid: void 0,
+    subattacks: void 0,
+    attacks,
+  }
+}
+
+fs.writeFileSync('data/wiki.json', json(wikiRegister))
