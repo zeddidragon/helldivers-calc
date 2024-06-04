@@ -166,7 +166,17 @@ for(const wpn of wps) {
     })
   }
   if(wpn.subattacks) {
-    attacks.push(...wpn.subattacks)
+    attacks.push(...wpn.subattacks.map(sub => {
+      const {
+        type,
+        id,
+      } = sub
+      return {
+        type,
+        name: register[type][id].enum,
+        id,
+      }
+    }))
   }
   reg[wpn.fullname] = {
     ...wpn,

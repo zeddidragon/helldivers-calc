@@ -15802,7 +15802,7 @@
       "box": 4,
       "attacks": [
         {"type": "projectile", "name": "Crossbow_Bolt_exp", "id": 167},
-        {"type": "explosion", "id": 30}
+        {"type": "explosion", "name": "Crossbow_Bolt", "id": 30}
       ]
     },
     "JAR-5 Dominator": {
@@ -15841,7 +15841,7 @@
       "tags": ["jet", "shrapnel"],
       "attacks": [
         {"type": "projectile", "name": "Rocket_JarPhoenix_20mm", "id": 29},
-        {"type": "explosion", "id": 81}
+        {"type": "explosion", "name": "JarPhoenix_20mm", "id": 81}
       ]
     },
     "SG-8P Punisher Plasma": {
@@ -15858,7 +15858,7 @@
       "box": 4,
       "attacks": [
         {"type": "projectile", "name": "Plasma_Punisher_Projectile", "id": 36},
-        {"type": "explosion", "id": 41}
+        {"type": "explosion", "name": "Punisher_Plasma_Explosion", "id": 41}
       ]
     },
     "ARC-12 Blitzer": {
@@ -15915,7 +15915,7 @@
       "box": 3,
       "attacks": [
         {"type": "projectile", "name": "Plasma_Bolt_Medium", "id": 92},
-        {"type": "explosion", "id": 79}
+        {"type": "explosion", "name": "Plasma_Bolt_Medium", "id": 79}
       ]
     },
     "PLAS-101 Purifier": {
@@ -15932,7 +15932,7 @@
       "box": 3,
       "attacks": [
         {"type": "projectile", "name": "Plasma_Bolt_Large", "id": 190},
-        {"type": "explosion", "id": 192}
+        {"type": "explosion", "name": "Plasma_Bolt_Large", "id": 192}
       ]
     },
     "P-2 Peacemaker": {
@@ -15998,7 +15998,7 @@
       "roundsbox": 1,
       "attacks": [
         {"type": "projectile", "name": "Grenade_40mm_HEAT", "id": 54},
-        {"type": "explosion", "id": 106}
+        {"type": "explosion", "name": "Grenade_40mm_HE_MK2", "id": 106}
       ]
     },
     "LAS-7 Dagger": {
@@ -16132,7 +16132,7 @@
       "box": 1,
       "attacks": [
         {"type": "projectile", "name": "Grenade_40mm_HE", "id": 186},
-        {"type": "explosion", "id": 185}
+        {"type": "explosion", "name": "Grenade_40mm_HE", "id": 185}
       ]
     },
     "AC-8 Autocannon": {
@@ -16149,7 +16149,7 @@
       "clipsupply": 5,
       "attacks": [
         {"type": "projectile", "name": "Cannon_20mm_APHET", "id": 75},
-        {"type": "explosion", "id": 208}
+        {"type": "explosion", "name": "APHET_20mm", "id": 208}
       ]
     },
     "RS-422 Railgun": {
@@ -16186,7 +16186,7 @@
       "reload": 15,
       "attacks": [
         {"type": "projectile", "name": "Laser_Pulse", "id": 86},
-        {"type": "explosion", "id": 32}
+        {"type": "explosion", "name": "Laser_Pulse", "id": 32}
       ]
     },
     "EAT-17 Expendable Anti-Tank": {
@@ -16195,7 +16195,7 @@
       "cap": 1,
       "attacks": [
         {"type": "projectile", "name": "Grenade_75mm_HEAT", "id": 85},
-        {"type": "explosion", "id": 191}
+        {"type": "explosion", "name": "Grenade_75mm_HEAT", "id": 191}
       ]
     },
     "GR-8 Recoilless Rifle": {
@@ -16209,7 +16209,7 @@
       "roundsbox": 1,
       "attacks": [
         {"type": "projectile", "name": "Grenade_85mm_HEAT", "id": 100},
-        {"type": "explosion", "id": 133}
+        {"type": "explosion", "name": "Grenade_85mm_HEAT", "id": 133}
       ]
     },
     "FAF-14 Spear": {
@@ -16223,7 +16223,7 @@
       "roundsbox": 1,
       "attacks": [
         {"type": "projectile", "name": "Missile_Faf", "id": 150},
-        {"type": "explosion", "id": 120}
+        {"type": "explosion", "name": "Rocket_110mm", "id": 120}
       ]
     },
     "RL-77 Airburst Rocket Launcher": {
@@ -16241,9 +16241,9 @@
           "name": "Grenade_85mm_AirburstCluster",
           "id": 205
         },
-        {"type": "explosion", "id": 172},
-        {"type": "explosion", "id": 165, "count": 8},
-        {"type": "explosion", "id": 3, "count": 8}
+        {"type": "explosion", "name": "Primary_Airburst", "id": 172},
+        {"type": "explosion", "name": "AirburstCluster", "id": 165},
+        {"type": "explosion", "name": "AirburstCluster_Bomb", "id": 3}
       ]
     },
     "Break-Action Shotgun": {
@@ -16269,7 +16269,7 @@
       "roundsbox": 2,
       "attacks": [
         {"type": "explosion", "name": "Frag", "id": 136},
-        {"type": "projectile", "id": 135, "count": 30}
+        {"type": "projectile", "name": "Shrapnel", "id": 135}
       ]
     },
     "G-12 High Explosive": {
@@ -16340,7 +16340,7 @@
       "roundsbox": 2,
       "attacks": [
         {"type": "explosion", "name": "Thermite", "id": 107},
-        {"type": "damage", "id": 310}
+        {"type": "damage", "name": "DPS_Thermite", "id": 310}
       ]
     },
     "Melee": {
