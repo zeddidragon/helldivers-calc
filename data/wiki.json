@@ -3738,7 +3738,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Grenade 40mm Stun"
+      "name": "Explosion Grenade 40mm Stun"
     },
     "Explosion_Projectile_Snowball": {
       "id": 171,
@@ -3760,7 +3760,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Snowball"
+      "name": "Explosion Snowball"
     },
     "Explosion_BackblastNone": {
       "id": 172,
@@ -3958,7 +3958,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile 12-Gauge Frag"
+      "name": "Explosion 12-Gauge Frag"
     },
     "Explosion_Projectile_12g_HE": {
       "id": 181,
@@ -3980,7 +3980,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile 12-Gauge HE"
+      "name": "Explosion 12-Gauge HE"
     },
     "Explosion_Projectile_15mm_HET": {
       "id": 182,
@@ -4002,7 +4002,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile 15mm HET"
+      "name": "Explosion 15mm HET"
     },
     "Explosion_Projectile_PlasmaBolt_Small": {
       "id": 183,
@@ -4024,7 +4024,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Plasma Bolt Small"
+      "name": "Explosion Plasma Bolt Small"
     },
     "Explosion_Projectile_PlasmaBolt_Medium": {
       "id": 184,
@@ -4046,7 +4046,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Plasma Bolt Medium"
+      "name": "Explosion Plasma Bolt Medium"
     },
     "Explosion_Projectile_PlasmaBolt_Medium_Volatile": {
       "id": 185,
@@ -4068,7 +4068,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Plasma Bolt Medium Volatile"
+      "name": "Explosion Plasma Bolt Medium Volatile"
     },
     "Explosion_Projectile_PlasmaBolt_Large": {
       "id": 186,
@@ -4090,7 +4090,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Plasma Bolt Large"
+      "name": "Explosion Plasma Bolt Large"
     },
     "Explosion_Plasma_Cone": {
       "id": 187,
@@ -4508,7 +4508,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cannon 20mm Flak"
+      "name": "Explosion Cannon 20mm Flak"
     },
     "Explosion_Vehicle_CyborgMediumDeath": {
       "id": 206,
@@ -4706,7 +4706,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cannon Eagle 23mm"
+      "name": "Explosion Cannon Eagle 23mm"
     },
     "Explosion_Projectile_Cannon_20mm_HE": {
       "id": 215,
@@ -4728,7 +4728,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cannon 20mm HE"
+      "name": "Explosion Cannon 20mm HE"
     },
     "Explosion_Projectile_Cannon_20mm_APHET": {
       "id": 216,
@@ -4750,7 +4750,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cannon 20mm APHET"
+      "name": "Explosion Cannon 20mm APHET"
     },
     "Explosion_Projectile_Cannon_30mm_APHE": {
       "id": 217,
@@ -4772,7 +4772,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cannon 30mm APHE"
+      "name": "Explosion Cannon 30mm APHE"
     },
     "Explosion_Projectile_Cannon_40mm_Flak": {
       "id": 218,
@@ -4794,7 +4794,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cannon 40mm Flak"
+      "name": "Explosion Cannon 40mm Flak"
     },
     "Explosion_Projectile_Cannon_40mm_APHE": {
       "id": 219,
@@ -4816,7 +4816,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cannon 40mm APHE"
+      "name": "Explosion Cannon 40mm APHE"
     },
     "Explosion_Projectile_Grenade_40mm_HE": {
       "id": 220,
@@ -4838,7 +4838,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Grenade 40mm HE"
+      "name": "Explosion Grenade 40mm HE"
     },
     "Explosion_Projectile_Grenade_40mm_APHE": {
       "id": 221,
@@ -4860,7 +4860,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Grenade 40mm APHE"
+      "name": "Explosion Grenade 40mm APHE"
     },
     "Explosion_Projectile_Grenade_40mm_ProximityCone": {
       "id": 222,
@@ -4882,7 +4882,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Grenade 40mm Proximity Cone"
+      "name": "Explosion Grenade 40mm Proximity Cone"
     },
     "Explosion_Projectile_Grenade_Mortar_40mm_HE": {
       "id": 223,
@@ -4904,7 +4904,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Grenade Mortar 40mm HE"
+      "name": "Explosion Grenade Mortar 40mm HE"
     },
     "Explosion_Projectile_Grenade_85mm_DirectHit": {
       "id": 224,
@@ -4926,7 +4926,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Grenade 85mm Direct Hit"
+      "name": "Explosion Grenade 85mm Direct Hit"
     },
     "Explosion_Projectile_Grenade_85mm_HEAT": {
       "id": 225,
@@ -4948,7 +4948,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Grenade 85mm HEAT"
+      "name": "Explosion Grenade 85mm HEAT"
     },
     "Explosion_Projectile_Grenade_75mm_HEAT": {
       "id": 226,
@@ -4970,7 +4970,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Grenade 75mm HEAT"
+      "name": "Explosion Grenade 75mm HEAT"
     },
     "Projectile_Laser_Pulse": {
       "id": 227,
@@ -5036,7 +5036,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Orbital Shot"
+      "name": "Explosion Orbital Shot"
     },
     "Explosion_Projectile_OrbitalShot_MK2": {
       "id": 230,
@@ -5058,7 +5058,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Orbital Shot Mk2"
+      "name": "Explosion Orbital Shot Mk2"
     },
     "Explosion_Projectile_EagleBomb_Napalm": {
       "id": 231,
@@ -5080,7 +5080,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Eagle Bomb Napalm"
+      "name": "Explosion Eagle Bomb Napalm"
     },
     "Explosion_Projectile_Missile_66mm": {
       "id": 232,
@@ -5102,7 +5102,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Missile 66mm"
+      "name": "Explosion Missile 66mm"
     },
     "Explosion_Projectile_Missile_66mm_MK2": {
       "id": 233,
@@ -5124,7 +5124,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Missile 66mm Mk2"
+      "name": "Explosion Missile 66mm Mk2"
     },
     "Explosion_Projectile_Missile_CombatWalker": {
       "id": 234,
@@ -5146,7 +5146,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Missile Combat Walker"
+      "name": "Explosion Missile Combat Walker"
     },
     "Explosion_Projectile_Missile_CombatWalker_MK2": {
       "id": 235,
@@ -5168,7 +5168,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Missile Combat Walker Mk2"
+      "name": "Explosion Missile Combat Walker Mk2"
     },
     "Explosion_Projectile_Missile_Faf": {
       "id": 236,
@@ -5190,7 +5190,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Missile Fire-and-Forget"
+      "name": "Explosion Missile Fire-and-Forget"
     },
     "Explosion_Projectile_Missile_Faf_MK2": {
       "id": 237,
@@ -5212,7 +5212,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Missile Fire-and-Forget Mk2"
+      "name": "Explosion Missile Fire-and-Forget Mk2"
     },
     "Explosion_Projectile_Missile_Stinger": {
       "id": 238,
@@ -5234,7 +5234,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Missile Stinger"
+      "name": "Explosion Missile Stinger"
     },
     "Explosion_Projectile_Rocket_70mm": {
       "id": 239,
@@ -5256,7 +5256,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Rocket 70mm"
+      "name": "Explosion Rocket 70mm"
     },
     "Explosion_Projectile_Rocket_70mm_HE": {
       "id": 240,
@@ -5278,7 +5278,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Rocket 70mm HE"
+      "name": "Explosion Rocket 70mm HE"
     },
     "Explosion_Projectile_Rocket_110mm": {
       "id": 241,
@@ -5300,7 +5300,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Rocket 110mm"
+      "name": "Explosion Rocket 110mm"
     },
     "Explosion_TunnelerEmerge": {
       "id": 242,
@@ -5498,7 +5498,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Shotgun Flakblast"
+      "name": "Explosion Shotgun Flakblast"
     },
     "Explosion_Projectile_Grenade_85mm_HE": {
       "id": 251,
@@ -5520,7 +5520,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Grenade 85mm HE"
+      "name": "Explosion Grenade 85mm HE"
     },
     "Explosion_Projectile_Grenade_85mm_HE_MK2": {
       "id": 252,
@@ -5542,7 +5542,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Grenade 85mm HE Mk2"
+      "name": "Explosion Grenade 85mm HE Mk2"
     },
     "Explosion_Projectile_EagleBomb_Impact": {
       "id": 253,
@@ -5564,7 +5564,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Eagle Bomb Impact"
+      "name": "Explosion Eagle Bomb Impact"
     },
     "Explosion_Projectile_EagleBomb_100kg": {
       "id": 254,
@@ -5586,7 +5586,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Eagle Bomb 100kg"
+      "name": "Explosion Eagle Bomb 100kg"
     },
     "Explosion_Projectile_EagleBomb_100kg_MK3": {
       "id": 255,
@@ -5608,7 +5608,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Eagle Bomb 100kg MK3"
+      "name": "Explosion Eagle Bomb 100kg MK3"
     },
     "Explosion_Projectile_EagleMissile": {
       "id": 256,
@@ -5630,7 +5630,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Eagle Missile"
+      "name": "Explosion Eagle Missile"
     },
     "Explosion_Projectile_CyborgLightRocket": {
       "id": 257,
@@ -5652,7 +5652,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cyborg Light Rocket"
+      "name": "Explosion Cyborg Light Rocket"
     },
     "Explosion_HellpodImpact": {
       "id": 258,
@@ -5850,7 +5850,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Railcannon"
+      "name": "Explosion Railcannon"
     },
     "Explosion_Projectile_OrbitalBarrage": {
       "id": 267,
@@ -5872,7 +5872,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Orbital Barrage"
+      "name": "Explosion Orbital Barrage"
     },
     "Explosion_Projectile_OrbitalStrike": {
       "id": 268,
@@ -5894,7 +5894,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Orbital Strike"
+      "name": "Explosion Orbital Strike"
     },
     "Explosion_Projectile_OrbitalGas": {
       "id": 269,
@@ -5916,7 +5916,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Orbital Gas"
+      "name": "Explosion Orbital Gas"
     },
     "Explosion_Projectile_OrbitalShell": {
       "id": 270,
@@ -5938,7 +5938,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Orbital Shell"
+      "name": "Explosion Orbital Shell"
     },
     "Explosion_Projectile_OrbitalStun": {
       "id": 271,
@@ -5960,7 +5960,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Orbital Stun"
+      "name": "Explosion Orbital Stun"
     },
     "Explosion_Projectile_OrbitalStun_MK2": {
       "id": 272,
@@ -5982,7 +5982,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Orbital Stun Mk2"
+      "name": "Explosion Orbital Stun Mk2"
     },
     "Explosion_Projectile_EagleBomb_500kg": {
       "id": 273,
@@ -6004,7 +6004,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Eagle Bomb 500kg"
+      "name": "Explosion Eagle Bomb 500kg"
     },
     "Explosion_Projectile_MiniMissilesilo": {
       "id": 274,
@@ -6026,7 +6026,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Mini Missilesilo"
+      "name": "Explosion Mini Missilesilo"
     },
     "Explosion_Projectile_CyborgLightCannon": {
       "id": 275,
@@ -6048,7 +6048,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cyborg Light Cannon"
+      "name": "Explosion Cyborg Light Cannon"
     },
     "Explosion_Projectile_CyborgHeavyCannon": {
       "id": 276,
@@ -6070,7 +6070,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cyborg Heavy Cannon"
+      "name": "Explosion Cyborg Heavy Cannon"
     },
     "Explosion_Projectile_CyborgHeavyRocket": {
       "id": 277,
@@ -6092,7 +6092,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cyborg Heavy Rocket"
+      "name": "Explosion Cyborg Heavy Rocket"
     },
     "Explosion_Projectile_CyborgArtillery": {
       "id": 278,
@@ -6114,7 +6114,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Cyborg Artillery"
+      "name": "Explosion Cyborg Artillery"
     },
     "Explosion_Vehicle_SeSmallDeath": {
       "id": 279,
@@ -6202,7 +6202,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile Bug Artillery"
+      "name": "Explosion Bug Artillery"
     },
     "Explosion_Projectile_WorldMeteor": {
       "id": 283,
@@ -6224,7 +6224,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile World Meteor"
+      "name": "Explosion World Meteor"
     },
     "Explosion_EscapePodCrash": {
       "id": 284,
@@ -6268,7 +6268,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Projectile World Volcano Strike"
+      "name": "Explosion World Volcano Strike"
     },
     "Explosion_MapBoundary": {
       "id": 286,
