@@ -32,6 +32,7 @@ function searchWords({
     idx = nextIdx + 1
     i++;
   }
+  words.pop()
   console.log(`Found ${words.length} words`)
   writeEnums(`tmp/${last}.cs`, words)
   return words
@@ -42,6 +43,12 @@ function writeEnums(path, arr) {
     return `    ${str} = ${hex(i)},`
   }).join('\n')
   fs.writeFileSync(path, `{\n${joined}\n}`)
+}
+
+function prettyEnums(enums) {
+  return enums.slice(0, -1).map(word => {
+    return word.split('_').slice(1).join(' ')
+  })
 }
 
 const damageEnums = searchWords({
@@ -479,6 +486,7 @@ const data = json({
   explosions,
   beams,
   arcs,
+  statuses: prettyEnums(statusEnums),
 })
 
 fs.writeFileSync('./data/datamined.json', data)

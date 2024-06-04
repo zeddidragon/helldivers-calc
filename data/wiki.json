@@ -86,6 +86,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Acid Splash",
       "name": "Scavenger Acid Ball"
     },
     "Projectile_CyborgHeavyFlamer": {
@@ -108,6 +109,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Cyborg Heavy Flamer"
     },
     "Projectile_CyborgLightRocket": {
@@ -196,6 +198,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Flamethrower"
     },
     "Projectile_Grenade_40mm_HE": {
@@ -262,6 +265,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunSmall",
       "name": "Illuminate Lightningbolt"
     },
     "Projectile_Illuminate_Lightspear": {
@@ -328,6 +332,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunSmall",
       "name": "Illuminate Turret tesla"
     },
     "Projectile_Illuminate_Observer_Lightning": {
@@ -350,6 +355,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunSmall",
       "name": "Illuminate Observer Lightning"
     },
     "Projectile_Illuminate_Squidgun": {
@@ -372,6 +378,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunSmall",
       "name": "Illuminate Squidgun"
     },
     "Projectile_Illuminate_Tripod_Lightning": {
@@ -394,6 +401,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunSmall",
       "name": "Illuminate Tripod Lightning"
     },
     "Projectile_Laser_Long": {
@@ -504,6 +512,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunSmall",
       "name": "Railgun Stun"
     },
     "Projectile_Pistol_9x20mm_exp": {
@@ -636,6 +645,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Pistol 9x20mm Plasma"
     },
     "Projectile_Pistol_9x20mm_rip": {
@@ -702,6 +712,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Acid Splash",
       "name": "Pistol 9x20mm Toxic"
     },
     "Projectile_Pistol_12x25mm_exp": {
@@ -812,6 +823,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Pistol 12x25mm Plasma"
     },
     "Projectile_Pistol_12x25mm_rip": {
@@ -878,6 +890,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Acid Splash",
       "name": "Pistol 12x25mm Toxic"
     },
     "Projectile_Pistol_12x25mm_stun": {
@@ -900,6 +913,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunSmall",
       "name": "Pistol 12x25mm Stun"
     },
     "Projectile_Pistol_Magnum": {
@@ -1406,6 +1420,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Rifle 8x60mm Liberty Fire"
     },
     "Projectile_Rifle_8x60mm_fmj": {
@@ -1736,6 +1751,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunMedium",
       "name": "Rocket 15x100mm EMP"
     },
     "Projectile_Rocket_15x100mm_exp": {
@@ -1824,6 +1840,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Rocket 15x100mm Plasma"
     },
     "Projectile_Rocket_15x100mm_std": {
@@ -1890,6 +1907,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Acid Splash",
       "name": "Rocket 15x100mm Toxic"
     },
     "Projectile_Shotgun_10g_bir": {
@@ -2000,6 +2018,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Shotgun 10-Gauge Liberty Fire"
     },
     "Projectile_Shotgun_10g_frag": {
@@ -2308,6 +2327,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Shotgun 12-Gauge Liberty Fire"
     },
     "Projectile_Shotgun_12g_mag": {
@@ -3672,6 +3692,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Bleed",
       "name": "Spikeplant Shrapnel"
     },
     "Explosion_None": {
@@ -3716,6 +3737,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunMedium",
       "name": "Explosion Hand Grenade Flash"
     },
     "Explosion_Projectile_Grenade_40mm_Stun": {
@@ -3738,6 +3760,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunMedium",
       "name": "Explosion Grenade 40mm Stun"
     },
     "Explosion_Projectile_Snowball": {
@@ -3760,6 +3783,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunSmall",
       "name": "Explosion Snowball"
     },
     "Explosion_BackblastNone": {
@@ -3826,6 +3850,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Acid Splash",
       "name": "Explosion Boomer Acid Death"
     },
     "Explosion_Scavenger_AcidBall": {
@@ -3870,6 +3895,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Acid Splash",
       "name": "Explosion Scavenger Acid Death"
     },
     "Explosion_Strider_StompShockwave": {
@@ -3936,6 +3962,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Tremor",
       "name": "Explosion Earthquake"
     },
     "Explosion_Projectile_12g_Frag": {
@@ -4222,6 +4249,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Acid Splash",
       "name": "Explosion Bug Trap"
     },
     "Explosion_Icbm_Take_Off": {
@@ -4244,6 +4272,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunMedium",
       "name": "Explosion Icbm Take Off"
     },
     "Explosion_Icbm_Take_Off_Intense": {
@@ -4266,6 +4295,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Explosion Icbm Take Off Intense"
     },
     "Explosion_Illuminate_SmallStun": {
@@ -4288,6 +4318,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunSmall",
       "name": "Explosion Illuminate Small Stun"
     },
     "Explosion_Prop_Barrel": {
@@ -4310,6 +4341,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Explosion Prop Barrel"
     },
     "Explosion_Building_Small": {
@@ -4464,6 +4496,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Explosion Hand Grenade Incendiary"
     },
     "Explosion_HandGrenade_Thermite": {
@@ -4618,6 +4651,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunSmall",
       "name": "Explosion Illuminate Shock Wave"
     },
     "Explosion_Prop_Small": {
@@ -5080,6 +5114,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Explosion Eagle Bomb Napalm"
     },
     "Explosion_Projectile_Missile_66mm": {
@@ -5916,6 +5951,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Gas",
       "name": "Explosion Orbital Gas"
     },
     "Explosion_Projectile_OrbitalShell": {
@@ -6268,6 +6304,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "Explosion World Volcano Strike"
     },
     "Explosion_MapBoundary": {
@@ -6422,6 +6459,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunMedium",
       "name": "Explosion Moor Mushroom Burst"
     },
     "Explosion_EmbryoCluster_Burst": {
@@ -6444,6 +6482,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Gas",
       "name": "Explosion Embryo Cluster Burst"
     },
     "Explosion_Spikeplant_Shrapnel_Explosion": {
@@ -6466,6 +6505,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Bleed",
       "name": "Explosion Spikeplant Shrapnel Explosion"
     },
     "Explosion_Iceplant_Shatter": {
@@ -6488,6 +6528,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "ExtremeCold",
       "name": "Explosion Iceplant Shatter"
     },
     "DPS_BeamSmall": {
@@ -6510,6 +6551,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Small"
     },
     "DPS_BeamMedium": {
@@ -6532,6 +6574,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Medium"
     },
     "DPS_BeamMediumDrone": {
@@ -6554,6 +6597,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Medium Drone"
     },
     "DPS_BeamMedium_Wide": {
@@ -6576,6 +6620,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Medium Wide"
     },
     "DPS_BeamMedium_Spread": {
@@ -6598,6 +6643,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Medium Spread"
     },
     "DPS_BeamMedium_Focused": {
@@ -6620,6 +6666,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Medium Focused"
     },
     "DPS_BeamLarge": {
@@ -6642,6 +6689,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Large"
     },
     "DPS_BeamLarge_Heavy": {
@@ -6664,6 +6712,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Large Heavy"
     },
     "DPS_BeamLarge_Light": {
@@ -6686,6 +6735,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Large Light"
     },
     "DPS_BeamHuge": {
@@ -6708,6 +6758,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Huge"
     },
     "DPS_BeamHuge_Upgrade": {
@@ -6730,6 +6781,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Huge Upgrade"
     },
     "DPS_BeamLarge_Fire": {
@@ -6752,6 +6804,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Large Fire"
     },
     "DPS_Cyborg_Torch": {
@@ -6774,6 +6827,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Cyborg Torch"
     },
     "DPS_Fire": {
@@ -7104,6 +7158,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Fire",
       "name": "DPS Beam Tripod Eye"
     },
     "DPS_Avatar_Bleed": {
@@ -7456,6 +7511,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Acid Splash",
       "name": "Ability Bug Hunter Tongue"
     },
     "Ability_Bug_Hunter_Pounce": {
@@ -7698,6 +7754,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunLarge",
       "name": "Ability Bug Stalker Scream"
     },
     "Ability_Bug_Strider_Stomp": {
@@ -7742,6 +7799,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Acid Splash",
       "name": "Ability Bug Strider Acid Spray"
     },
     "Ability_Cyborg_Conscript_Shove": {
@@ -8006,6 +8064,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Confusion",
       "name": "Ability Illuminate Illusionist Mind Scramble"
     },
     "Ability_Illuminate_Illusionist_InverseAimAssist": {
@@ -8028,6 +8087,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "Inverted Aim Assist",
       "name": "Ability Illuminate Illusionist Inverse Aim Assist"
     },
     "Ability_Illuminate_Ghoul_Claw": {
@@ -8072,6 +8132,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "status_name": "StunLarge",
       "name": "Ability Illuminate Guy Staff Dash Stun"
     },
     "Ability_Illuminate_GuyStaff_QuickSlash": {
