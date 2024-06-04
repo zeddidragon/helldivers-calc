@@ -8364,6 +8364,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Cluster Bomb 100kg",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "ClusterBomb_Bomb": {
@@ -8390,6 +8391,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 6168,
+      "name": "Cluster Bomb Bomb",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Bomb_100kg": {
@@ -8416,6 +8418,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb 100kg",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_100kg_MK2": {
@@ -8442,6 +8445,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb 100kg Mk2",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_100kg_MK3": {
@@ -8468,6 +8472,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb 100kg Mk3",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_Napalm": {
@@ -8494,6 +8499,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb Napalm",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_Napalm_MK2": {
@@ -8520,6 +8526,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb Napalm Mk2",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_Napalm_MK3": {
@@ -8546,6 +8553,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb Napalm Mk3",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_Smoke": {
@@ -8572,6 +8580,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb Smoke",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_200kg": {
@@ -8598,6 +8607,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb 200kg",
       "damage_name": "Projectile_Bomb_500kg"
     },
     "Bomb_500kg": {
@@ -8624,6 +8634,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb 500kg",
       "damage_name": "Projectile_Bomb_500kg"
     },
     "Bomb_500kg_MK2": {
@@ -8650,6 +8661,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb 500kg Mk2",
       "damage_name": "Projectile_Bomb_500kg"
     },
     "Bomb_500kg_MK3": {
@@ -8676,6 +8688,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Bomb 500kg Mk3",
       "damage_name": "Projectile_Bomb_500kg"
     },
     "Strider_AcidStream": {
@@ -8702,6 +8715,7 @@
       "unk49": 30,
       "unk55": 0,
       "unk57": 60,
+      "name": "Strider Acid Stream",
       "damage_name": "Projectile_Strider_AcidStream"
     },
     "Boomer_AcidStream": {
@@ -8728,6 +8742,7 @@
       "unk49": 30,
       "unk55": 0,
       "unk57": 60,
+      "name": "Boomer Acid Stream",
       "damage_name": "Projectile_Boomer_AcidStream"
     },
     "Boomer_Nurser_AcidStream": {
@@ -8754,6 +8769,7 @@
       "unk49": 30,
       "unk55": 0,
       "unk57": 60,
+      "name": "Boomer Nurser Acid Stream",
       "damage_name": "Projectile_Boomer_Nurser_AcidStream"
     },
     "Scavenger_AcidBall": {
@@ -8780,6 +8796,7 @@
       "unk49": 30,
       "unk55": 0,
       "unk57": 60,
+      "name": "Scavenger Acid Ball",
       "damage_name": "Projectile_Scavenger_AcidBall"
     },
     "Strider_Spike": {
@@ -8806,6 +8823,7 @@
       "unk49": 15,
       "unk55": 3,
       "unk57": 249,
+      "name": "Strider Spike",
       "damage_name": "Projectile_Strider_Spike"
     },
     "Bug_Artillery": {
@@ -8832,6 +8850,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 181,
+      "name": "Bug Artillery",
       "damage_name": "Projectile_Bug_Artillery"
     },
     "Cannon_20mm_APHET": {
@@ -8858,6 +8877,7 @@
       "unk49": 12,
       "unk55": 3,
       "unk57": 61,
+      "name": "Cannon 20mm APHET",
       "damage_name": "Projectile_Cannon_20mm_APHET"
     },
     "Cannon_20mm_Flak": {
@@ -8884,6 +8904,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 61,
+      "name": "Cannon 20mm Flak",
       "damage_name": "Projectile_Cannon_20mm_Flak"
     },
     "Cannon_20mm_HVAPT": {
@@ -8910,6 +8931,7 @@
       "unk49": 8,
       "unk55": 2,
       "unk57": 61,
+      "name": "Cannon 20mm HVAPT",
       "damage_name": "Projectile_Cannon_20mm_HVAPT"
     },
     "Cannon_20mm_HE": {
@@ -8936,6 +8958,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 60,
+      "name": "Cannon 20mm HE",
       "damage_name": "Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_30mm_APHE": {
@@ -8962,6 +8985,7 @@
       "unk49": 12,
       "unk55": 3,
       "unk57": 61,
+      "name": "Cannon 30mm APHE",
       "damage_name": "Projectile_Cannon_30mm_APHE"
     },
     "Cannon_40mm_Flak": {
@@ -8988,6 +9012,7 @@
       "unk49": 12,
       "unk55": 3,
       "unk57": 61,
+      "name": "Cannon 40mm Flak",
       "damage_name": "Projectile_Cannon_40mm_Flak"
     },
     "Cannon_40mm_APHE": {
@@ -9014,6 +9039,7 @@
       "unk49": 12,
       "unk55": 3,
       "unk57": 61,
+      "name": "Cannon 40mm APHE",
       "damage_name": "Projectile_Cannon_40mm_APHE"
     },
     "Cannon_Eagle_23mm_with_audio_trigger": {
@@ -9040,6 +9066,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 4156,
+      "name": "Cannon Eagle 23mm with audio trigger",
       "damage_name": "Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_Eagle_23mm": {
@@ -9066,6 +9093,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 188,
+      "name": "Cannon Eagle 23mm",
       "damage_name": "Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_Eagle_23mm_no_explosion": {
@@ -9092,6 +9120,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 188,
+      "name": "Cannon Eagle 23mm no explosion",
       "damage_name": "Projectile_Cannon_Eagle_23mm"
     },
     "Cyborg_Rifle": {
@@ -9118,6 +9147,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Cyborg Rifle",
       "damage_name": "Projectile_CyborgRifle"
     },
     "Cyborg_Mg": {
@@ -9144,6 +9174,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Cyborg Machine Gun",
       "damage_name": "Projectile_CyborgRifle"
     },
     "Cyborg_Hmg": {
@@ -9170,6 +9201,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Cyborg Heavy Machine Gun",
       "damage_name": "Projectile_CyborgHmg"
     },
     "Cyborg_Aa": {
@@ -9196,6 +9228,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Cyborg Anti-Air",
       "damage_name": "Projectile_CyborgLightCannon"
     },
     "Cyborg_LightCannon": {
@@ -9222,6 +9255,7 @@
       "unk49": 15,
       "unk55": 3,
       "unk57": 253,
+      "name": "Cyborg Light Cannon",
       "damage_name": "Projectile_CyborgLightCannon"
     },
     "Cyborg_HeavyCannon": {
@@ -9248,6 +9282,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 189,
+      "name": "Cyborg Heavy Cannon",
       "damage_name": "Projectile_CyborgHeavyCannon"
     },
     "Cyborg_SpawnerMountedCannon": {
@@ -9274,6 +9309,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 189,
+      "name": "Cyborg Spawner Mounted Cannon",
       "damage_name": "Projectile_CyborgHeavyCannon"
     },
     "Cyborg_Sniper_Reddeath": {
@@ -9300,6 +9336,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Cyborg Sniper Reddeath",
       "damage_name": "Projectile_CyborgHmg"
     },
     "Cyborg_Shotgun": {
@@ -9326,6 +9363,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Cyborg Shotgun",
       "damage_name": "Projectile_CyborgShotgun"
     },
     "Cyborg_LightRocket": {
@@ -9352,6 +9390,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 180,
+      "name": "Cyborg Light Rocket",
       "damage_name": "Projectile_CyborgLightRocket"
     },
     "Cyborg_HeavyRocket": {
@@ -9378,6 +9417,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 184,
+      "name": "Cyborg Heavy Rocket",
       "damage_name": "Projectile_CyborgLightRocket"
     },
     "Cyborg_Flare": {
@@ -9404,6 +9444,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 63,
+      "name": "Cyborg Flare",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Cyborg_Mortar_Grenade_HE": {
@@ -9430,6 +9471,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 182,
+      "name": "Cyborg Mortar Grenade HE",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Cyborg_Orbital_Cannon": {
@@ -9456,6 +9498,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 61,
+      "name": "Cyborg Orbital Cannon",
       "damage_name": "Projectile_Cyborg_Orbital_Cannon"
     },
     "Cyborg_Flamethrower_Heavy": {
@@ -9482,6 +9525,7 @@
       "unk49": 30,
       "unk55": 1,
       "unk57": 60,
+      "name": "Cyborg Flamethrower Heavy",
       "damage_name": "Projectile_CyborgHeavyFlamer"
     },
     "Cyborg_Artillery": {
@@ -9508,6 +9552,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 181,
+      "name": "Cyborg Artillery",
       "damage_name": "Projectile_Cyborg_Artillery"
     },
     "Grenade_40mm_HE": {
@@ -9534,6 +9579,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 55,
+      "name": "Grenade 40mm HE",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_40mm_HE_MK2": {
@@ -9560,6 +9606,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 55,
+      "name": "Grenade 40mm HE Mk2",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_40mm_Incendiary": {
@@ -9586,6 +9633,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 55,
+      "name": "Grenade 40mm Incendiary",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_40mm_HEAT": {
@@ -9612,6 +9660,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 55,
+      "name": "Grenade 40mm HEAT",
       "damage_name": "Projectile_Grenade_40mm_HEAT"
     },
     "Grenade_40mm_Stun": {
@@ -9638,6 +9687,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 55,
+      "name": "Grenade 40mm Stun",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_40mm_ProximityCone": {
@@ -9664,6 +9714,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 63,
+      "name": "Grenade 40mm Proximity Cone",
       "damage_name": "Projectile_Grenade_40mm_ProximityCone"
     },
     "Grenade_Mortar_40mm_HE": {
@@ -9690,6 +9741,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 182,
+      "name": "Grenade Mortar 40mm HE",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_Mortar_40mm_Staticfield": {
@@ -9716,6 +9768,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 182,
+      "name": "Grenade Mortar 40mm Static Field",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_75mm_HEAT": {
@@ -9742,6 +9795,7 @@
       "unk49": 10,
       "unk55": 4,
       "unk57": 181,
+      "name": "Grenade 75mm HEAT",
       "damage_name": "Projectile_Grenade_75mm_HEAT"
     },
     "Grenade_85mm_HE": {
@@ -9768,6 +9822,7 @@
       "unk49": 15,
       "unk55": 3,
       "unk57": 181,
+      "name": "Grenade 85mm HE",
       "damage_name": "Projectile_Grenade_85mm_HE"
     },
     "Grenade_85mm_HE_MK2": {
@@ -9794,6 +9849,7 @@
       "unk49": 15,
       "unk55": 3,
       "unk57": 181,
+      "name": "Grenade 85mm HE Mk2",
       "damage_name": "Projectile_Grenade_85mm_HE"
     },
     "Grenade_85mm_HEAT": {
@@ -9820,6 +9876,7 @@
       "unk49": 15,
       "unk55": 3,
       "unk57": 181,
+      "name": "Grenade 85mm HEAT",
       "damage_name": "Projectile_Grenade_85mm_HEAT"
     },
     "Grenade_85mm_HEAT_MK2": {
@@ -9846,6 +9903,7 @@
       "unk49": 15,
       "unk55": 4,
       "unk57": 181,
+      "name": "Grenade 85mm HEAT Mk2",
       "damage_name": "Projectile_Grenade_85mm_HEAT_MK2"
     },
     "Grenade_85mm_AirburstCluster": {
@@ -9872,6 +9930,7 @@
       "unk49": 15,
       "unk55": 3,
       "unk57": 148,
+      "name": "Grenade 85mm Airburst Cluster",
       "damage_name": "Explosion_Projectile_Grenade_85mm_DirectHit"
     },
     "AirburstCluster_Bomb": {
@@ -9898,6 +9957,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 6680,
+      "name": "Airburst Cluster Bomb",
       "damage_name": "Explosion_HandGrenade_Frag_Cluster"
     },
     "Illuminate_Lightspear": {
@@ -9924,6 +9984,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 61,
+      "name": "Illuminate Lightspear",
       "damage_name": "Projectile_Illuminate_Lightspear"
     },
     "Illuminate_Squidgunbolt": {
@@ -9950,6 +10011,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 61,
+      "name": "Illuminate Squidgunbolt",
       "damage_name": "Projectile_Railgun"
     },
     "Illuminate_IllusionistDeathball": {
@@ -9976,6 +10038,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 61,
+      "name": "Illuminate Illusionist Deathball",
       "damage_name": "Projectile_Railgun"
     },
     "Illuminate_TripodDeathball": {
@@ -10002,6 +10065,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 61,
+      "name": "Illuminate Tripod Deathball",
       "damage_name": "Projectile_Railgun"
     },
     "Illuminate_Obelisk": {
@@ -10028,6 +10092,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 189,
+      "name": "Illuminate Obelisk",
       "damage_name": "Projectile_CyborgHeavyCannon"
     },
     "Illuminate_ShootingStar": {
@@ -10054,6 +10119,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 189,
+      "name": "Illuminate Shooting Star",
       "damage_name": "Projectile_CyborgHeavyCannon"
     },
     "Illuminate_Outcast_Beam": {
@@ -10080,6 +10146,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 181,
+      "name": "Illuminate Outcast Beam",
       "damage_name": "Projectile_Illuminate_OutcastBeam"
     },
     "illuminate_Shockwave": {
@@ -10106,6 +10173,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 63,
+      "name": "illuminate Shockwave",
       "damage_name": "Projectile_Grenade_40mm_ProximityCone"
     },
     "Missile_66mm": {
@@ -10132,6 +10200,7 @@
       "unk49": 0,
       "unk55": 4,
       "unk57": 179,
+      "name": "Missile 66mm",
       "damage_name": "Projectile_Missile_66mm"
     },
     "Missile_66mm_MK2": {
@@ -10158,6 +10227,7 @@
       "unk49": 0,
       "unk55": 4,
       "unk57": 51,
+      "name": "Missile 66mm Mk2",
       "damage_name": "Projectile_Missile_66mm_MK2"
     },
     "Missile_Stinger": {
@@ -10184,6 +10254,7 @@
       "unk49": 0,
       "unk55": 4,
       "unk57": 167,
+      "name": "Missile Stinger",
       "damage_name": "Projectile_Missile_Stinger"
     },
     "Missile_Faf": {
@@ -10210,6 +10281,7 @@
       "unk49": 0,
       "unk55": 4,
       "unk57": 183,
+      "name": "Missile Fire-and-Forget",
       "damage_name": "Projectile_Missile_Faf"
     },
     "Missile_Faf_MK2": {
@@ -10236,6 +10308,7 @@
       "unk49": 0,
       "unk55": 4,
       "unk57": 183,
+      "name": "Missile Fire-and-Forget Mk2",
       "damage_name": "Projectile_Missile_Faf_MK2"
     },
     "Missile_Combat_Walker": {
@@ -10262,6 +10335,7 @@
       "unk49": 10,
       "unk55": 4,
       "unk57": 180,
+      "name": "Missile Combat Walker",
       "damage_name": "Projectile_Missile_Combat_Walker"
     },
     "Missile_Combat_Walker_MK2": {
@@ -10288,6 +10362,7 @@
       "unk49": 10,
       "unk55": 4,
       "unk57": 181,
+      "name": "Missile Combat Walker Mk2",
       "damage_name": "Projectile_Missile_Combat_Walker_MK2"
     },
     "EagleMissile": {
@@ -10314,6 +10389,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 184,
+      "name": "Eagle Missile",
       "damage_name": "Projectile_Rocket_110mm"
     },
     "Missile_SAM": {
@@ -10340,6 +10416,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 184,
+      "name": "Missile SAM",
       "damage_name": "Projectile_Rocket_110mm"
     },
     "Orbital_Cannon_110mm": {
@@ -10366,6 +10443,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 159,
+      "name": "Orbital Cannon 110mm",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Cannon_110mm_MK2": {
@@ -10392,6 +10470,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 191,
+      "name": "Orbital Cannon 110mm Mk2",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Cannon_120mm_HE": {
@@ -10418,6 +10497,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 181,
+      "name": "Orbital Cannon 120mm HE",
       "damage_name": "Projectile_Orbital_Cannon_120mm_HE"
     },
     "Orbital_Cannon_120mm_HE_Cheap": {
@@ -10444,6 +10524,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 181,
+      "name": "Orbital Cannon 120mm HE Cheap",
       "damage_name": "Projectile_Orbital_Cannon_120mm_HE"
     },
     "Orbital_Cannon_380mm_HE": {
@@ -10470,6 +10551,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 181,
+      "name": "Orbital Cannon 380mm HE",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Orbital_Precision_Strike": {
@@ -10496,6 +10578,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 181,
+      "name": "Orbital Precision Strike",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Orbital_Cannon_380mm_HE_Cheap": {
@@ -10522,6 +10605,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 181,
+      "name": "Orbital Cannon 380mm HE Cheap",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Orbital_Cannon_380mm_HE_MK2": {
@@ -10548,6 +10632,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 189,
+      "name": "Orbital Cannon 380mm HE Mk2",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Orbital_Stunround": {
@@ -10574,6 +10659,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 189,
+      "name": "Orbital Stunround",
       "damage_name": "Projectile_Orbital_Stunround"
     },
     "Orbital_Stunround_Upgraded_MK2": {
@@ -10600,6 +10686,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 189,
+      "name": "Orbital Stunround Upgraded Mk2",
       "damage_name": "Projectile_Orbital_Stunround"
     },
     "Orbital_Stunround_Upgraded_MK3": {
@@ -10626,6 +10713,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 189,
+      "name": "Orbital Stunround Upgraded Mk3",
       "damage_name": "Projectile_Orbital_Stunround"
     },
     "Orbital_Gas": {
@@ -10652,6 +10740,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 189,
+      "name": "Orbital Gas",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Gas_MK2": {
@@ -10678,6 +10767,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 189,
+      "name": "Orbital Gas Mk2",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Gas_MK3": {
@@ -10704,6 +10794,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 189,
+      "name": "Orbital Gas Mk3",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Smoke": {
@@ -10729,7 +10820,8 @@
       "unk48": 12,
       "unk49": 45,
       "unk55": 0,
-      "unk57": 189
+      "unk57": 189,
+      "name": "Orbital Smoke"
     },
     "Orbital_illumination_shot": {
       "id": 128,
@@ -10755,6 +10847,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 188,
+      "name": "Orbital illumination shot",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_illumination_flare": {
@@ -10781,6 +10874,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 62,
+      "name": "Orbital illumination flare",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Railcannon": {
@@ -10807,6 +10901,7 @@
       "unk49": 10,
       "unk55": 3,
       "unk57": 2175,
+      "name": "Orbital Railcannon",
       "damage_name": "Projectile_Orbital_Railcannon"
     },
     "SEAF_Gun_Explosive": {
@@ -10833,6 +10928,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 182,
+      "name": "SEAF Gun Explosive",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "SEAF_Gun_High_Yield_Explosive": {
@@ -10859,6 +10955,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 182,
+      "name": "SEAF Gun High Yield Explosive",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "SEAF_Gun_Mini_Nuke": {
@@ -10885,6 +10982,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 182,
+      "name": "SEAF Gun Mini Nuke",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "SEAF_Gun_Smoke": {
@@ -10911,6 +11009,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 182,
+      "name": "SEAF Gun Smoke",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "SEAF_Gun_Napalm": {
@@ -10937,6 +11036,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 182,
+      "name": "SEAF Gun Napalm",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "SEAF_Gun_EMP": {
@@ -10963,6 +11063,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 182,
+      "name": "SEAF Gun EMP",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Pistol_9x20mm_exp": {
@@ -10989,6 +11090,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 9x20mm Explosive",
       "damage_name": "Projectile_Pistol_9x20mm_exp"
     },
     "Pistol_9x20mm_fmj": {
@@ -11015,6 +11117,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 9x20mm Full Metal Jacket",
       "damage_name": "Projectile_Pistol_9x20mm_fmj"
     },
     "Pistol_9x20mm_smj": {
@@ -11041,6 +11144,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 9x20mm Soft Metal Jacket",
       "damage_name": "Projectile_Pistol_9x20mm_smj"
     },
     "Pistol_9x20mm_hp": {
@@ -11067,6 +11171,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 9x20mm Hollow-Point ",
       "damage_name": "Projectile_Pistol_9x20mm_hp"
     },
     "Pistol_9x20mm_hv": {
@@ -11093,6 +11198,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 9x20mm High Velocity",
       "damage_name": "Projectile_Pistol_9x20mm_hv"
     },
     "Pistol_9x20mm_pla": {
@@ -11119,6 +11225,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 9x20mm Plasma",
       "damage_name": "Projectile_Pistol_9x20mm_pla"
     },
     "Pistol_9x20mm_rip": {
@@ -11145,6 +11252,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 9x20mm Ripper",
       "damage_name": "Projectile_Pistol_9x20mm_rip"
     },
     "Pistol_9x20mm_ther": {
@@ -11171,6 +11279,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 9x20mm Thermite",
       "damage_name": "Projectile_Pistol_9x20mm_ther"
     },
     "Pistol_9x20mm_tox": {
@@ -11197,6 +11306,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 9x20mm Toxic",
       "damage_name": "Projectile_Pistol_9x20mm_tox"
     },
     "Pistol_12x25mm_exp": {
@@ -11223,6 +11333,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 12x25mm Explosive",
       "damage_name": "Projectile_Pistol_12x25mm_exp"
     },
     "Pistol_12x25mm_fmj": {
@@ -11249,6 +11360,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 12x25mm Full Metal Jacket",
       "damage_name": "Projectile_Pistol_12x25mm_fmj"
     },
     "Pistol_12x25mm_hp": {
@@ -11275,6 +11387,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 12x25mm Hollow-Point ",
       "damage_name": "Projectile_Pistol_12x25mm_hp"
     },
     "Pistol_12x25mm_hv": {
@@ -11301,6 +11414,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 12x25mm High Velocity",
       "damage_name": "Projectile_Pistol_12x25mm_hv"
     },
     "Pistol_12x25mm_pla": {
@@ -11327,6 +11441,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 12x25mm Plasma",
       "damage_name": "Projectile_Pistol_12x25mm_pla"
     },
     "Pistol_12x25mm_rip": {
@@ -11353,6 +11468,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 12x25mm Ripper",
       "damage_name": "Projectile_Pistol_12x25mm_rip"
     },
     "Pistol_12x25mm_ther": {
@@ -11379,6 +11495,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 12x25mm Thermite",
       "damage_name": "Projectile_Pistol_12x25mm_ther"
     },
     "Pistol_12x25mm_tox": {
@@ -11405,6 +11522,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 12x25mm Toxic",
       "damage_name": "Projectile_Pistol_12x25mm_tox"
     },
     "Pistol_12x25mm_stun": {
@@ -11431,6 +11549,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol 12x25mm Stun",
       "damage_name": "Projectile_Pistol_12x25mm_stun"
     },
     "Pistol_Magnum": {
@@ -11457,6 +11576,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Pistol Magnum",
       "damage_name": "Projectile_Pistol_Magnum"
     },
     "Pistol_13x40mm_ap": {
@@ -11483,6 +11603,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 125,
+      "name": "Pistol 13x40mm Penetrator",
       "damage_name": "Projectile_Pistol_13x40mm_ap"
     },
     "Pistol_13x40mm_fmj": {
@@ -11509,6 +11630,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 125,
+      "name": "Pistol 13x40mm Full Metal Jacket",
       "damage_name": "Projectile_Pistol_13x40mm_fmj"
     },
     "Pistol_13x40mm_hp": {
@@ -11535,6 +11657,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 125,
+      "name": "Pistol 13x40mm Hollow-Point ",
       "damage_name": "Projectile_Pistol_13x40mm_hp"
     },
     "Pistol_13x40mm_mag": {
@@ -11561,6 +11684,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 125,
+      "name": "Pistol 13x40mm Magnum",
       "damage_name": "Projectile_Pistol_13x40mm_mag"
     },
     "Pistol_13x40mm_rip": {
@@ -11587,6 +11711,7 @@
       "unk49": 15,
       "unk55": 2,
       "unk57": 125,
+      "name": "Pistol 13x40mm Ripper",
       "damage_name": "Projectile_Pistol_13x40mm_rip"
     },
     "Rifle_5p5x50mm_fmj": {
@@ -11613,6 +11738,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Full Metal Jacket",
       "damage_name": "Projectile_Rifle_5p5x50mm_fmj"
     },
     "Rifle_5p5x50mm_ap": {
@@ -11639,6 +11765,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Penetrator",
       "damage_name": "Projectile_Rifle_5p5x50mm_ap"
     },
     "Rifle_5p5x50mm_dev": {
@@ -11665,6 +11792,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Devestator",
       "damage_name": "Projectile_Rifle_5p5x50mm_dev"
     },
     "Rifle_5p5x50mm_exp": {
@@ -11691,6 +11819,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Explosive",
       "damage_name": "Projectile_Rifle_5p5x50mm_exp"
     },
     "Rifle_5p5x50mm_hp": {
@@ -11717,6 +11846,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Hollow-Point ",
       "damage_name": "Projectile_Rifle_5p5x50mm_hp"
     },
     "Rifle_5p5x50mm_hv": {
@@ -11743,6 +11873,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm High Velocity",
       "damage_name": "Projectile_Rifle_5p5x50mm_hv"
     },
     "Rifle_5p5x50mm_pow": {
@@ -11769,6 +11900,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Double Power",
       "damage_name": "Projectile_Rifle_5p5x50mm_pow"
     },
     "Rifle_5p5x50mm_rip": {
@@ -11795,6 +11927,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Ripper",
       "damage_name": "Projectile_Rifle_5p5x50mm_rip"
     },
     "Rifle_5p5x50mm_spr": {
@@ -11821,6 +11954,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Self-Propelled Rocket",
       "damage_name": "Projectile_Rifle_5p5x50mm_spr"
     },
     "Rifle_5p5x50mm_ss": {
@@ -11847,6 +11981,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Subsonic",
       "damage_name": "Projectile_Rifle_5p5x50mm_ss"
     },
     "Rifle_5p5x50mm_suc": {
@@ -11873,6 +12008,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Super Uranium Core",
       "damage_name": "Projectile_Rifle_5p5x50mm_suc"
     },
     "Rifle_5p5x50mm_tracer": {
@@ -11899,6 +12035,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 5.5x50mm Tracer",
       "damage_name": "Projectile_Rifle_5p5x50mm_fmj"
     },
     "Rifle_8x60mm_airb": {
@@ -11925,6 +12062,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Airburst",
       "damage_name": "Projectile_Rifle_8x60mm_airb"
     },
     "Rifle_8x60mm_ap": {
@@ -11951,6 +12089,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 125,
+      "name": "Rifle 8x60mm Penetrator",
       "damage_name": "Projectile_Rifle_8x60mm_ap"
     },
     "Rifle_8x60mm_dev": {
@@ -11977,6 +12116,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Devestator",
       "damage_name": "Projectile_Rifle_8x60mm_dev"
     },
     "Rifle_8x60mm_exp": {
@@ -12003,6 +12143,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Explosive",
       "damage_name": "Projectile_Rifle_8x60mm_exp"
     },
     "Rifle_8x60mm_flm": {
@@ -12029,6 +12170,7 @@
       "unk49": 12,
       "unk55": 6,
       "unk57": 125,
+      "name": "Rifle 8x60mm Liberty Fire",
       "damage_name": "Projectile_Rifle_8x60mm_flm"
     },
     "Rifle_8x60mm_fmj": {
@@ -12055,6 +12197,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Full Metal Jacket",
       "damage_name": "Projectile_Rifle_8x60mm_fmj"
     },
     "Rifle_8x60mm_fmj_NoCrack": {
@@ -12081,6 +12224,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Full Metal Jacket No Crack",
       "damage_name": "Projectile_Rifle_8x60mm_fmj"
     },
     "Rifle_8x60mm_hv": {
@@ -12107,6 +12251,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm High Velocity",
       "damage_name": "Projectile_Rifle_8x60mm_hv"
     },
     "Rifle_8x60mm_pow": {
@@ -12133,6 +12278,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Double Power",
       "damage_name": "Projectile_Rifle_8x60mm_pow"
     },
     "Rifle_8x60mm_snb": {
@@ -12159,6 +12305,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Sniper Round (HVAP)",
       "damage_name": "Projectile_Rifle_8x60mm_snb"
     },
     "Rifle_8x60mm_ss": {
@@ -12185,6 +12332,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Subsonic",
       "damage_name": "Projectile_Rifle_8x60mm_ss"
     },
     "Rifle_8x60mm_suc": {
@@ -12211,6 +12359,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Super Uranium Core",
       "damage_name": "Projectile_Rifle_8x60mm_suc"
     },
     "Rifle_8x60mm_tracer": {
@@ -12237,6 +12386,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Tracer",
       "damage_name": "Projectile_Rifle_8x60mm_fmj"
     },
     "Rifle_8x60mm_tracer_NoCrack": {
@@ -12263,6 +12413,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Tracer No Crack",
       "damage_name": "Projectile_Rifle_8x60mm_fmj"
     },
     "Rifle_8x60mm_apt": {
@@ -12289,6 +12440,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 8x60mm Armor Penetrating",
       "damage_name": "Projectile_Rifle_8x60mm_apt"
     },
     "Rifle_Rico": {
@@ -12315,6 +12467,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle Rico",
       "damage_name": "Projectile_Rifle_Rico"
     },
     "Rifle_9x70mm_ap": {
@@ -12341,6 +12494,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 9x70mm Penetrator",
       "damage_name": "Projectile_Rifle_9x70mm_ap"
     },
     "Rifle_9x70mm_fmj": {
@@ -12367,6 +12521,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 9x70mm Full Metal Jacket",
       "damage_name": "Projectile_Rifle_9x70mm_fmj"
     },
     "Rifle_9x70mm_hv": {
@@ -12393,6 +12548,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 9x70mm High Velocity",
       "damage_name": "Projectile_Rifle_9x70mm_hv"
     },
     "Rifle_9x70mm_snb": {
@@ -12419,6 +12575,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 9x70mm Sniper Round (HVAP)",
       "damage_name": "Projectile_Rifle_9x70mm_snb"
     },
     "Rifle_9x70mm_soc": {
@@ -12445,6 +12602,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 9x70mm SOCOM Assassin",
       "damage_name": "Projectile_Rifle_9x70mm_soc"
     },
     "Rifle_9x70mm_spr": {
@@ -12471,6 +12629,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 9x70mm Self-Propelled Rocket",
       "damage_name": "Projectile_Rifle_9x70mm_spr"
     },
     "Rifle_9x70mm_suc": {
@@ -12497,6 +12656,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 9x70mm Super Uranium Core",
       "damage_name": "Projectile_Rifle_9x70mm_suc"
     },
     "Rifle_12p5x100mm_fmj": {
@@ -12523,6 +12683,7 @@
       "unk49": 10,
       "unk55": 2,
       "unk57": 125,
+      "name": "Rifle 12.5x100mm Full Metal Jacket",
       "damage_name": "Projectile_Rifle_12p5x100mm_fmj"
     },
     "Rifle_12p5x100mm_eit": {
@@ -12549,6 +12710,7 @@
       "unk49": 10,
       "unk55": 6,
       "unk57": 125,
+      "name": "Rifle 12.5x100mm EIT",
       "damage_name": "Projectile_Rifle_12p5x100mm_eit"
     },
     "Rifle_12p5x100mm_eit_mk2": {
@@ -12575,6 +12737,7 @@
       "unk49": 10,
       "unk55": 6,
       "unk57": 125,
+      "name": "Rifle 12.5x100mm EIT Mk2",
       "damage_name": "Projectile_Rifle_12p5x100mm_eit_mk2"
     },
     "Rifle_12p5x100mm_bchp": {
@@ -12601,6 +12764,7 @@
       "unk49": 10,
       "unk55": 1,
       "unk57": 125,
+      "name": "Rifle 12.5x100mm BCHP",
       "damage_name": "Projectile_Rifle_12p5x100mm_bchp"
     },
     "Crossbow_Bolt_exp": {
@@ -12627,6 +12791,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 177,
+      "name": "Crossbow Bolt Explosive",
       "damage_name": "Projectile_Crossbow_Bolt"
     },
     "Rocket_15x100mm_emp": {
@@ -12653,6 +12818,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 57,
+      "name": "Rocket 15x100mm EMP",
       "damage_name": "Projectile_Rocket_15x100mm_emp"
     },
     "Rocket_15x100mm_exp": {
@@ -12679,6 +12845,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 57,
+      "name": "Rocket 15x100mm Explosive",
       "damage_name": "Projectile_Rocket_15x100mm_exp"
     },
     "Rocket_15x100mm_frag": {
@@ -12705,6 +12872,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 57,
+      "name": "Rocket 15x100mm Frag",
       "damage_name": "Projectile_Rocket_15x100mm_frag"
     },
     "Rocket_15x100mm_pla": {
@@ -12731,6 +12899,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 57,
+      "name": "Rocket 15x100mm Plasma",
       "damage_name": "Projectile_Rocket_15x100mm_pla"
     },
     "Rocket_15x100mm_hv": {
@@ -12757,6 +12926,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 57,
+      "name": "Rocket 15x100mm High Velocity",
       "damage_name": "Projectile_Rocket_15x100mm_hv"
     },
     "Rocket_15x100mm_std": {
@@ -12783,6 +12953,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 57,
+      "name": "Rocket 15x100mm Standard",
       "damage_name": "Projectile_Rocket_15x100mm_std"
     },
     "Rocket_15x100mm_ther": {
@@ -12809,6 +12980,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 57,
+      "name": "Rocket 15x100mm Thermite",
       "damage_name": "Projectile_Rocket_15x100mm_ther"
     },
     "Rocket_15x100mm_tox": {
@@ -12835,6 +13007,7 @@
       "unk49": 12,
       "unk55": 6,
       "unk57": 57,
+      "name": "Rocket 15x100mm Toxic",
       "damage_name": "Projectile_Rocket_15x100mm_tox"
     },
     "Rocket_JarPhoenix_20mm": {
@@ -12861,6 +13034,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 57,
+      "name": "Rocket JAR Phoenix 20mm",
       "damage_name": "Projectile_Rocket_15x100mm_exp"
     },
     "Rocket_70mm": {
@@ -12887,6 +13061,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 184,
+      "name": "Rocket 70mm",
       "damage_name": "Projectile_Rocket_70mm"
     },
     "Rocket_70mm_turret": {
@@ -12913,6 +13088,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 184,
+      "name": "Rocket 70mm Turret",
       "damage_name": "Projectile_Rocket_70mm"
     },
     "Rocket_110mm": {
@@ -12939,6 +13115,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 184,
+      "name": "Rocket 110mm",
       "damage_name": "Projectile_Rocket_110mm"
     },
     "Rocket_110mm_silent": {
@@ -12965,6 +13142,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 184,
+      "name": "Rocket 110mm Silent",
       "damage_name": "Projectile_Rocket_110mm"
     },
     "Rocket_110mm_MK2": {
@@ -12991,6 +13169,7 @@
       "unk49": 20,
       "unk55": 3,
       "unk57": 188,
+      "name": "Rocket 110mm Mk2",
       "damage_name": "Projectile_Rocket_110mm"
     },
     "Shotgun_12g_bir": {
@@ -13017,6 +13196,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 12-Gauge Birdshot",
       "damage_name": "Projectile_Shotgun_12g_bir"
     },
     "Shotgun_12g_buc": {
@@ -13043,6 +13223,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 12-Gauge Buckshot",
       "damage_name": "Projectile_Shotgun_12g_buc"
     },
     "Shotgun_12g_bug": {
@@ -13069,6 +13250,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 12-Gauge Bugbite",
       "damage_name": "Projectile_Shotgun_12g_bug"
     },
     "Shotgun_12g_fle": {
@@ -13095,6 +13277,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 12-Gauge Flechette",
       "damage_name": "Projectile_Shotgun_12g_fle"
     },
     "Shotgun_12g_flm": {
@@ -13121,6 +13304,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 12-Gauge Liberty Fire",
       "damage_name": "Projectile_Shotgun_12g_flm"
     },
     "Shotgun_12g_mag": {
@@ -13147,6 +13331,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 12-Gauge Magnum",
       "damage_name": "Projectile_Shotgun_12g_mag"
     },
     "Shotgun_12g_magtri": {
@@ -13173,6 +13358,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 12-Gauge Magnum Tri-Baall",
       "damage_name": "Projectile_Shotgun_12g_magtri"
     },
     "Shotgun_12g_scs": {
@@ -13199,6 +13385,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 29,
+      "name": "Shotgun 12-Gauge SCS",
       "damage_name": "Projectile_Shotgun_12g_scs"
     },
     "Shotgun_12g_tri": {
@@ -13225,6 +13412,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 12-Gauge Tri-Ball",
       "damage_name": "Projectile_Shotgun_12g_tri"
     },
     "Shotgun_10g_bir": {
@@ -13251,6 +13439,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Birdshot",
       "damage_name": "Projectile_Shotgun_10g_bir"
     },
     "Shotgun_10g_buc": {
@@ -13277,6 +13466,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Buckshot",
       "damage_name": "Projectile_Shotgun_10g_buc"
     },
     "Shotgun_10g_bug": {
@@ -13303,6 +13493,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Bugbite",
       "damage_name": "Projectile_Shotgun_10g_bug"
     },
     "Shotgun_10g_fle": {
@@ -13329,6 +13520,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Flechette",
       "damage_name": "Projectile_Shotgun_10g_fle"
     },
     "Shotgun_10g_flm": {
@@ -13355,6 +13547,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Liberty Fire",
       "damage_name": "Projectile_Shotgun_10g_flm"
     },
     "Shotgun_10g_frag": {
@@ -13381,6 +13574,7 @@
       "unk49": 15,
       "unk55": 3,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Frag",
       "damage_name": "Projectile_Shotgun_10g_frag"
     },
     "Shotgun_10g_mag": {
@@ -13407,6 +13601,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Magnum",
       "damage_name": "Projectile_Shotgun_10g_mag"
     },
     "Shotgun_10g_magtri": {
@@ -13433,6 +13628,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Magnum Tri-Baall",
       "damage_name": "Projectile_Shotgun_10g_magtri"
     },
     "Shotgun_10g_sab": {
@@ -13459,6 +13655,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Sabot",
       "damage_name": "Projectile_Shotgun_10g_sab"
     },
     "Shotgun_10g_sab2": {
@@ -13485,6 +13682,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Dual Sabot",
       "damage_name": "Projectile_Shotgun_10g_sab2"
     },
     "Shotgun_10g_sabhv": {
@@ -13511,6 +13709,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge High Velocity Sabot",
       "damage_name": "Projectile_Shotgun_10g_sabhv"
     },
     "Shotgun_10g_scs": {
@@ -13537,6 +13736,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 29,
+      "name": "Shotgun 10-Gauge SCS",
       "damage_name": "Projectile_Shotgun_10g_scs"
     },
     "Shotgun_10g_slug": {
@@ -13563,6 +13763,7 @@
       "unk49": 12,
       "unk55": 2,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Slug",
       "damage_name": "Projectile_Shotgun_10g_slug"
     },
     "Shotgun_10g_tri": {
@@ -13589,6 +13790,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shotgun 10-Gauge Tri-Ball",
       "damage_name": "Projectile_Shotgun_10g_tri"
     },
     "Shrapnel": {
@@ -13615,6 +13817,7 @@
       "unk49": 0,
       "unk55": 3,
       "unk57": 59,
+      "name": "Shrapnel",
       "damage_name": "Projectile_Shrapnel"
     },
     "ScatterShot": {
@@ -13641,6 +13844,7 @@
       "unk49": 0,
       "unk55": 3,
       "unk57": 56,
+      "name": "Scatter Shot",
       "damage_name": "Projectile_Shotgun_12g_buc"
     },
     "Shrapnel_High_Velocity": {
@@ -13667,6 +13871,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 61,
+      "name": "Shrapnel High Velocity",
       "damage_name": "Projectile_Shrapnel_High_Velocity"
     },
     "Shrapnel_Heavy": {
@@ -13693,6 +13898,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 63,
+      "name": "Shrapnel Heavy",
       "damage_name": "Projectile_Shrapnel_High_Velocity"
     },
     "Shrapnel_Heavy_MK2": {
@@ -13719,6 +13925,7 @@
       "unk49": 0,
       "unk55": 1,
       "unk57": 63,
+      "name": "Shrapnel Heavy Mk2",
       "damage_name": "Projectile_Shrapnel_High_Velocity"
     },
     "Plasma_Bolt_Small": {
@@ -13745,6 +13952,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 63,
+      "name": "Plasma Bolt Small",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Bolt_Medium": {
@@ -13771,6 +13979,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 63,
+      "name": "Plasma Bolt Medium",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Bolt_Medium_Volatile": {
@@ -13797,6 +14006,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 63,
+      "name": "Plasma Bolt Medium Volatile",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Bolt_Medium_Charge": {
@@ -13823,6 +14033,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 63,
+      "name": "Plasma Bolt Medium Charge",
       "damage_name": "Projectile_Plasma_Bolt_Charge"
     },
     "Plasma_Bolt_Large": {
@@ -13849,6 +14060,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 63,
+      "name": "Plasma Bolt Large",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Punisher_Projectile": {
@@ -13875,6 +14087,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 63,
+      "name": "Plasma Punisher Projectile",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Explosion_Cone": {
@@ -13900,7 +14113,8 @@
       "unk48": 3,
       "unk49": 15,
       "unk55": 1,
-      "unk57": 62
+      "unk57": 62,
+      "name": "Plasma Explosion Cone"
     },
     "Railgun": {
       "id": 125,
@@ -13926,6 +14140,7 @@
       "unk49": 10,
       "unk55": 1,
       "unk57": 119,
+      "name": "Railgun",
       "damage_name": "Projectile_Railgun"
     },
     "Railgun_Stun": {
@@ -13952,6 +14167,7 @@
       "unk49": 10,
       "unk55": 1,
       "unk57": 127,
+      "name": "Railgun Stun",
       "damage_name": "Projectile_Railgun_Stun"
     },
     "Laser_Long": {
@@ -13978,6 +14194,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Laser Long",
       "damage_name": "Projectile_Laser_Long"
     },
     "Laser_Pulse": {
@@ -14004,6 +14221,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 125,
+      "name": "Laser Pulse",
       "damage_name": "Projectile_Laser_Pulse"
     },
     "ContactMine": {
@@ -14030,6 +14248,7 @@
       "unk49": 0,
       "unk55": 3,
       "unk57": 1583,
+      "name": "Contact Mine",
       "damage_name": "Projectile_StratagemLauncher"
     },
     "StratagemLauncher": {
@@ -14056,6 +14275,7 @@
       "unk49": 0,
       "unk55": 2,
       "unk57": 63,
+      "name": "Stratagem Launcher",
       "damage_name": "Projectile_StratagemLauncher"
     },
     "FlamethrowerBAD": {
@@ -14082,6 +14302,7 @@
       "unk49": 30,
       "unk55": 0,
       "unk57": 60,
+      "name": "Flamethrower",
       "damage_name": "Projectile_Flamethrower"
     },
     "FlamethrowerBAD_MK2": {
@@ -14108,6 +14329,7 @@
       "unk49": 30,
       "unk55": 0,
       "unk57": 1084,
+      "name": "Flamethrower Mk2",
       "damage_name": "Projectile_Flamethrower"
     },
     "Nuke": {
@@ -14134,6 +14356,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 445,
+      "name": "Nuke",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "World_Meteor": {
@@ -14160,6 +14383,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 181,
+      "name": "World Meteor",
       "damage_name": "Projectile_World_Meteor"
     },
     "World_VolcanoStrike": {
@@ -14186,6 +14410,7 @@
       "unk49": 45,
       "unk55": 3,
       "unk57": 181,
+      "name": "World Volcano Strike",
       "damage_name": "Projectile_World_VolcanoStrike"
     },
     "Spikeplant_Shrapnel": {
@@ -14212,6 +14437,7 @@
       "unk49": 15,
       "unk55": 3,
       "unk57": 123,
+      "name": "Spikeplant Shrapnel",
       "damage_name": "Projectile_Spikeplant_Shrapnel"
     }
   },
@@ -14221,6 +14447,7 @@
       "r1": 4,
       "r2": 8,
       "r3": 11,
+      "name": "Boomer Acid Death",
       "damage_name": "Explosion_Boomer_AcidDeath"
     },
     "Warrior_AcidDeath": {
@@ -14228,6 +14455,7 @@
       "r1": 2,
       "r2": 4,
       "r3": 8,
+      "name": "Warrior Acid Death",
       "damage_name": "Explosion_Scavenger_AcidDeath"
     },
     "Scavenger_AcidDeath": {
@@ -14235,6 +14463,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 2.5,
+      "name": "Scavenger Acid Death",
       "damage_name": "Explosion_Scavenger_AcidDeath"
     },
     "Scavenger_AcidBall": {
@@ -14242,6 +14471,7 @@
       "r1": 1.5,
       "r2": 2,
       "r3": 2,
+      "name": "Scavenger Acid Ball",
       "damage_name": "Explosion_Scavenger_AcidBall"
     },
     "Strider_AcidStream": {
@@ -14249,6 +14479,7 @@
       "r1": 2,
       "r2": 3,
       "r3": 2.5,
+      "name": "Strider Acid Stream",
       "damage_name": "Explosion_Scavenger_AcidDeath"
     },
     "TunnelerEmerge": {
@@ -14256,6 +14487,7 @@
       "r1": 5,
       "r2": 8,
       "r3": 10,
+      "name": "Tunneler Emerge",
       "damage_name": "Explosion_TunnelerEmerge"
     },
     "Strider_Stomp": {
@@ -14263,6 +14495,7 @@
       "r1": 1,
       "r2": 2.5,
       "r3": 3,
+      "name": "Strider Stomp",
       "damage_name": "Explosion_Strider_StompShockwave"
     },
     "BugTrap": {
@@ -14270,6 +14503,7 @@
       "r1": 0.3,
       "r2": 2,
       "r3": 2.5,
+      "name": "Bug Trap",
       "damage_name": "Explosion_BugTrap"
     },
     "BugHoleCollapse": {
@@ -14277,6 +14511,7 @@
       "r1": 1,
       "r2": 3,
       "r3": 4,
+      "name": "Bug Hole Collapse",
       "damage_name": "Explosion_Prop_Large"
     },
     "Bug_Artillery": {
@@ -14284,6 +14519,7 @@
       "r1": 1,
       "r2": 8,
       "r3": 14,
+      "name": "Bug Artillery",
       "damage_name": "Explosion_Projectile_BugArtillery"
     },
     "Cyborg_HandGrenade_Antitank": {
@@ -14291,6 +14527,7 @@
       "r1": 2,
       "r2": 4,
       "r3": 12,
+      "name": "Cyborg Hand Grenade Antitank",
       "damage_name": "Explosion_HandGrenade_CyborgAntiTank"
     },
     "Cyborg_HandGrenade_HighExplosive": {
@@ -14298,6 +14535,7 @@
       "r1": 1.2,
       "r2": 6,
       "r3": 8,
+      "name": "Cyborg Hand Grenade High Explosive",
       "damage_name": "Explosion_HandGrenade_CyborgHighExplosive"
     },
     "Cyborg_Mortar_Base_Shell_Explosion": {
@@ -14305,6 +14543,7 @@
       "r1": 1.2,
       "r2": 6,
       "r3": 8,
+      "name": "Cyborg Mortar Base Shell Explosion",
       "damage_name": "Explosion_HandGrenade_CyborgHighExplosive"
     },
     "Cyborg_Projectile_LightCannon": {
@@ -14312,6 +14551,7 @@
       "r1": 0.6,
       "r2": 3,
       "r3": 5,
+      "name": "Cyborg Projectile Light Cannon",
       "damage_name": "Explosion_Projectile_CyborgLightCannon"
     },
     "Cyborg_Projectile_HeavyCannon": {
@@ -14319,6 +14559,7 @@
       "r1": 1.2,
       "r2": 6,
       "r3": 8,
+      "name": "Cyborg Projectile Heavy Cannon",
       "damage_name": "Explosion_Projectile_CyborgHeavyCannon"
     },
     "Cyborg_Projectile_SpawnerMountedCannon": {
@@ -14326,6 +14567,7 @@
       "r1": 1.2,
       "r2": 6,
       "r3": 8,
+      "name": "Cyborg Projectile Spawner Mounted Cannon",
       "damage_name": "Explosion_Projectile_CyborgHeavyCannon"
     },
     "Projectile_Shotgun_Flakblast": {
@@ -14333,6 +14575,7 @@
       "r1": 1,
       "r2": 1.5,
       "r3": 3,
+      "name": "Projectile Shotgun Flakblast",
       "damage_name": "Explosion_Projectile_Shotgun_Flakblast"
     },
     "Cyborg_Projectile_LightRocket": {
@@ -14340,6 +14583,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 3.5,
+      "name": "Cyborg Projectile Light Rocket",
       "damage_name": "Explosion_Projectile_CyborgLightRocket"
     },
     "Cyborg_Projectile_HeavyRocket": {
@@ -14347,6 +14591,7 @@
       "r1": 1,
       "r2": 10,
       "r3": 25,
+      "name": "Cyborg Projectile Heavy Rocket",
       "damage_name": "Explosion_Projectile_CyborgHeavyRocket"
     },
     "Cyborg_PlasmaBackpackOverload": {
@@ -14354,6 +14599,7 @@
       "r1": 0.4,
       "r2": 2,
       "r3": 1,
+      "name": "Cyborg Plasma Backpack Overload",
       "damage_name": "Explosion_Projectile_CyborgLightCannon"
     },
     "Cyborg_FlamerBackpackOverload": {
@@ -14361,6 +14607,7 @@
       "r1": 0.4,
       "r2": 4,
       "r3": 12,
+      "name": "Cyborg Flamer Backpack Overload",
       "damage_name": "Explosion_Prop_Medium"
     },
     "Cyborg_Mine": {
@@ -14368,6 +14615,7 @@
       "r1": 1.6,
       "r2": 4,
       "r3": 6,
+      "name": "Cyborg Mine",
       "damage_name": "Explosion_CyborgMine"
     },
     "Cyborg_Vehicle_Medium_Death": {
@@ -14375,6 +14623,7 @@
       "r1": 1.6,
       "r2": 8,
       "r3": 12,
+      "name": "Cyborg Vehicle Medium Death",
       "damage_name": "Explosion_Vehicle_CyborgMediumDeath"
     },
     "Cyborg_Tank_Turret_Death": {
@@ -14382,6 +14631,7 @@
       "r1": 1.6,
       "r2": 8,
       "r3": 12,
+      "name": "Cyborg Tank Turret Death",
       "damage_name": "Explosion_Vehicle_CyborgMediumDeath"
     },
     "Cyborg_Vehicle_Large_Death_Air": {
@@ -14389,6 +14639,7 @@
       "r1": 2.4,
       "r2": 12,
       "r3": 18,
+      "name": "Cyborg Vehicle Large Death Air",
       "damage_name": "Explosion_Vehicle_CyborgMediumDeath"
     },
     "Cyborg_Dropship_Death_Air": {
@@ -14396,6 +14647,7 @@
       "r1": 2.4,
       "r2": 12,
       "r3": 18,
+      "name": "Cyborg Dropship Death Air",
       "damage_name": "Explosion_Vehicle_CyborgMediumDeath"
     },
     "Fabricator_Fall_Impact": {
@@ -14403,6 +14655,7 @@
       "r1": 2,
       "r2": 5,
       "r3": 6,
+      "name": "Fabricator Fall Impact",
       "damage_name": "Explosion_Prop_Large"
     },
     "Cyborg_Vehicle_Large_Death_Ground": {
@@ -14410,6 +14663,7 @@
       "r1": 5,
       "r2": 12,
       "r3": 18,
+      "name": "Cyborg Vehicle Large Death Ground",
       "damage_name": "Explosion_Vehicle_SeLargeDeath"
     },
     "Cyborg_Vehicle_Medium_Death_Ground": {
@@ -14417,6 +14671,7 @@
       "r1": 5,
       "r2": 12,
       "r3": 18,
+      "name": "Cyborg Vehicle Medium Death Ground",
       "damage_name": "Explosion_Vehicle_SeLargeDeath"
     },
     "Cyborg_Factory_Spawner": {
@@ -14424,6 +14679,7 @@
       "r1": 5,
       "r2": 12,
       "r3": 18,
+      "name": "Cyborg Factory Spawner",
       "damage_name": "Explosion_Vehicle_SeLargeDeath"
     },
     "Cyborg_Dropship_Death_Ground": {
@@ -14431,6 +14687,7 @@
       "r1": 5,
       "r2": 12,
       "r3": 18,
+      "name": "Cyborg Dropship Death Ground",
       "damage_name": "Explosion_Vehicle_SeLargeDeath"
     },
     "Cyborg_Fabricator_Large_Death_Ground": {
@@ -14438,6 +14695,7 @@
       "r1": 5,
       "r2": 12,
       "r3": 18,
+      "name": "Cyborg Fabricator Large Death Ground",
       "damage_name": "Explosion_Vehicle_SeLargeDeath"
     },
     "Cyborg_Vehicle_Huge_Death": {
@@ -14445,6 +14703,7 @@
       "r1": 3.6,
       "r2": 18,
       "r3": 25,
+      "name": "Cyborg Vehicle Huge Death",
       "damage_name": "Explosion_Vehicle_CyborgHugeDeath"
     },
     "DropshipCrash": {
@@ -14452,6 +14711,7 @@
       "r1": 5,
       "r2": 8,
       "r3": 10,
+      "name": "Dropship Crash",
       "damage_name": "Explosion_Vehicle_DropshipCrash"
     },
     "DropshipCrash_Medium": {
@@ -14459,6 +14719,7 @@
       "r1": 2,
       "r2": 4,
       "r3": 8,
+      "name": "Dropship Crash Medium",
       "damage_name": "Explosion_Vehicle_DropshipCrash"
     },
     "GunshipCrash_Medium": {
@@ -14466,6 +14727,7 @@
       "r1": 2,
       "r2": 4,
       "r3": 8,
+      "name": "Gunship Crash Medium",
       "damage_name": "Explosion_Vehicle_DropshipCrash"
     },
     "DropshipCrash_Large": {
@@ -14473,6 +14735,7 @@
       "r1": 4,
       "r2": 8,
       "r3": 16,
+      "name": "Dropship Crash Large",
       "damage_name": "Explosion_Vehicle_DropshipCrash"
     },
     "GunshipCrash_Large": {
@@ -14480,6 +14743,7 @@
       "r1": 4,
       "r2": 8,
       "r3": 16,
+      "name": "Gunship Crash Large",
       "damage_name": "Explosion_Vehicle_DropshipCrash"
     },
     "ThrusterExplosion": {
@@ -14487,6 +14751,7 @@
       "r1": 0.8,
       "r2": 8,
       "r3": 25,
+      "name": "Thruster Explosion",
       "damage_name": "Explosion_Vehicle_ThrusterDeath"
     },
     "Cyborg_Artillery": {
@@ -14494,6 +14759,7 @@
       "r1": 2,
       "r2": 10,
       "r3": 17,
+      "name": "Cyborg Artillery",
       "damage_name": "Explosion_Projectile_CyborgArtillery"
     },
     "Frag": {
@@ -14501,6 +14767,7 @@
       "r1": 2,
       "r2": 8,
       "r3": 12,
+      "name": "Frag",
       "damage_name": "Explosion_HandGrenade_Frag"
     },
     "Flash": {
@@ -14508,6 +14775,7 @@
       "r1": 1,
       "r2": 10,
       "r3": 15,
+      "name": "Flash",
       "damage_name": "Explosion_HandGrenade_Flash"
     },
     "Incendiary": {
@@ -14515,6 +14783,7 @@
       "r1": 1,
       "r2": 7,
       "r3": 9,
+      "name": "Incendiary",
       "damage_name": "Explosion_HandGrenade_Incendiary"
     },
     "Thermite": {
@@ -14522,6 +14791,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 3,
+      "name": "Thermite",
       "damage_name": "Explosion_HandGrenade_Thermite"
     },
     "HighExplosive": {
@@ -14529,6 +14799,7 @@
       "r1": 2.5,
       "r2": 7,
       "r3": 9,
+      "name": "High Explosive",
       "damage_name": "Explosion_HandGrenade_HighExplosive"
     },
     "Impact": {
@@ -14536,6 +14807,7 @@
       "r1": 2.5,
       "r2": 7,
       "r3": 8,
+      "name": "Impact",
       "damage_name": "Explosion_HandGrenade_HighExplosive"
     },
     "12g_Frag": {
@@ -14543,6 +14815,7 @@
       "r1": 0.5,
       "r2": 2.5,
       "r3": 3,
+      "name": "12-Gauge Frag",
       "damage_name": "Explosion_Projectile_12g_Frag"
     },
     "12g_HE": {
@@ -14550,6 +14823,7 @@
       "r1": 1,
       "r2": 1.5,
       "r3": 2,
+      "name": "12-Gauge HE",
       "damage_name": "Explosion_Projectile_12g_HE"
     },
     "Plasma_Bolt_Small": {
@@ -14557,6 +14831,7 @@
       "r1": 0.75,
       "r2": 1.5,
       "r3": 2,
+      "name": "Plasma Bolt Small",
       "damage_name": "Explosion_Projectile_PlasmaBolt_Small"
     },
     "Plasma_Bolt_Medium": {
@@ -14564,6 +14839,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 2,
+      "name": "Plasma Bolt Medium",
       "damage_name": "Explosion_Projectile_PlasmaBolt_Medium"
     },
     "Plasma_Bolt_Medium_Volatile": {
@@ -14571,6 +14847,7 @@
       "r1": 1.5,
       "r2": 3,
       "r3": 4,
+      "name": "Plasma Bolt Medium Volatile",
       "damage_name": "Explosion_Projectile_PlasmaBolt_Medium_Volatile"
     },
     "Plasma_Bolt_Large": {
@@ -14578,6 +14855,7 @@
       "r1": 2,
       "r2": 3,
       "r3": 4,
+      "name": "Plasma Bolt Large",
       "damage_name": "Explosion_Projectile_PlasmaBolt_Large"
     },
     "Punisher_Plasma_Explosion": {
@@ -14585,6 +14863,7 @@
       "r1": 2.9,
       "r2": 3,
       "r3": 4,
+      "name": "Punisher Plasma Explosion",
       "damage_name": "Explosion_Projectile_PlasmaBolt_Large"
     },
     "Plasma_Cone": {
@@ -14592,6 +14871,7 @@
       "r1": 7.9,
       "r2": 8,
       "r3": 8.1,
+      "name": "Plasma Cone",
       "damage_name": "Explosion_Plasma_Cone"
     },
     "Crossbow_Bolt": {
@@ -14599,6 +14879,7 @@
       "r1": 2,
       "r2": 4,
       "r3": 5,
+      "name": "Crossbow Bolt",
       "damage_name": "Explosion_Crossbow_Bolt"
     },
     "Grenade_40mm_HE": {
@@ -14606,6 +14887,7 @@
       "r1": 2.5,
       "r2": 6.5,
       "r3": 7,
+      "name": "Grenade 40mm HE",
       "damage_name": "Explosion_Projectile_Grenade_40mm_HE"
     },
     "Grenade_40mm_HE_MK2": {
@@ -14613,6 +14895,7 @@
       "r1": 2.25,
       "r2": 6.5,
       "r3": 8,
+      "name": "Grenade 40mm HE Mk2",
       "damage_name": "Explosion_Projectile_Grenade_40mm_HE"
     },
     "Grenade_40mm_Stun": {
@@ -14620,6 +14903,7 @@
       "r1": 1,
       "r2": 10,
       "r3": 15,
+      "name": "Grenade 40mm Stun",
       "damage_name": "Explosion_Projectile_Grenade_40mm_Stun"
     },
     "Grenade_40mm_ProximityCone": {
@@ -14627,6 +14911,7 @@
       "r1": 2.5,
       "r2": 8,
       "r3": 12,
+      "name": "Grenade 40mm Proximity Cone",
       "damage_name": "Explosion_Projectile_Grenade_40mm_ProximityCone"
     },
     "Grenade_40mm_Incendiary": {
@@ -14634,6 +14919,7 @@
       "r1": 1,
       "r2": 7,
       "r3": 9,
+      "name": "Grenade 40mm Incendiary",
       "damage_name": "Explosion_HandGrenade_Incendiary"
     },
     "Grenade_Mortar_40mm_HE": {
@@ -14641,6 +14927,7 @@
       "r1": 3,
       "r2": 9,
       "r3": 13,
+      "name": "Grenade Mortar 40mm HE",
       "damage_name": "Explosion_Projectile_Grenade_Mortar_40mm_HE"
     },
     "Grenade_Mortar_40mm_Staticfield": {
@@ -14648,6 +14935,7 @@
       "r1": 1,
       "r2": 10,
       "r3": 12,
+      "name": "Grenade Mortar 40mm Static Field",
       "damage_name": "Explosion_Projectile_OrbitalStun"
     },
     "Grenade_85mm_HE": {
@@ -14655,6 +14943,7 @@
       "r1": 2.3,
       "r2": 7,
       "r3": 12,
+      "name": "Grenade 85mm HE",
       "damage_name": "Explosion_Projectile_Grenade_85mm_HE"
     },
     "Grenade_85mm_HE_MK2": {
@@ -14662,6 +14951,7 @@
       "r1": 3.3,
       "r2": 10,
       "r3": 15,
+      "name": "Grenade 85mm HE Mk2",
       "damage_name": "Explosion_Projectile_Grenade_85mm_HE_MK2"
     },
     "Grenade_85mm_HEAT": {
@@ -14669,6 +14959,7 @@
       "r1": 1.5,
       "r2": 3,
       "r3": 6,
+      "name": "Grenade 85mm HEAT",
       "damage_name": "Explosion_Projectile_Grenade_85mm_HEAT"
     },
     "Grenade_85mm_HEAT_MK2": {
@@ -14676,6 +14967,7 @@
       "r1": 1.5,
       "r2": 3,
       "r3": 6,
+      "name": "Grenade 85mm HEAT Mk2",
       "damage_name": "Explosion_Projectile_Grenade_85mm_HEAT"
     },
     "Grenade_75mm_HEAT": {
@@ -14683,6 +14975,7 @@
       "r1": 1.5,
       "r2": 3,
       "r3": 6,
+      "name": "Grenade 75mm HEAT",
       "damage_name": "Explosion_Projectile_Grenade_75mm_HEAT"
     },
     "Flak_20mm": {
@@ -14690,6 +14983,7 @@
       "r1": 2,
       "r2": 8,
       "r3": 10,
+      "name": "Flak 20mm",
       "damage_name": "Explosion_Projectile_Cannon_20mm_Flak"
     },
     "JarPhoenix_20mm": {
@@ -14697,6 +14991,7 @@
       "r1": 2,
       "r2": 6,
       "r3": 6.5,
+      "name": "JAR Phoenix 20mm",
       "damage_name": "Explosion_Projectile_Cannon_20mm_Flak"
     },
     "APHET_20mm": {
@@ -14704,6 +14999,7 @@
       "r1": 2,
       "r2": 4,
       "r3": 5.5,
+      "name": "APHET 20mm",
       "damage_name": "Explosion_Projectile_Cannon_20mm_APHET"
     },
     "Laser_Pulse": {
@@ -14711,6 +15007,7 @@
       "r1": 1.5,
       "r2": 3,
       "r3": 6,
+      "name": "Laser Pulse",
       "damage_name": "Explosion_Laser_Pulse"
     },
     "HE_20mm": {
@@ -14718,6 +15015,7 @@
       "r1": 1.5,
       "r2": 4.5,
       "r3": 5.8,
+      "name": "HE 20mm",
       "damage_name": "Explosion_Projectile_Cannon_20mm_HE"
     },
     "Cannon_23mm_silent": {
@@ -14725,6 +15023,7 @@
       "r1": 1.5,
       "r2": 4.5,
       "r3": 6.5,
+      "name": "Cannon 23mm Silent",
       "damage_name": "Explosion_Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_23mm": {
@@ -14732,6 +15031,7 @@
       "r1": 1.5,
       "r2": 4.5,
       "r3": 6.5,
+      "name": "Cannon 23mm",
       "damage_name": "Explosion_Projectile_Cannon_Eagle_23mm"
     },
     "APHE_30mm": {
@@ -14739,6 +15039,7 @@
       "r1": 1.5,
       "r2": 4.5,
       "r3": 6,
+      "name": "APHE 30mm",
       "damage_name": "Explosion_Projectile_Cannon_30mm_APHE"
     },
     "Flak_40mm": {
@@ -14746,6 +15047,7 @@
       "r1": 3,
       "r2": 12,
       "r3": 20,
+      "name": "Flak 40mm",
       "damage_name": "Explosion_Projectile_Cannon_40mm_Flak"
     },
     "APHE_40mm": {
@@ -14753,6 +15055,7 @@
       "r1": 2,
       "r2": 6,
       "r3": 8,
+      "name": "APHE 40mm",
       "damage_name": "Explosion_Projectile_Cannon_40mm_APHE"
     },
     "OrbitalShot": {
@@ -14760,6 +15063,7 @@
       "r1": 0.2,
       "r2": 0.5,
       "r3": 4,
+      "name": "Orbital Shot",
       "damage_name": "Explosion_Projectile_OrbitalShot"
     },
     "OrbitalShot_MK2": {
@@ -14767,6 +15071,7 @@
       "r1": 0.2,
       "r2": 0.5,
       "r3": 4,
+      "name": "Orbital Shot Mk2",
       "damage_name": "Explosion_Projectile_OrbitalShot_MK2"
     },
     "OrbitalStrike": {
@@ -14774,6 +15079,7 @@
       "r1": 3.3,
       "r2": 10,
       "r3": 11,
+      "name": "Orbital Strike",
       "damage_name": "Explosion_Projectile_OrbitalStrike"
     },
     "OrbitalStrike_Cheap": {
@@ -14781,6 +15087,7 @@
       "r1": 3.3,
       "r2": 10,
       "r3": 11,
+      "name": "Orbital Strike Cheap",
       "damage_name": "Explosion_Projectile_OrbitalStrike"
     },
     "OrbitalBarrage": {
@@ -14788,6 +15095,7 @@
       "r1": 4,
       "r2": 12,
       "r3": 18,
+      "name": "Orbital Barrage",
       "damage_name": "Explosion_Projectile_OrbitalBarrage"
     },
     "PrecisionStrike": {
@@ -14795,6 +15103,7 @@
       "r1": 4,
       "r2": 12,
       "r3": 18,
+      "name": "Precision Strike",
       "damage_name": "Explosion_Projectile_OrbitalBarrage"
     },
     "OrbitalBarrage_Cheap": {
@@ -14802,6 +15111,7 @@
       "r1": 4,
       "r2": 12,
       "r3": 18,
+      "name": "Orbital Barrage Cheap",
       "damage_name": "Explosion_Projectile_OrbitalBarrage"
     },
     "OrbitalBarrage_MK2": {
@@ -14809,6 +15119,7 @@
       "r1": 4,
       "r2": 12,
       "r3": 20,
+      "name": "Orbital Barrage Mk2",
       "damage_name": "Explosion_Projectile_OrbitalBarrage"
     },
     "OrbitalStun": {
@@ -14816,6 +15127,7 @@
       "r1": 1,
       "r2": 13,
       "r3": 20,
+      "name": "Orbital Stun",
       "damage_name": "Explosion_Projectile_OrbitalStun"
     },
     "OrbitalStun_MK2": {
@@ -14823,6 +15135,7 @@
       "r1": 1,
       "r2": 13,
       "r3": 20,
+      "name": "Orbital Stun Mk2",
       "damage_name": "Explosion_Projectile_OrbitalStun"
     },
     "OrbitalStun_MK3": {
@@ -14830,6 +15143,7 @@
       "r1": 1,
       "r2": 20,
       "r3": 25,
+      "name": "Orbital Stun Mk3",
       "damage_name": "Explosion_Projectile_OrbitalStun_MK2"
     },
     "OrbitalGas": {
@@ -14837,6 +15151,7 @@
       "r1": 1,
       "r2": 15,
       "r3": 20,
+      "name": "Orbital Gas",
       "damage_name": "Explosion_Projectile_OrbitalGas"
     },
     "OrbitalGas_MK2": {
@@ -14844,6 +15159,7 @@
       "r1": 1,
       "r2": 15,
       "r3": 20,
+      "name": "Orbital Gas Mk2",
       "damage_name": "Explosion_Projectile_OrbitalGas"
     },
     "OrbitalGas_MK3": {
@@ -14851,16 +15167,36 @@
       "r1": 1,
       "r2": 15,
       "r3": 20,
+      "name": "Orbital Gas Mk3",
       "damage_name": "Explosion_Projectile_OrbitalGas"
     },
-    "OrbitalSmoke": {"id": 37, "r1": 5, "r2": 5, "r3": 0},
-    "AirStrikeSmoke": {"id": 131, "r1": 5, "r2": 5, "r3": 0},
-    "OrbitalFlare": {"id": 201, "r1": 0, "r2": 0, "r3": 0},
+    "OrbitalSmoke": {
+      "id": 37,
+      "r1": 5,
+      "r2": 5,
+      "r3": 0,
+      "name": "Orbital Smoke"
+    },
+    "AirStrikeSmoke": {
+      "id": 131,
+      "r1": 5,
+      "r2": 5,
+      "r3": 0,
+      "name": "Air Strike Smoke"
+    },
+    "OrbitalFlare": {
+      "id": 201,
+      "r1": 0,
+      "r2": 0,
+      "r3": 0,
+      "name": "Orbital Flare"
+    },
     "Railcannon_Impact": {
       "id": 27,
       "r1": 2.5,
       "r2": 2.5,
       "r3": 10,
+      "name": "Railcannon Impact",
       "damage_name": "Explosion_Projectile_Railcannon"
     },
     "HeavyShrapnel": {
@@ -14868,6 +15204,7 @@
       "r1": 3,
       "r2": 6,
       "r3": 8,
+      "name": "Heavy Shrapnel",
       "damage_name": "Explosion_Projectile_OrbitalShot"
     },
     "HeavyShrapnel_Clusterbombs": {
@@ -14875,6 +15212,7 @@
       "r1": 3,
       "r2": 6,
       "r3": 8,
+      "name": "Heavy Shrapnel Clusterbombs",
       "damage_name": "Explosion_Projectile_OrbitalShot"
     },
     "HeavyShrapnel_MK2": {
@@ -14882,6 +15220,7 @@
       "r1": 1.6,
       "r2": 5,
       "r3": 7,
+      "name": "Heavy Shrapneli Mk2",
       "damage_name": "Explosion_Projectile_OrbitalShot_MK2"
     },
     "MapBoundary": {
@@ -14889,6 +15228,7 @@
       "r1": 2,
       "r2": 10,
       "r3": 15,
+      "name": "Map Boundary",
       "damage_name": "Explosion_MapBoundary"
     },
     "HellpodImpact": {
@@ -14896,6 +15236,7 @@
       "r1": 0.5,
       "r2": 0.5,
       "r3": 3,
+      "name": "Hellpod Impact",
       "damage_name": "Explosion_HellpodImpact"
     },
     "HellpodImpact_Silent": {
@@ -14903,6 +15244,7 @@
       "r1": 0.5,
       "r2": 0.5,
       "r3": 3,
+      "name": "Hellpod Impact Silent",
       "damage_name": "Explosion_HellpodImpact"
     },
     "HellpodExplosion": {
@@ -14910,6 +15252,7 @@
       "r1": 2,
       "r2": 4,
       "r3": 12,
+      "name": "Hellpod Explosion",
       "damage_name": "Explosion_HellpodExplosion"
     },
     "Hellbomb": {
@@ -14917,6 +15260,7 @@
       "r1": 17,
       "r2": 25,
       "r3": 45,
+      "name": "Hellbomb",
       "damage_name": "Explosion_Hellbomb"
     },
     "BackblastSmall": {
@@ -14924,6 +15268,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 3,
+      "name": "Backblast Small",
       "damage_name": "Explosion_BackblastSmall"
     },
     "BackblastMedium": {
@@ -14931,6 +15276,7 @@
       "r1": 1,
       "r2": 6,
       "r3": 7,
+      "name": "Backblast Medium",
       "damage_name": "Explosion_BackblastMedium"
     },
     "BackblastLarge": {
@@ -14938,6 +15284,7 @@
       "r1": 1,
       "r2": 8,
       "r3": 9,
+      "name": "Backblast Large",
       "damage_name": "Explosion_BackblastLarge"
     },
     "BackblastHuge": {
@@ -14945,6 +15292,7 @@
       "r1": 1,
       "r2": 8,
       "r3": 9,
+      "name": "Backblast Huge",
       "damage_name": "Explosion_BackblastLarge"
     },
     "Backblast_LargeConfined": {
@@ -14952,6 +15300,7 @@
       "r1": 0.1,
       "r2": 0.2,
       "r3": 1,
+      "name": "Backblast Large Confined",
       "damage_name": "Explosion_BackblastNone"
     },
     "RailgunOvercharge": {
@@ -14959,6 +15308,7 @@
       "r1": 0.4,
       "r2": 2,
       "r3": 3,
+      "name": "Railgun Overcharge",
       "damage_name": "Explosion_RailgunOvercharge"
     },
     "ClusterBomb": {
@@ -14966,6 +15316,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 10,
+      "name": "Cluster Bomb",
       "damage_name": "Explosion_Projectile_OrbitalShot"
     },
     "EagleBomb_100kg": {
@@ -14973,6 +15324,7 @@
       "r1": 5,
       "r2": 10,
       "r3": 14,
+      "name": "Eagle Bomb 100kg",
       "damage_name": "Explosion_Projectile_EagleBomb_100kg"
     },
     "EagleBomb_100kg_MK2": {
@@ -14980,6 +15332,7 @@
       "r1": 4,
       "r2": 12,
       "r3": 16,
+      "name": "Eagle Bomb 100kg Mk2",
       "damage_name": "Explosion_Projectile_EagleBomb_100kg"
     },
     "EagleBomb_100kg_MK3": {
@@ -14987,6 +15340,7 @@
       "r1": 4,
       "r2": 12,
       "r3": 17,
+      "name": "Eagle Bomb 100kg Mk3",
       "damage_name": "Explosion_Projectile_EagleBomb_100kg_MK3"
     },
     "EagleBomb_Napalm": {
@@ -14994,6 +15348,7 @@
       "r1": 1.6,
       "r2": 8,
       "r3": 10,
+      "name": "Eagle Bomb Napalm",
       "damage_name": "Explosion_Projectile_EagleBomb_Napalm"
     },
     "EagleBomb_Napalm_MK2": {
@@ -15001,6 +15356,7 @@
       "r1": 2,
       "r2": 10,
       "r3": 15,
+      "name": "Eagle Bomb Napalm Mk2",
       "damage_name": "Explosion_Projectile_EagleBomb_Napalm"
     },
     "EagleBomb_Napalm_MK3": {
@@ -15008,6 +15364,7 @@
       "r1": 2,
       "r2": 10,
       "r3": 15,
+      "name": "Eagle Bomb Napalm Mk3",
       "damage_name": "Explosion_Projectile_EagleBomb_Napalm"
     },
     "EagleBomb_500kg": {
@@ -15015,6 +15372,7 @@
       "r1": 6.7,
       "r2": 20,
       "r3": 30,
+      "name": "Eagle Bomb 500kg",
       "damage_name": "Explosion_Projectile_EagleBomb_500kg"
     },
     "EagleBomb_500kg_MK2": {
@@ -15022,6 +15380,7 @@
       "r1": 7.3,
       "r2": 22,
       "r3": 40,
+      "name": "Eagle Bomb 500kg Mk2",
       "damage_name": "Explosion_Projectile_EagleBomb_500kg"
     },
     "EagleBomb_500kg_MK3": {
@@ -15029,6 +15388,7 @@
       "r1": 8.3,
       "r2": 25,
       "r3": 35,
+      "name": "Eagle Bomb 500kg Mk3",
       "damage_name": "Explosion_Projectile_EagleBomb_500kg"
     },
     "EagleMissile": {
@@ -15036,6 +15396,7 @@
       "r1": 4,
       "r2": 12,
       "r3": 15,
+      "name": "Eagle Missile",
       "damage_name": "Explosion_Projectile_EagleMissile"
     },
     "FafMissile": {
@@ -15043,6 +15404,7 @@
       "r1": 1.5,
       "r2": 3,
       "r3": 6,
+      "name": "Fire-and-Forget Missile",
       "damage_name": "Explosion_Projectile_Missile_Faf"
     },
     "FafMissile_MK2": {
@@ -15050,6 +15412,7 @@
       "r1": 2.5,
       "r2": 5,
       "r3": 12,
+      "name": "Fire-and-Forget Missile Mk2",
       "damage_name": "Explosion_Projectile_Missile_Faf_MK2"
     },
     "StingerMissile": {
@@ -15057,6 +15420,7 @@
       "r1": 4,
       "r2": 12,
       "r3": 10,
+      "name": "Stinger Missile",
       "damage_name": "Explosion_Projectile_Missile_Stinger"
     },
     "Mini_Missile_Silo": {
@@ -15064,6 +15428,7 @@
       "r1": 6,
       "r2": 18,
       "r3": 35,
+      "name": "Mini Missile Silo",
       "damage_name": "Explosion_Projectile_MiniMissilesilo"
     },
     "Mini_Missile_Silo_MK2": {
@@ -15071,6 +15436,7 @@
       "r1": 8.3,
       "r2": 25,
       "r3": 35,
+      "name": "Mini Missile Silo Mk2",
       "damage_name": "Explosion_Projectile_MiniMissilesilo"
     },
     "Missile_66mm": {
@@ -15078,6 +15444,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 4,
+      "name": "Missile 66mm",
       "damage_name": "Explosion_Projectile_Missile_66mm"
     },
     "Missile_66mm_MK2": {
@@ -15085,6 +15452,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 4,
+      "name": "Missile 66mm Mk2",
       "damage_name": "Explosion_Projectile_Missile_66mm_MK2"
     },
     "Combat_Walker_Missile": {
@@ -15092,6 +15460,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 4,
+      "name": "Combat Walker Missile",
       "damage_name": "Explosion_Projectile_Missile_CombatWalker"
     },
     "Combat_Walker_Missile_MK2": {
@@ -15099,6 +15468,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 4,
+      "name": "Combat Walker Missile Mk2",
       "damage_name": "Explosion_Projectile_Missile_CombatWalker_MK2"
     },
     "Rocket_70mm_turret": {
@@ -15106,6 +15476,7 @@
       "r1": 0.5,
       "r2": 1,
       "r3": 8,
+      "name": "Rocket 70mm Turret",
       "damage_name": "Explosion_Projectile_Rocket_70mm"
     },
     "Rocket_70mm": {
@@ -15113,6 +15484,7 @@
       "r1": 0.5,
       "r2": 1,
       "r3": 8,
+      "name": "Rocket 70mm",
       "damage_name": "Explosion_Projectile_Rocket_70mm"
     },
     "Rocket_70mm_HE": {
@@ -15120,6 +15492,7 @@
       "r1": 1.6,
       "r2": 5,
       "r3": 10,
+      "name": "Rocket 70mm HE",
       "damage_name": "Explosion_Projectile_Rocket_70mm_HE"
     },
     "Rocket_110mm": {
@@ -15127,6 +15500,7 @@
       "r1": 1.6,
       "r2": 5,
       "r3": 8,
+      "name": "Rocket 110mm",
       "damage_name": "Explosion_Projectile_Rocket_110mm"
     },
     "Rocket_110mm_silent": {
@@ -15134,6 +15508,7 @@
       "r1": 1.6,
       "r2": 5,
       "r3": 8,
+      "name": "Rocket 110mm Silent",
       "damage_name": "Explosion_Projectile_Rocket_110mm"
     },
     "CarpetBomb_200kg": {
@@ -15141,6 +15516,7 @@
       "r1": 5.3,
       "r2": 16,
       "r3": 20,
+      "name": "Carpet Bomb 200kg",
       "damage_name": "Explosion_Projectile_EagleBomb_500kg"
     },
     "Vehicle_Explosion_Small": {
@@ -15148,6 +15524,7 @@
       "r1": 0.3,
       "r2": 4,
       "r3": 8,
+      "name": "Vehicle Explosion Small",
       "damage_name": "Explosion_Vehicle_SeSmallDeath"
     },
     "Vehicle_Explosion_Medium": {
@@ -15155,6 +15532,7 @@
       "r1": 0.6,
       "r2": 7,
       "r3": 10,
+      "name": "Vehicle Explosion Medium",
       "damage_name": "Explosion_Vehicle_SeMediumDeath"
     },
     "Vehicle_Explosion_Large": {
@@ -15162,6 +15540,7 @@
       "r1": 0.8,
       "r2": 8,
       "r3": 12,
+      "name": "Vehicle Explosion Large",
       "damage_name": "Explosion_Vehicle_SeLargeDeath"
     },
     "Vehicle_Explosion_CombatWalker": {
@@ -15169,6 +15548,7 @@
       "r1": 0.6,
       "r2": 7,
       "r3": 10,
+      "name": "Vehicle Explosion Combat Walker",
       "damage_name": "Explosion_Vehicle_SeMediumDeath"
     },
     "ContactMine": {
@@ -15176,6 +15556,7 @@
       "r1": 1.2,
       "r2": 6,
       "r3": 9,
+      "name": "Contact Mine",
       "damage_name": "Explosion_ContactMine"
     },
     "IncendiaryMine": {
@@ -15183,6 +15564,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 3,
+      "name": "Incendiary Mine",
       "damage_name": "Explosion_HandGrenade_Incendiary"
     },
     "AntiTankMine": {
@@ -15190,6 +15572,7 @@
       "r1": 1.2,
       "r2": 6,
       "r3": 9,
+      "name": "Anti Tank Mine",
       "damage_name": "Explosion_AntiTankMine"
     },
     "ContactMine_MK2": {
@@ -15197,6 +15580,7 @@
       "r1": 1.2,
       "r2": 6,
       "r3": 9,
+      "name": "Contact Mine Mk2",
       "damage_name": "Explosion_ContactMine_MK2"
     },
     "ContactMine_Flash": {
@@ -15204,6 +15588,7 @@
       "r1": 0.8,
       "r2": 8,
       "r3": 9,
+      "name": "Contact Mine Flash",
       "damage_name": "Explosion_HandGrenade_Flash"
     },
     "Bomb_Impact": {
@@ -15211,6 +15596,7 @@
       "r1": 1,
       "r2": 3,
       "r3": 6,
+      "name": "Bomb Impact",
       "damage_name": "Explosion_Projectile_EagleBomb_Impact"
     },
     "Bomb_Impact_Smoke": {
@@ -15218,6 +15604,7 @@
       "r1": 1,
       "r2": 3,
       "r3": 6,
+      "name": "Bomb Impact Smoke",
       "damage_name": "Explosion_Projectile_EagleBomb_Impact"
     },
     "500kg_Initial_Impact": {
@@ -15225,6 +15612,7 @@
       "r1": 1,
       "r2": 3,
       "r3": 6,
+      "name": "500kg Initial Impact",
       "damage_name": "Explosion_Projectile_EagleBomb_Impact"
     },
     "Turret_Destroyed": {
@@ -15232,6 +15620,7 @@
       "r1": 0.2,
       "r2": 2,
       "r3": 6,
+      "name": "Turret Destroyed",
       "damage_name": "Explosion_Turret_Destroyed"
     },
     "Nuke": {
@@ -15239,6 +15628,7 @@
       "r1": 40,
       "r2": 75,
       "r3": 125,
+      "name": "Nuke",
       "damage_name": "Explosion_Hellbomb"
     },
     "Flashield": {
@@ -15246,6 +15636,7 @@
       "r1": 1,
       "r2": 15,
       "r3": 15,
+      "name": "Flashield",
       "damage_name": "Explosion_Projectile_OrbitalStun"
     },
     "SAM_Missile": {
@@ -15253,14 +15644,22 @@
       "r1": 10,
       "r2": 20,
       "r3": 60,
+      "name": "SAM Missile",
       "damage_name": "Explosion_SAM_Missile"
     },
-    "Grenade_Smoke": {"id": 14, "r1": 5, "r2": 5, "r3": 0},
+    "Grenade_Smoke": {
+      "id": 14,
+      "r1": 5,
+      "r2": 5,
+      "r3": 0,
+      "name": "Grenade Smoke"
+    },
     "Primary_Airburst": {
       "id": 172,
       "r1": 0.5,
       "r2": 3,
       "r3": 4,
+      "name": "Primary Airburst",
       "damage_name": "Explosion_HandGrenade_Frag"
     },
     "AirburstCluster": {
@@ -15268,6 +15667,7 @@
       "r1": 3,
       "r2": 5,
       "r3": 7,
+      "name": "Airburst Cluster",
       "damage_name": "Explosion_HandGrenade_Frag_Cluster"
     },
     "AirburstCluster_Bomb": {
@@ -15275,6 +15675,7 @@
       "r1": 4,
       "r2": 6,
       "r3": 8,
+      "name": "Airburst Cluster Bomb",
       "damage_name": "Explosion_HandGrenade_Frag"
     },
     "Primary_Cluster": {
@@ -15282,6 +15683,7 @@
       "r1": 7,
       "r2": 15,
       "r3": 20,
+      "name": "Primary Cluster",
       "damage_name": "Explosion_HandGrenade_Frag"
     },
     "Primary_ScatterShot": {
@@ -15289,6 +15691,7 @@
       "r1": 0,
       "r2": 0.5,
       "r3": 0.75,
+      "name": "Primary Scatter Shot",
       "damage_name": "Explosion_HandGrenade_Frag"
     },
     "SEAF_Gun_Explosive": {
@@ -15296,6 +15699,7 @@
       "r1": 4,
       "r2": 12,
       "r3": 18,
+      "name": "SEAF Gun Explosive",
       "damage_name": "Explosion_Projectile_OrbitalBarrage"
     },
     "SEAF_Gun_High_Yield_Explosive": {
@@ -15303,6 +15707,7 @@
       "r1": 6.7,
       "r2": 20,
       "r3": 30,
+      "name": "SEAF Gun High Yield Explosive",
       "damage_name": "Explosion_Projectile_EagleBomb_500kg"
     },
     "SEAF_Gun_Mini_Nuke": {
@@ -15310,14 +15715,22 @@
       "r1": 17,
       "r2": 25,
       "r3": 45,
+      "name": "SEAF Gun Mini Nuke",
       "damage_name": "Explosion_Hellbomb"
     },
-    "SEAF_Gun_Smoke": {"id": 138, "r1": 13, "r2": 13, "r3": 0},
+    "SEAF_Gun_Smoke": {
+      "id": 138,
+      "r1": 13,
+      "r2": 13,
+      "r3": 0,
+      "name": "SEAF Gun Smoke"
+    },
     "SEAF_Gun_Napalm": {
       "id": 10,
       "r1": 1.6,
       "r2": 13,
       "r3": 20,
+      "name": "SEAF Gun Napalm",
       "damage_name": "Explosion_Projectile_EagleBomb_Napalm"
     },
     "SEAF_Gun_EMP": {
@@ -15325,6 +15738,7 @@
       "r1": 1,
       "r2": 13,
       "r3": 20,
+      "name": "SEAF Gun EMP",
       "damage_name": "Explosion_Projectile_OrbitalStun"
     },
     "Illuminate_IllusionistDeath": {
@@ -15332,6 +15746,7 @@
       "r1": 1,
       "r2": 1.5,
       "r3": 2,
+      "name": "Illuminate Illusionist Death",
       "damage_name": "Explosion_Illuminate_AdeptCircle"
     },
     "Illuminate_TripodDeath": {
@@ -15339,6 +15754,7 @@
       "r1": 3,
       "r2": 5,
       "r3": 4,
+      "name": "Illuminate Tripod Death",
       "damage_name": "Explosion_Illuminate_AdeptCircle"
     },
     "Illuminate_Projectile_Huge": {
@@ -15346,6 +15762,7 @@
       "r1": 3,
       "r2": 5,
       "r3": 7,
+      "name": "Illuminate Projectile Huge",
       "damage_name": "Explosion_Illuminate_AdeptCircle"
     },
     "Illuminate_IllusionistSmallball": {
@@ -15353,6 +15770,7 @@
       "r1": 0.75,
       "r2": 1.5,
       "r3": 2,
+      "name": "Illuminate Illusionist Smallball",
       "damage_name": "Explosion_Illuminate_SmallStun"
     },
     "Illuminate_AdeptCircle": {
@@ -15360,6 +15778,7 @@
       "r1": 1.5,
       "r2": 1.5,
       "r3": 1.6,
+      "name": "Illuminate Adept Circle",
       "damage_name": "Explosion_Illuminate_AdeptCircle"
     },
     "AdeptShockwave": {
@@ -15367,6 +15786,7 @@
       "r1": 4,
       "r2": 5,
       "r3": 6,
+      "name": "Adept Shockwave",
       "damage_name": "Explosion_Illuminate_ShockWave"
     },
     "Illuminate_Medium": {
@@ -15374,6 +15794,7 @@
       "r1": 0.5,
       "r2": 1,
       "r3": 1.5,
+      "name": "Illuminate Medium",
       "damage_name": "Explosion_Illuminate_OutcastBeam"
     },
     "ICBM_takeoff": {
@@ -15381,6 +15802,7 @@
       "r1": 40,
       "r2": 50,
       "r3": 40,
+      "name": "ICBM takeoff",
       "damage_name": "Explosion_Icbm_Take_Off"
     },
     "ICBM_takeoffIntense": {
@@ -15388,6 +15810,7 @@
       "r1": 14,
       "r2": 30,
       "r3": 32,
+      "name": "ICBM takeoffIntense",
       "damage_name": "Explosion_Icbm_Take_Off_Intense"
     },
     "ICBM_explode": {
@@ -15395,6 +15818,7 @@
       "r1": 15,
       "r2": 30,
       "r3": 40,
+      "name": "ICBM explode",
       "damage_name": "Explosion_ICBM_explode"
     },
     "Prop_Small": {
@@ -15402,6 +15826,7 @@
       "r1": 0.75,
       "r2": 1.5,
       "r3": 2.5,
+      "name": "Prop Small",
       "damage_name": "Explosion_Prop_Small"
     },
     "Prop_Medium": {
@@ -15409,6 +15834,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 3,
+      "name": "Prop Medium",
       "damage_name": "Explosion_Prop_Medium"
     },
     "Prop_Large": {
@@ -15416,6 +15842,7 @@
       "r1": 2,
       "r2": 5,
       "r3": 6,
+      "name": "Prop Large",
       "damage_name": "Explosion_Prop_Large"
     },
     "Prop_Huge": {
@@ -15423,6 +15850,7 @@
       "r1": 16,
       "r2": 32,
       "r3": 40,
+      "name": "Prop Huge",
       "damage_name": "Explosion_Prop_Huge"
     },
     "Building_Crumble_Small": {
@@ -15430,6 +15858,7 @@
       "r1": 7,
       "r2": 14,
       "r3": 18,
+      "name": "Building Crumble Small",
       "damage_name": "Explosion_Building_Small"
     },
     "Building_Crumble_Medium": {
@@ -15437,6 +15866,7 @@
       "r1": 9,
       "r2": 18,
       "r3": 23,
+      "name": "Building Crumble Medium",
       "damage_name": "Explosion_Building_Medium"
     },
     "Building_Crumble_Large": {
@@ -15444,6 +15874,7 @@
       "r1": 11,
       "r2": 22,
       "r3": 26,
+      "name": "Building Crumble Large",
       "damage_name": "Explosion_Building_Large"
     },
     "Building_Crumble_Huge": {
@@ -15451,6 +15882,7 @@
       "r1": 13,
       "r2": 26,
       "r3": 30,
+      "name": "Building Crumble Huge",
       "damage_name": "Explosion_Building_Huge"
     },
     "BugDrill": {
@@ -15458,6 +15890,7 @@
       "r1": 20,
       "r2": 30,
       "r3": 50,
+      "name": "Bug Drill",
       "damage_name": "Explosion_BugDrill"
     },
     "fueltank_large": {
@@ -15465,6 +15898,7 @@
       "r1": 6,
       "r2": 12,
       "r3": 18,
+      "name": "fueltank large",
       "damage_name": "Explosion_Projectile_OrbitalBarrage"
     },
     "OilField": {
@@ -15472,6 +15906,7 @@
       "r1": 1.4,
       "r2": 7,
       "r3": 10,
+      "name": "Oil Field",
       "damage_name": "Explosion_Projectile_EagleBomb_Napalm"
     },
     "Barrel_Small": {
@@ -15479,6 +15914,7 @@
       "r1": 0.2,
       "r2": 1,
       "r3": 3,
+      "name": "Barrel Small",
       "damage_name": "Explosion_Prop_Barrel"
     },
     "Barrel_Medium": {
@@ -15486,6 +15922,7 @@
       "r1": 0.4,
       "r2": 4,
       "r3": 12,
+      "name": "Barrel Medium",
       "damage_name": "Explosion_Prop_Barrel"
     },
     "Barrel_Large": {
@@ -15493,6 +15930,7 @@
       "r1": 0.6,
       "r2": 6,
       "r3": 15,
+      "name": "Barrel Large",
       "damage_name": "Explosion_Prop_Barrel"
     },
     "Chemical_Backpack": {
@@ -15500,6 +15938,7 @@
       "r1": 0.4,
       "r2": 4,
       "r3": 12,
+      "name": "Chemical Backpack",
       "damage_name": "Explosion_Prop_Barrel"
     },
     "Retrieve_Larva_Backpack": {
@@ -15507,6 +15946,7 @@
       "r1": 0.4,
       "r2": 4,
       "r3": 12,
+      "name": "Retrieve Larva Backpack",
       "damage_name": "Explosion_Prop_Barrel"
     },
     "Ammo_Cache": {
@@ -15514,6 +15954,7 @@
       "r1": 5,
       "r2": 18,
       "r3": 30,
+      "name": "Ammo Cache",
       "damage_name": "Explosion_Projectile_CyborgHeavyCannon"
     },
     "Cyborg_Fuel_Silo": {
@@ -15521,6 +15962,7 @@
       "r1": 2,
       "r2": 8,
       "r3": 18,
+      "name": "Cyborg Fuel Silo",
       "damage_name": "Explosion_Vehicle_CyborgMediumDeath"
     },
     "Tower_Collapse": {
@@ -15528,14 +15970,16 @@
       "r1": 20,
       "r2": 40,
       "r3": 70,
+      "name": "Tower Collapse",
       "damage_name": "Explosion_Tower_Collapse"
     },
-    "Dummy": {"id": 97, "r1": 0.1, "r2": 0.1, "r3": 0.1},
+    "Dummy": {"id": 97, "r1": 0.1, "r2": 0.1, "r3": 0.1, "name": "Dummy"},
     "Geyser_Erupt_Small": {
       "id": 66,
       "r1": 0.8,
       "r2": 1.25,
       "r3": 2.5,
+      "name": "Geyser Erupt Small",
       "damage_name": "Explosion_Geyser_Erupt"
     },
     "Geyser_Erupt_Medium": {
@@ -15543,6 +15987,7 @@
       "r1": 1.3,
       "r2": 2,
       "r3": 3.5,
+      "name": "Geyser Erupt Medium",
       "damage_name": "Explosion_Geyser_Erupt"
     },
     "Geyser_Erupt_Large": {
@@ -15550,6 +15995,7 @@
       "r1": 2.5,
       "r2": 3.5,
       "r3": 4.5,
+      "name": "Geyser Erupt Large",
       "damage_name": "Explosion_Geyser_Erupt"
     },
     "World_Meteor": {
@@ -15557,6 +16003,7 @@
       "r1": 1.25,
       "r2": 8.5,
       "r3": 23,
+      "name": "World Meteor",
       "damage_name": "Explosion_Projectile_WorldMeteor"
     },
     "World_Escape_Pod_Crash": {
@@ -15564,6 +16011,7 @@
       "r1": 1,
       "r2": 5,
       "r3": 10,
+      "name": "World Escape Pod Crash",
       "damage_name": "Explosion_EscapePodCrash"
     },
     "World_Earthquake": {
@@ -15571,6 +16019,7 @@
       "r1": 45,
       "r2": 50,
       "r3": 55,
+      "name": "World Earthquake",
       "damage_name": "Explosion_Earthquake"
     },
     "GasChimney": {
@@ -15578,6 +16027,7 @@
       "r1": 1.4,
       "r2": 7,
       "r3": 10,
+      "name": "Gas Chimney",
       "damage_name": "Explosion_Projectile_EagleBomb_Napalm"
     },
     "World_VolcanoStrike": {
@@ -15585,6 +16035,7 @@
       "r1": 1,
       "r2": 7.5,
       "r3": 15,
+      "name": "World Volcano Strike",
       "damage_name": "Explosion_Projectile_WorldMeteor"
     },
     "HellDummy": {
@@ -15592,14 +16043,22 @@
       "r1": 1,
       "r2": 2,
       "r3": 3,
+      "name": "Hell Dummy",
       "damage_name": "Explosion_HellDummy"
     },
-    "MoorMushroom_Smoke": {"id": 109, "r1": 5, "r2": 5, "r3": 0},
+    "MoorMushroom_Smoke": {
+      "id": 109,
+      "r1": 5,
+      "r2": 5,
+      "r3": 0,
+      "name": "Moor Mushroom Smoke"
+    },
     "MoorMushroom_Burst": {
       "id": 33,
       "r1": 7,
       "r2": 8,
       "r3": 9,
+      "name": "Moor Mushroom Burst",
       "damage_name": "Explosion_MoorMushroom_Burst"
     },
     "GateCrush": {
@@ -15607,6 +16066,7 @@
       "r1": 0.5,
       "r2": 1,
       "r3": 9,
+      "name": "Gate Crush",
       "damage_name": "Ability_GateCrush"
     },
     "EmbryoCluster_Burst": {
@@ -15614,6 +16074,7 @@
       "r1": 1,
       "r2": 10,
       "r3": 9,
+      "name": "Embryo Cluster Burst",
       "damage_name": "Explosion_EmbryoCluster_Burst"
     },
     "Snowball_Stun": {
@@ -15621,6 +16082,7 @@
       "r1": 1,
       "r2": 1,
       "r3": 1,
+      "name": "Snowball Stun",
       "damage_name": "Explosion_Projectile_Snowball"
     },
     "Spikeplant_Shrapnel_Explosion": {
@@ -15628,6 +16090,7 @@
       "r1": 2,
       "r2": 8,
       "r3": 8,
+      "name": "Spikeplant Shrapnel Explosion",
       "damage_name": "Explosion_Spikeplant_Shrapnel_Explosion"
     },
     "Iceplant_Shatter": {
@@ -15635,6 +16098,7 @@
       "r1": 2.5,
       "r2": 4.95,
       "r3": 3,
+      "name": "Iceplant Shatter",
       "damage_name": "Explosion_Iceplant_Shatter"
     },
     "Conscript_Backpack_Explosion": {
@@ -15642,6 +16106,7 @@
       "r1": 2,
       "r2": 3,
       "r3": 3,
+      "name": "Conscript Backpack Explosion",
       "damage_name": "Explosion_Prop_Barrel"
     },
     "Conscript_Backpack_LMG": {
@@ -15649,6 +16114,7 @@
       "r1": 0.7,
       "r2": 1.5,
       "r3": 3,
+      "name": "Conscript Backpack LMG",
       "damage_name": "Explosion_Prop_Barrel"
     },
     "Conscript_Backpack_Flamer": {
@@ -15656,6 +16122,7 @@
       "r1": 0.4,
       "r2": 4,
       "r3": 12,
+      "name": "Conscript Backpack Flamer",
       "damage_name": "Explosion_Prop_Barrel"
     },
     "StaticField_Sentry": {
@@ -15663,6 +16130,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 3,
+      "name": "Static Field Sentry",
       "damage_name": "Explosion_Prop_Medium"
     },
     "HMD_Generator_Crumble": {
@@ -15670,6 +16138,7 @@
       "r1": 7,
       "r2": 14,
       "r3": 18,
+      "name": "HMD Generator Crumble",
       "damage_name": "Explosion_Building_Small"
     }
   },
@@ -15680,6 +16149,7 @@
       "unk7": 22,
       "unk17": 0,
       "unk19": 7,
+      "name": "Small Beam",
       "damage_name": "DPS_BeamSmall"
     },
     "Medium": {
@@ -15688,6 +16158,7 @@
       "unk7": 24,
       "unk17": 0,
       "unk19": 7,
+      "name": "Medium Beam",
       "damage_name": "DPS_BeamMedium"
     },
     "MediumDrone": {
@@ -15696,6 +16167,7 @@
       "unk7": 24,
       "unk17": 0,
       "unk19": 7,
+      "name": "Medium Drone Beam",
       "damage_name": "DPS_BeamMediumDrone"
     },
     "Medium_Focused": {
@@ -15704,6 +16176,7 @@
       "unk7": 24,
       "unk17": 0,
       "unk19": 7,
+      "name": "Medium Focused Beam",
       "damage_name": "DPS_BeamMedium_Focused"
     },
     "Medium_Wide": {
@@ -15712,6 +16185,7 @@
       "unk7": 24,
       "unk17": 0,
       "unk19": 7,
+      "name": "Medium Wide Beam",
       "damage_name": "DPS_BeamMedium_Wide"
     },
     "Large": {
@@ -15720,6 +16194,7 @@
       "unk7": 25,
       "unk17": 0,
       "unk19": 8,
+      "name": "Large Beam",
       "damage_name": "DPS_BeamLarge"
     },
     "LaserCannon": {
@@ -15728,6 +16203,7 @@
       "unk7": 23,
       "unk17": 0,
       "unk19": 8,
+      "name": "Laser Cannon Beam",
       "damage_name": "DPS_BeamLarge"
     },
     "Large_Light": {
@@ -15736,6 +16212,7 @@
       "unk7": 25,
       "unk17": 0,
       "unk19": 8,
+      "name": "Large Light Beam",
       "damage_name": "DPS_BeamLarge_Light"
     },
     "Large_Heavy": {
@@ -15744,6 +16221,7 @@
       "unk7": 25,
       "unk17": 0,
       "unk19": 8,
+      "name": "Large Heavy Beam",
       "damage_name": "DPS_BeamLarge_Heavy"
     },
     "BotTorch": {
@@ -15752,6 +16230,7 @@
       "unk7": 25,
       "unk17": 0,
       "unk19": 7,
+      "name": "Bot Torch",
       "damage_name": "DPS_Cyborg_Torch"
     },
     "TripodEye": {
@@ -15760,6 +16239,7 @@
       "unk7": 27,
       "unk17": 0,
       "unk19": 8,
+      "name": "Tripod Eye Beam",
       "damage_name": "DPS_BeamTripodEye"
     },
     "ObserverEye": {
@@ -15768,15 +16248,24 @@
       "unk7": 22,
       "unk17": 0,
       "unk19": 7,
+      "name": "Observer Eye Beam",
       "damage_name": "DPS_BeamSmall"
     },
-    "PhysGun": {"id": 8, "range": 10000, "unk7": 0, "unk17": 0, "unk19": 0},
+    "PhysGun": {
+      "id": 8,
+      "range": 10000,
+      "unk7": 0,
+      "unk17": 0,
+      "unk19": 0,
+      "name": "Physics Gun Beam"
+    },
     "OutcastFlashbeamChargeup": {
       "id": 13,
       "range": 1000,
       "unk7": 0,
       "unk17": 6,
-      "unk19": 0
+      "unk19": 0,
+      "name": "Outcast Flashbeam Chargeup"
     }
   },
   "arc": {
@@ -15790,6 +16279,7 @@
       "aimangle": 3,
       "unk8": 1,
       "unk19": 3,
+      "name": "Arc Thrower",
       "damage_name": "Projectile_Arc_Thrower"
     },
     "ArcThrower_MK2": {
@@ -15802,6 +16292,7 @@
       "aimangle": 3,
       "unk8": 1,
       "unk19": 3,
+      "name": "Arc Thrower Mk2",
       "damage_name": "Projectile_Arc_Thrower"
     },
     "ArcThrower_MK3": {
@@ -15814,6 +16305,7 @@
       "aimangle": 3,
       "unk8": 1,
       "unk19": 3,
+      "name": "Arc Thrower Mk3",
       "damage_name": "Projectile_Arc_Thrower_Mk2"
     },
     "ArcThrower_MK4": {
@@ -15826,6 +16318,7 @@
       "aimangle": 3,
       "unk8": 1,
       "unk19": 3,
+      "name": "Arc Thrower Mk4",
       "damage_name": "Projectile_Arc_Thrower_Mk2"
     },
     "ArcShotgun": {
@@ -15838,6 +16331,7 @@
       "aimangle": 10,
       "unk8": 1,
       "unk19": 3,
+      "name": "Arc Shotgun",
       "damage_name": "Projectile_Arc_Shotgun"
     },
     "TeslaTurret": {
@@ -15850,6 +16344,7 @@
       "aimangle": 180,
       "unk8": 2,
       "unk19": 3,
+      "name": "Tesla Turret Arc",
       "damage_name": "Projectile_Tesla_Turret"
     },
     "IlluminateTripod": {
@@ -15862,6 +16357,7 @@
       "aimangle": 22.5,
       "unk8": 1,
       "unk19": 3,
+      "name": "Illuminate Tripod Arc",
       "damage_name": "Projectile_Illuminate_Tripod_Lightning"
     },
     "IlluminateTurretTesla": {
@@ -15874,6 +16370,7 @@
       "aimangle": 22.5,
       "unk8": 1,
       "unk19": 3,
+      "name": "Illuminate Turret Tesla Arc",
       "damage_name": "Projectile_Illuminate_turret_tesla"
     },
     "IlluminateObelisk": {
@@ -15886,6 +16383,7 @@
       "aimangle": 22.5,
       "unk8": 2,
       "unk19": 3,
+      "name": "Illuminate Obelisk Arc",
       "damage_name": "Projectile_Illuminate_Squidgun"
     },
     "IlluminateObserverLightning": {
@@ -15898,6 +16396,7 @@
       "aimangle": 45,
       "unk8": 0,
       "unk19": 7,
+      "name": "Illuminate Observer Lightning",
       "damage_name": "Projectile_Illuminate_Observer_Lightning"
     },
     "IlluminateSummonerSpawnEffect": {
@@ -15910,6 +16409,7 @@
       "aimangle": 0,
       "unk8": 0,
       "unk19": 0,
+      "name": "Illuminate Summoner Spawn Effect",
       "damage_name": "Ability_Empty"
     }
   },

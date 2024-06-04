@@ -148,11 +148,12 @@ for(const prop of Object.keys(wikiRegister)) {
   register[prop] = {}
   for(const obj of (data[plural] || [])) {
     register[prop][obj.id] = obj
+    const key = `${tkeys[prop]};${obj.enum}`
     reg[obj.enum] = {
       ...obj,
       enum: void 0,
       damageid: void 0,
-      name: names[`dmg;${obj.enum}`],
+      name: names[key],
       damage_name: register.damage[obj.damageid]?.enum,
     }
   }
