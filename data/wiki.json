@@ -17371,7 +17371,7 @@
     "A/M-23 EMS Mortar Sentry": {
       "category": "Emplacement",
       "stratcode": "durdr",
-      "helth": 200,
+      "health": 200,
       "armor": 2,
       "calltime": 8,
       "cooldown": 180,
@@ -17393,7 +17393,7 @@
     "A/MLS-4X Rocket Sentry": {
       "category": "Emplacement",
       "stratcode": "durrl",
-      "helth": 200,
+      "health": 200,
       "armor": 2,
       "calltime": 8,
       "cooldown": 180,
@@ -17406,7 +17406,7 @@
     "A/AC-8 Autocannon Sentry": {
       "category": "Emplacement",
       "stratcode": "durulu",
-      "helth": 200,
+      "health": 200,
       "armor": 2,
       "calltime": 8,
       "cooldown": 180,
