@@ -17308,7 +17308,7 @@
         {"type": "explosion", "name": "IncendiaryMine", "count": 32, "id": 35}
       ]
     },
-    "MD-6 Anti-Personell Minefield": {
+    "MD-6 Anti-Personnel Minefield": {
       "category": "Emplacement",
       "stratcode": "dlur",
       "health": 250,

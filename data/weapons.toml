@@ -994,7 +994,7 @@ count = 32
 
 [[emplacement]]
 category = "Emplacement"
-fullname = "MD-6 Anti-Personell Minefield"
+fullname = "MD-6 Anti-Personnel Minefield"
 stratcode = "dlur"
 health = 250
 armor = 1
