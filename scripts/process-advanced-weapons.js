@@ -7,7 +7,7 @@ function read(file) {
 }
 
 const data = read('datamined')
-const { weapon: weapons } = toml.parse(fs.readFileSync('data/weapons.toml'))
+const setup = toml.parse(fs.readFileSync('data/weapons.toml'))
 const names = read('lang-en')
 const sources = [
   'dlc-super',
@@ -68,7 +68,7 @@ const purge = [
   "xparam2",
 ]
 
-let wps = weapons.slice()
+let wps = setup.weapon.slice()
 const seen = new Set()
 wps = wps.filter(f => {
   if(seen.has(f.fullname)) {
@@ -131,7 +131,7 @@ for(const prop of Object.keys(wikiRegister)) {
   }
 }
 
-for(const wpn of wps) {
+for(const wpn of [...setup.weapon, ...setup.emplacement]) {
   const reg = wikiRegister.weapon
   const type = wpn.type
   const id = wpn.projectileid
@@ -139,10 +139,9 @@ for(const wpn of wps) {
     || wpn.arcid
     || wpn.explosionid
     || wpn.damageid
-  const attacks = (wpn.attacks || []).map(atk => {
+  const attacks = (wpn.attack || []).map(atk => {
     const key = `${tkeys[atk.medium]};${atk.ref}`
     const obj = refRegister[key]
-    console.log({ key, obj })
     return {
       type: atk.medium,
       name: atk.ref,
@@ -153,27 +152,20 @@ for(const wpn of wps) {
   reg[wpn.fullname] = {
     ...wpn,
     fullname: void 0,
-    type: void 0,
-    damageid: void 0,
-    beamid: void 0,
-    arcid: void 0,
-    projectileid: void 0,
-    explosionid: void 0,
-    subattacks: void 0,
+    attack: void 0,
     attacks,
   }
 }
 
 fs.writeFileSync('data/wiki.json', json(wikiRegister))
 
-for(const wpn of weapons) {
-  if(!wpn.attacks) {
+for(const wpn of setup.weapon) {
+  if(!wpn.attack) {
     continue
   }
-  const [atk, ...subattacks] = wpn.attacks.map(atk => {
+  const [atk, ...subattacks] = wpn.attack.map(atk => {
     const key = atkKey(atk.medium, atk.ref)
     const obj = refRegister[key]
-    console.log({ atk,  key, obj })
     return {
       type: atk.medium,
       id: obj.id,
@@ -187,7 +179,7 @@ for(const wpn of weapons) {
   if(subattacks.length) {
     wpn.subattacks = subattacks
   }
-  delete wpn.attacks
+  delete wpn.attack
 }
 
 fs.writeFileSync('data/advanced.json', json({

@@ -12,7 +12,7 @@ mags = 7
 magstart = 5
 supply = 7
 box = 3
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_5p5x50mm_fmj"
 
@@ -31,7 +31,7 @@ mags = 10
 magstart = 7
 supply = 10
 box = 5
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_5p5x50mm_ap"
 
@@ -50,7 +50,7 @@ mags = 10
 magstart = 7
 supply = 10
 box = 5
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_5p5x50mm_exp"
 
@@ -69,7 +69,7 @@ mags = 10
 magstart = 5
 supply = 5
 box = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_5p5x50mm_fmj"
 
@@ -88,7 +88,7 @@ mags = 8
 magstart = 6
 supply = 8
 box = 4
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_8x60mm_fmj"
 
@@ -107,7 +107,7 @@ mags = 8
 magstart = 5
 supply = 8
 box = 4
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_9x70mm_fmj"
 
@@ -126,7 +126,7 @@ mags = 6
 magstart = 4
 supply = 6
 box = 3
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_9x70mm_hv"
 
@@ -145,7 +145,7 @@ magstart = 5
 supply = 5
 box = 2
 tags = ["1h"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Pistol_9x20mm_smj"
 
@@ -165,7 +165,7 @@ magstart = 5
 supply = 7
 box = 3
 tags = ["1h"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Pistol_12x25mm_fmj"
 
@@ -185,7 +185,7 @@ magstart = 5
 supply = 7
 box = 3
 tags = ["1h"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Pistol_12x25mm_stun"
 
@@ -204,7 +204,7 @@ roundstart = 32
 roundsupply = 60
 roundsbox = 30
 tags = ["rounds"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Shotgun_10g_buc"
 
@@ -223,7 +223,7 @@ roundstart = 32
 roundsupply = 60
 roundsbox = 30
 tags = ["rounds"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Shotgun_10g_slug"
 
@@ -242,7 +242,7 @@ mags = 7
 magstart = 5
 supply = 7
 box = 3
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Shotgun_12g_buc"
 
@@ -261,7 +261,7 @@ mags = 8
 magstart = 6
 supply = 8
 box = 4
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Shotgun_12g_bir"
 
@@ -281,7 +281,7 @@ magstart = 4
 supply = 6
 box = 3
 tags = ["fire"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Shotgun_12g_flm"
 
@@ -299,10 +299,10 @@ mags = 8
 magstart = 8
 supply = 8
 box = 4
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Crossbow_Bolt_exp"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Crossbow_Bolt"
 
@@ -322,7 +322,7 @@ magstart = 4
 supply = 6
 box = 3
 tags = ["jet"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rocket_15x100mm_std"
 
@@ -342,10 +342,10 @@ magstart = 6
 supply = 6
 box = 3
 tags = ["jet","shrapnel"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rocket_JarPhoenix_20mm"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "JarPhoenix_20mm"
 
@@ -362,10 +362,10 @@ mags = 8
 magstart = 6
 supply = 8
 box = 4
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Plasma_Punisher_Projectile"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Punisher_Plasma_Explosion"
 
@@ -376,7 +376,7 @@ source = "cut-edge"
 sourcepage = 3
 rpm = 45
 recoil = 60
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "arc"
 ref = "ArcShotgun"
 count = 5
@@ -395,7 +395,7 @@ supply = 4
 box = 2
 limit = 8
 tags = ["laser"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "beam"
 ref = "Medium"
 
@@ -413,7 +413,7 @@ magstart = 3
 supply = 3
 box = 3
 limit = 7
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Laser_Long"
 
@@ -431,10 +431,10 @@ mags = 6
 magstart = 3
 supply = 6
 box = 3
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Plasma_Bolt_Medium"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Plasma_Bolt_Medium"
 
@@ -451,10 +451,10 @@ mags = 6
 magstart = 3
 supply = 6
 box = 3
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Plasma_Bolt_Large"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Plasma_Bolt_Large"
 
@@ -472,7 +472,7 @@ mags = 5
 magstart = 4
 supply = 5
 box = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Pistol_9x20mm_hp"
 
@@ -491,7 +491,7 @@ mags = 4
 magstart = 4
 supply = 4
 box = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Pistol_9x20mm_fmj"
 
@@ -510,7 +510,7 @@ mags = 8
 magstart = 5
 supply = 4
 box = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Pistol_Magnum"
 
@@ -527,10 +527,10 @@ rounds = 8
 roundstart = 4
 roundsupply = 2
 roundsbox = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Grenade_40mm_HEAT"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Grenade_40mm_HE_MK2"
 
@@ -548,7 +548,7 @@ supply = 3
 box = 3
 limit = 5
 tags = ["laser"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "beam"
 ref = "Small"
 
@@ -569,7 +569,7 @@ roundstart = 32
 roundsupply = 20
 roundsbox = 10
 tags = ["rounds"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Pistol_13x40mm_fmj"
 
@@ -586,7 +586,7 @@ mags = 3
 magstart = 2
 supply = 2
 box = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_5p5x50mm_fmj"
 
@@ -603,7 +603,7 @@ mags = 2
 magstart = 1
 supply = 1
 box = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_8x60mm_apt"
 
@@ -620,7 +620,7 @@ mags = 2
 magstart = 1
 supply = 2
 box = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_12p5x100mm_bchp"
 
@@ -630,7 +630,7 @@ fullname = "ARC-3 Arc Thrower"
 source = "support"
 rpm = 60
 charge = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "arc"
 ref = "ArcThrower"
 
@@ -645,7 +645,7 @@ supply = 4
 box = 3
 limit = 12.5
 tags = ["fire"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "damage"
 ref = "Projectile_Flamethrower"
 
@@ -662,7 +662,7 @@ mags = 6
 magstart = 4
 supply = 3
 box = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_12p5x100mm_eit"
 
@@ -678,10 +678,10 @@ mags = 2
 magstart = 1
 supply = 2
 box = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Grenade_40mm_HE"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Grenade_40mm_HE"
 
@@ -698,10 +698,10 @@ clipstart = 10
 clipsize = 5
 clipsbox = 2
 clipsupply = 5
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Cannon_20mm_APHET"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "APHET_20mm"
 
@@ -718,7 +718,7 @@ rounds = 20
 roundstart = 10
 roundsupply = 10
 roundsbox = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Railgun"
 
@@ -734,7 +734,7 @@ supply = 1
 box = 1
 limit = 10
 tags = ["laser"]
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "beam"
 ref = "LaserCannon"
 
@@ -744,10 +744,10 @@ fullname = "LAS-99 Quasar Cannon"
 source = "support"
 charge = 3.1
 reload = 15
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Laser_Pulse"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Laser_Pulse"
 
@@ -756,10 +756,10 @@ category = "SUP"
 fullname = "EAT-17 Expendable Anti-Tank"
 source = "support"
 cap = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Grenade_75mm_HEAT"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Grenade_75mm_HEAT"
 
@@ -773,10 +773,10 @@ rounds = 5
 roundstart = 5
 roundsupply = 3
 roundsbox = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Grenade_85mm_HEAT"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Grenade_85mm_HEAT"
 
@@ -790,10 +790,10 @@ rounds = 3
 roundstart = 3
 roundsupply = 2
 roundsbox = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Missile_Faf"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "FafMissile"
 
@@ -807,17 +807,17 @@ rounds = 5
 roundstart = 5
 roundsupply = 3
 roundsbox = 1
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Grenade_85mm_AirburstCluster"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Primary_Airburst"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "AirburstCluster"
 count = 8
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "AirburstCluster_Bomb"
 count = 8
@@ -834,7 +834,7 @@ rounds = 40
 roundstart = 0
 roundsupply = 20
 roundsbox = 10
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Shotgun_10g_mag"
 
@@ -847,10 +847,10 @@ rounds = 4
 roundstart = 3
 roundsupply = 4
 roundsbox = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Frag"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "projectile"
 ref = "Shrapnel"
 count = 30
@@ -863,7 +863,7 @@ rounds = 4
 roundstart = 3
 roundsupply = 4
 roundsbox = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "HighExplosive"
 
@@ -876,7 +876,7 @@ rounds = 4
 roundstart = 3
 roundsupply = 4
 roundsbox = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Incendiary"
 
@@ -888,7 +888,7 @@ rounds = 4
 roundstart = 3
 roundsupply = 4
 roundsbox = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Impact"
 
@@ -901,7 +901,7 @@ rounds = 4
 roundstart = 3
 roundsupply = 4
 roundsbox = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Incendiary"
 
@@ -914,7 +914,7 @@ rounds = 4
 roundstart = 3
 roundsupply = 4
 roundsbox = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Flash"
 
@@ -937,10 +937,10 @@ rounds = 4
 roundstart = 3
 roundsupply = 4
 roundsbox = 2
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "explosion"
 ref = "Thermite"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "damage"
 ref = "DPS_Thermite"
 
@@ -948,7 +948,7 @@ ref = "DPS_Thermite"
 category = "Misc"
 fullname = "Melee"
 source = "start"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "damage"
 ref = "Ability_Avatar_Melee"
 
@@ -956,6 +956,171 @@ ref = "Ability_Avatar_Melee"
 category = "Misc"
 fullname = "Status Effects#Burn"
 source = "status"
-[[weapon.attacks]]
+[[weapon.attack]]
 medium = "damage"
 ref = "DPS_Fire"
+
+[[backpack]]
+category = "Backpack"
+fullname = "B-1 Supply Pack"
+stratcode = "dlduur"
+health = 400
+armor = 4
+calltime = 5
+cooldown = 480
+cap = 4
+
+[[backpack]]
+category = "Backpack"
+fullname = "SH-20 Ballistic Shield Backpack"
+stratcode = "dlddul"
+health = 400
+armor = 4
+calltime = 5
+cooldown = 480
+
+[[emplacement]]
+category = "Emplacement"
+fullname = "MD-I4 Incendiary Mines"
+stratcode = "dlld"
+health = 250
+armor = 1
+calltime = 3
+cooldown = 180
+[[emplacement.attack]]
+medium = "explosion"
+ref = "IncendiaryMine"
+count = 32
+
+[[emplacement]]
+category = "Emplacement"
+fullname = "MD-6 Anti-Personell Minefield"
+stratcode = "dlur"
+health = 250
+armor = 1
+calltime = 3
+cooldown = 180
+[[emplacement.attack]]
+medium = "explosion"
+ref = "ContactMine"
+count = 32
+
+[[emplacement]]
+category = "Emplacement"
+fullname = "A/MG-43 Machine Gun Sentry"
+stratcode = "durl"
+health = 200
+armor = 2
+calltime = 8
+cooldown = 180
+rpm = 660
+cap = 130
+[[emplacement.attack]]
+medium = "projectile"
+ref = "Rifle_8x60mm_fmj"
+
+[[emplacement]]
+category = "Emplacement"
+fullname = "A/G-16 Gatling Sentry"
+stratcode = "durl"
+health = 200
+armor = 2
+calltime = 8
+cooldown = 180
+rpm = 1560
+cap = 390
+[[emplacement.attack]]
+medium = "projectile"
+ref = "Rifle_8x60mm_fmj"
+
+[[emplacement]]
+category = "Emplacement"
+fullname = "E/MG-101 HMG Emplacement"
+stratcode = "dulrrl"
+health = 1000
+armor = 2
+calltime = 3
+cooldown = 180
+rpm = 660
+cap = 300
+[[emplacement.attack]]
+medium = "projectile"
+ref = "Rifle_12p5x100mm_fmj"
+
+[[emplacement]]
+category = "Emplacement"
+fullname = "A/M-12 Mortar Sentry"
+stratcode = "durrd"
+health = 200
+armor = 2
+calltime = 8
+cooldown = 180
+rpm = 32
+cap = 36
+[[emplacement.attack]]
+medium = "projectile"
+ref = "Grenade_Mortar_40mm_HE"
+[[emplacement.attack]]
+medium = "explosion"
+ref = "Grenade_Mortar_40mm_HE"
+
+[[emplacement]]
+category = "Emplacement"
+fullname = "A/M-23 EMS Mortar Sentry"
+stratcode = "durdr"
+helth = 200
+armor = 2
+calltime = 8
+cooldown = 180
+rpm = 10
+cap = 15
+[[emplacement.attack]]
+medium = "projectile"
+ref = "Grenade_Mortar_40mm_Staticfield"
+[[emplacement.attack]]
+medium = "explosion"
+ref = "Grenade_Mortar_40mm_Staticfield"
+
+[[emplacement]]
+category = "Emplacement"
+fullname = "A/MLS-4X Rocket Sentry"
+stratcode = "durrl"
+helth = 200
+armor = 2
+calltime = 8
+cooldown = 180
+cap = 36
+[[emplacement.attack]]
+medium = "projectile"
+ref = "Rocket_70mm_turret"
+[[emplacement.attack]]
+medium = "explosion"
+ref = "Rocket_70mm_turret"
+
+[[emplacement]]
+category = "Emplacement"
+fullname = "A/AC-8 Autocannon Sentry"
+stratcode = "durulu"
+helth = 200
+armor = 2
+calltime = 8
+cooldown = 180
+cap = 24
+[[emplacement.attack]]
+medium = "projectile"
+ref = "Cannon_40mm_APHE"
+[[emplacement.attack]]
+medium = "explosion"
+ref = "APHE_40mm"
+
+[[emplacement]]
+category = "Emplacement"
+fullname = "A/ARC-3 Tesla Tower"
+stratcode = "durulr"
+health = 600
+armor = 1
+calltime = 3
+cooldown = 150
+[[emplacement.attack]]
+medium = "arc"
+ref = "TeslaTurret"

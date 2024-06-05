@@ -14148,7 +14148,7 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 63,
-      "name": "Plasma Punisher Bolt",
+      "name": "Punisher Plasma Bolt",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Explosion_Cone": {
@@ -16574,9 +16574,7 @@
       "magstart": 5,
       "supply": 8,
       "box": 4,
-      "attacks": [
-        {"type": "projectile", "name": "Rifle_9x70mm_fmj", "id": 201}
-      ]
+      "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_fmj", "id": 201}]
     },
     "R-63CS Diligence Counter Sniper": {
       "category": "DMR",
@@ -16627,9 +16625,7 @@
       "supply": 7,
       "box": 3,
       "tags": ["1h"],
-      "attacks": [
-        {"type": "projectile", "name": "Pistol_12x25mm_fmj", "id": 2}
-      ]
+      "attacks": [{"type": "projectile", "name": "Pistol_12x25mm_fmj", "id": 2}]
     },
     "SMG-72 Pummeler": {
       "category": "SMG",
@@ -16680,9 +16676,7 @@
       "roundsupply": 60,
       "roundsbox": 30,
       "tags": ["rounds"],
-      "attacks": [
-        {"type": "projectile", "name": "Shotgun_10g_slug", "id": 158}
-      ]
+      "attacks": [{"type": "projectile", "name": "Shotgun_10g_slug", "id": 158}]
     },
     "SG-225 Breaker": {
       "category": "SG",
@@ -16893,9 +16887,7 @@
       "magstart": 4,
       "supply": 5,
       "box": 2,
-      "attacks": [
-        {"type": "projectile", "name": "Pistol_9x20mm_hp", "id": 218}
-      ]
+      "attacks": [{"type": "projectile", "name": "Pistol_9x20mm_hp", "id": 218}]
     },
     "P-19 Redeemer": {
       "category": "HG",
@@ -17011,9 +17003,7 @@
       "magstart": 1,
       "supply": 1,
       "box": 1,
-      "attacks": [
-        {"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 179}
-      ]
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 179}]
     },
     "MG-206 Heavy Machine Gun": {
       "category": "SUP",
@@ -17300,14 +17290,140 @@
     "Melee": {
       "category": "Misc",
       "source": "start",
-      "attacks": [
-        {"type": "damage", "name": "Ability_Avatar_Melee", "id": 326}
-      ]
+      "attacks": [{"type": "damage", "name": "Ability_Avatar_Melee", "id": 326}]
     },
     "Status Effects#Burn": {
       "category": "Misc",
       "source": "status",
       "attacks": [{"type": "damage", "name": "DPS_Fire", "id": 309}]
+    },
+    "MD-I4 Incendiary Mines": {
+      "category": "Emplacement",
+      "stratcode": "dlld",
+      "health": 250,
+      "armor": 1,
+      "calltime": 3,
+      "cooldown": 180,
+      "attacks": [
+        {"type": "explosion", "name": "IncendiaryMine", "count": 32, "id": 35}
+      ]
+    },
+    "MD-6 Anti-Personell Minefield": {
+      "category": "Emplacement",
+      "stratcode": "dlur",
+      "health": 250,
+      "armor": 1,
+      "calltime": 3,
+      "cooldown": 180,
+      "attacks": [
+        {"type": "explosion", "name": "ContactMine", "count": 32, "id": 188}
+      ]
+    },
+    "A/MG-43 Machine Gun Sentry": {
+      "category": "Emplacement",
+      "stratcode": "durl",
+      "health": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "rpm": 660,
+      "cap": 130,
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 97}]
+    },
+    "A/G-16 Gatling Sentry": {
+      "category": "Emplacement",
+      "stratcode": "durl",
+      "health": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "rpm": 1560,
+      "cap": 390,
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 97}]
+    },
+    "E/MG-101 HMG Emplacement": {
+      "category": "Emplacement",
+      "stratcode": "dulrrl",
+      "health": 1000,
+      "armor": 2,
+      "calltime": 3,
+      "cooldown": 180,
+      "rpm": 660,
+      "cap": 300,
+      "attacks": [
+        {"type": "projectile", "name": "Rifle_12p5x100mm_fmj", "id": 53}
+      ]
+    },
+    "A/M-12 Mortar Sentry": {
+      "category": "Emplacement",
+      "stratcode": "durrd",
+      "health": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "rpm": 32,
+      "cap": 36,
+      "attacks": [
+        {"type": "projectile", "name": "Grenade_Mortar_40mm_HE", "id": 223},
+        {"type": "explosion", "name": "Grenade_Mortar_40mm_HE", "id": 184}
+      ]
+    },
+    "A/M-23 EMS Mortar Sentry": {
+      "category": "Emplacement",
+      "stratcode": "durdr",
+      "helth": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "rpm": 10,
+      "cap": 15,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Grenade_Mortar_40mm_Staticfield",
+          "id": 101
+        },
+        {
+          "type": "explosion",
+          "name": "Grenade_Mortar_40mm_Staticfield",
+          "id": 96
+        }
+      ]
+    },
+    "A/MLS-4X Rocket Sentry": {
+      "category": "Emplacement",
+      "stratcode": "durrl",
+      "helth": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "cap": 36,
+      "attacks": [
+        {"type": "projectile", "name": "Rocket_70mm_turret", "id": 209},
+        {"type": "explosion", "name": "Rocket_70mm_turret", "id": 162}
+      ]
+    },
+    "A/AC-8 Autocannon Sentry": {
+      "category": "Emplacement",
+      "stratcode": "durulu",
+      "helth": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "cap": 24,
+      "attacks": [
+        {"type": "projectile", "name": "Cannon_40mm_APHE", "id": 79},
+        {"type": "explosion", "name": "APHE_40mm", "id": 123}
+      ]
+    },
+    "A/ARC-3 Tesla Tower": {
+      "category": "Emplacement",
+      "stratcode": "durulr",
+      "health": 600,
+      "armor": 1,
+      "calltime": 3,
+      "cooldown": 150,
+      "attacks": [{"type": "arc", "name": "TeslaTurret", "id": 10}]
     }
   }
 }
