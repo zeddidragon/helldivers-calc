@@ -16,6 +16,7 @@ function searchWords({
   buffer,
   first,
   last,
+  preserveLast = false,
 }) {
   let idx = buffer.indexOf(first)
   console.log(`First word "${first}" at: ${hex(idx)}`)
@@ -32,7 +33,9 @@ function searchWords({
     idx = nextIdx + 1
     i++;
   }
-  words.pop()
+  if(!preserveLast) {
+    words.pop()
+  }
   console.log(`Found ${words.length} words`)
   writeEnums(`tmp/${last}.cs`, words)
   return words
@@ -97,6 +100,13 @@ const statusEnums = searchWords({
   buffer: enumBuffer,
   first: 'StatusEffectType_None',
   last: 'StatusEffectType',
+})
+
+const statusNames = searchWords({
+  buffer: buffer,
+  first: 'Blind',
+  last: 'Thick Fog',
+  preserveLast: true,
 })
 
 const damageTypeEnums = searchWords({
@@ -493,6 +503,7 @@ const data = json({
   beams,
   arcs,
   statuses: prettyEnums(statusEnums),
+  statusNames: statusNames.map(word => word.split('_').join(' ')),
 })
 
 fs.writeFileSync('./data/datamined.json', data)

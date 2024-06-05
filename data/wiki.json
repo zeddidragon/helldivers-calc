@@ -265,7 +265,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunSmall",
+      "status_name": "Stun Small",
       "name": "Illuminate Lightningbolt"
     },
     "Projectile_Illuminate_Lightspear": {
@@ -332,7 +332,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunSmall",
+      "status_name": "Stun Small",
       "name": "Illuminate Turret tesla"
     },
     "Projectile_Illuminate_Observer_Lightning": {
@@ -355,7 +355,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunSmall",
+      "status_name": "Stun Small",
       "name": "Illuminate Observer Lightning"
     },
     "Projectile_Illuminate_Squidgun": {
@@ -378,7 +378,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunSmall",
+      "status_name": "Stun Small",
       "name": "Illuminate Squidgun"
     },
     "Projectile_Illuminate_Tripod_Lightning": {
@@ -401,7 +401,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunSmall",
+      "status_name": "Stun Small",
       "name": "Illuminate Tripod Lightning"
     },
     "Projectile_Laser_Long": {
@@ -512,7 +512,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunSmall",
+      "status_name": "Stun Small",
       "name": "Railgun Stun"
     },
     "Projectile_Pistol_9x20mm_exp": {
@@ -913,7 +913,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunSmall",
+      "status_name": "Stun Small",
       "name": "Pistol 12x25mm Stun"
     },
     "Projectile_Pistol_Magnum": {
@@ -1751,7 +1751,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunMedium",
+      "status_name": "Stun Medium",
       "name": "Rocket 15x100mm EMP"
     },
     "Projectile_Rocket_15x100mm_exp": {
@@ -3737,7 +3737,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunMedium",
+      "status_name": "Stun Medium",
       "name": "Explosion Hand Grenade Flash"
     },
     "Explosion_Projectile_Grenade_40mm_Stun": {
@@ -3760,7 +3760,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunMedium",
+      "status_name": "Stun Medium",
       "name": "Explosion Grenade 40mm Stun"
     },
     "Explosion_Projectile_Snowball": {
@@ -3783,7 +3783,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunSmall",
+      "status_name": "Stun Small",
       "name": "Explosion Snowball"
     },
     "Explosion_BackblastNone": {
@@ -4272,7 +4272,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunMedium",
+      "status_name": "Stun Medium",
       "name": "Explosion Icbm Take Off"
     },
     "Explosion_Icbm_Take_Off_Intense": {
@@ -4318,7 +4318,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunSmall",
+      "status_name": "Stun Small",
       "name": "Explosion Illuminate Small Stun"
     },
     "Explosion_Prop_Barrel": {
@@ -4651,7 +4651,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunSmall",
+      "status_name": "Stun Small",
       "name": "Explosion Illuminate Shock Wave"
     },
     "Explosion_Prop_Small": {
@@ -6459,7 +6459,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunMedium",
+      "status_name": "Stun Medium",
       "name": "Explosion Moor Mushroom Burst"
     },
     "Explosion_EmbryoCluster_Burst": {
@@ -6528,7 +6528,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "ExtremeCold",
+      "status_name": "Extreme Cold",
       "name": "Explosion Iceplant Shatter"
     },
     "DPS_BeamSmall": {
@@ -7754,7 +7754,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunLarge",
+      "status_name": "Stun Large",
       "name": "Ability Bug Stalker Scream"
     },
     "Ability_Bug_Strider_Stomp": {
@@ -8132,7 +8132,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "StunLarge",
+      "status_name": "Stun Large",
       "name": "Ability Illuminate Guy Staff Dash Stun"
     },
     "Ability_Illuminate_GuyStaff_QuickSlash": {
