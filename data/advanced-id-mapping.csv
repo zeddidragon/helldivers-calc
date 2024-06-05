@@ -54,7 +54,7 @@ EAT-17 Expendable Anti-Tank,explosion,Grenade_75mm_HEAT,191
 GR-8 Recoilless Rifle,projectile,Grenade_85mm_HEAT,100
 GR-8 Recoilless Rifle,explosion,Grenade_85mm_HEAT,133
 FAF-14 Spear,projectile,Missile_Faf,150
-FAF-14 Spear,explosion,Rocket_110mm,120
+FAF-14 Spear,explosion,FafMissile,153
 RL-77 Airburst Rocket Launcher,projectile,Grenade_85mm_AirburstCluster,205
 RL-77 Airburst Rocket Launcher,explosion,Primary_Airburst,172
 RL-77 Airburst Rocket Launcher,explosion,Airburst_Cluster,165,8

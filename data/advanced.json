@@ -739,7 +739,7 @@
       "roundsbox": 1,
       "projectileid": 150,
       "type": "projectile",
-      "subattacks": [{"type": "explosion", "id": 120}]
+      "subattacks": [{"type": "explosion", "id": 153}]
     },
     {
       "category": "SUP",

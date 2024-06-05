@@ -7181,7 +7181,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "DPS Avatar Bleed"
+      "name": "DPS Bleeding"
     },
     "Ability_Empty": {
       "id": 325,
@@ -7225,7 +7225,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Ability Avatar Melee"
+      "name": "Ability Helldiver Melee"
     },
     "Ability_Avatar_Melee_Booster_Muscle_Enhancement": {
       "id": 327,
@@ -7247,7 +7247,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Ability Avatar Melee Booster Muscle Enhancement"
+      "name": "Ability Helldiver Melee Booster Muscle Enhancement"
     },
     "Ability_Avatar_Melee_Bayonet": {
       "id": 328,
@@ -7269,7 +7269,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Ability Avatar Melee Bayonet"
+      "name": "Ability Helldiver Melee Bayonet"
     },
     "Ability_Bug_BroodCommander_ChargeDestruction": {
       "id": 329,
@@ -17163,7 +17163,7 @@
       "roundsbox": 1,
       "attacks": [
         {"type": "projectile", "name": "Missile_Faf", "id": 150},
-        {"type": "explosion", "name": "Rocket_110mm", "id": 120}
+        {"type": "explosion", "name": "FafMissile", "id": 153}
       ]
     },
     "RL-77 Airburst Rocket Launcher": {
