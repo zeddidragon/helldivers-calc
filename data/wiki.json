@@ -16574,7 +16574,9 @@
       "magstart": 5,
       "supply": 8,
       "box": 4,
-      "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_fmj", "id": 201}]
+      "attacks": [
+        {"type": "projectile", "name": "Rifle_9x70mm_fmj", "id": 201}
+      ]
     },
     "R-63CS Diligence Counter Sniper": {
       "category": "DMR",
@@ -16625,7 +16627,9 @@
       "supply": 7,
       "box": 3,
       "tags": ["1h"],
-      "attacks": [{"type": "projectile", "name": "Pistol_12x25mm_fmj", "id": 2}]
+      "attacks": [
+        {"type": "projectile", "name": "Pistol_12x25mm_fmj", "id": 2}
+      ]
     },
     "SMG-72 Pummeler": {
       "category": "SMG",
@@ -16676,7 +16680,9 @@
       "roundsupply": 60,
       "roundsbox": 30,
       "tags": ["rounds"],
-      "attacks": [{"type": "projectile", "name": "Shotgun_10g_slug", "id": 158}]
+      "attacks": [
+        {"type": "projectile", "name": "Shotgun_10g_slug", "id": 158}
+      ]
     },
     "SG-225 Breaker": {
       "category": "SG",
@@ -16807,8 +16813,7 @@
       "sourcepage": 3,
       "rpm": 45,
       "recoil": 60,
-      "count": 5,
-      "attacks": [{"type": "arc", "name": "ArcShotgun", "id": 3, "count": 5}]
+      "attacks": [{"type": "arc", "name": "ArcShotgun", "count": 5, "id": 3}]
     },
     "LAS-5 Scythe": {
       "category": "NRG",
@@ -16888,7 +16893,9 @@
       "magstart": 4,
       "supply": 5,
       "box": 2,
-      "attacks": [{"type": "projectile", "name": "Pistol_9x20mm_hp", "id": 218}]
+      "attacks": [
+        {"type": "projectile", "name": "Pistol_9x20mm_hp", "id": 218}
+      ]
     },
     "P-19 Redeemer": {
       "category": "HG",
@@ -17004,7 +17011,9 @@
       "magstart": 1,
       "supply": 1,
       "box": 1,
-      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 179}]
+      "attacks": [
+        {"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 179}
+      ]
     },
     "MG-206 Heavy Machine Gun": {
       "category": "SUP",
@@ -17182,12 +17191,12 @@
           "id": 205
         },
         {"type": "explosion", "name": "Primary_Airburst", "id": 172},
-        {"type": "explosion", "name": "AirburstCluster", "id": 165, "count": 8},
+        {"type": "explosion", "name": "AirburstCluster", "count": 8, "id": 165},
         {
           "type": "explosion",
           "name": "AirburstCluster_Bomb",
-          "id": 3,
-          "count": 8
+          "count": 8,
+          "id": 3
         }
       ]
     },
@@ -17214,7 +17223,7 @@
       "roundsbox": 2,
       "attacks": [
         {"type": "explosion", "name": "Frag", "id": 136},
-        {"type": "projectile", "name": "Shrapnel", "id": 135, "count": 30}
+        {"type": "projectile", "name": "Shrapnel", "count": 30, "id": 135}
       ]
     },
     "G-12 High Explosive": {
@@ -17291,7 +17300,9 @@
     "Melee": {
       "category": "Misc",
       "source": "start",
-      "attacks": [{"type": "damage", "name": "Ability_Avatar_Melee", "id": 326}]
+      "attacks": [
+        {"type": "damage", "name": "Ability_Avatar_Melee", "id": 326}
+      ]
     },
     "Status Effects#Burn": {
       "category": "Misc",

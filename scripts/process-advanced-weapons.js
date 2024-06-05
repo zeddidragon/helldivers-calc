@@ -1,12 +1,13 @@
 import fs from 'fs'
 import json from 'json-stringify-pretty-compact'
+import toml from 'toml'
 
 function read(file) {
   return JSON.parse(fs.readFileSync(`data/${file}.json`))
 }
 
 const data = read('datamined')
-const weapons = read('weapons')
+const { weapon: weapons } = toml.parse(fs.readFileSync('data/weapons.toml'))
 const names = read('lang-en')
 const sources = [
   'dlc-super',
@@ -67,7 +68,7 @@ const purge = [
   "xparam2",
 ]
 
-let wps = weapons.slice(1)
+let wps = weapons.slice()
 const seen = new Set()
 wps = wps.filter(f => {
   if(seen.has(f.fullname)) {
@@ -85,46 +86,6 @@ for(const wpn of wps) {
   keyed[wpn.fullname] = wpn
 }
 
-const touched = new Set()
-fs.readFileSync('data/advanced-id-mapping.csv', 'utf8')
-  .trim()
-  .split('\n')
-  .slice(1)
-  .forEach(r => {
-    const [
-      name,
-      type,
-      enm, // "enum" is reserved
-      id,
-      count,
-    ] = r.split(',')
-    const weapon = keyed[name]
-    if(!weapon) {
-      console.error(`Weapon not found: ${r}`)
-      return
-    }
-    if(!touched.has(name)) {
-      touched.add(name)
-      weapon[`${type}id`] = +id
-      weapon.type = type
-      weapon.count = count && +count
-    } else {
-      if(!weapon.subattacks) {
-        weapon.subattacks = []
-      }
-      weapon.subattacks.push({
-        type,
-        id: +id,
-        count: count && +count,
-      })
-    }
-  })
-
-fs.writeFileSync('data/advanced.json', json({
-  sources,
-  weapons: wps,
-}))
-
 const wikiRegister = {
   damage: {},
   projectile: {},
@@ -141,6 +102,15 @@ const tkeys = {
   beam: 'beam',
   arc: 'arc',
 }
+const refRegister = {}
+
+function atkKey(type, ref) {
+  return `${tkeys[type]};${ref}`
+}
+
+function getAtk(type, ref) {
+  return register[atkKey(type, ref)]
+}
 
 for(const prop of Object.keys(wikiRegister)) {
   const reg = wikiRegister[prop]
@@ -148,7 +118,8 @@ for(const prop of Object.keys(wikiRegister)) {
   register[prop] = {}
   for(const obj of (data[plural] || [])) {
     register[prop][obj.id] = obj
-    const key = `${tkeys[prop]};${obj.enum}`
+    const key = atkKey(prop, obj.enum)
+    refRegister[key] = obj
     reg[obj.enum] = {
       ...obj,
       enum: void 0,
@@ -168,30 +139,17 @@ for(const wpn of wps) {
     || wpn.arcid
     || wpn.explosionid
     || wpn.damageid
-  const attacks = []
-  if(id) {
-    attacks.push({
-      type: type || 'damage',
-      name: register[type][id].enum,
-      id,
-      count: wpn.count,
-    })
-  }
-  if(wpn.subattacks) {
-    attacks.push(...wpn.subattacks.map(sub => {
-      const {
-        type,
-        id,
-        count,
-      } = sub
-      return {
-        type,
-        name: register[type][id].enum,
-        id,
-        count,
-      }
-    }))
-  }
+  const attacks = (wpn.attacks || []).map(atk => {
+    const key = `${tkeys[atk.medium]};${atk.ref}`
+    const obj = refRegister[key]
+    console.log({ key, obj })
+    return {
+      type: atk.medium,
+      name: atk.ref,
+      count: atk.count,
+      id: obj.id,
+    }
+  })
   reg[wpn.fullname] = {
     ...wpn,
     fullname: void 0,
@@ -207,3 +165,32 @@ for(const wpn of wps) {
 }
 
 fs.writeFileSync('data/wiki.json', json(wikiRegister))
+
+for(const wpn of weapons) {
+  if(!wpn.attacks) {
+    continue
+  }
+  const [atk, ...subattacks] = wpn.attacks.map(atk => {
+    const key = atkKey(atk.medium, atk.ref)
+    const obj = refRegister[key]
+    console.log({ atk,  key, obj })
+    return {
+      type: atk.medium,
+      id: obj.id,
+      count: atk.count,
+    }
+  })
+  wpn[`${atk.type}id`] = atk.id
+  if(atk.count) {
+    wpn.count = atk.count
+  }
+  if(subattacks.length) {
+    wpn.subattacks = subattacks
+  }
+  delete wpn.attacks
+}
+
+fs.writeFileSync('data/advanced.json', json({
+  sources,
+  weapons: wps,
+}))

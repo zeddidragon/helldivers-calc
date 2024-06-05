@@ -17,7 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "json-stringify-pretty-compact": "^4.0.0",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "toml": "^3.0.0"
   },
   "devDependencies": {
     "clipboardy": "^4.0.0",

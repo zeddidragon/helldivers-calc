@@ -24,8 +24,7 @@
       "magstart": 5,
       "supply": 7,
       "box": 3,
-      "projectileid": 182,
-      "type": "projectile"
+      "projectileid": 182
     },
     {
       "category": "AR",
@@ -42,8 +41,7 @@
       "magstart": 7,
       "supply": 10,
       "box": 5,
-      "projectileid": 5,
-      "type": "projectile"
+      "projectileid": 5
     },
     {
       "category": "AR",
@@ -60,8 +58,7 @@
       "magstart": 7,
       "supply": 10,
       "box": 5,
-      "projectileid": 204,
-      "type": "projectile"
+      "projectileid": 204
     },
     {
       "category": "AR",
@@ -78,8 +75,7 @@
       "magstart": 5,
       "supply": 5,
       "box": 2,
-      "projectileid": 182,
-      "type": "projectile"
+      "projectileid": 182
     },
     {
       "category": "AR",
@@ -96,8 +92,7 @@
       "magstart": 6,
       "supply": 8,
       "box": 4,
-      "projectileid": 97,
-      "type": "projectile"
+      "projectileid": 97
     },
     {
       "category": "DMR",
@@ -114,8 +109,7 @@
       "magstart": 5,
       "supply": 8,
       "box": 4,
-      "projectileid": 201,
-      "type": "projectile"
+      "projectileid": 201
     },
     {
       "category": "DMR",
@@ -132,8 +126,7 @@
       "magstart": 4,
       "supply": 6,
       "box": 3,
-      "projectileid": 159,
-      "type": "projectile"
+      "projectileid": 159
     },
     {
       "category": "SMG",
@@ -150,8 +143,7 @@
       "supply": 5,
       "box": 2,
       "tags": ["1h"],
-      "projectileid": 145,
-      "type": "projectile"
+      "projectileid": 145
     },
     {
       "category": "SMG",
@@ -169,8 +161,7 @@
       "supply": 7,
       "box": 3,
       "tags": ["1h"],
-      "projectileid": 2,
-      "type": "projectile"
+      "projectileid": 2
     },
     {
       "category": "SMG",
@@ -188,8 +179,7 @@
       "supply": 7,
       "box": 3,
       "tags": ["1h"],
-      "projectileid": 103,
-      "type": "projectile"
+      "projectileid": 103
     },
     {
       "category": "SG",
@@ -206,8 +196,7 @@
       "roundsupply": 60,
       "roundsbox": 30,
       "tags": ["rounds"],
-      "projectileid": 172,
-      "type": "projectile"
+      "projectileid": 172
     },
     {
       "category": "SG",
@@ -224,8 +213,7 @@
       "roundsupply": 60,
       "roundsbox": 30,
       "tags": ["rounds"],
-      "projectileid": 158,
-      "type": "projectile"
+      "projectileid": 158
     },
     {
       "category": "SG",
@@ -242,8 +230,7 @@
       "magstart": 5,
       "supply": 7,
       "box": 3,
-      "projectileid": 121,
-      "type": "projectile"
+      "projectileid": 121
     },
     {
       "category": "SG",
@@ -260,8 +247,7 @@
       "magstart": 6,
       "supply": 8,
       "box": 4,
-      "projectileid": 117,
-      "type": "projectile"
+      "projectileid": 117
     },
     {
       "category": "SG",
@@ -279,8 +265,7 @@
       "supply": 6,
       "box": 3,
       "tags": ["fire"],
-      "projectileid": 207,
-      "type": "projectile"
+      "projectileid": 207
     },
     {
       "category": "EX",
@@ -297,7 +282,6 @@
       "supply": 8,
       "box": 4,
       "projectileid": 167,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 30}]
     },
     {
@@ -316,8 +300,7 @@
       "supply": 6,
       "box": 3,
       "tags": ["jet"],
-      "projectileid": 119,
-      "type": "projectile"
+      "projectileid": 119
     },
     {
       "category": "EX",
@@ -336,7 +319,6 @@
       "box": 3,
       "tags": ["jet", "shrapnel"],
       "projectileid": 29,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 81}]
     },
     {
@@ -353,7 +335,6 @@
       "supply": 8,
       "box": 4,
       "projectileid": 36,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 41}]
     },
     {
@@ -364,7 +345,6 @@
       "rpm": 45,
       "recoil": 60,
       "arcid": 3,
-      "type": "arc",
       "count": 5
     },
     {
@@ -381,8 +361,7 @@
       "box": 2,
       "limit": 8,
       "tags": ["laser"],
-      "beamid": 4,
-      "type": "beam"
+      "beamid": 4
     },
     {
       "category": "NRG",
@@ -398,8 +377,7 @@
       "supply": 3,
       "box": 3,
       "limit": 7,
-      "projectileid": 98,
-      "type": "projectile"
+      "projectileid": 98
     },
     {
       "category": "NRG",
@@ -416,7 +394,6 @@
       "supply": 6,
       "box": 3,
       "projectileid": 92,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 79}]
     },
     {
@@ -433,7 +410,6 @@
       "supply": 6,
       "box": 3,
       "projectileid": 190,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 192}]
     },
     {
@@ -450,8 +426,7 @@
       "magstart": 4,
       "supply": 5,
       "box": 2,
-      "projectileid": 218,
-      "type": "projectile"
+      "projectileid": 218
     },
     {
       "category": "HG",
@@ -468,8 +443,7 @@
       "magstart": 4,
       "supply": 4,
       "box": 2,
-      "projectileid": 194,
-      "type": "projectile"
+      "projectileid": 194
     },
     {
       "category": "HG",
@@ -486,8 +460,7 @@
       "magstart": 5,
       "supply": 4,
       "box": 2,
-      "projectileid": 12,
-      "type": "projectile"
+      "projectileid": 12
     },
     {
       "category": "HG",
@@ -503,7 +476,6 @@
       "roundsupply": 2,
       "roundsbox": 1,
       "projectileid": 54,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 106}]
     },
     {
@@ -520,8 +492,7 @@
       "box": 3,
       "limit": 5,
       "tags": ["laser"],
-      "beamid": 6,
-      "type": "beam"
+      "beamid": 6
     },
     {
       "category": "HG",
@@ -540,8 +511,7 @@
       "roundsupply": 20,
       "roundsbox": 10,
       "tags": ["rounds"],
-      "projectileid": 203,
-      "type": "projectile"
+      "projectileid": 203
     },
     {
       "category": "SUP",
@@ -556,8 +526,7 @@
       "magstart": 2,
       "supply": 2,
       "box": 1,
-      "projectileid": 182,
-      "type": "projectile"
+      "projectileid": 182
     },
     {
       "category": "SUP",
@@ -572,8 +541,7 @@
       "magstart": 1,
       "supply": 1,
       "box": 1,
-      "projectileid": 179,
-      "type": "projectile"
+      "projectileid": 179
     },
     {
       "category": "SUP",
@@ -588,8 +556,7 @@
       "magstart": 1,
       "supply": 2,
       "box": 1,
-      "projectileid": 181,
-      "type": "projectile"
+      "projectileid": 181
     },
     {
       "category": "SUP",
@@ -597,8 +564,7 @@
       "source": "support",
       "rpm": 60,
       "charge": 1,
-      "arcid": 6,
-      "type": "arc"
+      "arcid": 6
     },
     {
       "category": "SUP",
@@ -611,8 +577,7 @@
       "box": 3,
       "limit": 12.5,
       "tags": ["fire"],
-      "damageid": 9,
-      "type": "damage"
+      "damageid": 9
     },
     {
       "category": "SUP",
@@ -627,8 +592,7 @@
       "magstart": 4,
       "supply": 3,
       "box": 1,
-      "projectileid": 151,
-      "type": "projectile"
+      "projectileid": 151
     },
     {
       "category": "SUP",
@@ -643,7 +607,6 @@
       "supply": 2,
       "box": 1,
       "projectileid": 186,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 185}]
     },
     {
@@ -660,7 +623,6 @@
       "clipsbox": 2,
       "clipsupply": 5,
       "projectileid": 75,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 208}]
     },
     {
@@ -676,8 +638,7 @@
       "roundstart": 10,
       "roundsupply": 10,
       "roundsbox": 2,
-      "projectileid": 125,
-      "type": "projectile"
+      "projectileid": 125
     },
     {
       "category": "SUP",
@@ -691,8 +652,7 @@
       "box": 1,
       "limit": 10,
       "tags": ["laser"],
-      "beamid": 1,
-      "type": "beam"
+      "beamid": 1
     },
     {
       "category": "SUP",
@@ -701,7 +661,6 @@
       "charge": 3.1,
       "reload": 15,
       "projectileid": 86,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 32}]
     },
     {
@@ -710,7 +669,6 @@
       "source": "support",
       "cap": 1,
       "projectileid": 85,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 191}]
     },
     {
@@ -724,7 +682,6 @@
       "roundsupply": 3,
       "roundsbox": 1,
       "projectileid": 100,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 133}]
     },
     {
@@ -738,7 +695,6 @@
       "roundsupply": 2,
       "roundsbox": 1,
       "projectileid": 150,
-      "type": "projectile",
       "subattacks": [{"type": "explosion", "id": 153}]
     },
     {
@@ -752,7 +708,6 @@
       "roundsupply": 3,
       "roundsbox": 1,
       "projectileid": 205,
-      "type": "projectile",
       "subattacks": [
         {"type": "explosion", "id": 172},
         {"type": "explosion", "id": 165, "count": 8},
@@ -771,8 +726,7 @@
       "roundstart": 0,
       "roundsupply": 20,
       "roundsbox": 10,
-      "projectileid": 146,
-      "type": "projectile"
+      "projectileid": 146
     },
     {
       "category": "GR",
@@ -784,7 +738,6 @@
       "roundsupply": 4,
       "roundsbox": 2,
       "explosionid": 136,
-      "type": "explosion",
       "subattacks": [{"type": "projectile", "id": 135, "count": 30}]
     },
     {
@@ -795,8 +748,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "explosionid": 91,
-      "type": "explosion"
+      "explosionid": 91
     },
     {
       "category": "GR",
@@ -807,8 +759,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "explosionid": 119,
-      "type": "explosion"
+      "explosionid": 119
     },
     {
       "category": "GR",
@@ -818,8 +769,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "explosionid": 174,
-      "type": "explosion"
+      "explosionid": 174
     },
     {
       "category": "GR",
@@ -830,8 +780,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "explosionid": 119,
-      "type": "explosion"
+      "explosionid": 119
     },
     {
       "category": "GR",
@@ -842,8 +791,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "explosionid": 117,
-      "type": "explosion"
+      "explosionid": 117
     },
     {
       "category": "GR",
@@ -865,22 +813,19 @@
       "roundsupply": 4,
       "roundsbox": 2,
       "explosionid": 107,
-      "type": "explosion",
       "subattacks": [{"type": "damage", "id": 310}]
     },
     {
       "category": "Misc",
       "fullname": "Melee",
       "source": "start",
-      "damageid": 326,
-      "type": "damage"
+      "damageid": 326
     },
     {
       "category": "Misc",
       "fullname": "Status Effects#Burn",
       "source": "status",
-      "damageid": 309,
-      "type": "damage"
+      "damageid": 309
     }
   ]
 }
