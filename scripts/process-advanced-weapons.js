@@ -131,7 +131,12 @@ for(const prop of Object.keys(wikiRegister)) {
   }
 }
 
-for(const wpn of [...setup.weapon, ...setup.emplacement]) {
+const allWeapons = [
+  ...setup.weapon,
+  ...setup.emplacement,
+  ...setup.stratagem,
+]
+for(const wpn of allWeapons) {
   const reg = wikiRegister.weapon
   const type = wpn.type
   const id = wpn.projectileid

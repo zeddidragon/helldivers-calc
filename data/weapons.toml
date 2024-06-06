@@ -1124,3 +1124,173 @@ cooldown = 150
 [[emplacement.attack]]
 medium = "arc"
 ref = "TeslaTurret"
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital Precision Strike"
+stratcode = "rru"
+calltime = 4
+cooldown = 100
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Orbital_Precision_Strike"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "PrecisionStrike"
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital Gas Strike"
+stratcode = "rrdr"
+calltime = 2
+cooldown = 75
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Orbital_Gas"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "OrbitalGas"
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital Smoke Strike"
+stratcode = "rrdu"
+calltime = 2
+cooldown = 100
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital Airburst Strike"
+stratcode = "rrr"
+calltime = 2
+cooldown = 120
+salvos = 3
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Orbital_Cannon_110mm"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "OrbitalShot"
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Shrapnel_Heavy"
+count=12
+[[stratagem.attack]]
+medium = "explosion"
+ref = "HeavyShrapnel"
+count=12
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital EMS Strike"
+stratcode = "rrld"
+calltime = 2
+cooldown = 75
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Orbital_Stunround"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "OrbitalStun"
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital Gatling Barrage"
+stratcode = "rdluu"
+calltime = 2
+cooldown = 80
+salvos = 4
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Cannon_Eagle_23mm"
+count = 30
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Cannon_23mm"
+count = 30
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital 120mm HE Barrage"
+stratcode = "rrdlrd"
+calltime = 5
+cooldown = 240
+salvos = 5
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Orbital_Cannon_120mm_HE"
+count = 3
+[[stratagem.attack]]
+medium = "explosion"
+ref = "OrbitalStrike"
+count = 3
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital 3800mm HE Barrage"
+stratcode = "rduuldd"
+calltime = 6
+cooldown = 240
+salvos = 5
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Orbital_Cannon_380mm_HE"
+count = 3
+[[stratagem.attack]]
+medium = "explosion"
+ref = "OrbitalBarrage"
+count = 3
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital Walking Barrage"
+stratcode = "rdrdrd"
+calltime = 3
+cooldown = 240
+salvos = 3
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Orbital_Cannon_380mm_HE"
+count = 3
+[[stratagem.attack]]
+medium = "explosion"
+ref = "OrbitalBarrage"
+count = 3
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital Laser"
+stratcode = "rdurd"
+calltime = 2
+cooldown = 300
+uses = 3
+[[stratagem.attack]]
+medium = "damage"
+ref = "DPS_BeamHuge"
+
+[[stratagem]]
+category = "Orbital"
+fullname = "Orbital Railcannon Strike"
+stratcode = "ruddr"
+calltime = 1
+cooldown = 210
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Orbital_Railcannon"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Railcannon_Impact"
+
+[[stratagem]]
+category = "Eagle"
+fullname = "Eagle Strafing Run"
+stratcode = "urr"
+calltime = 0
+cooldown = 15
+strikes = 6
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Cannon_Eagle_23mm"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Cannon_23mm"
