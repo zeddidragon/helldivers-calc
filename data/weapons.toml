@@ -963,7 +963,7 @@ ref = "DPS_Fire"
 [[weapon]]
 category = "Mounted"
 fullname = "Patriot Gatling Gun"
-rpm = 600
+rpm = 1200
 cap = 1000
 [[weapon.attack]]
 medium = "projectile"
@@ -973,6 +973,7 @@ ref = "Rifle_8x60mm_apt"
 category = "Mounted"
 fullname = "Patriot Rocket Pod"
 cap = 15
+rpm = 90
 [[weapon.attack]]
 medium = "projectile"
 ref = "Missile_Combat_Walker"

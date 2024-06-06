@@ -830,7 +830,7 @@
     {
       "category": "Mounted",
       "fullname": "Patriot Gatling Gun",
-      "rpm": 600,
+      "rpm": 1200,
       "cap": 1000,
       "projectileid": 179
     },
@@ -838,6 +838,7 @@
       "category": "Mounted",
       "fullname": "Patriot Rocket Pod",
       "cap": 15,
+      "rpm": 90,
       "projectileid": 82,
       "subattacks": [{"type": "explosion", "id": 210}]
     },

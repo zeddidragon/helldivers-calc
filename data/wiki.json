@@ -17299,13 +17299,14 @@
     },
     "Patriot Gatling Gun": {
       "category": "Mounted",
-      "rpm": 600,
+      "rpm": 1200,
       "cap": 1000,
       "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 179}]
     },
     "Patriot Rocket Pod": {
       "category": "Mounted",
       "cap": 15,
+      "rpm": 90,
       "attacks": [
         {"type": "projectile", "name": "Missile_Combat_Walker", "id": 82},
         {"type": "explosion", "name": "Combat_Walker_Missile", "id": 210}
