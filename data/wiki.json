@@ -17295,7 +17295,16 @@
     "Status Effects#Burn": {
       "category": "Misc",
       "source": "status",
-      "attacks": [{"type": "damage", "name": "DPS_Fire", "id": 309}]
+      "attacks": [
+        {"type": "damage", "name": "DPS_Fire", "id": 309},
+        {"type": "explosion", "name": "AirburstCluster", "count": 8, "id": 165},
+        {
+          "type": "explosion",
+          "name": "AirburstCluster_Bomb",
+          "count": 8,
+          "id": 3
+        }
+      ]
     },
     "MD-I4 Incendiary Mines": {
       "category": "Emplacement",
@@ -17507,7 +17516,7 @@
         {"type": "explosion", "name": "OrbitalStrike", "count": 3, "id": 113}
       ]
     },
-    "Orbital 3800mm HE Barrage": {
+    "Orbital 380mm HE Barrage": {
       "category": "Orbital",
       "stratcode": "rduuldd",
       "calltime": 6,
@@ -17557,15 +17566,85 @@
         {"type": "explosion", "name": "Railcannon_Impact", "id": 27}
       ]
     },
+    "Eagle Airstrike": {
+      "category": "Eagle",
+      "stratcode": "urdr",
+      "cooldown": 15,
+      "strikes": 2,
+      "attacks": [
+        {"type": "projectile", "name": "Bomb_100kg", "count": 6, "id": 113},
+        {"type": "explosion", "name": "EagleBomb_100kg", "count": 6, "id": 104}
+      ]
+    },
+    "Eagle Napalm Airstrike": {
+      "category": "Eagle",
+      "stratcode": "urdu",
+      "cooldown": 15,
+      "strikes": 2,
+      "attacks": [
+        {"type": "projectile", "name": "Bomb_Napalm", "count": 4, "id": 206},
+        {"type": "explosion", "name": "EagleBomb_Napalm", "count": 4, "id": 7}
+      ]
+    },
+    "Eagle 500kg Bomb": {
+      "category": "Eagle",
+      "stratcode": "urdu",
+      "cooldown": 15,
+      "strikes": 1,
+      "attacks": [
+        {"type": "projectile", "name": "Bomb_500kg", "id": 157},
+        {"type": "explosion", "name": "Bomb_Impact", "id": 181},
+        {"type": "explosion", "name": "EagleBomb_500kg", "id": 143}
+      ]
+    },
     "Eagle Strafing Run": {
       "category": "Eagle",
       "stratcode": "urr",
-      "calltime": 0,
       "cooldown": 15,
-      "strikes": 6,
+      "strikes": 3,
       "attacks": [
         {"type": "projectile", "name": "Cannon_Eagle_23mm", "id": 13},
         {"type": "explosion", "name": "Cannon_23mm", "id": 189}
+      ]
+    },
+    "Eagle Cluster Bomb": {
+      "category": "Eagle",
+      "stratcode": "urddr",
+      "cooldown": 15,
+      "strikes": 4,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Cannon_Eagle_23mm",
+          "count": 8,
+          "id": 13
+        },
+        {"type": "explosion", "name": "Cannon_23mm", "count": 8, "id": 189}
+      ]
+    },
+    "Eagle 110mm Rocket Pods": {
+      "category": "Eagle",
+      "stratcode": "urul",
+      "cooldown": 15,
+      "strikes": 2,
+      "attacks": [
+        {"type": "projectile", "name": "Rocket_110mm", "count": 3, "id": 52},
+        {"type": "explosion", "name": "Rocket_110mm", "count": 3, "id": 120}
+      ]
+    },
+    "Eagle Smoke Strike": {
+      "category": "Eagle",
+      "stratcode": "urud",
+      "cooldown": 15,
+      "strikes": 2,
+      "attacks": [
+        {"type": "projectile", "name": "Bomb_Smoke", "count": 8, "id": 83},
+        {
+          "type": "explosion",
+          "name": "Bomb_Impact_Smoke",
+          "count": 8,
+          "id": 168
+        }
       ]
     }
   }

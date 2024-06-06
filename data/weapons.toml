@@ -1227,7 +1227,7 @@ count = 3
 
 [[stratagem]]
 category = "Orbital"
-fullname = "Orbital 3800mm HE Barrage"
+fullname = "Orbital 380mm HE Barrage"
 stratcode = "rduuldd"
 calltime = 6
 cooldown = 240
@@ -1283,14 +1283,112 @@ ref = "Railcannon_Impact"
 
 [[stratagem]]
 category = "Eagle"
+fullname = "Eagle Airstrike"
+stratcode = "urdr"
+cooldown = 15
+strikes = 2
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Bomb_100kg"
+count = 6
+[[stratagem.attack]]
+medium = "explosion"
+ref = "EagleBomb_100kg"
+count = 6
+
+[[stratagem]]
+category = "Eagle"
+fullname = "Eagle Napalm Airstrike"
+stratcode = "urdu"
+cooldown = 15
+strikes = 2
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Bomb_Napalm"
+count = 4
+[[stratagem.attack]]
+medium = "explosion"
+ref = "EagleBomb_Napalm"
+count = 4
+
+[[stratagem]]
+category = "Eagle"
+fullname = "Eagle 500kg Bomb"
+stratcode = "urdu"
+cooldown = 15
+strikes = 1
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Bomb_500kg"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Bomb_Impact"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "EagleBomb_500kg"
+
+[[stratagem]]
+category = "Eagle"
 fullname = "Eagle Strafing Run"
 stratcode = "urr"
-calltime = 0
 cooldown = 15
-strikes = 6
+strikes = 3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_Eagle_23mm"
 [[stratagem.attack]]
 medium = "explosion"
 ref = "Cannon_23mm"
+
+[[stratagem]]
+category = "Eagle"
+fullname = "Eagle Cluster Bomb"
+stratcode = "urddr"
+cooldown = 15
+strikes = 4
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Cannon_Eagle_23mm"
+count = 8
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Cannon_23mm"
+count = 8
+[[weapon.attack]]
+medium = "explosion"
+ref = "AirburstCluster"
+count = 8
+[[weapon.attack]]
+medium = "explosion"
+ref = "AirburstCluster_Bomb"
+count = 8
+
+[[stratagem]]
+category = "Eagle"
+fullname = "Eagle 110mm Rocket Pods"
+stratcode = "urul"
+cooldown = 15
+strikes = 2
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Rocket_110mm"
+count = 3
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Rocket_110mm"
+count = 3
+
+[[stratagem]]
+category = "Eagle"
+fullname = "Eagle Smoke Strike"
+stratcode = "urud"
+cooldown = 15
+strikes = 2
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Bomb_Smoke"
+count = 8
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Bomb_Impact_Smoke"
+count = 8
