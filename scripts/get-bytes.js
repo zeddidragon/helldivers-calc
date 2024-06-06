@@ -1,19 +1,29 @@
 import fs from 'fs'
+import toml from 'toml'
 import clipboard from 'clipboardy'
+import { getRefRegister } from './ref-register.js'
 
-const weapons = JSON.parse(fs.readFileSync('./data/weapons.json', 'utf-8').trim())
+const { weapon: weapons } = toml.parse(fs.readFileSync('data/weapons.toml'))
+const data = getRefRegister()
 
-let xMode = false
+let target = null
+let targetIdx = null
 let args = process.argv.slice(2)
-if(args[0] === 'x') {
-  xMode = true
+if(['arc', 'beam', 'projectile', 'explosion', 'damage'].includes(args[0])) {
+  target = args[0]
+  args = args.slice(1)
+}
+if(!isNaN(args[0])) {
+  targetIdx = +args[0]
   args = args.slice(1)
 }
 const search = new RegExp(args[0], 'i')
-const wpn = weapons.find(wpn => search.exec(wpn.fullname))
+const wpn = weapons
+  .find(wpn => wpn.attack?.length && search.exec(wpn.fullname))
 if(!wpn) {
   throw new Error(`No results: ${search}`)
 }
+console.log(`Weapon located: "${wpn.fullname}"`)
 for(const override of args.slice(1)) {
   const [prop, value] = override.split('=')
   wpn[prop] = +value
@@ -26,48 +36,98 @@ function Float(buffer, value, offset = 0) {
   return buffer.writeFloatLE(value, offset)
 }
 
-const schema = Object.entries({
+const damageSchema = Object.entries({
   id: Int,
-  damage: Int,
-  durable: Int,
-  ap: Int,
+  dmg: Int,
+  dmg2: Int,
+  ap1: Int,
   ap2: Int,
   ap3: Int,
   ap4: Int,
   demo: Int,
   stun: Int,
   push: Int,
-  dmgtype: Int,
-  effect1: Int,
+  type: Int,
+  func1: Int,
   param1: Float,
-  effect2: Int,
+  func2: Int,
   param2: Float,
 })
-const xschema = Object.entries({
-  xid: Int,
-  xdamage: Int,
-  xdurable: Int,
-  xap: Int,
-  xap2: Int,
-  xap3: Int,
-  xap4: Int,
-  xdemo: Int,
-  xstun: Int,
-  xpush: Int,
-  dmgtype: Int,
-  effect1: Int,
-  param1: Float,
-  effect2: Int,
-  param2: Float,
+const projectileSchema = Object.entries({
+  caliber: Float,
+  pellets: Int,
+  velocity: Float,
+  mass: Float,
+  drag: Float,
+  gravity: Float,
 })
+const explosionSchema = Object.entries({
+  r1: Float,
+  r2: Float,
+  r3: Float,
+})
+const beamSchema = Object.entries({
+  range: Float,
+  damageid: Int,
+})
+const arcSchema = Object.entries({
+  id: Int,
+  velocity: Float,
+  range: Float,
+  unk4: Float,
+  unk5: Float,
+  chainangle: Float,
+  aimangle: Float,
+  unk8: Int,
+})
+const schemas = {
+  damage: damageSchema,
+  projectile: projectileSchema,
+  explosion: explosionSchema,
+  beam: beamSchema,
+  arc: arcSchema,
+}
+let attack = wpn.attack[0]
+if(targetIdx > 0) {
+  attack = wpn.attack[targetIdx]
+} else if(target) {
+  attack = wpn.attack.find(atk => atk.medium === target)
+}
+if(!attack) {
+  throw new Error(`No attack found: ${target || 'any'}/${targetIdx || 'any'}`)
+}
 
-const useschema = xMode ? xschema : schema
-const buf = Buffer.alloc(0x4c)
+let schema = schemas[target || 'damage']
+let medium = data[attack.medium][attack.ref]
+if(attack.medium !== 'damage' && !target) {
+  if(medium.damageref) {
+    medium = data.damage[medium.damageref]
+    if(!medium) {
+      throw new Error(`Damage not found: ${medium.damageref}`)
+    }
+  } else {
+    console.log(`Damage not found, defaulting to ${attack.medium} data`)
+    schema = schemas[attack.medium]
+  }
+} else if(attack.medium !== target && target === 'damage') {
+  medium = data.damage[medium.damageref]
+  if(!medium) {
+    throw new Error(`Damage not found: ${medium.damageref}`)
+  }
+} else if(attack.medium !== 'damage') {
+  schema = schemas[attack.medium]
+}
+if(!medium) {
+  throw new Error('Target not found')
+}
+
+const buf = Buffer.alloc(0x4 * schema.length)
 for(let i = 0; i < schema.length; i++) {
   const offset = i * 0x4
-  const [prop, cb] = useschema[i]
-  cb(buf, wpn[prop] || 0, offset)
+  const [prop, cb] = schema[i]
+  cb(buf, medium[prop] || 0, offset)
 }
+console.log(`Object: "${medium.enum}" (${target || 'damage'})`)
 const str = Array.from(buf).map(byte => byte.toString(16).padStart(2, '0')).join(' ')
 console.log(str)
 clipboard.writeSync(str)
