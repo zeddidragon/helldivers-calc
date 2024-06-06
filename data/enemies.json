@@ -1,1407 +1,2651 @@
 {
-    "Cannon Turret": [
-        {
-            "Total Health": 800
-        },
-        {
-            "Total Health": 750,
-            "Unk004": {
-                "Health": -1,
-                "Fatal": true,
-                "Armor": 6,
-                "Main %": 100,
-                "Durable %": 100
-            },
-            "Unk485": {
-                "Health": -1,
-                "Fatal": true,
-                "Armor": 3,
-                "Main %": 100,
-                "Durable %": 100
-            }
-        }
-    ],
-    "Tesla Tower": {
-        "Total Health": 600,
-        "Unk246": {
-            "Health": 600,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 0
-        }
+  "Cannon Turret": {
+    "main": {
+      "armor": 5,
+      "durable": 100
     },
-    "Bile Titan": {
-        "Total Health": 3500,
-        "Head": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk428": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk290": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk188": {
-            "Health": 1500,
-            "Fatal": true,
-            "BleedsOut": 1500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk525": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk920": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk979": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk904": {
-            "Health": 1500,
-            "Fatal": true,
-            "BleedsOut": 1500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk028": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk548": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk782": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk717": {
-            "Health": 1500,
-            "Fatal": true,
-            "BleedsOut": 1500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk593": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk536": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk760": {
-            "Health": 500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk674": {
-            "Health": 1500,
-            "Fatal": true,
-            "BleedsOut": 1500,
-            "Armor": 6,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk673": {
-            "Health": 750,
-            "Fatal": true,
-            "Armor": 5,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk650": {
-            "Health": 650,
-            "Armor": 5,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk125": {
-            "Health": 650,
-            "Armor": 5,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk425": {
-            "Health": 1250,
-            "Fatal": true,
-            "Armor": 5,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk362": {
-            "Health": 400,
-            "Armor": 5,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk414": {
-            "Health": 400,
-            "Armor": 5,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk308": {
-            "Health": -1,
-            "Armor": 4,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk164": {
-            "Health": -1,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk158": {
-            "Health": 500,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk256": {
-            "Health": 500,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 100
-        }
-    },
-    "Rocket Raider": {
-        "Total Health": 125,
-        "Unk673": {
-            "Health": 40,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk064": {
-            "Health": 100,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk362": {
-            "Health": 65,
-            "Armor": 0,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk414": {
-            "Health": 65,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk060": {
-            "Health": 90,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 65,
-            "Durable %": 0
-        },
-        "Unk997": {
-            "Health": 90,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 65,
-            "Durable %": 0
-        }
-    },
-    "Raider": {
-        "Total Health": 125,
-        "Unk673": {
-            "Health": 40,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk064": {
-            "Health": 100,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk362": {
-            "Health": 65,
-            "Armor": 0,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk414": {
-            "Health": 65,
-            "Armor": 0,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk060": {
-            "Health": 90,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 65,
-            "Durable %": 0
-        },
-        "Unk997": {
-            "Health": 90,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 65,
-            "Durable %": 0
-        }
-    },
-    "Fabricator": {
-        "Total Health": 1000,
-        "Unk264": {
-            "Health": 400,
-            "Fatal": true,
-            "Armor": 4,
-            "Main %": 100,
-            "Durable %": 100
-        }
-    },
-    "Commissar": {
-        "Total Health": 125,
-        "Unk673": {
-            "Health": 40,
-            "Fatal": true,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk064": {
-            "Health": 100,
-            "Fatal": true,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk362": {
-            "Health": 65,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk414": {
-            "Health": 65,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk060": {
-            "Health": 90,
-            "Fatal": true,
-            "Armor": 1,
-            "Main %": 65,
-            "Durable %": 0
-        },
-        "Unk997": {
-            "Health": 90,
-            "Fatal": true,
-            "Armor": 1,
-            "Main %": 65,
-            "Durable %": 0
-        }
-    },
-    "HMG Emplacement": {
-        "Total Health": 1000,
-        "Unk246": {
-            "Health": 1000,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 0
-        }
-    },
-    "Automaton Mortar Emplacement": {
-        "Total Health": 400,
-        "Unk252": {
-            "Health": 200,
-            "Armor": 4,
-            "Main %": 0,
-            "Durable %": 0
-        }
-    },
-    "Bile Spewer": {
-        "Total Health": 750,
-        "Unk806": {
-            "Health": 300,
-            "Fatal": true,
-            "Armor": 3,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk588": {
-            "Health": 300,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk823": {
-            "Health": 750,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 60,
-            "Durable %": 90
-        },
-        "Unk604": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 3,
-            "Main %": 30,
-            "Durable %": 80
-        },
-        "Unk397": {
-            "Health": 300,
-            "Armor": 3,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk519": {
-            "Health": 300,
-            "Armor": 3,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk758": {
-            "Health": 300,
-            "Armor": 2,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk724": {
-            "Health": 300,
-            "Armor": 2,
-            "Main %": 50,
-            "Durable %": 0
-        }
-    },
-    "Marauder": {
-        "Total Health": 125,
-        "Unk673": {
-            "Health": 40,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk064": {
-            "Health": 100,
-            "Fatal": true,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk362": {
-            "Health": 65,
-            "Armor": 0,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk414": {
-            "Health": 65,
-            "Armor": 0,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk060": {
-            "Health": 90,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 65,
-            "Durable %": 0
-        },
-        "Unk997": {
-            "Health": 90,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 65,
-            "Durable %": 0
-        }
-    },
-    "Automaton Dropship": {
-        "Total Health": 500
-    },
-    "EMS Mortar Sentry": {
-        "Total Health": 200,
-        "Unk246": {
-            "Health": 200,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 0
-        }
-    },
-    "Bile Warrior": {
-        "Total Health": 325,
-        "Unk386": {
-            "Health": 150,
-            "Fatal": true,
-            "BleedsOut": 200,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk742": {
-            "Health": 100,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk711": {
-            "Health": 100,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk747": {
-            "Health": 100,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk086": {
-            "Health": 100,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk100": {
-            "Health": 100,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk550": {
-            "Health": 100,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        }
-    },
-    "Stalker": {
-        "Total Health": 800,
-        "Unk048": {
-            "Health": -1,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 50
-        },
-        "Unk086": {
-            "Health": -1,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 50
-        },
-        "Unk747": {
-            "Health": -1,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 50
-        },
-        "Unk948": {
-            "Health": -1,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 50
-        },
-        "Unk100": {
-            "Health": -1,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 50
-        },
-        "Unk550": {
-            "Health": -1,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 50
-        },
-        "Unk890": {
-            "Health": -1,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 50
-        },
-        "Unk806": {
-            "Health": 175,
-            "Fatal": true,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk580": {
-            "Health": -1,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 50
-        },
-        "Unk249": {
-            "Health": 125,
-            "Armor": 0,
-            "Main %": 30,
-            "Durable %": 50
-        }
-    },
-    "Assault Raider": {
-        "Total Health": 125,
-        "Unk673": {
-            "Health": 40,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk064": {
-            "Health": 100,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk362": {
-            "Health": 65,
-            "Armor": 0,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk414": {
-            "Health": 65,
-            "Armor": 0,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk926": {
-            "Health": 100,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 65,
-            "Durable %": 0
-        },
-        "Unk997": {
-            "Health": 90,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 65,
-            "Durable %": 0
-        }
-    },
-    "Scavenger": {
-        "Total Health": 80,
-        "Unk985": [
-            {
-                "Health": 30,
-                "Fatal": true,
-                "Armor": 0,
-                "Main %": 30,
-                "Durable %": 0
-            },
-            {
-                "Health": 30,
-                "Fatal": true,
-                "Armor": 0,
-                "Main %": 30,
-                "Durable %": 0
-            }
-        ],
-        "Unk867": {
-            "Health": 30,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 30,
-            "Durable %": 0
-        },
-        "Unk386": {
-            "Health": 20,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        }
-    },
-    "Nursing Spewer": {
-        "Total Health": 750,
-        "Unk806": {
-            "Health": 300,
-            "Fatal": true,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk588": {
-            "Health": 300,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk823": {
-            "Health": 750,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 60,
-            "Durable %": 90
-        },
-        "Unk604": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 2,
-            "Main %": 30,
-            "Durable %": 80
-        },
-        "Unk397": {
-            "Health": 300,
-            "Armor": 2,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk519": {
-            "Health": 300,
-            "Armor": 2,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk758": {
-            "Health": 300,
-            "Armor": 2,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk724": {
-            "Health": 300,
-            "Armor": 2,
-            "Main %": 50,
-            "Durable %": 0
-        }
-    },
-    "Emancipator Exosuit": {
-        "Total Health": 600,
-        "Unk609": {
-            "Health": 450,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk236": {
-            "Health": 450,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk877": {
-            "Health": 450,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 100
-        },
-        "Unk920": {
-            "Health": 450,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 85
-        },
-        "Unk060": {
-            "Health": 250,
-            "BleedsOut": 250,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 85
-        },
-        "Unk997": {
-            "Health": 250,
-            "BleedsOut": 250,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 85
-        },
-        "Unk022": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk897": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk385": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk586": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk924": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk249": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk945": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk818": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk925": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk680": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk168": {
-            "Health": 20,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk410": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk009": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk001": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk110": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk593": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk633": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk020": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk692": [
-            {
-                "Health": 10,
-                "Armor": 0,
-                "Main %": 0,
-                "Durable %": 0
-            },
-            {
-                "Health": 10,
-                "Armor": 0,
-                "Main %": 0,
-                "Durable %": 0
-            }
-        ],
-        "Unk455": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk123": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk335": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk764": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk345": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk795": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk080": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk519": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk643": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk508": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        },
-        "Unk111": {
-            "Health": 10,
-            "Armor": 0,
-            "Main %": 0,
-            "Durable %": 0
-        }
-    },
-    "Trooper": [
-        {
-            "Total Health": 125,
-            "Unk673": {
-                "Health": 40,
-                "Fatal": true,
-                "Armor": 0,
-                "Main %": 100,
-                "Durable %": 0
-            },
-            "Unk064": {
-                "Health": 100,
-                "Fatal": true,
-                "Armor": 0,
-                "Main %": 100,
-                "Durable %": 0
-            },
-            "Unk362": {
-                "Health": 65,
-                "Armor": 0,
-                "Main %": 50,
-                "Durable %": 0
-            },
-            "Unk414": {
-                "Health": 65,
-                "Armor": 0,
-                "Main %": 50,
-                "Durable %": 0
-            },
-            "Unk060": {
-                "Health": 90,
-                "Fatal": true,
-                "Armor": 0,
-                "Main %": 65,
-                "Durable %": 0
-            },
-            "Unk997": {
-                "Health": 90,
-                "Fatal": true,
-                "Armor": 0,
-                "Main %": 65,
-                "Durable %": 0
-            }
-        },
-        {
-            "Total Health": 125,
-            "Unk673": {
-                "Health": 40,
-                "Fatal": true,
-                "Armor": 0,
-                "Main %": 100,
-                "Durable %": 0
-            },
-            "Unk064": {
-                "Health": 100,
-                "Fatal": true,
-                "Armor": 0,
-                "Main %": 100,
-                "Durable %": 0
-            },
-            "Unk362": {
-                "Health": 65,
-                "Armor": 0,
-                "Main %": 50,
-                "Durable %": 0
-            },
-            "Unk414": {
-                "Health": 65,
-                "Armor": 0,
-                "Main %": 50,
-                "Durable %": 0
-            },
-            "Unk060": {
-                "Health": 90,
-                "Fatal": true,
-                "Armor": 0,
-                "Main %": 65,
-                "Durable %": 0
-            },
-            "Unk997": {
-                "Health": 90,
-                "Fatal": true,
-                "Armor": 0,
-                "Main %": 65,
-                "Durable %": 0
-            }
-        }
-    ],
-    "Chemical Backpack": {
-        "Total Health": 750
-    },
-    "Charger Behemoth": {
-        "Total Health": 1650,
-        "Unk673": {
-            "Health": 600,
-            "Fatal": true,
-            "Armor": 5,
-            "Main %": 70,
-            "Durable %": 75
-        },
-        "Butt": {
-            "Health": 1100,
-            "Armor": 0,
-            "Main %": 60,
-            "Durable %": 85
-        },
-        "Unk742": {
-            "Health": 650,
-            "Fatal": true,
-            "Armor": 5,
-            "Main %": 75,
-            "Durable %": 75
-        },
-        "Unk410": {
-            "Health": -1,
-            "Fatal": true,
-            "Armor": 4,
-            "Main %": 100,
-            "Durable %": 80
-        },
-        "Unk773": {
-            "Health": -1,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 50
-        },
-        "Unk777": {
-            "Health": 250,
-            "Armor": 5,
-            "Main %": 100,
-            "Durable %": 85
-        },
-        "Unk133": {
-            "Health": 250,
-            "Armor": 5,
-            "Main %": 100,
-            "Durable %": 85
-        },
-        "Unk350": {
-            "Health": 500,
-            "Armor": 5,
-            "Main %": 35,
-            "Durable %": 70
-        },
-        "Unk436": {
-            "Health": 500,
-            "Armor": 5,
-            "Main %": 35,
-            "Durable %": 70
-        },
-        "Unk600": {
-            "Health": 500,
-            "Armor": 5,
-            "Main %": 35,
-            "Durable %": 70
-        },
-        "Unk619": {
-            "Health": 500,
-            "Armor": 5,
-            "Main %": 35,
-            "Durable %": 70
-        },
-        "Unk310": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 30,
-            "Durable %": 70
-        },
-        "Unk267": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 30,
-            "Durable %": 70
-        },
-        "Unk001": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 30,
-            "Durable %": 70
-        },
-        "Unk956": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 0,
-            "Main %": 30,
-            "Durable %": 70
-        },
-        "Unk746": {
-            "Health": 500,
-            "Armor": 5,
-            "Main %": 35,
-            "Durable %": 70
-        },
-        "Unk457": {
-            "Health": 500,
-            "Armor": 5,
-            "Main %": 35,
-            "Durable %": 70
-        }
-    },
-    "Ballistic Missile": {
-        "Total Health": 750
-    },
-    "Hulk Bruiser": {
-        "Total Health": 1250,
-        "Unk362": {
-            "Health": 500,
-            "Armor": 4,
-            "Main %": 30,
-            "Durable %": 70
-        },
-        "Unk414": {
-            "Health": 500,
-            "Armor": 4,
-            "Main %": 30,
-            "Durable %": 70
-        },
-        "Unk071": {
-            "Health": 600,
-            "BleedsOut": 600,
-            "Armor": 4,
-            "Main %": 30,
-            "Durable %": 80
-        },
-        "Unk985": {
-            "Health": 600,
-            "BleedsOut": 600,
-            "Armor": 4,
-            "Main %": 30,
-            "Durable %": 80
-        },
-        "Unk673": {
-            "Health": 250,
-            "Fatal": true,
-            "Armor": 4,
-            "Main %": 100,
-            "Durable %": 25
-        },
-        "Unk718": {
-            "Health": 1000,
-            "Fatal": true,
-            "BleedsOut": 650,
-            "Armor": 1,
-            "Main %": 80,
-            "Durable %": 40
-        }
-    },
-    "Heavy Devastator": {
-        "Total Health": 800,
-        "Unk673": {
-            "Health": 125,
-            "Fatal": true,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk064": {
-            "Health": 425,
-            "Fatal": true,
-            "Armor": 3,
-            "Main %": 100,
-            "Durable %": 40
-        },
-        "Unk451": {
-            "Health": 350,
-            "Fatal": true,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk306": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 2,
-            "Main %": 75,
-            "Durable %": 0
-        },
-        "Unk531": {
-            "Health": 150,
-            "Armor": 2,
-            "Main %": 25,
-            "Durable %": 0
-        },
-        "Unk145": {
-            "Health": 150,
-            "Armor": 2,
-            "Main %": 25,
-            "Durable %": 0
-        },
-        "Unk414": {
-            "Health": 300,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk362": {
-            "Health": 300,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk860": [
-            {
-                "Health": 500,
-                "Fatal": true,
-                "Armor": 1,
-                "Main %": 75,
-                "Durable %": 0
-            },
-            {
-                "Health": 500,
-                "Fatal": true,
-                "Armor": 1,
-                "Main %": 75,
-                "Durable %": 0
-            }
-        ],
-        "Unk985": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 2,
-            "Main %": 60,
-            "Durable %": 0
-        },
-        "Unk071": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 2,
-            "Main %": 60,
-            "Durable %": 0
-        },
-        "Unk926": {
-            "Health": 600,
-            "Fatal": true,
-            "Armor": 2,
-            "Main %": 40,
-            "Durable %": 0
-        }
-    },
-    "Rocket Devastator": {
-        "Total Health": 800,
-        "Unk673": {
-            "Health": 125,
-            "Fatal": true,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk064": {
-            "Health": 425,
-            "Fatal": true,
-            "Armor": 3,
-            "Main %": 100,
-            "Durable %": 40
-        },
-        "Unk451": {
-            "Health": 350,
-            "Fatal": true,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 0
-        },
-        "Unk306": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 2,
-            "Main %": 75,
-            "Durable %": 0
-        },
-        "Unk531": {
-            "Health": 150,
-            "Armor": 2,
-            "Main %": 25,
-            "Durable %": 0
-        },
-        "Unk145": {
-            "Health": 150,
-            "Armor": 2,
-            "Main %": 25,
-            "Durable %": 0
-        },
-        "Unk414": {
-            "Health": 300,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk362": {
-            "Health": 300,
-            "Armor": 1,
-            "Main %": 50,
-            "Durable %": 0
-        },
-        "Unk860": [
-            {
-                "Health": 500,
-                "Fatal": true,
-                "Armor": 1,
-                "Main %": 75,
-                "Durable %": 0
-            },
-            {
-                "Health": 500,
-                "Fatal": true,
-                "Armor": 1,
-                "Main %": 75,
-                "Durable %": 0
-            }
-        ],
-        "Unk985": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 2,
-            "Main %": 60,
-            "Durable %": 0
-        },
-        "Unk071": {
-            "Health": 500,
-            "Fatal": true,
-            "Armor": 2,
-            "Main %": 60,
-            "Durable %": 0
-        },
-        "Unk293": {
-            "Health": 300,
-            "Armor": 1,
-            "Main %": 30,
-            "Durable %": 100
-        },
-        "Unk302": {
-            "Health": 200,
-            "Armor": 0,
-            "Main %": 100,
-            "Durable %": 0
-        }
-    },
-    "Gatling Sentry": {
-        "Total Health": 200,
-        "Unk246": {
-            "Health": 200,
-            "Armor": 2,
-            "Main %": 100,
-            "Durable %": 0
-        }
-    },
-    "Factory Strider": [
-        {
-            "Total Health": 300
-        },
-        {
-            "Total Health": 300
-        }
-    ],
-    "Shield Generator Relay": {
-        "Total Health": 450,
-        "Unk246": {
-            "Health": 450,
-            "Armor": 1,
-            "Main %": 100,
-            "Durable %": 0
-        }
+    "unk3082785318": {
+      "health": 1,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
     }
+  },
+  "Tesla Tower": {
+    "main": {
+      "armor": 1
+    },
+    "body_front": {
+      "health": 600,
+      "armor": 1,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "Bile Titan": {
+    "main": {
+      "armor": 5,
+      "durable": 100
+    },
+    "left_front_leg_armor": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk677146428": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk1835607290": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk1284930188": {
+      "health": 1500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true
+    },
+    "right_front_leg_armor": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk3684288920": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk955870979": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk3565749904": {
+      "health": 1500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true
+    },
+    "left_back_leg_armor": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk1740200548": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk3598446782": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk285809717": {
+      "health": 1500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true
+    },
+    "right_back_leg_armor": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk3442687536": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk1456971760": {
+      "health": 500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk1227472674": {
+      "health": 1500,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true
+    },
+    "head": {
+      "health": 750,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true
+    },
+    "torso_left": {
+      "health": 650,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "torso_right": {
+      "health": 650,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "butt_lower": {
+      "health": 1250,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true
+    },
+    "left_arm": {
+      "health": 400,
+      "armor": 5,
+      "bleedthrough": 100
+    },
+    "right_arm": {
+      "health": 400,
+      "armor": 5,
+      "bleedthrough": 100
+    },
+    "inner_body": {
+      "health": 1,
+      "armor": 4,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "inner_torso": {
+      "health": 1,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk1451892158": {
+      "health": 500,
+      "durable": 100,
+      "bleedthrough": 100
+    },
+    "unk21467256": {
+      "health": 500,
+      "durable": 100,
+      "bleedthrough": 100
+    }
+  },
+  "Rocket Raider": {
+    "main": {},
+    "head": {
+      "health": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "leg_right": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Raider": {
+    "main": {},
+    "head": {
+      "health": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "leg_right": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Fabricator": {
+    "main": {
+      "armor": 20,
+      "durable": 100
+    },
+    "insides": {
+      "health": 400,
+      "armor": 4,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true
+    }
+  },
+  "Commissar": {
+    "main": {
+      "armor": 1
+    },
+    "head": {
+      "health": 40,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 100,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_arm": {
+      "health": 65,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 65,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "leg_right": {
+      "health": 90,
+      "armor": 1,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 90,
+      "armor": 1,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "HMG Emplacement": {
+    "main": {
+      "armor": 2
+    },
+    "body_front": {
+      "health": 1000,
+      "armor": 2,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "Automaton Mortar Emplacement": {
+    "main": {
+      "armor": 4,
+      "durable": 100
+    },
+    "battery": {
+      "health": 200,
+      "armor": 4,
+      "explosion_immune": true
+    }
+  },
+  "Bile Spewer": {
+    "main": {
+      "armor": 2,
+      "durable": 40
+    },
+    "hitzone_head": {
+      "health": 300,
+      "armor": 2,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_mouth": {
+      "health": 300,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_butt": {
+      "health": 750,
+      "durable": 90,
+      "bleedthrough": 60,
+      "fatal": true
+    },
+    "hitzone_butt_plates": {
+      "health": 500,
+      "armor": 2,
+      "durable": 80,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "hitzone_frontleg_right": {
+      "health": 300,
+      "armor": 2,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_frontleg_left": {
+      "health": 300,
+      "armor": 2,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_backleg_right": {
+      "health": 300,
+      "armor": 2,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_backleg_left": {
+      "health": 300,
+      "armor": 2,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    }
+  },
+  "Marauder": {
+    "main": {},
+    "head": {
+      "health": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 100,
+      "armor": 2,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "leg_right": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Automaton Dropship": {
+    "main": {
+      "armor": 4,
+      "durable": 100
+    }
+  },
+  "EMS Mortar Sentry": {
+    "main": {
+      "armor": 2
+    },
+    "body_front": {
+      "health": 200,
+      "armor": 2,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "Bile Warrior": {
+    "main": {
+      "armor": 1
+    },
+    "face": {
+      "health": 150,
+      "armor": 1,
+      "bleedthrough": 50,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_l_rear_leg": {
+      "health": 100,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_r_rear_leg": {
+      "health": 100,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_r_front_leg": {
+      "health": 100,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_l_front_leg": {
+      "health": 100,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "r_claw": {
+      "health": 100,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "l_claw": {
+      "health": 100,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    }
+  },
+  "Stalker": {
+    "main": {
+      "armor": 1,
+      "durable": 50
+    },
+    "hitzone_l_back_leg": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hitzone_l_front_leg": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hitzone_r_front_leg": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hitzone_r_back_leg": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "r_claw": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "l_claw": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hitzone_body_armor": {
+      "health": 1,
+      "armor": 2,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hitzone_head": {
+      "health": 175,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "unk1741219580": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "wings": {
+      "health": 125,
+      "durable": 50,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    }
+  },
+  "Explosive Barrel": {
+    "main": {
+      "armor": 1
+    },
+    "damagezone_front": {
+      "health": 10,
+      "armor": 2,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "Brawler": {
+    "main": {},
+    "left_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "leg_right": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Prowler": {
+    "main": {
+      "armor": 1,
+      "durable": 50
+    },
+    "hitzone_l_back_leg": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hitzone_l_front_leg": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hitzone_r_front_leg": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hitzone_r_back_leg": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "r_claw": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "l_claw": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hitzone_body_armor": {
+      "health": 1,
+      "armor": 2,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hitzone_head": {
+      "health": 175,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "unk1741219580": {
+      "health": 1,
+      "armor": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "wings": {
+      "health": 125,
+      "durable": 50,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    }
+  },
+  "Assault Raider": {
+    "main": {},
+    "head": {
+      "health": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "backpack": {
+      "health": 100,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Scavenger": {
+    "main": {},
+    "hitzone_limbs_right": {
+      "health": 30,
+      "bleedthrough": 30,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_limbs_left": {
+      "health": 30,
+      "bleedthrough": 30,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "face": {
+      "health": 20,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Nursing Spewer": {
+    "main": {
+      "armor": 2,
+      "durable": 40
+    },
+    "hitzone_head": {
+      "health": 300,
+      "armor": 2,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_mouth": {
+      "health": 300,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_butt": {
+      "health": 750,
+      "durable": 90,
+      "bleedthrough": 60,
+      "fatal": true
+    },
+    "hitzone_butt_plates": {
+      "health": 500,
+      "armor": 2,
+      "durable": 80,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "hitzone_frontleg_right": {
+      "health": 300,
+      "armor": 2,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_frontleg_left": {
+      "health": 300,
+      "armor": 2,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_backleg_right": {
+      "health": 300,
+      "armor": 2,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_backleg_left": {
+      "health": 300,
+      "armor": 2,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    }
+  },
+  "Emancipator Exosuit": {
+    "main": {
+      "armor": 3,
+      "durable": 100
+    },
+    "cockpit_front_left": {
+      "health": 450,
+      "armor": 2,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "cockpit_front_right": {
+      "health": 450,
+      "armor": 2,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "cockpit_rear": {
+      "health": 450,
+      "armor": 2,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hips": {
+      "health": 450,
+      "armor": 2,
+      "durable": 85,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "leg_right": {
+      "health": 250,
+      "armor": 2,
+      "durable": 85,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 250,
+      "armor": 2,
+      "durable": 85,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "light_right_front": {
+      "health": 10
+    },
+    "light_left_front": {
+      "health": 10
+    },
+    "light_back_left_01": {
+      "health": 10
+    },
+    "light_back_left_02": {
+      "health": 10
+    },
+    "light_back_right_01": {
+      "health": 10
+    },
+    "light_back_right_02": {
+      "health": 10
+    },
+    "camera_computer_left": {
+      "health": 10
+    },
+    "camera_computer_right": {
+      "health": 10
+    },
+    "gas_tank_right": {
+      "health": 10
+    },
+    "gas_tank_left": {
+      "health": 10
+    },
+    "kneecap_left": {
+      "health": 20
+    },
+    "kneecap_right": {
+      "health": 10
+    },
+    "handle_right": {
+      "health": 10
+    },
+    "handle_left": {
+      "health": 10
+    },
+    "unk835134110": {
+      "health": 10
+    },
+    "unk1267367593": {
+      "health": 10
+    },
+    "capjoint_right_01": {
+      "health": 10
+    },
+    "capjoint_right_02": {
+      "health": 10
+    },
+    "capjoint_left_01": {
+      "health": 10
+    },
+    "capjoint_left_02": {
+      "health": 10
+    },
+    "extrafootpad_right": {
+      "health": 10
+    },
+    "extrafootpad_left": {
+      "health": 10
+    },
+    "backlegplate_right": {
+      "health": 10
+    },
+    "backlegplate_left": {
+      "health": 10
+    },
+    "kneecover_right": {
+      "health": 10
+    },
+    "kneecover_left": {
+      "health": 10
+    },
+    "front_handle": {
+      "health": 10
+    },
+    "unk4101545643": {
+      "health": 10
+    },
+    "windshield": {
+      "health": 10
+    },
+    "towcable_left": {
+      "health": 10
+    },
+    "towcable_right": {
+      "health": 10
+    }
+  },
+  "Trooper": {
+    "main": {},
+    "head": {
+      "health": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_arm": {
+      "health": 50,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 50,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "leg_right": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Chemical Backpack": {
+    "main": {
+      "armor": 1,
+      "durable": 100
+    }
+  },
+  "Charger Behemoth": {
+    "main": {
+      "armor": 5,
+      "durable": 100
+    },
+    "head": {
+      "health": 600,
+      "armor": 5,
+      "durable": 75,
+      "bleedthrough": 70,
+      "fatal": true
+    },
+    "body_rear": {
+      "health": 1100,
+      "durable": 85,
+      "bleedthrough": 60
+    },
+    "rear_armor_plates": {
+      "health": 650,
+      "armor": 5,
+      "durable": 75,
+      "bleedthrough": 75,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "unk3882006410": {
+      "health": 1,
+      "armor": 4,
+      "durable": 80,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "torso_inside": {
+      "health": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_side_armor": {
+      "health": 250,
+      "armor": 5,
+      "durable": 85,
+      "bleedthrough": 100
+    },
+    "right_side_armor": {
+      "health": 250,
+      "armor": 5,
+      "durable": 85,
+      "bleedthrough": 100
+    },
+    "l_back_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "r_back_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "l_middle_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "r_middle_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "unk247955310": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "unk4141184267": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "unk1081134001": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "unk2915752956": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "l_front_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35,
+      "explosion_immune": true
+    },
+    "r_front_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35,
+      "explosion_immune": true
+    }
+  },
+  "Ballistic Missile": {
+    "main": {
+      "armor": 3,
+      "durable": 100
+    }
+  },
+  "Hulk Bruiser": {
+    "main": {
+      "armor": 5,
+      "durable": 60
+    },
+    "left_arm": {
+      "health": 500,
+      "armor": 4,
+      "durable": 70,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 500,
+      "armor": 4,
+      "durable": 70,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    },
+    "left_leg": {
+      "health": 600,
+      "armor": 4,
+      "durable": 80,
+      "bleedthrough": 30
+    },
+    "right_leg": {
+      "health": 600,
+      "armor": 4,
+      "durable": 80,
+      "bleedthrough": 30
+    },
+    "head": {
+      "health": 250,
+      "armor": 4,
+      "durable": 25,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "c_back_weakspot": {
+      "health": 1000,
+      "armor": 1,
+      "durable": 40,
+      "bleedthrough": 80,
+      "fatal": true
+    }
+  },
+  "Heavy Devastator": {
+    "main": {
+      "armor": 2
+    },
+    "head": {
+      "health": 125,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 425,
+      "armor": 3,
+      "durable": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "boss": {
+      "health": 350,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "pelvis": {
+      "health": 500,
+      "armor": 2,
+      "bleedthrough": 75,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "shoulderplate_left": {
+      "health": 150,
+      "armor": 2,
+      "bleedthrough": 25,
+      "explosion_immune": true
+    },
+    "shoulderplate_right": {
+      "health": 150,
+      "armor": 2,
+      "bleedthrough": 25,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 300,
+      "armor": 1,
+      "bleedthrough": 50
+    },
+    "left_arm": {
+      "health": 300,
+      "armor": 1,
+      "bleedthrough": 50
+    },
+    "right_hip": {
+      "health": 500,
+      "armor": 1,
+      "bleedthrough": 75,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "right_leg": {
+      "health": 500,
+      "armor": 2,
+      "bleedthrough": 60,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_leg": {
+      "health": 500,
+      "armor": 2,
+      "bleedthrough": 60,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "backpack": {
+      "health": 600,
+      "armor": 2,
+      "bleedthrough": 40,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Rocket Devastator": {
+    "main": {
+      "armor": 2
+    },
+    "head": {
+      "health": 125,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 425,
+      "armor": 3,
+      "durable": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "boss": {
+      "health": 350,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "pelvis": {
+      "health": 500,
+      "armor": 2,
+      "bleedthrough": 75,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "shoulderplate_left": {
+      "health": 150,
+      "armor": 2,
+      "bleedthrough": 25,
+      "explosion_immune": true
+    },
+    "shoulderplate_right": {
+      "health": 150,
+      "armor": 2,
+      "bleedthrough": 25,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 300,
+      "armor": 1,
+      "bleedthrough": 50
+    },
+    "left_arm": {
+      "health": 300,
+      "armor": 1,
+      "bleedthrough": 50
+    },
+    "right_hip": {
+      "health": 500,
+      "armor": 1,
+      "bleedthrough": 75,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "right_leg": {
+      "health": 500,
+      "armor": 2,
+      "bleedthrough": 60,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_leg": {
+      "health": 500,
+      "armor": 2,
+      "bleedthrough": 60,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "rocket_pods": {
+      "health": 300,
+      "armor": 1,
+      "durable": 100,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    },
+    "breach_gunner_mid": {
+      "health": 200,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "BACKPACK": {
+    "main": {
+      "armor": 4
+    }
+  },
+  "Hulk Scorcher": {
+    "main": {
+      "armor": 5,
+      "durable": 60
+    },
+    "left_arm": {
+      "health": 500,
+      "armor": 4,
+      "durable": 70,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 500,
+      "armor": 4,
+      "durable": 70,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    },
+    "left_leg": {
+      "health": 600,
+      "armor": 4,
+      "durable": 80,
+      "bleedthrough": 30
+    },
+    "right_leg": {
+      "health": 600,
+      "armor": 4,
+      "durable": 80,
+      "bleedthrough": 30
+    },
+    "head": {
+      "health": 250,
+      "armor": 4,
+      "durable": 25,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "c_back_weakspot": {
+      "health": 1000,
+      "armor": 1,
+      "durable": 40,
+      "bleedthrough": 80,
+      "fatal": true
+    }
+  },
+  "Heavy Fusion Repeater": {
+    "main": {
+      "armor": 3,
+      "durable": 100
+    }
+  },
+  "Bile Charger": {
+    "main": {
+      "armor": 5,
+      "durable": 100
+    },
+    "head": {
+      "health": 600,
+      "armor": 5,
+      "durable": 75,
+      "bleedthrough": 70,
+      "fatal": true
+    },
+    "body_rear": {
+      "health": 1100,
+      "durable": 85,
+      "bleedthrough": 60
+    },
+    "rear_armor_plates": {
+      "health": 650,
+      "armor": 5,
+      "durable": 75,
+      "bleedthrough": 75,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "unk3882006410": {
+      "health": 1,
+      "armor": 4,
+      "durable": 80,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "torso_inside": {
+      "health": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_side_armor": {
+      "health": 250,
+      "armor": 5,
+      "durable": 85,
+      "bleedthrough": 100
+    },
+    "right_side_armor": {
+      "health": 250,
+      "armor": 5,
+      "durable": 85,
+      "bleedthrough": 100
+    },
+    "l_back_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "r_back_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "l_middle_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "r_middle_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "unk247955310": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "unk4141184267": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "unk1081134001": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "unk2915752956": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "l_front_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35,
+      "explosion_immune": true
+    },
+    "r_front_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35,
+      "explosion_immune": true
+    }
+  },
+  "Warrior": {
+    "main": {
+      "armor": 1
+    },
+    "face": {
+      "health": 110,
+      "armor": 1,
+      "bleedthrough": 50,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_l_rear_leg": {
+      "health": 75,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_r_rear_leg": {
+      "health": 75,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_r_front_leg": {
+      "health": 75,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_l_front_leg": {
+      "health": 75,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "r_claw": {
+      "health": 75,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "l_claw": {
+      "health": 75,
+      "armor": 1,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    }
+  },
+  "Scout Raider": {
+    "main": {},
+    "head": {
+      "health": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "backpack": {
+      "health": 100,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Hunter": {
+    "main": {},
+    "hitzone_face": {
+      "health": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_l_front_leg": {
+      "health": 45,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_r_front_leg": {
+      "health": 45,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_l_rear_leg": {
+      "health": 45,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_r_rear_leg": {
+      "health": 45,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "hitzone_l_claw": {
+      "health": 45,
+      "bleedthrough": 40,
+      "explosion_immune": true
+    },
+    "hitzone_r_claw": {
+      "health": 45,
+      "bleedthrough": 40,
+      "explosion_immune": true
+    },
+    "hitzone_r_wing": {
+      "health": 20,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    },
+    "hitzone_l_wing": {
+      "health": 20,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    }
+  },
+  "Mortar Sentry": {
+    "main": {
+      "armor": 2
+    },
+    "body_front": {
+      "health": 200,
+      "armor": 2,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "Gatling Sentry": {
+    "main": {
+      "armor": 4
+    },
+    "body_front": {
+      "health": 2000,
+      "armor": 4,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "Factory Strider": {
+    "main": {
+      "armor": 3,
+      "durable": 100
+    }
+  },
+  "Shield Generator Relay": {
+    "main": {
+      "armor": 1
+    },
+    "body_front": {
+      "health": 450,
+      "armor": 1,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "Brood Commander": {
+    "main": {
+      "armor": 2,
+      "durable": 60
+    },
+    "face": {
+      "health": 200,
+      "armor": 2,
+      "durable": 60,
+      "bleedthrough": 50,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_l_rear_leg": {
+      "health": 170,
+      "armor": 1,
+      "durable": 40,
+      "bleedthrough": 60,
+      "explosion_immune": true
+    },
+    "hitzone_r_rear_leg": {
+      "health": 170,
+      "armor": 1,
+      "durable": 40,
+      "bleedthrough": 60,
+      "explosion_immune": true
+    },
+    "hitzone_r_front_leg": {
+      "health": 170,
+      "armor": 1,
+      "durable": 40,
+      "bleedthrough": 60,
+      "explosion_immune": true
+    },
+    "hitzone_l_front_leg": {
+      "health": 170,
+      "armor": 1,
+      "durable": 40,
+      "bleedthrough": 60,
+      "explosion_immune": true
+    },
+    "r_claw": {
+      "health": 200,
+      "armor": 2,
+      "durable": 50,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "l_claw": {
+      "health": 200,
+      "armor": 2,
+      "durable": 50,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    }
+  },
+  "Patriot Exosuit": {
+    "main": {
+      "armor": 3,
+      "durable": 100
+    },
+    "cockpit_front_left": {
+      "health": 450,
+      "armor": 2,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "cockpit_front_right": {
+      "health": 450,
+      "armor": 2,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "cockpit_rear": {
+      "health": 450,
+      "armor": 2,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "hips": {
+      "health": 450,
+      "armor": 2,
+      "durable": 85,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "leg_right": {
+      "health": 250,
+      "armor": 2,
+      "durable": 85,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 250,
+      "armor": 2,
+      "durable": 85,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "light_right_front": {
+      "health": 10
+    },
+    "light_left_front": {
+      "health": 10
+    },
+    "light_back_left_01": {
+      "health": 10
+    },
+    "light_back_left_02": {
+      "health": 10
+    },
+    "light_back_right_01": {
+      "health": 10
+    },
+    "light_back_right_02": {
+      "health": 10
+    },
+    "camera_computer_left": {
+      "health": 10
+    },
+    "camera_computer_right": {
+      "health": 10
+    },
+    "gas_tank_right": {
+      "health": 10
+    },
+    "gas_tank_left": {
+      "health": 10
+    },
+    "kneecap_left": {
+      "health": 20
+    },
+    "kneecap_right": {
+      "health": 10
+    },
+    "handle_right": {
+      "health": 10
+    },
+    "handle_left": {
+      "health": 10
+    },
+    "unk835134110": {
+      "health": 10
+    },
+    "unk1267367593": {
+      "health": 10
+    },
+    "capjoint_right_01": {
+      "health": 10
+    },
+    "capjoint_right_02": {
+      "health": 10
+    },
+    "capjoint_left_01": {
+      "health": 10
+    },
+    "capjoint_left_02": {
+      "health": 10
+    },
+    "extrafootpad_right": {
+      "health": 10
+    },
+    "extrafootpad_left": {
+      "health": 10
+    },
+    "backlegplate_right": {
+      "health": 10
+    },
+    "backlegplate_left": {
+      "health": 10
+    },
+    "kneecover_right": {
+      "health": 10
+    },
+    "kneecover_left": {
+      "health": 10
+    },
+    "front_handle": {
+      "health": 10
+    },
+    "unk4101545643": {
+      "health": 10
+    },
+    "windshield": {
+      "health": 10
+    },
+    "towcable_left": {
+      "health": 10
+    },
+    "towcable_right": {
+      "health": 10
+    }
+  },
+  "Annihilator Tank": {
+    "main": {
+      "armor": 5,
+      "durable": 100
+    },
+    "damagezone_front": {
+      "health": 1,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "damagezone_right": {
+      "health": 1,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "damagezone_left": {
+      "health": 1,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "damagezone_back": {
+      "health": 1,
+      "armor": 3,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "right_tracks": {
+      "health": 750,
+      "armor": 3,
+      "durable": 100,
+      "explosion_immune": true
+    },
+    "left_tracks": {
+      "health": 750,
+      "armor": 3,
+      "durable": 100,
+      "explosion_immune": true
+    }
+  },
+  "Gunship": {
+    "main": {
+      "armor": 3
+    },
+    "body": {
+      "health": 1,
+      "armor": 4,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "front_left_thruster": {
+      "health": 400,
+      "armor": 3,
+      "durable": 100
+    },
+    "front_right_thruster": {
+      "health": 400,
+      "armor": 3,
+      "durable": 100
+    },
+    "back_right_thruster": {
+      "health": 400,
+      "armor": 3,
+      "durable": 100
+    },
+    "back_left_thruster": {
+      "health": 400,
+      "armor": 3,
+      "durable": 100
+    }
+  },
+  "Fusion Autocannon": {
+    "main": {
+      "armor": 5,
+      "durable": 100
+    },
+    "front": {
+      "health": 1,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "back": {
+      "health": 1,
+      "armor": 3,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true
+    }
+  },
+  "Anti-Personnel Minefield": {
+    "main": {
+      "armor": 1
+    }
+  },
+  "Ballistic Shield Backpack": {
+    "main": {
+      "armor": 4
+    }
+  },
+  "Dropship": {
+    "main": {
+      "armor": 5,
+      "durable": 100
+    },
+    "body": {
+      "health": 1,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "back_body": {
+      "health": 1,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "front_left_thruster": {
+      "health": 500,
+      "armor": 5,
+      "durable": 100,
+      "explosion_immune": true
+    },
+    "front_right_thruster": {
+      "health": 500,
+      "armor": 5,
+      "durable": 100,
+      "explosion_immune": true
+    },
+    "rear_left_thruster": {
+      "health": 500,
+      "armor": 5,
+      "durable": 100,
+      "explosion_immune": true
+    },
+    "rear_right_thruster": {
+      "health": 500,
+      "armor": 5,
+      "durable": 100,
+      "explosion_immune": true
+    }
+  },
+  "Shrieker": {
+    "main": {},
+    "hitzone_limbs": {
+      "health": 30,
+      "bleedthrough": 40,
+      "explosion_immune": true
+    },
+    "hitzone_face": {
+      "health": 20,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_wings_r": {
+      "health": 20,
+      "durable": 100,
+      "bleedthrough": 30,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_wings_l": {
+      "health": 20,
+      "durable": 100,
+      "bleedthrough": 30,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Charger": {
+    "main": {
+      "armor": 5,
+      "durable": 100
+    },
+    "head": {
+      "health": 600,
+      "armor": 5,
+      "durable": 75,
+      "bleedthrough": 70,
+      "fatal": true
+    },
+    "body_rear": {
+      "health": 1100,
+      "durable": 85,
+      "bleedthrough": 60
+    },
+    "rear_armor_plates": {
+      "health": 650,
+      "armor": 5,
+      "durable": 75,
+      "bleedthrough": 75,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "unk3882006410": {
+      "health": 1,
+      "armor": 4,
+      "durable": 80,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "torso_inside": {
+      "health": 1,
+      "durable": 50,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_side_armor": {
+      "health": 250,
+      "armor": 5,
+      "durable": 85,
+      "bleedthrough": 100
+    },
+    "right_side_armor": {
+      "health": 250,
+      "armor": 5,
+      "durable": 85,
+      "bleedthrough": 100
+    },
+    "l_back_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "r_back_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "l_middle_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "r_middle_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35
+    },
+    "unk247955310": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "unk4141184267": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "unk1081134001": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "unk2915752956": {
+      "health": 500,
+      "durable": 70,
+      "bleedthrough": 30,
+      "fatal": true
+    },
+    "l_front_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35,
+      "explosion_immune": true
+    },
+    "r_front_leg": {
+      "health": 500,
+      "armor": 5,
+      "durable": 70,
+      "bleedthrough": 35,
+      "explosion_immune": true
+    }
+  },
+  "Larva Container": {
+    "main": {
+      "durable": 100
+    }
+  },
+  "Devastator": {
+    "main": {
+      "armor": 2
+    },
+    "head": {
+      "health": 125,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 425,
+      "armor": 3,
+      "durable": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "boss": {
+      "health": 350,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "pelvis": {
+      "health": 500,
+      "armor": 2,
+      "bleedthrough": 75,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "shoulderplate_left": {
+      "health": 150,
+      "armor": 2,
+      "bleedthrough": 25,
+      "explosion_immune": true
+    },
+    "shoulderplate_right": {
+      "health": 150,
+      "armor": 2,
+      "bleedthrough": 25,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 300,
+      "armor": 1,
+      "bleedthrough": 50
+    },
+    "left_arm": {
+      "health": 300,
+      "armor": 1,
+      "bleedthrough": 50
+    },
+    "right_hip": {
+      "health": 500,
+      "armor": 1,
+      "bleedthrough": 75,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "right_leg": {
+      "health": 500,
+      "armor": 2,
+      "bleedthrough": 60,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_leg": {
+      "health": 500,
+      "armor": 2,
+      "bleedthrough": 60,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Hive Guard": {
+    "main": {
+      "armor": 2
+    },
+    "face": {
+      "health": 250,
+      "armor": 3,
+      "bleedthrough": 75,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_l_rear_leg": {
+      "health": 125,
+      "armor": 1,
+      "bleedthrough": 35,
+      "explosion_immune": true
+    },
+    "hitzone_r_rear_leg": {
+      "health": 125,
+      "armor": 1,
+      "bleedthrough": 35,
+      "explosion_immune": true
+    },
+    "hitzone_r_front_leg": {
+      "health": 125,
+      "armor": 3,
+      "bleedthrough": 45,
+      "explosion_immune": true
+    },
+    "hitzone_l_front_leg": {
+      "health": 125,
+      "armor": 3,
+      "bleedthrough": 45,
+      "explosion_immune": true
+    },
+    "r_claw": {
+      "health": 100,
+      "armor": 2,
+      "bleedthrough": 25,
+      "explosion_immune": true
+    },
+    "l_claw": {
+      "health": 100,
+      "armor": 2,
+      "bleedthrough": 25,
+      "explosion_immune": true
+    }
+  },
+  "Autocannon Sentry": {
+    "main": {
+      "armor": 2
+    },
+    "body_front": {
+      "health": 200,
+      "armor": 2,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "MG Raider": {
+    "main": {},
+    "head": {
+      "health": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest": {
+      "health": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 65,
+      "bleedthrough": 50,
+      "explosion_immune": true
+    },
+    "leg_right": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "leg_left": {
+      "health": 90,
+      "bleedthrough": 65,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "AA Emplacement": {
+    "main": {
+      "armor": 4,
+      "durable": 100
+    },
+    "battery": {
+      "health": 200,
+      "armor": 4,
+      "explosion_immune": true
+    }
+  },
+  "Bile Spitter": {
+    "main": {},
+    "hitzone_limbs_right": {
+      "health": 30,
+      "bleedthrough": 30,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_limbs_left": {
+      "health": 30,
+      "bleedthrough": 30,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "face": {
+      "health": 20,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Fusion Repeater": {
+    "main": {
+      "armor": 3,
+      "durable": 100
+    }
+  },
+  "Scout Strider": {
+    "main": {
+      "armor": 4
+    },
+    "leg_left": {
+      "health": 400,
+      "armor": 3,
+      "bleedthrough": 50,
+      "fatal": true
+    },
+    "leg_right": {
+      "health": 400,
+      "armor": 3,
+      "bleedthrough": 50,
+      "fatal": true
+    },
+    "turret": {
+      "health": 300,
+      "armor": 3,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "torso": {
+      "health": 300,
+      "armor": 3,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Pouncer": {
+    "main": {},
+    "hitzone_limbs_right": {
+      "health": 30,
+      "bleedthrough": 30,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "hitzone_limbs_left": {
+      "health": 30,
+      "bleedthrough": 30,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "face": {
+      "health": 20,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Machine Gun Sentry": {
+    "main": {
+      "armor": 2
+    },
+    "body_front": {
+      "health": 200,
+      "armor": 2,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "Rocket Sentry": {
+    "main": {
+      "armor": 2
+    },
+    "body_front": {
+      "health": 200,
+      "armor": 2,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  },
+  "Berserker": {
+    "main": {},
+    "head": {
+      "health": 150,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "chest_left": {
+      "health": 1,
+      "armor": 1,
+      "durable": 40,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "boss": {
+      "health": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "pelvis": {
+      "health": 1,
+      "armor": 1,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "shoulderplate_left": {
+      "health": 180,
+      "explosion_immune": true
+    },
+    "shoulderplate_right": {
+      "health": 180,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 300,
+      "bleedthrough": 30
+    },
+    "left_arm": {
+      "health": 300,
+      "bleedthrough": 30
+    },
+    "right_leg": {
+      "health": 1,
+      "armor": 1,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "left_leg": {
+      "health": 1,
+      "armor": 1,
+      "fatal": true,
+      "explosion_immune": true
+    }
+  },
+  "Barrager Tank": {
+    "main": {
+      "armor": 5,
+      "durable": 100
+    },
+    "damagezone_front": {
+      "health": 1,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "damagezone_right": {
+      "health": 1,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "damagezone_left": {
+      "health": 1,
+      "armor": 5,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "damagezone_back": {
+      "health": 1,
+      "armor": 3,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    },
+    "right_tracks": {
+      "health": 750,
+      "armor": 3,
+      "durable": 100,
+      "explosion_immune": true
+    },
+    "left_tracks": {
+      "health": 750,
+      "armor": 3,
+      "durable": 100,
+      "explosion_immune": true
+    }
+  },
+  "Hulk Obliterator": {
+    "main": {
+      "armor": 5,
+      "durable": 60
+    },
+    "left_arm": {
+      "health": 500,
+      "armor": 4,
+      "durable": 70,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    },
+    "right_arm": {
+      "health": 500,
+      "armor": 4,
+      "durable": 70,
+      "bleedthrough": 30,
+      "explosion_immune": true
+    },
+    "left_leg": {
+      "health": 600,
+      "armor": 4,
+      "durable": 80,
+      "bleedthrough": 30
+    },
+    "right_leg": {
+      "health": 600,
+      "armor": 4,
+      "durable": 80,
+      "bleedthrough": 30
+    },
+    "head": {
+      "health": 250,
+      "armor": 4,
+      "durable": 25,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "c_back_weakspot": {
+      "health": 1000,
+      "armor": 1,
+      "durable": 40,
+      "bleedthrough": 80,
+      "fatal": true
+    }
+  },
+  "Heavy Fusion Cannon": {
+    "main": {
+      "armor": 5,
+      "durable": 100
+    },
+    "front": {
+      "health": 1,
+      "armor": 6,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true,
+      "explosion_immune": true
+    },
+    "back": {
+      "health": 1,
+      "armor": 3,
+      "durable": 100,
+      "bleedthrough": 100,
+      "fatal": true
+    }
+  },
+  "Bug Hole": {
+    "main": {
+      "armor": 4,
+      "durable": 100
+    },
+    "all": {
+      "health": 1,
+      "armor": 4,
+      "durable": 100,
+      "bleedthrough": 100,
+      "explosion_immune": true
+    }
+  }
 }
