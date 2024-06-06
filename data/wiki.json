@@ -7866,7 +7866,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Ability Cyborg Lieutenant Shove"
+      "name": "Large Robot Shove"
     },
     "Ability_Cyborg_Lieutenant_Saw": {
       "id": 356,
@@ -7888,7 +7888,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Ability Cyborg Lieutenant Saw"
+      "name": "Large Robot Saw"
     },
     "Ability_Cyborg_Lieutenant_Stomp": {
       "id": 357,
@@ -7910,7 +7910,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Ability Cyborg Lieutenant Stomp"
+      "name": "Large Robot Stomp"
     },
     "Ability_Cyborg_Lieutenant_Obstacle_Large": {
       "id": 358,
@@ -7932,7 +7932,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Ability Cyborg Lieutenant Obstacle Large"
+      "name": "Large Robot Obstacle Large"
     },
     "Ability_Cyborg_Soldier_Punch": {
       "id": 359,
@@ -17297,6 +17297,29 @@
       "source": "status",
       "attacks": [{"type": "damage", "name": "DPS_Fire", "id": 309}]
     },
+    "Patriot Gatling Gun": {
+      "category": "Mounted",
+      "rpm": 600,
+      "cap": 1000,
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 179}]
+    },
+    "Patriot Rocket Pod": {
+      "category": "Mounted",
+      "cap": 15,
+      "attacks": [
+        {"type": "projectile", "name": "Missile_Combat_Walker", "id": 82},
+        {"type": "explosion", "name": "Combat_Walker_Missile", "id": 210}
+      ]
+    },
+    "Emancipator Twin Autocannon": {
+      "category": "Mounted",
+      "cap": 75,
+      "rpm": 120,
+      "attacks": [
+        {"type": "projectile", "name": "Cannon_30mm_APHE", "id": 173},
+        {"type": "explosion", "name": "APHE_30mm", "id": 124}
+      ]
+    },
     "MD-I4 Incendiary Mines": {
       "category": "Emplacement",
       "stratcode": "dlld",
@@ -17642,6 +17665,49 @@
           "name": "Bomb_Impact_Smoke",
           "count": 8,
           "id": 168
+        }
+      ]
+    },
+    "EXO-45 Patriot_Exosuit": {
+      "category": "Vehicle",
+      "stratcode": "ldruldd",
+      "health": 600,
+      "armor": 3,
+      "cooldown": 600,
+      "uses": 2,
+      "attacks": [
+        {"type": "weapon", "name": "Patriot Gatling Gun"},
+        {"type": "weapon", "name": "Patriot Rocket Pod"},
+        {
+          "type": "damage",
+          "name": "Ability_Cyborg_Lieutenant_Stomp",
+          "id": 357
+        },
+        {
+          "type": "explosion",
+          "name": "Vehicle_Explosion_CombatWalker",
+          "id": 157
+        }
+      ]
+    },
+    "EXO-49 Emancipator": {
+      "category": "Vehicle",
+      "stratcode": "ldruldu",
+      "health": 600,
+      "armor": 3,
+      "cooldown": 600,
+      "uses": 2,
+      "attacks": [
+        {"type": "weapon", "name": "Emancipator Twin Autocannon"},
+        {
+          "type": "damage",
+          "name": "Ability_Cyborg_Lieutenant_Stomp",
+          "id": 357
+        },
+        {
+          "type": "explosion",
+          "name": "Vehicle_Explosion_CombatWalker",
+          "id": 157
         }
       ]
     }

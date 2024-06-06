@@ -960,6 +960,38 @@ source = "status"
 medium = "damage"
 ref = "DPS_Fire"
 
+[[weapon]]
+category = "Mounted"
+fullname = "Patriot Gatling Gun"
+rpm = 600
+cap = 1000
+[[weapon.attack]]
+medium = "projectile"
+ref = "Rifle_8x60mm_apt"
+
+[[weapon]]
+category = "Mounted"
+fullname = "Patriot Rocket Pod"
+cap = 15
+[[weapon.attack]]
+medium = "projectile"
+ref = "Missile_Combat_Walker"
+[[weapon.attack]]
+medium = "explosion"
+ref = "Combat_Walker_Missile"
+
+[[weapon]]
+category = "Mounted"
+fullname = "Emancipator Twin Autocannon"
+cap = 75
+rpm = 120
+[[weapon.attack]]
+medium = "projectile"
+ref = "Cannon_30mm_APHE"
+[[weapon.attack]]
+medium = "explosion"
+ref = "APHE_30mm"
+
 [[backpack]]
 category = "Backpack"
 fullname = "B-1 Supply Pack"
@@ -1392,3 +1424,42 @@ count = 8
 medium = "explosion"
 ref = "Bomb_Impact_Smoke"
 count = 8
+
+[[stratagem]]
+category = "Vehicle"
+fullname = "EXO-45 Patriot_Exosuit"
+stratcode = "ldruldd"
+health = 600
+armor = 3
+cooldown = 600
+uses = 2
+[[stratagem.attack]]
+medium = "weapon"
+ref = "Patriot Gatling Gun"
+[[stratagem.attack]]
+medium = "weapon"
+ref = "Patriot Rocket Pod"
+[[stratagem.attack]]
+medium = "damage"
+ref = "Ability_Cyborg_Lieutenant_Stomp"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Vehicle_Explosion_CombatWalker"
+
+[[stratagem]]
+category = "Vehicle"
+fullname = "EXO-49 Emancipator"
+stratcode = "ldruldu"
+health = 600
+armor = 3
+cooldown = 600
+uses = 2
+[[stratagem.attack]]
+medium = "weapon"
+ref = "Emancipator Twin Autocannon"
+[[stratagem.attack]]
+medium = "damage"
+ref = "Ability_Cyborg_Lieutenant_Stomp"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Vehicle_Explosion_CombatWalker"

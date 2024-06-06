@@ -96,6 +96,7 @@ const wikiRegister = {
 }
 const register = {}
 const tkeys = {
+  weapon: 'wpnname',
   damage: 'dmg',
   projectile: 'prj',
   explosion: 'aoe',
@@ -144,9 +145,11 @@ for(const wpn of allWeapons) {
     || wpn.arcid
     || wpn.explosionid
     || wpn.damageid
+  refRegister[atkKey('weapon', wpn.fullname)] = wpn
   const attacks = (wpn.attack || []).map(atk => {
-    const key = `${tkeys[atk.medium]};${atk.ref}`
+    const key = atkKey(atk.medium, atk.ref)
     const obj = refRegister[key]
+    console.log({ key, obj })
     return {
       type: atk.medium,
       name: atk.ref,

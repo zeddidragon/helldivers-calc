@@ -826,6 +826,28 @@
       "fullname": "Status Effects#Burn",
       "source": "status",
       "damageid": 309
+    },
+    {
+      "category": "Mounted",
+      "fullname": "Patriot Gatling Gun",
+      "rpm": 600,
+      "cap": 1000,
+      "projectileid": 179
+    },
+    {
+      "category": "Mounted",
+      "fullname": "Patriot Rocket Pod",
+      "cap": 15,
+      "projectileid": 82,
+      "subattacks": [{"type": "explosion", "id": 210}]
+    },
+    {
+      "category": "Mounted",
+      "fullname": "Emancipator Twin Autocannon",
+      "cap": 75,
+      "rpm": 120,
+      "projectileid": 173,
+      "subattacks": [{"type": "explosion", "id": 124}]
     }
   ]
 }
