@@ -17295,16 +17295,7 @@
     "Status Effects#Burn": {
       "category": "Misc",
       "source": "status",
-      "attacks": [
-        {"type": "damage", "name": "DPS_Fire", "id": 309},
-        {"type": "explosion", "name": "AirburstCluster", "count": 8, "id": 165},
-        {
-          "type": "explosion",
-          "name": "AirburstCluster_Bomb",
-          "count": 8,
-          "id": 3
-        }
-      ]
+      "attacks": [{"type": "damage", "name": "DPS_Fire", "id": 309}]
     },
     "MD-I4 Incendiary Mines": {
       "category": "Emplacement",
@@ -17619,7 +17610,14 @@
           "count": 8,
           "id": 13
         },
-        {"type": "explosion", "name": "Cannon_23mm", "count": 8, "id": 189}
+        {"type": "explosion", "name": "Cannon_23mm", "count": 8, "id": 189},
+        {"type": "explosion", "name": "AirburstCluster", "count": 8, "id": 165},
+        {
+          "type": "explosion",
+          "name": "AirburstCluster_Bomb",
+          "count": 8,
+          "id": 3
+        }
       ]
     },
     "Eagle 110mm Rocket Pods": {

@@ -825,11 +825,7 @@
       "category": "Misc",
       "fullname": "Status Effects#Burn",
       "source": "status",
-      "damageid": 309,
-      "subattacks": [
-        {"type": "explosion", "id": 165, "count": 8},
-        {"type": "explosion", "id": 3, "count": 8}
-      ]
+      "damageid": 309
     }
   ]
 }
