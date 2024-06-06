@@ -17668,7 +17668,7 @@
         }
       ]
     },
-    "EXO-45 Patriot Exosuit": {
+    "EXO-45 Patriot_Exosuit": {
       "category": "Vehicle",
       "stratcode": "ldruldd",
       "health": 600,
@@ -17690,7 +17690,7 @@
         }
       ]
     },
-    "EXO-49 Emancipator": {
+    "EXO-49 Emancipator Exosuit": {
       "category": "Vehicle",
       "stratcode": "ldruldu",
       "health": 600,

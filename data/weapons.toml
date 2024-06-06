@@ -1427,7 +1427,7 @@ count = 8
 
 [[stratagem]]
 category = "Vehicle"
-fullname = "EXO-45 Patriot Exosuit"
+fullname = "EXO-45 Patriot_Exosuit"
 stratcode = "ldruldd"
 health = 600
 armor = 3
@@ -1448,7 +1448,7 @@ ref = "Vehicle_Explosion_CombatWalker"
 
 [[stratagem]]
 category = "Vehicle"
-fullname = "EXO-49 Emancipator"
+fullname = "EXO-49 Emancipator Exosuit"
 stratcode = "ldruldu"
 health = 600
 armor = 3
