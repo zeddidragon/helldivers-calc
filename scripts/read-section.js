@@ -109,6 +109,12 @@ const statusNames = searchWords({
   preserveLast: true,
 })
 
+const elementEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'ElementType_None',
+  last: 'ElementType',
+})
+
 const damageTypeEnums = searchWords({
   buffer: enumBuffer,
   first: 'HitEffectDamageType_None',

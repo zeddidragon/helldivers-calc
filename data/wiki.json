@@ -86,6 +86,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Acid",
       "status_name": "Acid Splash",
       "name": "Scavenger Acid Ball"
     },
@@ -109,6 +110,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Cyborg Heavy Flamer"
     },
@@ -198,6 +200,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Flamethrower"
     },
@@ -265,6 +268,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Arc",
       "status_name": "Stun Small",
       "name": "Illuminate Lightningbolt"
     },
@@ -332,6 +336,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Arc",
       "status_name": "Stun Small",
       "name": "Illuminate Turret tesla"
     },
@@ -355,6 +360,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Arc",
       "status_name": "Stun Small",
       "name": "Illuminate Observer Lightning"
     },
@@ -378,6 +384,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Arc",
       "status_name": "Stun Small",
       "name": "Illuminate Squidgun"
     },
@@ -401,6 +408,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Arc",
       "status_name": "Stun Small",
       "name": "Illuminate Tripod Lightning"
     },
@@ -645,6 +653,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Pistol 9x20mm Plasma"
     },
@@ -712,6 +721,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Acid",
       "status_name": "Acid Splash",
       "name": "Pistol 9x20mm Toxic"
     },
@@ -823,6 +833,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Pistol 12x25mm Plasma"
     },
@@ -890,6 +901,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Acid",
       "status_name": "Acid Splash",
       "name": "Pistol 12x25mm Toxic"
     },
@@ -1420,6 +1432,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Rifle 8x60mm Liberty Fire"
     },
@@ -1840,6 +1853,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Rocket 15x100mm Plasma"
     },
@@ -1907,6 +1921,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Acid",
       "status_name": "Acid Splash",
       "name": "Rocket 15x100mm Toxic"
     },
@@ -2018,6 +2033,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Shotgun 10-Gauge Liberty Fire"
     },
@@ -2327,6 +2343,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Shotgun 12-Gauge Liberty Fire"
     },
@@ -2548,6 +2565,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Arc",
       "name": "Arc Thrower"
     },
     "Projectile_Arc_Thrower_Mk2": {
@@ -2570,6 +2588,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Arc",
       "name": "Arc Thrower Mk2"
     },
     "Projectile_Arc_Shotgun": {
@@ -2592,6 +2611,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Arc",
       "name": "Arc Shotgun"
     },
     "Projectile_Cannon_20mm_Flak": {
@@ -2790,6 +2810,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Arc",
       "name": "Tesla Turret"
     },
     "Projectile_Cannon_20mm_APHET": {
@@ -3850,6 +3871,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Acid",
       "status_name": "Acid Splash",
       "name": "Explosion Boomer Acid Death"
     },
@@ -3895,6 +3917,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Acid",
       "status_name": "Acid Splash",
       "name": "Explosion Scavenger Acid Death"
     },
@@ -4249,6 +4272,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Acid",
       "status_name": "Acid Splash",
       "name": "Explosion Bug Trap"
     },
@@ -4295,6 +4319,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Explosion Icbm Take Off Intense"
     },
@@ -4341,6 +4366,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Explosion Prop Barrel"
     },
@@ -4496,6 +4522,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Explosion Hand Grenade Incendiary"
     },
@@ -5114,6 +5141,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Explosion Eagle Bomb Napalm"
     },
@@ -5951,6 +5979,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Gas",
       "status_name": "Gas",
       "name": "Explosion Orbital Gas"
     },
@@ -6304,6 +6333,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "Explosion World Volcano Strike"
     },
@@ -6804,6 +6834,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "status_name": "Fire",
       "name": "DPS Beam Large Fire"
     },
@@ -6850,6 +6881,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "name": "DPS Fire"
     },
     "DPS_Thermite": {
@@ -6872,6 +6904,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "name": "DPS Thermite"
     },
     "DPS_Acid_Splash": {
@@ -6894,6 +6927,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Acid",
       "name": "DPS Acid Splash"
     },
     "DPS_Acid_Stream": {
@@ -6916,6 +6950,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Acid",
       "name": "DPS Acid Stream"
     },
     "DPS_AcidStorm": {
@@ -6938,6 +6973,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Bleed",
       "name": "DPS Acid Storm"
     },
     "DPS_Cyborg_Fire": {
@@ -6960,6 +6996,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "name": "DPS Cyborg Fire"
     },
     "DPS_Pure_Damage": {
@@ -7004,6 +7041,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Fire",
       "name": "DPS Burning Heavy"
     },
     "DPS_RadiationLight": {
@@ -7070,6 +7108,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Arc",
       "name": "DPS Electric"
     },
     "DPS_Thornbush": {
@@ -7092,6 +7131,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Bleed",
       "name": "DPS Thornbush"
     },
     "DPS_Gas": {
@@ -7114,6 +7154,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Gas",
       "name": "DPS Gas"
     },
     "DPS_Gas_MK2": {
@@ -7136,6 +7177,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Gas",
       "name": "DPS Gas Mk2"
     },
     "DPS_BeamTripodEye": {
@@ -7181,6 +7223,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Bleed",
       "name": "DPS Bleeding"
     },
     "Ability_Empty": {
@@ -7799,6 +7842,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "element_name": "Acid",
       "status_name": "Acid Splash",
       "name": "Ability Bug Strider Acid Spray"
     },

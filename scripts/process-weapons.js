@@ -124,6 +124,7 @@ for(const prop of Object.keys(wikiRegister)) {
     reg[obj.enum] = {
       ...obj,
       enum: void 0,
+      element_name: obj.type ? names[`dmg.types.full;${obj.type}`] : void 0,
       status_name: obj.func1 ? data.statusNames[obj.func1 - 1] : void 0,
       damageid: void 0,
       name: names[key],
