@@ -1427,7 +1427,7 @@ count = 8
 
 [[stratagem]]
 category = "Vehicle"
-fullname = "EXO-45 Patriot_Exosuit"
+fullname = "EXO-45 Patriot Exosuit"
 stratcode = "ldruldd"
 health = 600
 armor = 3
