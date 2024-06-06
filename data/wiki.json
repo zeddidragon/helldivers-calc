@@ -5143,6 +5143,7 @@
       "param4": 0,
       "element_name": "Fire",
       "status_name": "Fire",
+      "status_name2": "BurningHeavy",
       "name": "Explosion Eagle Bomb Napalm"
     },
     "Explosion_Projectile_Missile_66mm": {
@@ -6559,6 +6560,7 @@
       "func4": 0,
       "param4": 0,
       "status_name": "Extreme Cold",
+      "status_name2": "Stun Medium",
       "name": "Explosion Iceplant Shatter"
     },
     "DPS_BeamSmall": {
@@ -8109,6 +8111,7 @@
       "func4": 0,
       "param4": 0,
       "status_name": "Confusion",
+      "status_name2": "Inverted Aim Assist",
       "name": "Ability Illuminate Illusionist Mind Scramble"
     },
     "Ability_Illuminate_Illusionist_InverseAimAssist": {
