@@ -850,5 +850,456 @@
       "projectileid": 173,
       "subattacks": [{"type": "explosion", "id": 124}]
     }
+  ],
+  "stratagems": [
+    {
+      "category": "Emplacement",
+      "fullname": "MD-I4 Incendiary Mines",
+      "stratcode": "dlld",
+      "health": 250,
+      "armor": 1,
+      "cap": 32,
+      "calltime": 3,
+      "cooldown": 180,
+      "attack": [{"medium": "explosion", "ref": "IncendiaryMine"}]
+    },
+    {
+      "category": "Emplacement",
+      "fullname": "MD-6 Anti-Personnel Minefield",
+      "stratcode": "dlur",
+      "health": 250,
+      "armor": 1,
+      "cap": 32,
+      "calltime": 3,
+      "cooldown": 180,
+      "attack": [{"medium": "explosion", "ref": "ContactMine"}]
+    },
+    {
+      "category": "Emplacement",
+      "fullname": "A/MG-43 Machine Gun Sentry",
+      "stratcode": "durru",
+      "health": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "rpm": 660,
+      "cap": 130,
+      "attack": [{"medium": "projectile", "ref": "Rifle_8x60mm_fmj"}]
+    },
+    {
+      "category": "Emplacement",
+      "fullname": "A/G-16 Gatling Sentry",
+      "stratcode": "durl",
+      "health": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "rpm": 1560,
+      "cap": 390,
+      "attack": [{"medium": "projectile", "ref": "Rifle_8x60mm_fmj"}]
+    },
+    {
+      "category": "Emplacement",
+      "fullname": "E/MG-101 HMG Emplacement",
+      "stratcode": "dulrrl",
+      "health": 1000,
+      "armor": 2,
+      "calltime": 3,
+      "cooldown": 180,
+      "rpm": 660,
+      "cap": 300,
+      "attack": [{"medium": "projectile", "ref": "Rifle_12p5x100mm_fmj"}]
+    },
+    {
+      "category": "Emplacement",
+      "fullname": "A/M-12 Mortar Sentry",
+      "stratcode": "durrd",
+      "health": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "rpm": 32,
+      "cap": 36,
+      "attack": [
+        {"medium": "projectile", "ref": "Grenade_Mortar_40mm_HE"},
+        {"medium": "explosion", "ref": "Grenade_Mortar_40mm_HE"}
+      ]
+    },
+    {
+      "category": "Emplacement",
+      "fullname": "A/M-23 EMS Mortar Sentry",
+      "stratcode": "durdr",
+      "health": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "rpm": 10,
+      "cap": 15,
+      "attack": [
+        {"medium": "projectile", "ref": "Grenade_Mortar_40mm_Staticfield"},
+        {"medium": "explosion", "ref": "Grenade_Mortar_40mm_Staticfield"}
+      ]
+    },
+    {
+      "category": "Emplacement",
+      "fullname": "A/MLS-4X Rocket Sentry",
+      "stratcode": "durrl",
+      "health": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "cap": 36,
+      "attack": [
+        {"medium": "projectile", "ref": "Rocket_70mm_turret"},
+        {"medium": "explosion", "ref": "Rocket_70mm_turret"}
+      ]
+    },
+    {
+      "category": "Emplacement",
+      "fullname": "A/AC-8 Autocannon Sentry",
+      "stratcode": "durulu",
+      "health": 200,
+      "armor": 2,
+      "calltime": 8,
+      "cooldown": 180,
+      "cap": 24,
+      "attack": [
+        {"medium": "projectile", "ref": "Cannon_40mm_APHE"},
+        {"medium": "explosion", "ref": "APHE_40mm"}
+      ]
+    },
+    {
+      "category": "Emplacement",
+      "fullname": "A/ARC-3 Tesla Tower",
+      "stratcode": "durulr",
+      "health": 600,
+      "armor": 1,
+      "calltime": 3,
+      "cooldown": 150,
+      "attack": [{"medium": "arc", "ref": "TeslaTurret"}]
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital Precision Strike",
+      "stratcode": "rru",
+      "calltime": 4,
+      "cooldown": 100,
+      "attack": [
+        {"medium": "projectile", "ref": "Orbital_Precision_Strike"},
+        {"medium": "explosion", "ref": "PrecisionStrike"}
+      ]
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital Gas Strike",
+      "stratcode": "rrdr",
+      "calltime": 2,
+      "cooldown": 75,
+      "attack": [
+        {"medium": "projectile", "ref": "Orbital_Gas"},
+        {"medium": "explosion", "ref": "OrbitalGas"}
+      ]
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital Smoke Strike",
+      "stratcode": "rrdu",
+      "calltime": 2,
+      "cooldown": 100
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital Airburst Strike",
+      "stratcode": "rrr",
+      "calltime": 2,
+      "cooldown": 120,
+      "salvos": 3,
+      "attack": [
+        {"medium": "projectile", "ref": "Orbital_Cannon_110mm"},
+        {"medium": "explosion", "ref": "OrbitalShot"},
+        {"medium": "projectile", "ref": "Shrapnel_Heavy", "count": 12},
+        {"medium": "explosion", "ref": "HeavyShrapnel", "count": 12}
+      ]
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital EMS Strike",
+      "stratcode": "rrld",
+      "calltime": 2,
+      "cooldown": 75,
+      "attack": [
+        {"medium": "projectile", "ref": "Orbital_Stunround"},
+        {"medium": "explosion", "ref": "OrbitalStun"}
+      ]
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital Gatling Barrage",
+      "stratcode": "rdluu",
+      "calltime": 2,
+      "cooldown": 80,
+      "salvos": 4,
+      "cap": 30,
+      "attack": [
+        {"medium": "projectile", "ref": "Cannon_Eagle_23mm"},
+        {"medium": "explosion", "ref": "Cannon_23mm"}
+      ]
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital 120mm HE Barrage",
+      "stratcode": "rrdlrd",
+      "calltime": 5,
+      "cooldown": 240,
+      "salvos": 5,
+      "cap": 3,
+      "attack": [
+        {"medium": "projectile", "ref": "Orbital_Cannon_120mm_HE"},
+        {"medium": "explosion", "ref": "OrbitalStrike"}
+      ]
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital 380mm HE Barrage",
+      "stratcode": "rduuldd",
+      "calltime": 6,
+      "cooldown": 240,
+      "salvos": 5,
+      "cap": 3,
+      "attack": [
+        {"medium": "projectile", "ref": "Orbital_Cannon_380mm_HE"},
+        {"medium": "explosion", "ref": "OrbitalBarrage"}
+      ]
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital Walking Barrage",
+      "stratcode": "rdrdrd",
+      "calltime": 3,
+      "cooldown": 240,
+      "salvos": 3,
+      "cap": 3,
+      "attack": [
+        {"medium": "projectile", "ref": "Orbital_Cannon_380mm_HE"},
+        {"medium": "explosion", "ref": "OrbitalBarrage"}
+      ]
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital Laser",
+      "stratcode": "rdurd",
+      "calltime": 2,
+      "cooldown": 300,
+      "uses": 3,
+      "limit": 25,
+      "attack": [{"medium": "damage", "ref": "DPS_BeamHuge"}]
+    },
+    {
+      "category": "Orbital",
+      "fullname": "Orbital Railcannon Strike",
+      "stratcode": "ruddr",
+      "calltime": 1,
+      "cooldown": 210,
+      "salvos": 1,
+      "attack": [
+        {"medium": "projectile", "ref": "Orbital_Railcannon"},
+        {"medium": "explosion", "ref": "Railcannon_Impact"}
+      ]
+    },
+    {
+      "category": "Eagle",
+      "fullname": "Eagle Airstrike",
+      "stratcode": "urdr",
+      "cooldown": 15,
+      "uses": 2,
+      "cap": 6,
+      "attack": [
+        {"medium": "projectile", "ref": "Bomb_100kg"},
+        {"medium": "explosion", "ref": "EagleBomb_100kg"}
+      ]
+    },
+    {
+      "category": "Eagle",
+      "fullname": "Eagle Napalm Airstrike",
+      "stratcode": "urdu",
+      "cooldown": 15,
+      "uses": 2,
+      "cap": 4,
+      "attack": [
+        {"medium": "projectile", "ref": "Bomb_Napalm"},
+        {"medium": "explosion", "ref": "EagleBomb_Napalm"}
+      ]
+    },
+    {
+      "category": "Eagle",
+      "fullname": "Eagle 500kg Bomb",
+      "stratcode": "urddd",
+      "cooldown": 15,
+      "uses": 1,
+      "cap": 1,
+      "attack": [
+        {"medium": "projectile", "ref": "Bomb_500kg"},
+        {"medium": "explosion", "ref": "Bomb_Impact"},
+        {"medium": "explosion", "ref": "EagleBomb_500kg"}
+      ]
+    },
+    {
+      "category": "Eagle",
+      "fullname": "Eagle Strafing Run",
+      "stratcode": "urr",
+      "cooldown": 15,
+      "uses": 3,
+      "attack": [
+        {"medium": "projectile", "ref": "Cannon_Eagle_23mm"},
+        {"medium": "explosion", "ref": "Cannon_23mm"}
+      ]
+    },
+    {
+      "category": "Eagle",
+      "fullname": "Eagle Cluster Bomb",
+      "stratcode": "urddr",
+      "cooldown": 15,
+      "uses": 4,
+      "cap": 8,
+      "attack": [
+        {"medium": "projectile", "ref": "Cannon_Eagle_23mm"},
+        {"medium": "explosion", "ref": "Cannon_23mm"},
+        {"medium": "explosion", "ref": "AirburstCluster", "count": 8},
+        {"medium": "explosion", "ref": "AirburstCluster_Bomb", "count": 8}
+      ]
+    },
+    {
+      "category": "Eagle",
+      "fullname": "Eagle 110mm Rocket Pods",
+      "stratcode": "urul",
+      "cooldown": 15,
+      "uses": 2,
+      "cap": 3,
+      "attack": [
+        {"medium": "projectile", "ref": "Rocket_110mm"},
+        {"medium": "explosion", "ref": "Rocket_110mm"}
+      ]
+    },
+    {
+      "category": "Eagle",
+      "fullname": "Eagle Smoke Strike",
+      "stratcode": "urud",
+      "cooldown": 15,
+      "uses": 2,
+      "cap": 8,
+      "attack": [
+        {"medium": "projectile", "ref": "Bomb_Smoke"},
+        {"medium": "explosion", "ref": "Bomb_Impact_Smoke"}
+      ]
+    },
+    {
+      "category": "Vehicle",
+      "fullname": "EXO-45 Patriot Exosuit",
+      "stratcode": "ldruldd",
+      "health": 600,
+      "armor": 3,
+      "cooldown": 600,
+      "uses": 2,
+      "attack": [
+        {"medium": "weapon", "ref": "Patriot Gatling Gun"},
+        {"medium": "weapon", "ref": "Patriot Rocket Pod"},
+        {"medium": "damage", "ref": "Ability_Cyborg_Lieutenant_Stomp"},
+        {"medium": "explosion", "ref": "Vehicle_Explosion_CombatWalker"}
+      ]
+    },
+    {
+      "category": "Vehicle",
+      "fullname": "EXO-49 Emancipator Exosuit",
+      "stratcode": "ldruldu",
+      "health": 600,
+      "armor": 3,
+      "cooldown": 600,
+      "uses": 2,
+      "attack": [
+        {"medium": "weapon", "ref": "Emancipator Twin Autocannon"},
+        {"medium": "damage", "ref": "Ability_Cyborg_Lieutenant_Stomp"},
+        {"medium": "explosion", "ref": "Vehicle_Explosion_CombatWalker"}
+      ]
+    },
+    {
+      "category": "Mission",
+      "fullname": "Eagle Rearm",
+      "stratcode": "uulur",
+      "cooldown": 150
+    },
+    {
+      "category": "Mission",
+      "fullname": "Hellbomb",
+      "stratcode": "duldurdu",
+      "calltime": 5,
+      "cooldown": 30,
+      "attack": [{"medium": "explosion", "ref": "Hellbomb"}]
+    },
+    {
+      "category": "Mission",
+      "fullname": "SEAF Artillery#Explosive",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attack": [
+        {"medium": "projectile", "ref": "SEAF_Gun_Explosive"},
+        {"medium": "explosion", "ref": "SEAF_Gun_Explosive"}
+      ]
+    },
+    {
+      "category": "Mission",
+      "fullname": "SEAF Artillery#High Yield Explosive",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attack": [
+        {"medium": "projectile", "ref": "SEAF_Gun_High_Yield_Explosive"},
+        {"medium": "explosion", "ref": "SEAF_Gun_High_Yield_Explosive"}
+      ]
+    },
+    {
+      "category": "Mission",
+      "fullname": "SEAF Artillery#Mini Nuke",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attack": [
+        {"medium": "projectile", "ref": "SEAF_Gun_Mini_Nuke"},
+        {"medium": "explosion", "ref": "SEAF_Gun_Mini_Nuke"}
+      ]
+    },
+    {
+      "category": "Mission",
+      "fullname": "SEAF Artillery#Smoke",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attack": [
+        {"medium": "projectile", "ref": "SEAF_Gun_Smoke"},
+        {"medium": "explosion", "ref": "SEAF_Gun_Smoke"}
+      ]
+    },
+    {
+      "category": "Mission",
+      "fullname": "SEAF Artillery#Napalm",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attack": [
+        {"medium": "projectile", "ref": "SEAF_Gun_Napalm"},
+        {"medium": "explosion", "ref": "SEAF_Gun_Napalm"}
+      ]
+    },
+    {
+      "category": "Mission",
+      "fullname": "SEAF Artillery#Static Field",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attack": [
+        {"medium": "projectile", "ref": "SEAF_Gun_EMP"},
+        {"medium": "explosion", "ref": "SEAF_Gun_EMP"}
+      ]
+    }
   ]
 }

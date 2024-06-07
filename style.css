@@ -141,33 +141,40 @@ td.name {
 .ap-0 {
   opacity: 0.5;
 }
-.category.AR, .ap-5, .source.demo-det {
+.category.Orbital, .category.AR, .ap-5, .source.demo-det {
   color: #e88;
 }
 .category.SMG, .ap-8 {
-  color: #eee;
+  color: #ccc;
 }
-.category.SG, .ap-3 {
+.category.Emplacement, .category.SG, .ap-3 {
   color: #8e8;
 }
-.category.DMR, .ap-2, .source.cut-edge, .damage-type.arc {
+.category.Backpack, .category.DMR, .ap-2, .source.cut-edge, .damage-type.arc {
   color: #88e;
 }
 .category.EX, .ap-4, .source.steel-vets {
   color: #ea8;
 }
-.category.NRG, .ap-9, .source.hd-mobilize, .rpm-laser {
+.category.Mission, .category.NRG, .ap-9, .source.hd-mobilize, .rpm-laser {
   color: #ee8;
 }
 .category.HG, .ap-6 {
   color: #a8e;
 }
-.category.SUP, .ap-7, .source.support {
+.category.Eagle, .category.SUP, .ap-7, .source.support {
   color: #e8a;
 }
 .category.Misc {
   color: #a98a98;
 }
+.category.GR {
+  color: #aa8;
+}
+.category.Mounted, .category.Vehicle {
+  color: #888;
+}
+
 .source-page {
   font-size: 0.7em;
   padding-left: 0.5em;
@@ -266,7 +273,14 @@ td.effect-param:after {
   opacity: 0.5;
 }
 
-.pellets:not(.blank):after {
+.arrows {
+  font-size: 0.7em;
+  /* margin-top: -0.5em;
+  margin-bottom: -1em; */
+  letter-spacing: 2px;
+}
+
+.pellets:not(.blank):after, .salvos:after {
   color: #a98a98;
   content: "×";
 }

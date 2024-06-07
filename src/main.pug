@@ -8,7 +8,7 @@ mixin weaponsHeader
     )= t('table.th.wpn.label', 'source')
     th.weapon.category(
       title=t('table.th.wpn', 'category')
-    )= t('table.th.wpn.label', 'type')
+    )= t('table.th.wpn.label', 'category')
     th.weapon.code(
       title=t('table.th.wpn', 'code')
     )= t('table.th.wpn.label', 'code')
@@ -73,6 +73,23 @@ mixin weaponsHeader
     )
       sup= t('table.th.wpn.label.sup', 'dtotal')
 
+mixin weaponDamageRow(wpn)
+  - const dmg = wpn.damage || {}
+  td.weapon.type(class={ xdmg: !!wpn.explosion })
+    if dmg.type
+      span.dmgtype(
+        title=t('dmg.types.full', dmg.type)
+      )= t('dmg.types', dmg.type)
+  - const n = count(wpn)
+  td.weapon.pellets(class={ muted: n == 1, blank: !n })= n
+  td.weapon.dmg(class={ xdmg: !!wpn.explosion })
+    if dmg.dmg
+      span.dmg-base= dmg.dmg
+    if dmg.dmg2 < dmg.dmg
+      span.dmg-massive= dmg.dmg2
+  - let ap = dmg.ap1
+  td.damage.ap(class=`ap-${ap}`)= ap
+
 mixin weaponsRow(wpn, opts)
   td.weapon.idx= wpn.idx
   if !hideHeaders.weapon
@@ -92,21 +109,7 @@ mixin weaponsRow(wpn, opts)
       a(href=wikiLink(wpn) target="_blank")= wpn.name
     else if wpn.explosion
       span.weapon.name= t('table.td.dmg.label',  'explosion', 'Explosion')
-  - const dmg = wpn.damage || {}
-  td.weapon.type(class={ xdmg: !!wpn.explosion })
-    if dmg.type
-      span.dmgtype(
-        title=t('dmg.types.full', dmg.type)
-      )= t('dmg.types', dmg.type)
-  - const n = count(wpn)
-  td.weapon.pellets(class={ muted: n == 1, blank: !n })= n
-  td.weapon.dmg(class={ xdmg: !!wpn.explosion })
-    if dmg.dmg
-      span.dmg-base= dmg.dmg
-    if dmg.dmg2 < dmg.dmg
-      span.dmg-massive= dmg.dmg2
-  - let ap = dmg.ap1
-  td.damage.ap(class=`ap-${ap}`)= ap
+  +weaponDamageRow(wpn)
   td.weapon.rpm
     if hasTag(wpn, 'laser')
       span.rpm-laser Beam
@@ -215,6 +218,74 @@ mixin weaponsRow(wpn, opts)
     td.tdps2= wpn.tdps2
     td.magdump2= wpn.magdump2
     td.totaldump2= wpn.totaldump2
+
+mixin stratagemsHeader(opts = {})
+  th.stratagem.stratcode(
+    title=t('table.th.strat', 'stratcode')
+  )= t('table.th.strat.label', 'stratcode')
+  th.stratagem.category(
+    title=t('table.th.strat', 'category')
+  )= t('table.th.strat.label', 'category')
+  th.stratagem.name(
+    title=t('table.th.strat', 'name')
+  )= t('table.th.strat.label', 'name')
+  th.stratagem.calltime(
+    title=t('table.th.strat', 'calltime')
+  )= t('table.th.strat.label', 'calltime')
+  th.stratagem.cooldown(
+    title=t('table.th.strat', 'cooldown')
+  )= t('table.th.strat.label', 'cooldown')
+  th.stratagem.uses(
+    title=t('table.th.strat', 'uses')
+  )= t('table.th.strat.label', 'uses')
+  th.stratagem.health(
+    title=t('table.th.strat', 'health')
+  )= t('table.th.strat.label', 'health')
+  th.stratagem.armor(
+    title=t('table.th.strat', 'armor')
+  )= t('table.th.strat.label', 'armor')
+  th.stratagem.rpm(
+    title=t('table.th.strat', 'rpm')
+  )= t('table.th.strat.label', 'rpm')
+  th.stratagem.cap(
+    title=t('table.th.strat', 'cap')
+    colspan=2
+  )= t('table.th.strat.label', 'cap')
+  th.stratagem.damage(
+    title=t('table.th.dmg', 'dmgs3')
+    colspan=3
+  )= t('table.th.dmg.label', 'dmgs3')
+  th.damage.ap(
+    title=t('table.th.dmg', 'ap')
+  )= t('table.th.dmg.label', 'ap')
+  +damagesHeader({ apCount: 1, effectsCount: 1 })
+  +explosionsHeader({})
+
+mixin stratagemsRow(obj, opts = {})
+  td.stratagem.stratcode
+    .arrows= obj.arrows
+  td.stratagem.category(
+    title=t('strat.category.full', obj.category)
+    class=obj.category
+  )= t('strat.category.label', obj.category)
+  td.stratagem.name(class=`name-${obj.category || obj.type}`)
+    a(href=wikiLink(obj) target="_blank")= obj.name
+  td.stratagem.calltime= obj.calltime
+  td.stratagem.cooldown= obj.cooldown
+  td.stratagem.uses= obj.uses
+  td.stratagem.health= obj.health
+  td.stratagem.armor(class=`ap-${obj.armor}`)= obj.armor
+  td.stratagem.rpm= obj.rpm
+  td.stratagem.cap
+    if obj.salvos
+      span.salvos= obj.salvos
+    span.strat-cap= obj.cap || obj.limit
+  td.stratagem.capextra
+    if obj.limit
+      span.cap-limit s
+  +weaponDamageRow(obj)
+  +damagesRow(obj.damage || {}, { apCount: 1, effectsCount: 1 })
+  +explosionsRow(obj.explosion || {})
 
 mixin projectilesHeader(opts = {})
   if opts.full
@@ -528,6 +599,14 @@ nav.links
           )= l
 header.menu
   .filters
+    .filter-row
+      ul.scopes
+        for scope in scopes
+          li.scope(
+            class=scopeClass(scope)
+            title=t('nav.scopes.full', scope)
+            onclick=`switchScope('${scope}')`
+          )= t('nav.scopes.label', scope)
     if scope === 'weapons'
       .filter-row
         ul.sources
@@ -553,28 +632,6 @@ header.menu
               title=t('wpn.header.full', h)
               onclick=`toggleHeader('${h}')`
             )= t('wpn.header.label', h)
-      if nerdMode
-        ul
-          li=t('explanations', 'nerdModeSpoilers', 'Here there be spoilers.')
-    else
-      ul.scopes
-        for scope in scopes
-          li.scope(
-            class=scopeClass(scope)
-            title=t('nav.scopes.full', scope)
-            onclick=`switchScope('${scope}')`
-          )= t('nav.scopes.label', scope)
-  .spacer
-  .side-menu
-    label
-      input#nerd-mode(
-        type="checkbox"
-        checked=nerdMode,
-        onclick=`toggleNerdMode()`)
-      if nerdMode
-        = t('nav.main', 'nerdModeActive', '🤓')
-      else
-        = t('nav.main', 'nerdMode', 'Nerd Mode')
 table
   tr
     +#{`${scope}Header`}(full)

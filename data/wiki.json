@@ -17373,26 +17373,24 @@
       "stratcode": "dlld",
       "health": 250,
       "armor": 1,
+      "cap": 32,
       "calltime": 3,
       "cooldown": 180,
-      "attacks": [
-        {"type": "explosion", "name": "IncendiaryMine", "count": 32, "id": 35}
-      ]
+      "attacks": [{"type": "explosion", "name": "IncendiaryMine", "id": 35}]
     },
     "MD-6 Anti-Personnel Minefield": {
       "category": "Emplacement",
       "stratcode": "dlur",
       "health": 250,
       "armor": 1,
+      "cap": 32,
       "calltime": 3,
       "cooldown": 180,
-      "attacks": [
-        {"type": "explosion", "name": "ContactMine", "count": 32, "id": 188}
-      ]
+      "attacks": [{"type": "explosion", "name": "ContactMine", "id": 188}]
     },
     "A/MG-43 Machine Gun Sentry": {
       "category": "Emplacement",
-      "stratcode": "durl",
+      "stratcode": "durru",
       "health": 200,
       "armor": 2,
       "calltime": 8,
@@ -17552,14 +17550,10 @@
       "calltime": 2,
       "cooldown": 80,
       "salvos": 4,
+      "cap": 30,
       "attacks": [
-        {
-          "type": "projectile",
-          "name": "Cannon_Eagle_23mm",
-          "count": 30,
-          "id": 13
-        },
-        {"type": "explosion", "name": "Cannon_23mm", "count": 30, "id": 189}
+        {"type": "projectile", "name": "Cannon_Eagle_23mm", "id": 13},
+        {"type": "explosion", "name": "Cannon_23mm", "id": 189}
       ]
     },
     "Orbital 120mm HE Barrage": {
@@ -17568,14 +17562,10 @@
       "calltime": 5,
       "cooldown": 240,
       "salvos": 5,
+      "cap": 3,
       "attacks": [
-        {
-          "type": "projectile",
-          "name": "Orbital_Cannon_120mm_HE",
-          "count": 3,
-          "id": 130
-        },
-        {"type": "explosion", "name": "OrbitalStrike", "count": 3, "id": 113}
+        {"type": "projectile", "name": "Orbital_Cannon_120mm_HE", "id": 130},
+        {"type": "explosion", "name": "OrbitalStrike", "id": 113}
       ]
     },
     "Orbital 380mm HE Barrage": {
@@ -17584,14 +17574,10 @@
       "calltime": 6,
       "cooldown": 240,
       "salvos": 5,
+      "cap": 3,
       "attacks": [
-        {
-          "type": "projectile",
-          "name": "Orbital_Cannon_380mm_HE",
-          "count": 3,
-          "id": 51
-        },
-        {"type": "explosion", "name": "OrbitalBarrage", "count": 3, "id": 151}
+        {"type": "projectile", "name": "Orbital_Cannon_380mm_HE", "id": 51},
+        {"type": "explosion", "name": "OrbitalBarrage", "id": 151}
       ]
     },
     "Orbital Walking Barrage": {
@@ -17600,14 +17586,10 @@
       "calltime": 3,
       "cooldown": 240,
       "salvos": 3,
+      "cap": 3,
       "attacks": [
-        {
-          "type": "projectile",
-          "name": "Orbital_Cannon_380mm_HE",
-          "count": 3,
-          "id": 51
-        },
-        {"type": "explosion", "name": "OrbitalBarrage", "count": 3, "id": 151}
+        {"type": "projectile", "name": "Orbital_Cannon_380mm_HE", "id": 51},
+        {"type": "explosion", "name": "OrbitalBarrage", "id": 151}
       ]
     },
     "Orbital Laser": {
@@ -17616,6 +17598,7 @@
       "calltime": 2,
       "cooldown": 300,
       "uses": 3,
+      "limit": 25,
       "attacks": [{"type": "damage", "name": "DPS_BeamHuge", "id": 305}]
     },
     "Orbital Railcannon Strike": {
@@ -17623,6 +17606,7 @@
       "stratcode": "ruddr",
       "calltime": 1,
       "cooldown": 210,
+      "salvos": 1,
       "attacks": [
         {"type": "projectile", "name": "Orbital_Railcannon", "id": 183},
         {"type": "explosion", "name": "Railcannon_Impact", "id": 27}
@@ -17632,27 +17616,30 @@
       "category": "Eagle",
       "stratcode": "urdr",
       "cooldown": 15,
-      "strikes": 2,
+      "uses": 2,
+      "cap": 6,
       "attacks": [
-        {"type": "projectile", "name": "Bomb_100kg", "count": 6, "id": 113},
-        {"type": "explosion", "name": "EagleBomb_100kg", "count": 6, "id": 104}
+        {"type": "projectile", "name": "Bomb_100kg", "id": 113},
+        {"type": "explosion", "name": "EagleBomb_100kg", "id": 104}
       ]
     },
     "Eagle Napalm Airstrike": {
       "category": "Eagle",
       "stratcode": "urdu",
       "cooldown": 15,
-      "strikes": 2,
+      "uses": 2,
+      "cap": 4,
       "attacks": [
-        {"type": "projectile", "name": "Bomb_Napalm", "count": 4, "id": 206},
-        {"type": "explosion", "name": "EagleBomb_Napalm", "count": 4, "id": 7}
+        {"type": "projectile", "name": "Bomb_Napalm", "id": 206},
+        {"type": "explosion", "name": "EagleBomb_Napalm", "id": 7}
       ]
     },
     "Eagle 500kg Bomb": {
       "category": "Eagle",
-      "stratcode": "urdu",
+      "stratcode": "urddd",
       "cooldown": 15,
-      "strikes": 1,
+      "uses": 1,
+      "cap": 1,
       "attacks": [
         {"type": "projectile", "name": "Bomb_500kg", "id": 157},
         {"type": "explosion", "name": "Bomb_Impact", "id": 181},
@@ -17663,7 +17650,7 @@
       "category": "Eagle",
       "stratcode": "urr",
       "cooldown": 15,
-      "strikes": 3,
+      "uses": 3,
       "attacks": [
         {"type": "projectile", "name": "Cannon_Eagle_23mm", "id": 13},
         {"type": "explosion", "name": "Cannon_23mm", "id": 189}
@@ -17673,15 +17660,11 @@
       "category": "Eagle",
       "stratcode": "urddr",
       "cooldown": 15,
-      "strikes": 4,
+      "uses": 4,
+      "cap": 8,
       "attacks": [
-        {
-          "type": "projectile",
-          "name": "Cannon_Eagle_23mm",
-          "count": 8,
-          "id": 13
-        },
-        {"type": "explosion", "name": "Cannon_23mm", "count": 8, "id": 189},
+        {"type": "projectile", "name": "Cannon_Eagle_23mm", "id": 13},
+        {"type": "explosion", "name": "Cannon_23mm", "id": 189},
         {"type": "explosion", "name": "AirburstCluster", "count": 8, "id": 165},
         {
           "type": "explosion",
@@ -17695,28 +17678,25 @@
       "category": "Eagle",
       "stratcode": "urul",
       "cooldown": 15,
-      "strikes": 2,
+      "uses": 2,
+      "cap": 3,
       "attacks": [
-        {"type": "projectile", "name": "Rocket_110mm", "count": 3, "id": 52},
-        {"type": "explosion", "name": "Rocket_110mm", "count": 3, "id": 120}
+        {"type": "projectile", "name": "Rocket_110mm", "id": 52},
+        {"type": "explosion", "name": "Rocket_110mm", "id": 120}
       ]
     },
     "Eagle Smoke Strike": {
       "category": "Eagle",
       "stratcode": "urud",
       "cooldown": 15,
-      "strikes": 2,
+      "uses": 2,
+      "cap": 8,
       "attacks": [
-        {"type": "projectile", "name": "Bomb_Smoke", "count": 8, "id": 83},
-        {
-          "type": "explosion",
-          "name": "Bomb_Impact_Smoke",
-          "count": 8,
-          "id": 168
-        }
+        {"type": "projectile", "name": "Bomb_Smoke", "id": 83},
+        {"type": "explosion", "name": "Bomb_Impact_Smoke", "id": 168}
       ]
     },
-    "EXO-45 Patriot_Exosuit": {
+    "EXO-45 Patriot Exosuit": {
       "category": "Vehicle",
       "stratcode": "ldruldd",
       "health": 600,
@@ -17757,6 +17737,87 @@
           "name": "Vehicle_Explosion_CombatWalker",
           "id": 157
         }
+      ]
+    },
+    "Eagle Rearm": {
+      "category": "Mission",
+      "stratcode": "uulur",
+      "cooldown": 150,
+      "attacks": []
+    },
+    "Hellbomb": {
+      "category": "Mission",
+      "stratcode": "duldurdu",
+      "calltime": 5,
+      "cooldown": 30,
+      "attacks": [{"type": "explosion", "name": "Hellbomb", "id": 129}]
+    },
+    "SEAF Artillery#Explosive": {
+      "category": "Mission",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {"type": "projectile", "name": "SEAF_Gun_Explosive", "id": 44},
+        {"type": "explosion", "name": "SEAF_Gun_Explosive", "id": 22}
+      ]
+    },
+    "SEAF Artillery#High Yield Explosive": {
+      "category": "Mission",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_High_Yield_Explosive",
+          "id": 220
+        },
+        {
+          "type": "explosion",
+          "name": "SEAF_Gun_High_Yield_Explosive",
+          "id": 144
+        }
+      ]
+    },
+    "SEAF Artillery#Mini Nuke": {
+      "category": "Mission",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {"type": "projectile", "name": "SEAF_Gun_Mini_Nuke", "id": 63},
+        {"type": "explosion", "name": "SEAF_Gun_Mini_Nuke", "id": 148}
+      ]
+    },
+    "SEAF Artillery#Smoke": {
+      "category": "Mission",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {"type": "projectile", "name": "SEAF_Gun_Smoke", "id": 8},
+        {"type": "explosion", "name": "SEAF_Gun_Smoke", "id": 138}
+      ]
+    },
+    "SEAF Artillery#Napalm": {
+      "category": "Mission",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {"type": "projectile", "name": "SEAF_Gun_Napalm", "id": 94},
+        {"type": "explosion", "name": "SEAF_Gun_Napalm", "id": 10}
+      ]
+    },
+    "SEAF Artillery#Static Field": {
+      "category": "Mission",
+      "stratcode": "ruud",
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {"type": "projectile", "name": "SEAF_Gun_EMP", "id": 60},
+        {"type": "explosion", "name": "SEAF_Gun_EMP", "id": 29}
       ]
     }
   }

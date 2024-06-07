@@ -140,7 +140,6 @@ for(const prop of Object.keys(wikiRegister)) {
 
 const allWeapons = [
   ...setup.weapon,
-  ...setup.emplacement,
   ...setup.stratagem,
 ]
 for(const wpn of allWeapons) {
@@ -180,7 +179,7 @@ for(const wpn of setup.weapon) {
     const key = atkKey(atk.medium, atk.ref)
     const obj = refRegister[key]
     return {
-      type: atk.medium,
+     type: atk.medium,
       id: obj.id,
       count: atk.count,
     }
@@ -198,4 +197,5 @@ for(const wpn of setup.weapon) {
 fs.writeFileSync('data/weapons.json', json({
   sources,
   weapons: wps,
+  stratagems: setup.stratagem,
 }))

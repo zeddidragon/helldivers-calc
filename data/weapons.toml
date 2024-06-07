@@ -1012,47 +1012,47 @@ armor = 4
 calltime = 5
 cooldown = 480
 
-[[emplacement]]
+[[stratagem]]
 category = "Emplacement"
 fullname = "MD-I4 Incendiary Mines"
 stratcode = "dlld"
 health = 250
 armor = 1
+cap = 32
 calltime = 3
 cooldown = 180
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "explosion"
 ref = "IncendiaryMine"
-count = 32
 
-[[emplacement]]
+[[stratagem]]
 category = "Emplacement"
 fullname = "MD-6 Anti-Personnel Minefield"
 stratcode = "dlur"
 health = 250
 armor = 1
+cap = 32
 calltime = 3
 cooldown = 180
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "explosion"
 ref = "ContactMine"
-count = 32
 
-[[emplacement]]
+[[stratagem]]
 category = "Emplacement"
 fullname = "A/MG-43 Machine Gun Sentry"
-stratcode = "durl"
+stratcode = "durru"
 health = 200
 armor = 2
 calltime = 8
 cooldown = 180
 rpm = 660
 cap = 130
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "projectile"
 ref = "Rifle_8x60mm_fmj"
 
-[[emplacement]]
+[[stratagem]]
 category = "Emplacement"
 fullname = "A/G-16 Gatling Sentry"
 stratcode = "durl"
@@ -1062,11 +1062,11 @@ calltime = 8
 cooldown = 180
 rpm = 1560
 cap = 390
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "projectile"
 ref = "Rifle_8x60mm_fmj"
 
-[[emplacement]]
+[[stratagem]]
 category = "Emplacement"
 fullname = "E/MG-101 HMG Emplacement"
 stratcode = "dulrrl"
@@ -1076,11 +1076,11 @@ calltime = 3
 cooldown = 180
 rpm = 660
 cap = 300
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "projectile"
 ref = "Rifle_12p5x100mm_fmj"
 
-[[emplacement]]
+[[stratagem]]
 category = "Emplacement"
 fullname = "A/M-12 Mortar Sentry"
 stratcode = "durrd"
@@ -1090,14 +1090,14 @@ calltime = 8
 cooldown = 180
 rpm = 32
 cap = 36
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "projectile"
 ref = "Grenade_Mortar_40mm_HE"
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "explosion"
 ref = "Grenade_Mortar_40mm_HE"
 
-[[emplacement]]
+[[stratagem]]
 category = "Emplacement"
 fullname = "A/M-23 EMS Mortar Sentry"
 stratcode = "durdr"
@@ -1107,14 +1107,14 @@ calltime = 8
 cooldown = 180
 rpm = 10
 cap = 15
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "projectile"
 ref = "Grenade_Mortar_40mm_Staticfield"
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "explosion"
 ref = "Grenade_Mortar_40mm_Staticfield"
 
-[[emplacement]]
+[[stratagem]]
 category = "Emplacement"
 fullname = "A/MLS-4X Rocket Sentry"
 stratcode = "durrl"
@@ -1123,14 +1123,14 @@ armor = 2
 calltime = 8
 cooldown = 180
 cap = 36
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "projectile"
 ref = "Rocket_70mm_turret"
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "explosion"
 ref = "Rocket_70mm_turret"
 
-[[emplacement]]
+[[stratagem]]
 category = "Emplacement"
 fullname = "A/AC-8 Autocannon Sentry"
 stratcode = "durulu"
@@ -1139,14 +1139,14 @@ armor = 2
 calltime = 8
 cooldown = 180
 cap = 24
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_40mm_APHE"
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "explosion"
 ref = "APHE_40mm"
 
-[[emplacement]]
+[[stratagem]]
 category = "Emplacement"
 fullname = "A/ARC-3 Tesla Tower"
 stratcode = "durulr"
@@ -1154,7 +1154,7 @@ health = 600
 armor = 1
 calltime = 3
 cooldown = 150
-[[emplacement.attack]]
+[[stratagem.attack]]
 medium = "arc"
 ref = "TeslaTurret"
 
@@ -1233,14 +1233,13 @@ stratcode = "rdluu"
 calltime = 2
 cooldown = 80
 salvos = 4
+cap = 30
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_Eagle_23mm"
-count = 30
 [[stratagem.attack]]
 medium = "explosion"
 ref = "Cannon_23mm"
-count = 30
 
 [[stratagem]]
 category = "Orbital"
@@ -1249,14 +1248,13 @@ stratcode = "rrdlrd"
 calltime = 5
 cooldown = 240
 salvos = 5
+cap =  3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Cannon_120mm_HE"
-count = 3
 [[stratagem.attack]]
 medium = "explosion"
 ref = "OrbitalStrike"
-count = 3
 
 [[stratagem]]
 category = "Orbital"
@@ -1265,14 +1263,13 @@ stratcode = "rduuldd"
 calltime = 6
 cooldown = 240
 salvos = 5
+cap =  3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Cannon_380mm_HE"
-count = 3
 [[stratagem.attack]]
 medium = "explosion"
 ref = "OrbitalBarrage"
-count = 3
 
 [[stratagem]]
 category = "Orbital"
@@ -1281,14 +1278,13 @@ stratcode = "rdrdrd"
 calltime = 3
 cooldown = 240
 salvos = 3
+cap = 3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Cannon_380mm_HE"
-count = 3
 [[stratagem.attack]]
 medium = "explosion"
 ref = "OrbitalBarrage"
-count = 3
 
 [[stratagem]]
 category = "Orbital"
@@ -1297,6 +1293,7 @@ stratcode = "rdurd"
 calltime = 2
 cooldown = 300
 uses = 3
+limit = 25
 [[stratagem.attack]]
 medium = "damage"
 ref = "DPS_BeamHuge"
@@ -1307,6 +1304,7 @@ fullname = "Orbital Railcannon Strike"
 stratcode = "ruddr"
 calltime = 1
 cooldown = 210
+salvos = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Railcannon"
@@ -1319,37 +1317,36 @@ category = "Eagle"
 fullname = "Eagle Airstrike"
 stratcode = "urdr"
 cooldown = 15
-strikes = 2
+uses = 2
+cap = 6
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_100kg"
-count = 6
 [[stratagem.attack]]
 medium = "explosion"
 ref = "EagleBomb_100kg"
-count = 6
 
 [[stratagem]]
 category = "Eagle"
 fullname = "Eagle Napalm Airstrike"
 stratcode = "urdu"
 cooldown = 15
-strikes = 2
+uses = 2
+cap = 4
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_Napalm"
-count = 4
 [[stratagem.attack]]
 medium = "explosion"
 ref = "EagleBomb_Napalm"
-count = 4
 
 [[stratagem]]
 category = "Eagle"
 fullname = "Eagle 500kg Bomb"
-stratcode = "urdu"
+stratcode = "urddd"
 cooldown = 15
-strikes = 1
+uses = 1
+cap = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_500kg"
@@ -1365,7 +1362,7 @@ category = "Eagle"
 fullname = "Eagle Strafing Run"
 stratcode = "urr"
 cooldown = 15
-strikes = 3
+uses = 3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_Eagle_23mm"
@@ -1378,15 +1375,14 @@ category = "Eagle"
 fullname = "Eagle Cluster Bomb"
 stratcode = "urddr"
 cooldown = 15
-strikes = 4
+uses = 4
+cap = 8
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_Eagle_23mm"
-count = 8
 [[stratagem.attack]]
 medium = "explosion"
 ref = "Cannon_23mm"
-count = 8
 [[stratagem.attack]]
 medium = "explosion"
 ref = "AirburstCluster"
@@ -1401,34 +1397,32 @@ category = "Eagle"
 fullname = "Eagle 110mm Rocket Pods"
 stratcode = "urul"
 cooldown = 15
-strikes = 2
+uses = 2
+cap = 3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Rocket_110mm"
-count = 3
 [[stratagem.attack]]
 medium = "explosion"
 ref = "Rocket_110mm"
-count = 3
 
 [[stratagem]]
 category = "Eagle"
 fullname = "Eagle Smoke Strike"
 stratcode = "urud"
 cooldown = 15
-strikes = 2
+uses = 2
+cap = 8
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_Smoke"
-count = 8
 [[stratagem.attack]]
 medium = "explosion"
 ref = "Bomb_Impact_Smoke"
-count = 8
 
 [[stratagem]]
 category = "Vehicle"
-fullname = "EXO-45 Patriot_Exosuit"
+fullname = "EXO-45 Patriot Exosuit"
 stratcode = "ldruldd"
 health = 600
 armor = 3
@@ -1464,3 +1458,97 @@ ref = "Ability_Cyborg_Lieutenant_Stomp"
 [[stratagem.attack]]
 medium = "explosion"
 ref = "Vehicle_Explosion_CombatWalker"
+
+[[stratagem]]
+category = "Mission"
+fullname = "Eagle Rearm"
+stratcode = "uulur"
+cooldown = 150
+
+[[stratagem]]
+category = "Mission"
+fullname = "Hellbomb"
+stratcode = "duldurdu"
+calltime = 5
+cooldown = 30
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Hellbomb"
+
+[[stratagem]]
+category = "Mission"
+fullname = "SEAF Artillery#Explosive"
+stratcode = "ruud"
+calltime = 0
+cooldown = 15
+[[stratagem.attack]]
+medium = "projectile"
+ref = "SEAF_Gun_Explosive"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "SEAF_Gun_Explosive"
+
+[[stratagem]]
+category = "Mission"
+fullname = "SEAF Artillery#High Yield Explosive"
+stratcode = "ruud"
+calltime = 0
+cooldown = 15
+[[stratagem.attack]]
+medium = "projectile"
+ref = "SEAF_Gun_High_Yield_Explosive"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "SEAF_Gun_High_Yield_Explosive"
+
+[[stratagem]]
+category = "Mission"
+fullname = "SEAF Artillery#Mini Nuke"
+stratcode = "ruud"
+calltime = 0
+cooldown = 15
+[[stratagem.attack]]
+medium = "projectile"
+ref = "SEAF_Gun_Mini_Nuke"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "SEAF_Gun_Mini_Nuke"
+
+[[stratagem]]
+category = "Mission"
+fullname = "SEAF Artillery#Smoke"
+stratcode = "ruud"
+calltime = 0
+cooldown = 15
+[[stratagem.attack]]
+medium = "projectile"
+ref = "SEAF_Gun_Smoke"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "SEAF_Gun_Smoke"
+
+[[stratagem]]
+category = "Mission"
+fullname = "SEAF Artillery#Napalm"
+stratcode = "ruud"
+calltime = 0
+cooldown = 15
+[[stratagem.attack]]
+medium = "projectile"
+ref = "SEAF_Gun_Napalm"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "SEAF_Gun_Napalm"
+
+[[stratagem]]
+category = "Mission"
+fullname = "SEAF Artillery#Static Field"
+stratcode = "ruud"
+calltime = 0
+cooldown = 15
+[[stratagem.attack]]
+medium = "projectile"
+ref = "SEAF_Gun_EMP"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "SEAF_Gun_EMP"

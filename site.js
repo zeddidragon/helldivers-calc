@@ -7,23 +7,42 @@ function sorting(col, mainScope) {
   if(col === 'category') {
     col = 'idx'
   }
-  if(['idx', 'id', 'damageid', 'code', 'name', 'source'].includes(col)) {
+  if(col === 'stratcode') {
+    col = 'stratorder'
+  }
+  if(['idx', 'id', 'damageid', 'code', 'name', 'source', 'stratorder'].includes(col)) {
     dir = 1
   }
 
   function idxSort(a, b) {
-    return a.id - b.id
+    return a.idx - b.idx
   }
 
   if(locals.scope === 'weapons' && mainScope === 'projectile') {
-    return function sortByProjectileName(a, b) {
+    return function sortByProjectileCol(a, b) {
       const diff = (a.projectile?.[col] || '').localeCompare(b.projectile?.[col] || '') * dir
       if(diff) return diff
       return idxSort(a, b)
     }
   }
+  if(locals.scope === 'stratagems' && col === 'radius') {
+    return function stratRadiusSort(a, b) {
+      for(let i = 1; i <= 3; i++) {
+        const diff = compare(a, b, `maxRadius${i}`)
+        if(diff) return diff
+      }
+      return idxSort(a, b)
+    }
+  }
 
-  if(['projectiles', 'explosions'].includes(locals.scope) && mainScope === 'damage') {
+  let shouldSubSort = false
+  if(['projectiles', 'explosions', 'stratagems'].includes(locals.scope) && mainScope === 'damage') {
+    shouldSubSort = true
+  }
+  if(locals.scope === 'stratagems' && mainScope === 'explosions') {
+    shouldSubSort = true
+  }
+  if(shouldSubSort) {
     const cb = sorting(col)
     return function subSort(a, b) {
       const diff = cb(a.damage || {}, b.damage || {})
@@ -32,7 +51,7 @@ function sorting(col, mainScope) {
     }
   }
 
-  if(col === 'name' || col === 'code') {
+  if(col === 'name' || col === 'code' || col == 'stratorder') {
     return function sortByName(a, b) {
       const diff = (a[col] || '').localeCompare(b[col] || '') * dir
       if(diff) return diff
@@ -243,6 +262,14 @@ window.locals = {
         return [wpn]
       })
     }
+    if(scope === 'stratagems') {
+      arr = arr.flatMap(strat => {
+        if(strat.subobjects) {
+          return [strat, ...strat.subobjects]
+        }
+        return [strat]
+      })
+    }
     return arr
   },
   subObj: obj => {
@@ -250,6 +277,8 @@ window.locals = {
   },
   scope: 'weapons',
   scopes: [
+    'weapons',
+    'stratagems',
     'damages',
     'projectiles',
     'explosions',
@@ -264,10 +293,10 @@ window.locals = {
 
 locals.lang = locals.langs[0]
 
-function register(objects) {
+function register(objects, prop = 'id') {
   const reg = {}
   for(const obj of objects) {
-    reg[obj.id] = obj
+    reg[obj[prop]] = obj
   }
   return reg
 }
@@ -392,7 +421,7 @@ async function loadData() {
     let shotdmg2 = count * (damage?.dmg2 || 0)
     let subobjects = wpn.subattacks?.map(({ id, type, count, name }) => {
       const obj = registers[type][id]
-      const damage = damages[obj.damageid]
+      const damage = obj.damage
       const n = (count || obj.pellets || 1)
       shotdmg += n * (damage?.dmg || 0)
       shotdmg2 += n * (damage?.dmg2 || 0)
@@ -505,6 +534,85 @@ async function loadData() {
       subobjects,
     }
   })
+
+  const byRef = {
+    weapon: register(locals.weapons, 'fullname'),
+    damage: register(locals.damages, 'enum'),
+    projectile: register(locals.projectiles, 'enum'),
+    explosion: register(locals.explosions, 'enum'),
+    beam: register(locals.beams, 'enum'),
+    arc: register(locals.arcs, 'enum'),
+  }
+  window.byRef = byRef
+
+  const arrowMap = {
+    d: '🡇',
+    u: '🡅',
+    l: '🡄',
+    r: '🡆',
+  }
+  const arrowOrder = {
+    u: 1,
+    r: 2,
+    d: 3,
+    l: 4,
+  }
+  locals.stratagems = data.stratagems.map((strat, i) => {
+    let shotdmg = 0
+    let shotdmg2 = 0
+    let maxRadius = [0, 0, 0]
+    let subobjects = strat.attack?.map(({ medium, ref, count }) => {
+      const obj = byRef[medium][ref]
+      const damage = obj.damage
+      const n = (count || obj.pellets || 1)
+      shotdmg += n * (damage?.dmg || 0)
+      shotdmg2 += n * (damage?.dmg2 || 0)
+      name = obj.name
+      if(medium === 'explosion') {
+        for(let i = 0; i < 3; i++) {
+          maxRadius[i] = Math.max(maxRadius[i], obj[`r${i + 1}`])
+        }
+      }
+      return {
+        type: medium,
+        damage,
+        [medium]: obj,
+        count,
+        name,
+        fullname: strat.fullname,
+        stratagem: strat,
+      }
+    })
+    const arrows = strat.stratcode.split('').map(i => arrowMap[i]).join('')
+    const stratorder = strat.stratcode.split('').map(i => arrowOrder[i]).join('')
+
+    if(strat.category === 'orbital' || strat.category === 'eagle') {
+      const factor = (strat.cap || 1) * (strat.limit || 1)
+      shotdmg *= factor
+      shotdmg2 *= factor
+    }
+
+    let mainAttack
+    if(subobjects?.[0] && subobjects[0].type !== 'weapon') {
+      mainAttack = subobjects.shift()
+    }
+    return {
+      ...(mainAttack || {}),
+      ...strat,
+      idx: i + 1,
+      name: t('stratname', strat.fullname),
+      calltime: strat.calltime || 0,
+      shotdmg,
+      shotdmg2,
+      arrows,
+      stratorder,
+      subobjects,
+      maxRadius1: maxRadius[0],
+      maxRadius2: maxRadius[1],
+      maxRadius3: maxRadius[2],
+    }
+  })
+
   locals.cats = Array.from(new Set(locals.weapons.map(wpn => wpn.category)))
   locals.sources = data.sources.slice(0, -1)
   readState()
