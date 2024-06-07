@@ -111,7 +111,7 @@ mixin weaponsRow(wpn, opts)
       span.weapon.name= t('table.td.dmg.label',  'explosion', 'Explosion')
   +weaponDamageRow(wpn)
   td.weapon.rpm
-    if hasTag(wpn, 'laser')
+    if wpn.beam
       span.rpm-laser Beam
     if wpn.charge
       span.rpm-charge(title="Charge time")
@@ -275,7 +275,11 @@ mixin stratagemsRow(obj, opts = {})
   td.stratagem.uses= obj.uses
   td.stratagem.health= obj.health
   td.stratagem.armor(class=`ap-${obj.armor}`)= obj.armor
-  td.stratagem.rpm= obj.rpm
+  td.stratagem.rpm
+    if obj.beam
+      span.rpm-laser Beam
+    else
+      span.rpm-main= obj.rpm
   td.stratagem.cap
     if obj.salvos
       span.salvos= obj.salvos
@@ -283,9 +287,24 @@ mixin stratagemsRow(obj, opts = {})
   td.stratagem.capextra
     if obj.limit
       span.cap-limit s
-  +weaponDamageRow(obj)
-  +damagesRow(obj.damage || {}, { apCount: 1, effectsCount: 1 })
-  +explosionsRow(obj.explosion || {})
+  if obj.shield
+    +shieldRow(obj)
+  else
+    +weaponDamageRow(obj)
+    +damagesRow(obj.damage || {}, { apCount: 1, effectsCount: 1 })
+    +explosionsRow(obj.explosion || {})
+
+mixin shieldRow(obj)
+  td.stratagem.label(
+    title=t('table.th.strat', 'shield', 'Shield Health, Regen, Delay, Delay After Breaking, Radius')
+    colspan=2
+  )= t('table.td.aoe.label', 'shield', 'Shield')
+  td.stratagem.shield.stub= obj.shield
+  td.stratagem.shield.stub.shieldregen(colspan=2)= obj.shieldregen
+  td.stratagem.shielddelay.time.stub= obj.shielddelay
+  td.stratagem.shieldbreakdelay.time.stub= obj.shieldbreakdelay
+  td.stratagem.shieldradius.length(colspan=2)= obj.shieldradius
+  td.stratagem.shield.padding(colspan=3)
 
 mixin projectilesHeader(opts = {})
   if opts.full

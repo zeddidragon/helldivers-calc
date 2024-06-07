@@ -574,6 +574,7 @@ async function loadData() {
         }
       }
       return {
+        ...(medium === 'weapon' ? obj : {}),
         type: medium,
         damage,
         [medium]: obj,

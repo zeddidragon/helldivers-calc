@@ -101,7 +101,7 @@ td.damage.ap.ap-list-1, td.explosion.radius.r1, td.effect.effect1 {
   padding-left: 0.2em;
 }
 
-td.explosion.label, td.beam.label, td.arc.label {
+td.explosion.label, td.beam.label, td.arc.label, td.stratagem.label {
   color: #a98a98;
 }
 
@@ -189,9 +189,17 @@ td.name {
   color: #a98a98;
   font-size: 0.7em;
 }
-.rpm-charge:after {
+.rpm-charge:after, .time:after {
   color: #a98a98;
   content: "s";
+}
+.shieldregen:after {
+  color: #a98a98;
+  content: "/s";
+}
+.length:after {
+  color: #a98a98;
+  content: "m";
 }
 .source-page:before {
   content: "#";
@@ -212,7 +220,7 @@ td.id:before, td.damageid:before, td.projectileid:before {
 .damage-x, .xdmg, .name.name-explosion, .stub.radius {
   color: #ea8;
 }
-.beam.stub {
+.beam.stub, .shield.stub {
   color: #ee8;
 }
 .arc.stub {

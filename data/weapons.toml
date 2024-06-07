@@ -993,7 +993,7 @@ ref = "Cannon_30mm_APHE"
 medium = "explosion"
 ref = "APHE_30mm"
 
-[[backpack]]
+[[stratagem]]
 category = "Backpack"
 fullname = "B-1 Supply Pack"
 stratcode = "dlduur"
@@ -1003,9 +1003,36 @@ calltime = 5
 cooldown = 480
 cap = 4
 
-[[backpack]]
+[[stratagem]]
 category = "Backpack"
-fullname = "SH-20 Ballistic Shield Backpack"
+fullname = "AX/AR-23 \"Guard Dog\""
+stratcode = "dulurd"
+health = 400
+armor = 4
+calltime = 5
+cooldown = 480
+rpm = 640
+cap = 30
+salvos = 6
+[[stratagem.attack]]
+medium = "projectile"
+ref = "Rifle_5p5x50mm_fmj"
+
+[[stratagem]]
+category = "Backpack"
+fullname = "AX/LAS-5 \"Guard Dog\" Rover"
+stratcode = "dulurr"
+health = 400
+armor = 4
+calltime = 5
+cooldown = 480
+[[stratagem.attack]]
+medium = "beam"
+ref = "MediumDrone"
+
+[[stratagem]]
+category = "Backpack"
+fullname = "SH-20 Ballistic Shield stratagem"
 stratcode = "dlddul"
 health = 400
 armor = 4
@@ -1013,12 +1040,42 @@ calltime = 5
 cooldown = 480
 
 [[stratagem]]
+category = "Backpack"
+fullname = "SH-32 Shield Generator Pack"
+stratcode = "dulrlr"
+health = 400
+armor = 4
+calltime = 5
+cooldown = 480
+shield = 150
+shieldregen = 150
+shielddelay = 60
+shieldbreakdelay = 12
+shieldradius = 1
+
+
+[[stratagem]]
+category = "Emplacement"
+fullname = "FX-12 Shield Generator Relay"
+stratcode = "ddlrlr"
+health = 450
+armor = 1
+limit = 30
+calltime = 3
+cooldown = 180
+shield = 4000
+shieldregen = 300
+shielddelay = 5
+shieldbreakdelay = 8
+shieldradius = 8
+
+[[stratagem]]
 category = "Emplacement"
 fullname = "MD-I4 Incendiary Mines"
 stratcode = "dlld"
 health = 250
 armor = 1
-cap = 32
+cap = 48
 calltime = 3
 cooldown = 180
 [[stratagem.attack]]
@@ -1031,7 +1088,7 @@ fullname = "MD-6 Anti-Personnel Minefield"
 stratcode = "dlur"
 health = 250
 armor = 1
-cap = 32
+cap = 48
 calltime = 3
 cooldown = 180
 [[stratagem.attack]]
@@ -1164,6 +1221,7 @@ fullname = "Orbital Precision Strike"
 stratcode = "rru"
 calltime = 4
 cooldown = 100
+salvos = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Precision_Strike"
@@ -1177,6 +1235,7 @@ fullname = "Orbital Gas Strike"
 stratcode = "rrdr"
 calltime = 2
 cooldown = 75
+salvos = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Gas"
@@ -1190,6 +1249,7 @@ fullname = "Orbital Smoke Strike"
 stratcode = "rrdu"
 calltime = 2
 cooldown = 100
+salvos = 6
 
 [[stratagem]]
 category = "Orbital"
@@ -1219,6 +1279,7 @@ fullname = "Orbital EMS Strike"
 stratcode = "rrld"
 calltime = 2
 cooldown = 75
+salvos = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Stunround"

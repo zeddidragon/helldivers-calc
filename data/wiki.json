@@ -17368,12 +17368,83 @@
         {"type": "explosion", "name": "APHE_30mm", "id": 124}
       ]
     },
+    "B-1 Supply Pack": {
+      "category": "Backpack",
+      "stratcode": "dlduur",
+      "health": 400,
+      "armor": 4,
+      "calltime": 5,
+      "cooldown": 480,
+      "cap": 4,
+      "attacks": []
+    },
+    "AX/AR-23 \"Guard Dog\"": {
+      "category": "Backpack",
+      "stratcode": "dulurd",
+      "health": 400,
+      "armor": 4,
+      "calltime": 5,
+      "cooldown": 480,
+      "rpm": 640,
+      "cap": 30,
+      "salvos": 6,
+      "attacks": [
+        {"type": "projectile", "name": "Rifle_5p5x50mm_fmj", "id": 182}
+      ]
+    },
+    "AX/LAS-5 \"Guard Dog\" Rover": {
+      "category": "Backpack",
+      "stratcode": "dulurr",
+      "health": 400,
+      "armor": 4,
+      "calltime": 5,
+      "cooldown": 480,
+      "attacks": [{"type": "beam", "name": "MediumDrone", "id": 12}]
+    },
+    "SH-20 Ballistic Shield stratagem": {
+      "category": "Backpack",
+      "stratcode": "dlddul",
+      "health": 400,
+      "armor": 4,
+      "calltime": 5,
+      "cooldown": 480,
+      "attacks": []
+    },
+    "SH-32 Shield Generator Pack": {
+      "category": "Backpack",
+      "stratcode": "dulrlr",
+      "health": 400,
+      "armor": 4,
+      "calltime": 5,
+      "cooldown": 480,
+      "shield": 150,
+      "shieldregen": 150,
+      "shielddelay": 60,
+      "shieldbreakdelay": 12,
+      "shieldradius": 1,
+      "attacks": []
+    },
+    "FX-12 Shield Generator Relay": {
+      "category": "Emplacement",
+      "stratcode": "ddlrlr",
+      "health": 450,
+      "armor": 1,
+      "limit": 30,
+      "calltime": 3,
+      "cooldown": 180,
+      "shield": 4000,
+      "shieldregen": 300,
+      "shielddelay": 5,
+      "shieldbreakdelay": 8,
+      "shieldradius": 8,
+      "attacks": []
+    },
     "MD-I4 Incendiary Mines": {
       "category": "Emplacement",
       "stratcode": "dlld",
       "health": 250,
       "armor": 1,
-      "cap": 32,
+      "cap": 48,
       "calltime": 3,
       "cooldown": 180,
       "attacks": [{"type": "explosion", "name": "IncendiaryMine", "id": 35}]
@@ -17383,7 +17454,7 @@
       "stratcode": "dlur",
       "health": 250,
       "armor": 1,
-      "cap": 32,
+      "cap": 48,
       "calltime": 3,
       "cooldown": 180,
       "attacks": [{"type": "explosion", "name": "ContactMine", "id": 188}]
@@ -17499,6 +17570,7 @@
       "stratcode": "rru",
       "calltime": 4,
       "cooldown": 100,
+      "salvos": 1,
       "attacks": [
         {"type": "projectile", "name": "Orbital_Precision_Strike", "id": 64},
         {"type": "explosion", "name": "PrecisionStrike", "id": 175}
@@ -17509,6 +17581,7 @@
       "stratcode": "rrdr",
       "calltime": 2,
       "cooldown": 75,
+      "salvos": 1,
       "attacks": [
         {"type": "projectile", "name": "Orbital_Gas", "id": 132},
         {"type": "explosion", "name": "OrbitalGas", "id": 40}
@@ -17519,6 +17592,7 @@
       "stratcode": "rrdu",
       "calltime": 2,
       "cooldown": 100,
+      "salvos": 6,
       "attacks": []
     },
     "Orbital Airburst Strike": {
@@ -17539,6 +17613,7 @@
       "stratcode": "rrld",
       "calltime": 2,
       "cooldown": 75,
+      "salvos": 1,
       "attacks": [
         {"type": "projectile", "name": "Orbital_Stunround", "id": 46},
         {"type": "explosion", "name": "OrbitalStun", "id": 101}
