@@ -195,7 +195,7 @@ for(const wpn of setup.weapon) {
   delete wpn.attack
 }
 
-fs.writeFileSync('data/advanced.json', json({
+fs.writeFileSync('data/weapons.json', json({
   sources,
   weapons: wps,
 }))

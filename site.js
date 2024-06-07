@@ -301,7 +301,7 @@ async function loadData() {
     mined,
     translations,
   ] = await Promise.all([
-    fetch(`data/advanced.json`).then(res => res.json()),
+    fetch(`data/weapons.json`).then(res => res.json()),
     fetch(`data/datamined.json`).then(res => res.json()),
     fetch(`data/lang-${locals.lang}.json`)
       .then(res => res.json())
@@ -600,7 +600,7 @@ function readState() {
   try {
     let hash = window.location.hash
     if(!hash) {
-      hash = '#hc[]=Misc&hh[]=dps&hh[]=dps2'
+      hash = '#hc[]=Misc&hc[]=Mounted&hh[]=dps&hh[]=dps2'
     }
     states = hash.slice(1).split('&').map(kv => kv.split('='))
   } catch(err) {
