@@ -652,19 +652,26 @@ header.menu
               onclick=`toggleHeader('${h}')`
             )= t('wpn.header.label', h)
 table
-  tr
-    +#{`${scope}Header`}(full)
-    if subScope
-      +#{`${subScope}Header`}(hideName)
-  for obj in objects(scope)
+  thead
     tr
-      +#{`${scope}Row`}(obj, full)
+      +#{`${scope}Header`}(full)
       if subScope
-        - let obj2 = subObj(obj)
-        if obj2
-          +#{`${subScope}Row`}(obj2, hideName)
-        else
-          td.damage-filler(colspan=colspans.damagesHideName)
+        +#{`${subScope}Header`}(hideName)
+  tbody
+    for obj in objects(scope)
+      tr
+        +#{`${scope}Row`}(obj, full)
+        if subScope
+          - let obj2 = subObj(obj)
+          if obj2
+            +#{`${subScope}Row`}(obj2, hideName)
+          else
+            td.damage-filler(colspan=colspans.damagesHideName)
+  tfoot
+    tr
+      +#{`${scope}Header`}(full)
+      if subScope
+        +#{`${subScope}Header`}(hideName)
 if scope === 'weapons'
   ul
     li= t('explanations', 'reload', 'Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.')

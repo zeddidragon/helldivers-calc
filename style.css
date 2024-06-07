@@ -44,6 +44,17 @@ table, th, td {
   border-collapse: collapse;
 }
 
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #000;
+}
+tfoot th {
+  position: sticky;
+  bottom: 0;
+  background-color: #000;
+}
+
 .button {
   color: #4e5d6f;
   cursor: pointer;
