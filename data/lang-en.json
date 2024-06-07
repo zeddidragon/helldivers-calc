@@ -1244,6 +1244,12 @@
   "stratname;SEAF Artillery#Smoke": "SEAF Artillery Smoke",
   "stratname;SEAF Artillery#Napalm": "SEAF Artillery Napalm",
   "stratname;SEAF Artillery#Static Field": "SEAF Artillery Static Field",
+  "stratname;B-1 Supply Pack": "B-1 Supply Pack",
+  "stratname;AX/AR-23 \"Guard Dog\"": "AX/AR-23 \"Guard Dog\"",
+  "stratname;AX/LAS-5 \"Guard Dog\" Rover": "AX/LAS-5 \"Guard Dog\" Rover",
+  "stratname;SH-20 Ballistic Shield stratagem": "SH-20 Ballistic Shield stratagem",
+  "stratname;SH-32 Shield Generator Pack": "SH-32 Shield Generator Pack",
+  "stratname;FX-12 Shield Generator Relay": "FX-12 Shield Generator Relay",
   "nav.scopes.full;stratagems": "stratagems",
   "table.th.strat;category": "Category",
   "table.th.strat.label;category": "Type",
@@ -1274,5 +1280,11 @@
   "strat.category.full;Vehicle": "Vehicle",
   "strat.category.label;Vehicle": "Veh",
   "strat.category.full;Mission": "Mission",
-  "strat.category.label;Mission": "Mission"
+  "strat.category.label;Mission": "Mission",
+  "strat.category.full;Backpack": "Backpack",
+  "strat.category.label;Backpack": "Backpack",
+  "table.th.strat;shield": "Shield Health, Regen, Delay, Delay After Breaking, Radius",
+  "table.td.aoe.label;shield": "Shield",
+  "strat.category.full;Mounted": "Mounted",
+  "strat.category.label;Mounted": "Mounted"
 }
