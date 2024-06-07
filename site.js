@@ -36,7 +36,7 @@ function sorting(col, mainScope) {
   }
 
   let shouldSubSort = false
-  if(['projectiles', 'explosions', 'stratagems'].includes(locals.scope) && mainScope === 'damage') {
+  if(locals.scope !== 'damages' && mainScope === 'damage') {
     shouldSubSort = true
   }
   if(locals.scope === 'stratagems' && mainScope === 'explosions') {
@@ -628,6 +628,9 @@ function sortBy(col, objName) {
   }
 }
 
+function addChevron(prop, mainProp) {
+}
+
 window.render = function render() {
   document.querySelector('body').innerHTML = template(locals)
   const headers = document.querySelectorAll('th:not(.th-groups, .label)')
@@ -641,6 +644,8 @@ window.render = function render() {
     chevron.classList.add('sorter')
     chevron.textContent = '▼'
     h.appendChild(chevron)
+    if(mainProp === 'weapon' && prop === 'damage') {
+    }
   }
 }
 

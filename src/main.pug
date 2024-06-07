@@ -18,7 +18,11 @@ mixin weaponsHeader
   th.weapon.damage(
     title=t('table.th.dmg', 'dmgs3')
     colspan=3
-  )= t('table.th.wpn.label', 'Damage')
+  )= t('table.th.wpn.label', 'damage')
+  th.weapon.shotdmg2(
+    title=t('table.th.dmg', 'dmg2')
+  )
+    sub= t('table.th.wpn.label.sub', 'dmg2')
   th.damage.ap(
     title=t('table.th.dmg', 'ap')
   )= t('table.th.wpn.label', 'ap')
@@ -82,7 +86,7 @@ mixin weaponDamageRow(wpn)
       )= t('dmg.types', dmg.type)
   - const n = count(wpn)
   td.weapon.pellets(class={ muted: n == 1, blank: !n })= n
-  td.weapon.dmg(class={ xdmg: !!wpn.explosion })
+  td.weapon.dmg(class={ xdmg: !!wpn.explosion } colspan=2)
     if dmg.dmg
       span.dmg-base= dmg.dmg
     if dmg.dmg2 < dmg.dmg
@@ -255,6 +259,10 @@ mixin stratagemsHeader(opts = {})
     title=t('table.th.dmg', 'dmgs3')
     colspan=3
   )= t('table.th.dmg.label', 'dmgs3')
+  th.stratagem.shotdmg2(
+    title=t('table.th.dmg', 'dmg2')
+  )
+    sub= t('table.th.wpn.label.sub', 'dmg2')
   th.damage.ap(
     title=t('table.th.dmg', 'ap')
   )= t('table.th.dmg.label', 'ap')
@@ -540,10 +548,16 @@ mixin damagesHeader(opts = {})
       title=t('table.th.dmg', 'name', 'Translated name of damage source')
     )= t('table.th.dmg.label', 'name', 'Name')
   if opts.full
+    th.damage.type(
+      title=t('table.th.dmg', 'type')
+    )= t('table.th.dmg.label', 'type')
     th.damage.dmg(
-      title=t('table.th.dmg', 'dmgs3', 'Damage type / Base damage / Damage vs Massive')
-      colspan=3
-    )= t('table.th.dmg.label', 'dmgs3', 'Damage')
+      title=t('table.th.dmg', 'dmg')
+    )= t('table.th.dmg.label', 'dmg')
+    th.damage.dmg2(
+      title=t('table.th.dmg', 'dmg2')
+    )
+      sub= t('table.th.dmg.label.sub', 'dmg2')
     - const apCount = opts.apCount || 4
     th.damage.ap(
       title=t('table.th.dmg', 'ap', 'Armor Penetration, varies by context')
