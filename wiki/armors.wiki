@@ -1,0 +1,211 @@
+<includeonly>
+{{#vardefine:head|{{{head|2.0}}} }}
+{{#vardefine:chest|{{{chest|0.85}}} }}
+{{#vardefine:leg|{{{leg|0.8}}} }}
+{{#vardefine:arm|{{{arm|0.7}}} }}
+{{#vardefine:explosion|{{{explosion|0.5}}} }}
+{{#vardefine:fortified|{{{fortified|0.5}}} }}
+{{#vardefine:vitality|{{{vitality|0.2}}} }}
+{{#vardefine:armor_50|{{{armor_50|1.33}}} }}
+{{#vardefine:armor_64|{{{armor_64|1.235354}}} }}
+{{#vardefine:armor_70|{{{armor_70|1.198}}} }}
+{{#vardefine:armor_79|{{{armor_79|1.141428}}} }}
+{{#vardefine:armor_100|{{{armor_100|1.0}}} }}
+{{#vardefine:armor_129|{{{armor_129|0.885714}}} }}
+{{#vardefine:armor_150|{{{armor_150|0.8}}} }}
+{{#vardefine:armor_200|{{{armor_200|0.67}}} }}
+{{#vardefine:armor_head_50|{{{armor_head_50|{{#var: armor_100}} }}} }}
+{{#vardefine:armor_head_64|{{{armor_head_64|{{#var: armor_100}} }}} }}
+{{#vardefine:armor_head_70|{{{armor_head_70|{{#var: armor_100}} }}} }}
+{{#vardefine:armor_head_79|{{{armor_head_79|{{#var: armor_100}} }}} }}
+{{#vardefine:armor_head_100|{{{armor_head_100|{{#var: armor_100}} }}} }}
+{{#vardefine:armor_head_129|{{{armor_head_129|{{#var: armor_129}} }}} }}
+{{#vardefine:armor_head_150|{{{armor_head_150|{{#var: armor_150}} }}} }}
+{{#vardefine:armor_head_200|{{{armor_head_200|{{#var: armor_200}} }}} }}
+
+Factors
+{| class{{=}}wikitable
+!Modifier!!Factor
+|-
+|Head||{{#expr: {{#var:head}} * 100 round 2 }}%
+|-
+|Chest||{{#expr: {{#var:chest}} * 100 round 2 }}%
+|-
+|Leg||{{#expr: {{#var:leg}} * 100 round 2 }}%
+|-
+|Arm||{{#expr: {{#var:arm}} * 100 round 2 }}%
+|-
+|Explosion||{{#expr: {{#var:explosion}} * 100 round 2 }}%
+|-
+|Fortified||{{#expr: {{#var:fortified}} * 100 round 2 }}%
+|-
+|Vitality Booster||{{#expr: {{#var:vitality}} * 100 round 2 }}%
+|-
+|}
+
+Armor Rating Factors
+{| class{{=}}wikitable
+!Armor!!Factor
+|-
+|50||{{#expr: {{#var:armor_50}} * 100 round 2 }}%
+|-
+|64||{{#expr: {{#var:armor_64}} * 100 round 2 }}%
+|-
+|70||{{#expr: {{#var:armor_70}} * 100 round 2 }}%
+|-
+|79||{{#expr: {{#var:armor_79}} * 100 round 2 }}%
+|-
+|100||{{#expr: {{#var:armor_100}} * 100 round 2 }}%
+|-
+|129||{{#expr: {{#var:armor_129}} * 100 round 2 }}%
+|-
+|150||{{#expr: {{#var:armor_150}} * 100 round 2 }}%
+|-
+|200||{{#expr: {{#var:armor_200}} * 100 round 2 }}%
+|-
+|}
+
+Full Armor Table
+{| class{{=}}wikitable
+!Armor!!Head!!Chest!!Leg!!Arm!!Explosion!!Fortified
+|-
+|50
+||{{#expr: {{#var:armor_head_50}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_50}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_50}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_50}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_50}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_50}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|64
+||{{#expr: {{#var:armor_head_64}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_64}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_64}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_64}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_64}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_64}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|70
+||{{#expr: {{#var:armor_head_70}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_70}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_70}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_70}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_70}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_70}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|79
+||{{#expr: {{#var:armor_head_79}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_79}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_79}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_79}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_79}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_79}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|100
+||{{#expr: {{#var:armor_head_100}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_100}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_100}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_100}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_100}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_100}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|129
+||{{#expr: {{#var:armor_head_129}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_129}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_129}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_129}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_129}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_129}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|150
+||{{#expr: {{#var:armor_head_150}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_150}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_150}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_150}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_150}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_150}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|200
+||{{#expr: {{#var:armor_head_200}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_200}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_200}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_200}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_200}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:armor_200}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|}
+
+With Vitality Booster
+{| class{{=}}wikitable
+!Armor!!Head!!Chest!!Leg!!Arm!!Explosion!!Fortified
+|-
+|50
+||{{#expr: {{#var:vitality}} * {{#var:armor_head_50}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_50}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_50}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_50}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_50}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_50}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|64
+||{{#expr: {{#var:vitality}} * {{#var:armor_head_64}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_64}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_64}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_64}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_64}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_64}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|70
+||{{#expr: {{#var:vitality}} * {{#var:armor_head_70}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_70}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_70}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_70}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_70}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_70}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|79
+||{{#expr: {{#var:vitality}} * {{#var:armor_head_79}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_79}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_79}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_79}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_79}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_79}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|100
+||{{#expr: {{#var:vitality}} * {{#var:armor_head_100}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_100}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_100}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_100}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_100}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_100}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|129
+||{{#expr: {{#var:vitality}} * {{#var:armor_head_129}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_129}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_129}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_129}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_129}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_129}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|150
+||{{#expr: {{#var:vitality}} * {{#var:armor_head_150}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_150}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_150}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_150}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_150}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_150}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|200
+||{{#expr: {{#var:vitality}} * {{#var:armor_head_200}} * {{#var:head}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_200}} * {{#var:chest}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_200}} * {{#var:leg}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_200}} * {{#var:arm}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_200}} * {{#var:explosion}} * 100 round 2 }}%
+||{{#expr: {{#var:vitality}} * {{#var:armor_200}} * {{#var:explosion}} * {{#var:fortified}} * 100 round 2 }}%
+|-
+|}
+
+</includeonly>
+<noinclude>
+<!-- Put template categories in the documentation page-->
+{{doc}}</noinclude>

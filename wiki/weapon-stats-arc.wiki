@@ -1,0 +1,22 @@
+<includeonly><!--
+-->{{#vardefine:arc_name|{{{1|PAGENAME}}} }}<!--
+-->{{#invoke:Getdata-Attacks|getArcVariables|{{#var:arc_name}}}}<!--
+-->{| class{{=}}wikitable
+!colspan="2"|{{#var:arc_fullname}}
+|-
+{{#if:{{{attack_count|}}}|
+{{!}}Amount{{!!}}x{{{attack_count}}}
+{{!}}-}}
+|Arc Velocity||{{#var:arc_velocity}}m/s
+|-
+|Arc Range||{{#var:arc_range}}m
+|-
+|Arc Aim Angle||{{#var:arc_aim_angle}}°
+|-
+{{#if:{{#var:arc_damage_name}}|<!--
+-->{{#invoke:Getdata-Attacks|getDamageVariables|{{#var:arc_damage_name}}}}<!--
+-->{{Attack_Data/damage/table|{{#var:arc_damage_name}}}}
+}}
+|}</includeonly><noinclude>
+{{{{PAGENAME}}|ArcShotgun|attack_count=5}}
+{{doc}}</noinclude>

@@ -1,0 +1,36 @@
+<includeonly><!--
+-->{{#vardefine:beam_name|{{{1|PAGENAME}}} }}<!--
+-->{{#invoke:Getdata-Attacks|getBeamVariables|{{#var:beam_name}}}}<!--
+-->{{#invoke:Getdata-Attacks|getDamageVariables|{{#var:beam_damage_name}}|beam_}}<!--
+-->{| class{{=}}wikitable
+{| class{{=}}wikitable
+!colspan="2"|{{#var:beam_fullname}}
+|-
+|Range||{{#var:beam_range}}m
+|-
+!colspan="2"|Damage
+|-
+|Standard||{{#var:beam_standard_damage}}
+|-
+|vs. Massive||{{#var:beam_durable_damage}}
+|-
+!colspan="2"|Penetration
+|-
+|Direct||{{Armor|{{#var:beam_pen1}}|AP}}
+|-
+|Slight Angle||{{Armor|{{#var:beam_pen2}}|AP}}
+|-
+|Large Angle||{{Armor|{{#var:beam_pen3}}|AP}}
+|-
+|Sharp Angle||{{Armor|{{#var:beam_pen4|0}}|AP}}
+|-
+!colspan="2"|Special Effects
+|-
+|Stagger||{{#var:beam_stagger_value}}
+|-
+|Push||{{#var:beam_push_value}}
+|-
+|Demolition||{{#var:beam_demolition_value}}
+|}</includeonly><noinclude>
+{{{{PAGENAME}}|LaserCannon}}
+{{doc}}</noinclude>

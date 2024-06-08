@@ -1,0 +1,11 @@
+<includeonly><!--
+-->{{#vardefine:damage_name|{{{1|PAGENAME}}} }}<!--
+-->{{#vardefine:damage_fullname|{{{damage_fullname|{{#invoke:Getdata-Attacks|get|damage|{{#var:damage_name}}|name}}}}}}}<!--
+-->{| class{{=}}wikitable
+!colspan="2"|{{#var:damage_fullname}}
+|-
+{{Attack_Data/damage/table|{{#var:damage_name}}}}
+|}</includeonly><noinclude>
+{{Attack_Data/damage|Projectile_Shotgun_10g_flm}}
+{{Attack_Data/damage|DPS_Fire}}
+{{doc}}</noinclude>

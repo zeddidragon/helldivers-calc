@@ -1,0 +1,34 @@
+<includeonly><!--
+-->{{#vardefine:projectile_name|{{{1|PAGENAME}}} }}<!--
+-->{{#invoke:Getdata-Attacks|getProjectileVariables|{{#var:projectile_name}}}}<!--
+-->{| class{{=}}wikitable
+!colspan="2"|{{#var:projectile_fullname}}
+|-
+{{#if:{{{attack_count|}}}|
+{{!}}Amount{{!!}}x{{{attack_count}}}
+{{!}}-}}
+|Caliber||{{#var:caliber}}mm
+|-
+|Mass||{{#invoke:UnitConverter|getWeightMetric|{{#var:mass}}}}
+|-
+|Initial Velocity||{{#var:velocity}}m/s
+|-
+|Drag Multiplier||{{#expr:{{#var:drag}} * 100}}%
+|-
+|Gravity Multiplier||{{#expr:{{#var:gravity}} * 100}}%
+|-
+{{#if:{{#var:lifetime}}|
+|Lifetime{{!!}}{{#var:lifetime}} sec
+{{!}}-
+}}
+|Penetration Slowdown||{{#expr:{{#var:penslow}} * 100 }}%
+|-
+{{#ifeq:{{#var:pellets|1}}|1||
+{{!}}Pellets{{!!}}x {{#var:pellets}}
+{{!}}-}}
+{{#if:{{#var:damage_name}}|{{Attack_Data/damage/table|{{#var:damage_name}}}}}}
+|}</includeonly><noinclude>
+{{{{PAGENAME}}|Plasma_Punisher_Projectile}}
+{{{{PAGENAME}}|Shotgun_12g_flm}}
+{{{{PAGENAME}}|Shrapnel|attack_count=30}}
+{{doc}}</noinclude>

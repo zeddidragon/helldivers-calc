@@ -1,0 +1,12 @@
+<includeonly>{{#if:{{#var:reload_one}}|{{!}}Reloading 1 Round{{!!}}{{#var:reload_one}} sec
+{{!}}-}}
+{{#if:{{#var:reload_n}}|{{!}}Reloading {{#var:reload_n_count}} Rounds{{!!}}{{#var:reload_n}} sec
+{{!}}-}}
+|Spare Rounds||{{#var:rounds_spare}}
+|-
+|Starting Rounds||{{#var:rounds_starting}}
+|-
+|Rounds from Supply||{{#var:rounds_from_supply}}
+|-
+|Rounds from Ammo Box||{{#var:rounds_from_box}}
+|-</includeonly>

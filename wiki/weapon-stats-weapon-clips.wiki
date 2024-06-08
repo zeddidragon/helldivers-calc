@@ -1,0 +1,10 @@
+<includeonly>|Clip Capacity||{{#var:clips_size}}
+|-
+|Spare Clips||{{#var:clips_spare}}
+|-
+|Starting Clips||{{#var:clips_starting}}
+|-
+|Clips from Supply||{{#var:clips_from_supply}}
+|-
+|Clips from Ammo Box||{{#var:clips_from_box}}
+|-</includeonly>

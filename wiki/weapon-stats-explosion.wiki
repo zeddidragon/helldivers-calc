@@ -1,0 +1,23 @@
+<includeonly><!--
+-->{{#vardefine:explosion_name|{{{1|PAGENAME}}} }}<!--
+-->{{#invoke:Getdata-Attacks|getExplosionVariables|{{#var:explosion_name}}}}<!--
+-->{{#if:{{#var:xdamage_name}}|{{#invoke:Getdata-Attacks|getDamageVariables|{{#var:xdamage_name}}|aoe_}}}}<!--
+-->{| class{{=}}wikitable
+{| class{{=}}wikitable
+!colspan="2"|{{#var:explosion_fullname}}
+|-
+{{#if:{{{attack_count|}}}|
+{{!}}Amount{{!!}}x{{{attack_count}}}
+{{!}}-}}
+|Inner Radius||{{#var:radius_inner}}m
+|-
+|Outer Radius||{{#var:radius_outer}}m
+|-
+|Shockwave Radius||{{#var:radius_shockwave}}m
+|-
+{{#if:{{#var:xdamage_name}}|{{Attack_Data/damage/explosion_table}}}}
+|}</includeonly><noinclude>
+{{{{PAGENAME}}|Punisher_Plasma_Explosion}}
+{{{{PAGENAME}}|Hellbomb}}
+{{{{PAGENAME}}|MoorMushroom_Smoke}}
+{{doc}}</noinclude>

@@ -1,0 +1,32 @@
+<includeonly>!colspan="2"|Damage
+|-
+{{#if:{{#var:element}}|
+  {{!}}Element{{!!}}{{#var:element}}
+  {{!}}- }}
+|Standard||{{#var:standard_damage}}
+|-
+|vs. Durable||{{#var:durable_damage}}
+|-
+!colspan="2"|Penetration
+|-
+|Direct||{{Armor|{{#var:pen1}}|AP}}
+|-
+|Slight Angle||{{Armor|{{#var:pen2}}|AP}}
+|-
+|Large Angle||{{Armor|{{#var:pen3}}|AP}}
+|-
+|Sharp Angle||{{Armor|{{#var:pen4|0}}|AP}}
+|-
+!colspan="2"|Special Effects
+|-
+{{#if:{{#var:status}}|
+  {{!}}Status{{!!}}[[Status Effects#{{#var:status}}|{{#var:status}}]]
+  {{!}}-
+  {{!}}Buildup{{!!}}{{#var:status_strength}}
+  {{!}}- }}
+|Stagger||{{#var:stagger_value}}
+|-
+|Push||{{#var:push_value}}
+|-
+|Demolition||{{#var:demolition_value}}
+|-</includeonly>

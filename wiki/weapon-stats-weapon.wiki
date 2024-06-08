@@ -1,0 +1,54 @@
+<includeonly><!--
+-->{{#vardefine:weapon_name|{{{1|PAGENAME}}} }}<!--
+-->{{#invoke:Getdata-Attacks|getWeaponVariables|{{#var:weapon_name}}}}<!--
+-->{| class{{=}}wikitable
+!colspan="2"|{{{weapon_fullname|{{#var:weapon_name}}}}}
+|-
+{{#if:{{#var:health}}|
+{{!}}Base Health{{!!}}{{#var:health}}
+{{!}}-
+}}
+|-
+{{#if:{{#var:armor_main}}|
+{{!}}Main Armor{{!!}}{{Armor|{{#var:armor_main}}
+{{!}}-
+}}
+|-
+{{#if:{{#var:fire_rate}}|
+{{!}}Fire Rate{{!!}}{{#var:fire_rate}} RPM
+{{!}}-
+}}
+{{#if:{{#var:recoil}}|
+{{!}}Recoil{{!!}}{{#var:recoil}}
+{{!}}-
+}}
+{{#if:{{#var:capacity}}|
+{{!}}Capacity{{!!}}{{#var:capacity}}
+{{!}}-
+}}
+{{#if:{{#var:fire_limit}}|
+{{!}}Fire Limit{{!!}}{{#var:fire_limit}} sec
+{{!}}-
+}}
+{{#if:{{#var:reload}}|
+{{!}}Reload Time{{!!}}{{#var:reload}} sec
+{{!}}-
+}}
+{{#if:{{#var:reload_early}}|
+{{!}}Tactical Reload{{!!}}{{#var:reload_early}} sec
+{{!}}-
+}}
+{{#if:{{#var:magazines_spare}}|{{Attack_Data/weapon/magazines}}}}
+{{#if:{{#var:rounds_spare}}|{{Attack_Data/weapon/rounds}}}}
+{{#if:{{#var:clips_spare}}|{{Attack_Data/weapon/clips}}}}
+|}</includeonly>
+<noinclude>
+{{{{PAGENAME}}|AR-23 Liberator}}
+{{{{PAGENAME}}|SG-8P Punisher Plasma}}
+{{{{PAGENAME}}|SG-8 Punisher}}
+{{{{PAGENAME}}|P-4 Senator}}
+{{{{PAGENAME}}|AC-8 Autocannon}}
+{{{{PAGENAME}}|LAS-16 Sickle}}
+{{{{PAGENAME}}|LAS-5 Scythe}}
+{{{{PAGENAME}}|A/AC-8 Autocannon Sentry}}
+{{doc}}</noinclude>

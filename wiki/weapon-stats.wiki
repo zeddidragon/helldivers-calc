@@ -1,0 +1,16 @@
+<includeonly><!--
+-->{{#vardefine:weapon_name|{{{1|{{PAGENAME}}}}} }}<!--
+-->{{#vardefine:attacks_count|{{{attacks_count|{{#invoke:Getdata-Attacks|getAttacksCount|{{#var:weapon}} }} }}} }}<!--
+-->{{#vardefine:hybrid_table|{{{hybrid_table|{{#invoke:Getdata-Attacks|getHybridTable|{{#var:weapon}} }} }}} }}<!--
+--><div class=flextablediv>{{#if:{{{omit_main}}}||{{Attack_Data/weapon|{{#var:weapon_name}}}}}}
+{{#invoke:Getdata-Attacks|getAttackTables|{{#var:weapon_name}}}}
+</div></includeonly><noinclude>
+{{{{PAGENAME}}|Orbital Airburst Strike|omit_main=true}}
+{{{{PAGENAME}}|SG-8P Punisher Plasma}}
+{{{{PAGENAME}}|SG-225IE Breaker Incendiary|include_weapon=true}}
+{{{{PAGENAME}}|G-6 Frag}}
+{{{{PAGENAME}}|AC-8 Autocannon}}
+{{{{PAGENAME}}|ARC-12 Blitzer}}
+{{{{PAGENAME}}|LAS-5 Scythe}}
+{{{{PAGENAME}}/explosion|Hellbomb}}
+{{doc}}</noinclude>

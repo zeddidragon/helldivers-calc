@@ -1,0 +1,8 @@
+<includeonly>|Spare Magazines||{{#var:magazines_spare}}
+|-
+|Starting Magazines||{{#var:magazines_starting}}
+|-
+|Mags from Supply||{{#var:magazines_from_supply}}
+|-
+|Mags from Ammo Box||{{#var:magazines_from_box}}
+|-</includeonly>

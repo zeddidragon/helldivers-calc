@@ -1,0 +1,83 @@
+<includeonly><!--
+-->{{#vardefine:projectile_name|{{{1|PAGENAME}}} }}<!--
+-->{{#vardefine:explosion_name|{{{2|PAGENAME}}} }}<!--
+-->{{#invoke:Getdata-Attacks|getHybridVariables|{{#var:projectile_name}}|{{#var:explosion_name}}}}<!--
+-->{| class{{=}}wikitable
+!colspan="2"|{{#var:projectile_fullname}}
+|-
+|Caliber||{{#var:caliber}}mm
+|-
+|Mass||{{#invoke:UnitConverter|getWeightMetric|{{#var:mass}}}}
+|-
+|Initial Velocity||{{#var:velocity}}m/s
+|-
+|Drag Multiplier||{{#expr:{{#var:drag}} * 100}}%
+|-
+|Gravity Multiplier||{{#expr:{{#var:gravity}} * 100}}%
+|-
+|Penetration Slowdown||{{#expr:{{#var:penslow}} * 100 }}%
+|-
+{{#if:{{#var:lifetime}}|
+|Lifetime{{!!}}{{#var:lifetime}} sec
+{{!}}-
+}}
+{{#ifeq:{{#var:pellets|1}}|1||
+{{!}}Pellets{{!!}}x {{#var:pellets}}
+{{!}}-}}
+!colspan="2"|AoE
+|-
+|Inner Radius||{{#var:radius_inner}}m
+|-
+|Outer Radius||{{#var:radius_outer}}m
+|-
+|Shockwave Radius||{{#var:radius_shockwave}}m
+|-
+!colspan="2"|Damage
+|-
+|Standard||{{#var:standard_damage}}
+|-
+|vs. Massive||{{#var:durable_damage}}
+|-
+|AoE||{{#var:aoe_standard_damage}}
+|-
+!colspan="2"|Penetration
+|-
+|Direct||{{Armor|{{#var:pen1}}|AP}}
+|-
+|Slight Angle||{{Armor|{{#var:pen2}}|AP}}
+|-
+|Large Angle||{{Armor|{{#var:pen3}}|AP}}
+|-
+|Sharp Angle||{{Armor|{{#var:pen4|0}}|AP}}
+|-
+|AoE||{{Armor|{{#var:aoe_pen1|0}}|AP}}
+|-
+!colspan="2"|Direct Hit Effects
+|-
+{{#if:{{#var:status}}|
+  {{!}}Status{{!!}}[[Status Effects#{{#var:status}}|{{#var:status}}]]
+  {{!}}-
+  {{!}}Buildup{{!!}}{{#var:status_strength}}
+  {{!}}- }}
+|Stagger||{{#var:stagger_value}}
+|-
+|Push||{{#var:push_value}}
+|-
+|Demolition||{{#var:demolition_value}}
+|-
+!colspan="2"|AoE Effects
+|-
+{{#if:{{#var:aoe_status}}|
+  {{!}}Status{{!!}}[[Status Effects#{{#var:aoe_status}}|{{#var:aoe_status}}]]
+  {{!}}-
+  {{!}}Buildup{{!!}}{{#var:aoe_status_strength}}
+  {{!}}- }}
+|Stagger||{{#var:aoe_stagger_value}}
+|-
+|Push||{{#var:aoe_push_value}}
+|-
+|Demolition||{{#var:demolition_value}}
+|}</includeonly><noinclude>
+{{{{PAGENAME}}|Plasma_Punisher_Projectile|Punisher_Plasma_Explosion}}
+{{{{PAGENAME}}|Cannon_20mm_APHET|APHET_20mm}}
+{{doc}}</noinclude>

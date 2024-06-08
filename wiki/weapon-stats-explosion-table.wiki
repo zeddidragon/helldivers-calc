@@ -1,0 +1,22 @@
+<includeonly>!colspan="2"|Effect
+|-
+|Explosive Damage||{{#var:aoe_standard_damage}}
+|-
+|Armor Penetration||{{Armor|{{#var:aoe_pen1}}|AP}}
+|-
+{{#if:{{#var:aoe_status}}|
+  {{!}}Status{{!!}}[[Status Effects#{{#var:status}}|{{#var:aoe_status}}]]
+  {{!}}-
+  {{!}}Status Buildup{{!!}}{{#var:aoe_status_strength}}
+  {{!}}- }}
+{{#if:{{#var:aoe_status2}}|
+  {{!}}Second Status{{!!}}[[Status Effects#{{#var:status}}|{{#var:aoe_status2}}]]
+  {{!}}-
+  {{!}}Status Buildup{{!!}}{{#var:aoe_status_strength2}}
+  {{!}}- }}
+|Stagger||{{#var:aoe_stagger_value}}
+|-
+|Push||{{#var:aoe_push_value}}
+|-
+|Demolition||{{#var:aoe_demolition_value}}
+|-</includeonly>
