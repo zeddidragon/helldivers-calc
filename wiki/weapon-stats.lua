@@ -139,7 +139,7 @@ local explosion_damage_setup = {
   { "colspan=2", literal = "Damage", header = true },
   { "Damage Element", "element", "element_name" },
   { "Inner Radius", "aoe_damage", "dmg" },
-  { "Outer Radius", "aoe_damage", "dmg", cb = cbShowDecline },
+  { "Outer Radius", "aoe_falloff", "dmg", cb = cbShowDecline },
   { "colspan=2", literal = "Penetration", header = true },
   { "Inner Radius", "penetration_direct", "ap1", cb = cbShowAP },
   { "Outer Radius", "aoe_penetration", "ap1", cb = cbShowOuterRadiusAP },
@@ -194,26 +194,30 @@ function addRow(row, opts)
   local user_key = row[2]
   local data_key = row[3] or user_key
   local value = row.literal
+  local user_value = nil
 
   if not value then
+    user_value = opts.args[user_key]
     value = opts.args[user_key] or opts.medium[data_key]
   end
   if not value then -- If value doesn"t exist we omit the table row entirely
     return ""
   end
-  if row.cb then
-    local newValue, newLabel = row.cb(value, opts)
-    value = newValue
-    if newLabel then label = newLabel end
-  end
-  if row.filter and not row.filter(value, opts) then
-    return ""
-  end
-  if row.prefix then
-    value = row.prefix .. " " .. value
-  end
-  if row.suffix then
-    value = value .. " " .. row.suffix
+  if not user_value then
+    if row.cb then
+      local newValue, newLabel = row.cb(value, opts)
+      value = newValue
+      if newLabel then label = newLabel end
+    end
+    if row.filter and not row.filter(value, opts) then
+      return ""
+    end
+    if row.prefix then
+      value = row.prefix .. " " .. value
+    end
+    if row.suffix then
+      value = value .. " " .. row.suffix
+    end
   end
 
   if row.header then
