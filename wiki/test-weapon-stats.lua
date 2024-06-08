@@ -31,4 +31,6 @@ frame.args = {}
 local out = ""
 frame.args = { "EXO-45 Patriot Exosuit" }
 out = out .. getData.attackDataTemplate(frame)
+frame.args = { "projectile", "Rifle_8x60mm_suc"}
+out = out .. getData.subAttackTemplate(frame)
 print(out)

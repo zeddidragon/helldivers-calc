@@ -3273,7 +3273,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Missile Combat Walker"
+      "name": "Missile Exosuit"
     },
     "Projectile_Missile_Combat_Walker_MK2": {
       "id": 148,
@@ -3295,7 +3295,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Missile Combat Walker Mk2"
+      "name": "Missile Exosuit Mk2"
     },
     "Projectile_Missile_Faf": {
       "id": 149,
@@ -5210,7 +5210,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Missile Combat Walker"
+      "name": "Explosion Missile Exosuit"
     },
     "Explosion_Projectile_Missile_CombatWalker_MK2": {
       "id": 235,
@@ -5232,7 +5232,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Explosion Missile Combat Walker Mk2"
+      "name": "Explosion Missile Exosuit Mk2"
     },
     "Explosion_Projectile_Missile_Faf": {
       "id": 236,
@@ -10443,7 +10443,7 @@
       "unk49": 10,
       "unk55": 4,
       "unk57": 180,
-      "name": "Missile Combat Walker",
+      "name": "Missile Exosuit",
       "damage_name": "Projectile_Missile_Combat_Walker"
     },
     "Missile_Combat_Walker_MK2": {
@@ -10470,7 +10470,7 @@
       "unk49": 10,
       "unk55": 4,
       "unk57": 181,
-      "name": "Missile Combat Walker Mk2",
+      "name": "Missile Exosuit Mk2",
       "damage_name": "Projectile_Missile_Combat_Walker_MK2"
     },
     "EagleMissile": {
@@ -15568,7 +15568,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 4,
-      "name": "Combat Walker Missile",
+      "name": "Missile Exosuit",
       "damage_name": "Explosion_Projectile_Missile_CombatWalker"
     },
     "Combat_Walker_Missile_MK2": {
@@ -15576,7 +15576,7 @@
       "r1": 1,
       "r2": 2,
       "r3": 4,
-      "name": "Combat Walker Missile Mk2",
+      "name": "Missile Exosuit Mk2",
       "damage_name": "Explosion_Projectile_Missile_CombatWalker_MK2"
     },
     "Rocket_70mm_turret": {

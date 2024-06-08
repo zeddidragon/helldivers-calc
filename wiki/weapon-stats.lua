@@ -250,14 +250,12 @@ function getAttackTable(opts)
   local medium = opts.medium or data[attack.type][attack.name]
   local frame = opts.frame
   local args = opts.args
-  local count = opts.count or (attack and attack.count)
   out = out .. unpackTableSetup({
     setup = table_setup,
     attack = attack,
     medium = medium,
     frame = frame,
     args = args,
-    count = count,
   })
   if medium.damage_name then
     local damage = data.damage[medium.damage_name]
@@ -267,7 +265,6 @@ function getAttackTable(opts)
       medium = damage,
       frame = frame,
       args = args,
-      count = count,
     })
   end
   return out
@@ -276,7 +273,7 @@ end
 function p.attackDataTemplate(frame)
     local args = getArgs(frame, {
       removeBlanks = false,
-      wrappers = "Template:AttackData",
+      wrappers = "Template:Attack_Data",
     })
 
     local weapon_name = args[1] or frame:getParent():getTitle()
@@ -297,13 +294,29 @@ function p.attackDataTemplate(frame)
     })
 
     local attack_rows = ""
-    local subweapon_rows = ""
     
-    if weapon.attacks then
-      attack_rows = attack_rows .. "!colspan=2|Attacks\n|-\n"
+    local attacks = {}
+    local j = 0
+    local attack_index = 0 -- For placing the header "Attacks"
+    for _, attack in ipairs(weapon.attacks or {}) do
+      j = j + 1
+      attacks[j] = attack
+      if attack.type == "weapon" then
+        local subweapon = data[attack.type][attack.name]
+        for _, subattack in ipairs(subweapon.attacks or {}) do
+          j = j + 1
+          attacks[j] = subattack
+        end
+        attack_index = j
+      end
     end
 
-    for i, attack in ipairs(weapon.attacks) do
+    if attacks[1] and attacks[1].type == "weapon" then
+      attack_rows = attack_rows .. "!colspan=2|Weapons\n|-\n"
+    end
+
+
+    for i, attack in ipairs(attacks) do
       local medium = data[attack.type][attack.name]
       local name = medium.fullname or medium.name or ""
       local attack_row = "|" .. attack_type[attack.type] .. "||" .. name
@@ -313,25 +326,32 @@ function p.attackDataTemplate(frame)
 
       local override_table = args["override_table_" .. i]
       if override_table then
-        out = out .. override_table
+        out = out .. override_table .. "\n"
       else
         local setup_config = table_setups[attack.type]
         if attack.type == "weapon" then
           args[1] = attack.name
         end
         local attack_table = getAttackTable({
-            table_setup = setup_config[1],
-            damage_table_setup = setup_config[2],
-            count = args["override_count_" .. i],
-            attack = attack,
-            medium = medium,
-            frame = frame,
-            args = args,
-          })
+          table_setup = setup_config[1],
+          damage_table_setup = setup_config[2],
+          attack = attack,
+          medium = medium,
+          frame = frame,
+          args = args,
+        })
+
+        if attack.type == "damage" then
+          attack_table = "!colspan=2|" .. medium.name .. "\n|-\n"
+            .. attack_table
+        end
 
         if attack.type == "weapon" then
-          subweapon_rows = subweapon_rows .. attack_table
+          attack_rows = attack_rows .. attack_table
         else
+          if i == attack_index + 1 then
+            attack_rows = attack_rows .. "!colspan=2|Attacks\n|-\n"
+          end
           attack_rows = attack_rows .. (
             args["override_attack_" .. i] or attack_row
           ) .. "\n|-\n"
@@ -346,11 +366,45 @@ function p.attackDataTemplate(frame)
     out = table_start("weapon")
       .. weapon_table
       .. attack_rows
-      .. subweapon_rows
       .. table_end()
       .. out
 
     return "<div class=\"flextablediv\">\n" .. out .. "\n</div>"
+end
+
+function p.subAttackTemplate(frame)
+  local args = getArgs(frame, {
+    removeBlanks = false,
+    wrappers = "Template:Attack_Data/attack",
+  })
+  local scope = args[1]
+  local name = args[2]
+  if not scope then
+    return "No type supplied"
+  end
+  if not name then
+    return "No name supplied"
+  end
+
+  local setup_config = table_setups[scope]
+  if not setup_config then
+    return "Type not supported: \"" .. args .. "\""
+  end
+
+  local medium = data[scope][name]
+  if not medium then
+    return "Could not find a " .. scope .. " named \"" .. name .. "\""
+  end
+
+  local attack_table = getAttackTable({
+    table_setup = setup_config[1],
+    damage_table_setup = setup_config[2],
+    medium = medium,
+    frame = frame,
+    args = args,
+  })
+
+  return table_start(scope) .. attack_table .. table_end()
 end
 
 function p.get(frame)
