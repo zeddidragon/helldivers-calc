@@ -17691,7 +17691,7 @@
       "category": "Eagle",
       "stratcode": "urdr",
       "cooldown": 15,
-      "uses": 2,
+      "eaglestock": 2,
       "cap": 6,
       "attacks": [
         {"type": "projectile", "name": "Bomb_100kg", "id": 113},
@@ -17702,7 +17702,7 @@
       "category": "Eagle",
       "stratcode": "urdu",
       "cooldown": 15,
-      "uses": 2,
+      "eaglestock": 2,
       "cap": 4,
       "attacks": [
         {"type": "projectile", "name": "Bomb_Napalm", "id": 206},
@@ -17713,7 +17713,7 @@
       "category": "Eagle",
       "stratcode": "urddd",
       "cooldown": 15,
-      "uses": 1,
+      "eaglestock": 1,
       "cap": 1,
       "attacks": [
         {"type": "projectile", "name": "Bomb_500kg", "id": 157},
@@ -17725,7 +17725,7 @@
       "category": "Eagle",
       "stratcode": "urr",
       "cooldown": 15,
-      "uses": 3,
+      "eaglestock": 3,
       "attacks": [
         {"type": "projectile", "name": "Cannon_Eagle_23mm", "id": 13},
         {"type": "explosion", "name": "Cannon_23mm", "id": 189}
@@ -17735,25 +17735,25 @@
       "category": "Eagle",
       "stratcode": "urddr",
       "cooldown": 15,
-      "uses": 4,
+      "eaglestock": 4,
       "cap": 8,
       "attacks": [
         {"type": "projectile", "name": "Cannon_Eagle_23mm", "id": 13},
         {"type": "explosion", "name": "Cannon_23mm", "id": 189},
-        {"type": "explosion", "name": "AirburstCluster", "count": 8, "id": 165},
         {
-          "type": "explosion",
-          "name": "AirburstCluster_Bomb",
+          "type": "projectile",
+          "name": "ClusterBomb_Bomb",
           "count": 8,
-          "id": 3
-        }
+          "id": 84
+        },
+        {"type": "explosion", "name": "ClusterBomb", "count": 8, "id": 211}
       ]
     },
     "Eagle 110mm Rocket Pods": {
       "category": "Eagle",
       "stratcode": "urul",
       "cooldown": 15,
-      "uses": 2,
+      "eaglestock": 2,
       "cap": 3,
       "attacks": [
         {"type": "projectile", "name": "Rocket_110mm", "id": 52},
@@ -17764,7 +17764,7 @@
       "category": "Eagle",
       "stratcode": "urud",
       "cooldown": 15,
-      "uses": 2,
+      "eaglestock": 2,
       "cap": 8,
       "attacks": [
         {"type": "projectile", "name": "Bomb_Smoke", "id": 83},

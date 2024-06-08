@@ -1378,7 +1378,7 @@ category = "Eagle"
 fullname = "Eagle Airstrike"
 stratcode = "urdr"
 cooldown = 15
-uses = 2
+eaglestock = 2
 cap = 6
 [[stratagem.attack]]
 medium = "projectile"
@@ -1392,7 +1392,7 @@ category = "Eagle"
 fullname = "Eagle Napalm Airstrike"
 stratcode = "urdu"
 cooldown = 15
-uses = 2
+eaglestock = 2
 cap = 4
 [[stratagem.attack]]
 medium = "projectile"
@@ -1406,7 +1406,7 @@ category = "Eagle"
 fullname = "Eagle 500kg Bomb"
 stratcode = "urddd"
 cooldown = 15
-uses = 1
+eaglestock = 1
 cap = 1
 [[stratagem.attack]]
 medium = "projectile"
@@ -1423,7 +1423,7 @@ category = "Eagle"
 fullname = "Eagle Strafing Run"
 stratcode = "urr"
 cooldown = 15
-uses = 3
+eaglestock = 3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_Eagle_23mm"
@@ -1436,7 +1436,7 @@ category = "Eagle"
 fullname = "Eagle Cluster Bomb"
 stratcode = "urddr"
 cooldown = 15
-uses = 4
+eaglestock = 4
 cap = 8
 [[stratagem.attack]]
 medium = "projectile"
@@ -1445,12 +1445,12 @@ ref = "Cannon_Eagle_23mm"
 medium = "explosion"
 ref = "Cannon_23mm"
 [[stratagem.attack]]
-medium = "explosion"
-ref = "AirburstCluster"
+medium = "projectile"
+ref = "ClusterBomb_Bomb"
 count = 8
 [[stratagem.attack]]
 medium = "explosion"
-ref = "AirburstCluster_Bomb"
+ref = "ClusterBomb"
 count = 8
 
 [[stratagem]]
@@ -1458,7 +1458,7 @@ category = "Eagle"
 fullname = "Eagle 110mm Rocket Pods"
 stratcode = "urul"
 cooldown = 15
-uses = 2
+eaglestock = 2
 cap = 3
 [[stratagem.attack]]
 medium = "projectile"
@@ -1472,7 +1472,7 @@ category = "Eagle"
 fullname = "Eagle Smoke Strike"
 stratcode = "urud"
 cooldown = 15
-uses = 2
+eaglestock = 2
 cap = 8
 [[stratagem.attack]]
 medium = "projectile"

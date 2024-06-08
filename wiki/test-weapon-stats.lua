@@ -31,6 +31,4 @@ frame.args = {}
 local out = getData.attackDataTemplate(frame)
 frame.args = { "EXO-49 Emancipator Exosuit" }
 out = out .. getData.attackDataTemplate(frame)
-frame.args = { "ARC-12 Blitzer" }
-out = out .. getData.attackDataTemplate(frame)
 print(out)

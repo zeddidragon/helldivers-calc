@@ -280,7 +280,7 @@ mixin stratagemsRow(obj, opts = {})
     a(href=wikiLink(obj) target="_blank")= obj.name
   td.stratagem.calltime= obj.calltime
   td.stratagem.cooldown= obj.cooldown
-  td.stratagem.uses= obj.uses
+  td.stratagem.uses= obj.uses || obj.eaglestock
   td.stratagem.health= obj.health
   td.stratagem.armor(class=`ap-${obj.armor}`)= obj.armor
   td.stratagem.rpm

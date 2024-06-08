@@ -1186,7 +1186,7 @@
       "fullname": "Eagle Airstrike",
       "stratcode": "urdr",
       "cooldown": 15,
-      "uses": 2,
+      "eaglestock": 2,
       "cap": 6,
       "attack": [
         {"medium": "projectile", "ref": "Bomb_100kg"},
@@ -1198,7 +1198,7 @@
       "fullname": "Eagle Napalm Airstrike",
       "stratcode": "urdu",
       "cooldown": 15,
-      "uses": 2,
+      "eaglestock": 2,
       "cap": 4,
       "attack": [
         {"medium": "projectile", "ref": "Bomb_Napalm"},
@@ -1210,7 +1210,7 @@
       "fullname": "Eagle 500kg Bomb",
       "stratcode": "urddd",
       "cooldown": 15,
-      "uses": 1,
+      "eaglestock": 1,
       "cap": 1,
       "attack": [
         {"medium": "projectile", "ref": "Bomb_500kg"},
@@ -1223,7 +1223,7 @@
       "fullname": "Eagle Strafing Run",
       "stratcode": "urr",
       "cooldown": 15,
-      "uses": 3,
+      "eaglestock": 3,
       "attack": [
         {"medium": "projectile", "ref": "Cannon_Eagle_23mm"},
         {"medium": "explosion", "ref": "Cannon_23mm"}
@@ -1234,13 +1234,13 @@
       "fullname": "Eagle Cluster Bomb",
       "stratcode": "urddr",
       "cooldown": 15,
-      "uses": 4,
+      "eaglestock": 4,
       "cap": 8,
       "attack": [
         {"medium": "projectile", "ref": "Cannon_Eagle_23mm"},
         {"medium": "explosion", "ref": "Cannon_23mm"},
-        {"medium": "explosion", "ref": "AirburstCluster", "count": 8},
-        {"medium": "explosion", "ref": "AirburstCluster_Bomb", "count": 8}
+        {"medium": "projectile", "ref": "ClusterBomb_Bomb", "count": 8},
+        {"medium": "explosion", "ref": "ClusterBomb", "count": 8}
       ]
     },
     {
@@ -1248,7 +1248,7 @@
       "fullname": "Eagle 110mm Rocket Pods",
       "stratcode": "urul",
       "cooldown": 15,
-      "uses": 2,
+      "eaglestock": 2,
       "cap": 3,
       "attack": [
         {"medium": "projectile", "ref": "Rocket_110mm"},
@@ -1260,7 +1260,7 @@
       "fullname": "Eagle Smoke Strike",
       "stratcode": "urud",
       "cooldown": 15,
-      "uses": 2,
+      "eaglestock": 2,
       "cap": 8,
       "attack": [
         {"medium": "projectile", "ref": "Bomb_Smoke"},
