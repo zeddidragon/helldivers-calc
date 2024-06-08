@@ -17738,15 +17738,20 @@
       "eaglestock": 4,
       "cap": 8,
       "attacks": [
-        {"type": "projectile", "name": "Cannon_Eagle_23mm", "id": 13},
-        {"type": "explosion", "name": "Cannon_23mm", "id": 189},
+        {"type": "projectile", "name": "ClusterBomb_100kg", "id": 191},
+        {"type": "explosion", "name": "ClusterBomb", "id": 211},
         {
           "type": "projectile",
           "name": "ClusterBomb_Bomb",
           "count": 8,
           "id": 84
         },
-        {"type": "explosion", "name": "ClusterBomb", "count": 8, "id": 211}
+        {
+          "type": "explosion",
+          "name": "HeavyShrapnel_Clusterbombs",
+          "count": 8,
+          "id": 85
+        }
       ]
     },
     "Eagle 110mm Rocket Pods": {
@@ -17801,7 +17806,7 @@
       "cooldown": 600,
       "uses": 2,
       "attacks": [
-        {"type": "weapon", "name": "Emancipator Twin Autocannon"},
+        {"type": "weapon", "name": "Emancipator Twin Autocannon", "count": 2},
         {
           "type": "damage",
           "name": "Ability_Cyborg_Lieutenant_Stomp",

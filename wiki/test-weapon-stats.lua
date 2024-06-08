@@ -28,7 +28,7 @@ function frame.expandTemplate(self, opts)
 end
 
 frame.args = {}
-local out = getData.attackDataTemplate(frame)
-frame.args = { "EXO-49 Emancipator Exosuit" }
+local out = ""
+frame.args = { "EXO-45 Patriot Exosuit" }
 out = out .. getData.attackDataTemplate(frame)
 print(out)

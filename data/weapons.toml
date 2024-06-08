@@ -1440,17 +1440,17 @@ eaglestock = 4
 cap = 8
 [[stratagem.attack]]
 medium = "projectile"
-ref = "Cannon_Eagle_23mm"
+ref = "ClusterBomb_100kg"
 [[stratagem.attack]]
 medium = "explosion"
-ref = "Cannon_23mm"
+ref = "ClusterBomb"
 [[stratagem.attack]]
 medium = "projectile"
 ref = "ClusterBomb_Bomb"
 count = 8
 [[stratagem.attack]]
 medium = "explosion"
-ref = "ClusterBomb"
+ref = "HeavyShrapnel_Clusterbombs"
 count = 8
 
 [[stratagem]]
@@ -1513,6 +1513,7 @@ uses = 2
 [[stratagem.attack]]
 medium = "weapon"
 ref = "Emancipator Twin Autocannon"
+count = 2
 [[stratagem.attack]]
 medium = "damage"
 ref = "Ability_Cyborg_Lieutenant_Stomp"

@@ -225,8 +225,14 @@ function addRow(row, opts)
   end
 end
 
-local table_start = "{| class=\"wikitable tableleftjustified\"\n"
-local table_end = "|}\n"
+function table_start(category)
+  return "{| class=\"wikitable tableleftjustified attack-data-table-"
+    .. category .. "\"\n"
+end
+
+function table_end()
+  return "|}\n"
+end
 
 function unpackTableSetup(opts)
   local out = ""
@@ -237,7 +243,7 @@ function unpackTableSetup(opts)
 end
 
 function getAttackTable(opts) 
-  local out  = table_start
+  local out  = ""
   local table_setup = opts.table_setup
   local damage_table_setup = opts.damage_table_setup or damage_setup
   local attack = opts.attack
@@ -264,7 +270,7 @@ function getAttackTable(opts)
       count = count,
     })
   end
-  return out .. (opts.post_rows or "") .. table_end
+  return out
 end
 
 function p.attackDataTemplate(frame)
@@ -283,7 +289,15 @@ function p.attackDataTemplate(frame)
     end
     local out = ""
 
+    local weapon_table = getAttackTable({
+      table_setup = weapon_setup,
+      medium = weapon,
+      frame = frame,
+      args = args,
+    })
+
     local attack_rows = ""
+    local subweapon_rows = ""
     
     if weapon.attacks then
       attack_rows = attack_rows .. "!colspan=2|Attacks\n|-\n"
@@ -296,34 +310,45 @@ function p.attackDataTemplate(frame)
       if attack.count then
         attack_row = attack_row .. " x " .. attack.count
       end
-      attack_rows = attack_rows .. (
-        args["override_attack_" .. i] or attack_row
-      ) .. "\n|-\n"
 
       local override_table = args["override_table_" .. i]
       if override_table then
         out = out .. override_table
       else
         local setup_config = table_setups[attack.type]
-        out = out .. getAttackTable({
-          table_setup = setup_config[1],
-          damage_table_setup = setup_config[2],
-          count = args["override_count_" .. i],
-          attack = attack,
-          medium = medium,
-          frame = frame,
-          args = args,
-        })
+        if attack.type == "weapon" then
+          args[1] = attack.name
+        end
+        local attack_table = getAttackTable({
+            table_setup = setup_config[1],
+            damage_table_setup = setup_config[2],
+            count = args["override_count_" .. i],
+            attack = attack,
+            medium = medium,
+            frame = frame,
+            args = args,
+          })
+
+        if attack.type == "weapon" then
+          subweapon_rows = subweapon_rows .. attack_table
+        else
+          attack_rows = attack_rows .. (
+            args["override_attack_" .. i] or attack_row
+          ) .. "\n|-\n"
+          out = out
+            .. table_start(attack.type)
+            .. attack_table
+            .. table_end()
+        end
       end
     end
 
-    out = getAttackTable({
-      table_setup = weapon_setup,
-      medium = weapon,
-      frame = frame,
-      args = args,
-      post_rows = attack_rows,
-    }) .. out
+    out = table_start("weapon")
+      .. weapon_table
+      .. attack_rows
+      .. subweapon_rows
+      .. table_end()
+      .. out
 
     return "<div class=\"flextablediv\">\n" .. out .. "\n</div>"
 end

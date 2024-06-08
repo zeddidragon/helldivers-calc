@@ -1237,10 +1237,10 @@
       "eaglestock": 4,
       "cap": 8,
       "attack": [
-        {"medium": "projectile", "ref": "Cannon_Eagle_23mm"},
-        {"medium": "explosion", "ref": "Cannon_23mm"},
+        {"medium": "projectile", "ref": "ClusterBomb_100kg"},
+        {"medium": "explosion", "ref": "ClusterBomb"},
         {"medium": "projectile", "ref": "ClusterBomb_Bomb", "count": 8},
-        {"medium": "explosion", "ref": "ClusterBomb", "count": 8}
+        {"medium": "explosion", "ref": "HeavyShrapnel_Clusterbombs", "count": 8}
       ]
     },
     {
@@ -1291,7 +1291,7 @@
       "cooldown": 600,
       "uses": 2,
       "attack": [
-        {"medium": "weapon", "ref": "Emancipator Twin Autocannon"},
+        {"medium": "weapon", "ref": "Emancipator Twin Autocannon", "count": 2},
         {"medium": "damage", "ref": "Ability_Cyborg_Lieutenant_Stomp"},
         {"medium": "explosion", "ref": "Vehicle_Explosion_CombatWalker"}
       ]
