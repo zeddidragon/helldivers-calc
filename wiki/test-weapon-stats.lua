@@ -23,14 +23,14 @@ function frame.getParent()
   return parent
 end
 
-function frame.expandTemplate(template, args)
-  return "{{"..template.."|"..args[1].."}}"
+function frame.expandTemplate(self, opts)
+  return "{{"..opts.title.."|"..opts.args[1].."}}"
 end
 
 frame.args = {}
 local out = getData.attackDataTemplate(frame)
 frame.args = { "EXO-49 Emancipator Exosuit" }
 out = out .. getData.attackDataTemplate(frame)
-frame.args = { "G-6 Frag" }
+frame.args = { "ARC-12 Blitzer" }
 out = out .. getData.attackDataTemplate(frame)
 print(out)

@@ -3,12 +3,27 @@ local getWeightMetric = require("Module:UnitConverter").getWeightMetricLua
 local p = {} --p stands for package
 local data = mw.loadData("Module:Decodedata-Attacks")
 
-function cbShowAP(value, _, frame)
-  return frame.expandTemplate("Armor", { value, "AP" })
+function cbShowAP(value, opts)
+  return opts.frame:expandTemplate({
+    title = "Armor",
+    args = { value, "AP" },
+  })
 end
 
-function cbShowStatus(value, _, frame)
+function cbShowOuterRadiusAP(value, opts)
+  value = value - 1
+  if value < 2 then
+    value = 2
+  end
+  return cbShowAP(value, opts)
+end
+
+function cbShowStatus(value)
   return "[[Status Effects#" .. value .. "|" .. value .. "]]"
+end
+
+function cbShowDecline(value)
+  return value - 1 .. " - 0"
 end
 
 function cbShowWeight(value)
@@ -30,10 +45,14 @@ end
 -- If the data name is missing, the two keys are assumed identical
 local weapon_setup = {
   { "colspan=2", 1, header = true },
+  { "Weapons", "attack_count", "count", suffix = "x" },
   { "Main Health", "health" },
   { "Main Armor", "armor",
-    cb = function(value, _, frame)
-      return frame.expandTemplate("Armor", { value })
+    cb = function(value, opts)
+      return opts.frame:expandTemplate({
+        title = "Armor", 
+        args = { value },
+      })
     end },
   { "Fire Rate", "fire_rate", "rpm", suffix = "RPM" },
   { "Recoil", "recoil" },
@@ -47,8 +66,8 @@ local weapon_setup = {
   { "Mags from Ammo Box", "magazines_from_box", "box" },
   { "Reloading 1 Round", "reload_one", "reloadone", suffix = "sec" },
   { "Reloading n Rounds", "reload_n", "reloadx",
-    cb = function(value, attack, frame, args)
-      local n = args["reload_n_count"] or attack["reloadxnum"] or "n"
+    cb = function(value, opts)
+      local n = opts.args["reload_n_count"] or attack["reloadxnum"] or "n"
       return value, "Reloading " .. n .. " Rounds"
     end },
   { "Spare Rounds", "rounds_spare", "rounds", },
@@ -88,8 +107,8 @@ local damage_setup = {
 
 local projectile_setup = {
   { "colspan=2", "projectile_name", "name", header = true },
-  { "Amount", "attack_count", prefix = "x" },
-  { "Pellets", "attack_count", prefix = "x" },
+  { "Amount", "attack_count", "count", suffix = "x" },
+  { "Pellets", "pellets", prefix = "x" },
   { "Caliber", "caliber", suffix = "mm" },
   { "Mass", "mass", cb = cbShowWeight },
   { "Initial Velocity", "velocity", suffix = "m/s" },
@@ -99,24 +118,81 @@ local projectile_setup = {
   { "Penetration Slowdown", "penetration_slowdown", "penslow", cb = cbShowPercent },
 }
 
-function addRow(row, attack, frame, args)
+local explosion_setup = {
+  { "colspan=2", "aoe_name", "name", header = true },
+  { "Clusters", "attack_count", "count", suffix = "x" },
+  { "Inner Radius", "inner_radius", "r1", suffix = "m" },
+  { "Outer Radius", "outer_radius", "r2", suffix = "m" },
+  { "Shockwave Radius", "shockwave_radius", "r3", suffix = "m" },
+}
+
+local explosion_damage_setup = {
+  { "colspan=2", literal = "Damage", header = true },
+  { "Damage Element", "element", "element_name" },
+  { "Inner Radius", "aoe_damage", "dmg" },
+  { "Outer Radius", "aoe_damage", "dmg", cb = cbShowDecline },
+  { "colspan=2", literal = "Penetration", header = true },
+  { "Inner Radius", "penetration_direct", "ap1", cb = cbShowAP },
+  { "Outer Radius", "aoe_penetration", "ap1", cb = cbShowOuterRadiusAP },
+  { "Shockwave", "aoe_penetration", "ap1", cb = cbShowAP },
+  { "colspan=2", literal = "AoE Effect", header = true },
+  { "Status", "status", "status_name", cb = cbShowStatus },
+  { "Status Strength", "status_strength", "param1", filter = filterNonZero},
+  { "Second Status", "status_2", "status_name2", cb = cbShowStatus },
+  { "Status Strength", "status_strength_2", "param2" , filter = filterNonZero},
+  { "Third Status", "status_3", "status_name3", cb = cbShowStatus },
+  { "Status Strength", "status_strength_3", "param3", filter = filterNonZero},
+  { "Fourth Status", "status_4", "status_name4", cb = cbShowStatus },
+  { "Status Strength", "status_strength_4", "param4", filter = filterNonZero},
+  { "Demolition Force", "demolition_force", "demo"},
+  { "Stagger Force", "stagger_force", "stun"},
+  { "Push Force", "push_force", "push"},
+}
+
+local beam_setup = {
+  { "colspan=2", "beam_name", "name", header = true },
+  { "Beam Count", "attack_count", "count", suffix = "x" },
+  { "Beam Range", "range", suffix = "m"},
+}
+
+local arc_setup = {
+  { "colspan=2", "arc_name", "name", header = true },
+  { "Arc Count", "attack_count", "count", suffix = "x" },
+  { "Arc Range", "arc_range", "range", suffix = "m"},
+  { "Arc Velocity", "arc_velocity", "velocity", suffix = "m/s"},
+  { "Arc Aim Angle", "arc_aim_angle", "aimangle", suffix = "°"},
+}
+
+local table_setups = {
+  weapon = { weapon_setup, damage_setup },
+  damage = { damage_setup },
+  projectile = { projectile_setup, damage_setup },
+  explosion = { explosion_setup, explosion_damage_setup },
+  beam = { beam_setup, damage_setup },
+  arc = { arc_setup, damage_setup },
+}
+
+function addRow(row, opts)
   local label = row[1]
   local user_key = row[2]
   local data_key = row[3] or user_key
   local value = row.literal
 
+  if user_key == "attack_count" and (opts.count or 1) > 1 then
+    value = opts.count
+  end
   if not value then
-    value = args[user_key] or attack[data_key]
+    value = opts.args[user_key] or opts.medium[data_key]
   end
   if not value then -- If value doesn"t exist we omit the table row entirely
     return ""
   end
   if row.cb then
-    local newValue, newLabel = row.cb(value, attack, frame, args)
+    local newValue, newLabel = row.cb(value, opts)
     value = newValue
     if newLabel then label = newLabel end
   end
-  if row.filter and not row.filter(value, attack, frame, args) then
+  if row.filter and not row.filter(value, opts) then
     return ""
   end
   if row.prefix then
@@ -135,26 +211,46 @@ function addRow(row, attack, frame, args)
   end
 end
 
-function getAttackTable(table_setup, attack, frame, args)
-  local out = "{| class{{=}}\"wikitable tableleftjustified\"\n"
-  for i, row in ipairs(table_setup) do
-    out = out .. addRow(row, attack, frame, args)
+local table_start = "{| class=\"wikitable tableleftjustified\"\n"
+local table_end = "|}\n"
+
+function unpackTableSetup(opts)
+  local out = ""
+  for i, row in ipairs(opts.setup) do
+    out = out .. addRow(row, opts)
   end
-  return out .. "|}"
+  return out
 end
 
-function getProjectileTable(projectile, frame, args)
-  local out = "{| class{{=}}\"wikitable tableleftjustified\"\n"
-  for i, row in ipairs(projectile_setup) do
-    out = out .. addRow(row, projectile, frame, args)
+function getAttackTable(opts) 
+  local out  = table_start
+  local table_setup = opts.table_setup
+  local damage_table_setup = opts.damage_table_setup or damage_setup
+  local attack = opts.attack
+  local frame = opts.frame
+  local args = opts.args
+  local medium = opts.medium or data[attack.type][attack.name]
+  local count = opts.count or (attack and attack.count)
+  out = out .. unpackTableSetup({
+    setup = table_setup,
+    attack = attack,
+    medium = medium,
+    frame = frame,
+    args = args,
+    count = count,
+  })
+  if medium.damage_name then
+    local damage = data.damage[medium.damage_name]
+    out = out .. unpackTableSetup({
+      setup = damage_table_setup,
+      attack = attack,
+      medium = damage,
+      frame = frame,
+      args = args,
+      count = count,
+    })
   end
-  local damage = data.damage[projectile.damage_name]
-  if damage then
-    for i, row in ipairs(damage_setup) do
-      out = out .. addRow(row, damage, frame, args)
-    end
-  end
-  return out .. "|}"
+  return out .. table_end
 end
 
 function p.attackDataTemplate(frame)
@@ -173,15 +269,26 @@ function p.attackDataTemplate(frame)
     end
     local out = ""
 
-    out = out .. getAttackTable(weapon_setup, weapon, frame, args)
+    out = out .. getAttackTable({
+      table_setup = weapon_setup,
+      medium = weapon,
+      frame = frame,
+      args = args,
+    })
     for i, attack in ipairs(weapon.attacks) do
-      print(i, attack)
-      local medium = data[attack.type][attack.name]
-      if attack.type == "projectile" then
-        out = out .. getProjectileTable(medium, frame, args)
-      elseif medium.damage_name then
-        local damage = data.damage[medium.damage_name]
-        out = out .. getAttackTable(damage_setup, damage, frame, args)
+      local override_table = args["override_table_" .. i]
+      if override_table then
+        out = out .. override_table
+      else
+        local setup_config = table_setups[attack.type]
+        out = out .. getAttackTable({
+          table_setup = setup_config[1],
+          damage_table_setup = setup_config[2],
+          count = args["override_count_" .. i],
+          attack = attack,
+          frame = frame,
+          args = args,
+        })
       end
     end
 

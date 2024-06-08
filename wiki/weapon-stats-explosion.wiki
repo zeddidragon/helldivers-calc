@@ -3,7 +3,6 @@
 -->{{#invoke:Getdata-Attacks|getExplosionVariables|{{#var:explosion_name}}}}<!--
 -->{{#if:{{#var:xdamage_name}}|{{#invoke:Getdata-Attacks|getDamageVariables|{{#var:xdamage_name}}|aoe_}}}}<!--
 -->{| class{{=}}wikitable
-{| class{{=}}wikitable
 !colspan="2"|{{#var:explosion_fullname}}
 |-
 {{#if:{{{attack_count|}}}|
