@@ -18,7 +18,7 @@ function cbShowOuterRadiusAP(value, opts)
   return cbShowAP(value, opts)
 end
 
-function cbShowStatus(value)
+function cbShowStatus(value, opts)
   return "[[Status Effects#" .. value .. "|" .. value .. "]]"
 end
 
@@ -70,13 +70,13 @@ local weapon_setup = {
   { "Capacity", "capacity", "cap" },
   { "Fire Limit", "fire_limit", "limit", suffix = "sec" },
   { "Reload Time", "reload", suffix = " sec" },
-  { "Tactical Reload", "reload_early", "limit" },
+  { "Tactical Reload", "reload_early", "reloadearly" , suffix = "sec" },
   { "Spare Magazines", "magazines_spare", "mags", },
   { "Starting Magazines", "magazines_starting", "magstart", },
   { "Mags from Supply", "magazines_from_supply", "supply" },
   { "Mags from Ammo Box", "magazines_from_box", "box" },
   { "Reloading 1 Round", "reload_one", "reloadone", suffix = "sec" },
-  { "Reloading n Rounds", "reload_n", "reloadx",
+  { "Reloading n Rounds", "reload_n", "reloadx", suffix = "sec",
     cb = function(value, opts)
       local n = opts.args["reload_n_count"] or attack["reloadxnum"] or "n"
       return value, "Reloading " .. n .. " Rounds"
@@ -93,6 +93,7 @@ local weapon_setup = {
 }
 
 local damage_setup = {
+  { "colspan=2", "damage_name", header = true }, -- Just there for manual input, really.
   { "colspan=2", literal = "Damage", header = true },
   { "Element", "element", "element_name" },
   { "Standard", "standard_damage", "dmg" },
@@ -139,7 +140,7 @@ local explosion_damage_setup = {
   { "colspan=2", literal = "Damage", header = true },
   { "Damage Element", "element", "element_name" },
   { "Inner Radius", "aoe_damage", "dmg" },
-  { "Outer Radius", "aoe_falloff", "dmg", cb = cbShowDecline },
+  { "Outer Radius", "aoe_falloff", "dmg", filter = filterGt(1), cb = cbShowDecline },
   { "colspan=2", literal = "Penetration", header = true },
   { "Inner Radius", "penetration_direct", "ap1", cb = cbShowAP },
   { "Outer Radius", "aoe_penetration", "ap1", cb = cbShowOuterRadiusAP },
@@ -180,6 +181,18 @@ local attack_type = {
   arc = "Arc",
 }
 
+local status_damages = {
+  [2] = "DPS_Avatar_Bleed",
+  [6] = "DPS_Fire",
+  [10] = "DPS_Acid_Splash",
+  [11] = "DPS_Acidd_Stream",
+  [12] = "DPS_Thermite",
+  [13] = "DPS_Cyborg_Fire",
+  [18] = "DPS_Thornbush",
+  [22] = "DPS_Pure_Damage",
+  [39] = "DPS_Gas",
+}
+
 local table_setups = {
   weapon = { weapon_setup, damage_setup },
   damage = { damage_setup },
@@ -204,13 +217,13 @@ function addRow(row, opts)
     return ""
   end
   if not user_value then
+    if row.filter and not row.filter(value, opts) then
+      return ""
+    end
     if row.cb then
       local newValue, newLabel = row.cb(value, opts)
       value = newValue
       if newLabel then label = newLabel end
-    end
-    if row.filter and not row.filter(value, opts) then
-      return ""
     end
     if row.prefix then
       value = row.prefix .. " " .. value
@@ -223,9 +236,9 @@ function addRow(row, opts)
   if row.header then
     -- label is header info, typically colspan=2
     -- value is text to put in header
-    return "!" .. label .. "|" .. value .. "\n|-\n"
+    return "!" .. label .. "|" .. value .. row_end()
   else
-    return "|" .. label .. "||" .. value .. "\n|-\n"
+    return "|" .. label .. "||" .. value .. row_end()
   end
 end
 
@@ -238,8 +251,22 @@ function table_end()
   return "|}\n"
 end
 
+function row_end()
+  return "\n|-\n"
+end
+
 function unpackTableSetup(opts)
   local out = ""
+
+  if opts.statuses_seen and opts.medium.func1 then
+    for i = 1, 4 do -- Track all statuses seen for unrolling later
+      local status = opts.medium["func" .. i]
+      if status > 0 then
+        opts.statuses_seen[status] = true
+      end
+    end
+  end
+
   for i, row in ipairs(opts.setup) do
     out = out .. addRow(row, opts)
   end
@@ -254,12 +281,14 @@ function getAttackTable(opts)
   local medium = opts.medium or data[attack.type][attack.name]
   local frame = opts.frame
   local args = opts.args
+
   out = out .. unpackTableSetup({
     setup = table_setup,
     attack = attack,
     medium = medium,
     frame = frame,
     args = args,
+    statuses_seen = opts.statuses_seen,
   })
   if medium.damage_name then
     local damage = data.damage[medium.damage_name]
@@ -269,6 +298,7 @@ function getAttackTable(opts)
       medium = damage,
       frame = frame,
       args = args,
+      statuses_seen = opts.statuses_seen,
     })
   end
   return out
@@ -277,14 +307,11 @@ end
 function p.attackDataTemplate(frame)
     local args = getArgs(frame, {
       removeBlanks = false,
-      wrappers = "Template:Attack_Data",
     })
 
-    local weapon_name = args[1] or frame:getParent():getTitle()
-    if not args[1] then
-      args[1] = weapon_name -- Make name accessible for later display
-    end
+    local weapon_name = args[1]
     local weapon =  data.weapon[weapon_name]
+    local statuses_seen = {}
     if not weapon then
       return "Weapon not found: \"" .. weapon_name .. "\""
     end
@@ -295,6 +322,7 @@ function p.attackDataTemplate(frame)
       medium = weapon,
       frame = frame,
       args = args,
+      statuses_seen = statuses_seen,
     })
 
     local attack_rows = ""
@@ -316,21 +344,30 @@ function p.attackDataTemplate(frame)
     end
 
     if attacks[1] and attacks[1].type == "weapon" then
-      attack_rows = attack_rows .. "!colspan=2|Weapons\n|-\n"
+      attack_rows = attack_rows .. "!colspan=2|Weapons" .. row_end()
     end
 
-
     for i, attack in ipairs(attacks) do
+      if i == attack_index + 1 then
+        attack_rows = attack_rows .. "!colspan=2|Attacks" .. row_end()
+      end
+
       local medium = data[attack.type][attack.name]
       local name = medium.fullname or medium.name or ""
-      local attack_row = "|" .. attack_type[attack.type] .. "||" .. name
-      if attack.count then
+      local override_table = args["override_table_" .. i]
+      local override_attack = args["override_attack_" .. i]
+      local attack_type_name = attack_type[attack.type]
+
+      local attack_row = "|" .. attack_type_name .. "||" .. name
+      if override_attack then
+        attack_row = "|" .. override_attack
+      elseif attack.count then
         attack_row = attack_row .. " x " .. attack.count
       end
 
-      local override_table = args["override_table_" .. i]
       if override_table then
         out = out .. override_table .. "\n"
+        attack_rows = attack_rows .. attack_row .. row_end()
       else
         local setup_config = table_setups[attack.type]
         if attack.type == "weapon" then
@@ -343,24 +380,46 @@ function p.attackDataTemplate(frame)
           medium = medium,
           frame = frame,
           args = args,
+          statuses_seen = statuses_seen,
         })
 
         if attack.type == "damage" then
-          attack_table = "!colspan=2|" .. medium.name .. "\n|-\n"
+          attack_table = "!colspan=2|"
+            .. medium.name
+            .. row_end()
             .. attack_table
         end
 
         if attack.type == "weapon" then
           attack_rows = attack_rows .. attack_table
         else
-          if i == attack_index + 1 then
-            attack_rows = attack_rows .. "!colspan=2|Attacks\n|-\n"
-          end
-          attack_rows = attack_rows .. (
-            args["override_attack_" .. i] or attack_row
-          ) .. "\n|-\n"
+          attack_rows = attack_rows .. attack_row .. row_end()
           out = out
             .. table_start(attack.type)
+            .. attack_table
+            .. table_end()
+        end
+      end
+    end
+
+    for status, _ in pairs(statuses_seen) do
+      local dps_name = status_damages[status]
+      if dps_name then
+        j = j + 1
+        local override_table = args["override_table_" .. j]
+        if override_table then
+          out = out .. override_table
+        else
+          local dps = data.damage[dps_name]
+          args["damage_name"] = dps.name
+          local attack_table = getAttackTable({
+            table_setup = damage_setup,
+            medium = dps,
+            frame = frame,
+            args = args,
+          })
+          out = out
+            .. table_start("damage")
             .. attack_table
             .. table_end()
         end
@@ -400,6 +459,10 @@ function p.subAttackTemplate(frame)
     return "Could not find a " .. scope .. " named \"" .. name .. "\""
   end
 
+  if scope == "damage" and not args["damage_name"] then
+    args["damage_name"] = medium.name
+  end
+
   local attack_table = getAttackTable({
     table_setup = setup_config[1],
     damage_table_setup = setup_config[2],
@@ -409,372 +472,6 @@ function p.subAttackTemplate(frame)
   })
 
   return table_start(scope) .. attack_table .. table_end()
-end
-
-function p.get(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No scope supplied"
-    end
-  if not args[2] then
-      return "No name supplied"
-  end
-    if not args[3] then
-      return "No property supplied"
-  end
-    local register = data[args[1]]
-    if not register then
-      return "Scope not found: " .. args[1] 
-    end
-    local object = register[args[2]]
-    if not object then
-      return "Object not found: " ..args[2]
-    end
-    return object[args[3]]
-end
-
-function getAttackCount(weapon)
-    local attacks = weapon.attacks
-    if not attacks then
-      return 0
-    end
-    local n = 0
-    for k, v in pairs(attacks) do -- #attacks returns 0
-        n = n + 1
-    end
-    return n
-end
-
-function p.getAttackCount(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No weapon supplied"
-    end
-    local weapon = data.weapon[args[1]]
-    if not weapon then
-      return "Weapon not found: \"" ..args[1].."\""
-    end
-    return getAttackCount(weapon)
-end
-
-function p.getAttackTable(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No weapon supplied"
-    end
-    if not args[2] then
-      return "No attack index supplied"
-    end
-    local weapon = data.weapon[args[1]]
-    if not weapon then
-      return "Weapon not found: \"" ..args[1].."\""
-    end
-    local attacks = weapon.attacks
-    if not attacks then
-      return "Attacks no found for: \"" ..args[1].."\""
-    end
-    local idx = tonumber(args[2])
-    local attack = attacks[idx]
-    if not attack then
-      return "Attack not found: #" .. args[2]
-    end
-
-    return frame:expandTemplate{
-      title = "Attack_Data/" .. attack["type"],
-      args = { attack["name"], attack_count = attack["count"] },
-    } end
-
-function isHybrid(weapon)
-    local attacks = weapon.attacks
-    if not attacks then
-      return false
-    end
-
-    local projectile
-    if not attacks[2] then
-      return false
-    end
-    if attacks[1]["type"] ~= "projectile" then
-      return false
-    end
-    if attacks[2]["type"] ~= "explosion" then
-      return false
-    end
-    return true
-end
-
-function p.getHybridTable(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No weapon supplied"
-    end
-    local weapon = data.weapon[args[1]]
-    if not weapon then
-      return "Weapon not found: \"" ..args[1].."\""
-    end
-    if not isHybrid(weapon) then
-      return ""
-    end
-
-    local attacks = weapon.attacks
-    local projectile_name = attacks[1]["name"]
-    local explosion_name = attacks[2]["name"]
-    return frame:expandTemplate{
-      title = "Attack_Data/hybrid",
-      args = { projectile_name, explosion_name },
-    }
-end
-
-function expandAttackTables(weapon)
-    local attacks = weapon.attacks
-    if not attacks then
-      return ""
-    end
-    local i = 1
-    local output = ""
-
-    while attacks[i] do
-      local attack = attacks[i]
-      local count = attack["count"]
-      local count_arg = ""
-      if count then
-        count_arg = "|attack_count="..count
-      end
-      output = output ..
-        "{{Attack_Data/" .. attack["type"] ..
-        "|"..  attack["name"] ..
-        count_arg ..
-        "}}"
-
-      if attack["type"] == "weapon" then
-        local subweapon = data.weapon[attack["name"]]
-        if subweapon then
-          output = output .. expandAttackTables(subweapon)
-        end
-      end
-
-      i = i + 1
-    end
-
-    return output
-end
-
-function p.getAttackTables(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No weapon supplied"
-    end
-
-    local weapon = data.weapon[args[1]]
-    if not weapon then
-      return "Weapon not found: \"" ..args[1].."\""
-    end
-    local output = expandAttackTables(weapon)
-
-    return frame:preprocess(output)
-end
-
-function variablesTemplate(frame, variables, object, prefix)
-    local output = ""
-    for varname, dataname in pairs(variables) do
-      local k = (prefix or "") .. varname
-      local val = object[dataname] or ""
-      output = output ..  "{{#vardefine:"..k.."|{{{"..k.."|"..val.."}}}}}"
-    end
-    return output
-end
-
-local weapon_variables = {
-  fire_rate = "rpm",
-  recoil = "recoil",
-  reload = "reload",
-  reload_early = "reloadearly",
-  reload_n = "reloadx",
-  reload_n_count = "reloadxnum",
-  reload_one = "reloadone",
-  capacity = "cap",
-  capacity_chamber = "capplus",
-  magazines_spare = "mags",
-  magazines_starting = "magstart",
-  magazines_from_supply = "supply",
-  magazines_from_box = "box",
-  fire_limit = "limit",
-  rounds_spare = "rounds",
-  rounds_starting = "roundstart",
-  rounds_from_supply = "roundsupply",
-  rounds_from_box = "roundsbox",
-  clips_spare = "clips",
-  clips_size = "clipsize",
-  clips_starting = "clipstart",
-  clips_from_supply = "clipsupply",
-  clips_from_box = "clipbox",
-  charge_time = "charge",
-  charge_time_early = "chargeearly",
-  charge_factor = "chargefactor",
-  shot_count = "count",
-  health = "health",
-  armor_main = "armor",
-}
-
-function p.getWeaponVariables(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No weapon name supplied"
-    end
-    local obj = data.weapon[args[1]]
-    if not obj then
-      return "Weapon not found: \"" .. args[1].."\""
-    end
-    return frame:preprocess(variablesTemplate(frame, weapon_variables, obj, args[2]))
-end
-
-local damage_variables = {
-  standard_damage = "dmg",
-  durable_damage = "dmg2",
-  demolition_value = "demo",
-  stagger_value = "stun",
-  push_value = "push",
-  pen1 = "ap1",
-  pen2 = "ap2",
-  pen3 = "ap3",
-  pen4 = "ap4",
-  element = "element_name",
-  status = "status_name",
-  status_strength = "param1",
-  status2 = "status_name2",
-  status_strength2 = "param2",
-  damage_fullname = "name",
-}
-
-function p.getDamageVariables(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No damage name supplied"
-    end
-    local obj = data.damage[args[1]]
-    if not obj then
-      return "Damage not found: \"" .. args[1].."\""
-    end
-    return frame:preprocess(variablesTemplate(frame, damage_variables, obj, args[2]))
-end
-
-local projectile_variables = {
-  caliber = "caliber",
-  velocity = "velocity",
-  mass = "mass",
-  drag = "drag",
-  gravity = "gravity",
-  penslow = "penslow",
-  pellets = "pellets",
-  name = "gravity",
-  gravity = "gravity",
-  gravity = "gravity",
-  lifetime = "lifetime",
-  projectile_fullname = "name",
-  damage_name = "damage_name",
-}
-
-function p.getProjectileVariables(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No projectile name supplied"
-    end
-    local obj = data.projectile[args[1]]
-    if not obj then
-      return "Projectile not found: " .. args[1]
-    end
-    return frame:preprocess(variablesTemplate(frame, projectile_variables, obj, args[2]))
-end
-
-local explosion_variables = {
-  radius_inner = "r1",
-  radius_outer = "r2",
-  radius_shockwave = "r3",
-  explosion_fullname = "name",
-  xdamage_name = "damage_name",
-}
-
-function p.getExplosionVariables(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No explosion name supplied"
-    end
-    local obj = data.explosion[args[1]]
-    if not obj then
-      return "Explosion not found: " .. args[1]
-    end
-    return frame:preprocess(variablesTemplate(frame, explosion_variables, obj, args[2]))
-end
-
-function p.getHybridVariables(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No projectile name supplied"
-    end
-    if not args[2] then
-      return "No explosion name supplied"
-    end
-    local projectile = data.projectile[args[1]]
-    if not projectile then
-      return "Projectile not found: \"" .. args[1].."\""
-    end
-    local explosion = data.explosion[args[2]]
-    if not explosion then
-      return "Explosion not found: \"" .. args[2].."\""
-    end
-    local output = ""
-
-    output = output .. variablesTemplate(frame, projectile_variables, projectile)
-    output = output .. variablesTemplate(frame, explosion_variables, explosion)
-    local prj_damage_name = projectile["damage_name"]
-    if prj_damage_name then
-      local damage = data.damage[prj_damage_name]
-      output = output .. variablesTemplate(frame, damage_variables, damage)
-    end
-    local aoe_damage_name = explosion["damage_name"]
-    if aoe_damage_name then
-      local aoe_damage = data.damage[aoe_damage_name]
-      output = output .. variablesTemplate(frame, damage_variables, aoe_damage, "aoe_")
-    end
-    return frame:preprocess(output)
-end
-
-local arc_variables = {
-  arc_velocity = "velocity",
-  arc_range = "range",
-  arc_aim_angle = "aimangle",
-  arc_fullname = "name",
-  arc_damage_name = "damage_name",
-}
-
-function p.getArcVariables(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No arc name supplied"
-    end
-    local obj = data.arc[args[1]]
-    if not obj then
-      return "Arc not found: \"" .. args[1].."\""
-    end
-    return frame:preprocess(variablesTemplate(frame, arc_variables, obj, args[2]))
-end
-
-local beam_variables = {
-  beam_range = "range",
-  beam_fullname = "name",
-  beam_damage_name = "damage_name",
-}
-
-function p.getBeamVariables(frame)
-    local args = getArgs(frame)
-    if not args[1] then
-      return "No beam name supplied"
-    end
-    local obj = data.beam[args[1]]
-    if not obj then
-      return "beam not found: \"" .. args[1] .."\""
-    end
-    return frame:preprocess(variablesTemplate(frame, beam_variables, obj, args[2]))
 end
 
 return p

@@ -17025,6 +17025,7 @@
     "M-105 Stalwart": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "dlduul",
       "rpm": 1150,
       "reload": 5.8,
       "reloadearly": 4.4,
@@ -17041,6 +17042,7 @@
     "MG-43 Machine Gun": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "dldur",
       "rpm": 900,
       "reload": 5,
       "reloadearly": 4.2,
@@ -17055,6 +17057,7 @@
     "MG-206 Heavy Machine Gun": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "dludd",
       "rpm": 950,
       "reload": 7.2,
       "reloadearly": 5,
@@ -17071,6 +17074,7 @@
     "ARC-3 Arc Thrower": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "drdull",
       "rpm": 60,
       "charge": 1,
       "attacks": [{"type": "arc", "name": "ArcThrower", "id": 6}]
@@ -17078,6 +17082,7 @@
     "FLAM-40 Flamethrower": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "dludu",
       "reload": 3.9,
       "mags": 4,
       "magstart": 3,
@@ -17092,6 +17097,7 @@
     "APW-1 Anti-Materiel Rifle": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "dlrud",
       "rpm": 350,
       "reload": 3.2,
       "reloadearly": 2.6,
@@ -17108,6 +17114,7 @@
     "GL-21 Grenade Launcher": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "dluld",
       "reload": 3.5,
       "reloadearly": 3,
       "cap": 10,
@@ -17124,6 +17131,7 @@
     "AC-8 Autocannon": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "dlduur",
       "rpm": 250,
       "reload": 5.2,
       "reloadearly": 1.7,
@@ -17141,6 +17149,7 @@
     "RS-422 Railgun": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "drdulr",
       "chargeearly": 0.5,
       "charge": 3,
       "chargefactor": 1.5,
@@ -17155,6 +17164,7 @@
     "LAS-98 Laser Cannon": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "dldul",
       "reload": 3.6,
       "reloadearly": 5,
       "mags": 1,
@@ -17168,6 +17178,7 @@
     "LAS-99 Quasar Cannon": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "ddulr",
       "charge": 3.1,
       "reload": 15,
       "attacks": [
@@ -17178,6 +17189,7 @@
     "EAT-17 Expendable Anti-Tank": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "ddlur",
       "cap": 1,
       "attacks": [
         {"type": "projectile", "name": "Grenade_75mm_HEAT", "id": 85},
@@ -17187,6 +17199,7 @@
     "GR-8 Recoilless Rifle": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "dlrrl",
       "reload": 6,
       "cap": 1,
       "rounds": 5,
@@ -17201,6 +17214,7 @@
     "FAF-14 Spear": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "ddudd",
       "reload": 5,
       "cap": 1,
       "rounds": 3,
@@ -17215,6 +17229,7 @@
     "RL-77 Airburst Rocket Launcher": {
       "category": "SUP",
       "source": "support",
+      "stratcode": "duulr",
       "reload": 6.7,
       "cap": 1,
       "rounds": 5,

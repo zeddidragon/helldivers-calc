@@ -557,7 +557,11 @@ async function loadData() {
     d: 3,
     l: 4,
   }
-  locals.stratagems = data.stratagems.map((strat, i) => {
+  const strats = [
+    ...data.weapons.filter(wpn => wpn.stratcode),
+    ...data.stratagems,
+  ]
+  locals.stratagems = strats.map((strat, i) => {
     let shotdmg = 0
     let shotdmg2 = 0
     let maxRadius = [0, 0, 0]
