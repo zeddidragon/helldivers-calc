@@ -238,7 +238,7 @@ td.id:before, td.damageid:before, td.projectileid:before {
   color: #a98a98;
   content: "+";
 }
-.damage-x, .xdmg, .name.stub.explosion, .stub.radius {
+.damage-x, .xdmg, .name.name-explosion, .stub.explosion, .stub.radius {
   color: #ea8;
 }
 .beam.stub, .shield.stub {

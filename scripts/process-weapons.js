@@ -166,34 +166,11 @@ for(const wpn of allWeapons) {
     category: names[`wpn.category.full;${wpn.category}`],
     fullname: void 0,
     attack: void 0,
-    attacks,
+    attack: attacks,
   }
 }
 
 fs.writeFileSync('data/wiki.json', json(wikiRegister))
-
-for(const wpn of setup.weapon) {
-  if(!wpn.attack) {
-    continue
-  }
-  const [atk, ...subattacks] = wpn.attack.map(atk => {
-    const key = atkKey(atk.medium, atk.ref)
-    const obj = refRegister[key]
-    return {
-     type: atk.medium,
-      id: obj.id,
-      count: atk.count,
-    }
-  })
-  wpn[`${atk.type}id`] = atk.id
-  if(atk.count) {
-    wpn.count = atk.count
-  }
-  if(subattacks.length) {
-    wpn.subattacks = subattacks
-  }
-  delete wpn.attack
-}
 
 fs.writeFileSync('data/weapons.json', json({
   sources,
