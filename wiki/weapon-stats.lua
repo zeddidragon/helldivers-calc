@@ -78,7 +78,7 @@ local weapon_setup = {
   { "Reloading 1 Round", "reload_one", "reloadone", suffix = "sec" },
   { "Reloading n Rounds", "reload_n", "reloadx", suffix = "sec",
     cb = function(value, opts)
-      local n = opts.args["reload_n_count"] or attack["reloadxnum"] or "n"
+      local n = opts.args["reload_n_count"] or opts.medium["reloadxnum"] or "n"
       return value, "Reloading " .. n .. " Rounds"
     end },
   { "Spare Rounds", "rounds_spare", "rounds", },
@@ -119,6 +119,7 @@ local damage_setup = {
 
 local projectile_setup = {
   { "colspan=2", "projectile_name", "name", header = true },
+  { "colspan=2", literal = "Projectile", header = true },
   { "Pellets", "pellets", filter = filterGt(1), prefix = "x" },
   { "Caliber", "caliber", suffix = "mm" },
   { "Mass", "mass", cb = cbShowWeight },
@@ -131,6 +132,7 @@ local projectile_setup = {
 
 local explosion_setup = {
   { "colspan=2", "aoe_name", "name", header = true },
+  { "colspan=2", literal = "Area of Effect", header = true },
   { "Inner Radius", "inner_radius", "r1", suffix = "m" },
   { "Outer Radius", "outer_radius", "r2", suffix = "m" },
   { "Shockwave Radius", "shockwave_radius", "r3", suffix = "m" },
@@ -161,11 +163,13 @@ local explosion_damage_setup = {
 
 local beam_setup = {
   { "colspan=2", "beam_name", "name", header = true },
+  { "colspan=2", literal = "Beam", header = true },
   { "Beam Range", "range", suffix = "m"},
 }
 
 local arc_setup = {
   { "colspan=2", "arc_name", "name", header = true },
+  { "colspan=2", literal = "Arc", header = true },
   { "Arc Range", "arc_range", "range", suffix = "m"},
   { "Arc Velocity", "arc_velocity", "velocity", suffix = "m/s"},
   { "Arc Aim Angle", "arc_aim_angle", "aimangle", suffix = "°"},
@@ -185,7 +189,7 @@ local status_damages = {
   [2] = "DPS_Avatar_Bleed",
   [6] = "DPS_Fire",
   [10] = "DPS_Acid_Splash",
-  [11] = "DPS_Acidd_Stream",
+  [11] = "DPS_Acid_Stream",
   [12] = "DPS_Thermite",
   [13] = "DPS_Cyborg_Fire",
   [18] = "DPS_Thornbush",
@@ -358,7 +362,7 @@ function p.attackDataTemplate(frame)
       local override_attack = args["override_attack_" .. i]
       local attack_type_name = attack_type[attack.type]
 
-      local attack_row = "|" .. attack_type_name .. "||" .. name
+      local attack_row = "|" .. name .. "||" .. attack_type_name
       if override_attack then
         attack_row = "|" .. override_attack
       elseif attack.count then
@@ -456,7 +460,11 @@ function p.subAttackTemplate(frame)
 
   local medium = data[scope][name]
   if not medium then
-    return "Could not find a " .. scope .. " named \"" .. name .. "\""
+    medium = {}
+    args[1] = name
+    if scope == "damage" then
+      args["damage_name"] = name
+    end
   end
 
   if scope == "damage" and not args["damage_name"] then

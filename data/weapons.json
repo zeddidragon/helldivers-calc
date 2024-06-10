@@ -830,18 +830,40 @@
       "explosionid": 107,
       "subattacks": [{"type": "damage", "id": 310}]
     },
+    {"category": "Ability", "fullname": "Melee", "damageid": 326},
+    {"category": "Status", "fullname": "Status Effects#Bleed", "damageid": 324},
+    {"category": "Status", "fullname": "Status Effects#Fire", "damageid": 309},
     {
-      "category": "Misc",
-      "fullname": "Melee",
-      "source": "start",
-      "damageid": 326
+      "category": "Status",
+      "fullname": "Status Effects#Acid Splash",
+      "damageid": 311
     },
     {
-      "category": "Misc",
-      "fullname": "Status Effects#Burn",
-      "source": "status",
-      "damageid": 309
+      "category": "Status",
+      "fullname": "Status Effects#Acid Stream",
+      "damageid": 312
     },
+    {
+      "category": "Status",
+      "fullname": "Status Effects#Thermite",
+      "damageid": 310
+    },
+    {
+      "category": "Status",
+      "fullname": "Status Effects#Cyborg Fire",
+      "damageid": 314
+    },
+    {
+      "category": "Status",
+      "fullname": "Status Effects#Thornbush",
+      "damageid": 320
+    },
+    {
+      "category": "Status",
+      "fullname": "Status Effects#Pure Damage",
+      "damageid": 315
+    },
+    {"category": "Status", "fullname": "Status Effects#Gas", "damageid": 321},
     {
       "category": "Mounted",
       "fullname": "Patriot Gatling Gun",

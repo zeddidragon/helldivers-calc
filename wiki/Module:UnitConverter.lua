@@ -33,11 +33,6 @@ function p.getWeightMetricLua(weightInGrams)
 	if tonumber(weightInGrams) == nil then
 		return "non-number detected"
 	end	
-	--Return as kilograms if a decimal point is found
-	if string.find(weightInGrams, "%.") then
-		weightInGrams = tonumber(weightInGrams)
-		return weightInGrams .. " kg"
-	end
 	weightInGrams = tonumber(weightInGrams)
 	--Return as grams if weight input is less than 1000g
 	if weightInGrams < 1000 then

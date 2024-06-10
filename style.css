@@ -48,6 +48,7 @@ thead th {
   position: sticky;
   top: 0;
   background-color: #000;
+  white-space: nowrap;
 }
 tfoot th {
   position: sticky;
@@ -158,8 +159,11 @@ td.name {
 .category.SMG, .ap-8 {
   color: #ccc;
 }
-.category.Emplacement, .category.SG, .ap-3 {
+.category.SG, .ap-3 {
   color: #8e8;
+}
+.category.Emplacement {
+  color: #3f712c;
 }
 .category.Backpack, .category.DMR, .ap-2, .source.cut-edge, .damage-type.arc {
   color: #88e;
@@ -173,8 +177,14 @@ td.name {
 .category.HG, .ap-6 {
   color: #a8e;
 }
-.category.Eagle, .category.SUP, .ap-7, .source.support {
+.category.Eagle, .category.Status, .ap-7 {
   color: #e8a;
+}
+.category.Eagle {
+  color: #c8442e;
+}
+.category.SUP, .source.support, .ap-1 {
+  color: #269ab6;
 }
 .category.Misc {
   color: #a98a98;
@@ -228,19 +238,19 @@ td.id:before, td.damageid:before, td.projectileid:before {
   color: #a98a98;
   content: "+";
 }
-.damage-x, .xdmg, .name.name-explosion, .stub.radius {
+.damage-x, .xdmg, .name.stub.explosion, .stub.radius {
   color: #ea8;
 }
 .beam.stub, .shield.stub {
   color: #ee8;
 }
 .arc.stub {
-  color: #88e;
+  color: #aae;
 }
 .name.name-projectile {
   color: #fafafa;
 }
-.demo-x:before, .stun-x:before, .push-x:before, .dmg-massive:before {
+.demo-x:before, .stun-x:before, .push-x:before {
   color: #a98a98;
   content: "/";
 }

@@ -1,0 +1,59 @@
+<includeonly><!--
+-->{{#vardefine:total_medal_cost|0}}
+<div class="warbond-page">
+{{#fornumargs: i|cell
+  |{{#var:cell}}
+}}
+</div>
+</includeonly><noinclude>
+{{Warbond_Page|
+  | {{Warbond_Page/cell
+    | image = [[File: CW-36 Winter Warrior Armor Icon.png|link=CW-36 Winter Warrior]]
+    | medals = 18
+    | x = 1 | y = 1
+    | w = 2 | h = 2
+  }}
+  | {{Warbond_Page/cell
+    | image = [[File: CW-36 Winter Warrior Helmet Icon.png|link=CW-36 Winter Warrior]]
+    | medals = 12
+    | x = 3 | y = 1
+    | w = 1 | h = 1
+  }}
+  | {{Warbond_Page/cell
+    | image = [[File: Salute Victory Pose Icon.png|link=Mime Instrumentation]]
+    | medals = 8
+    | x = 4 | y = 1
+    | w = 2 | h = 1
+  }}
+  | {{Warbond_Page/cell
+    | image = [[File: Dissident's Nightmare Cape Icon.png|link=Dissident's Nightmare]]
+    | medals = 8
+    | x = 3 | y = 2
+    | w = 1 | h = 1
+  }}
+  | {{Warbond_Page/cell
+    | image = [[File: Dissident's Nightmare Player Card Icon.png|link=Dissident's Nightmare]]
+    | medals = 2
+    | x = 4 | y = 2
+    | w = 1 | h = 2
+  }}
+  | {{Warbond_Page/cell
+    | image = [[File: Motivational Shocks Booster Icon.png|link=Motivational Shocks]]
+    | medals = 15
+    | x = 5 | y = 2
+    | w = 1 | h = 2
+  }}
+  | {{Warbond_Page/cell
+    | image = [[File:Super Credit.svg|Currency]]
+    | medals = 7
+    | x = 1 | y = 3
+    | w = 1 | h = 1
+  }}
+  | {{Warbond_Page/cell
+    | image = [[File: AR-61 Tenderizer Weapon Icon.png|link=100x|AR-61 Tenderizer]]
+    | medals = 20
+    | x = 2 | y = 3
+    | w = 2 | h = 1
+  }}
+}}
+{{doc}}</noinclude>

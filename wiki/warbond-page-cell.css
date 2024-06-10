@@ -1,0 +1,8 @@
+<includeonly>
+<div class="warbond-cell warbond-cell-x-{{{x|1}}} warbond-cell-y-{{{y|1}}} warbond-cell-x2-{{#expr:{{{x|1}}}+{{{w|1}}} }} warbond-cell-y2-{{#expr:{{{y|1}}} + {{{h|1}}} }} warbond-cell-w-{{{w|1}}} warbond-cell-h-{{{h|1}}}">
+  <div class="warbond-cell-medals-container">
+    <div class="warbond-cell-medals">{{Currency|Medals|{{{medals|1}}}|notext}}</div>
+  </div>
+  {{{image|}}}
+</div>
+</includeonly>

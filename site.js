@@ -1,5 +1,5 @@
 function val(obj, prop) {
-  return obj[prop] || 0
+  return obj?.[prop] || 0
 }
 
 function sorting(col, mainScope) {
@@ -18,9 +18,17 @@ function sorting(col, mainScope) {
     return a.idx - b.idx
   }
 
+  if(locals.scope === 'weapons' && mainScope === 'projectile' && col === 'name') {
+    return function sortByProjectileName(a, b) {
+      const diff = (a.projectile?.[col] || '').localeCompare(b.projectile?.[col] || '') * dir
+      if(diff) return diff
+      return idxSort(a, b)
+    }
+  }
   if(locals.scope === 'weapons' && mainScope === 'projectile') {
     return function sortByProjectileCol(a, b) {
-      const diff = (a.projectile?.[col] || '').localeCompare(b.projectile?.[col] || '') * dir
+      const diff =  compare(a.projectile, b.projectile, col)
+      // const diff = (a.projectile?.[col] || '').localeCompare(b.projectile?.[col] || '') * dir
       if(diff) return diff
       return idxSort(a, b)
     }
@@ -256,7 +264,7 @@ window.locals = {
         return true
       })
       arr = arr.flatMap(wpn => {
-        if(wpn.subobjects) {
+        if(wpn.subobjects && !locals.collapseDamage) {
           return [wpn, ...wpn.subobjects]
         }
         return [wpn]
@@ -513,7 +521,7 @@ async function loadData() {
       ...(damage || {}),
       idx,
       ...wpn,
-      name: t('wpnname', wpn.fullname, name),
+      name: t('wpnname', wpn.fullname),
       sourceidx: (data.sources.indexOf(wpn.source) + 1) || Infinity,
       shotdmg,
       shotdmg2,
@@ -718,7 +726,7 @@ function readState() {
   try {
     let hash = window.location.hash
     if(!hash) {
-      hash = '#hc[]=Misc&hc[]=Mounted&hh[]=dps&hh[]=dps2'
+      hash = '#hc[]=Ability&hc[]=Status&hc[]=Mounted&hh[]=dps&hh[]=dps2'
     }
     states = hash.slice(1).split('&').map(kv => kv.split('='))
   } catch(err) {
@@ -786,12 +794,12 @@ window.toggleHeader = function toggleHeader(h) {
   })
 }
 
-window.toggleNerdMode = function toggleNerdMode() {
-  if(locals.scope === 'weapons') {
-    switchScope('projectiles')
-  } else {
-    switchScope('weapons')
-  }
+window.toggleCollapseDamage = function toggleNerdMode(ev) {
+  ev.preventDefault()
+  ev.stopPropagation()
+  locals.collapseDamage = !locals.collapseDamage
+  writeState()
+  render()
 }
 
 window.switchScope = function switchScope(scope) {

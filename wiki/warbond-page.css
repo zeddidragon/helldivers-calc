@@ -1,0 +1,67 @@
+.warbond-page {
+  --warbond-cell-width: 100px;
+  --warbond-cell-height: 100px;
+  --warbond-page-columns: 5;
+  --warbond-page-rows: 3;
+}
+
+.warbond-page {
+    display: grid;
+    grid: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    width: calc(var(--warbond-cell-width) * var(--warbond-page-columns));
+    height: calc(var(--warbond-cell-height) * var(--warbond-page-rows));
+}
+
+.warbond-page div pre {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.warbond-cell {
+    width: var(--warbond-cell-width);
+    height: var(--warbond-cell-height);
+}
+
+.warbond-cell pre a {
+    width: 100%;
+    height: 100%;
+}
+
+.warbond-cell pre > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.warbond-cell-x-1 { grid-column-start: 1; }
+.warbond-cell-x-2 { grid-column-start: 2; }
+.warbond-cell-x-3 { grid-column-start: 3; }
+.warbond-cell-x-4 { grid-column-start: 4; }
+.warbond-cell-x-5 { grid-column-start: 5; }
+.warbond-cell-y-1 { grid-row-start: 1; }
+.warbond-cell-y-2 { grid-row-start: 2; }
+.warbond-cell-y-3 { grid-row-start: 3; }
+.warbond-cell-y-4 { grid-row-start: 4; }
+.warbond-cell-y-5 { grid-row-start: 5; }
+.warbond-cell-x2-2 { grid-column-end: 2; }
+.warbond-cell-x2-3 { grid-column-end: 3; }
+.warbond-cell-x2-4 { grid-column-end: 4; }
+.warbond-cell-x2-5 { grid-column-end: 5; }
+.warbond-cell-x2-6 { grid-column-end: 6; }
+.warbond-cell-y2-2 { grid-row-end: 2; }
+.warbond-cell-y2-3 { grid-row-end: 3; }
+.warbond-cell-y2-4 { grid-row-end: 4; }
+.warbond-cell-y2-5 { grid-row-end: 5; }
+.warbond-cell-y2-6 { grid-row-end: 6; }
+.warbond-cell-w-1 { width: calc(var(--warbond-cell-width) *  1); }
+.warbond-cell-w-1 { width: calc(var(--warbond-cell-width) *  1); }
+.warbond-cell-w-2 { width: calc(var(--warbond-cell-width) *  2); }
+.warbond-cell-w-3 { width: calc(var(--warbond-cell-width) *  3); }
+.warbond-cell-w-4 { width: calc(var(--warbond-cell-width) *  4); }
+.warbond-cell-w-5 { width: calc(var(--warbond-cell-width) *  5); }
+.warbond-cell-h-1 { height: calc(var(--warbond-cell-height) * 1); }
+.warbond-cell-h-2 { height: calc(var(--warbond-cell-height) * 2); }
+.warbond-cell-h-3 { height: calc(var(--warbond-cell-height) * 3); }
+.warbond-cell-h-4 { height: calc(var(--warbond-cell-height) * 4); }
+.warbond-cell-h-5 { height: calc(var(--warbond-cell-height) * 5); }

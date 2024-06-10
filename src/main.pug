@@ -17,8 +17,14 @@ mixin weaponsHeader
   )= t('table.th.wpn.label', 'weapon')
   th.weapon.damage(
     title=t('table.th.dmg', 'dmgs3')
-    colspan=3
-  )= t('table.th.wpn.label', 'damage')
+    colspan=collapseDamage ? 2 : 3
+  )
+    input(
+      type="checkbox"
+      checked=collapseDamage
+      onclick="toggleCollapseDamage(event)"
+    )
+    span= t('table.th.wpn.label', 'damage')
   th.weapon.shotdmg2(
     title=t('table.th.dmg', 'dmg2')
   )
@@ -85,12 +91,13 @@ mixin weaponDamageRow(wpn)
         title=t('dmg.types.full', dmg.type)
       )= t('dmg.types', dmg.type)
   - const n = count(wpn)
-  td.weapon.pellets(class={ muted: n == 1, blank: !n })= n
-  td.weapon.dmg(class={ xdmg: !!wpn.explosion } colspan=2)
-    if dmg.dmg
-      span.dmg-base= dmg.dmg
-    if dmg.dmg2 < dmg.dmg
-      span.dmg-massive= dmg.dmg2
+  if collapseDamage
+    td.weapon.dmg= wpn.shotdmg
+    td.weapon.dmg2= wpn.shotdmg2
+  else
+    td.weapon.pellets(class={ muted: n == 1, blank: !n })= n
+    td.weapon.dmg(class={ xdmg: !!wpn.explosion })= dmg.dmg
+    td.weapon.dmg2(class={ xdmg: !!wpn.explosion })= dmg.dmg2
   - let ap = dmg.ap1
   td.damage.ap(class=`ap-${ap}`)= ap
 
@@ -423,7 +430,8 @@ mixin explosionsStubRow(exp, opts = {})
   td.explosion.radius.stub.r1= exp.r1.toFixed(1)
   td.explosion.radius.stub.r2.rx= exp.r2.toFixed(1)
   td.explosion.radius.stub.r3.rx= exp.r3.toFixed(1)
-  td.explosion.filler(colspan=4)
+  td.explosion.filler(colspan=2)
+  td.explosion.name.stub= exp.name
 
 mixin explosionsRow(exp, opts = {})
   if opts.full
@@ -473,7 +481,7 @@ mixin beamsStubRow(beam, opts = {})
   )= t('table.td.beam.label', 'range', 'Beam')
   td.beam.range.stub= beam.range
   td.beam.filler(colspan=5)
-  td.beam.name= beam.name
+  td.beam.name.stub= beam.name
 
 mixin arcsHeader(opts = {})
   th.arc.idx(
@@ -531,7 +539,7 @@ mixin arcsStubRow(arc, opts = {})
   td.arc.aimangle.stub= `${arc.aimangle}°`
   td.arc.chainangle.stub= `${arc.chainangle}°`
   td.arc.filler(colspan=2)
-  td.arc.name= arc.name
+  td.arc.name.stub= arc.name
 
 mixin damagesHeader(opts = {})
   if opts.full && !opts.hideId

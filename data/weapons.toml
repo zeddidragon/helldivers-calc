@@ -960,20 +960,74 @@ medium = "damage"
 ref = "DPS_Thermite"
 
 [[weapon]]
-category = "Misc"
+category = "Ability"
 fullname = "Melee"
-source = "start"
 [[weapon.attack]]
 medium = "damage"
 ref = "Ability_Avatar_Melee"
 
 [[weapon]]
-category = "Misc"
-fullname = "Status Effects#Burn"
-source = "status"
+category = "Status"
+fullname = "Status Effects#Bleed"
+[[weapon.attack]]
+medium = "damage"
+ref = "DPS_Avatar_Bleed"
+
+[[weapon]]
+category = "Status"
+fullname = "Status Effects#Fire"
 [[weapon.attack]]
 medium = "damage"
 ref = "DPS_Fire"
+
+[[weapon]]
+category = "Status"
+fullname = "Status Effects#Acid Splash"
+[[weapon.attack]]
+medium = "damage"
+ref = "DPS_Acid_Splash"
+
+[[weapon]]
+category = "Status"
+fullname = "Status Effects#Acid Stream"
+[[weapon.attack]]
+medium = "damage"
+ref = "DPS_Acid_Stream"
+
+[[weapon]]
+category = "Status"
+fullname = "Status Effects#Thermite"
+[[weapon.attack]]
+medium = "damage"
+ref = "DPS_Thermite"
+
+[[weapon]]
+category = "Status"
+fullname = "Status Effects#Cyborg Fire"
+[[weapon.attack]]
+medium = "damage"
+ref = "DPS_Cyborg_Fire"
+
+[[weapon]]
+category = "Status"
+fullname = "Status Effects#Thornbush"
+[[weapon.attack]]
+medium = "damage"
+ref = "DPS_Thornbush"
+
+[[weapon]]
+category = "Status"
+fullname = "Status Effects#Pure Damage"
+[[weapon.attack]]
+medium = "damage"
+ref = "DPS_Pure_Damage"
+
+[[weapon]]
+category = "Status"
+fullname = "Status Effects#Gas"
+[[weapon.attack]]
+medium = "damage"
+ref = "DPS_Gas"
 
 [[weapon]]
 category = "Mounted"

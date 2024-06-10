@@ -163,6 +163,7 @@ for(const wpn of allWeapons) {
   })
   reg[wpn.fullname] = {
     ...wpn,
+    category: names[`wpn.category.full;${wpn.category}`],
     fullname: void 0,
     attack: void 0,
     attacks,
