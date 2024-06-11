@@ -1140,6 +1140,38 @@ shieldradius = 8
 
 [[stratagem]]
 category = "Emplacement"
+fullname = "MD-6 Anti-Personnel Minefield"
+stratcode = "dlur"
+health = 250
+armor = 1
+cap = 24
+calltime = 3
+cooldown = 180
+[[stratagem.attack]]
+medium = "projectile"
+ref = "ContactMine"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "ContactMine"
+
+[[stratagem]]
+category = "Emplacement"
+fullname = "MD-17 Anti-Tank Mines"
+stratcode = "dluu"
+health = 250
+armor = 1
+cap = 48
+calltime = 3
+cooldown = 180
+[[stratagem.attack]]
+medium = "projectile"
+ref = "ContactMine"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "AntiTankMine"
+
+[[stratagem]]
+category = "Emplacement"
 fullname = "MD-I4 Incendiary Mines"
 stratcode = "dlld"
 health = 250
@@ -1148,21 +1180,11 @@ cap = 48
 calltime = 3
 cooldown = 180
 [[stratagem.attack]]
-medium = "explosion"
-ref = "IncendiaryMine"
-
-[[stratagem]]
-category = "Emplacement"
-fullname = "MD-6 Anti-Personnel Minefield"
-stratcode = "dlur"
-health = 250
-armor = 1
-cap = 48
-calltime = 3
-cooldown = 180
+medium = "projectile"
+ref = "ContactMine"
 [[stratagem.attack]]
 medium = "explosion"
-ref = "ContactMine"
+ref = "IncendiaryMine"
 
 [[stratagem]]
 category = "Emplacement"

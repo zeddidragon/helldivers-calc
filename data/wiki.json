@@ -17472,6 +17472,30 @@
       "shieldradius": 8,
       "attack": []
     },
+    "MD-6 Anti-Personnel Minefield": {
+      "stratcode": "dlur",
+      "health": 250,
+      "armor": 1,
+      "cap": 24,
+      "calltime": 3,
+      "cooldown": 180,
+      "attack": [
+        {"type": "projectile", "name": "ContactMine", "id": 96},
+        {"type": "explosion", "name": "ContactMine", "id": 188}
+      ]
+    },
+    "MD-17 Anti-Tank Mines": {
+      "stratcode": "dluu",
+      "health": 250,
+      "armor": 1,
+      "cap": 48,
+      "calltime": 3,
+      "cooldown": 180,
+      "attack": [
+        {"type": "projectile", "name": "ContactMine", "id": 96},
+        {"type": "explosion", "name": "AntiTankMine", "id": 94}
+      ]
+    },
     "MD-I4 Incendiary Mines": {
       "stratcode": "dlld",
       "health": 250,
@@ -17479,16 +17503,10 @@
       "cap": 48,
       "calltime": 3,
       "cooldown": 180,
-      "attack": [{"type": "explosion", "name": "IncendiaryMine", "id": 35}]
-    },
-    "MD-6 Anti-Personnel Minefield": {
-      "stratcode": "dlur",
-      "health": 250,
-      "armor": 1,
-      "cap": 48,
-      "calltime": 3,
-      "cooldown": 180,
-      "attack": [{"type": "explosion", "name": "ContactMine", "id": 188}]
+      "attack": [
+        {"type": "projectile", "name": "ContactMine", "id": 96},
+        {"type": "explosion", "name": "IncendiaryMine", "id": 35}
+      ]
     },
     "A/MG-43 Machine Gun Sentry": {
       "stratcode": "durru",

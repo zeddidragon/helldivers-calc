@@ -127,7 +127,10 @@ for(let i = 0; i < schema.length; i++) {
   const [prop, cb] = schema[i]
   cb(buf, medium[prop] || 0, offset)
 }
-console.log(`Object: "${medium.enum}" (${target || 'damage'})`)
+function hex(v) {
+  return `0x${v.toString(16)}`
+}
+console.log(`Object: "${medium.enum}" (${target || 'damage'}) (id: ${hex(medium.id)})`)
 const str = Array.from(buf).map(byte => byte.toString(16).padStart(2, '0')).join(' ')
 console.log(str)
 clipboard.writeSync(str)
