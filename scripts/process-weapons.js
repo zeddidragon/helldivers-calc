@@ -166,7 +166,7 @@ for(const wpn of allWeapons) {
     category: names[`wpn.category.full;${wpn.category}`],
     fullname: void 0,
     attack: void 0,
-    attack: attacks,
+    attacks,
   }
 }
 

@@ -1013,7 +1013,7 @@
       "stratcode": "dlur",
       "health": 250,
       "armor": 1,
-      "cap": 24,
+      "cap": 48,
       "calltime": 3,
       "cooldown": 180,
       "attack": [
@@ -1027,7 +1027,7 @@
       "stratcode": "dluu",
       "health": 250,
       "armor": 1,
-      "cap": 48,
+      "cap": 18,
       "calltime": 3,
       "cooldown": 180,
       "attack": [

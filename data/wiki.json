@@ -16535,7 +16535,7 @@
       "magstart": 5,
       "supply": 7,
       "box": 3,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rifle_5p5x50mm_fmj", "id": 182}
       ]
     },
@@ -16553,7 +16553,7 @@
       "magstart": 7,
       "supply": 10,
       "box": 5,
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap", "id": 5}]
+      "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap", "id": 5}]
     },
     "AR-23C Liberator Concussive": {
       "category": "Assault Rifle",
@@ -16569,7 +16569,7 @@
       "magstart": 7,
       "supply": 10,
       "box": 5,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rifle_5p5x50mm_exp", "id": 204}
       ]
     },
@@ -16587,7 +16587,7 @@
       "magstart": 5,
       "supply": 5,
       "box": 2,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rifle_5p5x50mm_fmj", "id": 182}
       ]
     },
@@ -16605,7 +16605,7 @@
       "magstart": 6,
       "supply": 8,
       "box": 4,
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 97}]
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 97}]
     },
     "R-63 Diligence": {
       "category": "Designated Marksman Rifle",
@@ -16621,7 +16621,7 @@
       "magstart": 5,
       "supply": 8,
       "box": 4,
-      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_fmj", "id": 201}]
+      "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_fmj", "id": 201}]
     },
     "R-63CS Diligence Counter Sniper": {
       "category": "Designated Marksman Rifle",
@@ -16637,7 +16637,7 @@
       "magstart": 4,
       "supply": 6,
       "box": 3,
-      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_hv", "id": 159}]
+      "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_hv", "id": 159}]
     },
     "MP-98 Knight": {
       "category": "Submachine Gun",
@@ -16653,7 +16653,9 @@
       "supply": 5,
       "box": 2,
       "tags": ["1h"],
-      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_smj", "id": 145}]
+      "attacks": [
+        {"type": "projectile", "name": "Pistol_9x20mm_smj", "id": 145}
+      ]
     },
     "SMG-37 Defender": {
       "category": "Submachine Gun",
@@ -16670,7 +16672,7 @@
       "supply": 7,
       "box": 3,
       "tags": ["1h"],
-      "attack": [{"type": "projectile", "name": "Pistol_12x25mm_fmj", "id": 2}]
+      "attacks": [{"type": "projectile", "name": "Pistol_12x25mm_fmj", "id": 2}]
     },
     "SMG-72 Pummeler": {
       "category": "Submachine Gun",
@@ -16687,7 +16689,7 @@
       "supply": 7,
       "box": 3,
       "tags": ["1h"],
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Pistol_12x25mm_stun", "id": 103}
       ]
     },
@@ -16705,7 +16707,7 @@
       "roundsupply": 60,
       "roundsbox": 30,
       "tags": ["rounds"],
-      "attack": [{"type": "projectile", "name": "Shotgun_10g_buc", "id": 172}]
+      "attacks": [{"type": "projectile", "name": "Shotgun_10g_buc", "id": 172}]
     },
     "SG-8S Slugger": {
       "category": "Shotgun",
@@ -16721,7 +16723,7 @@
       "roundsupply": 60,
       "roundsbox": 30,
       "tags": ["rounds"],
-      "attack": [{"type": "projectile", "name": "Shotgun_10g_slug", "id": 158}]
+      "attacks": [{"type": "projectile", "name": "Shotgun_10g_slug", "id": 158}]
     },
     "SG-225 Breaker": {
       "category": "Shotgun",
@@ -16737,7 +16739,7 @@
       "magstart": 5,
       "supply": 7,
       "box": 3,
-      "attack": [{"type": "projectile", "name": "Shotgun_12g_buc", "id": 121}]
+      "attacks": [{"type": "projectile", "name": "Shotgun_12g_buc", "id": 121}]
     },
     "SG-225SP Breaker Spray & Pray": {
       "category": "Shotgun",
@@ -16753,7 +16755,7 @@
       "magstart": 6,
       "supply": 8,
       "box": 4,
-      "attack": [{"type": "projectile", "name": "Shotgun_12g_bir", "id": 117}]
+      "attacks": [{"type": "projectile", "name": "Shotgun_12g_bir", "id": 117}]
     },
     "SG-225IE Breaker Incendiary": {
       "category": "Shotgun",
@@ -16770,7 +16772,7 @@
       "supply": 6,
       "box": 3,
       "tags": ["fire"],
-      "attack": [{"type": "projectile", "name": "Shotgun_12g_flm", "id": 207}]
+      "attacks": [{"type": "projectile", "name": "Shotgun_12g_flm", "id": 207}]
     },
     "CB-9 Exploding Crossbow": {
       "category": "Explosive",
@@ -16785,7 +16787,7 @@
       "magstart": 8,
       "supply": 8,
       "box": 4,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Crossbow_Bolt_exp", "id": 167},
         {"type": "explosion", "name": "Crossbow_Bolt", "id": 30}
       ]
@@ -16805,7 +16807,7 @@
       "supply": 6,
       "box": 3,
       "tags": ["jet"],
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rocket_15x100mm_std", "id": 119}
       ]
     },
@@ -16824,7 +16826,7 @@
       "supply": 6,
       "box": 3,
       "tags": ["jet", "shrapnel"],
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rocket_JarPhoenix_20mm", "id": 29},
         {"type": "explosion", "name": "JarPhoenix_20mm", "id": 81}
       ]
@@ -16841,7 +16843,7 @@
       "magstart": 6,
       "supply": 8,
       "box": 4,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Plasma_Punisher_Projectile", "id": 36},
         {"type": "explosion", "name": "Punisher_Plasma_Explosion", "id": 41}
       ]
@@ -16852,7 +16854,7 @@
       "sourcepage": 3,
       "rpm": 45,
       "recoil": 60,
-      "attack": [{"type": "arc", "name": "ArcShotgun", "count": 5, "id": 3}]
+      "attacks": [{"type": "arc", "name": "ArcShotgun", "count": 5, "id": 3}]
     },
     "LAS-5 Scythe": {
       "category": "Energy",
@@ -16867,7 +16869,7 @@
       "box": 2,
       "limit": 8,
       "tags": ["laser"],
-      "attack": [{"type": "beam", "name": "Medium", "id": 4}]
+      "attacks": [{"type": "beam", "name": "Medium", "id": 4}]
     },
     "LAS-16 Sickle": {
       "category": "Energy",
@@ -16882,7 +16884,7 @@
       "supply": 3,
       "box": 3,
       "limit": 7,
-      "attack": [{"type": "projectile", "name": "Laser_Long", "id": 98}]
+      "attacks": [{"type": "projectile", "name": "Laser_Long", "id": 98}]
     },
     "PLAS-1 Scorcher": {
       "category": "Energy",
@@ -16897,7 +16899,7 @@
       "magstart": 3,
       "supply": 6,
       "box": 3,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Plasma_Bolt_Medium", "id": 92},
         {"type": "explosion", "name": "Plasma_Bolt_Medium", "id": 79}
       ]
@@ -16914,7 +16916,7 @@
       "magstart": 3,
       "supply": 6,
       "box": 3,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Plasma_Bolt_Large", "id": 190},
         {"type": "explosion", "name": "Plasma_Bolt_Large", "id": 192}
       ]
@@ -16932,7 +16934,7 @@
       "magstart": 4,
       "supply": 5,
       "box": 2,
-      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_hp", "id": 218}]
+      "attacks": [{"type": "projectile", "name": "Pistol_9x20mm_hp", "id": 218}]
     },
     "P-19 Redeemer": {
       "category": "Pistol",
@@ -16948,7 +16950,9 @@
       "magstart": 4,
       "supply": 4,
       "box": 2,
-      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_fmj", "id": 194}]
+      "attacks": [
+        {"type": "projectile", "name": "Pistol_9x20mm_fmj", "id": 194}
+      ]
     },
     "P-113 Verdict": {
       "category": "Pistol",
@@ -16964,7 +16968,7 @@
       "magstart": 5,
       "supply": 4,
       "box": 2,
-      "attack": [{"type": "projectile", "name": "Pistol_Magnum", "id": 12}]
+      "attacks": [{"type": "projectile", "name": "Pistol_Magnum", "id": 12}]
     },
     "GP-31 Grenade Pistol": {
       "category": "Pistol",
@@ -16978,7 +16982,7 @@
       "roundstart": 4,
       "roundsupply": 2,
       "roundsbox": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Grenade_40mm_HEAT", "id": 54},
         {"type": "explosion", "name": "Grenade_40mm_HE_MK2", "id": 106}
       ]
@@ -16996,7 +17000,7 @@
       "box": 3,
       "limit": 5,
       "tags": ["laser"],
-      "attack": [{"type": "beam", "name": "Small", "id": 6}]
+      "attacks": [{"type": "beam", "name": "Small", "id": 6}]
     },
     "P-4 Senator": {
       "category": "Pistol",
@@ -17014,7 +17018,7 @@
       "roundsupply": 20,
       "roundsbox": 10,
       "tags": ["rounds"],
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Pistol_13x40mm_fmj", "id": 203}
       ]
     },
@@ -17031,7 +17035,7 @@
       "magstart": 2,
       "supply": 2,
       "box": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rifle_5p5x50mm_fmj", "id": 182}
       ]
     },
@@ -17048,7 +17052,7 @@
       "magstart": 1,
       "supply": 1,
       "box": 1,
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 179}]
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 179}]
     },
     "MG-206 Heavy Machine Gun": {
       "category": "Support",
@@ -17063,7 +17067,7 @@
       "magstart": 1,
       "supply": 2,
       "box": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rifle_12p5x100mm_bchp", "id": 181}
       ]
     },
@@ -17073,7 +17077,7 @@
       "stratcode": "drdull",
       "rpm": 60,
       "charge": 1,
-      "attack": [{"type": "arc", "name": "ArcThrower", "id": 6}]
+      "attacks": [{"type": "arc", "name": "ArcThrower", "id": 6}]
     },
     "FLAM-40 Flamethrower": {
       "category": "Support",
@@ -17086,7 +17090,9 @@
       "box": 3,
       "limit": 12.5,
       "tags": ["fire"],
-      "attack": [{"type": "damage", "name": "Projectile_Flamethrower", "id": 9}]
+      "attacks": [
+        {"type": "damage", "name": "Projectile_Flamethrower", "id": 9}
+      ]
     },
     "APW-1 Anti-Materiel Rifle": {
       "category": "Support",
@@ -17101,7 +17107,7 @@
       "magstart": 4,
       "supply": 3,
       "box": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rifle_12p5x100mm_eit", "id": 151}
       ]
     },
@@ -17117,7 +17123,7 @@
       "magstart": 1,
       "supply": 2,
       "box": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Grenade_40mm_HE", "id": 186},
         {"type": "explosion", "name": "Grenade_40mm_HE", "id": 185}
       ]
@@ -17135,7 +17141,7 @@
       "clipsize": 5,
       "clipsbox": 2,
       "clipsupply": 5,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Cannon_20mm_APHET", "id": 75},
         {"type": "explosion", "name": "APHET_20mm", "id": 208}
       ]
@@ -17153,7 +17159,7 @@
       "roundstart": 10,
       "roundsupply": 10,
       "roundsbox": 2,
-      "attack": [{"type": "projectile", "name": "Railgun", "id": 125}]
+      "attacks": [{"type": "projectile", "name": "Railgun", "id": 125}]
     },
     "LAS-98 Laser Cannon": {
       "category": "Support",
@@ -17167,7 +17173,7 @@
       "box": 1,
       "limit": 10,
       "tags": ["laser"],
-      "attack": [{"type": "beam", "name": "LaserCannon", "id": 1}]
+      "attacks": [{"type": "beam", "name": "LaserCannon", "id": 1}]
     },
     "LAS-99 Quasar Cannon": {
       "category": "Support",
@@ -17175,7 +17181,7 @@
       "stratcode": "ddulr",
       "charge": 3.1,
       "reload": 15,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Laser_Pulse", "id": 86},
         {"type": "explosion", "name": "Laser_Pulse", "id": 32}
       ]
@@ -17185,7 +17191,7 @@
       "source": "support",
       "stratcode": "ddlur",
       "cap": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Grenade_75mm_HEAT", "id": 85},
         {"type": "explosion", "name": "Grenade_75mm_HEAT", "id": 191}
       ]
@@ -17200,7 +17206,7 @@
       "roundstart": 5,
       "roundsupply": 3,
       "roundsbox": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Grenade_85mm_HEAT", "id": 100},
         {"type": "explosion", "name": "Grenade_85mm_HEAT", "id": 133}
       ]
@@ -17215,7 +17221,7 @@
       "roundstart": 3,
       "roundsupply": 2,
       "roundsbox": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Missile_Faf", "id": 150},
         {"type": "explosion", "name": "FafMissile", "id": 153}
       ]
@@ -17230,7 +17236,7 @@
       "roundstart": 5,
       "roundsupply": 3,
       "roundsbox": 1,
-      "attack": [
+      "attacks": [
         {
           "type": "projectile",
           "name": "Grenade_85mm_AirburstCluster",
@@ -17257,7 +17263,7 @@
       "roundstart": 0,
       "roundsupply": 20,
       "roundsbox": 10,
-      "attack": [{"type": "projectile", "name": "Shotgun_10g_mag", "id": 146}]
+      "attacks": [{"type": "projectile", "name": "Shotgun_10g_mag", "id": 146}]
     },
     "G-6 Frag": {
       "category": "Grenade",
@@ -17267,7 +17273,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "attack": [
+      "attacks": [
         {"type": "explosion", "name": "Frag", "id": 136},
         {"type": "projectile", "name": "Shrapnel", "count": 30, "id": 135}
       ]
@@ -17279,7 +17285,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "attack": [{"type": "explosion", "name": "HighExplosive", "id": 91}]
+      "attacks": [{"type": "explosion", "name": "HighExplosive", "id": 91}]
     },
     "G-10 Incendiary": {
       "category": "Grenade",
@@ -17289,7 +17295,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "attack": [{"type": "explosion", "name": "Incendiary", "id": 119}]
+      "attacks": [{"type": "explosion", "name": "Incendiary", "id": 119}]
     },
     "G-16 Impact": {
       "category": "Grenade",
@@ -17298,7 +17304,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "attack": [{"type": "explosion", "name": "Impact", "id": 174}]
+      "attacks": [{"type": "explosion", "name": "Impact", "id": 174}]
     },
     "G-13 Incendiary Impact": {
       "category": "Grenade",
@@ -17308,7 +17314,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "attack": [{"type": "explosion", "name": "Incendiary", "id": 119}]
+      "attacks": [{"type": "explosion", "name": "Incendiary", "id": 119}]
     },
     "G-23 Stun": {
       "category": "Grenade",
@@ -17318,7 +17324,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "attack": [{"type": "explosion", "name": "Flash", "id": 117}]
+      "attacks": [{"type": "explosion", "name": "Flash", "id": 117}]
     },
     "G-3 Smoke": {
       "category": "Grenade",
@@ -17328,7 +17334,7 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "attack": []
+      "attacks": []
     },
     "G-123 Thermite": {
       "category": "Grenade",
@@ -17338,62 +17344,62 @@
       "roundstart": 3,
       "roundsupply": 4,
       "roundsbox": 2,
-      "attack": [
+      "attacks": [
         {"type": "explosion", "name": "Thermite", "id": 107},
         {"type": "damage", "name": "DPS_Thermite", "id": 310}
       ]
     },
     "Melee": {
       "category": "Ability",
-      "attack": [{"type": "damage", "name": "Ability_Avatar_Melee", "id": 326}]
+      "attacks": [{"type": "damage", "name": "Ability_Avatar_Melee", "id": 326}]
     },
     "Status Effects#Bleed": {
       "category": "Status Effect",
-      "attack": [{"type": "damage", "name": "DPS_Avatar_Bleed", "id": 324}]
+      "attacks": [{"type": "damage", "name": "DPS_Avatar_Bleed", "id": 324}]
     },
     "Status Effects#Fire": {
       "category": "Status Effect",
-      "attack": [{"type": "damage", "name": "DPS_Fire", "id": 309}]
+      "attacks": [{"type": "damage", "name": "DPS_Fire", "id": 309}]
     },
     "Status Effects#Acid Splash": {
       "category": "Status Effect",
-      "attack": [{"type": "damage", "name": "DPS_Acid_Splash", "id": 311}]
+      "attacks": [{"type": "damage", "name": "DPS_Acid_Splash", "id": 311}]
     },
     "Status Effects#Acid Stream": {
       "category": "Status Effect",
-      "attack": [{"type": "damage", "name": "DPS_Acid_Stream", "id": 312}]
+      "attacks": [{"type": "damage", "name": "DPS_Acid_Stream", "id": 312}]
     },
     "Status Effects#Thermite": {
       "category": "Status Effect",
-      "attack": [{"type": "damage", "name": "DPS_Thermite", "id": 310}]
+      "attacks": [{"type": "damage", "name": "DPS_Thermite", "id": 310}]
     },
     "Status Effects#Cyborg Fire": {
       "category": "Status Effect",
-      "attack": [{"type": "damage", "name": "DPS_Cyborg_Fire", "id": 314}]
+      "attacks": [{"type": "damage", "name": "DPS_Cyborg_Fire", "id": 314}]
     },
     "Status Effects#Thornbush": {
       "category": "Status Effect",
-      "attack": [{"type": "damage", "name": "DPS_Thornbush", "id": 320}]
+      "attacks": [{"type": "damage", "name": "DPS_Thornbush", "id": 320}]
     },
     "Status Effects#Pure Damage": {
       "category": "Status Effect",
-      "attack": [{"type": "damage", "name": "DPS_Pure_Damage", "id": 315}]
+      "attacks": [{"type": "damage", "name": "DPS_Pure_Damage", "id": 315}]
     },
     "Status Effects#Gas": {
       "category": "Status Effect",
-      "attack": [{"type": "damage", "name": "DPS_Gas", "id": 321}]
+      "attacks": [{"type": "damage", "name": "DPS_Gas", "id": 321}]
     },
     "Patriot Gatling Gun": {
       "category": "Mounted Weapon",
       "rpm": 1200,
       "cap": 1000,
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 179}]
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 179}]
     },
     "Patriot Rocket Pod": {
       "category": "Mounted Weapon",
       "cap": 15,
       "rpm": 90,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Missile_Combat_Walker", "id": 82},
         {"type": "explosion", "name": "Combat_Walker_Missile", "id": 210}
       ]
@@ -17402,7 +17408,7 @@
       "category": "Mounted Weapon",
       "cap": 75,
       "rpm": 120,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Cannon_30mm_APHE", "id": 173},
         {"type": "explosion", "name": "APHE_30mm", "id": 124}
       ]
@@ -17414,7 +17420,7 @@
       "calltime": 5,
       "cooldown": 480,
       "cap": 4,
-      "attack": []
+      "attacks": []
     },
     "AX/AR-23 \"Guard Dog\"": {
       "stratcode": "dulurd",
@@ -17425,7 +17431,7 @@
       "rpm": 640,
       "cap": 30,
       "salvos": 6,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rifle_5p5x50mm_fmj", "id": 182}
       ]
     },
@@ -17435,7 +17441,7 @@
       "armor": 4,
       "calltime": 5,
       "cooldown": 480,
-      "attack": [{"type": "beam", "name": "MediumDrone", "id": 12}]
+      "attacks": [{"type": "beam", "name": "MediumDrone", "id": 12}]
     },
     "SH-20 Ballistic Shield stratagem": {
       "stratcode": "dlddul",
@@ -17443,7 +17449,7 @@
       "armor": 4,
       "calltime": 5,
       "cooldown": 480,
-      "attack": []
+      "attacks": []
     },
     "SH-32 Shield Generator Pack": {
       "stratcode": "dulrlr",
@@ -17456,7 +17462,7 @@
       "shielddelay": 60,
       "shieldbreakdelay": 12,
       "shieldradius": 1,
-      "attack": []
+      "attacks": []
     },
     "FX-12 Shield Generator Relay": {
       "stratcode": "ddlrlr",
@@ -17470,16 +17476,16 @@
       "shielddelay": 5,
       "shieldbreakdelay": 8,
       "shieldradius": 8,
-      "attack": []
+      "attacks": []
     },
     "MD-6 Anti-Personnel Minefield": {
       "stratcode": "dlur",
       "health": 250,
       "armor": 1,
-      "cap": 24,
+      "cap": 48,
       "calltime": 3,
       "cooldown": 180,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "ContactMine", "id": 96},
         {"type": "explosion", "name": "ContactMine", "id": 188}
       ]
@@ -17488,10 +17494,10 @@
       "stratcode": "dluu",
       "health": 250,
       "armor": 1,
-      "cap": 48,
+      "cap": 18,
       "calltime": 3,
       "cooldown": 180,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "ContactMine", "id": 96},
         {"type": "explosion", "name": "AntiTankMine", "id": 94}
       ]
@@ -17503,7 +17509,7 @@
       "cap": 48,
       "calltime": 3,
       "cooldown": 180,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "ContactMine", "id": 96},
         {"type": "explosion", "name": "IncendiaryMine", "id": 35}
       ]
@@ -17516,7 +17522,7 @@
       "cooldown": 180,
       "rpm": 660,
       "cap": 130,
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 97}]
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 97}]
     },
     "A/G-16 Gatling Sentry": {
       "stratcode": "durl",
@@ -17526,7 +17532,7 @@
       "cooldown": 180,
       "rpm": 1560,
       "cap": 390,
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 97}]
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 97}]
     },
     "E/MG-101 HMG Emplacement": {
       "stratcode": "dulrrl",
@@ -17536,7 +17542,7 @@
       "cooldown": 180,
       "rpm": 660,
       "cap": 300,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rifle_12p5x100mm_fmj", "id": 53}
       ]
     },
@@ -17548,7 +17554,7 @@
       "cooldown": 180,
       "rpm": 32,
       "cap": 36,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Grenade_Mortar_40mm_HE", "id": 223},
         {"type": "explosion", "name": "Grenade_Mortar_40mm_HE", "id": 184}
       ]
@@ -17561,7 +17567,7 @@
       "cooldown": 180,
       "rpm": 10,
       "cap": 15,
-      "attack": [
+      "attacks": [
         {
           "type": "projectile",
           "name": "Grenade_Mortar_40mm_Staticfield",
@@ -17581,7 +17587,7 @@
       "calltime": 8,
       "cooldown": 180,
       "cap": 36,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rocket_70mm_turret", "id": 209},
         {"type": "explosion", "name": "Rocket_70mm_turret", "id": 162}
       ]
@@ -17593,7 +17599,7 @@
       "calltime": 8,
       "cooldown": 180,
       "cap": 24,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Cannon_40mm_APHE", "id": 79},
         {"type": "explosion", "name": "APHE_40mm", "id": 123}
       ]
@@ -17604,14 +17610,14 @@
       "armor": 1,
       "calltime": 3,
       "cooldown": 150,
-      "attack": [{"type": "arc", "name": "TeslaTurret", "id": 10}]
+      "attacks": [{"type": "arc", "name": "TeslaTurret", "id": 10}]
     },
     "Orbital Precision Strike": {
       "stratcode": "rru",
       "calltime": 4,
       "cooldown": 100,
       "salvos": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Orbital_Precision_Strike", "id": 64},
         {"type": "explosion", "name": "PrecisionStrike", "id": 175}
       ]
@@ -17621,7 +17627,7 @@
       "calltime": 2,
       "cooldown": 75,
       "salvos": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Orbital_Gas", "id": 132},
         {"type": "explosion", "name": "OrbitalGas", "id": 40}
       ]
@@ -17631,14 +17637,14 @@
       "calltime": 2,
       "cooldown": 100,
       "salvos": 6,
-      "attack": []
+      "attacks": []
     },
     "Orbital Airburst Strike": {
       "stratcode": "rrr",
       "calltime": 2,
       "cooldown": 120,
       "salvos": 3,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Orbital_Cannon_110mm", "id": 104},
         {"type": "explosion", "name": "OrbitalShot", "id": 193},
         {"type": "projectile", "name": "Shrapnel_Heavy", "count": 12, "id": 9},
@@ -17650,7 +17656,7 @@
       "calltime": 2,
       "cooldown": 75,
       "salvos": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Orbital_Stunround", "id": 46},
         {"type": "explosion", "name": "OrbitalStun", "id": 101}
       ]
@@ -17661,7 +17667,7 @@
       "cooldown": 80,
       "salvos": 4,
       "cap": 30,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Cannon_Eagle_23mm", "id": 13},
         {"type": "explosion", "name": "Cannon_23mm", "id": 189}
       ]
@@ -17672,7 +17678,7 @@
       "cooldown": 240,
       "salvos": 5,
       "cap": 3,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Orbital_Cannon_120mm_HE", "id": 130},
         {"type": "explosion", "name": "OrbitalStrike", "id": 113}
       ]
@@ -17683,7 +17689,7 @@
       "cooldown": 240,
       "salvos": 5,
       "cap": 3,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Orbital_Cannon_380mm_HE", "id": 51},
         {"type": "explosion", "name": "OrbitalBarrage", "id": 151}
       ]
@@ -17694,7 +17700,7 @@
       "cooldown": 240,
       "salvos": 3,
       "cap": 3,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Orbital_Cannon_380mm_HE", "id": 51},
         {"type": "explosion", "name": "OrbitalBarrage", "id": 151}
       ]
@@ -17705,14 +17711,14 @@
       "cooldown": 300,
       "uses": 3,
       "limit": 25,
-      "attack": [{"type": "damage", "name": "DPS_BeamHuge", "id": 305}]
+      "attacks": [{"type": "damage", "name": "DPS_BeamHuge", "id": 305}]
     },
     "Orbital Railcannon Strike": {
       "stratcode": "ruddr",
       "calltime": 1,
       "cooldown": 210,
       "salvos": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Orbital_Railcannon", "id": 183},
         {"type": "explosion", "name": "Railcannon_Impact", "id": 27}
       ]
@@ -17722,7 +17728,7 @@
       "cooldown": 15,
       "eaglestock": 2,
       "cap": 6,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Bomb_100kg", "id": 113},
         {"type": "explosion", "name": "EagleBomb_100kg", "id": 104}
       ]
@@ -17732,7 +17738,7 @@
       "cooldown": 15,
       "eaglestock": 2,
       "cap": 4,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Bomb_Napalm", "id": 206},
         {"type": "explosion", "name": "EagleBomb_Napalm", "id": 7}
       ]
@@ -17742,7 +17748,7 @@
       "cooldown": 15,
       "eaglestock": 1,
       "cap": 1,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Bomb_500kg", "id": 157},
         {"type": "explosion", "name": "Bomb_Impact", "id": 181},
         {"type": "explosion", "name": "EagleBomb_500kg", "id": 143}
@@ -17752,7 +17758,7 @@
       "stratcode": "urr",
       "cooldown": 15,
       "eaglestock": 3,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Cannon_Eagle_23mm", "id": 13},
         {"type": "explosion", "name": "Cannon_23mm", "id": 189}
       ]
@@ -17762,7 +17768,7 @@
       "cooldown": 15,
       "eaglestock": 4,
       "cap": 8,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "ClusterBomb_100kg", "id": 191},
         {"type": "explosion", "name": "ClusterBomb", "id": 211},
         {
@@ -17784,7 +17790,7 @@
       "cooldown": 15,
       "eaglestock": 2,
       "cap": 3,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Rocket_110mm", "id": 52},
         {"type": "explosion", "name": "Rocket_110mm", "id": 120}
       ]
@@ -17794,7 +17800,7 @@
       "cooldown": 15,
       "eaglestock": 2,
       "cap": 8,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "Bomb_Smoke", "id": 83},
         {"type": "explosion", "name": "Bomb_Impact_Smoke", "id": 168}
       ]
@@ -17805,7 +17811,7 @@
       "armor": 3,
       "cooldown": 600,
       "uses": 2,
-      "attack": [
+      "attacks": [
         {"type": "weapon", "name": "Patriot Gatling Gun"},
         {"type": "weapon", "name": "Patriot Rocket Pod"},
         {
@@ -17826,7 +17832,7 @@
       "armor": 3,
       "cooldown": 600,
       "uses": 2,
-      "attack": [
+      "attacks": [
         {"type": "weapon", "name": "Emancipator Twin Autocannon", "count": 2},
         {
           "type": "damage",
@@ -17840,18 +17846,18 @@
         }
       ]
     },
-    "Eagle Rearm": {"stratcode": "uulur", "cooldown": 150, "attack": []},
+    "Eagle Rearm": {"stratcode": "uulur", "cooldown": 150, "attacks": []},
     "NUX-223 Hellbomb": {
       "stratcode": "duldurdu",
       "calltime": 5,
       "cooldown": 30,
-      "attack": [{"type": "explosion", "name": "Hellbomb", "id": 129}]
+      "attacks": [{"type": "explosion", "name": "Hellbomb", "id": 129}]
     },
     "SEAF Artillery#Explosive": {
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "SEAF_Gun_Explosive", "id": 44},
         {"type": "explosion", "name": "SEAF_Gun_Explosive", "id": 22}
       ]
@@ -17860,7 +17866,7 @@
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
-      "attack": [
+      "attacks": [
         {
           "type": "projectile",
           "name": "SEAF_Gun_High_Yield_Explosive",
@@ -17877,7 +17883,7 @@
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "SEAF_Gun_Mini_Nuke", "id": 63},
         {"type": "explosion", "name": "SEAF_Gun_Mini_Nuke", "id": 148}
       ]
@@ -17886,7 +17892,7 @@
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "SEAF_Gun_Smoke", "id": 8},
         {"type": "explosion", "name": "SEAF_Gun_Smoke", "id": 138}
       ]
@@ -17895,7 +17901,7 @@
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "SEAF_Gun_Napalm", "id": 94},
         {"type": "explosion", "name": "SEAF_Gun_Napalm", "id": 10}
       ]
@@ -17904,7 +17910,7 @@
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
-      "attack": [
+      "attacks": [
         {"type": "projectile", "name": "SEAF_Gun_EMP", "id": 60},
         {"type": "explosion", "name": "SEAF_Gun_EMP", "id": 29}
       ]

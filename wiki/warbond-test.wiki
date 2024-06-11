@@ -1,0 +1,41 @@
+<includeonly>{{#invoke:Warbonds|templateWarbondPage}}</includeonly><noinclude>{{Warbond_Page|
+  |-
+    | cell: 1 1 2 2 | medals: 18
+    | image: CW-36 Winter Warrior Armor Icon.png
+    | link: CW-36 Winter Warrior#Armor
+    | title: CW-36 Winter Warrior Armor
+  |-
+    | cell: 3 1 1 1 | medals: 12
+    | image: CW-36 Winter Warrior Helmet Icon.png
+    | link: CW-36 Winter Warrior#Helmet
+    | title: CW-36 Winter Warrior Helmet
+  |-
+    | cell: 4 1 2 1 | medals: 8
+    | image: Salute Victory Pose Icon.png
+    | link: Mime Instrumentation
+    | title: Mime Instrumentation Victory Pose
+  |-
+    | cell: 3 2 1 1 | medals: 8
+    | image: Dissident's Nightmare Cape Icon.png
+    | link: Dissident's Nightmare#Cape
+  |-
+    | cell: 4 2 1 2 | medals: 2
+    | image: Dissident's Nightmare Player Card Icon.png
+    | link: Dissident's Nightmare#Player Card
+  |-
+    | cell: 5 2 1 2 | medals: 15
+    | image: Motivational Shocks Booster Icon.png
+    | link: Motivational Shocks
+    | title: Motivational Shocks Booster
+  |-
+    | cell: 1 3 1 1 | medals: 7
+    | image: Super Credit.svg
+    | link: Currency
+    | title: 100 Super Credits
+  |-
+    | cell: 2 3 2 1 | medals: 20
+    | image: AR-61 Tenderizer Weapon Icon.png
+    | link: AR-61 Tenderizer
+  |-
+}}
+{{doc}}</noinclude>

@@ -1160,7 +1160,7 @@ fullname = "MD-17 Anti-Tank Mines"
 stratcode = "dluu"
 health = 250
 armor = 1
-cap = 24
+cap = 18
 calltime = 3
 cooldown = 180
 [[stratagem.attack]]
