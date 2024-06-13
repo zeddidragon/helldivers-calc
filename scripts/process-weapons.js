@@ -117,23 +117,45 @@ for(const prop of Object.keys(wikiRegister)) {
   const plural = `${prop}s`
   register[prop] = {}
   for(const obj of (data[plural] || [])) {
-    register[prop][obj.id] = obj
     const key = atkKey(prop, obj.enum)
     refRegister[key] = obj
-    reg[obj.enum] = {
+    register[prop][obj.id] = obj
+  }
+}
+
+for(const prop of Object.keys(wikiRegister)) {
+  const reg = wikiRegister[prop]
+  const plural = `${prop}s`
+  for(const obj of (data[plural] || [])) {
+    const key = atkKey(prop, obj.enum)
+    let obj2 = {
       ...obj,
       enum: void 0,
-      element_name: obj.type ? names[`dmg.types.full;${obj.type}`] : void 0,
-      status_name: obj.func1 ? data.statusNames[obj.func1 - 1] : void 0,
-      status_name2: obj.func2 ? data.statusNames[obj.func2 - 1] : void 0,
-      status_name3: obj.func3 ? data.statusNames[obj.func3 - 1] : void 0,
-      status_name4: obj.func4 ? data.statusNames[obj.func4 - 1] : void 0,
-      status_name5: obj.func5 ? data.statusNames[obj.func5 - 1] : void 0,
-      status_name6: obj.func6 ? data.statusNames[obj.func6 - 1] : void 0,
-      damageid: void 0,
       name: names[key],
-      damage_name: register.damage[obj.damageid]?.enum,
     }
+    if(prop === 'damage') {
+      obj2 = {
+        ...obj2,
+        element_name: obj.type ? names[`dmg.types.full;${obj.type}`] : void 0,
+        status_name: obj.func1 ? data.statusNames[obj.func1 - 1] : void 0,
+        status_name2: obj.func2 ? data.statusNames[obj.func2 - 1] : void 0,
+        status_name3: obj.func3 ? data.statusNames[obj.func3 - 1] : void 0,
+        status_name4: obj.func4 ? data.statusNames[obj.func4 - 1] : void 0,
+        status_name5: obj.func5 ? data.statusNames[obj.func5 - 1] : void 0,
+        status_name6: obj.func6 ? data.statusNames[obj.func6 - 1] : void 0,
+        damageid: void 0,
+      }
+    }
+    if(obj.ximpactid) {
+      obj2.impact_explosion_name = register.explosion[obj.ximpactid].enum
+    }
+    if(obj.xdelayid) {
+      obj2.delay_explosion_name = register.explosion[obj.xdelayid].enum
+    }
+    if(obj.damageid) {
+      obj2.damage_name = register.damage[obj.damageid].enum
+    }
+    reg[obj.enum] = obj2
   }
 }
 

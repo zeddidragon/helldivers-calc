@@ -86,9 +86,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Scavenger Acid Ball",
       "element_name": "Acid",
-      "status_name": "Acid Splash",
-      "name": "Scavenger Acid Ball"
+      "status_name": "Acid Splash"
     },
     "Projectile_CyborgHeavyFlamer": {
       "id": 5,
@@ -110,9 +110,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Cyborg Heavy Flamer",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Cyborg Heavy Flamer"
+      "status_name": "Fire"
     },
     "Projectile_CyborgLightRocket": {
       "id": 6,
@@ -200,9 +200,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Flamethrower",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Flamethrower"
+      "status_name": "Fire"
     },
     "Projectile_Grenade_40mm_HE": {
       "id": 10,
@@ -268,9 +268,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Illuminate Lightningbolt",
       "element_name": "Arc",
-      "status_name": "Stun Small",
-      "name": "Illuminate Lightningbolt"
+      "status_name": "Stun Small"
     },
     "Projectile_Illuminate_Lightspear": {
       "id": 13,
@@ -336,9 +336,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Illuminate Turret tesla",
       "element_name": "Arc",
-      "status_name": "Stun Small",
-      "name": "Illuminate Turret tesla"
+      "status_name": "Stun Small"
     },
     "Projectile_Illuminate_Observer_Lightning": {
       "id": 16,
@@ -360,9 +360,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Illuminate Observer Lightning",
       "element_name": "Arc",
-      "status_name": "Stun Small",
-      "name": "Illuminate Observer Lightning"
+      "status_name": "Stun Small"
     },
     "Projectile_Illuminate_Squidgun": {
       "id": 17,
@@ -384,9 +384,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Illuminate Squidgun",
       "element_name": "Arc",
-      "status_name": "Stun Small",
-      "name": "Illuminate Squidgun"
+      "status_name": "Stun Small"
     },
     "Projectile_Illuminate_Tripod_Lightning": {
       "id": 18,
@@ -408,9 +408,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Illuminate Tripod Lightning",
       "element_name": "Arc",
-      "status_name": "Stun Small",
-      "name": "Illuminate Tripod Lightning"
+      "status_name": "Stun Small"
     },
     "Projectile_Laser_Long": {
       "id": 19,
@@ -520,8 +520,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Small",
-      "name": "Railgun Stun"
+      "name": "Railgun Stun",
+      "status_name": "Stun Small"
     },
     "Projectile_Pistol_9x20mm_exp": {
       "id": 24,
@@ -653,9 +653,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Pistol 9x20mm Plasma",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Pistol 9x20mm Plasma"
+      "status_name": "Fire"
     },
     "Projectile_Pistol_9x20mm_rip": {
       "id": 30,
@@ -721,9 +721,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Pistol 9x20mm Toxic",
       "element_name": "Acid",
-      "status_name": "Acid Splash",
-      "name": "Pistol 9x20mm Toxic"
+      "status_name": "Acid Splash"
     },
     "Projectile_Pistol_12x25mm_exp": {
       "id": 33,
@@ -833,9 +833,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Pistol 12x25mm Plasma",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Pistol 12x25mm Plasma"
+      "status_name": "Fire"
     },
     "Projectile_Pistol_12x25mm_rip": {
       "id": 38,
@@ -901,9 +901,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Pistol 12x25mm Toxic",
       "element_name": "Acid",
-      "status_name": "Acid Splash",
-      "name": "Pistol 12x25mm Toxic"
+      "status_name": "Acid Splash"
     },
     "Projectile_Pistol_12x25mm_stun": {
       "id": 41,
@@ -925,8 +925,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Small",
-      "name": "Pistol 12x25mm Stun"
+      "name": "Pistol 12x25mm Stun",
+      "status_name": "Stun Small"
     },
     "Projectile_Pistol_Magnum": {
       "id": 42,
@@ -1432,9 +1432,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Rifle 8x60mm Liberty Fire",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Rifle 8x60mm Liberty Fire"
+      "status_name": "Fire"
     },
     "Projectile_Rifle_8x60mm_fmj": {
       "id": 65,
@@ -1764,8 +1764,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Medium",
-      "name": "Rocket 15x100mm EMP"
+      "name": "Rocket 15x100mm EMP",
+      "status_name": "Stun Medium"
     },
     "Projectile_Rocket_15x100mm_exp": {
       "id": 80,
@@ -1853,9 +1853,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Rocket 15x100mm Plasma",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Rocket 15x100mm Plasma"
+      "status_name": "Fire"
     },
     "Projectile_Rocket_15x100mm_std": {
       "id": 84,
@@ -1921,9 +1921,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Rocket 15x100mm Toxic",
       "element_name": "Acid",
-      "status_name": "Acid Splash",
-      "name": "Rocket 15x100mm Toxic"
+      "status_name": "Acid Splash"
     },
     "Projectile_Shotgun_10g_bir": {
       "id": 87,
@@ -2033,9 +2033,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Shotgun 10-Gauge Liberty Fire",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Shotgun 10-Gauge Liberty Fire"
+      "status_name": "Fire"
     },
     "Projectile_Shotgun_10g_frag": {
       "id": 92,
@@ -2343,9 +2343,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Shotgun 12-Gauge Liberty Fire",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Shotgun 12-Gauge Liberty Fire"
+      "status_name": "Fire"
     },
     "Projectile_Shotgun_12g_mag": {
       "id": 106,
@@ -2565,8 +2565,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Arc",
-      "name": "Arc Thrower"
+      "name": "Arc Thrower",
+      "element_name": "Arc"
     },
     "Projectile_Arc_Thrower_Mk2": {
       "id": 116,
@@ -2588,8 +2588,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Arc",
-      "name": "Arc Thrower Mk2"
+      "name": "Arc Thrower Mk2",
+      "element_name": "Arc"
     },
     "Projectile_Arc_Shotgun": {
       "id": 117,
@@ -2611,8 +2611,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Arc",
-      "name": "Arc Shotgun"
+      "name": "Arc Shotgun",
+      "element_name": "Arc"
     },
     "Projectile_Cannon_20mm_Flak": {
       "id": 118,
@@ -2810,8 +2810,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Arc",
-      "name": "Tesla Turret"
+      "name": "Tesla Turret",
+      "element_name": "Arc"
     },
     "Projectile_Cannon_20mm_APHET": {
       "id": 127,
@@ -3713,8 +3713,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Bleed",
-      "name": "Spikeplant Shrapnel"
+      "name": "Spikeplant Shrapnel",
+      "status_name": "Bleed"
     },
     "Explosion_None": {
       "id": 168,
@@ -3758,8 +3758,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Medium",
-      "name": "Explosion Hand Grenade Flash"
+      "name": "Explosion Hand Grenade Flash",
+      "status_name": "Stun Medium"
     },
     "Explosion_Projectile_Grenade_40mm_Stun": {
       "id": 170,
@@ -3781,8 +3781,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Medium",
-      "name": "Explosion Grenade 40mm Stun"
+      "name": "Explosion Grenade 40mm Stun",
+      "status_name": "Stun Medium"
     },
     "Explosion_Projectile_Snowball": {
       "id": 171,
@@ -3804,8 +3804,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Small",
-      "name": "Explosion Snowball"
+      "name": "Explosion Snowball",
+      "status_name": "Stun Small"
     },
     "Explosion_BackblastNone": {
       "id": 172,
@@ -3871,9 +3871,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Explosion Boomer Acid Death",
       "element_name": "Acid",
-      "status_name": "Acid Splash",
-      "name": "Explosion Boomer Acid Death"
+      "status_name": "Acid Splash"
     },
     "Explosion_Scavenger_AcidBall": {
       "id": 175,
@@ -3917,9 +3917,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Explosion Scavenger Acid Death",
       "element_name": "Acid",
-      "status_name": "Acid Splash",
-      "name": "Explosion Scavenger Acid Death"
+      "status_name": "Acid Splash"
     },
     "Explosion_Strider_StompShockwave": {
       "id": 177,
@@ -3985,8 +3985,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Tremor",
-      "name": "Explosion Earthquake"
+      "name": "Explosion Earthquake",
+      "status_name": "Tremor"
     },
     "Explosion_Projectile_12g_Frag": {
       "id": 180,
@@ -4272,9 +4272,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Explosion Bug Trap",
       "element_name": "Acid",
-      "status_name": "Acid Splash",
-      "name": "Explosion Bug Trap"
+      "status_name": "Acid Splash"
     },
     "Explosion_Icbm_Take_Off": {
       "id": 193,
@@ -4296,8 +4296,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Medium",
-      "name": "Explosion Icbm Take Off"
+      "name": "Explosion Icbm Take Off",
+      "status_name": "Stun Medium"
     },
     "Explosion_Icbm_Take_Off_Intense": {
       "id": 194,
@@ -4319,9 +4319,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Explosion Icbm Take Off Intense",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Explosion Icbm Take Off Intense"
+      "status_name": "Fire"
     },
     "Explosion_Illuminate_SmallStun": {
       "id": 195,
@@ -4343,8 +4343,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Small",
-      "name": "Explosion Illuminate Small Stun"
+      "name": "Explosion Illuminate Small Stun",
+      "status_name": "Stun Small"
     },
     "Explosion_Prop_Barrel": {
       "id": 196,
@@ -4366,9 +4366,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Explosion Prop Barrel",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Explosion Prop Barrel"
+      "status_name": "Fire"
     },
     "Explosion_Building_Small": {
       "id": 197,
@@ -4522,9 +4522,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Explosion Hand Grenade Incendiary",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Explosion Hand Grenade Incendiary"
+      "status_name": "Fire"
     },
     "Explosion_HandGrenade_Thermite": {
       "id": 204,
@@ -4678,8 +4678,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Small",
-      "name": "Explosion Illuminate Shock Wave"
+      "name": "Explosion Illuminate Shock Wave",
+      "status_name": "Stun Small"
     },
     "Explosion_Prop_Small": {
       "id": 211,
@@ -5141,10 +5141,10 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Explosion Eagle Bomb Napalm",
       "element_name": "Fire",
       "status_name": "Fire",
-      "status_name2": "BurningHeavy",
-      "name": "Explosion Eagle Bomb Napalm"
+      "status_name2": "BurningHeavy"
     },
     "Explosion_Projectile_Missile_66mm": {
       "id": 232,
@@ -5980,9 +5980,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Explosion Orbital Gas",
       "element_name": "Gas",
-      "status_name": "Gas",
-      "name": "Explosion Orbital Gas"
+      "status_name": "Gas"
     },
     "Explosion_Projectile_OrbitalShell": {
       "id": 270,
@@ -6334,9 +6334,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Explosion World Volcano Strike",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "Explosion World Volcano Strike"
+      "status_name": "Fire"
     },
     "Explosion_MapBoundary": {
       "id": 286,
@@ -6490,8 +6490,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Medium",
-      "name": "Explosion Moor Mushroom Burst"
+      "name": "Explosion Moor Mushroom Burst",
+      "status_name": "Stun Medium"
     },
     "Explosion_EmbryoCluster_Burst": {
       "id": 295,
@@ -6513,8 +6513,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Gas",
-      "name": "Explosion Embryo Cluster Burst"
+      "name": "Explosion Embryo Cluster Burst",
+      "status_name": "Gas"
     },
     "Explosion_Spikeplant_Shrapnel_Explosion": {
       "id": 293,
@@ -6536,8 +6536,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Bleed",
-      "name": "Explosion Spikeplant Shrapnel Explosion"
+      "name": "Explosion Spikeplant Shrapnel Explosion",
+      "status_name": "Bleed"
     },
     "Explosion_Iceplant_Shatter": {
       "id": 294,
@@ -6559,9 +6559,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Explosion Iceplant Shatter",
       "status_name": "Extreme Cold",
-      "status_name2": "Stun Medium",
-      "name": "Explosion Iceplant Shatter"
+      "status_name2": "Stun Medium"
     },
     "DPS_BeamSmall": {
       "id": 296,
@@ -6583,8 +6583,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Small"
+      "name": "DPS Beam Small",
+      "status_name": "Fire"
     },
     "DPS_BeamMedium": {
       "id": 297,
@@ -6606,8 +6606,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Medium"
+      "name": "DPS Beam Medium",
+      "status_name": "Fire"
     },
     "DPS_BeamMediumDrone": {
       "id": 298,
@@ -6629,8 +6629,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Medium Drone"
+      "name": "DPS Beam Medium Drone",
+      "status_name": "Fire"
     },
     "DPS_BeamMedium_Wide": {
       "id": 299,
@@ -6652,8 +6652,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Medium Wide"
+      "name": "DPS Beam Medium Wide",
+      "status_name": "Fire"
     },
     "DPS_BeamMedium_Spread": {
       "id": 300,
@@ -6675,8 +6675,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Medium Spread"
+      "name": "DPS Beam Medium Spread",
+      "status_name": "Fire"
     },
     "DPS_BeamMedium_Focused": {
       "id": 301,
@@ -6698,8 +6698,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Medium Focused"
+      "name": "DPS Beam Medium Focused",
+      "status_name": "Fire"
     },
     "DPS_BeamLarge": {
       "id": 302,
@@ -6721,8 +6721,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Large"
+      "name": "DPS Beam Large",
+      "status_name": "Fire"
     },
     "DPS_BeamLarge_Heavy": {
       "id": 303,
@@ -6744,8 +6744,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Large Heavy"
+      "name": "DPS Beam Large Heavy",
+      "status_name": "Fire"
     },
     "DPS_BeamLarge_Light": {
       "id": 304,
@@ -6767,8 +6767,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Large Light"
+      "name": "DPS Beam Large Light",
+      "status_name": "Fire"
     },
     "DPS_BeamHuge": {
       "id": 305,
@@ -6790,8 +6790,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Huge"
+      "name": "DPS Beam Huge",
+      "status_name": "Fire"
     },
     "DPS_BeamHuge_Upgrade": {
       "id": 306,
@@ -6813,8 +6813,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Huge Upgrade"
+      "name": "DPS Beam Huge Upgrade",
+      "status_name": "Fire"
     },
     "DPS_BeamLarge_Fire": {
       "id": 307,
@@ -6836,9 +6836,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "DPS Beam Large Fire",
       "element_name": "Fire",
-      "status_name": "Fire",
-      "name": "DPS Beam Large Fire"
+      "status_name": "Fire"
     },
     "DPS_Cyborg_Torch": {
       "id": 308,
@@ -6860,8 +6860,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Cyborg Torch"
+      "name": "DPS Cyborg Torch",
+      "status_name": "Fire"
     },
     "DPS_Fire": {
       "id": 309,
@@ -6883,8 +6883,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Fire",
-      "name": "DPS Fire"
+      "name": "DPS Fire",
+      "element_name": "Fire"
     },
     "DPS_Thermite": {
       "id": 310,
@@ -6906,8 +6906,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Fire",
-      "name": "DPS Thermite"
+      "name": "DPS Thermite",
+      "element_name": "Fire"
     },
     "DPS_Acid_Splash": {
       "id": 311,
@@ -6929,8 +6929,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Acid",
-      "name": "DPS Acid Splash"
+      "name": "DPS Acid Splash",
+      "element_name": "Acid"
     },
     "DPS_Acid_Stream": {
       "id": 312,
@@ -6952,8 +6952,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Acid",
-      "name": "DPS Acid Stream"
+      "name": "DPS Acid Stream",
+      "element_name": "Acid"
     },
     "DPS_AcidStorm": {
       "id": 313,
@@ -6975,8 +6975,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Bleed",
-      "name": "DPS Acid Storm"
+      "name": "DPS Acid Storm",
+      "element_name": "Bleed"
     },
     "DPS_Cyborg_Fire": {
       "id": 314,
@@ -6998,8 +6998,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Fire",
-      "name": "DPS Cyborg Fire"
+      "name": "DPS Cyborg Fire",
+      "element_name": "Fire"
     },
     "DPS_Pure_Damage": {
       "id": 315,
@@ -7043,8 +7043,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Fire",
-      "name": "DPS Burning Heavy"
+      "name": "DPS Burning Heavy",
+      "element_name": "Fire"
     },
     "DPS_RadiationLight": {
       "id": 317,
@@ -7110,8 +7110,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Arc",
-      "name": "DPS Electric"
+      "name": "DPS Electric",
+      "element_name": "Arc"
     },
     "DPS_Thornbush": {
       "id": 320,
@@ -7133,8 +7133,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Bleed",
-      "name": "DPS Thornbush"
+      "name": "DPS Thornbush",
+      "element_name": "Bleed"
     },
     "DPS_Gas": {
       "id": 321,
@@ -7156,8 +7156,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Gas",
-      "name": "DPS Gas"
+      "name": "DPS Gas",
+      "element_name": "Gas"
     },
     "DPS_Gas_MK2": {
       "id": 322,
@@ -7179,8 +7179,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Gas",
-      "name": "DPS Gas Mk2"
+      "name": "DPS Gas Mk2",
+      "element_name": "Gas"
     },
     "DPS_BeamTripodEye": {
       "id": 323,
@@ -7202,8 +7202,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Fire",
-      "name": "DPS Beam Tripod Eye"
+      "name": "DPS Beam Tripod Eye",
+      "status_name": "Fire"
     },
     "DPS_Avatar_Bleed": {
       "id": 324,
@@ -7225,8 +7225,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "element_name": "Bleed",
-      "name": "DPS Bleeding"
+      "name": "DPS Bleeding",
+      "element_name": "Bleed"
     },
     "Ability_Empty": {
       "id": 325,
@@ -7556,8 +7556,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Acid Splash",
-      "name": "Ability Bug Hunter Tongue"
+      "name": "Ability Bug Hunter Tongue",
+      "status_name": "Acid Splash"
     },
     "Ability_Bug_Hunter_Pounce": {
       "id": 340,
@@ -7799,8 +7799,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Large",
-      "name": "Ability Bug Stalker Scream"
+      "name": "Ability Bug Stalker Scream",
+      "status_name": "Stun Large"
     },
     "Ability_Bug_Strider_Stomp": {
       "id": 351,
@@ -7844,9 +7844,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Ability Bug Strider Acid Spray",
       "element_name": "Acid",
-      "status_name": "Acid Splash",
-      "name": "Ability Bug Strider Acid Spray"
+      "status_name": "Acid Splash"
     },
     "Ability_Cyborg_Conscript_Shove": {
       "id": 353,
@@ -8110,9 +8110,9 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
+      "name": "Ability Illuminate Illusionist Mind Scramble",
       "status_name": "Confusion",
-      "status_name2": "Inverted Aim Assist",
-      "name": "Ability Illuminate Illusionist Mind Scramble"
+      "status_name2": "Inverted Aim Assist"
     },
     "Ability_Illuminate_Illusionist_InverseAimAssist": {
       "id": 365,
@@ -8134,8 +8134,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Inverted Aim Assist",
-      "name": "Ability Illuminate Illusionist Inverse Aim Assist"
+      "name": "Ability Illuminate Illusionist Inverse Aim Assist",
+      "status_name": "Inverted Aim Assist"
     },
     "Ability_Illuminate_Ghoul_Claw": {
       "id": 366,
@@ -8179,8 +8179,8 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "status_name": "Stun Large",
-      "name": "Ability Illuminate Guy Staff Dash Stun"
+      "name": "Ability Illuminate Guy Staff Dash Stun",
+      "status_name": "Stun Large"
     },
     "Ability_Illuminate_GuyStaff_QuickSlash": {
       "id": 368,
@@ -8459,6 +8459,7 @@
       "simsteps": 1,
       "lifetime": 0.35,
       "liferandom": 0,
+      "damageid": 142,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 0,
@@ -8476,6 +8477,7 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Cluster Bomb 100kg",
+      "delay_explosion_name": "ClusterBomb",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "ClusterBomb_Bomb": {
@@ -8489,6 +8491,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 10,
       "penslow": 0.25,
       "xangle": 0,
       "ximpactid": 85,
@@ -8506,6 +8509,7 @@
       "unk55": 2,
       "unk57": 6168,
       "name": "Cluster Bomb Bomb",
+      "impact_explosion_name": "HeavyShrapnel_Clusterbombs",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Bomb_100kg": {
@@ -8519,6 +8523,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 142,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 104,
@@ -8536,6 +8541,7 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb 100kg",
+      "impact_explosion_name": "EagleBomb_100kg",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_100kg_MK2": {
@@ -8549,6 +8555,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 142,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 213,
@@ -8566,6 +8573,7 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb 100kg Mk2",
+      "impact_explosion_name": "EagleBomb_100kg_MK2",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_100kg_MK3": {
@@ -8579,6 +8587,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 142,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 134,
@@ -8596,6 +8605,7 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb 100kg Mk3",
+      "impact_explosion_name": "EagleBomb_100kg_MK3",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_Napalm": {
@@ -8609,6 +8619,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 142,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 7,
@@ -8626,6 +8637,7 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb Napalm",
+      "impact_explosion_name": "EagleBomb_Napalm",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_Napalm_MK2": {
@@ -8639,6 +8651,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 142,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 183,
@@ -8656,6 +8669,7 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb Napalm Mk2",
+      "impact_explosion_name": "EagleBomb_Napalm_MK2",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_Napalm_MK3": {
@@ -8669,6 +8683,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 142,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 200,
@@ -8686,6 +8701,7 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb Napalm Mk3",
+      "impact_explosion_name": "EagleBomb_Napalm_MK3",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_Smoke": {
@@ -8699,6 +8715,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 142,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 37,
@@ -8716,6 +8733,7 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb Smoke",
+      "impact_explosion_name": "OrbitalSmoke",
       "damage_name": "Projectile_Bomb_100kg"
     },
     "Bomb_200kg": {
@@ -8729,6 +8747,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 154,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 98,
@@ -8746,6 +8765,7 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb 200kg",
+      "impact_explosion_name": "CarpetBomb_200kg",
       "damage_name": "Projectile_Bomb_500kg"
     },
     "Bomb_500kg": {
@@ -8759,6 +8779,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 154,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 103,
@@ -8776,6 +8797,8 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb 500kg",
+      "impact_explosion_name": "500kg_Initial_Impact",
+      "delay_explosion_name": "EagleBomb_500kg",
       "damage_name": "Projectile_Bomb_500kg"
     },
     "Bomb_500kg_MK2": {
@@ -8789,6 +8812,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 154,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 181,
@@ -8806,6 +8830,8 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb 500kg Mk2",
+      "impact_explosion_name": "Bomb_Impact",
+      "delay_explosion_name": "EagleBomb_500kg_MK2",
       "damage_name": "Projectile_Bomb_500kg"
     },
     "Bomb_500kg_MK3": {
@@ -8819,6 +8845,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 154,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 181,
@@ -8836,6 +8863,8 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Bomb 500kg Mk3",
+      "impact_explosion_name": "Bomb_Impact",
+      "delay_explosion_name": "EagleBomb_500kg_MK3",
       "damage_name": "Projectile_Bomb_500kg"
     },
     "Strider_AcidStream": {
@@ -8849,6 +8878,7 @@
       "simsteps": 1,
       "lifetime": 1.65,
       "liferandom": 0,
+      "damageid": 2,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 59,
@@ -8866,6 +8896,7 @@
       "unk55": 0,
       "unk57": 60,
       "name": "Strider Acid Stream",
+      "impact_explosion_name": "Strider_AcidStream",
       "damage_name": "Projectile_Strider_AcidStream"
     },
     "Boomer_AcidStream": {
@@ -8879,6 +8910,7 @@
       "simsteps": 1,
       "lifetime": 5,
       "liferandom": 0,
+      "damageid": 1,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -8909,6 +8941,7 @@
       "simsteps": 1,
       "lifetime": 5,
       "liferandom": 0,
+      "damageid": 3,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -8939,6 +8972,7 @@
       "simsteps": 1,
       "lifetime": 3,
       "liferandom": 0,
+      "damageid": 4,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -8969,6 +9003,7 @@
       "simsteps": 1,
       "lifetime": 6,
       "liferandom": 0,
+      "damageid": 153,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -8986,6 +9021,7 @@
       "unk55": 3,
       "unk57": 249,
       "name": "Strider Spike",
+      "delay_explosion_name": "Dummy",
       "damage_name": "Projectile_Strider_Spike"
     },
     "Bug_Artillery": {
@@ -8999,6 +9035,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 155,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 2,
@@ -9016,6 +9053,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Bug Artillery",
+      "impact_explosion_name": "Bug_Artillery",
       "damage_name": "Projectile_Bug_Artillery"
     },
     "Cannon_20mm_APHET": {
@@ -9029,6 +9067,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 127,
       "penslow": 0.55,
       "xangle": 20,
       "ximpactid": 208,
@@ -9046,6 +9085,7 @@
       "unk55": 3,
       "unk57": 61,
       "name": "Cannon 20mm APHET",
+      "impact_explosion_name": "APHET_20mm",
       "damage_name": "Projectile_Cannon_20mm_APHET"
     },
     "Cannon_20mm_Flak": {
@@ -9059,6 +9099,7 @@
       "simsteps": 1,
       "lifetime": 0.9,
       "liferandom": 0,
+      "damageid": 118,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 194,
@@ -9076,6 +9117,7 @@
       "unk55": 2,
       "unk57": 61,
       "name": "Cannon 20mm Flak",
+      "impact_explosion_name": "Flak_20mm",
       "damage_name": "Projectile_Cannon_20mm_Flak"
     },
     "Cannon_20mm_HVAPT": {
@@ -9089,6 +9131,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 128,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -9119,6 +9162,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 132,
       "penslow": 0.55,
       "xangle": 80,
       "ximpactid": 65,
@@ -9136,6 +9180,7 @@
       "unk55": 2,
       "unk57": 60,
       "name": "Cannon 20mm HE",
+      "impact_explosion_name": "HE_20mm",
       "damage_name": "Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_30mm_APHE": {
@@ -9149,6 +9194,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 129,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 124,
@@ -9166,6 +9212,7 @@
       "unk55": 3,
       "unk57": 61,
       "name": "Cannon 30mm APHE",
+      "impact_explosion_name": "APHE_30mm",
       "damage_name": "Projectile_Cannon_30mm_APHE"
     },
     "Cannon_40mm_Flak": {
@@ -9179,6 +9226,7 @@
       "simsteps": 1,
       "lifetime": 0.8,
       "liferandom": 0,
+      "damageid": 131,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 18,
@@ -9196,6 +9244,7 @@
       "unk55": 3,
       "unk57": 61,
       "name": "Cannon 40mm Flak",
+      "impact_explosion_name": "Flak_40mm",
       "damage_name": "Projectile_Cannon_40mm_Flak"
     },
     "Cannon_40mm_APHE": {
@@ -9209,6 +9258,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 130,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 123,
@@ -9226,6 +9276,7 @@
       "unk55": 3,
       "unk57": 61,
       "name": "Cannon 40mm APHE",
+      "impact_explosion_name": "APHE_40mm",
       "damage_name": "Projectile_Cannon_40mm_APHE"
     },
     "Cannon_Eagle_23mm_with_audio_trigger": {
@@ -9239,6 +9290,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 132,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 189,
@@ -9256,6 +9308,7 @@
       "unk55": 2,
       "unk57": 4156,
       "name": "Cannon Eagle 23mm with audio trigger",
+      "impact_explosion_name": "Cannon_23mm",
       "damage_name": "Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_Eagle_23mm": {
@@ -9269,6 +9322,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 132,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 132,
@@ -9286,6 +9340,7 @@
       "unk55": 2,
       "unk57": 188,
       "name": "Cannon Eagle 23mm",
+      "impact_explosion_name": "Cannon_23mm_silent",
       "damage_name": "Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_Eagle_23mm_no_explosion": {
@@ -9299,6 +9354,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 132,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -9329,6 +9385,7 @@
       "simsteps": 1,
       "lifetime": 6,
       "liferandom": 0,
+      "damageid": 7,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -9359,6 +9416,7 @@
       "simsteps": 1,
       "lifetime": 6,
       "liferandom": 0,
+      "damageid": 7,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -9389,6 +9447,7 @@
       "simsteps": 1,
       "lifetime": 6,
       "liferandom": 0,
+      "damageid": 119,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -9419,6 +9478,7 @@
       "simsteps": 1,
       "lifetime": 6,
       "liferandom": 0,
+      "damageid": 133,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -9449,6 +9509,7 @@
       "simsteps": 1,
       "lifetime": 10,
       "liferandom": 0,
+      "damageid": 133,
       "penslow": 0.9,
       "xangle": 80,
       "ximpactid": 204,
@@ -9466,6 +9527,7 @@
       "unk55": 3,
       "unk57": 253,
       "name": "Cyborg Light Cannon",
+      "impact_explosion_name": "Cyborg_Projectile_LightCannon",
       "damage_name": "Projectile_CyborgLightCannon"
     },
     "Cyborg_HeavyCannon": {
@@ -9479,6 +9541,7 @@
       "simsteps": 1,
       "lifetime": 10,
       "liferandom": 0,
+      "damageid": 157,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 195,
@@ -9496,6 +9559,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Cyborg Heavy Cannon",
+      "impact_explosion_name": "Cyborg_Projectile_HeavyCannon",
       "damage_name": "Projectile_CyborgHeavyCannon"
     },
     "Cyborg_SpawnerMountedCannon": {
@@ -9509,6 +9573,7 @@
       "simsteps": 1,
       "lifetime": 10,
       "liferandom": 0,
+      "damageid": 157,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 4,
@@ -9526,6 +9591,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Cyborg Spawner Mounted Cannon",
+      "impact_explosion_name": "Cyborg_Projectile_SpawnerMountedCannon",
       "damage_name": "Projectile_CyborgHeavyCannon"
     },
     "Cyborg_Sniper_Reddeath": {
@@ -9539,6 +9605,7 @@
       "simsteps": 1,
       "lifetime": 20,
       "liferandom": 0,
+      "damageid": 119,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -9569,6 +9636,7 @@
       "simsteps": 1,
       "lifetime": 0.1,
       "liferandom": 0,
+      "damageid": 8,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 130,
@@ -9586,6 +9654,8 @@
       "unk55": 1,
       "unk57": 125,
       "name": "Cyborg Shotgun",
+      "impact_explosion_name": "Projectile_Shotgun_Flakblast",
+      "delay_explosion_name": "Projectile_Shotgun_Flakblast",
       "damage_name": "Projectile_CyborgShotgun"
     },
     "Cyborg_LightRocket": {
@@ -9599,6 +9669,7 @@
       "simsteps": 1,
       "lifetime": 10,
       "liferandom": 0,
+      "damageid": 6,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 44,
@@ -9616,6 +9687,7 @@
       "unk55": 3,
       "unk57": 180,
       "name": "Cyborg Light Rocket",
+      "impact_explosion_name": "Cyborg_Projectile_LightRocket",
       "damage_name": "Projectile_CyborgLightRocket"
     },
     "Cyborg_HeavyRocket": {
@@ -9629,6 +9701,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 6,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 8,
@@ -9646,6 +9719,7 @@
       "unk55": 3,
       "unk57": 184,
       "name": "Cyborg Heavy Rocket",
+      "impact_explosion_name": "Cyborg_Projectile_HeavyRocket",
       "damage_name": "Projectile_CyborgLightRocket"
     },
     "Cyborg_Flare": {
@@ -9659,6 +9733,7 @@
       "simsteps": 1,
       "lifetime": 0.5,
       "liferandom": 0,
+      "damageid": 10,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -9689,6 +9764,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 10,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 161,
@@ -9706,6 +9782,7 @@
       "unk55": 2,
       "unk57": 182,
       "name": "Cyborg Mortar Grenade HE",
+      "impact_explosion_name": "Cyborg_Mortar_Base_Shell_Explosion",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Cyborg_Orbital_Cannon": {
@@ -9719,6 +9796,7 @@
       "simsteps": 1,
       "lifetime": 10,
       "liferandom": 0,
+      "damageid": 165,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 151,
@@ -9736,6 +9814,7 @@
       "unk55": 3,
       "unk57": 61,
       "name": "Cyborg Orbital Cannon",
+      "impact_explosion_name": "OrbitalBarrage",
       "damage_name": "Projectile_Cyborg_Orbital_Cannon"
     },
     "Cyborg_Flamethrower_Heavy": {
@@ -9749,6 +9828,7 @@
       "simsteps": 1,
       "lifetime": 0.6,
       "liferandom": 0,
+      "damageid": 5,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 0,
@@ -9779,6 +9859,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 156,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 111,
@@ -9796,6 +9877,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Cyborg Artillery",
+      "impact_explosion_name": "Cyborg_Artillery",
       "damage_name": "Projectile_Cyborg_Artillery"
     },
     "Grenade_40mm_HE": {
@@ -9809,6 +9891,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 10,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 185,
@@ -9826,6 +9909,8 @@
       "unk55": 2,
       "unk57": 55,
       "name": "Grenade 40mm HE",
+      "impact_explosion_name": "Grenade_40mm_HE",
+      "delay_explosion_name": "Grenade_40mm_HE",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_40mm_HE_MK2": {
@@ -9839,6 +9924,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 10,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 106,
@@ -9856,6 +9942,8 @@
       "unk55": 2,
       "unk57": 55,
       "name": "Grenade 40mm HE Mk2",
+      "impact_explosion_name": "Grenade_40mm_HE_MK2",
+      "delay_explosion_name": "Grenade_40mm_HE_MK2",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_40mm_Incendiary": {
@@ -9869,6 +9957,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 10,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 76,
@@ -9886,6 +9975,8 @@
       "unk55": 2,
       "unk57": 55,
       "name": "Grenade 40mm Incendiary",
+      "impact_explosion_name": "Grenade_40mm_Incendiary",
+      "delay_explosion_name": "Grenade_40mm_Incendiary",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_40mm_HEAT": {
@@ -9899,6 +9990,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 134,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 106,
@@ -9916,6 +10008,8 @@
       "unk55": 2,
       "unk57": 55,
       "name": "Grenade 40mm HEAT",
+      "impact_explosion_name": "Grenade_40mm_HE_MK2",
+      "delay_explosion_name": "Grenade_40mm_HE_MK2",
       "damage_name": "Projectile_Grenade_40mm_HEAT"
     },
     "Grenade_40mm_Stun": {
@@ -9929,6 +10023,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 10,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 86,
@@ -9946,6 +10041,8 @@
       "unk55": 2,
       "unk57": 55,
       "name": "Grenade 40mm Stun",
+      "impact_explosion_name": "Grenade_40mm_Stun",
+      "delay_explosion_name": "Grenade_40mm_Stun",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_40mm_ProximityCone": {
@@ -9959,6 +10056,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 11,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 177,
@@ -9976,6 +10074,7 @@
       "unk55": 2,
       "unk57": 63,
       "name": "Grenade 40mm Proximity Cone",
+      "impact_explosion_name": "Grenade_40mm_ProximityCone",
       "damage_name": "Projectile_Grenade_40mm_ProximityCone"
     },
     "Grenade_Mortar_40mm_HE": {
@@ -9989,6 +10088,7 @@
       "simsteps": 3,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 10,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 184,
@@ -10006,6 +10106,7 @@
       "unk55": 2,
       "unk57": 182,
       "name": "Grenade Mortar 40mm HE",
+      "impact_explosion_name": "Grenade_Mortar_40mm_HE",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_Mortar_40mm_Staticfield": {
@@ -10019,6 +10120,7 @@
       "simsteps": 3,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 10,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 74,
@@ -10036,6 +10138,8 @@
       "unk55": 2,
       "unk57": 182,
       "name": "Grenade Mortar 40mm Static Field",
+      "impact_explosion_name": "StaticField_Sentry",
+      "delay_explosion_name": "Grenade_Mortar_40mm_Staticfield",
       "damage_name": "Projectile_Grenade_40mm_HE"
     },
     "Grenade_75mm_HEAT": {
@@ -10049,6 +10153,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 135,
       "penslow": 0.85,
       "xangle": 60,
       "ximpactid": 191,
@@ -10066,6 +10171,7 @@
       "unk55": 4,
       "unk57": 181,
       "name": "Grenade 75mm HEAT",
+      "impact_explosion_name": "Grenade_75mm_HEAT",
       "damage_name": "Projectile_Grenade_75mm_HEAT"
     },
     "Grenade_85mm_HE": {
@@ -10079,6 +10185,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 143,
       "penslow": 0.85,
       "xangle": 89,
       "ximpactid": 150,
@@ -10096,6 +10203,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Grenade 85mm HE",
+      "impact_explosion_name": "Grenade_85mm_HE",
       "damage_name": "Projectile_Grenade_85mm_HE"
     },
     "Grenade_85mm_HE_MK2": {
@@ -10109,6 +10217,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 143,
       "penslow": 0.85,
       "xangle": 89,
       "ximpactid": 54,
@@ -10126,6 +10235,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Grenade 85mm HE Mk2",
+      "impact_explosion_name": "Grenade_85mm_HE_MK2",
       "damage_name": "Projectile_Grenade_85mm_HE"
     },
     "Grenade_85mm_HEAT": {
@@ -10139,6 +10249,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 136,
       "penslow": 0.25,
       "xangle": 20,
       "ximpactid": 133,
@@ -10156,6 +10267,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Grenade 85mm HEAT",
+      "impact_explosion_name": "Grenade_85mm_HEAT",
       "damage_name": "Projectile_Grenade_85mm_HEAT"
     },
     "Grenade_85mm_HEAT_MK2": {
@@ -10169,6 +10281,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 137,
       "penslow": 0.25,
       "xangle": 20,
       "ximpactid": 125,
@@ -10186,6 +10299,7 @@
       "unk55": 4,
       "unk57": 181,
       "name": "Grenade 85mm HEAT Mk2",
+      "impact_explosion_name": "Grenade_85mm_HEAT_MK2",
       "damage_name": "Projectile_Grenade_85mm_HEAT_MK2"
     },
     "Grenade_85mm_AirburstCluster": {
@@ -10199,6 +10313,7 @@
       "simsteps": 1,
       "lifetime": 1.5,
       "liferandom": 0,
+      "damageid": 224,
       "penslow": 0.25,
       "xangle": 360,
       "ximpactid": 165,
@@ -10216,6 +10331,8 @@
       "unk55": 3,
       "unk57": 148,
       "name": "Grenade 85mm Airburst Cluster",
+      "impact_explosion_name": "AirburstCluster",
+      "delay_explosion_name": "AirburstCluster",
       "damage_name": "Explosion_Projectile_Grenade_85mm_DirectHit"
     },
     "AirburstCluster_Bomb": {
@@ -10229,6 +10346,7 @@
       "simsteps": 1,
       "lifetime": 0.8,
       "liferandom": 0.7,
+      "damageid": 202,
       "penslow": 0.25,
       "xangle": 0,
       "ximpactid": 3,
@@ -10246,6 +10364,8 @@
       "unk55": 2,
       "unk57": 6680,
       "name": "Airburst Cluster Bomb",
+      "impact_explosion_name": "AirburstCluster_Bomb",
+      "delay_explosion_name": "AirburstCluster_Bomb",
       "damage_name": "Explosion_HandGrenade_Frag_Cluster"
     },
     "Illuminate_Lightspear": {
@@ -10259,6 +10379,7 @@
       "simsteps": 1,
       "lifetime": 1,
       "liferandom": 0,
+      "damageid": 13,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -10289,6 +10410,7 @@
       "simsteps": 1,
       "lifetime": 1,
       "liferandom": 0,
+      "damageid": 22,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -10319,6 +10441,7 @@
       "simsteps": 1,
       "lifetime": 1,
       "liferandom": 0,
+      "damageid": 22,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -10349,6 +10472,7 @@
       "simsteps": 1,
       "lifetime": 1,
       "liferandom": 0,
+      "damageid": 22,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -10379,6 +10503,7 @@
       "simsteps": 1,
       "lifetime": 10,
       "liferandom": 0,
+      "damageid": 157,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 110,
@@ -10396,6 +10521,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Illuminate Obelisk",
+      "impact_explosion_name": "Illuminate_Projectile_Huge",
       "damage_name": "Projectile_CyborgHeavyCannon"
     },
     "Illuminate_ShootingStar": {
@@ -10409,6 +10535,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 157,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 110,
@@ -10426,6 +10553,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Illuminate Shooting Star",
+      "impact_explosion_name": "Illuminate_Projectile_Huge",
       "damage_name": "Projectile_CyborgHeavyCannon"
     },
     "Illuminate_Outcast_Beam": {
@@ -10439,6 +10567,7 @@
       "simsteps": 1,
       "lifetime": 1,
       "liferandom": 0,
+      "damageid": 144,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 135,
@@ -10456,6 +10585,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Illuminate Outcast Beam",
+      "impact_explosion_name": "Illuminate_Medium",
       "damage_name": "Projectile_Illuminate_OutcastBeam"
     },
     "illuminate_Shockwave": {
@@ -10469,6 +10599,7 @@
       "simsteps": 1,
       "lifetime": 0.1,
       "liferandom": 0,
+      "damageid": 11,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 177,
@@ -10486,6 +10617,8 @@
       "unk55": 2,
       "unk57": 63,
       "name": "illuminate Shockwave",
+      "impact_explosion_name": "Grenade_40mm_ProximityCone",
+      "delay_explosion_name": "AdeptShockwave",
       "damage_name": "Projectile_Grenade_40mm_ProximityCone"
     },
     "Missile_66mm": {
@@ -10499,6 +10632,7 @@
       "simsteps": 1,
       "lifetime": 15,
       "liferandom": 0,
+      "damageid": 145,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 73,
@@ -10516,6 +10650,7 @@
       "unk55": 4,
       "unk57": 179,
       "name": "Missile 66mm",
+      "impact_explosion_name": "Missile_66mm",
       "damage_name": "Projectile_Missile_66mm"
     },
     "Missile_66mm_MK2": {
@@ -10529,6 +10664,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 146,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 88,
@@ -10546,6 +10682,7 @@
       "unk55": 4,
       "unk57": 51,
       "name": "Missile 66mm Mk2",
+      "impact_explosion_name": "Missile_66mm_MK2",
       "damage_name": "Projectile_Missile_66mm_MK2"
     },
     "Missile_Stinger": {
@@ -10559,6 +10696,7 @@
       "simsteps": 1,
       "lifetime": 15,
       "liferandom": 0,
+      "damageid": 151,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 58,
@@ -10576,6 +10714,7 @@
       "unk55": 4,
       "unk57": 167,
       "name": "Missile Stinger",
+      "impact_explosion_name": "StingerMissile",
       "damage_name": "Projectile_Missile_Stinger"
     },
     "Missile_Faf": {
@@ -10589,6 +10728,7 @@
       "simsteps": 1,
       "lifetime": 15,
       "liferandom": 0,
+      "damageid": 149,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 153,
@@ -10606,6 +10746,7 @@
       "unk55": 4,
       "unk57": 183,
       "name": "Missile Fire-and-Forget",
+      "impact_explosion_name": "FafMissile",
       "damage_name": "Projectile_Missile_Faf"
     },
     "Missile_Faf_MK2": {
@@ -10619,6 +10760,7 @@
       "simsteps": 1,
       "lifetime": 15,
       "liferandom": 0,
+      "damageid": 150,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 153,
@@ -10636,6 +10778,7 @@
       "unk55": 4,
       "unk57": 183,
       "name": "Missile Fire-and-Forget Mk2",
+      "impact_explosion_name": "FafMissile",
       "damage_name": "Projectile_Missile_Faf_MK2"
     },
     "Missile_Combat_Walker": {
@@ -10649,6 +10792,7 @@
       "simsteps": 1,
       "lifetime": 15,
       "liferandom": 0,
+      "damageid": 147,
       "penslow": 0.85,
       "xangle": 60,
       "ximpactid": 210,
@@ -10666,6 +10810,7 @@
       "unk55": 4,
       "unk57": 180,
       "name": "Missile Exosuit",
+      "impact_explosion_name": "Combat_Walker_Missile",
       "damage_name": "Projectile_Missile_Combat_Walker"
     },
     "Missile_Combat_Walker_MK2": {
@@ -10679,6 +10824,7 @@
       "simsteps": 1,
       "lifetime": 15,
       "liferandom": 0,
+      "damageid": 148,
       "penslow": 0.85,
       "xangle": 60,
       "ximpactid": 152,
@@ -10696,6 +10842,7 @@
       "unk55": 4,
       "unk57": 181,
       "name": "Missile Exosuit Mk2",
+      "impact_explosion_name": "Combat_Walker_Missile_MK2",
       "damage_name": "Projectile_Missile_Combat_Walker_MK2"
     },
     "EagleMissile": {
@@ -10709,6 +10856,7 @@
       "simsteps": 1,
       "lifetime": 20,
       "liferandom": 0,
+      "damageid": 152,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 121,
@@ -10726,6 +10874,7 @@
       "unk55": 3,
       "unk57": 184,
       "name": "Eagle Missile",
+      "impact_explosion_name": "EagleMissile",
       "damage_name": "Projectile_Rocket_110mm"
     },
     "Missile_SAM": {
@@ -10739,6 +10888,7 @@
       "simsteps": 1,
       "lifetime": 3,
       "liferandom": 0,
+      "damageid": 152,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 169,
@@ -10756,6 +10906,8 @@
       "unk55": 3,
       "unk57": 184,
       "name": "Missile SAM",
+      "impact_explosion_name": "SAM_Missile",
+      "delay_explosion_name": "SAM_Missile",
       "damage_name": "Projectile_Rocket_110mm"
     },
     "Orbital_Cannon_110mm": {
@@ -10769,6 +10921,7 @@
       "simsteps": 1,
       "lifetime": 0.95,
       "liferandom": 0,
+      "damageid": 158,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 193,
@@ -10786,6 +10939,8 @@
       "unk55": 3,
       "unk57": 159,
       "name": "Orbital Cannon 110mm",
+      "impact_explosion_name": "OrbitalShot",
+      "delay_explosion_name": "OrbitalShot",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Cannon_110mm_MK2": {
@@ -10799,6 +10954,7 @@
       "simsteps": 1,
       "lifetime": 0.93,
       "liferandom": 0,
+      "damageid": 158,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 118,
@@ -10816,6 +10972,8 @@
       "unk55": 3,
       "unk57": 191,
       "name": "Orbital Cannon 110mm Mk2",
+      "impact_explosion_name": "OrbitalShot_MK2",
+      "delay_explosion_name": "OrbitalShot_MK2",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Cannon_120mm_HE": {
@@ -10829,6 +10987,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 159,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 113,
@@ -10846,6 +11005,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Orbital Cannon 120mm HE",
+      "impact_explosion_name": "OrbitalStrike",
       "damage_name": "Projectile_Orbital_Cannon_120mm_HE"
     },
     "Orbital_Cannon_120mm_HE_Cheap": {
@@ -10859,6 +11019,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 159,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 92,
@@ -10876,6 +11037,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Orbital Cannon 120mm HE Cheap",
+      "impact_explosion_name": "OrbitalStrike_Cheap",
       "damage_name": "Projectile_Orbital_Cannon_120mm_HE"
     },
     "Orbital_Cannon_380mm_HE": {
@@ -10889,6 +11051,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 151,
@@ -10906,6 +11069,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Orbital Cannon 380mm HE",
+      "impact_explosion_name": "OrbitalBarrage",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Orbital_Precision_Strike": {
@@ -10919,6 +11083,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 175,
@@ -10936,6 +11101,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Orbital Precision Strike",
+      "impact_explosion_name": "PrecisionStrike",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Orbital_Cannon_380mm_HE_Cheap": {
@@ -10949,6 +11115,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 46,
@@ -10966,6 +11133,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "Orbital Cannon 380mm HE Cheap",
+      "impact_explosion_name": "OrbitalBarrage_Cheap",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Orbital_Cannon_380mm_HE_MK2": {
@@ -10979,6 +11147,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 146,
@@ -10996,6 +11165,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Orbital Cannon 380mm HE Mk2",
+      "impact_explosion_name": "OrbitalBarrage_MK2",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Orbital_Stunround": {
@@ -11009,6 +11179,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 162,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 101,
@@ -11026,6 +11197,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Orbital Stunround",
+      "impact_explosion_name": "OrbitalStun",
       "damage_name": "Projectile_Orbital_Stunround"
     },
     "Orbital_Stunround_Upgraded_MK2": {
@@ -11039,6 +11211,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 162,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 12,
@@ -11056,6 +11229,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Orbital Stunround Upgraded Mk2",
+      "impact_explosion_name": "OrbitalStun_MK2",
       "damage_name": "Projectile_Orbital_Stunround"
     },
     "Orbital_Stunround_Upgraded_MK3": {
@@ -11069,6 +11243,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 162,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 13,
@@ -11086,6 +11261,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Orbital Stunround Upgraded Mk3",
+      "impact_explosion_name": "OrbitalStun_MK3",
       "damage_name": "Projectile_Orbital_Stunround"
     },
     "Orbital_Gas": {
@@ -11099,6 +11275,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 158,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 40,
@@ -11116,6 +11293,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Orbital Gas",
+      "impact_explosion_name": "OrbitalGas",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Gas_MK2": {
@@ -11129,6 +11307,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 158,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 78,
@@ -11146,6 +11325,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Orbital Gas Mk2",
+      "impact_explosion_name": "OrbitalGas_MK2",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Gas_MK3": {
@@ -11159,6 +11339,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 158,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 93,
@@ -11176,6 +11357,7 @@
       "unk55": 3,
       "unk57": 189,
       "name": "Orbital Gas Mk3",
+      "impact_explosion_name": "OrbitalGas_MK3",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_Smoke": {
@@ -11189,6 +11371,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 0,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 131,
@@ -11205,7 +11388,8 @@
       "unk49": 45,
       "unk55": 0,
       "unk57": 189,
-      "name": "Orbital Smoke"
+      "name": "Orbital Smoke",
+      "impact_explosion_name": "AirStrikeSmoke"
     },
     "Orbital_illumination_shot": {
       "id": 128,
@@ -11218,6 +11402,7 @@
       "simsteps": 1,
       "lifetime": 0.92,
       "liferandom": 0,
+      "damageid": 158,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 201,
@@ -11235,6 +11420,8 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Orbital illumination shot",
+      "impact_explosion_name": "OrbitalFlare",
+      "delay_explosion_name": "OrbitalFlare",
       "damage_name": "Projectile_Orbital_Cannon_110mm"
     },
     "Orbital_illumination_flare": {
@@ -11248,6 +11435,7 @@
       "simsteps": 10,
       "lifetime": 30,
       "liferandom": 0,
+      "damageid": 158,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11278,6 +11466,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 161,
       "penslow": 0,
       "xangle": 80,
       "ximpactid": 0,
@@ -11295,6 +11484,7 @@
       "unk55": 3,
       "unk57": 2175,
       "name": "Orbital Railcannon",
+      "delay_explosion_name": "Railcannon_Impact",
       "damage_name": "Projectile_Orbital_Railcannon"
     },
     "SEAF_Gun_Explosive": {
@@ -11308,6 +11498,7 @@
       "simsteps": 3,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 22,
@@ -11325,6 +11516,7 @@
       "unk55": 2,
       "unk57": 182,
       "name": "SEAF Gun Explosive",
+      "impact_explosion_name": "SEAF_Gun_Explosive",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "SEAF_Gun_High_Yield_Explosive": {
@@ -11338,6 +11530,7 @@
       "simsteps": 3,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 144,
@@ -11355,6 +11548,7 @@
       "unk55": 2,
       "unk57": 182,
       "name": "SEAF Gun High Yield Explosive",
+      "impact_explosion_name": "SEAF_Gun_High_Yield_Explosive",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "SEAF_Gun_Mini_Nuke": {
@@ -11368,6 +11562,7 @@
       "simsteps": 3,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 148,
@@ -11385,6 +11580,7 @@
       "unk55": 2,
       "unk57": 182,
       "name": "SEAF Gun Mini Nuke",
+      "impact_explosion_name": "SEAF_Gun_Mini_Nuke",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "SEAF_Gun_Smoke": {
@@ -11398,6 +11594,7 @@
       "simsteps": 3,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 138,
@@ -11415,6 +11612,7 @@
       "unk55": 2,
       "unk57": 182,
       "name": "SEAF Gun Smoke",
+      "impact_explosion_name": "SEAF_Gun_Smoke",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "SEAF_Gun_Napalm": {
@@ -11428,6 +11626,7 @@
       "simsteps": 3,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 10,
@@ -11445,6 +11644,7 @@
       "unk55": 2,
       "unk57": 182,
       "name": "SEAF Gun Napalm",
+      "impact_explosion_name": "SEAF_Gun_Napalm",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "SEAF_Gun_EMP": {
@@ -11458,6 +11658,7 @@
       "simsteps": 3,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 29,
@@ -11475,6 +11676,7 @@
       "unk55": 2,
       "unk57": 182,
       "name": "SEAF Gun EMP",
+      "impact_explosion_name": "SEAF_Gun_EMP",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Pistol_9x20mm_exp": {
@@ -11488,6 +11690,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 24,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11518,6 +11721,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 25,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11548,6 +11752,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 26,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11578,6 +11783,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 27,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11608,6 +11814,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 28,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11638,6 +11845,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 29,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11668,6 +11876,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 30,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11698,6 +11907,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 31,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11728,6 +11938,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 32,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11758,6 +11969,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 33,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11788,6 +12000,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 34,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11818,6 +12031,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 35,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11848,6 +12062,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 36,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11878,6 +12093,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 37,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11908,6 +12124,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 38,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11938,6 +12155,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 39,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11968,6 +12186,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 40,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -11998,6 +12217,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 41,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12028,6 +12248,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 42,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12058,6 +12279,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 43,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12088,6 +12310,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 44,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12118,6 +12341,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 45,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12148,6 +12372,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 46,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12178,6 +12403,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 47,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12208,6 +12434,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 51,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12238,6 +12465,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 48,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12268,6 +12496,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 49,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12298,6 +12527,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 50,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12328,6 +12558,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 52,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12358,6 +12589,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 53,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12388,6 +12620,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 54,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12418,6 +12651,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 55,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12448,6 +12682,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 56,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12478,6 +12713,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 57,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12508,6 +12744,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 58,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12538,6 +12775,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 51,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12568,6 +12806,7 @@
       "simsteps": 1,
       "lifetime": 0.3,
       "liferandom": 0,
+      "damageid": 59,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 0,
@@ -12585,6 +12824,7 @@
       "unk55": 1,
       "unk57": 125,
       "name": "Rifle 8x60mm Airburst",
+      "delay_explosion_name": "Primary_Airburst",
       "damage_name": "Projectile_Rifle_8x60mm_airb"
     },
     "Rifle_8x60mm_ap": {
@@ -12598,6 +12838,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 60,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12628,6 +12869,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 62,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12658,6 +12900,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 63,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12688,6 +12931,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 64,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12718,6 +12962,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 65,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12748,6 +12993,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 65,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12778,6 +13024,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 66,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12808,6 +13055,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 67,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12838,6 +13086,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 68,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12868,6 +13117,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 69,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12898,6 +13148,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 70,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12928,6 +13179,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 65,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12958,6 +13210,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 65,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -12988,6 +13241,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 61,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13018,6 +13272,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 71,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13048,6 +13303,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 72,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13078,6 +13334,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 73,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13108,6 +13365,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 74,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13138,6 +13396,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 75,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13168,6 +13427,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 76,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13198,6 +13458,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 77,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13228,6 +13489,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 78,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13258,6 +13520,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 120,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13288,6 +13551,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 122,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13318,6 +13582,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 123,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13348,6 +13613,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 121,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13378,6 +13644,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 124,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 30,
@@ -13395,6 +13662,7 @@
       "unk55": 2,
       "unk57": 177,
       "name": "Crossbow Bolt Explosive",
+      "impact_explosion_name": "Crossbow_Bolt",
       "damage_name": "Projectile_Crossbow_Bolt"
     },
     "Rocket_15x100mm_emp": {
@@ -13408,6 +13676,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 79,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13438,6 +13707,7 @@
       "simsteps": 1,
       "lifetime": 0.35,
       "liferandom": 0,
+      "damageid": 80,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 194,
@@ -13455,6 +13725,8 @@
       "unk55": 2,
       "unk57": 57,
       "name": "Rocket 15x100mm Explosive",
+      "impact_explosion_name": "Flak_20mm",
+      "delay_explosion_name": "Flak_20mm",
       "damage_name": "Projectile_Rocket_15x100mm_exp"
     },
     "Rocket_15x100mm_frag": {
@@ -13468,6 +13740,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 81,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13498,6 +13771,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 83,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13528,6 +13802,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 82,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13558,6 +13833,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 84,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13588,6 +13864,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 85,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13618,6 +13895,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 86,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13648,6 +13926,7 @@
       "simsteps": 1,
       "lifetime": 0.7,
       "liferandom": 0,
+      "damageid": 80,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 81,
@@ -13665,6 +13944,8 @@
       "unk55": 2,
       "unk57": 57,
       "name": "Rocket JAR Phoenix 20mm",
+      "impact_explosion_name": "JarPhoenix_20mm",
+      "delay_explosion_name": "JarPhoenix_20mm",
       "damage_name": "Projectile_Rocket_15x100mm_exp"
     },
     "Rocket_70mm": {
@@ -13678,6 +13959,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 140,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 100,
@@ -13695,6 +13977,7 @@
       "unk55": 3,
       "unk57": 184,
       "name": "Rocket 70mm",
+      "impact_explosion_name": "Rocket_70mm",
       "damage_name": "Projectile_Rocket_70mm"
     },
     "Rocket_70mm_turret": {
@@ -13708,6 +13991,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 140,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 162,
@@ -13725,6 +14009,7 @@
       "unk55": 3,
       "unk57": 184,
       "name": "Rocket 70mm Turret",
+      "impact_explosion_name": "Rocket_70mm_turret",
       "damage_name": "Projectile_Rocket_70mm"
     },
     "Rocket_110mm": {
@@ -13738,6 +14023,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 152,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 120,
@@ -13755,6 +14041,7 @@
       "unk55": 3,
       "unk57": 184,
       "name": "Rocket 110mm",
+      "impact_explosion_name": "Rocket_110mm",
       "damage_name": "Projectile_Rocket_110mm"
     },
     "Rocket_110mm_silent": {
@@ -13768,6 +14055,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 152,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 53,
@@ -13785,6 +14073,7 @@
       "unk55": 3,
       "unk57": 184,
       "name": "Rocket 110mm Silent",
+      "impact_explosion_name": "Rocket_110mm_silent",
       "damage_name": "Projectile_Rocket_110mm"
     },
     "Rocket_110mm_MK2": {
@@ -13798,6 +14087,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 152,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 120,
@@ -13815,6 +14105,7 @@
       "unk55": 3,
       "unk57": 188,
       "name": "Rocket 110mm Mk2",
+      "impact_explosion_name": "Rocket_110mm",
       "damage_name": "Projectile_Rocket_110mm"
     },
     "Shotgun_12g_bir": {
@@ -13828,6 +14119,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 101,
       "penslow": 0.8,
       "xangle": 80,
       "ximpactid": 0,
@@ -13858,6 +14150,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 102,
       "penslow": 0.8,
       "xangle": 80,
       "ximpactid": 0,
@@ -13888,6 +14181,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 103,
       "penslow": 0.8,
       "xangle": 80,
       "ximpactid": 0,
@@ -13918,6 +14212,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 104,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -13948,6 +14243,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 105,
       "penslow": 1,
       "xangle": 80,
       "ximpactid": 0,
@@ -13978,6 +14274,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 106,
       "penslow": 0.8,
       "xangle": 80,
       "ximpactid": 0,
@@ -14008,6 +14305,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 107,
       "penslow": 0.8,
       "xangle": 80,
       "ximpactid": 0,
@@ -14038,6 +14336,7 @@
       "simsteps": 1,
       "lifetime": 0.07,
       "liferandom": 0,
+      "damageid": 108,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 0,
@@ -14055,6 +14354,7 @@
       "unk55": 1,
       "unk57": 29,
       "name": "Shotgun 12-Gauge SCS",
+      "delay_explosion_name": "Primary_ScatterShot",
       "damage_name": "Projectile_Shotgun_12g_scs"
     },
     "Shotgun_12g_tri": {
@@ -14068,6 +14368,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 110,
       "penslow": 0.8,
       "xangle": 80,
       "ximpactid": 0,
@@ -14098,6 +14399,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 87,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14128,6 +14430,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 88,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14158,6 +14461,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 89,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14188,6 +14492,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 90,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14218,6 +14523,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 91,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14248,6 +14554,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 92,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 24,
@@ -14265,6 +14572,7 @@
       "unk55": 3,
       "unk57": 61,
       "name": "Shotgun 10-Gauge Frag",
+      "impact_explosion_name": "12g_Frag",
       "damage_name": "Projectile_Shotgun_10g_frag"
     },
     "Shotgun_10g_mag": {
@@ -14278,6 +14586,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 93,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14308,6 +14617,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 94,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14338,6 +14648,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 95,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14368,6 +14679,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 96,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14398,6 +14710,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 97,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14428,6 +14741,7 @@
       "simsteps": 1,
       "lifetime": 0.07,
       "liferandom": 0,
+      "damageid": 98,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 0,
@@ -14445,6 +14759,7 @@
       "unk55": 1,
       "unk57": 29,
       "name": "Shotgun 10-Gauge SCS",
+      "delay_explosion_name": "Primary_ScatterShot",
       "damage_name": "Projectile_Shotgun_10g_scs"
     },
     "Shotgun_10g_slug": {
@@ -14458,6 +14773,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 99,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14488,6 +14804,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 100,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14518,6 +14835,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 111,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14548,6 +14866,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 102,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14578,6 +14897,7 @@
       "simsteps": 1,
       "lifetime": 2,
       "liferandom": 0,
+      "damageid": 112,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14608,6 +14928,7 @@
       "simsteps": 8,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 112,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 52,
@@ -14625,6 +14946,7 @@
       "unk55": 1,
       "unk57": 63,
       "name": "Heavy Shrapnel",
+      "impact_explosion_name": "HeavyShrapnel",
       "damage_name": "Projectile_Shrapnel_High_Velocity"
     },
     "Shrapnel_Heavy_MK2": {
@@ -14638,6 +14960,7 @@
       "simsteps": 8,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 112,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 38,
@@ -14655,6 +14978,7 @@
       "unk55": 1,
       "unk57": 63,
       "name": "Heavy Shrapnel Mk2",
+      "impact_explosion_name": "HeavyShrapnel_MK2",
       "damage_name": "Projectile_Shrapnel_High_Velocity"
     },
     "Plasma_Bolt_Small": {
@@ -14668,6 +14992,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 20,
       "penslow": 0.35,
       "xangle": 80,
       "ximpactid": 182,
@@ -14685,6 +15010,7 @@
       "unk55": 1,
       "unk57": 63,
       "name": "Plasma Bolt Small",
+      "impact_explosion_name": "Plasma_Bolt_Small",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Bolt_Medium": {
@@ -14698,6 +15024,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 20,
       "penslow": 0.35,
       "xangle": 80,
       "ximpactid": 79,
@@ -14715,6 +15042,7 @@
       "unk55": 1,
       "unk57": 63,
       "name": "Plasma Bolt Medium",
+      "impact_explosion_name": "Plasma_Bolt_Medium",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Bolt_Medium_Volatile": {
@@ -14728,6 +15056,7 @@
       "simsteps": 1,
       "lifetime": 0.1,
       "liferandom": 0,
+      "damageid": 20,
       "penslow": 0.35,
       "xangle": 80,
       "ximpactid": 79,
@@ -14745,6 +15074,8 @@
       "unk55": 1,
       "unk57": 63,
       "name": "Plasma Bolt Medium Volatile",
+      "impact_explosion_name": "Plasma_Bolt_Medium",
+      "delay_explosion_name": "Plasma_Bolt_Medium_Volatile",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Bolt_Medium_Charge": {
@@ -14758,6 +15089,7 @@
       "simsteps": 1,
       "lifetime": 0.1,
       "liferandom": 0,
+      "damageid": 21,
       "penslow": 0.35,
       "xangle": 80,
       "ximpactid": 79,
@@ -14775,6 +15107,8 @@
       "unk55": 1,
       "unk57": 63,
       "name": "Plasma Bolt Medium Charge",
+      "impact_explosion_name": "Plasma_Bolt_Medium",
+      "delay_explosion_name": "Plasma_Bolt_Medium_Volatile",
       "damage_name": "Projectile_Plasma_Bolt_Charge"
     },
     "Plasma_Bolt_Large": {
@@ -14788,6 +15122,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 20,
       "penslow": 0.35,
       "xangle": 80,
       "ximpactid": 192,
@@ -14805,6 +15140,7 @@
       "unk55": 1,
       "unk57": 63,
       "name": "Plasma Bolt Large",
+      "impact_explosion_name": "Plasma_Bolt_Large",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Punisher_Projectile": {
@@ -14818,6 +15154,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 20,
       "penslow": 0.35,
       "xangle": 360,
       "ximpactid": 41,
@@ -14835,6 +15172,7 @@
       "unk55": 1,
       "unk57": 63,
       "name": "Punisher Plasma Bolt",
+      "impact_explosion_name": "Punisher_Plasma_Explosion",
       "damage_name": "Projectile_Plasma_Bolt"
     },
     "Plasma_Explosion_Cone": {
@@ -14848,6 +15186,7 @@
       "simsteps": 1,
       "lifetime": 0.03,
       "liferandom": 0,
+      "damageid": 0,
       "penslow": 0.35,
       "xangle": 80,
       "ximpactid": 145,
@@ -14864,7 +15203,9 @@
       "unk49": 15,
       "unk55": 1,
       "unk57": 62,
-      "name": "Plasma Explosion Cone"
+      "name": "Plasma Explosion Cone",
+      "impact_explosion_name": "Plasma_Cone",
+      "delay_explosion_name": "Plasma_Cone"
     },
     "Railgun": {
       "id": 125,
@@ -14877,6 +15218,7 @@
       "simsteps": 1,
       "lifetime": 5,
       "liferandom": 0,
+      "damageid": 22,
       "penslow": 0,
       "xangle": 80,
       "ximpactid": 0,
@@ -14907,6 +15249,7 @@
       "simsteps": 1,
       "lifetime": 5,
       "liferandom": 0,
+      "damageid": 23,
       "penslow": 0,
       "xangle": 80,
       "ximpactid": 0,
@@ -14937,6 +15280,7 @@
       "simsteps": 1,
       "lifetime": 6,
       "liferandom": 0,
+      "damageid": 19,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -14967,6 +15311,7 @@
       "simsteps": 1,
       "lifetime": 6,
       "liferandom": 0,
+      "damageid": 227,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 32,
@@ -14984,6 +15329,7 @@
       "unk55": 1,
       "unk57": 125,
       "name": "Laser Pulse",
+      "impact_explosion_name": "Laser_Pulse",
       "damage_name": "Projectile_Laser_Pulse"
     },
     "ContactMine": {
@@ -14997,6 +15343,7 @@
       "simsteps": 1,
       "lifetime": 15,
       "liferandom": 0,
+      "damageid": 113,
       "penslow": 0.25,
       "xangle": 0,
       "ximpactid": 0,
@@ -15027,6 +15374,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 113,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -15057,6 +15405,7 @@
       "simsteps": 1,
       "lifetime": 0.8,
       "liferandom": 0,
+      "damageid": 9,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 0,
@@ -15087,6 +15436,7 @@
       "simsteps": 1,
       "lifetime": 1.2,
       "liferandom": 0,
+      "damageid": 9,
       "penslow": 0.25,
       "xangle": 90,
       "ximpactid": 0,
@@ -15117,6 +15467,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 160,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 45,
@@ -15134,6 +15485,7 @@
       "unk55": 3,
       "unk57": 445,
       "name": "Nuke",
+      "impact_explosion_name": "Nuke",
       "damage_name": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "World_Meteor": {
@@ -15147,6 +15499,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 163,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 147,
@@ -15164,6 +15517,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "World Meteor",
+      "impact_explosion_name": "World_Meteor",
       "damage_name": "Projectile_World_Meteor"
     },
     "World_VolcanoStrike": {
@@ -15177,6 +15531,7 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
+      "damageid": 114,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 25,
@@ -15194,6 +15549,7 @@
       "unk55": 3,
       "unk57": 181,
       "name": "World Volcano Strike",
+      "impact_explosion_name": "World_VolcanoStrike",
       "damage_name": "Projectile_World_VolcanoStrike"
     },
     "Spikeplant_Shrapnel": {
@@ -15207,6 +15563,7 @@
       "simsteps": 1,
       "lifetime": 1,
       "liferandom": 0,
+      "damageid": 167,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": 0,
@@ -15230,6 +15587,7 @@
   "explosion": {
     "Boomer_AcidDeath": {
       "id": 142,
+      "damageid": 174,
       "r1": 4,
       "r2": 8,
       "r3": 11,
@@ -15241,6 +15599,7 @@
     },
     "Warrior_AcidDeath": {
       "id": 159,
+      "damageid": 176,
       "r1": 2,
       "r2": 4,
       "r3": 8,
@@ -15252,6 +15611,7 @@
     },
     "Scavenger_AcidDeath": {
       "id": 34,
+      "damageid": 176,
       "r1": 1,
       "r2": 2,
       "r3": 2.5,
@@ -15263,6 +15623,7 @@
     },
     "Scavenger_AcidBall": {
       "id": 209,
+      "damageid": 175,
       "r1": 1.5,
       "r2": 2,
       "r3": 2,
@@ -15274,6 +15635,7 @@
     },
     "Strider_AcidStream": {
       "id": 59,
+      "damageid": 176,
       "r1": 2,
       "r2": 3,
       "r3": 2.5,
@@ -15285,6 +15647,7 @@
     },
     "TunnelerEmerge": {
       "id": 63,
+      "damageid": 242,
       "r1": 5,
       "r2": 8,
       "r3": 10,
@@ -15296,6 +15659,7 @@
     },
     "Strider_Stomp": {
       "id": 139,
+      "damageid": 177,
       "r1": 1,
       "r2": 2.5,
       "r3": 3,
@@ -15307,6 +15671,7 @@
     },
     "BugTrap": {
       "id": 55,
+      "damageid": 192,
       "r1": 0.3,
       "r2": 2,
       "r3": 2.5,
@@ -15318,6 +15683,7 @@
     },
     "BugHoleCollapse": {
       "id": 31,
+      "damageid": 248,
       "r1": 1,
       "r2": 3,
       "r3": 4,
@@ -15329,6 +15695,7 @@
     },
     "Bug_Artillery": {
       "id": 2,
+      "damageid": 282,
       "r1": 1,
       "r2": 8,
       "r3": 14,
@@ -15340,6 +15707,7 @@
     },
     "Cyborg_HandGrenade_Antitank": {
       "id": 16,
+      "damageid": 249,
       "r1": 2,
       "r2": 4,
       "r3": 12,
@@ -15351,6 +15719,7 @@
     },
     "Cyborg_HandGrenade_HighExplosive": {
       "id": 167,
+      "damageid": 265,
       "r1": 1.2,
       "r2": 6,
       "r3": 8,
@@ -15362,6 +15731,7 @@
     },
     "Cyborg_Mortar_Base_Shell_Explosion": {
       "id": 161,
+      "damageid": 265,
       "r1": 1.2,
       "r2": 6,
       "r3": 8,
@@ -15373,6 +15743,7 @@
     },
     "Cyborg_Projectile_LightCannon": {
       "id": 204,
+      "damageid": 275,
       "r1": 0.6,
       "r2": 3,
       "r3": 5,
@@ -15384,6 +15755,7 @@
     },
     "Cyborg_Projectile_HeavyCannon": {
       "id": 195,
+      "damageid": 276,
       "r1": 1.2,
       "r2": 6,
       "r3": 8,
@@ -15395,6 +15767,7 @@
     },
     "Cyborg_Projectile_SpawnerMountedCannon": {
       "id": 4,
+      "damageid": 276,
       "r1": 1.2,
       "r2": 6,
       "r3": 8,
@@ -15406,6 +15779,7 @@
     },
     "Projectile_Shotgun_Flakblast": {
       "id": 130,
+      "damageid": 250,
       "r1": 1,
       "r2": 1.5,
       "r3": 3,
@@ -15417,6 +15791,7 @@
     },
     "Cyborg_Projectile_LightRocket": {
       "id": 44,
+      "damageid": 257,
       "r1": 1,
       "r2": 2,
       "r3": 3.5,
@@ -15428,6 +15803,7 @@
     },
     "Cyborg_Projectile_HeavyRocket": {
       "id": 8,
+      "damageid": 277,
       "r1": 1,
       "r2": 10,
       "r3": 25,
@@ -15439,6 +15815,7 @@
     },
     "Cyborg_PlasmaBackpackOverload": {
       "id": 173,
+      "damageid": 275,
       "r1": 0.4,
       "r2": 2,
       "r3": 1,
@@ -15450,6 +15827,7 @@
     },
     "Cyborg_FlamerBackpackOverload": {
       "id": 21,
+      "damageid": 212,
       "r1": 0.4,
       "r2": 4,
       "r3": 12,
@@ -15461,6 +15839,7 @@
     },
     "Cyborg_Mine": {
       "id": 141,
+      "damageid": 246,
       "r1": 1.6,
       "r2": 4,
       "r3": 6,
@@ -15472,6 +15851,7 @@
     },
     "Cyborg_Vehicle_Medium_Death": {
       "id": 5,
+      "damageid": 206,
       "r1": 1.6,
       "r2": 8,
       "r3": 12,
@@ -15483,6 +15863,7 @@
     },
     "Cyborg_Tank_Turret_Death": {
       "id": 197,
+      "damageid": 206,
       "r1": 1.6,
       "r2": 8,
       "r3": 12,
@@ -15494,6 +15875,7 @@
     },
     "Cyborg_Vehicle_Large_Death_Air": {
       "id": 20,
+      "damageid": 206,
       "r1": 2.4,
       "r2": 12,
       "r3": 18,
@@ -15505,6 +15887,7 @@
     },
     "Cyborg_Dropship_Death_Air": {
       "id": 57,
+      "damageid": 206,
       "r1": 2.4,
       "r2": 12,
       "r3": 18,
@@ -15516,6 +15899,7 @@
     },
     "Fabricator_Fall_Impact": {
       "id": 207,
+      "damageid": 248,
       "r1": 2,
       "r2": 5,
       "r3": 6,
@@ -15527,6 +15911,7 @@
     },
     "Cyborg_Vehicle_Large_Death_Ground": {
       "id": 6,
+      "damageid": 281,
       "r1": 5,
       "r2": 12,
       "r3": 18,
@@ -15538,6 +15923,7 @@
     },
     "Cyborg_Vehicle_Medium_Death_Ground": {
       "id": 50,
+      "damageid": 281,
       "r1": 5,
       "r2": 12,
       "r3": 18,
@@ -15549,6 +15935,7 @@
     },
     "Cyborg_Factory_Spawner": {
       "id": 114,
+      "damageid": 281,
       "r1": 5,
       "r2": 12,
       "r3": 18,
@@ -15560,6 +15947,7 @@
     },
     "Cyborg_Dropship_Death_Ground": {
       "id": 77,
+      "damageid": 281,
       "r1": 5,
       "r2": 12,
       "r3": 18,
@@ -15571,6 +15959,7 @@
     },
     "Cyborg_Fabricator_Large_Death_Ground": {
       "id": 19,
+      "damageid": 281,
       "r1": 5,
       "r2": 12,
       "r3": 18,
@@ -15582,6 +15971,7 @@
     },
     "Cyborg_Vehicle_Huge_Death": {
       "id": 176,
+      "damageid": 260,
       "r1": 3.6,
       "r2": 18,
       "r3": 25,
@@ -15593,6 +15983,7 @@
     },
     "DropshipCrash": {
       "id": 67,
+      "damageid": 261,
       "r1": 5,
       "r2": 8,
       "r3": 10,
@@ -15604,6 +15995,7 @@
     },
     "DropshipCrash_Medium": {
       "id": 39,
+      "damageid": 261,
       "r1": 2,
       "r2": 4,
       "r3": 8,
@@ -15615,6 +16007,7 @@
     },
     "GunshipCrash_Medium": {
       "id": 155,
+      "damageid": 261,
       "r1": 2,
       "r2": 4,
       "r3": 8,
@@ -15626,6 +16019,7 @@
     },
     "DropshipCrash_Large": {
       "id": 198,
+      "damageid": 261,
       "r1": 4,
       "r2": 8,
       "r3": 16,
@@ -15637,6 +16031,7 @@
     },
     "GunshipCrash_Large": {
       "id": 17,
+      "damageid": 261,
       "r1": 4,
       "r2": 8,
       "r3": 16,
@@ -15648,6 +16043,7 @@
     },
     "ThrusterExplosion": {
       "id": 23,
+      "damageid": 207,
       "r1": 0.8,
       "r2": 8,
       "r3": 25,
@@ -15659,6 +16055,7 @@
     },
     "Cyborg_Artillery": {
       "id": 111,
+      "damageid": 278,
       "r1": 2,
       "r2": 10,
       "r3": 17,
@@ -15670,6 +16067,7 @@
     },
     "Frag": {
       "id": 136,
+      "damageid": 201,
       "r1": 2,
       "r2": 8,
       "r3": 12,
@@ -15681,6 +16079,7 @@
     },
     "Flash": {
       "id": 117,
+      "damageid": 169,
       "r1": 1,
       "r2": 10,
       "r3": 15,
@@ -15692,6 +16091,7 @@
     },
     "Incendiary": {
       "id": 119,
+      "damageid": 203,
       "r1": 1,
       "r2": 7,
       "r3": 9,
@@ -15703,6 +16103,7 @@
     },
     "Thermite": {
       "id": 107,
+      "damageid": 204,
       "r1": 1,
       "r2": 2,
       "r3": 3,
@@ -15714,6 +16115,7 @@
     },
     "HighExplosive": {
       "id": 91,
+      "damageid": 213,
       "r1": 2.5,
       "r2": 7,
       "r3": 9,
@@ -15725,6 +16127,7 @@
     },
     "Impact": {
       "id": 174,
+      "damageid": 213,
       "r1": 2.5,
       "r2": 7,
       "r3": 8,
@@ -15736,6 +16139,7 @@
     },
     "12g_Frag": {
       "id": 24,
+      "damageid": 180,
       "r1": 0.5,
       "r2": 2.5,
       "r3": 3,
@@ -15747,6 +16151,7 @@
     },
     "12g_HE": {
       "id": 154,
+      "damageid": 181,
       "r1": 1,
       "r2": 1.5,
       "r3": 2,
@@ -15758,6 +16163,7 @@
     },
     "Plasma_Bolt_Small": {
       "id": 182,
+      "damageid": 183,
       "r1": 0.75,
       "r2": 1.5,
       "r3": 2,
@@ -15769,6 +16175,7 @@
     },
     "Plasma_Bolt_Medium": {
       "id": 79,
+      "damageid": 184,
       "r1": 1,
       "r2": 2,
       "r3": 2,
@@ -15780,6 +16187,7 @@
     },
     "Plasma_Bolt_Medium_Volatile": {
       "id": 179,
+      "damageid": 185,
       "r1": 1.5,
       "r2": 3,
       "r3": 4,
@@ -15791,6 +16199,7 @@
     },
     "Plasma_Bolt_Large": {
       "id": 192,
+      "damageid": 186,
       "r1": 2,
       "r2": 3,
       "r3": 4,
@@ -15802,6 +16211,7 @@
     },
     "Punisher_Plasma_Explosion": {
       "id": 41,
+      "damageid": 186,
       "r1": 2.9,
       "r2": 3,
       "r3": 4,
@@ -15813,6 +16223,7 @@
     },
     "Plasma_Cone": {
       "id": 145,
+      "damageid": 187,
       "r1": 7.9,
       "r2": 8,
       "r3": 8.1,
@@ -15824,6 +16235,7 @@
     },
     "Crossbow_Bolt": {
       "id": 30,
+      "damageid": 125,
       "r1": 2,
       "r2": 4,
       "r3": 5,
@@ -15835,6 +16247,7 @@
     },
     "Grenade_40mm_HE": {
       "id": 185,
+      "damageid": 220,
       "r1": 2.5,
       "r2": 6.5,
       "r3": 7,
@@ -15846,6 +16259,7 @@
     },
     "Grenade_40mm_HE_MK2": {
       "id": 106,
+      "damageid": 220,
       "r1": 2.25,
       "r2": 6.5,
       "r3": 8,
@@ -15857,6 +16271,7 @@
     },
     "Grenade_40mm_Stun": {
       "id": 86,
+      "damageid": 170,
       "r1": 1,
       "r2": 10,
       "r3": 15,
@@ -15868,6 +16283,7 @@
     },
     "Grenade_40mm_ProximityCone": {
       "id": 177,
+      "damageid": 222,
       "r1": 2.5,
       "r2": 8,
       "r3": 12,
@@ -15879,6 +16295,7 @@
     },
     "Grenade_40mm_Incendiary": {
       "id": 76,
+      "damageid": 203,
       "r1": 1,
       "r2": 7,
       "r3": 9,
@@ -15890,6 +16307,7 @@
     },
     "Grenade_Mortar_40mm_HE": {
       "id": 184,
+      "damageid": 223,
       "r1": 3,
       "r2": 9,
       "r3": 13,
@@ -15901,6 +16319,7 @@
     },
     "Grenade_Mortar_40mm_Staticfield": {
       "id": 96,
+      "damageid": 271,
       "r1": 1,
       "r2": 10,
       "r3": 12,
@@ -15912,6 +16331,7 @@
     },
     "Grenade_85mm_HE": {
       "id": 150,
+      "damageid": 251,
       "r1": 2.3,
       "r2": 7,
       "r3": 12,
@@ -15923,6 +16343,7 @@
     },
     "Grenade_85mm_HE_MK2": {
       "id": 54,
+      "damageid": 252,
       "r1": 3.3,
       "r2": 10,
       "r3": 15,
@@ -15934,6 +16355,7 @@
     },
     "Grenade_85mm_HEAT": {
       "id": 133,
+      "damageid": 225,
       "r1": 1.5,
       "r2": 3,
       "r3": 6,
@@ -15945,6 +16367,7 @@
     },
     "Grenade_85mm_HEAT_MK2": {
       "id": 125,
+      "damageid": 225,
       "r1": 1.5,
       "r2": 3,
       "r3": 6,
@@ -15956,6 +16379,7 @@
     },
     "Grenade_75mm_HEAT": {
       "id": 191,
+      "damageid": 226,
       "r1": 1.5,
       "r2": 3,
       "r3": 6,
@@ -15967,6 +16391,7 @@
     },
     "Flak_20mm": {
       "id": 194,
+      "damageid": 205,
       "r1": 2,
       "r2": 8,
       "r3": 10,
@@ -15978,6 +16403,7 @@
     },
     "JarPhoenix_20mm": {
       "id": 81,
+      "damageid": 205,
       "r1": 2,
       "r2": 6,
       "r3": 6.5,
@@ -15989,6 +16415,7 @@
     },
     "APHET_20mm": {
       "id": 208,
+      "damageid": 216,
       "r1": 2,
       "r2": 4,
       "r3": 5.5,
@@ -16000,6 +16427,7 @@
     },
     "Laser_Pulse": {
       "id": 32,
+      "damageid": 228,
       "r1": 1.5,
       "r2": 3,
       "r3": 6,
@@ -16011,6 +16439,7 @@
     },
     "HE_20mm": {
       "id": 65,
+      "damageid": 215,
       "r1": 1.5,
       "r2": 4.5,
       "r3": 5.8,
@@ -16022,6 +16451,7 @@
     },
     "Cannon_23mm_silent": {
       "id": 132,
+      "damageid": 214,
       "r1": 1.5,
       "r2": 4.5,
       "r3": 6.5,
@@ -16033,6 +16463,7 @@
     },
     "Cannon_23mm": {
       "id": 189,
+      "damageid": 214,
       "r1": 1.5,
       "r2": 4.5,
       "r3": 6.5,
@@ -16044,6 +16475,7 @@
     },
     "APHE_30mm": {
       "id": 124,
+      "damageid": 217,
       "r1": 1.5,
       "r2": 4.5,
       "r3": 6,
@@ -16055,6 +16487,7 @@
     },
     "Flak_40mm": {
       "id": 18,
+      "damageid": 218,
       "r1": 3,
       "r2": 12,
       "r3": 20,
@@ -16066,6 +16499,7 @@
     },
     "APHE_40mm": {
       "id": 123,
+      "damageid": 219,
       "r1": 2,
       "r2": 6,
       "r3": 8,
@@ -16077,6 +16511,7 @@
     },
     "OrbitalShot": {
       "id": 193,
+      "damageid": 229,
       "r1": 0.2,
       "r2": 0.5,
       "r3": 4,
@@ -16088,6 +16523,7 @@
     },
     "OrbitalShot_MK2": {
       "id": 118,
+      "damageid": 230,
       "r1": 0.2,
       "r2": 0.5,
       "r3": 4,
@@ -16099,6 +16535,7 @@
     },
     "OrbitalStrike": {
       "id": 113,
+      "damageid": 268,
       "r1": 3.3,
       "r2": 10,
       "r3": 11,
@@ -16110,6 +16547,7 @@
     },
     "OrbitalStrike_Cheap": {
       "id": 92,
+      "damageid": 268,
       "r1": 3.3,
       "r2": 10,
       "r3": 11,
@@ -16121,6 +16559,7 @@
     },
     "OrbitalBarrage": {
       "id": 151,
+      "damageid": 267,
       "r1": 4,
       "r2": 12,
       "r3": 18,
@@ -16132,6 +16571,7 @@
     },
     "PrecisionStrike": {
       "id": 175,
+      "damageid": 267,
       "r1": 4,
       "r2": 12,
       "r3": 18,
@@ -16143,6 +16583,7 @@
     },
     "OrbitalBarrage_Cheap": {
       "id": 46,
+      "damageid": 267,
       "r1": 4,
       "r2": 12,
       "r3": 18,
@@ -16154,6 +16595,7 @@
     },
     "OrbitalBarrage_MK2": {
       "id": 146,
+      "damageid": 267,
       "r1": 4,
       "r2": 12,
       "r3": 20,
@@ -16165,6 +16607,7 @@
     },
     "OrbitalStun": {
       "id": 101,
+      "damageid": 271,
       "r1": 1,
       "r2": 13,
       "r3": 20,
@@ -16176,6 +16619,7 @@
     },
     "OrbitalStun_MK2": {
       "id": 12,
+      "damageid": 271,
       "r1": 1,
       "r2": 13,
       "r3": 20,
@@ -16187,6 +16631,7 @@
     },
     "OrbitalStun_MK3": {
       "id": 13,
+      "damageid": 272,
       "r1": 1,
       "r2": 20,
       "r3": 25,
@@ -16198,6 +16643,7 @@
     },
     "OrbitalGas": {
       "id": 40,
+      "damageid": 269,
       "r1": 1,
       "r2": 15,
       "r3": 20,
@@ -16209,6 +16655,7 @@
     },
     "OrbitalGas_MK2": {
       "id": 78,
+      "damageid": 269,
       "r1": 1,
       "r2": 15,
       "r3": 20,
@@ -16220,6 +16667,7 @@
     },
     "OrbitalGas_MK3": {
       "id": 93,
+      "damageid": 269,
       "r1": 1,
       "r2": 15,
       "r3": 20,
@@ -16231,6 +16679,7 @@
     },
     "OrbitalSmoke": {
       "id": 37,
+      "damageid": 0,
       "r1": 5,
       "r2": 5,
       "r3": 0,
@@ -16241,6 +16690,7 @@
     },
     "AirStrikeSmoke": {
       "id": 131,
+      "damageid": 0,
       "r1": 5,
       "r2": 5,
       "r3": 0,
@@ -16251,6 +16701,7 @@
     },
     "OrbitalFlare": {
       "id": 201,
+      "damageid": 0,
       "r1": 0,
       "r2": 0,
       "r3": 0,
@@ -16261,6 +16712,7 @@
     },
     "Railcannon_Impact": {
       "id": 27,
+      "damageid": 266,
       "r1": 2.5,
       "r2": 2.5,
       "r3": 10,
@@ -16272,6 +16724,7 @@
     },
     "HeavyShrapnel": {
       "id": 52,
+      "damageid": 229,
       "r1": 3,
       "r2": 6,
       "r3": 8,
@@ -16283,6 +16736,7 @@
     },
     "HeavyShrapnel_Clusterbombs": {
       "id": 85,
+      "damageid": 229,
       "r1": 3,
       "r2": 6,
       "r3": 8,
@@ -16294,6 +16748,7 @@
     },
     "HeavyShrapnel_MK2": {
       "id": 38,
+      "damageid": 230,
       "r1": 1.6,
       "r2": 5,
       "r3": 7,
@@ -16305,6 +16760,7 @@
     },
     "MapBoundary": {
       "id": 43,
+      "damageid": 286,
       "r1": 2,
       "r2": 10,
       "r3": 15,
@@ -16316,6 +16772,7 @@
     },
     "HellpodImpact": {
       "id": 56,
+      "damageid": 258,
       "r1": 0.5,
       "r2": 0.5,
       "r3": 3,
@@ -16327,6 +16784,7 @@
     },
     "HellpodImpact_Silent": {
       "id": 99,
+      "damageid": 258,
       "r1": 0.5,
       "r2": 0.5,
       "r3": 3,
@@ -16338,6 +16796,7 @@
     },
     "HellpodExplosion": {
       "id": 116,
+      "damageid": 259,
       "r1": 2,
       "r2": 4,
       "r3": 12,
@@ -16349,6 +16808,7 @@
     },
     "Hellbomb": {
       "id": 129,
+      "damageid": 287,
       "r1": 17,
       "r2": 25,
       "r3": 45,
@@ -16360,6 +16820,7 @@
     },
     "BackblastSmall": {
       "id": 140,
+      "damageid": 188,
       "r1": 1,
       "r2": 2,
       "r3": 3,
@@ -16371,6 +16832,7 @@
     },
     "BackblastMedium": {
       "id": 108,
+      "damageid": 189,
       "r1": 1,
       "r2": 6,
       "r3": 7,
@@ -16382,6 +16844,7 @@
     },
     "BackblastLarge": {
       "id": 156,
+      "damageid": 190,
       "r1": 1,
       "r2": 8,
       "r3": 9,
@@ -16393,6 +16856,7 @@
     },
     "BackblastHuge": {
       "id": 149,
+      "damageid": 190,
       "r1": 1,
       "r2": 8,
       "r3": 9,
@@ -16404,6 +16868,7 @@
     },
     "Backblast_LargeConfined": {
       "id": 115,
+      "damageid": 172,
       "r1": 0.1,
       "r2": 0.2,
       "r3": 1,
@@ -16415,6 +16880,7 @@
     },
     "RailgunOvercharge": {
       "id": 166,
+      "damageid": 208,
       "r1": 0.4,
       "r2": 2,
       "r3": 3,
@@ -16426,6 +16892,7 @@
     },
     "ClusterBomb": {
       "id": 211,
+      "damageid": 229,
       "r1": 1,
       "r2": 2,
       "r3": 10,
@@ -16437,6 +16904,7 @@
     },
     "EagleBomb_100kg": {
       "id": 104,
+      "damageid": 254,
       "r1": 5,
       "r2": 10,
       "r3": 14,
@@ -16448,6 +16916,7 @@
     },
     "EagleBomb_100kg_MK2": {
       "id": 213,
+      "damageid": 254,
       "r1": 4,
       "r2": 12,
       "r3": 16,
@@ -16459,6 +16928,7 @@
     },
     "EagleBomb_100kg_MK3": {
       "id": 134,
+      "damageid": 255,
       "r1": 4,
       "r2": 12,
       "r3": 17,
@@ -16470,6 +16940,7 @@
     },
     "EagleBomb_Napalm": {
       "id": 7,
+      "damageid": 231,
       "r1": 1.6,
       "r2": 8,
       "r3": 10,
@@ -16481,6 +16952,7 @@
     },
     "EagleBomb_Napalm_MK2": {
       "id": 183,
+      "damageid": 231,
       "r1": 2,
       "r2": 10,
       "r3": 15,
@@ -16492,6 +16964,7 @@
     },
     "EagleBomb_Napalm_MK3": {
       "id": 200,
+      "damageid": 231,
       "r1": 2,
       "r2": 10,
       "r3": 15,
@@ -16503,6 +16976,7 @@
     },
     "EagleBomb_500kg": {
       "id": 143,
+      "damageid": 273,
       "r1": 6.7,
       "r2": 20,
       "r3": 30,
@@ -16514,6 +16988,7 @@
     },
     "EagleBomb_500kg_MK2": {
       "id": 49,
+      "damageid": 273,
       "r1": 7.3,
       "r2": 22,
       "r3": 40,
@@ -16525,6 +17000,7 @@
     },
     "EagleBomb_500kg_MK3": {
       "id": 87,
+      "damageid": 273,
       "r1": 8.3,
       "r2": 25,
       "r3": 35,
@@ -16536,6 +17012,7 @@
     },
     "EagleMissile": {
       "id": 121,
+      "damageid": 256,
       "r1": 4,
       "r2": 12,
       "r3": 15,
@@ -16547,6 +17024,7 @@
     },
     "FafMissile": {
       "id": 153,
+      "damageid": 236,
       "r1": 1.5,
       "r2": 3,
       "r3": 6,
@@ -16558,6 +17036,7 @@
     },
     "FafMissile_MK2": {
       "id": 187,
+      "damageid": 237,
       "r1": 2.5,
       "r2": 5,
       "r3": 12,
@@ -16569,6 +17048,7 @@
     },
     "StingerMissile": {
       "id": 58,
+      "damageid": 238,
       "r1": 4,
       "r2": 12,
       "r3": 10,
@@ -16580,6 +17060,7 @@
     },
     "Mini_Missile_Silo": {
       "id": 70,
+      "damageid": 274,
       "r1": 6,
       "r2": 18,
       "r3": 35,
@@ -16591,6 +17072,7 @@
     },
     "Mini_Missile_Silo_MK2": {
       "id": 186,
+      "damageid": 274,
       "r1": 8.3,
       "r2": 25,
       "r3": 35,
@@ -16602,6 +17084,7 @@
     },
     "Missile_66mm": {
       "id": 73,
+      "damageid": 232,
       "r1": 1,
       "r2": 2,
       "r3": 4,
@@ -16613,6 +17096,7 @@
     },
     "Missile_66mm_MK2": {
       "id": 88,
+      "damageid": 233,
       "r1": 1,
       "r2": 2,
       "r3": 4,
@@ -16624,6 +17108,7 @@
     },
     "Combat_Walker_Missile": {
       "id": 210,
+      "damageid": 234,
       "r1": 1,
       "r2": 2,
       "r3": 4,
@@ -16635,6 +17120,7 @@
     },
     "Combat_Walker_Missile_MK2": {
       "id": 152,
+      "damageid": 235,
       "r1": 1,
       "r2": 2,
       "r3": 4,
@@ -16646,6 +17132,7 @@
     },
     "Rocket_70mm_turret": {
       "id": 162,
+      "damageid": 239,
       "r1": 0.5,
       "r2": 1,
       "r3": 8,
@@ -16657,6 +17144,7 @@
     },
     "Rocket_70mm": {
       "id": 100,
+      "damageid": 239,
       "r1": 0.5,
       "r2": 1,
       "r3": 8,
@@ -16668,6 +17156,7 @@
     },
     "Rocket_70mm_HE": {
       "id": 105,
+      "damageid": 240,
       "r1": 1.6,
       "r2": 5,
       "r3": 10,
@@ -16679,6 +17168,7 @@
     },
     "Rocket_110mm": {
       "id": 120,
+      "damageid": 241,
       "r1": 1.6,
       "r2": 5,
       "r3": 8,
@@ -16690,6 +17180,7 @@
     },
     "Rocket_110mm_silent": {
       "id": 53,
+      "damageid": 241,
       "r1": 1.6,
       "r2": 5,
       "r3": 8,
@@ -16701,6 +17192,7 @@
     },
     "CarpetBomb_200kg": {
       "id": 98,
+      "damageid": 273,
       "r1": 5.3,
       "r2": 16,
       "r3": 20,
@@ -16712,6 +17204,7 @@
     },
     "Vehicle_Explosion_Small": {
       "id": 83,
+      "damageid": 279,
       "r1": 0.3,
       "r2": 4,
       "r3": 8,
@@ -16723,6 +17216,7 @@
     },
     "Vehicle_Explosion_Medium": {
       "id": 199,
+      "damageid": 280,
       "r1": 0.6,
       "r2": 7,
       "r3": 10,
@@ -16734,6 +17228,7 @@
     },
     "Vehicle_Explosion_Large": {
       "id": 95,
+      "damageid": 281,
       "r1": 0.8,
       "r2": 8,
       "r3": 12,
@@ -16745,6 +17240,7 @@
     },
     "Vehicle_Explosion_CombatWalker": {
       "id": 157,
+      "damageid": 280,
       "r1": 0.6,
       "r2": 7,
       "r3": 10,
@@ -16756,6 +17252,7 @@
     },
     "ContactMine": {
       "id": 188,
+      "damageid": 243,
       "r1": 1.2,
       "r2": 6,
       "r3": 9,
@@ -16767,6 +17264,7 @@
     },
     "IncendiaryMine": {
       "id": 35,
+      "damageid": 203,
       "r1": 1,
       "r2": 2,
       "r3": 3,
@@ -16778,6 +17276,7 @@
     },
     "AntiTankMine": {
       "id": 94,
+      "damageid": 245,
       "r1": 1.2,
       "r2": 6,
       "r3": 9,
@@ -16789,6 +17288,7 @@
     },
     "ContactMine_MK2": {
       "id": 126,
+      "damageid": 244,
       "r1": 1.2,
       "r2": 6,
       "r3": 9,
@@ -16800,6 +17300,7 @@
     },
     "ContactMine_Flash": {
       "id": 164,
+      "damageid": 169,
       "r1": 0.8,
       "r2": 8,
       "r3": 9,
@@ -16811,6 +17312,7 @@
     },
     "Bomb_Impact": {
       "id": 181,
+      "damageid": 253,
       "r1": 1,
       "r2": 3,
       "r3": 6,
@@ -16822,6 +17324,7 @@
     },
     "Bomb_Impact_Smoke": {
       "id": 168,
+      "damageid": 253,
       "r1": 1,
       "r2": 3,
       "r3": 6,
@@ -16833,6 +17336,7 @@
     },
     "500kg_Initial_Impact": {
       "id": 103,
+      "damageid": 253,
       "r1": 1,
       "r2": 3,
       "r3": 6,
@@ -16844,6 +17348,7 @@
     },
     "Turret_Destroyed": {
       "id": 82,
+      "damageid": 209,
       "r1": 0.2,
       "r2": 2,
       "r3": 6,
@@ -16855,6 +17360,7 @@
     },
     "Nuke": {
       "id": 45,
+      "damageid": 287,
       "r1": 40,
       "r2": 75,
       "r3": 125,
@@ -16866,6 +17372,7 @@
     },
     "Flashield": {
       "id": 122,
+      "damageid": 271,
       "r1": 1,
       "r2": 15,
       "r3": 15,
@@ -16877,6 +17384,7 @@
     },
     "SAM_Missile": {
       "id": 169,
+      "damageid": 291,
       "r1": 10,
       "r2": 20,
       "r3": 60,
@@ -16888,6 +17396,7 @@
     },
     "Grenade_Smoke": {
       "id": 14,
+      "damageid": 0,
       "r1": 5,
       "r2": 5,
       "r3": 0,
@@ -16898,6 +17407,7 @@
     },
     "Primary_Airburst": {
       "id": 172,
+      "damageid": 201,
       "r1": 0.5,
       "r2": 3,
       "r3": 4,
@@ -16909,6 +17419,7 @@
     },
     "AirburstCluster": {
       "id": 165,
+      "damageid": 202,
       "r1": 3,
       "r2": 5,
       "r3": 7,
@@ -16920,6 +17431,7 @@
     },
     "AirburstCluster_Bomb": {
       "id": 3,
+      "damageid": 201,
       "r1": 4,
       "r2": 6,
       "r3": 8,
@@ -16931,6 +17443,7 @@
     },
     "Primary_Cluster": {
       "id": 137,
+      "damageid": 201,
       "r1": 7,
       "r2": 15,
       "r3": 20,
@@ -16942,6 +17455,7 @@
     },
     "Primary_ScatterShot": {
       "id": 89,
+      "damageid": 201,
       "r1": 0,
       "r2": 0.5,
       "r3": 0.75,
@@ -16953,6 +17467,7 @@
     },
     "SEAF_Gun_Explosive": {
       "id": 22,
+      "damageid": 267,
       "r1": 4,
       "r2": 12,
       "r3": 18,
@@ -16964,6 +17479,7 @@
     },
     "SEAF_Gun_High_Yield_Explosive": {
       "id": 144,
+      "damageid": 273,
       "r1": 6.7,
       "r2": 20,
       "r3": 30,
@@ -16975,6 +17491,7 @@
     },
     "SEAF_Gun_Mini_Nuke": {
       "id": 148,
+      "damageid": 287,
       "r1": 17,
       "r2": 25,
       "r3": 45,
@@ -16986,6 +17503,7 @@
     },
     "SEAF_Gun_Smoke": {
       "id": 138,
+      "damageid": 0,
       "r1": 13,
       "r2": 13,
       "r3": 0,
@@ -16996,6 +17514,7 @@
     },
     "SEAF_Gun_Napalm": {
       "id": 10,
+      "damageid": 231,
       "r1": 1.6,
       "r2": 13,
       "r3": 20,
@@ -17007,6 +17526,7 @@
     },
     "SEAF_Gun_EMP": {
       "id": 29,
+      "damageid": 271,
       "r1": 1,
       "r2": 13,
       "r3": 20,
@@ -17018,6 +17538,7 @@
     },
     "Illuminate_IllusionistDeath": {
       "id": 160,
+      "damageid": 247,
       "r1": 1,
       "r2": 1.5,
       "r3": 2,
@@ -17029,6 +17550,7 @@
     },
     "Illuminate_TripodDeath": {
       "id": 205,
+      "damageid": 247,
       "r1": 3,
       "r2": 5,
       "r3": 4,
@@ -17040,6 +17562,7 @@
     },
     "Illuminate_Projectile_Huge": {
       "id": 110,
+      "damageid": 247,
       "r1": 3,
       "r2": 5,
       "r3": 7,
@@ -17051,6 +17574,7 @@
     },
     "Illuminate_IllusionistSmallball": {
       "id": 42,
+      "damageid": 195,
       "r1": 0.75,
       "r2": 1.5,
       "r3": 2,
@@ -17062,6 +17586,7 @@
     },
     "Illuminate_AdeptCircle": {
       "id": 128,
+      "damageid": 247,
       "r1": 1.5,
       "r2": 1.5,
       "r3": 1.6,
@@ -17073,6 +17598,7 @@
     },
     "AdeptShockwave": {
       "id": 1,
+      "damageid": 210,
       "r1": 4,
       "r2": 5,
       "r3": 6,
@@ -17084,6 +17610,7 @@
     },
     "Illuminate_Medium": {
       "id": 135,
+      "damageid": 263,
       "r1": 0.5,
       "r2": 1,
       "r3": 1.5,
@@ -17095,6 +17622,7 @@
     },
     "ICBM_takeoff": {
       "id": 178,
+      "damageid": 193,
       "r1": 40,
       "r2": 50,
       "r3": 40,
@@ -17106,6 +17634,7 @@
     },
     "ICBM_takeoffIntense": {
       "id": 26,
+      "damageid": 194,
       "r1": 14,
       "r2": 30,
       "r3": 32,
@@ -17117,6 +17646,7 @@
     },
     "ICBM_explode": {
       "id": 9,
+      "damageid": 289,
       "r1": 15,
       "r2": 30,
       "r3": 40,
@@ -17128,6 +17658,7 @@
     },
     "Prop_Small": {
       "id": 60,
+      "damageid": 211,
       "r1": 0.75,
       "r2": 1.5,
       "r3": 2.5,
@@ -17139,6 +17670,7 @@
     },
     "Prop_Medium": {
       "id": 214,
+      "damageid": 212,
       "r1": 1,
       "r2": 2,
       "r3": 3,
@@ -17150,6 +17682,7 @@
     },
     "Prop_Large": {
       "id": 180,
+      "damageid": 248,
       "r1": 2,
       "r2": 5,
       "r3": 6,
@@ -17161,6 +17694,7 @@
     },
     "Prop_Huge": {
       "id": 90,
+      "damageid": 264,
       "r1": 16,
       "r2": 32,
       "r3": 40,
@@ -17172,6 +17706,7 @@
     },
     "Building_Crumble_Small": {
       "id": 62,
+      "damageid": 197,
       "r1": 7,
       "r2": 14,
       "r3": 18,
@@ -17183,6 +17718,7 @@
     },
     "Building_Crumble_Medium": {
       "id": 190,
+      "damageid": 198,
       "r1": 9,
       "r2": 18,
       "r3": 23,
@@ -17194,6 +17730,7 @@
     },
     "Building_Crumble_Large": {
       "id": 170,
+      "damageid": 199,
       "r1": 11,
       "r2": 22,
       "r3": 26,
@@ -17205,6 +17742,7 @@
     },
     "Building_Crumble_Huge": {
       "id": 75,
+      "damageid": 200,
       "r1": 13,
       "r2": 26,
       "r3": 30,
@@ -17216,6 +17754,7 @@
     },
     "BugDrill": {
       "id": 15,
+      "damageid": 288,
       "r1": 20,
       "r2": 30,
       "r3": 50,
@@ -17227,6 +17766,7 @@
     },
     "fueltank_large": {
       "id": 71,
+      "damageid": 267,
       "r1": 6,
       "r2": 12,
       "r3": 18,
@@ -17238,6 +17778,7 @@
     },
     "OilField": {
       "id": 171,
+      "damageid": 231,
       "r1": 1.4,
       "r2": 7,
       "r3": 10,
@@ -17249,6 +17790,7 @@
     },
     "Barrel_Small": {
       "id": 112,
+      "damageid": 196,
       "r1": 0.2,
       "r2": 1,
       "r3": 3,
@@ -17260,6 +17802,7 @@
     },
     "Barrel_Medium": {
       "id": 84,
+      "damageid": 196,
       "r1": 0.4,
       "r2": 4,
       "r3": 12,
@@ -17271,6 +17814,7 @@
     },
     "Barrel_Large": {
       "id": 102,
+      "damageid": 196,
       "r1": 0.6,
       "r2": 6,
       "r3": 15,
@@ -17282,6 +17826,7 @@
     },
     "Chemical_Backpack": {
       "id": 163,
+      "damageid": 196,
       "r1": 0.4,
       "r2": 4,
       "r3": 12,
@@ -17293,6 +17838,7 @@
     },
     "Retrieve_Larva_Backpack": {
       "id": 212,
+      "damageid": 196,
       "r1": 0.4,
       "r2": 4,
       "r3": 12,
@@ -17304,6 +17850,7 @@
     },
     "Ammo_Cache": {
       "id": 127,
+      "damageid": 276,
       "r1": 5,
       "r2": 18,
       "r3": 30,
@@ -17315,6 +17862,7 @@
     },
     "Cyborg_Fuel_Silo": {
       "id": 47,
+      "damageid": 206,
       "r1": 2,
       "r2": 8,
       "r3": 18,
@@ -17326,6 +17874,7 @@
     },
     "Tower_Collapse": {
       "id": 206,
+      "damageid": 290,
       "r1": 20,
       "r2": 40,
       "r3": 70,
@@ -17337,6 +17886,7 @@
     },
     "Dummy": {
       "id": 97,
+      "damageid": 0,
       "r1": 0.1,
       "r2": 0.1,
       "r3": 0.1,
@@ -17347,6 +17897,7 @@
     },
     "Geyser_Erupt_Small": {
       "id": 66,
+      "damageid": 178,
       "r1": 0.8,
       "r2": 1.25,
       "r3": 2.5,
@@ -17358,6 +17909,7 @@
     },
     "Geyser_Erupt_Medium": {
       "id": 203,
+      "damageid": 178,
       "r1": 1.3,
       "r2": 2,
       "r3": 3.5,
@@ -17369,6 +17921,7 @@
     },
     "Geyser_Erupt_Large": {
       "id": 28,
+      "damageid": 178,
       "r1": 2.5,
       "r2": 3.5,
       "r3": 4.5,
@@ -17380,6 +17933,7 @@
     },
     "World_Meteor": {
       "id": 147,
+      "damageid": 283,
       "r1": 1.25,
       "r2": 8.5,
       "r3": 23,
@@ -17391,6 +17945,7 @@
     },
     "World_Escape_Pod_Crash": {
       "id": 158,
+      "damageid": 284,
       "r1": 1,
       "r2": 5,
       "r3": 10,
@@ -17402,6 +17957,7 @@
     },
     "World_Earthquake": {
       "id": 202,
+      "damageid": 179,
       "r1": 45,
       "r2": 50,
       "r3": 55,
@@ -17413,6 +17969,7 @@
     },
     "GasChimney": {
       "id": 61,
+      "damageid": 231,
       "r1": 1.4,
       "r2": 7,
       "r3": 10,
@@ -17424,6 +17981,7 @@
     },
     "World_VolcanoStrike": {
       "id": 25,
+      "damageid": 283,
       "r1": 1,
       "r2": 7.5,
       "r3": 15,
@@ -17435,6 +17993,7 @@
     },
     "HellDummy": {
       "id": 72,
+      "damageid": 191,
       "r1": 1,
       "r2": 2,
       "r3": 3,
@@ -17446,6 +18005,7 @@
     },
     "MoorMushroom_Smoke": {
       "id": 109,
+      "damageid": 0,
       "r1": 5,
       "r2": 5,
       "r3": 0,
@@ -17456,6 +18016,7 @@
     },
     "MoorMushroom_Burst": {
       "id": 33,
+      "damageid": 292,
       "r1": 7,
       "r2": 8,
       "r3": 9,
@@ -17467,6 +18028,7 @@
     },
     "GateCrush": {
       "id": 64,
+      "damageid": 379,
       "r1": 0.5,
       "r2": 1,
       "r3": 9,
@@ -17478,6 +18040,7 @@
     },
     "EmbryoCluster_Burst": {
       "id": 80,
+      "damageid": 295,
       "r1": 1,
       "r2": 10,
       "r3": 9,
@@ -17489,6 +18052,7 @@
     },
     "Snowball_Stun": {
       "id": 36,
+      "damageid": 171,
       "r1": 1,
       "r2": 1,
       "r3": 1,
@@ -17500,6 +18064,7 @@
     },
     "Spikeplant_Shrapnel_Explosion": {
       "id": 11,
+      "damageid": 293,
       "r1": 2,
       "r2": 8,
       "r3": 8,
@@ -17511,6 +18076,7 @@
     },
     "Iceplant_Shatter": {
       "id": 51,
+      "damageid": 294,
       "r1": 2.5,
       "r2": 4.95,
       "r3": 3,
@@ -17522,6 +18088,7 @@
     },
     "Conscript_Backpack_Explosion": {
       "id": 69,
+      "damageid": 196,
       "r1": 2,
       "r2": 3,
       "r3": 3,
@@ -17533,6 +18100,7 @@
     },
     "Conscript_Backpack_LMG": {
       "id": 48,
+      "damageid": 196,
       "r1": 0.7,
       "r2": 1.5,
       "r3": 3,
@@ -17544,6 +18112,7 @@
     },
     "Conscript_Backpack_Flamer": {
       "id": 68,
+      "damageid": 196,
       "r1": 0.4,
       "r2": 4,
       "r3": 12,
@@ -17555,6 +18124,7 @@
     },
     "StaticField_Sentry": {
       "id": 74,
+      "damageid": 212,
       "r1": 1,
       "r2": 2,
       "r3": 3,
@@ -17566,6 +18136,7 @@
     },
     "HMD_Generator_Crumble": {
       "id": 196,
+      "damageid": 197,
       "r1": 7,
       "r2": 14,
       "r3": 18,
@@ -17580,6 +18151,7 @@
     "Small": {
       "id": 6,
       "range": 1000,
+      "damageid": 296,
       "unk7": 22,
       "unk17": 0,
       "unk19": 7,
@@ -17589,6 +18161,7 @@
     "Medium": {
       "id": 4,
       "range": 1000,
+      "damageid": 297,
       "unk7": 24,
       "unk17": 0,
       "unk19": 7,
@@ -17598,6 +18171,7 @@
     "MediumDrone": {
       "id": 12,
       "range": 1000,
+      "damageid": 298,
       "unk7": 24,
       "unk17": 0,
       "unk19": 7,
@@ -17607,6 +18181,7 @@
     "Medium_Focused": {
       "id": 14,
       "range": 1000,
+      "damageid": 301,
       "unk7": 24,
       "unk17": 0,
       "unk19": 7,
@@ -17616,6 +18191,7 @@
     "Medium_Wide": {
       "id": 3,
       "range": 1000,
+      "damageid": 299,
       "unk7": 24,
       "unk17": 0,
       "unk19": 7,
@@ -17625,6 +18201,7 @@
     "Large": {
       "id": 11,
       "range": 200,
+      "damageid": 302,
       "unk7": 25,
       "unk17": 0,
       "unk19": 8,
@@ -17634,6 +18211,7 @@
     "LaserCannon": {
       "id": 1,
       "range": 200,
+      "damageid": 302,
       "unk7": 23,
       "unk17": 0,
       "unk19": 8,
@@ -17643,6 +18221,7 @@
     "Large_Light": {
       "id": 10,
       "range": 200,
+      "damageid": 304,
       "unk7": 25,
       "unk17": 0,
       "unk19": 8,
@@ -17652,6 +18231,7 @@
     "Large_Heavy": {
       "id": 9,
       "range": 200,
+      "damageid": 303,
       "unk7": 25,
       "unk17": 0,
       "unk19": 8,
@@ -17661,6 +18241,7 @@
     "BotTorch": {
       "id": 2,
       "range": 9.5,
+      "damageid": 308,
       "unk7": 25,
       "unk17": 0,
       "unk19": 7,
@@ -17670,6 +18251,7 @@
     "TripodEye": {
       "id": 7,
       "range": 1000,
+      "damageid": 323,
       "unk7": 27,
       "unk17": 0,
       "unk19": 8,
@@ -17679,6 +18261,7 @@
     "ObserverEye": {
       "id": 5,
       "range": 30,
+      "damageid": 296,
       "unk7": 22,
       "unk17": 0,
       "unk19": 7,
@@ -17688,6 +18271,7 @@
     "PhysGun": {
       "id": 8,
       "range": 10000,
+      "damageid": 0,
       "unk7": 0,
       "unk17": 0,
       "unk19": 0,
@@ -17696,6 +18280,7 @@
     "OutcastFlashbeamChargeup": {
       "id": 13,
       "range": 1000,
+      "damageid": 0,
       "unk7": 0,
       "unk17": 6,
       "unk19": 0,
@@ -17712,6 +18297,7 @@
       "chainangle": 60,
       "aimangle": 3,
       "unk8": 1,
+      "damageid": 115,
       "unk19": 3,
       "name": "Arc Thrower",
       "damage_name": "Projectile_Arc_Thrower"
@@ -17725,6 +18311,7 @@
       "chainangle": 60,
       "aimangle": 3,
       "unk8": 1,
+      "damageid": 115,
       "unk19": 3,
       "name": "Arc Thrower Mk2",
       "damage_name": "Projectile_Arc_Thrower"
@@ -17738,6 +18325,7 @@
       "chainangle": 60,
       "aimangle": 3,
       "unk8": 1,
+      "damageid": 116,
       "unk19": 3,
       "name": "Arc Thrower Mk3",
       "damage_name": "Projectile_Arc_Thrower_Mk2"
@@ -17751,6 +18339,7 @@
       "chainangle": 60,
       "aimangle": 3,
       "unk8": 1,
+      "damageid": 116,
       "unk19": 3,
       "name": "Arc Thrower Mk4",
       "damage_name": "Projectile_Arc_Thrower_Mk2"
@@ -17764,6 +18353,7 @@
       "chainangle": 10,
       "aimangle": 10,
       "unk8": 1,
+      "damageid": 117,
       "unk19": 3,
       "name": "Arc Shotgun",
       "damage_name": "Projectile_Arc_Shotgun"
@@ -17777,6 +18367,7 @@
       "chainangle": 300,
       "aimangle": 180,
       "unk8": 2,
+      "damageid": 126,
       "unk19": 3,
       "name": "Tesla Turret Arc",
       "damage_name": "Projectile_Tesla_Turret"
@@ -17790,6 +18381,7 @@
       "chainangle": 180,
       "aimangle": 22.5,
       "unk8": 1,
+      "damageid": 18,
       "unk19": 3,
       "name": "Illuminate Tripod Arc",
       "damage_name": "Projectile_Illuminate_Tripod_Lightning"
@@ -17803,6 +18395,7 @@
       "chainangle": 180,
       "aimangle": 22.5,
       "unk8": 1,
+      "damageid": 15,
       "unk19": 3,
       "name": "Illuminate Turret Tesla Arc",
       "damage_name": "Projectile_Illuminate_turret_tesla"
@@ -17816,6 +18409,7 @@
       "chainangle": 180,
       "aimangle": 22.5,
       "unk8": 2,
+      "damageid": 17,
       "unk19": 3,
       "name": "Illuminate Obelisk Arc",
       "damage_name": "Projectile_Illuminate_Squidgun"
@@ -17829,6 +18423,7 @@
       "chainangle": 60,
       "aimangle": 45,
       "unk8": 0,
+      "damageid": 16,
       "unk19": 7,
       "name": "Illuminate Observer Lightning",
       "damage_name": "Projectile_Illuminate_Observer_Lightning"
@@ -17842,6 +18437,7 @@
       "chainangle": 180,
       "aimangle": 0,
       "unk8": 0,
+      "damageid": 325,
       "unk19": 0,
       "name": "Illuminate Summoner Spawn Effect",
       "damage_name": "Ability_Empty"
