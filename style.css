@@ -186,10 +186,10 @@ td.name {
 .category.SUP, .source.support, .ap-1 {
   color: #269ab6;
 }
-.category.Misc {
+.category.Misc, .category.GrSp {
   color: #a98a98;
 }
-.category.GR {
+.category.GrSt {
   color: #aa8;
 }
 .category.Mounted, .category.Vehicle {

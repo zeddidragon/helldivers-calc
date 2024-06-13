@@ -64,6 +64,28 @@ ref = "Rifle_5p5x50mm_exp"
 
 [[weapon]]
 category = "AR"
+fullname = "AR-23A Liberator Carbine"
+source = "viper-commandos"
+sourcepage = 1
+rpm = 920
+recoil = 26
+reload = 3.0
+reloadearly = 2.0
+cap = 45
+capplus = 1
+mags = 7
+magstart = 4
+supply = 7
+box = 3
+modes = ["semi", "auto", "burst3"]
+scopes = [25, 50, 100]
+attachments = ["laser", "flashlight"]
+[[weapon.attack]]
+medium = "projectile"
+ref = "Rifle_5p5x50mm_fmj"
+
+[[weapon]]
+category = "AR"
 fullname = "AR-61 Tenderizer"
 source = "polar-pat"
 sourcepage = 1
@@ -485,6 +507,26 @@ modes = ["charge"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Plasma_Rifle_Charge"
+
+[[weapon]]
+category = "SG2"
+fullname = "SG-22 Bushwhacker"
+source = "viper-commandos"
+sourcepage = 2
+rpm = 650
+recoil = 170
+reload = 1.8
+reloadearly = 3.0
+cap = 3
+rounds = 30
+roundstart = 30
+roundsupply = 30
+roundsbox = 15
+modes = ["semi", "burst3"]
+tags = ["1h"]
+[[weapon.attack]]
+medium = "projectile"
+ref = "TripleBarrelShotgun_10g_buc"
 
 [[weapon]]
 category = "HG"
@@ -915,7 +957,7 @@ medium = "projectile"
 ref = "Shotgun_10g_mag"
 
 [[weapon]]
-category = "GR"
+category = "GrSt"
 fullname = "G-6 Frag"
 source = "hd-mobilize"
 sourcepage = 1
@@ -928,7 +970,7 @@ medium = "explosion"
 ref = "Frag"
 
 [[weapon]]
-category = "GR"
+category = "GrSt"
 fullname = "G-12 High Explosive"
 source = "start"
 rounds = 4
@@ -940,7 +982,7 @@ medium = "explosion"
 ref = "HighExplosive"
 
 [[weapon]]
-category = "GR"
+category = "GrSt"
 fullname = "G-10 Incendiary"
 source = "steel-vets"
 sourcepage = 2
@@ -953,7 +995,7 @@ medium = "explosion"
 ref = "Incendiary"
 
 [[weapon]]
-category = "GR"
+category = "GrSp"
 fullname = "G-16 Impact"
 source = "start"
 rounds = 4
@@ -965,7 +1007,7 @@ medium = "explosion"
 ref = "Impact"
 
 [[weapon]]
-category = "GR"
+category = "GrSp"
 fullname = "G-13 Incendiary Impact"
 source = "polar-pat"
 sourcepage = 2
@@ -978,7 +1020,7 @@ medium = "explosion"
 ref = "Incendiary"
 
 [[weapon]]
-category = "GR"
+category = "GrSp"
 fullname = "G-23 Stun"
 source = "cut-edge"
 sourcepage = 2
@@ -991,7 +1033,7 @@ medium = "explosion"
 ref = "Flash"
 
 [[weapon]]
-category = "GR"
+category = "GrSp"
 fullname = "G-3 Smoke"
 source = "hd-mobilize"
 sourcepage = 8
@@ -1001,7 +1043,7 @@ roundsupply = 4
 roundsbox = 2
 
 [[weapon]]
-category = "GR"
+category = "GrSp"
 fullname = "G-123 Thermite"
 source = "demo-det"
 sourcepage = 1
@@ -1015,6 +1057,16 @@ ref = "Thermite"
 [[weapon.attack]]
 medium = "damage"
 ref = "DPS_Thermite"
+
+[[weapon]]
+category = "GrSp"
+fullname = "K-2 Throwing Knife"
+source = "viper-commandos"
+sourcepage = 3
+rounds = 8
+[[weapon.attack]]
+medium = "damage"
+ref = "Impact_Throwing_Knife"
 
 [[weapon]]
 category = "Ability"

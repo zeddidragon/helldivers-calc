@@ -74,6 +74,28 @@
     },
     {
       "category": "AR",
+      "fullname": "AR-23A Liberator Carbine",
+      "source": "viper-commandos",
+      "sourcepage": 1,
+      "rpm": 920,
+      "recoil": 26,
+      "reload": 3,
+      "reloadearly": 2,
+      "cap": 45,
+      "capplus": 1,
+      "mags": 7,
+      "magstart": 4,
+      "supply": 7,
+      "box": 3,
+      "modes": ["semi", "auto", "burst3"],
+      "scopes": [25, 50, 100],
+      "attachments": ["laser", "flashlight"],
+      "attack": [
+        {"type": "projectile", "name": "Rifle_5p5x50mm_fmj", "id": 184}
+      ]
+    },
+    {
+      "category": "AR",
       "fullname": "AR-61 Tenderizer",
       "source": "polar-pat",
       "sourcepage": 1,
@@ -81,12 +103,12 @@
       "recoil": 10,
       "reload": 3.3,
       "reloadearly": 2.2,
-      "cap": 35,
+      "cap": 30,
       "capplus": 1,
-      "mags": 10,
-      "magstart": 5,
-      "supply": 5,
-      "box": 2,
+      "mags": 8,
+      "magstart": 6,
+      "supply": 8,
+      "box": 4,
       "modes": ["semi", "auto", "burst3"],
       "scopes": [25, 50, 100],
       "attachments": ["flashlight"],
@@ -470,6 +492,26 @@
       "attack": [
         {"type": "projectile", "name": "Plasma_Rifle_Charge", "id": 201},
         {"type": "explosion", "name": "Plasma_Rifle_Charge", "id": 104}
+      ]
+    },
+    {
+      "category": "SG2",
+      "fullname": "SG-22 Bushwhacker",
+      "source": "viper-commandos",
+      "sourcepage": 2,
+      "rpm": 650,
+      "recoil": 170,
+      "reload": 1.8,
+      "reloadearly": 3,
+      "cap": 3,
+      "rounds": 30,
+      "roundstart": 30,
+      "roundsupply": 30,
+      "roundsbox": 15,
+      "modes": ["semi", "burst3"],
+      "tags": ["1h"],
+      "attack": [
+        {"type": "projectile", "name": "TripleBarrelShotgun_10g_buc", "id": 196}
       ]
     },
     {
@@ -905,7 +947,7 @@
       "attack": [{"type": "projectile", "name": "Shotgun_10g_mag", "id": 148}]
     },
     {
-      "category": "GR",
+      "category": "GrSt",
       "fullname": "G-6 Frag",
       "source": "hd-mobilize",
       "sourcepage": 1,
@@ -919,7 +961,7 @@
       ]
     },
     {
-      "category": "GR",
+      "category": "GrSt",
       "fullname": "G-12 High Explosive",
       "source": "start",
       "rounds": 4,
@@ -929,7 +971,7 @@
       "attack": [{"type": "explosion", "name": "HighExplosive", "id": 92}]
     },
     {
-      "category": "GR",
+      "category": "GrSt",
       "fullname": "G-10 Incendiary",
       "source": "steel-vets",
       "sourcepage": 2,
@@ -940,7 +982,7 @@
       "attack": [{"type": "explosion", "name": "Incendiary", "id": 121}]
     },
     {
-      "category": "GR",
+      "category": "GrSp",
       "fullname": "G-16 Impact",
       "source": "start",
       "rounds": 4,
@@ -950,7 +992,7 @@
       "attack": [{"type": "explosion", "name": "Impact", "id": 178}]
     },
     {
-      "category": "GR",
+      "category": "GrSp",
       "fullname": "G-13 Incendiary Impact",
       "source": "polar-pat",
       "sourcepage": 2,
@@ -961,7 +1003,7 @@
       "attack": [{"type": "explosion", "name": "Incendiary", "id": 121}]
     },
     {
-      "category": "GR",
+      "category": "GrSp",
       "fullname": "G-23 Stun",
       "source": "cut-edge",
       "sourcepage": 2,
@@ -972,7 +1014,7 @@
       "attack": [{"type": "explosion", "name": "Flash", "id": 119}]
     },
     {
-      "category": "GR",
+      "category": "GrSp",
       "fullname": "G-3 Smoke",
       "source": "hd-mobilize",
       "sourcepage": 8,
@@ -983,7 +1025,7 @@
       "attack": []
     },
     {
-      "category": "GR",
+      "category": "GrSp",
       "fullname": "G-123 Thermite",
       "source": "demo-det",
       "sourcepage": 1,
@@ -995,6 +1037,14 @@
         {"type": "explosion", "name": "Thermite", "id": 109},
         {"type": "damage", "name": "DPS_Thermite", "id": 317}
       ]
+    },
+    {
+      "category": "GrSp",
+      "fullname": "K-2 Throwing Knife",
+      "source": "viper-commandos",
+      "sourcepage": 3,
+      "rounds": 8,
+      "attack": [{"type": "damage", "name": "Impact_Throwing_Knife", "id": 388}]
     },
     {
       "category": "Ability",
