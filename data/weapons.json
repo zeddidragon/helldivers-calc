@@ -24,6 +24,9 @@
       "magstart": 5,
       "supply": 7,
       "box": 3,
+      "modes": ["semi", "auto", "burst3"],
+      "scopes": [25, 50, 100],
+      "attachments": ["laser", "flashlight"],
       "attack": [{"medium": "projectile", "ref": "Rifle_5p5x50mm_fmj"}]
     },
     {
@@ -41,6 +44,9 @@
       "magstart": 7,
       "supply": 10,
       "box": 5,
+      "modes": ["semi", "auto", "burst3"],
+      "scopes": [25, 75, 150],
+      "attachments": ["laser", "flashlight"],
       "attack": [{"medium": "projectile", "ref": "Rifle_5p5x50mm_ap"}]
     },
     {
@@ -58,6 +64,8 @@
       "magstart": 7,
       "supply": 10,
       "box": 5,
+      "modes": ["semi", "auto"],
+      "attachments": ["laser", "flashlight"],
       "attack": [{"medium": "projectile", "ref": "Rifle_5p5x50mm_exp"}]
     },
     {
@@ -75,6 +83,9 @@
       "magstart": 5,
       "supply": 5,
       "box": 2,
+      "modes": ["semi", "auto", "burst3"],
+      "scopes": [25, 50, 100],
+      "attachments": ["flashlight"],
       "attack": [{"medium": "projectile", "ref": "Rifle_5p5x50mm_fmj"}]
     },
     {
@@ -92,6 +103,9 @@
       "magstart": 6,
       "supply": 8,
       "box": 4,
+      "modes": ["semi", "auto"],
+      "scopes": [25, 50, 100],
+      "attachments": ["flashlight"],
       "attack": [{"medium": "projectile", "ref": "Rifle_8x60mm_fmj"}]
     },
     {
@@ -109,6 +123,8 @@
       "magstart": 5,
       "supply": 8,
       "box": 4,
+      "modes": ["semi"],
+      "scopes": [25, 75, 150],
       "attack": [{"medium": "projectile", "ref": "Rifle_9x70mm_fmj"}]
     },
     {
@@ -126,6 +142,8 @@
       "magstart": 4,
       "supply": 6,
       "box": 3,
+      "modes": ["semi"],
+      "scopes": [50, 100, 200],
       "attack": [{"medium": "projectile", "ref": "Rifle_9x70mm_hv"}]
     },
     {
@@ -143,6 +161,8 @@
       "supply": 5,
       "box": 2,
       "tags": ["1h"],
+      "modes": ["semi", "auto"],
+      "attachments": ["flashlight"],
       "attack": [{"medium": "projectile", "ref": "Pistol_9x20mm_smj"}]
     },
     {
@@ -161,6 +181,8 @@
       "supply": 7,
       "box": 3,
       "tags": ["1h"],
+      "modes": ["semi", "auto", "burst3"],
+      "attachments": ["flashlight"],
       "attack": [{"medium": "projectile", "ref": "Pistol_12x25mm_fmj"}]
     },
     {
@@ -179,6 +201,8 @@
       "supply": 7,
       "box": 3,
       "tags": ["1h"],
+      "modes": ["semi", "auto", "burst3"],
+      "attachments": ["flashlight"],
       "attack": [{"medium": "projectile", "ref": "Pistol_12x25mm_stun"}]
     },
     {
@@ -230,6 +254,8 @@
       "magstart": 5,
       "supply": 7,
       "box": 3,
+      "modes": ["semi", "auto"],
+      "attachments": ["flashlight"],
       "attack": [{"medium": "projectile", "ref": "Shotgun_12g_buc"}]
     },
     {
@@ -247,6 +273,8 @@
       "magstart": 6,
       "supply": 8,
       "box": 4,
+      "modes": ["semi", "auto"],
+      "attachments": ["flashlight"],
       "attack": [{"medium": "projectile", "ref": "Shotgun_12g_bir"}]
     },
     {
@@ -265,6 +293,8 @@
       "supply": 6,
       "box": 3,
       "tags": ["fire"],
+      "modes": ["semi", "burst3"],
+      "attachments": ["flashlight"],
       "attack": [{"medium": "projectile", "ref": "Shotgun_12g_flm"}]
     },
     {
@@ -281,6 +311,7 @@
       "magstart": 8,
       "supply": 8,
       "box": 4,
+      "modes": ["semi"],
       "attack": [
         {"medium": "projectile", "ref": "Crossbow_Bolt_exp"},
         {"medium": "explosion", "ref": "Crossbow_Bolt"}
@@ -302,6 +333,8 @@
       "supply": 6,
       "box": 3,
       "tags": ["jet"],
+      "modes": ["semi", "burst3"],
+      "attachments": ["flashlight"],
       "attack": [{"medium": "projectile", "ref": "Rocket_15x100mm_std"}]
     },
     {
@@ -320,6 +353,9 @@
       "supply": 6,
       "box": 3,
       "tags": ["jet", "shrapnel"],
+      "scopes": [50, 100, 200],
+      "modes": ["semi"],
+      "attachments": ["flashlight"],
       "attack": [
         {"medium": "projectile", "ref": "Rocket_JarPhoenix_20mm"},
         {"medium": "explosion", "ref": "JarPhoenix_20mm"}
@@ -350,6 +386,8 @@
       "sourcepage": 3,
       "rpm": 45,
       "recoil": 60,
+      "tags": ["jet"],
+      "modes": ["semi"],
       "attack": [{"medium": "arc", "ref": "ArcShotgun", "count": 5}]
     },
     {
@@ -366,6 +404,7 @@
       "box": 2,
       "limit": 8,
       "tags": ["laser"],
+      "modes": ["auto"],
       "attack": [{"medium": "beam", "ref": "Medium"}]
     },
     {
@@ -382,6 +421,8 @@
       "supply": 3,
       "box": 3,
       "limit": 7,
+      "scopes": [25, 50, 100],
+      "modes": ["auto"],
       "attack": [{"medium": "projectile", "ref": "Laser_Long"}]
     },
     {
@@ -398,6 +439,7 @@
       "magstart": 3,
       "supply": 6,
       "box": 3,
+      "modes": ["semi"],
       "attack": [
         {"medium": "projectile", "ref": "Plasma_Bolt_Medium"},
         {"medium": "explosion", "ref": "Plasma_Bolt_Medium"}
@@ -416,6 +458,7 @@
       "magstart": 3,
       "supply": 6,
       "box": 3,
+      "modes": ["charge"],
       "attack": [
         {"medium": "projectile", "ref": "Plasma_Bolt_Large"},
         {"medium": "explosion", "ref": "Plasma_Bolt_Large"}
@@ -435,6 +478,9 @@
       "magstart": 4,
       "supply": 5,
       "box": 2,
+      "modes": ["semi"],
+      "attachments": ["laser", "flashlight"],
+      "tags": ["1h"],
       "attack": [{"medium": "projectile", "ref": "Pistol_9x20mm_hp"}]
     },
     {
@@ -452,6 +498,9 @@
       "magstart": 4,
       "supply": 4,
       "box": 2,
+      "modes": ["semi", "auto"],
+      "attachments": ["flashlight"],
+      "tags": ["1h"],
       "attack": [{"medium": "projectile", "ref": "Pistol_9x20mm_fmj"}]
     },
     {
@@ -469,6 +518,9 @@
       "magstart": 5,
       "supply": 4,
       "box": 2,
+      "modes": ["semi"],
+      "attachments": ["laser", "flashlight"],
+      "tags": ["1h"],
       "attack": [{"medium": "projectile", "ref": "Pistol_Magnum"}]
     },
     {
@@ -484,6 +536,8 @@
       "roundstart": 4,
       "roundsupply": 2,
       "roundsbox": 1,
+      "modes": ["semi"],
+      "tags": ["1h"],
       "attack": [
         {"medium": "projectile", "ref": "Grenade_40mm_HEAT"},
         {"medium": "explosion", "ref": "Grenade_40mm_HE_MK2"}
@@ -502,7 +556,8 @@
       "supply": 3,
       "box": 3,
       "limit": 5,
-      "tags": ["laser"],
+      "modes": ["auto"],
+      "tags": ["1h"],
       "attack": [{"medium": "beam", "ref": "Small"}]
     },
     {
@@ -521,7 +576,9 @@
       "roundstart": 32,
       "roundsupply": 20,
       "roundsbox": 10,
-      "tags": ["rounds"],
+      "modes": ["semi"],
+      "attachments": ["flashlight"],
+      "tags": ["round", "1h"],
       "attack": [{"medium": "projectile", "ref": "Pistol_13x40mm_fmj"}]
     },
     {
@@ -538,6 +595,8 @@
       "magstart": 2,
       "supply": 2,
       "box": 1,
+      "modes": ["auto"],
+      "rpms": [700, 850, 1150],
       "attack": [{"medium": "projectile", "ref": "Rifle_5p5x50mm_fmj"}]
     },
     {
@@ -554,6 +613,8 @@
       "magstart": 1,
       "supply": 1,
       "box": 1,
+      "modes": ["auto"],
+      "rpms": [630, 760, 900],
       "attack": [{"medium": "projectile", "ref": "Rifle_8x60mm_apt"}]
     },
     {
@@ -570,6 +631,8 @@
       "magstart": 1,
       "supply": 2,
       "box": 1,
+      "modes": ["auto"],
+      "rpms": [450, 750, 950],
       "attack": [{"medium": "projectile", "ref": "Rifle_12p5x100mm_bchp"}]
     },
     {
@@ -579,6 +642,7 @@
       "stratcode": "drdull",
       "rpm": 60,
       "charge": 1,
+      "modes": ["charge"],
       "attack": [{"medium": "arc", "ref": "ArcThrower"}]
     },
     {
@@ -593,6 +657,7 @@
       "box": 3,
       "limit": 12.5,
       "tags": ["fire"],
+      "modes": ["auto"],
       "attack": [{"medium": "damage", "ref": "Projectile_Flamethrower"}]
     },
     {
@@ -609,6 +674,8 @@
       "magstart": 4,
       "supply": 3,
       "box": 1,
+      "scopes": [50, 100, 200],
+      "modes": ["semi"],
       "attack": [{"medium": "projectile", "ref": "Rifle_12p5x100mm_eit"}]
     },
     {
@@ -624,6 +691,7 @@
       "magstart": 1,
       "supply": 2,
       "box": 1,
+      "modes": ["semi"],
       "attack": [
         {"medium": "projectile", "ref": "Grenade_40mm_HE"},
         {"medium": "explosion", "ref": "Grenade_40mm_HE"}
@@ -643,6 +711,7 @@
       "clipsize": 5,
       "clipsbox": 2,
       "clipsupply": 5,
+      "modes": ["semi", "auto"],
       "attack": [
         {"medium": "projectile", "ref": "Cannon_20mm_APHET"},
         {"medium": "explosion", "ref": "APHET_20mm"}
@@ -662,6 +731,7 @@
       "roundstart": 10,
       "roundsupply": 10,
       "roundsbox": 2,
+      "modes": ["charge", "overcharge"],
       "attack": [{"medium": "projectile", "ref": "Railgun"}]
     },
     {
@@ -677,6 +747,7 @@
       "box": 1,
       "limit": 10,
       "tags": ["laser"],
+      "modes": ["auto"],
       "attack": [{"medium": "beam", "ref": "LaserCannon"}]
     },
     {
@@ -686,6 +757,7 @@
       "stratcode": "ddulr",
       "charge": 3.1,
       "reload": 15,
+      "modes": ["charge"],
       "attack": [
         {"medium": "projectile", "ref": "Laser_Pulse"},
         {"medium": "explosion", "ref": "Laser_Pulse"}
@@ -697,6 +769,8 @@
       "source": "support",
       "stratcode": "ddlur",
       "cap": 1,
+      "rounds": 0,
+      "modes": ["semi"],
       "attack": [
         {"medium": "projectile", "ref": "Grenade_75mm_HEAT"},
         {"medium": "explosion", "ref": "Grenade_75mm_HEAT"}
@@ -713,6 +787,7 @@
       "roundstart": 5,
       "roundsupply": 3,
       "roundsbox": 1,
+      "modes": ["semi"],
       "attack": [
         {"medium": "projectile", "ref": "Grenade_85mm_HEAT"},
         {"medium": "explosion", "ref": "Grenade_85mm_HEAT"}
@@ -729,6 +804,7 @@
       "roundstart": 3,
       "roundsupply": 2,
       "roundsbox": 1,
+      "modes": ["lockon"],
       "attack": [
         {"medium": "projectile", "ref": "Missile_Faf"},
         {"medium": "explosion", "ref": "FafMissile"}
@@ -745,6 +821,7 @@
       "roundstart": 5,
       "roundsupply": 3,
       "roundsbox": 1,
+      "modes": ["semi"],
       "attack": [
         {"medium": "projectile", "ref": "Grenade_85mm_AirburstCluster"},
         {"medium": "explosion", "ref": "Primary_Airburst"},
@@ -764,6 +841,7 @@
       "roundstart": 0,
       "roundsupply": 20,
       "roundsbox": 10,
+      "modes": ["semi", "burst2"],
       "attack": [{"medium": "projectile", "ref": "Shotgun_10g_mag"}]
     },
     {

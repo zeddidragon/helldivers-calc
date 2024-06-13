@@ -482,4 +482,168 @@ function p.subAttackTemplate(frame)
   return table_start(scope) .. attack_table .. table_end()
 end
 
+local weapon_category_pages = {
+  ["Assault Rifle"] = "Assault Rifles",
+  ["Shotgun"] = "Shotguns",
+  ["Marksman Rifle"] = "Marksman Rifles",
+  ["Submachine Gun"] = "Submachine Guns",
+  ["Explosive"] = "Explosive",
+  ["Energy-Based"] = "Energy-Based",
+  ["Pistol"] = "Pistols",
+  ["Support Weapon"] = "Support Weapons",
+}
+
+function p.fullWeaponTable(frame)
+  local args = getArgs(frame, {
+    wrappers = 'Template:Damage_Comparison_Table',
+  })
+  local out = ""
+  local ordered = {}
+  local names = {}
+  for name, weapon in pairs(data.weapon) do
+    if weapon_category_pages[weapon.category] then
+      names[weapon.idx] = name
+    end
+  end
+
+  local headers = [[
+{| class=\"sortable mw-collapsible wikitable\"
+|+'''Weapons Table:'''
+!Weapon!!Type
+!Damage!!vs Durable!!Fire Rate!!DPS
+!Reload Time!!Capacity!!Spare Mags!!Recoil
+!Special!!Projectile Type!!Armor Penetration
+!Semi!!Burst!!Auto
+!1H
+!Scope!!Scope!!Scope
+]]
+
+  local rows = {}
+
+  for i, name in ipairs(names) do
+    local override = args["override_" .. string.gsub(name, " ", "_")]
+    if override then
+      rows[i] = "|" .. override
+    else
+      local weapon = data.weapon[name]
+      local max_ap = 0
+      local dmg = 0
+      local dmg2 = 0
+      local projectile_type = "Projectile"
+      local special
+
+      local modes = {}
+      for _, mode in pairs(weapon.modes or {}) do
+        modes[mode] = "X"
+      end
+      for _, mode in pairs(weapon.tags or {}) do
+        modes[mode] = "X"
+      end
+
+      for _, attack in ipairs(weapon.attacks or {}) do
+        local medium = data[attack.type][attack.name]
+
+        if attack.type == "beam" then
+          projectile_type = "Beam"
+        elseif attack.type == "arc" then
+          projectile_type = "Arc"
+        elseif medium.pellets and medium.pellets > 1 then
+          projectile_type = "Scatter x " .. medium.pellets
+        end
+
+        local damage = medium
+        local count = (attack.count or 1) * (medium.pellets or 1)
+        if medium.damage_name then
+          damage = data.damage[medium.damage_name]
+        end
+
+        if damage.ap1 and damage.ap1 > max_ap then
+          max_ap = damage.ap1
+        end
+
+        if damage.status_name and attack.type ~= "beam" then
+          special = damage.status_name
+        end
+
+        if not special and attack.type == "explosion" then
+          special =  "AoE (" .. medium.r1 .. "-" .. medium.r2 .. "m)"
+        end
+
+        if name == "RL-77 Airburst Rocket Launcher" then
+          special = "Clusters"
+        end
+
+        if modes["lock"] then
+          special = "Lock-On"
+        end
+
+        if modes["overcharge"] then
+          special = "Overcharge"
+        elseif modes["charge"] then
+          special = "Charge-up"
+        end
+
+        dmg = dmg + count * (damage.dmg or 0) dmg2 = dmg2 + count * (damage.dmg2 or 0)
+      end
+
+      local category = weapon.category
+      local category_page = weapon_category_pages[category]
+
+      local dps
+      if dmg and weapon.rpm then
+        dps = math.floor(dmg * weapon.rpm / 60)
+      end
+
+      local cap = weapon.cap
+      if weapon.limit then
+        cap = weapon.limit .. " Seconds"
+      end
+      if not cap then
+        cap = "Infinite"
+      end
+
+      local mags = weapon.mags
+      if weapon.clips then
+        mags = weapon.clips .. " Clips"
+      end
+      if weapon.rounds then
+        mags = weapon.rounds .. " Rounds"
+      end
+      if not mags then
+        mags = "Infinite"
+      end
+
+      local scopes = weapon.scopes or {}
+      local zooms = {}
+      for i, scope in ipairs(weapon.scopes or {}) do
+        zooms[i] = scope .. "m"
+      end
+
+      rows[i] = "|" .. table.concat({
+        "[[" .. name .. "]]",
+        "[[:Category:" .. category_page .. "|" .. category .. "]]",
+        dmg,
+        dmg2,
+        weapon.rpm or "",
+        dps or "",
+        weapon.reload or "",
+        cap,
+        mags,
+        weapon.recoil or "",
+        special or "",
+        projectile_type,
+        frame:expandTemplate({ title = "Armor", args = { max_ap, "AP" } }),
+        modes.semi or modes.charge or "",
+        modes.burst2 or modes.burst3 or "",
+        modes.auto or "",
+        modes["1h"] or "",
+        zooms[1] or "",
+        zooms[2] or "",
+        zooms[3] or "",
+      }, "||")
+    end
+  end
+  return table.concat(rows, "\n|-\n")
+end
+
 return p

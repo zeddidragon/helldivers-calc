@@ -27,8 +27,9 @@ function frame.expandTemplate(self, opts)
   return "{{"..opts.title.."|"..opts.args[1].."}}"
 end
 
-frame.args = {}
-local out = ""
-frame.args = { "MD-I4 Incendiary Mines" }
-out = out .. getData.attackDataTemplate(frame)
+frame.args = {
+  ["override_JAR-5_Dominator"] = "Jar-5 Dommy Mommy|500"
+}
+
+out = getData.fullWeaponTable(frame)
 print(out)

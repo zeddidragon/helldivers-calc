@@ -142,6 +142,7 @@ const allWeapons = [
   ...setup.weapon,
   ...setup.stratagem,
 ]
+let i = 0
 for(const wpn of allWeapons) {
   const reg = wikiRegister.weapon
   const type = wpn.type
@@ -162,6 +163,7 @@ for(const wpn of allWeapons) {
     }
   })
   reg[wpn.fullname] = {
+    idx: ++i,
     ...wpn,
     category: names[`wpn.category.full;${wpn.category}`],
     fullname: void 0,
