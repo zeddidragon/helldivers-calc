@@ -673,7 +673,7 @@
       "box": 1,
       "modes": ["auto"],
       "rpms": [630, 760, 900],
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 181}]
+      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 98}]
     },
     {
       "category": "SUP",
@@ -953,8 +953,8 @@
       "sourcepage": 1,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attack": [
         {"type": "explosion", "name": "Frag", "id": 138},
         {"type": "projectile", "name": "Shrapnel", "count": 30, "id": 136}
@@ -966,8 +966,8 @@
       "source": "start",
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attack": [{"type": "explosion", "name": "HighExplosive", "id": 92}]
     },
     {
@@ -977,8 +977,8 @@
       "sourcepage": 2,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attack": [{"type": "explosion", "name": "Incendiary", "id": 121}]
     },
     {
@@ -987,8 +987,8 @@
       "source": "start",
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attack": [{"type": "explosion", "name": "Impact", "id": 178}]
     },
     {
@@ -998,8 +998,8 @@
       "sourcepage": 2,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attack": [{"type": "explosion", "name": "Incendiary", "id": 121}]
     },
     {
@@ -1009,8 +1009,8 @@
       "sourcepage": 2,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attack": [{"type": "explosion", "name": "Flash", "id": 119}]
     },
     {
@@ -1020,8 +1020,8 @@
       "sourcepage": 8,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attack": []
     },
     {
@@ -1031,8 +1031,8 @@
       "sourcepage": 1,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attack": [
         {"type": "explosion", "name": "Thermite", "id": 109},
         {"type": "damage", "name": "DPS_Thermite", "id": 317}
@@ -1044,6 +1044,9 @@
       "source": "viper-commandos",
       "sourcepage": 3,
       "rounds": 8,
+      "roundstart": 6,
+      "roundsupply": 8,
+      "roundsbox": 8,
       "attack": [{"type": "damage", "name": "Impact_Throwing_Knife", "id": 388}]
     },
     {
@@ -1101,7 +1104,7 @@
       "fullname": "Patriot Gatling Gun",
       "rpm": 1200,
       "cap": 1000,
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 181}]
+      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 98}]
     },
     {
       "category": "Mounted",

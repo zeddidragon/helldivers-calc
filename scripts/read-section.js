@@ -127,6 +127,12 @@ const injuryEnums = searchWords({
   last: 'InjuryEffectType',
 })
 
+const planetEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'PlanetType_forest',
+  last: 'PlanetType',
+})
+
 const Int = {
   read: (buf, off = 0) => buf.readInt32LE(off),
   write: (buf, v, off = 0) => buf.writeInt32LE(v, off),

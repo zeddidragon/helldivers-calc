@@ -696,7 +696,7 @@ modes = ["auto"]
 rpms = [630, 760, 900]
 [[weapon.attack]]
 medium = "projectile"
-ref = "Rifle_8x60mm_apt"
+ref = "Rifle_8x60mm_fmj"
 
 [[weapon]]
 category = "SUP"
@@ -963,8 +963,8 @@ source = "hd-mobilize"
 sourcepage = 1
 rounds = 4
 roundstart = 3
-roundsupply = 4
-roundsbox = 2
+roundsupply = 2
+roundsbox = 4
 [[weapon.attack]]
 medium = "explosion"
 ref = "Frag"
@@ -975,8 +975,8 @@ fullname = "G-12 High Explosive"
 source = "start"
 rounds = 4
 roundstart = 3
-roundsupply = 4
-roundsbox = 2
+roundsupply = 2
+roundsbox = 4
 [[weapon.attack]]
 medium = "explosion"
 ref = "HighExplosive"
@@ -988,8 +988,8 @@ source = "steel-vets"
 sourcepage = 2
 rounds = 4
 roundstart = 3
-roundsupply = 4
-roundsbox = 2
+roundsupply = 2
+roundsbox = 4
 [[weapon.attack]]
 medium = "explosion"
 ref = "Incendiary"
@@ -1000,8 +1000,8 @@ fullname = "G-16 Impact"
 source = "start"
 rounds = 4
 roundstart = 3
-roundsupply = 4
-roundsbox = 2
+roundsupply = 2
+roundsbox = 4
 [[weapon.attack]]
 medium = "explosion"
 ref = "Impact"
@@ -1013,8 +1013,8 @@ source = "polar-pat"
 sourcepage = 2
 rounds = 4
 roundstart = 3
-roundsupply = 4
-roundsbox = 2
+roundsupply = 2
+roundsbox = 4
 [[weapon.attack]]
 medium = "explosion"
 ref = "Incendiary"
@@ -1026,8 +1026,8 @@ source = "cut-edge"
 sourcepage = 2
 rounds = 4
 roundstart = 3
-roundsupply = 4
-roundsbox = 2
+roundsupply = 2
+roundsbox = 4
 [[weapon.attack]]
 medium = "explosion"
 ref = "Flash"
@@ -1039,8 +1039,8 @@ source = "hd-mobilize"
 sourcepage = 8
 rounds = 4
 roundstart = 3
-roundsupply = 4
-roundsbox = 2
+roundsupply = 2
+roundsbox = 4
 
 [[weapon]]
 category = "GrSp"
@@ -1049,8 +1049,8 @@ source = "demo-det"
 sourcepage = 1
 rounds = 4
 roundstart = 3
-roundsupply = 4
-roundsbox = 2
+roundsupply = 2
+roundsbox = 4
 [[weapon.attack]]
 medium = "explosion"
 ref = "Thermite"
@@ -1064,6 +1064,9 @@ fullname = "K-2 Throwing Knife"
 source = "viper-commandos"
 sourcepage = 3
 rounds = 8
+roundstart = 6
+roundsupply = 8
+roundsbox = 8
 [[weapon.attack]]
 medium = "damage"
 ref = "Impact_Throwing_Knife"
@@ -1145,7 +1148,7 @@ rpm = 1200
 cap = 1000
 [[weapon.attack]]
 medium = "projectile"
-ref = "Rifle_8x60mm_apt"
+ref = "Rifle_8x60mm_fmj"
 
 [[weapon]]
 category = "Mounted"

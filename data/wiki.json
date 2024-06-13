@@ -19504,7 +19504,7 @@
       "box": 1,
       "modes": ["auto"],
       "rpms": [630, 760, 900],
-      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 181}]
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 98}]
     },
     "MG-206 Heavy Machine Gun": {
       "idx": 35,
@@ -19786,8 +19786,8 @@
       "sourcepage": 1,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attacks": [
         {"type": "explosion", "name": "Frag", "id": 138},
         {"type": "projectile", "name": "Shrapnel", "count": 30, "id": 136}
@@ -19799,8 +19799,8 @@
       "source": "start",
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attacks": [{"type": "explosion", "name": "HighExplosive", "id": 92}]
     },
     "G-10 Incendiary": {
@@ -19810,8 +19810,8 @@
       "sourcepage": 2,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attacks": [{"type": "explosion", "name": "Incendiary", "id": 121}]
     },
     "G-16 Impact": {
@@ -19820,8 +19820,8 @@
       "source": "start",
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attacks": [{"type": "explosion", "name": "Impact", "id": 178}]
     },
     "G-13 Incendiary Impact": {
@@ -19831,8 +19831,8 @@
       "sourcepage": 2,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attacks": [{"type": "explosion", "name": "Incendiary", "id": 121}]
     },
     "G-23 Stun": {
@@ -19842,8 +19842,8 @@
       "sourcepage": 2,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attacks": [{"type": "explosion", "name": "Flash", "id": 119}]
     },
     "G-3 Smoke": {
@@ -19853,8 +19853,8 @@
       "sourcepage": 8,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attacks": []
     },
     "G-123 Thermite": {
@@ -19864,8 +19864,8 @@
       "sourcepage": 1,
       "rounds": 4,
       "roundstart": 3,
-      "roundsupply": 4,
-      "roundsbox": 2,
+      "roundsupply": 2,
+      "roundsbox": 4,
       "attacks": [
         {"type": "explosion", "name": "Thermite", "id": 109},
         {"type": "damage", "name": "DPS_Thermite", "id": 317}
@@ -19877,6 +19877,9 @@
       "source": "viper-commandos",
       "sourcepage": 3,
       "rounds": 8,
+      "roundstart": 6,
+      "roundsupply": 8,
+      "roundsbox": 8,
       "attacks": [
         {"type": "damage", "name": "Impact_Throwing_Knife", "id": 388}
       ]
@@ -19936,7 +19939,7 @@
       "category": "Mounted Weapon",
       "rpm": 1200,
       "cap": 1000,
-      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_apt", "id": 181}]
+      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj", "id": 98}]
     },
     "Patriot Rocket Pod": {
       "idx": 69,
