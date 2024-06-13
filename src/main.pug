@@ -393,7 +393,10 @@ mixin projectilesRow(prj, opts = {})
   td.projectile.drag= prj.drag
   td.projectile.gravity= prj.gravity
   td.projectile.penslow= prj.penslow
-  td.projectile.lifetime(class={ muted: !prj.lifetime })= prj.lifetime
+  td.projectile.lifetime(class={ muted: !prj.lifetime })
+      if prj.liferandom
+        span.liferandom= prj.liferandom
+      span.lifetime= prj.lifetime
   if !opts.full
     td.projectile.name= prj.name
 
@@ -415,10 +418,18 @@ mixin explosionsHeader(opts = {})
     )
       sup= t('table.th.aoe.label.sup', 'ID')
       sub= t('table.th.aoe.label.sub', 'dmg')
-  th.explosion.radius(
-    title=t('table.th.aoe', 'radius', 'Radius Inner/Outer/Non-Damage (m)')
-    colspan=3
-  )= t('table.th.aoe.label', 'radius', 'AoE')
+  th.explosion.r1(
+    title=t('table.th.aoe', 'r1', 'Inner Radius (m)')
+  )= t('table.th.aoe.label', 'r1')
+  th.explosion.r2(
+    title=t('table.th.aoe', 'r2', 'Outer Radius (m)')
+  )= t('table.th.aoe.label', 'r2')
+  th.explosion.r3(
+    title=t('table.th.aoe', 'r3', 'Stagger Radius (m)')
+  )= t('table.th.aoe.label', 'r3')
+  th.explosion.angle(
+    title=t('table.th.aoe', 'angle', 'Cone Angle (°)')
+  )= t('table.th.aoe.label', 'angle')
 
 mixin explosionsStubRow(exp, opts = {})
   if showIds
@@ -430,7 +441,8 @@ mixin explosionsStubRow(exp, opts = {})
   td.explosion.radius.stub.r1= exp.r1.toFixed(1)
   td.explosion.radius.stub.r2.rx= exp.r2.toFixed(1)
   td.explosion.radius.stub.r3.rx= exp.r3.toFixed(1)
-  td.explosion.filler(colspan=2)
+  td.explosion.angle.stub(class={ muted: !exp.angle })= `${exp.angle}°`
+  td.explosion.filler
   td.explosion.name.stub= exp.name
 
 mixin explosionsRow(exp, opts = {})
@@ -444,6 +456,9 @@ mixin explosionsRow(exp, opts = {})
   td.explosion.radius.r1= exp.r1
   td.explosion.radius.r2.rx= exp.r2
   td.explosion.radius.r3.rx= exp.r3
+  td.explosion.angle(class={ muted: !exp.angle })
+    if exp.angle != null
+      span.explosion.angle= `${exp.angle}°`
 
 mixin beamsHeader(opts = {})
   th.beam.idx(
@@ -691,6 +706,6 @@ table
             td.damage-filler(colspan=colspans.damagesHideName)
 if scope === 'weapons'
   ul
-    li= t('explanations', 'reload', 'Reload is measured from when reticle disappears to when it comes back. Not all weapons had a reticle. Timing may be off by up to 0.1s.')
-    li= t('explanations', 'startingMagsDisclaimer', 'Starting mags for support weapons are currently unmeasured, but become max after the ship module upgrade.')
-    li= t('explanations', 'laserFire', "Laser weapons can't actually set things on fire. The data may be there to make the corpses burn.")
+    li= t('explanations', 'reload')
+    li= t('explanations', 'startingMagsDisclaimer')
+    li= t('explanations', 'laserFire')

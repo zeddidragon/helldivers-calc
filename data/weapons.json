@@ -825,6 +825,7 @@
       "attack": [
         {"medium": "projectile", "ref": "Grenade_85mm_AirburstCluster"},
         {"medium": "explosion", "ref": "Primary_Airburst"},
+        {"medium": "projectile", "ref": "AirburstCluster_Bomb", "count": 16},
         {"medium": "explosion", "ref": "AirburstCluster", "count": 8},
         {"medium": "explosion", "ref": "AirburstCluster_Bomb", "count": 8}
       ]

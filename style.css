@@ -316,7 +316,7 @@ td.effect-param:after {
 .ap-x, .ap-fire {
   padding-left: 0.5em;
 }
-.reload-one:after, .charge-early:after {
+.reload-one:after, .charge-early:after, .liferandom:after {
   color: #a98a98;
   content: "-";
 }

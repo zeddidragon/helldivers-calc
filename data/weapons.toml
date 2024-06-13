@@ -906,6 +906,10 @@ ref = "Grenade_85mm_AirburstCluster"
 medium = "explosion"
 ref = "Primary_Airburst"
 [[weapon.attack]]
+medium = "projectile"
+ref = "AirburstCluster_Bomb"
+count =  16
+[[weapon.attack]]
 medium = "explosion"
 ref = "AirburstCluster"
 count = 8

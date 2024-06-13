@@ -328,25 +328,41 @@ const liberatorFMJ = [
   0,
   0.25,
 ]
-
 const projectileSchema = {
+  // 0
   id: Int,
   ...unknowns(2, 6),
-  caliber: Float,
-  pellets: Int,
-  velocity: Float,
-  mass: Float,
-  drag: Float,
-  gravity: Float,
-  ...unknowns(13, 13, { 13: Int }),
-  lifetime: Float,
-  ...unknowns(15, 15, {}),
-  damageid: Int,
+  // 7. calibre
+  caliber: Float, 
+  // 8. num_projectiles
+  pellets: Int, 
+  // 9. speed
+  velocity: Float, 
+  // 10. mass
+  mass: Float, 
+  // 11. drag
+  drag: Float, 
+  // 12. gravity_multiplier
+  gravity: Float, 
+  // 13. simulation_steps
+  simsteps: Int, 
+  // 14. life_time
+  lifetime: Float, 
+  // 15. life_time_randomness
+  liferandom: Float, 
+  // 16. damage_info_type
+  damageid: Int, 
+  // 17. penetration_slowdown
   penslow: Float,
-  ...unknowns(18, 60, {
-    35: Float,
-    38: Float,
-    39: Int,
+  ...unknowns(18, 34, {
+    // 18-23. Particle thruster effect data
+  }),
+  xangle: Float, //  34. explosion_treshold_angle
+  ximpactid: Int, // 35. explosion_type_on_impact
+  xproximity: Float, // 36. explosion_proximity
+  xdelay: Float, // 37. explosion_delay
+  xdelayid: Int, // 38. explosion_type_expire
+  ...unknowns(40, 60, {
     42: Int,
     43: Int,
     44: Int,
@@ -371,9 +387,9 @@ const projectiles = readData({
 })
 
 const explosionSearchSchema = {
-  r1: Float,
-  r2: Float,
-  r3: Float,
+  r1: Float, // inner_radius
+  r2: Float, // outer_radius
+  r3: Float, // stagger_radius
 }
 
 const eagle500kgBomb = [
@@ -387,10 +403,14 @@ const explosionSchema = {
   id: Int,
   damageid: Int,
   ...unknowns(3, 3),
-  r1: Float,
-  r2: Float,
-  r3: Float,
-  ...unknowns(7, 28),
+  r1: Float, // 4. inner_radius
+  r2: Float, // 5. outer_radius
+  r3: Float, // 6. stagger_radius
+  angle: Float, // 7. cone_angle
+  ...unknowns(8, 18),
+  shrapnel: Int, // 19. num_shrapnel_projectiles
+  projectileid: Int, // 20. shrapnel_projectile_type
+  ...unknowns(21, 28)
 }
 
 const explosions = readData({
