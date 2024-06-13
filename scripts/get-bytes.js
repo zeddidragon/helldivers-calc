@@ -1,9 +1,8 @@
 import fs from 'fs'
-import toml from 'toml'
 import clipboard from 'clipboardy'
 import { getRefRegister } from './ref-register.js'
 
-const { weapon: weapons } = toml.parse(fs.readFileSync('data/weapons.toml'))
+const { weapons } = JSON.parse(fs.readFileSync('data/weapons.json'))
 const data = getRefRegister()
 
 let target = null
@@ -91,15 +90,15 @@ let attack = wpn.attack[0]
 if(targetIdx > 0) {
   attack = wpn.attack[targetIdx]
 } else if(target) {
-  attack = wpn.attack.find(atk => atk.medium === target)
+  attack = wpn.attack.find(atk => atk.type === target)
 }
 if(!attack) {
   throw new Error(`No attack found: ${target || 'any'}/${targetIdx || 'any'}`)
 }
 
 let schema = schemas[target || 'damage']
-let medium = data[attack.medium][attack.ref]
-if(attack.medium !== 'damage' && !target) {
+let medium = data[attack.type][attack.name]
+if(attack.type !== 'damage' && !target) {
   if(medium.damageref) {
     medium = data.damage[medium.damageref]
     if(!medium) {
@@ -107,15 +106,15 @@ if(attack.medium !== 'damage' && !target) {
     }
   } else {
     console.log(`Damage not found, defaulting to ${attack.medium} data`)
-    schema = schemas[attack.medium]
+    schema = schemas[attack.type]
   }
-} else if(attack.medium !== target && target === 'damage') {
+} else if(attack.type !== target && target === 'damage') {
   medium = data.damage[medium.damageref]
   if(!medium) {
     throw new Error(`Damage not found: ${medium.damageref}`)
   }
-} else if(attack.medium !== 'damage') {
-  schema = schemas[attack.medium]
+} else if(attack.type !== 'damage') {
+  schema = schemas[attack.type]
 }
 if(!medium) {
   throw new Error('Target not found')
