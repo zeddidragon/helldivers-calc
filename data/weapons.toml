@@ -82,7 +82,7 @@ scopes = [25, 50, 100]
 attachments = ["flashlight"]
 [[weapon.attack]]
 medium = "projectile"
-ref = "Rifle_5p5x50mm_fmj"
+ref = "Rifle_Rico"
 
 [[weapon]]
 category = "AR"
@@ -104,7 +104,7 @@ scopes = [25, 50, 100]
 attachments = ["flashlight"]
 [[weapon.attack]]
 medium = "projectile"
-ref = "Rifle_8x60mm_fmj"
+ref = "Battle_Rifle"
 
 [[weapon]]
 category = "DMR"
@@ -484,7 +484,7 @@ box = 3
 modes = ["charge"]
 [[weapon.attack]]
 medium = "projectile"
-ref = "Plasma_Bolt_Large"
+ref = "Plasma_Rifle_Charge"
 
 [[weapon]]
 category = "HG"
@@ -642,12 +642,12 @@ stratcode = "dldur"
 calltime = 3
 cooldown = 480
 rpm = 900
-reload = 5
+reload = 5.0
 reloadearly = 4.2
 cap = 150
 capplus = 1
-mags = 2
-magstart = 1
+mags = 3
+magstart = 2
 supply = 1
 box = 1
 modes = ["auto"]
@@ -663,9 +663,9 @@ source = "support"
 stratcode = "dludd"
 calltime = 3
 cooldown = 480
-rpm = 950
-reload = 7.2
-reloadearly = 5
+rpm = 750
+reload = 5.5
+reloadearly = 3.9
 cap = 75
 capplus = 1
 mags = 2
@@ -673,7 +673,7 @@ magstart = 1
 supply = 2
 box = 1
 modes = ["auto"]
-rpms = [450, 750, 950]
+rpms = [450, 600, 750]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_12p5x100mm_bchp"

@@ -449,8 +449,8 @@ const tripodEye = [
   0,
   7, // Try updating this  with tripod eye's ID if it changes
   0,
-  1000, // Range?
-  323,
+  1000, // Range
+  330, // Damage ID, likely to break
   0,
 ]
 
@@ -506,9 +506,7 @@ const blitzer = [
   10,
   1,
   0,
-  117,
-  0,
-  0,
+  0x79, // Damage ID, likely to break
 ]
 
 const arcs = readData({
