@@ -333,9 +333,6 @@ modes = ["semi"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Crossbow_Bolt_exp"
-[[weapon.attack]]
-medium = "explosion"
-ref = "Crossbow_Bolt"
 
 [[weapon]]
 category = "EX"
@@ -381,9 +378,6 @@ attachments = ["flashlight"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Rocket_JarPhoenix_20mm"
-[[weapon.attack]]
-medium = "explosion"
-ref = "JarPhoenix_20mm"
 
 [[weapon]]
 category = "NRG"
@@ -401,9 +395,6 @@ box = 4
 [[weapon.attack]]
 medium = "projectile"
 ref = "Plasma_Punisher_Projectile"
-[[weapon.attack]]
-medium = "explosion"
-ref = "Punisher_Plasma_Explosion"
 
 [[weapon]]
 category = "NRG"
@@ -476,9 +467,6 @@ modes = ["semi"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Plasma_Bolt_Medium"
-[[weapon.attack]]
-medium = "explosion"
-ref = "Plasma_Bolt_Medium"
 
 [[weapon]]
 category = "NRG"
@@ -496,9 +484,6 @@ box = 3
 modes = ["charge"]
 [[weapon.attack]]
 medium = "projectile"
-ref = "Plasma_Bolt_Large"
-[[weapon.attack]]
-medium = "explosion"
 ref = "Plasma_Bolt_Large"
 
 [[weapon]]
@@ -584,9 +569,6 @@ tags = ["1h"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Grenade_40mm_HEAT"
-[[weapon.attack]]
-medium = "explosion"
-ref = "Grenade_40mm_HE_MK2"
 
 [[weapon]]
 category = "HG"
@@ -635,6 +617,8 @@ category = "SUP"
 fullname = "M-105 Stalwart"
 source = "support"
 stratcode = "dlduul"
+calltime = 3
+cooldown = 480
 rpm = 1150
 reload = 5.8
 reloadearly = 4.4
@@ -655,6 +639,8 @@ category = "SUP"
 fullname = "MG-43 Machine Gun"
 source = "support"
 stratcode = "dldur"
+calltime = 3
+cooldown = 480
 rpm = 900
 reload = 5
 reloadearly = 4.2
@@ -675,6 +661,8 @@ category = "SUP"
 fullname = "MG-206 Heavy Machine Gun"
 source = "support"
 stratcode = "dludd"
+calltime = 3
+cooldown = 480
 rpm = 950
 reload = 7.2
 reloadearly = 5
@@ -695,6 +683,8 @@ category = "SUP"
 fullname = "ARC-3 Arc Thrower"
 source = "support"
 stratcode = "drdull"
+calltime = 3
+cooldown = 480
 rpm = 60
 charge = 1
 modes = ["charge"]
@@ -707,6 +697,8 @@ category = "SUP"
 fullname = "FLAM-40 Flamethrower"
 source = "support"
 stratcode = "dludu"
+calltime = 3
+cooldown = 480
 reload = 3.9
 mags = 4
 magstart = 3
@@ -724,6 +716,8 @@ category = "SUP"
 fullname = "APW-1 Anti-Materiel Rifle"
 source = "support"
 stratcode = "dlrud"
+calltime = 3
+cooldown = 480
 rpm = 350
 reload = 3.2
 reloadearly = 2.6
@@ -744,6 +738,8 @@ category = "SUP"
 fullname = "GL-21 Grenade Launcher"
 source = "support"
 stratcode = "dluld"
+calltime = 3
+cooldown = 480
 reload = 3.5
 reloadearly = 3
 cap = 10
@@ -756,15 +752,14 @@ modes = ["semi"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Grenade_40mm_HE"
-[[weapon.attack]]
-medium = "explosion"
-ref = "Grenade_40mm_HE"
 
 [[weapon]]
 category = "SUP"
 fullname = "AC-8 Autocannon"
 source = "support"
 stratcode = "dlduur"
+calltime = 3
+cooldown = 480
 rpm = 250
 reload = 5.2
 reloadearly = 1.7
@@ -778,15 +773,14 @@ modes = ["semi", "auto"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Cannon_20mm_APHET"
-[[weapon.attack]]
-medium = "explosion"
-ref = "APHET_20mm"
 
 [[weapon]]
 category = "SUP"
 fullname = "RS-422 Railgun"
 source = "support"
 stratcode = "drdulr"
+calltime = 3
+cooldown = 480
 chargeearly = 0.5
 charge = 3
 chargefactor = 1.5
@@ -806,6 +800,8 @@ category = "SUP"
 fullname = "LAS-98 Laser Cannon"
 source = "support"
 stratcode = "dldul"
+calltime = 3
+cooldown = 480
 reload = 3.6
 reloadearly = 5
 mags = 1
@@ -824,14 +820,13 @@ category = "SUP"
 fullname = "LAS-99 Quasar Cannon"
 source = "support"
 stratcode = "ddulr"
+calltime = 3
+cooldown = 480
 charge = 3.1
 reload = 15
 modes = ["charge"]
 [[weapon.attack]]
 medium = "projectile"
-ref = "Laser_Pulse"
-[[weapon.attack]]
-medium = "explosion"
 ref = "Laser_Pulse"
 
 [[weapon]]
@@ -839,14 +834,13 @@ category = "SUP"
 fullname = "EAT-17 Expendable Anti-Tank"
 source = "support"
 stratcode = "ddlur"
+calltime = 3
+cooldown = 480
 cap = 1
 rounds = 0
 modes = ["semi"]
 [[weapon.attack]]
 medium = "projectile"
-ref = "Grenade_75mm_HEAT"
-[[weapon.attack]]
-medium = "explosion"
 ref = "Grenade_75mm_HEAT"
 
 [[weapon]]
@@ -854,6 +848,8 @@ category = "SUP"
 fullname = "GR-8 Recoilless Rifle"
 source = "support"
 stratcode = "dlrrl"
+calltime = 3
+cooldown = 480
 reload = 6
 cap = 1
 rounds = 5
@@ -864,15 +860,14 @@ modes = ["semi"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Grenade_85mm_HEAT"
-[[weapon.attack]]
-medium = "explosion"
-ref = "Grenade_85mm_HEAT"
 
 [[weapon]]
 category = "SUP"
 fullname = "FAF-14 Spear"
 source = "support"
 stratcode = "ddudd"
+calltime = 3
+cooldown = 480
 reload = 5
 cap = 1
 rounds = 3
@@ -883,15 +878,14 @@ modes = ["lockon"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Missile_Faf"
-[[weapon.attack]]
-medium = "explosion"
-ref = "FafMissile"
 
 [[weapon]]
 category = "SUP"
 fullname = "RL-77 Airburst Rocket Launcher"
 source = "support"
 stratcode = "duulr"
+calltime = 3
+cooldown = 480
 reload = 6.7
 cap = 1
 rounds = 5
@@ -902,21 +896,6 @@ modes = ["semi"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Grenade_85mm_AirburstCluster"
-[[weapon.attack]]
-medium = "explosion"
-ref = "Primary_Airburst"
-[[weapon.attack]]
-medium = "projectile"
-ref = "AirburstCluster_Bomb"
-count =  16
-[[weapon.attack]]
-medium = "explosion"
-ref = "AirburstCluster"
-count = 8
-[[weapon.attack]]
-medium = "explosion"
-ref = "AirburstCluster_Bomb"
-count = 8
 
 [[weapon]]
 category = "SUP"
@@ -947,10 +926,6 @@ roundsbox = 2
 [[weapon.attack]]
 medium = "explosion"
 ref = "Frag"
-[[weapon.attack]]
-medium = "projectile"
-ref = "Shrapnel"
-count = 30
 
 [[weapon]]
 category = "GR"
@@ -1128,9 +1103,6 @@ rpm = 90
 [[weapon.attack]]
 medium = "projectile"
 ref = "Missile_Combat_Walker"
-[[weapon.attack]]
-medium = "explosion"
-ref = "Combat_Walker_Missile"
 
 [[weapon]]
 category = "Mounted"
@@ -1140,9 +1112,6 @@ rpm = 120
 [[weapon.attack]]
 medium = "projectile"
 ref = "Cannon_30mm_APHE"
-[[weapon.attack]]
-medium = "explosion"
-ref = "APHE_30mm"
 
 [[stratagem]]
 category = "Backpack"
@@ -1323,9 +1292,6 @@ cap = 36
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Grenade_Mortar_40mm_HE"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "Grenade_Mortar_40mm_HE"
 
 [[stratagem]]
 category = "Emplacement"
@@ -1340,9 +1306,6 @@ cap = 15
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Grenade_Mortar_40mm_Staticfield"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "Grenade_Mortar_40mm_Staticfield"
 
 [[stratagem]]
 category = "Emplacement"
@@ -1355,9 +1318,6 @@ cooldown = 180
 cap = 36
 [[stratagem.attack]]
 medium = "projectile"
-ref = "Rocket_70mm_turret"
-[[stratagem.attack]]
-medium = "explosion"
 ref = "Rocket_70mm_turret"
 
 [[stratagem]]
@@ -1372,9 +1332,6 @@ cap = 24
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_40mm_APHE"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "APHE_40mm"
 
 [[stratagem]]
 category = "Emplacement"
@@ -1398,9 +1355,6 @@ salvos = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Precision_Strike"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "PrecisionStrike"
 
 [[stratagem]]
 category = "Orbital"
@@ -1412,9 +1366,6 @@ salvos = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Gas"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "OrbitalGas"
 
 [[stratagem]]
 category = "Orbital"
@@ -1434,17 +1385,6 @@ salvos = 3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Cannon_110mm"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "OrbitalShot"
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Shrapnel_Heavy"
-count=12
-[[stratagem.attack]]
-medium = "explosion"
-ref = "HeavyShrapnel"
-count=12
 
 [[stratagem]]
 category = "Orbital"
@@ -1456,9 +1396,6 @@ salvos = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Stunround"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "OrbitalStun"
 
 [[stratagem]]
 category = "Orbital"
@@ -1471,9 +1408,6 @@ cap = 30
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_Eagle_23mm"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "Cannon_23mm"
 
 [[stratagem]]
 category = "Orbital"
@@ -1486,9 +1420,6 @@ cap =  3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Cannon_120mm_HE"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "OrbitalStrike"
 
 [[stratagem]]
 category = "Orbital"
@@ -1501,9 +1432,6 @@ cap =  3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Cannon_380mm_HE"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "OrbitalBarrage"
 
 [[stratagem]]
 category = "Orbital"
@@ -1516,9 +1444,6 @@ cap = 3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Cannon_380mm_HE"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "OrbitalBarrage"
 
 [[stratagem]]
 category = "Orbital"
@@ -1542,9 +1467,6 @@ salvos = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Railcannon"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "Railcannon_Impact"
 
 [[stratagem]]
 category = "Eagle"
@@ -1556,9 +1478,6 @@ cap = 6
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_100kg"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "EagleBomb_100kg"
 
 [[stratagem]]
 category = "Eagle"
@@ -1570,9 +1489,6 @@ cap = 4
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_Napalm"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "EagleBomb_Napalm"
 
 [[stratagem]]
 category = "Eagle"
@@ -1584,12 +1500,6 @@ cap = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_500kg"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "Bomb_Impact"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "EagleBomb_500kg"
 
 [[stratagem]]
 category = "Eagle"
@@ -1600,9 +1510,6 @@ eaglestock = 3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_Eagle_23mm"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "Cannon_23mm"
 
 [[stratagem]]
 category = "Eagle"
@@ -1621,10 +1528,6 @@ ref = "ClusterBomb"
 medium = "projectile"
 ref = "ClusterBomb_Bomb"
 count = 8
-[[stratagem.attack]]
-medium = "explosion"
-ref = "HeavyShrapnel_Clusterbombs"
-count = 8
 
 [[stratagem]]
 category = "Eagle"
@@ -1635,9 +1538,6 @@ eaglestock = 2
 cap = 3
 [[stratagem.attack]]
 medium = "projectile"
-ref = "Rocket_110mm"
-[[stratagem.attack]]
-medium = "explosion"
 ref = "Rocket_110mm"
 
 [[stratagem]]
@@ -1650,9 +1550,6 @@ cap = 8
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_Smoke"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "Bomb_Impact_Smoke"
 
 [[stratagem]]
 category = "Vehicle"
@@ -1719,9 +1616,6 @@ cooldown = 15
 [[stratagem.attack]]
 medium = "projectile"
 ref = "SEAF_Gun_Explosive"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "SEAF_Gun_Explosive"
 
 [[stratagem]]
 category = "Mission"
@@ -1731,9 +1625,6 @@ calltime = 0
 cooldown = 15
 [[stratagem.attack]]
 medium = "projectile"
-ref = "SEAF_Gun_High_Yield_Explosive"
-[[stratagem.attack]]
-medium = "explosion"
 ref = "SEAF_Gun_High_Yield_Explosive"
 
 [[stratagem]]
@@ -1745,9 +1636,6 @@ cooldown = 15
 [[stratagem.attack]]
 medium = "projectile"
 ref = "SEAF_Gun_Mini_Nuke"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "SEAF_Gun_Mini_Nuke"
 
 [[stratagem]]
 category = "Mission"
@@ -1757,9 +1645,6 @@ calltime = 0
 cooldown = 15
 [[stratagem.attack]]
 medium = "projectile"
-ref = "SEAF_Gun_Smoke"
-[[stratagem.attack]]
-medium = "explosion"
 ref = "SEAF_Gun_Smoke"
 
 [[stratagem]]
@@ -1771,9 +1656,6 @@ cooldown = 15
 [[stratagem.attack]]
 medium = "projectile"
 ref = "SEAF_Gun_Napalm"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "SEAF_Gun_Napalm"
 
 [[stratagem]]
 category = "Mission"
@@ -1783,7 +1665,4 @@ calltime = 0
 cooldown = 15
 [[stratagem.attack]]
 medium = "projectile"
-ref = "SEAF_Gun_EMP"
-[[stratagem.attack]]
-medium = "explosion"
 ref = "SEAF_Gun_EMP"

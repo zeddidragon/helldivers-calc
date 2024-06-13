@@ -1,7 +1,6 @@
 import fs from 'fs'
 import toml from 'toml'
 import json from 'json-stringify-pretty-compact'
-
 function read(file) {
   return JSON.parse(fs.readFileSync(`data/${file}.json`))
 }
@@ -138,6 +137,46 @@ for(const prop of Object.keys(wikiRegister)) {
   }
 }
 
+function unrollAttack(attack) {
+  const unrolled = [attack]
+  const {
+    type,
+    name,
+    count,
+    id,
+  } = attack
+  const obj = register[type][id]
+  if(obj?.shrapnel && obj?.projectileid) {
+    const projectile = register.projectile[obj.projectileid]
+    unrolled.push(...unrollAttack({
+      type: 'projectile',
+      name: projectile.enum,
+      count: obj.shrapnel,
+      id: projectile.id,
+    }))
+  }
+  if(obj?.ximpactid) {
+    const explosion = register.explosion[obj.ximpactid]
+    unrolled.push(...unrollAttack({
+      type: 'explosion',
+      name: explosion.enum,
+      count,
+      id: explosion.id,
+    }))
+  }
+  if(obj?.xdelayid && obj.xdelayid !== obj.ximpactid) {
+    const explosion = register.explosion[obj.xdelayid]
+    unrolled.push(...unrollAttack({
+      type: 'explosion',
+      name: explosion.enum,
+      count,
+      id: explosion.id,
+    }))
+  }
+
+  return unrolled
+}
+
 const allWeapons = [
   ...setup.weapon,
   ...setup.stratagem,
@@ -152,16 +191,17 @@ for(const wpn of allWeapons) {
     || wpn.explosionid
     || wpn.damageid
   refRegister[atkKey('weapon', wpn.fullname)] = wpn
-  const attacks = (wpn.attack || []).map(atk => {
+  const attacks = (wpn.attack || []).flatMap(atk => {
     const key = atkKey(atk.medium, atk.ref)
     const obj = refRegister[key]
-    return {
+    return unrollAttack({
       type: atk.medium,
       name: atk.ref,
       count: atk.count,
       id: obj.id,
-    }
+    })
   })
+  wpn.attack = attacks
   reg[wpn.fullname] = {
     idx: ++i,
     ...wpn,

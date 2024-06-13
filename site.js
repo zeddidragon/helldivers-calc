@@ -191,8 +191,8 @@ window.locals = {
     damages: 5,
     damagesHideName: 20,
     weapons: 11,
-    explosions: 3,
-    projectiles: 8,
+    explosions: 4,
+    projectiles: 10,
   },
   full: {
     full: true,
@@ -430,7 +430,7 @@ async function loadData() {
     const [, code, name] = /^(\w+-\d+\w*) (.*)$/.exec(wpn.fullname) || []
     let shotdmg = 0
     let shotdmg2 = 0
-    let subobjects = wpn.attack?.map(({ medium: type, ref, count }) => {
+    let subobjects = wpn.attack?.map(({ type, name: ref, count }) => {
       const obj = byRef[type][ref]
       const damage = obj.damage
       const n = (count || 1) * (obj.pellets || 1)
@@ -578,7 +578,7 @@ async function loadData() {
     let shotdmg = 0
     let shotdmg2 = 0
     let maxRadius = [0, 0, 0]
-    let subobjects = strat.attack?.map(({ medium: type, ref, count }) => {
+    let subobjects = strat.attack?.map(({ type, name: ref, count }) => {
       const obj = byRef[type][ref]
       const damage = obj.damage
       const n = (count || obj.pellets || 1)

@@ -229,7 +229,7 @@ td.name {
   color: #ea8;
   padding-left: 0.1em;
 }
-td.id:before, td.damageid:before, td.projectileid:before {
+td.id:before, td.damageid:before, td.projectileid:before, td.ximpactid:before, td.xdelayid:before {
   color: #a98a98;
   content: "0x";
   font-size: 0.7em;
@@ -240,6 +240,10 @@ td.id:before, td.damageid:before, td.projectileid:before {
 }
 .damage-x, .xdmg, .name.name-explosion, .stub.explosion, .stub.radius {
   color: #ea8;
+}
+span.explosion.shrapnel:before {
+  color: #a98a98;
+  content: "x";
 }
 .beam.stub, .shield.stub {
   color: #ee8;

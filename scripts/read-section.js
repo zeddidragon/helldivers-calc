@@ -357,11 +357,11 @@ const projectileSchema = {
   ...unknowns(18, 34, {
     // 18-23. Particle thruster effect data
   }),
-  xangle: Float, //  34. explosion_treshold_angle
-  ximpactid: Int, // 35. explosion_type_on_impact
-  xproximity: Float, // 36. explosion_proximity
-  xdelay: Float, // 37. explosion_delay
-  xdelayid: Int, // 38. explosion_type_expire
+  xangle: Float, //  33. explosion_treshold_angle
+  ximpactid: Int, // 34. explosion_type_on_impact
+  xproximity: Float, // 35. explosion_proximity
+  xdelay: Float, // 36. explosion_delay
+  xdelayid: Int, // 37. explosion_type_expire
   ...unknowns(40, 60, {
     42: Int,
     43: Int,

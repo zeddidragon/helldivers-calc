@@ -373,6 +373,26 @@ mixin projectilesHeader(opts = {})
   th.projectile.lifetime(
     title=t('table.th.prj', 'lifetime', 'Lifetime (s)')
   )= t('table.th.prj.label', 'lifetime', 'l')
+  th.projectile.xangle(
+    title=t('table.th.prj', 'xangle')
+  )= t('table.th.prj.label', 'xangle')
+  th.projectile.xproximity(
+    title=t('table.th.prj', 'xproximity')
+  )= t('table.th.prj.label', 'xproximity')
+  if opts.full
+    th.projectile.ximpactid(
+      title=t('table.th.prj', 'ximpactid', 'ID of explosion on impact (hex)')
+    )
+      sup= t('table.th.prj.label.sup', 'ximpactid')
+      sub= t('table.th.prj.label.sub', 'ximpactid')
+    th.projectile.xdelay(
+      title=t('table.th.prj', 'xdelay')
+    )= t('table.th.prj.label', 'xdelay')
+    th.projectile.xdelayid(
+      title=t('table.th.prj', 'xdelayid', 'ID of explosion on delay (hex)')
+    )
+      sup= t('table.th.prj.label.sup', 'xdelayid')
+      sub= t('table.th.prj.label.sub', 'xdelayid')
   if !opts.full
     th.projectile.name(
       title=t('table.th.prj', 'name', 'Translated name of projectile')
@@ -397,6 +417,12 @@ mixin projectilesRow(prj, opts = {})
       if prj.liferandom
         span.liferandom= prj.liferandom
       span.lifetime= prj.lifetime
+  td.projectile.xangle(class={ muted: !prj.xangle })= `${prj.xangle}°`
+  td.projectile.xproximity(class={ muted: !prj.xproximity })= prj.xproximity
+  if opts.full
+    td.projectile.ximpactid= id(prj, 'ximpactid')
+    td.projectile.xdelay(class={ muted: !prj.xdelay })= prj.xdelay
+    td.projectile.xdelayid= id(prj, 'xdelayid')
   if !opts.full
     td.projectile.name= prj.name
 
@@ -416,8 +442,8 @@ mixin explosionsHeader(opts = {})
     th.explosion.damageid(
       title=t('table.th.aoe', 'damageid', 'ID of damage data used (hex)')
     )
-      sup= t('table.th.aoe.label.sup', 'ID')
-      sub= t('table.th.aoe.label.sub', 'dmg')
+      sup= t('table.th.aoe.label.sup', 'damageid')
+      sub= t('table.th.aoe.label.sub', 'damageid')
   th.explosion.r1(
     title=t('table.th.aoe', 'r1', 'Inner Radius (m)')
   )= t('table.th.aoe.label', 'r1')
@@ -430,6 +456,15 @@ mixin explosionsHeader(opts = {})
   th.explosion.angle(
     title=t('table.th.aoe', 'angle', 'Cone Angle (°)')
   )= t('table.th.aoe.label', 'angle')
+  if opts.full
+    th.explosion.shrapnel(
+      title=t('table.th.aoe', 'shrapnel', 'Amount of Shrapnel Released')
+    )= t('table.th.aoe.label', 'shrapnel')
+    th.explosion.shrapnelid(
+      title=t('table.th.aoe', 'shrapnelid', 'ID of shrapnel projectile used (hex)')
+    )
+      sup= t('table.th.aoe.label.sup', 'shrapnelid')
+      sub= t('table.th.aoe.label.sub', 'shrapnelid')
 
 mixin explosionsStubRow(exp, opts = {})
   if showIds
@@ -442,7 +477,7 @@ mixin explosionsStubRow(exp, opts = {})
   td.explosion.radius.stub.r2.rx= exp.r2.toFixed(1)
   td.explosion.radius.stub.r3.rx= exp.r3.toFixed(1)
   td.explosion.angle.stub(class={ muted: !exp.angle })= `${exp.angle}°`
-  td.explosion.filler
+  td.explosion.filler(colspan=3)
   td.explosion.name.stub= exp.name
 
 mixin explosionsRow(exp, opts = {})
@@ -459,6 +494,9 @@ mixin explosionsRow(exp, opts = {})
   td.explosion.angle(class={ muted: !exp.angle })
     if exp.angle != null
       span.explosion.angle= `${exp.angle}°`
+  if opts.full
+    td.explosion.shrapnel(class={ muted: !exp.shrapnel })= exp.shrapnel
+    td.explosion.projectileid(class={ muted: !exp.projectileid })= id(exp, 'projectileid')
 
 mixin beamsHeader(opts = {})
   th.beam.idx(
@@ -495,7 +533,7 @@ mixin beamsStubRow(beam, opts = {})
     title=t('table.th.beam', 'range', 'Beam range (m)')
   )= t('table.td.beam.label', 'range', 'Beam')
   td.beam.range.stub= beam.range
-  td.beam.filler(colspan=5)
+  td.beam.filler(colspan=7)
   td.beam.name.stub= beam.name
 
 mixin arcsHeader(opts = {})
@@ -553,7 +591,7 @@ mixin arcsStubRow(arc, opts = {})
   td.arc.range.stub= arc.range
   td.arc.aimangle.stub= `${arc.aimangle}°`
   td.arc.chainangle.stub= `${arc.chainangle}°`
-  td.arc.filler(colspan=2)
+  td.arc.filler(colspan=4)
   td.arc.name.stub= arc.name
 
 mixin damagesHeader(opts = {})
