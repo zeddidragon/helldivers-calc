@@ -19339,9 +19339,7 @@
       "roundsbox": 15,
       "modes": ["semi", "burst3"],
       "tags": ["1h"],
-      "attacks": [
-        {"type": "projectile", "name": "TripleBarrelShotgun_10g_buc", "id": 196}
-      ]
+      "attacks": [{"type": "projectile", "name": "Shotgun_10g_buc", "id": 174}]
     },
     "P-2 Peacemaker": {
       "idx": 27,

@@ -526,7 +526,7 @@ modes = ["semi", "burst3"]
 tags = ["1h"]
 [[weapon.attack]]
 medium = "projectile"
-ref = "TripleBarrelShotgun_10g_buc"
+ref = "Shotgun_10g_buc"
 
 [[weapon]]
 category = "HG"

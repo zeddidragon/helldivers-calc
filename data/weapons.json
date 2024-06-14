@@ -510,9 +510,7 @@
       "roundsbox": 15,
       "modes": ["semi", "burst3"],
       "tags": ["1h"],
-      "attack": [
-        {"type": "projectile", "name": "TripleBarrelShotgun_10g_buc", "id": 196}
-      ]
+      "attack": [{"type": "projectile", "name": "Shotgun_10g_buc", "id": 174}]
     },
     {
       "category": "HG",
