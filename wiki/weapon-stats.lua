@@ -646,4 +646,87 @@ function p.fullWeaponTable(frame)
   return table.concat(rows, "\n|-\n")
 end
 
+function getTotalDamage(weapon)
+  local total = 0
+  for _, attack in ipairs(weapon.attacks or {}) do
+    local obj = data[attack.type][attack.name]
+    local damage = data.damage[obj.damage_name]
+    if attack.type == "damage" then
+      damage = obj
+    end
+    if damage then
+      total = total + damage.dmg * (obj.pellets or 1) * (attack.count or 1)
+    end
+  end
+  return total
+end
+
+local getters = {
+  total_damage = getTotalDamage,
+  max_ap = function(weapon)
+    local max = 0
+    for _, attack in ipairs(weapon.attacks or {}) do
+      local obj = data[attack.type][attack.name]
+      local damage = data.damage[obj.damage_name]
+      if attack.type == "damage" then
+        damage = obj
+      end
+      if damage and damage.ap1 > max then
+        max = damage.ap1
+      end
+    end
+    return max
+  end,
+  capacity = function(weapon)
+    return weapon.cap
+  end,
+  recoil = function(weapon)
+    return weapon.recoil
+  end,
+  dps = function(weapon)
+    if not weapon.rpm then
+      return ""
+    end
+    if not weapon.cap or weapon.cap < 2 then
+      return ""
+    end
+    return math.floor(getTotalDamage(weapon) * weapon.rpm / 60)
+  end,
+  fire_rate = function(weapon)
+    if weapon.chargeearly then
+      return math.floor(60 / weapon.chargeearly)
+    end
+    if weapon.charge then
+      return math.floor(60 / weapon.charge)
+    end
+    return weapon.rpm
+  end,
+  spare_ammo = function(weapon)
+    if weapon.rounds then
+      return weapon.rounds .. " Rounds"
+    end
+    if weapon.clips then
+      return weapon.clips .. " Clips"
+    end
+    if weapon.mags then
+      return weapon.mags .. " Magazines"
+    end
+  end,
+}
+
+function p.get(frame)
+  local PAGENAME = mw.title.getCurrentTitle().prefixedText
+  local args = getArgs(frame, { removeBlanks = false })
+  local property = args[1]
+  local weapon = data.weapon[PAGENAME]
+  if not weapon then
+    return "" -- Omit error message. It looks bad if exposed to users.
+  end
+  local getter = getters[property]
+  if not getter then
+    return "" -- Omit error message. It looks bad if exposed to users.
+  end
+  return getter(weapon)
+end
+
 return p

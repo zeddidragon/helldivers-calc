@@ -1428,10 +1428,10 @@
       "calltime": 2,
       "cooldown": 80,
       "salvos": 4,
-      "cap": 30,
+      "cap": 60,
       "attack": [
-        {"type": "projectile", "name": "Cannon_Eagle_23mm", "id": 13},
-        {"type": "explosion", "name": "Cannon_23mm_silent", "id": 134}
+        {"type": "projectile", "name": "Cannon_20mm_HE", "id": 119},
+        {"type": "explosion", "name": "HE_20mm", "id": 66}
       ]
     },
     {

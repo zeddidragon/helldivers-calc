@@ -1459,10 +1459,10 @@ stratcode = "rdluu"
 calltime = 2
 cooldown = 80
 salvos = 4
-cap = 30
+cap = 60
 [[stratagem.attack]]
 medium = "projectile"
-ref = "Cannon_Eagle_23mm"
+ref = "Cannon_20mm_HE"
 
 [[stratagem]]
 category = "Orbital"
