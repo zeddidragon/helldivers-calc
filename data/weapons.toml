@@ -1462,7 +1462,7 @@ salvos = 4
 cap = 60
 [[stratagem.attack]]
 medium = "projectile"
-ref = "Cannon_20mm_HE"
+ref = "Cannon_Eagle_23mm"
 
 [[stratagem]]
 category = "Orbital"
