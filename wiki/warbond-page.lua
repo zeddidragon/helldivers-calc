@@ -38,7 +38,7 @@ local cellCallbacks = {
   title = cellCbPassthrough,
 }
 
-function renderCell(cell)
+function renderCell(cell, frame)
   local x = cell.x or 1
   local y = cell.y or 1
   local w = cell.w or 1
@@ -47,6 +47,7 @@ function renderCell(cell)
   local y2 = y + h
   local contents = 'Image and link missing'
   local title = ""
+  local medal_container = ""
 
   if cell.image and cell.link then
     contents = '[[File:' .. cell.image .. '|link=' .. cell.link .. ']]'
@@ -64,6 +65,12 @@ function renderCell(cell)
 
   if cell.medals then
     title = title .. ' (' .. cell.medals .. ' Medals)'
+    medal_container = '<div class="warbond-cell-medals-container">'
+      .. frame:expandTemplate({
+          title = 'Currency',
+          args = { 'Medals', cell.medals, 'notext' }
+        })
+      .. '</div>'
   end
 
   return '<div class="warbond-cell'
@@ -74,7 +81,10 @@ function renderCell(cell)
     .. ' warbond-cell-w-' .. w
     .. ' warbond-cell-h-' .. h
     .. '" title="' .. title
-    .. '">' .. contents .. '</div>'
+    .. '">'
+      .. medal_container
+      .. contents
+    .. '</div>'
 end
 
 function p.templateWarbondPage(frame)
@@ -89,7 +99,7 @@ function p.templateWarbondPage(frame)
   for key, line in pairs(args) do
     if line == '-' then -- Start new cell
       if is_cell_data then
-        out = out .. renderCell(cell) .. '\n'
+        out = out .. renderCell(cell, frame) .. '\n'
         total_medal_cost = total_medal_cost + (cell.medals or 0)
       end
       cell = {}
@@ -107,7 +117,7 @@ function p.templateWarbondPage(frame)
   end
 
   if is_cell_data then
-    out = out .. renderCell(cell) .. '\n'
+    out = out .. renderCell(cell, frame) .. '\n'
   end
 
   out = '<div class="warbond-page">\n'
@@ -121,7 +131,7 @@ function p.templateWarbondPage(frame)
     }) .. '</p>\n' .. out
   end
 
-  out = '<p>Total cost of the page: ' .. frame:expandTemplate({
+  out = '<p>Total cost of page: ' .. frame:expandTemplate({
     title = 'Currency',
     args = { 'Medal', total_medal_cost, 'notext' },
   }) .. '</p>\n' .. out
