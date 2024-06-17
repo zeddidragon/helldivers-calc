@@ -264,7 +264,7 @@
       "param4": 0,
       "name": "Illuminate Lightningbolt",
       "element_name": "Arc",
-      "status_name": " ?Downed Stim Heal"
+      "status_name": "Stun Small"
     },
     "Projectile_Illuminate_Lightspear": {
       "dmg": 75,
@@ -329,7 +329,7 @@
       "param4": 0,
       "name": "Illuminate Turret tesla",
       "element_name": "Arc",
-      "status_name": " ?Downed Stim Heal"
+      "status_name": "Stun Small"
     },
     "Projectile_Illuminate_Observer_Lightning": {
       "dmg": 10,
@@ -352,7 +352,7 @@
       "param4": 0,
       "name": "Illuminate Observer Lightning",
       "element_name": "Arc",
-      "status_name": " ?Downed Stim Heal"
+      "status_name": "Stun Small"
     },
     "Projectile_Illuminate_Squidgun": {
       "dmg": 10,
@@ -375,7 +375,7 @@
       "param4": 0,
       "name": "Illuminate Squidgun",
       "element_name": "Arc",
-      "status_name": " ?Downed Stim Heal"
+      "status_name": "Stun Small"
     },
     "Projectile_Illuminate_Tripod_Lightning": {
       "dmg": 20,
@@ -398,7 +398,7 @@
       "param4": 0,
       "name": "Illuminate Tripod Lightning",
       "element_name": "Arc",
-      "status_name": " ?Downed Stim Heal"
+      "status_name": "Stun Small"
     },
     "Projectile_Laser_Long": {
       "dmg": 55,
@@ -525,7 +525,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Railgun Stun",
-      "status_name": " ?Downed Stim Heal"
+      "status_name": "Stun Small"
     },
     "Projectile_Pistol_9x20mm_exp": {
       "dmg": 60,
@@ -912,7 +912,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Pistol 12x25mm Stun",
-      "status_name": " ?Downed Stim Heal"
+      "status_name": "Stun Small"
     },
     "Projectile_Pistol_Magnum": {
       "dmg": 125,
@@ -1734,7 +1734,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Rocket 15x100mm EMP",
-      "status_name": "Downed Stim Visual"
+      "status_name": "Stun Medium"
     },
     "Projectile_Rocket_15x100mm_exp": {
       "dmg": 230,
@@ -3681,7 +3681,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Explosion Hand Grenade Flash",
-      "status_name": "Downed Stim Visual"
+      "status_name": "Stun Medium"
     },
     "Explosion_Projectile_Grenade_40mm_Stun": {
       "dmg": 0,
@@ -3703,7 +3703,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Explosion Grenade 40mm Stun",
-      "status_name": "Downed Stim Visual"
+      "status_name": "Stun Medium"
     },
     "Explosion_Projectile_Snowball": {
       "dmg": 0,
@@ -3725,7 +3725,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Explosion Snowball",
-      "status_name": " ?Downed Stim Heal"
+      "status_name": "Stun Small"
     },
     "Explosion_BackblastNone": {
       "dmg": 0,
@@ -3898,7 +3898,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Explosion Earthquake",
-      "status_name": "Gas"
+      "status_name": "Tremor"
     },
     "Explosion_Projectile_12g_Frag": {
       "dmg": 75,
@@ -4216,7 +4216,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Explosion Icbm Take Off",
-      "status_name": "Downed Stim Visual"
+      "status_name": "Stun Medium"
     },
     "Explosion_Icbm_Take_Off_Intense": {
       "dmg": 30,
@@ -4261,7 +4261,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Explosion Illuminate Small Stun",
-      "status_name": " ?Downed Stim Heal"
+      "status_name": "Stun Small"
     },
     "Explosion_Prop_Barrel": {
       "dmg": 300,
@@ -4625,7 +4625,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Explosion Illuminate Shock Wave",
-      "status_name": " ?Downed Stim Heal"
+      "status_name": "Stun Small"
     },
     "Explosion_Prop_Small": {
       "dmg": 50,
@@ -5069,7 +5069,7 @@
       "name": "Explosion Eagle Bomb Napalm",
       "element_name": "Fire",
       "status_name": "Fire",
-      "status_name2": "fff?\u000b"
+      "status_name2": "BurningHeavy"
     },
     "Explosion_Projectile_Missile_66mm": {
       "dmg": 150,
@@ -5870,7 +5870,7 @@
       "param4": 0,
       "name": "Explosion Orbital Gas",
       "element_name": "Gas",
-      "status_name": "RadiationHeavy"
+      "status_name": "Gas"
     },
     "Explosion_Projectile_OrbitalShell": {
       "dmg": 600,
@@ -6356,7 +6356,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Explosion Moor Mushroom Burst",
-      "status_name": "Downed Stim Visual"
+      "status_name": "Stun Medium"
     },
     "Explosion_EmbryoCluster_Burst": {
       "dmg": 5,
@@ -6378,7 +6378,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Explosion Embryo Cluster Burst",
-      "status_name": "RadiationHeavy"
+      "status_name": "Gas"
     },
     "Explosion_Spikeplant_Shrapnel_Explosion": {
       "dmg": 100,
@@ -6421,7 +6421,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Explosion Iceplant Shatter",
-      "status_name": "Downed Stim Visual"
+      "status_name": "Stun Medium"
     },
     "DPS_BeamSmall": {
       "dmg": 200,
@@ -7605,7 +7605,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Ability Bug Stalker Scream",
-      "status_name": "Stim Cooldown"
+      "status_name": "Stun Large"
     },
     "Ability_Bug_Strider_Stomp": {
       "dmg": 3000,
@@ -7903,7 +7903,7 @@
       "param4": 0,
       "name": "Ability Illuminate Illusionist Mind Scramble",
       "status_name": "Confusion",
-      "status_name2": "Hidden"
+      "status_name2": "Inverted Aim Assist"
     },
     "Ability_Illuminate_Illusionist_InverseAimAssist": {
       "dmg": 0,
@@ -7925,7 +7925,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Ability Illuminate Illusionist Inverse Aim Assist",
-      "status_name": "Hidden"
+      "status_name": "Inverted Aim Assist"
     },
     "Ability_Illuminate_Illusionist_Forcechoke": {
       "dmg": 0,
@@ -7990,7 +7990,7 @@
       "func4": 0,
       "param4": 0,
       "name": "Ability Illuminate Guy Staff Dash Stun",
-      "status_name": "Stim Cooldown"
+      "status_name": "Stun Large"
     },
     "Ability_Illuminate_GuyStaff_QuickSlash": {
       "dmg": 45,

@@ -294,8 +294,8 @@ function getAttackTable(opts)
     args = args,
     statuses_seen = opts.statuses_seen,
   })
-  if medium.damage_name then
-    local damage = data.damage[medium.damage_name]
+  if medium.damageid then
+    local damage = data.damage[medium.damageid]
     out = out .. unpackTableSetup({
       setup = damage_table_setup,
       attack = attack,
@@ -535,8 +535,8 @@ function p.fullWeaponTable(frame)
 
         local damage = medium
         local count = (attack.count or 1) * (medium.pellets or 1)
-        if medium.damage_name then
-          damage = data.damage[medium.damage_name]
+        if medium.damageid then
+          damage = data.damage[medium.damageid]
         end
 
         if damage.ap1 and damage.ap1 > max_ap then
