@@ -1576,13 +1576,6 @@ cap = 8
 [[stratagem.attack]]
 medium = "projectile"
 ref = "ClusterBomb_100kg"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "ClusterBomb"
-[[stratagem.attack]]
-medium = "projectile"
-ref = "ClusterBomb_Bomb"
-count = 8
 
 [[stratagem]]
 category = "Eagle"

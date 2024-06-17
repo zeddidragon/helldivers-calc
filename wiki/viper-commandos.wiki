@@ -1,0 +1,178 @@
+==Unlockables==
+===Cost===
+This event features three pages of [[Cosmetics|rewards]] that can be unlocked using Medals earned from completing missions and [[Major Orders|Orders]]. Each page requires an increasing number of Medals to unlock.
+* Total Medals needed to unlock all pages: {{Currency|Medals|275|notext}}
+* Total Medals needed to buy all items: {{Currency|Medals|679|notext}}
+* Total [[Super Credits]] available from pages: {{Currency|SC|300|notext}}
+* Super Credits needed to unlock all items: {{Currency|SC|1,000|notext}}
+
+===Page 1===
+More Data Pending
+<div class="mw-collapsible">
+<br>
+Total cost of page: {{Currency|Medals|135|notext}}
+{| class="wikitable sortable" width="33%"
+|+
+! width="0%" | Icon
+! width="60%" | Item
+! width="40%" | Type
+! width="0%" | Medals
+|-
+| [[File:Super Credit.svg|50x50px]]
+| 100 [[Super Credits]]
+| [[Currency]]
+| {{Currency|Medals|7|notext}}
+|-
+| [[File:AR-23A Liberator Carbine Weapon Icon.png|100x50px]]
+| [[AR-23A Liberator Carbine]]
+| [[Weapons#Primary Weapons|Assault Rifle]]
+| {{Currency|Medals|20|notext}}
+|-
+| [[File:PH-9 Predator Helmet Icon.png|50px]]
+| [[PH-9 Predator Armor|PH-9 Predator]]
+| [[Armor#Helmets|Helmet]]
+| {{Currency|Medals|30|notext}}
+|-
+| [[File:PH-9 Predator Armor Icon.png|50px]]
+| [[PH-9 Predator Armor|PH-9 Predator]]
+| [[Armor#Body Armors|Body Armor]]
+| {{Currency|Medals|40|notext}}
+|-
+| [[File:Mark of the Crimson Fang Cape Icon.png|50px]]
+| [[Mark of the Crimson Fang]]
+| [[Cosmetics#Capes|Cape]]
+| {{Currency|Medals|8|notext}}
+|-
+| [[File:Mark of the Crimson Fang Player Card Icon.png|50px]]
+| [[Mark of the Crimson Fang]]
+| [[Cosmetics#Player Cards|Player Card]]
+| {{Currency|Medals|2|notext}}
+|-
+| [[File: Undergrowth Hellpod Pattern Icon.png|50px]]
+| [[Undergrowth]]
+| [[Cosmetics#Patterns|Pattern]]
+| {{Currency|Medals|20|notext}}
+|-
+| [[File: Salute Victory Pose Icon.png|50x50px]]
+| [[Welcome Adoration]]
+| [[Cosmetics#Victory Poses|Victory Pose]]
+| {{Currency|Medals|8|notext}}
+|}
+</div>
+<br>
+===Page 2===
+More Data Pending
+<div class="mw-collapsible">
+<br>
+Medals needed to unlock: {{Currency|Medals|100|notext}}
+
+Total cost of page: {{Currency|Medals|232|notext}}
+{| class="wikitable sortable" width="33%"
+|+
+! width="0%" | Icon
+! width="60%" | Item
+! width="40%" | Type
+! width="0%" | Medals
+|-
+| [[File:Super Credit.svg|50x50px]]
+| 100 [[Super Credits]]
+| [[Currency]]
+| {{Currency|Medals|12|notext}}
+|-
+| [[File:SG-22 Bushwhacker Weapon Icon.png|100x50px]]
+| [[SG-22 Bushwhacker]]
+| [[Weapons#Secondary Weapons|Shotgun]]
+| {{Currency|Medals|50|notext}}
+|-
+| [[File: PH-202 Twigsnapper Helmet Icon.png|50px]]
+| [[PH-202 Twigsnapper Armor|PH-202 Twigsnapper]]
+| [[Armor#Helmets|Helmet]]
+| {{Currency|Medals|35|notext}}
+|-
+| [[File: PH-202 Twigsnapper Armor Icon.png|50px]]
+| [[PH-202 Twigsnapper Armor|PH-202 Twigsnapper]]
+| [[Armor#Body Armors|Body Armor]]
+| {{Currency|Medals|45|notext}}
+|-
+| [[File: Executioner's Canopy Cape Icon.png|50px]]
+| [[Executioner's Canopy]]
+| [[Cosmetics#Capes|Cape]]
+| {{Currency|Medals|20|notext}}
+|-
+| [[File: Executioner's Canopy Player Card Icon.png|50px]]
+| [[Executioner's Canopy]]
+| [[Cosmetics#Player Cards|Player Card]]
+| {{Currency|Medals|5|notext}}
+|-
+| [[File: Undergrowth Shuttle Pattern Icon.png|50px]]
+| [[Undergrowth]]
+| [[Cosmetics#Patterns|Pattern]]
+| {{Currency|Medals|50|notext}}
+|-
+| [[File: Salute Victory Pose Icon.png|50x50px]]
+| [[Guns of Liberty]]
+| [[Cosmetics#Victory Poses|Victory Pose]]
+| {{Currency|Medals|15|notext}}
+|}
+</div>
+<br>
+===Page 3===
+More Data Pending
+<div class="mw-collapsible">
+<br>
+Medals needed to unlock: {{Currency|Medals|275|notext}}
+
+Total cost of page: {{Currency|Medals|312|notext}}
+{| class="wikitable sortable" width="33%"
+|+
+! width="0%" | Icon
+! width="60%" | Item
+! width="40%" | Type
+! width="0%" | Medals
+|-
+| [[File:Super Credit.svg|50x50px]]
+| 100 [[Super Credits]]
+| [[Currency]]
+| {{Currency|Medals|32|notext}}
+|-
+| [[File:Experimental Infusion Booster Icon.png|50px]]
+| [[Experimental Infusion]]
+| [[Boosters|Booster]]
+| {{Currency|Medals|80|notext}}
+|-
+| [[File:Level 1 Viper Commando Rank Icon.png|50x50px]]
+| [[Viper Commando]]
+| [[Cosmetics#Titles|Title]]
+| {{Currency|Medals|20|notext}}
+|-
+| [[File: K-2 Throwing Knife Throwable Icon.png|50px]]
+| [[K-2 Throwing Knife]]
+| [[Weapons#Grenades|Throwable]]
+| {{Currency|Medals|60|notext}}
+|-
+| [[File: Undergrowth Exosuit Pattern Icon.png|50px]]
+| [[Undergrowth]]
+| [[Cosmetics#Patterns|Pattern]]
+| {{Currency|Medals|50|notext}}
+|-
+| [[File:Salute Victory Pose Icon.png|50x50px]]
+| [[Test of Conviction]]
+| [[Cosmetics#Emotes|Emote]]
+| {{Currency|Medals|70|notext}}
+|}
+</div>
+
+== Trailer ==
+{{#ev:youtube|jbb5ngK36x4|410|inline|Helldivers 2 - Warbond: Viper Commandos Trailer &#124; PS5 & PC Games||autoplay=false}}
+
+== Promotional Material ==
+<gallery mode="packed" widths="200" heights="300">
+Viper Commandos Marketing Overview.jpg|Overview of [[Arrowhead Game Studios]]' Viper Commandos Premium [[Warbonds|Warbond]] marketing material.
+</gallery>
+
+==Timeline==
+Announced on 2024-06-06<ref>[https://store.steampowered.com/news/app/553850/view/4150709804556253866 HELLDIVERS™ 2, Steam]</ref><ref>[https://twitter.com/helldivers2/status/1798686308258431215 HELLDIVERS™ 2, X]</ref><ref>[https://www.instagram.com/helldivers2game/reel/C735ioNtJXQ/ helldivers2game, Instagram]</ref>. The Warbond was launched on 2024-06-13.
+
+==References==
+[[Category:Shops]]
+[[Category:Warbonds]]

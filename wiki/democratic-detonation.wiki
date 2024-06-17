@@ -1,0 +1,289 @@
+
+<div class="headerimage">
+[[File:Democratic_Detonation_Premium_Warbond_Cover_Image.png]]
+</div>
+
+The '''{{PAGENAME}}''' is a store page that is part of the [[Warbonds]] menu. It was released on 2024-04-11.
+
+== Unlockables ==
+=== Cost ===
+{{Currency|Medals|230}} needed to unlock all pages.<br>
+{{Currency|Medals|699|notext}} Medals needed to claim all items.<br>
+{{Currency|SC|300}} available from pages.<br>
+{{Currency|SC|1,000|notext}} Super Credits needed to unlock warbond.
+
+=== Page 1 ===
+{{Warbond_Page|
+|-
+|cell: 1 1 1 1 | medals: 7
+|image: Super Credits Warbond Premium.png
+|link: Currency
+|title: 100 Super Credits
+|-
+|cell: 2 1 2 1 | medals: 8
+|image: Squat Victory Pose Warbond.png
+|link: Squat
+|title: Squat Victory Pose
+|-
+|cell: 4 1 1 2 | medals: 2
+|image: Harbinger of True Equality Player Card Warbond.png
+|link: Harbinger of True Equality#Player Card
+|-
+|cell: 5 1 1 2 | medals: 15
+|image: G-123 Thermite Throwable Warbond.png
+|link: G-123 Thermite
+|title: G-123 Thermite Special Throwable
+|-
+|cell: 1 2 2 2 | medals: 18
+|image: CE-27 Ground Breaker Armor Warbond.png
+|link: CE-27 Ground Breaker Armor
+|-
+|cell: 3 2 1 1 | medals: 12
+|image: CE-27 Ground Breaker Helmet Warbond.png
+|link: CE-27 Ground Breaker Armor
+|-
+|cell: 3 3 1 1 | medals: 8
+|image: Harbinger of True Equality Cape Warbond.png
+|link: Harbinger of True Equality#Cape
+|-
+|cell: 4 3 2 1 | medals: 20
+|image: BR-14 Adjudicator Weapon Warbond.png
+|link: BR-14 Adjudicator
+|-
+}}
+<div class="mw-collapsible mw-collapsed"><br>
+{| class="wikitable sortable" width="33%"
+|+
+! width="0%" | Icon
+! width="60%" | Item
+! width="40%" | Type
+! width="0%" | Medals
+|-
+| [[File:Super Credit.svg|50x50px]]
+| 100 [[Super Credits]]
+| [[Currency]]
+| {{Currency|Medals|7|notext}}
+|-
+| [[File: BR-14 Adjudicator Weapon Icon.png|100x50px]]
+| [[BR-14 Adjudicator]]
+| [[Weapons#Primary Weapons|Assault Rifle]]
+| {{Currency|Medals|20|notext}}
+|-
+| [[File: G-123 Thermite Grenade Icon.png|50px]]
+| [[G-123 Thermite]]
+| [[Weapons#Grenades|Grenade]]
+| {{Currency|Medals|15|notext}}
+|-
+| [[File: CE-27 Ground Breaker Helmet Icon.png|50px]]
+| [[CE-27 Ground Breaker Armor|CE-27 Ground Breaker]]
+| [[Armor#Helmets|Helmet]]
+| {{Currency|Medals|12|notext}}
+|-
+| [[File: CE-27 Ground Breaker Armor Icon.png|50px]]
+| [[CE-27 Ground Breaker Armor|CE-27 Ground Breaker]]
+| [[Armor#Body Armors|Body Armor]]
+| {{Currency|Medals|18|notext}}
+|-
+| [[File: Harbinger of True Equality Cape Icon.png|50px]]
+| [[Harbinger of True Equality]]
+| [[Cosmetics#Capes|Cape]]
+| {{Currency|Medals|8|notext}}
+|-
+| [[File: Harbinger of True Equality Player Card Icon.png|50px]]
+| [[Harbinger of True Equality]]
+| [[Cosmetics#Player Cards|Player Card]]
+| {{Currency|Medals|2|notext}}
+|-
+| [[File: Salute Victory Pose Icon.png|50x50px]]
+| [[Squat]]
+| [[Cosmetics#Victory Poses|Victory Pose]]
+| {{Currency|Medals|8|notext}}
+|}
+</div>
+<br>
+===Page 2===
+{{Warbond_Page|
+| unlock_medal_cost: 60
+|-
+|cell: 1 1 1 2 | medals: 5
+|image: Eagle's Fury Player Card Warbond.png
+|link: Eagle's Fury#Player Card
+|-
+|cell: 2 1 2 2 | medals: 45
+|image: CE-07 Demolition Specialist Armor Warbond.png
+|link: CE-07 Demolition Specialist#Armor
+|-
+|cell: 4 1 1 1 | medals: 35
+|image: CE-07 Demolition Specialist Helmet Warbond.png
+|link: CE-07 Demolition Specialist#Helmet
+|-
+|cell: 4 2 1 1 | medals: 20
+|image: Eagle's Fury Cape Warbond.png
+|link: Eagle's Fury#Cape
+|-
+|cell: 5 1 1 2 | medals: 55
+|image: Booster Warbond Premium Tall.png
+|link: Boosters#Expert Extraction Pilot
+|title:Expert Extract Pilot Booster
+|-
+|cell: 1 3 2 1 | medals: 60
+|image: R-36 Eruptor Weapon Warbond.png
+|link: R-36 Eruptor
+|-
+|cell: 3 3 1 1 | medals: 12
+|image: Super Credits Warbond Premium.png
+|link: Super Credits
+|title: 100 Super Credits
+|-
+|cell: 4 3 2 1 | medals: 15
+|image: Courtly Bow Victory Pose Warbond.png
+|link: Courtly Bow
+|title: Courtly Bow Victory Pose
+|-
+}}
+<div class="mw-collapsible mw-collapsed"><br>
+{| class="wikitable sortable" width="33%"
+|+
+! width="0%" | Icon
+! width="60%" | Item
+! width="40%" | Type
+! width="0%" | Medals
+|-
+| [[File:Super Credit.svg|50x50px]]
+| 100 [[Super Credits]]
+| [[Currency]]
+| {{Currency|Medals|12|notext}}
+|-
+| [[File: Expert Extraction Pilot Booster Icon.png|50px]]
+| [[Expert Extraction Pilot]]
+| [[Boosters|Booster]]
+| {{Currency|Medals|55|notext}}
+|-
+| [[File: R-36 Eruptor Weapon Icon.png|100x50px]]
+| [[R-36 Eruptor]]
+| [[Weapons#Primary Weapons|Explosive]]
+| {{Currency|Medals|60|notext}}
+|-
+| [[File: CE-07 Demolition Specialist Helmet Icon.png|50px]]
+| [[CE-07 Demolition Specialist Armor|CE-07 Demolition Specialist]]
+| [[Armor#Helmets|Helmet]]
+| {{Currency|Medals|35|notext}}
+|-
+| [[File: CE-07 Demolition Specialist Armor Icon.png|50px]]
+| [[CE-07 Demolition Specialist Armor|CE-07 Demolition Specialist]]
+| [[Armor#Body Armors|Body Armor]]
+| {{Currency|Medals|45|notext}}
+|-
+| [[File: Eagle's Fury Cape Icon.png|50px]]
+| [[Eagle's Fury]]
+| [[Cosmetics#Capes|Cape]]
+| {{Currency|Medals|20|notext}}
+|-
+| [[File: Eagle's Fury Player Card Icon.png|50px]]
+| [[Eagle's Fury]]
+| [[Cosmetics#Player Cards|Player Card]]
+| {{Currency|Medals|5|notext}}
+|-
+| [[File: Salute Victory Pose Icon.png|50x50px]]
+| [[Courtly Bow]]
+| [[Cosmetics#Victory Poses|Victory Pose]]
+| {{Currency|Medals|15|notext}}
+|}
+</div>
+<br>
+
+===Page 3===
+{{Warbond_Page|
+| unlock_medal_cost: 230
+|-
+|cell: 1 1 2 1 | medals: 32
+|image: Boxer Victory Pose Warbond.png
+|link: Boxer
+|title: Boxer Victory Pose
+|-
+|cell: 3 1 2 2 | medals: 64
+|image: FS-55 Devastator Armor Warbond.png
+|link: FS-55 Devastator#Armor
+|-
+|cell: 5 1 1 1 | medals: 48
+|image: FS-55 Devastator Helmet Warbond.png
+|link: FS-55 Devastator#Helmet
+|-
+|cell: 1 2 1 2 | medals: 16
+|image: Freedom's Tapestry Player Card Warbond.png
+|link: Freedom's Tapestry#Player Card
+|-
+|cell: 2 2 1 2 | medals: 60
+|image: GP-31 Grenade Pistol Weapon Warbond.png
+|link: GP-31 Grenade Pistol
+|-
+|cell: 5 2 1 1 | medals: 30
+|image: Freedom's Tapestry Cape Warbond.png
+|link: Freedom's Tapestry#Cape
+|-
+|cell: 3 3 1 1 | medals: 32
+|image: Super Credits Warbond Premium.png
+|link: Super Credits
+|title: 100 Super Credits
+|-
+|cell: 4 3 2 1 | medals: 80
+|image: CB-9 Exploding Crossbow Weapon Warbond.png
+|link: CB-9 Exploding Crossbow
+|-
+}}
+<div class="mw-collapsible mw-collapsed"><br>
+{| class="wikitable sortable" width="33%"
+|+
+! width="0%" | Icon
+! width="60%" | Item
+! width="40%" | Type
+! width="0%" | Medals
+|-
+| [[File:Super Credit.svg|50x50px]]
+| 100 [[Super Credits]]
+| [[Currency]]
+| {{Currency|Medals|32|notext}}
+|-
+| [[File: CB-9 Exploding Crossbow Weapon Icon.png|100x50px]]
+| [[CB-9 Exploding Crossbow]]
+| [[Weapons#Primary Weapons|Explosive]]
+| {{Currency|Medals|80|notext}}
+|-
+| [[File: GP-31 Grenade Pistol Weapon Icon.png|100x50px]]
+| [[GP-31 Grenade Pistol]]
+| [[Weapons#Secondary Weapons|Pistol]]
+| {{Currency|Medals|60|notext}}
+|-
+| [[File: FS-55 Devastator Helmet Icon.png|50px]]
+| [[FS-55 Devastator Armor|FS-55 Devastator]]
+| [[Armor#Helmets|Helmet]]
+| {{Currency|Medals|48|notext}}
+|-
+| [[File: FS-55 Devastator Armor Icon.png|50px]]
+| [[FS-55 Devastator Armor|FS-55 Devastator]]
+| [[Armor#Body Armors|Body Armor]]
+| {{Currency|Medals|64|notext}}
+|-
+| [[File: Freedom's Tapestry Cape Icon.png|50px]]
+| [[Freedom's Tapestry]]
+| [[Cosmetics#Capes|Cape]]
+| {{Currency|Medals|30|notext}}
+|-
+| [[File: Freedom's Tapestry Player Card Icon.png|50px]]
+| [[Freedom's Tapestry]]
+| [[Cosmetics#Player Cards|Player Card]]
+| {{Currency|Medals|16|notext}}
+|-
+| [[File: Salute Victory Pose Icon.png|50x50px]]
+| [[Boxer]]
+| [[Cosmetics#Victory Poses|Victory Pose]]
+| {{Currency|Medals|32|notext}}
+|}
+</div>
+<br>
+
+== Trailer ==
+{{#ev:youtube|g122XN-DQoY|410|inline|Helldivers 2 - Warbond: Democratic Detonation Trailer &#124; PS5 & PC Games||autoplay=false}}
+
+[[Category:Shops]]
+[[Category:Warbonds]]

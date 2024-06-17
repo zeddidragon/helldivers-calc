@@ -132,6 +132,7 @@ for(const prop of Object.keys(wikiRegister)) {
       ...obj,
       enum: void 0,
       name: names[key],
+      id: void 0,
     }
     if(prop === 'damage') {
       obj2 = {
@@ -143,17 +144,19 @@ for(const prop of Object.keys(wikiRegister)) {
         status_name4: obj.func4 ? data.statusNames[obj.func4 - 1] : void 0,
         status_name5: obj.func5 ? data.statusNames[obj.func5 - 1] : void 0,
         status_name6: obj.func6 ? data.statusNames[obj.func6 - 1] : void 0,
-        damageid: void 0,
       }
     }
     if(obj.ximpactid) {
-      obj2.impact_explosion_name = register.explosion[obj.ximpactid].enum
+      obj2.ximpactid = register.explosion[obj.ximpactid].enum
     }
     if(obj.xdelayid) {
-      obj2.delay_explosion_name = register.explosion[obj.xdelayid].enum
+      obj2.xdelayid = register.explosion[obj.xdelayid].enum
     }
     if(obj.damageid) {
-      obj2.damage_name = register.damage[obj.damageid].enum
+      obj2.damageid = register.damage[obj.damageid].enum
+    }
+    if(obj.projectileid) {
+      obj2.projectileid = register.projectile[obj.projectileid].enum
     }
     reg[obj.enum] = obj2
   }
@@ -165,34 +168,31 @@ function unrollAttack(attack) {
     type,
     name,
     count,
-    id,
   } = attack
-  const obj = register[type][id]
+  const obj = wikiRegister[type][name]
+  console.log(obj)
   if(obj?.shrapnel && obj?.projectileid) {
-    const projectile = register.projectile[obj.projectileid]
+    const projectile = wikiRegister.projectile[obj.projectileid]
     unrolled.push(...unrollAttack({
       type: 'projectile',
-      name: projectile.enum,
+      name: obj.projectileid,
       count: obj.shrapnel,
-      id: projectile.id,
     }))
   }
   if(obj?.ximpactid) {
-    const explosion = register.explosion[obj.ximpactid]
+    const explosion = wikiRegister.explosion[obj.ximpactid]
     unrolled.push(...unrollAttack({
       type: 'explosion',
-      name: explosion.enum,
+      name: obj.ximpactid,
       count,
-      id: explosion.id,
     }))
   }
   if(obj?.xdelayid && obj.xdelayid !== obj.ximpactid) {
-    const explosion = register.explosion[obj.xdelayid]
+    const explosion = wikiRegister.explosion[obj.xdelayid]
     unrolled.push(...unrollAttack({
       type: 'explosion',
-      name: explosion.enum,
+      name: obj.xdelayid,
       count,
-      id: explosion.id,
     }))
   }
 
@@ -207,11 +207,6 @@ let i = 0
 for(const wpn of allWeapons) {
   const reg = wikiRegister.weapon
   const type = wpn.type
-  const id = wpn.projectileid
-    || wpn.beamid
-    || wpn.arcid
-    || wpn.explosionid
-    || wpn.damageid
   refRegister[atkKey('weapon', wpn.fullname)] = wpn
   const attacks = (wpn.attack || []).flatMap(atk => {
     const key = atkKey(atk.medium, atk.ref)
@@ -220,7 +215,6 @@ for(const wpn of allWeapons) {
       type: atk.medium,
       name: atk.ref,
       count: atk.count,
-      id: obj.id,
     })
   })
   wpn.attack = attacks
