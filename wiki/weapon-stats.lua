@@ -506,21 +506,9 @@ function p.fullWeaponTable(frame)
     end
   end
 
-  local headers = [[
-{| class=\"sortable mw-collapsible wikitable\"
-|+'''Weapons Table:'''
-!Weapon!!Type
-!Damage!!vs Durable!!Fire Rate!!DPS
-!Reload Time!!Capacity!!Spare Mags!!Recoil
-!Special!!Projectile Type!!Armor Penetration
-!Semi!!Burst!!Auto
-!1H
-!Scope!!Scope!!Scope
-]]
-
   local rows = {}
 
-  for i, name in ipairs(names) do
+  for i, name in ipairs(data.weapon_order) do
     local override = args["override_" .. string.gsub(name, " ", "_")]
     if override then
       rows[i] = "|" .. override

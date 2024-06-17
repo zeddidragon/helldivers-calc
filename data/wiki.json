@@ -16844,7 +16844,6 @@
   },
   "weapon": {
     "AR-23 Liberator": {
-      "idx": 1,
       "category": "Assault Rifle",
       "source": "start",
       "rpm": 640,
@@ -16863,7 +16862,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
     },
     "AR-23P Liberator Penetrator": {
-      "idx": 2,
       "category": "Assault Rifle",
       "source": "hd-mobilize",
       "sourcepage": 6,
@@ -16883,7 +16881,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}]
     },
     "AR-23C Liberator Concussive": {
-      "idx": 3,
       "category": "Assault Rifle",
       "source": "steel-vets",
       "sourcepage": 1,
@@ -16902,7 +16899,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_exp"}]
     },
     "AR-23A Liberator Carbine": {
-      "idx": 4,
       "category": "Assault Rifle",
       "source": "viper-commandos",
       "sourcepage": 1,
@@ -16922,7 +16918,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
     },
     "AR-61 Tenderizer": {
-      "idx": 5,
       "category": "Assault Rifle",
       "source": "polar-pat",
       "sourcepage": 1,
@@ -16942,7 +16937,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_Rico"}]
     },
     "BR-14 Adjudicator": {
-      "idx": 6,
       "category": "Assault Rifle",
       "source": "demo-det",
       "sourcepage": 1,
@@ -16962,7 +16956,6 @@
       "attacks": [{"type": "projectile", "name": "Battle_Rifle"}]
     },
     "R-63 Diligence": {
-      "idx": 7,
       "category": "Marksman Rifle",
       "source": "hd-mobilize",
       "sourcepage": 2,
@@ -16981,7 +16974,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_fmj"}]
     },
     "R-63CS Diligence Counter Sniper": {
-      "idx": 8,
       "category": "Marksman Rifle",
       "source": "hd-mobilize",
       "sourcepage": 7,
@@ -17000,7 +16992,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_hv"}]
     },
     "MP-98 Knight": {
-      "idx": 9,
       "category": "Submachine Gun",
       "source": "dlc-super",
       "rpm": 1380,
@@ -17019,7 +17010,6 @@
       "attacks": [{"type": "projectile", "name": "Pistol_9x20mm_smj"}]
     },
     "SMG-37 Defender": {
-      "idx": 10,
       "category": "Submachine Gun",
       "source": "hd-mobilize",
       "sourcepage": 3,
@@ -17039,7 +17029,6 @@
       "attacks": [{"type": "projectile", "name": "Pistol_12x25mm_fmj"}]
     },
     "SMG-72 Pummeler": {
-      "idx": 11,
       "category": "Submachine Gun",
       "source": "polar-pat",
       "sourcepage": 2,
@@ -17059,7 +17048,6 @@
       "attacks": [{"type": "projectile", "name": "Pistol_12x25mm_stun"}]
     },
     "SG-8 Punisher": {
-      "idx": 12,
       "category": "Shotgun",
       "source": "hd-mobilize",
       "sourcepage": 1,
@@ -17076,7 +17064,6 @@
       "attacks": [{"type": "projectile", "name": "Shotgun_10g_buc"}]
     },
     "SG-8S Slugger": {
-      "idx": 13,
       "category": "Shotgun",
       "source": "hd-mobilize",
       "sourcepage": 8,
@@ -17093,7 +17080,6 @@
       "attacks": [{"type": "projectile", "name": "Shotgun_10g_slug"}]
     },
     "SG-225 Breaker": {
-      "idx": 14,
       "category": "Shotgun",
       "source": "hd-mobilize",
       "sourcepage": 4,
@@ -17112,7 +17098,6 @@
       "attacks": [{"type": "projectile", "name": "Shotgun_12g_buc"}]
     },
     "SG-225SP Breaker Spray & Pray": {
-      "idx": 15,
       "category": "Shotgun",
       "source": "hd-mobilize",
       "sourcepage": 9,
@@ -17131,7 +17116,6 @@
       "attacks": [{"type": "projectile", "name": "Shotgun_12g_bir"}]
     },
     "SG-225IE Breaker Incendiary": {
-      "idx": 16,
       "category": "Shotgun",
       "source": "steel-vets",
       "sourcepage": 2,
@@ -17151,7 +17135,6 @@
       "attacks": [{"type": "projectile", "name": "Shotgun_12g_flm"}]
     },
     "CB-9 Exploding Crossbow": {
-      "idx": 17,
       "category": "Explosive",
       "source": "demo-det",
       "sourcepage": 3,
@@ -17171,7 +17154,6 @@
       ]
     },
     "JAR-5 Dominator": {
-      "idx": 18,
       "category": "Explosive",
       "source": "steel-vets",
       "sourcepage": 3,
@@ -17191,7 +17173,6 @@
       "attacks": [{"type": "projectile", "name": "Rocket_15x100mm_std"}]
     },
     "R-36 Eruptor": {
-      "idx": 19,
       "category": "Explosive",
       "source": "demo-det",
       "sourcepage": 2,
@@ -17215,7 +17196,6 @@
       ]
     },
     "SG-8P Punisher Plasma": {
-      "idx": 20,
       "category": "Energy-Based",
       "source": "cut-edge",
       "sourcepage": 2,
@@ -17233,7 +17213,6 @@
       ]
     },
     "ARC-12 Blitzer": {
-      "idx": 21,
       "category": "Energy-Based",
       "source": "cut-edge",
       "sourcepage": 3,
@@ -17244,7 +17223,6 @@
       "attacks": [{"type": "arc", "name": "ArcShotgun", "count": 5}]
     },
     "LAS-5 Scythe": {
-      "idx": 22,
       "category": "Energy-Based",
       "source": "hd-mobilize",
       "sourcepage": 5,
@@ -17261,7 +17239,6 @@
       "attacks": [{"type": "beam", "name": "Medium"}]
     },
     "LAS-16 Sickle": {
-      "idx": 23,
       "category": "Energy-Based",
       "source": "cut-edge",
       "sourcepage": 1,
@@ -17279,7 +17256,6 @@
       "attacks": [{"type": "projectile", "name": "Laser_Long"}]
     },
     "PLAS-1 Scorcher": {
-      "idx": 24,
       "category": "Energy-Based",
       "source": "hd-mobilize",
       "sourcepage": 10,
@@ -17299,7 +17275,6 @@
       ]
     },
     "PLAS-101 Purifier": {
-      "idx": 25,
       "category": "Energy-Based",
       "source": "polar-pat",
       "sourcepage": 3,
@@ -17318,7 +17293,6 @@
       ]
     },
     "SG-22 Bushwhacker": {
-      "idx": 26,
       "category": "Secondary Shotgun",
       "source": "viper-commandos",
       "sourcepage": 2,
@@ -17336,7 +17310,6 @@
       "attacks": [{"type": "projectile", "name": "Shotgun_10g_buc"}]
     },
     "P-2 Peacemaker": {
-      "idx": 27,
       "category": "Pistol",
       "source": "start",
       "rpm": 900,
@@ -17355,7 +17328,6 @@
       "attacks": [{"type": "projectile", "name": "Pistol_9x20mm_hp"}]
     },
     "P-19 Redeemer": {
-      "idx": 28,
       "category": "Pistol",
       "source": "hd-mobilize",
       "sourcepage": 2,
@@ -17375,7 +17347,6 @@
       "attacks": [{"type": "projectile", "name": "Pistol_9x20mm_fmj"}]
     },
     "P-113 Verdict": {
-      "idx": 29,
       "category": "Pistol",
       "source": "polar-pat",
       "sourcepage": 3,
@@ -17395,7 +17366,6 @@
       "attacks": [{"type": "projectile", "name": "Pistol_Magnum"}]
     },
     "GP-31 Grenade Pistol": {
-      "idx": 30,
       "category": "Pistol",
       "source": "demo-det",
       "sourcepage": 3,
@@ -17415,7 +17385,6 @@
       ]
     },
     "LAS-7 Dagger": {
-      "idx": 31,
       "category": "Pistol",
       "source": "cut-edge",
       "sourcepage": 3,
@@ -17432,7 +17401,6 @@
       "attacks": [{"type": "beam", "name": "Small"}]
     },
     "P-4 Senator": {
-      "idx": 32,
       "category": "Pistol",
       "source": "steel-vets",
       "sourcepage": 1,
@@ -17453,7 +17421,6 @@
       "attacks": [{"type": "projectile", "name": "Pistol_13x40mm_fmj"}]
     },
     "M-105 Stalwart": {
-      "idx": 33,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "dlduul",
@@ -17473,7 +17440,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
     },
     "MG-43 Machine Gun": {
-      "idx": 34,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "dldur",
@@ -17493,7 +17459,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
     },
     "MG-206 Heavy Machine Gun": {
-      "idx": 35,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "dludd",
@@ -17513,7 +17478,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_12p5x100mm_bchp"}]
     },
     "ARC-3 Arc Thrower": {
-      "idx": 36,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "drdull",
@@ -17525,7 +17489,6 @@
       "attacks": [{"type": "arc", "name": "ArcThrower"}]
     },
     "FLAM-40 Flamethrower": {
-      "idx": 37,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "dludu",
@@ -17542,7 +17505,6 @@
       "attacks": [{"type": "damage", "name": "Projectile_Flamethrower"}]
     },
     "APW-1 Anti-Materiel Rifle": {
-      "idx": 38,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "dlrud",
@@ -17562,7 +17524,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_12p5x100mm_eit"}]
     },
     "GL-21 Grenade Launcher": {
-      "idx": 39,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "dluld",
@@ -17583,7 +17544,6 @@
       ]
     },
     "AC-8 Autocannon": {
-      "idx": 40,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "dlduur",
@@ -17605,7 +17565,6 @@
       ]
     },
     "RS-422 Railgun": {
-      "idx": 41,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "drdulr",
@@ -17624,7 +17583,6 @@
       "attacks": [{"type": "projectile", "name": "Railgun"}]
     },
     "LAS-98 Laser Cannon": {
-      "idx": 42,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "dldul",
@@ -17642,7 +17600,6 @@
       "attacks": [{"type": "beam", "name": "LaserCannon"}]
     },
     "LAS-99 Quasar Cannon": {
-      "idx": 43,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "ddulr",
@@ -17657,7 +17614,6 @@
       ]
     },
     "EAT-17 Expendable Anti-Tank": {
-      "idx": 44,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "ddlur",
@@ -17672,7 +17628,6 @@
       ]
     },
     "GR-8 Recoilless Rifle": {
-      "idx": 45,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "dlrrl",
@@ -17691,7 +17646,6 @@
       ]
     },
     "FAF-14 Spear": {
-      "idx": 46,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "ddudd",
@@ -17710,7 +17664,6 @@
       ]
     },
     "RL-77 Airburst Rocket Launcher": {
-      "idx": 47,
       "category": "Support Weapon",
       "source": "support",
       "stratcode": "duulr",
@@ -17731,7 +17684,6 @@
       ]
     },
     "Break-Action Shotgun": {
-      "idx": 48,
       "category": "Support Weapon",
       "source": "support",
       "rpm": 450,
@@ -17746,7 +17698,6 @@
       "attacks": [{"type": "projectile", "name": "Shotgun_10g_mag"}]
     },
     "G-6 Frag": {
-      "idx": 49,
       "category": "Standard Grenade",
       "source": "hd-mobilize",
       "sourcepage": 1,
@@ -17760,7 +17711,6 @@
       ]
     },
     "G-12 High Explosive": {
-      "idx": 50,
       "category": "Standard Grenade",
       "source": "start",
       "rounds": 4,
@@ -17770,7 +17720,6 @@
       "attacks": [{"type": "explosion", "name": "HighExplosive"}]
     },
     "G-10 Incendiary": {
-      "idx": 51,
       "category": "Standard Grenade",
       "source": "steel-vets",
       "sourcepage": 2,
@@ -17781,7 +17730,6 @@
       "attacks": [{"type": "explosion", "name": "Incendiary"}]
     },
     "G-16 Impact": {
-      "idx": 52,
       "category": "Special Throwable",
       "source": "start",
       "rounds": 4,
@@ -17791,7 +17739,6 @@
       "attacks": [{"type": "explosion", "name": "Impact"}]
     },
     "G-13 Incendiary Impact": {
-      "idx": 53,
       "category": "Special Throwable",
       "source": "polar-pat",
       "sourcepage": 2,
@@ -17802,7 +17749,6 @@
       "attacks": [{"type": "explosion", "name": "Incendiary"}]
     },
     "G-23 Stun": {
-      "idx": 54,
       "category": "Special Throwable",
       "source": "cut-edge",
       "sourcepage": 2,
@@ -17813,7 +17759,6 @@
       "attacks": [{"type": "explosion", "name": "Flash"}]
     },
     "G-3 Smoke": {
-      "idx": 55,
       "category": "Special Throwable",
       "source": "hd-mobilize",
       "sourcepage": 8,
@@ -17824,7 +17769,6 @@
       "attacks": []
     },
     "G-123 Thermite": {
-      "idx": 56,
       "category": "Special Throwable",
       "source": "demo-det",
       "sourcepage": 1,
@@ -17838,7 +17782,6 @@
       ]
     },
     "K-2 Throwing Knife": {
-      "idx": 57,
       "category": "Special Throwable",
       "source": "viper-commandos",
       "sourcepage": 3,
@@ -17849,64 +17792,52 @@
       "attacks": [{"type": "damage", "name": "Impact_Throwing_Knife"}]
     },
     "Melee": {
-      "idx": 58,
       "category": "Ability",
       "attacks": [{"type": "damage", "name": "Ability_Avatar_Melee"}]
     },
     "Status Effects#Bleed": {
-      "idx": 59,
       "category": "Status Effect",
       "attacks": [{"type": "damage", "name": "DPS_Avatar_Bleed"}]
     },
     "Status Effects#Fire": {
-      "idx": 60,
       "category": "Status Effect",
       "attacks": [{"type": "damage", "name": "DPS_Fire"}]
     },
     "Status Effects#Acid Splash": {
-      "idx": 61,
       "category": "Status Effect",
       "attacks": [{"type": "damage", "name": "DPS_Acid_Splash"}]
     },
     "Status Effects#Acid Stream": {
-      "idx": 62,
       "category": "Status Effect",
       "attacks": [{"type": "damage", "name": "DPS_Acid_Stream"}]
     },
     "Status Effects#Thermite": {
-      "idx": 63,
       "category": "Status Effect",
       "attacks": [{"type": "damage", "name": "DPS_Thermite"}]
     },
     "Status Effects#Cyborg Fire": {
-      "idx": 64,
       "category": "Status Effect",
       "attacks": [{"type": "damage", "name": "DPS_Cyborg_Fire"}]
     },
     "Status Effects#Thornbush": {
-      "idx": 65,
       "category": "Status Effect",
       "attacks": [{"type": "damage", "name": "DPS_Thornbush"}]
     },
     "Status Effects#Pure Damage": {
-      "idx": 66,
       "category": "Status Effect",
       "attacks": [{"type": "damage", "name": "DPS_Pure_Damage"}]
     },
     "Status Effects#Gas": {
-      "idx": 67,
       "category": "Status Effect",
       "attacks": [{"type": "damage", "name": "DPS_Gas"}]
     },
     "Patriot Gatling Gun": {
-      "idx": 68,
       "category": "Mounted Weapon",
       "rpm": 1200,
       "cap": 1000,
       "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
     },
     "Patriot Rocket Pod": {
-      "idx": 69,
       "category": "Mounted Weapon",
       "cap": 15,
       "rpm": 90,
@@ -17916,7 +17847,6 @@
       ]
     },
     "Emancipator Twin Autocannon": {
-      "idx": 70,
       "category": "Mounted Weapon",
       "cap": 75,
       "rpm": 120,
@@ -17926,7 +17856,6 @@
       ]
     },
     "B-1 Supply Pack": {
-      "idx": 71,
       "stratcode": "dlduur",
       "health": 400,
       "armor": 4,
@@ -17936,7 +17865,6 @@
       "attacks": []
     },
     "AX/AR-23 \"Guard Dog\"": {
-      "idx": 72,
       "stratcode": "dulurd",
       "health": 400,
       "armor": 4,
@@ -17948,7 +17876,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
     },
     "AX/LAS-5 \"Guard Dog\" Rover": {
-      "idx": 73,
       "stratcode": "dulurr",
       "health": 400,
       "armor": 4,
@@ -17957,7 +17884,6 @@
       "attacks": [{"type": "beam", "name": "MediumDrone"}]
     },
     "SH-20 Ballistic Shield stratagem": {
-      "idx": 74,
       "stratcode": "dlddul",
       "health": 400,
       "armor": 4,
@@ -17966,7 +17892,6 @@
       "attacks": []
     },
     "SH-32 Shield Generator Pack": {
-      "idx": 75,
       "stratcode": "dulrlr",
       "health": 400,
       "armor": 4,
@@ -17980,7 +17905,6 @@
       "attacks": []
     },
     "FX-12 Shield Generator Relay": {
-      "idx": 76,
       "stratcode": "ddlrlr",
       "health": 450,
       "armor": 1,
@@ -17995,7 +17919,6 @@
       "attacks": []
     },
     "MD-6 Anti-Personnel Minefield": {
-      "idx": 77,
       "stratcode": "dlur",
       "health": 250,
       "armor": 1,
@@ -18008,7 +17931,6 @@
       ]
     },
     "MD-17 Anti-Tank Mines": {
-      "idx": 78,
       "stratcode": "dluu",
       "health": 250,
       "armor": 1,
@@ -18021,7 +17943,6 @@
       ]
     },
     "MD-I4 Incendiary Mines": {
-      "idx": 79,
       "stratcode": "dlld",
       "health": 250,
       "armor": 1,
@@ -18034,7 +17955,6 @@
       ]
     },
     "A/MG-43 Machine Gun Sentry": {
-      "idx": 80,
       "stratcode": "durru",
       "health": 200,
       "armor": 2,
@@ -18045,7 +17965,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
     },
     "A/G-16 Gatling Sentry": {
-      "idx": 81,
       "stratcode": "durl",
       "health": 200,
       "armor": 2,
@@ -18056,7 +17975,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
     },
     "E/MG-101 HMG Emplacement": {
-      "idx": 82,
       "stratcode": "dulrrl",
       "health": 1000,
       "armor": 2,
@@ -18067,7 +17985,6 @@
       "attacks": [{"type": "projectile", "name": "Rifle_12p5x100mm_fmj"}]
     },
     "A/M-12 Mortar Sentry": {
-      "idx": 83,
       "stratcode": "durrd",
       "health": 200,
       "armor": 2,
@@ -18081,7 +17998,6 @@
       ]
     },
     "A/M-23 EMS Mortar Sentry": {
-      "idx": 84,
       "stratcode": "durdr",
       "health": 200,
       "armor": 2,
@@ -18096,7 +18012,6 @@
       ]
     },
     "A/MLS-4X Rocket Sentry": {
-      "idx": 85,
       "stratcode": "durrl",
       "health": 200,
       "armor": 2,
@@ -18109,7 +18024,6 @@
       ]
     },
     "A/AC-8 Autocannon Sentry": {
-      "idx": 86,
       "stratcode": "durulu",
       "health": 200,
       "armor": 2,
@@ -18122,7 +18036,6 @@
       ]
     },
     "A/ARC-3 Tesla Tower": {
-      "idx": 87,
       "stratcode": "durulr",
       "health": 600,
       "armor": 1,
@@ -18131,7 +18044,6 @@
       "attacks": [{"type": "arc", "name": "TeslaTurret"}]
     },
     "Orbital Precision Strike": {
-      "idx": 88,
       "stratcode": "rru",
       "calltime": 2,
       "cooldown": 90,
@@ -18142,7 +18054,6 @@
       ]
     },
     "Orbital Gas Strike": {
-      "idx": 89,
       "stratcode": "rrdr",
       "calltime": 2,
       "cooldown": 75,
@@ -18153,7 +18064,6 @@
       ]
     },
     "Orbital Smoke Strike": {
-      "idx": 90,
       "stratcode": "rrdu",
       "calltime": 2,
       "cooldown": 100,
@@ -18161,7 +18071,6 @@
       "attacks": []
     },
     "Orbital Airburst Strike": {
-      "idx": 91,
       "stratcode": "rrr",
       "calltime": 2,
       "cooldown": 100,
@@ -18174,7 +18083,6 @@
       ]
     },
     "Orbital EMS Strike": {
-      "idx": 92,
       "stratcode": "rrld",
       "calltime": 2,
       "cooldown": 75,
@@ -18185,7 +18093,6 @@
       ]
     },
     "Orbital Gatling Barrage": {
-      "idx": 93,
       "stratcode": "rdluu",
       "calltime": 2,
       "cooldown": 80,
@@ -18197,7 +18104,6 @@
       ]
     },
     "Orbital 120mm HE Barrage": {
-      "idx": 94,
       "stratcode": "rrdlrd",
       "calltime": 5,
       "cooldown": 240,
@@ -18209,7 +18115,6 @@
       ]
     },
     "Orbital 380mm HE Barrage": {
-      "idx": 95,
       "stratcode": "rduuldd",
       "calltime": 6,
       "cooldown": 240,
@@ -18221,7 +18126,6 @@
       ]
     },
     "Orbital Walking Barrage": {
-      "idx": 96,
       "stratcode": "rdrdrd",
       "calltime": 3,
       "cooldown": 240,
@@ -18233,7 +18137,6 @@
       ]
     },
     "Orbital Laser": {
-      "idx": 97,
       "stratcode": "rdurd",
       "calltime": 2,
       "cooldown": 300,
@@ -18242,7 +18145,6 @@
       "attacks": [{"type": "damage", "name": "DPS_BeamHuge"}]
     },
     "Orbital Railcannon Strike": {
-      "idx": 98,
       "stratcode": "ruddr",
       "calltime": 1,
       "cooldown": 210,
@@ -18253,7 +18155,6 @@
       ]
     },
     "Eagle Airstrike": {
-      "idx": 99,
       "stratcode": "urdr",
       "cooldown": 15,
       "eaglestock": 2,
@@ -18264,7 +18165,6 @@
       ]
     },
     "Eagle Napalm Airstrike": {
-      "idx": 100,
       "stratcode": "urdu",
       "cooldown": 15,
       "eaglestock": 2,
@@ -18275,7 +18175,6 @@
       ]
     },
     "Eagle 500kg Bomb": {
-      "idx": 101,
       "stratcode": "urddd",
       "cooldown": 15,
       "eaglestock": 1,
@@ -18287,7 +18186,6 @@
       ]
     },
     "Eagle Strafing Run": {
-      "idx": 102,
       "stratcode": "urr",
       "cooldown": 15,
       "eaglestock": 4,
@@ -18297,7 +18195,6 @@
       ]
     },
     "Eagle Cluster Bomb": {
-      "idx": 103,
       "stratcode": "urddr",
       "cooldown": 15,
       "eaglestock": 4,
@@ -18310,7 +18207,6 @@
       ]
     },
     "Eagle 110mm Rocket Pods": {
-      "idx": 104,
       "stratcode": "urul",
       "cooldown": 15,
       "eaglestock": 2,
@@ -18321,7 +18217,6 @@
       ]
     },
     "Eagle Smoke Strike": {
-      "idx": 105,
       "stratcode": "urud",
       "cooldown": 15,
       "eaglestock": 2,
@@ -18332,7 +18227,6 @@
       ]
     },
     "EXO-45 Patriot Exosuit": {
-      "idx": 106,
       "stratcode": "ldruldd",
       "health": 600,
       "armor": 3,
@@ -18346,7 +18240,6 @@
       ]
     },
     "EXO-49 Emancipator Exosuit": {
-      "idx": 107,
       "stratcode": "ldruldu",
       "health": 600,
       "armor": 3,
@@ -18358,21 +18251,14 @@
         {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"}
       ]
     },
-    "Eagle Rearm": {
-      "idx": 108,
-      "stratcode": "uulur",
-      "cooldown": 150,
-      "attacks": []
-    },
+    "Eagle Rearm": {"stratcode": "uulur", "cooldown": 150, "attacks": []},
     "NUX-223 Hellbomb": {
-      "idx": 109,
       "stratcode": "duldurdu",
       "calltime": 5,
       "cooldown": 30,
       "attacks": [{"type": "explosion", "name": "Hellbomb"}]
     },
     "SEAF Artillery#Explosive": {
-      "idx": 110,
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
@@ -18382,7 +18268,6 @@
       ]
     },
     "SEAF Artillery#High Yield Explosive": {
-      "idx": 111,
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
@@ -18392,7 +18277,6 @@
       ]
     },
     "SEAF Artillery#Mini Nuke": {
-      "idx": 112,
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
@@ -18402,7 +18286,6 @@
       ]
     },
     "SEAF Artillery#Smoke": {
-      "idx": 113,
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
@@ -18412,7 +18295,6 @@
       ]
     },
     "SEAF Artillery#Napalm": {
-      "idx": 114,
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
@@ -18422,7 +18304,6 @@
       ]
     },
     "SEAF Artillery#Static Field": {
-      "idx": 115,
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
@@ -18431,5 +18312,54 @@
         {"type": "explosion", "name": "SEAF_Gun_EMP"}
       ]
     }
-  }
+  },
+  "weapon_order": [
+    "AR-23 Liberator",
+    "AR-23P Liberator Penetrator",
+    "AR-23C Liberator Concussive",
+    "AR-23A Liberator Carbine",
+    "AR-61 Tenderizer",
+    "BR-14 Adjudicator",
+    "R-63 Diligence",
+    "R-63CS Diligence Counter Sniper",
+    "MP-98 Knight",
+    "SMG-37 Defender",
+    "SMG-72 Pummeler",
+    "SG-8 Punisher",
+    "SG-8S Slugger",
+    "SG-225 Breaker",
+    "SG-225SP Breaker Spray & Pray",
+    "SG-225IE Breaker Incendiary",
+    "CB-9 Exploding Crossbow",
+    "JAR-5 Dominator",
+    "R-36 Eruptor",
+    "SG-8P Punisher Plasma",
+    "ARC-12 Blitzer",
+    "LAS-5 Scythe",
+    "LAS-16 Sickle",
+    "PLAS-1 Scorcher",
+    "PLAS-101 Purifier",
+    "P-2 Peacemaker",
+    "P-19 Redeemer",
+    "P-113 Verdict",
+    "GP-31 Grenade Pistol",
+    "LAS-7 Dagger",
+    "P-4 Senator",
+    "M-105 Stalwart",
+    "MG-43 Machine Gun",
+    "MG-206 Heavy Machine Gun",
+    "ARC-3 Arc Thrower",
+    "FLAM-40 Flamethrower",
+    "APW-1 Anti-Materiel Rifle",
+    "GL-21 Grenade Launcher",
+    "AC-8 Autocannon",
+    "RS-422 Railgun",
+    "LAS-98 Laser Cannon",
+    "LAS-99 Quasar Cannon",
+    "EAT-17 Expendable Anti-Tank",
+    "GR-8 Recoilless Rifle",
+    "FAF-14 Spear",
+    "RL-77 Airburst Rocket Launcher",
+    "Break-Action Shotgun"
+  ]
 }

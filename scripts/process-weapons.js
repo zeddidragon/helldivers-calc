@@ -207,10 +207,22 @@ function unrollAttack(attack) {
   return unrolled
 }
 
+const wikiCategories = [
+  "Assault Rifle",
+  "Shotgun",
+  "Marksman Rifle",
+  "Submachine Gun",
+  "Explosive",
+  "Energy-Based",
+  "Pistol",
+  "Support Weapon",
+]
+
 const allWeapons = [
   ...setup.weapon,
   ...setup.stratagem,
 ]
+const weaponOrder = []
 let i = 0
 for(const wpn of allWeapons) {
   const reg = wikiRegister.weapon
@@ -225,16 +237,20 @@ for(const wpn of allWeapons) {
       count: atk.count,
     })
   })
+  const category = names[`wpn.category.full;${wpn.category}`]
+  if(wikiCategories.includes(category)) {
+    weaponOrder[i++] = wpn.fullname
+  }
   wpn.attack = attacks
   reg[wpn.fullname] = {
-    idx: ++i,
     ...wpn,
-    category: names[`wpn.category.full;${wpn.category}`],
+    category,
     fullname: void 0,
     attack: void 0,
     attacks,
   }
 }
+wikiRegister.weapon_order = weaponOrder
 
 fs.writeFileSync('data/wiki.json', json(wikiRegister))
 
