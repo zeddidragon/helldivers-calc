@@ -148,15 +148,23 @@ for(const prop of Object.keys(wikiRegister)) {
     }
     if(obj.ximpactid) {
       obj2.ximpactid = register.explosion[obj.ximpactid].enum
+    } else {
+      delete obj2.ximpactid
     }
     if(obj.xdelayid) {
       obj2.xdelayid = register.explosion[obj.xdelayid].enum
+    } else {
+      delete obj2.xdelayid
     }
     if(obj.damageid) {
       obj2.damageid = register.damage[obj.damageid].enum
+    } else {
+      delete obj2.damageid
     }
     if(obj.projectileid) {
       obj2.projectileid = register.projectile[obj.projectileid].enum
+    } else {
+      delete obj2.projectileid
     }
     reg[obj.enum] = obj2
   }

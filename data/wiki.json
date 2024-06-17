@@ -8280,7 +8280,6 @@
       "damageid": "Projectile_Bomb_100kg",
       "penslow": 0.25,
       "xangle": 90,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0.5,
       "xdelayid": "ClusterBomb",
@@ -8312,7 +8311,6 @@
       "ximpactid": "HeavyShrapnel_Clusterbombs",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 5,
@@ -8341,7 +8339,6 @@
       "ximpactid": "EagleBomb_100kg",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8370,7 +8367,6 @@
       "ximpactid": "EagleBomb_100kg_MK2",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8399,7 +8395,6 @@
       "ximpactid": "EagleBomb_100kg_MK3",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8428,7 +8423,6 @@
       "ximpactid": "EagleBomb_Napalm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8457,7 +8451,6 @@
       "ximpactid": "EagleBomb_Napalm_MK2",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8486,7 +8479,6 @@
       "ximpactid": "EagleBomb_Napalm_MK3",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8515,7 +8507,6 @@
       "ximpactid": "OrbitalSmoke",
       "xproximity": 0,
       "xdelay": 0.5,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8544,7 +8535,6 @@
       "ximpactid": "CarpetBomb_200kg",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8660,7 +8650,6 @@
       "ximpactid": "Strider_AcidStream",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 20,
       "unk43": 0,
       "unk44": 0,
@@ -8686,10 +8675,8 @@
       "damageid": "Projectile_Boomer_AcidStream",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 19,
       "unk43": 0,
       "unk44": 0,
@@ -8715,10 +8702,8 @@
       "damageid": "Projectile_Boomer_Nurser_AcidStream",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 0,
       "unk44": 0,
@@ -8744,10 +8729,8 @@
       "damageid": "Projectile_Scavenger_AcidBall",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 18,
       "unk43": 0,
       "unk44": 0,
@@ -8773,7 +8756,6 @@
       "damageid": "Projectile_Strider_Spike",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 4,
       "xdelayid": "Dummy",
@@ -8805,7 +8787,6 @@
       "ximpactid": "Bug_Artillery",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8834,7 +8815,6 @@
       "ximpactid": "APHET_20mm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 16,
       "unk43": 3,
       "unk44": 1,
@@ -8863,7 +8843,6 @@
       "ximpactid": "Flak_20mm",
       "xproximity": 4,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8889,10 +8868,8 @@
       "damageid": "Projectile_Cannon_20mm_HVAPT",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 16,
       "unk43": 3,
       "unk44": 1,
@@ -8921,7 +8898,6 @@
       "ximpactid": "HE_20mm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -8950,7 +8926,6 @@
       "ximpactid": "APHE_30mm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 16,
       "unk43": 3,
       "unk44": 1,
@@ -8979,7 +8954,6 @@
       "ximpactid": "Flak_40mm",
       "xproximity": 9,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 16,
       "unk43": 3,
       "unk44": 1,
@@ -9008,7 +8982,6 @@
       "ximpactid": "APHE_40mm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 16,
       "unk43": 3,
       "unk44": 1,
@@ -9037,7 +9010,6 @@
       "ximpactid": "Cannon_23mm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 4,
       "unk44": 1,
@@ -9066,7 +9038,6 @@
       "ximpactid": "Cannon_23mm_silent",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 4,
       "unk44": 1,
@@ -9092,10 +9063,8 @@
       "damageid": "Projectile_Cannon_Eagle_23mm",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 4,
       "unk44": 1,
@@ -9121,10 +9090,8 @@
       "damageid": "Projectile_CyborgRifle",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 10,
       "unk43": 10,
       "unk44": 0,
@@ -9150,10 +9117,8 @@
       "damageid": "Projectile_CyborgRifle",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 11,
       "unk43": 11,
       "unk44": 0,
@@ -9179,10 +9144,8 @@
       "damageid": "Projectile_CyborgHmg",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 12,
       "unk43": 12,
       "unk44": 0,
@@ -9208,10 +9171,8 @@
       "damageid": "Projectile_CyborgLightCannon",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 12,
       "unk43": 12,
       "unk44": 0,
@@ -9240,7 +9201,6 @@
       "ximpactid": "Cyborg_Projectile_LightCannon",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 12,
       "unk43": 12,
       "unk44": 0,
@@ -9269,7 +9229,6 @@
       "ximpactid": "Cyborg_Projectile_HeavyCannon",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 13,
       "unk43": 13,
       "unk44": 0,
@@ -9298,7 +9257,6 @@
       "ximpactid": "Cyborg_Projectile_SpawnerMountedCannon",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 13,
       "unk43": 13,
       "unk44": 0,
@@ -9324,10 +9282,8 @@
       "damageid": "Projectile_CyborgHmg",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 11,
       "unk43": 11,
       "unk44": 0,
@@ -9385,7 +9341,6 @@
       "ximpactid": "Cyborg_Projectile_LightRocket",
       "xproximity": 0.25,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -9414,7 +9369,6 @@
       "ximpactid": "Cyborg_Projectile_HeavyRocket",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -9440,10 +9394,8 @@
       "damageid": "Projectile_Grenade_40mm_HE",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -9472,7 +9424,6 @@
       "ximpactid": "Cyborg_Mortar_Base_Shell_Explosion",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 4,
       "unk44": 1,
@@ -9501,7 +9452,6 @@
       "ximpactid": "OrbitalBarrage",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 13,
       "unk43": 13,
       "unk44": 1,
@@ -9527,10 +9477,8 @@
       "damageid": "Projectile_CyborgHeavyFlamer",
       "penslow": 0.25,
       "xangle": 90,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 0,
@@ -9559,7 +9507,6 @@
       "ximpactid": "Cyborg_Artillery",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -9733,7 +9680,6 @@
       "ximpactid": "Grenade_40mm_ProximityCone",
       "xproximity": 0.5,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 16,
       "unk43": 3,
       "unk44": 1,
@@ -9762,7 +9708,6 @@
       "ximpactid": "Grenade_Mortar_40mm_HE",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -9820,7 +9765,6 @@
       "ximpactid": "Grenade_75mm_HEAT",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -9849,7 +9793,6 @@
       "ximpactid": "Grenade_85mm_HE",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 29,
       "unk43": 4,
       "unk44": 1,
@@ -9878,7 +9821,6 @@
       "ximpactid": "Grenade_85mm_HE_MK2",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 29,
       "unk43": 4,
       "unk44": 1,
@@ -9907,7 +9849,6 @@
       "ximpactid": "Grenade_85mm_HEAT",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 29,
       "unk43": 4,
       "unk44": 1,
@@ -9936,7 +9877,6 @@
       "ximpactid": "Grenade_85mm_HEAT_MK2",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 29,
       "unk43": 4,
       "unk44": 1,
@@ -10020,10 +9960,8 @@
       "damageid": "Projectile_Illuminate_Lightspear",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 7,
       "unk43": 7,
       "unk44": 1,
@@ -10049,10 +9987,8 @@
       "damageid": "Projectile_Railgun",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 7,
       "unk43": 7,
       "unk44": 1,
@@ -10078,10 +10014,8 @@
       "damageid": "Projectile_Railgun",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 28,
       "unk43": 7,
       "unk44": 1,
@@ -10107,10 +10041,8 @@
       "damageid": "Projectile_Railgun",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 29,
       "unk43": 7,
       "unk44": 1,
@@ -10139,7 +10071,6 @@
       "ximpactid": "Illuminate_Projectile_Huge",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 13,
       "unk43": 13,
       "unk44": 0,
@@ -10168,7 +10099,6 @@
       "ximpactid": "Illuminate_Projectile_Huge",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 8,
       "unk43": 8,
       "unk44": 0,
@@ -10197,7 +10127,6 @@
       "ximpactid": "Illuminate_Medium",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 28,
       "unk43": 3,
       "unk44": 0,
@@ -10255,7 +10184,6 @@
       "ximpactid": "Missile_66mm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -10284,7 +10212,6 @@
       "ximpactid": "Missile_66mm_MK2",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -10313,7 +10240,6 @@
       "ximpactid": "StingerMissile",
       "xproximity": 10,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -10342,7 +10268,6 @@
       "ximpactid": "FafMissile",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -10371,7 +10296,6 @@
       "ximpactid": "FafMissile",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -10400,7 +10324,6 @@
       "ximpactid": "Combat_Walker_Missile",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -10429,7 +10352,6 @@
       "ximpactid": "Combat_Walker_Missile_MK2",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -10458,7 +10380,6 @@
       "ximpactid": "EagleMissile",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 0,
@@ -10574,7 +10495,6 @@
       "ximpactid": "OrbitalStrike",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10603,7 +10523,6 @@
       "ximpactid": "OrbitalStrike_Cheap",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10632,7 +10551,6 @@
       "ximpactid": "OrbitalBarrage",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10661,7 +10579,6 @@
       "ximpactid": "PrecisionStrike",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10690,7 +10607,6 @@
       "ximpactid": "OrbitalBarrage_Cheap",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10719,7 +10635,6 @@
       "ximpactid": "OrbitalBarrage_MK2",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10748,7 +10663,6 @@
       "ximpactid": "OrbitalStun",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10777,7 +10691,6 @@
       "ximpactid": "OrbitalStun_MK2",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10806,7 +10719,6 @@
       "ximpactid": "OrbitalStun_MK3",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10835,7 +10747,6 @@
       "ximpactid": "OrbitalGas",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10864,7 +10775,6 @@
       "ximpactid": "OrbitalGas_MK2",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10893,7 +10803,6 @@
       "ximpactid": "OrbitalGas_MK3",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10916,13 +10825,11 @@
       "simsteps": 1,
       "lifetime": 0,
       "liferandom": 0,
-      "damageid": 0,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": "AirStrikeSmoke",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -10977,10 +10884,8 @@
       "damageid": "Projectile_Orbital_Cannon_110mm",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -11006,7 +10911,6 @@
       "damageid": "Projectile_Orbital_Railcannon",
       "penslow": 0,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0.01,
       "xdelayid": "Railcannon_Impact",
@@ -11038,7 +10942,6 @@
       "ximpactid": "SEAF_Gun_Explosive",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -11067,7 +10970,6 @@
       "ximpactid": "SEAF_Gun_High_Yield_Explosive",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -11096,7 +10998,6 @@
       "ximpactid": "SEAF_Gun_Mini_Nuke",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -11125,7 +11026,6 @@
       "ximpactid": "SEAF_Gun_Smoke",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -11154,7 +11054,6 @@
       "ximpactid": "SEAF_Gun_Napalm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -11183,7 +11082,6 @@
       "ximpactid": "SEAF_Gun_EMP",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 17,
       "unk43": 4,
       "unk44": 1,
@@ -11209,10 +11107,8 @@
       "damageid": "Projectile_Pistol_9x20mm_exp",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11238,10 +11134,8 @@
       "damageid": "Projectile_Pistol_9x20mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11267,10 +11161,8 @@
       "damageid": "Projectile_Pistol_9x20mm_smj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11296,10 +11188,8 @@
       "damageid": "Projectile_Pistol_9x20mm_hp",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11325,10 +11215,8 @@
       "damageid": "Projectile_Pistol_9x20mm_hv",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11354,10 +11242,8 @@
       "damageid": "Projectile_Pistol_9x20mm_pla",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 7,
       "unk43": 3,
       "unk44": 1,
@@ -11383,10 +11269,8 @@
       "damageid": "Projectile_Pistol_9x20mm_rip",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11412,10 +11296,8 @@
       "damageid": "Projectile_Pistol_9x20mm_ther",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11441,10 +11323,8 @@
       "damageid": "Projectile_Pistol_9x20mm_tox",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11470,10 +11350,8 @@
       "damageid": "Projectile_Pistol_12x25mm_exp",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11499,10 +11377,8 @@
       "damageid": "Projectile_Pistol_12x25mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11528,10 +11404,8 @@
       "damageid": "Projectile_Pistol_12x25mm_hp",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11557,10 +11431,8 @@
       "damageid": "Projectile_Pistol_12x25mm_hv",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11586,10 +11458,8 @@
       "damageid": "Projectile_Pistol_12x25mm_pla",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 7,
       "unk43": 3,
       "unk44": 1,
@@ -11615,10 +11485,8 @@
       "damageid": "Projectile_Pistol_12x25mm_rip",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11644,10 +11512,8 @@
       "damageid": "Projectile_Pistol_12x25mm_ther",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11673,10 +11539,8 @@
       "damageid": "Projectile_Pistol_12x25mm_tox",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11702,10 +11566,8 @@
       "damageid": "Projectile_Pistol_12x25mm_stun",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11731,10 +11593,8 @@
       "damageid": "Projectile_Pistol_Magnum",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11760,10 +11620,8 @@
       "damageid": "Projectile_Pistol_13x40mm_ap",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11789,10 +11647,8 @@
       "damageid": "Projectile_Pistol_13x40mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11818,10 +11674,8 @@
       "damageid": "Projectile_Pistol_13x40mm_hp",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11847,10 +11701,8 @@
       "damageid": "Projectile_Pistol_13x40mm_mag",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11876,10 +11728,8 @@
       "damageid": "Projectile_Pistol_13x40mm_rip",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11905,10 +11755,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11934,10 +11782,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_ap",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11963,10 +11809,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_dev",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -11992,10 +11836,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_exp",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12021,10 +11863,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_hp",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12050,10 +11890,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_hv",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12079,10 +11917,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_pow",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12108,10 +11944,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_rip",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12137,10 +11971,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_spr",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12166,10 +11998,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_ss",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12195,10 +12025,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_suc",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12224,10 +12052,8 @@
       "damageid": "Projectile_Rifle_5p5x50mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12253,7 +12079,6 @@
       "damageid": "Projectile_Rifle_8x60mm_airb",
       "penslow": 0.25,
       "xangle": 90,
-      "ximpactid": 0,
       "xproximity": 1,
       "xdelay": 1,
       "xdelayid": "Primary_Airburst",
@@ -12282,10 +12107,8 @@
       "damageid": "Projectile_Rifle_8x60mm_ap",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12311,10 +12134,8 @@
       "damageid": "Projectile_Rifle_8x60mm_dev",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12340,10 +12161,8 @@
       "damageid": "Projectile_Rifle_8x60mm_exp",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12369,10 +12188,8 @@
       "damageid": "Projectile_Rifle_8x60mm_flm",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12398,10 +12215,8 @@
       "damageid": "Projectile_Rifle_8x60mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12427,10 +12242,8 @@
       "damageid": "Projectile_Rifle_8x60mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12456,10 +12269,8 @@
       "damageid": "Projectile_Rifle_8x60mm_hv",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12485,10 +12296,8 @@
       "damageid": "Projectile_Rifle_8x60mm_pow",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12514,10 +12323,8 @@
       "damageid": "Projectile_Rifle_8x60mm_snb",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12543,10 +12350,8 @@
       "damageid": "Projectile_Rifle_8x60mm_ss",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12572,10 +12377,8 @@
       "damageid": "Projectile_Rifle_8x60mm_suc",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12601,10 +12404,8 @@
       "damageid": "Projectile_Rifle_8x60mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12630,10 +12431,8 @@
       "damageid": "Projectile_Rifle_8x60mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12659,10 +12458,8 @@
       "damageid": "Projectile_Rifle_8x60mm_apt",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12688,10 +12485,8 @@
       "damageid": "Projectile_Battle_Rifle",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12717,10 +12512,8 @@
       "damageid": "Projectile_Rifle_Rico",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -12746,10 +12539,8 @@
       "damageid": "Projectile_Rifle_9x70mm_ap",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 4,
       "unk44": 1,
@@ -12775,10 +12566,8 @@
       "damageid": "Projectile_Rifle_9x70mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 4,
       "unk44": 1,
@@ -12804,10 +12593,8 @@
       "damageid": "Projectile_Rifle_9x70mm_hv",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 4,
       "unk44": 1,
@@ -12833,10 +12620,8 @@
       "damageid": "Projectile_Rifle_9x70mm_snb",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 4,
       "unk44": 1,
@@ -12862,10 +12647,8 @@
       "damageid": "Projectile_Rifle_9x70mm_soc",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 4,
       "unk44": 1,
@@ -12891,10 +12674,8 @@
       "damageid": "Projectile_Rifle_9x70mm_spr",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 4,
       "unk44": 1,
@@ -12920,10 +12701,8 @@
       "damageid": "Projectile_Rifle_9x70mm_suc",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 4,
       "unk44": 1,
@@ -12949,10 +12728,8 @@
       "damageid": "Projectile_Rifle_12p5x100mm_fmj",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 4,
       "unk44": 1,
@@ -12978,10 +12755,8 @@
       "damageid": "Projectile_Rifle_12p5x100mm_eit",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 21,
       "unk43": 21,
       "unk44": 1,
@@ -13007,10 +12782,8 @@
       "damageid": "Projectile_Rifle_12p5x100mm_eit_mk2",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 21,
       "unk43": 21,
       "unk44": 1,
@@ -13036,10 +12809,8 @@
       "damageid": "Projectile_Rifle_12p5x100mm_bchp",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 4,
       "unk44": 1,
@@ -13068,7 +12839,6 @@
       "ximpactid": "Crossbow_Bolt",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 3,
       "unk44": 1,
@@ -13094,10 +12864,8 @@
       "damageid": "Projectile_Rocket_15x100mm_emp",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 3,
       "unk44": 1,
@@ -13152,10 +12920,8 @@
       "damageid": "Projectile_Rocket_15x100mm_frag",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 29,
       "unk44": 1,
@@ -13181,10 +12947,8 @@
       "damageid": "Projectile_Rocket_15x100mm_pla",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 7,
       "unk43": 3,
       "unk44": 1,
@@ -13210,10 +12974,8 @@
       "damageid": "Projectile_Rocket_15x100mm_hv",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 3,
       "unk44": 1,
@@ -13239,10 +13001,8 @@
       "damageid": "Projectile_Rocket_15x100mm_std",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 3,
       "unk44": 1,
@@ -13268,10 +13028,8 @@
       "damageid": "Projectile_Rocket_15x100mm_ther",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 4,
       "unk43": 3,
       "unk44": 1,
@@ -13297,10 +13055,8 @@
       "damageid": "Projectile_Rocket_15x100mm_tox",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 28,
       "unk43": 4,
       "unk44": 1,
@@ -13358,7 +13114,6 @@
       "ximpactid": "Rocket_70mm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -13387,7 +13142,6 @@
       "ximpactid": "Rocket_70mm_turret",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -13416,7 +13170,6 @@
       "ximpactid": "Rocket_110mm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 0,
@@ -13445,7 +13198,6 @@
       "ximpactid": "Rocket_110mm_silent",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 0,
@@ -13474,7 +13226,6 @@
       "ximpactid": "Rocket_110mm",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -13500,10 +13251,8 @@
       "damageid": "Projectile_Shotgun_12g_bir",
       "penslow": 0.8,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13529,10 +13278,8 @@
       "damageid": "Projectile_Shotgun_12g_buc",
       "penslow": 0.8,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13558,10 +13305,8 @@
       "damageid": "Projectile_Shotgun_12g_bug",
       "penslow": 0.8,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13587,10 +13332,8 @@
       "damageid": "Projectile_Shotgun_12g_fle",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13616,10 +13359,8 @@
       "damageid": "Projectile_Shotgun_12g_flm",
       "penslow": 1,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -13645,10 +13386,8 @@
       "damageid": "Projectile_Shotgun_12g_mag",
       "penslow": 0.8,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13674,10 +13413,8 @@
       "damageid": "Projectile_Shotgun_12g_magtri",
       "penslow": 0.8,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13703,7 +13440,6 @@
       "damageid": "Projectile_Shotgun_12g_scs",
       "penslow": 0.25,
       "xangle": 90,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
       "xdelayid": "Primary_ScatterShot",
@@ -13732,10 +13468,8 @@
       "damageid": "Projectile_Shotgun_12g_tri",
       "penslow": 0.8,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13761,10 +13495,8 @@
       "damageid": "Projectile_Shotgun_10g_bir",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13790,10 +13522,8 @@
       "damageid": "Projectile_Shotgun_10g_buc",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13819,10 +13549,8 @@
       "damageid": "Projectile_TripleBarrelShotgun_10g_buc",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13845,7 +13573,6 @@
       "simsteps": 1,
       "lifetime": 0.03,
       "liferandom": 0,
-      "damageid": 0,
       "penslow": 0.25,
       "xangle": 80,
       "ximpactid": "Punisher_Dragon_Cone",
@@ -13877,10 +13604,8 @@
       "damageid": "Projectile_Shotgun_10g_bug",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13906,10 +13631,8 @@
       "damageid": "Projectile_Shotgun_10g_fle",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -13935,10 +13658,8 @@
       "damageid": "Projectile_Shotgun_10g_flm",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -13967,7 +13688,6 @@
       "ximpactid": "12g_Frag",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 16,
       "unk43": 3,
       "unk44": 1,
@@ -13993,10 +13713,8 @@
       "damageid": "Projectile_Shotgun_10g_mag",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -14022,10 +13740,8 @@
       "damageid": "Projectile_Shotgun_10g_magtri",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -14051,10 +13767,8 @@
       "damageid": "Projectile_Shotgun_10g_sab",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -14080,10 +13794,8 @@
       "damageid": "Projectile_Shotgun_10g_sab2",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -14109,10 +13821,8 @@
       "damageid": "Projectile_Shotgun_10g_sabhv",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -14138,7 +13848,6 @@
       "damageid": "Projectile_Shotgun_10g_scs",
       "penslow": 0.25,
       "xangle": 90,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
       "xdelayid": "Primary_ScatterShot",
@@ -14167,10 +13876,8 @@
       "damageid": "Projectile_Shotgun_10g_slug",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -14196,10 +13903,8 @@
       "damageid": "Projectile_Shotgun_10g_tri",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -14225,10 +13930,8 @@
       "damageid": "Projectile_Shrapnel",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -14254,10 +13957,8 @@
       "damageid": "Projectile_Shotgun_12g_buc",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -14283,10 +13984,8 @@
       "damageid": "Projectile_Shrapnel_High_Velocity",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 1,
       "unk43": 1,
       "unk44": 1,
@@ -14315,7 +14014,6 @@
       "ximpactid": "HeavyShrapnel",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -14344,7 +14042,6 @@
       "ximpactid": "HeavyShrapnel_MK2",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -14373,7 +14070,6 @@
       "ximpactid": "Plasma_Bolt_Small",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 7,
       "unk43": 7,
       "unk44": 0,
@@ -14402,7 +14098,6 @@
       "ximpactid": "Plasma_Bolt_Medium",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 7,
       "unk43": 7,
       "unk44": 0,
@@ -14489,7 +14184,6 @@
       "ximpactid": "Plasma_Bolt_Large",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 7,
       "unk43": 7,
       "unk44": 0,
@@ -14518,7 +14212,6 @@
       "ximpactid": "Plasma_Rifle_Charge",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 7,
       "unk43": 7,
       "unk44": 0,
@@ -14547,7 +14240,6 @@
       "ximpactid": "Punisher_Plasma_Explosion",
       "xproximity": 0.5,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 7,
       "unk43": 7,
       "unk44": 0,
@@ -14570,7 +14262,6 @@
       "simsteps": 1,
       "lifetime": 0.03,
       "liferandom": 0,
-      "damageid": 0,
       "penslow": 0.35,
       "xangle": 80,
       "ximpactid": "Plasma_Cone",
@@ -14602,10 +14293,8 @@
       "damageid": "Projectile_Railgun",
       "penslow": 0,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 28,
       "unk43": 4,
       "unk44": 1,
@@ -14631,10 +14320,8 @@
       "damageid": "Projectile_Railgun_Stun",
       "penslow": 0,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 28,
       "unk43": 4,
       "unk44": 1,
@@ -14660,10 +14347,8 @@
       "damageid": "Projectile_Laser_Long",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 10,
       "unk43": 10,
       "unk44": 0,
@@ -14692,7 +14377,6 @@
       "ximpactid": "Laser_Pulse",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 11,
       "unk43": 11,
       "unk44": 0,
@@ -14718,10 +14402,8 @@
       "damageid": "Projectile_StratagemLauncher",
       "penslow": 0.25,
       "xangle": 0,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 3,
@@ -14747,10 +14429,8 @@
       "damageid": "Projectile_StratagemLauncher",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -14776,10 +14456,8 @@
       "damageid": "Projectile_Flamethrower",
       "penslow": 0.25,
       "xangle": 90,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 0,
@@ -14805,10 +14483,8 @@
       "damageid": "Projectile_Flamethrower",
       "penslow": 0.25,
       "xangle": 90,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 3,
@@ -14837,7 +14513,6 @@
       "ximpactid": "Nuke",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -14866,7 +14541,6 @@
       "ximpactid": "World_Meteor",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -14895,7 +14569,6 @@
       "ximpactid": "World_VolcanoStrike",
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 0,
       "unk43": 0,
       "unk44": 1,
@@ -14921,10 +14594,8 @@
       "damageid": "Projectile_Spikeplant_Shrapnel",
       "penslow": 0.25,
       "xangle": 80,
-      "ximpactid": 0,
       "xproximity": 0,
       "xdelay": 0,
-      "xdelayid": 0,
       "unk42": 3,
       "unk43": 3,
       "unk44": 1,
@@ -14956,7 +14627,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Warrior Acid Death"
     },
     "Scavenger_AcidDeath": {
@@ -14966,7 +14636,6 @@
       "r3": 2.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Scavenger Acid Death"
     },
     "Scavenger_AcidBall": {
@@ -14976,7 +14645,6 @@
       "r3": 2,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Scavenger Acid Ball"
     },
     "Strider_AcidStream": {
@@ -14986,7 +14654,6 @@
       "r3": 2.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Strider Acid Stream"
     },
     "TunnelerEmerge": {
@@ -14996,7 +14663,6 @@
       "r3": 10,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Tunneler Emerge"
     },
     "Strider_Stomp": {
@@ -15006,7 +14672,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Strider Stomp"
     },
     "BugTrap": {
@@ -15016,7 +14681,6 @@
       "r3": 2.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Bug Trap"
     },
     "BugHoleCollapse": {
@@ -15026,7 +14690,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Bug Hole Collapse"
     },
     "Bug_Artillery": {
@@ -15036,7 +14699,6 @@
       "r3": 14,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Bug Artillery"
     },
     "Cyborg_HandGrenade_Antitank": {
@@ -15046,7 +14708,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Hand Grenade Antitank"
     },
     "Cyborg_HandGrenade_HighExplosive": {
@@ -15056,7 +14717,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Hand Grenade High Explosive"
     },
     "Cyborg_Mortar_Base_Shell_Explosion": {
@@ -15066,7 +14726,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Mortar Base Shell Explosion"
     },
     "Cyborg_Projectile_LightCannon": {
@@ -15076,7 +14735,6 @@
       "r3": 5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Projectile Light Cannon"
     },
     "Cyborg_Projectile_HeavyCannon": {
@@ -15086,7 +14744,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Projectile Heavy Cannon"
     },
     "Cyborg_Projectile_SpawnerMountedCannon": {
@@ -15096,7 +14753,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Projectile Spawner Mounted Cannon"
     },
     "Projectile_Shotgun_Flakblast": {
@@ -15106,7 +14762,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Projectile Shotgun Flakblast"
     },
     "Cyborg_Projectile_LightRocket": {
@@ -15116,7 +14771,6 @@
       "r3": 3.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Projectile Light Rocket"
     },
     "Cyborg_Projectile_HeavyRocket": {
@@ -15126,7 +14780,6 @@
       "r3": 25,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Projectile Heavy Rocket"
     },
     "Cyborg_PlasmaBackpackOverload": {
@@ -15136,7 +14789,6 @@
       "r3": 1,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Plasma Backpack Overload"
     },
     "Cyborg_FlamerBackpackOverload": {
@@ -15146,7 +14798,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Flamer Backpack Overload"
     },
     "Cyborg_Mine": {
@@ -15156,7 +14807,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Mine"
     },
     "Cyborg_Vehicle_Medium_Death": {
@@ -15166,7 +14816,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Vehicle Medium Death"
     },
     "Cyborg_Tank_Turret_Death": {
@@ -15176,7 +14825,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Tank Turret Death"
     },
     "Cyborg_Vehicle_Large_Death_Air": {
@@ -15186,7 +14834,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Vehicle Large Death Air"
     },
     "Cyborg_Dropship_Death_Air": {
@@ -15196,7 +14843,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Dropship Death Air"
     },
     "Fabricator_Fall_Impact": {
@@ -15206,7 +14852,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Fabricator Fall Impact"
     },
     "Cyborg_Vehicle_Large_Death_Ground": {
@@ -15216,7 +14861,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Vehicle Large Death Ground"
     },
     "Cyborg_Vehicle_Medium_Death_Ground": {
@@ -15226,7 +14870,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Vehicle Medium Death Ground"
     },
     "Cyborg_Factory_Spawner": {
@@ -15236,7 +14879,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Factory Spawner"
     },
     "Cyborg_Dropship_Death_Ground": {
@@ -15246,7 +14888,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Dropship Death Ground"
     },
     "Cyborg_Fabricator_Large_Death_Ground": {
@@ -15256,7 +14897,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Fabricator Large Death Ground"
     },
     "Cyborg_Vehicle_Huge_Death": {
@@ -15266,7 +14906,6 @@
       "r3": 25,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Vehicle Huge Death"
     },
     "DropshipCrash": {
@@ -15276,7 +14915,6 @@
       "r3": 10,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Dropship Crash"
     },
     "DropshipCrash_Medium": {
@@ -15286,7 +14924,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Dropship Crash Medium"
     },
     "GunshipCrash_Medium": {
@@ -15296,7 +14933,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Gunship Crash Medium"
     },
     "DropshipCrash_Large": {
@@ -15306,7 +14942,6 @@
       "r3": 16,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Dropship Crash Large"
     },
     "GunshipCrash_Large": {
@@ -15316,7 +14951,6 @@
       "r3": 16,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Gunship Crash Large"
     },
     "ThrusterExplosion": {
@@ -15326,7 +14960,6 @@
       "r3": 25,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Thruster Explosion"
     },
     "Cyborg_Artillery": {
@@ -15336,7 +14969,6 @@
       "r3": 17,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Artillery"
     },
     "Frag": {
@@ -15356,7 +14988,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Flash"
     },
     "Incendiary": {
@@ -15366,7 +14997,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Incendiary"
     },
     "Thermite": {
@@ -15376,7 +15006,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Thermite"
     },
     "HighExplosive": {
@@ -15386,7 +15015,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "High Explosive"
     },
     "Impact": {
@@ -15396,7 +15024,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Impact"
     },
     "12g_Frag": {
@@ -15426,7 +15053,6 @@
       "r3": 2,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Plasma Bolt Small"
     },
     "Plasma_Bolt_Medium": {
@@ -15436,7 +15062,6 @@
       "r3": 2,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Plasma Bolt Medium"
     },
     "Plasma_Bolt_Medium_Volatile": {
@@ -15446,7 +15071,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Plasma Bolt Medium Volatile"
     },
     "Plasma_Bolt_Large": {
@@ -15456,7 +15080,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Plasma Bolt Large"
     },
     "Plasma_Rifle_Charge": {
@@ -15466,7 +15089,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Plasma Rifle Charge"
     },
     "Punisher_Plasma_Explosion": {
@@ -15476,7 +15098,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Punisher Plasma Explosion"
     },
     "Plasma_Cone": {
@@ -15486,7 +15107,6 @@
       "r3": 8.1,
       "angle": 25,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Plasma Cone"
     },
     "Punisher_Dragon_Cone": {
@@ -15496,7 +15116,6 @@
       "r3": 15.1,
       "angle": 15,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Punisher Dragon Cone"
     },
     "Crossbow_Bolt": {
@@ -15506,7 +15125,6 @@
       "r3": 5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Crossbow Bolt"
     },
     "Grenade_40mm_HE": {
@@ -15516,7 +15134,6 @@
       "r3": 7,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade 40mm HE"
     },
     "Grenade_40mm_HE_MK2": {
@@ -15526,7 +15143,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade 40mm HE Mk2"
     },
     "Grenade_40mm_Stun": {
@@ -15536,7 +15152,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade 40mm Stun"
     },
     "Grenade_40mm_ProximityCone": {
@@ -15556,7 +15171,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade 40mm Incendiary"
     },
     "Grenade_Mortar_40mm_HE": {
@@ -15576,7 +15190,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade Mortar 40mm Static Field"
     },
     "Grenade_85mm_HE": {
@@ -15586,7 +15199,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade 85mm HE"
     },
     "Grenade_85mm_HE_MK2": {
@@ -15596,7 +15208,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade 85mm HE Mk2"
     },
     "Grenade_85mm_HEAT": {
@@ -15606,7 +15217,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade 85mm HEAT"
     },
     "Grenade_85mm_HEAT_MK2": {
@@ -15616,7 +15226,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade 85mm HEAT Mk2"
     },
     "Grenade_75mm_HEAT": {
@@ -15626,7 +15235,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade 75mm HEAT"
     },
     "Flak_20mm": {
@@ -15646,7 +15254,6 @@
       "r3": 6.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "JAR Phoenix 20mm"
     },
     "APHET_20mm": {
@@ -15666,7 +15273,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Laser Pulse"
     },
     "HE_20mm": {
@@ -15686,7 +15292,6 @@
       "r3": 6.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cannon 23mm Silent"
     },
     "Cannon_23mm": {
@@ -15696,7 +15301,6 @@
       "r3": 6.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cannon 23mm"
     },
     "APHE_30mm": {
@@ -15706,7 +15310,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "APHE 30mm"
     },
     "Flak_40mm": {
@@ -15726,7 +15329,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "APHE 40mm"
     },
     "OrbitalShot": {
@@ -15756,7 +15358,6 @@
       "r3": 11,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Strike"
     },
     "OrbitalStrike_Cheap": {
@@ -15766,7 +15367,6 @@
       "r3": 11,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Strike Cheap"
     },
     "OrbitalBarrage": {
@@ -15776,7 +15376,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Barrage"
     },
     "PrecisionStrike": {
@@ -15786,7 +15385,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Precision Strike"
     },
     "OrbitalBarrage_Cheap": {
@@ -15796,7 +15394,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Barrage Cheap"
     },
     "OrbitalBarrage_MK2": {
@@ -15806,7 +15403,6 @@
       "r3": 20,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Barrage Mk2"
     },
     "OrbitalStun": {
@@ -15816,7 +15412,6 @@
       "r3": 20,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Stun"
     },
     "OrbitalStun_MK2": {
@@ -15826,7 +15421,6 @@
       "r3": 20,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Stun Mk2"
     },
     "OrbitalStun_MK3": {
@@ -15836,7 +15430,6 @@
       "r3": 25,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Stun Mk3"
     },
     "OrbitalGas": {
@@ -15846,7 +15439,6 @@
       "r3": 20,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Gas"
     },
     "OrbitalGas_MK2": {
@@ -15856,7 +15448,6 @@
       "r3": 20,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Gas Mk2"
     },
     "OrbitalGas_MK3": {
@@ -15866,31 +15457,25 @@
       "r3": 20,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Gas Mk3"
     },
     "OrbitalSmoke": {
-      "damageid": 0,
       "r1": 5,
       "r2": 5,
       "r3": 0,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Orbital Smoke"
     },
     "AirStrikeSmoke": {
-      "damageid": 0,
       "r1": 5,
       "r2": 5,
       "r3": 0,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Air Strike Smoke"
     },
     "OrbitalFlare": {
-      "damageid": 0,
       "r1": 0,
       "r2": 0,
       "r3": 0,
@@ -15906,7 +15491,6 @@
       "r3": 10,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Railcannon Impact"
     },
     "HeavyShrapnel": {
@@ -15916,7 +15500,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Heavy Shrapnel"
     },
     "HeavyShrapnel_Clusterbombs": {
@@ -15926,7 +15509,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Heavy Shrapnel Clusterbombs"
     },
     "HeavyShrapnel_MK2": {
@@ -15936,7 +15518,6 @@
       "r3": 7,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Heavy Shrapneli Mk2"
     },
     "MapBoundary": {
@@ -15946,7 +15527,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Map Boundary"
     },
     "HellpodImpact": {
@@ -15956,7 +15536,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Hellpod Impact"
     },
     "HellpodImpact_Silent": {
@@ -15966,7 +15545,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Hellpod Impact Silent"
     },
     "HellpodExplosion": {
@@ -15976,7 +15554,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Hellpod Explosion"
     },
     "Hellbomb": {
@@ -15986,7 +15563,6 @@
       "r3": 45,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Hellbomb"
     },
     "BackblastSmall": {
@@ -15996,7 +15572,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Backblast Small"
     },
     "BackblastMedium": {
@@ -16006,7 +15581,6 @@
       "r3": 7,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Backblast Medium"
     },
     "BackblastLarge": {
@@ -16016,7 +15590,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Backblast Large"
     },
     "BackblastHuge": {
@@ -16026,7 +15599,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Backblast Huge"
     },
     "Backblast_LargeConfined": {
@@ -16036,7 +15608,6 @@
       "r3": 1,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Backblast Large Confined"
     },
     "RailgunOvercharge": {
@@ -16046,7 +15617,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Railgun Overcharge"
     },
     "ClusterBomb": {
@@ -16066,7 +15636,6 @@
       "r3": 14,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Eagle Bomb 100kg"
     },
     "EagleBomb_100kg_MK2": {
@@ -16076,7 +15645,6 @@
       "r3": 16,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Eagle Bomb 100kg Mk2"
     },
     "EagleBomb_100kg_MK3": {
@@ -16086,7 +15654,6 @@
       "r3": 17,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Eagle Bomb 100kg Mk3"
     },
     "EagleBomb_Napalm": {
@@ -16096,7 +15663,6 @@
       "r3": 10,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Eagle Bomb Napalm"
     },
     "EagleBomb_Napalm_MK2": {
@@ -16106,7 +15672,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Eagle Bomb Napalm Mk2"
     },
     "EagleBomb_Napalm_MK3": {
@@ -16116,7 +15681,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Eagle Bomb Napalm Mk3"
     },
     "EagleBomb_500kg": {
@@ -16126,7 +15690,6 @@
       "r3": 30,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Eagle Bomb 500kg"
     },
     "EagleBomb_500kg_MK2": {
@@ -16136,7 +15699,6 @@
       "r3": 40,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Eagle Bomb 500kg Mk2"
     },
     "EagleBomb_500kg_MK3": {
@@ -16146,7 +15708,6 @@
       "r3": 35,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Eagle Bomb 500kg Mk3"
     },
     "EagleMissile": {
@@ -16156,7 +15717,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Eagle Missile"
     },
     "FafMissile": {
@@ -16166,7 +15726,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Fire-and-Forget Missile"
     },
     "FafMissile_MK2": {
@@ -16176,7 +15735,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Fire-and-Forget Missile Mk2"
     },
     "StingerMissile": {
@@ -16196,7 +15754,6 @@
       "r3": 35,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Mini Missile Silo"
     },
     "Mini_Missile_Silo_MK2": {
@@ -16206,7 +15763,6 @@
       "r3": 35,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Mini Missile Silo Mk2"
     },
     "Missile_66mm": {
@@ -16216,7 +15772,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Missile 66mm"
     },
     "Missile_66mm_MK2": {
@@ -16226,7 +15781,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Missile 66mm Mk2"
     },
     "Combat_Walker_Missile": {
@@ -16236,7 +15790,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Missile Exosuit"
     },
     "Combat_Walker_Missile_MK2": {
@@ -16246,7 +15799,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Missile Exosuit Mk2"
     },
     "Rocket_70mm_turret": {
@@ -16256,7 +15808,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Rocket 70mm Turret"
     },
     "Rocket_70mm": {
@@ -16266,7 +15817,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Rocket 70mm"
     },
     "Rocket_70mm_HE": {
@@ -16286,7 +15836,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Rocket 110mm"
     },
     "Rocket_110mm_silent": {
@@ -16296,7 +15845,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Rocket 110mm Silent"
     },
     "CarpetBomb_200kg": {
@@ -16306,7 +15854,6 @@
       "r3": 20,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Carpet Bomb 200kg"
     },
     "Vehicle_Explosion_Small": {
@@ -16316,7 +15863,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Vehicle Destruction Small"
     },
     "Vehicle_Explosion_Medium": {
@@ -16326,7 +15872,6 @@
       "r3": 10,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Vehicle Destruction Medium"
     },
     "Vehicle_Explosion_Large": {
@@ -16336,7 +15881,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Vehicle Destruction Large"
     },
     "Vehicle_Explosion_CombatWalker": {
@@ -16346,7 +15890,6 @@
       "r3": 10,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Exosuit Destruction"
     },
     "ContactMine": {
@@ -16356,7 +15899,6 @@
       "r3": 7,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Contact Mine"
     },
     "IncendiaryMine": {
@@ -16366,7 +15908,6 @@
       "r3": 7,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Incendiary Mine"
     },
     "AntiTankMine": {
@@ -16376,7 +15917,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Anti Tank Mine"
     },
     "ContactMine_MK2": {
@@ -16386,7 +15926,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Contact Mine Mk2"
     },
     "ContactMine_Flash": {
@@ -16396,7 +15935,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Contact Mine Flash"
     },
     "Bomb_Impact": {
@@ -16406,7 +15944,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Bomb Impact"
     },
     "Bomb_Impact_Smoke": {
@@ -16416,7 +15953,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Bomb Impact Smoke"
     },
     "500kg_Initial_Impact": {
@@ -16426,7 +15962,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "500kg Initial Impact"
     },
     "Turret_Destroyed": {
@@ -16446,7 +15981,6 @@
       "r3": 125,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Nuke"
     },
     "Flashield": {
@@ -16456,7 +15990,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Flashield"
     },
     "SAM_Missile": {
@@ -16466,17 +15999,14 @@
       "r3": 60,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "SAM Missile"
     },
     "Grenade_Smoke": {
-      "damageid": 0,
       "r1": 5,
       "r2": 5,
       "r3": 0,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Grenade Smoke"
     },
     "Primary_Airburst": {
@@ -16486,7 +16016,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 20,
-      "projectileid": 0,
       "name": "Primary Airburst"
     },
     "AirburstCluster": {
@@ -16506,7 +16035,6 @@
       "r3": 8,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Airburst Cluster Bomb"
     },
     "Primary_Cluster": {
@@ -16536,7 +16064,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "SEAF Gun Explosive"
     },
     "SEAF_Gun_High_Yield_Explosive": {
@@ -16546,7 +16073,6 @@
       "r3": 30,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "SEAF Gun High Yield Explosive"
     },
     "SEAF_Gun_Mini_Nuke": {
@@ -16556,17 +16082,14 @@
       "r3": 45,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "SEAF Gun Mini Nuke"
     },
     "SEAF_Gun_Smoke": {
-      "damageid": 0,
       "r1": 13,
       "r2": 13,
       "r3": 0,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "SEAF Gun Smoke"
     },
     "SEAF_Gun_Napalm": {
@@ -16576,7 +16099,6 @@
       "r3": 20,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "SEAF Gun Napalm"
     },
     "SEAF_Gun_EMP": {
@@ -16586,7 +16108,6 @@
       "r3": 20,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "SEAF Gun EMP"
     },
     "Illuminate_IllusionistDeath": {
@@ -16596,7 +16117,6 @@
       "r3": 2,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Illuminate Illusionist Death"
     },
     "Illuminate_TripodDeath": {
@@ -16606,7 +16126,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Illuminate Tripod Death"
     },
     "Illuminate_StaffGuyGroundImpale": {
@@ -16616,7 +16135,6 @@
       "r3": 4,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Illuminate Staff Guy Ground Impale"
     },
     "Illuminate_Projectile_Huge": {
@@ -16626,7 +16144,6 @@
       "r3": 7,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Illuminate Projectile Huge"
     },
     "Illuminate_IllusionistSmallball": {
@@ -16636,7 +16153,6 @@
       "r3": 2,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Illuminate Illusionist Smallball"
     },
     "Illuminate_AdeptCircle": {
@@ -16646,7 +16162,6 @@
       "r3": 1.6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Illuminate Adept Circle"
     },
     "AdeptShockwave": {
@@ -16656,7 +16171,6 @@
       "r3": 6,
       "angle": 35,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Adept Shockwave"
     },
     "Illuminate_Medium": {
@@ -16666,7 +16180,6 @@
       "r3": 1.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Illuminate Medium"
     },
     "ICBM_takeoff": {
@@ -16676,7 +16189,6 @@
       "r3": 40,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "ICBM takeoff"
     },
     "ICBM_takeoffIntense": {
@@ -16686,7 +16198,6 @@
       "r3": 32,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "ICBM takeoffIntense"
     },
     "ICBM_explode": {
@@ -16696,7 +16207,6 @@
       "r3": 40,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "ICBM explode"
     },
     "Prop_Small": {
@@ -16706,7 +16216,6 @@
       "r3": 2.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Prop Small"
     },
     "Prop_Medium": {
@@ -16716,7 +16225,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Prop Medium"
     },
     "Prop_Large": {
@@ -16726,7 +16234,6 @@
       "r3": 6,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Prop Large"
     },
     "Prop_Huge": {
@@ -16736,7 +16243,6 @@
       "r3": 40,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Prop Huge"
     },
     "Building_Crumble_Small": {
@@ -16746,7 +16252,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Building Crumble Small"
     },
     "Building_Crumble_Medium": {
@@ -16756,7 +16261,6 @@
       "r3": 23,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Building Crumble Medium"
     },
     "Building_Crumble_Large": {
@@ -16766,7 +16270,6 @@
       "r3": 26,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Building Crumble Large"
     },
     "Building_Crumble_Huge": {
@@ -16776,7 +16279,6 @@
       "r3": 30,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Building Crumble Huge"
     },
     "BugDrill": {
@@ -16786,7 +16288,6 @@
       "r3": 50,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Bug Drill"
     },
     "fueltank_large": {
@@ -16796,7 +16297,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "fueltank large"
     },
     "OilField": {
@@ -16806,7 +16306,6 @@
       "r3": 10,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Oil Field"
     },
     "Barrel_Small": {
@@ -16816,7 +16315,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Barrel Small"
     },
     "Barrel_Medium": {
@@ -16826,7 +16324,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Barrel Medium"
     },
     "Barrel_Large": {
@@ -16836,7 +16333,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Barrel Large"
     },
     "Chemical_Backpack": {
@@ -16846,7 +16342,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Chemical Backpack"
     },
     "Retrieve_Larva_Backpack": {
@@ -16856,7 +16351,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Retrieve Larva Backpack"
     },
     "Ammo_Cache": {
@@ -16866,7 +16360,6 @@
       "r3": 30,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Ammo Cache"
     },
     "Cyborg_Fuel_Silo": {
@@ -16876,7 +16369,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Cyborg Fuel Silo"
     },
     "Tower_Collapse": {
@@ -16886,17 +16378,14 @@
       "r3": 70,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Tower Collapse"
     },
     "Dummy": {
-      "damageid": 0,
       "r1": 0.1,
       "r2": 0.1,
       "r3": 0.1,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Dummy"
     },
     "Geyser_Erupt_Small": {
@@ -16906,7 +16395,6 @@
       "r3": 2.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Geyser Erupt Small"
     },
     "Geyser_Erupt_Medium": {
@@ -16916,7 +16404,6 @@
       "r3": 3.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Geyser Erupt Medium"
     },
     "Geyser_Erupt_Large": {
@@ -16926,7 +16413,6 @@
       "r3": 4.5,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Geyser Erupt Large"
     },
     "World_Meteor": {
@@ -16936,7 +16422,6 @@
       "r3": 23,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "World Meteor"
     },
     "World_Escape_Pod_Crash": {
@@ -16946,7 +16431,6 @@
       "r3": 10,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "World Escape Pod Crash"
     },
     "World_Earthquake": {
@@ -16956,7 +16440,6 @@
       "r3": 90,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "World Earthquake"
     },
     "Ritual_Earthquake": {
@@ -16966,7 +16449,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Ritual Earthquake"
     },
     "GasChimney": {
@@ -16976,7 +16458,6 @@
       "r3": 10,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Gas Chimney"
     },
     "World_VolcanoStrike": {
@@ -16986,7 +16467,6 @@
       "r3": 15,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "World Volcano Strike"
     },
     "HellDummy": {
@@ -16996,17 +16476,14 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Hell Dummy"
     },
     "MoorMushroom_Smoke": {
-      "damageid": 0,
       "r1": 5,
       "r2": 5,
       "r3": 0,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Moor Mushroom Smoke"
     },
     "MoorMushroom_Burst": {
@@ -17016,7 +16493,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Moor Mushroom Burst"
     },
     "IlluminatePowerNode": {
@@ -17026,7 +16502,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Illuminate Power Node"
     },
     "GateCrush": {
@@ -17036,7 +16511,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Gate Crush"
     },
     "EmbryoCluster_Burst": {
@@ -17046,7 +16520,6 @@
       "r3": 9,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Embryo Cluster Burst"
     },
     "Snowball_Stun": {
@@ -17056,7 +16529,6 @@
       "r3": 1,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Snowball Stun"
     },
     "Spikeplant_Shrapnel_Explosion": {
@@ -17076,7 +16548,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Iceplant Shatter"
     },
     "Conscript_Backpack_Explosion": {
@@ -17086,7 +16557,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Conscript Backpack Explosion"
     },
     "Conscript_Backpack_LMG": {
@@ -17096,7 +16566,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Conscript Backpack LMG"
     },
     "Conscript_Backpack_Flamer": {
@@ -17106,7 +16575,6 @@
       "r3": 12,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Conscript Backpack Flamer"
     },
     "StaticField_Sentry": {
@@ -17116,7 +16584,6 @@
       "r3": 3,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "Static Field Sentry"
     },
     "HMD_Generator_Crumble": {
@@ -17126,7 +16593,6 @@
       "r3": 18,
       "angle": 0,
       "shrapnel": 0,
-      "projectileid": 0,
       "name": "HMD Generator Crumble"
     }
   },
@@ -17229,7 +16695,6 @@
     },
     "PhysGun": {
       "range": 10000,
-      "damageid": 0,
       "unk7": 0,
       "unk17": 0,
       "unk19": 0,
@@ -17237,7 +16702,6 @@
     },
     "OutcastFlashbeamChargeup": {
       "range": 1000,
-      "damageid": 0,
       "unk7": 0,
       "unk17": 6,
       "unk19": 0,
