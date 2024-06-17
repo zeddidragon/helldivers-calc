@@ -499,16 +499,10 @@ function p.fullWeaponTable(frame)
   })
   local out = ""
   local ordered = {}
-  local names = {}
-  for name, weapon in pairs(data.weapon) do
-    if weapon_category_pages[weapon.category] then
-      names[weapon.idx] = name
-    end
-  end
-
+  local names = data.weapon_order
   local rows = {}
 
-  for i, name in ipairs(data.weapon_order) do
+  for i, name in ipairs(names) do
     local override = args["override_" .. string.gsub(name, " ", "_")]
     if override then
       rows[i] = "|" .. override

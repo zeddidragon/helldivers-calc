@@ -43,16 +43,4 @@ frame.args = {
 
 print(out)
 frame.args = { 'total_damage' }
-print(getData.get(frame))
-frame.args = { 'max_ap' }
-print(getData.get(frame))
-frame.args = { 'capacity' }
-print(getData.get(frame))
-frame.args = { 'recoil' }
-print(getData.get(frame))
-frame.args = { 'dps' }
-print(getData.get(frame))
-frame.args = { 'fire_rate' }
-print(getData.get(frame))
-frame.args = { 'spare_magazines' }
-print(getData.get(frame))
+print(getData.fullWeaponTable(frame))
