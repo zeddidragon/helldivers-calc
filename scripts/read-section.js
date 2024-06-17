@@ -17,6 +17,7 @@ function searchWords({
   first,
   last,
   preserveLast = false,
+  debug = false,
 }) {
   let idx = buffer.indexOf(first)
   console.log(`First word "${first}" at: ${hex(idx)}`)
@@ -29,8 +30,21 @@ function searchWords({
   while(word !== last) {
     let nextIdx = buffer.indexOf('\0', idx)
     word = buffer.toString('ascii', idx, nextIdx)
-    words.push(word)
+      .trim()
+      .replace('?', '')
+      .replace('fff', '')
     idx = nextIdx + 1
+    if(word.length < 3) {
+      continue
+    }
+    words.push(word)
+    if(debug) {
+      console.log({
+        nextIdx: hex(nextIdx),
+        word,
+        idx: hex(idx),
+      })
+    }
     i++;
   }
   if(!preserveLast) {
@@ -532,6 +546,7 @@ const data = json({
   explosions,
   beams,
   arcs,
+  elements: prettyEnums(elementEnums),
   statuses: prettyEnums(statusEnums),
   statusNames: statusNames.map(word => word.split('_').join(' ')),
 })

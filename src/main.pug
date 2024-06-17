@@ -87,9 +87,10 @@ mixin weaponDamageRow(wpn)
   - const dmg = wpn.damage || {}
   td.weapon.type(class={ xdmg: !!wpn.explosion })
     if dmg.type
+      - var el = element(dmg)
       span.dmgtype(
-        title=t('dmg.types.full', dmg.type)
-      )= t('dmg.types', dmg.type)
+        title=t('dmg.types.full', el)
+      )= t('dmg.types', el)
   - const n = count(wpn)
   if collapseDamage
     td.weapon.dmg= wpn.shotdmg
@@ -664,13 +665,12 @@ mixin damagesRow(dmg, opts = {})
   - i = 0
   while i < (opts.effectsCount || 4)
     - i++
-    - var func = dmg[`func${i}`]
-    - var param = dmg[`param${i}`]
+    - var fx = effect(dmg, i)
     td.damage.effect(
-      class={ [`effect${i}`]: true, muted: !func }
-      title=t('dmg.effects.full', func)
-    )= t('dmg.effects', func, func)
-    td.damage.effect-param(class={muted: !func})= param
+      class={ [`effect${i}`]: true, muted: !fx.id }
+      title=t('dmg.effects.full', fx.name)
+    )= t('dmg.effects', fx.name )
+    td.damage.effect-param(class={muted: !fx.id})= fx.param
 
 nav.links
   ul

@@ -304,6 +304,15 @@ window.locals = {
     if(wpn.roundstart == null) return wpn.rounds
     return wpn.roundstart
   },
+  element: (wpn, idx) => {
+    return data.elements[wpn.type]
+  },
+  effect: (wpn, idx) => {
+    const id = wpn[`func${idx}`]
+    const name = data.statuses[id]
+    const param = wpn[`param${idx}`]
+    return { id, name, param }
+  },
 }
 
 locals.lang = locals.langs[0]

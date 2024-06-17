@@ -18124,6 +18124,7 @@
       "enum": "IlluminateSummonerSpawnEffect"
     }
   ],
+  "elements": ["None", "Fire", "Electricity", "Acid", "Bleed", "Gas"],
   "statuses": [
     "None",
     "Blind",
@@ -18208,7 +18209,7 @@
     "Stim Stamina",
     "Stim Heal",
     "Stim Combat Drugs",
-    "owned Stim Heal",
+    "Downed Stim Heal",
     "Downed Stim Visual",
     "Stim Cooldown",
     "BurningHeavy",
