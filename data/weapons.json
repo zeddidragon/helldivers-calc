@@ -846,7 +846,7 @@
       "stratcode": "dlrrl",
       "calltime": 3,
       "cooldown": 480,
-      "reload": 8,
+      "reload": 6,
       "cap": 1,
       "rounds": 5,
       "roundstart": 5,
