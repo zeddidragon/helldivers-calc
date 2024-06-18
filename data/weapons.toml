@@ -831,7 +831,7 @@ cap = 1
 rounds = 20
 roundstart = 10
 roundsupply = 10
-roundsbox = 2
+roundsbox = 5
 modes = ["charge", "overcharge"]
 [[weapon.attack]]
 medium = "projectile"

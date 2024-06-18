@@ -787,7 +787,7 @@
       "rounds": 20,
       "roundstart": 10,
       "roundsupply": 10,
-      "roundsbox": 2,
+      "roundsbox": 5,
       "modes": ["charge", "overcharge"],
       "attack": [{"type": "projectile", "name": "Railgun"}]
     },
