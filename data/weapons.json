@@ -1287,7 +1287,7 @@
       "armor": 2,
       "calltime": 8,
       "cooldown": 180,
-      "cap": 36,
+      "cap": 32,
       "attack": [
         {"type": "projectile", "name": "Rocket_70mm_turret"},
         {"type": "explosion", "name": "Rocket_70mm_turret"}
