@@ -1,59 +1,270 @@
-<includeonly><!--
--->{{#vardefine:total_medal_cost|0}}
-<div class="warbond-page">
-{{#fornumargs: i|cell
-  |{{#var:cell}}
-}}
-</div>
-</includeonly><noinclude>
+<includeonly>{{#invoke:Warbonds|templateWarbondPage}}</includeonly><noinclude>
+===Page 1===
 {{Warbond_Page|
-  | {{Warbond_Page/cell
-    | image = [[File: CW-36 Winter Warrior Armor Icon.png|link=CW-36 Winter Warrior]]
-    | medals = 18
-    | x = 1 | y = 1
-    | w = 2 | h = 2
-  }}
-  | {{Warbond_Page/cell
-    | image = [[File: CW-36 Winter Warrior Helmet Icon.png|link=CW-36 Winter Warrior]]
-    | medals = 12
-    | x = 3 | y = 1
-    | w = 1 | h = 1
-  }}
-  | {{Warbond_Page/cell
-    | image = [[File: Salute Victory Pose Icon.png|link=Mime Instrumentation]]
-    | medals = 8
-    | x = 4 | y = 1
-    | w = 2 | h = 1
-  }}
-  | {{Warbond_Page/cell
-    | image = [[File: Dissident's Nightmare Cape Icon.png|link=Dissident's Nightmare]]
-    | medals = 8
-    | x = 3 | y = 2
-    | w = 1 | h = 1
-  }}
-  | {{Warbond_Page/cell
-    | image = [[File: Dissident's Nightmare Player Card Icon.png|link=Dissident's Nightmare]]
-    | medals = 2
-    | x = 4 | y = 2
-    | w = 1 | h = 2
-  }}
-  | {{Warbond_Page/cell
-    | image = [[File: Motivational Shocks Booster Icon.png|link=Motivational Shocks]]
-    | medals = 15
-    | x = 5 | y = 2
-    | w = 1 | h = 2
-  }}
-  | {{Warbond_Page/cell
-    | image = [[File:Super Credit.svg|Currency]]
-    | medals = 7
-    | x = 1 | y = 3
-    | w = 1 | h = 1
-  }}
-  | {{Warbond_Page/cell
-    | image = [[File: AR-61 Tenderizer Weapon Icon.png|link=100x|AR-61 Tenderizer]]
-    | medals = 20
-    | x = 2 | y = 3
-    | w = 2 | h = 1
-  }}
+|-
+|cell: 1 1 1 2 | medals: 2
+|image: Botslayer Player Card Warbond.png
+|link: Botslayer#Player Card
+|-
+|cell: 5 3 1 1 | medals: 8
+|image: Botslayer Cape Warbond.png
+|link: Botslayer#Cape
+|-
+|cell: 2 1 1 2 | medals: 18
+|image: Booster Warbond Premium Tall.png
+|link: Boosters#Localization Confusion
+|title: Localization Confusion Booster
+|-
+|cell: 3 1 1 1 | medals: 7
+|image: Super Credits Warbond Premium.png
+|link: Currency
+|title: 100 Super Credits
+|-
+|cell: 4 1 2 1 | medals: 20
+|image: LAS-16 Sickle Weapon Warbond.png
+|link: LAS-16 Sickle
+|-
+|cell: 1 3 2 1 | medals: 8
+|image: Head Tap Victory Pose Warbond.png
+|link: Head Tap
+|title: Head Tap Victory Pose
+|-
+|cell: 3 2 2 2 | medals: 18
+|image: EX-03 Prototype 3 Armor Warbond.png
+|link: EX-03 Prototype 3 Armor#Armor
+|-
+|cell: 5 2 1 1 | medals: 12
+|image: EX-03 Prototype 3 Helmet Warbond.png
+|link: EX-03 Prototype 3 Armor#Armor
 }}
-{{doc}}</noinclude>
+===Page 2===
+<div class="mw-collapsible mw-collapsed">
+<br>
+{| class="wikitable sortable" width="33%"
+|+
+! width="0%" | Icon
+! width="60%" | Item
+! width="40%" | Type
+! width="0%" | Medals
+|-
+| [[File:Super Credit.svg|50x50px]]
+| 100 [[Super Credits]]
+| [[Currency]]
+| {{Currency|Medals|7|notext}}
+|-
+| [[File: Localization Confusion Booster Icon.png|50px]]
+| [[Localization Confusion]]
+| [[Boosters|Booster]]
+| {{Currency|Medals|18|notext}}
+|-
+| [[File: LAS-16 Sickle Weapon Icon.png|100x50px]]
+| [[LAS-16 Sickle]]
+| [[Weapons#Primary Weapons|Energy-Based]]
+| {{Currency|Medals|20|notext}}
+|-
+| [[File: EX-03 Prototype 3 Helmet Icon.png|50px]]
+| [[EX-03 Prototype 3 Armor|EX-03 Prototype 3]]
+| [[Armor#Helmets|Helmet]]
+| {{Currency|Medals|12|notext}}
+|-
+| [[File: EX-03 Prototype 3 Armor Icon.png|50px]]
+| [[EX-03 Prototype 3 Armor|EX-03 Prototype 3]]
+| [[Armor#Body Armors|Body Armor]]
+| {{Currency|Medals|18|notext}}
+|-
+| [[File: Botslayer Cape Icon.png|50px]]
+| [[Botslayer]]
+| [[Cosmetics#Capes|Cape]]
+| {{Currency|Medals|8|notext}}
+|-
+| [[File: Botslayer Player Card Icon.png|50px]]
+| [[Botslayer]]
+| [[Cosmetics#Player Cards|Player Card]]
+| {{Currency|Medals|2|notext}}
+|-
+| [[File: Salute Victory Pose Icon.png|50x50px]]
+| [[Head Tap]]
+| [[Cosmetics#Victory Poses|Victory Pose]]
+| {{Currency|Medals|8|notext}}
+|}
+</div>
+<br>
+{{Warbond_Page
+|unlock_medal_cost: 60
+|-
+|cell: 1 1 2 1 | medals: 15
+|image: Shotgun Show Victory Pose Warbond.png
+|link: Shotgun Show
+|title: Shotgun Show Victory Pose
+|-
+|cell: 3 1 2 2 | medals: 45
+|image: EX-16 Prototype 16 Armor Warbond.png
+|link: EX-16 Prototype 16 Armor#Armor
+|-
+|cell: 5 1 1 1 | medals: 35
+|image: EX-16 Prototype 16 Helmet Warbond.png
+|link: EX-16 Prototype 16 Armor#Helmet
+|-
+|cell: 5 2 1 1 | medals: 20
+|image: Martyris Rex Cape Warbond.png
+|link: Martyris Rex#Cape
+|-
+|cell: 1 2 1 2 | medals: 5
+|image: Martyris Rex Player Card Warbond.png
+|link: Martyris Rex#Player Card
+|-
+|cell: 2 2 1 2 | medals: 25
+|image: G-23 Stun Throwable Warbond.png
+|link: G-23 Stun
+|title: G-23 Stun Special Throwable
+|-
+|cell: 3 3 1 1 | medals: 12
+|image: Super Credits Warbond Premium.png
+|link: Super Credits
+|title: 100 Super Credits
+|-
+|cell: 4 3 2 1 | medals: 60
+|image: SG-8P Plasma Punisher Weapon Warbond.png
+|link: SG-8P Plasma Punisher
+}}
+<div class="mw-collapsible mw-collapsed">
+<br>
+{| class="wikitable sortable" width="33%"
+|+
+! width="0%" | Icon
+! width="60%" | Item
+! width="40%" | Type
+! width="0%" | Medals
+|-
+| [[File:Super Credit.svg|50x50px]]
+| 100 [[Super Credits]]
+| [[Currency]]
+| {{Currency|Medals|12|notext}}
+|-
+| [[File: SG-8P Punisher Plasma Weapon Icon.png|100x50px]]
+| [[SG-8P Punisher Plasma]]
+| [[Weapons#Primary Weapons|Energy-Based]]
+| {{Currency|Medals|60|notext}}
+|-
+| [[File: G-23 Stun Grenade Icon.png|50px]]
+| [[G-23 Stun]]
+| [[Weapons#Grenades|Grenade]]
+| {{Currency|Medals|25|notext}}
+|-
+| [[File: EX-16 Prototype 16 Helmet Icon.png|50px]]
+| [[EX-16 Prototype 16 Armor|EX-16 Prototype 16]]
+| [[Armor#Helmets|Helmet]]
+| {{Currency|Medals|35|notext}}
+|-
+| [[File: EX-16 Prototype 16 Armor Icon.png|50px]]
+| [[EX-16 Prototype 16 Armor|EX-16 Prototype 16]]
+| [[Armor#Body Armors|Body Armor]]
+| {{Currency|Medals|45|notext}}
+|-
+| [[File: Martyris Rex Cape Icon.png|50px]]
+| [[Martyris Rex]]
+| [[Cosmetics#Capes|Cape]]
+| {{Currency|Medals|20|notext}}
+|-
+| [[File: Martyris Rex Player Card Icon.png|50px]]
+| [[Martyris Rex]]
+| [[Cosmetics#Player Cards|Player Card]]
+| {{Currency|Medals|5|notext}}
+|-
+| [[File: Salute Victory Pose Icon.png|50x50px]]
+| [[Shotgun Show]]
+| [[Cosmetics#Victory Poses|Victory Pose]]
+| {{Currency|Medals|15|notext}}
+|}
+</div>
+<br>
+===Page 3===
+{{Warbond_Page
+|unlock_medal_cost: 230
+|-
+|cell: 1 1 1 2 | medals: 16
+|image: Agent of Oblivion Player Card Warbond.png
+|link: Agent of Oblivion#Player Card
+|-
+|cell: 5 3 1 1 | medals: 30
+|image: Agent of Oblivion Cape Warbond.png
+|link: Agent of Oblivion#Cape
+|-
+|cell: 2 1 1 2 | medals: 60
+|image: LAS-7 Dagger Weapon Warbond.png
+|link: LAS-7 Dagger
+|-
+|cell: 3 1 1 1 | medals: 32
+|image: Super Credits Warbond Premium.png
+|link: Super Credits
+|title: 100 Super Credits
+|-
+|cell: 4 1 2 1 | medals: 80
+|image: ARC-12 Blitzer Weapon Warbond.png
+|link: ARC-12 Blitzer
+|-
+|cell: 1 3 2 1 | medals: 32
+|image: Presentable Victory Pose Warbond.png
+|link: Presentable
+|title: Presentable Victory Pose
+|-
+|cell: 3 2 2 2 | medals: 64
+|image: EX-00 Prototype X Armor Warbond.png
+|link: EX-00 Prototype X Armor#Armor
+|-
+|cell: 5 2 1 1 | medals: 48
+|image: EX-00 Prototype X Helmet Warbond.png
+|link: EX-00 Prototype X Armor#Helmet
+}}
+<div class="mw-collapsible mw-collapsed">
+<br>
+Total cost of page: {{Currency|Medals|362|notext}}
+{| class="wikitable sortable" width="33%"
+|+
+! width="0%" | Icon
+! width="60%" | Item
+! width="40%" | Type
+! width="0%" | Medals
+|-
+| [[File:Super Credit.svg|50x50px]]
+| 100 [[Super Credits]]
+| [[Currency]]
+| {{Currency|Medals|32|notext}}
+|-
+| [[File: ARC-12 Blitzer Weapon Icon.png|100x50px]]
+| [[ARC-12 Blitzer]]
+| [[Weapons#Primary Weapons|Energy-Based]]
+| {{Currency|Medals|80|notext}}
+|-
+| [[File: LAS-7 Dagger Weapon Icon.png|100x50px]]
+| [[LAS-7 Dagger]]
+| [[Weapons#Secondary Weapons|Pistol]]
+| {{Currency|Medals|60|notext}}
+|-
+| [[File: EX-00 Prototype X Helmet Icon.png|50px]]
+| [[EX-00 Prototype X Armor|EX-00 Prototype X]]
+| [[Armor#Helmets|Helmet]]
+| {{Currency|Medals|48|notext}}
+|-
+| [[File: EX-00 Prototype X Armor Icon.png|50px]]
+| [[EX-00 Prototype X Armor|EX-00 Prototype X]]
+|  [[Armor#Body Armors|Body Armor]]
+| {{Currency|Medals|64|notext}}
+|-
+| [[File: Agent of Oblivion Cape Icon.png|50px]]
+| [[Agent of Oblivion]]
+| [[Cosmetics#Capes|Cape]]
+| {{Currency|Medals|30|notext}}
+|-
+| [[File: Agent of Oblivion Player Card Icon.png|50px]]
+| [[Agent of Oblivion]]
+| [[Cosmetics#Player Cards|Player Card]]
+| {{Currency|Medals|16|notext}}
+|-
+| [[File: Salute Victory Pose Icon.png|50x50px]]
+| [[Presentable]]
+| [[Cosmetics#Victory Poses|Victory Pose]]
+| {{Currency|Medals|32|notext}}
+|}
+</div>
+</noinclude>

@@ -46,7 +46,7 @@
   "table.td.spare;clipsize": "Max Clips",
   "table.td.spare;clipstart": "Starting Clips",
   "table.td.pickup;clipsupply": "Clips From Supply",
-  "table.td.pickup;clipbox": "Clips From Box",
+  "table.td.pickup;clipsbox": "Clips From Box",
   "table.td.reload;empty": "Full Reload",
   "table.td.reload;early": "Tactical Reload",
   "table.td.reload;1": "Reload 1 round",

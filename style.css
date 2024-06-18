@@ -189,7 +189,7 @@ td.name {
 .category.Misc, .category.GrSp {
   color: #a98a98;
 }
-.category.GrSt {
+.category.GrSt, .source.viper-commandos {
   color: #aa8;
 }
 .category.Mounted, .category.Vehicle {

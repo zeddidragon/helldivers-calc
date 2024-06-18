@@ -16,6 +16,7 @@ const sources = [
   'cut-edge',
   'demo-det',
   'polar-pat',
+  'viper-commandos',
   'support',
 ]
 
@@ -135,9 +136,10 @@ for(const prop of Object.keys(wikiRegister)) {
       id: void 0,
     }
     if(prop === 'damage') {
+      const element = data.elements[obj.type]
       obj2 = {
         ...obj2,
-        element_name: obj.type ? names[`dmg.types.full;${obj.type}`] : void 0,
+        element_name: obj.type ? names[`dmg.types.full;${element}`] : void 0,
         status_name: obj.func1 ? data.statusNames[obj.func1 - 1] : void 0,
         status_name2: obj.func2 ? data.statusNames[obj.func2 - 1] : void 0,
         status_name3: obj.func3 ? data.statusNames[obj.func3 - 1] : void 0,

@@ -46,7 +46,7 @@
   "table.td.spare;clipsize": "Всего обойм",
   "table.td.spare;clipstart": "Изначально обойм",
   "table.td.pickup;clipsupply": "Обойм из припасов",
-  "table.td.pickup;clipbox": "Обойм из коробок",
+  "table.td.pickup;clipsbox": "Обойм из коробок",
   "table.td.reload;empty": "Полная перезарядка",
   "table.td.reload;early": "Тактическая перезарядка",
   "table.td.reload;1": "Перезарядка одного патрона",
