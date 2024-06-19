@@ -17519,7 +17519,6 @@
       "clips": 10,
       "clipstart": 10,
       "clipsize": 5,
-      "clipsbox": 2,
       "clipsupply": 5,
       "modes": ["semi", "auto"],
       "attacks": [
@@ -17541,7 +17540,6 @@
       "rounds": 20,
       "roundstart": 10,
       "roundsupply": 10,
-      "roundsbox": 5,
       "modes": ["charge", "overcharge"],
       "attacks": [{"type": "projectile", "name": "Railgun"}]
     },

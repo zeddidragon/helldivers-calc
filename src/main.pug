@@ -29,6 +29,11 @@ mixin weaponsHeader
     title=t('table.th.dmg', 'dmg2')
   )
     sub= t('table.th.wpn.label.sub', 'dmg2')
+  if collapseDamage
+    th.weapon.shotdmgx(
+      title=t('table.th.dmg', 'dmgx')
+    )
+      sub= t('table.th.wpn.label.sub', 'dmgx')
   th.damage.ap(
     title=t('table.th.dmg', 'ap')
   )= t('table.th.wpn.label', 'ap')
@@ -93,8 +98,9 @@ mixin weaponDamageRow(wpn)
       )= t('dmg.types', el)
   - const n = count(wpn)
   if collapseDamage
-    td.weapon.dmg= wpn.shotdmg
-    td.weapon.dmg2= wpn.shotdmg2
+    td.weapon.dmg(class={ muted: !wpn.shotdmg })= wpn.shotdmg
+    td.weapon.dmg2(class={ muted: !wpn.shotdmg2 })= wpn.shotdmg2
+    td.weapon.dmgx(class={ muted: !wpn.shotdmgx })= wpn.shotdmgx
   else
     td.weapon.pellets(class={ muted: n == 1, blank: !n })= n
     td.weapon.dmg(class={ xdmg: !!wpn.explosion })= dmg.dmg
