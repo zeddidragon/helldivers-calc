@@ -34,6 +34,10 @@ function cbShowPercent(value)
   return value * 100 .. "%"
 end
 
+function cbHalf(value)
+  return math.max(1, math.floor(value * 0.5))
+end
+
 function filterNonZero(value)
   return value > 0 or value < 0
 end
@@ -74,7 +78,7 @@ local weapon_setup = {
   { "Spare Magazines", "magazines_spare", "mags", },
   { "Starting Magazines", "magazines_starting", "magstart", },
   { "Mags from Supply", "magazines_from_supply", "supply" },
-  { "Mags from Ammo Box", "magazines_from_box", "box" },
+  { "Mags from Ammo Box", "magazines_from_box", "supply", cb = cbHalf },
   { "Reloading 1 Round", "reload_one", "reloadone", suffix = "s" },
   { "Reloading n Rounds", "reload_n", "reloadx", suffix = "s",
     cb = function(value, opts)
@@ -84,12 +88,12 @@ local weapon_setup = {
   { "Spare Rounds", "rounds_spare", "rounds", },
   { "Starting Rounds", "rounds_starting", "roundstart", },
   { "Rounds from Supply", "rounds_from_supply", "roundsupply" },
-  { "Rounds from Ammo Box", "rounds_from_box", "roundsbox" },
+  { "Rounds from Ammo Box", "rounds_from_box", "roundsupply", cb = cbHalf },
   { "Clip Capacity", "clips_size", "clipsize", },
   { "Spare Clips", "clips_spare", "clips", },
   { "Starting Clips", "clips_starting", "clipstart", },
   { "Clips from Supply", "clips_from_supply", "clipsupply" },
-  { "Clips from Ammo Box", "clips_from_box", "clipsbox" },
+  { "Clips from Ammo Box", "clips_from_box", "clipssupply", cb = cbHalf },
 }
 
 local damage_setup = {

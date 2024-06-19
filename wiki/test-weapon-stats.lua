@@ -37,10 +37,9 @@ function frame.expandTemplate(self, opts)
   return "{{"..opts.title.."|"..opts.args[1].."}}"
 end
 
-frame.args = {
-  ["override_JAR-5_Dominator"] = "Jar-5 Dommy Mommy|500"
-}
-
-print(out)
-frame.args = { 'total_damage' }
-print(getData.fullWeaponTable(frame))
+frame.args = { "P-4 Senator" }
+print(getData.attackDataTemplate(frame))
+frame.args = { "AC-8 Autocannon" }
+print(getData.attackDataTemplate(frame))
+frame.args = { "LAS-98 Laser Cannon" }
+print(getData.attackDataTemplate(frame))

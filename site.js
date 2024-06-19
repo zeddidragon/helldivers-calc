@@ -728,74 +728,93 @@ const defaultSettings = {
     'Status',
     'Mounted',
   ],
+  hs: [],
+  scope: 'weapons',
+  lang: 'en',
   collapse: true,
 }
+
+function writeSubState(prop, obj, states) {
+  for(const [h, hide] of Object.entries(obj)) {
+    if(!hide) continue
+    if(defaultSettings[prop].includes(h)) continue
+    states.push(`${prop}[]=${h}`)
+  }
+  for(const [h, hide] of Object.entries(obj)) {
+    if(hide) continue
+    if(!defaultSettings[prop].includes(h)) continue
+    states.push(`${prop}![]=${h}`)
+  }
+}
+
+function writePropState(prop, states) {
+  const v = locals[prop]
+  if(v !== defaultSettings[prop]) {
+    states.push(`${prop}=${v}`)
+  }
+}
+
 function writeState() {
-  const states = []
-  for(const [h, hide] of Object.entries(locals.hideHeaders)) {
-    if(hide && !defaultSettings.hh.includes(h)) {
-      states.push(`hh[]=${h}`)
-    } else if(!hide && defaultSettings.hh.includes(h)) {
-      states.push(`!hh[]=${h}`)
-    }
-  }
-  for(const [c, hide] of Object.entries(locals.hideCategories)) {
-    if(!hide) continue
-    states.push(`hc[]=${c}`)
-  }
-  for(const [s, hide] of Object.entries(locals.hideSources)) {
-    if(!hide) continue
-    states.push(`hs[]=${s}`)
-  }
-  if(locals.scope !== 'weapons') {
-    states.push(`scope=${locals.scope}`)
-  }
-  if(locals.lang !== 'en') {
-    states.push(`lang=${locals.lang}`)
-  }
+  const hashStates = []
+  const localStorageStates = []
+  writePropState('scope', hashStates)
+  writePropState('lang', hashStates)
+  writeSubState('hh', locals.hideHeaders, localStorageStates)
+  writeSubState('hs', locals.hideSources, localStorageStates)
+  writeSubState('hc', locals.hideCategories, localStorageStates)
+  localStorage.hdSiteStates = localStorageStates.join('\n')
   try {
-    window.location.hash = '#' + states.sort().join('&')
+    window.location.hash = hashStates.join('&')
   } catch(err) {
     console.warn(err)
   }
 }
 
+function readPropState(prop, obj) {
+  return obj[prop] || defaultSettings[prop]
+}
+
+function readSubState(prop, obj, defaults) {
+  const cfg = { ...defaults }
+  for(const unset of (obj[`${prop}![]`] || [])) {
+    cfg[unset] = false
+  }
+  for(const set of (obj[`${prop}[]`] || [])) {
+    cfg[set] = true
+  }
+  return cfg
+}
+
 function readState() {
-  let states
+  let hashStates
   try {
     let hash = window.location.hash
-    if(!hash) {
-      hash = '#hc[]=Ability&hc[]=Status&hc[]=Mounted&hh[]=dps&hh[]=dps2'
-    }
-    states = hash.slice(1).split('&').map(kv => kv.split('='))
+    hashStates = hash.slice(1).split('&').map(kv => kv.split('='))
   } catch(err) {
     console.warn(err)
     return
   }
-  for(const [k, v] of states) {
-    switch(k) {
-      case 'hh[]': {
-        locals.hideHeaders[v] = true
-        break
-      }
-      case 'hc[]': {
-        locals.hideCategories[v] = true
-        break
-      }
-      case 'hs[]': {
-        locals.hideSources[v] = true
-        break
-      }
-      case 'scope': {
-        locals.scope = v.toLowerCase()
-        break
-      }
-      case 'lang': {
-        locals.lang = v.toLowerCase()
-        break
-      }
+  const set = {}
+  const localStorageStates = (localStorage.hdSiteStates || '')
+    .split('\n')
+    .map(kv => kv.split('='))
+  for(const [k, v] of (hashStates || [])) {
+    if(!set[k]) {
+      set[k] = []
     }
+    set[k].push(v)
   }
+  for(const [k, v] of (localStorageStates || [])) {
+    if(!set[k]) {
+      set[k] = []
+    }
+    set[k].push(v)
+  }
+  locals.scope = readPropState('scope', set)
+  locals.lang = readPropState('lang', set)
+  locals.hideHeaders = readSubState('hh', set, locals.hideHeaders)
+  locals.hideSources = readSubState('hs', set, locals.hideSources)
+  locals.hideCategories = readSubState('hc', set, locals.hideCategories)
   // Sanity check important values
   if(locals.scope !== 'weapons' && !locals.scopes.includes(locals.scope)) {
     locals.scope = 'weapons'
