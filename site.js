@@ -464,6 +464,15 @@ async function loadData() {
       arc,
       count,
     } = subobjects?.shift() || {}
+    if(wpn.supply && !wpn.box) {
+      wpn.box = Math.max(Math.floor(wpn.supply * 0.5), 1)
+    }
+    if(wpn.roundsupply && !wpn.roundsbox) {
+      wpn.roundsbox = Math.max(Math.floor(wpn.roundsupply * 0.5), 1)
+    }
+    if(wpn.clipsupply && !wpn.clipsbox) {
+      wpn.clipsbox = Math.max(Math.floor(wpn.clipsupply * 0.5), 1)
+    }
 
     if(wpn.chargefactor && wpn.chargeearly) {
       subobjects ||= []
@@ -708,11 +717,27 @@ function toggleAction({
   render()
 }
 
+const defaultSettings = {
+  hh: [
+    'projectile',
+    'dps',
+    'dps2',
+  ],
+  hc: [
+    'Ability',
+    'Status',
+    'Mounted',
+  ],
+  collapse: true,
+}
 function writeState() {
   const states = []
   for(const [h, hide] of Object.entries(locals.hideHeaders)) {
-    if(!hide) continue
-    states.push(`hh[]=${h}`)
+    if(hide && !defaultSettings.hh.includes(h)) {
+      states.push(`hh[]=${h}`)
+    } else if(!hide && defaultSettings.hh.includes(h)) {
+      states.push(`!hh[]=${h}`)
+    }
   }
   for(const [c, hide] of Object.entries(locals.hideCategories)) {
     if(!hide) continue

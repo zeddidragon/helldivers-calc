@@ -60,23 +60,23 @@ local weapon_setup = {
         args = { value },
       })
     end },
-  { "Fire Rate", "fire_rate", "rpm", suffix = "RPM" },
+  { "Fire Rate", "fire_rate", "rpm", suffix = "rpm" },
   { "Recoil", "recoil" },
   { "Total Uses", "uses" },
   { "Eagle Stock", "eagle_stock", "eaglestock" },
   { "Cooldown", "cooldown", suffix = "sec" },
-  { "Call-in Time", "callin_time", "calltime", suffix = "sec"},
+  { "Call-in Time", "callin_time", "calltime", suffix = "s"},
   { "Salvos", "salvos" },
   { "Capacity", "capacity", "cap" },
-  { "Fire Limit", "fire_limit", "limit", suffix = "sec" },
-  { "Reload Time", "reload", suffix = " sec" },
-  { "Tactical Reload", "reload_early", "reloadearly" , suffix = "sec" },
+  { "Fire Limit", "fire_limit", "limit", suffix = "s" },
+  { "Reload Time", "reload", suffix = " s" },
+  { "Tactical Reload", "reload_early", "reloadearly" , suffix = "s" },
   { "Spare Magazines", "magazines_spare", "mags", },
   { "Starting Magazines", "magazines_starting", "magstart", },
   { "Mags from Supply", "magazines_from_supply", "supply" },
   { "Mags from Ammo Box", "magazines_from_box", "box" },
-  { "Reloading 1 Round", "reload_one", "reloadone", suffix = "sec" },
-  { "Reloading n Rounds", "reload_n", "reloadx", suffix = "sec",
+  { "Reloading 1 Round", "reload_one", "reloadone", suffix = "s" },
+  { "Reloading n Rounds", "reload_n", "reloadx", suffix = "s",
     cb = function(value, opts)
       local n = opts.args["reload_n_count"] or opts.medium["reloadxnum"] or "n"
       return value, "Reloading " .. n .. " Rounds"
@@ -247,7 +247,7 @@ function addRow(row, opts)
 end
 
 function table_start(category)
-  return "{| class=\"wikitable tableleftjustified attack-data-table-"
+  return "{| class=\"wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-"
     .. category .. "\"\n"
 end
 

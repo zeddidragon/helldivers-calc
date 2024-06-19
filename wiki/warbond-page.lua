@@ -92,7 +92,7 @@ function p.templateWarbondPage(frame)
     wrappers = 'Template:Warbond_Page',
   })
   local out = ''
-  local cell = nil
+  local cell = {}
   local total_medal_cost = 0
   local unlock_medal_cost = 0
   local is_cell_data = false

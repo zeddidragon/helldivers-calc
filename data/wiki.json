@@ -16855,7 +16855,6 @@
       "mags": 7,
       "magstart": 5,
       "supply": 7,
-      "box": 3,
       "modes": ["semi", "auto", "burst3"],
       "scopes": [25, 50, 100],
       "attachments": ["laser", "flashlight"],
@@ -16874,7 +16873,6 @@
       "mags": 10,
       "magstart": 7,
       "supply": 10,
-      "box": 5,
       "modes": ["semi", "auto", "burst3"],
       "scopes": [25, 75, 150],
       "attachments": ["laser", "flashlight"],
@@ -16893,7 +16891,6 @@
       "mags": 10,
       "magstart": 7,
       "supply": 10,
-      "box": 5,
       "modes": ["semi", "auto"],
       "attachments": ["laser", "flashlight"],
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_exp"}]
@@ -16911,7 +16908,6 @@
       "mags": 7,
       "magstart": 4,
       "supply": 7,
-      "box": 3,
       "modes": ["semi", "auto", "burst3"],
       "scopes": [25, 50, 100],
       "attachments": ["laser", "flashlight"],
@@ -16930,7 +16926,6 @@
       "mags": 7,
       "magstart": 5,
       "supply": 7,
-      "box": 3,
       "modes": ["semi", "auto", "burst3"],
       "scopes": [25, 50, 100],
       "attachments": ["flashlight"],
@@ -16949,7 +16944,6 @@
       "mags": 8,
       "magstart": 6,
       "supply": 8,
-      "box": 4,
       "modes": ["semi", "auto"],
       "scopes": [25, 50, 100],
       "attachments": ["flashlight"],
@@ -16968,7 +16962,6 @@
       "mags": 8,
       "magstart": 5,
       "supply": 8,
-      "box": 4,
       "modes": ["semi"],
       "scopes": [25, 75, 150],
       "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_fmj"}]
@@ -16986,7 +16979,6 @@
       "mags": 6,
       "magstart": 4,
       "supply": 6,
-      "box": 3,
       "modes": ["semi"],
       "scopes": [50, 100, 200],
       "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_hv"}]
@@ -17003,7 +16995,6 @@
       "mags": 7,
       "magstart": 5,
       "supply": 5,
-      "box": 2,
       "tags": ["1h"],
       "modes": ["semi", "auto"],
       "attachments": ["flashlight"],
@@ -17022,7 +17013,6 @@
       "mags": 7,
       "magstart": 5,
       "supply": 7,
-      "box": 3,
       "tags": ["1h"],
       "modes": ["semi", "auto", "burst3"],
       "attachments": ["flashlight"],
@@ -17041,7 +17031,6 @@
       "mags": 7,
       "magstart": 5,
       "supply": 7,
-      "box": 3,
       "tags": ["1h"],
       "modes": ["semi", "auto", "burst3"],
       "attachments": ["flashlight"],
@@ -17059,7 +17048,6 @@
       "rounds": 60,
       "roundstart": 32,
       "roundsupply": 60,
-      "roundsbox": 30,
       "tags": ["rounds"],
       "attacks": [{"type": "projectile", "name": "Shotgun_10g_buc"}]
     },
@@ -17075,7 +17063,6 @@
       "rounds": 60,
       "roundstart": 32,
       "roundsupply": 60,
-      "roundsbox": 30,
       "tags": ["rounds"],
       "attacks": [{"type": "projectile", "name": "Shotgun_10g_slug"}]
     },
@@ -17092,7 +17079,6 @@
       "mags": 7,
       "magstart": 5,
       "supply": 7,
-      "box": 3,
       "modes": ["semi", "auto"],
       "attachments": ["flashlight"],
       "attacks": [{"type": "projectile", "name": "Shotgun_12g_buc"}]
@@ -17110,7 +17096,6 @@
       "mags": 8,
       "magstart": 6,
       "supply": 8,
-      "box": 4,
       "modes": ["semi", "auto"],
       "attachments": ["flashlight"],
       "attacks": [{"type": "projectile", "name": "Shotgun_12g_bir"}]
@@ -17128,7 +17113,6 @@
       "mags": 6,
       "magstart": 4,
       "supply": 6,
-      "box": 3,
       "tags": ["fire"],
       "modes": ["semi", "burst3"],
       "attachments": ["flashlight"],
@@ -17146,7 +17130,6 @@
       "mags": 8,
       "magstart": 8,
       "supply": 8,
-      "box": 4,
       "modes": ["semi"],
       "attacks": [
         {"type": "projectile", "name": "Crossbow_Bolt_exp"},
@@ -17166,7 +17149,6 @@
       "mags": 6,
       "magstart": 4,
       "supply": 6,
-      "box": 3,
       "tags": ["jet"],
       "modes": ["semi", "burst3"],
       "attachments": ["flashlight"],
@@ -17185,7 +17167,6 @@
       "mags": 6,
       "magstart": 6,
       "supply": 6,
-      "box": 3,
       "tags": ["jet", "shrapnel"],
       "scopes": [50, 100, 200],
       "modes": ["semi"],
@@ -17206,7 +17187,6 @@
       "mags": 8,
       "magstart": 6,
       "supply": 8,
-      "box": 4,
       "attacks": [
         {"type": "projectile", "name": "Plasma_Punisher_Projectile"},
         {"type": "explosion", "name": "Punisher_Plasma_Explosion"}
@@ -17232,7 +17212,6 @@
       "mags": 4,
       "magstart": 2,
       "supply": 4,
-      "box": 2,
       "limit": 8,
       "tags": ["laser"],
       "modes": ["auto"],
@@ -17249,7 +17228,6 @@
       "mags": 3,
       "magstart": 3,
       "supply": 3,
-      "box": 3,
       "limit": 7,
       "scopes": [25, 50, 100],
       "modes": ["auto"],
@@ -17267,7 +17245,6 @@
       "mags": 6,
       "magstart": 3,
       "supply": 6,
-      "box": 3,
       "modes": ["semi"],
       "attacks": [
         {"type": "projectile", "name": "Plasma_Bolt_Medium"},
@@ -17285,7 +17262,6 @@
       "mags": 6,
       "magstart": 3,
       "supply": 6,
-      "box": 3,
       "modes": ["charge"],
       "attacks": [
         {"type": "projectile", "name": "Plasma_Rifle_Charge"},
@@ -17304,7 +17280,6 @@
       "rounds": 30,
       "roundstart": 30,
       "roundsupply": 30,
-      "roundsbox": 15,
       "modes": ["semi", "burst3"],
       "tags": ["1h"],
       "attacks": [{"type": "projectile", "name": "Shotgun_10g_buc"}]
@@ -17321,7 +17296,6 @@
       "mags": 5,
       "magstart": 4,
       "supply": 5,
-      "box": 2,
       "modes": ["semi"],
       "attachments": ["laser", "flashlight"],
       "tags": ["1h"],
@@ -17340,7 +17314,6 @@
       "mags": 4,
       "magstart": 4,
       "supply": 4,
-      "box": 2,
       "modes": ["semi", "auto"],
       "attachments": ["flashlight"],
       "tags": ["1h"],
@@ -17359,7 +17332,6 @@
       "mags": 8,
       "magstart": 5,
       "supply": 4,
-      "box": 2,
       "modes": ["semi"],
       "attachments": ["laser", "flashlight"],
       "tags": ["1h"],
@@ -17376,7 +17348,6 @@
       "rounds": 8,
       "roundstart": 4,
       "roundsupply": 2,
-      "roundsbox": 1,
       "modes": ["semi"],
       "tags": ["1h"],
       "attacks": [
@@ -17394,7 +17365,6 @@
       "mags": 3,
       "magstart": 3,
       "supply": 3,
-      "box": 3,
       "limit": 5,
       "modes": ["auto"],
       "tags": ["1h"],
@@ -17414,7 +17384,6 @@
       "rounds": 40,
       "roundstart": 32,
       "roundsupply": 20,
-      "roundsbox": 10,
       "modes": ["semi"],
       "attachments": ["flashlight"],
       "tags": ["round", "1h"],
@@ -17434,7 +17403,6 @@
       "mags": 3,
       "magstart": 2,
       "supply": 2,
-      "box": 1,
       "modes": ["auto"],
       "rpms": [700, 850, 1150],
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
@@ -17453,7 +17421,6 @@
       "mags": 3,
       "magstart": 2,
       "supply": 1,
-      "box": 1,
       "modes": ["auto"],
       "rpms": [630, 760, 900],
       "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
@@ -17472,7 +17439,6 @@
       "mags": 2,
       "magstart": 1,
       "supply": 2,
-      "box": 1,
       "modes": ["auto"],
       "rpms": [450, 600, 750],
       "attacks": [{"type": "projectile", "name": "Rifle_12p5x100mm_bchp"}]
@@ -17498,7 +17464,6 @@
       "mags": 4,
       "magstart": 3,
       "supply": 4,
-      "box": 3,
       "limit": 12.5,
       "tags": ["fire"],
       "modes": ["auto"],
@@ -17518,7 +17483,6 @@
       "mags": 6,
       "magstart": 4,
       "supply": 3,
-      "box": 1,
       "scopes": [50, 100, 200],
       "modes": ["semi"],
       "attacks": [{"type": "projectile", "name": "Rifle_12p5x100mm_eit"}]
@@ -17536,7 +17500,6 @@
       "mags": 2,
       "magstart": 1,
       "supply": 2,
-      "box": 1,
       "modes": ["semi"],
       "attacks": [
         {"type": "projectile", "name": "Grenade_40mm_HE"},
@@ -17593,7 +17556,6 @@
       "mags": 1,
       "magstart": 1,
       "supply": 1,
-      "box": 1,
       "limit": 10,
       "tags": ["laser"],
       "modes": ["auto"],
@@ -17638,7 +17600,6 @@
       "rounds": 5,
       "roundstart": 5,
       "roundsupply": 3,
-      "roundsbox": 1,
       "modes": ["semi"],
       "attacks": [
         {"type": "projectile", "name": "Grenade_85mm_HEAT"},
@@ -17656,7 +17617,6 @@
       "rounds": 3,
       "roundstart": 3,
       "roundsupply": 2,
-      "roundsbox": 1,
       "modes": ["lockon"],
       "attacks": [
         {"type": "projectile", "name": "Missile_Faf"},
@@ -17674,7 +17634,6 @@
       "rounds": 5,
       "roundstart": 5,
       "roundsupply": 3,
-      "roundsbox": 1,
       "modes": ["semi"],
       "attacks": [
         {"type": "projectile", "name": "Grenade_85mm_AirburstCluster"},
@@ -17693,7 +17652,6 @@
       "rounds": 40,
       "roundstart": 0,
       "roundsupply": 20,
-      "roundsbox": 10,
       "modes": ["semi", "burst2"],
       "attacks": [{"type": "projectile", "name": "Shotgun_10g_mag"}]
     },
@@ -18189,6 +18147,7 @@
       "stratcode": "urr",
       "cooldown": 15,
       "eaglestock": 4,
+      "rpm": 4000,
       "attacks": [
         {"type": "projectile", "name": "Cannon_Eagle_23mm"},
         {"type": "explosion", "name": "Cannon_23mm_silent"}
