@@ -440,8 +440,11 @@ async function loadData() {
     let shotdmg = 0
     let shotdmg2 = 0
     let shotdmgx = 0
+    let prev = wpn
     let subobjects = wpn.attack?.map(({ type, name: ref, count }) => {
       const obj = byRef[type][ref]
+      const parent = prev
+      prev = obj
       const damage = obj.damage
       const n = (count || 1) * (obj.pellets || 1)
       if(type === 'explosion') {
@@ -451,6 +454,7 @@ async function loadData() {
         shotdmg2 += n * (damage?.dmg2 || 0)
       }
       return {
+        parent,
         type,
         damage,
         [type]: obj,
@@ -483,6 +487,7 @@ async function loadData() {
       subobjects ||= []
       subobjects.push({
         ...wpn,
+        parent: wpn,
         name: t('wpnname.overcharge', wpn.fullname, `${name} (Overcharged)`),
         charge: wpn.charge,
         chargeearly: void 0,
@@ -503,18 +508,18 @@ async function loadData() {
 
     let dps
     let dps2
-    let dpsx
+    let dpsx = 0
     let tdps
     let tdps2
-    let tdpsx
+    let tdpsx = 0
     let magdump
     let magdump2
-    let magdumpx
+    let magdumpx = 0
     let totaldump
     let totaldump2
-    let totaldumpx
+    let totaldumpx = 0
     let magtime
-    if(hasTag(wpn, 'laser') && damage) {
+    if(beam && damage) {
       dps = damage.dmg
       dps2 = damage.dmg2
       magdump = dps * wpn.limit
@@ -617,8 +622,11 @@ async function loadData() {
     let shotdmg = 0
     let shotdmg2 = 0
     let maxRadius = [0, 0, 0]
+    let prev = void 0
     let subobjects = strat.attack?.map(({ type, name: ref, count }) => {
       const obj = byRef[type][ref]
+      const parent = prev
+      prev = obj
       const damage = obj.damage
       const n = (count || obj.pellets || 1)
       shotdmg += n * (damage?.dmg || 0)
@@ -631,6 +639,7 @@ async function loadData() {
       }
       return {
         ...(type === 'weapon' ? obj : {}),
+        parent,
         type,
         damage,
         [type]: obj,
@@ -671,7 +680,7 @@ async function loadData() {
   })
 
   locals.cats = Array.from(new Set(locals.weapons.map(wpn => wpn.category)))
-  locals.sources = data.sources.slice(0, -1)
+  locals.sources = data.sources
   readState()
   render()
 }
@@ -837,11 +846,9 @@ function readState() {
   locals.scope = readPropState('scope', set)
   locals.lang = readPropState('lang', set)
   locals.collapseDamage = readPropState('collapseDamage', set)
-  /*
   locals.hideHeaders = readSubState('hh', set, locals.hideHeaders)
   locals.hideSources = readSubState('hs', set, locals.hideSources)
   locals.hideCategories = readSubState('hc', set, locals.hideCategories)
-  */
   // Sanity check important values
   if(locals.scope !== 'weapons' && !locals.scopes.includes(locals.scope)) {
     locals.scope = 'weapons'

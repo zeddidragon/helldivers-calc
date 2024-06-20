@@ -68,6 +68,18 @@ function prettyEnums(enums) {
   })
 }
 
+const xRewards = searchWords({
+  buffer: enumBuffer,
+  first: 'ExplorationRewardType_None',
+  last: 'ExplorationRewardType',
+})
+
+const sampleEnums = searchWords({
+  buffer: enumBuffer,
+  first: 'SampleType_None',
+  last: 'SampleType',
+})
+
 const damageEnums = searchWords({
   buffer: enumBuffer,
   first: 'DamageInfoType_None',

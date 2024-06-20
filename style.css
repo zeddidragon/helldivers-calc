@@ -2,6 +2,10 @@ html {
   color: #fafafa;
   background-color: #141414;
   font-family: "Helvetica Neue", Meiryo, sans-serif;
+  --detail-text-color: #a98a98;
+  --muted-text-color: #7d7d7d;;
+  --explosion-text-color: #ea8;
+  --muted-explosion-text-color: #754;
 }
 
 nav ul {
@@ -114,7 +118,7 @@ td.damage.ap.ap-list-1, td.explosion.radius.r1, td.effect.effect1 {
 }
 
 td.explosion.label, td.beam.label, td.arc.label, td.stratagem.label {
-  color: #a98a98;
+  color: var(--detail-text-color);
 }
 
 td.code {
@@ -125,6 +129,10 @@ td.name {
   border-left: none;
   text-align: left;
   overflow: hidden;
+}
+
+.inheritance {
+  color: var(--detail-text-color);
 }
 
 td.effect-param {
@@ -151,7 +159,7 @@ td.name {
 }
 
 .ap-0 {
-  opacity: 0.5;
+  color: var(--muted-text-color);
 }
 .category.Orbital, .category.AR, .ap-5, .source.demo-det {
   color: #e88;
@@ -169,7 +177,7 @@ td.name {
   color: #88e;
 }
 .category.EX, .ap-4, .source.steel-vets {
-  color: #ea8;
+  color: var(--explosion-text-color);
 }
 .category.Mission, .category.NRG, .ap-9, .source.hd-mobilize, .rpm-laser {
   color: #ee8;
@@ -187,7 +195,7 @@ td.name {
   color: #269ab6;
 }
 .category.Misc, .category.GrSp {
-  color: #a98a98;
+  color: var(--detail-text-color);
 }
 .category.GrSt, .source.viper-commandos {
   color: #aa8;
@@ -207,42 +215,47 @@ td.name {
   padding-left: 0.5em;
 }
 .one-over {
-  color: #a98a98;
+  color: var(--detail-text-color);
   font-size: 0.7em;
 }
 .rpm-charge:after, .time:after {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "s";
 }
 .shieldregen:after {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "/s";
 }
 .length:after {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "m";
 }
 .source-page:before {
   content: "#";
 }
 .stun-x, .push-x, .demo-x, .xstun, .xpush, .xdemo {
-  color: #ea8;
+  color: var(--explosion-text-color);
   padding-left: 0.1em;
 }
 td.id:before, td.damageid:before, td.projectileid:before, td.ximpactid:before, td.xdelayid:before {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "0x";
   font-size: 0.7em;
 }
 .cap-plus:before {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "+";
 }
 .damage-x, .xdmg, .name.name-explosion, .stub.explosion, .stub.radius, .weapon.dmgx {
-  color: #ea8;
+  color: var(--explosion-text-color);
 }
+
+.dmgx.muted {
+  color: var(--muted-explosion-text-color);
+}
+
 span.explosion.shrapnel:before {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "x";
 }
 .beam.stub, .shield.stub {
@@ -255,7 +268,7 @@ span.explosion.shrapnel:before {
   color: #fafafa;
 }
 .demo-x:before, .stun-x:before, .push-x:before {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "/";
 }
 .cap-plus {
@@ -264,7 +277,7 @@ span.explosion.shrapnel:before {
   width: 1em;
 }
 .cap-limit {
-  color: #a98a98;
+  color: var(--detail-text-color);
 }
 td.cap {
   border-right: none;
@@ -289,21 +302,21 @@ td.effect-param {
   border-left: none;
 }
 td.effect-param:before {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "(";
 }
 td.effect-param:after {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: ")";
 }
 
 .muted {
-  opacity: 0.5;
+  color: var(--muted-text-color);
 }
 
-.idx {
+td.idx {
   font-size: 0.7em;
-  opacity: 0.5;
+  color: var(--muted-text-color);
 }
 
 .arrows {
@@ -314,32 +327,32 @@ td.effect-param:after {
 }
 
 .pellets:not(.blank):after, .salvos:after {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "×";
 }
 .ap-x, .ap-fire {
   padding-left: 0.5em;
 }
 .reload-one:after, .charge-early:after, .liferandom:after {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "-";
 }
 .roundstart:before {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "+";
 }
 .magstart:before {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "×";
 }
 .reload-early:before, .reload-x:after, .clipstart:after, .roundstart:after, .magstart:after, .roundsbox:before, .clipsbox:before, .box:before {
-  color: #a98a98;
+  color: var(--detail-text-color);
   content: "/";
 }
 
 .clipsize {
   font-size: 0.7em;
-  color: #a98a98;
+  color: var(--detail-text-color);
 }
 .clipsize:before {
   content: "[";

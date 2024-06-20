@@ -71,10 +71,10 @@ mixin weaponsHeader
     )= t('table.th.wpn.label', 'total')
   if !hideHeaders.dps2
     th.weapon.dps2(
-      title=t('table.th.wpn', 'dtdps')
+      title=t('table.th.wpn', 'ddps')
     )
-      sup= t('table.th.wpn.label.sup', 'dtdps')
-      sub= t('table.th.wpn.label.sub', 'dtdps')
+      sup= t('table.th.wpn.label.sup', 'ddps')
+      sub= t('table.th.wpn.label.sub', 'ddps')
     th.weapon.tdps2(
       title=t('table.th.wpn', 'dtdps')
     )
@@ -119,9 +119,12 @@ mixin weaponsRow(wpn, opts)
       title=t('wpn.category.full', wpn.category)
       class=wpn.category
     )= t('wpn.category.label', wpn.category)
-    td.weapon.code
-      if wpn.code
-        a(href=wikiLink(wpn) target="_blank")= wpn.code
+    if wpn.parent
+      td.inheritance └
+    else
+      td.weapon.code
+        if wpn.code
+          a(href=wikiLink(wpn) target="_blank")= wpn.code
   td.weapon.name(class=`name-${wpn.type}`)
     if wpn.name
       a(href=wikiLink(wpn) target="_blank")= wpn.name
@@ -286,10 +289,13 @@ mixin stratagemsHeader(opts = {})
 mixin stratagemsRow(obj, opts = {})
   td.stratagem.stratcode
     .arrows= obj.arrows
-  td.stratagem.category(
-    title=t('strat.category.full', obj.category)
-    class=obj.category
-  )= t('strat.category.label', obj.category)
+  if obj.parent
+    td.inheritance └
+  else
+    td.stratagem.category(
+      title=t('strat.category.full', obj.category)
+      class=obj.category
+    )= t('strat.category.label', obj.category)
   td.stratagem.name(class=`name-${obj.category || obj.type}`)
     a(href=wikiLink(obj) target="_blank")= obj.name
   td.stratagem.calltime= obj.calltime
