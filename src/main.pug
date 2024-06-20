@@ -15,16 +15,18 @@ mixin weaponsHeader
   th.weapon.name(
     title=t('table.th.wpn', 'name')
   )= t('table.th.wpn.label', 'weapon')
-  th.weapon.damage(
-    title=t('table.th.dmg', 'dmgs3')
-    colspan=collapseDamage ? 2 : 3
-  )
-    input(
-      type="checkbox"
-      checked=collapseDamage
-      onclick="toggleCollapseDamage(event)"
+  if collapseDamage
+    th.weapon.damage(
+      title=t('table.th.dmg', 'dmg')
+      colspan=2
     )
-    span= t('table.th.wpn.label', 'damage')
+      span= t('table.th.wpn.label', 'damage')
+  else
+    th.weapon.damage(
+      title=t('table.th.dmg', 'dmgs3')
+      colspan=3
+    )
+      span= t('table.th.wpn.label', 'damage')
   th.weapon.shotdmg2(
     title=t('table.th.dmg', 'dmg2')
   )
@@ -713,7 +715,7 @@ header.menu
             title=t('nav.scopes.full', scope)
             onclick=`switchScope('${scope}')`
           )= t('nav.scopes.label', scope)
-    if scope === 'weapons'
+    if isWeaponScope
       .filter-row
         ul.sources
           for source in sources
@@ -741,17 +743,21 @@ header.menu
 table
   thead
     tr
-      +#{`${scope}Header`}(full)
+      - const header = getHeader(scope)
+      +#{header}(full)
       if subScope
-        +#{`${subScope}Header`}(hideName)
+        - const subHeader = getHeader(subScope, true)
+        +#{subHeader}(hideName)
   tbody
+    - const row = getRow(scope)
+    - const subRow = getRow(subScope, true)
     for obj in objects(scope)
       tr
-        +#{`${scope}Row`}(obj, full)
-        if subScope
+        +#{row}(obj, full)
+        if subRow
           - let obj2 = subObj(obj)
           if obj2
-            +#{`${subScope}Row`}(obj2, hideName)
+            +#{subRow}(obj2, hideName)
           else
             td.damage-filler(colspan=colspans.damagesHideName)
 if scope === 'weapons'

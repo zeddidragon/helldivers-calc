@@ -11,6 +11,8 @@
   "nav.links;io": "helldivers.io",
   "nav.scopes.full;weapons": "Weapon Data",
   "nav.scopes.label;weapons": "Weapons",
+  "nav.scopes.full;expanded": "Expanded Weapon Data",
+  "nav.scopes.label;expanded": "Expanded",
   "nav.scopes.full:stratagems": "Stratagem Data",
   "nav.scopes.label;stratagems": "Strats",
   "nav.scopes.full;damages": "Damage Data",

@@ -25,14 +25,15 @@ function sorting(col, mainScope) {
     return a.idx - b.idx
   }
 
-  if(locals.scope === 'weapons' && mainScope === 'projectile' && col === 'name') {
+  const isWeapons = ['weapons', 'expanded'].includes(locals.scope)
+  if(isWeapons && mainScope === 'projectile' && col === 'name') {
     return function sortByProjectileName(a, b) {
       const diff = (a.projectile?.[col] || '').localeCompare(b.projectile?.[col] || '') * dir
       if(diff) return diff
       return idxSort(a, b)
     }
   }
-  if(locals.scope === 'weapons' && mainScope === 'projectile') {
+  if(isWeapons && mainScope === 'projectile') {
     return function sortByProjectileCol(a, b) {
       const diff =  compare(a.projectile, b.projectile, col)
       // const diff = (a.projectile?.[col] || '').localeCompare(b.projectile?.[col] || '') * dir
@@ -168,11 +169,7 @@ function sorted(arr) {
   return arr.sort(sorting(locals.sorting, locals.mainSorting))
 }
 
-let collapseDamage = false
 window.locals = {
-  get nerdMode() {
-    return locals.scope !== 'weapons'
-  },
   get subScope() {
     switch(locals.scope) {
       case 'projectiles':
@@ -183,10 +180,10 @@ window.locals = {
     }
   },
   get collapseDamage() {
-    return locals.scope === 'weapons' && collapseDamage
+    return locals.scope === 'weapons'
   },
-  set collapseDamage(v) {
-    collapseDamage = v
+  get isWeaponScope() {
+    return ['weapons', 'expanded'].includes(locals.scope)
   },
   sorting: 'idx',
   lang: 'en',
@@ -266,6 +263,9 @@ window.locals = {
     return `${url}/${path}`
   },
   objects: (scope) => {
+    if(scope === 'expanded') {
+      scope = 'weapons'
+    }
     let arr = sorted(locals[scope].slice())
     if(scope === 'weapons') {
       arr = arr.filter(wpn => {
@@ -300,6 +300,7 @@ window.locals = {
   scope: 'weapons',
   scopes: [
     'weapons',
+    'expanded',
     'stratagems',
     'damages',
     'projectiles',
@@ -319,6 +320,24 @@ window.locals = {
     const name = data.statuses[id]
     const param = wpn[`param${idx}`]
     return { id, name, param }
+  },
+  getHeader(scope, isSubScope) {
+    if(!scope) {
+      return
+    }
+    if(scope === 'expanded') {
+      scope = 'weapons'
+    }
+    return `${scope}Header`
+  },
+  getRow(scope, isSubScope) {
+    if(!scope) {
+      return
+    }
+    if(scope === 'expanded') {
+      scope = 'weapons'
+    }
+    return `${scope}Row`
   },
 }
 
@@ -780,7 +799,6 @@ const defaultSettings = {
   hs: [],
   scope: 'weapons',
   lang: 'en',
-  collapseDamage: true,
 }
 
 function writeSubState(prop, obj, states) {
@@ -808,7 +826,6 @@ function writeState() {
   const localStorageStates = []
   writePropState('scope', hashStates)
   writePropState('lang', hashStates)
-  writePropState('collapseDamage', localStorageStates)
   writeSubState('hh', locals.hideHeaders, localStorageStates)
   writeSubState('hs', locals.hideSources, localStorageStates)
   writeSubState('hc', locals.hideCategories, localStorageStates)
@@ -864,7 +881,6 @@ function readState() {
   }
   locals.scope = readPropState('scope', set)
   locals.lang = readPropState('lang', set)
-  locals.collapseDamage = readPropState('collapseDamage', set)
   locals.hideHeaders = readSubState('hh', set, locals.hideHeaders)
   locals.hideSources = readSubState('hs', set, locals.hideSources)
   locals.hideCategories = readSubState('hc', set, locals.hideCategories)
@@ -903,14 +919,6 @@ window.toggleHeader = function toggleHeader(h) {
     items: locals.headers,
     register: locals.hideHeaders,
   })
-}
-
-window.toggleCollapseDamage = function toggleNerdMode(ev) {
-  ev.preventDefault()
-  ev.stopPropagation()
-  locals.collapseDamage = !locals.collapseDamage
-  writeState()
-  render()
 }
 
 window.switchScope = function switchScope(scope) {
