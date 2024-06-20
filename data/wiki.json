@@ -2099,7 +2099,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Shotgun 10-Gauge Magnum Tri-Baall"
+      "name": "Shotgun 10-Gauge Magnum Tri-Ball"
     },
     "Projectile_Shotgun_10g_sab": {
       "dmg": 180,
@@ -2374,7 +2374,7 @@
       "param3": 0,
       "func4": 0,
       "param4": 0,
-      "name": "Shotgun 12-Gauge Magnum Tri-Baall"
+      "name": "Shotgun 12-Gauge Magnum Tri-Ball"
     },
     "Projectile_Shotgun_12g_scs": {
       "dmg": 200,
@@ -13425,7 +13425,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
-      "name": "Shotgun 12-Gauge Magnum Tri-Baall"
+      "name": "Shotgun 12-Gauge Magnum Tri-Ball"
     },
     "Shotgun_12g_scs": {
       "caliber": 8,
@@ -13752,7 +13752,7 @@
       "unk49": 12,
       "unk55": 1,
       "unk57": 61,
-      "name": "Shotgun 10-Gauge Magnum Tri-Baall"
+      "name": "Shotgun 10-Gauge Magnum Tri-Ball"
     },
     "Shotgun_10g_sab": {
       "caliber": 8,

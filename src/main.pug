@@ -686,82 +686,96 @@ mixin damagesRow(dmg, opts = {})
     )= t('dmg.effects', fx.name )
     td.damage.effect-param(class={muted: !fx.id})= fx.param
 
-nav.links
-  ul
-    li
-      a(href="/")= t('nav.links', 'edf', 'Earth Defense Force')
-    li.nav-selected
-      a(href="/helldivers-2")= t('nav.links', 'self', 'Helldivers 2')
-    li |
-    li
-      a(href="https://helldivers.wiki.gg")= t('nav.links', 'wiki', 'Helldivers Wiki')
-    li
-      a(href="https://helldivers.io/")= t('nav.links', 'io', 'helldivers.io')
-    li.spacer
-    li
-      ul.langs
-        for l in langs
-          li.lang(
-            onclick=`switchLang('${l}')`
-            title=t('nav.langs.full', l)
-          )= l
-header.menu
-  .filters
-    .filter-row
-      ul.scopes
-        for scope in scopes
-          li.scope(
-            class=scopeClass(scope)
-            title=t('nav.scopes.full', scope)
-            onclick=`switchScope('${scope}')`
-          )= t('nav.scopes.label', scope)
-    if isWeaponScope
+mixin main
+  nav.links
+    ul
+      li
+        a(href="/")= t('nav.links', 'edf', 'Earth Defense Force')
+      li.nav-selected
+        a(href="/helldivers-2")= t('nav.links', 'self', 'Helldivers 2')
+      li |
+      li
+        a(href="https://helldivers.wiki.gg")= t('nav.links', 'wiki', 'Helldivers Wiki')
+      li
+        a(href="https://helldivers.io/")= t('nav.links', 'io', 'helldivers.io')
+      li.spacer
+      li
+        ul.langs
+          for l in langs
+            li.lang(
+              onclick=`switchLang('${l}')`
+              title=t('nav.langs.full', l)
+            )= l
+  header.menu
+    .filters
       .filter-row
-        ul.sources
-          for source in sources
-            li.source(
-              class=sourceClass(source)
-              title=t('wpn.source.full', source)
-              onclick=`toggleSource('${source}')`
-            )= t('wpn.source.label', source)
+        ul.scopes
+          for scope in scopes
+            li.scope(
+              class=scopeClass(scope)
+              title=t('nav.scopes.full', scope)
+              onclick=`switchScope('${scope}')`
+            )= t('nav.scopes.label', scope)
+      if isWeaponScope
+        .filter-row
+          ul.sources
+            for source in sources
+              li.source(
+                class=sourceClass(source)
+                title=t('wpn.source.full', source)
+                onclick=`toggleSource('${source}')`
+              )= t('wpn.source.label', source)
+        .filter-row
+          ul.categories
+            for cat in cats
+              li.category(
+                class=catClass(cat)
+                title=t('wpn.category.full', cat)
+                onclick=`toggleCategory('${cat}')`
+              )= t('wpn.category.label', cat)
+          .divider |
+          ul.colfilters
+            for h in headers
+              li.colfilter(
+                class=headerClass(h)
+                title=t('wpn.header.full', h)
+                onclick=`toggleHeader('${h}')`
+              )= t('wpn.header.label', h)
       .filter-row
-        ul.categories
-          for cat in cats
-            li.category(
-              class=catClass(cat)
-              title=t('wpn.category.full', cat)
-              onclick=`toggleCategory('${cat}')`
-            )= t('wpn.category.label', cat)
-        .divider |
-        ul.colfilters
-          for h in headers
-            li.colfilter(
-              class=headerClass(h)
-              title=t('wpn.header.full', h)
-              onclick=`toggleHeader('${h}')`
-            )= t('wpn.header.label', h)
-table
-  thead
-    tr
-      - const header = getHeader(scope)
-      +#{header}(full)
-      if subScope
-        - const subHeader = getHeader(subScope, true)
-        +#{subHeader}(hideName)
-  tbody
-    - const row = getRow(scope)
-    - const subRow = getRow(subScope, true)
-    for obj in objects(scope)
+        input#text-search(
+          type=text
+          value=search
+          oninput=`search()`)
+  table
+    thead
       tr
-        +#{row}(obj, full)
-        if subRow
-          - let obj2 = subObj(obj)
-          if obj2
-            +#{subRow}(obj2, hideName)
-          else
-            td.damage-filler(colspan=colspans.damagesHideName)
-if scope === 'weapons'
-  ul
-    li= t('explanations', 'reload')
-    li= t('explanations', 'startingMagsDisclaimer')
-    li= t('explanations', 'laserFire')
+        - const header = getHeader(scope)
+        +#{header}(full)
+        if subScope
+          - const subHeader = getHeader(subScope, true)
+          +#{subHeader}(hideName)
+    tbody#table-body
+      +tbody()
+  if scope === 'weapons'
+    ul
+      li= t('explanations', 'reload')
+      li= t('explanations', 'startingMagsDisclaimer')
+      li= t('explanations', 'laserFire')
+
+mixin tbody
+  - const row = getRow(scope)
+  - const subRow = getRow(subScope, true)
+  for obj in objects(scope)
+    tr
+      +#{row}(obj, full)
+      if subRow
+        - let obj2 = subObj(obj)
+        if obj2
+          +#{subRow}(obj2, hideName)
+        else
+          td.damage-filler(colspan=colspans.damagesHideName)
+
+if tbody
+  +tbody()
+else
+  +main()

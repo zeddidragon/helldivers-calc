@@ -170,6 +170,7 @@ function sorted(arr) {
 }
 
 window.locals = {
+  search: '',
   get subScope() {
     switch(locals.scope) {
       case 'projectiles':
@@ -267,6 +268,28 @@ window.locals = {
       scope = 'weapons'
     }
     let arr = sorted(locals[scope].slice())
+    const search = locals.search
+    const fuseOptions = {
+      // isCaseSensitive: false,
+      // includeScore: false,
+      shouldSort: false,
+      // includeMatches: false,
+      // findAllMatches: false,
+      // minMatchCharLength: 1,
+      // location: 0,
+      // threshold: 0.6,
+      // distance: 100,
+      // useExtendedSearch: false,
+      // ignoreLocation: false,
+      // ignoreFieldNorm: false,
+      // fieldNormWeight: 1,
+      keys: [
+        'fullname',
+        'name',
+        'category',
+      ]
+    }
+
     if(scope === 'weapons') {
       arr = arr.filter(wpn => {
         if(locals.hideSources[wpn.source]) {
@@ -277,12 +300,19 @@ window.locals = {
         }
         return true
       })
+      if(search) {
+        const fuse = new Fuse(arr, fuseOptions);
+        arr = fuse.search(search).map(({ item }) => item)
+      }
       arr = arr.flatMap(wpn => {
         if(wpn.subobjects && !locals.collapseDamage) {
           return [wpn, ...wpn.subobjects]
         }
         return [wpn]
       })
+    } else if(search) {
+      const fuse = new Fuse(arr, fuseOptions);
+      arr = fuse.search(search).map(({ item }) => item)
     }
     if(scope === 'stratagems') {
       arr = arr.flatMap(strat => {
@@ -731,9 +761,6 @@ function sortBy(col, objName) {
   }
 }
 
-function addChevron(prop, mainProp) {
-}
-
 window.render = function render() {
   document.querySelector('body').innerHTML = template(locals)
   const headers = document.querySelectorAll('th:not(.th-groups, .label)')
@@ -750,6 +777,11 @@ window.render = function render() {
     if(mainProp === 'weapon' && prop === 'damage') {
     }
   }
+}
+
+function renderTable() {
+  const tbody = document.getElementById('table-body')
+  tbody.innerHTML = template({ ...locals, tbody: true })
 }
 
 let doubleClickTime = 500
@@ -923,6 +955,7 @@ window.toggleHeader = function toggleHeader(h) {
 
 window.switchScope = function switchScope(scope) {
   locals.scope = scope
+  locals.search = ''
   writeState()
   render()
 }
@@ -932,6 +965,13 @@ window.resetState = function resetState(scope) {
   readState()
   render()
 }
+
+window.search = function search() {
+  const box = document.getElementById('text-search')
+  locals.search = box.value
+  renderTable()
+}
+
 
 readState()
 loadData()
