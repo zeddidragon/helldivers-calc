@@ -368,14 +368,23 @@ td.idx {
 ul.sources, ul.categories, ul.colfilters, ul.scopes, ul.langs {
   display: flex;
   flex-direction: row;
-  width: 100%;
   list-style-type: none;
   margin: 0.2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
 }
 
-.sources .source, .categories .category, .colfilter, .scope, li.lang {
+li.source, li.category, li.colfilter, li.scope, li.lang {
   width: 4em;
   cursor: pointer;
+}
+
+li.category {
+  width: 3em;
+}
+
+li.colfilter {
+  width: 5em;
 }
 
 .hidden {

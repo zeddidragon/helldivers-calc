@@ -54,8 +54,6 @@ mixin weaponsHeader
     )= t('table.th.wpn.label', 'spare4')
   if !hideHeaders.damage
     +damagesHeader({ apCount: 1, effectsCount: 1 })
-  if !hideHeaders.projectile
-    +projectilesHeader()
   if !hideHeaders.dps
     th.weapon.dps(
       title=t('table.th.wpn', 'dps')
@@ -87,6 +85,8 @@ mixin weaponsHeader
       title=t('table.th.wpn', 'dtotal')
     )
       sup= t('table.th.wpn.label.sup', 'dtotal')
+  if !hideHeaders.projectile
+    +projectilesHeader()
 
 mixin weaponDamageRow(wpn)
   - const dmg = wpn.damage || {}
@@ -218,6 +218,16 @@ mixin weaponsRow(wpn, opts)
       +damagesRow(wpn.damage, { explosive: !!wpn.explosion, apCount: 1, effectsCount: 1 })
     else
       td.damage-filler(colspan=colspans.damages)
+  if !hideHeaders.dps
+    td.dps= wpn.dps
+    td.tdps= wpn.tdps
+    td.magdump= wpn.magdump
+    td.totaldump= wpn.totaldump
+  if !hideHeaders.dps2
+    td.dps2= wpn.dps2
+    td.tdps2= wpn.tdps2
+    td.magdump2= wpn.magdump2
+    td.totaldump2= wpn.totaldump2
   if !hideHeaders.projectile
     if wpn.projectile
       +projectilesRow(wpn.projectile)
@@ -229,16 +239,6 @@ mixin weaponsRow(wpn, opts)
       +beamsStubRow(wpn.beam)
     else
       td.projectile-filler(colspan=colspans.projectiles)
-  if !hideHeaders.dps
-    td.dps= wpn.dps
-    td.tdps= wpn.tdps
-    td.magdump= wpn.magdump
-    td.totaldump= wpn.totaldump
-  if !hideHeaders.dps2
-    td.dps2= wpn.dps2
-    td.tdps2= wpn.tdps2
-    td.magdump2= wpn.magdump2
-    td.totaldump2= wpn.totaldump2
 
 mixin stratagemsHeader(opts = {})
   th.stratagem.stratcode(

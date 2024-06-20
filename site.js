@@ -2,6 +2,13 @@ function val(obj, prop) {
   return obj?.[prop] || 0
 }
 
+function iff(condition, value) {
+  if(condition == null) {
+    return null
+  }
+  return value
+}
+
 function sorting(col, mainScope) {
   let dir = -1
   if(col === 'category') {
@@ -237,9 +244,9 @@ window.locals = {
   headers: [
     'weapon',
     'damage',
-    'projectile',
     'dps',
     'dps2',
+    'projectile',
   ],
   hideHeaders: {},
   weaponCols: new Set('damage'),
@@ -530,21 +537,22 @@ async function loadData() {
     if(wpn.charge && wpn.cap > 1) {
       rpm = 60 / wpn.charge
     }
-    if(wpn.cap > 1 && rpm) {
+    if(wpn.cap !== 1 && rpm) {
       dps = Math.floor(rpm * shotdmg / 60)
       dps2 = Math.floor(rpm * shotdmg2 / 60)
       dpsx = Math.floor(rpm * shotdmgx / 60)
       magtime = wpn.cap * 60 / rpm
     }
-    if(wpn.cap > 1 && shotdmg) {
-      magdump = shotdmg * wpn.cap
-      magdump2 = shotdmg2 * wpn.cap
-      magdumpx = shotdmgx * wpn.cap
+    if(shotdmg) {
+      const cap = wpn.cap || 1
+      magdump = shotdmg * cap
+      magdump2 = shotdmg2 * cap
+      magdumpx = shotdmgx * cap
     }
     if(wpn.limit && wpn.rpm) { // Sickle
-      magdump = shotdmg * Math.floor(wpn.rpm * wpn.limit / 60)
-      magdump2 = shotdmg2 * Math.floor(wpn.rpm * wpn.limit / 60)
-      magdumpx = shotdmgx * Math.floor(wpn.rpm * wpn.limit / 60)
+      magdump = shotdmg * Math.floor(rpm * wpn.limit / 60)
+      magdump2 = shotdmg2 * Math.floor(rpm * wpn.limit / 60)
+      magdumpx = shotdmgx * Math.floor(rpm * wpn.limit / 60)
     }
     if(magdump && wpn.mags) {
       totaldump = magdump * (wpn.mags + 1)
@@ -552,9 +560,10 @@ async function loadData() {
       totaldumpx = magdumpx * (wpn.mags + 1)
     }
     if(wpn.rounds) {
-      totaldump = shotdmg * (wpn.rounds + (wpn.cap || 0))
-      totaldump2 = shotdmg2 * (wpn.rounds + (wpn.cap || 0))
-      totaldumpx = shotdmgx * (wpn.rounds + (wpn.cap || 0))
+      const rounds = (wpn.rounds || 0) + (wpn.cap || 0)
+      totaldump = shotdmg * rounds
+      totaldump2 = shotdmg2 * rounds
+      totaldumpx = shotdmgx * rounds
     }
     if(wpn.clips) {
       totaldump = shotdmg * (wpn.clips * wpn.clipsize + wpn.cap)
@@ -566,6 +575,16 @@ async function loadData() {
       tdps2 = Math.floor(magdump2 / (magtime + wpn.reload))
       tdpsx = Math.floor(magdumpx / (magtime + wpn.reload))
     }
+    if(!shotdmg && damage) {
+      shotdmg = damage.dmg
+      shotdmg2 = damage.dmg2
+      shotdmgx = damage.dmgx
+    }
+    if(wpn.category === 'Status' && damage) {
+      dps = shotdmg
+      dps2 = shotdmg2
+      dpsx = shotdmgx || 0
+    }
 
     return {
       ...(projectile || {}),
@@ -575,15 +594,15 @@ async function loadData() {
       name: t('wpnname', wpn.fullname),
       sourceidx: (data.sources.indexOf(wpn.source) + 1) || Infinity,
       shotdmg,
-      dps: dps + dpsx,
-      tdps: tdps + tdpsx,
-      magdump: magdump + magdumpx,
-      totaldump: totaldump + totaldumpx,
+      dps: iff(dps, (dps + dpsx)),
+      tdps: iff(tdps, (tdps + tdpsx)),
+      magdump: iff(magdump, (magdump + magdumpx)),
+      totaldump: iff(totaldump, (totaldump + totaldumpx)),
       shotdmg2,
-      dps2: dps2 + dpsx,
-      tdps2: tdps2 + tdpsx,
-      magdump2: magdump2 + magdumpx,
-      totaldump2: totaldump2 + totaldumpx,
+      dps2: iff(dps2, (dps2 + dpsx)),
+      tdps2: iff(tdps2, (tdps2 + tdpsx)),
+      magdump2: iff(magdump2, (magdump2 + magdumpx)),
+      totaldump2: iff(totaldump2, (totaldump2 + totaldumpx)),
       shotdmgx,
       dpsx,
       tdpsx,
