@@ -1475,7 +1475,7 @@
       "stratcode": "urul",
       "cooldown": 15,
       "eaglestock": 2,
-      "cap": 3,
+      "cap": 6,
       "attack": [
         {"type": "projectile", "name": "Rocket_110mm"},
         {"type": "explosion", "name": "Rocket_110mm"}

@@ -1540,7 +1540,7 @@ fullname = "Eagle 110mm Rocket Pods"
 stratcode = "urul"
 cooldown = 15
 eaglestock = 2
-cap = 3
+cap = 6
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Rocket_110mm"
