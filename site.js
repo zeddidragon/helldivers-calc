@@ -1,3 +1,29 @@
+function searchList({
+  list,
+  search,
+  keys,
+}) {
+  const rexes = search.split(/\s+/g).map(str => new RegExp(str, 'i'))
+  return list.filter(item => {
+    return rexes.every(rex => {
+      return keys.some(key => {
+        let str = item[key]
+        if(!str && key.includes('.')) {
+          const keys = key.split(/\./g)
+          str = item
+          for(const key of keys) {
+            str = str[key]
+            if(!str) {
+              return false
+            }
+          }
+        }
+        return str && rex.exec(str)
+      })
+    })
+  })
+}
+
 function val(obj, prop) {
   return obj?.[prop] || 0
 }
@@ -269,26 +295,12 @@ window.locals = {
     }
     let arr = sorted(locals[scope].slice())
     const search = locals.search
-    const fuseOptions = {
-      // isCaseSensitive: false,
-      // includeScore: false,
-      shouldSort: false,
-      // includeMatches: false,
-      // findAllMatches: false,
-      // minMatchCharLength: 1,
-      // location: 0,
-      // threshold: 0.6,
-      // distance: 100,
-      // useExtendedSearch: false,
-      // ignoreLocation: false,
-      // ignoreFieldNorm: false,
-      // fieldNormWeight: 1,
-      keys: [
-        'fullname',
-        'name',
-        'category',
-      ]
-    }
+    const keys = [
+      'fullname',
+      'name',
+      'category',
+      'projectile.name',
+    ]
 
     if(scope === 'weapons') {
       arr = arr.filter(wpn => {
@@ -301,8 +313,7 @@ window.locals = {
         return true
       })
       if(search) {
-        const fuse = new Fuse(arr, fuseOptions);
-        arr = fuse.search(search).map(({ item }) => item)
+        arr = searchList({ list: arr, search, keys })
       }
       arr = arr.flatMap(wpn => {
         if(wpn.subobjects && !locals.collapseDamage) {
@@ -311,8 +322,7 @@ window.locals = {
         return [wpn]
       })
     } else if(search) {
-      const fuse = new Fuse(arr, fuseOptions);
-      arr = fuse.search(search).map(({ item }) => item)
+      arr = searchList({ list: arr, search, keys })
     }
     if(scope === 'stratagems') {
       arr = arr.flatMap(strat => {
@@ -870,7 +880,6 @@ function writeState() {
 }
 
 function readPropState(prop, obj) {
-  console.log({ prop, obj })
   return obj[prop] == null ? defaultSettings[prop] : obj[prop]
 }
 
@@ -885,7 +894,6 @@ function readSubState(prop, obj) {
   for(const set of (obj[`${prop}[]`] || [])) {
     cfg[set] = false
   }
-  console.log({ prop, cfg })
   return cfg
 }
 
