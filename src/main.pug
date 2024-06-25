@@ -665,7 +665,12 @@ mixin damagesRow(dmg, opts = {})
     td.damage.dmgtype(
       class={muted: !dmg.type },
       title=t('dmg.types.full', dmg.type),
-    )= t('dmg.types', dmg.type)
+    )
+      if dmg.type
+        - var el = element(dmg)
+        span.dmgtype(
+          title=t('dmg.types.full', el)
+        )= t('dmg.types', el)
     td.damage.dmg(class={ xdmg: opts.explosive })= dmg.dmg
     td.damage.dmg2(class={ xdmg: opts.explosive })= dmg.dmg2
     - i = 0
