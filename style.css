@@ -53,6 +53,7 @@ thead th {
   top: 0;
   background-color: #000;
   white-space: nowrap;
+  text-align: left;
 }
 tfoot th {
   position: sticky;
