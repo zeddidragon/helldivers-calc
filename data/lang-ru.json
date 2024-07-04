@@ -196,7 +196,7 @@
   "wpn.source.full;cut-edge": "Передовой край",
   "wpn.source.label;cut-edge": "Край",
   "wpn.source.full;support": "Оружие поддержки",
-  "wpn.source.label;support": "",
+  "wpn.source.label;support": "Поддержка",
   "wpn.source.full;status": "Эффект",
   "wpn.source.label;status": "Эффект",
   "table.th.prj;idx": "Внутренний порядок",
