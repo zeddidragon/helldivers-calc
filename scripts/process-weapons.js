@@ -89,14 +89,14 @@ const shalzuthSchema = [
   { source: 'magazines_refill', dest: 'supply' },
   { source: 'recoil_info', cb: (wpn, { drift }) => {
     wpn.recoil = {
-      x: drift.horizontal_recoil,
-      y: drift.vertical_recoil,
+      x: +drift.horizontal_recoil.toFixed(2),
+      y: +drift.vertical_recoil.toFixed(2),
     }
   }},
   { source: 'spread_info', cb: (wpn, spread) => {
     wpn.spread = {
-      x: spread.horizontal,
-      y: spread.vertical,
+      x: +spread.horizontal.toFixed(2),
+      y: +spread.vertical.toFixed(2),
     }
   }},
   { source: 'ergonomics' },
@@ -118,7 +118,7 @@ const shalzuthSchema = [
       ref: prj.replace('ProjectileType_', ''),
     })
   }},
-  { source: 'rounuds_per_minutes', cb: (wpn, rpms) => {
+  { source: 'rounds_per_minute', cb: (wpn, rpms) => {
     wpn.rpm = rpms.y
     let rpmArr = [
       rpms.x,
@@ -132,7 +132,7 @@ const shalzuthSchema = [
   }},
 ]
 
-let counter = 0
+let counter = 1
 for(const wpn of wps) {
   for(const prop of purge) {
     delete wpn[prop]
@@ -172,7 +172,6 @@ for(const wpn of wps) {
   counter--;
   if(!counter) {
     console.log(name, matched, wpn)
-    break
   }
 }
 

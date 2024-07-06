@@ -29,7 +29,8 @@
       "ergonomics": 65,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}]
+      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}],
+      "rpm": 640
     },
     {
       "category": "AR",
@@ -50,7 +51,8 @@
       "ergonomics": 59,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}]
+      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}],
+      "rpm": 640
     },
     {
       "category": "AR",
@@ -69,7 +71,8 @@
       "spread": {"x": 24, "y": 24},
       "ergonomics": 65,
       "modes": ["Automatic", "Single"],
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_exp"}]
+      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_exp"}],
+      "rpm": 320
     },
     {
       "category": "AR",
@@ -90,7 +93,8 @@
       "ergonomics": 65,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
+      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
+      "rpm": 920
     },
     {
       "category": "AR",
@@ -111,7 +115,8 @@
       "ergonomics": 65,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Rifle_Rico"}]
+      "attack": [{"type": "projectile", "name": "Rifle_Rico"}],
+      "rpm": 600
     },
     {
       "category": "AR",
@@ -131,7 +136,8 @@
       "spread": {"x": 1, "y": 1},
       "ergonomics": 40,
       "modes": ["Automatic", "Single"],
-      "attack": [{"type": "projectile", "name": "Battle_Rifle"}]
+      "attack": [{"type": "projectile", "name": "Battle_Rifle"}],
+      "rpm": 550
     },
     {
       "category": "DMR",
@@ -150,7 +156,8 @@
       "spread": {"x": 0.5, "y": 0.5},
       "ergonomics": 65,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_fmj"}]
+      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_fmj"}],
+      "rpm": 350
     },
     {
       "category": "DMR",
@@ -169,7 +176,8 @@
       "spread": {"x": 0.5, "y": 0.5},
       "ergonomics": 35,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_hv"}]
+      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_hv"}],
+      "rpm": 350
     },
     {
       "category": "SMG",
@@ -189,7 +197,8 @@
       "ergonomics": 90,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_smj"}]
+      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_smj"}],
+      "rpm": 1380
     },
     {
       "category": "SMG",
@@ -210,7 +219,8 @@
       "ergonomics": 90,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "None"}]
+      "attack": [{"type": "projectile", "name": "None"}],
+      "rpm": 520
     },
     {
       "category": "SMG",
@@ -231,7 +241,8 @@
       "ergonomics": 90,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Pistol_12x25mm_stun"}]
+      "attack": [{"type": "projectile", "name": "Pistol_12x25mm_stun"}],
+      "rpm": 475
     },
     {
       "category": "SG",
@@ -250,7 +261,8 @@
       "spread": {"x": 150, "y": 120},
       "ergonomics": 65,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "None"}]
+      "attack": [{"type": "projectile", "name": "None"}],
+      "rpm": 80
     },
     {
       "category": "SG",
@@ -269,7 +281,8 @@
       "spread": {"x": 6, "y": 6},
       "ergonomics": 65,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "None"}]
+      "attack": [{"type": "projectile", "name": "None"}],
+      "rpm": 80
     },
     {
       "category": "SG",
@@ -288,7 +301,8 @@
       "spread": {"x": 100, "y": 100},
       "ergonomics": 65,
       "modes": ["Automatic", "Single"],
-      "attack": [{"type": "projectile", "name": "Shotgun_12g_buc"}]
+      "attack": [{"type": "projectile", "name": "Shotgun_12g_buc"}],
+      "rpm": 300
     },
     {
       "category": "SG",
@@ -323,7 +337,8 @@
       "ergonomics": 50,
       "modes": ["Burst", "Single"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Shotgun_12g_flm"}]
+      "attack": [{"type": "projectile", "name": "Shotgun_12g_flm"}],
+      "rpm": 300
     },
     {
       "category": "EX",
@@ -343,7 +358,8 @@
       "attack": [
         {"type": "projectile", "name": "Crossbow_Bolt_exp"},
         {"type": "explosion", "name": "Crossbow_Bolt"}
-      ]
+      ],
+      "rpm": 50
     },
     {
       "category": "EX",
@@ -364,7 +380,8 @@
       "ergonomics": 30,
       "modes": ["Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "None"}]
+      "attack": [{"type": "projectile", "name": "None"}],
+      "rpm": 250
     },
     {
       "category": "EX",
@@ -388,7 +405,8 @@
       "attack": [
         {"type": "projectile", "name": "Rocket_JarPhoenix_20mm"},
         {"type": "explosion", "name": "JarPhoenix_20mm"}
-      ]
+      ],
+      "rpm": 25
     },
     {
       "category": "NRG",
@@ -407,7 +425,8 @@
       "attack": [
         {"type": "projectile", "name": "Plasma_Punisher_Projectile"},
         {"type": "explosion", "name": "Punisher_Plasma_Explosion"}
-      ]
+      ],
+      "rpm": 80
     },
     {
       "category": "NRG",
@@ -455,7 +474,8 @@
       "spread": {"x": 20, "y": 20},
       "ergonomics": 65,
       "modes": ["Automatic"],
-      "attack": [{"type": "projectile", "name": "Laser_Long"}]
+      "attack": [{"type": "projectile", "name": "Laser_Long"}],
+      "rpm": 750
     },
     {
       "category": "NRG",
@@ -475,7 +495,8 @@
       "attack": [
         {"type": "projectile", "name": "Plasma_Bolt_Medium"},
         {"type": "explosion", "name": "Plasma_Bolt_Medium"}
-      ]
+      ],
+      "rpm": 250
     },
     {
       "category": "NRG",
@@ -495,7 +516,8 @@
       "attack": [
         {"type": "projectile", "name": "Plasma_Rifle_Charge"},
         {"type": "explosion", "name": "Plasma_Rifle_Charge"}
-      ]
+      ],
+      "rpm": 250
     },
     {
       "category": "SG2",
@@ -513,7 +535,8 @@
       "spread": {"x": 200, "y": 150},
       "ergonomics": 65,
       "modes": ["Single", "AllBarrels"],
-      "attack": [{"type": "projectile", "name": "None"}]
+      "attack": [{"type": "projectile", "name": "None"}],
+      "rpm": 650
     },
     {
       "category": "HG",
@@ -532,7 +555,8 @@
       "spread": {"x": 30, "y": 30},
       "ergonomics": 100,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "None"}]
+      "attack": [{"type": "projectile", "name": "None"}],
+      "rpm": 900
     },
     {
       "category": "HG",
@@ -552,7 +576,8 @@
       "spread": {"x": 35, "y": 35},
       "ergonomics": 95,
       "modes": ["Automatic", "Single"],
-      "attack": [{"type": "projectile", "name": "None"}]
+      "attack": [{"type": "projectile", "name": "None"}],
+      "rpm": 1100
     },
     {
       "category": "HG",
@@ -572,7 +597,8 @@
       "spread": {"x": 30, "y": 30},
       "ergonomics": 100,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "Pistol_Magnum"}]
+      "attack": [{"type": "projectile", "name": "Pistol_Magnum"}],
+      "rpm": 450
     },
     {
       "category": "HG",
@@ -593,7 +619,8 @@
       "attack": [
         {"type": "projectile", "name": "Grenade_40mm_HEAT"},
         {"type": "explosion", "name": "Grenade_40mm_HE_MK2"}
-      ]
+      ],
+      "rpm": 900
     },
     {
       "category": "HG",
@@ -632,7 +659,8 @@
       "spread": {"x": 30, "y": 30},
       "ergonomics": 75,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "None"}]
+      "attack": [{"type": "projectile", "name": "None"}],
+      "rpm": 200
     },
     {
       "category": "SUP",
@@ -653,7 +681,8 @@
       "spread": {"x": 6, "y": 6},
       "ergonomics": 25,
       "modes": ["Automatic"],
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
+      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
+      "rpm": 1150
     },
     {
       "category": "SUP",
@@ -674,7 +703,8 @@
       "spread": {"x": 4, "y": 4},
       "ergonomics": 15,
       "modes": ["Automatic"],
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
+      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}],
+      "rpm": 900
     },
     {
       "category": "SUP",
@@ -695,7 +725,8 @@
       "spread": {"x": 5, "y": 5},
       "ergonomics": 30,
       "modes": ["Automatic"],
-      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_bchp"}]
+      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_bchp"}],
+      "rpm": 750
     },
     {
       "category": "SUP",
@@ -750,10 +781,11 @@
       "scopes": [50, 100, 200],
       "capplus": 1,
       "recoil": {"x": 20, "y": 300},
-      "spread": {"x": 0.100000001, "y": 0.100000001},
+      "spread": {"x": 0.1, "y": 0.1},
       "ergonomics": 35,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_eit"}]
+      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_eit"}],
+      "rpm": 400
     },
     {
       "category": "SUP",
@@ -776,7 +808,8 @@
       "attack": [
         {"type": "projectile", "name": "Grenade_40mm_HE"},
         {"type": "explosion", "name": "Grenade_40mm_HE"}
-      ]
+      ],
+      "rpm": 160
     },
     {
       "category": "SUP",
@@ -800,7 +833,8 @@
       "attack": [
         {"type": "projectile", "name": "Cannon_20mm_APHET"},
         {"type": "explosion", "name": "APHET_20mm"}
-      ]
+      ],
+      "rpm": 190
     },
     {
       "category": "SUP",
@@ -823,7 +857,8 @@
       "spread": {"x": 10, "y": 10},
       "ergonomics": 35,
       "modes": ["ChargeWithSafetyOn", "ChargeWithSafetyOff"],
-      "attack": [{"type": "projectile", "name": "Railgun"}]
+      "attack": [{"type": "projectile", "name": "Railgun"}],
+      "rpm": 60
     },
     {
       "category": "SUP",
@@ -862,7 +897,9 @@
       "attack": [
         {"type": "projectile", "name": "Laser_Pulse"},
         {"type": "explosion", "name": "Laser_Pulse"}
-      ]
+      ],
+      "rpm": 10,
+      "rpms": [10, 10]
     },
     {
       "category": "SUP",
@@ -881,7 +918,8 @@
       "attack": [
         {"type": "projectile", "name": "Grenade_75mm_HEAT"},
         {"type": "explosion", "name": "Grenade_75mm_HEAT"}
-      ]
+      ],
+      "rpm": 600
     },
     {
       "category": "SUP",
@@ -904,7 +942,8 @@
       "attack": [
         {"type": "projectile", "name": "Grenade_85mm_HEAT"},
         {"type": "explosion", "name": "Grenade_85mm_HEAT"}
-      ]
+      ],
+      "rpm": 600
     },
     {
       "category": "SUP",
@@ -921,13 +960,14 @@
       "capplus": 1,
       "supply": 6,
       "recoil": {"x": 2.5, "y": 10},
-      "spread": {"x": 0.00400000019, "y": 0.00400000019},
+      "spread": {"x": 0, "y": 0},
       "ergonomics": 10,
       "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Missile_Faf"},
         {"type": "explosion", "name": "FafMissile"}
-      ]
+      ],
+      "rpm": 240
     },
     {
       "category": "SUP",
@@ -952,7 +992,8 @@
         {"type": "explosion", "name": "AirburstCluster"},
         {"type": "projectile", "name": "AirburstCluster_Bomb", "count": 25},
         {"type": "explosion", "name": "AirburstCluster_Bomb", "count": 25}
-      ]
+      ],
+      "rpm": 600
     },
     {
       "category": "SUP",
@@ -968,7 +1009,9 @@
       "spread": {"x": 60, "y": 60},
       "ergonomics": 65,
       "modes": ["Single", "AllBarrels"],
-      "attack": [{"type": "projectile", "name": "None"}]
+      "attack": [{"type": "projectile", "name": "None"}],
+      "rpm": 600,
+      "rpms": [600, 600, 600]
     },
     {
       "category": "GrSt",

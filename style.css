@@ -61,6 +61,10 @@ tfoot th {
   background-color: #000;
 }
 
+th.damage {
+  text-align: right;
+}
+
 .button {
   color: #4e5d6f;
   cursor: pointer;
@@ -346,7 +350,7 @@ td.idx {
   color: var(--detail-text-color);
   content: "×";
 }
-.reload-early:before, .reload-x:after, .clipstart:after, .roundstart:after, .magstart:after, .roundsbox:before, .clipsbox:before, .box:before {
+.pre-slash:after, .post-slash:before {
   color: var(--detail-text-color);
   content: "/";
 }

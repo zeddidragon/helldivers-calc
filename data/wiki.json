@@ -16860,6 +16860,7 @@
       "ergonomics": 65,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
+      "rpm": 640,
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}]
     },
     "AR-23P Liberator Penetrator": {
@@ -16880,6 +16881,7 @@
       "ergonomics": 59,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
+      "rpm": 640,
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}]
     },
     "AR-23C Liberator Concussive": {
@@ -16898,6 +16900,7 @@
       "spread": {"x": 24, "y": 24},
       "ergonomics": 65,
       "modes": ["Automatic", "Single"],
+      "rpm": 320,
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_exp"}]
     },
     "AR-23A Liberator Carbine": {
@@ -16918,6 +16921,7 @@
       "ergonomics": 65,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
+      "rpm": 920,
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
     },
     "AR-61 Tenderizer": {
@@ -16938,6 +16942,7 @@
       "ergonomics": 65,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
+      "rpm": 600,
       "attacks": [{"type": "projectile", "name": "Rifle_Rico"}]
     },
     "BR-14 Adjudicator": {
@@ -16957,6 +16962,7 @@
       "spread": {"x": 1, "y": 1},
       "ergonomics": 40,
       "modes": ["Automatic", "Single"],
+      "rpm": 550,
       "attacks": [{"type": "projectile", "name": "Battle_Rifle"}]
     },
     "R-63 Diligence": {
@@ -16975,6 +16981,7 @@
       "spread": {"x": 0.5, "y": 0.5},
       "ergonomics": 65,
       "modes": ["Single"],
+      "rpm": 350,
       "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_fmj"}]
     },
     "R-63CS Diligence Counter Sniper": {
@@ -16993,6 +17000,7 @@
       "spread": {"x": 0.5, "y": 0.5},
       "ergonomics": 35,
       "modes": ["Single"],
+      "rpm": 350,
       "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_hv"}]
     },
     "MP-98 Knight": {
@@ -17012,6 +17020,7 @@
       "ergonomics": 90,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
+      "rpm": 1380,
       "attacks": [{"type": "projectile", "name": "Pistol_9x20mm_smj"}]
     },
     "SMG-37 Defender": {
@@ -17032,6 +17041,7 @@
       "ergonomics": 90,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
+      "rpm": 520,
       "attacks": [{"type": "projectile", "name": "None"}]
     },
     "SMG-72 Pummeler": {
@@ -17052,6 +17062,7 @@
       "ergonomics": 90,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
+      "rpm": 475,
       "attacks": [{"type": "projectile", "name": "Pistol_12x25mm_stun"}]
     },
     "SG-8 Punisher": {
@@ -17070,6 +17081,7 @@
       "spread": {"x": 150, "y": 120},
       "ergonomics": 65,
       "modes": ["Single"],
+      "rpm": 80,
       "attacks": [{"type": "projectile", "name": "None"}]
     },
     "SG-8S Slugger": {
@@ -17088,6 +17100,7 @@
       "spread": {"x": 6, "y": 6},
       "ergonomics": 65,
       "modes": ["Single"],
+      "rpm": 80,
       "attacks": [{"type": "projectile", "name": "None"}]
     },
     "SG-225 Breaker": {
@@ -17106,6 +17119,7 @@
       "spread": {"x": 100, "y": 100},
       "ergonomics": 65,
       "modes": ["Automatic", "Single"],
+      "rpm": 300,
       "attacks": [{"type": "projectile", "name": "Shotgun_12g_buc"}]
     },
     "SG-225SP Breaker Spray & Pray": {
@@ -17139,6 +17153,7 @@
       "ergonomics": 50,
       "modes": ["Burst", "Single"],
       "burst": 3,
+      "rpm": 300,
       "attacks": [{"type": "projectile", "name": "Shotgun_12g_flm"}]
     },
     "CB-9 Exploding Crossbow": {
@@ -17155,6 +17170,7 @@
       "spread": {"x": 0.5, "y": 0.5},
       "ergonomics": 45,
       "modes": ["Single"],
+      "rpm": 50,
       "attacks": [
         {"type": "projectile", "name": "Crossbow_Bolt_exp"},
         {"type": "explosion", "name": "Crossbow_Bolt"}
@@ -17178,6 +17194,7 @@
       "ergonomics": 30,
       "modes": ["Single", "Burst"],
       "burst": 3,
+      "rpm": 250,
       "attacks": [{"type": "projectile", "name": "None"}]
     },
     "R-36 Eruptor": {
@@ -17198,6 +17215,7 @@
       "spread": {"x": 10, "y": 10},
       "ergonomics": -14,
       "modes": ["Single"],
+      "rpm": 25,
       "attacks": [
         {"type": "projectile", "name": "Rocket_JarPhoenix_20mm"},
         {"type": "explosion", "name": "JarPhoenix_20mm"}
@@ -17216,6 +17234,7 @@
       "spread": {"x": 8, "y": 8},
       "ergonomics": 65,
       "modes": ["Single"],
+      "rpm": 80,
       "attacks": [
         {"type": "projectile", "name": "Plasma_Punisher_Projectile"},
         {"type": "explosion", "name": "Punisher_Plasma_Explosion"}
@@ -17264,6 +17283,7 @@
       "spread": {"x": 20, "y": 20},
       "ergonomics": 65,
       "modes": ["Automatic"],
+      "rpm": 750,
       "attacks": [{"type": "projectile", "name": "Laser_Long"}]
     },
     "PLAS-1 Scorcher": {
@@ -17280,6 +17300,7 @@
       "spread": {"x": 10, "y": 10},
       "ergonomics": 65,
       "modes": ["Single"],
+      "rpm": 250,
       "attacks": [
         {"type": "projectile", "name": "Plasma_Bolt_Medium"},
         {"type": "explosion", "name": "Plasma_Bolt_Medium"}
@@ -17299,6 +17320,7 @@
       "spread": {"x": 10, "y": 10},
       "ergonomics": 65,
       "modes": ["Single"],
+      "rpm": 250,
       "attacks": [
         {"type": "projectile", "name": "Plasma_Rifle_Charge"},
         {"type": "explosion", "name": "Plasma_Rifle_Charge"}
@@ -17319,6 +17341,7 @@
       "spread": {"x": 200, "y": 150},
       "ergonomics": 65,
       "modes": ["Single", "AllBarrels"],
+      "rpm": 650,
       "attacks": [{"type": "projectile", "name": "None"}]
     },
     "P-2 Peacemaker": {
@@ -17337,6 +17360,7 @@
       "spread": {"x": 30, "y": 30},
       "ergonomics": 100,
       "modes": ["Single"],
+      "rpm": 900,
       "attacks": [{"type": "projectile", "name": "None"}]
     },
     "P-19 Redeemer": {
@@ -17356,6 +17380,7 @@
       "spread": {"x": 35, "y": 35},
       "ergonomics": 95,
       "modes": ["Automatic", "Single"],
+      "rpm": 1100,
       "attacks": [{"type": "projectile", "name": "None"}]
     },
     "P-113 Verdict": {
@@ -17375,6 +17400,7 @@
       "spread": {"x": 30, "y": 30},
       "ergonomics": 100,
       "modes": ["Single"],
+      "rpm": 450,
       "attacks": [{"type": "projectile", "name": "Pistol_Magnum"}]
     },
     "GP-31 Grenade Pistol": {
@@ -17392,6 +17418,7 @@
       "spread": {"x": 30, "y": 30},
       "ergonomics": 95,
       "modes": ["Single"],
+      "rpm": 900,
       "attacks": [
         {"type": "projectile", "name": "Grenade_40mm_HEAT"},
         {"type": "explosion", "name": "Grenade_40mm_HE_MK2"}
@@ -17432,6 +17459,7 @@
       "spread": {"x": 30, "y": 30},
       "ergonomics": 75,
       "modes": ["Single"],
+      "rpm": 200,
       "attacks": [{"type": "projectile", "name": "None"}]
     },
     "M-105 Stalwart": {
@@ -17452,6 +17480,7 @@
       "spread": {"x": 6, "y": 6},
       "ergonomics": 25,
       "modes": ["Automatic"],
+      "rpm": 1150,
       "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
     },
     "MG-43 Machine Gun": {
@@ -17472,6 +17501,7 @@
       "spread": {"x": 4, "y": 4},
       "ergonomics": 15,
       "modes": ["Automatic"],
+      "rpm": 900,
       "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
     },
     "MG-206 Heavy Machine Gun": {
@@ -17492,6 +17522,7 @@
       "spread": {"x": 5, "y": 5},
       "ergonomics": 30,
       "modes": ["Automatic"],
+      "rpm": 750,
       "attacks": [{"type": "projectile", "name": "Rifle_12p5x100mm_bchp"}]
     },
     "ARC-3 Arc Thrower": {
@@ -17544,9 +17575,10 @@
       "scopes": [50, 100, 200],
       "capplus": 1,
       "recoil": {"x": 20, "y": 300},
-      "spread": {"x": 0.100000001, "y": 0.100000001},
+      "spread": {"x": 0.1, "y": 0.1},
       "ergonomics": 35,
       "modes": ["Single"],
+      "rpm": 400,
       "attacks": [{"type": "projectile", "name": "Rifle_12p5x100mm_eit"}]
     },
     "GL-21 Grenade Launcher": {
@@ -17566,6 +17598,7 @@
       "spread": {"x": 20, "y": 20},
       "ergonomics": 25,
       "modes": ["Automatic", "Single"],
+      "rpm": 160,
       "attacks": [
         {"type": "projectile", "name": "Grenade_40mm_HE"},
         {"type": "explosion", "name": "Grenade_40mm_HE"}
@@ -17589,6 +17622,7 @@
       "spread": {"x": 2, "y": 2},
       "ergonomics": 17,
       "modes": ["Single", "Automatic"],
+      "rpm": 190,
       "attacks": [
         {"type": "projectile", "name": "Cannon_20mm_APHET"},
         {"type": "explosion", "name": "APHET_20mm"}
@@ -17614,6 +17648,7 @@
       "spread": {"x": 10, "y": 10},
       "ergonomics": 35,
       "modes": ["ChargeWithSafetyOn", "ChargeWithSafetyOff"],
+      "rpm": 60,
       "attacks": [{"type": "projectile", "name": "Railgun"}]
     },
     "LAS-98 Laser Cannon": {
@@ -17648,6 +17683,8 @@
       "spread": {"x": 4, "y": 4},
       "ergonomics": 35,
       "modes": ["Single"],
+      "rpm": 10,
+      "rpms": [10, 10],
       "attacks": [
         {"type": "projectile", "name": "Laser_Pulse"},
         {"type": "explosion", "name": "Laser_Pulse"}
@@ -17666,6 +17703,7 @@
       "spread": {"x": 4, "y": 4},
       "ergonomics": 15,
       "modes": ["Single"],
+      "rpm": 600,
       "attacks": [
         {"type": "projectile", "name": "Grenade_75mm_HEAT"},
         {"type": "explosion", "name": "Grenade_75mm_HEAT"}
@@ -17688,6 +17726,7 @@
       "spread": {"x": 4, "y": 4},
       "ergonomics": 10,
       "modes": ["Single"],
+      "rpm": 600,
       "attacks": [
         {"type": "projectile", "name": "Grenade_85mm_HEAT"},
         {"type": "explosion", "name": "Grenade_85mm_HEAT"}
@@ -17707,9 +17746,10 @@
       "capplus": 1,
       "supply": 6,
       "recoil": {"x": 2.5, "y": 10},
-      "spread": {"x": 0.00400000019, "y": 0.00400000019},
+      "spread": {"x": 0, "y": 0},
       "ergonomics": 10,
       "modes": ["Single"],
+      "rpm": 240,
       "attacks": [
         {"type": "projectile", "name": "Missile_Faf"},
         {"type": "explosion", "name": "FafMissile"}
@@ -17732,6 +17772,7 @@
       "spread": {"x": 4, "y": 4},
       "ergonomics": 10,
       "modes": ["Single"],
+      "rpm": 600,
       "attacks": [
         {"type": "projectile", "name": "Grenade_85mm_AirburstCluster"},
         {"type": "explosion", "name": "AirburstCluster"},
@@ -17752,6 +17793,8 @@
       "spread": {"x": 60, "y": 60},
       "ergonomics": 65,
       "modes": ["Single", "AllBarrels"],
+      "rpm": 600,
+      "rpms": [600, 600, 600],
       "attacks": [{"type": "projectile", "name": "None"}]
     },
     "G-6 Frag": {
