@@ -925,10 +925,15 @@
     "name": "Punisher fire of liberty",
     "prefix": "SG-8F",
     "magazine_capacity": {"x": 8, "y": 8},
+    "ammo_capacity": 60,
     "ammo_refill": 60,
     "ammo": 32,
     "reload_amount": 1,
     "chambered": 1,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Shotgun_10g_buc",
+      "alternate_projectile_type": "ProjectileType_Shotgun_10g_buc"
+    },
     "reload": 2,
     "recoil_info": {
       "drift": {
@@ -1923,10 +1928,15 @@
     "name": "Slugger",
     "prefix": "SG-8S",
     "magazine_capacity": {"x": 8, "y": 8},
+    "ammo_capacity": 60,
     "ammo_refill": 60,
     "ammo": 32,
     "reload_amount": 1,
     "chambered": 1,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Shotgun_10g_slug",
+      "alternate_projectile_type": "ProjectileType_Shotgun_10g_slug"
+    },
     "reload": 2,
     "recoil_info": {
       "drift": {
@@ -2567,9 +2577,14 @@
     "name": "Senator",
     "prefix": "P-4",
     "magazine_capacity": {"x": 6, "y": 0},
+    "ammo_capacity": 40,
     "ammo_refill": 20,
     "ammo": 32,
     "reload_amount": 1,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Pistol_13x40mm_fmj",
+      "alternate_projectile_type": "ProjectileType_None"
+    },
     "reload": 2.79999995,
     "recoil_info": {
       "drift": {
@@ -3564,9 +3579,14 @@
     "name": "Break-Action Shotgun",
     "prefix": "SG-88",
     "magazine_capacity": {"x": 2, "y": 0},
+    "ammo_capacity": 40,
     "ammo_refill": 20,
     "ammo": 20,
     "reload_amount": 1,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Shotgun_10g_mag",
+      "alternate_projectile_type": "ProjectileType_None"
+    },
     "reload": 2.5,
     "recoil_info": {
       "drift": {
@@ -5832,10 +5852,15 @@
     "name": "Punisher",
     "prefix": "SG-8",
     "magazine_capacity": {"x": 8, "y": 8},
+    "ammo_capacity": 60,
     "ammo_refill": 60,
     "ammo": 32,
     "reload_amount": 1,
     "chambered": 1,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Shotgun_10g_buc",
+      "alternate_projectile_type": "ProjectileType_Shotgun_10g_buc"
+    },
     "reload": 2,
     "recoil_info": {
       "drift": {
@@ -6229,6 +6254,10 @@
     "prefix": "AC-8",
     "magazine_capacity": {"x": 10, "y": 0},
     "chambered": 1,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Cannon_20mm_APHET",
+      "alternate_projectile_type": "ProjectileType_None"
+    },
     "reload": 4,
     "recoil_info": {
       "drift": {
@@ -6414,10 +6443,15 @@
     "name": "Grenade Pistol",
     "prefix": "GP-31",
     "magazine_capacity": {"x": 1, "y": 0},
+    "ammo_capacity": 8,
     "ammo_refill": 2,
     "ammo": 4,
     "reload_amount": 1,
     "chambered": 1,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Grenade_40mm_HEAT",
+      "alternate_projectile_type": "ProjectileType_None"
+    },
     "reload": 2,
     "recoil_info": {
       "drift": {
@@ -8001,9 +8035,14 @@
     "name": "Bushwhacker",
     "prefix": "SG-22",
     "magazine_capacity": {"x": 3, "y": 0},
+    "ammo_capacity": 30,
     "ammo_refill": 30,
     "ammo": 30,
     "reload_amount": 1,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Shotgun_10g_buc",
+      "alternate_projectile_type": "ProjectileType_None"
+    },
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 40,

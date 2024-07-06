@@ -52,6 +52,7 @@ const handlers = {
     copy([
       'recoil_info',
       'spread_info',
+      'zeroing_slots',
       'noise_template',
       'scope_responsiveness',
       'ergonomics',
@@ -97,6 +98,9 @@ const handlers = {
       'burst_fire_rate',
       'infinite_ammo',
     ])(wpn, component)
+    if(component.projectile_type !== 'ProjectileType_None') {
+      wpn.projectile_type = component.projectile_type
+    }
     if(component.speed_multiplier !== 1) {
       wpn.speed_multiplier = component.speed_multiplier
     }
@@ -247,11 +251,13 @@ const handlers = {
   ]),
   WeaponRoundsComponent: copy([
     'magazine_capacity',
+    'ammo_capacity',
     'ammo_refill',
     'ammo',
     'reload_amount',
     'chambered',
     'infinite_ammo',
+    'ammo_types',
   ]),
   BackblastComponent(wpn, component) {
     wpn.backblast_angle = component.angle

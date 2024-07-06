@@ -135,6 +135,9 @@ magstart = 5
 supply = 7
 tags = ["1h"]
 attachments = ["flashlight"]
+[[weapon.attack]]
+medium = "projectile"
+ref = "Pistol_9x20mm_fmj"
 
 [[weapon]]
 category = "SMG"
@@ -191,7 +194,7 @@ attachments = ["flashlight"]
 
 [[weapon]]
 category = "SG"
-fullname = "SG-225SP Breaker Spray & Pray"
+fullname = "SG-225SP Breaker Spray&Pray"
 source = "hd-mobilize"
 sourcepage = 9
 reload = 3
@@ -240,6 +243,9 @@ magstart = 4
 supply = 6
 tags = ["jet"]
 attachments = ["flashlight"]
+[[weapon.attack]]
+medium = "projectile"
+ref = "Rocket_15x100mm_std"
 
 [[weapon]]
 category = "EX"
@@ -356,6 +362,9 @@ magstart = 4
 supply = 5
 attachments = ["laser", "flashlight"]
 tags = ["1h"]
+[[weapon.attack]]
+medium = "projectile"
+ref = "Pistol_9x20mm_hp"
 
 [[weapon]]
 category = "HG"
@@ -370,6 +379,9 @@ magstart = 4
 supply = 4
 attachments = ["flashlight"]
 tags = ["1h"]
+[[weapon.attack]]
+medium = "projectile"
+ref = "Pistol_9x20mm_fmj"
 
 [[weapon]]
 category = "HG"

@@ -82,19 +82,53 @@ const matches = []
 const shalzuthMatch = {}
 
 const shalzuthSchema = [
-  { source: 'magazine_capacity', dest: 'cap' },
+  { source: 'magazine_capacity', cb: (wpn, cap) => {
+    if(wpn.cap) {
+      return
+    }
+    if(!isNaN(cap)) {
+      wpn.cap = cap
+    } else if(cap.x != null) {
+      wpn.cap = cap.x + cap.y
+    }
+  }},
   { source: 'magazines_maximum', dest: 'mags' },
   { source: 'magazines', dest: 'magstart' },
   { source: 'chambered', dest: 'capplus' },
   { source: 'magazines_refill', dest: 'supply' },
+  { source: 'ammo_capacity', dest: 'rounds' },
+  { source: 'ammo', dest: 'roundstart' },
+  { source: 'ammo_refill', dest: 'roundsupply' },
+  { source: 'ammo_types', cb: (wpn, { primary_projectile_type: prj }) => {
+    // There's also alternate_projectile_type, as of this date not really used
+    if(wpn.attack) {
+      return
+    }
+    if(prj === 'ProjectileType_None') {
+      return
+    }
+    wpn.attack = [{
+      medium: 'projectile',
+      ref: prj.replace('ProjectileType_', ''),
+    }]
+  }},
+  { source: 'projectile_type', cb: (wpn, prj) => {
+    if(wpn.attack) {
+      return
+    }
+    wpn.attack = [{
+      medium: 'projectile',
+      ref: prj.replace('ProjectileType_', ''),
+    }]
+  }},
   { source: 'recoil_info', cb: (wpn, { drift }) => {
-    wpn.recoil = {
+    wpn.recoilxy = {
       x: +drift.horizontal_recoil.toFixed(2),
       y: +drift.vertical_recoil.toFixed(2),
     }
   }},
   { source: 'spread_info', cb: (wpn, spread) => {
-    wpn.spread = {
+    wpn.spreadxy = {
       x: +spread.horizontal.toFixed(2),
       y: +spread.vertical.toFixed(2),
     }
@@ -108,15 +142,6 @@ const shalzuthSchema = [
   { source: 'num_burst_rounds', dest: 'burst' },
   { source: 'equipment_type', cb: (wpn, cat) => {
     wpn.category = wpn.category || cat.replace('EquipmentType_', '')
-  }},
-  { source: 'projectile_type', cb: (wpn, prj) => {
-    if(wpn.attack) {
-      return
-    }
-    wpn.attack = [{
-      medium: 'projectile',
-      ref: prj.replace('ProjectileType_', ''),
-    }]
   }},
   { source: 'rounds_per_minute', cb: (wpn, rpms) => {
     wpn.rpm = rpms.y
@@ -132,7 +157,7 @@ const shalzuthSchema = [
   }},
 ]
 
-let counter = 1
+let dbgCondition = false
 for(const wpn of wps) {
   for(const prop of purge) {
     delete wpn[prop]
@@ -169,9 +194,9 @@ for(const wpn of wps) {
     }
   }
 
-  counter--;
-  if(!counter) {
+  if(dbgCondition) {
     console.log(name, matched, wpn)
+    dbgCondition = false
   }
 }
 

@@ -23,13 +23,13 @@
       "supply": 7,
       "scopes": [25, 50, 100],
       "attachments": ["laser", "flashlight"],
+      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
       "capplus": 1,
-      "recoil": {"x": 10, "y": 10},
-      "spread": {"x": 4, "y": 4},
+      "recoilxy": {"x": 10, "y": 10},
+      "spreadxy": {"x": 4, "y": 4},
       "ergonomics": 65,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}],
       "rpm": 640
     },
     {
@@ -46,12 +46,12 @@
       "scopes": [25, 75, 150],
       "attachments": ["laser", "flashlight"],
       "capplus": 1,
-      "recoil": {"x": 15, "y": 15},
-      "spread": {"x": 1, "y": 1},
+      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}],
+      "recoilxy": {"x": 15, "y": 15},
+      "spreadxy": {"x": 1, "y": 1},
       "ergonomics": 59,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}],
       "rpm": 640
     },
     {
@@ -67,11 +67,11 @@
       "supply": 10,
       "attachments": ["laser", "flashlight"],
       "capplus": 1,
-      "recoil": {"x": 25, "y": 25},
-      "spread": {"x": 24, "y": 24},
+      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_exp"}],
+      "recoilxy": {"x": 25, "y": 25},
+      "spreadxy": {"x": 24, "y": 24},
       "ergonomics": 65,
       "modes": ["Automatic", "Single"],
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_exp"}],
       "rpm": 320
     },
     {
@@ -88,12 +88,12 @@
       "scopes": [25, 50, 100],
       "attachments": ["laser", "flashlight"],
       "capplus": 1,
-      "recoil": {"x": 20, "y": 20},
-      "spread": {"x": 10, "y": 10},
+      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
+      "recoilxy": {"x": 20, "y": 20},
+      "spreadxy": {"x": 10, "y": 10},
       "ergonomics": 65,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
       "rpm": 920
     },
     {
@@ -110,12 +110,12 @@
       "scopes": [25, 50, 100],
       "attachments": ["flashlight"],
       "capplus": 1,
-      "recoil": {"x": 7, "y": 7},
-      "spread": {"x": 4, "y": 4},
+      "attack": [{"type": "projectile", "name": "Rifle_Rico"}],
+      "recoilxy": {"x": 7, "y": 7},
+      "spreadxy": {"x": 4, "y": 4},
       "ergonomics": 65,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Rifle_Rico"}],
       "rpm": 600
     },
     {
@@ -132,11 +132,11 @@
       "scopes": [25, 50, 100],
       "attachments": ["flashlight"],
       "capplus": 1,
-      "recoil": {"x": 25, "y": 35},
-      "spread": {"x": 1, "y": 1},
+      "attack": [{"type": "projectile", "name": "Battle_Rifle"}],
+      "recoilxy": {"x": 25, "y": 35},
+      "spreadxy": {"x": 1, "y": 1},
       "ergonomics": 40,
       "modes": ["Automatic", "Single"],
-      "attack": [{"type": "projectile", "name": "Battle_Rifle"}],
       "rpm": 550
     },
     {
@@ -152,11 +152,11 @@
       "supply": 8,
       "scopes": [25, 75, 150],
       "capplus": 1,
-      "recoil": {"x": 25, "y": 25},
-      "spread": {"x": 0.5, "y": 0.5},
+      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_fmj"}],
+      "recoilxy": {"x": 25, "y": 25},
+      "spreadxy": {"x": 0.5, "y": 0.5},
       "ergonomics": 65,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_fmj"}],
       "rpm": 350
     },
     {
@@ -172,11 +172,11 @@
       "supply": 6,
       "scopes": [50, 100, 200],
       "capplus": 1,
-      "recoil": {"x": 25, "y": 25},
-      "spread": {"x": 0.5, "y": 0.5},
+      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_hv"}],
+      "recoilxy": {"x": 25, "y": 25},
+      "spreadxy": {"x": 0.5, "y": 0.5},
       "ergonomics": 35,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_hv"}],
       "rpm": 350
     },
     {
@@ -192,12 +192,12 @@
       "tags": ["1h"],
       "attachments": ["flashlight"],
       "capplus": 1,
-      "recoil": {"x": 15, "y": 25},
-      "spread": {"x": 25, "y": 25},
+      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_smj"}],
+      "recoilxy": {"x": 15, "y": 25},
+      "spreadxy": {"x": 25, "y": 25},
       "ergonomics": 90,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_smj"}],
       "rpm": 1380
     },
     {
@@ -213,13 +213,13 @@
       "supply": 7,
       "tags": ["1h"],
       "attachments": ["flashlight"],
+      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_fmj"}],
       "capplus": 1,
-      "recoil": {"x": 10, "y": 10},
-      "spread": {"x": 20, "y": 20},
+      "recoilxy": {"x": 10, "y": 10},
+      "spreadxy": {"x": 20, "y": 20},
       "ergonomics": 90,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "None"}],
       "rpm": 520
     },
     {
@@ -236,12 +236,12 @@
       "tags": ["1h"],
       "attachments": ["flashlight"],
       "capplus": 1,
-      "recoil": {"x": 10, "y": 10},
-      "spread": {"x": 20, "y": 20},
+      "attack": [{"type": "projectile", "name": "Pistol_12x25mm_stun"}],
+      "recoilxy": {"x": 10, "y": 10},
+      "spreadxy": {"x": 20, "y": 20},
       "ergonomics": 90,
       "modes": ["Automatic", "Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Pistol_12x25mm_stun"}],
       "rpm": 475
     },
     {
@@ -257,11 +257,11 @@
       "roundsupply": 60,
       "tags": ["rounds"],
       "capplus": 1,
-      "recoil": {"x": 40, "y": 40},
-      "spread": {"x": 150, "y": 120},
+      "attack": [{"type": "projectile", "name": "Shotgun_10g_buc"}],
+      "recoilxy": {"x": 40, "y": 40},
+      "spreadxy": {"x": 150, "y": 120},
       "ergonomics": 65,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "None"}],
       "rpm": 80
     },
     {
@@ -277,11 +277,11 @@
       "roundsupply": 60,
       "tags": ["rounds"],
       "capplus": 1,
-      "recoil": {"x": 40, "y": 40},
-      "spread": {"x": 6, "y": 6},
+      "attack": [{"type": "projectile", "name": "Shotgun_10g_slug"}],
+      "recoilxy": {"x": 40, "y": 40},
+      "spreadxy": {"x": 6, "y": 6},
       "ergonomics": 65,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "None"}],
       "rpm": 80
     },
     {
@@ -297,16 +297,16 @@
       "supply": 7,
       "attachments": ["flashlight"],
       "capplus": 1,
-      "recoil": {"x": 23, "y": 35},
-      "spread": {"x": 100, "y": 100},
+      "attack": [{"type": "projectile", "name": "Shotgun_12g_buc"}],
+      "recoilxy": {"x": 23, "y": 35},
+      "spreadxy": {"x": 100, "y": 100},
       "ergonomics": 65,
       "modes": ["Automatic", "Single"],
-      "attack": [{"type": "projectile", "name": "Shotgun_12g_buc"}],
       "rpm": 300
     },
     {
       "category": "SG",
-      "fullname": "SG-225SP Breaker Spray & Pray",
+      "fullname": "SG-225SP Breaker Spray&Pray",
       "source": "hd-mobilize",
       "sourcepage": 9,
       "reload": 3,
@@ -316,7 +316,13 @@
       "magstart": 6,
       "supply": 8,
       "attachments": ["flashlight"],
-      "attack": []
+      "capplus": 1,
+      "attack": [{"type": "projectile", "name": "Shotgun_12g_bir"}],
+      "recoilxy": {"x": 35, "y": 35},
+      "spreadxy": {"x": 300, "y": 150},
+      "ergonomics": 25,
+      "modes": ["Automatic", "Single"],
+      "rpm": 330
     },
     {
       "category": "SG",
@@ -332,12 +338,12 @@
       "tags": ["fire"],
       "attachments": ["flashlight"],
       "capplus": 1,
-      "recoil": {"x": 11.25, "y": 11.25},
-      "spread": {"x": 300, "y": 300},
+      "attack": [{"type": "projectile", "name": "Shotgun_12g_flm"}],
+      "recoilxy": {"x": 11.25, "y": 11.25},
+      "spreadxy": {"x": 300, "y": 300},
       "ergonomics": 50,
       "modes": ["Burst", "Single"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "Shotgun_12g_flm"}],
       "rpm": 300
     },
     {
@@ -351,14 +357,14 @@
       "magstart": 8,
       "supply": 8,
       "capplus": 1,
-      "recoil": {"x": 25, "y": 25},
-      "spread": {"x": 0.5, "y": 0.5},
-      "ergonomics": 45,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Crossbow_Bolt_exp"},
         {"type": "explosion", "name": "Crossbow_Bolt"}
       ],
+      "recoilxy": {"x": 25, "y": 25},
+      "spreadxy": {"x": 0.5, "y": 0.5},
+      "ergonomics": 45,
+      "modes": ["Single"],
       "rpm": 50
     },
     {
@@ -374,13 +380,13 @@
       "supply": 6,
       "tags": ["jet"],
       "attachments": ["flashlight"],
+      "attack": [{"type": "projectile", "name": "Rocket_15x100mm_std"}],
       "capplus": 1,
-      "recoil": {"x": 30, "y": 30},
-      "spread": {"x": 10, "y": 10},
+      "recoilxy": {"x": 30, "y": 30},
+      "spreadxy": {"x": 10, "y": 10},
       "ergonomics": 30,
       "modes": ["Single", "Burst"],
       "burst": 3,
-      "attack": [{"type": "projectile", "name": "None"}],
       "rpm": 250
     },
     {
@@ -398,14 +404,14 @@
       "scopes": [50, 100, 200],
       "attachments": ["flashlight"],
       "capplus": 1,
-      "recoil": {"x": 30, "y": 30},
-      "spread": {"x": 10, "y": 10},
-      "ergonomics": -14,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Rocket_JarPhoenix_20mm"},
         {"type": "explosion", "name": "JarPhoenix_20mm"}
       ],
+      "recoilxy": {"x": 30, "y": 30},
+      "spreadxy": {"x": 10, "y": 10},
+      "ergonomics": -14,
+      "modes": ["Single"],
       "rpm": 25
     },
     {
@@ -418,14 +424,14 @@
       "mags": 8,
       "magstart": 6,
       "supply": 8,
-      "recoil": {"x": 40, "y": 40},
-      "spread": {"x": 8, "y": 8},
-      "ergonomics": 65,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Plasma_Punisher_Projectile"},
         {"type": "explosion", "name": "Punisher_Plasma_Explosion"}
       ],
+      "recoilxy": {"x": 40, "y": 40},
+      "spreadxy": {"x": 8, "y": 8},
+      "ergonomics": 65,
+      "modes": ["Single"],
       "rpm": 80
     },
     {
@@ -435,8 +441,8 @@
       "sourcepage": 3,
       "tags": ["jet"],
       "attack": [{"type": "arc", "name": "ArcShotgun", "count": 5}],
-      "recoil": {"x": 40, "y": 40},
-      "spread": {"x": 1350, "y": 350},
+      "recoilxy": {"x": 40, "y": 40},
+      "spreadxy": {"x": 1350, "y": 350},
       "ergonomics": 65,
       "modes": ["Single"]
     },
@@ -453,8 +459,8 @@
       "limit": 8,
       "tags": ["laser"],
       "attack": [{"type": "beam", "name": "Medium"}],
-      "recoil": {"x": 2, "y": 0.5},
-      "spread": {"x": 10, "y": 10},
+      "recoilxy": {"x": 2, "y": 0.5},
+      "spreadxy": {"x": 10, "y": 10},
       "ergonomics": 65,
       "modes": ["Automatic"]
     },
@@ -470,11 +476,11 @@
       "supply": 3,
       "limit": 7,
       "scopes": [25, 50, 100],
-      "recoil": {"x": 2, "y": 2},
-      "spread": {"x": 20, "y": 20},
+      "attack": [{"type": "projectile", "name": "Laser_Long"}],
+      "recoilxy": {"x": 2, "y": 2},
+      "spreadxy": {"x": 20, "y": 20},
       "ergonomics": 65,
       "modes": ["Automatic"],
-      "attack": [{"type": "projectile", "name": "Laser_Long"}],
       "rpm": 750
     },
     {
@@ -488,14 +494,14 @@
       "mags": 6,
       "magstart": 3,
       "supply": 6,
-      "recoil": {"x": 20, "y": 20},
-      "spread": {"x": 10, "y": 10},
-      "ergonomics": 65,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Plasma_Bolt_Medium"},
         {"type": "explosion", "name": "Plasma_Bolt_Medium"}
       ],
+      "recoilxy": {"x": 20, "y": 20},
+      "spreadxy": {"x": 10, "y": 10},
+      "ergonomics": 65,
+      "modes": ["Single"],
       "rpm": 250
     },
     {
@@ -509,14 +515,14 @@
       "mags": 6,
       "magstart": 3,
       "supply": 6,
-      "recoil": {"x": 20, "y": 20},
-      "spread": {"x": 10, "y": 10},
-      "ergonomics": 65,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Plasma_Rifle_Charge"},
         {"type": "explosion", "name": "Plasma_Rifle_Charge"}
       ],
+      "recoilxy": {"x": 20, "y": 20},
+      "spreadxy": {"x": 10, "y": 10},
+      "ergonomics": 65,
+      "modes": ["Single"],
       "rpm": 250
     },
     {
@@ -531,11 +537,11 @@
       "roundstart": 30,
       "roundsupply": 30,
       "tags": ["1h"],
-      "recoil": {"x": 40, "y": 40},
-      "spread": {"x": 200, "y": 150},
+      "attack": [{"type": "projectile", "name": "Shotgun_10g_buc"}],
+      "recoilxy": {"x": 40, "y": 40},
+      "spreadxy": {"x": 200, "y": 150},
       "ergonomics": 65,
       "modes": ["Single", "AllBarrels"],
-      "attack": [{"type": "projectile", "name": "None"}],
       "rpm": 650
     },
     {
@@ -550,12 +556,12 @@
       "supply": 5,
       "attachments": ["laser", "flashlight"],
       "tags": ["1h"],
+      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_hp"}],
       "capplus": 1,
-      "recoil": {"x": 20, "y": 40},
-      "spread": {"x": 30, "y": 30},
+      "recoilxy": {"x": 20, "y": 40},
+      "spreadxy": {"x": 30, "y": 30},
       "ergonomics": 100,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "None"}],
       "rpm": 900
     },
     {
@@ -571,12 +577,12 @@
       "supply": 4,
       "attachments": ["flashlight"],
       "tags": ["1h"],
+      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_fmj"}],
       "capplus": 1,
-      "recoil": {"x": 20, "y": 20},
-      "spread": {"x": 35, "y": 35},
+      "recoilxy": {"x": 20, "y": 20},
+      "spreadxy": {"x": 35, "y": 35},
       "ergonomics": 95,
       "modes": ["Automatic", "Single"],
-      "attack": [{"type": "projectile", "name": "None"}],
       "rpm": 1100
     },
     {
@@ -593,11 +599,11 @@
       "attachments": ["laser", "flashlight"],
       "tags": ["1h"],
       "capplus": 1,
-      "recoil": {"x": 20, "y": 50},
-      "spread": {"x": 30, "y": 30},
+      "attack": [{"type": "projectile", "name": "Pistol_Magnum"}],
+      "recoilxy": {"x": 20, "y": 50},
+      "spreadxy": {"x": 30, "y": 30},
       "ergonomics": 100,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "Pistol_Magnum"}],
       "rpm": 450
     },
     {
@@ -612,14 +618,14 @@
       "roundsupply": 2,
       "tags": ["1h"],
       "capplus": 1,
-      "recoil": {"x": 20, "y": 50},
-      "spread": {"x": 30, "y": 30},
-      "ergonomics": 95,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Grenade_40mm_HEAT"},
         {"type": "explosion", "name": "Grenade_40mm_HE_MK2"}
       ],
+      "recoilxy": {"x": 20, "y": 50},
+      "spreadxy": {"x": 30, "y": 30},
+      "ergonomics": 95,
+      "modes": ["Single"],
       "rpm": 900
     },
     {
@@ -635,8 +641,8 @@
       "limit": 5,
       "tags": ["1h"],
       "attack": [{"type": "beam", "name": "Small"}],
-      "recoil": {"x": 3, "y": 1},
-      "spread": {"x": 10, "y": 10},
+      "recoilxy": {"x": 3, "y": 1},
+      "spreadxy": {"x": 10, "y": 10},
       "ergonomics": 95,
       "modes": ["Automatic"]
     },
@@ -655,11 +661,11 @@
       "roundsupply": 20,
       "attachments": ["flashlight"],
       "tags": ["round", "1h"],
-      "recoil": {"x": 20, "y": 50},
-      "spread": {"x": 30, "y": 30},
+      "attack": [{"type": "projectile", "name": "Pistol_13x40mm_fmj"}],
+      "recoilxy": {"x": 20, "y": 50},
+      "spreadxy": {"x": 30, "y": 30},
       "ergonomics": 75,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "None"}],
       "rpm": 200
     },
     {
@@ -677,11 +683,11 @@
       "supply": 2,
       "rpms": [700, 850, 1150],
       "capplus": 1,
-      "recoil": {"x": 15, "y": 15},
-      "spread": {"x": 6, "y": 6},
+      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
+      "recoilxy": {"x": 15, "y": 15},
+      "spreadxy": {"x": 6, "y": 6},
       "ergonomics": 25,
       "modes": ["Automatic"],
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
       "rpm": 1150
     },
     {
@@ -699,11 +705,11 @@
       "supply": 1,
       "rpms": [630, 760, 900],
       "capplus": 1,
-      "recoil": {"x": 20, "y": 20},
-      "spread": {"x": 4, "y": 4},
+      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}],
+      "recoilxy": {"x": 20, "y": 20},
+      "spreadxy": {"x": 4, "y": 4},
       "ergonomics": 15,
       "modes": ["Automatic"],
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}],
       "rpm": 900
     },
     {
@@ -721,11 +727,11 @@
       "supply": 2,
       "rpms": [450, 600, 750],
       "capplus": 1,
-      "recoil": {"x": 20, "y": 30},
-      "spread": {"x": 5, "y": 5},
+      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_bchp"}],
+      "recoilxy": {"x": 20, "y": 30},
+      "spreadxy": {"x": 5, "y": 5},
       "ergonomics": 30,
       "modes": ["Automatic"],
-      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_bchp"}],
       "rpm": 750
     },
     {
@@ -737,8 +743,8 @@
       "cooldown": 480,
       "charge": 1,
       "attack": [{"type": "arc", "name": "ArcThrower"}],
-      "recoil": {"x": 40, "y": 40},
-      "spread": {"x": 10, "y": 10},
+      "recoilxy": {"x": 40, "y": 40},
+      "spreadxy": {"x": 10, "y": 10},
       "ergonomics": 50,
       "modes": ["ChargeWithSafetyOn", "ChargeWithSafetyOff"]
     },
@@ -755,13 +761,10 @@
       "supply": 4,
       "limit": 12.5,
       "tags": ["fire"],
-      "attack": [
-        {"type": "damage", "name": "Projectile_Flamethrower"},
-        {"type": "projectile", "name": "None"}
-      ],
+      "attack": [{"type": "damage", "name": "Projectile_Flamethrower"}],
       "cap": 100,
-      "recoil": {"x": 2.5, "y": 10},
-      "spread": {"x": 10, "y": 10},
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 10, "y": 10},
       "ergonomics": 5,
       "modes": ["Automatic"]
     },
@@ -780,11 +783,11 @@
       "supply": 3,
       "scopes": [50, 100, 200],
       "capplus": 1,
-      "recoil": {"x": 20, "y": 300},
-      "spread": {"x": 0.1, "y": 0.1},
+      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_eit"}],
+      "recoilxy": {"x": 20, "y": 300},
+      "spreadxy": {"x": 0.1, "y": 0.1},
       "ergonomics": 35,
       "modes": ["Single"],
-      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_eit"}],
       "rpm": 400
     },
     {
@@ -801,14 +804,14 @@
       "magstart": 1,
       "supply": 2,
       "capplus": 1,
-      "recoil": {"x": 170, "y": 175},
-      "spread": {"x": 20, "y": 20},
-      "ergonomics": 25,
-      "modes": ["Automatic", "Single"],
       "attack": [
         {"type": "projectile", "name": "Grenade_40mm_HE"},
         {"type": "explosion", "name": "Grenade_40mm_HE"}
       ],
+      "recoilxy": {"x": 170, "y": 175},
+      "spreadxy": {"x": 20, "y": 20},
+      "ergonomics": 25,
+      "modes": ["Automatic", "Single"],
       "rpm": 160
     },
     {
@@ -826,14 +829,14 @@
       "clipsize": 5,
       "clipsupply": 5,
       "capplus": 1,
-      "recoil": {"x": 200, "y": 450},
-      "spread": {"x": 2, "y": 2},
-      "ergonomics": 17,
-      "modes": ["Single", "Automatic"],
       "attack": [
         {"type": "projectile", "name": "Cannon_20mm_APHET"},
         {"type": "explosion", "name": "APHET_20mm"}
       ],
+      "recoilxy": {"x": 200, "y": 450},
+      "spreadxy": {"x": 2, "y": 2},
+      "ergonomics": 17,
+      "modes": ["Single", "Automatic"],
       "rpm": 190
     },
     {
@@ -853,11 +856,11 @@
       "roundsupply": 10,
       "magstart": 10,
       "supply": 10,
-      "recoil": {"x": 10, "y": 25},
-      "spread": {"x": 10, "y": 10},
+      "attack": [{"type": "projectile", "name": "Railgun"}],
+      "recoilxy": {"x": 10, "y": 25},
+      "spreadxy": {"x": 10, "y": 10},
       "ergonomics": 35,
       "modes": ["ChargeWithSafetyOn", "ChargeWithSafetyOff"],
-      "attack": [{"type": "projectile", "name": "Railgun"}],
       "rpm": 60
     },
     {
@@ -875,8 +878,8 @@
       "limit": 10,
       "tags": ["laser"],
       "attack": [{"type": "beam", "name": "LaserCannon"}],
-      "recoil": {"x": 4, "y": 1},
-      "spread": {"x": 10, "y": 10},
+      "recoilxy": {"x": 4, "y": 1},
+      "spreadxy": {"x": 10, "y": 10},
       "ergonomics": 45,
       "modes": ["Automatic"]
     },
@@ -890,14 +893,14 @@
       "charge": 3.1,
       "reload": 15,
       "supply": 6,
-      "recoil": {"x": 40, "y": 40},
-      "spread": {"x": 4, "y": 4},
-      "ergonomics": 35,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Laser_Pulse"},
         {"type": "explosion", "name": "Laser_Pulse"}
       ],
+      "recoilxy": {"x": 40, "y": 40},
+      "spreadxy": {"x": 4, "y": 4},
+      "ergonomics": 35,
+      "modes": ["Single"],
       "rpm": 10,
       "rpms": [10, 10]
     },
@@ -911,14 +914,14 @@
       "cap": 1,
       "rounds": 0,
       "supply": 6,
-      "recoil": {"x": 2.5, "y": 10},
-      "spread": {"x": 4, "y": 4},
-      "ergonomics": 15,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Grenade_75mm_HEAT"},
         {"type": "explosion", "name": "Grenade_75mm_HEAT"}
       ],
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 4, "y": 4},
+      "ergonomics": 15,
+      "modes": ["Single"],
       "rpm": 600
     },
     {
@@ -935,14 +938,14 @@
       "roundsupply": 3,
       "capplus": 1,
       "supply": 6,
-      "recoil": {"x": 40, "y": 40},
-      "spread": {"x": 4, "y": 4},
-      "ergonomics": 10,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Grenade_85mm_HEAT"},
         {"type": "explosion", "name": "Grenade_85mm_HEAT"}
       ],
+      "recoilxy": {"x": 40, "y": 40},
+      "spreadxy": {"x": 4, "y": 4},
+      "ergonomics": 10,
+      "modes": ["Single"],
       "rpm": 600
     },
     {
@@ -959,14 +962,14 @@
       "roundsupply": 2,
       "capplus": 1,
       "supply": 6,
-      "recoil": {"x": 2.5, "y": 10},
-      "spread": {"x": 0, "y": 0},
-      "ergonomics": 10,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Missile_Faf"},
         {"type": "explosion", "name": "FafMissile"}
       ],
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 0, "y": 0},
+      "ergonomics": 10,
+      "modes": ["Single"],
       "rpm": 240
     },
     {
@@ -983,16 +986,16 @@
       "roundsupply": 3,
       "capplus": 1,
       "supply": 6,
-      "recoil": {"x": 40, "y": 40},
-      "spread": {"x": 4, "y": 4},
-      "ergonomics": 10,
-      "modes": ["Single"],
       "attack": [
         {"type": "projectile", "name": "Grenade_85mm_AirburstCluster"},
         {"type": "explosion", "name": "AirburstCluster"},
         {"type": "projectile", "name": "AirburstCluster_Bomb", "count": 25},
         {"type": "explosion", "name": "AirburstCluster_Bomb", "count": 25}
       ],
+      "recoilxy": {"x": 40, "y": 40},
+      "spreadxy": {"x": 4, "y": 4},
+      "ergonomics": 10,
+      "modes": ["Single"],
       "rpm": 600
     },
     {
@@ -1003,13 +1006,13 @@
       "reloadone": 2.3,
       "cap": 2,
       "rounds": 40,
-      "roundstart": 0,
+      "roundstart": 20,
       "roundsupply": 20,
-      "recoil": {"x": 3, "y": 60},
-      "spread": {"x": 60, "y": 60},
+      "attack": [{"type": "projectile", "name": "Shotgun_10g_mag"}],
+      "recoilxy": {"x": 3, "y": 60},
+      "spreadxy": {"x": 60, "y": 60},
       "ergonomics": 65,
       "modes": ["Single", "AllBarrels"],
-      "attack": [{"type": "projectile", "name": "None"}],
       "rpm": 600,
       "rpms": [600, 600, 600]
     },

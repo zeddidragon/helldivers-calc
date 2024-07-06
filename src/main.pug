@@ -222,13 +222,13 @@ mixin weaponsRow(wpn, opts)
           title=t('table.td.pickup', 'box', "Mags From Box")
         )=wpn.box
     td.weapon.spread
-      if wpn.recoil
-        span.spread-y.pre-slash= wpn.spread.x
-        span.spread-y= wpn.spread.y
+      if wpn.spreadxy
+        span.spread-y.pre-slash= wpn.spreadxy.x
+        pan.spread-y= wpn.spreadxy.y
     td.weapon.recoil
-      if wpn.recoil
-        span.recoil-x.pre-slash= wpn.recoil.x
-        span.recoil-y= wpn.recoil.y
+      if wpn.recoilxy
+        span.recoil-x.pre-slash= wpn.recoilxy.x
+        span.recoil-y= wpn.recoilxy.y
   if !hideHeaders.damage
     if wpn.damage
       +damagesRow(wpn.damage, { explosive: !!wpn.explosion, apCount: 1, effectsCount: 1 })
