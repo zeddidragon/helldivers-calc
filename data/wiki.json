@@ -16846,6 +16846,7 @@
     "AR-23 Liberator": {
       "category": "Assault Rifle",
       "source": "start",
+      "recoil": 15,
       "reload": 3,
       "reloadearly": 2,
       "cap": 45,
@@ -16866,6 +16867,7 @@
     "AR-23P Liberator Penetrator": {
       "category": "Assault Rifle",
       "source": "hd-mobilize",
+      "recoil": 19,
       "sourcepage": 6,
       "reload": 3,
       "reloadearly": 2,
@@ -16887,6 +16889,7 @@
     "AR-23C Liberator Concussive": {
       "category": "Assault Rifle",
       "source": "steel-vets",
+      "recoil": 28,
       "sourcepage": 1,
       "reload": 3,
       "reloadearly": 2,
@@ -16906,6 +16909,7 @@
     "AR-23A Liberator Carbine": {
       "category": "Assault Rifle",
       "source": "viper-commandos",
+      "recoil": 26,
       "sourcepage": 1,
       "reload": 3,
       "reloadearly": 2,
@@ -16927,6 +16931,7 @@
     "AR-61 Tenderizer": {
       "category": "Assault Rifle",
       "source": "polar-pat",
+      "recoil": 10,
       "sourcepage": 1,
       "reload": 3.3,
       "reloadearly": 2.2,
@@ -16948,6 +16953,7 @@
     "BR-14 Adjudicator": {
       "category": "Assault Rifle",
       "source": "demo-det",
+      "recoil": 40,
       "sourcepage": 1,
       "reload": 3,
       "reloadearly": 1.7,
@@ -16968,6 +16974,7 @@
     "R-63 Diligence": {
       "category": "Marksman Rifle",
       "source": "hd-mobilize",
+      "recoil": 35,
       "sourcepage": 2,
       "reload": 3,
       "reloadearly": 1.9,
@@ -16987,6 +16994,7 @@
     "R-63CS Diligence Counter Sniper": {
       "category": "Marksman Rifle",
       "source": "hd-mobilize",
+      "recoil": 53,
       "sourcepage": 7,
       "reload": 3,
       "reloadearly": 1.9,
@@ -17006,6 +17014,7 @@
     "MP-98 Knight": {
       "category": "Submachine Gun",
       "source": "dlc-super",
+      "recoil": 20,
       "reload": 2.5,
       "reloadearly": 1.8,
       "cap": 50,
@@ -17026,6 +17035,7 @@
     "SMG-37 Defender": {
       "category": "Submachine Gun",
       "source": "hd-mobilize",
+      "recoil": 10,
       "sourcepage": 3,
       "reload": 2.8,
       "reloadearly": 2,
@@ -17047,6 +17057,7 @@
     "SMG-72 Pummeler": {
       "category": "Submachine Gun",
       "source": "polar-pat",
+      "recoil": 10,
       "sourcepage": 2,
       "reload": 3,
       "reloadearly": 2.1,
@@ -17068,6 +17079,7 @@
     "SG-8 Punisher": {
       "category": "Shotgun",
       "source": "hd-mobilize",
+      "recoil": 120,
       "sourcepage": 1,
       "reload": 6.9,
       "reloadone": 0.8,
@@ -17087,6 +17099,7 @@
     "SG-8S Slugger": {
       "category": "Shotgun",
       "source": "hd-mobilize",
+      "recoil": 120,
       "sourcepage": 8,
       "reload": 6.9,
       "reloadone": 0.8,
@@ -17106,6 +17119,7 @@
     "SG-225 Breaker": {
       "category": "Shotgun",
       "source": "hd-mobilize",
+      "recoil": 55,
       "sourcepage": 4,
       "reload": 2.5,
       "reloadearly": 1.8,
@@ -17125,6 +17139,7 @@
     "SG-225SP Breaker Spray&Pray": {
       "category": "Shotgun",
       "source": "hd-mobilize",
+      "recoil": 45,
       "sourcepage": 9,
       "reload": 3,
       "reloadearly": 2.1,
@@ -17144,6 +17159,7 @@
     "SG-225IE Breaker Incendiary": {
       "category": "Shotgun",
       "source": "steel-vets",
+      "recoil": 28,
       "sourcepage": 2,
       "reload": 2.5,
       "reloadearly": 1.8,
@@ -17165,6 +17181,7 @@
     "CB-9 Exploding Crossbow": {
       "category": "Explosive",
       "source": "demo-det",
+      "recoil": 35,
       "sourcepage": 3,
       "reload": 3.3,
       "cap": 5,
@@ -17185,6 +17202,7 @@
     "JAR-5 Dominator": {
       "category": "Explosive",
       "source": "steel-vets",
+      "recoil": 75,
       "sourcepage": 3,
       "reload": 3.8,
       "reloadearly": 2.6,
@@ -17206,6 +17224,7 @@
     "R-36 Eruptor": {
       "category": "Explosive",
       "source": "demo-det",
+      "recoil": 75,
       "sourcepage": 2,
       "reload": 4.7,
       "reloadearly": 2.8,
@@ -17230,6 +17249,7 @@
     "SG-8P Punisher Plasma": {
       "category": "Energy-Based",
       "source": "cut-edge",
+      "recoil": 110,
       "sourcepage": 2,
       "reload": 2.5,
       "cap": 8,
@@ -17249,6 +17269,7 @@
     "ARC-12 Blitzer": {
       "category": "Energy-Based",
       "source": "cut-edge",
+      "recoil": 60,
       "sourcepage": 3,
       "tags": ["jet"],
       "recoilxy": {"x": 40, "y": 40},
@@ -17277,6 +17298,7 @@
     "LAS-16 Sickle": {
       "category": "Energy-Based",
       "source": "cut-edge",
+      "recoil": 2,
       "sourcepage": 1,
       "reload": 2.1,
       "reloadearly": 3,
@@ -17295,6 +17317,7 @@
     "PLAS-1 Scorcher": {
       "category": "Energy-Based",
       "source": "hd-mobilize",
+      "recoil": 20,
       "sourcepage": 10,
       "reload": 2.5,
       "reloadearly": 2.3,
@@ -17315,6 +17338,7 @@
     "PLAS-101 Purifier": {
       "category": "Energy-Based",
       "source": "polar-pat",
+      "recoil": 20,
       "sourcepage": 3,
       "charge": 1.3,
       "reload": 2.5,
@@ -17335,6 +17359,7 @@
     "SG-22 Bushwhacker": {
       "category": "Secondary Shotgun",
       "source": "viper-commandos",
+      "recoil": 170,
       "sourcepage": 2,
       "reload": 1.8,
       "reloadearly": 3,
@@ -17353,6 +17378,7 @@
     "P-2 Peacemaker": {
       "category": "Pistol",
       "source": "start",
+      "recoil": 23,
       "reload": 1.8,
       "reloadearly": 1.4,
       "cap": 15,
@@ -17372,6 +17398,7 @@
     "P-19 Redeemer": {
       "category": "Pistol",
       "source": "hd-mobilize",
+      "recoil": 15,
       "sourcepage": 2,
       "reload": 2.1,
       "reloadearly": 1.4,
@@ -17392,6 +17419,7 @@
     "P-113 Verdict": {
       "category": "Pistol",
       "source": "polar-pat",
+      "recoil": 40,
       "sourcepage": 3,
       "reload": 2,
       "reloadearly": 1.4,
@@ -17412,6 +17440,7 @@
     "GP-31 Grenade Pistol": {
       "category": "Pistol",
       "source": "demo-det",
+      "recoil": 43,
       "sourcepage": 3,
       "reload": 2,
       "cap": 1,
@@ -17433,6 +17462,7 @@
     "LAS-7 Dagger": {
       "category": "Pistol",
       "source": "cut-edge",
+      "recoil": 1,
       "sourcepage": 3,
       "reload": 1.8,
       "reloadearly": 2.3,
@@ -17450,6 +17480,7 @@
     "P-4 Senator": {
       "category": "Pistol",
       "source": "steel-vets",
+      "recoil": 43,
       "sourcepage": 1,
       "reload": 2.8,
       "reloadone": 2.2,
