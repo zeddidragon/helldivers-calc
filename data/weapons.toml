@@ -10,6 +10,9 @@ magstart = 5
 supply = 7
 scopes = [25, 50, 100]
 attachments = ["laser", "flashlight"]
+[[weapon.attack]]
+medium = "projectile"
+ref = "Rifle_5p5x50mm_fmj"
 
 [[weapon]]
 category = "AR"

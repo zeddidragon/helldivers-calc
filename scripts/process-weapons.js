@@ -110,13 +110,13 @@ const shalzuthSchema = [
     wpn.category = wpn.category || cat.replace('EquipmentType_', '')
   }},
   { source: 'projectile_type', cb: (wpn, prj) => {
-    if(!wpn.attack) {
-      wpn.attack = []
+    if(wpn.attack) {
+      return
     }
-    wpn.attack.push({
+    wpn.attack = [{
       medium: 'projectile',
       ref: prj.replace('ProjectileType_', ''),
-    })
+    }]
   }},
   { source: 'rounds_per_minute', cb: (wpn, rpms) => {
     wpn.rpm = rpms.y
