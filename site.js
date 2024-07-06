@@ -508,7 +508,7 @@ async function loadData() {
     let shotdmgx = 0
     let prev = wpn
     let subobjects = wpn.attack?.map(({ type, name: ref, count }) => {
-      const obj = byRef[type][ref]
+      const obj = byRef[type][ref] || {}
       const parent = prev
       prev = obj
       const damage = obj.damage
@@ -702,7 +702,7 @@ async function loadData() {
     let maxRadius = [0, 0, 0]
     let prev = void 0
     let subobjects = strat.attack?.map(({ type, name: ref, count }) => {
-      const obj = byRef[type][ref]
+      const obj = byRef[type][ref] || {}
       const parent = prev
       prev = obj
       const damage = obj.damage

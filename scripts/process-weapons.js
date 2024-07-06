@@ -6,6 +6,7 @@ function read(file) {
 }
 
 const data = read('datamined')
+const shalzuth = read('shalzuth')
 const setup = toml.parse(fs.readFileSync('data/weapons.toml'))
 const names = read('lang-en')
 const sources = [
@@ -78,12 +79,101 @@ wps = wps.filter(f => {
   return true
 })
 const matches = []
-const keyed = {}
+const shalzuthMatch = {}
+
+const shalzuthSchema = [
+  { source: 'magazine_capacity', dest: 'cap' },
+  { source: 'magazines_maximum', dest: 'mags' },
+  { source: 'magazines', dest: 'magstart' },
+  { source: 'chambered', dest: 'capplus' },
+  { source: 'magazines_refill', dest: 'supply' },
+  { source: 'recoil_info', cb: (wpn, { drift }) => {
+    wpn.recoil = {
+      x: drift.horizontal_recoil,
+      y: drift.vertical_recoil,
+    }
+  }},
+  { source: 'spread_info', cb: (wpn, spread) => {
+    wpn.spread = {
+      x: spread.horizontal,
+      y: spread.vertical,
+    }
+  }},
+  { source: 'ergonomics' },
+  { source: 'fire_modes', cb: (wpn, modes) => {
+    wpn.modes = modes
+      .map(m => m.replace('FireMode_', ''))
+      .filter(m => m !== 'None')
+  }},
+  { source: 'num_burst_rounds', dest: 'burst' },
+  { source: 'equipment_type', cb: (wpn, cat) => {
+    wpn.category = wpn.category || cat.replace('EquipmentType_', '')
+  }},
+  { source: 'projectile_type', cb: (wpn, prj) => {
+    if(!wpn.attack) {
+      wpn.attack = []
+    }
+    wpn.attack.push({
+      medium: 'projectile',
+      ref: prj.replace('ProjectileType_', ''),
+    })
+  }},
+  { source: 'rounuds_per_minutes', cb: (wpn, rpms) => {
+    wpn.rpm = rpms.y
+    let rpmArr = [
+      rpms.x,
+      rpms.y,
+      rpms.z,
+    ].filter(v => v)
+    if(rpmArr.length > 1) {
+      wpn.rpm = rpmArr[rpmArr.length - 1]
+      wpn.rpms = rpmArr
+    }
+  }},
+]
+
+let counter = 0
 for(const wpn of wps) {
   for(const prop of purge) {
     delete wpn[prop]
   }
-  keyed[wpn.fullname] = wpn
+  const name = wpn.name || wpn.fullname
+  const shalzuthMatches = Object.values(shalzuth).filter(obj => {
+    return obj.key === name  || obj.name === name
+  })
+  if(shalzuthMatches.length > 1) {
+    console.error(`Too many matches for: "${name}" (${shalzuthMatches.length})`)
+  }
+
+  const [matched] = shalzuthMatches
+  if(!matched) {
+    if(!shalzuthMatches.length) {
+      console.error(`No matches for: "${name}"`)
+      continue
+    }
+  }
+  
+  for(const { source, dest = source, cb } of shalzuthSchema) {
+    if(wpn[dest]) {
+      continue
+    }
+    const v = matched[source]
+    if(v == null) {
+      continue
+    }
+
+    if(cb) {
+      cb(wpn, v)
+    } else {
+      wpn[dest] = v
+    }
+  }
+
+  counter--;
+  if(!counter) {
+    console.log(name, matched, wpn)
+    break
+  }
 }
 
 const wikiRegister = {
@@ -180,7 +270,6 @@ function unrollAttack(attack) {
     count,
   } = attack
   const obj = wikiRegister[type][name]
-  console.log(obj)
   if(obj?.shrapnel && obj?.projectileid) {
     const projectile = wikiRegister.projectile[obj.projectileid]
     unrolled.push(...unrollAttack({

@@ -39,6 +39,7 @@ const handlers = {
     'chambered',
     'magazines',
     'magazines_refill',
+    'magazines_max',
   ]),
   UnitComponent: null,
   WieldableComponent: null,
@@ -375,8 +376,10 @@ async function readShalzuth() {
       wpn.prefix,
       wpn.name,
     ].filter(v => v).join(' ')
+    wpn.key = key
     byName[key] = wpn
   }
+  await fs.writeFile('data/shalzuth.json', json(weapons))
 
   return byName
 }

@@ -2,235 +2,156 @@
 category = "AR"
 fullname = "AR-23 Liberator"
 source = "start"
-rpm = 640
-recoil = 15
 reload = 3
 reloadearly = 2
 cap = 45
-capplus = 1
 mags = 7
 magstart = 5
 supply = 7
-modes = ["semi", "auto", "burst3"]
 scopes = [25, 50, 100]
 attachments = ["laser", "flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_5p5x50mm_fmj"
 
 [[weapon]]
 category = "AR"
 fullname = "AR-23P Liberator Penetrator"
 source = "hd-mobilize"
 sourcepage = 6
-rpm = 640
-recoil = 19
 reload = 3
 reloadearly = 2
 cap = 30
-capplus = 1
 mags = 10
 magstart = 7
 supply = 10
-modes = ["semi", "auto", "burst3"]
 scopes = [25, 75, 150]
 attachments = ["laser", "flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_5p5x50mm_ap"
 
 [[weapon]]
 category = "AR"
 fullname = "AR-23C Liberator Concussive"
 source = "steel-vets"
 sourcepage = 1
-rpm = 320
-recoil = 28
 reload = 3
 reloadearly = 2
 cap = 30
-capplus = 1
 mags = 10
 magstart = 7
 supply = 10
-modes = ["semi", "auto"]
 attachments = ["laser", "flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_5p5x50mm_exp"
 
 [[weapon]]
 category = "AR"
 fullname = "AR-23A Liberator Carbine"
 source = "viper-commandos"
 sourcepage = 1
-rpm = 920
-recoil = 26
 reload = 3.0
 reloadearly = 2.0
 cap = 45
-capplus = 1
 mags = 7
 magstart = 4
 supply = 7
-modes = ["semi", "auto", "burst3"]
 scopes = [25, 50, 100]
 attachments = ["laser", "flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_5p5x50mm_fmj"
 
 [[weapon]]
 category = "AR"
 fullname = "AR-61 Tenderizer"
 source = "polar-pat"
 sourcepage = 1
-rpm = 600
-recoil = 10
 reload = 3.3
 reloadearly = 2.2
 cap = 30
-capplus = 1
 mags = 7
 magstart = 5
 supply = 7
-modes = ["semi", "auto", "burst3"]
 scopes = [25, 50, 100]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_Rico"
 
 [[weapon]]
 category = "AR"
 fullname = "BR-14 Adjudicator"
 source = "demo-det"
 sourcepage = 1
-rpm = 550
-recoil = 40
 reload = 3
 reloadearly = 1.7
 cap = 30
-capplus = 1
 mags = 8
 magstart = 6
 supply = 8
-modes = ["semi", "auto"]
 scopes = [25, 50, 100]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Battle_Rifle"
 
 [[weapon]]
 category = "DMR"
 fullname = "R-63 Diligence"
 source = "hd-mobilize"
 sourcepage = 2
-rpm = 350
-recoil = 35
 reload = 3
 reloadearly = 1.9
 cap = 20
-capplus = 1
 mags = 8
 magstart = 5
 supply = 8
-modes = ["semi"]
 scopes = [25, 75, 150]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_9x70mm_fmj"
 
 [[weapon]]
 category = "DMR"
 fullname = "R-63CS Diligence Counter Sniper"
 source = "hd-mobilize"
 sourcepage = 7
-rpm = 350
-recoil = 53
 reload = 3
 reloadearly = 1.9
 cap = 15
-capplus = 1
 mags = 6
 magstart = 4
 supply = 6
-modes = ["semi"]
 scopes = [50, 100, 200]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_9x70mm_hv"
 
 [[weapon]]
 category = "SMG"
 fullname = "MP-98 Knight"
 source = "dlc-super"
-rpm = 1380
-recoil = 20
 reload = 2.5
 reloadearly = 1.8
 cap = 50
-capplus = 1
 mags = 7
 magstart = 5
 supply = 5
 tags = ["1h"]
-modes = ["semi", "auto"]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Pistol_9x20mm_smj"
 
 [[weapon]]
 category = "SMG"
 fullname = "SMG-37 Defender"
 source = "hd-mobilize"
 sourcepage = 3
-rpm = 520
-recoil = 10
 reload = 2.8
 reloadearly = 2
 cap = 45
-capplus = 1
 mags = 7
 magstart = 5
 supply = 7
 tags = ["1h"]
-modes = ["semi", "auto", "burst3"]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Pistol_12x25mm_fmj"
 
 [[weapon]]
 category = "SMG"
 fullname = "SMG-72 Pummeler"
 source = "polar-pat"
 sourcepage = 2
-rpm = 475
-recoil = 10
 reload = 3
 reloadearly = 2.1
 cap = 45
-capplus = 1
 mags = 7
 magstart = 5
 supply = 7
 tags = ["1h"]
-modes = ["semi", "auto", "burst3"]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Pistol_12x25mm_stun"
 
 [[weapon]]
 category = "SG"
 fullname = "SG-8 Punisher"
 source = "hd-mobilize"
 sourcepage = 1
-rpm = 80
-recoil = 120
 reload = 6.9
 reloadone = 0.8
 cap = 16
@@ -238,17 +159,12 @@ rounds = 60
 roundstart = 32
 roundsupply = 60
 tags = ["rounds"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Shotgun_10g_buc"
 
 [[weapon]]
 category = "SG"
 fullname = "SG-8S Slugger"
 source = "hd-mobilize"
 sourcepage = 8
-rpm = 80
-recoil = 120
 reload = 6.9
 reloadone = 0.8
 cap = 16
@@ -256,157 +172,104 @@ rounds = 60
 roundstart = 32
 roundsupply = 60
 tags = ["rounds"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Shotgun_10g_slug"
 
 [[weapon]]
 category = "SG"
 fullname = "SG-225 Breaker"
 source = "hd-mobilize"
 sourcepage = 4
-rpm = 300
-recoil = 55
 reload = 2.5
 reloadearly = 1.8
 cap = 13
-capplus = 1
 mags = 7
 magstart = 5
 supply = 7
-modes = ["semi", "auto"]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Shotgun_12g_buc"
 
 [[weapon]]
 category = "SG"
 fullname = "SG-225SP Breaker Spray & Pray"
 source = "hd-mobilize"
 sourcepage = 9
-rpm = 330
-recoil = 45
 reload = 3
 reloadearly = 2.1
 cap = 26
-capplus = 1
 mags = 8
 magstart = 6
 supply = 8
-modes = ["semi", "auto"]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Shotgun_12g_bir"
 
 [[weapon]]
 category = "SG"
 fullname = "SG-225IE Breaker Incendiary"
 source = "steel-vets"
 sourcepage = 2
-rpm = 300
-recoil = 28
 reload = 2.5
 reloadearly = 1.8
 cap = 25
-capplus = 1
 mags = 6
 magstart = 4
 supply = 6
 tags = ["fire"]
-modes = ["semi", "burst3"]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Shotgun_12g_flm"
 
 [[weapon]]
 category = "EX"
 fullname = "CB-9 Exploding Crossbow"
 source = "demo-det"
 sourcepage = 3
-rpm = 50
-recoil = 35
 reload = 3.3
 cap = 5
-capplus = 1
 mags = 8
 magstart = 8
 supply = 8
-modes = ["semi"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Crossbow_Bolt_exp"
 
 [[weapon]]
 category = "EX"
 fullname = "JAR-5 Dominator"
 source = "steel-vets"
 sourcepage = 3
-rpm = 250
-recoil = 75
 reload = 3.8
 reloadearly = 2.6
 cap = 15
-capplus = 1
 mags = 6
 magstart = 4
 supply = 6
 tags = ["jet"]
-modes = ["semi", "burst3"]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rocket_15x100mm_std"
 
 [[weapon]]
 category = "EX"
 fullname = "R-36 Eruptor"
 source = "demo-det"
 sourcepage = 2
-rpm = 25
-recoil = 75
 reload = 4.7
 reloadearly = 2.8
 cap = 5
-capplus = 1
 mags = 6
 magstart = 6
 supply = 6
 tags = ["jet","shrapnel"]
 scopes = [50, 100, 200]
-modes = ["semi"]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rocket_JarPhoenix_20mm"
 
 [[weapon]]
 category = "NRG"
 fullname = "SG-8P Punisher Plasma"
 source = "cut-edge"
 sourcepage = 2
-rpm = 80
-recoil = 110
 reload = 2.5
 cap = 8
 mags = 8
 magstart = 6
 supply = 8
-[[weapon.attack]]
-medium = "projectile"
-ref = "Plasma_Punisher_Projectile"
 
 [[weapon]]
 category = "NRG"
 fullname = "ARC-12 Blitzer"
 source = "cut-edge"
 sourcepage = 3
-rpm = 45
-recoil = 60
 tags = ["jet"]
-modes = ["semi"]
 [[weapon.attack]]
 medium = "arc"
 ref = "ArcShotgun"
@@ -417,7 +280,6 @@ category = "NRG"
 fullname = "LAS-5 Scythe"
 source = "hd-mobilize"
 sourcepage = 5
-recoil = 1
 reload = 1.8
 reloadearly = 3
 mags = 4
@@ -425,7 +287,6 @@ magstart = 2
 supply = 4
 limit = 8
 tags = ["laser"]
-modes = ["auto"]
 [[weapon.attack]]
 medium = "beam"
 ref = "Medium"
@@ -435,8 +296,6 @@ category = "NRG"
 fullname = "LAS-16 Sickle"
 source = "cut-edge"
 sourcepage = 1
-rpm = 750
-recoil = 2
 reload = 2.1
 reloadearly = 3
 mags = 3
@@ -444,158 +303,108 @@ magstart = 3
 supply = 3
 limit = 7
 scopes = [25, 50, 100]
-modes = ["auto"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Laser_Long"
 
 [[weapon]]
 category = "NRG"
 fullname = "PLAS-1 Scorcher"
 source = "hd-mobilize"
 sourcepage = 10
-rpm = 250
-recoil = 20
 reload = 2.5
 reloadearly = 2.3
 cap = 15
 mags = 6
 magstart = 3
 supply = 6
-modes = ["semi"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Plasma_Bolt_Medium"
 
 [[weapon]]
 category = "NRG"
 fullname = "PLAS-101 Purifier"
 source = "polar-pat"
 sourcepage = 3
-recoil = 20
 charge = 1.3
 reload = 2.5
 cap = 15
 mags = 6
 magstart = 3
 supply = 6
-modes = ["charge"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Plasma_Rifle_Charge"
 
 [[weapon]]
 category = "SG2"
 fullname = "SG-22 Bushwhacker"
 source = "viper-commandos"
 sourcepage = 2
-rpm = 650
-recoil = 170
 reload = 1.8
 reloadearly = 3.0
 cap = 3
 rounds = 30
 roundstart = 30
 roundsupply = 30
-modes = ["semi", "burst3"]
 tags = ["1h"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Shotgun_10g_buc"
 
 [[weapon]]
 category = "HG"
 fullname = "P-2 Peacemaker"
 source = "start"
-rpm = 900
-recoil = 23
 reload = 1.8
 reloadearly = 1.4
 cap = 15
-capplus = 1
 mags = 5
 magstart = 4
 supply = 5
-modes = ["semi"]
 attachments = ["laser", "flashlight"]
 tags = ["1h"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Pistol_9x20mm_hp"
 
 [[weapon]]
 category = "HG"
 fullname = "P-19 Redeemer"
 source = "hd-mobilize"
 sourcepage = 2
-rpm = 1100
-recoil = 15
 reload = 2.1
 reloadearly = 1.4
 cap = 31
-capplus = 1
 mags = 4
 magstart = 4
 supply = 4
-modes = ["semi", "auto"]
 attachments = ["flashlight"]
 tags = ["1h"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Pistol_9x20mm_fmj"
 
 [[weapon]]
 category = "HG"
 fullname = "P-113 Verdict"
 source = "polar-pat"
 sourcepage = 3
-rpm = 450
-recoil = 40
 reload = 2
 reloadearly = 1.4
 cap = 10
-capplus = 1
 mags = 8
 magstart = 5
 supply = 4
-modes = ["semi"]
 attachments = ["laser", "flashlight"]
 tags = ["1h"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Pistol_Magnum"
 
 [[weapon]]
 category = "HG"
 fullname = "GP-31 Grenade Pistol"
 source = "demo-det"
 sourcepage = 3
-rpm = 900
-recoil = 43
 reload = 2
 cap = 1
 rounds = 8
 roundstart = 4
 roundsupply = 2
-modes = ["semi"]
 tags = ["1h"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Grenade_40mm_HEAT"
 
 [[weapon]]
 category = "HG"
 fullname = "LAS-7 Dagger"
 source = "cut-edge"
 sourcepage = 3
-recoil = 1
 reload = 1.8
 reloadearly = 2.3
 mags = 3
 magstart = 3
 supply = 3
 limit = 5
-modes = ["auto"]
 tags = ["1h"]
 [[weapon.attack]]
 medium = "beam"
@@ -606,8 +415,6 @@ category = "HG"
 fullname = "P-4 Senator"
 source = "steel-vets"
 sourcepage = 1
-rpm = 200
-recoil = 43
 reload = 2.8
 reloadone = 2.2
 reloadx = 4.8
@@ -616,12 +423,8 @@ cap = 6
 rounds = 40
 roundstart = 32
 roundsupply = 20
-modes = ["semi"]
 attachments = ["flashlight"]
 tags = ["round", "1h"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Pistol_13x40mm_fmj"
 
 [[weapon]]
 category = "SUP"
@@ -630,19 +433,13 @@ source = "support"
 stratcode = "dlduul"
 calltime = 3
 cooldown = 480
-rpm = 1150
 reload = 5.8
 reloadearly = 4.4
 cap = 250
-capplus = 1
 mags = 3
 magstart = 2
 supply = 2
-modes = ["auto"]
 rpms = [700, 850, 1150]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_5p5x50mm_fmj"
 
 [[weapon]]
 category = "SUP"
@@ -651,19 +448,13 @@ source = "support"
 stratcode = "dldur"
 calltime = 3
 cooldown = 480
-rpm = 900
 reload = 5.0
 reloadearly = 4.2
 cap = 150
-capplus = 1
 mags = 3
 magstart = 2
 supply = 1
-modes = ["auto"]
 rpms = [630, 760, 900]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_8x60mm_fmj"
 
 [[weapon]]
 category = "SUP"
@@ -672,19 +463,13 @@ source = "support"
 stratcode = "dludd"
 calltime = 3
 cooldown = 480
-rpm = 750
 reload = 5.5
 reloadearly = 3.9
 cap = 75
-capplus = 1
 mags = 2
 magstart = 1
 supply = 2
-modes = ["auto"]
 rpms = [450, 600, 750]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_12p5x100mm_bchp"
 
 [[weapon]]
 category = "SUP"
@@ -693,9 +478,7 @@ source = "support"
 stratcode = "drdull"
 calltime = 3
 cooldown = 480
-rpm = 60
 charge = 1
-modes = ["charge"]
 [[weapon.attack]]
 medium = "arc"
 ref = "ArcThrower"
@@ -713,7 +496,6 @@ magstart = 3
 supply = 4
 limit = 12.5
 tags = ["fire"]
-modes = ["auto"]
 [[weapon.attack]]
 medium = "damage"
 ref = "Projectile_Flamethrower"
@@ -725,19 +507,13 @@ source = "support"
 stratcode = "dlrud"
 calltime = 3
 cooldown = 480
-rpm = 350
 reload = 3.2
 reloadearly = 2.6
 cap = 7
-capplus = 1
 mags = 6
 magstart = 4
 supply = 3
 scopes = [50, 100, 200]
-modes = ["semi"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_12p5x100mm_eit"
 
 [[weapon]]
 category = "SUP"
@@ -749,14 +525,9 @@ cooldown = 480
 reload = 3.5
 reloadearly = 3
 cap = 10
-capplus = 1
 mags = 2
 magstart = 1
 supply = 2
-modes = ["semi"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Grenade_40mm_HE"
 
 [[weapon]]
 category = "SUP"
@@ -765,7 +536,6 @@ source = "support"
 stratcode = "dlduur"
 calltime = 3
 cooldown = 480
-rpm = 250
 reload = 5.2
 reloadearly = 1.7
 cap = 10
@@ -773,10 +543,6 @@ clips = 10
 clipstart = 10
 clipsize = 5
 clipsupply = 5
-modes = ["semi", "auto"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Cannon_20mm_APHET"
 
 [[weapon]]
 category = "SUP"
@@ -793,10 +559,6 @@ cap = 1
 rounds = 20
 roundstart = 10
 roundsupply = 10
-modes = ["charge", "overcharge"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Railgun"
 
 [[weapon]]
 category = "SUP"
@@ -812,7 +574,6 @@ magstart = 1
 supply = 1
 limit = 10
 tags = ["laser"]
-modes = ["auto"]
 [[weapon.attack]]
 medium = "beam"
 ref = "LaserCannon"
@@ -826,10 +587,6 @@ calltime = 3
 cooldown = 480
 charge = 3.1
 reload = 15
-modes = ["charge"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Laser_Pulse"
 
 [[weapon]]
 category = "SUP"
@@ -840,10 +597,6 @@ calltime = 3
 cooldown = 480
 cap = 1
 rounds = 0
-modes = ["semi"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Grenade_75mm_HEAT"
 
 [[weapon]]
 category = "SUP"
@@ -857,10 +610,6 @@ cap = 1
 rounds = 5
 roundstart = 5
 roundsupply = 3
-modes = ["semi"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Grenade_85mm_HEAT"
 
 [[weapon]]
 category = "SUP"
@@ -874,10 +623,6 @@ cap = 1
 rounds = 3
 roundstart = 3
 roundsupply = 2
-modes = ["lockon"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Missile_Faf"
 
 [[weapon]]
 category = "SUP"
@@ -891,26 +636,17 @@ cap = 1
 rounds = 5
 roundstart = 5
 roundsupply = 3
-modes = ["semi"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Grenade_85mm_AirburstCluster"
 
 [[weapon]]
 category = "SUP"
 fullname = "Break-Action Shotgun"
 source = "support"
-rpm = 450
 reload = 2.4
 reloadone = 2.3
 cap = 2
 rounds = 40
 roundstart = 0
 roundsupply = 20
-modes = ["semi", "burst2"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Shotgun_10g_mag"
 
 [[weapon]]
 category = "GrSt"
@@ -1100,7 +836,6 @@ ref = "DPS_Gas"
 [[weapon]]
 category = "Mounted"
 fullname = "Patriot Gatling Gun"
-rpm = 1200
 cap = 1000
 [[weapon.attack]]
 medium = "projectile"
@@ -1110,7 +845,6 @@ ref = "Rifle_8x60mm_fmj"
 category = "Mounted"
 fullname = "Patriot Rocket Pod"
 cap = 15
-rpm = 90
 [[weapon.attack]]
 medium = "projectile"
 ref = "Missile_Combat_Walker"
@@ -1119,7 +853,6 @@ ref = "Missile_Combat_Walker"
 category = "Mounted"
 fullname = "Emancipator Twin Autocannon"
 cap = 75
-rpm = 120
 [[weapon.attack]]
 medium = "projectile"
 ref = "Cannon_30mm_APHE"
@@ -1142,7 +875,6 @@ health = 400
 armor = 4
 calltime = 5
 cooldown = 480
-rpm = 640
 cap = 30
 salvos = 6
 [[stratagem.attack]]
@@ -1256,7 +988,6 @@ health = 200
 armor = 2
 calltime = 8
 cooldown = 120
-rpm = 660
 cap = 130
 [[stratagem.attack]]
 medium = "projectile"
@@ -1270,7 +1001,6 @@ health = 200
 armor = 2
 calltime = 8
 cooldown = 180
-rpm = 1560
 cap = 390
 [[stratagem.attack]]
 medium = "projectile"
@@ -1284,7 +1014,6 @@ health = 1000
 armor = 2
 calltime = 3
 cooldown = 180
-rpm = 660
 cap = 300
 [[stratagem.attack]]
 medium = "projectile"
@@ -1298,7 +1027,6 @@ health = 200
 armor = 2
 calltime = 8
 cooldown = 180
-rpm = 32
 cap = 36
 [[stratagem.attack]]
 medium = "projectile"
@@ -1312,7 +1040,6 @@ health = 200
 armor = 2
 calltime = 8
 cooldown = 180
-rpm = 10
 cap = 15
 [[stratagem.attack]]
 medium = "projectile"
@@ -1518,7 +1245,6 @@ fullname = "Eagle Strafing Run"
 stratcode = "urr"
 cooldown = 15
 eaglestock = 4
-rpm = 4000
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_Eagle_23mm"
