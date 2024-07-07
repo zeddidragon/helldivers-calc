@@ -16844,985 +16844,1613 @@
   },
   "weapon": {
     "AR-23 Liberator": {
+      "attachments": [
+        "laser",
+        "flashlight"
+      ],
+      "cap": 45,
+      "capplus": 1,
       "category": "Assault Rifle",
-      "source": "start",
-      "rpm": 640,
+      "mags": 7,
+      "magstart": 5,
+      "modes": [
+        "semi",
+        "auto",
+        "burst3"
+      ],
       "recoil": 15,
       "reload": 3,
       "reloadearly": 2,
-      "cap": 45,
-      "capplus": 1,
-      "mags": 7,
-      "magstart": 5,
+      "rpm": 640,
+      "scopes": [
+        25,
+        50,
+        100
+      ],
+      "source": "start",
       "supply": 7,
-      "modes": ["semi", "auto", "burst3"],
-      "scopes": [25, 50, 100],
-      "attachments": ["laser", "flashlight"],
-      "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_5p5x50mm_fmj"
+        }
+      ]
     },
     "AR-23P Liberator Penetrator": {
+      "attachments": [
+        "laser",
+        "flashlight"
+      ],
+      "cap": 30,
+      "capplus": 1,
       "category": "Assault Rifle",
-      "source": "hd-mobilize",
-      "sourcepage": 6,
-      "rpm": 640,
+      "mags": 10,
+      "magstart": 7,
+      "modes": [
+        "semi",
+        "auto",
+        "burst3"
+      ],
       "recoil": 19,
       "reload": 3,
       "reloadearly": 2,
-      "cap": 30,
-      "capplus": 1,
-      "mags": 10,
-      "magstart": 7,
+      "rpm": 640,
+      "scopes": [
+        25,
+        75,
+        150
+      ],
+      "source": "hd-mobilize",
+      "sourcepage": 6,
       "supply": 10,
-      "modes": ["semi", "auto", "burst3"],
-      "scopes": [25, 75, 150],
-      "attachments": ["laser", "flashlight"],
-      "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_5p5x50mm_ap"
+        }
+      ]
     },
     "AR-23C Liberator Concussive": {
+      "attachments": [
+        "laser",
+        "flashlight"
+      ],
+      "cap": 30,
+      "capplus": 1,
       "category": "Assault Rifle",
-      "source": "steel-vets",
-      "sourcepage": 1,
-      "rpm": 320,
+      "mags": 10,
+      "magstart": 7,
+      "modes": [
+        "semi",
+        "auto"
+      ],
       "recoil": 28,
       "reload": 3,
       "reloadearly": 2,
-      "cap": 30,
-      "capplus": 1,
-      "mags": 10,
-      "magstart": 7,
+      "rpm": 320,
+      "source": "steel-vets",
+      "sourcepage": 1,
       "supply": 10,
-      "modes": ["semi", "auto"],
-      "attachments": ["laser", "flashlight"],
-      "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_exp"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_5p5x50mm_exp"
+        }
+      ]
     },
     "AR-23A Liberator Carbine": {
+      "attachments": [
+        "laser",
+        "flashlight"
+      ],
+      "cap": 45,
+      "capplus": 1,
       "category": "Assault Rifle",
-      "source": "viper-commandos",
-      "sourcepage": 1,
-      "rpm": 920,
+      "mags": 7,
+      "magstart": 4,
+      "modes": [
+        "semi",
+        "auto",
+        "burst3"
+      ],
       "recoil": 26,
       "reload": 3,
       "reloadearly": 2,
-      "cap": 45,
-      "capplus": 1,
-      "mags": 7,
-      "magstart": 4,
+      "rpm": 920,
+      "scopes": [
+        25,
+        50,
+        100
+      ],
+      "source": "viper-commandos",
+      "sourcepage": 1,
       "supply": 7,
-      "modes": ["semi", "auto", "burst3"],
-      "scopes": [25, 50, 100],
-      "attachments": ["laser", "flashlight"],
-      "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_5p5x50mm_fmj"
+        }
+      ]
     },
     "AR-61 Tenderizer": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 30,
+      "capplus": 1,
       "category": "Assault Rifle",
-      "source": "polar-pat",
-      "sourcepage": 1,
-      "rpm": 600,
+      "mags": 7,
+      "magstart": 5,
+      "modes": [
+        "semi",
+        "auto",
+        "burst3"
+      ],
       "recoil": 10,
       "reload": 3.3,
       "reloadearly": 2.2,
-      "cap": 30,
-      "capplus": 1,
-      "mags": 7,
-      "magstart": 5,
+      "rpm": 600,
+      "scopes": [
+        25,
+        50,
+        100
+      ],
+      "source": "polar-pat",
+      "sourcepage": 1,
       "supply": 7,
-      "modes": ["semi", "auto", "burst3"],
-      "scopes": [25, 50, 100],
-      "attachments": ["flashlight"],
-      "attacks": [{"type": "projectile", "name": "Rifle_Rico"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_Rico"
+        }
+      ]
     },
     "BR-14 Adjudicator": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 30,
+      "capplus": 1,
       "category": "Assault Rifle",
-      "source": "demo-det",
-      "sourcepage": 1,
-      "rpm": 550,
+      "mags": 8,
+      "magstart": 6,
+      "modes": [
+        "semi",
+        "auto"
+      ],
       "recoil": 40,
       "reload": 3,
       "reloadearly": 1.7,
-      "cap": 30,
-      "capplus": 1,
-      "mags": 8,
-      "magstart": 6,
+      "rpm": 550,
+      "scopes": [
+        25,
+        50,
+        100
+      ],
+      "source": "demo-det",
+      "sourcepage": 1,
       "supply": 8,
-      "modes": ["semi", "auto"],
-      "scopes": [25, 50, 100],
-      "attachments": ["flashlight"],
-      "attacks": [{"type": "projectile", "name": "Battle_Rifle"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Battle_Rifle"
+        }
+      ]
     },
     "R-63 Diligence": {
+      "cap": 20,
+      "capplus": 1,
       "category": "Marksman Rifle",
-      "source": "hd-mobilize",
-      "sourcepage": 2,
-      "rpm": 350,
+      "mags": 8,
+      "magstart": 5,
+      "modes": [
+        "semi"
+      ],
       "recoil": 35,
       "reload": 3,
       "reloadearly": 1.9,
-      "cap": 20,
-      "capplus": 1,
-      "mags": 8,
-      "magstart": 5,
+      "rpm": 350,
+      "scopes": [
+        25,
+        75,
+        150
+      ],
+      "source": "hd-mobilize",
+      "sourcepage": 2,
       "supply": 8,
-      "modes": ["semi"],
-      "scopes": [25, 75, 150],
-      "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_fmj"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_9x70mm_fmj"
+        }
+      ]
     },
     "R-63CS Diligence Counter Sniper": {
+      "cap": 15,
+      "capplus": 1,
       "category": "Marksman Rifle",
-      "source": "hd-mobilize",
-      "sourcepage": 7,
-      "rpm": 350,
+      "mags": 6,
+      "magstart": 4,
+      "modes": [
+        "semi"
+      ],
       "recoil": 53,
       "reload": 3,
       "reloadearly": 1.9,
-      "cap": 15,
-      "capplus": 1,
-      "mags": 6,
-      "magstart": 4,
+      "rpm": 350,
+      "scopes": [
+        50,
+        100,
+        200
+      ],
+      "source": "hd-mobilize",
+      "sourcepage": 7,
       "supply": 6,
-      "modes": ["semi"],
-      "scopes": [50, 100, 200],
-      "attacks": [{"type": "projectile", "name": "Rifle_9x70mm_hv"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_9x70mm_hv"
+        }
+      ]
     },
     "MP-98 Knight": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 50,
+      "capplus": 1,
       "category": "Submachine Gun",
-      "source": "dlc-super",
-      "rpm": 1380,
+      "mags": 7,
+      "magstart": 5,
+      "modes": [
+        "semi",
+        "auto"
+      ],
       "recoil": 20,
       "reload": 2.5,
       "reloadearly": 1.8,
-      "cap": 50,
-      "capplus": 1,
-      "mags": 7,
-      "magstart": 5,
+      "rpm": 1380,
+      "source": "dlc-super",
       "supply": 5,
-      "tags": ["1h"],
-      "modes": ["semi", "auto"],
-      "attachments": ["flashlight"],
-      "attacks": [{"type": "projectile", "name": "Pistol_9x20mm_smj"}]
+      "tags": [
+        "1h"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Pistol_9x20mm_smj"
+        }
+      ]
     },
     "SMG-37 Defender": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 45,
+      "capplus": 1,
       "category": "Submachine Gun",
-      "source": "hd-mobilize",
-      "sourcepage": 3,
-      "rpm": 520,
+      "mags": 7,
+      "magstart": 5,
+      "modes": [
+        "semi",
+        "auto",
+        "burst3"
+      ],
       "recoil": 10,
       "reload": 2.8,
       "reloadearly": 2,
-      "cap": 45,
-      "capplus": 1,
-      "mags": 7,
-      "magstart": 5,
+      "rpm": 520,
+      "source": "hd-mobilize",
+      "sourcepage": 3,
       "supply": 7,
-      "tags": ["1h"],
-      "modes": ["semi", "auto", "burst3"],
-      "attachments": ["flashlight"],
-      "attacks": [{"type": "projectile", "name": "Pistol_12x25mm_fmj"}]
+      "tags": [
+        "1h"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Pistol_12x25mm_fmj"
+        }
+      ]
     },
     "SMG-72 Pummeler": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 45,
+      "capplus": 1,
       "category": "Submachine Gun",
-      "source": "polar-pat",
-      "sourcepage": 2,
-      "rpm": 475,
+      "mags": 7,
+      "magstart": 5,
+      "modes": [
+        "semi",
+        "auto",
+        "burst3"
+      ],
       "recoil": 10,
       "reload": 3,
       "reloadearly": 2.1,
-      "cap": 45,
-      "capplus": 1,
-      "mags": 7,
-      "magstart": 5,
+      "rpm": 475,
+      "source": "polar-pat",
+      "sourcepage": 2,
       "supply": 7,
-      "tags": ["1h"],
-      "modes": ["semi", "auto", "burst3"],
-      "attachments": ["flashlight"],
-      "attacks": [{"type": "projectile", "name": "Pistol_12x25mm_stun"}]
+      "tags": [
+        "1h"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Pistol_12x25mm_stun"
+        }
+      ]
     },
     "SG-8 Punisher": {
+      "cap": 16,
       "category": "Shotgun",
+      "recoil": 120,
+      "reload": 6.9,
+      "reloadone": 0.8,
+      "rounds": 60,
+      "roundstart": 32,
+      "roundsupply": 60,
+      "rpm": 80,
       "source": "hd-mobilize",
       "sourcepage": 1,
-      "rpm": 80,
-      "recoil": 120,
-      "reload": 6.9,
-      "reloadone": 0.8,
-      "cap": 16,
-      "rounds": 60,
-      "roundstart": 32,
-      "roundsupply": 60,
-      "tags": ["rounds"],
-      "attacks": [{"type": "projectile", "name": "Shotgun_10g_buc"}]
+      "tags": [
+        "rounds"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Shotgun_10g_buc"
+        }
+      ]
     },
     "SG-8S Slugger": {
+      "cap": 16,
       "category": "Shotgun",
-      "source": "hd-mobilize",
-      "sourcepage": 8,
-      "rpm": 80,
       "recoil": 120,
       "reload": 6.9,
       "reloadone": 0.8,
-      "cap": 16,
       "rounds": 60,
       "roundstart": 32,
       "roundsupply": 60,
-      "tags": ["rounds"],
-      "attacks": [{"type": "projectile", "name": "Shotgun_10g_slug"}]
+      "rpm": 80,
+      "source": "hd-mobilize",
+      "sourcepage": 8,
+      "tags": [
+        "rounds"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Shotgun_10g_slug"
+        }
+      ]
     },
     "SG-225 Breaker": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 13,
+      "capplus": 1,
       "category": "Shotgun",
-      "source": "hd-mobilize",
-      "sourcepage": 4,
-      "rpm": 300,
+      "mags": 7,
+      "magstart": 5,
+      "modes": [
+        "semi",
+        "auto"
+      ],
       "recoil": 55,
       "reload": 2.5,
       "reloadearly": 1.8,
-      "cap": 13,
-      "capplus": 1,
-      "mags": 7,
-      "magstart": 5,
+      "rpm": 300,
+      "source": "hd-mobilize",
+      "sourcepage": 4,
       "supply": 7,
-      "modes": ["semi", "auto"],
-      "attachments": ["flashlight"],
-      "attacks": [{"type": "projectile", "name": "Shotgun_12g_buc"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Shotgun_12g_buc"
+        }
+      ]
     },
     "SG-225SP Breaker Spray & Pray": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 26,
+      "capplus": 1,
       "category": "Shotgun",
-      "source": "hd-mobilize",
-      "sourcepage": 9,
-      "rpm": 330,
+      "mags": 8,
+      "magstart": 6,
+      "modes": [
+        "semi",
+        "auto"
+      ],
       "recoil": 45,
       "reload": 3,
       "reloadearly": 2.1,
-      "cap": 26,
-      "capplus": 1,
-      "mags": 8,
-      "magstart": 6,
+      "rpm": 330,
+      "source": "hd-mobilize",
+      "sourcepage": 9,
       "supply": 8,
-      "modes": ["semi", "auto"],
-      "attachments": ["flashlight"],
-      "attacks": [{"type": "projectile", "name": "Shotgun_12g_bir"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Shotgun_12g_bir"
+        }
+      ]
     },
     "SG-225IE Breaker Incendiary": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 25,
+      "capplus": 1,
       "category": "Shotgun",
-      "source": "steel-vets",
-      "sourcepage": 2,
-      "rpm": 300,
+      "mags": 6,
+      "magstart": 4,
+      "modes": [
+        "semi",
+        "burst3"
+      ],
       "recoil": 28,
       "reload": 2.5,
       "reloadearly": 1.8,
-      "cap": 25,
-      "capplus": 1,
-      "mags": 6,
-      "magstart": 4,
+      "rpm": 300,
+      "source": "steel-vets",
+      "sourcepage": 2,
       "supply": 6,
-      "tags": ["fire"],
-      "modes": ["semi", "burst3"],
-      "attachments": ["flashlight"],
-      "attacks": [{"type": "projectile", "name": "Shotgun_12g_flm"}]
+      "tags": [
+        "fire"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Shotgun_12g_flm"
+        }
+      ]
     },
     "CB-9 Exploding Crossbow": {
-      "category": "Explosive",
-      "source": "demo-det",
-      "sourcepage": 3,
-      "rpm": 50,
-      "recoil": 35,
-      "reload": 3.3,
       "cap": 5,
       "capplus": 1,
+      "category": "Explosive",
       "mags": 8,
       "magstart": 8,
+      "modes": [
+        "semi"
+      ],
+      "recoil": 35,
+      "reload": 3.3,
+      "rpm": 50,
+      "source": "demo-det",
+      "sourcepage": 3,
       "supply": 8,
-      "modes": ["semi"],
       "attacks": [
-        {"type": "projectile", "name": "Crossbow_Bolt_exp"},
-        {"type": "explosion", "name": "Crossbow_Bolt"}
+        {
+          "type": "projectile",
+          "name": "Crossbow_Bolt_exp"
+        },
+        {
+          "type": "explosion",
+          "name": "Crossbow_Bolt"
+        }
       ]
     },
     "JAR-5 Dominator": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 15,
+      "capplus": 1,
       "category": "Explosive",
-      "source": "steel-vets",
-      "sourcepage": 3,
-      "rpm": 250,
+      "mags": 6,
+      "magstart": 4,
+      "modes": [
+        "semi",
+        "burst3"
+      ],
       "recoil": 75,
       "reload": 3.8,
       "reloadearly": 2.6,
-      "cap": 15,
-      "capplus": 1,
-      "mags": 6,
-      "magstart": 4,
+      "rpm": 250,
+      "source": "steel-vets",
+      "sourcepage": 3,
       "supply": 6,
-      "tags": ["jet"],
-      "modes": ["semi", "burst3"],
-      "attachments": ["flashlight"],
-      "attacks": [{"type": "projectile", "name": "Rocket_15x100mm_std"}]
+      "tags": [
+        "jet"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rocket_15x100mm_std"
+        }
+      ]
     },
     "R-36 Eruptor": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 5,
+      "capplus": 1,
       "category": "Explosive",
-      "source": "demo-det",
-      "sourcepage": 2,
-      "rpm": 25,
+      "mags": 6,
+      "magstart": 6,
+      "modes": [
+        "semi"
+      ],
       "recoil": 75,
       "reload": 4.7,
       "reloadearly": 2.8,
-      "cap": 5,
-      "capplus": 1,
-      "mags": 6,
-      "magstart": 6,
+      "rpm": 25,
+      "scopes": [
+        50,
+        100,
+        200
+      ],
+      "source": "demo-det",
+      "sourcepage": 2,
       "supply": 6,
-      "tags": ["jet", "shrapnel"],
-      "scopes": [50, 100, 200],
-      "modes": ["semi"],
-      "attachments": ["flashlight"],
+      "tags": [
+        "jet",
+        "shrapnel"
+      ],
       "attacks": [
-        {"type": "projectile", "name": "Rocket_JarPhoenix_20mm"},
-        {"type": "explosion", "name": "JarPhoenix_20mm"}
+        {
+          "type": "projectile",
+          "name": "Rocket_JarPhoenix_20mm"
+        },
+        {
+          "type": "explosion",
+          "name": "JarPhoenix_20mm"
+        }
       ]
     },
     "SG-8P Punisher Plasma": {
-      "category": "Energy-Based",
-      "source": "cut-edge",
-      "sourcepage": 2,
-      "rpm": 80,
-      "recoil": 110,
-      "reload": 2.5,
       "cap": 8,
+      "category": "Energy-Based",
       "mags": 8,
       "magstart": 6,
+      "recoil": 110,
+      "reload": 2.5,
+      "rpm": 80,
+      "source": "cut-edge",
+      "sourcepage": 2,
       "supply": 8,
       "attacks": [
-        {"type": "projectile", "name": "Plasma_Punisher_Projectile"},
-        {"type": "explosion", "name": "Punisher_Plasma_Explosion"}
+        {
+          "type": "projectile",
+          "name": "Plasma_Punisher_Projectile"
+        },
+        {
+          "type": "explosion",
+          "name": "Punisher_Plasma_Explosion"
+        }
       ]
     },
     "ARC-12 Blitzer": {
       "category": "Energy-Based",
+      "modes": [
+        "semi"
+      ],
+      "recoil": 60,
+      "rpm": 45,
       "source": "cut-edge",
       "sourcepage": 3,
-      "rpm": 45,
-      "recoil": 60,
-      "tags": ["jet"],
-      "modes": ["semi"],
-      "attacks": [{"type": "arc", "name": "ArcShotgun", "count": 5}]
+      "tags": [
+        "jet"
+      ],
+      "attacks": [
+        {
+          "type": "arc",
+          "name": "ArcShotgun",
+          "count": 5
+        }
+      ]
     },
     "LAS-5 Scythe": {
       "category": "Energy-Based",
-      "source": "hd-mobilize",
-      "sourcepage": 5,
+      "limit": 8,
+      "mags": 4,
+      "magstart": 2,
+      "modes": [
+        "auto"
+      ],
       "recoil": 1,
       "reload": 1.8,
       "reloadearly": 3,
-      "mags": 4,
-      "magstart": 2,
+      "source": "hd-mobilize",
+      "sourcepage": 5,
       "supply": 4,
-      "limit": 8,
-      "tags": ["laser"],
-      "modes": ["auto"],
-      "attacks": [{"type": "beam", "name": "Medium"}]
+      "tags": [
+        "laser"
+      ],
+      "attacks": [
+        {
+          "type": "beam",
+          "name": "Medium"
+        }
+      ]
     },
     "LAS-16 Sickle": {
       "category": "Energy-Based",
-      "source": "cut-edge",
-      "sourcepage": 1,
-      "rpm": 750,
+      "limit": 7,
+      "mags": 3,
+      "magstart": 3,
+      "modes": [
+        "auto"
+      ],
       "recoil": 2,
       "reload": 2.1,
       "reloadearly": 3,
-      "mags": 3,
-      "magstart": 3,
+      "rpm": 750,
+      "scopes": [
+        25,
+        50,
+        100
+      ],
+      "source": "cut-edge",
+      "sourcepage": 1,
       "supply": 3,
-      "limit": 7,
-      "scopes": [25, 50, 100],
-      "modes": ["auto"],
-      "attacks": [{"type": "projectile", "name": "Laser_Long"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Laser_Long"
+        }
+      ]
     },
     "PLAS-1 Scorcher": {
+      "cap": 15,
       "category": "Energy-Based",
-      "source": "hd-mobilize",
-      "sourcepage": 10,
-      "rpm": 250,
+      "mags": 6,
+      "magstart": 3,
+      "modes": [
+        "semi"
+      ],
       "recoil": 20,
       "reload": 2.5,
       "reloadearly": 2.3,
-      "cap": 15,
-      "mags": 6,
-      "magstart": 3,
+      "rpm": 250,
+      "source": "hd-mobilize",
+      "sourcepage": 10,
       "supply": 6,
-      "modes": ["semi"],
       "attacks": [
-        {"type": "projectile", "name": "Plasma_Bolt_Medium"},
-        {"type": "explosion", "name": "Plasma_Bolt_Medium"}
+        {
+          "type": "projectile",
+          "name": "Plasma_Bolt_Medium"
+        },
+        {
+          "type": "explosion",
+          "name": "Plasma_Bolt_Medium"
+        }
       ]
     },
     "PLAS-101 Purifier": {
-      "category": "Energy-Based",
-      "source": "polar-pat",
-      "sourcepage": 3,
-      "recoil": 20,
-      "charge": 1.3,
-      "reload": 2.5,
       "cap": 15,
+      "category": "Energy-Based",
+      "charge": 1.3,
       "mags": 6,
       "magstart": 3,
+      "modes": [
+        "charge"
+      ],
+      "recoil": 20,
+      "reload": 2.5,
+      "source": "polar-pat",
+      "sourcepage": 3,
       "supply": 6,
-      "modes": ["charge"],
       "attacks": [
-        {"type": "projectile", "name": "Plasma_Rifle_Charge"},
-        {"type": "explosion", "name": "Plasma_Rifle_Charge"}
+        {
+          "type": "projectile",
+          "name": "Plasma_Rifle_Charge"
+        },
+        {
+          "type": "explosion",
+          "name": "Plasma_Rifle_Charge"
+        }
       ]
     },
     "SG-22 Bushwhacker": {
+      "cap": 3,
       "category": "Secondary Shotgun",
-      "source": "viper-commandos",
-      "sourcepage": 2,
-      "rpm": 650,
+      "modes": [
+        "semi",
+        "burst3"
+      ],
       "recoil": 170,
       "reload": 1.8,
       "reloadearly": 3,
-      "cap": 3,
       "rounds": 30,
       "roundstart": 30,
       "roundsupply": 30,
-      "modes": ["semi", "burst3"],
-      "tags": ["1h"],
-      "attacks": [{"type": "projectile", "name": "Shotgun_10g_buc"}]
+      "rpm": 650,
+      "source": "viper-commandos",
+      "sourcepage": 2,
+      "tags": [
+        "1h"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Shotgun_10g_buc"
+        }
+      ]
     },
     "P-2 Peacemaker": {
+      "attachments": [
+        "laser",
+        "flashlight"
+      ],
+      "cap": 15,
+      "capplus": 1,
       "category": "Pistol",
-      "source": "start",
-      "rpm": 900,
+      "mags": 5,
+      "magstart": 4,
+      "modes": [
+        "semi"
+      ],
       "recoil": 23,
       "reload": 1.8,
       "reloadearly": 1.4,
-      "cap": 15,
-      "capplus": 1,
-      "mags": 5,
-      "magstart": 4,
+      "rpm": 900,
+      "source": "start",
       "supply": 5,
-      "modes": ["semi"],
-      "attachments": ["laser", "flashlight"],
-      "tags": ["1h"],
-      "attacks": [{"type": "projectile", "name": "Pistol_9x20mm_hp"}]
+      "tags": [
+        "1h"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Pistol_9x20mm_hp"
+        }
+      ]
     },
     "P-19 Redeemer": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 31,
+      "capplus": 1,
       "category": "Pistol",
-      "source": "hd-mobilize",
-      "sourcepage": 2,
-      "rpm": 1100,
+      "mags": 4,
+      "magstart": 4,
+      "modes": [
+        "semi",
+        "auto"
+      ],
       "recoil": 15,
       "reload": 2.1,
       "reloadearly": 1.4,
-      "cap": 31,
-      "capplus": 1,
-      "mags": 4,
-      "magstart": 4,
+      "rpm": 1100,
+      "source": "hd-mobilize",
+      "sourcepage": 2,
       "supply": 4,
-      "modes": ["semi", "auto"],
-      "attachments": ["flashlight"],
-      "tags": ["1h"],
-      "attacks": [{"type": "projectile", "name": "Pistol_9x20mm_fmj"}]
+      "tags": [
+        "1h"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Pistol_9x20mm_fmj"
+        }
+      ]
     },
     "P-113 Verdict": {
+      "attachments": [
+        "laser",
+        "flashlight"
+      ],
+      "cap": 10,
+      "capplus": 1,
       "category": "Pistol",
-      "source": "polar-pat",
-      "sourcepage": 3,
-      "rpm": 450,
+      "mags": 8,
+      "magstart": 5,
+      "modes": [
+        "semi"
+      ],
       "recoil": 40,
       "reload": 2,
       "reloadearly": 1.4,
-      "cap": 10,
-      "capplus": 1,
-      "mags": 8,
-      "magstart": 5,
+      "rpm": 450,
+      "source": "polar-pat",
+      "sourcepage": 3,
       "supply": 4,
-      "modes": ["semi"],
-      "attachments": ["laser", "flashlight"],
-      "tags": ["1h"],
-      "attacks": [{"type": "projectile", "name": "Pistol_Magnum"}]
+      "tags": [
+        "1h"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Pistol_Magnum"
+        }
+      ]
     },
     "GP-31 Grenade Pistol": {
+      "cap": 1,
       "category": "Pistol",
-      "source": "demo-det",
-      "sourcepage": 3,
-      "rpm": 900,
+      "modes": [
+        "semi"
+      ],
       "recoil": 43,
       "reload": 2,
-      "cap": 1,
       "rounds": 8,
       "roundstart": 4,
       "roundsupply": 2,
-      "modes": ["semi"],
-      "tags": ["1h"],
+      "rpm": 900,
+      "source": "demo-det",
+      "sourcepage": 3,
+      "tags": [
+        "1h"
+      ],
       "attacks": [
-        {"type": "projectile", "name": "Grenade_40mm_HEAT"},
-        {"type": "explosion", "name": "Grenade_40mm_HE_MK2"}
+        {
+          "type": "projectile",
+          "name": "Grenade_40mm_HEAT"
+        },
+        {
+          "type": "explosion",
+          "name": "Grenade_40mm_HE_MK2"
+        }
       ]
     },
     "LAS-7 Dagger": {
       "category": "Pistol",
-      "source": "cut-edge",
-      "sourcepage": 3,
+      "limit": 5,
+      "mags": 3,
+      "magstart": 3,
+      "modes": [
+        "auto"
+      ],
       "recoil": 1,
       "reload": 1.8,
       "reloadearly": 2.3,
-      "mags": 3,
-      "magstart": 3,
+      "source": "cut-edge",
+      "sourcepage": 3,
       "supply": 3,
-      "limit": 5,
-      "modes": ["auto"],
-      "tags": ["1h"],
-      "attacks": [{"type": "beam", "name": "Small"}]
+      "tags": [
+        "1h"
+      ],
+      "attacks": [
+        {
+          "type": "beam",
+          "name": "Small"
+        }
+      ]
     },
     "P-4 Senator": {
+      "attachments": [
+        "flashlight"
+      ],
+      "cap": 6,
       "category": "Pistol",
-      "source": "steel-vets",
-      "sourcepage": 1,
-      "rpm": 200,
+      "modes": [
+        "semi"
+      ],
       "recoil": 43,
       "reload": 2.8,
       "reloadone": 2.2,
       "reloadx": 4.8,
       "reloadxnum": 5,
-      "cap": 6,
       "rounds": 40,
       "roundstart": 32,
       "roundsupply": 20,
-      "modes": ["semi"],
-      "attachments": ["flashlight"],
-      "tags": ["round", "1h"],
-      "attacks": [{"type": "projectile", "name": "Pistol_13x40mm_fmj"}]
+      "rpm": 200,
+      "source": "steel-vets",
+      "sourcepage": 1,
+      "tags": [
+        "round",
+        "1h"
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Pistol_13x40mm_fmj"
+        }
+      ]
     },
     "M-105 Stalwart": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "dlduul",
       "calltime": 3,
-      "cooldown": 480,
-      "rpm": 1150,
-      "reload": 5.8,
-      "reloadearly": 4.4,
       "cap": 250,
       "capplus": 1,
+      "category": "Support Weapon",
+      "cooldown": 480,
       "mags": 3,
       "magstart": 2,
+      "modes": [
+        "auto"
+      ],
+      "reload": 5.8,
+      "reloadearly": 4.4,
+      "rpm": 1150,
+      "rpms": [
+        700,
+        850,
+        1150
+      ],
+      "source": "support",
+      "stratcode": "dlduul",
       "supply": 2,
-      "modes": ["auto"],
-      "rpms": [700, 850, 1150],
-      "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_5p5x50mm_fmj"
+        }
+      ]
     },
     "MG-43 Machine Gun": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "dldur",
       "calltime": 3,
-      "cooldown": 480,
-      "rpm": 900,
-      "reload": 5,
-      "reloadearly": 4.2,
       "cap": 150,
       "capplus": 1,
+      "category": "Support Weapon",
+      "cooldown": 480,
       "mags": 3,
       "magstart": 2,
+      "modes": [
+        "auto"
+      ],
+      "reload": 5,
+      "reloadearly": 4.2,
+      "rpm": 900,
+      "rpms": [
+        630,
+        760,
+        900
+      ],
+      "source": "support",
+      "stratcode": "dldur",
       "supply": 1,
-      "modes": ["auto"],
-      "rpms": [630, 760, 900],
-      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_8x60mm_fmj"
+        }
+      ]
     },
     "MG-206 Heavy Machine Gun": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "dludd",
       "calltime": 3,
-      "cooldown": 480,
-      "rpm": 750,
-      "reload": 5.5,
-      "reloadearly": 3.9,
       "cap": 75,
       "capplus": 1,
+      "category": "Support Weapon",
+      "cooldown": 480,
       "mags": 2,
       "magstart": 1,
+      "modes": [
+        "auto"
+      ],
+      "reload": 5.5,
+      "reloadearly": 3.9,
+      "rpm": 750,
+      "rpms": [
+        450,
+        600,
+        750
+      ],
+      "source": "support",
+      "stratcode": "dludd",
       "supply": 2,
-      "modes": ["auto"],
-      "rpms": [450, 600, 750],
-      "attacks": [{"type": "projectile", "name": "Rifle_12p5x100mm_bchp"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_12p5x100mm_bchp"
+        }
+      ]
     },
     "ARC-3 Arc Thrower": {
+      "calltime": 3,
       "category": "Support Weapon",
+      "charge": 1,
+      "cooldown": 480,
+      "modes": [
+        "charge"
+      ],
+      "rpm": 60,
       "source": "support",
       "stratcode": "drdull",
-      "calltime": 3,
-      "cooldown": 480,
-      "rpm": 60,
-      "charge": 1,
-      "modes": ["charge"],
-      "attacks": [{"type": "arc", "name": "ArcThrower"}]
+      "attacks": [
+        {
+          "type": "arc",
+          "name": "ArcThrower"
+        }
+      ]
     },
     "FLAM-40 Flamethrower": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "dludu",
       "calltime": 3,
+      "category": "Support Weapon",
       "cooldown": 480,
-      "reload": 3.9,
+      "limit": 12.5,
       "mags": 4,
       "magstart": 3,
+      "modes": [
+        "auto"
+      ],
+      "reload": 3.9,
+      "source": "support",
+      "stratcode": "dludu",
       "supply": 4,
-      "limit": 12.5,
-      "tags": ["fire"],
-      "modes": ["auto"],
-      "attacks": [{"type": "damage", "name": "Projectile_Flamethrower"}]
+      "tags": [
+        "fire"
+      ],
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "Projectile_Flamethrower"
+        }
+      ]
     },
     "APW-1 Anti-Materiel Rifle": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "dlrud",
       "calltime": 3,
-      "cooldown": 480,
-      "rpm": 350,
-      "reload": 3.2,
-      "reloadearly": 2.6,
       "cap": 7,
       "capplus": 1,
+      "category": "Support Weapon",
+      "cooldown": 480,
       "mags": 6,
       "magstart": 4,
+      "modes": [
+        "semi"
+      ],
+      "reload": 3.2,
+      "reloadearly": 2.6,
+      "rpm": 350,
+      "scopes": [
+        50,
+        100,
+        200
+      ],
+      "source": "support",
+      "stratcode": "dlrud",
       "supply": 3,
-      "scopes": [50, 100, 200],
-      "modes": ["semi"],
-      "attacks": [{"type": "projectile", "name": "Rifle_12p5x100mm_eit"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_12p5x100mm_eit"
+        }
+      ]
     },
     "GL-21 Grenade Launcher": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "dluld",
       "calltime": 3,
-      "cooldown": 480,
-      "reload": 3.5,
-      "reloadearly": 3,
       "cap": 10,
       "capplus": 1,
+      "category": "Support Weapon",
+      "cooldown": 480,
       "mags": 2,
       "magstart": 1,
+      "modes": [
+        "semi"
+      ],
+      "reload": 3.5,
+      "reloadearly": 3,
+      "source": "support",
+      "stratcode": "dluld",
       "supply": 2,
-      "modes": ["semi"],
       "attacks": [
-        {"type": "projectile", "name": "Grenade_40mm_HE"},
-        {"type": "explosion", "name": "Grenade_40mm_HE"}
+        {
+          "type": "projectile",
+          "name": "Grenade_40mm_HE"
+        },
+        {
+          "type": "explosion",
+          "name": "Grenade_40mm_HE"
+        }
       ]
     },
     "AC-8 Autocannon": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "dlduur",
       "calltime": 3,
+      "cap": 10,
+      "category": "Support Weapon",
+      "clips": 10,
+      "clipsize": 5,
+      "clipstart": 10,
+      "clipsupply": 5,
       "cooldown": 480,
-      "rpm": 250,
+      "modes": [
+        "semi",
+        "auto"
+      ],
       "reload": 5.2,
       "reloadearly": 1.7,
-      "cap": 10,
-      "clips": 10,
-      "clipstart": 10,
-      "clipsize": 5,
-      "clipsupply": 5,
-      "modes": ["semi", "auto"],
+      "rpm": 250,
+      "source": "support",
+      "stratcode": "dlduur",
       "attacks": [
-        {"type": "projectile", "name": "Cannon_20mm_APHET"},
-        {"type": "explosion", "name": "APHET_20mm"}
+        {
+          "type": "projectile",
+          "name": "Cannon_20mm_APHET"
+        },
+        {
+          "type": "explosion",
+          "name": "APHET_20mm"
+        }
       ]
     },
     "RS-422 Railgun": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "drdulr",
       "calltime": 3,
-      "cooldown": 480,
-      "chargeearly": 0.5,
-      "charge": 3,
-      "chargefactor": 1.5,
-      "reload": 1.3,
       "cap": 1,
+      "category": "Support Weapon",
+      "charge": 3,
+      "chargeearly": 0.5,
+      "chargefactor": 1.5,
+      "cooldown": 480,
+      "modes": [
+        "charge",
+        "overcharge"
+      ],
+      "reload": 1.3,
       "rounds": 20,
       "roundstart": 10,
       "roundsupply": 10,
-      "modes": ["charge", "overcharge"],
-      "attacks": [{"type": "projectile", "name": "Railgun"}]
+      "source": "support",
+      "stratcode": "drdulr",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Railgun"
+        }
+      ]
     },
     "LAS-98 Laser Cannon": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "dldul",
       "calltime": 3,
+      "category": "Support Weapon",
       "cooldown": 480,
-      "reload": 3.6,
-      "reloadearly": 5,
+      "limit": 10,
       "mags": 1,
       "magstart": 1,
+      "modes": [
+        "auto"
+      ],
+      "reload": 3.6,
+      "reloadearly": 5,
+      "source": "support",
+      "stratcode": "dldul",
       "supply": 1,
-      "limit": 10,
-      "tags": ["laser"],
-      "modes": ["auto"],
-      "attacks": [{"type": "beam", "name": "LaserCannon"}]
+      "tags": [
+        "laser"
+      ],
+      "attacks": [
+        {
+          "type": "beam",
+          "name": "LaserCannon"
+        }
+      ]
     },
     "LAS-99 Quasar Cannon": {
+      "calltime": 3,
       "category": "Support Weapon",
+      "charge": 3.1,
+      "cooldown": 480,
+      "modes": [
+        "charge"
+      ],
+      "reload": 15,
       "source": "support",
       "stratcode": "ddulr",
-      "calltime": 3,
-      "cooldown": 480,
-      "charge": 3.1,
-      "reload": 15,
-      "modes": ["charge"],
       "attacks": [
-        {"type": "projectile", "name": "Laser_Pulse"},
-        {"type": "explosion", "name": "Laser_Pulse"}
+        {
+          "type": "projectile",
+          "name": "Laser_Pulse"
+        },
+        {
+          "type": "explosion",
+          "name": "Laser_Pulse"
+        }
       ]
     },
     "EAT-17 Expendable Anti-Tank": {
+      "calltime": 3,
+      "cap": 1,
       "category": "Support Weapon",
+      "cooldown": 70,
+      "modes": [
+        "semi"
+      ],
+      "rounds": 0,
       "source": "support",
       "stratcode": "ddlur",
-      "calltime": 3,
-      "cooldown": 70,
-      "cap": 1,
-      "rounds": 0,
-      "modes": ["semi"],
       "attacks": [
-        {"type": "projectile", "name": "Grenade_75mm_HEAT"},
-        {"type": "explosion", "name": "Grenade_75mm_HEAT"}
+        {
+          "type": "projectile",
+          "name": "Grenade_75mm_HEAT"
+        },
+        {
+          "type": "explosion",
+          "name": "Grenade_75mm_HEAT"
+        }
       ]
     },
     "MLS-4X Commando": {
+      "calltime": 3,
+      "cap": 4,
       "category": "Support Weapon",
+      "cooldown": 120,
+      "modes": [
+        "semi"
+      ],
+      "rounds": 0,
       "source": "support",
       "stratcode": "dludr",
-      "calltime": 3,
-      "cooldown": 120,
-      "cap": 4,
-      "rounds": 0,
-      "modes": ["semi"],
       "attacks": [
-        {"type": "projectile", "name": "Missile_66mm"},
-        {"type": "explosion", "name": "Missile_66mm"}
+        {
+          "type": "projectile",
+          "name": "Missile_66mm"
+        },
+        {
+          "type": "explosion",
+          "name": "Missile_66mm"
+        }
       ]
     },
     "GR-8 Recoilless Rifle": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "dlrrl",
       "calltime": 3,
-      "cooldown": 480,
-      "reload": 6,
       "cap": 1,
+      "category": "Support Weapon",
+      "cooldown": 480,
+      "modes": [
+        "semi"
+      ],
+      "reload": 6,
       "rounds": 5,
       "roundstart": 5,
       "roundsupply": 3,
-      "modes": ["semi"],
+      "source": "support",
+      "stratcode": "dlrrl",
       "attacks": [
-        {"type": "projectile", "name": "Grenade_85mm_HEAT"},
-        {"type": "explosion", "name": "Grenade_85mm_HEAT"}
+        {
+          "type": "projectile",
+          "name": "Grenade_85mm_HEAT"
+        },
+        {
+          "type": "explosion",
+          "name": "Grenade_85mm_HEAT"
+        }
       ]
     },
     "FAF-14 Spear": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "ddudd",
       "calltime": 3,
-      "cooldown": 480,
-      "reload": 5,
       "cap": 1,
+      "category": "Support Weapon",
+      "cooldown": 480,
+      "modes": [
+        "lockon"
+      ],
+      "reload": 5,
       "rounds": 3,
       "roundstart": 3,
       "roundsupply": 2,
-      "modes": ["lockon"],
+      "source": "support",
+      "stratcode": "ddudd",
       "attacks": [
-        {"type": "projectile", "name": "Missile_Faf"},
-        {"type": "explosion", "name": "FafMissile"}
+        {
+          "type": "projectile",
+          "name": "Missile_Faf"
+        },
+        {
+          "type": "explosion",
+          "name": "FafMissile"
+        }
       ]
     },
     "RL-77 Airburst Rocket Launcher": {
-      "category": "Support Weapon",
-      "source": "support",
-      "stratcode": "duulr",
       "calltime": 3,
-      "cooldown": 480,
-      "reload": 6.7,
       "cap": 1,
+      "category": "Support Weapon",
+      "cooldown": 480,
+      "modes": [
+        "semi"
+      ],
+      "reload": 6.7,
       "rounds": 5,
       "roundstart": 5,
       "roundsupply": 3,
-      "modes": ["semi"],
+      "source": "support",
+      "stratcode": "duulr",
       "attacks": [
-        {"type": "projectile", "name": "Grenade_85mm_AirburstCluster"},
-        {"type": "explosion", "name": "AirburstCluster"},
-        {"type": "projectile", "name": "AirburstCluster_Bomb", "count": 25},
-        {"type": "explosion", "name": "AirburstCluster_Bomb", "count": 25}
+        {
+          "type": "projectile",
+          "name": "Grenade_85mm_AirburstCluster"
+        },
+        {
+          "type": "explosion",
+          "name": "AirburstCluster"
+        },
+        {
+          "type": "projectile",
+          "name": "AirburstCluster_Bomb",
+          "count": 25
+        },
+        {
+          "type": "explosion",
+          "name": "AirburstCluster_Bomb",
+          "count": 25
+        }
       ]
     },
     "Break-Action Shotgun": {
+      "cap": 2,
       "category": "Support Weapon",
-      "source": "support",
-      "rpm": 450,
+      "modes": [
+        "semi",
+        "burst2"
+      ],
       "reload": 2.4,
       "reloadone": 2.3,
-      "cap": 2,
       "rounds": 40,
       "roundstart": 0,
       "roundsupply": 20,
-      "modes": ["semi", "burst2"],
-      "attacks": [{"type": "projectile", "name": "Shotgun_10g_mag"}]
+      "rpm": 450,
+      "source": "support",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Shotgun_10g_mag"
+        }
+      ]
     },
     "G-6 Frag": {
       "category": "Standard Grenade",
-      "source": "hd-mobilize",
-      "sourcepage": 1,
       "rounds": 4,
+      "roundsbox": 4,
       "roundstart": 3,
       "roundsupply": 2,
-      "roundsbox": 4,
+      "source": "hd-mobilize",
+      "sourcepage": 1,
       "attacks": [
-        {"type": "explosion", "name": "Frag"},
-        {"type": "projectile", "name": "Shrapnel", "count": 30}
+        {
+          "type": "explosion",
+          "name": "Frag"
+        },
+        {
+          "type": "projectile",
+          "name": "Shrapnel",
+          "count": 30
+        }
       ]
     },
     "G-12 High Explosive": {
       "category": "Standard Grenade",
-      "source": "start",
       "rounds": 4,
+      "roundsbox": 4,
       "roundstart": 3,
       "roundsupply": 2,
-      "roundsbox": 4,
-      "attacks": [{"type": "explosion", "name": "HighExplosive"}]
+      "source": "start",
+      "attacks": [
+        {
+          "type": "explosion",
+          "name": "HighExplosive"
+        }
+      ]
     },
     "G-10 Incendiary": {
       "category": "Standard Grenade",
-      "source": "steel-vets",
-      "sourcepage": 2,
       "rounds": 4,
+      "roundsbox": 4,
       "roundstart": 3,
       "roundsupply": 2,
-      "roundsbox": 4,
-      "attacks": [{"type": "explosion", "name": "Incendiary"}]
+      "source": "steel-vets",
+      "sourcepage": 2,
+      "attacks": [
+        {
+          "type": "explosion",
+          "name": "Incendiary"
+        }
+      ]
     },
     "G-16 Impact": {
       "category": "Special Throwable",
-      "source": "start",
       "rounds": 4,
+      "roundsbox": 4,
       "roundstart": 3,
       "roundsupply": 2,
-      "roundsbox": 4,
-      "attacks": [{"type": "explosion", "name": "Impact"}]
+      "source": "start",
+      "attacks": [
+        {
+          "type": "explosion",
+          "name": "Impact"
+        }
+      ]
     },
     "G-13 Incendiary Impact": {
       "category": "Special Throwable",
-      "source": "polar-pat",
-      "sourcepage": 2,
       "rounds": 4,
+      "roundsbox": 4,
       "roundstart": 3,
       "roundsupply": 2,
-      "roundsbox": 4,
-      "attacks": [{"type": "explosion", "name": "Incendiary"}]
+      "source": "polar-pat",
+      "sourcepage": 2,
+      "attacks": [
+        {
+          "type": "explosion",
+          "name": "Incendiary"
+        }
+      ]
     },
     "G-23 Stun": {
       "category": "Special Throwable",
-      "source": "cut-edge",
-      "sourcepage": 2,
       "rounds": 4,
+      "roundsbox": 4,
       "roundstart": 3,
       "roundsupply": 2,
-      "roundsbox": 4,
-      "attacks": [{"type": "explosion", "name": "Flash"}]
+      "source": "cut-edge",
+      "sourcepage": 2,
+      "attacks": [
+        {
+          "type": "explosion",
+          "name": "Flash"
+        }
+      ]
     },
     "G-3 Smoke": {
       "category": "Special Throwable",
-      "source": "hd-mobilize",
-      "sourcepage": 8,
       "rounds": 4,
+      "roundsbox": 4,
       "roundstart": 3,
       "roundsupply": 2,
-      "roundsbox": 4,
+      "source": "hd-mobilize",
+      "sourcepage": 8,
       "attacks": []
     },
     "G-123 Thermite": {
       "category": "Special Throwable",
-      "source": "demo-det",
-      "sourcepage": 1,
       "rounds": 4,
+      "roundsbox": 4,
       "roundstart": 3,
       "roundsupply": 2,
-      "roundsbox": 4,
+      "source": "demo-det",
+      "sourcepage": 1,
       "attacks": [
-        {"type": "explosion", "name": "Thermite"},
-        {"type": "damage", "name": "DPS_Thermite"}
+        {
+          "type": "explosion",
+          "name": "Thermite"
+        },
+        {
+          "type": "damage",
+          "name": "DPS_Thermite"
+        }
       ]
     },
     "K-2 Throwing Knife": {
       "category": "Special Throwable",
-      "source": "viper-commandos",
-      "sourcepage": 3,
       "rounds": 8,
+      "roundsbox": 8,
       "roundstart": 6,
       "roundsupply": 8,
-      "roundsbox": 8,
-      "attacks": [{"type": "damage", "name": "Impact_Throwing_Knife"}]
+      "source": "viper-commandos",
+      "sourcepage": 3,
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "Impact_Throwing_Knife"
+        }
+      ]
     },
     "Melee": {
       "category": "Ability",
-      "attacks": [{"type": "damage", "name": "Ability_Avatar_Melee"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "Ability_Avatar_Melee"
+        }
+      ]
     },
     "Status Effects#Bleed": {
       "category": "Status Effect",
-      "attacks": [{"type": "damage", "name": "DPS_Avatar_Bleed"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_Avatar_Bleed"
+        }
+      ]
     },
     "Status Effects#Fire": {
       "category": "Status Effect",
-      "attacks": [{"type": "damage", "name": "DPS_Fire"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_Fire"
+        }
+      ]
     },
     "Status Effects#Acid Splash": {
       "category": "Status Effect",
-      "attacks": [{"type": "damage", "name": "DPS_Acid_Splash"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_Acid_Splash"
+        }
+      ]
     },
     "Status Effects#Acid Stream": {
       "category": "Status Effect",
-      "attacks": [{"type": "damage", "name": "DPS_Acid_Stream"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_Acid_Stream"
+        }
+      ]
     },
     "Status Effects#Thermite": {
       "category": "Status Effect",
-      "attacks": [{"type": "damage", "name": "DPS_Thermite"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_Thermite"
+        }
+      ]
     },
     "Status Effects#Cyborg Fire": {
       "category": "Status Effect",
-      "attacks": [{"type": "damage", "name": "DPS_Cyborg_Fire"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_Cyborg_Fire"
+        }
+      ]
     },
     "Status Effects#Thornbush": {
       "category": "Status Effect",
-      "attacks": [{"type": "damage", "name": "DPS_Thornbush"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_Thornbush"
+        }
+      ]
     },
     "Status Effects#Pure Damage": {
       "category": "Status Effect",
-      "attacks": [{"type": "damage", "name": "DPS_Pure_Damage"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_Pure_Damage"
+        }
+      ]
     },
     "Status Effects#Gas": {
       "category": "Status Effect",
-      "attacks": [{"type": "damage", "name": "DPS_Gas"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_Gas"
+        }
+      ]
     },
     "Patriot Gatling Gun": {
+      "cap": 1000,
       "category": "Mounted Weapon",
       "rpm": 1200,
-      "cap": 1000,
-      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_8x60mm_fmj"
+        }
+      ]
     },
     "Patriot Rocket Pod": {
-      "category": "Mounted Weapon",
       "cap": 15,
+      "category": "Mounted Weapon",
       "rpm": 90,
       "attacks": [
-        {"type": "projectile", "name": "Missile_Combat_Walker"},
-        {"type": "explosion", "name": "Combat_Walker_Missile"}
+        {
+          "type": "projectile",
+          "name": "Missile_Combat_Walker"
+        },
+        {
+          "type": "explosion",
+          "name": "Combat_Walker_Missile"
+        }
       ]
     },
     "Emancipator Twin Autocannon": {
-      "category": "Mounted Weapon",
       "cap": 75,
+      "category": "Mounted Weapon",
       "rpm": 120,
       "attacks": [
-        {"type": "projectile", "name": "Cannon_30mm_APHE"},
-        {"type": "explosion", "name": "APHE_30mm"}
+        {
+          "type": "projectile",
+          "name": "Cannon_30mm_APHE"
+        },
+        {
+          "type": "explosion",
+          "name": "APHE_30mm"
+        }
       ]
     },
     "B-1 Supply Pack": {
@@ -17843,7 +18471,12 @@
       "rpm": 640,
       "cap": 30,
       "salvos": 6,
-      "attacks": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_5p5x50mm_fmj"
+        }
+      ]
     },
     "AX/LAS-5 \"Guard Dog\" Rover": {
       "stratcode": "dulurr",
@@ -17851,7 +18484,12 @@
       "armor": 4,
       "calltime": 5,
       "cooldown": 480,
-      "attacks": [{"type": "beam", "name": "MediumDrone"}]
+      "attacks": [
+        {
+          "type": "beam",
+          "name": "MediumDrone"
+        }
+      ]
     },
     "SH-20 Ballistic Shield stratagem": {
       "stratcode": "dlddul",
@@ -17896,8 +18534,14 @@
       "calltime": 3,
       "cooldown": 180,
       "attacks": [
-        {"type": "projectile", "name": "ContactMine"},
-        {"type": "explosion", "name": "ContactMine"}
+        {
+          "type": "projectile",
+          "name": "ContactMine"
+        },
+        {
+          "type": "explosion",
+          "name": "ContactMine"
+        }
       ]
     },
     "MD-17 Anti-Tank Mines": {
@@ -17908,8 +18552,14 @@
       "calltime": 3,
       "cooldown": 180,
       "attacks": [
-        {"type": "projectile", "name": "ContactMine"},
-        {"type": "explosion", "name": "AntiTankMine"}
+        {
+          "type": "projectile",
+          "name": "ContactMine"
+        },
+        {
+          "type": "explosion",
+          "name": "AntiTankMine"
+        }
       ]
     },
     "MD-I4 Incendiary Mines": {
@@ -17920,8 +18570,14 @@
       "calltime": 3,
       "cooldown": 180,
       "attacks": [
-        {"type": "projectile", "name": "ContactMine"},
-        {"type": "explosion", "name": "IncendiaryMine"}
+        {
+          "type": "projectile",
+          "name": "ContactMine"
+        },
+        {
+          "type": "explosion",
+          "name": "IncendiaryMine"
+        }
       ]
     },
     "A/MG-43 Machine Gun Sentry": {
@@ -17932,7 +18588,12 @@
       "cooldown": 120,
       "rpm": 660,
       "cap": 130,
-      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_8x60mm_fmj"
+        }
+      ]
     },
     "A/G-16 Gatling Sentry": {
       "stratcode": "durl",
@@ -17942,7 +18603,12 @@
       "cooldown": 180,
       "rpm": 1560,
       "cap": 390,
-      "attacks": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_8x60mm_fmj"
+        }
+      ]
     },
     "E/MG-101 HMG Emplacement": {
       "stratcode": "dulrrl",
@@ -17952,7 +18618,12 @@
       "cooldown": 180,
       "rpm": 660,
       "cap": 300,
-      "attacks": [{"type": "projectile", "name": "Rifle_12p5x100mm_fmj"}]
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_12p5x100mm_fmj"
+        }
+      ]
     },
     "A/M-12 Mortar Sentry": {
       "stratcode": "durrd",
@@ -17963,8 +18634,14 @@
       "rpm": 32,
       "cap": 36,
       "attacks": [
-        {"type": "projectile", "name": "Grenade_Mortar_40mm_HE"},
-        {"type": "explosion", "name": "Grenade_Mortar_40mm_HE"}
+        {
+          "type": "projectile",
+          "name": "Grenade_Mortar_40mm_HE"
+        },
+        {
+          "type": "explosion",
+          "name": "Grenade_Mortar_40mm_HE"
+        }
       ]
     },
     "A/M-23 EMS Mortar Sentry": {
@@ -17976,9 +18653,18 @@
       "rpm": 10,
       "cap": 15,
       "attacks": [
-        {"type": "projectile", "name": "Grenade_Mortar_40mm_Staticfield"},
-        {"type": "explosion", "name": "StaticField_Sentry"},
-        {"type": "explosion", "name": "Grenade_Mortar_40mm_Staticfield"}
+        {
+          "type": "projectile",
+          "name": "Grenade_Mortar_40mm_Staticfield"
+        },
+        {
+          "type": "explosion",
+          "name": "StaticField_Sentry"
+        },
+        {
+          "type": "explosion",
+          "name": "Grenade_Mortar_40mm_Staticfield"
+        }
       ]
     },
     "A/MLS-4X Rocket Sentry": {
@@ -17989,8 +18675,14 @@
       "cooldown": 180,
       "cap": 32,
       "attacks": [
-        {"type": "projectile", "name": "Rocket_70mm_turret"},
-        {"type": "explosion", "name": "Rocket_70mm_turret"}
+        {
+          "type": "projectile",
+          "name": "Rocket_70mm_turret"
+        },
+        {
+          "type": "explosion",
+          "name": "Rocket_70mm_turret"
+        }
       ]
     },
     "A/AC-8 Autocannon Sentry": {
@@ -18001,8 +18693,14 @@
       "cooldown": 180,
       "cap": 24,
       "attacks": [
-        {"type": "projectile", "name": "Cannon_40mm_APHE"},
-        {"type": "explosion", "name": "APHE_40mm"}
+        {
+          "type": "projectile",
+          "name": "Cannon_40mm_APHE"
+        },
+        {
+          "type": "explosion",
+          "name": "APHE_40mm"
+        }
       ]
     },
     "A/ARC-3 Tesla Tower": {
@@ -18011,7 +18709,12 @@
       "armor": 1,
       "calltime": 3,
       "cooldown": 150,
-      "attacks": [{"type": "arc", "name": "TeslaTurret"}]
+      "attacks": [
+        {
+          "type": "arc",
+          "name": "TeslaTurret"
+        }
+      ]
     },
     "Orbital Precision Strike": {
       "stratcode": "rru",
@@ -18019,8 +18722,14 @@
       "cooldown": 90,
       "salvos": 1,
       "attacks": [
-        {"type": "projectile", "name": "Orbital_Precision_Strike"},
-        {"type": "explosion", "name": "PrecisionStrike"}
+        {
+          "type": "projectile",
+          "name": "Orbital_Precision_Strike"
+        },
+        {
+          "type": "explosion",
+          "name": "PrecisionStrike"
+        }
       ]
     },
     "Orbital Gas Strike": {
@@ -18029,8 +18738,14 @@
       "cooldown": 75,
       "salvos": 1,
       "attacks": [
-        {"type": "projectile", "name": "Orbital_Gas"},
-        {"type": "explosion", "name": "OrbitalGas"}
+        {
+          "type": "projectile",
+          "name": "Orbital_Gas"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalGas"
+        }
       ]
     },
     "Orbital Smoke Strike": {
@@ -18046,10 +18761,24 @@
       "cooldown": 100,
       "salvos": 3,
       "attacks": [
-        {"type": "projectile", "name": "Orbital_Cannon_110mm"},
-        {"type": "explosion", "name": "OrbitalShot"},
-        {"type": "projectile", "name": "Shrapnel_Heavy", "count": 12},
-        {"type": "explosion", "name": "HeavyShrapnel", "count": 12}
+        {
+          "type": "projectile",
+          "name": "Orbital_Cannon_110mm"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalShot"
+        },
+        {
+          "type": "projectile",
+          "name": "Shrapnel_Heavy",
+          "count": 12
+        },
+        {
+          "type": "explosion",
+          "name": "HeavyShrapnel",
+          "count": 12
+        }
       ]
     },
     "Orbital EMS Strike": {
@@ -18058,8 +18787,14 @@
       "cooldown": 75,
       "salvos": 1,
       "attacks": [
-        {"type": "projectile", "name": "Orbital_Stunround"},
-        {"type": "explosion", "name": "OrbitalStun"}
+        {
+          "type": "projectile",
+          "name": "Orbital_Stunround"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalStun"
+        }
       ]
     },
     "Orbital Gatling Barrage": {
@@ -18069,8 +18804,14 @@
       "salvos": 4,
       "cap": 60,
       "attacks": [
-        {"type": "projectile", "name": "Cannon_Eagle_23mm"},
-        {"type": "explosion", "name": "Cannon_23mm_silent"}
+        {
+          "type": "projectile",
+          "name": "Cannon_Eagle_23mm"
+        },
+        {
+          "type": "explosion",
+          "name": "Cannon_23mm_silent"
+        }
       ]
     },
     "Orbital 120mm HE Barrage": {
@@ -18080,8 +18821,14 @@
       "salvos": 5,
       "cap": 3,
       "attacks": [
-        {"type": "projectile", "name": "Orbital_Cannon_120mm_HE"},
-        {"type": "explosion", "name": "OrbitalStrike"}
+        {
+          "type": "projectile",
+          "name": "Orbital_Cannon_120mm_HE"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalStrike"
+        }
       ]
     },
     "Orbital 380mm HE Barrage": {
@@ -18091,8 +18838,14 @@
       "salvos": 5,
       "cap": 3,
       "attacks": [
-        {"type": "projectile", "name": "Orbital_Cannon_380mm_HE"},
-        {"type": "explosion", "name": "OrbitalBarrage"}
+        {
+          "type": "projectile",
+          "name": "Orbital_Cannon_380mm_HE"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalBarrage"
+        }
       ]
     },
     "Orbital Walking Barrage": {
@@ -18102,8 +18855,14 @@
       "salvos": 3,
       "cap": 3,
       "attacks": [
-        {"type": "projectile", "name": "Orbital_Cannon_380mm_HE"},
-        {"type": "explosion", "name": "OrbitalBarrage"}
+        {
+          "type": "projectile",
+          "name": "Orbital_Cannon_380mm_HE"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalBarrage"
+        }
       ]
     },
     "Orbital Laser": {
@@ -18112,7 +18871,12 @@
       "cooldown": 300,
       "uses": 3,
       "limit": 25,
-      "attacks": [{"type": "damage", "name": "DPS_BeamHuge"}]
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_BeamHuge"
+        }
+      ]
     },
     "Orbital Railcannon Strike": {
       "stratcode": "ruddr",
@@ -18120,8 +18884,14 @@
       "cooldown": 210,
       "salvos": 1,
       "attacks": [
-        {"type": "projectile", "name": "Orbital_Railcannon"},
-        {"type": "explosion", "name": "Railcannon_Impact"}
+        {
+          "type": "projectile",
+          "name": "Orbital_Railcannon"
+        },
+        {
+          "type": "explosion",
+          "name": "Railcannon_Impact"
+        }
       ]
     },
     "Eagle Airstrike": {
@@ -18130,8 +18900,14 @@
       "eaglestock": 2,
       "cap": 6,
       "attacks": [
-        {"type": "projectile", "name": "Bomb_100kg"},
-        {"type": "explosion", "name": "EagleBomb_100kg"}
+        {
+          "type": "projectile",
+          "name": "Bomb_100kg"
+        },
+        {
+          "type": "explosion",
+          "name": "EagleBomb_100kg"
+        }
       ]
     },
     "Eagle Napalm Airstrike": {
@@ -18140,8 +18916,14 @@
       "eaglestock": 2,
       "cap": 4,
       "attacks": [
-        {"type": "projectile", "name": "Bomb_Napalm"},
-        {"type": "explosion", "name": "EagleBomb_Napalm"}
+        {
+          "type": "projectile",
+          "name": "Bomb_Napalm"
+        },
+        {
+          "type": "explosion",
+          "name": "EagleBomb_Napalm"
+        }
       ]
     },
     "Eagle 500kg Bomb": {
@@ -18150,9 +18932,18 @@
       "eaglestock": 1,
       "cap": 1,
       "attacks": [
-        {"type": "projectile", "name": "Bomb_500kg"},
-        {"type": "explosion", "name": "500kg_Initial_Impact"},
-        {"type": "explosion", "name": "EagleBomb_500kg"}
+        {
+          "type": "projectile",
+          "name": "Bomb_500kg"
+        },
+        {
+          "type": "explosion",
+          "name": "500kg_Initial_Impact"
+        },
+        {
+          "type": "explosion",
+          "name": "EagleBomb_500kg"
+        }
       ]
     },
     "Eagle Strafing Run": {
@@ -18161,8 +18952,14 @@
       "eaglestock": 4,
       "rpm": 4000,
       "attacks": [
-        {"type": "projectile", "name": "Cannon_Eagle_23mm"},
-        {"type": "explosion", "name": "Cannon_23mm_silent"}
+        {
+          "type": "projectile",
+          "name": "Cannon_Eagle_23mm"
+        },
+        {
+          "type": "explosion",
+          "name": "Cannon_23mm_silent"
+        }
       ]
     },
     "Eagle Cluster Bomb": {
@@ -18171,10 +18968,24 @@
       "eaglestock": 4,
       "cap": 8,
       "attacks": [
-        {"type": "projectile", "name": "ClusterBomb_100kg"},
-        {"type": "explosion", "name": "ClusterBomb"},
-        {"type": "projectile", "name": "ClusterBomb_Bomb", "count": 8},
-        {"type": "explosion", "name": "HeavyShrapnel_Clusterbombs", "count": 8}
+        {
+          "type": "projectile",
+          "name": "ClusterBomb_100kg"
+        },
+        {
+          "type": "explosion",
+          "name": "ClusterBomb"
+        },
+        {
+          "type": "projectile",
+          "name": "ClusterBomb_Bomb",
+          "count": 8
+        },
+        {
+          "type": "explosion",
+          "name": "HeavyShrapnel_Clusterbombs",
+          "count": 8
+        }
       ]
     },
     "Eagle 110mm Rocket Pods": {
@@ -18183,8 +18994,14 @@
       "eaglestock": 2,
       "cap": 6,
       "attacks": [
-        {"type": "projectile", "name": "Rocket_110mm"},
-        {"type": "explosion", "name": "Rocket_110mm"}
+        {
+          "type": "projectile",
+          "name": "Rocket_110mm"
+        },
+        {
+          "type": "explosion",
+          "name": "Rocket_110mm"
+        }
       ]
     },
     "Eagle Smoke Strike": {
@@ -18193,8 +19010,14 @@
       "eaglestock": 2,
       "cap": 8,
       "attacks": [
-        {"type": "projectile", "name": "Bomb_Smoke"},
-        {"type": "explosion", "name": "OrbitalSmoke"}
+        {
+          "type": "projectile",
+          "name": "Bomb_Smoke"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalSmoke"
+        }
       ]
     },
     "EXO-45 Patriot Exosuit": {
@@ -18204,10 +19027,22 @@
       "cooldown": 600,
       "uses": 2,
       "attacks": [
-        {"type": "weapon", "name": "Patriot Gatling Gun"},
-        {"type": "weapon", "name": "Patriot Rocket Pod"},
-        {"type": "damage", "name": "Ability_Cyborg_Lieutenant_Stomp"},
-        {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"}
+        {
+          "type": "weapon",
+          "name": "Patriot Gatling Gun"
+        },
+        {
+          "type": "weapon",
+          "name": "Patriot Rocket Pod"
+        },
+        {
+          "type": "damage",
+          "name": "Ability_Cyborg_Lieutenant_Stomp"
+        },
+        {
+          "type": "explosion",
+          "name": "Vehicle_Explosion_CombatWalker"
+        }
       ]
     },
     "EXO-49 Emancipator Exosuit": {
@@ -18217,25 +19052,50 @@
       "cooldown": 600,
       "uses": 2,
       "attacks": [
-        {"type": "weapon", "name": "Emancipator Twin Autocannon", "count": 2},
-        {"type": "damage", "name": "Ability_Cyborg_Lieutenant_Stomp"},
-        {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"}
+        {
+          "type": "weapon",
+          "name": "Emancipator Twin Autocannon",
+          "count": 2
+        },
+        {
+          "type": "damage",
+          "name": "Ability_Cyborg_Lieutenant_Stomp"
+        },
+        {
+          "type": "explosion",
+          "name": "Vehicle_Explosion_CombatWalker"
+        }
       ]
     },
-    "Eagle Rearm": {"stratcode": "uulur", "cooldown": 150, "attacks": []},
+    "Eagle Rearm": {
+      "stratcode": "uulur",
+      "cooldown": 150,
+      "attacks": []
+    },
     "NUX-223 Hellbomb": {
       "stratcode": "duldurdu",
       "calltime": 5,
       "cooldown": 30,
-      "attacks": [{"type": "explosion", "name": "Hellbomb"}]
+      "attacks": [
+        {
+          "type": "explosion",
+          "name": "Hellbomb"
+        }
+      ]
     },
     "SEAF Artillery#Explosive": {
       "stratcode": "ruud",
       "calltime": 0,
       "cooldown": 15,
       "attacks": [
-        {"type": "projectile", "name": "SEAF_Gun_Explosive"},
-        {"type": "explosion", "name": "SEAF_Gun_Explosive"}
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_Explosive"
+        },
+        {
+          "type": "explosion",
+          "name": "SEAF_Gun_Explosive"
+        }
       ]
     },
     "SEAF Artillery#High Yield Explosive": {
@@ -18243,8 +19103,14 @@
       "calltime": 0,
       "cooldown": 15,
       "attacks": [
-        {"type": "projectile", "name": "SEAF_Gun_High_Yield_Explosive"},
-        {"type": "explosion", "name": "SEAF_Gun_High_Yield_Explosive"}
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_High_Yield_Explosive"
+        },
+        {
+          "type": "explosion",
+          "name": "SEAF_Gun_High_Yield_Explosive"
+        }
       ]
     },
     "SEAF Artillery#Mini Nuke": {
@@ -18252,8 +19118,14 @@
       "calltime": 0,
       "cooldown": 15,
       "attacks": [
-        {"type": "projectile", "name": "SEAF_Gun_Mini_Nuke"},
-        {"type": "explosion", "name": "SEAF_Gun_Mini_Nuke"}
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_Mini_Nuke"
+        },
+        {
+          "type": "explosion",
+          "name": "SEAF_Gun_Mini_Nuke"
+        }
       ]
     },
     "SEAF Artillery#Smoke": {
@@ -18261,8 +19133,14 @@
       "calltime": 0,
       "cooldown": 15,
       "attacks": [
-        {"type": "projectile", "name": "SEAF_Gun_Smoke"},
-        {"type": "explosion", "name": "SEAF_Gun_Smoke"}
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_Smoke"
+        },
+        {
+          "type": "explosion",
+          "name": "SEAF_Gun_Smoke"
+        }
       ]
     },
     "SEAF Artillery#Napalm": {
@@ -18270,8 +19148,14 @@
       "calltime": 0,
       "cooldown": 15,
       "attacks": [
-        {"type": "projectile", "name": "SEAF_Gun_Napalm"},
-        {"type": "explosion", "name": "SEAF_Gun_Napalm"}
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_Napalm"
+        },
+        {
+          "type": "explosion",
+          "name": "SEAF_Gun_Napalm"
+        }
       ]
     },
     "SEAF Artillery#Static Field": {
@@ -18279,8 +19163,14 @@
       "calltime": 0,
       "cooldown": 15,
       "attacks": [
-        {"type": "projectile", "name": "SEAF_Gun_EMP"},
-        {"type": "explosion", "name": "SEAF_Gun_EMP"}
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_EMP"
+        },
+        {
+          "type": "explosion",
+          "name": "SEAF_Gun_EMP"
+        }
       ]
     }
   },
