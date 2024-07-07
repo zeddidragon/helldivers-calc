@@ -17752,7 +17752,12 @@
       "cooldown": 120,
       "cap": 4,
       "rounds": 0,
-      "modes": ["semi"],
+      "modes": ["Single"],
+      "supply": 6,
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 0, "y": 0},
+      "ergonomics": 10,
+      "rpm": 240,
       "attacks": [
         {"type": "projectile", "name": "Missile_66mm"},
         {"type": "explosion", "name": "Missile_66mm"}

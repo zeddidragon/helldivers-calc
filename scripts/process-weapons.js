@@ -204,6 +204,14 @@ for(const wpn of wps) {
   }
 }
 
+wps = wps.map(wpn => {
+  const obj = {}
+  for(const key of Object.keys(wpn).sort()) {
+    obj[key] = wpn[key]
+  }
+  return obj
+})
+
 const wikiRegister = {
   damage: {},
   projectile: {},
