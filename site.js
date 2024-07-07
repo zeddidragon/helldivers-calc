@@ -634,10 +634,10 @@ async function loadData() {
       tdps2 = Math.floor(magdump2 / (magtime + wpn.reload))
       tdpsx = Math.floor(magdumpx / (magtime + wpn.reload))
     }
-    if(!shotdmg && damage) {
+    if(!explosion && !shotdmg && damage) {
       shotdmg = damage.dmg
       shotdmg2 = damage.dmg2
-      shotdmgx = damage.dmgx
+      shotdmgx += damage.dmgx || 0
     }
     if(wpn.category === 'Status' && damage) {
       dps = shotdmg

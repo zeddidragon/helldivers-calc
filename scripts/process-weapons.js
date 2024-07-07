@@ -112,6 +112,27 @@ const shalzuthSchema = [
       ref: prj.replace('ProjectileType_', ''),
     }]
   }},
+  { source: 'explosion_type', cb: (wpn, exp) => {
+    if(!wpn.attack) {
+      wpn.attack = []
+    }
+    wpn.attack.push({
+      medium: 'explosion',
+      ref: exp.replace('ExplosionType_', ''),
+    })
+  }},
+  { source: 'on_stick_damage_type', cb: (wpn, dmg) => {
+    if(wpn.attack) {
+      return
+    }
+    if(dmg === 'DamageInfoType_None') {
+      return
+    }
+    wpn.attack = [{
+      medium: 'damage',
+      ref: dmg.replace('DamageInfoType_', ''),
+    }]
+  }},
   { source: 'recoil_info', cb: (wpn, { drift }) => {
     wpn.recoilxy = {
       x: +drift.horizontal_recoil.toFixed(2),
@@ -164,7 +185,7 @@ const shalzuthSchema = [
 
 let dbgCondition = false
 const keyed = {}
-for(const wpn of setup.weapon) {
+for(const wpn of [...setup.weapon]) {
   for(const prop of purge) {
     delete wpn[prop]
   }

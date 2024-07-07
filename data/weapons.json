@@ -1159,6 +1159,7 @@
       "sourcepage": 2
     },
     {
+      "attack": [{"type": "explosion", "name": "Grenade_Smoke"}],
       "category": "GrSp",
       "fullname": "G-3 Smoke",
       "rounds": 4,
@@ -1166,13 +1167,12 @@
       "roundstart": 3,
       "roundsupply": 2,
       "source": "hd-mobilize",
-      "sourcepage": 8,
-      "attack": []
+      "sourcepage": 8
     },
     {
       "attack": [
-        {"type": "explosion", "name": "Thermite"},
-        {"type": "damage", "name": "DPS_Thermite"}
+        {"type": "damage", "name": "DPS_Thermite"},
+        {"type": "explosion", "name": "Thermite"}
       ],
       "category": "GrSp",
       "fullname": "G-123 Thermite",

@@ -18803,7 +18803,12 @@
       "roundsupply": 2,
       "source": "hd-mobilize",
       "sourcepage": 8,
-      "attacks": []
+      "attacks": [
+        {
+          "type": "explosion",
+          "name": "Grenade_Smoke"
+        }
+      ]
     },
     "G-123 Thermite": {
       "category": "Special Throwable",
@@ -18815,12 +18820,12 @@
       "sourcepage": 1,
       "attacks": [
         {
-          "type": "explosion",
-          "name": "Thermite"
-        },
-        {
           "type": "damage",
           "name": "DPS_Thermite"
+        },
+        {
+          "type": "explosion",
+          "name": "Thermite"
         }
       ]
     },

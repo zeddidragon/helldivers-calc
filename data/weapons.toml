@@ -306,6 +306,7 @@ ref = "ArcShotgun"
 count = 5
 
 [[weapon]]
+entity = "2877271129141764950"
 category = "NRG"
 fullname = "LAS-5 Scythe"
 source = "hd-mobilize"
@@ -470,6 +471,7 @@ attachments = ["flashlight"]
 tags = ["round", "1h"]
 
 [[weapon]]
+entity = "12008625947668001407"
 category = "SUP"
 fullname = "M-105 Stalwart"
 source = "support"
@@ -691,9 +693,6 @@ rounds = 4
 roundstart = 3
 roundsupply = 2
 roundsbox = 4
-[[weapon.attack]]
-medium = "explosion"
-ref = "Frag"
 
 [[weapon]]
 category = "GrSt"
@@ -703,9 +702,6 @@ rounds = 4
 roundstart = 3
 roundsupply = 2
 roundsbox = 4
-[[weapon.attack]]
-medium = "explosion"
-ref = "HighExplosive"
 
 [[weapon]]
 category = "GrSt"
@@ -716,9 +712,6 @@ rounds = 4
 roundstart = 3
 roundsupply = 2
 roundsbox = 4
-[[weapon.attack]]
-medium = "explosion"
-ref = "Incendiary"
 
 [[weapon]]
 category = "GrSp"
@@ -728,9 +721,6 @@ rounds = 4
 roundstart = 3
 roundsupply = 2
 roundsbox = 4
-[[weapon.attack]]
-medium = "explosion"
-ref = "Impact"
 
 [[weapon]]
 category = "GrSp"
@@ -741,9 +731,6 @@ rounds = 4
 roundstart = 3
 roundsupply = 2
 roundsbox = 4
-[[weapon.attack]]
-medium = "explosion"
-ref = "Incendiary"
 
 [[weapon]]
 category = "GrSp"
@@ -754,9 +741,6 @@ rounds = 4
 roundstart = 3
 roundsupply = 2
 roundsbox = 4
-[[weapon.attack]]
-medium = "explosion"
-ref = "Flash"
 
 [[weapon]]
 category = "GrSp"
@@ -778,9 +762,6 @@ roundstart = 3
 roundsupply = 2
 roundsbox = 4
 [[weapon.attack]]
-medium = "explosion"
-ref = "Thermite"
-[[weapon.attack]]
 medium = "damage"
 ref = "DPS_Thermite"
 
@@ -793,9 +774,6 @@ rounds = 8
 roundstart = 6
 roundsupply = 8
 roundsbox = 8
-[[weapon.attack]]
-medium = "damage"
-ref = "Impact_Throwing_Knife"
 
 [[weapon]]
 category = "Ability"

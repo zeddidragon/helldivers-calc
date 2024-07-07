@@ -335,6 +335,7 @@ const handlers = {
   DangerWarningComponent: null,
   SensorProximityComponent: null,
   RemoteTriggerComponent: null,
+  StratagemBallComponent: null,
 }
 
 function hex(v) {
@@ -351,10 +352,14 @@ async function readShalzuth() {
     }) // Magic offset
   const EntityComponentMap = await readJson(dataDir, 'entities/EntityComponentMap.json')
   const WeaponComponent = ComponentType.indexOf('WeaponComponent')
+  const ThrowableComponent = ComponentType.indexOf('ThrowableComponent')
   const AiEnemyComponent = ComponentType.indexOf('AiEnemyComponent')
   const weapons = {}
   const componentSetup = Object.entries(EntityComponentMap)
-    .filter(([, componentIds]) => componentIds.includes(WeaponComponent))
+    .filter(([, componentIds]) => {
+      return componentIds.includes(WeaponComponent)
+        || componentIds.includes(ThrowableComponent)
+    })
     .filter(([, componentIds]) => !componentIds.includes(AiEnemyComponent))
   for(const [id, componentIds] of componentSetup) {
     const obj = { id: hex(+id) }
