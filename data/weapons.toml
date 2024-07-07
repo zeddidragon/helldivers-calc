@@ -837,13 +837,27 @@ fullname = "EAT-17 Expendable Anti-Tank"
 source = "support"
 stratcode = "ddlur"
 calltime = 3
-cooldown = 480
+cooldown = 70
 cap = 1
 rounds = 0
 modes = ["semi"]
 [[weapon.attack]]
 medium = "projectile"
 ref = "Grenade_75mm_HEAT"
+
+[[weapon]]
+category = "SUP"
+fullname = "MLS-4X Commando"
+source = "support"
+stratcode = "dludr"
+calltime = 3
+cooldown = 120
+cap = 4
+rounds = 0
+modes = ["semi"]
+[[weapon.attack]]
+medium = "projectile"
+ref = "Missile_66mm"
 
 [[weapon]]
 category = "SUP"

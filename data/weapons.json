@@ -790,13 +790,28 @@
       "source": "support",
       "stratcode": "ddlur",
       "calltime": 3,
-      "cooldown": 480,
+      "cooldown": 70,
       "cap": 1,
       "rounds": 0,
       "modes": ["semi"],
       "attack": [
         {"type": "projectile", "name": "Grenade_75mm_HEAT"},
         {"type": "explosion", "name": "Grenade_75mm_HEAT"}
+      ]
+    },
+    {
+      "category": "SUP",
+      "fullname": "MLS-4X Commando",
+      "source": "support",
+      "stratcode": "dludr",
+      "calltime": 3,
+      "cooldown": 120,
+      "cap": 4,
+      "rounds": 0,
+      "modes": ["semi"],
+      "attack": [
+        {"type": "projectile", "name": "Missile_66mm"},
+        {"type": "explosion", "name": "Missile_66mm"}
       ]
     },
     {
