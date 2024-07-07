@@ -204,6 +204,21 @@ for(const wpn of setup.weapon) {
     console.log(name, matched, wpn)
     dbgCondition = false
   }
+
+  // Remove/constrain some garbage data
+  if(wpn.supply > wpn.mags) {
+    Math.max(Math.floor(wpn.box = wpn.supply * 0.5), wpn.mags)
+    wpn.supply = wpn.mags
+  }
+  if(wpn.supply === 0) {
+    delete wpn.supply
+    delete wpn.box
+  }
+  if(wpn.rounds && wpn.mags) {
+    delete wpn.mags
+    delete wpn.supply
+    delete wpn.box
+  }
 }
 
 setup.weapon = setup.weapon.map(wpn => {

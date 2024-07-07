@@ -171,7 +171,7 @@ mixin weaponsRow(wpn, opts)
         span.reload-early.post-slash(
           title=t('table.td.reload', 'early', "Early Reload (not empty)")
         )= wpn.reloadearly.toFixed(1)
-    td.weapon.cap= wpn.cap || wpn.limit
+    td.weapon.cap= wpn.limit || wpn.cap
     td.weapon.capextra
       if wpn.limit
         span.cap-limit s
@@ -210,14 +210,14 @@ mixin weaponsRow(wpn, opts)
         span.clipsbox.post-slash(
           title=t('table.td.pickup', 'clipsbox', "Clips From Box")
         )=wpn.clipsbox
-      if wpn.roundsupply
+      else if wpn.roundsupply
         span.roundsupply(
           title=t('table.td.pickup', 'roundsupply', "Rounds From Supply")
         )=wpn.roundsupply
         span.roundsbox.post-slash(
           title=t('table.td.pickup', 'roundsbox', "Rounds From Box")
         )=wpn.roundsbox
-      if wpn.supply
+      else if wpn.supply
         span.supply(
           title=t('table.td.pickup', 'supply', "Mags From Supply")
         )=wpn.supply

@@ -556,10 +556,6 @@ calltime = 3
 cooldown = 480
 reload = 3.5
 reloadearly = 3
-cap = 10
-mags = 2
-magstart = 1
-supply = 2
 
 [[weapon]]
 category = "SUP"

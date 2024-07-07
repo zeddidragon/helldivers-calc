@@ -787,6 +787,7 @@
     },
     {
       "attack": [{"type": "damage", "name": "Projectile_Flamethrower"}],
+      "box": 3,
       "calltime": 3,
       "cap": 100,
       "capplus": 0,
@@ -803,7 +804,7 @@
       "source": "support",
       "spreadxy": {"x": 10, "y": 10},
       "stratcode": "dludu",
-      "supply": 6,
+      "supply": 4,
       "tags": ["fire"]
     },
     {
@@ -943,8 +944,7 @@
       "rpms": [10, 10],
       "source": "support",
       "spreadxy": {"x": 4, "y": 4},
-      "stratcode": "ddulr",
-      "supply": 6
+      "stratcode": "ddulr"
     },
     {
       "attack": [
@@ -966,8 +966,7 @@
       "rpm": 600,
       "source": "support",
       "spreadxy": {"x": 4, "y": 4},
-      "stratcode": "ddlur",
-      "supply": 6
+      "stratcode": "ddlur"
     },
     {
       "attack": [
@@ -989,8 +988,7 @@
       "rpm": 240,
       "source": "support",
       "spreadxy": {"x": 0, "y": 0},
-      "stratcode": "dludr",
-      "supply": 6
+      "stratcode": "dludr"
     },
     {
       "attack": [
@@ -1015,8 +1013,7 @@
       "rpm": 600,
       "source": "support",
       "spreadxy": {"x": 4, "y": 4},
-      "stratcode": "dlrrl",
-      "supply": 6
+      "stratcode": "dlrrl"
     },
     {
       "attack": [
@@ -1041,8 +1038,7 @@
       "rpm": 240,
       "source": "support",
       "spreadxy": {"x": 0, "y": 0},
-      "stratcode": "ddudd",
-      "supply": 6
+      "stratcode": "ddudd"
     },
     {
       "attack": [
@@ -1069,8 +1065,7 @@
       "rpm": 600,
       "source": "support",
       "spreadxy": {"x": 4, "y": 4},
-      "stratcode": "duulr",
-      "supply": 6
+      "stratcode": "duulr"
     },
     {
       "attack": [{"type": "projectile", "name": "Shotgun_10g_mag"}],

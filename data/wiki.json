@@ -18206,6 +18206,7 @@
       ]
     },
     "FLAM-40 Flamethrower": {
+      "box": 3,
       "calltime": 3,
       "cap": 100,
       "capplus": 0,
@@ -18229,7 +18230,7 @@
         "y": 10
       },
       "stratcode": "dludu",
-      "supply": 6,
+      "supply": 4,
       "tags": [
         "fire"
       ],
@@ -18455,7 +18456,6 @@
         "y": 4
       },
       "stratcode": "ddulr",
-      "supply": 6,
       "attacks": [
         {
           "type": "projectile",
@@ -18491,7 +18491,6 @@
         "y": 4
       },
       "stratcode": "ddlur",
-      "supply": 6,
       "attacks": [
         {
           "type": "projectile",
@@ -18527,7 +18526,6 @@
         "y": 0
       },
       "stratcode": "dludr",
-      "supply": 6,
       "attacks": [
         {
           "type": "projectile",
@@ -18566,7 +18564,6 @@
         "y": 4
       },
       "stratcode": "dlrrl",
-      "supply": 6,
       "attacks": [
         {
           "type": "projectile",
@@ -18605,7 +18602,6 @@
         "y": 0
       },
       "stratcode": "ddudd",
-      "supply": 6,
       "attacks": [
         {
           "type": "projectile",
@@ -18644,7 +18640,6 @@
         "y": 4
       },
       "stratcode": "duulr",
-      "supply": 6,
       "attacks": [
         {
           "type": "projectile",
