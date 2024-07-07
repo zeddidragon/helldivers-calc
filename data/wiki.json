@@ -17276,6 +17276,7 @@
       "spreadxy": {"x": 1350, "y": 350},
       "ergonomics": 65,
       "modes": ["Single"],
+      "rpm": 45,
       "attacks": [{"type": "arc", "name": "ArcShotgun", "count": 5}]
     },
     "LAS-5 Scythe": {

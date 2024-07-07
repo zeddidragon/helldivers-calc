@@ -144,6 +144,10 @@ const shalzuthSchema = [
     wpn.category = wpn.category || cat.replace('EquipmentType_', '')
   }},
   { source: 'rounds_per_minute', cb: (wpn, rpms) => {
+    if(rpms > 0) {
+      wpn.rpm = rpms
+      return
+    }
     wpn.rpm = rpms.y
     let rpmArr = [
       rpms.x,

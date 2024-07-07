@@ -465,7 +465,8 @@
       "recoilxy": {"x": 40, "y": 40},
       "spreadxy": {"x": 1350, "y": 350},
       "ergonomics": 65,
-      "modes": ["Single"]
+      "modes": ["Single"],
+      "rpm": 45
     },
     {
       "category": "NRG",
