@@ -13,13 +13,11 @@ async function readJson(...fpath) {
   if(cached) {
     return cached
   }
-  const body = await fs.readFile(path.resolve(...fpath))
+  const body = await fs.readFile(resolved + '.json')
   const json = JSON.parse(body)
   dataCache[resolved] = json
   return json
 }
-
-const AMR = 9927421484392399367
 
 function copy(props) {
   if(Array.isArray(props)) {
@@ -342,15 +340,14 @@ function hex(v) {
   return `0x${v.toString(16)}`
 }
 
-async function readShalzuth() {
-  english = await readJson(dataDir, 'translations/English.json')
-  const ComponentType = await readJson(dataDir, 'enums/ComponentType.json')
+async function readEntities() {
+  const ComponentType = await readJson(dataDir, 'enums/ComponentType')
     .then(data => {
       const firstComponentIdx = data.ComponentType
         .findIndex(type => type.endsWith('Component'))
       return data.ComponentType.slice(firstComponentIdx)
     }) // Magic offset
-  const EntityComponentMap = await readJson(dataDir, 'entities/EntityComponentMap.json')
+  const EntityComponentMap = await readJson(dataDir, 'entities/EntityComponentMap')
   const WeaponComponent = ComponentType.indexOf('WeaponComponent')
   const ThrowableComponent = ComponentType.indexOf('ThrowableComponent')
   const AiEnemyComponent = ComponentType.indexOf('AiEnemyComponent')
@@ -367,7 +364,7 @@ async function readShalzuth() {
       const componentName = ComponentType[cId]
       const handler = handlers[componentName]
       if(handler === null) continue
-      const dataPath = `entities/${componentName}Data.json`
+      const dataPath = `entities/${componentName}Data`
       const data = await readJson(dataDir, dataPath)
       if(!handler) {
         console.log(data[id])
@@ -391,11 +388,88 @@ async function readShalzuth() {
     byName[key] = wpn
   }
   await fs.writeFile('data/shalzuth.json', json(weapons))
+}
 
-  return byName
+async function readTypeDamage(settings) {
+  const { items } = settings.find(obj => obj.DamageSettings).DamageSettings
+  return items.map((item, i) => {
+    return {
+      id: i + 1,
+      dmg: item.damage[0],
+      dmg2: item.damage[1],
+      ...item.armor_penetration_per_angle.reduce((obj, ap, i) => {
+        obj[`ap${i + 1}`] = ap
+        return obj
+      }, {}),
+      demo: item.demolition_strength,
+      stun: item.force_strength,
+      push: item.force_impulse,
+      ...item.status_effects.reduce((obj, { type, value }, i) => {
+        if(type === 'StatusEffectType_None') {
+          return obj
+        }
+        obj[`status${i + 1}`] = type.replace('StatusEffectType_', '')
+        obj[`param${i + 1}`] = value
+        return obj
+      }, {}),
+      enum: item.type.replace('DamageInfoType_', ''),
+    }
+  })
+}
+
+async function readTypeProjectile(settings) {
+  const { items } = settings.find(obj => obj.ProjectileSettings).ProjectileSettings
+  return items.map((item, i) => {
+    return {
+      id: i + 1,
+      name: english[item.name_cased],
+      caliber: item.calibre,
+      pellets: item.num_projectiles,
+      velocity: item.speed,
+      mass: +item.mass.toFixed(2),
+      drag: +item.drag.toFixed(2),
+      gravity: +item.gravity_multiplier.toFixed(2),
+      lifetime: +item.life_time.toFixed(2),
+      liferandom: +item.life_time_randomness.toFixed(2),
+      damageref: item.damage_info_type.replace('DamageInfoType_', ''),
+      penslow: item.penetration_slowdown,
+      xangle: item.explosion_treshold_angle,
+      ximpactref: item.explosion_type_on_impact.replace('ExplosionType_', ''),
+      xproximity: item.explosion_proximity,
+      xdelay: item.explosion_delay,
+      xdelayref: item.explosion_type_expire.replace('ExplosionType_', ''),
+      enum: item.type.replace('ProjectileType_', ''),
+    }
+  })
+}
+
+const types = {
+  damage: readTypeDamage,
+  projectile: readTypeProjectile,
+}
+
+function readType(type) {
+  const path = `settings/generated_${type}_settings`
+  const cb = types[type]
+  return readJson(dataDir, path).then(cb)
+}
+
+async function readTypes() {
+  const damages = await readType('damage')
+  const projectiles = await readJson(dataDir, 'settings/generated_projectile_settings')
+    .then(readTypeProjectile)
+  await fs.writeFile('data/datamined2.json', JSON.stringify({
+    damages,
+    projectiles,
+  }, null, 2))
+}
+
+async function readShalzuth() {
+  english = await readJson(dataDir, 'translations/English')
+  await readTypes()
+  await readEntities()
 }
 
 readShalzuth()
-  .then(console.log)
   .catch(console.error)
   .then(() => process.exit(0))

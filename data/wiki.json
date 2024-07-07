@@ -19105,6 +19105,27 @@
       "calltime": 8,
       "cooldown": 120,
       "cap": 130,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 20,
+        "y": 2
+      },
+      "spreadxy": {
+        "x": 10,
+        "y": 10
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Automatic"
+      ],
+      "rpm": 900,
+      "rpms": [
+        630,
+        630,
+        900
+      ],
       "attacks": [
         {
           "type": "projectile",
@@ -19119,6 +19140,22 @@
       "calltime": 8,
       "cooldown": 180,
       "cap": 390,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 10,
+        "y": 0
+      },
+      "spreadxy": {
+        "x": 20,
+        "y": 20
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Automatic"
+      ],
+      "rpm": 1600,
       "attacks": [
         {
           "type": "projectile",
@@ -19133,6 +19170,27 @@
       "calltime": 3,
       "cooldown": 180,
       "cap": 300,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 8,
+        "y": 12
+      },
+      "spreadxy": {
+        "x": 2,
+        "y": 2
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Automatic"
+      ],
+      "rpm": 750,
+      "rpms": [
+        450,
+        600,
+        750
+      ],
       "attacks": [
         {
           "type": "projectile",
@@ -19147,6 +19205,23 @@
       "calltime": 8,
       "cooldown": 180,
       "cap": 36,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "spreadxy": {
+        "x": 50,
+        "y": 100
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Burst"
+      ],
+      "burst": 3,
+      "rpm": 60,
       "attacks": [
         {
           "type": "projectile",
@@ -19165,6 +19240,23 @@
       "calltime": 8,
       "cooldown": 180,
       "cap": 15,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "spreadxy": {
+        "x": 50,
+        "y": 50
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Burst"
+      ],
+      "burst": 3,
+      "rpm": 60,
       "attacks": [
         {
           "type": "projectile",
@@ -19187,6 +19279,26 @@
       "calltime": 8,
       "cooldown": 180,
       "cap": 32,
+      "mags": 1,
+      "magstart": 1,
+      "capplus": 0,
+      "supply": 1,
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "spreadxy": {
+        "x": 5,
+        "y": 15
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Burst",
+        "Burst"
+      ],
+      "burst": 4,
+      "rpm": 90,
+      "box": 3,
       "attacks": [
         {
           "type": "projectile",
@@ -19205,6 +19317,24 @@
       "calltime": 8,
       "cooldown": 180,
       "cap": 24,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "spreadxy": {
+        "x": 2,
+        "y": 2
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Burst",
+        "Burst"
+      ],
+      "burst": 3,
+      "rpm": 160,
       "attacks": [
         {
           "type": "projectile",
@@ -19222,6 +19352,22 @@
       "armor": 1,
       "calltime": 3,
       "cooldown": 150,
+      "cap": 400,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "spreadxy": {
+        "x": 50,
+        "y": 25
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Automatic"
+      ],
       "attacks": [
         {
           "type": "arc",

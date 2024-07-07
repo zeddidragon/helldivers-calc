@@ -185,7 +185,7 @@ const shalzuthSchema = [
 
 let dbgCondition = false
 const keyed = {}
-for(const wpn of [...setup.weapon]) {
+for(const wpn of [...setup.weapon, ...setup.stratagem]) {
   for(const prop of purge) {
     delete wpn[prop]
   }

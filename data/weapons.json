@@ -1395,7 +1395,16 @@
       "calltime": 8,
       "cooldown": 120,
       "cap": 130,
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
+      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}],
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {"x": 20, "y": 2},
+      "spreadxy": {"x": 10, "y": 10},
+      "ergonomics": 65,
+      "modes": ["Automatic"],
+      "rpm": 900,
+      "rpms": [630, 630, 900]
     },
     {
       "category": "Emplacement",
@@ -1406,7 +1415,15 @@
       "calltime": 8,
       "cooldown": 180,
       "cap": 390,
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
+      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}],
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {"x": 10, "y": 0},
+      "spreadxy": {"x": 20, "y": 20},
+      "ergonomics": 65,
+      "modes": ["Automatic"],
+      "rpm": 1600
     },
     {
       "category": "Emplacement",
@@ -1417,7 +1434,16 @@
       "calltime": 3,
       "cooldown": 180,
       "cap": 300,
-      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_fmj"}]
+      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_fmj"}],
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {"x": 8, "y": 12},
+      "spreadxy": {"x": 2, "y": 2},
+      "ergonomics": 65,
+      "modes": ["Automatic"],
+      "rpm": 750,
+      "rpms": [450, 600, 750]
     },
     {
       "category": "Emplacement",
@@ -1431,7 +1457,16 @@
       "attack": [
         {"type": "projectile", "name": "Grenade_Mortar_40mm_HE"},
         {"type": "explosion", "name": "Grenade_Mortar_40mm_HE"}
-      ]
+      ],
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 50, "y": 100},
+      "ergonomics": 65,
+      "modes": ["Burst"],
+      "burst": 3,
+      "rpm": 60
     },
     {
       "category": "Emplacement",
@@ -1446,7 +1481,16 @@
         {"type": "projectile", "name": "Grenade_Mortar_40mm_Staticfield"},
         {"type": "explosion", "name": "StaticField_Sentry"},
         {"type": "explosion", "name": "Grenade_Mortar_40mm_Staticfield"}
-      ]
+      ],
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 50, "y": 50},
+      "ergonomics": 65,
+      "modes": ["Burst"],
+      "burst": 3,
+      "rpm": 60
     },
     {
       "category": "Emplacement",
@@ -1460,7 +1504,18 @@
       "attack": [
         {"type": "projectile", "name": "Rocket_70mm_turret"},
         {"type": "explosion", "name": "Rocket_70mm_turret"}
-      ]
+      ],
+      "mags": 1,
+      "magstart": 1,
+      "capplus": 0,
+      "supply": 1,
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 5, "y": 15},
+      "ergonomics": 65,
+      "modes": ["Burst", "Burst"],
+      "burst": 4,
+      "rpm": 90,
+      "box": 3
     },
     {
       "category": "Emplacement",
@@ -1474,7 +1529,16 @@
       "attack": [
         {"type": "projectile", "name": "Cannon_40mm_APHE"},
         {"type": "explosion", "name": "APHE_40mm"}
-      ]
+      ],
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 2, "y": 2},
+      "ergonomics": 65,
+      "modes": ["Burst", "Burst"],
+      "burst": 3,
+      "rpm": 160
     },
     {
       "category": "Emplacement",
@@ -1484,7 +1548,15 @@
       "armor": 1,
       "calltime": 3,
       "cooldown": 150,
-      "attack": [{"type": "arc", "name": "TeslaTurret"}]
+      "attack": [{"type": "arc", "name": "TeslaTurret"}],
+      "cap": 400,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 50, "y": 25},
+      "ergonomics": 65,
+      "modes": ["Automatic"]
     },
     {
       "category": "Orbital",
