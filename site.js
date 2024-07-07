@@ -35,6 +35,13 @@ function iff(condition, value) {
   return value
 }
 
+function diagonal(obj) {
+  if(!obj) {
+    return 0
+  }
+  return Math.sqrt(obj.x * obj.x + obj.y * obj.y)
+}
+
 function sorting(col, mainScope) {
   let dir = -1
   if(col === 'category') {
@@ -156,6 +163,22 @@ function sorting(col, mainScope) {
       return idxSort(a, b)
     }
   }
+
+  if(col === 'recoil') {
+    return function recoilSort(a, b) {
+      const aRecoil = diagonal(a.recoilxy) || a.recoil || 0
+      const bRecoil = diagonal(b.recoilxy) || b.recoil || 0
+      return (aRecoil - bRecoil) * dir || idxSort(a, b)
+    }
+  }
+
+  if(col === 'spread') {
+    return function spreadSort(a, b) {
+      return (diagonal(a.spreadxy) - diagonal(b.spreadxy)) * dir
+        || idxSort(a, b)
+    }
+  }
+
   return function defaultSort(a, b) {
     return compare(a, b, col) || idxSort(a, b)
   }
