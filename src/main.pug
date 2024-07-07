@@ -234,8 +234,8 @@ mixin weaponsRow(wpn, opts)
         pan.spread-y= wpn.spreadxy.y
     td.weapon.recoil
       if wpn.recoilxy
-        span.recoil-x.pre-slash= wpn.recoilxy.x
-        span.recoil-y= wpn.recoilxy.y
+        span.recoil-x.pre-slash= wpn.recoilxy.x.toFixed()
+        span.recoil-y= wpn.recoilxy.y.toFixed()
     td.weapon.ergonomics= wpn.ergonomics
   if !hideHeaders.damage
     if wpn.damage
