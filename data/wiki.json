@@ -17730,7 +17730,7 @@
       "source": "support",
       "stratcode": "ddlur",
       "calltime": 3,
-      "cooldown": 480,
+      "cooldown": 70,
       "cap": 1,
       "rounds": 0,
       "supply": 6,
@@ -17742,6 +17742,20 @@
       "attacks": [
         {"type": "projectile", "name": "Grenade_75mm_HEAT"},
         {"type": "explosion", "name": "Grenade_75mm_HEAT"}
+      ]
+    },
+    "MLS-4X Commando": {
+      "category": "Support Weapon",
+      "source": "support",
+      "stratcode": "dludr",
+      "calltime": 3,
+      "cooldown": 120,
+      "cap": 4,
+      "rounds": 0,
+      "modes": ["semi"],
+      "attacks": [
+        {"type": "projectile", "name": "Missile_66mm"},
+        {"type": "explosion", "name": "Missile_66mm"}
       ]
     },
     "GR-8 Recoilless Rifle": {
@@ -18483,6 +18497,7 @@
     "LAS-98 Laser Cannon",
     "LAS-99 Quasar Cannon",
     "EAT-17 Expendable Anti-Tank",
+    "MLS-4X Commando",
     "GR-8 Recoilless Rifle",
     "FAF-14 Spear",
     "RL-77 Airburst Rocket Launcher",
