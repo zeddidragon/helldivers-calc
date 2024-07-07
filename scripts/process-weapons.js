@@ -69,15 +69,6 @@ const purge = [
   "xparam2",
 ]
 
-let wps = setup.weapon.slice()
-const seen = new Set()
-wps = wps.filter(f => {
-  if(seen.has(f.fullname)) {
-    return false
-  }
-  seen.add(f.fullname)
-  return true
-})
 const matches = []
 const shalzuthMatch = {}
 
@@ -162,7 +153,8 @@ const shalzuthSchema = [
 ]
 
 let dbgCondition = false
-for(const wpn of wps) {
+const keyed = {}
+for(const wpn of setup.weapon) {
   for(const prop of purge) {
     delete wpn[prop]
   }
@@ -204,7 +196,7 @@ for(const wpn of wps) {
   }
 }
 
-wps = wps.map(wpn => {
+setup.weapon = setup.weapon.map(wpn => {
   const obj = {}
   for(const key of Object.keys(wpn).sort()) {
     obj[key] = wpn[key]
@@ -379,10 +371,10 @@ for(const wpn of allWeapons) {
 }
 wikiRegister.weapon_order = weaponOrder
 
-fs.writeFileSync('data/wiki.json', json(wikiRegister))
+fs.writeFileSync('data/wiki.json', JSON.stringify(wikiRegister, null, 2))
 
 fs.writeFileSync('data/weapons.json', json({
   sources,
-  weapons: wps,
+  weapons: setup.weapon,
   stratagems: setup.stratagem,
 }))
