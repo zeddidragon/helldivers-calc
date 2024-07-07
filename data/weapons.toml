@@ -315,7 +315,6 @@ reloadearly = 3
 mags = 4
 magstart = 2
 supply = 4
-limit = 8
 tags = ["laser"]
 [[weapon.attack]]
 medium = "beam"
@@ -332,7 +331,6 @@ reloadearly = 3
 mags = 3
 magstart = 3
 supply = 3
-limit = 7
 scopes = [25, 50, 100]
 
 [[weapon]]
@@ -449,7 +447,6 @@ reloadearly = 2.3
 mags = 3
 magstart = 3
 supply = 3
-limit = 5
 tags = ["1h"]
 [[weapon.attack]]
 medium = "beam"
@@ -597,7 +594,6 @@ reloadearly = 5
 mags = 1
 magstart = 1
 supply = 1
-limit = 10
 tags = ["laser"]
 [[weapon.attack]]
 medium = "beam"
@@ -611,7 +607,6 @@ stratcode = "ddulr"
 calltime = 3
 cooldown = 480
 charge = 3.1
-reload = 15
 
 [[weapon]]
 category = "SUP"

@@ -17663,6 +17663,7 @@
     "LAS-5 Scythe": {
       "category": "Energy-Based",
       "ergonomics": 65,
+      "heatdown": 15,
       "limit": 8,
       "mags": 4,
       "magstart": 2,
@@ -17695,6 +17696,7 @@
     "LAS-16 Sickle": {
       "category": "Energy-Based",
       "ergonomics": 65,
+      "heatdown": 12.5,
       "limit": 7,
       "mags": 3,
       "magstart": 3,
@@ -17993,6 +17995,7 @@
     "LAS-7 Dagger": {
       "category": "Pistol",
       "ergonomics": 95,
+      "heatdown": 10,
       "limit": 5,
       "mags": 3,
       "magstart": 3,
@@ -18400,6 +18403,7 @@
       "category": "Support Weapon",
       "cooldown": 480,
       "ergonomics": 45,
+      "heatdown": 20,
       "limit": 10,
       "mags": 1,
       "magstart": 1,
@@ -18435,6 +18439,8 @@
       "charge": 3.1,
       "cooldown": 480,
       "ergonomics": 35,
+      "heatdown": 15,
+      "limit": 6,
       "mags": 0,
       "magstart": 0,
       "modes": [
@@ -18444,7 +18450,6 @@
         "x": 40,
         "y": 40
       },
-      "reload": 15,
       "rpm": 10,
       "rpms": [
         10,

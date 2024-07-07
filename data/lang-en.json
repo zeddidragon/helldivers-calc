@@ -53,6 +53,7 @@
   "table.td.reload;early": "Tactical Reload",
   "table.td.reload;1": "Reload 1 round",
   "table.td.reload;x": "Reload max rounds",
+  "table.td.reload;heat": "Cooldown from max heat",
   "wpn.category.full;AR": "Assault Rifle",
   "wpn.category.label;AR": "AR",
   "wpn.category.full;DMR": "Marksman Rifle",

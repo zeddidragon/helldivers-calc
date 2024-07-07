@@ -223,9 +223,13 @@ td.name {
   color: var(--detail-text-color);
   font-size: 0.7em;
 }
-.rpm-charge:after, .time:after {
+.time:after {
   color: var(--detail-text-color);
   content: "s";
+}
+.reload-heat:before {
+  color: var(--detail-text-color);
+  content: "|";
 }
 .shieldregen:after {
   color: var(--detail-text-color);

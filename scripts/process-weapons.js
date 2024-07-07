@@ -150,6 +150,16 @@ const shalzuthSchema = [
       wpn.rpms = rpmArr
     }
   }},
+  { source: 'overheat_temperature', cb: (wpn, temp, cfg) => {
+    if(!wpn.limit && cfg.temp_gain_per_second) {
+      wpn.limit = temp / cfg.temp_gain_per_second
+    } else if(!wpn.limit && cfg.temp_gain_per_shot && wpn.rpm) {
+      wpn.limit = +(temp / (cfg.temp_gain_per_shot * wpn.rpm / 60)).toFixed(1)
+    }
+    if(!wpn.heatdown) {
+      wpn.heatdown = +(temp / cfg.temp_loss_per_second).toFixed(1)
+    }
+  }},
 ]
 
 let dbgCondition = false
@@ -194,7 +204,7 @@ for(const wpn of setup.weapon) {
     }
 
     if(cb) {
-      cb(wpn, v)
+      cb(wpn, v, matched)
     } else {
       wpn[dest] = v
     }

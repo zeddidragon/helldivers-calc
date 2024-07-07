@@ -146,7 +146,7 @@ mixin weaponsRow(wpn, opts)
     if wpn.beam
       span.rpm-laser Beam
     if wpn.charge
-      span.rpm-charge(title="Charge time")
+      span.rpm-charge.time(title="Charge time")
         sup.one-over 1/
         if wpn.chargeearly
           span.charge-early= wpn.chargeearly
@@ -157,20 +157,24 @@ mixin weaponsRow(wpn, opts)
     td.weapon.reload
       if wpn.reloadone
         span.reload-one(
-          title=t('table.td.reload', '1', "Reload 1 round")
+          title=t('table.td.reload', '1')
         )= wpn.reloadone.toFixed(1)
       if wpn.reloadx
         span.reload-x.pre-slash(
-          title=t('table.td.reload', 'x', `Reload max rounds`)
+          title=t('table.td.reload', 'x')
         )= wpn.reloadx.toFixed(1)
       if wpn.reload
         span.reload-main(
-          title=t('table.td.reload', 'empty', "Reload from empty")
+          title=t('table.td.reload', 'empty')
         )= wpn.reload.toFixed(1)
       if wpn.reloadearly
         span.reload-early.post-slash(
-          title=t('table.td.reload', 'early', "Early Reload (not empty)")
+          title=t('table.td.reload', 'early')
         )= wpn.reloadearly.toFixed(1)
+      if wpn.heatdown
+        span.reload-heat(
+          title=t('table.td.reload', 'heat')
+        )= wpn.heatdown.toFixed(1)
     td.weapon.cap= wpn.limit || wpn.cap
     td.weapon.capextra
       if wpn.limit
