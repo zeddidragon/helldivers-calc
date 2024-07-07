@@ -27,7 +27,7 @@ function copy(props) {
   return function copyProps(dest, source) {
     for(const prop of props) {
       const v = source[prop]
-      if(!v) { continue }
+      if(v == null) { continue }
       dest[prop] = v
     }
   }

@@ -190,6 +190,8 @@
   "table.th.wpn.label;spread": "Spread",
   "table.th.wpn;recoil": "Recoil of weapon Horizontal/Vertical (Unit unknown)",
   "table.th.wpn.label;recoil": "Recoil",
+  "table.th.wpn;ergonomics": "Ergonomics of Weapon (How quickly you can aim)",
+  "table.th.wpn.label;ergonomics": "Erg",
   "wpn.source.full;start": "Starting Equipment",
   "wpn.source.label;start": "Start",
   "wpn.source.full;hd-mobilize": "Helldivers: Mobilize",

@@ -83,7 +83,7 @@ const shalzuthSchema = [
       wpn.cap = cap.x + cap.y
     }
   }},
-  { source: 'magazines_maximum', dest: 'mags' },
+  { source: 'magazines_max', dest: 'mags' },
   { source: 'magazines', dest: 'magstart' },
   { source: 'chambered', dest: 'capplus' },
   { source: 'magazines_refill', dest: 'supply' },
@@ -159,19 +159,29 @@ for(const wpn of setup.weapon) {
     delete wpn[prop]
   }
   const name = wpn.name || wpn.fullname
-  const shalzuthMatches = Object.values(shalzuth).filter(obj => {
-    return obj.key === name  || obj.name === name
-  })
-  if(shalzuthMatches.length > 1) {
-    console.error(`Too many matches for: "${name}" (${shalzuthMatches.length})`)
+  let matched
+  if(wpn.entity) {
+    matched = shalzuth[wpn.entity]
+  }
+  if(wpn.entity && !matched) {
+    console.error(`Entity ID not found: "${wpn.entity}"`)
+  } else if(wpn.entity) {
+    delete wpn.entity
+  }
+  if(!matched) {
+    const shalzuthMatches = Object.values(shalzuth).filter(obj => {
+      return obj.key === name  || obj.name === name
+    })
+    if(shalzuthMatches.length > 1) {
+      console.error(`Too many matches for: "${name}" (${shalzuthMatches.length})`)
+    }
+
+    matched = shalzuthMatches[0]
   }
 
-  const [matched] = shalzuthMatches
   if(!matched) {
-    if(!shalzuthMatches.length) {
-      console.error(`No matches for: "${name}"`)
-      continue
-    }
+    console.error(`No matches for: "${name}"`)
+    continue
   }
   
   for(const { source, dest = source, cb } of shalzuthSchema) {

@@ -60,6 +60,9 @@ mixin weaponsHeader
     th.weapon.recoil(
       title=t('table.th.wpn', 'recoil')
     )= t('table.th.wpn.label', 'recoil')
+    th.weapon.ergonomics(
+      title=t('table.th.wpn', 'ergonomics')
+    )= t('table.th.wpn.label', 'ergonomics')
   if !hideHeaders.damage
     +damagesHeader({ apCount: 1, effectsCount: 1 })
   if !hideHeaders.dps
@@ -229,6 +232,7 @@ mixin weaponsRow(wpn, opts)
       if wpn.recoilxy
         span.recoil-x.pre-slash= wpn.recoilxy.x
         span.recoil-y= wpn.recoilxy.y
+    td.weapon.ergonomics= wpn.ergonomics
   if !hideHeaders.damage
     if wpn.damage
       +damagesRow(wpn.damage, { explosive: !!wpn.explosion, apCount: 1, effectsCount: 1 })

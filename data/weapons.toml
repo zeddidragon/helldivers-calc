@@ -147,7 +147,7 @@ tags = ["1h"]
 attachments = ["flashlight"]
 [[weapon.attack]]
 medium = "projectile"
-ref = "Pistol_9x20mm_fmj"
+ref = "Pistol_12x25mm_fmj"
 
 [[weapon]]
 category = "SMG"
@@ -481,10 +481,6 @@ calltime = 3
 cooldown = 480
 reload = 5.8
 reloadearly = 4.4
-cap = 250
-mags = 3
-magstart = 2
-supply = 2
 rpms = [700, 850, 1150]
 
 [[weapon]]
@@ -496,13 +492,10 @@ calltime = 3
 cooldown = 480
 reload = 5.0
 reloadearly = 4.2
-cap = 150
-mags = 3
-magstart = 2
-supply = 1
 rpms = [630, 760, 900]
 
 [[weapon]]
+entity = "2401215835282261016"
 category = "SUP"
 fullname = "MG-206 Heavy Machine Gun"
 source = "support"
@@ -511,10 +504,6 @@ calltime = 3
 cooldown = 480
 reload = 5.5
 reloadearly = 3.9
-cap = 75
-mags = 2
-magstart = 1
-supply = 2
 rpms = [450, 600, 750]
 
 [[weapon]]
@@ -537,9 +526,6 @@ stratcode = "dludu"
 calltime = 3
 cooldown = 480
 reload = 3.9
-mags = 4
-magstart = 3
-supply = 4
 limit = 12.5
 tags = ["fire"]
 [[weapon.attack]]
@@ -602,9 +588,6 @@ charge = 3
 chargefactor = 1.5
 reload = 1.3
 cap = 1
-rounds = 20
-roundstart = 10
-roundsupply = 10
 
 [[weapon]]
 category = "SUP"
