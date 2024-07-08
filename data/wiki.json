@@ -16849,12 +16849,12 @@
         "flashlight"
       ],
       "burst": 3,
-      "cap": 45,
+      "cap": 30,
       "capplus": 1,
       "category": "Assault Rifle",
       "ergonomics": 65,
-      "mags": 7,
-      "magstart": 5,
+      "mags": 12,
+      "magstart": 6,
       "modes": [
         "Automatic",
         "Single",
@@ -16878,7 +16878,7 @@
         "x": 4,
         "y": 4
       },
-      "supply": 7,
+      "supply": 6,
       "attacks": [
         {
           "type": "projectile",

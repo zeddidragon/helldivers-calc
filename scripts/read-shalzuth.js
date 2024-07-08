@@ -6,6 +6,8 @@ import clipboard from 'clipboardy'
 const dataDir = '../HelldiversData/data'
 const dataCache = {}
 let english = {}
+let EntityDeltas = {}
+const WeaponCustomizations = {}
 
 async function readJson(...fpath) {
   const resolved = path.resolve(...fpath)
@@ -13,15 +15,16 @@ async function readJson(...fpath) {
   if(cached) {
     return cached
   }
-  const body = await fs.readFile(resolved + '.json')
+  let body = await fs.readFile(resolved + '.json', 'utf8')
+  body = body.replace(/:\s*(\d{15,})(\n|,)/g, (match, v, end) => {
+    return `:"${v}"${end}`
+  })
   const json = JSON.parse(body)
   dataCache[resolved] = json
   return json
 }
 
 function copy(props) {
-  if(Array.isArray(props)) {
-  }
   return function copyProps(dest, source) {
     for(const prop of props) {
       const v = source[prop]
@@ -29,6 +32,119 @@ function copy(props) {
       dest[prop] = v
     }
   }
+}
+
+function deltaStatModifier(i) {
+  return function deltaModifier(wpn, type, key, deltas) {
+    const value = deltas[`weapon_stat_modifiers[${i}].value`]
+    if(type === 'WeaponStatModifierType_Count' && !value) {
+      return
+    }
+    wpn.modifiers.push({
+      type: type.replace('WeaponStatModifier_', ''),
+      value,
+    })
+  }
+}
+
+function toDelta(wpn, value, key) {
+  wpn.customizations[key] = value
+}
+
+const deltaHandlers = {
+  'scope_offset.x': null,
+  'scope_offset.y': null,
+  'scope_offset.z': null,
+  'aim_zoom.x': null,
+  'aim_zoom.y': null,
+  'aim_zoom.z': null,
+  'optics_path':  null,
+  'optics_crosshair_params.x': null,
+  'optics_crosshair_params.y': null,
+  'weapon_stat_modifiers[0].type': deltaStatModifier(0),
+  'weapon_stat_modifiers[1].type': deltaStatModifier(1),
+  'weapon_stat_modifiers[2].type': deltaStatModifier(2),
+  'weapon_stat_modifiers[3].type': deltaStatModifier(3),
+  'weapon_stat_modifiers[4].type': deltaStatModifier(4),
+  'weapon_stat_modifiers[5].type': deltaStatModifier(5),
+  'weapon_stat_modifiers[6].type': deltaStatModifier(6),
+  'weapon_stat_modifiers[7].type': deltaStatModifier(7),
+  'weapon_stat_modifiers[0].value': null,
+  'weapon_stat_modifiers[1].value': null,
+  'weapon_stat_modifiers[2].value': null,
+  'weapon_stat_modifiers[3].value': null,
+  'weapon_stat_modifiers[4].value': null,
+  'weapon_stat_modifiers[5].value': null,
+  'weapon_stat_modifiers[6].value': null,
+  'weapon_stat_modifiers[7].value': null,
+  'magazine_path': null,
+  'magazine_capacity': toDelta,
+  'magazines': toDelta,
+  'magazines_refill': toDelta,
+  'magazines_max': toDelta,
+  'chambered': toDelta,
+  'underbarrel_path': null,
+  'ammo_types.primary_projectile_type': toDelta,
+  'scope_zeroing.x': null,
+  'scope_zeroing.y': null,
+  'scope_zeroing.z': null,
+  'scope_lens_hides_weapon': null,
+  'duration': (wpn, v) => wpn.customizations.reload = v,
+  'reload_anim_events[0].type': null,
+  'reload_anim_events[1].type': null,
+  'reload_anim_events[2].type': null,
+  'reload_anim_events[3].type': null,
+  'reload_anim_events[0].animation_event_weapon': null,
+  'reload_anim_events[1].animation_event_weapon': null,
+  'reload_anim_events[2].animation_event_weapon': null,
+  'reload_anim_events[3].animation_event_weapon': null,
+  'reload_anim_events[0].animation_event_wielder': null,
+  'reload_anim_events[1].animation_event_wielder': null,
+  'reload_anim_events[2].animation_event_wielder': null,
+  'reload_anim_events[3].animation_event_wielder': null,
+  'projectile_type': toDelta,
+  'magazine_adjusting_nodes[0]': null,
+  'magazine_adjusting_nodes[1]': null,
+  'magazine_adjusting_nodes[2]': null,
+  'magazine_adjusting_nodes[3]': null,
+  'magazine_adjusting_nodes[4]': null,
+  'magazine_adjusting_nodes[5]': null,
+  'magazine_adjusting_nodes[6]': null,
+  'magazine_adjusting_nodes[7]': null,
+  'magazine_adjusting_nodes[8]': null,
+  'magazine_adjusting_nodes[9]': null,
+  'magazine_adjusting_nodes[10]': null,
+  'magazine_adjusting_nodes[11]': null,
+  'magazine_adjusting_nodes[12]': null,
+  'magazine_adjusting_nodes[13]': null,
+  'magazine_adjusting_nodes[14]': null,
+  'magazine_adjusting_nodes[15]': null,
+  'magazine_adjusting_nodes[16]': null,
+  'magazine_adjusting_nodes[17]': null,
+  'magazine_adjusting_nodes[18]': null,
+  'magazine_adjusting_nodes[19]': null,
+  'magazine_adjusting_nodes_visible_chambering': null,
+  'magazine_adjusting_animation': null,
+  'magazine_adjusting_animation_variable': null,
+  'muzzle_path': null,
+  'muzzle_flash': null,
+  'beam_type': toDelta,
+  'scope_crosshair.x': null,
+  'scope_crosshair.y': null,
+  'scope_crosshair.z': null,
+  'fire_source_node': null,
+  'fire_loop_start_audio_event': null,
+  'fire_loop_stop_audio_event': null,
+  'on_fire_started_wielder_anim_event': null,
+  'on_fire_stopped_wielder_anim_event': null,
+  'reload_allow_move': toDelta,
+  'trigger_settings.trigger_threshold': null,
+  'trigger_settings.trigger_threshold_release': null,
+  'trigger_settings.resistance_strength_start': null,
+  'trigger_settings.resistance_strength_end': null,
+  'ability': null,
+  'material_override.material_path': null,
+  'material_override.material_slot': null,
 }
 
 const handlers = {
@@ -128,7 +244,31 @@ const handlers = {
     'is_one_handed',
   ]),
   WeaponCustomizationComponent(wpn, component) {
-    // TODO
+    const changes = component
+      .default_customizations
+      .filter(({ customization }) => customization)
+    if(!changes.length) {
+      return
+    }
+    wpn.customizations ||= {}
+    wpn.modifiers ||= []
+    for(const { slot, customization } of changes) {
+      const change = WeaponCustomizations[customization]
+      if(!change?.add_path) {
+        continue
+      }
+      const delta = EntityDeltas[change?.add_path]
+      for(const [k, v] of Object.entries(delta)) {
+        const handler = deltaHandlers[k]
+        if(handler === null) continue
+        if(!handler) {
+          clipboard.writeSync(`  '${k}': null,`)
+          console.log({ wpn, v, k, delta, slot })
+          throw new Error(`Handler not implemented: "${k}"`)
+        }
+        handler(wpn, v, k, delta)
+      }
+    }
   },
   AbilityComponent: null,
   NetworkPhysicsComponent: null,
@@ -341,6 +481,13 @@ function hex(v) {
 }
 
 async function readEntities() {
+  EntityDeltas = await readJson(dataDir, 'entities/EntityDeltas')
+  const customizations =  await readJson(dataDir, 'settings/generated_weapon_customization_settings')
+  for(const tweak of customizations
+    .flatMap(c => c.WeaponCustomizationSettings.items)
+  ) {
+    WeaponCustomizations[tweak.id] = tweak
+  }
   const ComponentType = await readJson(dataDir, 'enums/ComponentType')
     .then(data => {
       const firstComponentIdx = data.ComponentType

@@ -5,10 +5,6 @@ source = "start"
 recoil = 15
 reload = 3
 reloadearly = 2
-cap = 45
-mags = 7
-magstart = 5
-supply = 7
 scopes = [25, 50, 100]
 attachments = ["laser", "flashlight"]
 [[weapon.attack]]

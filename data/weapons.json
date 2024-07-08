@@ -15,13 +15,13 @@
       "attachments": ["laser", "flashlight"],
       "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
       "burst": 3,
-      "cap": 45,
+      "cap": 30,
       "capplus": 1,
       "category": "AR",
       "ergonomics": 65,
       "fullname": "AR-23 Liberator",
-      "mags": 7,
-      "magstart": 5,
+      "mags": 12,
+      "magstart": 6,
       "modes": ["Automatic", "Single", "Burst"],
       "recoil": 15,
       "recoilxy": {"x": 10, "y": 10},
@@ -31,7 +31,7 @@
       "scopes": [25, 50, 100],
       "source": "start",
       "spreadxy": {"x": 4, "y": 4},
-      "supply": 7
+      "supply": 6
     },
     {
       "attachments": ["laser", "flashlight"],

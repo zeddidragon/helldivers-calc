@@ -371,6 +371,17 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 15,
+      "magazines": 4,
+      "magazines_refill": 6,
+      "magazines_max": 6,
+      "chambered": 0
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "PLAS-101 Purifier"
   },
   "16910079541664006285": {
@@ -449,7 +460,9 @@
     "num_low_ammo_rounds": 5,
     "spinup_time": 0,
     "silenced": 0,
-    "burst_fire_rate": 660
+    "burst_fire_rate": 660,
+    "customizations": {},
+    "modifiers": []
   },
   "17848709375785648310": {
     "id": "0xf7b35a9c5ae34000",
@@ -522,6 +535,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
+    ],
     "key": "SG-225SP Breaker Spray&Pray"
   },
   "17488789745215357128": {
@@ -674,7 +691,9 @@
     "num_low_ammo_rounds": 5,
     "spinup_time": 0,
     "silenced": 0,
-    "burst_fire_rate": 660
+    "burst_fire_rate": 660,
+    "customizations": {},
+    "modifiers": []
   },
   "721550233589928225": {
     "id": "0xa03761d50ba5100",
@@ -1135,6 +1154,24 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "ammo_types.primary_projectile_type": "ProjectileType_Shotgun_10g_flm"
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1.5},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1.5},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 0.75},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 0.75},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 0.75},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 0.75},
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1.5},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1.5},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 0.75},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 0.75},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 0.75},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 0.75},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0}
+    ],
     "key": "SG-8F Punisher fire of liberty"
   },
   "8192757692405735881": {
@@ -1234,6 +1271,8 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [],
     "key": "EAT-17 Expendable Anti-Tank"
   },
   "11613148414962332127": {
@@ -1321,6 +1360,10 @@
     "is_one_handed": 0,
     "arc_type": "ArcType_ArcShotgun",
     "rounds_per_minute": 45,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0}
+    ],
     "key": "ARC-12 Blitzer"
   },
   "9927421484392399367": {
@@ -1372,6 +1415,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -14}
+    ],
     "key": "APW-1 Anti-Materiel Rifle"
   },
   "3658900074006331912": {
@@ -1563,6 +1610,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
+    ],
     "key": "MG-206 Heavy Machine Gun"
   },
   "9965870354970800749": {
@@ -1708,6 +1759,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -10}
+    ],
     "key": "AR-23P Liberator Penetrator"
   },
   "6318095193127658106": {
@@ -1799,6 +1854,11 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "M-105 Stalwart"
   },
   "2802369506329449110": {
@@ -1856,6 +1916,8 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [],
     "key": "RL-77 Airburst Rocket Launcher"
   },
   "1892480894983787169": {
@@ -1906,6 +1968,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "P-113 Verdict"
   },
   "5199653481743360714": {
@@ -2190,6 +2256,18 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 31,
+      "magazines": 4,
+      "magazines_max": 4,
+      "magazines_refill": 4,
+      "reload": 2.1,
+      "projectile_type": "ProjectileType_Pistol_9x20mm_fmj"
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -8},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
+    ],
     "key": "P-19 Redeemer"
   },
   "5050852199397921576": {
@@ -2241,6 +2319,25 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 13,
+      "magazines": 5,
+      "magazines_max": 7,
+      "magazines_refill": 7,
+      "reload": 2.5,
+      "projectile_type": "ProjectileType_Shotgun_12g_buc"
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 3},
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "SG-225 Breaker"
   },
   "5725374950499373869": {
@@ -2297,6 +2394,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "SG-8S Slugger"
   },
   "2877271129141764950": {
@@ -2350,6 +2451,12 @@
     "min_reload_temperature": 0,
     "beam_type": "BeamType_Medium",
     "noise_timer": 0.25,
+    "customizations": {"beam_type": "BeamType_Medium"},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "LAS-5 Scythe"
   },
   "10768610637301609307": {
@@ -2402,6 +2509,16 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 50,
+      "magazines": 5,
+      "magazines_max": 7,
+      "magazines_refill": 5,
+      "reload": 2.5
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "MP-98 Knight"
   },
   "11756121139324203897": {
@@ -2450,7 +2567,9 @@
     "num_low_ammo_rounds": 5,
     "spinup_time": 0,
     "silenced": 0,
-    "burst_fire_rate": 660
+    "burst_fire_rate": 660,
+    "customizations": {},
+    "modifiers": []
   },
   "9675404802175538082": {
     "id": "0x8645f167b3c81000",
@@ -2512,6 +2631,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6}
+    ],
     "key": "LAS-16 Sickle"
   },
   "4155583896232633279": {
@@ -2606,6 +2729,18 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 150,
+      "magazines": 3,
+      "magazines_max": 4,
+      "magazines_refill": 3,
+      "reload_allow_move": 1,
+      "reload": 4.6
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -20},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "M-105 Stalwart"
   },
   "10134470972353573832": {
@@ -2879,6 +3014,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6}
+    ],
     "key": "BR-14 Adjudicator"
   },
   "2568747792294183916": {
@@ -2984,6 +3123,18 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 150,
+      "magazines": 3,
+      "magazines_max": 4,
+      "magazines_refill": 3,
+      "reload_allow_move": 1,
+      "reload": 4.6
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -20},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "M-105 Stalwart"
   },
   "10177381595962512386": {
@@ -3040,6 +3191,16 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {"projectile_type": "ProjectileType_Pistol_13x40mm_fmj"},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3},
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 1}
+    ],
     "key": "P-4 Senator"
   },
   "16472578507204645895": {
@@ -3112,6 +3273,8 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [],
     "key": "GR-8 Recoilless Rifle"
   },
   "2401215835282261016": {
@@ -3163,6 +3326,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
+    ],
     "key": "MG-206 Heavy Machine Gun"
   },
   "18417602992972518459": {
@@ -3315,6 +3482,8 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [],
     "key": "LAS-99 Quasar Cannon"
   },
   "6951176475743020159": {
@@ -3413,6 +3582,17 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "projectile_type": "ProjectileType_Pistol_9x20mm_hp",
+      "magazine_capacity": 15,
+      "magazines": 4,
+      "magazines_max": 5,
+      "magazines_refill": 5,
+      "reload": 1.8
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "P-2 Peacemaker"
   },
   "18223572581977941174": {
@@ -3505,6 +3685,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -14}
+    ],
     "key": "R-63CS Diligence Counter Sniper"
   },
   "2714034314705433838": {
@@ -3561,6 +3745,8 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [],
     "key": "FAF-14 Spear"
   },
   "12548565706891777268": {
@@ -3722,6 +3908,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
+    ],
     "key": "SG-8P Punisher Plasma"
   },
   "16450357640400839941": {
@@ -3886,6 +4076,18 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 150,
+      "magazines": 3,
+      "magazines_max": 4,
+      "magazines_refill": 3,
+      "reload_allow_move": 1,
+      "reload": 4.6
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -20},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "M-105 Stalwart"
   },
   "5244756512985933074": {
@@ -3995,6 +4197,23 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "reload": 3,
+      "magazine_capacity": 20,
+      "magazines": 5,
+      "magazines_max": 8,
+      "magazines_refill": 8,
+      "projectile_type": "ProjectileType_Rifle_9x70mm_fmj"
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -10},
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 1}
+    ],
     "key": "R-63 Diligence"
   },
   "14780545738251228467": {
@@ -4203,7 +4422,11 @@
     "num_low_ammo_rounds": 0,
     "spinup_time": 0,
     "silenced": 0,
-    "burst_fire_rate": 0
+    "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -14}
+    ]
   },
   "5910727434981086692": {
     "id": "0x52071f4926341400",
@@ -4824,6 +5047,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "SG-225NS Breaker Nailspitter"
   },
   "6453678319562593995": {
@@ -4878,6 +5105,8 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [],
     "key": "MLS-4X Commando"
   },
   "1374362502002005721": {
@@ -5152,6 +5381,11 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "SMG-72 Pummeler"
   },
   "36176771630602099": {
@@ -5284,6 +5518,11 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "M-105 Stalwart"
   },
   "14249494547947571097": {
@@ -5536,7 +5775,11 @@
     "charge_loss_per_second": 1000,
     "min_reload_temperature": 0,
     "beam_type": "BeamType_Small",
-    "noise_timer": 0.25
+    "noise_timer": 0.25,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
+    ]
   },
   "133122695844997115": {
     "id": "0x1d8f262f5622800",
@@ -5588,6 +5831,16 @@
     "silenced": 1,
     "burst_fire_rate": 0,
     "speed_multiplier": 0.5,
+    "customizations": {"projectile_type": "ProjectileType_Rifle_5p5x50mm_fmj"},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6},
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 1}
+    ],
     "key": "AR-48 Truth Whisperer"
   },
   "14845617694460717074": {
@@ -5639,6 +5892,11 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "AR-61 Tenderizer"
   },
   "14105761812163438622": {
@@ -5836,6 +6094,8 @@
     "min_reload_temperature": 50,
     "beam_type": "BeamType_LaserCannon",
     "noise_timer": 0.25,
+    "customizations": {},
+    "modifiers": [],
     "key": "LAS-98 Laser Cannon"
   },
   "14427145521595639927": {
@@ -6093,6 +6353,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
+    ],
     "key": "MG-206 Heavy Machine Gun"
   },
   "2114795373903595840": {
@@ -6191,6 +6455,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "MG-43 Machine Gun"
   },
   "9219146911950674287": {
@@ -6688,6 +6956,8 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
     "is_one_handed": 0,
+    "customizations": {},
+    "modifiers": [],
     "warmup_time": 0.699999988,
     "cooldown_time": 15,
     "spray_capsule_radius": 0,
@@ -6889,6 +7159,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
+    ],
     "key": "SG-225IE Breaker Incendiary"
   },
   "4749824949454633632": {
@@ -6945,6 +7219,24 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "ammo_types.primary_projectile_type": "ProjectileType_Shotgun_10g_buc"
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0}
+    ],
     "key": "SG-8 Punisher"
   },
   "13781410671701883569": {
@@ -7192,7 +7484,9 @@
     "charge_loss_per_second": 75,
     "min_reload_temperature": 0,
     "beam_type": "BeamType_PhysGun",
-    "noise_timer": 0.25
+    "noise_timer": 0.25,
+    "customizations": {},
+    "modifiers": []
   },
   "226457403917573050": {
     "id": "0x32489cf1d439bc0",
@@ -7257,6 +7551,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "AR-23C Liberator Concussive"
   },
   "16204610837508709347": {
@@ -7354,6 +7652,17 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 15,
+      "magazines": 4,
+      "magazines_refill": 6,
+      "magazines_max": 6,
+      "chambered": 0
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "PLAS-1 Scorcher"
   },
   "5641428405267160100": {
@@ -7405,6 +7714,24 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 45,
+      "magazines": 5,
+      "magazines_max": 7,
+      "magazines_refill": 7,
+      "reload": 2.8,
+      "projectile_type": "ProjectileType_Pistol_12x25mm_fmj"
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "SMG-37 Defender"
   },
   "12279528435724053588": {
@@ -7455,6 +7782,14 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 9,
+      "magazines": 4,
+      "magazines_refill": 4,
+      "magazines_max": 4,
+      "chambered": 0
+    },
+    "modifiers": [],
     "key": "PLAS-3 Singe"
   },
   "12164217308285983839": {
@@ -7514,6 +7849,8 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [],
     "key": "AC-8 Autocannon"
   },
   "7509990704627358840": {
@@ -7610,6 +7947,10 @@
     "min_reload_temperature": 0,
     "beam_type": "BeamType_Small",
     "noise_timer": 0.25,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
+    ],
     "key": "LAS-7 Dagger"
   },
   "12587270281642273949": {
@@ -7727,6 +8068,8 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [],
     "key": "GP-31 Grenade Pistol"
   },
   "4272070332797734129": {
@@ -7990,6 +8333,12 @@
     "min_reload_temperature": 0,
     "beam_type": "BeamType_MediumDrone",
     "noise_timer": 0.25,
+    "customizations": {"beam_type": "BeamType_Medium"},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "LAS-5 Scythe"
   },
   "2303622299803843892": {
@@ -8597,7 +8946,9 @@
     "num_low_ammo_rounds": 5,
     "spinup_time": 0,
     "silenced": 0,
-    "burst_fire_rate": 150
+    "burst_fire_rate": 150,
+    "customizations": {},
+    "modifiers": []
   },
   "9291384900638350902": {
     "id": "0x80f1a156d9fa2000",
@@ -8649,6 +9000,25 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "projectile_type": "ProjectileType_Rocket_15x100mm_std",
+      "magazine_capacity": 15,
+      "magazines": 4,
+      "magazines_max": 6,
+      "magazines_refill": 6,
+      "reload_allow_move": 1,
+      "reload": 3.8
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "JAR-5 Dominator"
   },
   "3358853937828503136": {
@@ -8737,6 +9107,8 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [],
     "key": "RS-422 Railgun"
   },
   "10845250369047350884": {
@@ -8788,6 +9160,24 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 45,
+      "magazines": 5,
+      "magazines_max": 7,
+      "magazines_refill": 7,
+      "reload": 3,
+      "projectile_type": "ProjectileType_Rifle_5p5x50mm_fmj"
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5},
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilHorizontalAlt", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVertical", "value": 1},
+      {"type": "WeaponStatModifierType_Mul_RecoilVerticalAlt", "value": 1}
+    ],
     "key": "AR-23 Liberator"
   },
   "11062825334817279592": {
@@ -9111,6 +9501,11 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "M-105 Stalwart"
   },
   "5344291599364980417": {
@@ -9249,6 +9644,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "SG-225BB Breaker Bugbiter"
   },
   "14685780296579739413": {
@@ -9349,6 +9748,17 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {
+      "magazine_capacity": 45,
+      "magazines": 5,
+      "magazines_max": 7,
+      "magazines_refill": 7,
+      "reload": 3
+    },
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1},
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "AR-23A Liberator Carbine"
   },
   "11240016882397388584": {
@@ -9608,6 +10018,10 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
+    "customizations": {},
+    "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
+    ],
     "key": "CB-9 Exploding Crossbow"
   },
   "12827722989328478091": {
