@@ -72,7 +72,38 @@ const purge = [
 const matches = []
 const shalzuthMatch = {}
 
+function applySchema(wpn, { source, dest = source, cb }, data) {
+  if(wpn[dest] != null) {
+    return
+  }
+
+  const v = data[source]
+  if(v == null) {
+    return
+  }
+
+  if(cb) {
+    cb(wpn, v, data)
+  } else {
+    wpn[dest] = v
+  }
+}
+
+const modifierFuncs = {
+  Add_Ergonomics: (wpn, v) => wpn.ergonomics += v,
+  Mul_SpreadHorizontal: (wpn, v) => wpn.spreadxy.x *= v,
+  Mul_SpreadVertical: (wpn, v) => wpn.spreadxy.y *= v,
+  Mul_RecoilHorizontal: (wpn, v) => wpn.recoilxy.x *= v,
+  Mul_RecoilHorizontalAlt: (wpn, v) => void 0, // Noop?
+  Mul_RecoilVertical: (wpn, v) => wpn.recoilxy.y *= v,
+  Mul_RecoilVerticalAlt: (wpn, v) => void 0, // Noop?
+}
+
+let allModifiers = new Set()
 const shalzuthSchema = [
+  { source: 'customizations', cb: (wpn, data, ) => {
+    shalzuthSchema.slice(1).forEach(entry => applySchema(wpn, entry, data))
+  }},
   { source: 'magazine_capacity', cb: (wpn, cap) => {
     if(wpn.cap) {
       return
@@ -181,6 +212,13 @@ const shalzuthSchema = [
       wpn.heatdown = +(temp / cfg.temp_loss_per_second).toFixed(1)
     }
   }},
+  { source: 'modifiers', cb: (wpn, data) => {
+    for(const { type, value } of data) {
+      modifierFuncs[type.replace('WeaponStatModifierType_', '')](wpn, value)
+      allModifiers.add(type)
+    }
+    console.log(allModifiers)
+  }},
 ]
 
 let dbgCondition = false
@@ -215,21 +253,8 @@ for(const wpn of [...setup.weapon, ...setup.stratagem]) {
     continue
   }
   
-  for(const { source, dest = source, cb } of shalzuthSchema) {
-    if(wpn[dest]) {
-      continue
-    }
-    const v = matched[source]
-    if(v == null) {
-      continue
-    }
 
-    if(cb) {
-      cb(wpn, v, matched)
-    } else {
-      wpn[dest] = v
-    }
-  }
+  shalzuthSchema.forEach(entry => applySchema(wpn, entry, matched))
 
   if(dbgCondition) {
     console.log(name, matched, wpn)
@@ -238,7 +263,7 @@ for(const wpn of [...setup.weapon, ...setup.stratagem]) {
 
   // Remove/constrain some garbage data
   if(wpn.supply > wpn.mags) {
-    Math.max(Math.floor(wpn.box = wpn.supply * 0.5), wpn.mags)
+    Math.min(Math.floor(wpn.box = wpn.supply * 0.5), wpn.mags)
     wpn.supply = wpn.mags
   }
   if(wpn.supply === 0) {
@@ -249,6 +274,9 @@ for(const wpn of [...setup.weapon, ...setup.stratagem]) {
     delete wpn.mags
     delete wpn.supply
     delete wpn.box
+  }
+  if(wpn.capplus === 0) {
+    delete wpn.capplus
   }
 }
 

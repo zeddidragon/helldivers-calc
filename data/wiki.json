@@ -16849,12 +16849,12 @@
         "flashlight"
       ],
       "burst": 3,
-      "cap": 30,
+      "cap": 45,
       "capplus": 1,
       "category": "Assault Rifle",
-      "ergonomics": 65,
-      "mags": 12,
-      "magstart": 6,
+      "ergonomics": 54,
+      "mags": 7,
+      "magstart": 5,
       "modes": [
         "Automatic",
         "Single",
@@ -16878,7 +16878,7 @@
         "x": 4,
         "y": 4
       },
-      "supply": 6,
+      "supply": 7,
       "attacks": [
         {
           "type": "projectile",
@@ -16895,7 +16895,7 @@
       "cap": 30,
       "capplus": 1,
       "category": "Assault Rifle",
-      "ergonomics": 59,
+      "ergonomics": 49,
       "mags": 10,
       "magstart": 7,
       "modes": [
@@ -16938,7 +16938,7 @@
       "cap": 30,
       "capplus": 1,
       "category": "Assault Rifle",
-      "ergonomics": 65,
+      "ergonomics": 60,
       "mags": 10,
       "magstart": 7,
       "modes": [
@@ -16976,9 +16976,9 @@
       "cap": 45,
       "capplus": 1,
       "category": "Assault Rifle",
-      "ergonomics": 65,
+      "ergonomics": 59,
       "mags": 7,
-      "magstart": 4,
+      "magstart": 5,
       "modes": [
         "Automatic",
         "Single",
@@ -17019,9 +17019,9 @@
       "cap": 30,
       "capplus": 1,
       "category": "Assault Rifle",
-      "ergonomics": 65,
+      "ergonomics": 54,
       "mags": 7,
-      "magstart": 5,
+      "magstart": 4,
       "modes": [
         "Automatic",
         "Single",
@@ -17061,7 +17061,7 @@
       "cap": 30,
       "capplus": 1,
       "category": "Assault Rifle",
-      "ergonomics": 40,
+      "ergonomics": 34,
       "mags": 8,
       "magstart": 6,
       "modes": [
@@ -17099,7 +17099,7 @@
       "cap": 20,
       "capplus": 1,
       "category": "Marksman Rifle",
-      "ergonomics": 65,
+      "ergonomics": 55,
       "mags": 8,
       "magstart": 5,
       "modes": [
@@ -17136,7 +17136,7 @@
       "cap": 15,
       "capplus": 1,
       "category": "Marksman Rifle",
-      "ergonomics": 35,
+      "ergonomics": 21,
       "mags": 6,
       "magstart": 4,
       "modes": [
@@ -17177,7 +17177,7 @@
       "cap": 50,
       "capplus": 1,
       "category": "Submachine Gun",
-      "ergonomics": 90,
+      "ergonomics": 85,
       "mags": 7,
       "magstart": 5,
       "modes": [
@@ -17217,7 +17217,7 @@
       "cap": 45,
       "capplus": 1,
       "category": "Submachine Gun",
-      "ergonomics": 90,
+      "ergonomics": 85,
       "mags": 7,
       "magstart": 5,
       "modes": [
@@ -17258,7 +17258,7 @@
       "cap": 45,
       "capplus": 1,
       "category": "Submachine Gun",
-      "ergonomics": 90,
+      "ergonomics": 85,
       "mags": 7,
       "magstart": 5,
       "modes": [
@@ -17316,9 +17316,6 @@
         "x": 150,
         "y": 120
       },
-      "tags": [
-        "rounds"
-      ],
       "attacks": [
         {
           "type": "projectile",
@@ -17330,7 +17327,7 @@
       "cap": 16,
       "capplus": 1,
       "category": "Shotgun",
-      "ergonomics": 65,
+      "ergonomics": 60,
       "modes": [
         "Single"
       ],
@@ -17351,9 +17348,6 @@
         "x": 6,
         "y": 6
       },
-      "tags": [
-        "rounds"
-      ],
       "attacks": [
         {
           "type": "projectile",
@@ -17368,7 +17362,7 @@
       "cap": 13,
       "capplus": 1,
       "category": "Shotgun",
-      "ergonomics": 65,
+      "ergonomics": 63,
       "mags": 7,
       "magstart": 5,
       "modes": [
@@ -17404,7 +17398,7 @@
       "cap": 26,
       "capplus": 1,
       "category": "Shotgun",
-      "ergonomics": 25,
+      "ergonomics": 24,
       "mags": 8,
       "magstart": 6,
       "modes": [
@@ -17441,7 +17435,7 @@
       "cap": 25,
       "capplus": 1,
       "category": "Shotgun",
-      "ergonomics": 50,
+      "ergonomics": 47,
       "mags": 6,
       "magstart": 4,
       "modes": [
@@ -17477,9 +17471,9 @@
       "cap": 5,
       "capplus": 1,
       "category": "Explosive",
-      "ergonomics": 45,
+      "ergonomics": 40,
       "mags": 8,
-      "magstart": 8,
+      "magstart": 6,
       "modes": [
         "Single"
       ],
@@ -17516,7 +17510,7 @@
       "cap": 15,
       "capplus": 1,
       "category": "Explosive",
-      "ergonomics": 30,
+      "ergonomics": 20,
       "mags": 6,
       "magstart": 4,
       "modes": [
@@ -17557,7 +17551,7 @@
       "category": "Explosive",
       "ergonomics": -14,
       "mags": 6,
-      "magstart": 6,
+      "magstart": 4,
       "modes": [
         "Single"
       ],
@@ -17598,9 +17592,8 @@
     },
     "SG-8P Punisher Plasma": {
       "cap": 8,
-      "capplus": 0,
       "category": "Energy-Based",
-      "ergonomics": 65,
+      "ergonomics": 62,
       "mags": 8,
       "magstart": 6,
       "modes": [
@@ -17661,12 +17654,13 @@
       ]
     },
     "LAS-5 Scythe": {
+      "box": 3,
       "category": "Energy-Based",
-      "ergonomics": 65,
+      "ergonomics": 57,
       "heatdown": 15,
       "limit": 8,
       "mags": 4,
-      "magstart": 2,
+      "magstart": 3,
       "modes": [
         "Automatic"
       ],
@@ -17694,12 +17688,13 @@
       ]
     },
     "LAS-16 Sickle": {
+      "box": 3,
       "category": "Energy-Based",
-      "ergonomics": 65,
+      "ergonomics": 59,
       "heatdown": 12.5,
       "limit": 7,
       "mags": 3,
-      "magstart": 3,
+      "magstart": 2,
       "modes": [
         "Automatic"
       ],
@@ -17732,11 +17727,10 @@
     },
     "PLAS-1 Scorcher": {
       "cap": 15,
-      "capplus": 0,
       "category": "Energy-Based",
-      "ergonomics": 65,
+      "ergonomics": 55,
       "mags": 6,
-      "magstart": 3,
+      "magstart": 4,
       "modes": [
         "Single"
       ],
@@ -17768,12 +17762,11 @@
     },
     "PLAS-101 Purifier": {
       "cap": 15,
-      "capplus": 0,
       "category": "Energy-Based",
       "charge": 1.3,
-      "ergonomics": 65,
+      "ergonomics": 55,
       "mags": 6,
-      "magstart": 3,
+      "magstart": 4,
       "modes": [
         "Single"
       ],
@@ -17804,7 +17797,6 @@
     },
     "SG-22 Bushwhacker": {
       "cap": 3,
-      "capplus": 0,
       "category": "Secondary Shotgun",
       "ergonomics": 65,
       "modes": [
@@ -17828,9 +17820,6 @@
         "x": 200,
         "y": 150
       },
-      "tags": [
-        "1h"
-      ],
       "attacks": [
         {
           "type": "projectile",
@@ -17846,7 +17835,7 @@
       "cap": 15,
       "capplus": 1,
       "category": "Pistol",
-      "ergonomics": 100,
+      "ergonomics": 95,
       "mags": 5,
       "magstart": 4,
       "modes": [
@@ -17883,7 +17872,7 @@
       "cap": 31,
       "capplus": 1,
       "category": "Pistol",
-      "ergonomics": 95,
+      "ergonomics": 84,
       "mags": 4,
       "magstart": 4,
       "modes": [
@@ -17923,9 +17912,9 @@
       "cap": 10,
       "capplus": 1,
       "category": "Pistol",
-      "ergonomics": 100,
+      "ergonomics": 95,
       "mags": 8,
-      "magstart": 5,
+      "magstart": 4,
       "modes": [
         "Single"
       ],
@@ -17978,9 +17967,6 @@
         "x": 30,
         "y": 30
       },
-      "tags": [
-        "1h"
-      ],
       "attacks": [
         {
           "type": "projectile",
@@ -17993,8 +17979,9 @@
       ]
     },
     "LAS-7 Dagger": {
+      "box": 3,
       "category": "Pistol",
-      "ergonomics": 95,
+      "ergonomics": 92,
       "heatdown": 10,
       "limit": 5,
       "mags": 3,
@@ -18027,13 +18014,9 @@
       ]
     },
     "P-4 Senator": {
-      "attachments": [
-        "flashlight"
-      ],
       "cap": 6,
-      "capplus": 0,
       "category": "Pistol",
-      "ergonomics": 75,
+      "ergonomics": 72,
       "modes": [
         "Single"
       ],
@@ -18046,6 +18029,9 @@
       "reloadone": 2.2,
       "reloadx": 4.8,
       "reloadxnum": 5,
+      "roundattachments": [
+        "flashlight"
+      ],
       "rounds": 40,
       "roundstart": 32,
       "roundsupply": 20,
@@ -18073,7 +18059,7 @@
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
-      "ergonomics": 25,
+      "ergonomics": 19,
       "mags": 3,
       "magstart": 2,
       "modes": [
@@ -18111,7 +18097,7 @@
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
-      "ergonomics": 15,
+      "ergonomics": 10,
       "mags": 3,
       "magstart": 1,
       "modes": [
@@ -18149,7 +18135,7 @@
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
-      "ergonomics": 0,
+      "ergonomics": -1,
       "mags": 2,
       "magstart": 1,
       "modes": [
@@ -18212,7 +18198,6 @@
       "box": 3,
       "calltime": 3,
       "cap": 100,
-      "capplus": 0,
       "category": "Support Weapon",
       "cooldown": 480,
       "ergonomics": 5,
@@ -18250,7 +18235,7 @@
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
-      "ergonomics": 35,
+      "ergonomics": 21,
       "mags": 6,
       "magstart": 4,
       "modes": [
@@ -18328,7 +18313,6 @@
       "clips": 10,
       "clipsize": 5,
       "clipstart": 10,
-      "clipsupply": 5,
       "cooldown": 480,
       "ergonomics": 17,
       "modes": [
@@ -18365,7 +18349,6 @@
     "RS-422 Railgun": {
       "calltime": 3,
       "cap": 1,
-      "capplus": 0,
       "category": "Support Weapon",
       "charge": 3,
       "chargeearly": 0.5,
@@ -18399,6 +18382,7 @@
       ]
     },
     "LAS-98 Laser Cannon": {
+      "box": 3,
       "calltime": 3,
       "category": "Support Weapon",
       "cooldown": 480,
@@ -18475,7 +18459,6 @@
     "EAT-17 Expendable Anti-Tank": {
       "calltime": 3,
       "cap": 1,
-      "capplus": 0,
       "category": "Support Weapon",
       "cooldown": 70,
       "ergonomics": 15,
@@ -18510,7 +18493,6 @@
     "MLS-4X Commando": {
       "calltime": 3,
       "cap": 4,
-      "capplus": 0,
       "category": "Support Weapon",
       "cooldown": 120,
       "ergonomics": 10,
@@ -18561,7 +18543,6 @@
       "reload": 6,
       "rounds": 5,
       "roundstart": 5,
-      "roundsupply": 3,
       "rpm": 600,
       "source": "support",
       "spreadxy": {
@@ -18599,7 +18580,6 @@
       "reload": 5,
       "rounds": 3,
       "roundstart": 3,
-      "roundsupply": 2,
       "rpm": 240,
       "source": "support",
       "spreadxy": {
@@ -18637,7 +18617,6 @@
       "reload": 6.7,
       "rounds": 5,
       "roundstart": 5,
-      "roundsupply": 3,
       "rpm": 600,
       "source": "support",
       "spreadxy": {
@@ -18668,7 +18647,6 @@
     },
     "Break-Action Shotgun": {
       "cap": 2,
-      "capplus": 0,
       "category": "Support Weapon",
       "ergonomics": 65,
       "modes": [
@@ -18682,7 +18660,7 @@
       "reload": 2.4,
       "reloadone": 2.3,
       "rounds": 40,
-      "roundstart": 20,
+      "roundstart": 0,
       "roundsupply": 20,
       "rpm": 600,
       "rpms": [
@@ -18707,7 +18685,6 @@
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
-      "roundsupply": 2,
       "source": "hd-mobilize",
       "sourcepage": 1,
       "attacks": [
@@ -18727,7 +18704,6 @@
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
-      "roundsupply": 2,
       "source": "start",
       "attacks": [
         {
@@ -18741,7 +18717,6 @@
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
-      "roundsupply": 2,
       "source": "steel-vets",
       "sourcepage": 2,
       "attacks": [
@@ -18756,7 +18731,6 @@
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
-      "roundsupply": 2,
       "source": "start",
       "attacks": [
         {
@@ -18770,7 +18744,6 @@
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
-      "roundsupply": 2,
       "source": "polar-pat",
       "sourcepage": 2,
       "attacks": [
@@ -18785,7 +18758,6 @@
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
-      "roundsupply": 2,
       "source": "cut-edge",
       "sourcepage": 2,
       "attacks": [
@@ -18800,7 +18772,6 @@
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
-      "roundsupply": 2,
       "source": "hd-mobilize",
       "sourcepage": 8,
       "attacks": [
@@ -18815,7 +18786,6 @@
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
-      "roundsupply": 2,
       "source": "demo-det",
       "sourcepage": 1,
       "attacks": [
@@ -18834,7 +18804,6 @@
       "rounds": 8,
       "roundsbox": 8,
       "roundstart": 6,
-      "roundsupply": 8,
       "source": "viper-commandos",
       "sourcepage": 3,
       "attacks": [
@@ -18935,7 +18904,6 @@
       ]
     },
     "Patriot Gatling Gun": {
-      "cap": 1000,
       "category": "Mounted Weapon",
       "attacks": [
         {
@@ -18945,7 +18913,6 @@
       ]
     },
     "Patriot Rocket Pod": {
-      "cap": 15,
       "category": "Mounted Weapon",
       "attacks": [
         {
@@ -18959,7 +18926,6 @@
       ]
     },
     "Emancipator Twin Autocannon": {
-      "cap": 75,
       "category": "Mounted Weapon",
       "attacks": [
         {
@@ -18978,7 +18944,6 @@
       "armor": 4,
       "calltime": 5,
       "cooldown": 480,
-      "cap": 4,
       "attacks": []
     },
     "AX/AR-23 \"Guard Dog\"": {
@@ -18987,7 +18952,6 @@
       "armor": 4,
       "calltime": 5,
       "cooldown": 480,
-      "cap": 30,
       "salvos": 6,
       "attacks": [
         {
@@ -19048,7 +19012,6 @@
       "stratcode": "dlur",
       "health": 250,
       "armor": 1,
-      "cap": 48,
       "calltime": 3,
       "cooldown": 180,
       "attacks": [
@@ -19066,7 +19029,6 @@
       "stratcode": "dluu",
       "health": 250,
       "armor": 1,
-      "cap": 18,
       "calltime": 3,
       "cooldown": 180,
       "attacks": [
@@ -19084,7 +19046,6 @@
       "stratcode": "dlld",
       "health": 250,
       "armor": 1,
-      "cap": 48,
       "calltime": 3,
       "cooldown": 180,
       "attacks": [
@@ -19104,7 +19065,7 @@
       "armor": 2,
       "calltime": 8,
       "cooldown": 120,
-      "cap": 130,
+      "cap": 125,
       "mags": 0,
       "magstart": 0,
       "capplus": 1,
@@ -19139,7 +19100,7 @@
       "armor": 2,
       "calltime": 8,
       "cooldown": 180,
-      "cap": 390,
+      "cap": 400,
       "mags": 0,
       "magstart": 0,
       "capplus": 1,
@@ -19239,7 +19200,7 @@
       "armor": 2,
       "calltime": 8,
       "cooldown": 180,
-      "cap": 15,
+      "cap": 16,
       "mags": 0,
       "magstart": 0,
       "capplus": 1,
@@ -19278,10 +19239,9 @@
       "armor": 2,
       "calltime": 8,
       "cooldown": 180,
-      "cap": 32,
+      "cap": 16,
       "mags": 1,
       "magstart": 1,
-      "capplus": 0,
       "supply": 1,
       "recoilxy": {
         "x": 2.5,
@@ -19461,7 +19421,6 @@
       "calltime": 2,
       "cooldown": 80,
       "salvos": 4,
-      "cap": 60,
       "attacks": [
         {
           "type": "projectile",
@@ -19478,7 +19437,6 @@
       "calltime": 5,
       "cooldown": 240,
       "salvos": 5,
-      "cap": 3,
       "attacks": [
         {
           "type": "projectile",
@@ -19495,7 +19453,6 @@
       "calltime": 6,
       "cooldown": 240,
       "salvos": 5,
-      "cap": 3,
       "attacks": [
         {
           "type": "projectile",
@@ -19512,7 +19469,6 @@
       "calltime": 3,
       "cooldown": 240,
       "salvos": 3,
-      "cap": 3,
       "attacks": [
         {
           "type": "projectile",
@@ -19557,7 +19513,6 @@
       "stratcode": "urdr",
       "cooldown": 15,
       "eaglestock": 2,
-      "cap": 6,
       "attacks": [
         {
           "type": "projectile",
@@ -19573,7 +19528,6 @@
       "stratcode": "urdu",
       "cooldown": 15,
       "eaglestock": 2,
-      "cap": 4,
       "attacks": [
         {
           "type": "projectile",
@@ -19589,7 +19543,6 @@
       "stratcode": "urddd",
       "cooldown": 15,
       "eaglestock": 1,
-      "cap": 1,
       "attacks": [
         {
           "type": "projectile",
@@ -19624,7 +19577,6 @@
       "stratcode": "urddr",
       "cooldown": 15,
       "eaglestock": 4,
-      "cap": 8,
       "attacks": [
         {
           "type": "projectile",
@@ -19650,7 +19602,6 @@
       "stratcode": "urul",
       "cooldown": 15,
       "eaglestock": 2,
-      "cap": 6,
       "attacks": [
         {
           "type": "projectile",
@@ -19666,7 +19617,6 @@
       "stratcode": "urud",
       "cooldown": 15,
       "eaglestock": 2,
-      "cap": 8,
       "attacks": [
         {
           "type": "projectile",

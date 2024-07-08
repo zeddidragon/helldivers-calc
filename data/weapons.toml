@@ -7,9 +7,6 @@ reload = 3
 reloadearly = 2
 scopes = [25, 50, 100]
 attachments = ["laser", "flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_5p5x50mm_fmj"
 
 [[weapon]]
 category = "AR"
@@ -19,10 +16,6 @@ recoil = 19
 sourcepage = 6
 reload = 3
 reloadearly = 2
-cap = 30
-mags = 10
-magstart = 7
-supply = 10
 scopes = [25, 75, 150]
 attachments = ["laser", "flashlight"]
 
@@ -34,10 +27,6 @@ recoil = 28
 sourcepage = 1
 reload = 3
 reloadearly = 2
-cap = 30
-mags = 10
-magstart = 7
-supply = 10
 attachments = ["laser", "flashlight"]
 
 [[weapon]]
@@ -48,10 +37,6 @@ recoil = 26
 sourcepage = 1
 reload = 3.0
 reloadearly = 2.0
-cap = 45
-mags = 7
-magstart = 4
-supply = 7
 scopes = [25, 50, 100]
 attachments = ["laser", "flashlight"]
 
@@ -63,10 +48,6 @@ recoil = 10
 sourcepage = 1
 reload = 3.3
 reloadearly = 2.2
-cap = 30
-mags = 7
-magstart = 5
-supply = 7
 scopes = [25, 50, 100]
 attachments = ["flashlight"]
 
@@ -78,10 +59,6 @@ recoil = 40
 sourcepage = 1
 reload = 3
 reloadearly = 1.7
-cap = 30
-mags = 8
-magstart = 6
-supply = 8
 scopes = [25, 50, 100]
 attachments = ["flashlight"]
 
@@ -93,10 +70,6 @@ recoil = 35
 sourcepage = 2
 reload = 3
 reloadearly = 1.9
-cap = 20
-mags = 8
-magstart = 5
-supply = 8
 scopes = [25, 75, 150]
 
 [[weapon]]
@@ -107,10 +80,6 @@ recoil = 53
 sourcepage = 7
 reload = 3
 reloadearly = 1.9
-cap = 15
-mags = 6
-magstart = 4
-supply = 6
 scopes = [50, 100, 200]
 
 [[weapon]]
@@ -120,10 +89,6 @@ source = "dlc-super"
 recoil = 20
 reload = 2.5
 reloadearly = 1.8
-cap = 50
-mags = 7
-magstart = 5
-supply = 5
 tags = ["1h"]
 attachments = ["flashlight"]
 
@@ -135,15 +100,8 @@ recoil = 10
 sourcepage = 3
 reload = 2.8
 reloadearly = 2
-cap = 45
-mags = 7
-magstart = 5
-supply = 7
 tags = ["1h"]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Pistol_12x25mm_fmj"
 
 [[weapon]]
 category = "SMG"
@@ -153,10 +111,6 @@ recoil = 10
 sourcepage = 2
 reload = 3
 reloadearly = 2.1
-cap = 45
-mags = 7
-magstart = 5
-supply = 7
 tags = ["1h"]
 attachments = ["flashlight"]
 
@@ -168,11 +122,8 @@ recoil = 120
 sourcepage = 1
 reload = 6.9
 reloadone = 0.8
-cap = 16
 rounds = 60
 roundstart = 32
-roundsupply = 60
-tags = ["rounds"]
 
 [[weapon]]
 category = "SG"
@@ -182,11 +133,8 @@ recoil = 120
 sourcepage = 8
 reload = 6.9
 reloadone = 0.8
-cap = 16
 rounds = 60
 roundstart = 32
-roundsupply = 60
-tags = ["rounds"]
 
 [[weapon]]
 category = "SG"
@@ -196,10 +144,6 @@ recoil = 55
 sourcepage = 4
 reload = 2.5
 reloadearly = 1.8
-cap = 13
-mags = 7
-magstart = 5
-supply = 7
 attachments = ["flashlight"]
 
 [[weapon]]
@@ -210,10 +154,6 @@ recoil = 45
 sourcepage = 9
 reload = 3
 reloadearly = 2.1
-cap = 26
-mags = 8
-magstart = 6
-supply = 8
 attachments = ["flashlight"]
 
 [[weapon]]
@@ -224,10 +164,6 @@ recoil = 28
 sourcepage = 2
 reload = 2.5
 reloadearly = 1.8
-cap = 25
-mags = 6
-magstart = 4
-supply = 6
 tags = ["fire"]
 attachments = ["flashlight"]
 
@@ -238,10 +174,6 @@ source = "demo-det"
 recoil = 35
 sourcepage = 3
 reload = 3.3
-cap = 5
-mags = 8
-magstart = 8
-supply = 8
 
 [[weapon]]
 category = "EX"
@@ -251,15 +183,8 @@ recoil = 75
 sourcepage = 3
 reload = 3.8
 reloadearly = 2.6
-cap = 15
-mags = 6
-magstart = 4
-supply = 6
 tags = ["jet"]
 attachments = ["flashlight"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rocket_15x100mm_std"
 
 [[weapon]]
 category = "EX"
@@ -269,10 +194,6 @@ recoil = 75
 sourcepage = 2
 reload = 4.7
 reloadearly = 2.8
-cap = 5
-mags = 6
-magstart = 6
-supply = 6
 tags = ["jet","shrapnel"]
 scopes = [50, 100, 200]
 attachments = ["flashlight"]
@@ -284,10 +205,6 @@ source = "cut-edge"
 recoil = 110
 sourcepage = 2
 reload = 2.5
-cap = 8
-mags = 8
-magstart = 6
-supply = 8
 
 [[weapon]]
 category = "NRG"
@@ -309,9 +226,6 @@ source = "hd-mobilize"
 sourcepage = 5
 reload = 1.8
 reloadearly = 3
-mags = 4
-magstart = 2
-supply = 4
 tags = ["laser"]
 [[weapon.attack]]
 medium = "beam"
@@ -325,9 +239,6 @@ recoil = 2
 sourcepage = 1
 reload = 2.1
 reloadearly = 3
-mags = 3
-magstart = 3
-supply = 3
 scopes = [25, 50, 100]
 
 [[weapon]]
@@ -338,10 +249,6 @@ recoil = 20
 sourcepage = 10
 reload = 2.5
 reloadearly = 2.3
-cap = 15
-mags = 6
-magstart = 3
-supply = 6
 
 [[weapon]]
 category = "NRG"
@@ -351,10 +258,6 @@ recoil = 20
 sourcepage = 3
 charge = 1.3
 reload = 2.5
-cap = 15
-mags = 6
-magstart = 3
-supply = 6
 
 [[weapon]]
 category = "SG2"
@@ -364,11 +267,6 @@ recoil = 170
 sourcepage = 2
 reload = 1.8
 reloadearly = 3.0
-cap = 3
-rounds = 30
-roundstart = 30
-roundsupply = 30
-tags = ["1h"]
 
 [[weapon]]
 category = "HG"
@@ -377,15 +275,8 @@ source = "start"
 recoil = 23
 reload = 1.8
 reloadearly = 1.4
-cap = 15
-mags = 5
-magstart = 4
-supply = 5
 attachments = ["laser", "flashlight"]
 tags = ["1h"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Pistol_9x20mm_hp"
 
 [[weapon]]
 category = "HG"
@@ -395,15 +286,8 @@ recoil = 15
 sourcepage = 2
 reload = 2.1
 reloadearly = 1.4
-cap = 31
-mags = 4
-magstart = 4
-supply = 4
 attachments = ["flashlight"]
 tags = ["1h"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Pistol_9x20mm_fmj"
 
 [[weapon]]
 category = "HG"
@@ -413,10 +297,6 @@ recoil = 40
 sourcepage = 3
 reload = 2
 reloadearly = 1.4
-cap = 10
-mags = 8
-magstart = 5
-supply = 4
 attachments = ["laser", "flashlight"]
 tags = ["1h"]
 
@@ -427,11 +307,6 @@ source = "demo-det"
 recoil = 43
 sourcepage = 3
 reload = 2
-cap = 1
-rounds = 8
-roundstart = 4
-roundsupply = 2
-tags = ["1h"]
 
 [[weapon]]
 category = "HG"
@@ -441,9 +316,6 @@ recoil = 1
 sourcepage = 3
 reload = 1.8
 reloadearly = 2.3
-mags = 3
-magstart = 3
-supply = 3
 tags = ["1h"]
 [[weapon.attack]]
 medium = "beam"
@@ -459,11 +331,7 @@ reload = 2.8
 reloadone = 2.2
 reloadx = 4.8
 reloadxnum = 5
-cap = 6
-rounds = 40
-roundstart = 32
-roundsupply = 20
-attachments = ["flashlight"]
+roundattachments = ["flashlight"]
 tags = ["round", "1h"]
 
 [[weapon]]
@@ -536,10 +404,6 @@ calltime = 3
 cooldown = 480
 reload = 3.2
 reloadearly = 2.6
-cap = 7
-mags = 6
-magstart = 4
-supply = 3
 scopes = [50, 100, 200]
 
 [[weapon]]
@@ -561,11 +425,9 @@ calltime = 3
 cooldown = 480
 reload = 5.2
 reloadearly = 1.7
-cap = 10
 clips = 10
 clipstart = 10
 clipsize = 5
-clipsupply = 5
 
 [[weapon]]
 category = "SUP"
@@ -578,7 +440,6 @@ chargeearly = 0.5
 charge = 3
 chargefactor = 1.5
 reload = 1.3
-cap = 1
 
 [[weapon]]
 category = "SUP"
@@ -589,9 +450,6 @@ calltime = 3
 cooldown = 480
 reload = 3.6
 reloadearly = 5
-mags = 1
-magstart = 1
-supply = 1
 tags = ["laser"]
 [[weapon.attack]]
 medium = "beam"
@@ -613,7 +471,6 @@ source = "support"
 stratcode = "ddlur"
 calltime = 3
 cooldown = 70
-cap = 1
 rounds = 0
 
 [[weapon]]
@@ -623,12 +480,7 @@ source = "support"
 stratcode = "dludr"
 calltime = 3
 cooldown = 120
-cap = 4
 rounds = 0
-modes = ["semi"]
-[[weapon.attack]]
-medium = "projectile"
-ref = "Missile_66mm"
 
 [[weapon]]
 category = "SUP"
@@ -638,10 +490,8 @@ stratcode = "dlrrl"
 calltime = 3
 cooldown = 480
 reload = 6.0
-cap = 1
 rounds = 5
 roundstart = 5
-roundsupply = 3
 
 [[weapon]]
 category = "SUP"
@@ -651,10 +501,8 @@ stratcode = "ddudd"
 calltime = 3
 cooldown = 480
 reload = 5
-cap = 1
 rounds = 3
 roundstart = 3
-roundsupply = 2
 
 [[weapon]]
 category = "SUP"
@@ -664,10 +512,8 @@ stratcode = "duulr"
 calltime = 3
 cooldown = 480
 reload = 6.7
-cap = 1
 rounds = 5
 roundstart = 5
-roundsupply = 3
 
 [[weapon]]
 category = "SUP"
@@ -675,10 +521,7 @@ fullname = "Break-Action Shotgun"
 source = "support"
 reload = 2.4
 reloadone = 2.3
-cap = 2
-rounds = 40
 roundstart = 0
-roundsupply = 20
 
 [[weapon]]
 category = "GrSt"
@@ -687,7 +530,6 @@ source = "hd-mobilize"
 sourcepage = 1
 rounds = 4
 roundstart = 3
-roundsupply = 2
 roundsbox = 4
 
 [[weapon]]
@@ -696,7 +538,6 @@ fullname = "G-12 High Explosive"
 source = "start"
 rounds = 4
 roundstart = 3
-roundsupply = 2
 roundsbox = 4
 
 [[weapon]]
@@ -706,7 +547,6 @@ source = "steel-vets"
 sourcepage = 2
 rounds = 4
 roundstart = 3
-roundsupply = 2
 roundsbox = 4
 
 [[weapon]]
@@ -715,7 +555,6 @@ fullname = "G-16 Impact"
 source = "start"
 rounds = 4
 roundstart = 3
-roundsupply = 2
 roundsbox = 4
 
 [[weapon]]
@@ -725,7 +564,6 @@ source = "polar-pat"
 sourcepage = 2
 rounds = 4
 roundstart = 3
-roundsupply = 2
 roundsbox = 4
 
 [[weapon]]
@@ -735,7 +573,6 @@ source = "cut-edge"
 sourcepage = 2
 rounds = 4
 roundstart = 3
-roundsupply = 2
 roundsbox = 4
 
 [[weapon]]
@@ -745,7 +582,6 @@ source = "hd-mobilize"
 sourcepage = 8
 rounds = 4
 roundstart = 3
-roundsupply = 2
 roundsbox = 4
 
 [[weapon]]
@@ -755,7 +591,6 @@ source = "demo-det"
 sourcepage = 1
 rounds = 4
 roundstart = 3
-roundsupply = 2
 roundsbox = 4
 [[weapon.attack]]
 medium = "damage"
@@ -768,7 +603,6 @@ source = "viper-commandos"
 sourcepage = 3
 rounds = 8
 roundstart = 6
-roundsupply = 8
 roundsbox = 8
 
 [[weapon]]
@@ -844,7 +678,6 @@ ref = "DPS_Gas"
 [[weapon]]
 category = "Mounted"
 fullname = "Patriot Gatling Gun"
-cap = 1000
 [[weapon.attack]]
 medium = "projectile"
 ref = "Rifle_8x60mm_fmj"
@@ -852,7 +685,6 @@ ref = "Rifle_8x60mm_fmj"
 [[weapon]]
 category = "Mounted"
 fullname = "Patriot Rocket Pod"
-cap = 15
 [[weapon.attack]]
 medium = "projectile"
 ref = "Missile_Combat_Walker"
@@ -860,7 +692,6 @@ ref = "Missile_Combat_Walker"
 [[weapon]]
 category = "Mounted"
 fullname = "Emancipator Twin Autocannon"
-cap = 75
 [[weapon.attack]]
 medium = "projectile"
 ref = "Cannon_30mm_APHE"
@@ -873,7 +704,6 @@ health = 400
 armor = 4
 calltime = 5
 cooldown = 480
-cap = 4
 
 [[stratagem]]
 category = "Backpack"
@@ -883,7 +713,6 @@ health = 400
 armor = 4
 calltime = 5
 cooldown = 480
-cap = 30
 salvos = 6
 [[stratagem.attack]]
 medium = "projectile"
@@ -946,7 +775,6 @@ fullname = "MD-6 Anti-Personnel Minefield"
 stratcode = "dlur"
 health = 250
 armor = 1
-cap = 48
 calltime = 3
 cooldown = 180
 [[stratagem.attack]]
@@ -962,7 +790,6 @@ fullname = "MD-17 Anti-Tank Mines"
 stratcode = "dluu"
 health = 250
 armor = 1
-cap = 18
 calltime = 3
 cooldown = 180
 [[stratagem.attack]]
@@ -978,7 +805,6 @@ fullname = "MD-I4 Incendiary Mines"
 stratcode = "dlld"
 health = 250
 armor = 1
-cap = 48
 calltime = 3
 cooldown = 180
 [[stratagem.attack]]
@@ -996,7 +822,6 @@ health = 200
 armor = 2
 calltime = 8
 cooldown = 120
-cap = 130
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Rifle_8x60mm_fmj"
@@ -1009,7 +834,6 @@ health = 200
 armor = 2
 calltime = 8
 cooldown = 180
-cap = 390
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Rifle_8x60mm_fmj"
@@ -1022,7 +846,6 @@ health = 1000
 armor = 2
 calltime = 3
 cooldown = 180
-cap = 300
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Rifle_12p5x100mm_fmj"
@@ -1035,7 +858,6 @@ health = 200
 armor = 2
 calltime = 8
 cooldown = 180
-cap = 36
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Grenade_Mortar_40mm_HE"
@@ -1048,7 +870,6 @@ health = 200
 armor = 2
 calltime = 8
 cooldown = 180
-cap = 15
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Grenade_Mortar_40mm_Staticfield"
@@ -1061,7 +882,6 @@ health = 200
 armor = 2
 calltime = 8
 cooldown = 180
-cap = 32
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Rocket_70mm_turret"
@@ -1074,7 +894,6 @@ health = 200
 armor = 2
 calltime = 8
 cooldown = 180
-cap = 24
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_40mm_APHE"
@@ -1150,7 +969,6 @@ stratcode = "rdluu"
 calltime = 2
 cooldown = 80
 salvos = 4
-cap = 60
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Cannon_Eagle_23mm"
@@ -1162,7 +980,6 @@ stratcode = "rrdlrd"
 calltime = 5
 cooldown = 240
 salvos = 5
-cap =  3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Cannon_120mm_HE"
@@ -1174,7 +991,6 @@ stratcode = "rduuldd"
 calltime = 6
 cooldown = 240
 salvos = 5
-cap =  3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Cannon_380mm_HE"
@@ -1186,7 +1002,6 @@ stratcode = "rdrdrd"
 calltime = 3
 cooldown = 240
 salvos = 3
-cap = 3
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Orbital_Cannon_380mm_HE"
@@ -1220,7 +1035,6 @@ fullname = "Eagle Airstrike"
 stratcode = "urdr"
 cooldown = 15
 eaglestock = 2
-cap = 6
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_100kg"
@@ -1231,7 +1045,6 @@ fullname = "Eagle Napalm Airstrike"
 stratcode = "urdu"
 cooldown = 15
 eaglestock = 2
-cap = 4
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_Napalm"
@@ -1242,7 +1055,6 @@ fullname = "Eagle 500kg Bomb"
 stratcode = "urddd"
 cooldown = 15
 eaglestock = 1
-cap = 1
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_500kg"
@@ -1263,7 +1075,6 @@ fullname = "Eagle Cluster Bomb"
 stratcode = "urddr"
 cooldown = 15
 eaglestock = 4
-cap = 8
 [[stratagem.attack]]
 medium = "projectile"
 ref = "ClusterBomb_100kg"
@@ -1274,7 +1085,6 @@ fullname = "Eagle 110mm Rocket Pods"
 stratcode = "urul"
 cooldown = 15
 eaglestock = 2
-cap = 6
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Rocket_110mm"
@@ -1285,7 +1095,6 @@ fullname = "Eagle Smoke Strike"
 stratcode = "urud"
 cooldown = 15
 eaglestock = 2
-cap = 8
 [[stratagem.attack]]
 medium = "projectile"
 ref = "Bomb_Smoke"
