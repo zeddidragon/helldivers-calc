@@ -1,6 +1,6 @@
 {
   "6918199871803715620": {
-    "id": "0x6002622114037000",
+    "id": "6918199871803715620",
     "type": "LoadoutItemType_ThrowableWeapon",
     "holster_duration": 0.300000012,
     "wield_duration": 0.100000001,
@@ -20,7 +20,7 @@
     "explosion_type": "ExplosionType_Frag"
   },
   "16995860793330061350": {
-    "id": "0xebdd6d57f66d5000",
+    "id": "16995860793330061350",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 3,
@@ -61,7 +61,7 @@
     "burst_fire_rate": 0
   },
   "4878198249831276603": {
-    "id": "0x43b2d77661202000",
+    "id": "4878198249831276603",
     "magazine_capacity": 100,
     "chambered": 0,
     "magazines": 2,
@@ -103,7 +103,7 @@
     "key": "Flamethrower"
   },
   "7767754898735718469": {
-    "id": "0x6bcc9becd1716000",
+    "id": "7767754898735718469",
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -132,7 +132,7 @@
     "is_one_handed": 0
   },
   "18400802241877839954": {
-    "id": "0xff5cc825b9571000",
+    "id": "18400802241877839954",
     "magazine_capacity": 2000,
     "chambered": 1,
     "magazines": 6,
@@ -190,7 +190,7 @@
     "key": "Automaton Mortar Emplacement"
   },
   "11047871594297831536": {
-    "id": "0x9951ecae4e403000",
+    "id": "11047871594297831536",
     "magazine_capacity": 10,
     "chambered": 0,
     "magazines": 5,
@@ -238,7 +238,7 @@
     "key": "Fusion Carbine"
   },
   "13028718365019299975": {
-    "id": "0xb4cf4e52e9956000",
+    "id": "13028718365019299975",
     "magazine_capacity": 75,
     "chambered": 1,
     "magazines": 6,
@@ -290,7 +290,7 @@
     "burst_fire_rate": 0
   },
   "18102809172282470538": {
-    "id": "0xfb3a190786947000",
+    "id": "18102809172282470538",
     "magazine_capacity": 15,
     "chambered": 0,
     "magazines": 3,
@@ -385,7 +385,7 @@
     "key": "PLAS-101 Purifier"
   },
   "16910079541664006285": {
-    "id": "0xeaacabbfec7bc000",
+    "id": "16910079541664006285",
     "reload": 1.5,
     "recoil_info": {
       "drift": {
@@ -415,7 +415,7 @@
     "is_one_handed": 1
   },
   "2753976566055493778": {
-    "id": "0x263817187b7ce000",
+    "id": "2753976566055493778",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -465,7 +465,7 @@
     "modifiers": []
   },
   "17848709375785648310": {
-    "id": "0xf7b35a9c5ae34000",
+    "id": "17848709375785648310",
     "type": "LoadoutItemType_ThrowableWeapon",
     "name": "Throwing Knife",
     "prefix": "K-2",
@@ -487,7 +487,7 @@
     "key": "K-2 Throwing Knife"
   },
   "6826025955225526457": {
-    "id": "0x5ebaea70c0d06000",
+    "id": "6826025955225526457",
     "magazine_capacity": 26,
     "chambered": 1,
     "magazines": 6,
@@ -542,7 +542,7 @@
     "key": "SG-225SP Breaker Spray&Pray"
   },
   "17488789745215357128": {
-    "id": "0xf2b4a99d1b0e4000",
+    "id": "17488789745215357128",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 2,
@@ -582,7 +582,7 @@
     "damage_info_type": "DamageInfoType_None"
   },
   "6337264778388549835": {
-    "id": "0x57f27cbd5b71b000",
+    "id": "6337264778388549835",
     "magazine_capacity": 400,
     "chambered": 1,
     "magazines": 0,
@@ -646,7 +646,7 @@
     "key": "A/G-16 Gatling Sentry"
   },
   "4416184955867381998": {
-    "id": "0x3d4970d1c4e64000",
+    "id": "4416184955867381998",
     "magazine_capacity": 50,
     "chambered": 1,
     "magazines": 6,
@@ -696,7 +696,7 @@
     "modifiers": []
   },
   "721550233589928225": {
-    "id": "0xa03761d50ba5100",
+    "id": "721550233589928225",
     "magazine_capacity": 75,
     "chambered": 0,
     "magazines": 0,
@@ -741,7 +741,7 @@
     "burst_fire_rate": 0
   },
   "13171605573572653383": {
-    "id": "0xb6caf17ba65a7000",
+    "id": "13171605573572653383",
     "magazine_capacity": 40,
     "chambered": 1,
     "magazines": 6,
@@ -790,7 +790,7 @@
     "burst_fire_rate": 0
   },
   "11335415903596859741": {
-    "id": "0x9d4f7cb4eb345000",
+    "id": "11335415903596859741",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 0,
@@ -845,7 +845,7 @@
     "bomb_prediction_interval": 0.0500000007
   },
   "10892987900330561893": {
-    "id": "0x972baac825d4d000",
+    "id": "10892987900330561893",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 2,
@@ -901,7 +901,7 @@
     "key": "Heavy Fusion Repeater"
   },
   "9796573205647524202": {
-    "id": "0x87f46b6d12bb0000",
+    "id": "9796573205647524202",
     "magazine_capacity": 400,
     "chambered": 1,
     "magazines": 0,
@@ -963,7 +963,7 @@
     "max_length": 150
   },
   "6670637945684439420": {
-    "id": "0x5c92ddde79c33000",
+    "id": "6670637945684439420",
     "magazine_capacity": 12,
     "chambered": 1,
     "magazines": 0,
@@ -1004,7 +1004,7 @@
     "burst_fire_rate": 0
   },
   "7546486305997975964": {
-    "id": "0x68ba814ff35bf000",
+    "id": "7546486305997975964",
     "magazine_capacity": 90,
     "chambered": 0,
     "magazines": 5,
@@ -1052,7 +1052,7 @@
     "key": "Fusion Repeater"
   },
   "6582409209889722787": {
-    "id": "0x5b596a4d21bc9000",
+    "id": "6582409209889722787",
     "magazine_capacity": 3,
     "chambered": 0,
     "magazines": 5,
@@ -1100,7 +1100,7 @@
     "key": "Fusion Autocannon"
   },
   "13601459612566041022": {
-    "id": "0xbcc2177439d23000",
+    "id": "13601459612566041022",
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Punisher fire of liberty",
     "prefix": "SG-8F",
@@ -1175,7 +1175,7 @@
     "key": "SG-8F Punisher fire of liberty"
   },
   "8192757692405735881": {
-    "id": "0x71b285b6d2b16000",
+    "id": "8192757692405735881",
     "magazine_capacity": 1,
     "chambered": 1,
     "magazines": 5,
@@ -1221,7 +1221,7 @@
     "burst_fire_rate": 0
   },
   "9264801226655597011": {
-    "id": "0x80932fa0ed690000",
+    "id": "9264801226655597011",
     "magazine_capacity": 1,
     "chambered": 0,
     "magazines": 0,
@@ -1276,7 +1276,7 @@
     "key": "EAT-17 Expendable Anti-Tank"
   },
   "11613148414962332127": {
-    "id": "0xa12a30f44db87000",
+    "id": "11613148414962332127",
     "magazine_capacity": 250,
     "chambered": 1,
     "magazines": 6,
@@ -1328,7 +1328,7 @@
     "burst_fire_rate": 0
   },
   "535319041333920260": {
-    "id": "0x76dd5d4f4360200",
+    "id": "535319041333920260",
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Blitzer",
     "prefix": "ARC-12",
@@ -1367,7 +1367,7 @@
     "key": "ARC-12 Blitzer"
   },
   "9927421484392399367": {
-    "id": "0x89c5493e08ca4000",
+    "id": "9927421484392399367",
     "magazine_capacity": 7,
     "chambered": 1,
     "magazines": 4,
@@ -1422,7 +1422,7 @@
     "key": "APW-1 Anti-Materiel Rifle"
   },
   "3658900074006331912": {
-    "id": "0x32c7063b4bcc4200",
+    "id": "3658900074006331912",
     "magazine_capacity": 75,
     "chambered": 0,
     "magazines": 0,
@@ -1467,7 +1467,7 @@
     "burst_fire_rate": 0
   },
   "3641453212932526628": {
-    "id": "0x32890a67670c5200",
+    "id": "3641453212932526628",
     "name": "Quantum Disruptor Beam",
     "recoil_info": {
       "drift": {
@@ -1517,7 +1517,7 @@
     "key": "Quantum Disruptor Beam"
   },
   "3101227300789072443": {
-    "id": "0x2b09c5cc8f46b200",
+    "id": "3101227300789072443",
     "magazine_capacity": 1000,
     "chambered": 1,
     "magazines": 6,
@@ -1562,7 +1562,7 @@
     "key": "Cannon Turret"
   },
   "602390376167162446": {
-    "id": "0x85c1edb038ec280",
+    "id": "602390376167162446",
     "magazine_capacity": 100,
     "chambered": 1,
     "magazines": 4,
@@ -1617,7 +1617,7 @@
     "key": "MG-206 Heavy Machine Gun"
   },
   "9965870354970800749": {
-    "id": "0x8a4de24951a17000",
+    "id": "9965870354970800749",
     "magazine_capacity": 3,
     "chambered": 0,
     "magazines": 5,
@@ -1665,7 +1665,7 @@
     "key": "Fusion Autocannon"
   },
   "11300340358119080560": {
-    "id": "0x9cd2dfaf16b2c000",
+    "id": "11300340358119080560",
     "holster_duration": 0.850000024,
     "wield_duration": 1.20000005,
     "pickup_duration": 0.5,
@@ -1673,7 +1673,7 @@
     "is_one_handed": 0
   },
   "1653832383613497969": {
-    "id": "0x16f397ca5f51f200",
+    "id": "1653832383613497969",
     "holster_duration": 0.300000012,
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
@@ -1691,7 +1691,7 @@
     "on_stick_damage_type": "DamageInfoType_None"
   },
   "14492505679777682035": {
-    "id": "0xc91fb921947ad000",
+    "id": "14492505679777682035",
     "holster_duration": 0.100000001,
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
@@ -1710,7 +1710,7 @@
     "explosion_type": "ExplosionType_None"
   },
   "4885016034561106550": {
-    "id": "0x43cb1033961a2400",
+    "id": "4885016034561106550",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 7,
@@ -1766,7 +1766,7 @@
     "key": "AR-23P Liberator Penetrator"
   },
   "6318095193127658106": {
-    "id": "0x57ae621a7b7a2400",
+    "id": "6318095193127658106",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 3,
@@ -1807,7 +1807,7 @@
     "burst_fire_rate": 0
   },
   "12008625947668001407": {
-    "id": "0xa6a735accb4a3000",
+    "id": "12008625947668001407",
     "magazine_capacity": 250,
     "chambered": 1,
     "magazines": 2,
@@ -1862,7 +1862,7 @@
     "key": "M-105 Stalwart"
   },
   "2802369506329449110": {
-    "id": "0x26e40437ea275200",
+    "id": "2802369506329449110",
     "magazine_capacity": 1,
     "chambered": 1,
     "magazines": 0,
@@ -1921,7 +1921,7 @@
     "key": "RL-77 Airburst Rocket Launcher"
   },
   "1892480894983787169": {
-    "id": "0x1a437158e1b8d300",
+    "id": "1892480894983787169",
     "magazine_capacity": 10,
     "chambered": 1,
     "magazines": 4,
@@ -1975,7 +1975,7 @@
     "key": "P-113 Verdict"
   },
   "5199653481743360714": {
-    "id": "0x4828e14aee6fa400",
+    "id": "5199653481743360714",
     "magazine_capacity": 2000,
     "chambered": 1,
     "magazines": 0,
@@ -2023,7 +2023,7 @@
     "burst_fire_rate": 0
   },
   "8536986223483970266": {
-    "id": "0x767977bd472a6400",
+    "id": "8536986223483970266",
     "magazine_capacity": 1,
     "chambered": 0,
     "magazines": 1,
@@ -2076,7 +2076,7 @@
     "key": "Bile Spewer"
   },
   "1585898554922009358": {
-    "id": "0x16023e554fee8300",
+    "id": "1585898554922009358",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 2,
@@ -2135,7 +2135,7 @@
     "key": "Fusion Repeater"
   },
   "3371451580584923919": {
-    "id": "0x2ec9cd598e319400",
+    "id": "3371451580584923919",
     "type": "LoadoutItemType_SidearmWeapon",
     "reload": 1.5,
     "recoil_info": {
@@ -2166,7 +2166,7 @@
     "is_one_handed": 1
   },
   "5953193886108619556": {
-    "id": "0x529dfe4c4c881400",
+    "id": "5953193886108619556",
     "magazine_capacity": 1,
     "chambered": 0,
     "magazines": 1,
@@ -2208,7 +2208,7 @@
     "key": "Nursing Spewer"
   },
   "3852172782311805734": {
-    "id": "0x3575aabc5f1f9400",
+    "id": "3852172782311805734",
     "magazine_capacity": 17,
     "chambered": 1,
     "magazines": 4,
@@ -2271,7 +2271,7 @@
     "key": "P-19 Redeemer"
   },
   "5050852199397921576": {
-    "id": "0x46183b50961d1400",
+    "id": "5050852199397921576",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -2341,7 +2341,7 @@
     "key": "SG-225 Breaker"
   },
   "5725374950499373869": {
-    "id": "0x4f749e2ee26f5400",
+    "id": "5725374950499373869",
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Slugger",
     "prefix": "SG-8S",
@@ -2401,7 +2401,7 @@
     "key": "SG-8S Slugger"
   },
   "2877271129141764950": {
-    "id": "0x27ee1ed8f6fb6400",
+    "id": "2877271129141764950",
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Scythe",
     "prefix": "LAS-5",
@@ -2460,7 +2460,7 @@
     "key": "LAS-5 Scythe"
   },
   "10768610637301609307": {
-    "id": "0x9571ca51f0daf000",
+    "id": "10768610637301609307",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -2522,7 +2522,7 @@
     "key": "MP-98 Knight"
   },
   "11756121139324203897": {
-    "id": "0xa32621e3bde13000",
+    "id": "11756121139324203897",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -2572,7 +2572,7 @@
     "modifiers": []
   },
   "9675404802175538082": {
-    "id": "0x8645f167b3c81000",
+    "id": "9675404802175538082",
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Sickle",
     "prefix": "LAS-16",
@@ -2638,7 +2638,7 @@
     "key": "LAS-16 Sickle"
   },
   "4155583896232633279": {
-    "id": "0x39ab99895147a400",
+    "id": "4155583896232633279",
     "magazine_capacity": 100,
     "chambered": 0,
     "magazines": 2,
@@ -2682,7 +2682,7 @@
     "key": "FLAM-40 Flamethrower"
   },
   "13357795631455978434": {
-    "id": "0xb9606c5aab32c000",
+    "id": "13357795631455978434",
     "magazine_capacity": 150,
     "chambered": 1,
     "magazines": 0,
@@ -2744,7 +2744,7 @@
     "key": "M-105 Stalwart"
   },
   "10134470972353573832": {
-    "id": "0x8ca4dfa795a47000",
+    "id": "10134470972353573832",
     "magazine_capacity": 200,
     "chambered": 0,
     "magazines": 0,
@@ -2789,7 +2789,7 @@
     "burst_fire_rate": 0
   },
   "2862976050209719244": {
-    "id": "0x27bb558c89338400",
+    "id": "2862976050209719244",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 0,
@@ -2844,7 +2844,7 @@
     "bomb_prediction_interval": 0.0500000007
   },
   "12218137513893139416": {
-    "id": "0xa98f8b559c799000",
+    "id": "12218137513893139416",
     "health": 500,
     "health_changerate": 0,
     "health_changerate_disabled": 0,
@@ -2908,7 +2908,7 @@
     "burst_fire_rate": 0
   },
   "11654668915819557853": {
-    "id": "0xa1bdb3a13e363000",
+    "id": "11654668915819557853",
     "magazine_capacity": 24,
     "chambered": 0,
     "magazines": 4,
@@ -2966,7 +2966,7 @@
     "key": "SAM Launcher"
   },
   "6912088101323449320": {
-    "id": "0x5fecab819f96a400",
+    "id": "6912088101323449320",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -3021,7 +3021,7 @@
     "key": "BR-14 Adjudicator"
   },
   "2568747792294183916": {
-    "id": "0x23a60681dd438400",
+    "id": "2568747792294183916",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 0,
@@ -3076,7 +3076,7 @@
     "bomb_prediction_interval": 0.0500000007
   },
   "15365965494753326077": {
-    "id": "0xd53ee03481ae7000",
+    "id": "15365965494753326077",
     "magazine_capacity": 150,
     "chambered": 1,
     "magazines": 0,
@@ -3138,7 +3138,7 @@
     "key": "M-105 Stalwart"
   },
   "10177381595962512386": {
-    "id": "0x8d3d52a3b2f19800",
+    "id": "10177381595962512386",
     "type": "LoadoutItemType_SidearmWeapon",
     "name": "Senator",
     "prefix": "P-4",
@@ -3204,7 +3204,7 @@
     "key": "P-4 Senator"
   },
   "16472578507204645895": {
-    "id": "0xe49a5ae078aad800",
+    "id": "16472578507204645895",
     "throw_distance_min": 0,
     "throw_distance_max": 1,
     "use_angular_velocity": 1,
@@ -3218,7 +3218,7 @@
     "explosion_type": "ExplosionType_IncendiaryMine"
   },
   "11493422068836852751": {
-    "id": "0x9f80d67a12a7e800",
+    "id": "11493422068836852751",
     "magazine_capacity": 1,
     "chambered": 1,
     "magazines": 0,
@@ -3278,7 +3278,7 @@
     "key": "GR-8 Recoilless Rifle"
   },
   "2401215835282261016": {
-    "id": "0x2152d5147b0ac400",
+    "id": "2401215835282261016",
     "magazine_capacity": 75,
     "chambered": 1,
     "magazines": 1,
@@ -3333,7 +3333,7 @@
     "key": "MG-206 Heavy Machine Gun"
   },
   "18417602992972518459": {
-    "id": "0xff9878576a4c5800",
+    "id": "18417602992972518459",
     "magazine_capacity": 75,
     "chambered": 0,
     "magazines": 0,
@@ -3378,7 +3378,7 @@
     "burst_fire_rate": 0
   },
   "4483950418716673108": {
-    "id": "0x3e3a31261a124400",
+    "id": "4483950418716673108",
     "magazine_capacity": 200,
     "chambered": 0,
     "magazines": 0,
@@ -3423,7 +3423,7 @@
     "burst_fire_rate": 0
   },
   "3865797767236207742": {
-    "id": "0x35a61296619cc400",
+    "id": "3865797767236207742",
     "type": "LoadoutItemType_SupportWeapon",
     "name": "Quasar Cannon",
     "prefix": "LAS-99",
@@ -3487,7 +3487,7 @@
     "key": "LAS-99 Quasar Cannon"
   },
   "6951176475743020159": {
-    "id": "0x60778a2cffb6e400",
+    "id": "6951176475743020159",
     "magazine_capacity": 1500,
     "chambered": 0,
     "magazines": 0,
@@ -3535,7 +3535,7 @@
     "burst_fire_rate": 0
   },
   "424716889947522210": {
-    "id": "0x5e4e5c2db6e44c0",
+    "id": "424716889947522210",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -3596,7 +3596,7 @@
     "key": "P-2 Peacemaker"
   },
   "18223572581977941174": {
-    "id": "0xfce722b5ef57e800",
+    "id": "18223572581977941174",
     "magazine_capacity": 249,
     "chambered": 0,
     "magazines": 0,
@@ -3637,7 +3637,7 @@
     "burst_fire_rate": 0
   },
   "5510267968365085927": {
-    "id": "0x4c786785c79d4400",
+    "id": "5510267968365085927",
     "magazine_capacity": 15,
     "chambered": 1,
     "magazines": 4,
@@ -3692,7 +3692,7 @@
     "key": "R-63CS Diligence Counter Sniper"
   },
   "2714034314705433838": {
-    "id": "0x25aa2fd4643cf400",
+    "id": "2714034314705433838",
     "magazine_capacity": 1,
     "chambered": 1,
     "magazines": 0,
@@ -3750,7 +3750,7 @@
     "key": "FAF-14 Spear"
   },
   "12548565706891777268": {
-    "id": "0xae25760677eed800",
+    "id": "12548565706891777268",
     "magazine_capacity": 300,
     "chambered": 0,
     "magazines": 0,
@@ -3805,7 +3805,7 @@
     "damage_info_type": "DamageInfoType_None"
   },
   "1051445694670701817": {
-    "id": "0xe977c49db760500",
+    "id": "1051445694670701817",
     "magazine_capacity": 300,
     "chambered": 1,
     "magazines": 0,
@@ -3861,7 +3861,7 @@
     "key": "E/MG-101 HMG Emplacement"
   },
   "421324886246020354": {
-    "id": "0x5d8d8c073b9d500",
+    "id": "421324886246020354",
     "magazine_capacity": 8,
     "chambered": 0,
     "magazines": 6,
@@ -3915,7 +3915,7 @@
     "key": "SG-8P Punisher Plasma"
   },
   "16450357640400839941": {
-    "id": "0xe44b691dc039a800",
+    "id": "16450357640400839941",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 0,
@@ -3970,7 +3970,7 @@
     "bomb_prediction_interval": 0.0500000007
   },
   "2047310211000472840": {
-    "id": "0x1c6981ca2fb69500",
+    "id": "2047310211000472840",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 2,
@@ -4029,7 +4029,7 @@
     "key": "Factory Strider"
   },
   "12984499893943104780": {
-    "id": "0xb43235dbd4937800",
+    "id": "12984499893943104780",
     "magazine_capacity": 150,
     "chambered": 1,
     "magazines": 0,
@@ -4091,7 +4091,7 @@
     "key": "M-105 Stalwart"
   },
   "5244756512985933074": {
-    "id": "0x48c91e42b9f16400",
+    "id": "5244756512985933074",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 2,
@@ -4150,7 +4150,7 @@
     "key": "Factory Strider"
   },
   "281046277510948131": {
-    "id": "0x3e67a19b07c6520",
+    "id": "281046277510948131",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -4217,7 +4217,7 @@
     "key": "R-63 Diligence"
   },
   "14780545738251228467": {
-    "id": "0xcd1f0c09cae0d800",
+    "id": "14780545738251228467",
     "magazine_capacity": 200,
     "chambered": 0,
     "magazines": 5,
@@ -4265,7 +4265,7 @@
     "key": "Fusion Repeater"
   },
   "17636297115750610289": {
-    "id": "0xf4c0b6c9218fb800",
+    "id": "17636297115750610289",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 2,
@@ -4305,7 +4305,7 @@
     "damage_info_type": "DamageInfoType_None"
   },
   "294590291936179579": {
-    "id": "0x416984f49227580",
+    "id": "294590291936179579",
     "type": "LoadoutItemType_ThrowableWeapon",
     "holster_duration": 0.300000012,
     "wield_duration": 0.100000001,
@@ -4325,7 +4325,7 @@
     "explosion_type": "ExplosionType_OrbitalGas"
   },
   "7715225218085078398": {
-    "id": "0x6b11fc757618c400",
+    "id": "7715225218085078398",
     "type": "LoadoutItemType_ThrowableWeapon",
     "name": "High Explosive",
     "prefix": "G-12",
@@ -4348,7 +4348,7 @@
     "key": "G-12 High Explosive"
   },
   "17795912175944443264": {
-    "id": "0xf6f7c7d65537a800",
+    "id": "17795912175944443264",
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -4377,7 +4377,7 @@
     "is_one_handed": 0
   },
   "10589153337282573789": {
-    "id": "0x92f43adb44deb800",
+    "id": "10589153337282573789",
     "magazine_capacity": 7,
     "chambered": 1,
     "magazines": 4,
@@ -4429,7 +4429,7 @@
     ]
   },
   "5910727434981086692": {
-    "id": "0x52071f4926341400",
+    "id": "5910727434981086692",
     "type": "LoadoutItemType_SupportWeapon",
     "name": "Break-Action Shotgun",
     "prefix": "SG-88",
@@ -4485,7 +4485,7 @@
     "key": "SG-88 Break-Action Shotgun"
   },
   "12269323780666160625": {
-    "id": "0xaa4564f90cdbf800",
+    "id": "12269323780666160625",
     "magazine_capacity": 300,
     "chambered": 1,
     "magazines": 0,
@@ -4545,7 +4545,7 @@
     "key": "Gatling Sentry"
   },
   "1837707428311856638": {
-    "id": "0x1980d92b619ff600",
+    "id": "1837707428311856638",
     "remove_time": 2.5,
     "health": 1000,
     "health_changerate": 0,
@@ -4600,7 +4600,7 @@
     "noise_timer": 0.25
   },
   "11526593618038326815": {
-    "id": "0x9ff6afd339758800",
+    "id": "11526593618038326815",
     "magazine_capacity": 10,
     "chambered": 1,
     "magazines": 6,
@@ -4648,7 +4648,7 @@
     "key": "SR005 Rocket"
   },
   "211331680192206384": {
-    "id": "0x2eecd0b1fa49640",
+    "id": "211331680192206384",
     "magazine_capacity": 10,
     "chambered": 1,
     "magazines": 1,
@@ -4699,7 +4699,7 @@
     "key": "GL-21 Grenade Launcher"
   },
   "6707034374626068020": {
-    "id": "0x5d142c3a73ebc800",
+    "id": "6707034374626068020",
     "magazine_capacity": 1000,
     "chambered": 1,
     "magazines": 6,
@@ -4754,7 +4754,7 @@
     "key": "Ballistic Missile"
   },
   "9468080011357415026": {
-    "id": "0x8365609b35ef6800",
+    "id": "9468080011357415026",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 6,
@@ -4811,7 +4811,7 @@
     "burst_fire_rate": 0
   },
   "13164006426448262783": {
-    "id": "0xb6aff21955687800",
+    "id": "13164006426448262783",
     "magazine_capacity": 5,
     "chambered": 1,
     "magazines": 4,
@@ -4861,7 +4861,7 @@
     "key": "R-36 Eruptor"
   },
   "15219556623070951071": {
-    "id": "0xd336ba1cad167800",
+    "id": "15219556623070951071",
     "magazine_capacity": 75,
     "chambered": 1,
     "magazines": 0,
@@ -4914,7 +4914,7 @@
     "burst_fire_rate": 0
   },
   "4021120973472933563": {
-    "id": "0x37cde43876ba2600",
+    "id": "4021120973472933563",
     "magazine_capacity": 125,
     "chambered": 1,
     "magazines": 0,
@@ -4975,7 +4975,7 @@
     "key": "A/MG-43 Machine Gun Sentry"
   },
   "9182363845171390146": {
-    "id": "0x7f6e4f4455d4a800",
+    "id": "9182363845171390146",
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -4999,7 +4999,7 @@
     "function_info": []
   },
   "10660805200074987205": {
-    "id": "0x93f2c9d89a1b5800",
+    "id": "10660805200074987205",
     "magazine_capacity": 10,
     "chambered": 1,
     "magazines": 7,
@@ -5054,7 +5054,7 @@
     "key": "SG-225NS Breaker Nailspitter"
   },
   "6453678319562593995": {
-    "id": "0x5990123d142b1800",
+    "id": "6453678319562593995",
     "magazine_capacity": 4,
     "chambered": 0,
     "magazines": 0,
@@ -5110,7 +5110,7 @@
     "key": "MLS-4X Commando"
   },
   "1374362502002005721": {
-    "id": "0x1312b769f4725700",
+    "id": "1374362502002005721",
     "magazine_capacity": 24,
     "chambered": 0,
     "magazines": 4,
@@ -5168,7 +5168,7 @@
     "key": "SAM Launcher"
   },
   "10871298989420119782": {
-    "id": "0x96de9cd50f730800",
+    "id": "10871298989420119782",
     "type": "LoadoutItemType_SupportWeapon",
     "name": "Arc Thrower",
     "prefix": "ARC-3",
@@ -5237,7 +5237,7 @@
     "key": "ARC-3 Arc Thrower"
   },
   "14770371728907552577": {
-    "id": "0xccfae6d4a601c800",
+    "id": "14770371728907552577",
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -5277,7 +5277,7 @@
     "explosion_type": "ExplosionType_Snowball_Stun"
   },
   "16974551944278808389": {
-    "id": "0xeb91b90eec279800",
+    "id": "16974551944278808389",
     "magazine_capacity": 300,
     "chambered": 1,
     "magazines": 0,
@@ -5330,7 +5330,7 @@
     "burst_fire_rate": 0
   },
   "578623101395158887": {
-    "id": "0x807aea5217e4780",
+    "id": "578623101395158887",
     "magazine_capacity": 45,
     "chambered": 1,
     "magazines": 5,
@@ -5386,7 +5386,7 @@
     "key": "SMG-72 Pummeler"
   },
   "36176771630602099": {
-    "id": "0x80869506299770",
+    "id": "36176771630602099",
     "type": "LoadoutItemType_ThrowableWeapon",
     "name": "Stun",
     "prefix": "G-23",
@@ -5409,7 +5409,7 @@
     "key": "G-23 Stun"
   },
   "9670353792785147784": {
-    "id": "0x8633ff89ef4f6800",
+    "id": "9670353792785147784",
     "magazine_capacity": 24,
     "chambered": 1,
     "magazines": 0,
@@ -5468,7 +5468,7 @@
     "burst_fire_rate": 0
   },
   "1030663026357860236": {
-    "id": "0xe4da68fd1307780",
+    "id": "1030663026357860236",
     "magazine_capacity": 150,
     "chambered": 1,
     "magazines": 3,
@@ -5523,7 +5523,7 @@
     "key": "M-105 Stalwart"
   },
   "14249494547947571097": {
-    "id": "0xc5c05fcb5747c800",
+    "id": "14249494547947571097",
     "type": "LoadoutItemType_ThrowableWeapon",
     "name": "Thermite",
     "prefix": "G-123",
@@ -5546,7 +5546,7 @@
     "key": "G-123 Thermite"
   },
   "2616888780303759269": {
-    "id": "0x24510e7b16b5f800",
+    "id": "2616888780303759269",
     "magazine_capacity": 300,
     "chambered": 1,
     "magazines": 0,
@@ -5633,7 +5633,7 @@
     "burst_fire_rate": 0
   },
   "16120089938690525143": {
-    "id": "0xdfb610642eff4800",
+    "id": "16120089938690525143",
     "magazine_capacity": 200,
     "chambered": 0,
     "magazines": 5,
@@ -5681,7 +5681,7 @@
     "key": "Fusion Repeater"
   },
   "3041174345526908898": {
-    "id": "0x2a346bf455299800",
+    "id": "3041174345526908898",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 3,
@@ -5726,7 +5726,7 @@
     "burst_fire_rate": 0
   },
   "11732808277634566119": {
-    "id": "0xa2d34ef7262bc800",
+    "id": "11732808277634566119",
     "type": "LoadoutItemType_SidearmWeapon",
     "recoil_info": {
       "drift": {
@@ -5779,7 +5779,7 @@
     ]
   },
   "133122695844997115": {
-    "id": "0x1d8f262f5622800",
+    "id": "133122695844997115",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -5841,7 +5841,7 @@
     "key": "AR-48 Truth Whisperer"
   },
   "14845617694460717074": {
-    "id": "0xce063aa33d95a800",
+    "id": "14845617694460717074",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 4,
@@ -5897,7 +5897,7 @@
     "key": "AR-61 Tenderizer"
   },
   "14105761812163438622": {
-    "id": "0xc3c1bba1f445a800",
+    "id": "14105761812163438622",
     "magazine_capacity": 200,
     "chambered": 0,
     "magazines": 5,
@@ -5945,7 +5945,7 @@
     "key": "Rocket Pod"
   },
   "5575761375102281771": {
-    "id": "0x4d61156dd350a800",
+    "id": "5575761375102281771",
     "magazine_capacity": 3,
     "chambered": 0,
     "magazines": 5,
@@ -5993,7 +5993,7 @@
     "key": "Fusion Autocannon"
   },
   "7102424959117264971": {
-    "id": "0x6290e1debc0d8800",
+    "id": "7102424959117264971",
     "holster_duration": 0.100000001,
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
@@ -6012,7 +6012,7 @@
     "explosion_type": "ExplosionType_Cyborg_HandGrenade_HighExplosive"
   },
   "11468381642862999653": {
-    "id": "0x9f27e0579375b800",
+    "id": "11468381642862999653",
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -6041,7 +6041,7 @@
     "is_one_handed": 0
   },
   "15369542005276747891": {
-    "id": "0xd54b9505c0f72800",
+    "id": "15369542005276747891",
     "type": "LoadoutItemType_SupportWeapon",
     "name": "Laser Cannon",
     "prefix": "LAS-98",
@@ -6096,7 +6096,7 @@
     "key": "LAS-98 Laser Cannon"
   },
   "14427145521595639927": {
-    "id": "0xc8378469e1936800",
+    "id": "14427145521595639927",
     "magazine_capacity": 3,
     "chambered": 0,
     "magazines": 5,
@@ -6144,7 +6144,7 @@
     "key": "Fusion Autocannon"
   },
   "16965724150372546684": {
-    "id": "0xeb725c39fc38b800",
+    "id": "16965724150372546684",
     "type": "LoadoutItemType_ThrowableWeapon",
     "name": "Incendiary Impact",
     "prefix": "G-13",
@@ -6167,7 +6167,7 @@
     "key": "G-13 Incendiary Impact"
   },
   "1962385103464102102": {
-    "id": "0x1b3bcadabc7ef900",
+    "id": "1962385103464102102",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 0,
@@ -6222,7 +6222,7 @@
     "bomb_prediction_interval": 0.0500000007
   },
   "507720195356997881": {
-    "id": "0x70bc8d3e18bb900",
+    "id": "507720195356997881",
     "magazine_capacity": 12,
     "chambered": 0,
     "magazines": 30,
@@ -6271,7 +6271,7 @@
     "key": "Fusion Assault Gun"
   },
   "6160539022825437465": {
-    "id": "0x557ea199f0713800",
+    "id": "6160539022825437465",
     "type": "LoadoutItemType_PermanentGear",
     "recoil_info": {
       "drift": {
@@ -6300,9 +6300,9 @@
     "equipment_type": "EquipmentType_Pistol",
     "is_one_handed": 1
   },
-  "5743786617162131741": {"id": "0x4fb6077f15976800"},
+  "5743786617162131741": {"id": "5743786617162131741"},
   "14772015414747343144": {
-    "id": "0xcd00bdc1149c2800",
+    "id": "14772015414747343144",
     "magazine_capacity": 100,
     "chambered": 1,
     "magazines": 6,
@@ -6357,7 +6357,7 @@
     "key": "MG-206 Heavy Machine Gun"
   },
   "2114795373903595840": {
-    "id": "0x1d5943301a29c900",
+    "id": "2114795373903595840",
     "magazine_capacity": 10,
     "chambered": 1,
     "magazines": 1,
@@ -6404,7 +6404,7 @@
     "burst_fire_rate": 0
   },
   "1279722939363854678": {
-    "id": "0x11c27d3babb38900",
+    "id": "1279722939363854678",
     "magazine_capacity": 150,
     "chambered": 1,
     "magazines": 1,
@@ -6459,7 +6459,7 @@
     "key": "MG-43 Machine Gun"
   },
   "9219146911950674287": {
-    "id": "0x7ff0fd4572f59800",
+    "id": "9219146911950674287",
     "magazine_capacity": 400,
     "chambered": 1,
     "magazines": 0,
@@ -6523,7 +6523,7 @@
     "key": "A/G-16 Gatling Sentry"
   },
   "3969673985818503563": {
-    "id": "0x37171d7536d22a00",
+    "id": "3969673985818503563",
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
@@ -6531,7 +6531,7 @@
     "is_one_handed": 0
   },
   "18163938711866866090": {
-    "id": "0xfc13460592ca7800",
+    "id": "18163938711866866090",
     "type": "LoadoutItemType_SupportWeapon",
     "name": "Mini-Missile Target Designator",
     "recoil_info": {
@@ -6563,7 +6563,7 @@
     "key": "Mini-Missile Target Designator"
   },
   "8540606443036588471": {
-    "id": "0x7686544f539bb800",
+    "id": "8540606443036588471",
     "type": "LoadoutItemType_ThrowableWeapon",
     "name": "Impact",
     "prefix": "G-16",
@@ -6586,7 +6586,7 @@
     "key": "G-16 Impact"
   },
   "3965302274531977670": {
-    "id": "0x37079568dc86ea00",
+    "id": "3965302274531977670",
     "magazine_capacity": 16,
     "chambered": 0,
     "magazines": 1,
@@ -6651,7 +6651,7 @@
     "key": "A/MLS-4X Rocket Sentry"
   },
   "851455025217071569": {
-    "id": "0xbd0f9d59048ea00",
+    "id": "851455025217071569",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 0,
@@ -6706,7 +6706,7 @@
     "bomb_prediction_interval": 0.0500000007
   },
   "13597248039561415123": {
-    "id": "0xbcb3210cf8ef4800",
+    "id": "13597248039561415123",
     "magazine_capacity": 30,
     "chambered": 0,
     "magazines": 5,
@@ -6754,7 +6754,7 @@
     "key": "Fusion Carbine"
   },
   "3907162354404645355": {
-    "id": "0x36390775d6115a00",
+    "id": "3907162354404645355",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 2,
@@ -6810,7 +6810,7 @@
     "key": "Fusion Repeater"
   },
   "12209482505501190673": {
-    "id": "0xa970cba66fbea800",
+    "id": "12209482505501190673",
     "magazine_capacity": 300,
     "chambered": 1,
     "magazines": 0,
@@ -6866,7 +6866,7 @@
     "key": "E/MG-101 HMG Emplacement"
   },
   "16027418915446721044": {
-    "id": "0xde6cd49631940800",
+    "id": "16027418915446721044",
     "magazine_capacity": 100,
     "chambered": 1,
     "magazines": 0,
@@ -6919,7 +6919,7 @@
     "burst_fire_rate": 0
   },
   "7778022558452062755": {
-    "id": "0x6bf1164ea3829c00",
+    "id": "7778022558452062755",
     "magazine_capacity": 200,
     "chambered": 1,
     "magazines": 2,
@@ -6963,7 +6963,7 @@
     "damage_info_type": "DamageInfoType_None"
   },
   "3359716870288230953": {
-    "id": "0x2ea01cb1676aca00",
+    "id": "3359716870288230953",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 0,
@@ -7018,7 +7018,7 @@
     "bomb_prediction_interval": 0.0500000007
   },
   "4140939466573601321": {
-    "id": "0x397792815583da00",
+    "id": "4140939466573601321",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 0,
@@ -7073,7 +7073,7 @@
     "bomb_prediction_interval": 0.0500000007
   },
   "3973443609256024694": {
-    "id": "0x372481e910c05a00",
+    "id": "3973443609256024694",
     "magazine_capacity": 1,
     "chambered": 1,
     "magazines": 0,
@@ -7107,7 +7107,7 @@
     "is_one_handed": 0
   },
   "13918995818598980231": {
-    "id": "0xc12a34f375bd5800",
+    "id": "13918995818598980231",
     "magazine_capacity": 25,
     "chambered": 1,
     "magazines": 4,
@@ -7163,7 +7163,7 @@
     "key": "SG-225IE Breaker Incendiary"
   },
   "4749824949454633632": {
-    "id": "0x41eac4a03987fc00",
+    "id": "4749824949454633632",
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Punisher",
     "prefix": "SG-8",
@@ -7237,7 +7237,7 @@
     "key": "SG-8 Punisher"
   },
   "13781410671701883569": {
-    "id": "0xbf4167fd26917800",
+    "id": "13781410671701883569",
     "magazine_capacity": 75,
     "chambered": 0,
     "magazines": 0,
@@ -7282,7 +7282,7 @@
     "burst_fire_rate": 0
   },
   "17188493825552378619": {
-    "id": "0xee89cc10d80b6800",
+    "id": "17188493825552378619",
     "throw_distance_min": 0,
     "throw_distance_max": 1,
     "use_angular_velocity": 1,
@@ -7296,7 +7296,7 @@
     "explosion_type": "ExplosionType_ContactMine"
   },
   "6766936627846269706": {
-    "id": "0x5de8fd02a05b4c00",
+    "id": "6766936627846269706",
     "type": "LoadoutItemType_ThrowableWeapon",
     "name": "Smoke",
     "prefix": "G-3",
@@ -7319,7 +7319,7 @@
     "key": "G-3 Smoke"
   },
   "10256545209826294564": {
-    "id": "0x8e569186de6e3800",
+    "id": "10256545209826294564",
     "holster_duration": 0.100000001,
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
@@ -7338,7 +7338,7 @@
     "explosion_type": "ExplosionType_Cyborg_HandGrenade_Antitank"
   },
   "316723890334202692": {
-    "id": "0x4653ab33f3ffb40",
+    "id": "316723890334202692",
     "type": "LoadoutItemType_ThrowableWeapon",
     "name": "Incendiary",
     "prefix": "G-10",
@@ -7361,7 +7361,7 @@
     "key": "G-10 Incendiary"
   },
   "5542218890398374779": {
-    "id": "0x4ce9eab785a79c00",
+    "id": "5542218890398374779",
     "type": "LoadoutItemType_ThrowableWeapon",
     "name": "Frag",
     "prefix": "G-6",
@@ -7384,7 +7384,7 @@
     "key": "G-6 Frag"
   },
   "614861366208420748": {
-    "id": "0x8886d27a6f6db80",
+    "id": "614861366208420748",
     "name": "Fusion Smelter Beam",
     "recoil_info": {
       "drift": {
@@ -7434,7 +7434,7 @@
     "key": "Fusion Smelter Beam"
   },
   "5731472083741485993": {
-    "id": "0x4f8a477e577aac00",
+    "id": "5731472083741485993",
     "type": "LoadoutItemType_SupportWeapon",
     "recoil_info": {
       "drift": {
@@ -7486,7 +7486,7 @@
     "modifiers": []
   },
   "226457403917573050": {
-    "id": "0x32489cf1d439bc0",
+    "id": "226457403917573050",
     "throw_distance_min": 0,
     "throw_distance_max": 1,
     "use_angular_velocity": 1,
@@ -7500,7 +7500,7 @@
     "explosion_type": "ExplosionType_AntiTankMine"
   },
   "14942687850090605537": {
-    "id": "0xcf5f176e0e322800",
+    "id": "14942687850090605537",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 7,
@@ -7555,7 +7555,7 @@
     "key": "AR-23C Liberator Concussive"
   },
   "16204610837508709347": {
-    "id": "0xe0e257b37526d800",
+    "id": "16204610837508709347",
     "magazine_capacity": 300,
     "chambered": 1,
     "magazines": 0,
@@ -7602,7 +7602,7 @@
     "damage_info_type": "DamageInfoType_None"
   },
   "17196401230144941076": {
-    "id": "0xeea5e3cef1e13000",
+    "id": "17196401230144941076",
     "magazine_capacity": 15,
     "chambered": 0,
     "magazines": 3,
@@ -7663,7 +7663,7 @@
     "key": "PLAS-1 Scorcher"
   },
   "5641428405267160100": {
-    "id": "0x4e4a613eb9bf5c00",
+    "id": "5641428405267160100",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -7732,7 +7732,7 @@
     "key": "SMG-37 Defender"
   },
   "12279528435724053588": {
-    "id": "0xaa69a60d74a3f000",
+    "id": "12279528435724053588",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -7790,7 +7790,7 @@
     "key": "PLAS-3 Singe"
   },
   "12164217308285983839": {
-    "id": "0xa8cffb316f0b6000",
+    "id": "12164217308285983839",
     "type": "LoadoutItemType_SupportWeapon",
     "interpolation_speed_aim": 0.100000001,
     "interpolation_speed_firing": 0.0500000007,
@@ -7851,7 +7851,7 @@
     "key": "AC-8 Autocannon"
   },
   "7509990704627358840": {
-    "id": "0x6838d8c197cc9c00",
+    "id": "7509990704627358840",
     "magazine_capacity": 2000,
     "chambered": 1,
     "magazines": 0,
@@ -7895,7 +7895,7 @@
     "burst_fire_rate": 0
   },
   "8864800879179811976": {
-    "id": "0x7b06196e90154c00",
+    "id": "8864800879179811976",
     "type": "LoadoutItemType_SidearmWeapon",
     "name": "Dagger",
     "prefix": "LAS-7",
@@ -7951,7 +7951,7 @@
     "key": "LAS-7 Dagger"
   },
   "12587270281642273949": {
-    "id": "0xaeaef7a1851e7000",
+    "id": "12587270281642273949",
     "magazine_capacity": 2000,
     "chambered": 1,
     "magazines": 6,
@@ -8012,7 +8012,7 @@
     "key": "AA Emplacement"
   },
   "5972955417680186543": {
-    "id": "0x52e4334e6a128c00",
+    "id": "5972955417680186543",
     "type": "LoadoutItemType_SidearmWeapon",
     "name": "Grenade Pistol",
     "prefix": "GP-31",
@@ -8070,7 +8070,7 @@
     "key": "GP-31 Grenade Pistol"
   },
   "4272070332797734129": {
-    "id": "0x3b49715551e4cc00",
+    "id": "4272070332797734129",
     "magazine_capacity": 50,
     "chambered": 1,
     "magazines": 6,
@@ -8122,7 +8122,7 @@
     "burst_fire_rate": 0
   },
   "10355039786464021751": {
-    "id": "0x8fb47dd28b399000",
+    "id": "10355039786464021751",
     "magazine_capacity": 1000,
     "chambered": 1,
     "magazines": 6,
@@ -8174,7 +8174,7 @@
     "key": "Heavy Fusion Cannon"
   },
   "7672538193198738711": {
-    "id": "0x6a7a54d5fb3a6c00",
+    "id": "7672538193198738711",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 2,
@@ -8233,7 +8233,7 @@
     "key": "Factory Strider"
   },
   "645713022044093730": {
-    "id": "0x8f6089289c83d00",
+    "id": "645713022044093730",
     "magazine_capacity": 1000,
     "chambered": 0,
     "magazines": 0,
@@ -8281,7 +8281,7 @@
     "burst_fire_rate": 0
   },
   "3199457897835937068": {
-    "id": "0x2c66c201b2543e00",
+    "id": "3199457897835937068",
     "name": "Scythe",
     "prefix": "LAS-5",
     "reload": 3,
@@ -8339,7 +8339,7 @@
     "key": "LAS-5 Scythe"
   },
   "2303622299803843892": {
-    "id": "0x1ff81c46cc79fd00",
+    "id": "2303622299803843892",
     "type": "LoadoutItemType_ThrowableWeapon",
     "holster_duration": 0.300000012,
     "wield_duration": 0.100000001,
@@ -8359,7 +8359,7 @@
     "explosion_type": "ExplosionType_OrbitalStun"
   },
   "952558497108237637": {
-    "id": "0xd382ae7ffea9d80",
+    "id": "952558497108237637",
     "magazine_capacity": 400,
     "chambered": 1,
     "magazines": 0,
@@ -8402,7 +8402,7 @@
     "rounds_per_minute": -1
   },
   "3374156467310513484": {
-    "id": "0x2ed3696e12a14e00",
+    "id": "3374156467310513484",
     "magazine_capacity": 200,
     "chambered": 0,
     "magazines": 5,
@@ -8450,7 +8450,7 @@
     "key": "Fusion Repeater"
   },
   "3177983950714174823": {
-    "id": "0x2c1a7790c435fe00",
+    "id": "3177983950714174823",
     "health": 450,
     "health_changerate": 0,
     "health_changerate_disabled": 0,
@@ -8514,7 +8514,7 @@
     "burst_fire_rate": 0
   },
   "4111341420364086640": {
-    "id": "0x390e6b3d2f26be00",
+    "id": "4111341420364086640",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 2,
@@ -8573,7 +8573,7 @@
     "key": "Factory Strider"
   },
   "17259437333005147504": {
-    "id": "0xef85d6cf58e32000",
+    "id": "17259437333005147504",
     "magazine_capacity": 400,
     "chambered": 1,
     "magazines": 0,
@@ -8637,7 +8637,7 @@
     "key": "A/G-16 Gatling Sentry"
   },
   "5881843148917714292": {
-    "id": "0x51a0812e3bce2c00",
+    "id": "5881843148917714292",
     "magazine_capacity": 36,
     "chambered": 1,
     "magazines": 0,
@@ -8699,7 +8699,7 @@
     "key": "A/M-12 Mortar Sentry"
   },
   "8383906277678357886": {
-    "id": "0x74599e56f72f9c00",
+    "id": "8383906277678357886",
     "magazine_capacity": 400,
     "chambered": 1,
     "magazines": 0,
@@ -8746,7 +8746,7 @@
     "key": "A/ARC-3 Tesla Tower"
   },
   "16121648674137865605": {
-    "id": "0xdfbb9a0d8fa28000",
+    "id": "16121648674137865605",
     "magazine_capacity": 2000,
     "chambered": 0,
     "magazines": 0,
@@ -8801,7 +8801,7 @@
     "bomb_prediction_interval": 0.0500000007
   },
   "5289274991058480552": {
-    "id": "0x49674794a165ec00",
+    "id": "5289274991058480552",
     "magazine_capacity": 1000,
     "chambered": 1,
     "magazines": 6,
@@ -8853,7 +8853,7 @@
     "key": "Fusion Autocannon"
   },
   "16570517418531528145": {
-    "id": "0xe5f64dcc3bfea000",
+    "id": "16570517418531528145",
     "magazine_capacity": 75,
     "chambered": 0,
     "magazines": 0,
@@ -8898,7 +8898,7 @@
     "burst_fire_rate": 0
   },
   "11616925890035912226": {
-    "id": "0xa1379c8c41a11000",
+    "id": "11616925890035912226",
     "magazine_capacity": 50,
     "chambered": 1,
     "magazines": 4,
@@ -8948,7 +8948,7 @@
     "modifiers": []
   },
   "9291384900638350902": {
-    "id": "0x80f1a156d9fa2000",
+    "id": "9291384900638350902",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -9019,7 +9019,7 @@
     "key": "JAR-5 Dominator"
   },
   "3358853937828503136": {
-    "id": "0x2e9d0bdc48b09e00",
+    "id": "3358853937828503136",
     "magazine_capacity": 1,
     "chambered": 0,
     "magazines": 10,
@@ -9106,7 +9106,7 @@
     "key": "RS-422 Railgun"
   },
   "10845250369047350884": {
-    "id": "0x968211c0033dd000",
+    "id": "10845250369047350884",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -9175,7 +9175,7 @@
     "key": "AR-23 Liberator"
   },
   "11062825334817279592": {
-    "id": "0x99870d0755f9d000",
+    "id": "11062825334817279592",
     "magazine_capacity": 1,
     "chambered": 1,
     "magazines": 5,
@@ -9221,7 +9221,7 @@
     "burst_fire_rate": 0
   },
   "9375653687096917621": {
-    "id": "0x821d035aa47e4000",
+    "id": "9375653687096917621",
     "magazine_capacity": 14,
     "chambered": 0,
     "magazines": 0,
@@ -9269,7 +9269,7 @@
     "burst_fire_rate": 0
   },
   "8039414067817307766": {
-    "id": "0x6f91bc8002876000",
+    "id": "8039414067817307766",
     "magazine_capacity": 1,
     "chambered": 0,
     "magazines": 1,
@@ -9311,7 +9311,7 @@
     "key": "Bile Spewer"
   },
   "5892418254001999486": {
-    "id": "0x51c6132ec1d11000",
+    "id": "5892418254001999486",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 2,
@@ -9370,7 +9370,7 @@
     "key": "Fusion Repeater"
   },
   "10266352102081711787": {
-    "id": "0x8e7968d7e7aa5000",
+    "id": "10266352102081711787",
     "type": "LoadoutItemType_PermanentGear",
     "recoil_info": {
       "drift": {
@@ -9400,7 +9400,7 @@
     "is_one_handed": 1
   },
   "9388736439472594613": {
-    "id": "0x824b7e0c4c87a000",
+    "id": "9388736439472594613",
     "magazine_capacity": 14,
     "chambered": 0,
     "magazines": 0,
@@ -9448,7 +9448,7 @@
     "burst_fire_rate": 0
   },
   "1573296579562737333": {
-    "id": "0x15d578e7472c8f00",
+    "id": "1573296579562737333",
     "magazine_capacity": 250,
     "chambered": 1,
     "magazines": 5,
@@ -9503,7 +9503,7 @@
     "key": "M-105 Stalwart"
   },
   "5344291599364980417": {
-    "id": "0x4a2abce4f4410000",
+    "id": "5344291599364980417",
     "magazine_capacity": 3,
     "chambered": 1,
     "magazines": 0,
@@ -9544,7 +9544,7 @@
     "burst_fire_rate": 0
   },
   "7539955080993332996": {
-    "id": "0x68a34d32a1026000",
+    "id": "7539955080993332996",
     "magazine_capacity": 400,
     "chambered": 1,
     "magazines": 0,
@@ -9590,7 +9590,7 @@
     "vertical_limit_max": 90
   },
   "7323248696802770694": {
-    "id": "0x65a167e3b6c58000",
+    "id": "7323248696802770694",
     "magazine_capacity": 15,
     "chambered": 1,
     "magazines": 4,
@@ -9645,7 +9645,7 @@
     "key": "SG-225BB Breaker Bugbiter"
   },
   "14685780296579739413": {
-    "id": "0xcbce5f5f0310f000",
+    "id": "14685780296579739413",
     "magazine_capacity": 10,
     "chambered": 0,
     "magazines": 5,
@@ -9693,7 +9693,7 @@
     "key": "Fusion Carbine"
   },
   "12100643055971655455": {
-    "id": "0xa7ee1ebf58fce000",
+    "id": "12100643055971655455",
     "magazine_capacity": 30,
     "chambered": 1,
     "magazines": 6,
@@ -9756,7 +9756,7 @@
     "key": "AR-23A Liberator Carbine"
   },
   "11240016882397388584": {
-    "id": "0x9bfc8fcd68b0a000",
+    "id": "11240016882397388584",
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -9803,7 +9803,7 @@
     "burst_fire_rate": 0
   },
   "3270354809248583475": {
-    "id": "0x2d62a25f36c09000",
+    "id": "3270354809248583475",
     "magazine_capacity": 200,
     "chambered": 0,
     "magazines": 5,
@@ -9851,7 +9851,7 @@
     "key": "Heavy Fusion Repeater"
   },
   "4228803675738017635": {
-    "id": "0x3aafba89b53b1000",
+    "id": "4228803675738017635",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 2,
@@ -9910,7 +9910,7 @@
     "key": "Factory Strider"
   },
   "3109983482551492476": {
-    "id": "0x2b28e17ffed06000",
+    "id": "3109983482551492476",
     "type": "LoadoutItemType_SidearmWeapon",
     "name": "Bushwhacker",
     "prefix": "SG-22",
@@ -9965,7 +9965,7 @@
     "key": "SG-22 Bushwhacker"
   },
   "17623191861664038783": {
-    "id": "0xf49227a0630a4000",
+    "id": "17623191861664038783",
     "magazine_capacity": 5,
     "chambered": 1,
     "magazines": 6,
@@ -10019,7 +10019,7 @@
     "key": "CB-9 Exploding Crossbow"
   },
   "12827722989328478091": {
-    "id": "0xb2053a1838093000",
+    "id": "12827722989328478091",
     "magazine_capacity": 16,
     "chambered": 1,
     "magazines": 0,
@@ -10081,7 +10081,7 @@
     "key": "A/M-23 EMS Mortar Sentry"
   },
   "344970826846105488": {
-    "id": "0x4c99523a808ef80",
+    "id": "344970826846105488",
     "magazine_capacity": 400,
     "chambered": 1,
     "magazines": 0,
@@ -10142,7 +10142,7 @@
     "key": "A/G-16 Gatling Sentry"
   },
   "10320682320039145374": {
-    "id": "0x8f3a6de385967000",
+    "id": "10320682320039145374",
     "magazine_capacity": 1,
     "chambered": 0,
     "magazines": 30,
@@ -10190,7 +10190,7 @@
     "key": "Fusion Carbine"
   },
   "6113742425058627513": {
-    "id": "0x54d86057f5dad000",
+    "id": "6113742425058627513",
     "magazine_capacity": 24,
     "chambered": 1,
     "magazines": 0,
@@ -10252,7 +10252,7 @@
     "key": "A/AC-8 Autocannon Sentry"
   },
   "13283381034644230080": {
-    "id": "0xb8580cac32215000",
+    "id": "13283381034644230080",
     "magazine_capacity": 1000,
     "chambered": 1,
     "magazines": 6,
@@ -10302,7 +10302,7 @@
     "burst_fire_rate": 0
   },
   "12489093086854516709": {
-    "id": "0xad522bfe10c01000",
+    "id": "12489093086854516709",
     "magazine_capacity": 500,
     "chambered": 1,
     "magazines": 3,

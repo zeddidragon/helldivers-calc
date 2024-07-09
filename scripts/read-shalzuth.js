@@ -479,10 +479,6 @@ const handlers = {
   StratagemBallComponent: null,
 }
 
-function hex(v) {
-  return `0x${v.toString(16)}`
-}
-
 async function readEntities() {
   EntityDeltas = await readJson(dataDir, 'entities/EntityDeltas')
   const customizations =  await readJson(dataDir, 'settings/generated_weapon_customization_settings')
@@ -509,7 +505,7 @@ async function readEntities() {
     })
     .filter(([, componentIds]) => !componentIds.includes(AiEnemyComponent))
   for(const [id, componentIds] of componentSetup) {
-    const obj = { id: hex(+id) }
+    const obj = { id }
     for(const cId of componentIds) {
       const componentName = ComponentType[cId]
       const handler = handlers[componentName]
@@ -552,6 +548,7 @@ function ref(prefix) {
 }
 
 const refs = {
+  stratagem: ref('StratagemType'),
   damage: ref('DamageInfoType'),
   projectile: ref('ProjectileType'),
   explosion: ref('ExplosionType'),
@@ -562,6 +559,29 @@ const refs = {
   fireMode: ref('FireMode'),
   weaponFunction: ref('WeaponFunctionType'),
   crater: ref('TerrainDeformationType'),
+  stratCategory: ref('StratagemCategoryType'),
+  stratButton: ref('StratagemButtonDirection'),
+}
+
+const StratagemMaxUse = Math.pow(2, 32) - 1
+
+function readTypeStratagem(item) {
+  console.log(item)
+  let uses = item.uses
+  if(uses === StratagemMaxUse) {
+    uses = void 0
+  }
+  return {
+    ref: refs.stratagem(item.type),
+    name: english[item.name_cased],
+    category: refs.stratCategory(item.category),
+    uses,
+    stratcode: item.button_combination.map(refs.stratButton),
+    calltime: float(item.spawn_time),
+    radius: float(item.spawn_radius) || void 0,
+    cooldown: float(item.cooldown_duration_success),
+    weaponid: item.matching_support_weapon || 0,
+  }
 }
 
 function readTypeDamage(item) {
@@ -658,6 +678,7 @@ function readTypeStatus(item) {
 }
 
 const types = {
+  stratagem: readTypeStratagem,
   damage: readTypeDamage,
   projectile: readTypeProjectile,
   explosion: readTypeExplosion,
@@ -666,12 +687,17 @@ const types = {
   status_effect: readTypeStatus,
 }
 
-async function readType(type, prop) {
+async function readType(type) {
   const path = `settings/generated_${type}_settings`
   const cb = types[type]
   const data = await readJson(dataDir, path)
-  prop ||= type[0].toUpperCase() + type.slice(1) + 'Settings'
-  const { items } = data.find(obj => obj[prop])[prop]
+  const prop = type.split(/_/g)
+    .map(part => part[0].toUpperCase() + part.slice(1))
+    .join('')
+    + 'Settings'
+  const items = data
+    .filter(obj => obj[prop])
+    .flatMap(obj => obj[prop].items)
   const mapped = items.map(cb)
   const dict = {}
   for(const item of mapped) {
@@ -692,21 +718,13 @@ async function readEnum(prefix) {
 }
 
 async function readTypes() {
-  const damage = await readType('damage')
-  const projectile = await readType('projectile')
-  const explosion = await readType('explosion')
-  const beam = await readType('beam')
-  const arc = await readType('arc')
-  const status = await readType('status_effect', 'StatusEffectSettings')
-  const elements = await readEnum('Element')
+  const data = {}
+  for(const [key, cb] of Object.entries(types)) {
+    data[key] = await readType(key)
+  }
+  data.elements = await readEnum('Element')
   await fs.writeFile('data/datamined.json', JSON.stringify({
-    damage,
-    projectile,
-    explosion,
-    beam,
-    arc,
-    status,
-    elements,
+    ...data,
   }, null, 2))
 }
 

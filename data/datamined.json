@@ -1,4 +1,1438 @@
 {
+  "stratagem": {
+    "AmmoBackpack": {
+      "name": "Supply Pack",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Up",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0
+    },
+    "BallisticShield": {
+      "name": "Ballistic Shield Backpack",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Down",
+        "Up",
+        "Left"
+      ],
+      "calltime": 5,
+      "cooldown": 300,
+      "weaponid": 0
+    },
+    "EnergyShieldBackpack": {
+      "name": "Shield Generator Pack",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Right",
+        "Left",
+        "Right"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0
+    },
+    "JumppackBackpack": {
+      "name": "Jump Pack",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Up",
+        "Down",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0
+    },
+    "DroneMG": {
+      "name": "\"Guard Dog\"",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Up",
+        "Right",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0
+    },
+    "Drone_Laser_Rifle": {
+      "name": "\"Guard Dog\" Rover",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Up",
+        "Right",
+        "Right"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0
+    },
+    "AmmoRack": {
+      "name": "Resupply",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Up",
+        "Right"
+      ],
+      "calltime": 7.5,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "HealthPackRack": {
+      "name": "Medical Supplies",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Left",
+        "Down",
+        "Up",
+        "Left"
+      ],
+      "calltime": 5,
+      "cooldown": 300,
+      "weaponid": 0
+    },
+    "EagleCAS": {
+      "name": "Eagle Strafing Run",
+      "category": "CloseAirSupport",
+      "uses": 4,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "weaponid": 0
+    },
+    "EagleBomb": {
+      "name": "Eagle 500kg Bomb",
+      "category": "CloseAirSupport",
+      "uses": 1,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "weaponid": 0
+    },
+    "EagleRocket": {
+      "name": "Eagle 110mm Rocket Pods",
+      "category": "CloseAirSupport",
+      "uses": 2,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Up",
+        "Left"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "weaponid": 0
+    },
+    "EagleAirstrike": {
+      "name": "Eagle Airstrike",
+      "category": "CloseAirSupport",
+      "uses": 2,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Down",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "weaponid": 0
+    },
+    "EagleAirstrikeNapalm": {
+      "name": "Eagle Napalm Airstrike",
+      "category": "CloseAirSupport",
+      "uses": 2,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Down",
+        "Up"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "weaponid": 0
+    },
+    "EagleAirstrikeSmoke": {
+      "name": "Eagle Smoke Strike",
+      "category": "CloseAirSupport",
+      "uses": 2,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Up",
+        "Down"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "weaponid": 0
+    },
+    "EagleClusterbombs": {
+      "name": "Eagle Cluster Bomb",
+      "category": "CloseAirSupport",
+      "uses": 4,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Down",
+        "Down",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "weaponid": 0
+    },
+    "EagleRearm": {
+      "name": "Eagle Rearm",
+      "category": "CloseAirSupport",
+      "stratcode": [
+        "Up",
+        "Up",
+        "Left",
+        "Up",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 150,
+      "weaponid": 0
+    },
+    "EagleMissile": {
+      "name": "Eagle Air-to-Air Missiles",
+      "category": "CloseAirSupport",
+      "uses": 2,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Up",
+        "Up"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "weaponid": 0
+    },
+    "EagleStrafe": {
+      "category": "CloseAirSupport",
+      "uses": 3,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "weaponid": 0
+    },
+    "EnergyShield": {
+      "name": "Shield Generator Relay",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Left",
+        "Right",
+        "Left",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 90,
+      "weaponid": 0
+    },
+    "TurretManned": {
+      "name": "HMG Emplacement",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Right",
+        "Right",
+        "Left"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "MineDeployer": {
+      "name": "Anti-Personnel Minefield",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "MineDeployer_IncendiaryMines": {
+      "name": "Incendiary Mines",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Left",
+        "Down"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "MineDeployer_AntiTank": {
+      "name": "Anti-tank Mines",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Up"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "TurretTesla": {
+      "name": "Tesla Tower",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Up",
+        "Left",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 150,
+      "weaponid": 0
+    },
+    "ShipBowling": {
+      "category": "Special",
+      "stratcode": [
+        "Up",
+        "Up",
+        "Up",
+        "Up",
+        "Up",
+        "Up"
+      ],
+      "calltime": 1,
+      "cooldown": 1,
+      "weaponid": 0
+    },
+    "ShoulderMountedCamera": {
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 10,
+      "weaponid": 0
+    },
+    "CyborgCarryData": {
+      "name": "SSSD Delivery",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Up",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 10,
+      "weaponid": 0
+    },
+    "CarryData": {
+      "name": "SSSD Delivery",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Down",
+        "Up",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 10,
+      "weaponid": 0
+    },
+    "DrillingCharge": {
+      "name": "Drilling Charge",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Up",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 10,
+      "weaponid": 0
+    },
+    "Extract": {
+      "name": "Extraction Beacon",
+      "category": "TactialAirInsertion",
+      "stratcode": [
+        "Left",
+        "Up",
+        "Up",
+        "Down",
+        "Left",
+        "Down"
+      ],
+      "calltime": 120,
+      "cooldown": 300,
+      "weaponid": 0
+    },
+    "DropoffHellbomb": {
+      "name": "Hellbomb",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Down",
+        "Up",
+        "Right",
+        "Down",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "DropoffBugPlug": {
+      "name": "HIVE BREAKER DRILL",
+      "category": "TactialAirInsertion",
+      "stratcode": [
+        "Left",
+        "Up",
+        "Down",
+        "Right",
+        "Down",
+        "Down"
+      ],
+      "calltime": 0,
+      "cooldown": 120,
+      "weaponid": 0
+    },
+    "DropoffCargoContainer": {
+      "category": "TactialAirInsertion",
+      "stratcode": [
+        "Up",
+        "Up",
+        "Down",
+        "Down",
+        "Right",
+        "Down"
+      ],
+      "calltime": 0,
+      "cooldown": 120,
+      "weaponid": 0
+    },
+    "SpireSterilizer": {
+      "name": "Spire Sterilizer",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Down",
+        "Left",
+        "Right",
+        "Left",
+        "Right"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "RaiseFlag": {
+      "name": "Super Earth Flag",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Down",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "BugThumper": {
+      "name": "Thumper",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Right",
+        "Up",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "ProspectingDrill": {
+      "name": "Prospecting Drill",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Left",
+        "Right",
+        "Down",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "SeismicProbe": {
+      "name": "Seismic Probe",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Up",
+        "Up",
+        "Left",
+        "Right",
+        "Down",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "Prospector": {
+      "name": "Hive Scanner",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Down",
+        "Right",
+        "Left",
+        "Down",
+        "Up",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 90,
+      "weaponid": 0
+    },
+    "Scrambler": {
+      "name": "Scrambler",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Up",
+        "Right",
+        "Down",
+        "Down",
+        "Left",
+        "Right",
+        "Left"
+      ],
+      "calltime": 5,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "ExtractionBeacon": {
+      "name": "Extraction",
+      "category": "Special",
+      "stratcode": [
+        "Up",
+        "Right",
+        "Left",
+        "Up",
+        "Right",
+        "Left",
+        "Up"
+      ],
+      "calltime": 7,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "ImmediateExtractionBeacon": {
+      "category": "Special",
+      "stratcode": [
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left",
+        "Left"
+      ],
+      "calltime": 7,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "EmergencyExtractionBeacon": {
+      "name": "Extraction",
+      "category": "Special",
+      "stratcode": [
+        "Up",
+        "Right",
+        "Left",
+        "Up",
+        "Right",
+        "Left",
+        "Up"
+      ],
+      "calltime": 0,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "ReinforcementBeacon": {
+      "name": "Reinforce",
+      "category": "Special",
+      "stratcode": [
+        "Up",
+        "Down",
+        "Right",
+        "Left",
+        "Up"
+      ],
+      "calltime": 0,
+      "cooldown": 6,
+      "weaponid": 0
+    },
+    "OrbitalIlluminationFlare": {
+      "name": "Orbital Illumination Flare",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Left",
+        "Left"
+      ],
+      "calltime": 0,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "SOSBeacon": {
+      "name": "SOS Beacon",
+      "category": "Special",
+      "uses": 1,
+      "stratcode": [
+        "Up",
+        "Down",
+        "Right",
+        "Up"
+      ],
+      "calltime": 2,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "UploadDiscovery": {
+      "name": "Upload Data",
+      "category": "Special",
+      "stratcode": [
+        "Left",
+        "Right",
+        "Up",
+        "Up",
+        "Up"
+      ],
+      "calltime": 0,
+      "cooldown": 1,
+      "weaponid": 0
+    },
+    "Nuke": {
+      "category": "OrbitalFireSupport",
+      "uses": 1,
+      "stratcode": [
+        "Right",
+        "Up",
+        "Left",
+        "Right",
+        "Down",
+        "Up",
+        "Down"
+      ],
+      "calltime": 4,
+      "cooldown": 1200,
+      "weaponid": 0
+    },
+    "CarpetBomb": {
+      "name": "Carpet Bomb",
+      "category": "CloseAirSupport",
+      "uses": 1,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Up",
+        "Right",
+        "Up",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 900,
+      "weaponid": 0
+    },
+    "RemoteExplosives": {
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Down",
+        "Down",
+        "Left",
+        "Up",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "JammedPinata": {
+      "name": "Jammed Piñata",
+      "category": "HellpodDeployment",
+      "uses": 1,
+      "stratcode": [
+        "Up",
+        "Down",
+        "Up",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 0,
+      "weaponid": 0
+    },
+    "SEAF_Gun": {
+      "name": "SEAF Artillery",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Up",
+        "Up",
+        "Down"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "weaponid": 0
+    },
+    "DarkFluidBackpack": {
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Up",
+        "Left",
+        "Right",
+        "Down",
+        "Up",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 20,
+      "weaponid": 0
+    },
+    "TCS03Thumper": {
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Up",
+        "Down",
+        "Up",
+        "Down",
+        "Up",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "OrbitalShell": {
+      "name": "Orbital Precision Strike",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Up"
+      ],
+      "calltime": 2,
+      "cooldown": 90,
+      "weaponid": 0
+    },
+    "OrbitalShot": {
+      "name": "Orbital Airburst Strike",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Right"
+      ],
+      "calltime": 2,
+      "cooldown": 100,
+      "weaponid": 0
+    },
+    "OrbitalStun": {
+      "name": "Orbital EMS Strike",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Left",
+        "Down"
+      ],
+      "calltime": 2,
+      "cooldown": 75,
+      "weaponid": 0
+    },
+    "OrbitalStrike": {
+      "name": "Orbital 120mm HE Barrage",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Down",
+        "Left",
+        "Right",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 240,
+      "weaponid": 0
+    },
+    "OrbitalGas": {
+      "name": "Orbital Gas Strike",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Down",
+        "Right"
+      ],
+      "calltime": 2,
+      "cooldown": 75,
+      "weaponid": 0
+    },
+    "OrbitalBarrage": {
+      "name": "Orbital 380mm HE Barrage",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Down",
+        "Up",
+        "Up",
+        "Left",
+        "Down",
+        "Down"
+      ],
+      "calltime": 6,
+      "cooldown": 240,
+      "weaponid": 0
+    },
+    "OrbitalLaser": {
+      "name": "Orbital Laser",
+      "category": "OrbitalFireSupport",
+      "uses": 3,
+      "stratcode": [
+        "Right",
+        "Down",
+        "Up",
+        "Right",
+        "Down"
+      ],
+      "calltime": 2,
+      "cooldown": 300,
+      "weaponid": 0
+    },
+    "OrbitalRailcannon": {
+      "name": "Orbital Railcannon Strike",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Up",
+        "Down",
+        "Down",
+        "Right"
+      ],
+      "calltime": 1,
+      "cooldown": 210,
+      "weaponid": 0
+    },
+    "OrbitalWalkingBarrage": {
+      "name": "Orbital Walking Barrage",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Down",
+        "Right",
+        "Down",
+        "Right",
+        "Down"
+      ],
+      "calltime": 3,
+      "cooldown": 240,
+      "weaponid": 0
+    },
+    "OrbitalGatlingBarrage": {
+      "name": "Orbital Gatling Barrage",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Down",
+        "Left",
+        "Up",
+        "Up"
+      ],
+      "calltime": 2,
+      "cooldown": 70,
+      "weaponid": 0
+    },
+    "OrbitalSmoke": {
+      "name": "Orbital Smoke Strike",
+      "category": "OrbitalFireSupport",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Down",
+        "Up"
+      ],
+      "calltime": 2,
+      "cooldown": 100,
+      "weaponid": 0
+    },
+    "AmmoRack_PresidentReward": {
+      "name": "Resupply",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Up",
+        "Right"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "HealthPackRack_PresidentReward": {
+      "name": "Medical Supplies",
+      "category": "HellpodDeployment",
+      "uses": 1,
+      "stratcode": [
+        "Down",
+        "Down",
+        "Up",
+        "Left"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0
+    },
+    "DropoffCombatWalker_PresidentReward": {
+      "name": "Patriot Exosuit",
+      "category": "TactialAirInsertion",
+      "uses": 1,
+      "stratcode": [
+        "Left",
+        "Down",
+        "Right",
+        "Up",
+        "Left",
+        "Down",
+        "Down"
+      ],
+      "calltime": 0,
+      "cooldown": 600,
+      "weaponid": 0
+    },
+    "MedicBackpack_PresidentReward": {
+      "category": "HellpodDeployment",
+      "uses": 1,
+      "stratcode": [
+        "Down",
+        "Right",
+        "Up",
+        "Left",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 600,
+      "weaponid": 0
+    },
+    "JumppackBackpack_PresidentReward": {
+      "name": "Jump Pack",
+      "category": "HellpodDeployment",
+      "uses": 1,
+      "stratcode": [
+        "Down",
+        "Up",
+        "Up",
+        "Down",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 90,
+      "weaponid": 0
+    },
+    "TurretRocket_PresidentReward": {
+      "name": "Rocket Sentry",
+      "category": "HellpodDeployment",
+      "uses": 1,
+      "stratcode": [
+        "Down",
+        "Right",
+        "Up",
+        "Right",
+        "Left"
+      ],
+      "calltime": 5,
+      "cooldown": 45,
+      "weaponid": 0
+    },
+    "Machinegun_PresidentReward": {
+      "name": "Machine Gun",
+      "category": "HellpodDeployment",
+      "uses": 1,
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Right"
+      ],
+      "calltime": 5,
+      "cooldown": 600,
+      "weaponid": 4177448660
+    },
+    "AutomaticCannon": {
+      "name": "Autocannon",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Up",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 875551083
+    },
+    "GrenadeLauncher": {
+      "name": "Grenade Launcher",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Left",
+        "Down"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 3343676429
+    },
+    "Machinegun": {
+      "name": "Machine Gun",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 458198946
+    },
+    "LightMachinegun": {
+      "name": "Stalwart",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Up",
+        "Left"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 14345846
+    },
+    "Railgun": {
+      "name": "Railgun",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Right",
+        "Down",
+        "Up",
+        "Left",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 3078242205
+    },
+    "Recoilless": {
+      "name": "Recoilless Rifle",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Right",
+        "Right",
+        "Left"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 1298599997
+    },
+    "LaserCannon": {
+      "name": "Laser Cannon",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Left"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 2822568285
+    },
+    "LaserPulseCannon": {
+      "name": "Quasar Cannon",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Up",
+        "Left",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 2625074523
+    },
+    "Sniper": {
+      "name": "Anti-Materiel Rifle",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Right",
+        "Up",
+        "Down"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 2207713849
+    },
+    "LATOneshot": {
+      "name": "Expendable Anti-Tank",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Left",
+        "Up",
+        "Right"
+      ],
+      "calltime": 2,
+      "cooldown": 70,
+      "weaponid": 3413606544
+    },
+    "LaserGuidedMissileLauncher": {
+      "name": "Commando",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Down",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 120,
+      "weaponid": 2232989803
+    },
+    "Flamethrower": {
+      "name": "Flamethrower",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Down",
+        "Up"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 1432571981
+    },
+    "Heavy_Mg": {
+      "name": "Heavy Machine Gun",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Down",
+        "Down"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 533318241
+    },
+    "Air_Burst_Rocket_Launcher": {
+      "name": "Airburst Rocket Launcher",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Up",
+        "Left",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 2007887745
+    },
+    "MiniMissile": {
+      "name": "Missile Silo",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Down",
+        "Down"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 4188961799
+    },
+    "FafMissileLauncher": {
+      "name": "Spear",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Up",
+        "Down",
+        "Down"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 3923676543
+    },
+    "ArcThrower": {
+      "name": "Arc Thrower",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Right",
+        "Down",
+        "Up",
+        "Left",
+        "Left"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 992079466
+    },
+    "TurretMachinegun": {
+      "name": "Gatling Sentry",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Left"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "TurretMachinegunGPMG": {
+      "name": "Machine Gun Sentry",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Right",
+        "Up"
+      ],
+      "calltime": 3,
+      "cooldown": 120,
+      "weaponid": 0
+    },
+    "TurretMortar": {
+      "name": "Mortar Sentry",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Right",
+        "Down"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "TurretMortar_Staticfield": {
+      "name": "EMS Mortar Sentry",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Down",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "TurretRocket": {
+      "name": "Rocket Sentry",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Right",
+        "Left"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "TurretAutocannon": {
+      "name": "Autocannon Sentry",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Up",
+        "Left",
+        "Up"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0
+    },
+    "Tutorial_ReinforcementBeacon": {
+      "name": "Reinforce",
+      "category": "Special",
+      "stratcode": [
+        "Up",
+        "Down",
+        "Right",
+        "Left",
+        "Up"
+      ],
+      "calltime": 0,
+      "cooldown": 6,
+      "weaponid": 0
+    },
+    "Tutorial_Extract": {
+      "name": "Extraction Beacon",
+      "category": "TactialAirInsertion",
+      "stratcode": [
+        "Left",
+        "Up",
+        "Up",
+        "Down",
+        "Left",
+        "Down"
+      ],
+      "calltime": 120,
+      "cooldown": 300,
+      "weaponid": 0
+    },
+    "DropoffCombatWalker": {
+      "name": "Patriot Exosuit",
+      "category": "TactialAirInsertion",
+      "uses": 2,
+      "stratcode": [
+        "Left",
+        "Down",
+        "Right",
+        "Up",
+        "Left",
+        "Down",
+        "Down"
+      ],
+      "calltime": 0,
+      "radius": 2,
+      "cooldown": 600,
+      "weaponid": 0
+    },
+    "DropoffCombatWalker_Autocannon": {
+      "name": "Emancipator Exosuit",
+      "category": "TactialAirInsertion",
+      "uses": 2,
+      "stratcode": [
+        "Left",
+        "Down",
+        "Right",
+        "Up",
+        "Left",
+        "Down",
+        "Up"
+      ],
+      "calltime": 0,
+      "radius": 2,
+      "cooldown": 600,
+      "weaponid": 0
+    }
+  },
   "damage": {
     "Projectile_Boomer_AcidStream": {
       "dmg": 50,
@@ -9663,7 +11097,7 @@
       "damageref": "Ability_Empty"
     }
   },
-  "status": {
+  "status_effect": {
     "Blind": {
       "name": "Blind",
       "strength": 1,
