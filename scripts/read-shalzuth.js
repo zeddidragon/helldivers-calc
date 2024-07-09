@@ -51,6 +51,10 @@ function toDelta(wpn, value, key) {
   wpn.customizations[key] = value
 }
 
+function float(v) {
+  return v && +(v.toFixed(2))
+}
+
 const deltaHandlers = {
   'scope_offset.x': null,
   'scope_offset.y': null,
@@ -178,24 +182,22 @@ const handlers = {
     if(component.is_surpressed) {
       wpn.is_surpressed = component.is_surpressed
     }
-    let isBurst = false
     wpn.fire_modes = [
       component.primary_fire_mode,
       component.secondary_fire_mode,
       component.tertiary_fire_mode,
-    ].filter(m => {
-      if(m === 'FireMode_Burst') {
-        isBurst = true
-      }
-      return m !== 'FireMode_None'
-    })
+    ]
+      .map(m => refs.fireMode(m))
+      .filter(m => m)
+    const isBurst = wpn.fire_modes.some(m => m === 'Burst')
     if(isBurst) {
       wpn.num_burst_rounds = component.num_burst_rounds
     }
     const functions = [
       component.function_info.left,
       component.function_info.right,
-    ].filter(f => f !== 'WeaponFunctionType_None')
+    ] .map(f => refs.weaponFunction(f))
+      .filter(f => f)
     if(functions) {
       wpn.function_info = functions
     }
@@ -212,8 +214,9 @@ const handlers = {
       'burst_fire_rate',
       'infinite_ammo',
     ])(wpn, component)
-    if(component.projectile_type !== 'ProjectileType_None') {
-      wpn.projectile_type = component.projectile_type
+    const projectile = refs.projectile(component.projectile_type)
+    if(projectile) {
+      wpn.projectile_type = projectile
     }
     if(component.speed_multiplier !== 1) {
       wpn.speed_multiplier = component.speed_multiplier
@@ -537,77 +540,173 @@ async function readEntities() {
   await fs.writeFile('data/shalzuth.json', json(weapons))
 }
 
-async function readTypeDamage(settings) {
-  const { items } = settings.find(obj => obj.DamageSettings).DamageSettings
-  return items.map((item, i) => {
-    return {
-      id: i + 1,
-      dmg: item.damage[0],
-      dmg2: item.damage[1],
-      ...item.armor_penetration_per_angle.reduce((obj, ap, i) => {
-        obj[`ap${i + 1}`] = ap
-        return obj
-      }, {}),
-      demo: item.demolition_strength,
-      stun: item.force_strength,
-      push: item.force_impulse,
-      ...item.status_effects.reduce((obj, { type, value }, i) => {
-        if(type === 'StatusEffectType_None') {
-          return obj
-        }
-        obj[`status${i + 1}`] = type.replace('StatusEffectType_', '')
-        obj[`param${i + 1}`] = value
-        return obj
-      }, {}),
-      enum: item.type.replace('DamageInfoType_', ''),
+function ref(prefix) {
+  prefix = `${prefix}_`
+  return function stripref(v) {
+    const type = v?.replace(prefix, '')
+    if(!type || type === 'None') {
+      return void 0
     }
-  })
+    return type
+  }
 }
 
-async function readTypeProjectile(settings) {
-  const { items } = settings.find(obj => obj.ProjectileSettings).ProjectileSettings
-  return items.map((item, i) => {
-    return {
-      id: i + 1,
-      name: english[item.name_cased],
-      caliber: item.calibre,
-      pellets: item.num_projectiles,
-      velocity: item.speed,
-      mass: +item.mass.toFixed(2),
-      drag: +item.drag.toFixed(2),
-      gravity: +item.gravity_multiplier.toFixed(2),
-      lifetime: +item.life_time.toFixed(2),
-      liferandom: +item.life_time_randomness.toFixed(2),
-      damageref: item.damage_info_type.replace('DamageInfoType_', ''),
-      penslow: item.penetration_slowdown,
-      xangle: item.explosion_treshold_angle,
-      ximpactref: item.explosion_type_on_impact.replace('ExplosionType_', ''),
-      xproximity: item.explosion_proximity,
-      xdelay: item.explosion_delay,
-      xdelayref: item.explosion_type_expire.replace('ExplosionType_', ''),
-      enum: item.type.replace('ProjectileType_', ''),
-    }
-  })
+const refs = {
+  damage: ref('DamageInfoType'),
+  projectile: ref('ProjectileType'),
+  explosion: ref('ExplosionType'),
+  beam: ref('BeamType'),
+  arc: ref('ArcType'),
+  element: ref('ElementType'),
+  status: ref('StatusEffectType'),
+  fireMode: ref('FireMode'),
+  weaponFunction: ref('WeaponFunctionType'),
+  crater: ref('TerrainDeformationType'),
+}
+
+function readTypeDamage(item) {
+  return {
+    ref: refs.damage(item.type),
+    dmg: item.damage[0],
+    dmg2: item.damage[1],
+    ...item.armor_penetration_per_angle.reduce((obj, ap, i) => {
+      obj[`ap${i + 1}`] = ap
+      return obj
+    }, {}),
+    demo: item.demolition_strength,
+    stun: item.force_strength,
+    push: item.force_impulse,
+    element: refs.element(item.element_type),
+    ...item.status_effects.reduce((obj, { type, value }, i) => {
+      type = refs.status(type)
+      if(!type) {
+        return obj
+      }
+      obj[`status${i + 1}`] = type
+      obj[`param${i + 1}`] = value
+      return obj
+    }, {}),
+  }
+}
+
+function readTypeProjectile(item) {
+  return {
+    ref: refs.projectile(item.type),
+    name: english[item.name_cased],
+    caliber: float(item.calibre),
+    pellets: item.num_projectiles,
+    velocity: float(item.speed),
+    mass: float(item.mass),
+    drag: float(item.drag),
+    gravity: float(item.gravity_multiplier),
+    lifetime: float(item.life_time),
+    liferandom: float(item.life_time_randomness),
+    damageref: refs.damage(item.damage_info_type),
+    penslow: float(item.penetration_slowdown),
+    xangle: float(item.explosion_treshold_angle),
+    ximpactref: refs.explosion(item.explosion_type_on_impact),
+    xproximity: float(item.explosion_proximity),
+    xdelay: float(item.explosion_delay),
+    xdelayref: refs.explosion(item.explosion_type_expire),
+  }
+}
+
+function readTypeExplosion(item) {
+  return {
+    ref: refs.explosion(item.type),
+    damageref: refs.damage(item.damage_type),
+    r1: float(item.inner_radius),
+    r2: float(item.outer_radius),
+    r3: float(item.stagger_radius),
+    angle: float(item.cone_angle) || void 0,
+    shrapnel: item.num_shrapnel_projectiles || void 0,
+    shrapnelref: refs.projectile(item.shrapnel_projectile_type),
+    crater: refs.crater(item.crater_type),
+  }
+}
+
+function readTypeBeam(item) {
+  return {
+    ref: refs.beam(item.type),
+    radius: float(item.radius) || void 0,
+    range: float(item.length),
+    damageref: refs.damage(item.damage_info_type),
+  }
+}
+
+function readTypeArc(item) {
+  return {
+    ref: refs.arc(item.type),
+    velocity: float(item.speed),
+    range: float(item.distance),
+    spreadrange: float(item.distance_at_max_angle_spread),
+    chainangle: float(item.max_angle_spread),
+    aimangle: float(item.max_angle_spread_first_shot),
+    splits: float(item.max_chain_split),
+    damageref: refs.damage(item.damage_info_type),
+  }
+}
+
+function readTypeStatus(item) {
+  return {
+    ref: refs.status(item.type),
+    name: item.debug_name,
+    strength: float(item.strength),
+    duration: float(item.duration),
+    damageref: refs.damage(item.damage_info_type),
+  }
 }
 
 const types = {
   damage: readTypeDamage,
   projectile: readTypeProjectile,
+  explosion: readTypeExplosion,
+  beam: readTypeBeam,
+  arc: readTypeArc,
+  status_effect: readTypeStatus,
 }
 
-function readType(type) {
+async function readType(type, prop) {
   const path = `settings/generated_${type}_settings`
   const cb = types[type]
-  return readJson(dataDir, path).then(cb)
+  const data = await readJson(dataDir, path)
+  prop ||= type[0].toUpperCase() + type.slice(1) + 'Settings'
+  const { items } = data.find(obj => obj[prop])[prop]
+  const mapped = items.map(cb)
+  const dict = {}
+  for(const item of mapped) {
+    dict[item.ref] = {
+      ...item,
+      ref: void 0,
+    }
+  }
+  return dict
+}
+
+async function readEnum(prefix) {
+  const type = `${prefix}Type`
+  const path = `enums/${type}`
+  const { [type]: items } = await readJson(dataDir, path)
+  prefix = `${prefix}Type_`
+  return items.slice(1).map(v => v.replace(prefix, ''))
 }
 
 async function readTypes() {
-  const damages = await readType('damage')
-  const projectiles = await readJson(dataDir, 'settings/generated_projectile_settings')
-    .then(readTypeProjectile)
-  await fs.writeFile('data/datamined2.json', JSON.stringify({
-    damages,
-    projectiles,
+  const damage = await readType('damage')
+  const projectile = await readType('projectile')
+  const explosion = await readType('explosion')
+  const beam = await readType('beam')
+  const arc = await readType('arc')
+  const status = await readType('status_effect', 'StatusEffectSettings')
+  const elements = await readEnum('Element')
+  await fs.writeFile('data/datamined.json', JSON.stringify({
+    damage,
+    projectile,
+    explosion,
+    beam,
+    arc,
+    status,
+    elements,
   }, null, 2))
 }
 

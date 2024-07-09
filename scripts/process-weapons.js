@@ -114,6 +114,7 @@ const shalzuthSchema = [
       wpn.cap = cap.x + cap.y
     }
   }},
+  { source: 'duration', dest: 'reload' },
   { source: 'magazines_max', dest: 'mags' },
   { source: 'magazines', dest: 'magstart' },
   { source: 'chambered', dest: 'capplus' },

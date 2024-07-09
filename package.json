@@ -17,7 +17,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-bignum": "github:datalanche/json-bignum",
     "json-stringify-pretty-compact": "^4.0.0",
     "pug": "^3.0.2",
     "toml": "^3.0.0"
