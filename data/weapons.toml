@@ -1177,7 +1177,7 @@ ref = "MediumDrone"
 
 [[stratagem]]
 category = "Backpack"
-fullname = "SH-20 Ballistic Shield stratagem"
+fullname = "SH-20 Ballistic Shield Backpack"
 stratcode = "dlddul"
 health = 400
 armor = 4
