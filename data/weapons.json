@@ -1107,7 +1107,7 @@
       "health": 400,
       "armor": 4,
       "calltime": 5,
-      "cooldown": 480,
+      "cooldown": 300,
       "attack": []
     },
     {
