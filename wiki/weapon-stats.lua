@@ -64,6 +64,11 @@ local weapon_setup = {
         args = { value },
       })
     end },
+  { "Shield Capacity", "shield" },
+  { "Shield Regen", "shieldregen", suffix = "shield/s" },
+  { "Shield Regen Delay", "shielddelay", suffix = "s" },
+  { "Shield Broken Delay", "shieldbreakdelay", suffix = "s" },
+  { "Shield Radius", "shieldradius", suffix = "m" },
   { "Fire Rate", "fire_rate", "rpm", suffix = "rpm" },
   { "Recoil", "recoil" },
   { "Total Uses", "uses" },
