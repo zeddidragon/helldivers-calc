@@ -218,13 +218,12 @@ const shalzuthSchema = [
       modifierFuncs[type.replace('WeaponStatModifierType_', '')](wpn, value)
       allModifiers.add(type)
     }
-    console.log(allModifiers)
   }},
 ]
 
 let dbgCondition = false
 const keyed = {}
-for(const wpn of [...setup.weapon, ...setup.stratagem]) {
+for(const wpn of [...setup.weapon]) {
   for(const prop of purge) {
     delete wpn[prop]
   }
@@ -422,9 +421,18 @@ const wikiCategories = [
   "Support Weapon",
 ]
 
+const stratPayloadIds = Array.from(new Set(Object
+  .values(data.stratagem)
+  .flatMap(strat  => strat.payload)))
+
+const stratagems = stratPayloadIds.map(id => {
+  const payload = shalzuth[id]
+  return payload
+})
+console.log(stratagems)
+
 const allWeapons = [
   ...setup.weapon,
-  ...setup.stratagem,
 ]
 const weaponOrder = []
 let i = 0
@@ -461,5 +469,4 @@ fs.writeFileSync('data/wiki.json', JSON.stringify(wikiRegister, null, 2))
 fs.writeFileSync('data/weapons.json', json({
   sources,
   weapons: setup.weapon,
-  stratagems: setup.stratagem,
 }))

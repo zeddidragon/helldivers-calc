@@ -1,6 +1,7 @@
 import fs from 'fs/promises'
 import path from 'path'
 import json from 'json-stringify-pretty-compact'
+import JSON from 'node-json-bigint'
 import clipboard from 'clipboardy'
 
 const dataDir = '../HelldiversData/data'
@@ -16,9 +17,6 @@ async function readJson(...fpath) {
     return cached
   }
   let body = await fs.readFile(resolved + '.json', 'utf8')
-  body = body.replace(/:\s*(\d{15,})(\n|,)/g, (match, v, end) => {
-    return `:"${v}"${end}`
-  })
   const json = JSON.parse(body)
   dataCache[resolved] = json
   return json
@@ -151,6 +149,8 @@ const deltaHandlers = {
   'material_override.material_slot': null,
 }
 
+const entityWhitelist = new Set()
+
 const handlers = {
   WeaponMagazineComponent: copy([
     'magazine_capacity',
@@ -261,6 +261,9 @@ const handlers = {
         continue
       }
       const delta = EntityDeltas[change?.add_path]
+      if(!delta) {
+        console.log({ change })
+      }
       for(const [k, v] of Object.entries(delta)) {
         const handler = deltaHandlers[k]
         if(handler === null) continue
@@ -499,9 +502,10 @@ async function readEntities() {
   const AiEnemyComponent = ComponentType.indexOf('AiEnemyComponent')
   const weapons = {}
   const componentSetup = Object.entries(EntityComponentMap)
-    .filter(([, componentIds]) => {
+    .filter(([id, componentIds]) => {
       return componentIds.includes(WeaponComponent)
         || componentIds.includes(ThrowableComponent)
+        || entityWhitelist.has(BigInt(id))
     })
     .filter(([, componentIds]) => !componentIds.includes(AiEnemyComponent))
   for(const [id, componentIds] of componentSetup) {
@@ -566,10 +570,12 @@ const refs = {
 const StratagemMaxUse = Math.pow(2, 32) - 1
 
 function readTypeStratagem(item) {
-  console.log(item)
   let uses = item.uses
   if(uses === StratagemMaxUse) {
     uses = void 0
+  }
+  for(const id of item.payload) {
+    entityWhitelist.add(id)
   }
   return {
     ref: refs.stratagem(item.type),
@@ -581,6 +587,7 @@ function readTypeStratagem(item) {
     radius: float(item.spawn_radius) || void 0,
     cooldown: float(item.cooldown_duration_success),
     weaponid: item.matching_support_weapon || 0,
+    payload: item.payload.filter(id => id > 0).map(p => p.toString()),
   }
 }
 
@@ -726,6 +733,7 @@ async function readTypes() {
   await fs.writeFile('data/datamined.json', JSON.stringify({
     ...data,
   }, null, 2))
+  return data
 }
 
 async function readShalzuth() {

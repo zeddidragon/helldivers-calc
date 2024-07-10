@@ -13,7 +13,11 @@
       ],
       "calltime": 5,
       "cooldown": 480,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "3548847957556322972",
+        "8356509974227907605"
+      ]
     },
     "BallisticShield": {
       "name": "Ballistic Shield Backpack",
@@ -28,7 +32,11 @@
       ],
       "calltime": 5,
       "cooldown": 300,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "4202058061031081322",
+        "8356509974227907605"
+      ]
     },
     "EnergyShieldBackpack": {
       "name": "Shield Generator Pack",
@@ -43,7 +51,11 @@
       ],
       "calltime": 5,
       "cooldown": 480,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "17910078671568111462",
+        "8356509974227907605"
+      ]
     },
     "JumppackBackpack": {
       "name": "Jump Pack",
@@ -57,7 +69,11 @@
       ],
       "calltime": 5,
       "cooldown": 480,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "7004572901293848370",
+        "8356509974227907605"
+      ]
     },
     "DroneMG": {
       "name": "\"Guard Dog\"",
@@ -72,7 +88,11 @@
       ],
       "calltime": 5,
       "cooldown": 480,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "578662561602494491",
+        "8356509974227907605"
+      ]
     },
     "Drone_Laser_Rifle": {
       "name": "\"Guard Dog\" Rover",
@@ -87,7 +107,11 @@
       ],
       "calltime": 5,
       "cooldown": 480,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "16028040304287202855",
+        "8356509974227907605"
+      ]
     },
     "AmmoRack": {
       "name": "Resupply",
@@ -100,7 +124,15 @@
       ],
       "calltime": 7.5,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "5787948413593898778",
+        "8356509974227907605",
+        "5787948413593898778",
+        "8356509974227907605",
+        "5787948413593898778",
+        "8356509974227907605"
+      ]
     },
     "HealthPackRack": {
       "name": "Medical Supplies",
@@ -113,7 +145,11 @@
       ],
       "calltime": 5,
       "cooldown": 300,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "12611223767334871581",
+        "8356509974227907605"
+      ]
     },
     "EagleCAS": {
       "name": "Eagle Strafing Run",
@@ -126,7 +162,10 @@
       ],
       "calltime": 0,
       "cooldown": 15,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "2568747792294183916"
+      ]
     },
     "EagleBomb": {
       "name": "Eagle 500kg Bomb",
@@ -141,7 +180,10 @@
       ],
       "calltime": 0,
       "cooldown": 15,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "16450357640400839941"
+      ]
     },
     "EagleRocket": {
       "name": "Eagle 110mm Rocket Pods",
@@ -155,7 +197,10 @@
       ],
       "calltime": 0,
       "cooldown": 15,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "4140939466573601321"
+      ]
     },
     "EagleAirstrike": {
       "name": "Eagle Airstrike",
@@ -169,7 +214,10 @@
       ],
       "calltime": 0,
       "cooldown": 15,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "3359716870288230953"
+      ]
     },
     "EagleAirstrikeNapalm": {
       "name": "Eagle Napalm Airstrike",
@@ -183,7 +231,10 @@
       ],
       "calltime": 0,
       "cooldown": 15,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "2862976050209719244"
+      ]
     },
     "EagleAirstrikeSmoke": {
       "name": "Eagle Smoke Strike",
@@ -197,7 +248,10 @@
       ],
       "calltime": 0,
       "cooldown": 15,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "1962385103464102102"
+      ]
     },
     "EagleClusterbombs": {
       "name": "Eagle Cluster Bomb",
@@ -212,7 +266,10 @@
       ],
       "calltime": 0,
       "cooldown": 15,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "11335415903596859741"
+      ]
     },
     "EagleRearm": {
       "name": "Eagle Rearm",
@@ -226,7 +283,8 @@
       ],
       "calltime": 0,
       "cooldown": 150,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": []
     },
     "EagleMissile": {
       "name": "Eagle Air-to-Air Missiles",
@@ -240,7 +298,10 @@
       ],
       "calltime": 0,
       "cooldown": 15,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "16121648674137865605"
+      ]
     },
     "EagleStrafe": {
       "category": "CloseAirSupport",
@@ -252,7 +313,10 @@
       ],
       "calltime": 0,
       "cooldown": 15,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "2568747792294183916"
+      ]
     },
     "EnergyShield": {
       "name": "Shield Generator Relay",
@@ -267,7 +331,11 @@
       ],
       "calltime": 0,
       "cooldown": 90,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "17083241647592728848",
+        "8356509974227907605"
+      ]
     },
     "TurretManned": {
       "name": "HMG Emplacement",
@@ -282,7 +350,11 @@
       ],
       "calltime": 3,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "1051445694670701817",
+        "8356509974227907605"
+      ]
     },
     "MineDeployer": {
       "name": "Anti-Personnel Minefield",
@@ -295,7 +367,11 @@
       ],
       "calltime": 3,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "17297258079668724512",
+        "8356509974227907605"
+      ]
     },
     "MineDeployer_IncendiaryMines": {
       "name": "Incendiary Mines",
@@ -308,7 +384,11 @@
       ],
       "calltime": 3,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "13777321776887997010",
+        "8356509974227907605"
+      ]
     },
     "MineDeployer_AntiTank": {
       "name": "Anti-tank Mines",
@@ -321,7 +401,11 @@
       ],
       "calltime": 3,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "2712008117028049500",
+        "8356509974227907605"
+      ]
     },
     "TurretTesla": {
       "name": "Tesla Tower",
@@ -336,7 +420,11 @@
       ],
       "calltime": 3,
       "cooldown": 150,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "8383906277678357886",
+        "8356509974227907605"
+      ]
     },
     "ShipBowling": {
       "category": "Special",
@@ -350,7 +438,10 @@
       ],
       "calltime": 1,
       "cooldown": 1,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "16206931057077323763"
+      ]
     },
     "ShoulderMountedCamera": {
       "category": "HellpodDeployment",
@@ -365,7 +456,11 @@
       ],
       "calltime": 5,
       "cooldown": 10,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "11376870716921492798",
+        "8356509974227907605"
+      ]
     },
     "CyborgCarryData": {
       "name": "SSSD Delivery",
@@ -381,7 +476,11 @@
       ],
       "calltime": 5,
       "cooldown": 10,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "16361817941812852399",
+        "8356509974227907605"
+      ]
     },
     "CarryData": {
       "name": "SSSD Delivery",
@@ -395,7 +494,11 @@
       ],
       "calltime": 5,
       "cooldown": 10,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "14990836890103997252",
+        "8356509974227907605"
+      ]
     },
     "DrillingCharge": {
       "name": "Drilling Charge",
@@ -408,7 +511,10 @@
       ],
       "calltime": 5,
       "cooldown": 10,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "272271598114605133"
+      ]
     },
     "Extract": {
       "name": "Extraction Beacon",
@@ -423,7 +529,10 @@
       ],
       "calltime": 120,
       "cooldown": 300,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "17238162226885792459"
+      ]
     },
     "DropoffHellbomb": {
       "name": "Hellbomb",
@@ -440,7 +549,11 @@
       ],
       "calltime": 5,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "14314828040919828387",
+        "8356509974227907605"
+      ]
     },
     "DropoffBugPlug": {
       "name": "HIVE BREAKER DRILL",
@@ -455,7 +568,11 @@
       ],
       "calltime": 0,
       "cooldown": 120,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "16085819457051082660",
+        "8484362704672433843"
+      ]
     },
     "DropoffCargoContainer": {
       "category": "TactialAirInsertion",
@@ -469,7 +586,11 @@
       ],
       "calltime": 0,
       "cooldown": 120,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "15805795754758043311",
+        "8484362704672433843"
+      ]
     },
     "SpireSterilizer": {
       "name": "Spire Sterilizer",
@@ -485,7 +606,11 @@
       ],
       "calltime": 5,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "13946543042552897732",
+        "8356509974227907605"
+      ]
     },
     "RaiseFlag": {
       "name": "Super Earth Flag",
@@ -498,7 +623,11 @@
       ],
       "calltime": 5,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "11105721130648470965",
+        "8356509974227907605"
+      ]
     },
     "BugThumper": {
       "name": "Thumper",
@@ -513,7 +642,11 @@
       ],
       "calltime": 5,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "14394260739264934509",
+        "8356509974227907605"
+      ]
     },
     "ProspectingDrill": {
       "name": "Prospecting Drill",
@@ -528,7 +661,11 @@
       ],
       "calltime": 5,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "16116574862830205005",
+        "8356509974227907605"
+      ]
     },
     "SeismicProbe": {
       "name": "Seismic Probe",
@@ -543,7 +680,11 @@
       ],
       "calltime": 5,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "12424973596508546593",
+        "8356509974227907605"
+      ]
     },
     "Prospector": {
       "name": "Hive Scanner",
@@ -560,7 +701,11 @@
       ],
       "calltime": 5,
       "cooldown": 90,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "10806471875148778594",
+        "8356509974227907605"
+      ]
     },
     "Scrambler": {
       "name": "Scrambler",
@@ -578,7 +723,11 @@
       ],
       "calltime": 5,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "11715093482402086989",
+        "8356509974227907605"
+      ]
     },
     "ExtractionBeacon": {
       "name": "Extraction",
@@ -594,7 +743,11 @@
       ],
       "calltime": 7,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "12449657272871172571",
+        "8356509974227907605"
+      ]
     },
     "ImmediateExtractionBeacon": {
       "category": "Special",
@@ -610,7 +763,11 @@
       ],
       "calltime": 7,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "725877384353361216",
+        "8356509974227907605"
+      ]
     },
     "EmergencyExtractionBeacon": {
       "name": "Extraction",
@@ -626,7 +783,11 @@
       ],
       "calltime": 0,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "6280200573229258796",
+        "6358746089464627494"
+      ]
     },
     "ReinforcementBeacon": {
       "name": "Reinforce",
@@ -640,7 +801,10 @@
       ],
       "calltime": 0,
       "cooldown": 6,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "677135248098376872"
+      ]
     },
     "OrbitalIlluminationFlare": {
       "name": "Orbital Illumination Flare",
@@ -653,7 +817,10 @@
       ],
       "calltime": 0,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "4400483397467331392"
+      ]
     },
     "SOSBeacon": {
       "name": "SOS Beacon",
@@ -667,7 +834,11 @@
       ],
       "calltime": 2,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "7103244170870631670",
+        "8356509974227907605"
+      ]
     },
     "UploadDiscovery": {
       "name": "Upload Data",
@@ -681,7 +852,8 @@
       ],
       "calltime": 0,
       "cooldown": 1,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": []
     },
     "Nuke": {
       "category": "OrbitalFireSupport",
@@ -697,7 +869,10 @@
       ],
       "calltime": 4,
       "cooldown": 1200,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "4606494443340836610"
+      ]
     },
     "CarpetBomb": {
       "name": "Carpet Bomb",
@@ -713,7 +888,10 @@
       ],
       "calltime": 0,
       "cooldown": 900,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "7839526042706341062"
+      ]
     },
     "RemoteExplosives": {
       "category": "HellpodDeployment",
@@ -729,7 +907,11 @@
       ],
       "calltime": 5,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "4971147757632036889",
+        "8356509974227907605"
+      ]
     },
     "JammedPinata": {
       "name": "Jammed Piñata",
@@ -743,7 +925,11 @@
       ],
       "calltime": 5,
       "cooldown": 0,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "16884914410677175712",
+        "8356509974227907605"
+      ]
     },
     "SEAF_Gun": {
       "name": "SEAF Artillery",
@@ -756,7 +942,8 @@
       ],
       "calltime": 0,
       "cooldown": 15,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": []
     },
     "DarkFluidBackpack": {
       "category": "HellpodDeployment",
@@ -770,7 +957,11 @@
       ],
       "calltime": 5,
       "cooldown": 20,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "7741265416947841340",
+        "8356509974227907605"
+      ]
     },
     "TCS03Thumper": {
       "category": "HellpodDeployment",
@@ -784,7 +975,11 @@
       ],
       "calltime": 5,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "12765265282294763822",
+        "8356509974227907605"
+      ]
     },
     "OrbitalShell": {
       "name": "Orbital Precision Strike",
@@ -796,7 +991,10 @@
       ],
       "calltime": 2,
       "cooldown": 90,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "14454233564159978284"
+      ]
     },
     "OrbitalShot": {
       "name": "Orbital Airburst Strike",
@@ -808,7 +1006,10 @@
       ],
       "calltime": 2,
       "cooldown": 100,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "8480614394778878677"
+      ]
     },
     "OrbitalStun": {
       "name": "Orbital EMS Strike",
@@ -821,7 +1022,10 @@
       ],
       "calltime": 2,
       "cooldown": 75,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "6193421986545774326"
+      ]
     },
     "OrbitalStrike": {
       "name": "Orbital 120mm HE Barrage",
@@ -836,7 +1040,10 @@
       ],
       "calltime": 5,
       "cooldown": 240,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "3259427501513118129"
+      ]
     },
     "OrbitalGas": {
       "name": "Orbital Gas Strike",
@@ -849,7 +1056,10 @@
       ],
       "calltime": 2,
       "cooldown": 75,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "428906543397164902"
+      ]
     },
     "OrbitalBarrage": {
       "name": "Orbital 380mm HE Barrage",
@@ -865,7 +1075,10 @@
       ],
       "calltime": 6,
       "cooldown": 240,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "17250673437555536342"
+      ]
     },
     "OrbitalLaser": {
       "name": "Orbital Laser",
@@ -880,7 +1093,10 @@
       ],
       "calltime": 2,
       "cooldown": 300,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "17020640004553544635"
+      ]
     },
     "OrbitalRailcannon": {
       "name": "Orbital Railcannon Strike",
@@ -894,7 +1110,10 @@
       ],
       "calltime": 1,
       "cooldown": 210,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "12399142748360190921"
+      ]
     },
     "OrbitalWalkingBarrage": {
       "name": "Orbital Walking Barrage",
@@ -909,7 +1128,10 @@
       ],
       "calltime": 3,
       "cooldown": 240,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "14663462306863854060"
+      ]
     },
     "OrbitalGatlingBarrage": {
       "name": "Orbital Gatling Barrage",
@@ -923,7 +1145,10 @@
       ],
       "calltime": 2,
       "cooldown": 70,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "3397257356679758881"
+      ]
     },
     "OrbitalSmoke": {
       "name": "Orbital Smoke Strike",
@@ -936,7 +1161,10 @@
       ],
       "calltime": 2,
       "cooldown": 100,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "15741945895218221769"
+      ]
     },
     "AmmoRack_PresidentReward": {
       "name": "Resupply",
@@ -949,7 +1177,11 @@
       ],
       "calltime": 5,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "5787948413593898778",
+        "8356509974227907605"
+      ]
     },
     "HealthPackRack_PresidentReward": {
       "name": "Medical Supplies",
@@ -963,7 +1195,11 @@
       ],
       "calltime": 5,
       "cooldown": 30,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "12611223767334871581",
+        "8356509974227907605"
+      ]
     },
     "DropoffCombatWalker_PresidentReward": {
       "name": "Patriot Exosuit",
@@ -980,7 +1216,11 @@
       ],
       "calltime": 0,
       "cooldown": 600,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "8783342891467425251",
+        "8484362704672433843"
+      ]
     },
     "MedicBackpack_PresidentReward": {
       "category": "HellpodDeployment",
@@ -994,7 +1234,11 @@
       ],
       "calltime": 5,
       "cooldown": 600,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "12967812241745948652",
+        "8356509974227907605"
+      ]
     },
     "JumppackBackpack_PresidentReward": {
       "name": "Jump Pack",
@@ -1009,7 +1253,11 @@
       ],
       "calltime": 5,
       "cooldown": 90,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "7004572901293848370",
+        "8356509974227907605"
+      ]
     },
     "TurretRocket_PresidentReward": {
       "name": "Rocket Sentry",
@@ -1024,7 +1272,11 @@
       ],
       "calltime": 5,
       "cooldown": 45,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "3965302274531977670",
+        "8356509974227907605"
+      ]
     },
     "Machinegun_PresidentReward": {
       "name": "Machine Gun",
@@ -1039,7 +1291,11 @@
       ],
       "calltime": 5,
       "cooldown": 600,
-      "weaponid": 4177448660
+      "weaponid": 4177448660,
+      "payload": [
+        "10719993517856893473",
+        "8356509974227907605"
+      ]
     },
     "AutomaticCannon": {
       "name": "Autocannon",
@@ -1054,7 +1310,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 875551083
+      "weaponid": 875551083,
+      "payload": [
+        "6863983759145391137",
+        "8356509974227907605"
+      ]
     },
     "GrenadeLauncher": {
       "name": "Grenade Launcher",
@@ -1068,7 +1328,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 3343676429
+      "weaponid": 3343676429,
+      "payload": [
+        "2315516436421582687",
+        "8356509974227907605"
+      ]
     },
     "Machinegun": {
       "name": "Machine Gun",
@@ -1082,7 +1346,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 458198946
+      "weaponid": 458198946,
+      "payload": [
+        "10719993517856893473",
+        "8356509974227907605"
+      ]
     },
     "LightMachinegun": {
       "name": "Stalwart",
@@ -1097,7 +1365,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 14345846
+      "weaponid": 14345846,
+      "payload": [
+        "3586234782721573506",
+        "8356509974227907605"
+      ]
     },
     "Railgun": {
       "name": "Railgun",
@@ -1112,7 +1384,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 3078242205
+      "weaponid": 3078242205,
+      "payload": [
+        "13125214096466681673",
+        "8356509974227907605"
+      ]
     },
     "Recoilless": {
       "name": "Recoilless Rifle",
@@ -1126,7 +1402,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 1298599997
+      "weaponid": 1298599997,
+      "payload": [
+        "15991884556147755475",
+        "8356509974227907605"
+      ]
     },
     "LaserCannon": {
       "name": "Laser Cannon",
@@ -1140,7 +1420,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 2822568285
+      "weaponid": 2822568285,
+      "payload": [
+        "18294292771580135983",
+        "8356509974227907605"
+      ]
     },
     "LaserPulseCannon": {
       "name": "Quasar Cannon",
@@ -1154,7 +1438,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 2625074523
+      "weaponid": 2625074523,
+      "payload": [
+        "7470354883998204659",
+        "8356509974227907605"
+      ]
     },
     "Sniper": {
       "name": "Anti-Materiel Rifle",
@@ -1168,7 +1456,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 2207713849
+      "weaponid": 2207713849,
+      "payload": [
+        "9879448964426328539",
+        "8356509974227907605"
+      ]
     },
     "LATOneshot": {
       "name": "Expendable Anti-Tank",
@@ -1182,7 +1474,11 @@
       ],
       "calltime": 2,
       "cooldown": 70,
-      "weaponid": 3413606544
+      "weaponid": 3413606544,
+      "payload": [
+        "992939827990506476",
+        "8356509974227907605"
+      ]
     },
     "LaserGuidedMissileLauncher": {
       "name": "Commando",
@@ -1196,7 +1492,11 @@
       ],
       "calltime": 3,
       "cooldown": 120,
-      "weaponid": 2232989803
+      "weaponid": 2232989803,
+      "payload": [
+        "11594114104552493871",
+        "8356509974227907605"
+      ]
     },
     "Flamethrower": {
       "name": "Flamethrower",
@@ -1210,7 +1510,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 1432571981
+      "weaponid": 1432571981,
+      "payload": [
+        "16793772489963160606",
+        "8356509974227907605"
+      ]
     },
     "Heavy_Mg": {
       "name": "Heavy Machine Gun",
@@ -1224,7 +1528,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 533318241
+      "weaponid": 533318241,
+      "payload": [
+        "1141864099511539165",
+        "8356509974227907605"
+      ]
     },
     "Air_Burst_Rocket_Launcher": {
       "name": "Airburst Rocket Launcher",
@@ -1238,7 +1546,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 2007887745
+      "weaponid": 2007887745,
+      "payload": [
+        "14586739053780151064",
+        "8356509974227907605"
+      ]
     },
     "MiniMissile": {
       "name": "Missile Silo",
@@ -1252,7 +1564,11 @@
       ],
       "calltime": 3,
       "cooldown": 180,
-      "weaponid": 4188961799
+      "weaponid": 4188961799,
+      "payload": [
+        "16003672528522815935",
+        "18151581020363463248"
+      ]
     },
     "FafMissileLauncher": {
       "name": "Spear",
@@ -1266,7 +1582,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 3923676543
+      "weaponid": 3923676543,
+      "payload": [
+        "14231239742203987259",
+        "8356509974227907605"
+      ]
     },
     "ArcThrower": {
       "name": "Arc Thrower",
@@ -1281,7 +1601,11 @@
       ],
       "calltime": 3,
       "cooldown": 480,
-      "weaponid": 992079466
+      "weaponid": 992079466,
+      "payload": [
+        "5546703783041515346",
+        "8356509974227907605"
+      ]
     },
     "TurretMachinegun": {
       "name": "Gatling Sentry",
@@ -1294,7 +1618,11 @@
       ],
       "calltime": 3,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "17259437333005147504",
+        "8356509974227907605"
+      ]
     },
     "TurretMachinegunGPMG": {
       "name": "Machine Gun Sentry",
@@ -1308,7 +1636,11 @@
       ],
       "calltime": 3,
       "cooldown": 120,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "4021120973472933563",
+        "8356509974227907605"
+      ]
     },
     "TurretMortar": {
       "name": "Mortar Sentry",
@@ -1322,7 +1654,11 @@
       ],
       "calltime": 3,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "5881843148917714292",
+        "8356509974227907605"
+      ]
     },
     "TurretMortar_Staticfield": {
       "name": "EMS Mortar Sentry",
@@ -1336,7 +1672,11 @@
       ],
       "calltime": 3,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "12827722989328478091",
+        "8356509974227907605"
+      ]
     },
     "TurretRocket": {
       "name": "Rocket Sentry",
@@ -1350,7 +1690,11 @@
       ],
       "calltime": 3,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "3965302274531977670",
+        "8356509974227907605"
+      ]
     },
     "TurretAutocannon": {
       "name": "Autocannon Sentry",
@@ -1365,7 +1709,11 @@
       ],
       "calltime": 3,
       "cooldown": 180,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "6113742425058627513",
+        "8356509974227907605"
+      ]
     },
     "Tutorial_ReinforcementBeacon": {
       "name": "Reinforce",
@@ -1379,7 +1727,11 @@
       ],
       "calltime": 0,
       "cooldown": 6,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "4371511811598490931",
+        "8356509974227907605"
+      ]
     },
     "Tutorial_Extract": {
       "name": "Extraction Beacon",
@@ -1394,7 +1746,11 @@
       ],
       "calltime": 120,
       "cooldown": 300,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "14374614348695467343",
+        "18077013842796163719"
+      ]
     },
     "DropoffCombatWalker": {
       "name": "Patriot Exosuit",
@@ -1412,7 +1768,11 @@
       "calltime": 0,
       "radius": 2,
       "cooldown": 600,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "8783342891467425251",
+        "8484362704672433843"
+      ]
     },
     "DropoffCombatWalker_Autocannon": {
       "name": "Emancipator Exosuit",
@@ -1430,7 +1790,11 @@
       "calltime": 0,
       "radius": 2,
       "cooldown": 600,
-      "weaponid": 0
+      "weaponid": 0,
+      "payload": [
+        "14038927220542196401",
+        "8484362704672433843"
+      ]
     }
   },
   "damage": {
