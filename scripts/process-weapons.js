@@ -21,54 +21,6 @@ const sources = [
   'support',
 ]
 
-const purge = [
-  "code",
-  "name",
-  "idx",
-  "catIdx",
-  "pellets",
-  "velocity",
-  "caliber",
-  "bulletmass",
-  "drag",
-  "gravity",
-  "penslow",
-  "id",
-  "damage",
-  "durable",
-  "ap",
-  "ap2",
-  "ap3",
-  "ap4",
-  "stun",
-  "push",
-  "demo",
-  "xid",
-  "xdamage",
-  "xdurable",
-  "xap",
-  "xap2",
-  "xap3",
-  "xap4",
-  "xstun",
-  "xpush",
-  "xdemo",
-  "dps",
-  "dmgtypename",
-  "effect1name",
-  "statusap",
-  "dmgtype",
-  "effect1",
-  "param1",
-  "effect2",
-  "param2",
-  "xdmgtype",
-  "xeffect1",
-  "xparam1",
-  "xeffect2",
-  "xparam2",
-]
-
 const matches = []
 const shalzuthMatch = {}
 
@@ -221,12 +173,24 @@ const shalzuthSchema = [
   }},
 ]
 
+
+const stratPayloadIds = Array.from(new Set(Object
+  .values(data.stratagem)
+  .flatMap(strat  => strat.payload)))
+
+const stratagems = stratPayloadIds
+  .map(entity => {
+    const payload = shalzuth[entity]
+    return {
+      entity,
+      name: payload?.name,
+    }
+  })
+  .filter(e => e.name)
+
 let dbgCondition = false
 const keyed = {}
-for(const wpn of [...setup.weapon]) {
-  for(const prop of purge) {
-    delete wpn[prop]
-  }
+for(const wpn of [...setup.weapon, ...stratagems]) {
   const name = wpn.name || wpn.fullname
   let matched
   if(wpn.entity) {
@@ -421,16 +385,6 @@ const wikiCategories = [
   "Support Weapon",
 ]
 
-const stratPayloadIds = Array.from(new Set(Object
-  .values(data.stratagem)
-  .flatMap(strat  => strat.payload)))
-
-const stratagems = stratPayloadIds.map(id => {
-  const payload = shalzuth[id]
-  return payload
-})
-console.log(stratagems)
-
 const allWeapons = [
   ...setup.weapon,
 ]
@@ -469,4 +423,5 @@ fs.writeFileSync('data/wiki.json', JSON.stringify(wikiRegister, null, 2))
 fs.writeFileSync('data/weapons.json', json({
   sources,
   weapons: setup.weapon,
+  entities,
 }))

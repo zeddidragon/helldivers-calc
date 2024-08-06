@@ -1191,5 +1191,118 @@
       "category": "Mounted",
       "fullname": "Emancipator Twin Autocannon"
     }
+  ],
+  "stratagems": [
+    {
+      "name": "HMG Emplacement",
+      "cap": 300,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "attack": [{"medium": "projectile", "ref": "Rifle_12p5x100mm_fmj"}],
+      "recoilxy": {"x": 8, "y": 12},
+      "spreadxy": {"x": 2, "y": 2},
+      "ergonomics": 65,
+      "modes": ["Automatic"],
+      "rpm": 750,
+      "rpms": [450, 600, 750]
+    },
+    {
+      "name": "Tesla Tower",
+      "cap": 400,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 50, "y": 25},
+      "ergonomics": 65,
+      "modes": ["Automatic"]
+    },
+    {
+      "name": "Rocket Sentry",
+      "cap": 16,
+      "mags": 1,
+      "magstart": 1,
+      "supply": 1,
+      "attack": [{"medium": "projectile", "ref": "Rocket_70mm_turret"}],
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 5, "y": 15},
+      "ergonomics": 65,
+      "modes": ["Burst", "Burst"],
+      "burst": 4,
+      "rpm": 90,
+      "box": 3
+    },
+    {
+      "name": "Gatling Sentry",
+      "cap": 400,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "attack": [{"medium": "projectile", "ref": "Rifle_8x60mm_fmj"}],
+      "recoilxy": {"x": 10, "y": 0},
+      "spreadxy": {"x": 10, "y": 10},
+      "ergonomics": 65,
+      "modes": ["Automatic"],
+      "rpm": 1600
+    },
+    {
+      "name": "Machine Gun Sentry",
+      "cap": 125,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "attack": [{"medium": "projectile", "ref": "Rifle_8x60mm_fmj"}],
+      "recoilxy": {"x": 20, "y": 2},
+      "spreadxy": {"x": 10, "y": 10},
+      "ergonomics": 65,
+      "modes": ["Automatic"],
+      "rpm": 900,
+      "rpms": [630, 630, 900]
+    },
+    {
+      "name": "Mortar Sentry",
+      "cap": 36,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "attack": [{"medium": "projectile", "ref": "Grenade_Mortar_40mm_HE"}],
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 50, "y": 100},
+      "ergonomics": 65,
+      "modes": ["Burst"],
+      "burst": 3,
+      "rpm": 60
+    },
+    {
+      "name": "EMS Mortar Sentry",
+      "cap": 16,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "attack": [
+        {"medium": "projectile", "ref": "Grenade_Mortar_40mm_Staticfield"}
+      ],
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 50, "y": 50},
+      "ergonomics": 65,
+      "modes": ["Burst"],
+      "burst": 3,
+      "rpm": 60
+    },
+    {
+      "name": "Autocannon Sentry",
+      "cap": 24,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "attack": [{"medium": "projectile", "ref": "Cannon_40mm_APHE"}],
+      "recoilxy": {"x": 2.5, "y": 10},
+      "spreadxy": {"x": 2, "y": 2},
+      "ergonomics": 65,
+      "modes": ["Burst", "Burst"],
+      "burst": 3,
+      "rpm": 160
+    }
   ]
 }
