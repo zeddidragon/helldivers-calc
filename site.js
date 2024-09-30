@@ -454,77 +454,15 @@ async function loadData() {
     ...mined,
   }
   window.data = data
+  locals.data = data
   window.translations[locals.lang] = translations
   if(locals.lang !== 'en') {
     window.translations.en = await fetch(`data/lang-en.json`)
       .then(res => res.json())
       .catch(() => ({}))
   }
-  locals.damages = data.damages.map((obj, idx) => {
-    return {
-      idx,
-      ...obj,
-      name: t('dmg', obj.enum),
-    }
-  })
-  const damages = register(locals.damages)
-  locals.projectiles = data.projectiles.map((obj, idx) => {
-    return {
-      idx,
-      ...obj,
-      name: t('prj', obj.enum),
-      damage: damages[obj.damageid],
-      gravity: round(obj.gravity),
-      drag: round(obj.drag),
-      penslow: round(obj.penslow),
-    }
-  })
-  const projectiles = register(locals.projectiles)
-  locals.explosions = data.explosions.map((obj, idx) => {
-    return {
-      idx,
-      ...obj,
-      name: t('aoe', obj.enum),
-      damage: damages[obj.damageid],
-      r1: round(obj.r1),
-      r2: round(obj.r2),
-      r3: round(obj.r3),
-    }
-  })
-  const explosions = register(locals.explosions)
-  locals.beams = data.beams.map((obj, idx) => {
-    return {
-      idx,
-      ...obj,
-      name: t('beam', obj.enum),
-      damage: damages[obj.damageid],
-    }
-  })
-  const beams = register(locals.beams)
-  locals.arcs = data.arcs.map((obj, idx) => {
-    return {
-      idx,
-      ...obj,
-      name: t('arc', obj.enum),
-      damage: damages[obj.damageid],
-    }
-  })
-  const arcs = register(locals.arcs)
-  const registers = {
-    projectile: projectiles,
-    explosion: explosions,
-    damage: damages,
-    beam: beams,
-    arc: arcs,
-  }
-  const byRef = {
-    damage: register(locals.damages, 'enum'),
-    projectile: register(locals.projectiles, 'enum'),
-    explosion: register(locals.explosions, 'enum'),
-    beam: register(locals.beams, 'enum'),
-    arc: register(locals.arcs, 'enum'),
-  }
   locals.weapons = data.weapons.map((wpn, idx) => {
+    return 
     const [, code, name] = /^(\w+-\d+\w*) (.*)$/.exec(wpn.fullname) || []
     let shotdmg = 0
     let shotdmg2 = 0
@@ -700,8 +638,8 @@ async function loadData() {
       subobjects,
     }
   })
-  byRef.weapon = register(locals.weapons, 'fullname')
-  window.byRef = byRef
+  // byRef.weapon = register(locals.weapons, 'fullname')
+  // window.byRef = byRef
 
   const arrowMap = {
     d: '🡇',
@@ -720,6 +658,7 @@ async function loadData() {
     ...data.stratagems,
   ]
   locals.stratagems = strats.map((strat, i) => {
+    return 
     let shotdmg = 0
     let shotdmg2 = 0
     let maxRadius = [0, 0, 0]
@@ -780,7 +719,7 @@ async function loadData() {
     }
   })
 
-  locals.cats = Array.from(new Set(locals.weapons.map(wpn => wpn.category)))
+  // locals.cats = Array.from(new Set(locals.weapons.map(wpn => wpn.category)))
   locals.sources = data.sources
   readState()
   render()
@@ -863,6 +802,7 @@ const defaultSettings = {
   ],
   hs: [],
   scope: 'weapons',
+  scope: 'projectile',
   lang: 'en',
 }
 

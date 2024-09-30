@@ -113,6 +113,25 @@
         "8356509974227907605"
       ]
     },
+    "Drone_GASPROJECTOR": {
+      "name": "\"Guard Dog\" Dog Breath",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Up",
+        "Right",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0,
+      "payload": [
+        "15628185827517046516",
+        "8356509974227907605"
+      ]
+    },
     "AmmoRack": {
       "name": "Resupply",
       "category": "HellpodDeployment",
@@ -404,6 +423,23 @@
       "weaponid": 0,
       "payload": [
         "2712008117028049500",
+        "8356509974227907605"
+      ]
+    },
+    "MineDeployer_GasMines": {
+      "name": "Gas Mines",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Left",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "12220563120145251703",
         "8356509974227907605"
       ]
     },
@@ -824,7 +860,7 @@
     },
     "SOSBeacon": {
       "name": "SOS Beacon",
-      "category": "Special",
+      "category": "HellpodDeployment",
       "uses": 1,
       "stratcode": [
         "Up",
@@ -1029,7 +1065,7 @@
     },
     "OrbitalStrike": {
       "name": "Orbital 120mm HE Barrage",
-      "category": "OrbitalFireSupport",
+      "category": "OrbitalBombardment",
       "stratcode": [
         "Right",
         "Right",
@@ -1039,7 +1075,7 @@
         "Down"
       ],
       "calltime": 5,
-      "cooldown": 240,
+      "cooldown": 180,
       "weaponid": 0,
       "payload": [
         "3259427501513118129"
@@ -1063,7 +1099,7 @@
     },
     "OrbitalBarrage": {
       "name": "Orbital 380mm HE Barrage",
-      "category": "OrbitalFireSupport",
+      "category": "OrbitalBombardment",
       "stratcode": [
         "Right",
         "Down",
@@ -1117,7 +1153,7 @@
     },
     "OrbitalWalkingBarrage": {
       "name": "Orbital Walking Barrage",
-      "category": "OrbitalFireSupport",
+      "category": "OrbitalBombardment",
       "stratcode": [
         "Right",
         "Down",
@@ -1135,7 +1171,7 @@
     },
     "OrbitalGatlingBarrage": {
       "name": "Orbital Gatling Barrage",
-      "category": "OrbitalFireSupport",
+      "category": "OrbitalBombardment",
       "stratcode": [
         "Right",
         "Down",
@@ -1164,6 +1200,24 @@
       "weaponid": 0,
       "payload": [
         "15741945895218221769"
+      ]
+    },
+    "OrbitalNapalmBarrage": {
+      "name": "Orbital Napalm Barrage",
+      "category": "OrbitalBombardment",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Down",
+        "Left",
+        "Right",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 240,
+      "weaponid": 0,
+      "payload": [
+        "11631307996670093680"
       ]
     },
     "AmmoRack_PresidentReward": {
@@ -1607,6 +1661,24 @@
         "8356509974227907605"
       ]
     },
+    "Chem_Gun": {
+      "name": "Sterilizer",
+      "category": "HellpodDeployment",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Down",
+        "Left"
+      ],
+      "calltime": 3,
+      "cooldown": 480,
+      "weaponid": 4152191751,
+      "payload": [
+        "13534862741616025304",
+        "8356509974227907605"
+      ]
+    },
     "TurretMachinegun": {
       "name": "Gatling Sentry",
       "category": "HellpodDeployment",
@@ -1801,7 +1873,7 @@
     "Projectile_Boomer_AcidStream": {
       "dmg": 50,
       "dmg2": 50,
-      "ap1": 4,
+      "ap1": 3,
       "ap2": 4,
       "ap3": 4,
       "ap4": 0,
@@ -1855,8 +1927,8 @@
       "param1": 100
     },
     "Projectile_CyborgHeavyFlamer": {
-      "dmg": 25,
-      "dmg2": 10,
+      "dmg": 30,
+      "dmg2": 15,
       "ap1": 2,
       "ap2": 2,
       "ap3": 2,
@@ -1869,8 +1941,8 @@
       "param1": 50
     },
     "Projectile_CyborgLightRocket": {
-      "dmg": 75,
-      "dmg2": 50,
+      "dmg": 30,
+      "dmg2": 30,
       "ap1": 6,
       "ap2": 5,
       "ap3": 4,
@@ -1880,8 +1952,8 @@
       "push": 25
     },
     "Projectile_CyborgRifle": {
-      "dmg": 30,
-      "dmg2": 3,
+      "dmg": 40,
+      "dmg2": 4,
       "ap1": 2,
       "ap2": 2,
       "ap3": 1,
@@ -1902,11 +1974,25 @@
       "push": 2
     },
     "Projectile_Flamethrower": {
+      "dmg": 4,
+      "dmg2": 4,
+      "ap1": 4,
+      "ap2": 4,
+      "ap3": 4,
+      "ap4": 4,
+      "demo": 10,
+      "stun": 5,
+      "push": 5,
+      "element": "Fire",
+      "status1": "Fire",
+      "param1": 10
+    },
+    "Projectile_Flamethrower_Ripley": {
       "dmg": 3,
       "dmg2": 3,
-      "ap1": 3,
-      "ap2": 3,
-      "ap3": 3,
+      "ap1": 4,
+      "ap2": 4,
+      "ap3": 4,
       "ap4": 0,
       "demo": 10,
       "stun": 5,
@@ -1914,6 +2000,52 @@
       "element": "Fire",
       "status1": "Fire",
       "param1": 10
+    },
+    "Projectile_Flamethrower_FlamerPistol": {
+      "dmg": 3,
+      "dmg2": 3,
+      "ap1": 4,
+      "ap2": 4,
+      "ap3": 4,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 5,
+      "push": 5,
+      "element": "Fire",
+      "status1": "Fire",
+      "param1": 5
+    },
+    "Spray_Chem_Gun": {
+      "dmg": 1,
+      "dmg2": 1,
+      "ap1": 5,
+      "ap2": 5,
+      "ap3": 5,
+      "ap4": 0,
+      "demo": 5,
+      "stun": 10,
+      "push": 5,
+      "element": "Gas",
+      "status1": "Gas",
+      "param1": 0.5,
+      "status2": "Gas_Confusion",
+      "param2": 0.5
+    },
+    "Drone_Chem_Gun": {
+      "dmg": 1,
+      "dmg2": 1,
+      "ap1": 5,
+      "ap2": 5,
+      "ap3": 5,
+      "ap4": 0,
+      "demo": 5,
+      "stun": 10,
+      "push": 5,
+      "element": "Gas",
+      "status1": "Gas",
+      "param1": 0.5,
+      "status2": "Gas_Confusion",
+      "param2": 0.5
     },
     "Projectile_Grenade_40mm_HE": {
       "dmg": 20,
@@ -1974,8 +2106,8 @@
       "push": 50
     },
     "Projectile_Illuminate_turret_tesla": {
-      "dmg": 75,
-      "dmg2": 75,
+      "dmg": 200,
+      "dmg2": 200,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
@@ -2075,7 +2207,7 @@
     },
     "Projectile_Railgun": {
       "dmg": 600,
-      "dmg2": 60,
+      "dmg2": 225,
       "ap1": 5,
       "ap2": 5,
       "ap3": 5,
@@ -2120,15 +2252,15 @@
       "push": 4
     },
     "Projectile_Pistol_9x20mm_smj": {
-      "dmg": 50,
-      "dmg2": 5,
+      "dmg": 65,
+      "dmg2": 7,
       "ap1": 2,
       "ap2": 2,
       "ap3": 2,
       "ap4": 0,
       "demo": 10,
       "stun": 10,
-      "push": 4
+      "push": 5
     },
     "Projectile_Pistol_9x20mm_hp": {
       "dmg": 75,
@@ -2214,8 +2346,8 @@
       "push": 15
     },
     "Projectile_Pistol_12x25mm_fmj": {
-      "dmg": 70,
-      "dmg2": 7,
+      "dmg": 75,
+      "dmg2": 8,
       "ap1": 2,
       "ap2": 2,
       "ap3": 2,
@@ -2376,7 +2508,7 @@
       "push": 10
     },
     "Projectile_Rifle_5p5x50mm_ap": {
-      "dmg": 45,
+      "dmg": 60,
       "dmg2": 15,
       "ap1": 3,
       "ap2": 3,
@@ -2399,24 +2531,24 @@
     },
     "Projectile_Rifle_5p5x50mm_exp": {
       "dmg": 65,
-      "dmg2": 23,
+      "dmg2": 30,
       "ap1": 2,
       "ap2": 2,
       "ap3": 2,
       "ap4": 2,
       "demo": 10,
       "stun": 35,
-      "push": 100
+      "push": 60
     },
     "Projectile_Rifle_5p5x50mm_fmj": {
-      "dmg": 60,
-      "dmg2": 14,
+      "dmg": 70,
+      "dmg2": 15,
       "ap1": 2,
       "ap2": 2,
       "ap3": 2,
       "ap4": 0,
       "demo": 10,
-      "stun": 10,
+      "stun": 15,
       "push": 10
     },
     "Projectile_Rifle_5p5x50mm_hp": {
@@ -2573,7 +2705,7 @@
       "ap3": 3,
       "ap4": 1,
       "demo": 10,
-      "stun": 15,
+      "stun": 20,
       "push": 12
     },
     "Projectile_Rifle_8x60mm_hv": {
@@ -2653,6 +2785,17 @@
       "stun": 15,
       "push": 10
     },
+    "Projectile_Rifle_Constitution": {
+      "dmg": 180,
+      "dmg2": 50,
+      "ap1": 3,
+      "ap2": 3,
+      "ap3": 3,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 20,
+      "push": 14
+    },
     "Projectile_Rifle_9x70mm_ap": {
       "dmg": 100,
       "dmg2": 10,
@@ -2665,8 +2808,8 @@
       "push": 14
     },
     "Projectile_Rifle_9x70mm_fmj": {
-      "dmg": 125,
-      "dmg2": 32,
+      "dmg": 165,
+      "dmg2": 45,
       "ap1": 2,
       "ap2": 2,
       "ap3": 2,
@@ -2676,14 +2819,14 @@
       "push": 14
     },
     "Projectile_Rifle_9x70mm_hv": {
-      "dmg": 140,
-      "dmg2": 14,
+      "dmg": 200,
+      "dmg2": 50,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
       "ap4": 0,
       "demo": 10,
-      "stun": 15,
+      "stun": 20,
       "push": 14
     },
     "Projectile_Rifle_9x70mm_snb": {
@@ -2859,15 +3002,15 @@
       "stun": 35,
       "push": 30
     },
-    "Projectile_Shotgun_10g_fir": {
-      "dmg": 50,
-      "dmg2": 25,
+    "Projectile_Shotgun_Dragon_10g_flm": {
+      "dmg": 16,
+      "dmg2": 3,
       "ap1": 2,
       "ap2": 2,
       "ap3": 2,
       "ap4": 0,
-      "demo": 5,
-      "stun": 30,
+      "demo": 10,
+      "stun": 35,
       "push": 20,
       "element": "Fire",
       "status1": "Fire",
@@ -2994,7 +3137,7 @@
       "ap3": 3,
       "ap4": 0,
       "demo": 10,
-      "stun": 20,
+      "stun": 30,
       "push": 35
     },
     "Projectile_Shotgun_10g_tri": {
@@ -3009,7 +3152,7 @@
       "push": 20
     },
     "Projectile_Shotgun_12g_bir": {
-      "dmg": 12,
+      "dmg": 15,
       "dmg2": 4,
       "ap1": 2,
       "ap2": 2,
@@ -3027,7 +3170,7 @@
       "ap3": 2,
       "ap4": 0,
       "demo": 10,
-      "stun": 10,
+      "stun": 15,
       "push": 10
     },
     "Projectile_Shotgun_12g_bug": {
@@ -3122,11 +3265,11 @@
       "push": 20
     },
     "Projectile_Shrapnel": {
-      "dmg": 80,
-      "dmg2": 8,
-      "ap1": 2,
-      "ap2": 2,
-      "ap3": 2,
+      "dmg": 110,
+      "dmg2": 35,
+      "ap1": 3,
+      "ap2": 3,
+      "ap3": 3,
       "ap4": 0,
       "demo": 10,
       "stun": 10,
@@ -3167,7 +3310,7 @@
     },
     "Projectile_Arc_Thrower": {
       "dmg": 250,
-      "dmg2": 50,
+      "dmg2": 100,
       "ap1": 7,
       "ap2": 7,
       "ap3": 7,
@@ -3175,7 +3318,9 @@
       "demo": 20,
       "stun": 35,
       "push": 10,
-      "element": "Electricity"
+      "element": "Electricity",
+      "status1": "StunSmall",
+      "param1": 8
     },
     "Projectile_Arc_Thrower_Mk2": {
       "dmg": 350,
@@ -3199,7 +3344,9 @@
       "demo": 10,
       "stun": 30,
       "push": 25,
-      "element": "Electricity"
+      "element": "Electricity",
+      "status1": "StunSmall",
+      "param1": 0.699999988
     },
     "Projectile_Cannon_20mm_Flak": {
       "dmg": 150,
@@ -3213,8 +3360,8 @@
       "push": 30
     },
     "Projectile_CyborgHmg": {
-      "dmg": 55,
-      "dmg2": 5,
+      "dmg": 65,
+      "dmg2": 7,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
@@ -3231,29 +3378,29 @@
       "ap3": 4,
       "ap4": 0,
       "demo": 20,
-      "stun": 20,
+      "stun": 25,
       "push": 15
     },
     "Projectile_Rifle_12p5x100mm_bchp": {
       "dmg": 150,
-      "dmg2": 50,
+      "dmg2": 35,
       "ap1": 4,
       "ap2": 4,
-      "ap3": 4,
+      "ap3": 3,
       "ap4": 0,
       "demo": 15,
-      "stun": 20,
+      "stun": 25,
       "push": 20
     },
     "Projectile_Rifle_12p5x100mm_eit": {
       "dmg": 450,
-      "dmg2": 135,
+      "dmg2": 180,
       "ap1": 4,
       "ap2": 4,
       "ap3": 4,
       "ap4": 0,
       "demo": 20,
-      "stun": 20,
+      "stun": 25,
       "push": 25
     },
     "Projectile_Rifle_12p5x100mm_eit_mk2": {
@@ -3279,15 +3426,15 @@
       "push": 10
     },
     "Explosion_Crossbow_Bolt": {
-      "dmg": 150,
-      "dmg2": 150,
+      "dmg": 350,
+      "dmg2": 350,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
       "ap4": 0,
       "demo": 20,
       "stun": 25,
-      "push": 10
+      "push": 30
     },
     "Projectile_Tesla_Turret": {
       "dmg": 600,
@@ -3297,9 +3444,11 @@
       "ap3": 4,
       "ap4": 0,
       "demo": 20,
-      "stun": 20,
+      "stun": 35,
       "push": 10,
-      "element": "Electricity"
+      "element": "Electricity",
+      "status1": "StunSmall",
+      "param1": 8
     },
     "Projectile_Cannon_20mm_APHET": {
       "dmg": 260,
@@ -3325,7 +3474,7 @@
     },
     "Projectile_Cannon_30mm_APHE": {
       "dmg": 300,
-      "dmg2": 60,
+      "dmg2": 150,
       "ap1": 5,
       "ap2": 5,
       "ap3": 5,
@@ -3335,8 +3484,8 @@
       "push": 10
     },
     "Projectile_Cannon_40mm_APHE": {
-      "dmg": 300,
-      "dmg2": 300,
+      "dmg": 450,
+      "dmg2": 450,
       "ap1": 5,
       "ap2": 5,
       "ap3": 5,
@@ -3357,8 +3506,8 @@
       "push": 30
     },
     "Projectile_Cannon_Eagle_23mm": {
-      "dmg": 300,
-      "dmg2": 100,
+      "dmg": 350,
+      "dmg2": 200,
       "ap1": 5,
       "ap2": 5,
       "ap3": 4,
@@ -3368,8 +3517,8 @@
       "push": 3
     },
     "Projectile_CyborgLightCannon": {
-      "dmg": 150,
-      "dmg2": 150,
+      "dmg": 90,
+      "dmg2": 90,
       "ap1": 4,
       "ap2": 4,
       "ap3": 3,
@@ -3390,8 +3539,8 @@
       "push": 10
     },
     "Projectile_Grenade_75mm_HEAT": {
-      "dmg": 650,
-      "dmg2": 650,
+      "dmg": 2000,
+      "dmg2": 2000,
       "ap1": 6,
       "ap2": 6,
       "ap3": 6,
@@ -3401,8 +3550,8 @@
       "push": 25
     },
     "Projectile_Grenade_85mm_HEAT": {
-      "dmg": 650,
-      "dmg2": 650,
+      "dmg": 3200,
+      "dmg2": 3200,
       "ap1": 6,
       "ap2": 6,
       "ap3": 6,
@@ -3412,8 +3561,8 @@
       "push": 25
     },
     "Projectile_Grenade_85mm_HEAT_MK2": {
-      "dmg": 800,
-      "dmg2": 800,
+      "dmg": 900,
+      "dmg2": 900,
       "ap1": 6,
       "ap2": 6,
       "ap3": 6,
@@ -3445,8 +3594,8 @@
       "push": 25
     },
     "Projectile_Rocket_70mm": {
-      "dmg": 300,
-      "dmg2": 300,
+      "dmg": 525,
+      "dmg2": 525,
       "ap1": 5,
       "ap2": 5,
       "ap3": 5,
@@ -3467,11 +3616,11 @@
       "push": 15
     },
     "Projectile_Bomb_100kg": {
-      "dmg": 500,
-      "dmg2": 500,
-      "ap1": 5,
-      "ap2": 5,
-      "ap3": 5,
+      "dmg": 1500,
+      "dmg2": 1500,
+      "ap1": 7,
+      "ap2": 7,
+      "ap3": 7,
       "ap4": 0,
       "demo": 40,
       "stun": 20,
@@ -3500,14 +3649,14 @@
       "push": 20
     },
     "Projectile_Missile_66mm": {
-      "dmg": 450,
-      "dmg2": 450,
+      "dmg": 1100,
+      "dmg2": 1100,
       "ap1": 6,
       "ap2": 6,
       "ap3": 6,
       "ap4": 3,
-      "demo": 40,
-      "stun": 50,
+      "demo": 30,
+      "stun": 40,
       "push": 25
     },
     "Projectile_Missile_66mm_MK2": {
@@ -3518,12 +3667,12 @@
       "ap3": 4,
       "ap4": 0,
       "demo": 40,
-      "stun": 50,
+      "stun": 40,
       "push": 25
     },
     "Projectile_Missile_Combat_Walker": {
-      "dmg": 400,
-      "dmg2": 400,
+      "dmg": 1250,
+      "dmg2": 1250,
       "ap1": 6,
       "ap2": 6,
       "ap3": 4,
@@ -3544,11 +3693,11 @@
       "push": 25
     },
     "Projectile_Missile_Faf": {
-      "dmg": 1000,
-      "dmg2": 1000,
-      "ap1": 8,
+      "dmg": 4000,
+      "dmg2": 4000,
+      "ap1": 7,
       "ap2": 7,
-      "ap3": 6,
+      "ap3": 7,
       "ap4": 0,
       "demo": 40,
       "stun": 50,
@@ -3577,14 +3726,14 @@
       "push": 25
     },
     "Projectile_Rocket_110mm": {
-      "dmg": 250,
-      "dmg2": 250,
-      "ap1": 6,
-      "ap2": 6,
-      "ap3": 6,
+      "dmg": 600,
+      "dmg2": 600,
+      "ap1": 7,
+      "ap2": 7,
+      "ap3": 7,
       "ap4": 0,
       "demo": 40,
-      "stun": 20,
+      "stun": 35,
       "push": 15
     },
     "Projectile_Strider_Spike": {
@@ -3599,8 +3748,8 @@
       "push": 75
     },
     "Projectile_Bomb_500kg": {
-      "dmg": 1400,
-      "dmg2": 1400,
+      "dmg": 2000,
+      "dmg2": 2000,
       "ap1": 7,
       "ap2": 7,
       "ap3": 7,
@@ -3632,8 +3781,8 @@
       "push": 20
     },
     "Projectile_CyborgHeavyCannon": {
-      "dmg": 800,
-      "dmg2": 800,
+      "dmg": 1500,
+      "dmg2": 1500,
       "ap1": 6,
       "ap2": 5,
       "ap3": 4,
@@ -3654,8 +3803,8 @@
       "push": 15
     },
     "Projectile_Orbital_Cannon_120mm_HE": {
-      "dmg": 300,
-      "dmg2": 300,
+      "dmg": 2500,
+      "dmg2": 2500,
       "ap1": 7,
       "ap2": 7,
       "ap3": 6,
@@ -3665,22 +3814,49 @@
       "push": 20
     },
     "Projectile_Orbital_Cannon_380MM_HE": {
-      "dmg": 450,
-      "dmg2": 450,
+      "dmg": 3500,
+      "dmg2": 3500,
       "ap1": 8,
       "ap2": 7,
       "ap3": 6,
       "ap4": 0,
       "demo": 50,
-      "stun": 20,
+      "stun": 50,
       "push": 20
     },
+    "Projectile_Orbital_Napalm": {
+      "dmg": 500,
+      "dmg2": 500,
+      "ap1": 5,
+      "ap2": 5,
+      "ap3": 5,
+      "ap4": 0,
+      "demo": 30,
+      "stun": 20,
+      "push": 15
+    },
+    "Explosion_Orbital_Napalm": {
+      "dmg": 350,
+      "dmg2": 350,
+      "ap1": 3,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 30,
+      "stun": 50,
+      "push": 40,
+      "element": "Fire",
+      "status1": "Fire",
+      "param1": 100,
+      "status2": "BurningHeavy",
+      "param2": 50
+    },
     "Projectile_Orbital_Railcannon": {
-      "dmg": 2000,
-      "dmg2": 2000,
-      "ap1": 10,
-      "ap2": 9,
-      "ap3": 8,
+      "dmg": 7500,
+      "dmg2": 7500,
+      "ap1": 7,
+      "ap2": 7,
+      "ap3": 7,
       "ap4": 0,
       "demo": 50,
       "stun": 60,
@@ -3825,9 +4001,9 @@
       "push": 40
     },
     "Explosion_Boomer_AcidDeath": {
-      "dmg": 175,
-      "dmg2": 175,
-      "ap1": 6,
+      "dmg": 300,
+      "dmg2": 300,
+      "ap1": 2,
       "ap2": 0,
       "ap3": 0,
       "ap4": 0,
@@ -4095,6 +4271,17 @@
       "status1": "StunSmall",
       "param1": 25
     },
+    "Explosion_Illuminate_Small": {
+      "dmg": 70,
+      "dmg2": 50,
+      "ap1": 2,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 10,
+      "push": 10
+    },
     "Explosion_Prop_Barrel": {
       "dmg": 300,
       "dmg2": 300,
@@ -4204,8 +4391,8 @@
       "param1": 100
     },
     "Explosion_HandGrenade_Thermite": {
-      "dmg": 100,
-      "dmg2": 100,
+      "dmg": 2000,
+      "dmg2": 2000,
       "ap1": 7,
       "ap2": 0,
       "ap3": 0,
@@ -4226,8 +4413,8 @@
       "push": 40
     },
     "Explosion_JarPhoenix_20mm": {
-      "dmg": 340,
-      "dmg2": 340,
+      "dmg": 225,
+      "dmg2": 225,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -4292,6 +4479,19 @@
       "push": 50,
       "status1": "StunSmall",
       "param1": 25
+    },
+    "Explosion_Illuminate_Harvester_Pull": {
+      "dmg": 10,
+      "dmg2": 10,
+      "ap1": 3,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 20,
+      "push": 20,
+      "status1": "Confusion",
+      "param1": 0
     },
     "Explosion_Prop_Small": {
       "dmg": 50,
@@ -4470,8 +4670,8 @@
       "push": 40
     },
     "Projectile_Laser_Pulse": {
-      "dmg": 650,
-      "dmg2": 650,
+      "dmg": 2000,
+      "dmg2": 2000,
       "ap1": 6,
       "ap2": 6,
       "ap3": 6,
@@ -4576,7 +4776,7 @@
     "Explosion_Projectile_Missile_Faf": {
       "dmg": 200,
       "dmg2": 200,
-      "ap1": 5,
+      "ap1": 3,
       "ap2": 0,
       "ap3": 0,
       "ap4": 0,
@@ -4807,8 +5007,8 @@
       "push": 70
     },
     "Explosion_Projectile_CyborgLightRocket": {
-      "dmg": 60,
-      "dmg2": 60,
+      "dmg": 70,
+      "dmg2": 70,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -4818,8 +5018,8 @@
       "push": 40
     },
     "Explosion_HellpodImpact": {
-      "dmg": 150,
-      "dmg2": 150,
+      "dmg": 2500,
+      "dmg2": 2500,
       "ap1": 10,
       "ap2": 0,
       "ap3": 0,
@@ -4827,6 +5027,20 @@
       "demo": 40,
       "stun": 80,
       "push": 40
+    },
+    "Explosion_HellpodImpact_FieryDrop": {
+      "dmg": 200,
+      "dmg2": 200,
+      "ap1": 10,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 40,
+      "stun": 80,
+      "push": 40,
+      "element": "Fire",
+      "status1": "Fire",
+      "param1": 100
     },
     "Explosion_HellpodExplosion": {
       "dmg": 300,
@@ -4849,6 +5063,17 @@
       "demo": 40,
       "stun": 50,
       "push": 50
+    },
+    "Explosion_TentacleImpact": {
+      "dmg": 150,
+      "dmg2": 150,
+      "ap1": 10,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 20,
+      "stun": 40,
+      "push": 20
     },
     "Explosion_Vehicle_DropshipCrash": {
       "dmg": 100,
@@ -4906,8 +5131,8 @@
       "push": 40
     },
     "Explosion_Projectile_Railcannon": {
-      "dmg": 500,
-      "dmg2": 500,
+      "dmg": 1000,
+      "dmg2": 1000,
       "ap1": 6,
       "ap2": 0,
       "ap3": 0,
@@ -4950,7 +5175,25 @@
       "push": 40,
       "element": "Gas",
       "status1": "Gas",
-      "param1": 100
+      "param1": 100,
+      "status2": "Gas_Confusion",
+      "param2": 100
+    },
+    "Explosion_Gas_Grenade": {
+      "dmg": 3,
+      "dmg2": 3,
+      "ap1": 6,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 10,
+      "push": 10,
+      "element": "Gas",
+      "status1": "Gas",
+      "param1": 100,
+      "status2": "Gas_Confusion",
+      "param2": 100
     },
     "Explosion_Projectile_OrbitalShell": {
       "dmg": 600,
@@ -4986,8 +5229,8 @@
       "push": 40
     },
     "Explosion_Projectile_EagleBomb_500kg": {
-      "dmg": 1200,
-      "dmg2": 1200,
+      "dmg": 1500,
+      "dmg2": 1500,
       "ap1": 6,
       "ap2": 0,
       "ap3": 0,
@@ -5014,8 +5257,8 @@
       "ap2": 0,
       "ap3": 0,
       "ap4": 0,
-      "demo": 50,
-      "stun": 50,
+      "demo": 30,
+      "stun": 35,
       "push": 20
     },
     "Explosion_Projectile_CyborgHeavyCannon": {
@@ -5030,14 +5273,14 @@
       "push": 70
     },
     "Explosion_Projectile_CyborgHeavyRocket": {
-      "dmg": 1000,
-      "dmg2": 1000,
-      "ap1": 3,
+      "dmg": 400,
+      "dmg2": 400,
+      "ap1": 5,
       "ap2": 0,
       "ap3": 0,
       "ap4": 0,
-      "demo": 50,
-      "stun": 50,
+      "demo": 40,
+      "stun": 40,
       "push": 100
     },
     "Explosion_Projectile_CyborgArtillery": {
@@ -5143,8 +5386,8 @@
       "push": 40
     },
     "Explosion_Hellbomb": {
-      "dmg": 4000,
-      "dmg2": 4000,
+      "dmg": 10000,
+      "dmg2": 10000,
       "ap1": 10,
       "ap2": 0,
       "ap3": 0,
@@ -5247,9 +5490,22 @@
       "status1": "StunMedium",
       "param1": 50
     },
+    "Explosion_DustDevil": {
+      "dmg": 0,
+      "dmg2": 0,
+      "ap1": 12,
+      "ap2": 12,
+      "ap3": 12,
+      "ap4": 12,
+      "demo": 20,
+      "stun": 30,
+      "push": 25,
+      "status1": "DustDevil",
+      "param1": 1
+    },
     "DPS_BeamSmall": {
-      "dmg": 200,
-      "dmg2": 20,
+      "dmg": 250,
+      "dmg2": 50,
       "ap1": 2,
       "ap2": 2,
       "ap3": 2,
@@ -5258,7 +5514,7 @@
       "stun": 0,
       "push": 0,
       "status1": "Fire",
-      "param1": 0.25
+      "param1": 0.5
     },
     "DPS_BeamMedium": {
       "dmg": 350,
@@ -5271,7 +5527,7 @@
       "stun": 0,
       "push": 0,
       "status1": "Fire",
-      "param1": 0.25
+      "param1": 0.5
     },
     "DPS_BeamMediumDrone": {
       "dmg": 200,
@@ -5284,7 +5540,7 @@
       "stun": 0,
       "push": 0,
       "status1": "Fire",
-      "param1": 0.25
+      "param1": 0.5
     },
     "DPS_BeamMedium_Wide": {
       "dmg": 300,
@@ -5297,7 +5553,7 @@
       "stun": 0,
       "push": 0,
       "status1": "Fire",
-      "param1": 0.25
+      "param1": 0.5
     },
     "DPS_BeamMedium_Spread": {
       "dmg": 360,
@@ -5310,7 +5566,7 @@
       "stun": 0,
       "push": 0,
       "status1": "Fire",
-      "param1": 0.25
+      "param1": 0.5
     },
     "DPS_BeamMedium_Focused": {
       "dmg": 175,
@@ -5323,7 +5579,7 @@
       "stun": 0,
       "push": 0,
       "status1": "Fire",
-      "param1": 0.25
+      "param1": 0.5
     },
     "DPS_BeamLarge": {
       "dmg": 350,
@@ -5336,7 +5592,7 @@
       "stun": 0,
       "push": 0,
       "status1": "Fire",
-      "param1": 0.25
+      "param1": 0.75
     },
     "DPS_BeamLarge_Heavy": {
       "dmg": 550,
@@ -5349,7 +5605,7 @@
       "stun": 0,
       "push": 0,
       "status1": "Fire",
-      "param1": 0.25
+      "param1": 1
     },
     "DPS_BeamLarge_Light": {
       "dmg": 300,
@@ -5362,11 +5618,11 @@
       "stun": 0,
       "push": 0,
       "status1": "Fire",
-      "param1": 0.25
+      "param1": 0.5
     },
     "DPS_BeamHuge": {
-      "dmg": 30,
-      "dmg2": 15,
+      "dmg": 60,
+      "dmg2": 60,
       "ap1": 6,
       "ap2": 6,
       "ap3": 6,
@@ -5419,7 +5675,7 @@
     },
     "DPS_Fire": {
       "dmg": 50,
-      "dmg2": 25,
+      "dmg2": 50,
       "ap1": 4,
       "ap2": 4,
       "ap3": 4,
@@ -5464,18 +5720,6 @@
       "stun": 0,
       "push": 0,
       "element": "Acid"
-    },
-    "DPS_AcidStorm": {
-      "dmg": 1,
-      "dmg2": 1,
-      "ap1": 9,
-      "ap2": 9,
-      "ap3": 9,
-      "ap4": 9,
-      "demo": 0,
-      "stun": 0,
-      "push": 0,
-      "element": "Bleed"
     },
     "DPS_Cyborg_Fire": {
       "dmg": 15,
@@ -5559,8 +5803,8 @@
       "element": "Bleed"
     },
     "DPS_Gas": {
-      "dmg": 50,
-      "dmg2": 50,
+      "dmg": 25,
+      "dmg2": 25,
       "ap1": 6,
       "ap2": 6,
       "ap3": 6,
@@ -5583,8 +5827,8 @@
       "element": "Gas"
     },
     "DPS_BeamTripodEye": {
-      "dmg": 500,
-      "dmg2": 250,
+      "dmg": 700,
+      "dmg2": 400,
       "ap1": 7,
       "ap2": 7,
       "ap3": 7,
@@ -5663,8 +5907,8 @@
       "push": 0
     },
     "Ability_Bug_BroodCommander_ChargeHitInfantry": {
-      "dmg": 35,
-      "dmg2": 35,
+      "dmg": 70,
+      "dmg2": 70,
       "ap1": 7,
       "ap2": 0,
       "ap3": 0,
@@ -5696,8 +5940,8 @@
       "push": 0
     },
     "Ability_Bug_Charger_ChargeHitInfantry": {
-      "dmg": 65,
-      "dmg2": 65,
+      "dmg": 90,
+      "dmg2": 90,
       "ap1": 7,
       "ap2": 0,
       "ap3": 0,
@@ -5739,6 +5983,17 @@
       "stun": 40,
       "push": 35
     },
+    "Ability_Bug_Impaler_MeleeCrush": {
+      "dmg": 350,
+      "dmg2": 350,
+      "ap1": 7,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 40,
+      "stun": 50,
+      "push": 50
+    },
     "Ability_Bot_Spawner_Obstacle": {
       "dmg": 1,
       "dmg2": 1,
@@ -5751,8 +6006,8 @@
       "push": 35
     },
     "Ability_Bug_Hunter_Melee": {
-      "dmg": 30,
-      "dmg2": 15,
+      "dmg": 35,
+      "dmg2": 35,
       "ap1": 2,
       "ap2": 0,
       "ap3": 0,
@@ -5776,7 +6031,7 @@
     },
     "Ability_Bug_Hunter_Pounce": {
       "dmg": 35,
-      "dmg2": 3,
+      "dmg2": 35,
       "ap1": 1,
       "ap2": 0,
       "ap3": 0,
@@ -5797,8 +6052,8 @@
       "push": 0
     },
     "Ability_Bug_Warrior_Claw": {
-      "dmg": 40,
-      "dmg2": 40,
+      "dmg": 55,
+      "dmg2": 55,
       "ap1": 2,
       "ap2": 0,
       "ap3": 0,
@@ -5830,8 +6085,8 @@
       "push": 0
     },
     "Ability_Bug_Scavenger_Stab": {
-      "dmg": 30,
-      "dmg2": 15,
+      "dmg": 35,
+      "dmg2": 20,
       "ap1": 2,
       "ap2": 0,
       "ap3": 0,
@@ -5841,8 +6096,8 @@
       "push": 5
     },
     "Ability_Bug_Shrieker_Dive": {
-      "dmg": 30,
-      "dmg2": 15,
+      "dmg": 50,
+      "dmg2": 25,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -5863,8 +6118,8 @@
       "push": 20
     },
     "Ability_Bug_Stalker_Stab": {
-      "dmg": 40,
-      "dmg2": 40,
+      "dmg": 50,
+      "dmg2": 50,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -5923,8 +6178,8 @@
       "param1": 1
     },
     "Ability_Cyborg_Conscript_Shove": {
-      "dmg": 10,
-      "dmg2": 5,
+      "dmg": 20,
+      "dmg2": 10,
       "ap1": 1,
       "ap2": 0,
       "ap3": 0,
@@ -5934,8 +6189,8 @@
       "push": 10
     },
     "Ability_Cyborg_Conscript_Assaultfist": {
-      "dmg": 30,
-      "dmg2": 15,
+      "dmg": 40,
+      "dmg2": 20,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -5945,8 +6200,8 @@
       "push": 10
     },
     "Ability_Cyborg_Lieutenant_Shove": {
-      "dmg": 40,
-      "dmg2": 20,
+      "dmg": 65,
+      "dmg2": 40,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -5956,8 +6211,8 @@
       "push": 35
     },
     "Ability_Cyborg_Lieutenant_Saw": {
-      "dmg": 150,
-      "dmg2": 150,
+      "dmg": 200,
+      "dmg2": 200,
       "ap1": 5,
       "ap2": 0,
       "ap3": 0,
@@ -5989,8 +6244,8 @@
       "push": 40
     },
     "Ability_Cyborg_Soldier_Punch": {
-      "dmg": 40,
-      "dmg2": 20,
+      "dmg": 60,
+      "dmg2": 30,
       "ap1": 2,
       "ap2": 0,
       "ap3": 0,
@@ -6000,8 +6255,8 @@
       "push": 15
     },
     "Ability_Cyborg_Soldier_Chainsaw": {
-      "dmg": 50,
-      "dmg2": 50,
+      "dmg": 80,
+      "dmg2": 80,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -6109,7 +6364,7 @@
       "param1": 100
     },
     "Ability_Illuminate_GuyStaff_QuickSlash": {
-      "dmg": 45,
+      "dmg": 35,
       "dmg2": 4,
       "ap1": 2,
       "ap2": 0,
@@ -6118,6 +6373,17 @@
       "demo": 20,
       "stun": 15,
       "push": 10
+    },
+    "Ability_Illuminate_GuyStaff_BluntSwipe": {
+      "dmg": 45,
+      "dmg2": 4,
+      "ap1": 2,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 30,
+      "stun": 25,
+      "push": 20
     },
     "Ability_Illuminate_GuyStaff_OverheadSlash": {
       "dmg": 160,
@@ -6208,8 +6474,8 @@
       "push": 10
     },
     "Ability_Hellpod_Traversal": {
-      "dmg": 100,
-      "dmg2": 100,
+      "dmg": 200,
+      "dmg2": 200,
       "ap1": 10,
       "ap2": 0,
       "ap3": 0,
@@ -6250,6 +6516,29 @@
       "demo": 10,
       "stun": 35,
       "push": 5
+    },
+    "Explosion_Illuminate_FakeEnemies": {
+      "dmg": 0,
+      "dmg2": 0,
+      "ap1": 0,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 0,
+      "push": 0
+    },
+    "Explosion_DarkFluid": {
+      "dmg": 4000,
+      "dmg2": 4000,
+      "ap1": 10,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 60,
+      "stun": 10,
+      "push": 10,
+      "element": "Acid"
     }
   },
   "projectile": {
@@ -6852,13 +7141,28 @@
       "damageref": "Projectile_CyborgLightRocket",
       "penslow": 0.25,
       "ximpactref": "Cyborg_Projectile_LightRocket",
-      "xproximity": 0.25,
+      "xproximity": 0.1,
       "xdelay": 0
     },
-    "Cyborg_HeavyRocket": {
+    "Cyborg_AssaultWalker_Rocket": {
+      "caliber": 40,
+      "pellets": 1,
+      "velocity": 45,
+      "mass": 3300,
+      "drag": 0,
+      "gravity": 0.01,
+      "lifetime": 10,
+      "liferandom": 0,
+      "damageref": "Projectile_CyborgLightRocket",
+      "penslow": 0.25,
+      "ximpactref": "Cyborg_AssaultWalker_Projectile_LightRocket",
+      "xproximity": 0.1,
+      "xdelay": 0
+    },
+    "Cyborg_MediumRocket": {
       "caliber": 400,
       "pellets": 1,
-      "velocity": 60,
+      "velocity": 40,
       "mass": 33000,
       "drag": 0,
       "gravity": 0.1,
@@ -6866,7 +7170,52 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgLightRocket",
       "penslow": 0.25,
+      "ximpactref": "Cyborg_Projectile_MediumRocket",
+      "xproximity": 0,
+      "xdelay": 0
+    },
+    "Cyborg_EnclosedScoutWalker_Rocket": {
+      "caliber": 400,
+      "pellets": 1,
+      "velocity": 40,
+      "mass": 33000,
+      "drag": 0,
+      "gravity": 0.1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "damageref": "Projectile_CyborgLightRocket",
+      "penslow": 0.25,
+      "ximpactref": "Cyborg_Projectile_MediumRocket",
+      "xproximity": 0,
+      "xdelay": 0
+    },
+    "Cyborg_HeavyRocket": {
+      "caliber": 400,
+      "pellets": 1,
+      "velocity": 50,
+      "mass": 33000,
+      "drag": 0,
+      "gravity": 2,
+      "lifetime": 0,
+      "liferandom": 0,
+      "damageref": "Projectile_CyborgLightRocket",
+      "penslow": 0.25,
       "ximpactref": "Cyborg_Projectile_HeavyRocket",
+      "xproximity": 0,
+      "xdelay": 0
+    },
+    "Cyborg_Tank_RocketLauncher": {
+      "caliber": 400,
+      "pellets": 1,
+      "velocity": 50,
+      "mass": 33000,
+      "drag": 0,
+      "gravity": 2,
+      "lifetime": 0,
+      "liferandom": 0,
+      "damageref": "Projectile_CyborgLightRocket",
+      "penslow": 0.25,
+      "ximpactref": "Cyborg_Tank_Projectile_HeavyRocket",
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7081,7 +7430,7 @@
       "pellets": 1,
       "velocity": 200,
       "mass": 2500,
-      "drag": 0.3,
+      "drag": 0,
       "gravity": 1,
       "lifetime": 0,
       "liferandom": 0,
@@ -7097,7 +7446,7 @@
       "pellets": 1,
       "velocity": 250,
       "mass": 3300,
-      "drag": 0.3,
+      "drag": 0,
       "gravity": 1,
       "lifetime": 0,
       "liferandom": 0,
@@ -7200,6 +7549,21 @@
       "liferandom": 0,
       "damageref": "Projectile_Illuminate_Lightspear",
       "penslow": 0.25,
+      "xproximity": 0,
+      "xdelay": 0
+    },
+    "illuminate_TripodEyeCannon": {
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 250,
+      "mass": 80,
+      "drag": 1.5,
+      "gravity": 1,
+      "lifetime": 10,
+      "liferandom": 0,
+      "damageref": "Projectile_CyborgHeavyCannon",
+      "penslow": 0.25,
+      "ximpactref": "illuminate_Projectile_TripodCannon",
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7529,6 +7893,38 @@
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
       "ximpactref": "OrbitalBarrage",
+      "xproximity": 0,
+      "xdelay": 0
+    },
+    "Orbital_Cannon_Napalm": {
+      "name": "120mm HE Cannon Round",
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "damageref": "Projectile_Orbital_Napalm",
+      "penslow": 0.25,
+      "ximpactref": "Orbital_Napalm",
+      "xproximity": 0,
+      "xdelay": 0
+    },
+    "Orbital_Cannon_Napalm_Cheap": {
+      "name": "120mm HE Cannon Round",
+      "caliber": 84,
+      "pellets": 1,
+      "velocity": 400,
+      "mass": 5000,
+      "drag": 0,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "damageref": "Projectile_Orbital_Napalm",
+      "penslow": 0.25,
+      "ximpactref": "Orbital_Napalm_Cheap",
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8190,6 +8586,19 @@
       "xproximity": 0,
       "xdelay": 0
     },
+    "Pistol_Stim": {
+      "caliber": 1,
+      "pellets": 1,
+      "velocity": 80,
+      "mass": 1,
+      "drag": 0.1,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "penslow": 1,
+      "xproximity": 0,
+      "xdelay": 0
+    },
     "Rifle_5p5x50mm_fmj": {
       "name": "5.5x50mm Full Metal Jacket",
       "caliber": 5.5,
@@ -8617,6 +9026,20 @@
       "lifetime": 0,
       "liferandom": 0,
       "damageref": "Projectile_Rifle_Rico",
+      "penslow": 0.25,
+      "xproximity": 0,
+      "xdelay": 0
+    },
+    "Rifle_Constitution": {
+      "caliber": 8,
+      "pellets": 1,
+      "velocity": 850,
+      "mass": 20,
+      "drag": 0.3,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "damageref": "Projectile_Rifle_Constitution",
       "penslow": 0.25,
       "xproximity": 0,
       "xdelay": 0
@@ -9200,21 +9623,19 @@
       "xproximity": 0,
       "xdelay": 0
     },
-    "Shotgun_10g_fir": {
-      "name": "10g Buckshot",
+    "Shotgun_Dragon_10g_flm": {
       "caliber": 8,
-      "pellets": 1,
-      "velocity": 45,
-      "mass": 6,
-      "drag": 0.5,
+      "pellets": 20,
+      "velocity": 120,
+      "mass": 2,
+      "drag": 0.8,
       "gravity": 1,
-      "lifetime": 0.03,
+      "lifetime": 0,
       "liferandom": 0,
-      "penslow": 0.25,
-      "ximpactref": "Punisher_Dragon_Cone",
+      "damageref": "Projectile_Shotgun_Dragon_10g_flm",
+      "penslow": 1,
       "xproximity": 0,
-      "xdelay": 0,
-      "xdelayref": "Punisher_Dragon_Cone"
+      "xdelay": 0
     },
     "Shotgun_10g_bug": {
       "name": "10g Bugshot",
@@ -9374,7 +9795,7 @@
       "pellets": 1,
       "velocity": 390,
       "mass": 50,
-      "drag": 0.5,
+      "drag": 2,
       "gravity": 1,
       "lifetime": 0,
       "liferandom": 0,
@@ -9790,7 +10211,7 @@
     "Boomer_AcidDeath": {
       "damageref": "Explosion_Boomer_AcidDeath",
       "r1": 4,
-      "r2": 8,
+      "r2": 10,
       "r3": 11,
       "shrapnelref": "Scavenger_AcidBall"
     },
@@ -9850,6 +10271,13 @@
       "r3": 14,
       "crater": "Small"
     },
+    "Bug_Charger_Acid_Death": {
+      "damageref": "Explosion_Boomer_AcidDeath",
+      "r1": 5,
+      "r2": 15,
+      "r3": 20,
+      "crater": "Small"
+    },
     "Cyborg_HandGrenade_Antitank": {
       "damageref": "Explosion_HandGrenade_CyborgAntiTank",
       "r1": 2,
@@ -9900,16 +10328,37 @@
     },
     "Cyborg_Projectile_LightRocket": {
       "damageref": "Explosion_Projectile_CyborgLightRocket",
+      "r1": 0.65,
+      "r2": 1.65,
+      "r3": 3.15,
+      "crater": "Small"
+    },
+    "Cyborg_AssaultWalker_Projectile_LightRocket": {
+      "damageref": "Explosion_Projectile_CyborgLightRocket",
       "r1": 1,
       "r2": 2,
       "r3": 3.5,
       "crater": "Small"
     },
-    "Cyborg_Projectile_HeavyRocket": {
+    "Cyborg_Projectile_MediumRocket": {
       "damageref": "Explosion_Projectile_CyborgHeavyRocket",
       "r1": 1,
+      "r2": 6,
+      "r3": 9,
+      "crater": "Large"
+    },
+    "Cyborg_Projectile_HeavyRocket": {
+      "damageref": "Explosion_Projectile_CyborgHeavyRocket",
+      "r1": 2,
       "r2": 10,
-      "r3": 25,
+      "r3": 20,
+      "crater": "Large"
+    },
+    "Cyborg_Tank_Projectile_HeavyRocket": {
+      "damageref": "Explosion_Projectile_CyborgHeavyRocket",
+      "r1": 2,
+      "r2": 10,
+      "r3": 20,
       "crater": "Large"
     },
     "Cyborg_PlasmaBackpackOverload": {
@@ -10050,9 +10499,9 @@
     },
     "Frag": {
       "damageref": "Explosion_HandGrenade_Frag",
-      "r1": 2,
-      "r2": 8,
-      "r3": 12,
+      "r1": 4,
+      "r2": 10,
+      "r3": 14,
       "shrapnel": 30,
       "shrapnelref": "Shrapnel",
       "crater": "Scorch"
@@ -10072,9 +10521,9 @@
     },
     "Thermite": {
       "damageref": "Explosion_HandGrenade_Thermite",
-      "r1": 1,
-      "r2": 2,
-      "r3": 3,
+      "r1": 1.5,
+      "r2": 2.5,
+      "r3": 4,
       "crater": "Scorch"
     },
     "HighExplosive": {
@@ -10157,25 +10606,18 @@
       "angle": 25,
       "crater": "Scorch"
     },
-    "Punisher_Dragon_Cone": {
-      "damageref": "Projectile_Shotgun_10g_fir",
-      "r1": 8,
-      "r2": 15,
-      "r3": 15.1,
-      "angle": 15
-    },
     "Crossbow_Bolt": {
       "damageref": "Explosion_Crossbow_Bolt",
-      "r1": 2,
-      "r2": 4,
-      "r3": 5,
+      "r1": 3,
+      "r2": 6,
+      "r3": 7,
       "crater": "Small"
     },
     "Grenade_40mm_HE": {
       "damageref": "Explosion_Projectile_Grenade_40mm_HE",
-      "r1": 2.5,
-      "r2": 6.5,
-      "r3": 7,
+      "r1": 3.5,
+      "r2": 7.5,
+      "r3": 8,
       "crater": "Medium"
     },
     "Grenade_40mm_HE_MK2": {
@@ -10268,9 +10710,11 @@
     },
     "JarPhoenix_20mm": {
       "damageref": "Explosion_JarPhoenix_20mm",
-      "r1": 2,
-      "r2": 6,
-      "r3": 6.5,
+      "r1": 4,
+      "r2": 7,
+      "r3": 8,
+      "shrapnel": 30,
+      "shrapnelref": "Shrapnel",
       "crater": "Small"
     },
     "APHET_20mm": {
@@ -10395,6 +10839,20 @@
       "r3": 20,
       "crater": "Large"
     },
+    "Orbital_Napalm": {
+      "damageref": "Explosion_Orbital_Napalm",
+      "r1": 3.3,
+      "r2": 10,
+      "r3": 11,
+      "crater": "Scorch"
+    },
+    "Orbital_Napalm_Cheap": {
+      "damageref": "Explosion_Orbital_Napalm",
+      "r1": 3.3,
+      "r2": 10,
+      "r3": 11,
+      "crater": "Scorch"
+    },
     "OrbitalStun": {
       "damageref": "Explosion_Projectile_OrbitalStun",
       "r1": 1,
@@ -10430,6 +10888,12 @@
       "r1": 1,
       "r2": 15,
       "r3": 20
+    },
+    "GasGrenade": {
+      "damageref": "Explosion_Gas_Grenade",
+      "r1": 2,
+      "r2": 7,
+      "r3": 7
     },
     "OrbitalSmoke": {
       "r1": 5,
@@ -10491,6 +10955,45 @@
       "r3": 3,
       "crater": "Medium"
     },
+    "TentacleImpact": {
+      "damageref": "Explosion_TentacleImpact",
+      "r1": 1.3,
+      "r2": 1.8,
+      "r3": 1.8,
+      "crater": "Medium"
+    },
+    "TentacleImpactFake": {
+      "r1": 5,
+      "r2": 5,
+      "r3": 5,
+      "crater": "Medium"
+    },
+    "Impaler_Summon_Tentacles_Fake": {
+      "r1": 5,
+      "r2": 5,
+      "r3": 5,
+      "crater": "Medium"
+    },
+    "TentacleEmerge": {
+      "damageref": "Explosion_TentacleImpact",
+      "r1": 1.8,
+      "r2": 2.8,
+      "r3": 2.8,
+      "crater": "Medium"
+    },
+    "TentacleEmergeFake": {
+      "r1": 5,
+      "r2": 5,
+      "r3": 5,
+      "crater": "Medium"
+    },
+    "HellpodImpact_FieryDrop": {
+      "damageref": "Explosion_HellpodImpact_FieryDrop",
+      "r1": 2,
+      "r2": 4,
+      "r3": 4,
+      "crater": "Scorch"
+    },
     "HellpodImpact_Silent": {
       "damageref": "Explosion_HellpodImpact",
       "r1": 0.5,
@@ -10543,6 +11046,13 @@
       "r1": 0.1,
       "r2": 0.2,
       "r3": 1
+    },
+    "DefaultOvercharge": {
+      "damageref": "Explosion_RailgunOvercharge",
+      "r1": 0.4,
+      "r2": 2,
+      "r3": 3,
+      "crater": "Small"
     },
     "RailgunOvercharge": {
       "damageref": "Explosion_RailgunOvercharge",
@@ -10605,9 +11115,9 @@
     },
     "EagleBomb_500kg": {
       "damageref": "Explosion_Projectile_EagleBomb_500kg",
-      "r1": 6.7,
-      "r2": 20,
-      "r3": 30,
+      "r1": 10,
+      "r2": 25,
+      "r3": 35,
       "crater": "Large"
     },
     "EagleBomb_500kg_MK2": {
@@ -10783,11 +11293,17 @@
       "crater": "Scorch"
     },
     "AntiTankMine": {
-      "damageref": "Explosion_AntiTankMine",
-      "r1": 1.2,
+      "damageref": "Explosion_Projectile_EagleBomb_100kg",
+      "r1": 5,
+      "r2": 10,
+      "r3": 14,
+      "crater": "Large"
+    },
+    "GasMine": {
+      "damageref": "Explosion_Gas_Grenade",
+      "r1": 2,
       "r2": 6,
-      "r3": 9,
-      "crater": "Medium"
+      "r3": 6
     },
     "ContactMine_MK2": {
       "damageref": "Explosion_ContactMine",
@@ -10946,12 +11462,33 @@
       "r3": 2,
       "crater": "Small"
     },
+    "Illuminate_SpawnerDeath": {
+      "damageref": "Explosion_Hellbomb",
+      "r1": 1,
+      "r2": 2,
+      "r3": 4,
+      "crater": "Medium"
+    },
     "Illuminate_TripodDeath": {
       "damageref": "Explosion_Illuminate_AdeptCircle",
       "r1": 3,
       "r2": 5,
       "r3": 4,
       "crater": "Medium"
+    },
+    "Tripod_Crash_Body": {
+      "damageref": "Explosion_Prop_Large",
+      "r1": 2,
+      "r2": 5,
+      "r3": 6,
+      "crater": "Medium"
+    },
+    "Tripod_Crash_Limb": {
+      "damageref": "Explosion_Prop_Small",
+      "r1": 0.75,
+      "r2": 1.5,
+      "r3": 2.5,
+      "crater": "Small"
     },
     "Illuminate_StaffGuyGroundImpale": {
       "damageref": "Explosion_Illuminate_ShockWave",
@@ -10967,8 +11504,22 @@
       "r3": 7,
       "crater": "Large"
     },
+    "illuminate_Projectile_TripodCannon": {
+      "damageref": "Explosion_Projectile_CyborgHeavyCannon",
+      "r1": 1.2,
+      "r2": 6,
+      "r3": 8,
+      "crater": "Large"
+    },
     "Illuminate_IllusionistSmallball": {
       "damageref": "Explosion_Illuminate_SmallStun",
+      "r1": 0.75,
+      "r2": 1.5,
+      "r3": 2,
+      "crater": "Scorch"
+    },
+    "Illuminate_IllusionistDroidball": {
+      "damageref": "Explosion_Illuminate_Small",
       "r1": 0.75,
       "r2": 1.5,
       "r3": 2,
@@ -11106,6 +11657,13 @@
       "crater": "Small"
     },
     "Barrel_Large": {
+      "damageref": "Explosion_Prop_Barrel",
+      "r1": 0.6,
+      "r2": 6,
+      "r3": 15,
+      "crater": "Small"
+    },
+    "Cyborg_Grinder": {
       "damageref": "Explosion_Prop_Barrel",
       "r1": 0.6,
       "r2": 6,
@@ -11299,6 +11857,27 @@
       "r2": 14,
       "r3": 18,
       "crater": "Small"
+    },
+    "Illuminate_FakeEnemies_Death": {
+      "damageref": "Explosion_Illuminate_FakeEnemies",
+      "r1": 1,
+      "r2": 1.5,
+      "r3": 2,
+      "crater": "Small"
+    },
+    "Illuminate_DarkFluid_Death": {
+      "damageref": "Explosion_DarkFluid",
+      "r1": 10,
+      "r2": 10,
+      "r3": 4,
+      "crater": "Medium"
+    },
+    "Illuminate_Harvester_Pull": {
+      "damageref": "Explosion_Illuminate_Harvester_Pull",
+      "r1": 10,
+      "r2": 10,
+      "r3": 4,
+      "crater": "Medium"
     }
   },
   "beam": {
@@ -11363,11 +11942,11 @@
   "arc": {
     "ArcThrower": {
       "velocity": 300,
-      "range": 35,
+      "range": 55,
       "spreadrange": 40,
       "chainangle": 60,
       "aimangle": 3,
-      "splits": 0,
+      "splits": 1,
       "damageref": "Projectile_Arc_Thrower"
     },
     "ArcThrower_MK2": {
@@ -11524,7 +12103,7 @@
     "Thermite": {
       "name": "Thermite",
       "strength": 1,
-      "duration": 0.25,
+      "duration": 1,
       "damageref": "DPS_Thermite"
     },
     "Cyborg_Fire": {
@@ -11600,6 +12179,11 @@
       "name": "Stim Heal",
       "strength": 2,
       "duration": 4
+    },
+    "StimPistolHeal": {
+      "name": "Stim Pistol Heal",
+      "strength": 0.13,
+      "duration": 0
     },
     "StimCombatDrugs": {
       "name": "Stim Combat Drugs",
@@ -11678,7 +12262,7 @@
     "Gas": {
       "name": "Gas",
       "strength": 0.25,
-      "duration": 1,
+      "duration": 6,
       "damageref": "DPS_Gas"
     },
     "Gas_MK2": {
@@ -11686,6 +12270,11 @@
       "strength": 50,
       "duration": 1,
       "damageref": "DPS_Gas_MK2"
+    },
+    "Gas_Confusion": {
+      "name": "Gas_Confusion",
+      "strength": 0.25,
+      "duration": 5
     },
     "Inverted_Aim_Assist": {
       "name": "Inverted_Aim_Assist",
@@ -11710,12 +12299,12 @@
     "IntenseHeat": {
       "name": "Intense Heat",
       "strength": 1,
-      "duration": 0
+      "duration": 1
     },
     "ExtremeCold": {
       "name": "Extreme Cold",
       "strength": 1,
-      "duration": 0
+      "duration": 1
     },
     "Tremor": {
       "name": "Tremor",
@@ -11735,13 +12324,27 @@
     "AcidStorm": {
       "name": "Acid Storm",
       "strength": 1,
-      "duration": 1,
-      "damageref": "DPS_AcidStorm"
+      "duration": 1
     },
     "ThickFog": {
       "name": "Thick Fog",
       "strength": 0.4,
       "duration": 1
+    },
+    "Protected": {
+      "name": "Protected",
+      "strength": 1,
+      "duration": 1
+    },
+    "DustDevil": {
+      "name": "Protected",
+      "strength": 1,
+      "duration": 1
+    },
+    "DarkFluid": {
+      "name": "Dark Fluid",
+      "strength": 1,
+      "duration": 10
     }
   },
   "elements": [

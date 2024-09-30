@@ -60,48 +60,6 @@
     "silenced": 0,
     "burst_fire_rate": 0
   },
-  "4878198249831276603": {
-    "id": "4878198249831276603",
-    "magazine_capacity": 100,
-    "chambered": 0,
-    "magazines": 2,
-    "magazines_refill": 6,
-    "magazines_max": 4,
-    "name": "Flamethrower",
-    "recoil_info": {
-      "drift": {
-        "horizontal_recoil": 2.5,
-        "vertical_recoil": 10,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      },
-      "climb": {
-        "horizontal_recoil": 2.5,
-        "vertical_recoil": 10,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      }
-    },
-    "spread_info": {"horizontal": 10, "vertical": 10},
-    "noise_template": "NoiseTemplate_Weapon_Small",
-    "scope_responsiveness": 10,
-    "ergonomics": 5,
-    "infinite_ammo": 0,
-    "fire_modes": ["Automatic"],
-    "function_info": [],
-    "holster_duration": 0.5,
-    "wield_duration": 0.5,
-    "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Incendiary",
-    "is_one_handed": 0,
-    "warmup_time": 0.699999988,
-    "cooldown_time": 15,
-    "spray_capsule_radius": 0,
-    "ammo_cost": 1,
-    "projectile_type": "ProjectileType_None",
-    "damage_info_type": "DamageInfoType_Projectile_Flamethrower",
-    "key": "Flamethrower"
-  },
   "7767754898735718469": {
     "id": "7767754898735718469",
     "recoil_info": {
@@ -511,7 +469,7 @@
         "random_amount": {"x": 0.100000001, "y": 1}
       }
     },
-    "spread_info": {"horizontal": 300, "vertical": 150},
+    "spread_info": {"horizontal": 200, "vertical": 200},
     "noise_template": "NoiseTemplate_Weapon_Medium",
     "scope_responsiveness": 10,
     "ergonomics": 25,
@@ -537,6 +495,9 @@
     "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3},
+      {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1.6},
+      {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 0.3},
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
     ],
     "key": "SG-225SP Breaker Spray&Pray"
@@ -695,9 +656,61 @@
     "customizations": {},
     "modifiers": []
   },
+  "11146468741807915285": {
+    "id": "11146468741807915285",
+    "magazine_capacity": 200,
+    "chambered": 0,
+    "magazines": 5,
+    "magazines_refill": 6,
+    "magazines_max": 10,
+    "name": "Heavy Fusion Repeater",
+    "health": 500,
+    "health_changerate": 0,
+    "health_changerate_disabled": 0,
+    "require_demolition": 0,
+    "recoil_info": {
+      "drift": {
+        "horizontal_recoil": 2.5,
+        "vertical_recoil": 10,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      },
+      "climb": {
+        "horizontal_recoil": 2.5,
+        "vertical_recoil": 10,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      }
+    },
+    "spread_info": {"horizontal": 40, "vertical": 40},
+    "noise_template": "NoiseTemplate_Weapon_Medium",
+    "scope_responsiveness": 10,
+    "ergonomics": 65,
+    "infinite_ammo": 1,
+    "fire_modes": ["Automatic"],
+    "function_info": [],
+    "turn_speed_vertical": 45,
+    "turn_speed_horizontal": 45,
+    "vertical_limit_min": -35,
+    "vertical_limit_max": 35,
+    "explosion_type": "ExplosionType_Conscript_Backpack_Explosion",
+    "projectile_type": "Cyborg_LightCannon",
+    "rounds_per_minute": {"x": 0, "y": 120, "z": 0},
+    "heat_buildup": {
+      "heat_build_per_shot": 1,
+      "maximum_heat": 100,
+      "heat_bleed_speed": 10,
+      "heat_bleed_delay": 5
+    },
+    "num_low_ammo_rounds": 4,
+    "spinup_time": 0,
+    "silenced": 0,
+    "burst_fire_rate": 0,
+    "key": "Heavy Fusion Repeater"
+  },
   "721550233589928225": {
     "id": "721550233589928225",
-    "magazine_capacity": 75,
+    "magazine_capacity": 100,
     "chambered": 0,
     "magazines": 0,
     "magazines_refill": 6,
@@ -1073,7 +1086,7 @@
         "random_amount": {"x": 0.100000001, "y": 1}
       }
     },
-    "spread_info": {"horizontal": 10, "vertical": 10},
+    "spread_info": {"horizontal": 100, "vertical": 100},
     "noise_template": "NoiseTemplate_Weapon_Medium",
     "scope_responsiveness": 10,
     "ergonomics": 65,
@@ -1086,7 +1099,7 @@
     "equipment_type": "EquipmentType_SMG",
     "is_one_handed": 0,
     "projectile_type": "Cyborg_Hmg",
-    "rounds_per_minute": {"x": 0, "y": 400, "z": 0},
+    "rounds_per_minute": {"x": 0, "y": 500, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
       "maximum_heat": 100,
@@ -1104,6 +1117,7 @@
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Punisher fire of liberty",
     "prefix": "SG-8F",
+    "reload": 2,
     "magazine_capacity": {"x": 8, "y": 8},
     "ammo_capacity": 60,
     "ammo_refill": 60,
@@ -1114,7 +1128,6 @@
       "primary_projectile_type": "ProjectileType_Shotgun_10g_buc",
       "alternate_projectile_type": "ProjectileType_Shotgun_10g_buc"
     },
-    "reload": 2,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 30,
@@ -1351,7 +1364,7 @@
     "scope_responsiveness": 10,
     "ergonomics": 65,
     "infinite_ammo": 1,
-    "fire_modes": ["Single"],
+    "fire_modes": ["Automatic"],
     "function_info": [],
     "holster_duration": 0.400000006,
     "wield_duration": 0.300000012,
@@ -1423,7 +1436,7 @@
   },
   "3658900074006331912": {
     "id": "3658900074006331912",
-    "magazine_capacity": 75,
+    "magazine_capacity": 100,
     "chambered": 0,
     "magazines": 0,
     "magazines_refill": 6,
@@ -1515,51 +1528,6 @@
     "beam_type": "BeamType_TripodEye",
     "noise_timer": 0.25,
     "key": "Quantum Disruptor Beam"
-  },
-  "3101227300789072443": {
-    "id": "3101227300789072443",
-    "magazine_capacity": 1000,
-    "chambered": 1,
-    "magazines": 6,
-    "magazines_refill": 6,
-    "magazines_max": 12,
-    "name": "Cannon Turret",
-    "distance": 100,
-    "health": 800,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
-    "aim_drag": 0.5,
-    "aim_flinch_decrease": 1,
-    "aim_flinch_max": 5,
-    "use_high_arc": 0,
-    "aim_interpolation_speed": 3.1400001,
-    "sway_multiplier": {"x": 1, "y": 0.5},
-    "sway_frequency_multiplier": {"x": 1, "y": 1},
-    "recoil_info": {
-      "drift": {
-        "horizontal_recoil": 2.5,
-        "vertical_recoil": 10,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      },
-      "climb": {
-        "horizontal_recoil": 2.5,
-        "vertical_recoil": 10,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      }
-    },
-    "spread_info": {"horizontal": 20, "vertical": 20},
-    "noise_template": "NoiseTemplate_Weapon_Medium",
-    "scope_responsiveness": 10,
-    "ergonomics": 65,
-    "infinite_ammo": 1,
-    "fire_modes": ["Automatic"],
-    "function_info": [],
-    "arc_type": "ArcType_IlluminateObelisk",
-    "rounds_per_minute": -1,
-    "key": "Cannon Turret"
   },
   "602390376167162446": {
     "id": "602390376167162446",
@@ -1713,9 +1681,9 @@
     "id": "4885016034561106550",
     "magazine_capacity": 30,
     "chambered": 1,
-    "magazines": 7,
-    "magazines_refill": 10,
-    "magazines_max": 10,
+    "magazines": 6,
+    "magazines_refill": 6,
+    "magazines_max": 12,
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Liberator Penetrator",
     "prefix": "AR-23P",
@@ -1759,8 +1727,15 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
-    "customizations": {},
+    "customizations": {
+      "magazine_capacity": 30,
+      "magazines": 7,
+      "magazines_max": 10,
+      "magazines_refill": 10,
+      "reload": 3
+    },
     "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 3},
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -10}
     ],
     "key": "AR-23P Liberator Penetrator"
@@ -1925,7 +1900,7 @@
     "magazine_capacity": 10,
     "chambered": 1,
     "magazines": 4,
-    "magazines_refill": 4,
+    "magazines_refill": 8,
     "magazines_max": 8,
     "type": "LoadoutItemType_SidearmWeapon",
     "name": "Verdict",
@@ -2192,6 +2167,7 @@
     "scope_responsiveness": 10,
     "ergonomics": 65,
     "infinite_ammo": 0,
+    "sway_multiplier": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
     "holster_duration": 0.300000012,
@@ -2320,7 +2296,7 @@
     "silenced": 0,
     "burst_fire_rate": 0,
     "customizations": {
-      "magazine_capacity": 13,
+      "magazine_capacity": 16,
       "magazines": 5,
       "magazines_max": 7,
       "magazines_refill": 7,
@@ -2328,7 +2304,6 @@
       "projectile_type": "ProjectileType_Shotgun_12g_buc"
     },
     "modifiers": [
-      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 3},
       {"type": "WeaponStatModifierType_Mul_SpreadHorizontal", "value": 1},
       {"type": "WeaponStatModifierType_Mul_SpreadVertical", "value": 1},
       {"type": "WeaponStatModifierType_Mul_RecoilHorizontal", "value": 1},
@@ -2345,6 +2320,7 @@
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Slugger",
     "prefix": "SG-8S",
+    "reload": 2,
     "magazine_capacity": {"x": 8, "y": 8},
     "ammo_capacity": 60,
     "ammo_refill": 60,
@@ -2355,7 +2331,6 @@
       "primary_projectile_type": "ProjectileType_Shotgun_10g_slug",
       "alternate_projectile_type": "ProjectileType_Shotgun_10g_slug"
     },
-    "reload": 2,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 40,
@@ -2370,7 +2345,7 @@
         "random_amount": {"x": 0.100000001, "y": 1}
       }
     },
-    "spread_info": {"horizontal": 6, "vertical": 6},
+    "spread_info": {"horizontal": 20, "vertical": 20},
     "noise_template": "NoiseTemplate_Weapon_Medium",
     "scope_responsiveness": 10,
     "ergonomics": 65,
@@ -2400,6 +2375,62 @@
     ],
     "key": "SG-8S Slugger"
   },
+  "15470422196992643923": {
+    "id": "15470422196992643923",
+    "type": "LoadoutItemType_SidearmWeapon",
+    "name": "Stim Pistol",
+    "prefix": "P-11",
+    "reload": 3.79999995,
+    "magazine_capacity": {"x": 6, "y": 0},
+    "ammo_capacity": 24,
+    "ammo_refill": 18,
+    "ammo": 18,
+    "reload_amount": 1,
+    "chambered": 0,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Pistol_Stim",
+      "alternate_projectile_type": "ProjectileType_None"
+    },
+    "recoil_info": {
+      "drift": {
+        "horizontal_recoil": 10,
+        "vertical_recoil": 30,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      },
+      "climb": {
+        "horizontal_recoil": 5,
+        "vertical_recoil": 25,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      }
+    },
+    "spread_info": {"horizontal": 30, "vertical": 30},
+    "noise_template": "NoiseTemplate_Weapon_Small",
+    "scope_responsiveness": 10,
+    "ergonomics": 100,
+    "infinite_ammo": 0,
+    "fire_modes": ["Single"],
+    "function_info": [],
+    "holster_duration": 0.400000006,
+    "wield_duration": 0.300000012,
+    "pickup_duration": 0.5,
+    "equipment_type": "EquipmentType_Special",
+    "is_one_handed": 1,
+    "projectile_type": "Pistol_Stim",
+    "rounds_per_minute": {"x": 0, "y": 70, "z": 0},
+    "heat_buildup": {
+      "heat_build_per_shot": 1,
+      "maximum_heat": 100,
+      "heat_bleed_speed": 10,
+      "heat_bleed_delay": 5
+    },
+    "num_low_ammo_rounds": 0,
+    "spinup_time": 0,
+    "silenced": 0,
+    "burst_fire_rate": 0,
+    "key": "P-11 Stim Pistol"
+  },
   "2877271129141764950": {
     "id": "2877271129141764950",
     "type": "LoadoutItemType_PrimaryWeapon",
@@ -2408,14 +2439,14 @@
     "reload": 3,
     "recoil_info": {
       "drift": {
-        "horizontal_recoil": 2,
-        "vertical_recoil": 0.5,
+        "horizontal_recoil": 0,
+        "vertical_recoil": 0,
         "horizontal_bias": 0,
         "random_amount": {"x": 0.100000001, "y": 1}
       },
       "climb": {
-        "horizontal_recoil": 1,
-        "vertical_recoil": 0.5,
+        "horizontal_recoil": 0,
+        "vertical_recoil": 0,
         "horizontal_bias": 0,
         "random_amount": {"x": 0.100000001, "y": 1}
       }
@@ -2436,12 +2467,12 @@
     "magazines_refill": 6,
     "magazines_max": 4,
     "overheat_temperature": 100,
-    "warning_temperature": 85,
-    "emission_temperature": 70,
+    "warning_temperature": 80,
+    "emission_temperature": 65,
     "temp_gain_per_shot": 2,
     "temp_gain_per_second": 12.5,
     "temp_gain_per_second_modifier": 100,
-    "temp_loss_per_second": 6.65999985,
+    "temp_loss_per_second": 8.5,
     "temp_loss_modifier_extreme_heat": 0.75,
     "temp_loss_modifier_extreme_cold": 1.5,
     "needs_reload_after_overheat": 1,
@@ -2454,7 +2485,6 @@
     "customizations": {"beam_type": "BeamType_Medium"},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0},
-      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3},
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
     ],
     "key": "LAS-5 Scythe"
@@ -2472,14 +2502,14 @@
     "reload": 3,
     "recoil_info": {
       "drift": {
-        "horizontal_recoil": 15,
-        "vertical_recoil": 25,
+        "horizontal_recoil": 10,
+        "vertical_recoil": 20,
         "horizontal_bias": 0,
         "random_amount": {"x": 0.100000001, "y": 1}
       },
       "climb": {
         "horizontal_recoil": 2.5,
-        "vertical_recoil": 20,
+        "vertical_recoil": 15,
         "horizontal_bias": 0,
         "random_amount": {"x": 0.100000001, "y": 1}
       }
@@ -2513,7 +2543,7 @@
       "magazine_capacity": 50,
       "magazines": 5,
       "magazines_max": 7,
-      "magazines_refill": 5,
+      "magazines_refill": 7,
       "reload": 2.5
     },
     "modifiers": [
@@ -2606,8 +2636,8 @@
     "magazines_refill": 6,
     "magazines_max": 3,
     "overheat_temperature": 100,
-    "warning_temperature": 75,
-    "emission_temperature": 70,
+    "warning_temperature": 80,
+    "emission_temperature": 65,
     "temp_gain_per_shot": 1.14999998,
     "temp_gain_per_second": 0,
     "temp_gain_per_second_modifier": 100,
@@ -2649,14 +2679,14 @@
     "prefix": "FLAM-40",
     "recoil_info": {
       "drift": {
-        "horizontal_recoil": 2.5,
-        "vertical_recoil": 10,
+        "horizontal_recoil": 0,
+        "vertical_recoil": 0,
         "horizontal_bias": 0,
         "random_amount": {"x": 0.100000001, "y": 1}
       },
       "climb": {
-        "horizontal_recoil": 2.5,
-        "vertical_recoil": 10,
+        "horizontal_recoil": 0,
+        "vertical_recoil": 5,
         "horizontal_bias": 0,
         "random_amount": {"x": 0.100000001, "y": 1}
       }
@@ -2674,7 +2704,7 @@
     "equipment_type": "EquipmentType_Incendiary",
     "is_one_handed": 0,
     "warmup_time": 0.699999988,
-    "cooldown_time": 15,
+    "cooldown_time": 10,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
     "projectile_type": "ProjectileType_None",
@@ -3142,9 +3172,10 @@
     "type": "LoadoutItemType_SidearmWeapon",
     "name": "Senator",
     "prefix": "P-4",
+    "reload": 2.79999995,
     "magazine_capacity": {"x": 6, "y": 0},
     "ammo_capacity": 40,
-    "ammo_refill": 20,
+    "ammo_refill": 40,
     "ammo": 32,
     "reload_amount": 1,
     "chambered": 0,
@@ -3152,7 +3183,6 @@
       "primary_projectile_type": "ProjectileType_Pistol_13x40mm_fmj",
       "alternate_projectile_type": "ProjectileType_None"
     },
-    "reload": 2.79999995,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -3334,7 +3364,7 @@
   },
   "18417602992972518459": {
     "id": "18417602992972518459",
-    "magazine_capacity": 75,
+    "magazine_capacity": 100,
     "chambered": 0,
     "magazines": 0,
     "magazines_refill": 6,
@@ -3365,7 +3395,7 @@
     "fire_modes": ["Automatic"],
     "function_info": [],
     "projectile_type": "Cannon_30mm_APHE",
-    "rounds_per_minute": {"x": 0, "y": 125, "z": 0},
+    "rounds_per_minute": {"x": 0, "y": 175, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
       "maximum_heat": 100,
@@ -3586,8 +3616,8 @@
       "projectile_type": "ProjectileType_Pistol_9x20mm_hp",
       "magazine_capacity": 15,
       "magazines": 4,
-      "magazines_max": 5,
-      "magazines_refill": 5,
+      "magazines_max": 6,
+      "magazines_refill": 6,
       "reload": 1.8
     },
     "modifiers": [
@@ -4307,7 +4337,9 @@
   "294590291936179579": {
     "id": "294590291936179579",
     "type": "LoadoutItemType_ThrowableWeapon",
-    "holster_duration": 0.300000012,
+    "name": "Gas",
+    "prefix": "G-4",
+    "holster_duration": 0.100000001,
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SpecialGrenade",
@@ -4318,11 +4350,12 @@
     "sticky": 0,
     "sticky_delay": 0,
     "is_impact_trigger": 0,
-    "start_amount": 4,
+    "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_OrbitalGas"
+    "explosion_type": "ExplosionType_GasGrenade",
+    "key": "G-4 Gas"
   },
   "7715225218085078398": {
     "id": "7715225218085078398",
@@ -4376,63 +4409,12 @@
     "equipment_type": "EquipmentType_Pistol",
     "is_one_handed": 0
   },
-  "10589153337282573789": {
-    "id": "10589153337282573789",
-    "magazine_capacity": 7,
-    "chambered": 1,
-    "magazines": 4,
-    "magazines_refill": 3,
-    "magazines_max": 6,
-    "type": "LoadoutItemType_SupportWeapon",
-    "reload": 3,
-    "recoil_info": {
-      "drift": {
-        "horizontal_recoil": 20,
-        "vertical_recoil": 300,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      },
-      "climb": {
-        "horizontal_recoil": 2,
-        "vertical_recoil": 300,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      }
-    },
-    "spread_info": {"horizontal": 0.100000001, "vertical": 0.100000001},
-    "noise_template": "NoiseTemplate_Weapon_Large",
-    "scope_responsiveness": 0.5,
-    "ergonomics": 35,
-    "infinite_ammo": 0,
-    "fire_modes": ["Single"],
-    "function_info": [],
-    "holster_duration": 0.5,
-    "wield_duration": 0.5,
-    "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_SniperRifle",
-    "is_one_handed": 0,
-    "projectile_type": "Rifle_12p5x100mm_eit",
-    "rounds_per_minute": {"x": 0, "y": 400, "z": 0},
-    "heat_buildup": {
-      "heat_build_per_shot": 1,
-      "maximum_heat": 100,
-      "heat_bleed_speed": 10,
-      "heat_bleed_delay": 5
-    },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
-    "customizations": {},
-    "modifiers": [
-      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -14}
-    ]
-  },
   "5910727434981086692": {
     "id": "5910727434981086692",
     "type": "LoadoutItemType_SupportWeapon",
     "name": "Break-Action Shotgun",
     "prefix": "SG-88",
+    "reload": 2.5,
     "magazine_capacity": {"x": 2, "y": 0},
     "ammo_capacity": 40,
     "ammo_refill": 20,
@@ -4443,7 +4425,6 @@
       "primary_projectile_type": "ProjectileType_Shotgun_10g_mag",
       "alternate_projectile_type": "ProjectileType_None"
     },
-    "reload": 2.5,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 3,
@@ -4651,9 +4632,9 @@
     "id": "211331680192206384",
     "magazine_capacity": 10,
     "chambered": 1,
-    "magazines": 1,
-    "magazines_refill": 2,
-    "magazines_max": 2,
+    "magazines": 2,
+    "magazines_refill": 3,
+    "magazines_max": 3,
     "type": "LoadoutItemType_SupportWeapon",
     "name": "Grenade Launcher",
     "prefix": "GL-21",
@@ -4697,61 +4678,6 @@
     "silenced": 0,
     "burst_fire_rate": 0,
     "key": "GL-21 Grenade Launcher"
-  },
-  "6707034374626068020": {
-    "id": "6707034374626068020",
-    "magazine_capacity": 1000,
-    "chambered": 1,
-    "magazines": 6,
-    "magazines_refill": 6,
-    "magazines_max": 12,
-    "backblast_angle": 15,
-    "backblast_offset": 5.5,
-    "backblast_explosion_type": "ExplosionType_BackblastHuge",
-    "name": "Ballistic Missile",
-    "distance": 120,
-    "health": 750,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
-    "recoil_info": {
-      "drift": {
-        "horizontal_recoil": 2.5,
-        "vertical_recoil": 10,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      },
-      "climb": {
-        "horizontal_recoil": 2.5,
-        "vertical_recoil": 10,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      }
-    },
-    "spread_info": {"horizontal": 250, "vertical": 250},
-    "noise_template": "NoiseTemplate_Weapon_Medium",
-    "scope_responsiveness": 10,
-    "ergonomics": 65,
-    "infinite_ammo": 1,
-    "fire_modes": ["Automatic"],
-    "function_info": [],
-    "turn_speed_vertical": 8,
-    "turn_speed_horizontal": 15,
-    "vertical_limit_min": -30,
-    "vertical_limit_max": 90,
-    "projectile_type": "Cyborg_HeavyRocket",
-    "rounds_per_minute": {"x": 1000, "y": 1000, "z": 1000},
-    "heat_buildup": {
-      "heat_build_per_shot": 1,
-      "maximum_heat": 100,
-      "heat_bleed_speed": 10,
-      "heat_bleed_delay": 5
-    },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
-    "key": "Ballistic Missile"
   },
   "9468080011357415026": {
     "id": "9468080011357415026",
@@ -5276,6 +5202,58 @@
     "on_stick_damage_type": "DamageInfoType_None",
     "explosion_type": "ExplosionType_Snowball_Stun"
   },
+  "9471740285315897155": {
+    "id": "9471740285315897155",
+    "magazine_capacity": 200,
+    "chambered": 0,
+    "magazines": 5,
+    "magazines_refill": 6,
+    "magazines_max": 10,
+    "name": "Heavy Fusion Repeater",
+    "health": 500,
+    "health_changerate": 0,
+    "health_changerate_disabled": 0,
+    "require_demolition": 0,
+    "recoil_info": {
+      "drift": {
+        "horizontal_recoil": 2.5,
+        "vertical_recoil": 10,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      },
+      "climb": {
+        "horizontal_recoil": 2.5,
+        "vertical_recoil": 10,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      }
+    },
+    "spread_info": {"horizontal": 40, "vertical": 40},
+    "noise_template": "NoiseTemplate_Weapon_Medium",
+    "scope_responsiveness": 10,
+    "ergonomics": 65,
+    "infinite_ammo": 1,
+    "fire_modes": ["Automatic"],
+    "function_info": [],
+    "turn_speed_vertical": 45,
+    "turn_speed_horizontal": 45,
+    "vertical_limit_min": -35,
+    "vertical_limit_max": 35,
+    "explosion_type": "ExplosionType_Conscript_Backpack_Explosion",
+    "projectile_type": "Cyborg_LightCannon",
+    "rounds_per_minute": {"x": 0, "y": 120, "z": 0},
+    "heat_buildup": {
+      "heat_build_per_shot": 1,
+      "maximum_heat": 100,
+      "heat_bleed_speed": 10,
+      "heat_bleed_delay": 5
+    },
+    "num_low_ammo_rounds": 4,
+    "spinup_time": 0,
+    "silenced": 0,
+    "burst_fire_rate": 0,
+    "key": "Heavy Fusion Repeater"
+  },
   "16974551944278808389": {
     "id": "16974551944278808389",
     "magazine_capacity": 300,
@@ -5538,8 +5516,8 @@
     "sticky": 1,
     "sticky_delay": 0.25,
     "is_impact_trigger": 0,
-    "start_amount": 3,
-    "max_amount": 4,
+    "start_amount": 2,
+    "max_amount": 3,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
     "explosion_type": "ExplosionType_Thermite",
@@ -5725,59 +5703,6 @@
     "silenced": 0,
     "burst_fire_rate": 0
   },
-  "11732808277634566119": {
-    "id": "11732808277634566119",
-    "type": "LoadoutItemType_SidearmWeapon",
-    "recoil_info": {
-      "drift": {
-        "horizontal_recoil": 3,
-        "vertical_recoil": 1,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 0.5}
-      },
-      "climb": {
-        "horizontal_recoil": 1,
-        "vertical_recoil": 0.5,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      }
-    },
-    "spread_info": {"horizontal": 10, "vertical": 10},
-    "noise_template": "NoiseTemplate_Weapon_Small",
-    "scope_responsiveness": 10,
-    "ergonomics": 95,
-    "infinite_ammo": 0,
-    "fire_modes": ["Automatic"],
-    "function_info": [],
-    "holster_duration": 0.0500000007,
-    "wield_duration": 0.300000012,
-    "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 1,
-    "magazines": 3,
-    "magazines_refill": 6,
-    "magazines_max": 3,
-    "overheat_temperature": 100,
-    "warning_temperature": 75,
-    "emission_temperature": 70,
-    "temp_gain_per_shot": 2,
-    "temp_gain_per_second": 20,
-    "temp_gain_per_second_modifier": 100,
-    "temp_loss_per_second": 10,
-    "temp_loss_modifier_extreme_heat": 0.75,
-    "temp_loss_modifier_extreme_cold": 1.5,
-    "needs_reload_after_overheat": 1,
-    "firing_charge": 100,
-    "charge_gain_per_second": 400,
-    "charge_loss_per_second": 1000,
-    "min_reload_temperature": 0,
-    "beam_type": "BeamType_Small",
-    "noise_timer": 0.25,
-    "customizations": {},
-    "modifiers": [
-      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
-    ]
-  },
   "133122695844997115": {
     "id": "133122695844997115",
     "magazine_capacity": 30,
@@ -5842,9 +5767,9 @@
   },
   "14845617694460717074": {
     "id": "14845617694460717074",
-    "magazine_capacity": 30,
+    "magazine_capacity": 35,
     "chambered": 1,
-    "magazines": 4,
+    "magazines": 5,
     "magazines_refill": 7,
     "magazines_max": 7,
     "type": "LoadoutItemType_PrimaryWeapon",
@@ -5898,7 +5823,7 @@
   },
   "14105761812163438622": {
     "id": "14105761812163438622",
-    "magazine_capacity": 200,
+    "magazine_capacity": 12,
     "chambered": 0,
     "magazines": 5,
     "magazines_refill": 6,
@@ -5922,7 +5847,7 @@
     "noise_template": "NoiseTemplate_Weapon_Medium",
     "scope_responsiveness": 10,
     "ergonomics": 65,
-    "infinite_ammo": 1,
+    "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
     "holster_duration": 0.300000012,
@@ -5966,7 +5891,7 @@
         "random_amount": {"x": 0.100000001, "y": 1}
       }
     },
-    "spread_info": {"horizontal": 10, "vertical": 10},
+    "spread_info": {"horizontal": 150, "vertical": 150},
     "noise_template": "NoiseTemplate_Weapon_Medium",
     "scope_responsiveness": 10,
     "ergonomics": 65,
@@ -5991,6 +5916,50 @@
     "silenced": 0,
     "burst_fire_rate": 0,
     "key": "Fusion Autocannon"
+  },
+  "5742363029208942635": {
+    "id": "5742363029208942635",
+    "magazine_capacity": 80,
+    "chambered": 0,
+    "magazines": 3,
+    "magazines_refill": 6,
+    "magazines_max": 6,
+    "type": "LoadoutItemType_PrimaryWeapon",
+    "name": "Torcher",
+    "prefix": "FLAM-66",
+    "recoil_info": {
+      "drift": {
+        "horizontal_recoil": 0,
+        "vertical_recoil": 0,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      },
+      "climb": {
+        "horizontal_recoil": 0,
+        "vertical_recoil": 3,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      }
+    },
+    "spread_info": {"horizontal": 1, "vertical": 1},
+    "noise_template": "NoiseTemplate_Weapon_Small",
+    "scope_responsiveness": 10,
+    "ergonomics": 45,
+    "infinite_ammo": 0,
+    "fire_modes": ["Automatic"],
+    "function_info": [],
+    "holster_duration": 0.400000006,
+    "wield_duration": 0.300000012,
+    "pickup_duration": 0.5,
+    "equipment_type": "EquipmentType_Special",
+    "is_one_handed": 0,
+    "warmup_time": 0.699999988,
+    "cooldown_time": 10,
+    "spray_capsule_radius": 0,
+    "ammo_cost": 1,
+    "projectile_type": "ProjectileType_None",
+    "damage_info_type": "DamageInfoType_Projectile_Flamethrower_Ripley",
+    "key": "FLAM-66 Torcher"
   },
   "7102424959117264971": {
     "id": "7102424959117264971",
@@ -6048,14 +6017,14 @@
     "reload": 5,
     "recoil_info": {
       "drift": {
-        "horizontal_recoil": 4,
-        "vertical_recoil": 1,
-        "horizontal_bias": -0.100000001,
+        "horizontal_recoil": 0,
+        "vertical_recoil": 0,
+        "horizontal_bias": 0,
         "random_amount": {"x": 0.100000001, "y": 1}
       },
       "climb": {
-        "horizontal_recoil": 2,
-        "vertical_recoil": 1,
+        "horizontal_recoil": 0,
+        "vertical_recoil": 0,
         "horizontal_bias": 0,
         "random_amount": {"x": 0.100000001, "y": 1}
       }
@@ -6076,8 +6045,8 @@
     "magazines_refill": 6,
     "magazines_max": 1,
     "overheat_temperature": 100,
-    "warning_temperature": 92,
-    "emission_temperature": 88,
+    "warning_temperature": 80,
+    "emission_temperature": 65,
     "temp_gain_per_shot": 2,
     "temp_gain_per_second": 10,
     "temp_gain_per_second_modifier": 100,
@@ -6165,6 +6134,106 @@
     "on_stick_damage_type": "DamageInfoType_None",
     "explosion_type": "ExplosionType_Incendiary",
     "key": "G-13 Incendiary Impact"
+  },
+  "9869105320050739364": {
+    "id": "9869105320050739364",
+    "magazine_capacity": 100,
+    "chambered": 0,
+    "magazines": 2,
+    "magazines_refill": 6,
+    "magazines_max": 4,
+    "type": "LoadoutItemType_SupportWeapon",
+    "name": "Sterilizer",
+    "prefix": "TX-41",
+    "recoil_info": {
+      "drift": {
+        "horizontal_recoil": 2.5,
+        "vertical_recoil": 10,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      },
+      "climb": {
+        "horizontal_recoil": 2.5,
+        "vertical_recoil": 10,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      }
+    },
+    "spread_info": {"horizontal": 10, "vertical": 10},
+    "noise_template": "NoiseTemplate_Weapon_Small",
+    "scope_responsiveness": 10,
+    "ergonomics": 5,
+    "infinite_ammo": 0,
+    "fire_modes": ["Automatic"],
+    "function_info": [],
+    "holster_duration": 0.5,
+    "wield_duration": 0.5,
+    "pickup_duration": 0.5,
+    "equipment_type": "EquipmentType_Incendiary",
+    "is_one_handed": 0,
+    "warmup_time": 0,
+    "cooldown_time": 15,
+    "spray_capsule_radius": 0,
+    "ammo_cost": 1,
+    "projectile_type": "ProjectileType_None",
+    "damage_info_type": "DamageInfoType_Spray_Chem_Gun",
+    "key": "TX-41 Sterilizer"
+  },
+  "15214248472323070124": {
+    "id": "15214248472323070124",
+    "type": "LoadoutItemType_PrimaryWeapon",
+    "name": "Cookout",
+    "prefix": "SG-451",
+    "reload": 2,
+    "magazine_capacity": {"x": 8, "y": 8},
+    "ammo_capacity": 60,
+    "ammo_refill": 60,
+    "ammo": 32,
+    "reload_amount": 1,
+    "chambered": 1,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Shotgun_Dragon_10g_flm",
+      "alternate_projectile_type": "ProjectileType_Shotgun_Dragon_10g_flm"
+    },
+    "recoil_info": {
+      "drift": {
+        "horizontal_recoil": 35,
+        "vertical_recoil": 35,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      },
+      "climb": {
+        "horizontal_recoil": 50,
+        "vertical_recoil": 165,
+        "horizontal_bias": 0.5,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      }
+    },
+    "spread_info": {"horizontal": 180, "vertical": 140},
+    "noise_template": "NoiseTemplate_Weapon_Medium",
+    "scope_responsiveness": 10,
+    "ergonomics": 65,
+    "infinite_ammo": 0,
+    "fire_modes": ["Single"],
+    "function_info": [],
+    "holster_duration": 0.400000006,
+    "wield_duration": 0.300000012,
+    "pickup_duration": 0.5,
+    "equipment_type": "EquipmentType_Shotgun",
+    "is_one_handed": 0,
+    "projectile_type": "ProjectileType_None",
+    "rounds_per_minute": {"x": 0, "y": 80, "z": 0},
+    "heat_buildup": {
+      "heat_build_per_shot": 1,
+      "maximum_heat": 100,
+      "heat_bleed_speed": 10,
+      "heat_bleed_delay": 5
+    },
+    "num_low_ammo_rounds": 0,
+    "spinup_time": 0,
+    "silenced": 0,
+    "burst_fire_rate": 0,
+    "key": "SG-451 Cookout"
   },
   "1962385103464102102": {
     "id": "1962385103464102102",
@@ -6360,9 +6429,9 @@
     "id": "2114795373903595840",
     "magazine_capacity": 10,
     "chambered": 1,
-    "magazines": 1,
-    "magazines_refill": 2,
-    "magazines_max": 2,
+    "magazines": 2,
+    "magazines_refill": 3,
+    "magazines_max": 3,
     "reload": 3.5,
     "recoil_info": {
       "drift": {
@@ -7110,23 +7179,23 @@
     "id": "13918995818598980231",
     "magazine_capacity": 25,
     "chambered": 1,
-    "magazines": 4,
-    "magazines_refill": 6,
-    "magazines_max": 6,
+    "magazines": 3,
+    "magazines_refill": 4,
+    "magazines_max": 4,
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Breaker Incendiary",
     "prefix": "SG-225IE",
     "reload": 2.5,
     "recoil_info": {
       "drift": {
-        "horizontal_recoil": 11.25,
-        "vertical_recoil": 11.25,
+        "horizontal_recoil": 20,
+        "vertical_recoil": 25,
         "horizontal_bias": 0,
         "random_amount": {"x": 0.100000001, "y": 1}
       },
       "climb": {
-        "horizontal_recoil": 10,
-        "vertical_recoil": 45,
+        "horizontal_recoil": 25,
+        "vertical_recoil": 60,
         "horizontal_bias": 0.5,
         "random_amount": {"x": 0.100000001, "y": 1}
       }
@@ -7167,6 +7236,7 @@
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Punisher",
     "prefix": "SG-8",
+    "reload": 2,
     "magazine_capacity": {"x": 8, "y": 8},
     "ammo_capacity": 60,
     "ammo_refill": 60,
@@ -7177,7 +7247,6 @@
       "primary_projectile_type": "ProjectileType_Shotgun_10g_buc",
       "alternate_projectile_type": "ProjectileType_Shotgun_10g_buc"
     },
-    "reload": 2,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 40,
@@ -7238,7 +7307,7 @@
   },
   "13781410671701883569": {
     "id": "13781410671701883569",
-    "magazine_capacity": 75,
+    "magazine_capacity": 100,
     "chambered": 0,
     "magazines": 0,
     "magazines_refill": 6,
@@ -7269,7 +7338,7 @@
     "fire_modes": ["Automatic"],
     "function_info": [],
     "projectile_type": "Cannon_30mm_APHE",
-    "rounds_per_minute": {"x": 0, "y": 125, "z": 0},
+    "rounds_per_minute": {"x": 0, "y": 175, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
       "maximum_heat": 100,
@@ -7280,6 +7349,49 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0
+  },
+  "13198259103089806061": {
+    "id": "13198259103089806061",
+    "magazine_capacity": 100,
+    "chambered": 1,
+    "magazines": 6,
+    "magazines_refill": 6,
+    "magazines_max": 12,
+    "recoil_info": {
+      "drift": {
+        "horizontal_recoil": 2.5,
+        "vertical_recoil": 10,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      },
+      "climb": {
+        "horizontal_recoil": 2.5,
+        "vertical_recoil": 10,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      }
+    },
+    "spread_info": {"horizontal": 16, "vertical": 16},
+    "noise_template": "NoiseTemplate_Weapon_Small",
+    "scope_responsiveness": 10,
+    "ergonomics": 65,
+    "infinite_ammo": 0,
+    "fire_modes": ["Automatic", "Single", "Burst"],
+    "num_burst_rounds": 3,
+    "function_info": ["Firemode"],
+    "holster_duration": 0.300000012,
+    "wield_duration": 0.5,
+    "pickup_duration": 0.5,
+    "equipment_type": "EquipmentType_Pistol",
+    "is_one_handed": 0,
+    "customizations": {},
+    "modifiers": [],
+    "warmup_time": 0,
+    "cooldown_time": 15,
+    "spray_capsule_radius": 0,
+    "ammo_cost": 1,
+    "projectile_type": "ProjectileType_None",
+    "damage_info_type": "DamageInfoType_Drone_Chem_Gun"
   },
   "17188493825552378619": {
     "id": "17188493825552378619",
@@ -7377,8 +7489,8 @@
     "sticky_delay": 0,
     "is_impact_trigger": 0,
     "start_amount": 3,
-    "max_amount": 4,
-    "refill_amount": 2,
+    "max_amount": 5,
+    "refill_amount": 3,
     "on_stick_damage_type": "DamageInfoType_None",
     "explosion_type": "ExplosionType_Frag",
     "key": "G-6 Frag"
@@ -7485,27 +7597,13 @@
     "customizations": {},
     "modifiers": []
   },
-  "226457403917573050": {
-    "id": "226457403917573050",
-    "throw_distance_min": 0,
-    "throw_distance_max": 1,
-    "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
-    "start_amount": 4,
-    "max_amount": 4,
-    "refill_amount": 2,
-    "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_AntiTankMine"
-  },
   "14942687850090605537": {
     "id": "14942687850090605537",
     "magazine_capacity": 30,
     "chambered": 1,
-    "magazines": 7,
-    "magazines_refill": 10,
-    "magazines_max": 10,
+    "magazines": 6,
+    "magazines_refill": 6,
+    "magazines_max": 12,
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Liberator Concussive",
     "prefix": "AR-23C",
@@ -7548,8 +7646,15 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0,
-    "customizations": {},
+    "customizations": {
+      "magazine_capacity": 60,
+      "magazines": 4,
+      "magazines_max": 6,
+      "magazines_refill": 6,
+      "reload": 3
+    },
     "modifiers": [
+      {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -10},
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
     ],
     "key": "AR-23C Liberator Concussive"
@@ -7798,6 +7903,7 @@
     "reload_cost": 1,
     "name": "Autocannon",
     "prefix": "AC-8",
+    "reload": 4,
     "magazine_capacity": {"x": 10, "y": 0},
     "ammo_capacity": 0,
     "ammo_refill": 0,
@@ -7807,7 +7913,6 @@
       "primary_projectile_type": "ProjectileType_Cannon_20mm_APHET",
       "alternate_projectile_type": "ProjectileType_None"
     },
-    "reload": 4,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 200,
@@ -7901,14 +8006,14 @@
     "prefix": "LAS-7",
     "recoil_info": {
       "drift": {
-        "horizontal_recoil": 3,
-        "vertical_recoil": 1,
+        "horizontal_recoil": 0,
+        "vertical_recoil": 0,
         "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 0.5}
+        "random_amount": {"x": 0.100000001, "y": 1}
       },
       "climb": {
-        "horizontal_recoil": 1,
-        "vertical_recoil": 0.5,
+        "horizontal_recoil": 0,
+        "vertical_recoil": 0,
         "horizontal_bias": 0,
         "random_amount": {"x": 0.100000001, "y": 1}
       }
@@ -7923,16 +8028,16 @@
     "holster_duration": 0.0500000007,
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Pistol",
+    "equipment_type": "EquipmentType_Special",
     "is_one_handed": 1,
     "magazines": 3,
     "magazines_refill": 6,
     "magazines_max": 3,
     "overheat_temperature": 100,
-    "warning_temperature": 75,
-    "emission_temperature": 70,
+    "warning_temperature": 70,
+    "emission_temperature": 50,
     "temp_gain_per_shot": 2,
-    "temp_gain_per_second": 20,
+    "temp_gain_per_second": 15,
     "temp_gain_per_second_modifier": 100,
     "temp_loss_per_second": 10,
     "temp_loss_modifier_extreme_heat": 0.75,
@@ -8011,14 +8116,115 @@
     "burst_fire_rate": 0,
     "key": "AA Emplacement"
   },
+  "8896268509512551590": {
+    "id": "8896268509512551590",
+    "type": "LoadoutItemType_PrimaryWeapon",
+    "name": "Constitution",
+    "prefix": "R-2124",
+    "reload": 2,
+    "magazine_capacity": {"x": 5, "y": 0},
+    "ammo_capacity": 99,
+    "ammo_refill": 99,
+    "ammo": 60,
+    "reload_amount": 1,
+    "chambered": 1,
+    "ammo_types": {
+      "primary_projectile_type": "ProjectileType_Rifle_Constitution",
+      "alternate_projectile_type": "ProjectileType_None"
+    },
+    "recoil_info": {
+      "drift": {
+        "horizontal_recoil": 25,
+        "vertical_recoil": 25,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      },
+      "climb": {
+        "horizontal_recoil": 10,
+        "vertical_recoil": 60,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      }
+    },
+    "spread_info": {"horizontal": 0.100000001, "vertical": 0.100000001},
+    "noise_template": "NoiseTemplate_Weapon_Medium",
+    "scope_responsiveness": 10,
+    "ergonomics": 65,
+    "infinite_ammo": 0,
+    "fire_modes": ["Single"],
+    "function_info": [],
+    "holster_duration": 0.400000006,
+    "wield_duration": 0.300000012,
+    "pickup_duration": 0.5,
+    "equipment_type": "EquipmentType_MarksmanRifle",
+    "is_one_handed": 0,
+    "projectile_type": "ProjectileType_None",
+    "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
+    "heat_buildup": {
+      "heat_build_per_shot": 1,
+      "maximum_heat": 100,
+      "heat_bleed_speed": 10,
+      "heat_bleed_delay": 5
+    },
+    "num_low_ammo_rounds": 0,
+    "spinup_time": 0,
+    "silenced": 0,
+    "burst_fire_rate": 0,
+    "key": "R-2124 Constitution"
+  },
+  "4580928717960105129": {
+    "id": "4580928717960105129",
+    "magazine_capacity": 30,
+    "chambered": 0,
+    "magazines": 2,
+    "magazines_refill": 6,
+    "magazines_max": 4,
+    "type": "LoadoutItemType_SidearmWeapon",
+    "name": "Crisper",
+    "prefix": "P-72",
+    "recoil_info": {
+      "drift": {
+        "horizontal_recoil": 0,
+        "vertical_recoil": 0,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      },
+      "climb": {
+        "horizontal_recoil": 3,
+        "vertical_recoil": 3,
+        "horizontal_bias": 0,
+        "random_amount": {"x": 0.100000001, "y": 1}
+      }
+    },
+    "spread_info": {"horizontal": 1, "vertical": 1},
+    "noise_template": "NoiseTemplate_Weapon_Small",
+    "scope_responsiveness": 10,
+    "ergonomics": 95,
+    "infinite_ammo": 0,
+    "fire_modes": ["Single"],
+    "function_info": [],
+    "holster_duration": 0.400000006,
+    "wield_duration": 0.300000012,
+    "pickup_duration": 0.5,
+    "equipment_type": "EquipmentType_Special",
+    "is_one_handed": 1,
+    "warmup_time": 0.699999988,
+    "cooldown_time": 10,
+    "spray_capsule_radius": 0,
+    "ammo_cost": 1,
+    "projectile_type": "ProjectileType_None",
+    "damage_info_type": "DamageInfoType_Projectile_Flamethrower_FlamerPistol",
+    "key": "P-72 Crisper"
+  },
   "5972955417680186543": {
     "id": "5972955417680186543",
     "type": "LoadoutItemType_SidearmWeapon",
     "name": "Grenade Pistol",
     "prefix": "GP-31",
+    "reload": 2,
     "magazine_capacity": {"x": 1, "y": 0},
-    "ammo_capacity": 8,
-    "ammo_refill": 2,
+    "ammo_capacity": 6,
+    "ammo_refill": 4,
     "ammo": 4,
     "reload_amount": 1,
     "chambered": 1,
@@ -8026,7 +8232,6 @@
       "primary_projectile_type": "ProjectileType_Grenade_40mm_HEAT",
       "alternate_projectile_type": "ProjectileType_None"
     },
-    "reload": 2,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -8051,7 +8256,7 @@
     "holster_duration": 0.400000006,
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Pistol",
+    "equipment_type": "EquipmentType_Special",
     "is_one_handed": 1,
     "projectile_type": "Grenade_40mm_HEAT",
     "rounds_per_minute": {"x": 0, "y": 900, "z": 0},
@@ -8130,7 +8335,7 @@
     "magazines_max": 12,
     "name": "Heavy Fusion Cannon",
     "distance": 120,
-    "health": 750,
+    "health": 2100,
     "health_changerate": 0,
     "health_changerate_disabled": 0,
     "require_demolition": 0,
@@ -8357,49 +8562,6 @@
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
     "explosion_type": "ExplosionType_OrbitalStun"
-  },
-  "952558497108237637": {
-    "id": "952558497108237637",
-    "magazine_capacity": 400,
-    "chambered": 1,
-    "magazines": 0,
-    "magazines_refill": 6,
-    "magazines_max": 0,
-    "distance": 25,
-    "health": 500,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
-    "aim_drag": 0,
-    "aim_flinch_decrease": 500,
-    "aim_flinch_max": 0.100000001,
-    "use_high_arc": 0,
-    "aim_interpolation_speed": 3.1400001,
-    "sway_multiplier": {"x": 1, "y": 0.5},
-    "sway_frequency_multiplier": {"x": 1, "y": 1},
-    "recoil_info": {
-      "drift": {
-        "horizontal_recoil": 2.5,
-        "vertical_recoil": 10,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      },
-      "climb": {
-        "horizontal_recoil": 2.5,
-        "vertical_recoil": 10,
-        "horizontal_bias": 0,
-        "random_amount": {"x": 0.100000001, "y": 1}
-      }
-    },
-    "spread_info": {"horizontal": 10, "vertical": 10},
-    "noise_template": "NoiseTemplate_None",
-    "scope_responsiveness": 10,
-    "ergonomics": 65,
-    "infinite_ammo": 1,
-    "fire_modes": ["Automatic"],
-    "function_info": [],
-    "arc_type": "ArcType_IlluminateTurretTesla",
-    "rounds_per_minute": -1
   },
   "3374156467310513484": {
     "id": "3374156467310513484",
@@ -8809,7 +8971,7 @@
     "magazines_max": 12,
     "name": "Fusion Autocannon",
     "distance": 120,
-    "health": 750,
+    "health": 2100,
     "health_changerate": 0,
     "health_changerate_disabled": 0,
     "require_demolition": 0,
@@ -8854,7 +9016,7 @@
   },
   "16570517418531528145": {
     "id": "16570517418531528145",
-    "magazine_capacity": 75,
+    "magazine_capacity": 100,
     "chambered": 0,
     "magazines": 0,
     "magazines_refill": 6,
@@ -8885,7 +9047,7 @@
     "fire_modes": ["Automatic"],
     "function_info": [],
     "projectile_type": "Cannon_30mm_APHE",
-    "rounds_per_minute": {"x": 0, "y": 125, "z": 0},
+    "rounds_per_minute": {"x": 0, "y": 175, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
       "maximum_heat": 100,
@@ -9053,9 +9215,9 @@
       "speed_multiplier_min": 0.699999988,
       "speed_multiplier_overcharge": 1,
       "damage_multiplier_min": 1,
-      "damage_multiplier_overcharge": 1.5,
+      "damage_multiplier_overcharge": 2.5,
       "penetration_multiplier_min": 1,
-      "penetration_multiplier_overcharge": 1.5,
+      "penetration_multiplier_overcharge": 1,
       "distance_multiplier_min": 0.699999988,
       "distance_multiplier_overcharge": 1.39999998,
       "extra_arc_splits_min": 0.699999988,
@@ -9156,9 +9318,9 @@
     "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 45,
-      "magazines": 5,
-      "magazines_max": 7,
-      "magazines_refill": 7,
+      "magazines": 6,
+      "magazines_max": 8,
+      "magazines_refill": 8,
       "reload": 3,
       "projectile_type": "ProjectileType_Rifle_5p5x50mm_fmj"
     },
@@ -9295,6 +9457,7 @@
     "scope_responsiveness": 10,
     "ergonomics": 65,
     "infinite_ammo": 0,
+    "sway_multiplier": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
     "holster_duration": 0.300000012,
@@ -9744,9 +9907,9 @@
     "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 45,
-      "magazines": 5,
-      "magazines_max": 7,
-      "magazines_refill": 7,
+      "magazines": 6,
+      "magazines_max": 8,
+      "magazines_refill": 8,
       "reload": 3
     },
     "modifiers": [
@@ -9948,7 +10111,7 @@
     "holster_duration": 0.400000006,
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Shotgun",
+    "equipment_type": "EquipmentType_Special",
     "is_one_handed": 1,
     "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 650, "z": 0},
@@ -9999,7 +10162,7 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
+    "is_one_handed": 1,
     "projectile_type": "Crossbow_Bolt_exp",
     "rounds_per_minute": {"x": 0, "y": 50, "z": 0},
     "heat_buildup": {
@@ -10259,7 +10422,7 @@
     "magazines_refill": 6,
     "magazines_max": 12,
     "distance": 120,
-    "health": 750,
+    "health": 2100,
     "health_changerate": 0,
     "health_changerate_disabled": 0,
     "require_demolition": 0,
@@ -10341,5 +10504,19 @@
     "spinup_time": 0,
     "silenced": 0,
     "burst_fire_rate": 0
+  },
+  "7579602584120852463": {
+    "id": "7579602584120852463",
+    "throw_distance_min": 0,
+    "throw_distance_max": 1,
+    "use_angular_velocity": 1,
+    "sticky": 0,
+    "sticky_delay": 0,
+    "is_impact_trigger": 0,
+    "start_amount": 4,
+    "max_amount": 4,
+    "refill_amount": 2,
+    "on_stick_damage_type": "DamageInfoType_None",
+    "explosion_type": "ExplosionType_GasMine"
   }
 }
