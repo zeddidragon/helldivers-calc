@@ -15,8 +15,8 @@
       "capplus": 1,
       "category": "Assault Rifle",
       "ergonomics": 54,
-      "mags": 7,
-      "magstart": 5,
+      "mags": 8,
+      "magstart": 6,
       "modes": [
         "Automatic",
         "Single",
@@ -40,7 +40,7 @@
         "x": 4,
         "y": 4
       },
-      "supply": 7,
+      "supply": 8,
       "attacks": [
         {
           "type": "projectile",
@@ -57,7 +57,7 @@
       "cap": 30,
       "capplus": 1,
       "category": "Assault Rifle",
-      "ergonomics": 49,
+      "ergonomics": 52,
       "mags": 10,
       "magstart": 7,
       "modes": [
@@ -97,12 +97,12 @@
         "laser",
         "flashlight"
       ],
-      "cap": 30,
+      "cap": 60,
       "capplus": 1,
       "category": "Assault Rifle",
-      "ergonomics": 60,
-      "mags": 10,
-      "magstart": 7,
+      "ergonomics": 50,
+      "mags": 6,
+      "magstart": 4,
       "modes": [
         "Automatic",
         "Single"
@@ -121,7 +121,7 @@
         "x": 24,
         "y": 24
       },
-      "supply": 10,
+      "supply": 6,
       "attacks": [
         {
           "type": "projectile",
@@ -139,8 +139,8 @@
       "capplus": 1,
       "category": "Assault Rifle",
       "ergonomics": 59,
-      "mags": 7,
-      "magstart": 5,
+      "mags": 8,
+      "magstart": 6,
       "modes": [
         "Automatic",
         "Single",
@@ -165,7 +165,7 @@
         "x": 10,
         "y": 10
       },
-      "supply": 7,
+      "supply": 8,
       "attacks": [
         {
           "type": "projectile",
@@ -178,12 +178,12 @@
         "flashlight"
       ],
       "burst": 3,
-      "cap": 30,
+      "cap": 35,
       "capplus": 1,
       "category": "Assault Rifle",
       "ergonomics": 54,
       "mags": 7,
-      "magstart": 4,
+      "magstart": 5,
       "modes": [
         "Automatic",
         "Single",
@@ -349,8 +349,8 @@
       ],
       "recoil": 20,
       "recoilxy": {
-        "x": 15,
-        "y": 25
+        "x": 10,
+        "y": 20
       },
       "reload": 2.5,
       "reloadearly": 1.8,
@@ -360,7 +360,7 @@
         "x": 25,
         "y": 25
       },
-      "supply": 5,
+      "supply": 7,
       "tags": [
         "1h"
       ],
@@ -507,8 +507,8 @@
       "source": "hd-mobilize",
       "sourcepage": 8,
       "spreadxy": {
-        "x": 6,
-        "y": 6
+        "x": 20,
+        "y": 20
       },
       "attacks": [
         {
@@ -521,10 +521,10 @@
       "attachments": [
         "flashlight"
       ],
-      "cap": 13,
+      "cap": 16,
       "capplus": 1,
       "category": "Shotgun",
-      "ergonomics": 63,
+      "ergonomics": 60,
       "mags": 7,
       "magstart": 5,
       "modes": [
@@ -560,7 +560,7 @@
       "cap": 26,
       "capplus": 1,
       "category": "Shotgun",
-      "ergonomics": 24,
+      "ergonomics": 21,
       "mags": 8,
       "magstart": 6,
       "modes": [
@@ -578,8 +578,8 @@
       "source": "hd-mobilize",
       "sourcepage": 9,
       "spreadxy": {
-        "x": 300,
-        "y": 150
+        "x": 320,
+        "y": 60
       },
       "supply": 8,
       "attacks": [
@@ -598,16 +598,16 @@
       "capplus": 1,
       "category": "Shotgun",
       "ergonomics": 47,
-      "mags": 6,
-      "magstart": 4,
+      "mags": 4,
+      "magstart": 3,
       "modes": [
         "Burst",
         "Single"
       ],
       "recoil": 28,
       "recoilxy": {
-        "x": 11.25,
-        "y": 11.25
+        "x": 20,
+        "y": 25
       },
       "reload": 2.5,
       "reloadearly": 1.8,
@@ -618,7 +618,7 @@
         "x": 300,
         "y": 300
       },
-      "supply": 6,
+      "supply": 4,
       "tags": [
         "fire"
       ],
@@ -778,7 +778,7 @@
       "category": "Energy-Based",
       "ergonomics": 65,
       "modes": [
-        "Single"
+        "Automatic"
       ],
       "recoil": 60,
       "recoilxy": {
@@ -806,8 +806,8 @@
     "LAS-5 Scythe": {
       "box": 3,
       "category": "Energy-Based",
-      "ergonomics": 57,
-      "heatdown": 15,
+      "ergonomics": 60,
+      "heatdown": 11.8,
       "limit": 8,
       "mags": 4,
       "magstart": 3,
@@ -815,8 +815,8 @@
         "Automatic"
       ],
       "recoilxy": {
-        "x": 2,
-        "y": 0.5
+        "x": 0,
+        "y": 0
       },
       "reload": 1.8,
       "reloadearly": 3,
@@ -978,7 +978,7 @@
       "capplus": 1,
       "category": "Pistol",
       "ergonomics": 95,
-      "mags": 5,
+      "mags": 6,
       "magstart": 4,
       "modes": [
         "Single"
@@ -996,7 +996,7 @@
         "x": 30,
         "y": 30
       },
-      "supply": 5,
+      "supply": 6,
       "tags": [
         "1h"
       ],
@@ -1074,7 +1074,7 @@
         "x": 30,
         "y": 30
       },
-      "supply": 4,
+      "supply": 8,
       "tags": [
         "1h"
       ],
@@ -1099,9 +1099,9 @@
         "y": 50
       },
       "reload": 2,
-      "rounds": 8,
+      "rounds": 6,
       "roundstart": 4,
-      "roundsupply": 2,
+      "roundsupply": 4,
       "rpm": 900,
       "source": "demo-det",
       "sourcepage": 3,
@@ -1121,7 +1121,7 @@
       "category": "Pistol",
       "ergonomics": 92,
       "heatdown": 10,
-      "limit": 5,
+      "limit": 6.666666666666667,
       "mags": 3,
       "magstart": 3,
       "modes": [
@@ -1129,8 +1129,8 @@
       ],
       "recoil": 1,
       "recoilxy": {
-        "x": 3,
-        "y": 1
+        "x": 0,
+        "y": 0
       },
       "reload": 1.8,
       "reloadearly": 2.3,
@@ -1172,7 +1172,7 @@
       ],
       "rounds": 40,
       "roundstart": 32,
-      "roundsupply": 20,
+      "roundsupply": 40,
       "rpm": 200,
       "source": "steel-vets",
       "sourcepage": 1,
@@ -1346,8 +1346,8 @@
         "Automatic"
       ],
       "recoilxy": {
-        "x": 2.5,
-        "y": 10
+        "x": 0,
+        "y": 0
       },
       "reload": 3.9,
       "source": "support",
@@ -1412,8 +1412,8 @@
       "category": "Support Weapon",
       "cooldown": 480,
       "ergonomics": 25,
-      "mags": 2,
-      "magstart": 1,
+      "mags": 3,
+      "magstart": 2,
       "modes": [
         "Automatic",
         "Single"
@@ -1431,7 +1431,7 @@
         "y": 20
       },
       "stratcode": "dluld",
-      "supply": 2,
+      "supply": 3,
       "attacks": [
         {
           "type": "projectile",
@@ -1525,8 +1525,8 @@
         "Automatic"
       ],
       "recoilxy": {
-        "x": 4,
-        "y": 1
+        "x": 0,
+        "y": 0
       },
       "reload": 3.6,
       "reloadearly": 5,

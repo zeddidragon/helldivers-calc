@@ -50,7 +50,16 @@ function sorting(col, mainScope) {
   if(col === 'stratcode') {
     col = 'stratorder'
   }
-  if(['idx', 'id', 'damageid', 'code', 'name', 'source', 'stratorder'].includes(col)) {
+  if(col === 'type') {
+    col = 'element'
+  }
+  if(col === 'ximpactid') {
+    col = 'ximpactref'
+  }
+  if(col === 'xdelayid') {
+    col = 'xdelayref'
+  }
+  if(['idx', 'id', 'code', 'name', 'source', 'stratorder'].includes(col)) {
     dir = 1
   }
 
@@ -100,7 +109,11 @@ function sorting(col, mainScope) {
     }
   }
 
-  if(col === 'name' || col === 'code' || col == 'stratorder') {
+  if([
+    'name', 'code',
+    'stratorder', 'element',
+    'ximpactref', 'xdelayref',
+  ].includes(col)) {
     return function sortByName(a, b) {
       const diff = (a[col] || '').localeCompare(b[col] || '') * dir
       if(diff) return diff
@@ -375,13 +388,10 @@ window.locals = {
     if(wpn.roundstart == null) return wpn.rounds
     return wpn.roundstart
   },
-  element: (wpn, idx) => {
-    return data.elements[wpn.type]
-  },
   effect: (wpn, idx) => {
     const id = wpn[`func${idx}`]
-    const name = data.statuses[id]
-    const param = wpn[`param${idx}`]
+    const name = wpn[`status${idx}`]
+    const param = +wpn[`param${idx}`]?.toFixed(1) || 0
     return { id, name, param }
   },
   getHeader(scope, isSubScope) {
@@ -437,6 +447,21 @@ function t(namespace, key, fallback, l = locals.lang) {
 }
 window.t = t
 
+function asEntries(map, prop, namespace) {
+  return Object.entries(map).map(([ref, obj], idx) => {
+    const ret = {
+      ...obj,
+      ref,
+      idx,
+      name: t(namespace, ref),
+    }
+    if(obj.damageref) {
+      ret.damage = locals.byRef.damage[obj.damageref]
+    }
+    return ret
+  })
+}
+
 async function loadData() {
   const [
     manual,
@@ -454,8 +479,10 @@ async function loadData() {
     ...mined,
   }
   window.data = data
-  locals.data = data
   window.translations[locals.lang] = translations
+  locals.byRef = data
+  locals.damages = asEntries(data.damage, 'damage', 'dmg')
+  locals.projectiles = asEntries(data.projectile, 'projectile', 'prj')
   if(locals.lang !== 'en') {
     window.translations.en = await fetch(`data/lang-en.json`)
       .then(res => res.json())
@@ -720,6 +747,7 @@ async function loadData() {
   })
 
   // locals.cats = Array.from(new Set(locals.weapons.map(wpn => wpn.category)))
+  locals.cats = []
   locals.sources = data.sources
   readState()
   render()
@@ -802,7 +830,7 @@ const defaultSettings = {
   ],
   hs: [],
   scope: 'weapons',
-  scope: 'projectile',
+  scope: 'projectiles',
   lang: 'en',
 }
 

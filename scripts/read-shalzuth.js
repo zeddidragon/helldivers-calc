@@ -630,7 +630,7 @@ function readTypeProjectile(item) {
     liferandom: float(item.life_time_randomness),
     damageref: refs.damage(item.damage_info_type),
     penslow: float(item.penetration_slowdown),
-    xangle: float(item.explosion_treshold_angle),
+    xangle: float(item.explosion_threshold_angle),
     ximpactref: refs.explosion(item.explosion_type_on_impact),
     xproximity: float(item.explosion_proximity),
     xdelay: float(item.explosion_delay),

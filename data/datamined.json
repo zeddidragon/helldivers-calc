@@ -6554,6 +6554,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_100kg",
       "penslow": 0.25,
+      "xangle": 90,
       "xproximity": 0,
       "xdelay": 0.5,
       "xdelayref": "ClusterBomb"
@@ -6570,6 +6571,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_HE",
       "penslow": 0.25,
+      "xangle": 0,
       "ximpactref": "HeavyShrapnel_Clusterbombs",
       "xproximity": 0,
       "xdelay": 0
@@ -6586,6 +6588,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_100kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "EagleBomb_100kg",
       "xproximity": 0,
       "xdelay": 0
@@ -6602,6 +6605,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_100kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "EagleBomb_100kg_MK2",
       "xproximity": 0,
       "xdelay": 0
@@ -6618,6 +6622,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_100kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "EagleBomb_100kg_MK3",
       "xproximity": 0,
       "xdelay": 0
@@ -6634,6 +6639,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_100kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "EagleBomb_Napalm",
       "xproximity": 0,
       "xdelay": 0
@@ -6650,6 +6656,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_100kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "EagleBomb_Napalm_MK2",
       "xproximity": 0,
       "xdelay": 0
@@ -6666,6 +6673,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_100kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "EagleBomb_Napalm_MK3",
       "xproximity": 0,
       "xdelay": 0
@@ -6682,6 +6690,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_100kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "OrbitalSmoke",
       "xproximity": 0,
       "xdelay": 0.5
@@ -6698,6 +6707,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_500kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "CarpetBomb_200kg",
       "xproximity": 0,
       "xdelay": 0
@@ -6714,6 +6724,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_500kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "500kg_Initial_Impact",
       "xproximity": 0,
       "xdelay": 0.8,
@@ -6731,6 +6742,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_500kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Bomb_Impact",
       "xproximity": 0,
       "xdelay": 0.8,
@@ -6748,6 +6760,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bomb_500kg",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Bomb_Impact",
       "xproximity": 0,
       "xdelay": 0.8,
@@ -6764,6 +6777,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Strider_AcidStream",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Strider_AcidStream",
       "xproximity": 0,
       "xdelay": 0
@@ -6779,6 +6793,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Boomer_AcidStream",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -6793,6 +6808,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Boomer_Nurser_AcidStream",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -6807,6 +6823,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Scavenger_AcidBall",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -6821,6 +6838,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Strider_Spike",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 4,
       "xdelayref": "Dummy"
@@ -6836,6 +6854,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Bug_Artillery",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Bug_Artillery",
       "xproximity": 0,
       "xdelay": 0
@@ -6852,6 +6871,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cannon_20mm_APHET",
       "penslow": 0.55,
+      "xangle": 60,
       "ximpactref": "APHET_20mm",
       "xproximity": 0,
       "xdelay": 0
@@ -6868,6 +6888,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cannon_20mm_Flak",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Flak_20mm",
       "xproximity": 4,
       "xdelay": 0
@@ -6884,6 +6905,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cannon_20mm_HVAPT",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -6899,6 +6921,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cannon_Eagle_23mm",
       "penslow": 0.55,
+      "xangle": 80,
       "ximpactref": "HE_20mm",
       "xproximity": 0,
       "xdelay": 0
@@ -6915,6 +6938,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cannon_30mm_APHE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "APHE_30mm",
       "xproximity": 0,
       "xdelay": 0
@@ -6931,6 +6955,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cannon_40mm_Flak",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Flak_40mm",
       "xproximity": 9,
       "xdelay": 0
@@ -6947,6 +6972,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cannon_40mm_APHE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "APHE_40mm",
       "xproximity": 0,
       "xdelay": 0
@@ -6963,6 +6989,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cannon_Eagle_23mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Cannon_23mm",
       "xproximity": 0,
       "xdelay": 0
@@ -6979,6 +7006,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cannon_Eagle_23mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Cannon_23mm_silent",
       "xproximity": 0,
       "xdelay": 0
@@ -6995,6 +7023,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cannon_Eagle_23mm",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7009,6 +7038,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgRifle",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7023,6 +7053,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgRifle",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7037,6 +7068,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgHmg",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7051,6 +7083,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgLightCannon",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7065,6 +7098,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgLightCannon",
       "penslow": 0.9,
+      "xangle": 80,
       "ximpactref": "Cyborg_Projectile_LightCannon",
       "xproximity": 0,
       "xdelay": 0
@@ -7080,6 +7114,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgHeavyCannon",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Cyborg_Projectile_HeavyCannon",
       "xproximity": 0,
       "xdelay": 0
@@ -7095,6 +7130,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgHeavyCannon",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Cyborg_Projectile_SpawnerMountedCannon",
       "xproximity": 0,
       "xdelay": 0
@@ -7110,6 +7146,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgHmg",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7124,6 +7161,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgShotgun",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Projectile_Shotgun_Flakblast",
       "xproximity": 0.1,
       "xdelay": 0,
@@ -7140,6 +7178,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgLightRocket",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Cyborg_Projectile_LightRocket",
       "xproximity": 0.1,
       "xdelay": 0
@@ -7155,6 +7194,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgLightRocket",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Cyborg_AssaultWalker_Projectile_LightRocket",
       "xproximity": 0.1,
       "xdelay": 0
@@ -7170,6 +7210,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgLightRocket",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Cyborg_Projectile_MediumRocket",
       "xproximity": 0,
       "xdelay": 0
@@ -7185,6 +7226,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgLightRocket",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Cyborg_Projectile_MediumRocket",
       "xproximity": 0,
       "xdelay": 0
@@ -7200,6 +7242,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgLightRocket",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Cyborg_Projectile_HeavyRocket",
       "xproximity": 0,
       "xdelay": 0
@@ -7215,6 +7258,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgLightRocket",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Cyborg_Tank_Projectile_HeavyRocket",
       "xproximity": 0,
       "xdelay": 0
@@ -7230,6 +7274,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7245,6 +7290,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Cyborg_Mortar_Base_Shell_Explosion",
       "xproximity": 0,
       "xdelay": 0
@@ -7260,6 +7306,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cyborg_Orbital_Cannon",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalBarrage",
       "xproximity": 0,
       "xdelay": 0
@@ -7275,6 +7322,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgHeavyFlamer",
       "penslow": 0.25,
+      "xangle": 90,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7290,6 +7338,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Cyborg_Artillery",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Cyborg_Artillery",
       "xproximity": 0,
       "xdelay": 0
@@ -7306,6 +7355,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Grenade_40mm_HE",
       "xproximity": 0,
       "xdelay": 0,
@@ -7322,6 +7372,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Grenade_40mm_HE_MK2",
       "xproximity": 0,
       "xdelay": 0,
@@ -7338,6 +7389,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Grenade_40mm_Incendiary",
       "xproximity": 0,
       "xdelay": 0,
@@ -7355,6 +7407,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_HEAT",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Grenade_40mm_HE_MK2",
       "xproximity": 0,
       "xdelay": 0,
@@ -7371,6 +7424,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Grenade_40mm_Stun",
       "xproximity": 0,
       "xdelay": 0,
@@ -7388,6 +7442,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_ProximityCone",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Grenade_40mm_ProximityCone",
       "xproximity": 0.5,
       "xdelay": 0
@@ -7404,6 +7459,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Grenade_Mortar_40mm_HE",
       "xproximity": 0,
       "xdelay": 0
@@ -7419,6 +7475,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "StaticField_Sentry",
       "xproximity": 0,
       "xdelay": 0.5,
@@ -7436,6 +7493,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_75mm_HEAT",
       "penslow": 0.85,
+      "xangle": 60,
       "ximpactref": "Grenade_75mm_HEAT",
       "xproximity": 0,
       "xdelay": 0
@@ -7452,6 +7510,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_85mm_HE",
       "penslow": 0.85,
+      "xangle": 89,
       "ximpactref": "Grenade_85mm_HE",
       "xproximity": 0,
       "xdelay": 0
@@ -7468,6 +7527,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_85mm_HE",
       "penslow": 0.85,
+      "xangle": 89,
       "ximpactref": "Grenade_85mm_HE_MK2",
       "xproximity": 0,
       "xdelay": 0
@@ -7484,6 +7544,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_85mm_HEAT",
       "penslow": 0.25,
+      "xangle": 20,
       "ximpactref": "Grenade_85mm_HEAT",
       "xproximity": 0,
       "xdelay": 0
@@ -7500,6 +7561,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_85mm_HEAT_MK2",
       "penslow": 0.25,
+      "xangle": 20,
       "ximpactref": "Grenade_85mm_HEAT_MK2",
       "xproximity": 0,
       "xdelay": 0
@@ -7516,6 +7578,7 @@
       "liferandom": 0,
       "damageref": "Explosion_Projectile_Grenade_85mm_DirectHit",
       "penslow": 0.25,
+      "xangle": 360,
       "ximpactref": "AirburstCluster",
       "xproximity": 2,
       "xdelay": 0.2,
@@ -7533,6 +7596,7 @@
       "liferandom": 0.7,
       "damageref": "Explosion_HandGrenade_Frag_Cluster",
       "penslow": 0.25,
+      "xangle": 0,
       "ximpactref": "AirburstCluster_Bomb",
       "xproximity": 0,
       "xdelay": 0,
@@ -7549,6 +7613,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Illuminate_Lightspear",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7563,6 +7628,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgHeavyCannon",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "illuminate_Projectile_TripodCannon",
       "xproximity": 0,
       "xdelay": 0
@@ -7578,6 +7644,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Railgun",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7592,6 +7659,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Railgun",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7606,6 +7674,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Railgun",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -7620,6 +7689,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgHeavyCannon",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Illuminate_Projectile_Huge",
       "xproximity": 0,
       "xdelay": 0
@@ -7635,6 +7705,7 @@
       "liferandom": 0,
       "damageref": "Projectile_CyborgHeavyCannon",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Illuminate_Projectile_Huge",
       "xproximity": 0,
       "xdelay": 0
@@ -7650,6 +7721,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Illuminate_OutcastBeam",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Illuminate_Medium",
       "xproximity": 0,
       "xdelay": 0
@@ -7665,6 +7737,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Grenade_40mm_ProximityCone",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Grenade_40mm_ProximityCone",
       "xproximity": 0,
       "xdelay": 0,
@@ -7682,6 +7755,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Missile_66mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Missile_66mm",
       "xproximity": 0,
       "xdelay": 0
@@ -7698,6 +7772,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Missile_66mm_MK2",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Missile_66mm_MK2",
       "xproximity": 0,
       "xdelay": 0
@@ -7714,6 +7789,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Missile_Stinger",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "StingerMissile",
       "xproximity": 10,
       "xdelay": 0
@@ -7730,6 +7806,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Missile_Faf",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "FafMissile",
       "xproximity": 0,
       "xdelay": 0
@@ -7746,6 +7823,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Missile_Faf_MK2",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "FafMissile",
       "xproximity": 0,
       "xdelay": 0
@@ -7762,6 +7840,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Missile_Combat_Walker",
       "penslow": 0.85,
+      "xangle": 60,
       "ximpactref": "Combat_Walker_Missile",
       "xproximity": 0,
       "xdelay": 0
@@ -7778,6 +7857,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Missile_Combat_Walker_MK2",
       "penslow": 0.85,
+      "xangle": 60,
       "ximpactref": "Combat_Walker_Missile_MK2",
       "xproximity": 0,
       "xdelay": 0
@@ -7794,6 +7874,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_110mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "EagleMissile",
       "xproximity": 0,
       "xdelay": 0
@@ -7809,6 +7890,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_110mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "SAM_Missile",
       "xproximity": 5,
       "xdelay": 0,
@@ -7826,6 +7908,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_110mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalShot",
       "xproximity": 0,
       "xdelay": 0,
@@ -7843,6 +7926,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_110mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalShot_MK2",
       "xproximity": 0,
       "xdelay": 0,
@@ -7860,6 +7944,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_120mm_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalStrike",
       "xproximity": 0,
       "xdelay": 0
@@ -7876,6 +7961,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_120mm_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalStrike_Cheap",
       "xproximity": 0,
       "xdelay": 0
@@ -7892,6 +7978,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalBarrage",
       "xproximity": 0,
       "xdelay": 0
@@ -7908,6 +7995,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Napalm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Orbital_Napalm",
       "xproximity": 0,
       "xdelay": 0
@@ -7924,6 +8012,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Napalm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Orbital_Napalm_Cheap",
       "xproximity": 0,
       "xdelay": 0
@@ -7940,6 +8029,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "PrecisionStrike",
       "xproximity": 0,
       "xdelay": 0
@@ -7956,6 +8046,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalBarrage_Cheap",
       "xproximity": 0,
       "xdelay": 0
@@ -7971,6 +8062,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalBarrage_MK2",
       "xproximity": 0,
       "xdelay": 0
@@ -7987,6 +8079,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Stunround",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalStun",
       "xproximity": 0,
       "xdelay": 0
@@ -8003,6 +8096,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Stunround",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalStun_MK2",
       "xproximity": 0,
       "xdelay": 0
@@ -8019,6 +8113,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Stunround",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalStun_MK3",
       "xproximity": 0,
       "xdelay": 0
@@ -8035,6 +8130,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_110mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalGas",
       "xproximity": 0,
       "xdelay": 0
@@ -8051,6 +8147,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_110mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalGas_MK2",
       "xproximity": 0,
       "xdelay": 0
@@ -8067,6 +8164,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_110mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalGas_MK3",
       "xproximity": 0,
       "xdelay": 0
@@ -8081,6 +8179,7 @@
       "lifetime": 0,
       "liferandom": 0,
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "AirStrikeSmoke",
       "xproximity": 0,
       "xdelay": 0
@@ -8096,6 +8195,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_110mm",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "OrbitalFlare",
       "xproximity": 0,
       "xdelay": 0,
@@ -8112,6 +8212,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_110mm",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8127,6 +8228,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Railcannon",
       "penslow": 0,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0.01,
       "xdelayref": "Railcannon_Impact"
@@ -8143,6 +8245,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "SEAF_Gun_Explosive",
       "xproximity": 0,
       "xdelay": 0
@@ -8159,6 +8262,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "SEAF_Gun_High_Yield_Explosive",
       "xproximity": 0,
       "xdelay": 0
@@ -8175,6 +8279,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "SEAF_Gun_Mini_Nuke",
       "xproximity": 0,
       "xdelay": 0
@@ -8191,6 +8296,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "SEAF_Gun_Smoke",
       "xproximity": 0,
       "xdelay": 0
@@ -8207,6 +8313,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "SEAF_Gun_Napalm",
       "xproximity": 0,
       "xdelay": 0
@@ -8223,6 +8330,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "SEAF_Gun_EMP",
       "xproximity": 0,
       "xdelay": 0
@@ -8239,6 +8347,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_9x20mm_exp",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8254,6 +8363,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_9x20mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8269,6 +8379,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_9x20mm_smj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8284,6 +8395,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_9x20mm_hp",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8299,6 +8411,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_9x20mm_hv",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8314,6 +8427,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_9x20mm_pla",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8329,6 +8443,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_9x20mm_rip",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8344,6 +8459,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_9x20mm_ther",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8359,6 +8475,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_9x20mm_tox",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8374,6 +8491,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_12x25mm_exp",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8389,6 +8507,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_12x25mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8404,6 +8523,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_12x25mm_hp",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8419,6 +8539,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_12x25mm_hv",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8434,6 +8555,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_12x25mm_pla",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8449,6 +8571,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_12x25mm_rip",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8464,6 +8587,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_12x25mm_ther",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8479,6 +8603,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_12x25mm_tox",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8493,6 +8618,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_12x25mm_stun",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8508,6 +8634,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_Magnum",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8523,6 +8650,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_13x40mm_ap",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8538,6 +8666,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_13x40mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8553,6 +8682,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_13x40mm_hp",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8568,6 +8698,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_13x40mm_mag",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8583,6 +8714,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Pistol_13x40mm_rip",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8596,6 +8728,7 @@
       "lifetime": 0,
       "liferandom": 0,
       "penslow": 1,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8611,6 +8744,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8626,6 +8760,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_ap",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8641,6 +8776,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_dev",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8656,6 +8792,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_exp",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8671,6 +8808,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_hp",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8686,6 +8824,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_hv",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8701,6 +8840,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_pow",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8716,6 +8856,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_rip",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8731,6 +8872,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_spr",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8746,6 +8888,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_ss",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8761,6 +8904,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_suc",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8775,6 +8919,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_5p5x50mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8790,6 +8935,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_airb",
       "penslow": 0.25,
+      "xangle": 90,
       "xproximity": 1,
       "xdelay": 1,
       "xdelayref": "Primary_Airburst"
@@ -8806,6 +8952,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_ap",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8821,6 +8968,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_dev",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8836,6 +8984,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_exp",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8851,6 +9000,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_flm",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8866,6 +9016,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8881,6 +9032,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8896,6 +9048,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_hv",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8911,6 +9064,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_pow",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8926,6 +9080,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_snb",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8941,6 +9096,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_ss",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8956,6 +9112,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_suc",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8970,6 +9127,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8984,6 +9142,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -8998,6 +9157,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_8x60mm_apt",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9013,6 +9173,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Battle_Rifle",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9027,6 +9188,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_Rico",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9041,6 +9203,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_Constitution",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9056,6 +9219,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_9x70mm_ap",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9071,6 +9235,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_9x70mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9086,6 +9251,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_9x70mm_hv",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9101,6 +9267,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_9x70mm_snb",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9116,6 +9283,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_9x70mm_soc",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9131,6 +9299,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_9x70mm_spr",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9146,6 +9315,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_9x70mm_suc",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9161,6 +9331,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_12p5x100mm_fmj",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9176,6 +9347,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_12p5x100mm_eit",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9191,6 +9363,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_12p5x100mm_eit_mk2",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9206,6 +9379,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rifle_12p5x100mm_bchp",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9220,6 +9394,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Crossbow_Bolt",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Crossbow_Bolt",
       "xproximity": 0,
       "xdelay": 0
@@ -9236,6 +9411,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_15x100mm_emp",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9251,6 +9427,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_15x100mm_exp",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Flak_20mm",
       "xproximity": 0,
       "xdelay": 0,
@@ -9268,6 +9445,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_15x100mm_frag",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9283,6 +9461,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_15x100mm_pla",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9298,6 +9477,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_15x100mm_hv",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9313,6 +9493,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_15x100mm_std",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9328,6 +9509,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_15x100mm_ther",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9343,6 +9525,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_15x100mm_tox",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9358,6 +9541,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_15x100mm_exp",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "JarPhoenix_20mm",
       "xproximity": 0,
       "xdelay": 0,
@@ -9375,6 +9559,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_70mm",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Rocket_70mm",
       "xproximity": 0,
       "xdelay": 0
@@ -9391,6 +9576,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_70mm",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Rocket_70mm_turret",
       "xproximity": 0,
       "xdelay": 0
@@ -9407,6 +9593,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_110mm",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Rocket_110mm",
       "xproximity": 0,
       "xdelay": 0
@@ -9423,6 +9610,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_110mm",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Rocket_110mm_silent",
       "xproximity": 0,
       "xdelay": 0
@@ -9439,6 +9627,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Rocket_110mm",
       "penslow": 0.25,
+      "xangle": 90,
       "ximpactref": "Rocket_110mm",
       "xproximity": 0,
       "xdelay": 0
@@ -9455,6 +9644,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_12g_bir",
       "penslow": 0.8,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9470,6 +9660,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_12g_buc",
       "penslow": 0.8,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9485,6 +9676,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_12g_bug",
       "penslow": 0.8,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9500,6 +9692,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_12g_fle",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9515,6 +9708,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_12g_flm",
       "penslow": 1,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9530,6 +9724,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_12g_mag",
       "penslow": 0.8,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9545,6 +9740,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_12g_magtri",
       "penslow": 0.8,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9560,6 +9756,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_12g_scs",
       "penslow": 0.25,
+      "xangle": 90,
       "xproximity": 0,
       "xdelay": 0,
       "xdelayref": "Primary_ScatterShot"
@@ -9576,6 +9773,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_12g_tri",
       "penslow": 0.8,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9591,6 +9789,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_bir",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9606,6 +9805,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_buc",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9620,6 +9820,7 @@
       "liferandom": 0,
       "damageref": "Projectile_TripleBarrelShotgun_10g_buc",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9634,6 +9835,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_Dragon_10g_flm",
       "penslow": 1,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9649,6 +9851,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_bug",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9664,6 +9867,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_fle",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9679,6 +9883,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_flm",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9694,6 +9899,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_frag",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "12g_Frag",
       "xproximity": 0,
       "xdelay": 0
@@ -9710,6 +9916,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_mag",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9725,6 +9932,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_magtri",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9740,6 +9948,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_sab",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9755,6 +9964,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_sab2",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9770,6 +9980,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_sabhv",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9785,6 +9996,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_scs",
       "penslow": 0.25,
+      "xangle": 90,
       "xproximity": 0,
       "xdelay": 0,
       "xdelayref": "Primary_ScatterShot"
@@ -9801,6 +10013,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_slug",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9816,6 +10029,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_10g_tri",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9831,6 +10045,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shrapnel",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9846,6 +10061,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shotgun_12g_buc",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9861,6 +10077,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shrapnel_High_Velocity",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -9876,6 +10093,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shrapnel_High_Velocity",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "HeavyShrapnel",
       "xproximity": 0,
       "xdelay": 0
@@ -9892,6 +10110,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Shrapnel_High_Velocity",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "HeavyShrapnel_MK2",
       "xproximity": 0,
       "xdelay": 0
@@ -9908,6 +10127,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Plasma_Bolt",
       "penslow": 0.35,
+      "xangle": 80,
       "ximpactref": "Plasma_Bolt_Small",
       "xproximity": 0,
       "xdelay": 0
@@ -9924,6 +10144,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Plasma_Bolt",
       "penslow": 0.35,
+      "xangle": 80,
       "ximpactref": "Plasma_Bolt_Medium",
       "xproximity": 0,
       "xdelay": 0
@@ -9940,6 +10161,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Plasma_Bolt",
       "penslow": 0.35,
+      "xangle": 80,
       "ximpactref": "Plasma_Bolt_Medium",
       "xproximity": 0,
       "xdelay": 0,
@@ -9957,6 +10179,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Plasma_Bolt_Charge",
       "penslow": 0.35,
+      "xangle": 80,
       "ximpactref": "Plasma_Bolt_Medium",
       "xproximity": 0,
       "xdelay": 0,
@@ -9974,6 +10197,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Plasma_Bolt",
       "penslow": 0.35,
+      "xangle": 80,
       "ximpactref": "Plasma_Bolt_Large",
       "xproximity": 0,
       "xdelay": 0
@@ -9990,6 +10214,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Plasma_Rifle_Charge",
       "penslow": 0.35,
+      "xangle": 80,
       "ximpactref": "Plasma_Rifle_Charge",
       "xproximity": 0,
       "xdelay": 0
@@ -10006,6 +10231,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Plasma_Bolt",
       "penslow": 0.35,
+      "xangle": 360,
       "ximpactref": "Punisher_Plasma_Explosion",
       "xproximity": 0.5,
       "xdelay": 0
@@ -10021,6 +10247,7 @@
       "lifetime": 0.03,
       "liferandom": 0,
       "penslow": 0.35,
+      "xangle": 80,
       "ximpactref": "Plasma_Cone",
       "xproximity": 0,
       "xdelay": 0,
@@ -10038,6 +10265,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Railgun",
       "penslow": 0,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -10053,6 +10281,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Railgun_Stun",
       "penslow": 0,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -10068,6 +10297,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Laser_Long",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -10083,6 +10313,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Laser_Pulse",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Laser_Pulse",
       "xproximity": 0,
       "xdelay": 0
@@ -10099,6 +10330,7 @@
       "liferandom": 0,
       "damageref": "Projectile_StratagemLauncher",
       "penslow": 0.25,
+      "xangle": 0,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -10113,6 +10345,7 @@
       "liferandom": 0,
       "damageref": "Projectile_StratagemLauncher",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -10128,6 +10361,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Flamethrower",
       "penslow": 0.25,
+      "xangle": 90,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -10143,6 +10377,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Flamethrower",
       "penslow": 0.25,
+      "xangle": 90,
       "xproximity": 0,
       "xdelay": 0
     },
@@ -10158,6 +10393,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Orbital_Cannon_380MM_HE",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "Nuke",
       "xproximity": 0,
       "xdelay": 0
@@ -10173,6 +10409,7 @@
       "liferandom": 0,
       "damageref": "Projectile_World_Meteor",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "World_Meteor",
       "xproximity": 0,
       "xdelay": 0
@@ -10188,6 +10425,7 @@
       "liferandom": 0,
       "damageref": "Projectile_World_VolcanoStrike",
       "penslow": 0.25,
+      "xangle": 80,
       "ximpactref": "World_VolcanoStrike",
       "xproximity": 0,
       "xdelay": 0
@@ -10203,6 +10441,7 @@
       "liferandom": 0,
       "damageref": "Projectile_Spikeplant_Shrapnel",
       "penslow": 0.25,
+      "xangle": 80,
       "xproximity": 0,
       "xdelay": 0
     }

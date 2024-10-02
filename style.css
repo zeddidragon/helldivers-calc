@@ -246,11 +246,6 @@ td.name {
   color: var(--explosion-text-color);
   padding-left: 0.1em;
 }
-td.id:before, td.damageid:before, td.projectileid:before, td.ximpactid:before, td.xdelayid:before {
-  color: var(--detail-text-color);
-  content: "0x";
-  font-size: 0.7em;
-}
 .cap-plus:before {
   color: var(--detail-text-color);
   content: "+";

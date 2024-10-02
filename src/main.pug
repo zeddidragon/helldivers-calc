@@ -102,8 +102,8 @@ mixin weaponsHeader
 mixin weaponDamageRow(wpn)
   - const dmg = wpn.damage || {}
   td.weapon.type(class={ xdmg: !!wpn.explosion })
-    if dmg.type
-      - var el = element(dmg)
+    if dmg.element
+      - var el = dmg.element
       span.dmgtype(
         title=t('dmg.types.full', el)
       )= t('dmg.types', el)
@@ -363,28 +363,14 @@ mixin projectilesHeader(opts = {})
     th.projectile.idx(
       title=t('table.th.prj', 'idx', 'Internal order')
     )= t('table.th.prj.label', 'idx')
-    th.projectile.id(
-      title=t('table.th.prj', 'id', 'ID of projectile data (hex)')
-    )
-      sup= t('table.th.prj.label.sup', 'id')
-      sub= t('table.th.prj.label.sub', 'id')
-    th.projectile.name(
-      title=t('table.th.prj', 'name', 'Translated name of projectile')
-    )= t('table.th.prj.label', 'name', 'Name')
-    th.projectile.damageid(
-      title=t('table.th.prj', 'damageid', 'ID of damage data used (hex)')
-    )
-      sup= t('table.th.prj.label.sup', 'damageid')
-      sub= t('table.th.prj.label.sub', 'damageid')
     th.projectile.pellets(
       title=t('table.th.prj', 'pellets', 'Pellet Count')
     )
-  else if showIds
-    th.projectile.id(
-      title=t('table.th.prj2', 'id', 'ID of medium (projectile or explosion data) (hex)')
-    )
-      sup= t('table.th.prj2.label.sup', 'id', 'ID')
-      sub= t('table.th.prj2.label.sub', 'id', 'm')
+  th.projectile.id(
+    title=t('table.th.prj2', 'id', 'ID of medium (projectile or explosion data) (hex)')
+  )
+    sup= t('table.th.prj2.label.sup', 'id', 'ID')
+    sub= t('table.th.prj2.label.sub', 'id', 'm')
   th.projectile.caliber(
     title=t('table.th.prj', 'caliber', 'Caliber (mm)')
   )= t('table.th.prj.label', 'caliber', 'Cal')
@@ -430,20 +416,12 @@ mixin projectilesHeader(opts = {})
     )
       sup= t('table.th.prj.label.sup', 'xdelayid')
       sub= t('table.th.prj.label.sub', 'xdelayid')
-  if !opts.full
-    th.projectile.name(
-      title=t('table.th.prj', 'name', 'Translated name of projectile')
-    )= t('table.th.prj.label', 'name', 'Projectile')
 
 mixin projectilesRow(prj, opts = {})
   if opts.full
     td.projectile.idx= prj.idx
-    td.projectile.id= id(prj)
-    td.projectile.name= prj.name
-    td.projectile.damageid= id(prj, 'damageid')
     td.projectile.pellets(class={ muted: prj.pellets < 2 })= prj.pellets
-  else if showIds
-    td.projectile.id= id(prj)
+  td.projectile.name(title=prj.ref)= prj.name
   td.projectile.caliber= prj.caliber
   td.projectile.velocity= prj.velocity
   td.projectile.mass= prj.mass
@@ -457,11 +435,9 @@ mixin projectilesRow(prj, opts = {})
   td.projectile.xangle(class={ muted: !prj.xangle })= `${prj.xangle}°`
   td.projectile.xproximity(class={ muted: !prj.xproximity })= prj.xproximity
   if opts.full
-    td.projectile.ximpactid= id(prj, 'ximpactid')
+    td.projectile.ximpactid(title=prj.ximpactref)= prj.ximpactref && '✓'
     td.projectile.xdelay(class={ muted: !prj.xdelay })= prj.xdelay
-    td.projectile.xdelayid= id(prj, 'xdelayid')
-  if !opts.full
-    td.projectile.name= prj.name
+    td.projectile.xdelayid(title=prj.xdelayref)= prj.xdelayref && '✓'
 
 mixin explosionsHeader(opts = {})
   if opts.full
@@ -686,10 +662,10 @@ mixin damagesRow(dmg, opts = {})
   if opts.full
     td.damage.dmgtype(
       class={muted: !dmg.type },
-      title=t('dmg.types.full', dmg.type),
+      title=t('dmg.types.full', dmg.element),
     )
-      if dmg.type
-        - var el = element(dmg)
+      if dmg.element
+        - var el = dmg.element
         span.dmgtype(
           title=t('dmg.types.full', el)
         )= t('dmg.types', el)
