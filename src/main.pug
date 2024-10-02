@@ -444,19 +444,9 @@ mixin explosionsHeader(opts = {})
     th.explosion.idx(
       title=t('table.th.aoe', 'idx', 'Internal order')
     )= t('table.th.aoe.label', 'idx')
-    th.explosion.id(
-      title=t('table.th.aoe', 'id', 'ID of explosion data (hex)')
-    )
-      sup= t('table.th.aoe.label.sup', 'id', 'ID')
-      sub= t('table.th.aoe.label.sub', 'id', 'x')
     th.explosion.name(
       title=t('table.th.aoe', 'name', 'Translated name of AoE source')
     )= t('table.th.aoe.label', 'name', 'Explosion')
-    th.explosion.damageid(
-      title=t('table.th.aoe', 'damageid', 'ID of damage data used (hex)')
-    )
-      sup= t('table.th.aoe.label.sup', 'damageid')
-      sub= t('table.th.aoe.label.sub', 'damageid')
   th.explosion.r1(
     title=t('table.th.aoe', 'r1', 'Inner Radius (m)')
   )= t('table.th.aoe.label', 'r1')
@@ -473,11 +463,6 @@ mixin explosionsHeader(opts = {})
     th.explosion.shrapnel(
       title=t('table.th.aoe', 'shrapnel', 'Amount of Shrapnel Released')
     )= t('table.th.aoe.label', 'shrapnel')
-    th.explosion.shrapnelid(
-      title=t('table.th.aoe', 'shrapnelid', 'ID of shrapnel projectile used (hex)')
-    )
-      sup= t('table.th.aoe.label.sup', 'shrapnelid')
-      sub= t('table.th.aoe.label.sub', 'shrapnelid')
 
 mixin explosionsStubRow(exp, opts = {})
   if showIds
@@ -496,11 +481,8 @@ mixin explosionsStubRow(exp, opts = {})
 mixin explosionsRow(exp, opts = {})
   if opts.full
     td.explosion.idx= exp.idx
-  if opts.full || showIds
-    td.explosion.id= id(exp)
   if opts.full
-    td.explosion.name= exp.name
-    td.explosion.damageid= id(exp, 'damageid')
+    td.explosion.name(title=exp.ref)= exp.name
   td.explosion.radius.r1= exp.r1
   td.explosion.radius.r2.rx= exp.r2
   td.explosion.radius.r3.rx= exp.r3
@@ -508,64 +490,39 @@ mixin explosionsRow(exp, opts = {})
     if exp.angle != null
       span.explosion.angle= `${exp.angle}°`
   if opts.full
-    td.explosion.shrapnel(class={ muted: !exp.shrapnel })= exp.shrapnel
-    td.explosion.projectileid(class={ muted: !exp.projectileid })= id(exp, 'projectileid')
+    td.explosion.shrapnel(class={ muted: !exp.shrapnel }, title=exp.shrapnelref )= exp.shrapnel
 
 mixin beamsHeader(opts = {})
   th.beam.idx(
     title=t('table.th.beam', 'idx', 'Internal order')
   )= t('table.th.beam.label', 'idx')
-  th.beam.id(
-    title=t('table.th.beam', 'id', 'ID of beam data (hex)')
-  )
-    sup= t('table.th.beam.label.sup', 'id', 'ID')
-    sub= t('table.th.beam.label.sub', 'id', 'b')
   th.beam.name(
     title=t('table.th.beam', 'name', 'Translated name of beam')
   )= t('table.th.beam.label', 'name', 'beam')
-  th.beam.damageid(
-    title=t('table.th.beam', 'damageid', 'ID of damage data used (hex)')
-  )
-    sup= t('table.th.beam.label.sup', 'ID')
-    sub= t('table.th.beam.label.sub', 'dmg')
   th.beam.range(
     title=t('table.th.beam', 'range', 'Max range (m)')
   )= t('table.th.beam.label', 'range', 'Range')
 
 mixin beamsRow(beam, opts = {})
   td.beam.idx= beam.idx
-  td.beam.id= id(beam)
-  td.beam.name= beam.name
-  td.beam.damageid= id(beam, 'damageid')
+  td.beam.name(title=beam.ref)= beam.name
   td.beam.range= beam.range
 
 mixin beamsStubRow(beam, opts = {})
-  if showIds
-    td.beam.id= id(beam)
   td.beam.label(
     title=t('table.th.beam', 'range', 'Beam range (m)')
   )= t('table.td.beam.label', 'range', 'Beam')
   td.beam.range.stub= beam.range
   td.beam.filler(colspan=7)
-  td.beam.name.stub= beam.name
+  td.beam.name.stub(title=beam.ref)= beam.name
 
 mixin arcsHeader(opts = {})
   th.arc.idx(
     title=t('table.th.arc', 'idx', 'Internal order')
   )= t('table.th.arc.label', 'idx')
-  th.arc.id(
-    title=t('table.th.arc', 'id', 'ID of arc data (hex)')
-  )
-    sup= t('table.th.arc.label.sup', 'id', 'ID')
-    sub= t('table.th.arc.label.sub', 'id', 'b')
   th.arc.name(
     title=t('table.th.arc', 'name', 'Translated name of arc')
   )= t('table.th.arc.label', 'name', 'arc')
-  th.arc.damageid(
-    title=t('table.th.arc', 'damageid', 'ID of damage data used (hex)')
-  )
-    sup= t('table.th.arc.label.sup', 'ID')
-    sub= t('table.th.arc.label.sub', 'dmg')
   th.arc.velocity(
     title=t('table.th.arc', 'velocity', 'Velocity (m/s)')
   )= t('table.th.arc.label', 'velocity', 'v')
@@ -586,9 +543,7 @@ mixin arcsHeader(opts = {})
 
 mixin arcsRow(arc, opts = {})
   td.arc.idx= arc.idx
-  td.arc.id= id(arc)
-  td.arc.name= arc.name
-  td.arc.damageid= id(arc, 'damageid')
+  td.arc.name(title=arc.ref)= arc.name
   td.arc.velocity= arc.velocity
   td.arc.range= arc.range
   td.arc.aimangle= `${arc.aimangle}°`

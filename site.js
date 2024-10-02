@@ -447,12 +447,12 @@ function t(namespace, key, fallback, l = locals.lang) {
 }
 window.t = t
 
-function asEntries(map, prop, namespace) {
+function asEntries(map, namespace) {
   return Object.entries(map).map(([ref, obj], idx) => {
     const ret = {
       ...obj,
       ref,
-      idx,
+      idx: idx + 1,
       name: t(namespace, ref),
     }
     if(obj.damageref) {
@@ -481,8 +481,11 @@ async function loadData() {
   window.data = data
   window.translations[locals.lang] = translations
   locals.byRef = data
-  locals.damages = asEntries(data.damage, 'damage', 'dmg')
-  locals.projectiles = asEntries(data.projectile, 'projectile', 'prj')
+  locals.damages = asEntries(data.damage, 'dmg')
+  locals.projectiles = asEntries(data.projectile, 'prj')
+  locals.explosions = asEntries(data.explosion, 'aoe')
+  locals.beams = asEntries(data.beam, 'beam')
+  locals.arcs = asEntries(data.arc, 'arc')
   if(locals.lang !== 'en') {
     window.translations.en = await fetch(`data/lang-en.json`)
       .then(res => res.json())
