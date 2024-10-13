@@ -157,7 +157,7 @@ const shalzuthSchema = [
   }},
   { source: 'overheat_temperature', cb: (wpn, temp, cfg) => {
     if(!wpn.limit && cfg.temp_gain_per_second) {
-      wpn.limit = temp / cfg.temp_gain_per_second
+      wpn.limit = +(temp / cfg.temp_gain_per_second).toFixed(2)
     } else if(!wpn.limit && cfg.temp_gain_per_shot && wpn.rpm) {
       wpn.limit = +(temp / (cfg.temp_gain_per_shot * wpn.rpm / 60)).toFixed(1)
     }
@@ -423,5 +423,4 @@ fs.writeFileSync('data/wiki.json', JSON.stringify(wikiRegister, null, 2))
 fs.writeFileSync('data/weapons.json', json({
   sources,
   weapons: setup.weapon,
-  entities,
 }))

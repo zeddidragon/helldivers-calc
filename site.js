@@ -322,7 +322,7 @@ window.locals = {
   hasTag,
   wikiLink: (wpn) => {
     const url = 'https://helldivers.wiki.gg/wiki'
-    const path = wpn.fullname.split(/\s+/).join('_')
+    const path = (wpn.fullname || wpn.name || wpn.ref).split(/\s+/).join('_')
     return `${url}/${path}`
   },
   objects: (scope) => {
@@ -448,11 +448,11 @@ function t(namespace, key, fallback, l = locals.lang) {
 window.t = t
 
 function asEntries(map, namespace) {
-  return Object.entries(map).map(([ref, obj], idx) => {
+  return Object.entries(map).map(([ref, obj], i) => {
     const ret = {
       ...obj,
       ref,
-      idx: idx + 1,
+      idx: i + 1,
       name: t(namespace, ref),
     }
     if(obj.damageref) {
@@ -461,6 +461,24 @@ function asEntries(map, namespace) {
     return ret
   })
 }
+
+function rel(obj, type, key = `${type}ref`) { // Gets child related to this object based on property name
+  return data[type][obj[key]]
+}
+
+function unroll(attack)  {
+  const { type, name: ref, count } = attack
+  const obj = locals.byRef[type][ref] || {}
+  const arr = [attack]
+  if(obj.ximpactref) {
+    arr.push({ type: 'explosion', name: obj.ximpactref })
+  }
+  if(obj.xdelayref && obj.xdelayref !== obj.ximpactref) {
+    arr.push({ type: 'explosion', name: obj.xdelayref })
+  }
+  return arr
+}
+
 
 async function loadData() {
   const [
@@ -492,35 +510,36 @@ async function loadData() {
       .catch(() => ({}))
   }
   locals.weapons = data.weapons.map((wpn, idx) => {
-    return 
     const [, code, name] = /^(\w+-\d+\w*) (.*)$/.exec(wpn.fullname) || []
     let shotdmg = 0
     let shotdmg2 = 0
     let shotdmgx = 0
     let prev = wpn
-    let subobjects = wpn.attack?.map(({ type, name: ref, count }) => {
-      const obj = byRef[type][ref] || {}
-      const parent = prev
-      prev = obj
-      const damage = obj.damage
-      const n = (count || 1) * (obj.pellets || 1)
-      if(type === 'explosion') {
-        shotdmgx += n * (damage?.dmg || 0)
-      } else {
-        shotdmg += n * (damage?.dmg || 0)
-        shotdmg2 += n * (damage?.dmg2 || 0)
-      }
-      return {
-        parent,
-        type,
-        damage,
-        [type]: obj,
-        count: count,
-        name: obj.name,
-        fullname: wpn.fullname,
-        weapon: wpn,
-      }
-    })
+    let subobjects = wpn.attack
+      ?.flatMap(unroll)
+      ?.map(({ type, name: ref, count }) => {
+        const obj = locals.byRef[type][ref] || {}
+        const parent = prev
+        prev = obj
+        const damage = rel(obj, 'damage')
+        const n = (count || 1) * (obj.pellets || 1)
+        if(type === 'explosion') {
+          shotdmgx += n * (damage?.dmg || 0)
+        } else {
+          shotdmg += n * (damage?.dmg || 0)
+          shotdmg2 += n * (damage?.dmg2 || 0)
+        }
+        return {
+          parent,
+          type,
+          damage,
+          [type]: obj,
+          count: count,
+          name: obj.name,
+          fullname: wpn.fullname,
+          weapon: wpn,
+        }
+      })
 
     const {
       damage,
@@ -673,22 +692,25 @@ async function loadData() {
 
   const arrowMap = {
     d: '🡇',
+    Down: '🡇',
     u: '🡅',
+    Up: '🡅',
     l: '🡄',
+    Left: '🡄',
     r: '🡆',
+    Right: '🡆',
   }
   const arrowOrder = {
     u: 1,
+    Up: 1,
     r: 2,
+    Right: 2,
     d: 3,
+    Down: 3,
     l: 4,
+    Left: 4,
   }
-  const strats = [
-    ...data.weapons.filter(wpn => wpn.stratcode),
-    ...data.stratagems,
-  ]
-  locals.stratagems = strats.map((strat, i) => {
-    return 
+  locals.stratagems = Object.entries(data.stratagem).map(([ref, strat], i) => {
     let shotdmg = 0
     let shotdmg2 = 0
     let maxRadius = [0, 0, 0]
@@ -715,12 +737,13 @@ async function loadData() {
         [type]: obj,
         count,
         name,
-        fullname: strat.fullname,
+        fullname: strat.name,
         stratagem: strat,
+        ref,
       }
     })
-    const arrows = strat.stratcode.split('').map(i => arrowMap[i]).join('')
-    const stratorder = strat.stratcode.split('').map(i => arrowOrder[i]).join('')
+    const arrows = strat.stratcode.map(i => arrowMap[i]).join('')
+    const stratorder = strat.stratcode.map(i => arrowOrder[i]).join('')
 
     if(strat.category === 'orbital' || strat.category === 'eagle') {
       const factor = (strat.cap || 1) * (strat.limit || 1)
@@ -735,8 +758,9 @@ async function loadData() {
     return {
       ...(mainAttack || {}),
       ...strat,
+      ref,
       idx: i + 1,
-      name: t('stratname', strat.fullname),
+      name: t('stratname', strat.name),
       calltime: strat.calltime || 0,
       shotdmg,
       shotdmg2,
@@ -833,7 +857,6 @@ const defaultSettings = {
   ],
   hs: [],
   scope: 'weapons',
-  scope: 'projectiles',
   lang: 'en',
 }
 

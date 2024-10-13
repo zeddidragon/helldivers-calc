@@ -363,14 +363,15 @@ mixin projectilesHeader(opts = {})
     th.projectile.idx(
       title=t('table.th.prj', 'idx', 'Internal order')
     )= t('table.th.prj.label', 'idx')
-    th.projectile.pellets(
-      title=t('table.th.prj', 'pellets', 'Pellet Count')
-    )
   th.projectile.id(
     title=t('table.th.prj2', 'id', 'ID of medium (projectile or explosion data) (hex)')
   )
     sup= t('table.th.prj2.label.sup', 'id', 'ID')
     sub= t('table.th.prj2.label.sub', 'id', 'm')
+  if opts.full
+    th.projectile.pellets(
+      title=t('table.th.prj', 'pellets', 'Pellet Count')
+    )
   th.projectile.caliber(
     title=t('table.th.prj', 'caliber', 'Caliber (mm)')
   )= t('table.th.prj.label', 'caliber', 'Cal')
@@ -420,8 +421,9 @@ mixin projectilesHeader(opts = {})
 mixin projectilesRow(prj, opts = {})
   if opts.full
     td.projectile.idx= prj.idx
-    td.projectile.pellets(class={ muted: prj.pellets < 2 })= prj.pellets
   td.projectile.name(title=prj.ref)= prj.name
+  if opts.full
+    td.projectile.pellets(class={ muted: prj.pellets < 2 })= prj.pellets
   td.projectile.caliber= prj.caliber
   td.projectile.velocity= prj.velocity
   td.projectile.mass= prj.mass
@@ -566,12 +568,7 @@ mixin damagesHeader(opts = {})
   if opts.full && !opts.hideId
     th.damage.idx(
       title=t('table.th.dmg', 'idx', 'Internal order')
-    )= t('table.th.dmg.label', 'idx', '#')
-    th.damage.id(
-      title=t('table.th.dmg', 'id', 'ID of damage data (hex)')
-    )
-      sup= t('table.th.dmg.label.sup', 'id', 'ID')
-      sub= t('table.th.dmg.label.sub', 'id', 'dmg')
+    )= t('table.th.dmg.label', 'idx')
   if opts.full && !opts.hideName
     th.damage.name(
       title=t('table.th.dmg', 'name', 'Translated name of damage source')
@@ -611,9 +608,8 @@ mixin damagesRow(dmg, opts = {})
   - let i
   if opts.full && !opts.hideId
     td.damage.idx= dmg.idx
-    td.damage.id= id(dmg)
   if opts.full && !opts.hideName
-    td.damage.name= dmg.name
+    td.damage.name(title=dmg.ref)= dmg.name
   if opts.full
     td.damage.dmgtype(
       class={muted: !dmg.type },

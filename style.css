@@ -166,7 +166,7 @@ td.name {
 .ap-0 {
   color: var(--muted-text-color);
 }
-.category.Orbital, .category.AR, .ap-5, .source.demo-det {
+.category.OrbitalFireSupport, .category.AR, .ap-5, .source.demo-det {
   color: #e88;
 }
 .category.SMG, .ap-8 {
@@ -178,22 +178,22 @@ td.name {
 .category.Emplacement {
   color: #3f712c;
 }
-.category.Backpack, .category.DMR, .ap-2, .source.cut-edge, .damage-type.arc {
+.category.HellpodDeployment, .category.DMR, .ap-2, .source.cut-edge, .damage-type.arc {
   color: #88e;
 }
 .category.EX, .ap-4, .source.steel-vets {
   color: var(--explosion-text-color);
 }
-.category.Mission, .category.NRG, .ap-9, .source.hd-mobilize, .rpm-laser {
+.category.Special, .category.NRG, .ap-9, .source.hd-mobilize, .rpm-laser {
   color: #ee8;
 }
 .category.HG, .ap-6 {
   color: #a8e;
 }
-.category.Eagle, .category.Status, .ap-7 {
+.category.Status, .ap-7, .category.OrbitalBombardment {
   color: #e8a;
 }
-.category.Eagle {
+.category.CloseAirSupport {
   color: #c8442e;
 }
 .category.SUP, .source.support, .ap-1 {
@@ -205,7 +205,7 @@ td.name {
 .category.GrSt, .source.viper-commandos {
   color: #aa8;
 }
-.category.Mounted, .category.Vehicle {
+.category.Mounted, .category.TactialAirInsertion {
   color: #888;
 }
 
