@@ -24,7 +24,7 @@
       ],
       "recoil": 15,
       "recoilxy": {
-        "x": 10,
+        "x": 7,
         "y": 10
       },
       "reload": 3,
@@ -54,12 +54,12 @@
         "flashlight"
       ],
       "burst": 3,
-      "cap": 30,
+      "cap": 45,
       "capplus": 1,
       "category": "Assault Rifle",
-      "ergonomics": 52,
-      "mags": 10,
-      "magstart": 7,
+      "ergonomics": 49,
+      "mags": 7,
+      "magstart": 5,
       "modes": [
         "Automatic",
         "Single",
@@ -67,7 +67,7 @@
       ],
       "recoil": 19,
       "recoilxy": {
-        "x": 15,
+        "x": 10,
         "y": 15
       },
       "reload": 3,
@@ -84,7 +84,7 @@
         "x": 1,
         "y": 1
       },
-      "supply": 10,
+      "supply": 7,
       "attacks": [
         {
           "type": "projectile",
@@ -138,7 +138,7 @@
       "cap": 45,
       "capplus": 1,
       "category": "Assault Rifle",
-      "ergonomics": 59,
+      "ergonomics": 64,
       "mags": 8,
       "magstart": 6,
       "modes": [
@@ -148,7 +148,7 @@
       ],
       "recoil": 26,
       "recoilxy": {
-        "x": 20,
+        "x": 14,
         "y": 20
       },
       "reload": 3,
@@ -196,7 +196,11 @@
       },
       "reload": 3.3,
       "reloadearly": 2.2,
-      "rpm": 600,
+      "rpm": 850,
+      "rpms": [
+        600,
+        850
+      ],
       "scopes": [
         25,
         50,
@@ -232,7 +236,7 @@
       ],
       "recoil": 40,
       "recoilxy": {
-        "x": 25,
+        "x": 17,
         "y": 35
       },
       "reload": 3,
@@ -786,11 +790,11 @@
       ],
       "recoil": 110,
       "recoilxy": {
-        "x": 40,
-        "y": 40
+        "x": 30,
+        "y": 30
       },
       "reload": 2.5,
-      "rpm": 80,
+      "rpm": 100,
       "source": "cut-edge",
       "sourcepage": 2,
       "spreadxy": {
@@ -907,13 +911,14 @@
       ]
     },
     "PLAS-1 Scorcher": {
-      "cap": 15,
+      "cap": 20,
       "category": "Energy-Based",
       "ergonomics": 55,
-      "mags": 6,
-      "magstart": 4,
+      "mags": 5,
+      "magstart": 3,
       "modes": [
-        "Single"
+        "Single",
+        "Automatic"
       ],
       "recoil": 20,
       "recoilxy": {
@@ -922,14 +927,14 @@
       },
       "reload": 2.5,
       "reloadearly": 2.3,
-      "rpm": 250,
+      "rpm": 350,
       "source": "hd-mobilize",
       "sourcepage": 10,
       "spreadxy": {
         "x": 10,
         "y": 10
       },
-      "supply": 6,
+      "supply": 5,
       "attacks": [
         {
           "type": "projectile",
@@ -953,7 +958,7 @@
         "y": 20
       },
       "reload": 2.5,
-      "rpm": 250,
+      "rpm": 1000,
       "source": "polar-pat",
       "sourcepage": 3,
       "spreadxy": {
@@ -1284,8 +1289,8 @@
         "Single"
       ],
       "recoilxy": {
-        "x": 10,
-        "y": 30
+        "x": 5,
+        "y": 10
       },
       "rounds": 24,
       "roundstart": 18,
@@ -1294,8 +1299,8 @@
       "source": "chemical-agents",
       "sourcepage": 3,
       "spreadxy": {
-        "x": 30,
-        "y": 30
+        "x": 5,
+        "y": 5
       },
       "attacks": [
         {
@@ -1310,7 +1315,7 @@
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
-      "ergonomics": 19,
+      "ergonomics": 34,
       "mags": 3,
       "magstart": 2,
       "modes": [
@@ -1344,13 +1349,13 @@
     },
     "MG-43 Machine Gun": {
       "calltime": 3,
-      "cap": 150,
+      "cap": 175,
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
       "ergonomics": 10,
       "mags": 3,
-      "magstart": 1,
+      "magstart": 2,
       "modes": [
         "Automatic"
       ],
@@ -1382,7 +1387,7 @@
     },
     "MG-206 Heavy Machine Gun": {
       "calltime": 3,
-      "cap": 75,
+      "cap": 100,
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
@@ -1984,7 +1989,7 @@
       "attacks": [
         {
           "type": "explosion",
-          "name": "Incendiary"
+          "name": "Incendiary_Impact"
         }
       ]
     },

@@ -455,7 +455,7 @@
         "Right"
       ],
       "calltime": 3,
-      "cooldown": 150,
+      "cooldown": 120,
       "weaponid": 0,
       "payload": [
         "8383906277678357886",
@@ -1689,7 +1689,7 @@
         "Left"
       ],
       "calltime": 3,
-      "cooldown": 180,
+      "cooldown": 150,
       "weaponid": 0,
       "payload": [
         "17259437333005147504",
@@ -1707,7 +1707,7 @@
         "Up"
       ],
       "calltime": 3,
-      "cooldown": 120,
+      "cooldown": 90,
       "weaponid": 0,
       "payload": [
         "4021120973472933563",
@@ -1760,8 +1760,8 @@
         "Right",
         "Left"
       ],
-      "calltime": 3,
-      "cooldown": 180,
+      "calltime": 0,
+      "cooldown": 150,
       "weaponid": 0,
       "payload": [
         "3965302274531977670",
@@ -1780,7 +1780,7 @@
         "Up"
       ],
       "calltime": 3,
-      "cooldown": 180,
+      "cooldown": 150,
       "weaponid": 0,
       "payload": [
         "6113742425058627513",
@@ -1913,8 +1913,8 @@
       "param1": 50
     },
     "Projectile_Scavenger_AcidBall": {
-      "dmg": 10,
-      "dmg2": 10,
+      "dmg": 15,
+      "dmg2": 15,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
@@ -1952,7 +1952,7 @@
       "push": 25
     },
     "Projectile_CyborgRifle": {
-      "dmg": 40,
+      "dmg": 35,
       "dmg2": 4,
       "ap1": 2,
       "ap2": 2,
@@ -2183,19 +2183,19 @@
       "stun": 20,
       "push": 10
     },
-    "Projectile_Plasma_Rifle_Charge": {
+    "Projectile_Plasma_Punisher": {
       "dmg": 100,
       "dmg2": 50,
-      "ap1": 3,
-      "ap2": 3,
-      "ap3": 3,
+      "ap1": 2,
+      "ap2": 2,
+      "ap3": 2,
       "ap4": 0,
       "demo": 10,
       "stun": 20,
       "push": 10
     },
-    "Projectile_Plasma_Bolt_Charge": {
-      "dmg": 250,
+    "Projectile_Plasma_Rifle_Charge": {
+      "dmg": 200,
       "dmg2": 100,
       "ap1": 3,
       "ap2": 3,
@@ -2443,13 +2443,13 @@
     },
     "Projectile_Pistol_Magnum": {
       "dmg": 125,
-      "dmg2": 12,
-      "ap1": 2,
-      "ap2": 2,
-      "ap3": 2,
+      "dmg2": 32,
+      "ap1": 3,
+      "ap2": 3,
+      "ap3": 3,
       "ap4": 0,
       "demo": 10,
-      "stun": 12,
+      "stun": 15,
       "push": 10
     },
     "Projectile_Pistol_13x40mm_ap": {
@@ -2464,11 +2464,11 @@
       "push": 10
     },
     "Projectile_Pistol_13x40mm_fmj": {
-      "dmg": 175,
-      "dmg2": 35,
-      "ap1": 3,
-      "ap2": 3,
-      "ap3": 3,
+      "dmg": 200,
+      "dmg2": 70,
+      "ap1": 4,
+      "ap2": 4,
+      "ap3": 4,
       "ap4": 0,
       "demo": 10,
       "stun": 20,
@@ -2764,8 +2764,8 @@
       "push": 12
     },
     "Projectile_Battle_Rifle": {
-      "dmg": 80,
-      "dmg2": 16,
+      "dmg": 90,
+      "dmg2": 23,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
@@ -3360,8 +3360,8 @@
       "push": 30
     },
     "Projectile_CyborgHmg": {
-      "dmg": 65,
-      "dmg2": 7,
+      "dmg": 60,
+      "dmg2": 6,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
@@ -3517,8 +3517,8 @@
       "push": 3
     },
     "Projectile_CyborgLightCannon": {
-      "dmg": 90,
-      "dmg2": 90,
+      "dmg": 80,
+      "dmg2": 80,
       "ap1": 4,
       "ap2": 4,
       "ap3": 3,
@@ -3621,19 +3621,19 @@
       "ap1": 7,
       "ap2": 7,
       "ap3": 7,
-      "ap4": 0,
+      "ap4": 7,
       "demo": 40,
       "stun": 20,
       "push": 15
     },
     "Projectile_Grenade_85mm_HE": {
-      "dmg": 500,
-      "dmg2": 500,
+      "dmg": 750,
+      "dmg2": 750,
       "ap1": 5,
       "ap2": 5,
       "ap3": 5,
       "ap4": 0,
-      "demo": 40,
+      "demo": 30,
       "stun": 50,
       "push": 25
     },
@@ -3698,7 +3698,7 @@
       "ap1": 7,
       "ap2": 7,
       "ap3": 7,
-      "ap4": 0,
+      "ap4": 7,
       "demo": 40,
       "stun": 50,
       "push": 25
@@ -3736,6 +3736,17 @@
       "stun": 35,
       "push": 15
     },
+    "Projectile_Missile_SAM": {
+      "dmg": 4000,
+      "dmg2": 4000,
+      "ap1": 7,
+      "ap2": 7,
+      "ap3": 7,
+      "ap4": 0,
+      "demo": 40,
+      "stun": 40,
+      "push": 30
+    },
     "Projectile_Strider_Spike": {
       "dmg": 300,
       "dmg2": 300,
@@ -3753,7 +3764,7 @@
       "ap1": 7,
       "ap2": 7,
       "ap3": 7,
-      "ap4": 0,
+      "ap4": 7,
       "demo": 50,
       "stun": 20,
       "push": 15
@@ -3797,7 +3808,7 @@
       "ap1": 7,
       "ap2": 7,
       "ap3": 6,
-      "ap4": 0,
+      "ap4": 6,
       "demo": 50,
       "stun": 60,
       "push": 15
@@ -3808,7 +3819,7 @@
       "ap1": 7,
       "ap2": 7,
       "ap3": 6,
-      "ap4": 0,
+      "ap4": 6,
       "demo": 50,
       "stun": 20,
       "push": 20
@@ -3819,7 +3830,7 @@
       "ap1": 8,
       "ap2": 7,
       "ap3": 6,
-      "ap4": 0,
+      "ap4": 6,
       "demo": 50,
       "stun": 50,
       "push": 20
@@ -3857,7 +3868,7 @@
       "ap1": 7,
       "ap2": 7,
       "ap3": 7,
-      "ap4": 0,
+      "ap4": 7,
       "demo": 50,
       "stun": 60,
       "push": 35
@@ -4015,8 +4026,8 @@
       "param1": 100
     },
     "Explosion_Scavenger_AcidBall": {
-      "dmg": 10,
-      "dmg2": 10,
+      "dmg": 15,
+      "dmg2": 15,
       "ap1": 6,
       "ap2": 0,
       "ap3": 0,
@@ -4130,8 +4141,8 @@
       "push": 7
     },
     "Explosion_Projectile_PlasmaBolt_Medium_Volatile": {
-      "dmg": 150,
-      "dmg2": 150,
+      "dmg": 100,
+      "dmg2": 100,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -4151,9 +4162,31 @@
       "stun": 35,
       "push": 30
     },
-    "Explosion_Plasma_Rifle_Charge": {
+    "Explosion_Projectile_Plasma_Punisher": {
       "dmg": 150,
       "dmg2": 150,
+      "ap1": 3,
+      "ap2": 3,
+      "ap3": 3,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 35,
+      "push": 30
+    },
+    "Explosion_Projectile_Plasma_Rifle_Charge_Medium": {
+      "dmg": 75,
+      "dmg2": 75,
+      "ap1": 3,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 10,
+      "push": 7
+    },
+    "Explosion_Projectile_Plasma_Rifle_Charge": {
+      "dmg": 300,
+      "dmg2": 300,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
@@ -4355,8 +4388,8 @@
       "push": 40
     },
     "Explosion_HandGrenade_Frag": {
-      "dmg": 250,
-      "dmg2": 250,
+      "dmg": 500,
+      "dmg2": 500,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -4377,6 +4410,20 @@
       "push": 40
     },
     "Explosion_HandGrenade_Incendiary": {
+      "dmg": 300,
+      "dmg2": 300,
+      "ap1": 3,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 30,
+      "stun": 20,
+      "push": 15,
+      "element": "Fire",
+      "status1": "Fire",
+      "param1": 100
+    },
+    "Explosion_HandGrenade_Incendiary_Impact": {
       "dmg": 150,
       "dmg2": 150,
       "ap1": 3,
@@ -4427,6 +4474,17 @@
       "dmg": 100,
       "dmg2": 100,
       "ap1": 3,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 20,
+      "stun": 50,
+      "push": 40
+    },
+    "Explosion_Vehicle_RocketTankBody": {
+      "dmg": 3000,
+      "dmg2": 3000,
+      "ap1": 6,
       "ap2": 0,
       "ap3": 0,
       "ap4": 0,
@@ -4516,6 +4574,17 @@
       "push": 20
     },
     "Explosion_HandGrenade_HighExplosive": {
+      "dmg": 800,
+      "dmg2": 800,
+      "ap1": 4,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 30,
+      "stun": 30,
+      "push": 40
+    },
+    "Explosion_HandGrenade_HighExplosive_Impact": {
       "dmg": 400,
       "dmg2": 400,
       "ap1": 4,
@@ -4527,8 +4596,8 @@
       "push": 40
     },
     "Explosion_Projectile_Cannon_Eagle_23mm": {
-      "dmg": 250,
-      "dmg2": 250,
+      "dmg": 350,
+      "dmg2": 350,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -4875,11 +4944,11 @@
       "param1": 0
     },
     "Explosion_AntiTankMine": {
-      "dmg": 1000,
-      "dmg2": 1000,
+      "dmg": 2000,
+      "dmg2": 2000,
       "ap1": 5,
-      "ap2": 5,
-      "ap3": 5,
+      "ap2": 0,
+      "ap3": 0,
       "ap4": 0,
       "demo": 30,
       "stun": 30,
@@ -4941,9 +5010,9 @@
       "push": 40
     },
     "Explosion_Projectile_Grenade_85mm_HE": {
-      "dmg": 550,
-      "dmg2": 550,
-      "ap1": 3,
+      "dmg": 800,
+      "dmg2": 800,
+      "ap1": 4,
       "ap2": 0,
       "ap3": 0,
       "ap4": 0,
@@ -5319,7 +5388,7 @@
     "Explosion_Vehicle_SeLargeDeath": {
       "dmg": 300,
       "dmg2": 300,
-      "ap1": 3,
+      "ap1": 6,
       "ap2": 0,
       "ap3": 0,
       "ap4": 0,
@@ -5885,15 +5954,15 @@
       "push": 70
     },
     "Ability_Avatar_Melee_Bayonet": {
-      "dmg": 75,
-      "dmg2": 7,
-      "ap1": 2,
+      "dmg": 110,
+      "dmg2": 55,
+      "ap1": 3,
       "ap2": 0,
       "ap3": 0,
       "ap4": 0,
       "demo": 10,
-      "stun": 10,
-      "push": 150
+      "stun": 20,
+      "push": 70
     },
     "Ability_Bug_BroodCommander_ChargeDestruction": {
       "dmg": 0,
@@ -6085,7 +6154,7 @@
       "push": 0
     },
     "Ability_Bug_Scavenger_Stab": {
-      "dmg": 35,
+      "dmg": 40,
       "dmg2": 20,
       "ap1": 2,
       "ap2": 0,
@@ -6178,9 +6247,9 @@
       "param1": 1
     },
     "Ability_Cyborg_Conscript_Shove": {
-      "dmg": 20,
+      "dmg": 35,
       "dmg2": 10,
-      "ap1": 1,
+      "ap1": 2,
       "ap2": 0,
       "ap3": 0,
       "ap4": 0,
@@ -6189,8 +6258,8 @@
       "push": 10
     },
     "Ability_Cyborg_Conscript_Assaultfist": {
-      "dmg": 40,
-      "dmg2": 20,
+      "dmg": 60,
+      "dmg2": 30,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -6200,8 +6269,8 @@
       "push": 10
     },
     "Ability_Cyborg_Lieutenant_Shove": {
-      "dmg": 65,
-      "dmg2": 40,
+      "dmg": 80,
+      "dmg2": 50,
       "ap1": 3,
       "ap2": 0,
       "ap3": 0,
@@ -6890,7 +6959,7 @@
       "penslow": 0.25,
       "xangle": 90,
       "ximpactref": "Flak_20mm",
-      "xproximity": 4,
+      "xproximity": 3,
       "xdelay": 0
     },
     "Cannon_20mm_HVAPT": {
@@ -7888,7 +7957,7 @@
       "gravity": 0.25,
       "lifetime": 3,
       "liferandom": 0,
-      "damageref": "Projectile_Rocket_110mm",
+      "damageref": "Projectile_Missile_SAM",
       "penslow": 0.25,
       "xangle": 80,
       "ximpactref": "SAM_Missile",
@@ -8721,7 +8790,7 @@
     "Pistol_Stim": {
       "caliber": 1,
       "pellets": 1,
-      "velocity": 80,
+      "velocity": 200,
       "mass": 1,
       "drag": 0.1,
       "gravity": 1,
@@ -10137,8 +10206,8 @@
       "caliber": 20,
       "pellets": 1,
       "velocity": 550,
-      "mass": 100,
-      "drag": 1,
+      "mass": 25,
+      "drag": 1.5,
       "gravity": 0.5,
       "lifetime": 0,
       "liferandom": 0,
@@ -10167,24 +10236,6 @@
       "xdelay": 0,
       "xdelayref": "Plasma_Bolt_Medium_Volatile"
     },
-    "Plasma_Bolt_Medium_Charge": {
-      "name": "Volatile Plasma Bolt",
-      "caliber": 20,
-      "pellets": 1,
-      "velocity": 550,
-      "mass": 100,
-      "drag": 1,
-      "gravity": 0.5,
-      "lifetime": 0.1,
-      "liferandom": 0,
-      "damageref": "Projectile_Plasma_Bolt_Charge",
-      "penslow": 0.35,
-      "xangle": 80,
-      "ximpactref": "Plasma_Bolt_Medium",
-      "xproximity": 0,
-      "xdelay": 0,
-      "xdelayref": "Plasma_Bolt_Medium_Volatile"
-    },
     "Plasma_Bolt_Large": {
       "name": "Large Plasma Bolt",
       "caliber": 20,
@@ -10202,14 +10253,31 @@
       "xproximity": 0,
       "xdelay": 0
     },
+    "Plasma_Bolt_Charge_Medium": {
+      "name": "Volatile Plasma Bolt",
+      "caliber": 20,
+      "pellets": 1,
+      "velocity": 550,
+      "mass": 25,
+      "drag": 1.5,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "damageref": "Projectile_Plasma_Rifle_Charge",
+      "penslow": 0.35,
+      "xangle": 80,
+      "ximpactref": "Plasma_Rifle_Charge_Medium",
+      "xproximity": 0,
+      "xdelay": 0
+    },
     "Plasma_Rifle_Charge": {
       "name": "Large Plasma Bolt",
       "caliber": 20,
       "pellets": 1,
       "velocity": 350,
-      "mass": 100,
-      "drag": 1,
-      "gravity": 1.5,
+      "mass": 25,
+      "drag": 1.5,
+      "gravity": 1,
       "lifetime": 0,
       "liferandom": 0,
       "damageref": "Projectile_Plasma_Rifle_Charge",
@@ -10221,19 +10289,19 @@
     },
     "Plasma_Punisher_Projectile": {
       "name": "Large Plasma Bolt",
-      "caliber": 20,
+      "caliber": 50,
       "pellets": 1,
-      "velocity": 90,
-      "mass": 100,
-      "drag": 4,
-      "gravity": 3,
+      "velocity": 300,
+      "mass": 25,
+      "drag": 1.4,
+      "gravity": 1,
       "lifetime": 0,
       "liferandom": 0,
-      "damageref": "Projectile_Plasma_Bolt",
+      "damageref": "Projectile_Plasma_Punisher",
       "penslow": 0.35,
       "xangle": 360,
-      "ximpactref": "Punisher_Plasma_Explosion",
-      "xproximity": 0.5,
+      "ximpactref": "Plasma_Punisher",
+      "xproximity": 0,
       "xdelay": 0
     },
     "Plasma_Explosion_Cone": {
@@ -10627,6 +10695,12 @@
       "r2": 8,
       "r3": 12
     },
+    "Cyborg_Vehicle_RocketTankBody": {
+      "damageref": "Explosion_Vehicle_RocketTankBody",
+      "r1": 0.9,
+      "r2": 1,
+      "r3": 1.1
+    },
     "Cyborg_Tank_Turret_Death": {
       "damageref": "Explosion_Vehicle_CyborgMediumDeath",
       "r1": 1.6,
@@ -10758,6 +10832,13 @@
       "r3": 9,
       "crater": "Scorch"
     },
+    "Incendiary_Impact": {
+      "damageref": "Explosion_HandGrenade_Incendiary_Impact",
+      "r1": 1,
+      "r2": 7,
+      "r3": 9,
+      "crater": "Scorch"
+    },
     "Thermite": {
       "damageref": "Explosion_HandGrenade_Thermite",
       "r1": 1.5,
@@ -10773,7 +10854,7 @@
       "crater": "Small"
     },
     "Impact": {
-      "damageref": "Explosion_HandGrenade_HighExplosive",
+      "damageref": "Explosion_HandGrenade_HighExplosive_Impact",
       "r1": 2.5,
       "r2": 7,
       "r3": 8,
@@ -10811,28 +10892,35 @@
     },
     "Plasma_Bolt_Medium_Volatile": {
       "damageref": "Explosion_Projectile_PlasmaBolt_Medium_Volatile",
-      "r1": 1.5,
-      "r2": 3,
-      "r3": 4,
+      "r1": 1,
+      "r2": 2,
+      "r3": 2,
       "crater": "Scorch"
     },
     "Plasma_Bolt_Large": {
-      "damageref": "Explosion_Projectile_PlasmaBolt_Large",
+      "damageref": "Explosion_Projectile_Plasma_Punisher",
       "r1": 2,
       "r2": 3,
       "r3": 4,
       "crater": "Scorch"
     },
+    "Plasma_Rifle_Charge_Medium": {
+      "damageref": "Explosion_Projectile_Plasma_Rifle_Charge_Medium",
+      "r1": 1,
+      "r2": 2,
+      "r3": 2,
+      "crater": "Scorch"
+    },
     "Plasma_Rifle_Charge": {
-      "damageref": "Explosion_Plasma_Rifle_Charge",
+      "damageref": "Explosion_Projectile_Plasma_Rifle_Charge",
       "r1": 2.9,
       "r2": 3,
       "r3": 4,
       "crater": "Scorch"
     },
-    "Punisher_Plasma_Explosion": {
-      "damageref": "Explosion_Projectile_PlasmaBolt_Large",
-      "r1": 2.9,
+    "Plasma_Punisher": {
+      "damageref": "Explosion_Projectile_Plasma_Punisher",
+      "r1": 2.3,
       "r2": 3,
       "r3": 4,
       "crater": "Scorch"
@@ -10905,8 +10993,8 @@
     },
     "Grenade_85mm_HE": {
       "damageref": "Explosion_Projectile_Grenade_85mm_HE",
-      "r1": 2.3,
-      "r2": 7,
+      "r1": 3,
+      "r2": 7.5,
       "r3": 12,
       "crater": "Medium"
     },
@@ -10941,10 +11029,10 @@
     "Flak_20mm": {
       "damageref": "Explosion_Projectile_Cannon_20mm_Flak",
       "r1": 2,
-      "r2": 8,
-      "r3": 10,
+      "r2": 7,
+      "r3": 8,
       "shrapnel": 25,
-      "shrapnelref": "Shrapnel_High_Velocity",
+      "shrapnelref": "Shrapnel",
       "crater": "Small"
     },
     "JarPhoenix_20mm": {
@@ -10988,8 +11076,8 @@
     },
     "Cannon_23mm": {
       "damageref": "Explosion_Projectile_Cannon_Eagle_23mm",
-      "r1": 1.5,
-      "r2": 4.5,
+      "r1": 2.5,
+      "r2": 5,
       "r3": 6.5,
       "crater": "Small"
     },
@@ -11522,7 +11610,7 @@
       "r1": 1.2,
       "r2": 5,
       "r3": 7,
-      "crater": "Medium"
+      "crater": "Scorch"
     },
     "IncendiaryMine": {
       "damageref": "Explosion_ContactMine_Incendiary",
@@ -11532,9 +11620,9 @@
       "crater": "Scorch"
     },
     "AntiTankMine": {
-      "damageref": "Explosion_Projectile_EagleBomb_100kg",
-      "r1": 5,
-      "r2": 10,
+      "damageref": "Explosion_AntiTankMine",
+      "r1": 3,
+      "r2": 7,
       "r3": 14,
       "crater": "Large"
     },

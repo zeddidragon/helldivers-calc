@@ -178,16 +178,14 @@ const stratPayloadIds = Array.from(new Set(Object
   .values(data.stratagem)
   .flatMap(strat  => strat.payload)))
 
-const stratagems = stratPayloadIds
-  .map(entity => {
-    const payload = shalzuth[entity]
+const stratagems = Object.entries(data.stratagem)
+  .map(([ref, strat]) => {
     return {
-      entity,
-      name: payload?.name,
+      ref,
+      ...strat,
+      entity: strat.payload[0],
     }
   })
-  .filter(e => e.name)
-console.log(stratagems)
 
 let dbgCondition = false
 const keyed = {}

@@ -147,6 +147,8 @@ const deltaHandlers = {
   'ability': null,
   'material_override.material_path': null,
   'material_override.material_slot': null,
+  'override_melee_ability': null,
+  'lunge_range': null,
 }
 
 const entityWhitelist = new Set()
@@ -160,6 +162,7 @@ const handlers = {
     'magazines_max',
   ]),
   UnitComponent: null,
+  UnitCustomizationComponent: null,
   WieldableComponent: null,
   WeaponReloadComponent(wpn, component) {
     if(component.duration) {
@@ -355,9 +358,11 @@ const handlers = {
   ]),
   VehicleCollisionInfoComponent: null,
   DamageOwnerComponent: null,
+  HellpodComponent: null,
   HellpodPayloadComponent: copy([
     'remove_time',
   ]),
+  HellpodRackComponent: null,
   HintTriggerComponent: null,
   SensorEyeComponent: copy([
     'distance',
@@ -476,10 +481,93 @@ const handlers = {
     'category_type',
     'block_radius',
   ]),
+  BombardmentComponent: copy([
+    'num_bombs',
+    'bomb_interval',
+    'num_salvos',
+    'salvo_interval',
+    'area_size',
+    'projectile_types',
+  ]),
+  ThrowerComponent: copy([
+    'panel_count',
+    'throwable_count',
+    'throw_delay',
+    'throw_duration',
+  ]),
+  MinefieldComponent: null,
+  StratagemFiresupportComponent: null,
   DangerWarningComponent: null,
   SensorProximityComponent: null,
   RemoteTriggerComponent: null,
   StratagemBallComponent: null,
+  TransportComponent: null,
+  ObjectiveCarryDeliveryComponent: null,
+  ObjectiveDynamicLinkComponent: null,
+  MinigameWaitComponent: null,
+  FastMotionComponent: null,
+  CorpseDecayerComponent: null,
+  VehicleComponent: copy([
+    'initial_fuel',
+    'idle_fuel_usage',
+    'max_fuel_usage',
+    'damaged_fuel_usage',
+  ]),
+  VehicleShuttleComponent: null,
+  VehicleMotionComponent: null,
+  WeatheringComponent: null,
+  VehicleCollisionDamageComponent: null,
+  BoidsComponent: null,
+  ThrusterGroupComponent: null,
+  LoopingSurfaceEffectsComponent: null,
+  RagdollForcerComponent: null,
+  MotionComponent: null,
+  OrbitalAbilityComponent(wpn, component) {
+    copy([
+      'duration',
+      'search_radius',
+      'projectile_type',
+    ])(wpn, component)
+    if(component.damage_dealer_zone) {
+      wpn.damage_info_type = component
+        .damage_dealer_zone
+        .damage_info_type
+    }
+  },
+  DepositComponent: copy([
+    'capacity',
+    'start_amount',
+    'refill_amount',
+  ]),
+  ObjectiveSecureAreaComponent: null,
+  NoiseComponent: null,
+  VehicleElectricsComponent: null,
+  FoleySoundComponent: null,
+  DrownableComponent: null,
+  VehicleCrashComponent: null,
+  FootstepEventComponent: null,
+  RotationComponent: null,
+  LocomotionComponent: null,
+  VehicleLocomotionComponent: null,
+  FakeGravityMotionComponent: null,
+  ObjectiveShuttleControllerComponent: null,
+  BowlingBallComponent: null,
+  LandingZoneBeaconComponent: null,
+  StatusEffectVolumeComponent: null,
+  ShieldComponent: copy([
+    'radius',
+    'charge',
+    'recharge_delay',
+    'broken_recharge_delay',
+    'recharge_rate',
+    'starter_charge_on_recharge',
+  ]),
+  ReinforcementLocationComponent: null,
+  SosComponent: null,
+  StoryInteractableComponent: null,
+  NpcDialogueComponent: null,
+  CharacterVoiceComponent: null,
+  CharacterNameComponent: null,
 }
 
 async function readEntities() {
@@ -501,6 +589,7 @@ async function readEntities() {
   const ThrowableComponent = ComponentType.indexOf('ThrowableComponent')
   const AiEnemyComponent = ComponentType.indexOf('AiEnemyComponent')
   const weapons = {}
+
   const componentSetup = Object.entries(EntityComponentMap)
     .filter(([id, componentIds]) => {
       return componentIds.includes(WeaponComponent)
@@ -515,9 +604,9 @@ async function readEntities() {
       const handler = handlers[componentName]
       if(handler === null) continue
       const dataPath = `entities/${componentName}Data`
-      const data = await readJson(dataDir, dataPath)
+      const data = await readJson(dataDir, dataPath).catch(() => {})
       if(!handler) {
-        console.log(data[id])
+        console.log(data?.[id])
         clipboard.writeSync(`  ${componentName}: null,`)
         throw new Error(`Handler not implemented: "${componentName}"`)
       }
@@ -575,7 +664,7 @@ function readTypeStratagem(item) {
     uses = void 0
   }
   for(const id of item.payload) {
-    entityWhitelist.add(id)
+    entityWhitelist.add(BigInt(id))
   }
   return {
     ref: refs.stratagem(item.type),
