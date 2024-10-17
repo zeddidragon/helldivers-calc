@@ -471,10 +471,17 @@ function unroll(attack)  {
   const obj = locals.byRef[type][ref] || {}
   const arr = [attack]
   if(obj.ximpactref) {
-    arr.push({ type: 'explosion', name: obj.ximpactref })
+    arr.push(...unroll({ type: 'explosion', name: obj.ximpactref, count }))
   }
   if(obj.xdelayref && obj.xdelayref !== obj.ximpactref) {
-    arr.push({ type: 'explosion', name: obj.xdelayref })
+    arr.push(...unroll({ type: 'explosion', name: obj.xdelayref, count }))
+  }
+  if(obj.shrapnelref && obj.shrapnel) {
+    arr.push(...unroll({
+      type: 'projectile',
+      name: obj.shrapnelref,
+      count: obj.shrapnel,
+    }))
   }
   return arr
 }

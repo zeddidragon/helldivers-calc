@@ -187,6 +187,7 @@ const stratagems = stratPayloadIds
     }
   })
   .filter(e => e.name)
+console.log(stratagems)
 
 let dbgCondition = false
 const keyed = {}

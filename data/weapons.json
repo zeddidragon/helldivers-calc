@@ -296,6 +296,25 @@
       "spreadxy": {"x": 20, "y": 20}
     },
     {
+      "attack": [{"type": "projectile", "name": "Shotgun_Dragon_10g_flm"}],
+      "cap": 16,
+      "capplus": 1,
+      "category": "SG",
+      "ergonomics": 65,
+      "fullname": "SG-451 Cookout",
+      "modes": ["Single"],
+      "recoilxy": {"x": 35, "y": 35},
+      "reload": 6.9,
+      "reloadone": 0.8,
+      "rounds": 60,
+      "roundstart": 32,
+      "roundsupply": 60,
+      "rpm": 80,
+      "source": "freedoms-flame",
+      "sourcepage": 1,
+      "spreadxy": {"x": 180, "y": 140}
+    },
+    {
       "attachments": ["flashlight"],
       "attack": [{"type": "projectile", "name": "Shotgun_12g_buc"}],
       "cap": 16,
@@ -538,6 +557,21 @@
       "supply": 6
     },
     {
+      "attack": [{"type": "projectile", "name": "None"}],
+      "cap": 80,
+      "category": "SPC",
+      "ergonomics": 45,
+      "fullname": "FLAM-66 Torcher",
+      "mags": 6,
+      "magstart": 3,
+      "modes": ["Automatic"],
+      "recoilxy": {"x": 0, "y": 0},
+      "source": "freedoms-flame",
+      "sourcepage": 2,
+      "spreadxy": {"x": 1, "y": 1},
+      "supply": 6
+    },
+    {
       "attack": [{"type": "projectile", "name": "Shotgun_10g_buc"}],
       "cap": 3,
       "category": "SG2",
@@ -685,6 +719,38 @@
       "tags": ["round", "1h"]
     },
     {
+      "attack": [{"type": "projectile", "name": "None"}],
+      "box": 3,
+      "cap": 30,
+      "category": "HG",
+      "ergonomics": 95,
+      "fullname": "P-72 Crisper",
+      "mags": 4,
+      "magstart": 2,
+      "modes": ["Single"],
+      "recoilxy": {"x": 0, "y": 0},
+      "source": "freedoms-flame",
+      "sourcepage": 3,
+      "spreadxy": {"x": 1, "y": 1},
+      "supply": 4
+    },
+    {
+      "attack": [{"type": "projectile", "name": "Pistol_Stim"}],
+      "cap": 6,
+      "category": "HG",
+      "ergonomics": 100,
+      "fullname": "P-11 Stim Pistol",
+      "modes": ["Single"],
+      "recoilxy": {"x": 10, "y": 30},
+      "rounds": 24,
+      "roundstart": 18,
+      "roundsupply": 18,
+      "rpm": 70,
+      "source": "chemical-agents",
+      "sourcepage": 3,
+      "spreadxy": {"x": 30, "y": 30}
+    },
+    {
       "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
       "calltime": 3,
       "cap": 250,
@@ -784,6 +850,25 @@
       "stratcode": "dludu",
       "supply": 4,
       "tags": ["fire"]
+    },
+    {
+      "attack": [{"type": "projectile", "name": "None"}],
+      "box": 3,
+      "calltime": 7.75,
+      "cap": 100,
+      "category": "SUP",
+      "cooldown": 480,
+      "ergonomics": 5,
+      "fullname": "TX-41 Sterilizer",
+      "mags": 4,
+      "magstart": 2,
+      "modes": ["Automatic"],
+      "recoilxy": {"x": 2.5, "y": 10},
+      "source": "chemical-agents",
+      "sourcepage": 2,
+      "spreadxy": {"x": 10, "y": 10},
+      "stratcode": "dludl",
+      "supply": 4
     },
     {
       "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_eit"}],
@@ -1110,8 +1195,8 @@
       ],
       "category": "GrSp",
       "fullname": "G-123 Thermite",
-      "rounds": 4,
-      "roundsbox": 4,
+      "rounds": 3,
+      "roundsbox": 2,
       "roundstart": 3,
       "source": "demo-det",
       "sourcepage": 1
@@ -1120,11 +1205,21 @@
       "attack": [{"type": "damage", "name": "Impact_Throwing_Knife"}],
       "category": "GrSp",
       "fullname": "K-2 Throwing Knife",
-      "rounds": 8,
-      "roundsbox": 8,
+      "rounds": 20,
+      "roundsbox": 10,
       "roundstart": 6,
       "source": "viper-commandos",
       "sourcepage": 3
+    },
+    {
+      "attack": [{"type": "explosion", "name": "GasGrenade"}],
+      "category": "GrSp",
+      "fullname": "G-4 Gas",
+      "rounds": 4,
+      "roundsbox": 2,
+      "roundstart": 3,
+      "source": "chemical-agents",
+      "sourcepage": 1
     },
     {
       "attack": [{"type": "damage", "name": "Ability_Avatar_Melee"}],

@@ -517,6 +517,37 @@
         }
       ]
     },
+    "SG-451 Cookout": {
+      "cap": 16,
+      "capplus": 1,
+      "category": "Shotgun",
+      "ergonomics": 65,
+      "modes": [
+        "Single"
+      ],
+      "recoilxy": {
+        "x": 35,
+        "y": 35
+      },
+      "reload": 6.9,
+      "reloadone": 0.8,
+      "rounds": 60,
+      "roundstart": 32,
+      "roundsupply": 60,
+      "rpm": 80,
+      "source": "freedoms-flame",
+      "sourcepage": 1,
+      "spreadxy": {
+        "x": 180,
+        "y": 140
+      },
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Shotgun_Dragon_10g_flm"
+        }
+      ]
+    },
     "SG-225 Breaker": {
       "attachments": [
         "flashlight"
@@ -937,6 +968,32 @@
         }
       ]
     },
+    "FLAM-66 Torcher": {
+      "cap": 80,
+      "ergonomics": 45,
+      "mags": 6,
+      "magstart": 3,
+      "modes": [
+        "Automatic"
+      ],
+      "recoilxy": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "freedoms-flame",
+      "sourcepage": 2,
+      "spreadxy": {
+        "x": 1,
+        "y": 1
+      },
+      "supply": 6,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "None"
+        }
+      ]
+    },
     "SG-22 Bushwhacker": {
       "cap": 3,
       "category": "Secondary Shotgun",
@@ -1191,6 +1248,62 @@
         }
       ]
     },
+    "P-72 Crisper": {
+      "box": 3,
+      "cap": 30,
+      "category": "Pistol",
+      "ergonomics": 95,
+      "mags": 4,
+      "magstart": 2,
+      "modes": [
+        "Single"
+      ],
+      "recoilxy": {
+        "x": 0,
+        "y": 0
+      },
+      "source": "freedoms-flame",
+      "sourcepage": 3,
+      "spreadxy": {
+        "x": 1,
+        "y": 1
+      },
+      "supply": 4,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "None"
+        }
+      ]
+    },
+    "P-11 Stim Pistol": {
+      "cap": 6,
+      "category": "Pistol",
+      "ergonomics": 100,
+      "modes": [
+        "Single"
+      ],
+      "recoilxy": {
+        "x": 10,
+        "y": 30
+      },
+      "rounds": 24,
+      "roundstart": 18,
+      "roundsupply": 18,
+      "rpm": 70,
+      "source": "chemical-agents",
+      "sourcepage": 3,
+      "spreadxy": {
+        "x": 30,
+        "y": 30
+      },
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Pistol_Stim"
+        }
+      ]
+    },
     "M-105 Stalwart": {
       "calltime": 3,
       "cap": 250,
@@ -1364,6 +1477,37 @@
         {
           "type": "damage",
           "name": "Projectile_Flamethrower"
+        }
+      ]
+    },
+    "TX-41 Sterilizer": {
+      "box": 3,
+      "calltime": 7.75,
+      "cap": 100,
+      "category": "Support Weapon",
+      "cooldown": 480,
+      "ergonomics": 5,
+      "mags": 4,
+      "magstart": 2,
+      "modes": [
+        "Automatic"
+      ],
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "source": "chemical-agents",
+      "sourcepage": 2,
+      "spreadxy": {
+        "x": 10,
+        "y": 10
+      },
+      "stratcode": "dludl",
+      "supply": 4,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "None"
         }
       ]
     },
@@ -1874,8 +2018,8 @@
     },
     "G-123 Thermite": {
       "category": "Special Throwable",
-      "rounds": 4,
-      "roundsbox": 4,
+      "rounds": 3,
+      "roundsbox": 2,
       "roundstart": 3,
       "source": "demo-det",
       "sourcepage": 1,
@@ -1892,8 +2036,8 @@
     },
     "K-2 Throwing Knife": {
       "category": "Special Throwable",
-      "rounds": 8,
-      "roundsbox": 8,
+      "rounds": 20,
+      "roundsbox": 10,
       "roundstart": 6,
       "source": "viper-commandos",
       "sourcepage": 3,
@@ -1901,6 +2045,20 @@
         {
           "type": "damage",
           "name": "Impact_Throwing_Knife"
+        }
+      ]
+    },
+    "G-4 Gas": {
+      "category": "Special Throwable",
+      "rounds": 4,
+      "roundsbox": 2,
+      "roundstart": 3,
+      "source": "chemical-agents",
+      "sourcepage": 1,
+      "attacks": [
+        {
+          "type": "explosion",
+          "name": "GasGrenade"
         }
       ]
     },
@@ -2036,6 +2194,7 @@
     "SMG-72 Pummeler",
     "SG-8 Punisher",
     "SG-8S Slugger",
+    "SG-451 Cookout",
     "SG-225 Breaker",
     "SG-225SP Breaker Spray&Pray",
     "SG-225IE Breaker Incendiary",
@@ -2054,11 +2213,14 @@
     "GP-31 Grenade Pistol",
     "LAS-7 Dagger",
     "P-4 Senator",
+    "P-72 Crisper",
+    "P-11 Stim Pistol",
     "M-105 Stalwart",
     "MG-43 Machine Gun",
     "MG-206 Heavy Machine Gun",
     "ARC-3 Arc Thrower",
     "FLAM-40 Flamethrower",
+    "TX-41 Sterilizer",
     "APW-1 Anti-Materiel Rifle",
     "GL-21 Grenade Launcher",
     "AC-8 Autocannon",
