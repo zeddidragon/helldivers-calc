@@ -500,8 +500,8 @@ async function loadData() {
       .catch(() => ({})),
   ])
   const data = {
-    ...manual,
     ...mined,
+    ...manual,
   }
   window.data = data
   window.translations[locals.lang] = translations
@@ -717,13 +717,15 @@ async function loadData() {
     l: 4,
     Left: 4,
   }
-  locals.stratagems = Object.entries(data.stratagem).map(([ref, strat], i) => {
+  locals.stratagems = data.stratagems.map((strat, i) => {
+    const { ref } = strat
     let shotdmg = 0
     let shotdmg2 = 0
     let maxRadius = [0, 0, 0]
     let prev = void 0
     let subobjects = strat.attack?.map(({ type, name: ref, count }) => {
-      const obj = byRef[type][ref] || {}
+      console.log({ type, ref, strat })
+      const obj = locals.byRef[type][ref] || {}
       const parent = prev
       prev = obj
       const damage = obj.damage
@@ -749,8 +751,9 @@ async function loadData() {
         ref,
       }
     })
-    const arrows = strat.stratcode.map(i => arrowMap[i]).join('')
-    const stratorder = strat.stratcode.map(i => arrowOrder[i]).join('')
+    const code = strat.stratcode || []
+    const arrows = code.map(i => arrowMap[i]).join('')
+    const stratorder = code.map(i => arrowOrder[i]).join('')
 
     if(strat.category === 'orbital' || strat.category === 'eagle') {
       const factor = (strat.cap || 1) * (strat.limit || 1)

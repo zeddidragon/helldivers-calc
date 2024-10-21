@@ -151,7 +151,20 @@ const deltaHandlers = {
   'lunge_range': null,
 }
 
+let isPendingEntity = false
 const entityWhitelist = new Set()
+const entityBlacklist = new Set()
+const componentWhitelist = []
+const componentBlacklist = []
+
+function deferEntity(entity) {
+  entity = BigInt(entity)
+  if(entityWhitelist.has(entity)) {
+    return
+  }
+  entityWhitelist.add(entity)
+  isPendingEntity = true
+}
 
 const handlers = {
   WeaponMagazineComponent: copy([
@@ -362,7 +375,16 @@ const handlers = {
   HellpodPayloadComponent: copy([
     'remove_time',
   ]),
-  HellpodRackComponent: null,
+  HellpodRackComponent(wpn, component) {
+    const racked = component
+      .payloads
+      .filter(pl => pl.rack_side !== 'RackSide_None' && pl.item)
+      .map(pl => pl.item.toString())
+    wpn.racked = Array.from(new Set(racked))
+    for(const id of racked) {
+      deferEntity(id)
+    }
+  },
   HintTriggerComponent: null,
   SensorEyeComponent: copy([
     'distance',
@@ -534,11 +556,13 @@ const handlers = {
         .damage_info_type
     }
   },
-  DepositComponent: copy([
-    'capacity',
-    'start_amount',
-    'refill_amount',
-  ]),
+  DepositComponent(wpn, component) {
+    copy([
+      'capacity',
+      'start_amount',
+      'refill_amount',
+    ])(wpn, component)
+  },
   ObjectiveSecureAreaComponent: null,
   NoiseComponent: null,
   VehicleElectricsComponent: null,
@@ -568,6 +592,62 @@ const handlers = {
   NpcDialogueComponent: null,
   CharacterVoiceComponent: null,
   CharacterNameComponent: null,
+  KeypadCodeRevealComponent: null,
+  ObjectiveCarryComponent: null,
+  RechargeComponent: copy([
+    'recharge_time',
+  ]),
+  MaterialSwapComponent: null,
+  JumppackComponent: null,
+  SeekingMissileComponent: null,
+}
+
+async function loadComponents({
+  EntityComponentMap,
+  ComponentType,
+  weapons,
+}) {
+  isPendingEntity = false
+  for(let [id, componentIds] of Object.entries(EntityComponentMap)) {
+    id = BigInt(id)
+    if(entityBlacklist.has(id)) {
+      continue
+    }
+    let isValid = entityWhitelist.has(id)
+    for(let whitelistId of componentWhitelist) {
+      if(isValid) {
+        break
+      }
+      isValid = componentIds.includes(whitelistId)
+    }
+    for(let blacklistId of componentBlacklist) {
+      if(!isValid) {
+        break
+      }
+      isValid = !componentIds.includes(blacklistId)
+    }
+    if(!isValid) {
+      continue
+    }
+
+    const obj = { id: id.toString() }
+    for(const cId of componentIds) {
+      const componentName = ComponentType[cId]
+      const handler = handlers[componentName]
+      if(handler === null) continue
+      const dataPath = `entities/${componentName}Data`
+      const data = await readJson(dataDir, dataPath).catch(() => {})
+      if(!handler) {
+        console.log(data?.[id])
+        clipboard.writeSync(`  ${componentName}: null,`)
+        throw new Error(`Handler not implemented: "${componentName}"`)
+      }
+      handler(obj, data[id])
+    }
+    weapons[id] = obj
+
+    entityBlacklist.add(id)
+  }
 }
 
 async function readEntities() {
@@ -590,29 +670,16 @@ async function readEntities() {
   const AiEnemyComponent = ComponentType.indexOf('AiEnemyComponent')
   const weapons = {}
 
-  const componentSetup = Object.entries(EntityComponentMap)
-    .filter(([id, componentIds]) => {
-      return componentIds.includes(WeaponComponent)
-        || componentIds.includes(ThrowableComponent)
-        || entityWhitelist.has(BigInt(id))
-    })
-    .filter(([, componentIds]) => !componentIds.includes(AiEnemyComponent))
-  for(const [id, componentIds] of componentSetup) {
-    const obj = { id }
-    for(const cId of componentIds) {
-      const componentName = ComponentType[cId]
-      const handler = handlers[componentName]
-      if(handler === null) continue
-      const dataPath = `entities/${componentName}Data`
-      const data = await readJson(dataDir, dataPath).catch(() => {})
-      if(!handler) {
-        console.log(data?.[id])
-        clipboard.writeSync(`  ${componentName}: null,`)
-        throw new Error(`Handler not implemented: "${componentName}"`)
-      }
-      handler(obj, data[id])
-    }
-    weapons[id] = obj
+  componentWhitelist.push(WeaponComponent)
+  componentWhitelist.push(ThrowableComponent)
+  componentBlacklist.push(AiEnemyComponent)
+  const componentsData = {
+    EntityComponentMap,
+    ComponentType,
+    weapons,
+  }
+  while(isPendingEntity) {
+    await loadComponents(componentsData)
   }
   const byName = {}
   for(const wpn of Object.values(weapons)) {
@@ -664,7 +731,7 @@ function readTypeStratagem(item) {
     uses = void 0
   }
   for(const id of item.payload) {
-    entityWhitelist.add(BigInt(id))
+    deferEntity(BigInt(id))
   }
   return {
     ref: refs.stratagem(item.type),

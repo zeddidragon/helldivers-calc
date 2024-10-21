@@ -1338,7 +1338,6 @@
         "x": 6,
         "y": 6
       },
-      "stratcode": "dlduul",
       "supply": 2,
       "attacks": [
         {
@@ -1376,7 +1375,6 @@
         "x": 4,
         "y": 4
       },
-      "stratcode": "dldur",
       "supply": 2,
       "attacks": [
         {
@@ -1414,7 +1412,6 @@
         "x": 5,
         "y": 5
       },
-      "stratcode": "dludd",
       "supply": 2,
       "attacks": [
         {
@@ -1442,7 +1439,6 @@
         "x": 10,
         "y": 10
       },
-      "stratcode": "drdull",
       "attacks": [
         {
           "type": "arc",
@@ -1473,7 +1469,6 @@
         "x": 10,
         "y": 10
       },
-      "stratcode": "dludu",
       "supply": 4,
       "tags": [
         "fire"
@@ -1507,7 +1502,6 @@
         "x": 10,
         "y": 10
       },
-      "stratcode": "dludl",
       "supply": 4,
       "attacks": [
         {
@@ -1545,7 +1539,6 @@
         "x": 0.1,
         "y": 0.1
       },
-      "stratcode": "dlrud",
       "supply": 3,
       "attacks": [
         {
@@ -1579,7 +1572,6 @@
         "x": 20,
         "y": 20
       },
-      "stratcode": "dluld",
       "supply": 3,
       "attacks": [
         {
@@ -1617,7 +1609,6 @@
         "x": 2,
         "y": 2
       },
-      "stratcode": "dlduur",
       "attacks": [
         {
           "type": "projectile",
@@ -1651,7 +1642,6 @@
         "x": 10,
         "y": 10
       },
-      "stratcode": "drdulr",
       "supply": 10,
       "attacks": [
         {
@@ -1684,7 +1674,6 @@
         "x": 10,
         "y": 10
       },
-      "stratcode": "dldul",
       "supply": 1,
       "tags": [
         "laser"
@@ -1723,7 +1712,6 @@
         "x": 4,
         "y": 4
       },
-      "stratcode": "ddulr",
       "attacks": [
         {
           "type": "projectile",
@@ -1753,7 +1741,6 @@
         "x": 4,
         "y": 4
       },
-      "stratcode": "ddlur",
       "attacks": [
         {
           "type": "projectile",
@@ -1783,7 +1770,6 @@
         "x": 0,
         "y": 0
       },
-      "stratcode": "dludr",
       "attacks": [
         {
           "type": "projectile",
@@ -1816,7 +1802,6 @@
         "x": 4,
         "y": 4
       },
-      "stratcode": "dlrrl",
       "attacks": [
         {
           "type": "projectile",
@@ -1849,7 +1834,6 @@
         "x": 0,
         "y": 0
       },
-      "stratcode": "ddudd",
       "attacks": [
         {
           "type": "projectile",
@@ -1882,7 +1866,6 @@
         "x": 4,
         "y": 4
       },
-      "stratcode": "duulr",
       "attacks": [
         {
           "type": "projectile",
@@ -2181,6 +2164,805 @@
         {
           "type": "projectile",
           "name": "Cannon_30mm_APHE"
+        }
+      ]
+    },
+    "B-1 Supply Pack": {
+      "ref": "AmmoBackpack",
+      "name": "Supply Pack",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Up",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0,
+      "payload": [
+        "3548847957556322972",
+        "8356509974227907605"
+      ],
+      "health": 400,
+      "armor": 4,
+      "cap": 4,
+      "attacks": []
+    },
+    "AX/AR-23 \"Guard Dog\"": {
+      "ref": "DroneMG",
+      "name": "\"Guard Dog\"",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Up",
+        "Right",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0,
+      "payload": [
+        "578662561602494491",
+        "8356509974227907605"
+      ],
+      "health": 400,
+      "armor": 4,
+      "salvos": 6,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_5p5x50mm_fmj"
+        }
+      ]
+    },
+    "AX/LAS-5 \"Guard Dog\" Rover": {
+      "ref": "Drone_Laser_Rifle",
+      "name": "\"Guard Dog\" Rover",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Up",
+        "Right",
+        "Right"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0,
+      "payload": [
+        "16028040304287202855",
+        "8356509974227907605"
+      ],
+      "health": 400,
+      "armor": 4,
+      "attacks": [
+        {
+          "type": "beam",
+          "name": "MediumDrone"
+        }
+      ]
+    },
+    "AX/TX-13 \"Guard Dog\" Dog Breath": {
+      "ref": "Drone_GASPROJECTOR",
+      "name": "\"Guard Dog\" Dog Breath",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Up",
+        "Right",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0,
+      "payload": [
+        "15628185827517046516",
+        "8356509974227907605"
+      ],
+      "health": 400,
+      "armor": 4,
+      "source": "chemical-agents",
+      "sourcepage": 3,
+      "attacks": []
+    },
+    "SH-20 Ballistic Shield Backpack": {
+      "ref": "BallisticShield",
+      "name": "Ballistic Shield Backpack",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Down",
+        "Up",
+        "Left"
+      ],
+      "calltime": 5,
+      "cooldown": 300,
+      "weaponid": 0,
+      "payload": [
+        "4202058061031081322",
+        "8356509974227907605"
+      ],
+      "health": 400,
+      "armor": 4,
+      "attacks": []
+    },
+    "SH-32 Shield Generator Pack": {
+      "ref": "EnergyShieldBackpack",
+      "name": "Shield Generator Pack",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Right",
+        "Left",
+        "Right"
+      ],
+      "calltime": 5,
+      "cooldown": 480,
+      "weaponid": 0,
+      "payload": [
+        "17910078671568111462",
+        "8356509974227907605"
+      ],
+      "health": 400,
+      "armor": 4,
+      "shield": 150,
+      "shieldregen": 150,
+      "shielddelay": 60,
+      "shieldbreakdelay": 12,
+      "shieldradius": 1,
+      "attacks": []
+    },
+    "FX-12 Shield Generator Relay": {
+      "ref": "EnergyShield",
+      "name": "Shield Generator Relay",
+      "stratcode": [
+        "Down",
+        "Down",
+        "Left",
+        "Right",
+        "Left",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "17083241647592728848",
+        "8356509974227907605"
+      ],
+      "health": 450,
+      "armor": 1,
+      "limit": 30,
+      "shield": 4000,
+      "shieldregen": 300,
+      "shielddelay": 5,
+      "shieldbreakdelay": 8,
+      "shieldradius": 8,
+      "attacks": []
+    },
+    "MD-6 Anti-Personnel Minefield": {
+      "ref": "MineDeployer",
+      "name": "Anti-Personnel Minefield",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "17297258079668724512",
+        "8356509974227907605"
+      ],
+      "health": 250,
+      "armor": 1,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "ContactMine"
+        },
+        {
+          "type": "explosion",
+          "name": "ContactMine"
+        }
+      ]
+    },
+    "MD-17 Anti-tank Mines": {
+      "ref": "MineDeployer_AntiTank",
+      "name": "Anti-tank Mines",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Up"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "2712008117028049500",
+        "8356509974227907605"
+      ],
+      "health": 250,
+      "armor": 1,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "ContactMine"
+        },
+        {
+          "type": "explosion",
+          "name": "AntiTankMine"
+        }
+      ]
+    },
+    "MD-I4 Incendiary Mines": {
+      "ref": "MineDeployer_IncendiaryMines",
+      "name": "Incendiary Mines",
+      "stratcode": [
+        "Down",
+        "Left",
+        "Left",
+        "Down"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "13777321776887997010",
+        "8356509974227907605"
+      ],
+      "health": 250,
+      "armor": 1,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "ContactMine"
+        },
+        {
+          "type": "explosion",
+          "name": "IncendiaryMine"
+        }
+      ]
+    },
+    "A/MG-43 Machine Gun Sentry": {
+      "ref": "TurretMachinegunGPMG",
+      "name": "Machine Gun Sentry",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Right",
+        "Up"
+      ],
+      "calltime": 8,
+      "cooldown": 120,
+      "weaponid": 0,
+      "payload": [
+        "4021120973472933563",
+        "8356509974227907605"
+      ],
+      "health": 200,
+      "armor": 2,
+      "cap": 175,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 20,
+        "y": 2
+      },
+      "spreadxy": {
+        "x": 10,
+        "y": 10
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Automatic"
+      ],
+      "rpm": 900,
+      "rpms": [
+        630,
+        630,
+        900
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_8x60mm_fmj"
+        }
+      ]
+    },
+    "A/G-16 Gatling Sentry": {
+      "ref": "TurretMachinegun",
+      "name": "Gatling Sentry",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Left"
+      ],
+      "calltime": 8,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "17259437333005147504",
+        "8356509974227907605"
+      ],
+      "health": 200,
+      "armor": 2,
+      "cap": 400,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 10,
+        "y": 0
+      },
+      "spreadxy": {
+        "x": 20,
+        "y": 20
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Automatic"
+      ],
+      "rpm": 1600,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_8x60mm_fmj"
+        }
+      ]
+    },
+    "E/MG-101 HMG Emplacement": {
+      "ref": "TurretManned",
+      "name": "HMG Emplacement",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Right",
+        "Right",
+        "Left"
+      ],
+      "calltime": 3,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "1051445694670701817",
+        "8356509974227907605"
+      ],
+      "health": 1000,
+      "armor": 2,
+      "cap": 300,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 8,
+        "y": 12
+      },
+      "spreadxy": {
+        "x": 2,
+        "y": 2
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Automatic"
+      ],
+      "rpm": 750,
+      "rpms": [
+        450,
+        600,
+        750
+      ],
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_12p5x100mm_fmj"
+        }
+      ]
+    },
+    "A/M-12 Mortar Sentry": {
+      "ref": "TurretMortar",
+      "name": "Mortar Sentry",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Right",
+        "Down"
+      ],
+      "calltime": 8,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "5881843148917714292",
+        "8356509974227907605"
+      ],
+      "health": 200,
+      "armor": 2,
+      "cap": 36,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "spreadxy": {
+        "x": 50,
+        "y": 100
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Burst"
+      ],
+      "burst": 3,
+      "rpm": 60,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Grenade_Mortar_40mm_HE"
+        }
+      ]
+    },
+    "A/M-23 EMS Mortar Sentry": {
+      "ref": "TurretMortar_Staticfield",
+      "name": "EMS Mortar Sentry",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Down",
+        "Right"
+      ],
+      "calltime": 8,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "12827722989328478091",
+        "8356509974227907605"
+      ],
+      "health": 200,
+      "armor": 2,
+      "cap": 16,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "spreadxy": {
+        "x": 50,
+        "y": 50
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Burst"
+      ],
+      "burst": 3,
+      "rpm": 60,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Grenade_Mortar_40mm_Staticfield"
+        }
+      ]
+    },
+    "A/MLS-4X Rocket Sentry": {
+      "ref": "TurretRocket",
+      "name": "Rocket Sentry",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Right",
+        "Left"
+      ],
+      "calltime": 8,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "3965302274531977670",
+        "8356509974227907605"
+      ],
+      "health": 200,
+      "armor": 2,
+      "cap": 16,
+      "mags": 1,
+      "magstart": 1,
+      "supply": 1,
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "spreadxy": {
+        "x": 5,
+        "y": 15
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Burst",
+        "Burst"
+      ],
+      "burst": 4,
+      "rpm": 90,
+      "box": 3,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rocket_70mm_turret"
+        }
+      ]
+    },
+    "A/AC-8 Autocannon Sentry": {
+      "ref": "TurretAutocannon",
+      "name": "Autocannon Sentry",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Up",
+        "Left",
+        "Up"
+      ],
+      "calltime": 8,
+      "cooldown": 180,
+      "weaponid": 0,
+      "payload": [
+        "6113742425058627513",
+        "8356509974227907605"
+      ],
+      "health": 200,
+      "armor": 2,
+      "cap": 24,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "spreadxy": {
+        "x": 2,
+        "y": 2
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Burst",
+        "Burst"
+      ],
+      "burst": 3,
+      "rpm": 160,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Cannon_40mm_APHE"
+        }
+      ]
+    },
+    "A/ARC-3 Tesla Tower": {
+      "ref": "TurretTesla",
+      "name": "Tesla Tower",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Right",
+        "Up",
+        "Left",
+        "Right"
+      ],
+      "calltime": 3,
+      "cooldown": 150,
+      "weaponid": 0,
+      "payload": [
+        "8383906277678357886",
+        "8356509974227907605"
+      ],
+      "health": 600,
+      "armor": 1,
+      "cap": 400,
+      "mags": 0,
+      "magstart": 0,
+      "capplus": 1,
+      "recoilxy": {
+        "x": 2.5,
+        "y": 10
+      },
+      "spreadxy": {
+        "x": 50,
+        "y": 25
+      },
+      "ergonomics": 65,
+      "modes": [
+        "Automatic"
+      ],
+      "attacks": [
+        {
+          "type": "arc",
+          "name": "TeslaTurret"
+        }
+      ]
+    },
+    "undefined": {
+      "ref": "EagleRearm",
+      "name": "Eagle Rearm",
+      "stratcode": [
+        "Up",
+        "Up",
+        "Left",
+        "Up",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 150,
+      "weaponid": 0,
+      "payload": [],
+      "attacks": []
+    },
+    "EXO-45 Patriot Exosuit": {
+      "ref": "DropoffCombatWalker",
+      "name": "Patriot Exosuit",
+      "uses": 2,
+      "stratcode": [
+        "Left",
+        "Down",
+        "Right",
+        "Up",
+        "Left",
+        "Down",
+        "Down"
+      ],
+      "calltime": 0,
+      "radius": 2,
+      "cooldown": 600,
+      "weaponid": 0,
+      "payload": [
+        "8783342891467425251",
+        "8484362704672433843"
+      ],
+      "health": 600,
+      "armor": 3,
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "Ability_Cyborg_Lieutenant_Stomp"
+        },
+        {
+          "type": "explosion",
+          "name": "Vehicle_Explosion_CombatWalker"
+        }
+      ]
+    },
+    "EXO-49 Emancipator Exosuit": {
+      "ref": "DropoffCombatWalker_Autocannon",
+      "name": "Emancipator Exosuit",
+      "uses": 2,
+      "stratcode": [
+        "Left",
+        "Down",
+        "Right",
+        "Up",
+        "Left",
+        "Down",
+        "Up"
+      ],
+      "calltime": 0,
+      "radius": 2,
+      "cooldown": 600,
+      "weaponid": 0,
+      "payload": [
+        "14038927220542196401",
+        "8484362704672433843"
+      ],
+      "health": 600,
+      "armor": 3,
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "Ability_Cyborg_Lieutenant_Stomp"
+        },
+        {
+          "type": "explosion",
+          "name": "Vehicle_Explosion_CombatWalker"
+        }
+      ]
+    },
+    "NUX-223 Hellbomb": {
+      "ref": "DropoffHellbomb",
+      "name": "Hellbomb",
+      "stratcode": [
+        "Down",
+        "Up",
+        "Left",
+        "Down",
+        "Up",
+        "Right",
+        "Down",
+        "Up"
+      ],
+      "calltime": 5,
+      "cooldown": 30,
+      "weaponid": 0,
+      "payload": [
+        "14314828040919828387",
+        "8356509974227907605"
+      ],
+      "attacks": [
+        {
+          "type": "explosion",
+          "name": "Hellbomb"
+        }
+      ]
+    },
+    "SEAF Artillery#Explosive": {
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_Explosive"
+        }
+      ]
+    },
+    "SEAF Artillery#High Yield Explosive": {
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_High_Yield_Explosive"
+        }
+      ]
+    },
+    "SEAF Artillery#Mini Nuke": {
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_Mini_Nuke"
+        }
+      ]
+    },
+    "SEAF Artillery#Smoke": {
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_Smoke"
+        }
+      ]
+    },
+    "SEAF Artillery#Napalm": {
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_Napalm"
+        }
+      ]
+    },
+    "SEAF Artillery#Static Field": {
+      "calltime": 0,
+      "cooldown": 15,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "SEAF_Gun_EMP"
         }
       ]
     }

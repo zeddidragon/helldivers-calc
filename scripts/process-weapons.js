@@ -173,23 +173,31 @@ const shalzuthSchema = [
   }},
 ]
 
+const stratByName = Object.fromEntries(
+  Object.entries(data.stratagem)
+    .map(([ref, strat]) => {
+      return [strat.name, {
+        ref,
+        ...strat,
+      }]
+    }))
 
-const stratPayloadIds = Array.from(new Set(Object
-  .values(data.stratagem)
-  .flatMap(strat  => strat.payload)))
-
-const stratagems = Object.entries(data.stratagem)
-  .map(([ref, strat]) => {
+setup.stratagem = setup.stratagem
+  .map(strat => {
+    const name = strat.name || strat.fullname
+      .split(/\s+/)
+      .slice(1)
+      .join(' ')
+    console.log({ name })
     return {
-      ref,
+      ...stratByName[name],
       ...strat,
-      entity: strat.payload[0],
     }
   })
 
 let dbgCondition = false
 const keyed = {}
-for(const wpn of [...setup.weapon, ...stratagems]) {
+for(const wpn of [...setup.weapon, ...setup.stratagem]) {
   const name = wpn.name || wpn.fullname
   let matched
   if(wpn.entity) {
@@ -386,6 +394,7 @@ const wikiCategories = [
 
 const allWeapons = [
   ...setup.weapon,
+  ...setup.stratagem,
 ]
 const weaponOrder = []
 let i = 0
@@ -422,4 +431,5 @@ fs.writeFileSync('data/wiki.json', JSON.stringify(wikiRegister, null, 2))
 fs.writeFileSync('data/weapons.json', json({
   sources,
   weapons: setup.weapon,
+  stratagems: setup.stratagem,
 }))
