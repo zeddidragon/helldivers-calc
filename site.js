@@ -724,11 +724,10 @@ async function loadData() {
     let maxRadius = [0, 0, 0]
     let prev = void 0
     let subobjects = strat.attack?.map(({ type, name: ref, count }) => {
-      console.log({ type, ref, strat })
       const obj = locals.byRef[type][ref] || {}
       const parent = prev
       prev = obj
-      const damage = obj.damage
+      const damage = rel(obj, 'damage')
       const n = (count || obj.pellets || 1)
       shotdmg += n * (damage?.dmg || 0)
       shotdmg2 += n * (damage?.dmg2 || 0)
@@ -765,6 +764,7 @@ async function loadData() {
     if(subobjects?.[0] && subobjects[0].type !== 'weapon') {
       mainAttack = subobjects.shift()
     }
+    console.log({ mainAttack })
     return {
       ...(mainAttack || {}),
       ...strat,

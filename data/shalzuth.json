@@ -3,19 +3,13 @@
     "id": "4971147757632036889",
     "racked": ["4092536715104205912", "10266352102081711787"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "578662561602494491": {
     "id": "578662561602494491",
     "racked": ["2692796710804508396"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "6918199871803715620": {
     "id": "6918199871803715620",
@@ -24,13 +18,9 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SpecialGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
@@ -73,10 +63,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "7767754898735718469": {
     "id": "7767754898735718469",
@@ -104,8 +91,7 @@
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0
+    "equipment_type": "EquipmentType_Pistol"
   },
   "18400802241877839954": {
     "id": "18400802241877839954",
@@ -116,9 +102,6 @@
     "magazines_max": 12,
     "name": "Automaton Mortar Emplacement",
     "health": 400,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 2.70000005,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -160,9 +143,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Automaton Mortar Emplacement"
   },
   "11047871594297831536": {
@@ -198,7 +178,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_LauncherSidearm",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_Flare",
     "rounds_per_minute": {"x": 0, "y": 425, "z": 0},
     "heat_buildup": {
@@ -208,9 +187,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Carbine"
   },
   "13028718365019299975": {
@@ -223,7 +199,6 @@
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -260,10 +235,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "18102809172282470538": {
     "id": "18102809172282470538",
@@ -334,7 +306,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "is_one_handed": 0,
     "projectile_type": "Plasma_Rifle_Charge",
     "rounds_per_minute": {"x": 0, "y": 1000, "z": 0},
     "heat_buildup": {
@@ -344,9 +315,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 15,
       "magazines": 4,
@@ -424,7 +392,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_exp",
     "rounds_per_minute": {"x": 0, "y": 660, "z": 0},
     "heat_buildup": {
@@ -434,8 +401,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 5,
-    "spinup_time": 0,
-    "silenced": 0,
     "burst_fire_rate": 660,
     "customizations": {},
     "modifiers": []
@@ -449,13 +414,11 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SpecialGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
     "sticky": 1,
     "sticky_delay": 0.25,
-    "is_impact_trigger": 0,
     "start_amount": 10,
     "max_amount": 20,
     "refill_amount": 20,
@@ -498,7 +461,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "Shotgun_12g_bir",
     "rounds_per_minute": {"x": 0, "y": 330, "z": 0},
     "heat_buildup": {
@@ -508,9 +470,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 2,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3},
@@ -524,10 +483,7 @@
     "id": "13946543042552897732",
     "racked": ["13356503403972720861"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "17488789745215357128": {
     "id": "17488789745215357128",
@@ -561,13 +517,11 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "is_one_handed": 0,
     "warmup_time": 1,
     "cooldown_time": 1,
     "spray_capsule_radius": 0.5,
     "ammo_cost": 1,
-    "projectile_type": "ProjectileType_Cyborg_Flamethrower_Heavy",
-    "damage_info_type": "DamageInfoType_None"
+    "projectile_type": "Cyborg_Flamethrower_Heavy"
   },
   "6337264778388549835": {
     "id": "6337264778388549835",
@@ -584,13 +538,9 @@
     "remove_time": 3.5,
     "distance": 75,
     "health": 2000,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -628,9 +578,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "A/G-16 Gatling Sentry"
   },
   "4416184955867381998": {
@@ -667,7 +614,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_exp",
     "rounds_per_minute": {"x": 0, "y": 660, "z": 0},
     "heat_buildup": {
@@ -677,8 +623,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 5,
-    "spinup_time": 0,
-    "silenced": 0,
     "burst_fire_rate": 660,
     "customizations": {},
     "modifiers": []
@@ -692,9 +636,6 @@
     "magazines_max": 10,
     "name": "Heavy Fusion Repeater",
     "health": 500,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -730,9 +671,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Heavy Fusion Repeater"
   },
   "721550233589928225": {
@@ -743,9 +681,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -775,19 +710,13 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "6358746089464627494": {"id": "6358746089464627494"},
   "12765265282294763822": {
     "id": "12765265282294763822",
     "remove_time": 2.5,
-    "health": 1250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 1250
   },
   "13171605573572653383": {
     "id": "13171605573572653383",
@@ -800,7 +729,6 @@
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 0, "y": 0},
     "sway_frequency_multiplier": {"x": 0, "y": 0},
@@ -833,10 +761,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "11335415903596859741": {
     "id": "11335415903596859741",
@@ -846,9 +771,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -882,9 +804,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
+    "mounts": ["14855805920191068159", "14855805920191068159"],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "EagleAirstrikePattern_8line_ClusterBomb",
     "target_angle": 90,
@@ -903,13 +823,8 @@
     "name": "Heavy Fusion Repeater",
     "distance": 75,
     "health": 300,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 6,
-    "aim_flinch_decrease": 0,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -944,9 +859,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Heavy Fusion Repeater"
   },
   "9796573205647524202": {
@@ -962,13 +874,9 @@
     "remove_time": 2.5,
     "distance": 25,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -1006,9 +914,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "max_length": 150
   },
   "6670637945684439420": {
@@ -1047,10 +952,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "7546486305997975964": {
     "id": "7546486305997975964",
@@ -1085,7 +987,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 650, "z": 0},
     "heat_buildup": {
@@ -1095,9 +996,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Repeater"
   },
   "6582409209889722787": {
@@ -1133,7 +1031,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 0, "y": 500, "z": 0},
     "heat_buildup": {
@@ -1143,9 +1040,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Autocannon"
   },
   "3259427501513118129": {
@@ -1208,7 +1102,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 80, "z": 0},
     "heat_buildup": {
@@ -1217,10 +1110,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "ammo_types.primary_projectile_type": "ProjectileType_Shotgun_10g_flm"
     },
@@ -1273,7 +1162,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_LightCannon",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
@@ -1282,10 +1170,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "9264801226655597011": {
     "id": "9264801226655597011",
@@ -1325,7 +1210,6 @@
     "wield_duration": 1.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Grenade_75mm_HEAT",
     "rounds_per_minute": {"x": 0, "y": 600, "z": 0},
     "heat_buildup": {
@@ -1334,10 +1218,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [],
     "key": "EAT-17 Expendable Anti-Tank"
@@ -1370,7 +1250,6 @@
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -1407,10 +1286,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "14663462306863854060": {
     "id": "14663462306863854060",
@@ -1460,7 +1336,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "is_one_handed": 0,
     "arc_type": "ArcType_ArcShotgun",
     "rounds_per_minute": 45,
     "customizations": {},
@@ -1505,7 +1380,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SniperRifle",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_12p5x100mm_eit",
     "rounds_per_minute": {"x": 0, "y": 400, "z": 0},
     "heat_buildup": {
@@ -1514,10 +1388,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -14}
@@ -1532,9 +1402,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -1564,19 +1431,13 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "12611223767334871581": {
     "id": "12611223767334871581",
     "racked": ["4291111060798646696"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "3641453212932526628": {
     "id": "3641453212932526628",
@@ -1606,7 +1467,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "is_one_handed": 0,
     "magazines": 6,
     "magazines_refill": 6,
     "magazines_max": 12,
@@ -1620,10 +1480,8 @@
     "temp_loss_modifier_extreme_heat": 0.75,
     "temp_loss_modifier_extreme_cold": 1.5,
     "needs_reload_after_overheat": 1,
-    "firing_charge": 0,
     "charge_gain_per_second": 100,
     "charge_loss_per_second": 100,
-    "min_reload_temperature": 0,
     "beam_type": "BeamType_TripodEye",
     "noise_timer": 0.25,
     "key": "Quantum Disruptor Beam"
@@ -1664,7 +1522,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_12p5x100mm_bchp",
     "rounds_per_minute": {"x": 450, "y": 600, "z": 750},
     "heat_buildup": {
@@ -1674,9 +1531,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 30,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
@@ -1688,9 +1542,6 @@
     "prefix": "MD-I4",
     "remove_time": 3.5,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "panel_count": 6,
     "throwable_count": 8,
     "throw_delay": 2,
@@ -1702,9 +1553,6 @@
     "prefix": "MD-17",
     "remove_time": 3.5,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "panel_count": 6,
     "throwable_count": 3,
     "throw_delay": 2,
@@ -1744,7 +1592,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_LightRocket",
     "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
     "heat_buildup": {
@@ -1754,26 +1601,19 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Autocannon"
   },
   "14394260739264934509": {
     "id": "14394260739264934509",
     "remove_time": 2.5,
-    "health": 1250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 1250
   },
   "11300340358119080560": {
     "id": "11300340358119080560",
     "holster_duration": 0.850000024,
     "wield_duration": 1.20000005,
     "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Objective",
-    "is_one_handed": 0
+    "equipment_type": "EquipmentType_Objective"
   },
   "1653832383613497969": {
     "id": "1653832383613497969",
@@ -1781,13 +1621,9 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
@@ -1799,13 +1635,9 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_StandardGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
@@ -1849,7 +1681,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_ap",
     "rounds_per_minute": {"x": 0, "y": 640, "z": 0},
     "heat_buildup": {
@@ -1859,9 +1690,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -10}
@@ -1904,10 +1732,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "12008625947668001407": {
     "id": "12008625947668001407",
@@ -1944,7 +1769,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
@@ -1954,9 +1778,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1},
@@ -1968,10 +1789,7 @@
     "id": "3586234782721573506",
     "racked": ["12008625947668001407"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "18077013842796163719": {"id": "18077013842796163719"},
   "2802369506329449110": {
@@ -2017,7 +1835,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Grenade_85mm_AirburstCluster",
     "rounds_per_minute": {"x": 0, "y": 600, "z": 0},
     "heat_buildup": {
@@ -2026,10 +1843,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [],
     "key": "RL-77 Airburst Rocket Launcher"
@@ -2038,10 +1851,7 @@
     "id": "3548847957556322972",
     "racked": ["5690760409550920280"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "1892480894983787169": {
     "id": "1892480894983787169",
@@ -2088,9 +1898,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -2123,9 +1930,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 3500,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -2158,10 +1962,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "17238162226885792459": {
     "id": "17238162226885792459",
@@ -2169,7 +1970,8 @@
     "idle_fuel_usage": 0.100000001,
     "max_fuel_usage": 4,
     "damaged_fuel_usage": 20,
-    "distance": 200
+    "distance": 200,
+    "mounts": ["9468080011357415026"]
   },
   "8480614394778878677": {
     "id": "8480614394778878677",
@@ -2223,7 +2025,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "turn_speed_vertical": 50,
     "turn_speed_horizontal": 75,
     "vertical_limit_min": 75,
@@ -2237,19 +2038,13 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Bile Spewer"
   },
   "7470354883998204659": {
     "id": "7470354883998204659",
     "racked": ["3865797767236207742"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "1585898554922009358": {
     "id": "1585898554922009358",
@@ -2261,13 +2056,8 @@
     "name": "Fusion Repeater",
     "distance": 75,
     "health": 500,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 6,
-    "aim_flinch_decrease": 0,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -2305,9 +2095,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Repeater"
   },
   "3371451580584923919": {
@@ -2347,9 +2134,6 @@
     "prefix": "MD-6",
     "remove_time": 3.5,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "panel_count": 6,
     "throwable_count": 8,
     "throw_delay": 2,
@@ -2390,13 +2174,11 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "warmup_time": 0,
     "cooldown_time": 0.0500000007,
     "spray_capsule_radius": 1,
     "ammo_cost": 0,
-    "projectile_type": "ProjectileType_Boomer_Nurser_AcidStream",
-    "damage_info_type": "DamageInfoType_None",
+    "projectile_type": "Boomer_Nurser_AcidStream",
     "key": "Nursing Spewer"
   },
   "3852172782311805734": {
@@ -2445,9 +2227,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 31,
       "magazines": 4,
@@ -2498,7 +2277,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "Shotgun_12g_buc",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
@@ -2508,9 +2286,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 2,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 16,
       "magazines": 5,
@@ -2572,7 +2347,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 80, "z": 0},
     "heat_buildup": {
@@ -2581,10 +2355,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -2595,19 +2365,13 @@
     "id": "11594114104552493871",
     "racked": ["6453678319562593995"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "14990836890103997252": {
     "id": "14990836890103997252",
     "racked": ["3743261888606184850"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "15470422196992643923": {
     "id": "15470422196992643923",
@@ -2620,7 +2384,6 @@
     "ammo_refill": 18,
     "ammo": 18,
     "reload_amount": 1,
-    "chambered": 0,
     "ammo_types": {
       "primary_projectile_type": "ProjectileType_Pistol_Stim",
       "alternate_projectile_type": "ProjectileType_None"
@@ -2659,10 +2422,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "P-11 Stim Pistol"
   },
   "2877271129141764950": {
@@ -2696,7 +2455,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "is_one_handed": 0,
     "magazines": 3,
     "magazines_refill": 6,
     "magazines_max": 4,
@@ -2713,7 +2471,6 @@
     "firing_charge": 100,
     "charge_gain_per_second": 400,
     "charge_loss_per_second": 1000,
-    "min_reload_temperature": 0,
     "beam_type": "BeamType_Medium",
     "noise_timer": 0.25,
     "customizations": {"beam_type": "BeamType_Medium"},
@@ -2770,9 +2527,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 50,
       "magazines": 5,
@@ -2819,7 +2573,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_ap",
     "rounds_per_minute": {"x": 0, "y": 660, "z": 0},
     "heat_buildup": {
@@ -2829,8 +2582,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 5,
-    "spinup_time": 0,
-    "silenced": 0,
     "burst_fire_rate": 660,
     "customizations": {},
     "modifiers": []
@@ -2865,7 +2616,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "is_one_handed": 0,
     "magazines": 2,
     "magazines_refill": 6,
     "magazines_max": 3,
@@ -2873,7 +2623,6 @@
     "warning_temperature": 80,
     "emission_temperature": 65,
     "temp_gain_per_shot": 1.14999998,
-    "temp_gain_per_second": 0,
     "temp_gain_per_second_modifier": 100,
     "temp_loss_per_second": 8,
     "temp_loss_modifier_extreme_heat": 0.75,
@@ -2882,7 +2631,6 @@
     "firing_charge": 100,
     "charge_gain_per_second": 200,
     "charge_loss_per_second": 75,
-    "min_reload_temperature": 0,
     "projectile_type": "Laser_Long",
     "rounds_per_minute": {"x": 0, "y": 750, "z": 0},
     "heat_buildup": {
@@ -2892,9 +2640,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6}
@@ -2943,13 +2688,11 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Incendiary",
-    "is_one_handed": 0,
     "warmup_time": 0.699999988,
     "cooldown_time": 10,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "ProjectileType_None",
-    "damage_info_type": "DamageInfoType_Projectile_Flamethrower",
+    "damage_type": "Projectile_Flamethrower",
     "key": "FLAM-40 Flamethrower"
   },
   "13357795631455978434": {
@@ -2987,7 +2730,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
@@ -2997,9 +2739,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 150,
       "magazines": 3,
@@ -3022,9 +2761,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -3054,10 +2790,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "2862976050209719244": {
     "id": "2862976050209719244",
@@ -3067,9 +2800,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -3103,9 +2833,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
+    "mounts": ["14855805920191068159", "14855805920191068159"],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "EagleAirstrikePattern_4line_Napalm_MK1",
     "target_angle": 90,
@@ -3117,13 +2845,9 @@
   "12218137513893139416": {
     "id": "12218137513893139416",
     "health": 500,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -3155,7 +2879,6 @@
     "warning_temperature": 75,
     "emission_temperature": 50,
     "temp_gain_per_shot": 2.1500001,
-    "temp_gain_per_second": 0,
     "temp_gain_per_second_modifier": 100,
     "temp_loss_per_second": 8,
     "temp_loss_modifier_extreme_heat": 0.75,
@@ -3164,7 +2887,6 @@
     "firing_charge": 10,
     "charge_gain_per_second": 200,
     "charge_loss_per_second": 75,
-    "min_reload_temperature": 0,
     "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 10, "y": 300, "z": 10},
     "heat_buildup": {
@@ -3173,10 +2895,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "11654668915819557853": {
     "id": "11654668915819557853",
@@ -3193,7 +2912,6 @@
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -3231,9 +2949,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "SAM Launcher"
   },
   "6912088101323449320": {
@@ -3272,7 +2987,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "is_one_handed": 0,
     "projectile_type": "Battle_Rifle",
     "rounds_per_minute": {"x": 0, "y": 550, "z": 0},
     "heat_buildup": {
@@ -3282,9 +2996,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6}
@@ -3299,9 +3010,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -3335,9 +3043,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
+    "mounts": [],
     "payload": "EaglePayload_Strafe",
     "airstrike_pattern": "EagleAirstrikePattern_6Z",
     "target_angle": 180,
@@ -3381,7 +3087,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
@@ -3391,9 +3096,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 150,
       "magazines": 3,
@@ -3419,7 +3121,6 @@
     "ammo_refill": 40,
     "ammo": 32,
     "reload_amount": 1,
-    "chambered": 0,
     "ammo_types": {
       "primary_projectile_type": "ProjectileType_Pistol_13x40mm_fmj",
       "alternate_projectile_type": "ProjectileType_None"
@@ -3458,10 +3159,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {"projectile_type": "ProjectileType_Pistol_13x40mm_fmj"},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3},
@@ -3476,12 +3173,8 @@
   },
   "16472578507204645895": {
     "id": "16472578507204645895",
-    "throw_distance_min": 0,
     "throw_distance_max": 1,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
@@ -3531,7 +3224,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Grenade_85mm_HEAT",
     "rounds_per_minute": {"x": 0, "y": 600, "z": 0},
     "heat_buildup": {
@@ -3540,10 +3232,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [],
     "key": "GR-8 Recoilless Rifle"
@@ -3585,7 +3273,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_12p5x100mm_bchp",
     "rounds_per_minute": {"x": 450, "y": 600, "z": 750},
     "heat_buildup": {
@@ -3595,9 +3282,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 30,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
@@ -3608,10 +3292,7 @@
     "id": "16793772489963160606",
     "racked": ["4155583896232633279"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "3397257356679758881": {
     "id": "3397257356679758881",
@@ -3635,10 +3316,7 @@
     "id": "6863983759145391137",
     "racked": ["12164217308285983839", "16576307969206587212"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "18417602992972518459": {
     "id": "18417602992972518459",
@@ -3648,9 +3326,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -3680,10 +3355,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "4483950418716673108": {
     "id": "4483950418716673108",
@@ -3693,9 +3365,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -3725,10 +3394,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "3865797767236207742": {
     "id": "3865797767236207742",
@@ -3760,24 +3426,18 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
-    "magazines": 0,
     "magazines_refill": 6,
-    "magazines_max": 0,
     "overheat_temperature": 100,
     "warning_temperature": 75,
     "emission_temperature": 88,
     "temp_gain_per_shot": 100,
-    "temp_gain_per_second": 0,
     "temp_gain_per_second_modifier": 100,
     "temp_loss_per_second": 6.65999985,
     "temp_loss_modifier_extreme_heat": 0.85799998,
     "temp_loss_modifier_extreme_cold": 1.20000005,
-    "needs_reload_after_overheat": 0,
     "firing_charge": 100,
     "charge_gain_per_second": 33,
     "charge_loss_per_second": 500,
-    "min_reload_temperature": 0,
     "projectile_type": "Laser_Pulse",
     "rounds_per_minute": {"x": 0, "y": 10, "z": 10},
     "heat_buildup": {
@@ -3787,9 +3447,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [],
     "key": "LAS-99 Quasar Cannon"
@@ -3805,9 +3462,6 @@
     "wind_down_time": 1,
     "rpm_multiplier": 0.333332986,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 8,
@@ -3837,10 +3491,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "424716889947522210": {
     "id": "424716889947522210",
@@ -3887,9 +3538,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "projectile_type": "ProjectileType_Pistol_9x20mm_hp",
       "magazine_capacity": 15,
@@ -3939,10 +3587,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "5510267968365085927": {
     "id": "5510267968365085927",
@@ -3980,7 +3625,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MarksmanRifle",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_9x70mm_hv",
     "rounds_per_minute": {"x": 0, "y": 350, "z": 0},
     "heat_buildup": {
@@ -3990,9 +3634,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 3,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -14}
@@ -4040,7 +3681,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Missile_Faf",
     "rounds_per_minute": {"x": 0, "y": 240, "z": 0},
     "heat_buildup": {
@@ -4050,9 +3690,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [],
     "key": "FAF-14 Spear"
@@ -4070,13 +3707,9 @@
     "remove_time": 2.5,
     "distance": 75,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -4109,8 +3742,7 @@
     "cooldown_time": 15,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "ProjectileType_FlamethrowerBAD",
-    "damage_info_type": "DamageInfoType_None"
+    "projectile_type": "FlamethrowerBAD"
   },
   "1051445694670701817": {
     "id": "1051445694670701817",
@@ -4123,13 +3755,9 @@
     "prefix": "E/MG-101",
     "remove_time": 2.5,
     "health": 1000,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -4163,9 +3791,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "E/MG-101 HMG Emplacement"
   },
   "421324886246020354": {
@@ -4203,7 +3828,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "is_one_handed": 0,
     "projectile_type": "Plasma_Punisher_Projectile",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
@@ -4213,9 +3837,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
@@ -4230,9 +3851,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -4266,9 +3884,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
+    "mounts": ["14855805920191068159", "14855805920191068159"],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "EagleAirstrikePattern_Single",
     "target_angle": 180,
@@ -4287,13 +3903,9 @@
     "name": "Factory Strider",
     "distance": 60,
     "health": 300,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -4331,9 +3943,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Factory Strider"
   },
   "12984499893943104780": {
@@ -4371,7 +3980,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
@@ -4381,9 +3989,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 150,
       "magazines": 3,
@@ -4408,13 +4013,9 @@
     "name": "Factory Strider",
     "distance": 60,
     "health": 300,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -4452,9 +4053,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Factory Strider"
   },
   "281046277510948131": {
@@ -4492,7 +4090,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MarksmanRifle",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_9x70mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 350, "z": 0},
     "heat_buildup": {
@@ -4502,9 +4099,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 3,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "reload": 3,
       "magazine_capacity": 20,
@@ -4557,7 +4151,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 0, "y": 400, "z": 0},
     "heat_buildup": {
@@ -4567,38 +4160,26 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Repeater"
   },
   "14231239742203987259": {
     "id": "14231239742203987259",
     "racked": ["2714034314705433838", "10287068634025973658"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "11376870716921492798": {
     "id": "11376870716921492798",
     "racked": ["3973443609256024694"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "14374614348695467343": {"id": "14374614348695467343"},
   "4202058061031081322": {
     "id": "4202058061031081322",
     "racked": ["10844335154607830587"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "17636297115750610289": {
     "id": "17636297115750610289",
@@ -4632,13 +4213,11 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Incendiary",
-    "is_one_handed": 0,
     "warmup_time": 1,
     "cooldown_time": 1,
     "spray_capsule_radius": 0.25,
     "ammo_cost": 1,
-    "projectile_type": "ProjectileType_Cyborg_Flamethrower_Heavy",
-    "damage_info_type": "DamageInfoType_None"
+    "projectile_type": "Cyborg_Flamethrower_Heavy"
   },
   "294590291936179579": {
     "id": "294590291936179579",
@@ -4649,13 +4228,9 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SpecialGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
@@ -4672,13 +4247,9 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_StandardGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
@@ -4712,8 +4283,7 @@
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0
+    "equipment_type": "EquipmentType_Pistol"
   },
   "3743261888606184850": {
     "id": "3743261888606184850",
@@ -4734,25 +4304,20 @@
       "2692796710804508396"
     ],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "11105721130648470965": {
     "id": "11105721130648470965",
     "capacity": 4,
     "start_amount": -1,
-    "refill_amount": 20
+    "refill_amount": 20,
+    "drone_path": "2139899069241334240"
   },
   "1141864099511539165": {
     "id": "1141864099511539165",
     "racked": ["2401215835282261016"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "8783342891467425251": {
     "id": "8783342891467425251",
@@ -4763,9 +4328,7 @@
     "max_fuel_usage": 4,
     "damaged_fuel_usage": 20,
     "health": 600,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
+    "mounts": ["9388736439472594613", "645713022044093730"],
     "key": "EXO-45 Patriot Exosuit"
   },
   "5910727434981086692": {
@@ -4779,7 +4342,6 @@
     "ammo_refill": 20,
     "ammo": 20,
     "reload_amount": 1,
-    "chambered": 0,
     "ammo_types": {
       "primary_projectile_type": "ProjectileType_Shotgun_10g_mag",
       "alternate_projectile_type": "ProjectileType_None"
@@ -4809,7 +4371,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 600, "y": 600, "z": 600},
     "heat_buildup": {
@@ -4818,10 +4379,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "SG-88 Break-Action Shotgun"
   },
   "12269323780666160625": {
@@ -4835,13 +4392,9 @@
     "remove_time": 2.5,
     "distance": 75,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -4879,22 +4432,15 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Gatling Sentry"
   },
   "1837707428311856638": {
     "id": "1837707428311856638",
     "remove_time": 2.5,
     "health": 1000,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -4972,7 +4518,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_LightRocket",
     "rounds_per_minute": {"x": 0, "y": 350, "z": 0},
     "heat_buildup": {
@@ -4982,9 +4527,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "SR005 Rocket"
   },
   "12424973596508546593": {"id": "12424973596508546593", "remove_time": 6},
@@ -5024,7 +4566,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Grenade_40mm_HE",
     "rounds_per_minute": {"x": 0, "y": 160, "z": 0},
     "heat_buildup": {
@@ -5034,9 +4575,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 3,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "GL-21 Grenade Launcher"
   },
   "10844335154607830587": {
@@ -5045,9 +4583,6 @@
     "name": "Ballistic Shield Backpack",
     "prefix": "SH-20",
     "health": 400,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -5085,13 +4620,9 @@
     "magazines_max": 12,
     "distance": 200,
     "health": 2500,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -5128,10 +4659,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "13164006426448262783": {
     "id": "13164006426448262783",
@@ -5168,7 +4696,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Rocket_JarPhoenix_20mm",
     "rounds_per_minute": {"x": 0, "y": 25, "z": 0},
     "heat_buildup": {
@@ -5178,9 +4705,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "R-36 Eruptor"
   },
   "15219556623070951071": {
@@ -5192,9 +4716,6 @@
     "magazines_max": 12,
     "reload": 4,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": 0,
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -5231,20 +4752,14 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "15805795754758043311": {"id": "15805795754758043311"},
   "16361817941812852399": {
     "id": "16361817941812852399",
     "racked": ["4510702625533881224"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "8484362704672433843": {
     "id": "8484362704672433843",
@@ -5253,10 +4768,8 @@
     "max_fuel_usage": 4,
     "damaged_fuel_usage": 20,
     "health": 2500,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
-    "can_die_naturally": 0
+    "can_die_naturally": 0,
+    "mounts": ["9468080011357415026"]
   },
   "4021120973472933563": {
     "id": "4021120973472933563",
@@ -5270,13 +4783,9 @@
     "remove_time": 2.5,
     "distance": 75,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -5314,9 +4823,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "A/MG-43 Machine Gun Sentry"
   },
   "9182363845171390146": {
@@ -5379,7 +4885,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "Shotgun_12g_fle",
     "rounds_per_minute": {"x": 0, "y": 220, "z": 0},
     "heat_buildup": {
@@ -5389,9 +4894,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 2,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -5437,7 +4939,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Missile_66mm",
     "rounds_per_minute": {"x": 0, "y": 240, "z": 0},
     "heat_buildup": {
@@ -5447,9 +4948,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [],
     "key": "MLS-4X Commando"
@@ -5469,7 +4967,6 @@
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -5507,9 +5004,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "SAM Launcher"
   },
   "10871298989420119782": {
@@ -5576,7 +5070,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "is_one_handed": 0,
     "arc_type": "ArcType_ArcThrower",
     "rounds_per_minute": -1,
     "key": "ARC-3 Arc Thrower"
@@ -5585,10 +5078,7 @@
     "id": "7004572901293848370",
     "racked": ["6468799106264970105"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "14770371728907552577": {
     "id": "14770371728907552577",
@@ -5617,12 +5107,10 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_StandardGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 4,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
     "sticky": 1,
-    "sticky_delay": 0,
     "is_impact_trigger": 1,
     "start_amount": 4,
     "max_amount": 4,
@@ -5639,9 +5127,6 @@
     "magazines_max": 10,
     "name": "Heavy Fusion Repeater",
     "health": 500,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -5677,9 +5162,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Heavy Fusion Repeater"
   },
   "16974551944278808389": {
@@ -5691,13 +5173,9 @@
     "magazines_max": 0,
     "remove_time": 2.5,
     "health": 1000,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -5730,10 +5208,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "428906543397164902": {
     "id": "428906543397164902",
@@ -5757,10 +5232,7 @@
     "id": "17910078671568111462",
     "racked": ["1353568197974522460"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "578623101395158887": {
     "id": "578623101395158887",
@@ -5808,9 +5280,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0},
@@ -5827,13 +5296,9 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SpecialGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
@@ -5851,13 +5316,9 @@
     "remove_time": 2.5,
     "distance": 100,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -5895,10 +5356,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "1030663026357860236": {
     "id": "1030663026357860236",
@@ -5935,7 +5393,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
@@ -5945,9 +5402,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5},
@@ -5964,13 +5418,11 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SpecialGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
     "sticky": 1,
     "sticky_delay": 0.25,
-    "is_impact_trigger": 0,
     "start_amount": 2,
     "max_amount": 3,
     "refill_amount": 2,
@@ -5989,16 +5441,12 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackSupport",
-    "is_one_handed": 0,
     "key": "Spear Backpack"
   },
   "14314828040919828387": {
     "id": "14314828040919828387",
     "remove_time": 2.5,
-    "health": 350,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 350
   },
   "2616888780303759269": {
     "id": "2616888780303759269",
@@ -6043,13 +5491,9 @@
       "extra_arc_chains_overcharge": 1.5
     },
     "health": 1000,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -6082,10 +5526,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "16120089938690525143": {
     "id": "16120089938690525143",
@@ -6120,7 +5561,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_Shotgun",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
@@ -6130,9 +5570,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Repeater"
   },
   "3041174345526908898": {
@@ -6143,9 +5580,6 @@
     "magazines_refill": 6,
     "magazines_max": 3,
     "health": 300,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 1,
@@ -6175,10 +5609,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "16206931057077323763": {"id": "16206931057077323763"},
   "133122695844997115": {
@@ -6217,7 +5648,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "is_one_handed": 0,
     "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 750, "z": 0},
     "heat_buildup": {
@@ -6227,9 +5657,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
     "silenced": 1,
-    "burst_fire_rate": 0,
     "speed_multiplier": 0.5,
     "customizations": {"projectile_type": "ProjectileType_Rifle_5p5x50mm_fmj"},
     "modifiers": [
@@ -6243,6 +5671,7 @@
     ],
     "key": "AR-48 Truth Whisperer"
   },
+  "14855805920191068159": {"id": "14855805920191068159"},
   "14845617694460717074": {
     "id": "14845617694460717074",
     "magazine_capacity": 35,
@@ -6279,7 +5708,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_Rico",
     "rounds_per_minute": {"x": 0, "y": 600, "z": 850},
     "heat_buildup": {
@@ -6289,9 +5717,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6},
@@ -6332,7 +5757,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_LightRocket",
     "rounds_per_minute": {"x": 0, "y": 600, "z": 0},
     "heat_buildup": {
@@ -6342,9 +5766,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Rocket Pod"
   },
   "5575761375102281771": {
@@ -6380,7 +5801,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_LightCannon",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
@@ -6390,9 +5810,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Autocannon"
   },
   "6280200573229258796": {"id": "6280200573229258796"},
@@ -6431,13 +5848,11 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Special",
-    "is_one_handed": 0,
     "warmup_time": 0.699999988,
     "cooldown_time": 10,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "ProjectileType_None",
-    "damage_info_type": "DamageInfoType_Projectile_Flamethrower_Ripley",
+    "damage_type": "Projectile_Flamethrower_Ripley",
     "key": "FLAM-66 Torcher"
   },
   "7102424959117264971": {
@@ -6446,26 +5861,16 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_StandardGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
     "explosion_type": "ExplosionType_Cyborg_HandGrenade_HighExplosive"
   },
-  "272271598114605133": {
-    "id": "272271598114605133",
-    "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
-  },
+  "272271598114605133": {"id": "272271598114605133", "health": 250},
   "16116574862830205005": {"id": "16116574862830205005", "remove_time": 2.5},
   "11468381642862999653": {
     "id": "11468381642862999653",
@@ -6493,8 +5898,7 @@
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0
+    "equipment_type": "EquipmentType_Pistol"
   },
   "15369542005276747891": {
     "id": "15369542005276747891",
@@ -6527,7 +5931,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "magazines": 1,
     "magazines_refill": 6,
     "magazines_max": 1,
@@ -6584,7 +5987,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_LightRocket",
     "rounds_per_minute": {"x": 0, "y": 200, "z": 0},
     "heat_buildup": {
@@ -6594,9 +5996,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Autocannon"
   },
   "16965724150372546684": {
@@ -6608,12 +6007,10 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SpecialGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
     "sticky": 1,
-    "sticky_delay": 0,
     "is_impact_trigger": 1,
     "start_amount": 3,
     "max_amount": 4,
@@ -6657,13 +6054,11 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Incendiary",
-    "is_one_handed": 0,
     "warmup_time": 0,
     "cooldown_time": 15,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "ProjectileType_None",
-    "damage_info_type": "DamageInfoType_Spray_Chem_Gun",
+    "damage_type": "Spray_Chem_Gun",
     "key": "TX-41 Sterilizer"
   },
   "15214248472323070124": {
@@ -6707,7 +6102,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 80, "z": 0},
     "heat_buildup": {
@@ -6716,10 +6110,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "SG-451 Cookout"
   },
   "1962385103464102102": {
@@ -6730,9 +6120,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -6766,9 +6153,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
+    "mounts": ["14855805920191068159", "14855805920191068159"],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "EagleAirstrikePattern_8line_ClusterBomb",
     "target_angle": 90,
@@ -6811,7 +6196,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 350, "z": 0},
     "heat_buildup": {
@@ -6821,9 +6205,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Assault Gun"
   },
   "17083241647592728848": {
@@ -6838,9 +6219,6 @@
     "starter_charge_on_recharge": 900,
     "remove_time": 2.5,
     "health": 450,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "key": "FX-12 Shield Generator Relay"
   },
   "6160539022825437465": {
@@ -6867,8 +6245,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Single"],
     "function_info": [],
-    "holster_duration": 0,
-    "wield_duration": 0,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
     "is_one_handed": 1
@@ -6910,7 +6286,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_12p5x100mm_bchp",
     "rounds_per_minute": {"x": 450, "y": 600, "z": 750},
     "heat_buildup": {
@@ -6920,9 +6295,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 30,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
@@ -6933,10 +6305,7 @@
     "id": "7741265416947841340",
     "racked": ["518600486455451088"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "2114795373903595840": {
     "id": "2114795373903595840",
@@ -6971,7 +6340,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Grenade_40mm_HE",
     "rounds_per_minute": {"x": 0, "y": 160, "z": 0},
     "heat_buildup": {
@@ -6980,10 +6348,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 3,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 3
   },
   "1279722939363854678": {
     "id": "1279722939363854678",
@@ -7021,7 +6386,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 630, "y": 760, "z": 900},
     "heat_buildup": {
@@ -7031,9 +6395,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -7055,13 +6416,9 @@
     "remove_time": 3.5,
     "distance": 75,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -7099,9 +6456,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "A/G-16 Gatling Sentry"
   },
   "11631307996670093680": {
@@ -7127,8 +6481,7 @@
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0
+    "equipment_type": "EquipmentType_Pistol"
   },
   "4291111060798646696": {"id": "4291111060798646696"},
   "18163938711866866090": {
@@ -7172,12 +6525,10 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SpecialGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
     "sticky": 1,
-    "sticky_delay": 0,
     "is_impact_trigger": 1,
     "start_amount": 3,
     "max_amount": 4,
@@ -7190,10 +6541,7 @@
     "id": "16003672528522815935",
     "racked": ["15986416455258940649", "18163938711866866090"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "3965302274531977670": {
     "id": "3965302274531977670",
@@ -7210,13 +6558,9 @@
     "remove_time": 2.5,
     "distance": 100,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -7255,9 +6599,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "A/MLS-4X Rocket Sentry"
   },
   "851455025217071569": {
@@ -7268,9 +6609,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -7304,9 +6642,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
+    "mounts": ["18223572581977941174", "18223572581977941174"],
     "payload": "EaglePayload_DoubleStrafe",
     "airstrike_pattern": "EagleAirstrikePattern_6Z",
     "target_angle": 180,
@@ -7348,7 +6684,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 425, "z": 0},
     "heat_buildup": {
@@ -7358,29 +6693,30 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Carbine"
   },
   "15991884556147755475": {
     "id": "15991884556147755475",
     "racked": ["11493422068836852751", "10871626090290489728"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "12449657272871172571": {"id": "12449657272871172571", "remove_time": 2.5},
   "9879448964426328539": {
     "id": "9879448964426328539",
     "racked": ["9927421484392399367"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
+  },
+  "2139899069241334240": {
+    "id": "2139899069241334240",
+    "distance": 50,
+    "aim_flinch_decrease": 1,
+    "aim_flinch_max": 5,
+    "aim_interpolation_speed": 3.1400001,
+    "sway_multiplier": {"x": 1, "y": 0.5},
+    "sway_frequency_multiplier": {"x": 1, "y": 1},
+    "mounts": ["9182363845171390146"]
   },
   "3907162354404645355": {
     "id": "3907162354404645355",
@@ -7392,13 +6728,8 @@
     "name": "Fusion Repeater",
     "distance": 75,
     "health": 300,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 6,
-    "aim_flinch_decrease": 0,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -7433,9 +6764,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Repeater"
   },
   "12209482505501190673": {
@@ -7449,13 +6777,9 @@
     "prefix": "E/MG-101",
     "remove_time": 2.5,
     "health": 1000,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -7489,9 +6813,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "E/MG-101 HMG Emplacement"
   },
   "16027418915446721044": {
@@ -7503,9 +6824,6 @@
     "magazines_max": 12,
     "reload": 4,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": 0,
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -7542,19 +6860,13 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "10719993517856893473": {
     "id": "10719993517856893473",
     "racked": ["1279722939363854678"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "7778022558452062755": {
     "id": "7778022558452062755",
@@ -7590,15 +6902,13 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "customizations": {},
     "modifiers": [],
     "warmup_time": 0.699999988,
     "cooldown_time": 15,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "ProjectileType_FlamethrowerBAD",
-    "damage_info_type": "DamageInfoType_None"
+    "projectile_type": "FlamethrowerBAD"
   },
   "3359716870288230953": {
     "id": "3359716870288230953",
@@ -7608,9 +6918,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -7644,9 +6951,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
+    "mounts": ["14855805920191068159", "14855805920191068159"],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "EagleAirstrikePattern_6Z",
     "target_angle": 90,
@@ -7663,9 +6968,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -7699,9 +7001,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
+    "mounts": ["5344291599364980417", "5344291599364980417"],
     "payload": "EaglePayload_Rocket",
     "airstrike_pattern": "EagleAirstrikePattern_6Z",
     "target_angle": 180,
@@ -7714,10 +7014,7 @@
     "id": "18294292771580135983",
     "racked": ["15369542005276747891"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "18151581020363463248": {"id": "18151581020363463248"},
   "5690760409550920280": {
@@ -7732,7 +7029,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackSupply",
-    "is_one_handed": 0,
     "key": "B-1 Supply Pack"
   },
   "1353568197974522460": {
@@ -7750,7 +7046,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackEnergyShield",
-    "is_one_handed": 0,
     "key": "SH-32 Shield Generator Pack"
   },
   "3973443609256024694": {
@@ -7784,8 +7079,7 @@
     "holster_duration": 0.5,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Objective",
-    "is_one_handed": 0
+    "equipment_type": "EquipmentType_Objective"
   },
   "13918995818598980231": {
     "id": "13918995818598980231",
@@ -7824,7 +7118,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "Shotgun_12g_flm",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
@@ -7834,9 +7127,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 2,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
@@ -7884,7 +7174,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 80, "z": 0},
     "heat_buildup": {
@@ -7893,10 +7182,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "ammo_types.primary_projectile_type": "ProjectileType_Shotgun_10g_buc"
     },
@@ -7925,9 +7210,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -7957,10 +7239,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "14038927220542196401": {
     "id": "14038927220542196401",
@@ -7971,9 +7250,7 @@
     "max_fuel_usage": 4,
     "damaged_fuel_usage": 20,
     "health": 600,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
+    "mounts": ["16570517418531528145", "18417602992972518459"],
     "key": "EXO-49 Emancipator Exosuit"
   },
   "13198259103089806061": {
@@ -8009,24 +7286,18 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "customizations": {},
     "modifiers": [],
     "warmup_time": 0,
     "cooldown_time": 15,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "ProjectileType_None",
-    "damage_info_type": "DamageInfoType_Drone_Chem_Gun"
+    "damage_type": "Drone_Chem_Gun"
   },
   "17188493825552378619": {
     "id": "17188493825552378619",
-    "throw_distance_min": 0,
     "throw_distance_max": 1,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
@@ -8042,13 +7313,9 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SpecialGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
@@ -8060,10 +7327,7 @@
     "id": "14586739053780151064",
     "racked": ["2802369506329449110", "16671435828232852140"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "10256545209826294564": {
     "id": "10256545209826294564",
@@ -8071,13 +7335,9 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_StandardGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
@@ -8129,13 +7389,9 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_StandardGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
@@ -8152,13 +7408,9 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_StandardGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 3,
     "max_amount": 5,
     "refill_amount": 3,
@@ -8204,7 +7456,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "is_one_handed": 0,
     "magazines": 6,
     "magazines_refill": 6,
     "magazines_max": 12,
@@ -8218,10 +7469,8 @@
     "temp_loss_modifier_extreme_heat": 0.75,
     "temp_loss_modifier_extreme_cold": 1.5,
     "needs_reload_after_overheat": 1,
-    "firing_charge": 0,
     "charge_gain_per_second": 100,
     "charge_loss_per_second": 100,
-    "min_reload_temperature": 0,
     "beam_type": "BeamType_BotTorch",
     "noise_timer": 0.25,
     "key": "Fusion Smelter Beam"
@@ -8255,7 +7504,6 @@
     "wield_duration": 0.00100000005,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Hidden",
-    "is_one_handed": 0,
     "magazines": 1,
     "magazines_refill": 6,
     "magazines_max": 1,
@@ -8263,16 +7511,12 @@
     "warning_temperature": 75,
     "emission_temperature": 50,
     "temp_gain_per_shot": 2,
-    "temp_gain_per_second": 0,
     "temp_gain_per_second_modifier": 100,
-    "temp_loss_per_second": 0,
     "temp_loss_modifier_extreme_heat": 0.75,
     "temp_loss_modifier_extreme_cold": 1.5,
     "needs_reload_after_overheat": 1,
-    "firing_charge": 0,
     "charge_gain_per_second": 200,
     "charge_loss_per_second": 75,
-    "min_reload_temperature": 0,
     "beam_type": "BeamType_PhysGun",
     "noise_timer": 0.25,
     "customizations": {},
@@ -8321,7 +7565,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_exp",
     "rounds_per_minute": {"x": 0, "y": 320, "z": 0},
     "heat_buildup": {
@@ -8331,9 +7574,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 60,
       "magazines": 4,
@@ -8356,13 +7596,9 @@
     "magazines_max": 0,
     "remove_time": 2.5,
     "health": 1000,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -8391,17 +7627,13 @@
     "cooldown_time": 15,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "ProjectileType_FlamethrowerBAD",
-    "damage_info_type": "DamageInfoType_None"
+    "projectile_type": "FlamethrowerBAD"
   },
   "992939827990506476": {
     "id": "992939827990506476",
     "racked": ["9264801226655597011"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "17196401230144941076": {
     "id": "17196401230144941076",
@@ -8438,7 +7670,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "is_one_handed": 0,
     "projectile_type": "Plasma_Bolt_Medium",
     "rounds_per_minute": {"x": 0, "y": 350, "z": 0},
     "heat_buildup": {
@@ -8448,9 +7679,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 20,
       "magazines": 3,
@@ -8510,9 +7738,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 45,
       "magazines": 5,
@@ -8578,9 +7803,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 9,
       "magazines": 4,
@@ -8597,7 +7819,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Objective",
-    "is_one_handed": 0,
     "explosion_type": "ExplosionType_EagleBomb_100kg"
   },
   "12164217308285983839": {
@@ -8611,9 +7832,6 @@
     "prefix": "AC-8",
     "reload": 4,
     "magazine_capacity": {"x": 10, "y": 0},
-    "ammo_capacity": 0,
-    "ammo_refill": 0,
-    "ammo": 0,
     "chambered": 1,
     "ammo_types": {
       "primary_projectile_type": "ProjectileType_Cannon_20mm_APHET",
@@ -8644,7 +7862,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Cannon_20mm_APHET",
     "rounds_per_minute": {"x": 0, "y": 190, "z": 0},
     "heat_buildup": {
@@ -8654,9 +7871,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [],
     "key": "AC-8 Autocannon"
@@ -8665,10 +7879,7 @@
     "id": "10806471875148778594",
     "racked": ["11300340358119080560"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "7509990704627358840": {
     "id": "7509990704627358840",
@@ -8709,10 +7920,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "8864800879179811976": {
     "id": "8864800879179811976",
@@ -8761,7 +7969,6 @@
     "firing_charge": 100,
     "charge_gain_per_second": 400,
     "charge_loss_per_second": 1000,
-    "min_reload_temperature": 0,
     "beam_type": "BeamType_Small",
     "noise_timer": 0.25,
     "customizations": {},
@@ -8782,13 +7989,9 @@
     "name": "AA Emplacement",
     "distance": 2000,
     "health": 400,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": 0,
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -8826,9 +8029,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "AA Emplacement"
   },
   "8896268509512551590": {
@@ -8872,7 +8072,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MarksmanRifle",
-    "is_one_handed": 0,
     "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
     "heat_buildup": {
@@ -8881,10 +8080,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [],
     "key": "R-2124 Constitution"
@@ -8930,8 +8125,7 @@
     "cooldown_time": 10,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "ProjectileType_None",
-    "damage_info_type": "DamageInfoType_Projectile_Flamethrower_FlamerPistol",
+    "damage_type": "Projectile_Flamethrower_FlamerPistol",
     "key": "P-72 Crisper"
   },
   "5972955417680186543": {
@@ -8985,9 +8179,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [],
     "key": "GP-31 Grenade Pistol"
@@ -9002,7 +8193,6 @@
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -9039,18 +8229,12 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "7103244170870631670": {
     "id": "7103244170870631670",
     "remove_time": 2.5,
-    "health": 500,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 500
   },
   "10355039786464021751": {
     "id": "10355039786464021751",
@@ -9062,9 +8246,6 @@
     "name": "Heavy Fusion Cannon",
     "distance": 120,
     "health": 2100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -9099,9 +8280,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
+    "mounts": ["3907162354404645355"],
     "key": "Heavy Fusion Cannon"
   },
   "7672538193198738711": {
@@ -9114,13 +8293,9 @@
     "name": "Factory Strider",
     "distance": 60,
     "health": 300,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -9158,9 +8333,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Factory Strider"
   },
   "645713022044093730": {
@@ -9174,9 +8346,6 @@
     "wind_down_time": 1,
     "rpm_multiplier": 0.333332986,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 8,
@@ -9206,10 +8375,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "3199457897835937068": {
     "id": "3199457897835937068",
@@ -9241,7 +8407,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "is_one_handed": 0,
     "magazines": 3,
     "magazines_refill": 6,
     "magazines_max": 6,
@@ -9258,7 +8423,6 @@
     "firing_charge": 100,
     "charge_gain_per_second": 400,
     "charge_loss_per_second": 1000,
-    "min_reload_temperature": 0,
     "beam_type": "BeamType_MediumDrone",
     "noise_timer": 0.25,
     "customizations": {"beam_type": "BeamType_Medium"},
@@ -9277,13 +8441,9 @@
     "wield_duration": 0.100000001,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SpecialGrenade",
-    "is_one_handed": 0,
     "throw_distance_min": 0.100000001,
     "throw_distance_max": 20,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
@@ -9324,7 +8484,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_Mg",
     "rounds_per_minute": {"x": 0, "y": 900, "z": 0},
     "heat_buildup": {
@@ -9334,21 +8493,14 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Repeater"
   },
   "3177983950714174823": {
     "id": "3177983950714174823",
     "health": 450,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -9380,7 +8532,6 @@
     "warning_temperature": 75,
     "emission_temperature": 50,
     "temp_gain_per_shot": 0.5,
-    "temp_gain_per_second": 0,
     "temp_gain_per_second_modifier": 100,
     "temp_loss_per_second": 8,
     "temp_loss_modifier_extreme_heat": 0.75,
@@ -9389,7 +8540,6 @@
     "firing_charge": 10,
     "charge_gain_per_second": 200,
     "charge_loss_per_second": 75,
-    "min_reload_temperature": 0,
     "projectile_type": "Cyborg_Mg",
     "rounds_per_minute": {"x": 10, "y": 1200, "z": 10},
     "heat_buildup": {
@@ -9398,10 +8548,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "4111341420364086640": {
     "id": "4111341420364086640",
@@ -9413,13 +8560,9 @@
     "name": "Factory Strider",
     "distance": 60,
     "health": 300,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -9457,9 +8600,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Factory Strider"
   },
   "17259437333005147504": {
@@ -9477,13 +8617,9 @@
     "remove_time": 3.5,
     "distance": 75,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -9521,9 +8657,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "A/G-16 Gatling Sentry"
   },
   "5881843148917714292": {
@@ -9538,9 +8671,6 @@
     "remove_time": 2.5,
     "distance": 125,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -9583,9 +8713,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "A/M-12 Mortar Sentry"
   },
   "12220563120145251703": {
@@ -9594,9 +8721,6 @@
     "prefix": "MD-8",
     "remove_time": 3.5,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "panel_count": 6,
     "throwable_count": 8,
     "throw_delay": 2,
@@ -9615,13 +8739,9 @@
     "remove_time": 2.5,
     "distance": 25,
     "health": 600,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -9658,9 +8778,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -9694,9 +8811,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
+    "mounts": ["16983968416304026806", "16983968416304026806"],
     "payload": "EaglePayload_Missile",
     "airstrike_pattern": "EagleAirstrikePattern_6Z",
     "target_angle": 180,
@@ -9715,9 +8830,6 @@
     "name": "Fusion Autocannon",
     "distance": 120,
     "health": 2100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -9752,9 +8864,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Autocannon"
   },
   "518600486455451088": {
@@ -9764,13 +8873,10 @@
     "recharge_time": 8,
     "health": 1000,
     "health_changerate": 2,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackDarkfluid",
-    "is_one_handed": 0,
     "key": "Chemical Backpack"
   },
   "16570517418531528145": {
@@ -9781,9 +8887,6 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -9813,10 +8916,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "11616925890035912226": {
     "id": "11616925890035912226",
@@ -9852,7 +8952,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Plasma_Bolt_Medium",
     "rounds_per_minute": {"x": 0, "y": 150, "z": 0},
     "heat_buildup": {
@@ -9862,8 +8961,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 5,
-    "spinup_time": 0,
-    "silenced": 0,
     "burst_fire_rate": 150,
     "customizations": {},
     "modifiers": []
@@ -9872,10 +8969,7 @@
     "id": "16028040304287202855",
     "racked": ["12653822188347841538"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "9291384900638350902": {
     "id": "9291384900638350902",
@@ -9914,7 +9008,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Special",
-    "is_one_handed": 0,
     "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 250, "z": 0},
     "heat_buildup": {
@@ -9924,9 +9017,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "projectile_type": "ProjectileType_Rocket_15x100mm_std",
       "magazine_capacity": 15,
@@ -10018,7 +9108,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "is_one_handed": 0,
     "projectile_type": "Railgun",
     "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
     "heat_buildup": {
@@ -10028,9 +9117,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [],
     "key": "RS-422 Railgun"
@@ -10071,7 +9157,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_ap",
     "rounds_per_minute": {"x": 0, "y": 640, "z": 0},
     "heat_buildup": {
@@ -10081,9 +9166,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 45,
       "magazines": 6,
@@ -10136,7 +9218,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_LightRocket",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
@@ -10145,10 +9226,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "9375653687096917621": {
     "id": "9375653687096917621",
@@ -10161,9 +9239,6 @@
     "backblast_offset": 1,
     "backblast_explosion_type": "ExplosionType_BackblastSmall",
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -10193,10 +9268,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "8039414067817307766": {
     "id": "8039414067817307766",
@@ -10232,13 +9304,11 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "warmup_time": 0,
     "cooldown_time": 0.0500000007,
     "spray_capsule_radius": 1,
     "ammo_cost": 0,
-    "projectile_type": "ProjectileType_Boomer_AcidStream",
-    "damage_info_type": "DamageInfoType_None",
+    "projectile_type": "Boomer_AcidStream",
     "key": "Bile Spewer"
   },
   "5892418254001999486": {
@@ -10251,13 +9321,9 @@
     "name": "Fusion Repeater",
     "distance": 60,
     "health": 300,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -10295,9 +9361,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Repeater"
   },
   "10266352102081711787": {
@@ -10341,9 +9404,6 @@
     "backblast_offset": 1,
     "backblast_explosion_type": "ExplosionType_BackblastSmall",
     "health": 250,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -10373,10 +9433,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "1573296579562737333": {
     "id": "1573296579562737333",
@@ -10413,7 +9470,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
@@ -10423,9 +9479,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5},
@@ -10469,19 +9522,13 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "13534862741616025304": {
     "id": "13534862741616025304",
     "racked": ["9869105320050739364"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "2692796710804508396": {
     "id": "2692796710804508396",
@@ -10491,21 +9538,18 @@
     "capacity": 8,
     "start_amount": 8,
     "refill_amount": 8,
+    "drone_path": "11601043503813400874",
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackDrone",
-    "is_one_handed": 0,
     "key": "AX/AR-23 \"Guard Dog\""
   },
   "15628185827517046516": {
     "id": "15628185827517046516",
     "racked": ["13834130950471716570"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "6193421986545774326": {
     "id": "6193421986545774326",
@@ -10535,13 +9579,9 @@
     "remove_time": 2.5,
     "distance": 75,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -10607,7 +9647,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "Shotgun_12g_bug",
     "rounds_per_minute": {"x": 0, "y": 180, "z": 0},
     "heat_buildup": {
@@ -10617,9 +9656,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 2,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -10659,7 +9695,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 325, "z": 0},
     "heat_buildup": {
@@ -10669,19 +9704,13 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Carbine"
   },
   "5787948413593898778": {
     "id": "5787948413593898778",
     "racked": ["12198302824036005241"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "12100643055971655455": {
     "id": "12100643055971655455",
@@ -10720,7 +9749,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "is_one_handed": 0,
     "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 920, "z": 0},
     "heat_buildup": {
@@ -10730,9 +9758,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {
       "magazine_capacity": 45,
       "magazines": 6,
@@ -10773,7 +9798,7 @@
     "noise_template": "NoiseTemplate_None",
     "scope_responsiveness": 10,
     "ergonomics": 65,
-    "infinite_ammo": 0,
+    "infinite_ammo": 1,
     "fire_modes": ["Single"],
     "function_info": [],
     "turn_speed_vertical": 60,
@@ -10788,10 +9813,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "3270354809248583475": {
     "id": "3270354809248583475",
@@ -10836,19 +9858,13 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Heavy Fusion Repeater"
   },
   "13125214096466681673": {
     "id": "13125214096466681673",
     "racked": ["3358853937828503136"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "16576307969206587212": {
     "id": "16576307969206587212",
@@ -10861,26 +9877,19 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackSupport",
-    "is_one_handed": 0,
     "key": "Autocannon Backpack"
   },
   "5546703783041515346": {
     "id": "5546703783041515346",
     "racked": ["10871298989420119782"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "2315516436421582687": {
     "id": "2315516436421582687",
     "racked": ["211331680192206384"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "4228803675738017635": {
     "id": "4228803675738017635",
@@ -10892,13 +9901,9 @@
     "name": "Factory Strider",
     "distance": 60,
     "health": 300,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -10936,9 +9941,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Factory Strider"
   },
   "3109983482551492476": {
@@ -10951,7 +9953,6 @@
     "ammo_refill": 30,
     "ammo": 30,
     "reload_amount": 1,
-    "chambered": 0,
     "ammo_types": {
       "primary_projectile_type": "ProjectileType_Shotgun_10g_buc",
       "alternate_projectile_type": "ProjectileType_None"
@@ -10990,10 +9991,6 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 0,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "SG-22 Bushwhacker"
   },
   "17623191861664038783": {
@@ -11041,9 +10038,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 1,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -11062,9 +10056,6 @@
     "remove_time": 2.5,
     "distance": 125,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -11107,9 +10098,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "A/M-23 EMS Mortar Sentry"
   },
   "344970826846105488": {
@@ -11129,7 +10117,6 @@
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -11167,9 +10154,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "max_length": 150,
     "key": "A/G-16 Gatling Sentry"
   },
@@ -11206,7 +10190,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "is_one_handed": 0,
     "projectile_type": "Cyborg_Shotgun",
     "rounds_per_minute": {"x": 0, "y": 55, "z": 0},
     "heat_buildup": {
@@ -11216,18 +10199,12 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "Fusion Carbine"
   },
   "16085819457051082660": {
     "id": "16085819457051082660",
     "name": "HIVE BREAKER DRILL",
     "health": 1500,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "can_die_naturally": 0,
     "key": "HIVE BREAKER DRILL"
   },
@@ -11243,13 +10220,9 @@
     "remove_time": 2.5,
     "distance": 100,
     "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
-    "use_high_arc": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -11288,9 +10261,6 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0,
     "key": "A/AC-8 Autocannon Sentry"
   },
   "13283381034644230080": {
@@ -11302,9 +10272,6 @@
     "magazines_max": 12,
     "distance": 120,
     "health": 2100,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -11338,10 +10305,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "12489093086854516709": {
     "id": "12489093086854516709",
@@ -11379,28 +10343,18 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4,
-    "spinup_time": 0,
-    "silenced": 0,
-    "burst_fire_rate": 0
+    "num_low_ammo_rounds": 4
   },
   "12967812241745948652": {
     "id": "12967812241745948652",
     "racked": ["744753118896166941"],
     "remove_time": 2.5,
-    "health": 200,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0
+    "health": 200
   },
   "7579602584120852463": {
     "id": "7579602584120852463",
-    "throw_distance_min": 0,
     "throw_distance_max": 1,
     "use_angular_velocity": 1,
-    "sticky": 0,
-    "sticky_delay": 0,
-    "is_impact_trigger": 0,
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
@@ -11418,7 +10372,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackSupport",
-    "is_one_handed": 0,
     "key": "Airburst Rocket Backpack"
   },
   "6468799106264970105": {
@@ -11431,8 +10384,13 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackJumppack",
-    "is_one_handed": 0,
     "key": "LIFT-850 Jump Pack"
+  },
+  "16983968416304026806": {
+    "id": "16983968416304026806",
+    "backblast_angle": 25,
+    "backblast_offset": 1,
+    "backblast_explosion_type": "ExplosionType_BackblastMedium"
   },
   "15986416455258940649": {
     "id": "15986416455258940649",
@@ -11442,9 +10400,6 @@
     "name": "Missile Silo",
     "prefix": "MS-220",
     "health": 450,
-    "health_changerate": 0,
-    "health_changerate_disabled": 0,
-    "require_demolition": 0,
     "explosion_type": "ExplosionType_Mini_Missile_Silo",
     "key": "MS-220 Missile Silo"
   },
@@ -11461,8 +10416,19 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackMedic",
-    "is_one_handed": 0,
     "key": "SH-20 MEDIC BACKPACK"
+  },
+  "11601043503813400874": {
+    "id": "11601043503813400874",
+    "distance": 50,
+    "health": 100,
+    "can_die_naturally": 0,
+    "aim_flinch_decrease": 1,
+    "aim_flinch_max": 5,
+    "aim_interpolation_speed": 3.1400001,
+    "sway_multiplier": {"x": 1, "y": 0.5},
+    "sway_frequency_multiplier": {"x": 1, "y": 1},
+    "mounts": ["11756121139324203897"]
   },
   "10871626090290489728": {
     "id": "10871626090290489728",
@@ -11475,7 +10441,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackSupport",
-    "is_one_handed": 0,
     "key": "Recoilless Rifle Backpack"
   },
   "12653822188347841538": {
@@ -11486,11 +10451,11 @@
     "capacity": 4,
     "start_amount": 4,
     "refill_amount": 2,
+    "drone_path": "6624453650490018537",
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackDrone",
-    "is_one_handed": 0,
     "key": "AX/LAS-5 \"Guard Dog\" Rover"
   },
   "13834130950471716570": {
@@ -11501,11 +10466,35 @@
     "capacity": 6,
     "start_amount": 6,
     "refill_amount": 6,
+    "drone_path": "13383279112602229081",
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_BackpackDrone",
-    "is_one_handed": 0,
     "key": "AX/TX-13 \"Guard Dog\" Dog Breath"
+  },
+  "13383279112602229081": {
+    "id": "13383279112602229081",
+    "distance": 50,
+    "health": 100,
+    "can_die_naturally": 0,
+    "aim_flinch_decrease": 1,
+    "aim_flinch_max": 5,
+    "aim_interpolation_speed": 3.1400001,
+    "sway_multiplier": {"x": 1, "y": 0.5},
+    "sway_frequency_multiplier": {"x": 1, "y": 1},
+    "mounts": ["13198259103089806061"]
+  },
+  "6624453650490018537": {
+    "id": "6624453650490018537",
+    "distance": 50,
+    "health": 100,
+    "can_die_naturally": 0,
+    "aim_flinch_decrease": 1,
+    "aim_flinch_max": 5,
+    "aim_interpolation_speed": 3.1400001,
+    "sway_multiplier": {"x": 1, "y": 0.5},
+    "sway_frequency_multiplier": {"x": 1, "y": 1},
+    "mounts": ["3199457897835937068"]
   }
 }

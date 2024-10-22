@@ -22,11 +22,12 @@ async function readJson(...fpath) {
   return json
 }
 
-function copy(props) {
+function copy(props, opts) {
   return function copyProps(dest, source) {
     for(const prop of props) {
       const v = source[prop]
       if(v == null) { continue }
+      if(opts?.omit_falsey && !v) { continue }
       dest[prop] = v
     }
   }
@@ -229,7 +230,7 @@ const handlers = {
       'silenced',
       'burst_fire_rate',
       'infinite_ammo',
-    ])(wpn, component)
+    ], { omit_falsey: true })(wpn, component)
     const projectile = refs.projectile(component.projectile_type)
     if(projectile) {
       wpn.projectile_type = projectile
@@ -261,7 +262,7 @@ const handlers = {
     'pickup_duration',
     'equipment_type',
     'is_one_handed',
-  ]),
+  ], { omit_falsey: true }),
   WeaponCustomizationComponent(wpn, component) {
     const changes = component
       .default_customizations
@@ -294,14 +295,22 @@ const handlers = {
   },
   AbilityComponent: null,
   NetworkPhysicsComponent: null,
-  SprayWeaponComponent: copy([
-    'warmup_time',
-    'cooldown_time',
-    'spray_capsule_radius',
-    'ammo_cost',
-    'projectile_type',
-    'damage_info_type',
-  ]),
+  SprayWeaponComponent(wpn, component) {
+    copy([
+      'warmup_time',
+      'cooldown_time',
+      'spray_capsule_radius',
+      'ammo_cost',
+    ])(wpn, component)
+    const projectile = refs.projectile(component.projectile_type)
+    if(projectile) {
+      wpn.projectile_type = projectile
+    }
+    const damage = refs.damage(component.damage_info_type)
+    if(damage) {
+      wpn.damage_type = damage
+    }
+  },
   TagComponent: null,
   StaticRotationComponent: null,
   HitEffectComponent: null,
@@ -319,7 +328,7 @@ const handlers = {
       'health_changerate',
       'health_changerate_disabled',
       'require_demolition',
-    ])(wpn, component)
+    ], { omit_falsey: true })(wpn, component)
     if(component.explosion_damage_multiplier !== 1) {
       wpn.explosion_damage_multiplier = component.explosion_damage_multiplier
     }
@@ -335,7 +344,7 @@ const handlers = {
     'aim_flinch_decrease',
     'aim_flinch_max',
     'use_high_arc',
-  ]),
+  ], { omit_falsey: true }),
   WeaponWielderComponent(wpn, component) {
     copy([
       'aim_interpolation_speed',
@@ -403,7 +412,14 @@ const handlers = {
   NavigationComponent: null,
   GroundCheckComponent: null,
   TargetAimConstraintComponent: null,
-  MountComponent: null,
+  MountComponent(wpn, component) {
+    wpn.mounts = component.infos
+      .filter(info => info.path)
+      .map(info => info.path)
+    for(const mount of wpn.mounts) {
+      deferEntity(mount)
+    }
+  },
   IdleAbilityComponent: null,
   OverlapDamageComponent: null,
   SyncedHealthComponent: null,
@@ -429,7 +445,7 @@ const handlers = {
     'chambered',
     'infinite_ammo',
     'ammo_types',
-  ]),
+  ], { omit_falsey: true }),
   BackblastComponent(wpn, component) {
     wpn.backblast_angle = component.angle
     wpn.backblast_offset = component.offset
@@ -439,7 +455,7 @@ const handlers = {
     'arc_type',
     'rounds_per_minute',
     'infinite_ammo',
-  ]),
+  ], { omit_falsey: true }),
   WeaponHeatComponent: copy([
     'magazines',
     'magazines_refill',
@@ -459,7 +475,7 @@ const handlers = {
     'charge_gain_per_second',
     'charge_loss_per_second',
     'min_reload_temperature',
-  ]),
+  ], { omit_falsey: true }),
   BeamWeaponComponent: copy([
     'beam_type',
     'scope_responsiveness',
@@ -474,7 +490,7 @@ const handlers = {
     'interpolation_speed_firing',
     'reload_amount',
     'reload_cost',
-  ]),
+  ], { omit_falsey: true }),
   LaserDesignatorComponent: null,
   MultiTargetComponent: null,
   RotationSoundPlayerComponent: null,
@@ -492,7 +508,7 @@ const handlers = {
     'max_amount',
     'refill_amount',
     'on_stick_damage_type',
-  ]),
+  ], { omit_falsey: true }),
   ExplosiveComponent: copy([
     'explosion_type',
   ]),
@@ -562,6 +578,10 @@ const handlers = {
       'start_amount',
       'refill_amount',
     ])(wpn, component)
+    if(component.drone_path) {
+      wpn.drone_path = component.drone_path
+      deferEntity(wpn.drone_path)
+    }
   },
   ObjectiveSecureAreaComponent: null,
   NoiseComponent: null,
@@ -731,7 +751,7 @@ function readTypeStratagem(item) {
     uses = void 0
   }
   for(const id of item.payload) {
-    deferEntity(BigInt(id))
+    deferEntity(id)
   }
   return {
     ref: refs.stratagem(item.type),
@@ -742,7 +762,7 @@ function readTypeStratagem(item) {
     calltime: float(item.spawn_time),
     radius: float(item.spawn_radius) || void 0,
     cooldown: float(item.cooldown_duration_success),
-    weaponid: item.matching_support_weapon || 0,
+    weaponid: item.matching_support_weapon || void 0,
     payload: item.payload.filter(id => id > 0).map(p => p.toString()),
   }
 }

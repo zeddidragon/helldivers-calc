@@ -735,14 +735,6 @@ cap = 4
 [[stratagem]]
 category = "Backpack"
 fullname = "AX/AR-23 \"Guard Dog\""
-health = 400
-armor = 4
-calltime = 5
-cooldown = 480
-salvos = 6
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Rifle_5p5x50mm_fmj"
 
 [[stratagem]]
 category = "Backpack"

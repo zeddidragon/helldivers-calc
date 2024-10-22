@@ -333,9 +333,9 @@ mixin stratagemsRow(obj, opts = {})
     else
       span.rpm-main= obj.rpm
   td.stratagem.cap
-    if obj.salvos
-      span.salvos= obj.salvos
-    span.strat-cap= obj.cap || obj.limit
+    if obj.salvos || obj.magazines
+      span.salvos= obj.salvos || obj.magazines
+    span.strat-cap= obj.cap || obj.limit || obj.magazine_capacity
   td.stratagem.capextra
     if obj.limit
       span.cap-limit s

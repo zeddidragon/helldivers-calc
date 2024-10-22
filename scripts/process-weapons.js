@@ -188,11 +188,51 @@ setup.stratagem = setup.stratagem
       .split(/\s+/)
       .slice(1)
       .join(' ')
-    console.log({ name })
-    return {
-      ...stratByName[name],
+    const stratData = stratByName[name] || {}
+    const obj = {
+      ...stratData,
       ...strat,
     }
+    const entityQueue = []
+    for(const id of (obj.payload || [])) {
+      const entity = { ...(shalzuth[id] || {}) }
+      delete entity.id
+      Object.assign(obj, entity)
+    }
+    for(const id of (obj.racked || [])) {
+      const entity = { ...(shalzuth[id] || {}) }
+      delete entity.id
+      Object.assign(obj, entity)
+    }
+    if(obj.drone_path) {
+      const entity = { ...(shalzuth[obj.drone_path] || {}) }
+      delete entity.id
+      Object.assign(obj, entity)
+    }
+    for(const id of (obj.mounts || [])) {
+      const entity = { ...(shalzuth[id] || {}) }
+      delete entity.id
+      Object.assign(obj, entity)
+    }
+    delete obj.payload
+    delete obj.racked
+    delete obj.drone_path
+    delete obj.mounts
+    obj.name = strat.name || name || obj.name
+    obj.fullname = strat.fullname || obj.fullname
+    if(obj.projectile_type) {
+      obj.attack = [...(obj.attack || []), {
+        medium: 'projectile',
+        ref: obj.projectile_type,
+      }]
+    }
+    if(obj.damage_type) {
+      obj.attack = [...(obj.attack || []), {
+        medium: 'damage',
+        ref: obj.damage_type,
+      }]
+    }
+    return obj
   })
 
 let dbgCondition = false
