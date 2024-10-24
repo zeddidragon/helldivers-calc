@@ -334,7 +334,7 @@ const handlers = {
     }
     copy([
       'armor',
-    ])(wpn, component.default_damagable_zone_info || {})
+    ])(wpn, component.default_damageable_zone_info || {})
     if(component.can_die_naturally !== 1) {
       wpn.can_die_naturally = component.can_die_naturally
     }
@@ -449,7 +449,7 @@ const handlers = {
   BackblastComponent(wpn, component) {
     wpn.backblast_angle = component.angle
     wpn.backblast_offset = component.offset
-    wpn.backblast_explosion_type = component.type
+    wpn.backblast_explosion_type = refs.explosion(component.type)
   },
   ArcWeaponComponent: copy([
     'arc_type',
@@ -476,11 +476,13 @@ const handlers = {
     'charge_loss_per_second',
     'min_reload_temperature',
   ], { omit_falsey: true }),
-  BeamWeaponComponent: copy([
-    'beam_type',
-    'scope_responsiveness',
-    'noise_timer',
-  ]),
+  BeamWeaponComponent(wpn, component) {
+    copy([
+      'scope_responsiveness',
+      'noise_timer',
+    ])(wpn, component)
+    wpn.beam_type = refs.beam(component.beam_type)
+  },
   InteractableMinigameComponent: null,
   ProspectorComponent: null,
   InteractableObjectiveTerminalComponent: null,
@@ -509,9 +511,7 @@ const handlers = {
     'refill_amount',
     'on_stick_damage_type',
   ], { omit_falsey: true }),
-  ExplosiveComponent: copy([
-    'explosion_type',
-  ]),
+  ExplosiveComponent: null,
   DamagePropagatorComponent: null,
   PowerGeneratedComponent: null,
   PhysicsWeaponComponent: null,
@@ -527,13 +527,17 @@ const handlers = {
     'area_size',
     'projectile_types',
   ]),
-  ThrowerComponent: copy([
-    'panel_count',
-    'throwable_count',
-    'throw_delay',
-    'throw_duration',
-  ]),
-  MinefieldComponent: null,
+  ThrowerComponent(wpn, component) {
+    copy([
+      'panel_count',
+      'throwable_count',
+      'throw_delay',
+      'throw_duration',
+    ])(wpn, component)
+  },
+  MinefieldComponent(wpn, component) {
+    wpn.explosion_type = refs.explosion(component.explosion_type)
+  },
   StratagemFiresupportComponent: null,
   DangerWarningComponent: null,
   SensorProximityComponent: null,
@@ -598,14 +602,13 @@ const handlers = {
   BowlingBallComponent: null,
   LandingZoneBeaconComponent: null,
   StatusEffectVolumeComponent: null,
-  ShieldComponent: copy([
-    'radius',
-    'charge',
-    'recharge_delay',
-    'broken_recharge_delay',
-    'recharge_rate',
-    'starter_charge_on_recharge',
-  ]),
+  ShieldComponent(wpn, component) {
+    wpn.shield = component.charge
+    wpn.shieldregen = component.recharge_rate
+    wpn.shielddelay = +component.recharge_delay.toFixed(2)
+    wpn.shieldbreakdelay = component.broken_recharge_delay
+    wpn.shieldradius = +component.radius.toFixed(2)
+  },
   ReinforcementLocationComponent: null,
   SosComponent: null,
   StoryInteractableComponent: null,

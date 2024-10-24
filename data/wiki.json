@@ -1896,12 +1896,7 @@
       "roundstart": 3,
       "source": "hd-mobilize",
       "sourcepage": 1,
-      "attacks": [
-        {
-          "type": "explosion",
-          "name": "Frag"
-        }
-      ]
+      "attacks": []
     },
     "G-12 High Explosive": {
       "category": "Standard Grenade",
@@ -1909,12 +1904,7 @@
       "roundsbox": 4,
       "roundstart": 3,
       "source": "start",
-      "attacks": [
-        {
-          "type": "explosion",
-          "name": "HighExplosive"
-        }
-      ]
+      "attacks": []
     },
     "G-10 Incendiary": {
       "category": "Standard Grenade",
@@ -1923,12 +1913,7 @@
       "roundstart": 3,
       "source": "steel-vets",
       "sourcepage": 2,
-      "attacks": [
-        {
-          "type": "explosion",
-          "name": "Incendiary"
-        }
-      ]
+      "attacks": []
     },
     "G-16 Impact": {
       "category": "Special Throwable",
@@ -1936,12 +1921,7 @@
       "roundsbox": 4,
       "roundstart": 3,
       "source": "start",
-      "attacks": [
-        {
-          "type": "explosion",
-          "name": "Impact"
-        }
-      ]
+      "attacks": []
     },
     "G-13 Incendiary Impact": {
       "category": "Special Throwable",
@@ -1950,12 +1930,7 @@
       "roundstart": 3,
       "source": "polar-pat",
       "sourcepage": 2,
-      "attacks": [
-        {
-          "type": "explosion",
-          "name": "Incendiary_Impact"
-        }
-      ]
+      "attacks": []
     },
     "G-23 Stun": {
       "category": "Special Throwable",
@@ -1964,12 +1939,7 @@
       "roundstart": 3,
       "source": "cut-edge",
       "sourcepage": 2,
-      "attacks": [
-        {
-          "type": "explosion",
-          "name": "Flash"
-        }
-      ]
+      "attacks": []
     },
     "G-3 Smoke": {
       "category": "Special Throwable",
@@ -1978,12 +1948,7 @@
       "roundstart": 3,
       "source": "hd-mobilize",
       "sourcepage": 8,
-      "attacks": [
-        {
-          "type": "explosion",
-          "name": "Grenade_Smoke"
-        }
-      ]
+      "attacks": []
     },
     "G-123 Thermite": {
       "category": "Special Throwable",
@@ -1996,10 +1961,6 @@
         {
           "type": "damage",
           "name": "DPS_Thermite"
-        },
-        {
-          "type": "explosion",
-          "name": "Thermite"
         }
       ]
     },
@@ -2024,12 +1985,7 @@
       "roundstart": 3,
       "source": "chemical-agents",
       "sourcepage": 1,
-      "attacks": [
-        {
-          "type": "explosion",
-          "name": "GasGrenade"
-        }
-      ]
+      "attacks": []
     },
     "Melee": {
       "category": "Ability",
@@ -2162,7 +2118,7 @@
       "calltime": 5,
       "cooldown": 480,
       "health": 200,
-      "armor": 4,
+      "armor": 2,
       "cap": 4,
       "remove_time": 2.5,
       "type": "LoadoutItemType_Backpack",
@@ -2192,6 +2148,7 @@
       "cooldown": 480,
       "remove_time": 2.5,
       "health": 100,
+      "armor": 1,
       "type": "LoadoutItemType_Backpack",
       "prefix": "AX/AR-23",
       "capacity": 8,
@@ -2294,9 +2251,9 @@
       ],
       "calltime": 5,
       "cooldown": 480,
-      "health": 100,
-      "armor": 4,
       "remove_time": 2.5,
+      "health": 100,
+      "armor": 1,
       "type": "LoadoutItemType_Backpack",
       "prefix": "LAS-5",
       "capacity": 4,
@@ -2369,8 +2326,8 @@
       "firing_charge": 100,
       "charge_gain_per_second": 400,
       "charge_loss_per_second": 1000,
-      "beam_type": "BeamType_MediumDrone",
       "noise_timer": 0.25,
+      "beam_type": "MediumDrone",
       "customizations": {
         "beam_type": "BeamType_Medium"
       },
@@ -2408,11 +2365,11 @@
       ],
       "calltime": 5,
       "cooldown": 480,
-      "health": 100,
-      "armor": 4,
       "source": "chemical-agents",
       "sourcepage": 3,
       "remove_time": 2.5,
+      "health": 100,
+      "armor": 1,
       "type": "LoadoutItemType_Backpack",
       "prefix": "AX/TX-13",
       "capacity": 6,
@@ -2505,9 +2462,9 @@
       ],
       "calltime": 5,
       "cooldown": 300,
+      "remove_time": 2.5,
       "health": 400,
       "armor": 4,
-      "remove_time": 2.5,
       "type": "LoadoutItemType_Backpack",
       "prefix": "SH-20",
       "recoil_info": {
@@ -2563,22 +2520,16 @@
       ],
       "calltime": 5,
       "cooldown": 480,
+      "remove_time": 2.5,
       "health": 200,
-      "armor": 4,
+      "armor": 2,
+      "type": "LoadoutItemType_Backpack",
+      "prefix": "SH-32",
       "shield": 150,
       "shieldregen": 150,
       "shielddelay": 60,
       "shieldbreakdelay": 12,
-      "shieldradius": 1,
-      "remove_time": 2.5,
-      "type": "LoadoutItemType_Backpack",
-      "prefix": "SH-32",
-      "radius": 1.29999995,
-      "charge": 150,
-      "recharge_delay": 60,
-      "broken_recharge_delay": 12,
-      "recharge_rate": 150,
-      "starter_charge_on_recharge": 150,
+      "shieldradius": 1.3,
       "holster_duration": 0.300000012,
       "wield_duration": 0.5,
       "pickup_duration": 0.5,
@@ -2597,24 +2548,17 @@
         "Left",
         "Right"
       ],
-      "calltime": 3,
-      "cooldown": 180,
+      "calltime": 0,
+      "cooldown": 90,
+      "prefix": "FX-12",
+      "shield": 4000,
+      "shieldregen": 400,
+      "shielddelay": 0.01,
+      "shieldbreakdelay": 45,
+      "shieldradius": 15,
+      "remove_time": 2.5,
       "health": 450,
       "armor": 1,
-      "limit": 30,
-      "shield": 4000,
-      "shieldregen": 300,
-      "shielddelay": 5,
-      "shieldbreakdelay": 8,
-      "shieldradius": 8,
-      "prefix": "FX-12",
-      "radius": 15,
-      "charge": 4000,
-      "recharge_delay": 0.00999999978,
-      "broken_recharge_delay": 45,
-      "recharge_rate": 400,
-      "starter_charge_on_recharge": 900,
-      "remove_time": 2.5,
       "key": "FX-12 Shield Generator Relay",
       "attacks": []
     },
@@ -2629,20 +2573,19 @@
       ],
       "calltime": 3,
       "cooldown": 180,
+      "prefix": "MD-6",
+      "explosion_type": "ContactMine",
+      "remove_time": 3.5,
       "health": 250,
       "armor": 1,
-      "prefix": "MD-6",
-      "remove_time": 3.5,
       "panel_count": 6,
       "throwable_count": 8,
       "throw_delay": 2,
       "throw_duration": 1.5,
       "key": "MD-6 Anti-Personnel Minefield",
+      "salvos": 6,
+      "cap": 8,
       "attacks": [
-        {
-          "type": "projectile",
-          "name": "ContactMine"
-        },
         {
           "type": "explosion",
           "name": "ContactMine"
@@ -2660,20 +2603,19 @@
       ],
       "calltime": 3,
       "cooldown": 180,
+      "prefix": "MD-17",
+      "explosion_type": "AntiTankMine",
+      "remove_time": 3.5,
       "health": 250,
       "armor": 1,
-      "prefix": "MD-17",
-      "remove_time": 3.5,
       "panel_count": 6,
       "throwable_count": 3,
       "throw_delay": 2,
       "throw_duration": 1.5,
       "key": "MD-17 Anti-tank Mines",
+      "salvos": 6,
+      "cap": 3,
       "attacks": [
-        {
-          "type": "projectile",
-          "name": "ContactMine"
-        },
         {
           "type": "explosion",
           "name": "AntiTankMine"
@@ -2691,19 +2633,18 @@
       ],
       "calltime": 3,
       "cooldown": 180,
+      "prefix": "MD-I4",
+      "explosion_type": "IncendiaryMine",
+      "remove_time": 3.5,
       "health": 250,
       "armor": 1,
-      "prefix": "MD-I4",
-      "remove_time": 3.5,
       "panel_count": 6,
       "throwable_count": 8,
       "throw_delay": 2,
       "throw_duration": 1.5,
+      "salvos": 6,
+      "cap": 8,
       "attacks": [
-        {
-          "type": "projectile",
-          "name": "ContactMine"
-        },
         {
           "type": "explosion",
           "name": "IncendiaryMine"
@@ -3225,7 +3166,7 @@
       "magazines_max": 1,
       "backblast_angle": 20,
       "backblast_offset": 0.75,
-      "backblast_explosion_type": "ExplosionType_BackblastMedium",
+      "backblast_explosion_type": "BackblastMedium",
       "prefix": "A/MLS-4X",
       "remove_time": 2.5,
       "distance": 100,
@@ -3522,7 +3463,7 @@
       "radius": 2,
       "cooldown": 600,
       "health": 2500,
-      "armor": 3,
+      "armor": 0,
       "prefix": "EXO-45",
       "initial_fuel": {
         "x": 10000,
@@ -3632,7 +3573,7 @@
       "radius": 2,
       "cooldown": 600,
       "health": 2500,
-      "armor": 3,
+      "armor": 0,
       "prefix": "EXO-49",
       "initial_fuel": {
         "x": 10000,
@@ -3742,6 +3683,7 @@
       "cooldown": 30,
       "remove_time": 2.5,
       "health": 350,
+      "armor": 2,
       "attacks": [
         {
           "type": "explosion",

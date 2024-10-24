@@ -3,13 +3,15 @@
     "id": "4971147757632036889",
     "racked": ["4092536715104205912", "10266352102081711787"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "578662561602494491": {
     "id": "578662561602494491",
     "racked": ["2692796710804508396"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "6918199871803715620": {
     "id": "6918199871803715620",
@@ -24,8 +26,7 @@
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
-    "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Frag"
+    "on_stick_damage_type": "DamageInfoType_None"
   },
   "16995860793330061350": {
     "id": "16995860793330061350",
@@ -102,6 +103,7 @@
     "magazines_max": 12,
     "name": "Automaton Mortar Emplacement",
     "health": 400,
+    "armor": 4,
     "aim_drag": 2.70000005,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -483,7 +485,8 @@
     "id": "13946543042552897732",
     "racked": ["13356503403972720861"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "17488789745215357128": {
     "id": "17488789745215357128",
@@ -538,6 +541,7 @@
     "remove_time": 3.5,
     "distance": 75,
     "health": 2000,
+    "armor": 4,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -636,6 +640,7 @@
     "magazines_max": 10,
     "name": "Heavy Fusion Repeater",
     "health": 500,
+    "armor": 4,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -661,7 +666,6 @@
     "turn_speed_horizontal": 45,
     "vertical_limit_min": -35,
     "vertical_limit_max": 35,
-    "explosion_type": "ExplosionType_Conscript_Backpack_Explosion",
     "projectile_type": "Cyborg_LightCannon",
     "rounds_per_minute": {"x": 0, "y": 120, "z": 0},
     "heat_buildup": {
@@ -681,6 +685,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -716,7 +721,8 @@
   "12765265282294763822": {
     "id": "12765265282294763822",
     "remove_time": 2.5,
-    "health": 1250
+    "health": 1250,
+    "armor": 1
   },
   "13171605573572653383": {
     "id": "13171605573572653383",
@@ -771,6 +777,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
+    "armor": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -823,6 +830,7 @@
     "name": "Heavy Fusion Repeater",
     "distance": 75,
     "health": 300,
+    "armor": 3,
     "aim_drag": 6,
     "aim_flinch_max": 5,
     "recoil_info": {
@@ -874,6 +882,7 @@
     "remove_time": 2.5,
     "distance": 25,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -1182,7 +1191,7 @@
     "type": "LoadoutItemType_SupportWeapon",
     "backblast_angle": 20,
     "backblast_offset": 1.14999998,
-    "backblast_explosion_type": "ExplosionType_BackblastMedium",
+    "backblast_explosion_type": "BackblastMedium",
     "name": "Expendable Anti-Tank",
     "prefix": "EAT-17",
     "recoil_info": {
@@ -1402,6 +1411,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -1437,7 +1447,8 @@
     "id": "12611223767334871581",
     "racked": ["4291111060798646696"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "3641453212932526628": {
     "id": "3641453212932526628",
@@ -1482,8 +1493,8 @@
     "needs_reload_after_overheat": 1,
     "charge_gain_per_second": 100,
     "charge_loss_per_second": 100,
-    "beam_type": "BeamType_TripodEye",
     "noise_timer": 0.25,
+    "beam_type": "TripodEye",
     "key": "Quantum Disruptor Beam"
   },
   "602390376167162446": {
@@ -1540,8 +1551,10 @@
   "13777321776887997010": {
     "id": "13777321776887997010",
     "prefix": "MD-I4",
+    "explosion_type": "IncendiaryMine",
     "remove_time": 3.5,
     "health": 250,
+    "armor": 1,
     "panel_count": 6,
     "throwable_count": 8,
     "throw_delay": 2,
@@ -1551,8 +1564,10 @@
     "id": "2712008117028049500",
     "name": "Anti-tank Mines",
     "prefix": "MD-17",
+    "explosion_type": "AntiTankMine",
     "remove_time": 3.5,
     "health": 250,
+    "armor": 1,
     "panel_count": 6,
     "throwable_count": 3,
     "throw_delay": 2,
@@ -1606,7 +1621,8 @@
   "14394260739264934509": {
     "id": "14394260739264934509",
     "remove_time": 2.5,
-    "health": 1250
+    "health": 1250,
+    "armor": 1
   },
   "11300340358119080560": {
     "id": "11300340358119080560",
@@ -1641,8 +1657,7 @@
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
-    "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_None"
+    "on_stick_damage_type": "DamageInfoType_None"
   },
   "4885016034561106550": {
     "id": "4885016034561106550",
@@ -1789,7 +1804,8 @@
     "id": "3586234782721573506",
     "racked": ["12008625947668001407"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "18077013842796163719": {"id": "18077013842796163719"},
   "2802369506329449110": {
@@ -1802,7 +1818,7 @@
     "type": "LoadoutItemType_SupportWeapon",
     "backblast_angle": 20,
     "backblast_offset": 0.939999998,
-    "backblast_explosion_type": "ExplosionType_BackblastLarge",
+    "backblast_explosion_type": "BackblastLarge",
     "interpolation_speed_aim": 0.100000001,
     "interpolation_speed_firing": 0.0500000007,
     "reload_amount": 1,
@@ -1851,7 +1867,8 @@
     "id": "3548847957556322972",
     "racked": ["5690760409550920280"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "1892480894983787169": {
     "id": "1892480894983787169",
@@ -1930,6 +1947,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 3500,
+    "armor": 2,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -2044,7 +2062,8 @@
     "id": "7470354883998204659",
     "racked": ["3865797767236207742"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "1585898554922009358": {
     "id": "1585898554922009358",
@@ -2056,6 +2075,7 @@
     "name": "Fusion Repeater",
     "distance": 75,
     "health": 500,
+    "armor": 3,
     "aim_drag": 6,
     "aim_flinch_max": 5,
     "aim_interpolation_speed": 3.1400001,
@@ -2132,8 +2152,10 @@
     "id": "17297258079668724512",
     "name": "Anti-Personnel Minefield",
     "prefix": "MD-6",
+    "explosion_type": "ContactMine",
     "remove_time": 3.5,
     "health": 250,
+    "armor": 1,
     "panel_count": 6,
     "throwable_count": 8,
     "throw_delay": 2,
@@ -2365,13 +2387,15 @@
     "id": "11594114104552493871",
     "racked": ["6453678319562593995"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "14990836890103997252": {
     "id": "14990836890103997252",
     "racked": ["3743261888606184850"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "15470422196992643923": {
     "id": "15470422196992643923",
@@ -2471,8 +2495,8 @@
     "firing_charge": 100,
     "charge_gain_per_second": 400,
     "charge_loss_per_second": 1000,
-    "beam_type": "BeamType_Medium",
     "noise_timer": 0.25,
+    "beam_type": "Medium",
     "customizations": {"beam_type": "BeamType_Medium"},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0},
@@ -2761,6 +2785,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -2800,6 +2825,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
+    "armor": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -2845,6 +2871,7 @@
   "12218137513893139416": {
     "id": "12218137513893139416",
     "health": 500,
+    "armor": 3,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -2906,7 +2933,7 @@
     "magazines_max": 5,
     "backblast_angle": 15,
     "backblast_offset": 5.5,
-    "backblast_explosion_type": "ExplosionType_BackblastHuge",
+    "backblast_explosion_type": "BackblastHuge",
     "name": "SAM Launcher",
     "distance": 1200,
     "aim_drag": 0.5,
@@ -3010,6 +3037,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
+    "armor": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -3178,8 +3206,7 @@
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
-    "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_IncendiaryMine"
+    "on_stick_damage_type": "DamageInfoType_None"
   },
   "11493422068836852751": {
     "id": "11493422068836852751",
@@ -3191,7 +3218,7 @@
     "type": "LoadoutItemType_SupportWeapon",
     "backblast_angle": 20,
     "backblast_offset": 0.939999998,
-    "backblast_explosion_type": "ExplosionType_BackblastLarge",
+    "backblast_explosion_type": "BackblastLarge",
     "interpolation_speed_aim": 0.100000001,
     "interpolation_speed_firing": 0.0500000007,
     "reload_amount": 1,
@@ -3292,7 +3319,8 @@
     "id": "16793772489963160606",
     "racked": ["4155583896232633279"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "3397257356679758881": {
     "id": "3397257356679758881",
@@ -3316,7 +3344,8 @@
     "id": "6863983759145391137",
     "racked": ["12164217308285983839", "16576307969206587212"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "18417602992972518459": {
     "id": "18417602992972518459",
@@ -3326,6 +3355,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -3365,6 +3395,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -3462,6 +3493,7 @@
     "wind_down_time": 1,
     "rpm_multiplier": 0.333332986,
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 8,
@@ -3707,6 +3739,7 @@
     "remove_time": 2.5,
     "distance": 75,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -3755,6 +3788,7 @@
     "prefix": "E/MG-101",
     "remove_time": 2.5,
     "health": 1000,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -3851,6 +3885,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
+    "armor": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -3903,6 +3938,7 @@
     "name": "Factory Strider",
     "distance": 60,
     "health": 300,
+    "armor": 3,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -4013,6 +4049,7 @@
     "name": "Factory Strider",
     "distance": 60,
     "health": 300,
+    "armor": 3,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -4166,20 +4203,23 @@
     "id": "14231239742203987259",
     "racked": ["2714034314705433838", "10287068634025973658"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "11376870716921492798": {
     "id": "11376870716921492798",
     "racked": ["3973443609256024694"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "14374614348695467343": {"id": "14374614348695467343"},
   "4202058061031081322": {
     "id": "4202058061031081322",
     "racked": ["10844335154607830587"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "17636297115750610289": {
     "id": "17636297115750610289",
@@ -4235,7 +4275,6 @@
     "max_amount": 4,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_GasGrenade",
     "key": "G-4 Gas"
   },
   "7715225218085078398": {
@@ -4254,7 +4293,6 @@
     "max_amount": 4,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_HighExplosive",
     "key": "G-12 High Explosive"
   },
   "17795912175944443264": {
@@ -4304,7 +4342,8 @@
       "2692796710804508396"
     ],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 0
   },
   "11105721130648470965": {
     "id": "11105721130648470965",
@@ -4317,7 +4356,8 @@
     "id": "1141864099511539165",
     "racked": ["2401215835282261016"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "8783342891467425251": {
     "id": "8783342891467425251",
@@ -4328,6 +4368,7 @@
     "max_fuel_usage": 4,
     "damaged_fuel_usage": 20,
     "health": 600,
+    "armor": 3,
     "mounts": ["9388736439472594613", "645713022044093730"],
     "key": "EXO-45 Patriot Exosuit"
   },
@@ -4392,6 +4433,7 @@
     "remove_time": 2.5,
     "distance": 75,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -4438,6 +4480,7 @@
     "id": "1837707428311856638",
     "remove_time": 2.5,
     "health": 1000,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -4482,8 +4525,8 @@
     "charge_gain_per_second": 75,
     "charge_loss_per_second": 50,
     "min_reload_temperature": 50,
-    "beam_type": "BeamType_Large",
-    "noise_timer": 0.25
+    "noise_timer": 0.25,
+    "beam_type": "Large"
   },
   "11526593618038326815": {
     "id": "11526593618038326815",
@@ -4583,6 +4626,7 @@
     "name": "Ballistic Shield Backpack",
     "prefix": "SH-20",
     "health": 400,
+    "armor": 4,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -4620,6 +4664,7 @@
     "magazines_max": 12,
     "distance": 200,
     "health": 2500,
+    "armor": 0,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -4716,6 +4761,7 @@
     "magazines_max": 12,
     "reload": 4,
     "health": 250,
+    "armor": 3,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": 0,
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -4759,7 +4805,8 @@
     "id": "16361817941812852399",
     "racked": ["4510702625533881224"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "8484362704672433843": {
     "id": "8484362704672433843",
@@ -4768,6 +4815,7 @@
     "max_fuel_usage": 4,
     "damaged_fuel_usage": 20,
     "health": 2500,
+    "armor": 3,
     "can_die_naturally": 0,
     "mounts": ["9468080011357415026"]
   },
@@ -4783,6 +4831,7 @@
     "remove_time": 2.5,
     "distance": 75,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -4910,7 +4959,7 @@
     "type": "LoadoutItemType_SupportWeapon",
     "backblast_angle": 20,
     "backblast_offset": 1,
-    "backblast_explosion_type": "ExplosionType_BackblastSmall",
+    "backblast_explosion_type": "BackblastSmall",
     "name": "Commando",
     "prefix": "MLS-4X",
     "distance": 300,
@@ -4961,7 +5010,7 @@
     "magazines_max": 5,
     "backblast_angle": 15,
     "backblast_offset": 5.5,
-    "backblast_explosion_type": "ExplosionType_BackblastHuge",
+    "backblast_explosion_type": "BackblastHuge",
     "name": "SAM Launcher",
     "distance": 1200,
     "aim_drag": 0.5,
@@ -5078,7 +5127,8 @@
     "id": "7004572901293848370",
     "racked": ["6468799106264970105"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "14770371728907552577": {
     "id": "14770371728907552577",
@@ -5115,8 +5165,7 @@
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
-    "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Snowball_Stun"
+    "on_stick_damage_type": "DamageInfoType_None"
   },
   "9471740285315897155": {
     "id": "9471740285315897155",
@@ -5127,6 +5176,7 @@
     "magazines_max": 10,
     "name": "Heavy Fusion Repeater",
     "health": 500,
+    "armor": 4,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -5152,7 +5202,6 @@
     "turn_speed_horizontal": 45,
     "vertical_limit_min": -35,
     "vertical_limit_max": 35,
-    "explosion_type": "ExplosionType_Conscript_Backpack_Explosion",
     "projectile_type": "Cyborg_LightCannon",
     "rounds_per_minute": {"x": 0, "y": 120, "z": 0},
     "heat_buildup": {
@@ -5173,6 +5222,7 @@
     "magazines_max": 0,
     "remove_time": 2.5,
     "health": 1000,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -5232,7 +5282,8 @@
     "id": "17910078671568111462",
     "racked": ["1353568197974522460"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "578623101395158887": {
     "id": "578623101395158887",
@@ -5303,7 +5354,6 @@
     "max_amount": 4,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Flash",
     "key": "G-23 Stun"
   },
   "9670353792785147784": {
@@ -5316,6 +5366,7 @@
     "remove_time": 2.5,
     "distance": 100,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -5427,7 +5478,6 @@
     "max_amount": 3,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Thermite",
     "key": "G-123 Thermite"
   },
   "10287068634025973658": {
@@ -5446,7 +5496,8 @@
   "14314828040919828387": {
     "id": "14314828040919828387",
     "remove_time": 2.5,
-    "health": 350
+    "health": 350,
+    "armor": 2
   },
   "2616888780303759269": {
     "id": "2616888780303759269",
@@ -5491,6 +5542,7 @@
       "extra_arc_chains_overcharge": 1.5
     },
     "health": 1000,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -5580,6 +5632,7 @@
     "magazines_refill": 6,
     "magazines_max": 3,
     "health": 300,
+    "armor": 4,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 1,
@@ -5867,10 +5920,9 @@
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
-    "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Cyborg_HandGrenade_HighExplosive"
+    "on_stick_damage_type": "DamageInfoType_None"
   },
-  "272271598114605133": {"id": "272271598114605133", "health": 250},
+  "272271598114605133": {"id": "272271598114605133", "health": 250, "armor": 0},
   "16116574862830205005": {"id": "16116574862830205005", "remove_time": 2.5},
   "11468381642862999653": {
     "id": "11468381642862999653",
@@ -5948,8 +6000,8 @@
     "charge_gain_per_second": 200,
     "charge_loss_per_second": 500,
     "min_reload_temperature": 50,
-    "beam_type": "BeamType_LaserCannon",
     "noise_timer": 0.25,
+    "beam_type": "LaserCannon",
     "customizations": {},
     "modifiers": [],
     "key": "LAS-98 Laser Cannon"
@@ -6016,7 +6068,6 @@
     "max_amount": 4,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Incendiary_Impact",
     "key": "G-13 Incendiary Impact"
   },
   "9869105320050739364": {
@@ -6120,6 +6171,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
+    "armor": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -6211,14 +6263,14 @@
     "id": "17083241647592728848",
     "name": "Shield Generator Relay",
     "prefix": "FX-12",
-    "radius": 15,
-    "charge": 4000,
-    "recharge_delay": 0.00999999978,
-    "broken_recharge_delay": 45,
-    "recharge_rate": 400,
-    "starter_charge_on_recharge": 900,
+    "shield": 4000,
+    "shieldregen": 400,
+    "shielddelay": 0.01,
+    "shieldbreakdelay": 45,
+    "shieldradius": 15,
     "remove_time": 2.5,
     "health": 450,
+    "armor": 1,
     "key": "FX-12 Shield Generator Relay"
   },
   "6160539022825437465": {
@@ -6305,7 +6357,8 @@
     "id": "7741265416947841340",
     "racked": ["518600486455451088"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "2114795373903595840": {
     "id": "2114795373903595840",
@@ -6416,6 +6469,7 @@
     "remove_time": 3.5,
     "distance": 75,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -6534,14 +6588,14 @@
     "max_amount": 4,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Impact",
     "key": "G-16 Impact"
   },
   "16003672528522815935": {
     "id": "16003672528522815935",
     "racked": ["15986416455258940649", "18163938711866866090"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "3965302274531977670": {
     "id": "3965302274531977670",
@@ -6552,12 +6606,13 @@
     "magazines_max": 1,
     "backblast_angle": 20,
     "backblast_offset": 0.75,
-    "backblast_explosion_type": "ExplosionType_BackblastMedium",
+    "backblast_explosion_type": "BackblastMedium",
     "name": "Rocket Sentry",
     "prefix": "A/MLS-4X",
     "remove_time": 2.5,
     "distance": 100,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -6609,6 +6664,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
+    "armor": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -6699,14 +6755,16 @@
     "id": "15991884556147755475",
     "racked": ["11493422068836852751", "10871626090290489728"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "12449657272871172571": {"id": "12449657272871172571", "remove_time": 2.5},
   "9879448964426328539": {
     "id": "9879448964426328539",
     "racked": ["9927421484392399367"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "2139899069241334240": {
     "id": "2139899069241334240",
@@ -6728,6 +6786,7 @@
     "name": "Fusion Repeater",
     "distance": 75,
     "health": 300,
+    "armor": 3,
     "aim_drag": 6,
     "aim_flinch_max": 5,
     "recoil_info": {
@@ -6777,6 +6836,7 @@
     "prefix": "E/MG-101",
     "remove_time": 2.5,
     "health": 1000,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -6824,6 +6884,7 @@
     "magazines_max": 12,
     "reload": 4,
     "health": 250,
+    "armor": 3,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": 0,
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -6866,7 +6927,8 @@
     "id": "10719993517856893473",
     "racked": ["1279722939363854678"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "7778022558452062755": {
     "id": "7778022558452062755",
@@ -6918,6 +6980,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
+    "armor": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -6968,6 +7031,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
+    "armor": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -7014,7 +7078,8 @@
     "id": "18294292771580135983",
     "racked": ["15369542005276747891"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "18151581020363463248": {"id": "18151581020363463248"},
   "5690760409550920280": {
@@ -7036,12 +7101,11 @@
     "type": "LoadoutItemType_Backpack",
     "name": "Shield Generator Pack",
     "prefix": "SH-32",
-    "radius": 1.29999995,
-    "charge": 150,
-    "recharge_delay": 60,
-    "broken_recharge_delay": 12,
-    "recharge_rate": 150,
-    "starter_charge_on_recharge": 150,
+    "shield": 150,
+    "shieldregen": 150,
+    "shielddelay": 60,
+    "shieldbreakdelay": 12,
+    "shieldradius": 1.3,
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
@@ -7210,6 +7274,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -7250,6 +7315,7 @@
     "max_fuel_usage": 4,
     "damaged_fuel_usage": 20,
     "health": 600,
+    "armor": 3,
     "mounts": ["16570517418531528145", "18417602992972518459"],
     "key": "EXO-49 Emancipator Exosuit"
   },
@@ -7301,8 +7367,7 @@
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
-    "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_ContactMine"
+    "on_stick_damage_type": "DamageInfoType_None"
   },
   "6766936627846269706": {
     "id": "6766936627846269706",
@@ -7320,14 +7385,14 @@
     "max_amount": 4,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Grenade_Smoke",
     "key": "G-3 Smoke"
   },
   "14586739053780151064": {
     "id": "14586739053780151064",
     "racked": ["2802369506329449110", "16671435828232852140"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "10256545209826294564": {
     "id": "10256545209826294564",
@@ -7341,8 +7406,7 @@
     "start_amount": 3,
     "max_amount": 4,
     "refill_amount": 2,
-    "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Cyborg_HandGrenade_Antitank"
+    "on_stick_damage_type": "DamageInfoType_None"
   },
   "14454233564159978284": {
     "id": "14454233564159978284",
@@ -7396,7 +7460,6 @@
     "max_amount": 4,
     "refill_amount": 2,
     "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Incendiary",
     "key": "G-10 Incendiary"
   },
   "5542218890398374779": {
@@ -7415,7 +7478,6 @@
     "max_amount": 5,
     "refill_amount": 3,
     "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_Frag",
     "key": "G-6 Frag"
   },
   "4510702625533881224": {
@@ -7471,8 +7533,8 @@
     "needs_reload_after_overheat": 1,
     "charge_gain_per_second": 100,
     "charge_loss_per_second": 100,
-    "beam_type": "BeamType_BotTorch",
     "noise_timer": 0.25,
+    "beam_type": "BotTorch",
     "key": "Fusion Smelter Beam"
   },
   "5731472083741485993": {
@@ -7517,8 +7579,8 @@
     "needs_reload_after_overheat": 1,
     "charge_gain_per_second": 200,
     "charge_loss_per_second": 75,
-    "beam_type": "BeamType_PhysGun",
     "noise_timer": 0.25,
+    "beam_type": "PhysGun",
     "customizations": {},
     "modifiers": []
   },
@@ -7596,6 +7658,7 @@
     "magazines_max": 0,
     "remove_time": 2.5,
     "health": 1000,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -7633,7 +7696,8 @@
     "id": "992939827990506476",
     "racked": ["9264801226655597011"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "17196401230144941076": {
     "id": "17196401230144941076",
@@ -7818,8 +7882,7 @@
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
-    "equipment_type": "EquipmentType_Objective",
-    "explosion_type": "ExplosionType_EagleBomb_100kg"
+    "equipment_type": "EquipmentType_Objective"
   },
   "12164217308285983839": {
     "id": "12164217308285983839",
@@ -7879,7 +7942,8 @@
     "id": "10806471875148778594",
     "racked": ["11300340358119080560"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "7509990704627358840": {
     "id": "7509990704627358840",
@@ -7969,8 +8033,8 @@
     "firing_charge": 100,
     "charge_gain_per_second": 400,
     "charge_loss_per_second": 1000,
-    "beam_type": "BeamType_Small",
     "noise_timer": 0.25,
+    "beam_type": "Small",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
@@ -7989,6 +8053,7 @@
     "name": "AA Emplacement",
     "distance": 2000,
     "health": 400,
+    "armor": 4,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -8234,7 +8299,8 @@
   "7103244170870631670": {
     "id": "7103244170870631670",
     "remove_time": 2.5,
-    "health": 500
+    "health": 500,
+    "armor": 0
   },
   "10355039786464021751": {
     "id": "10355039786464021751",
@@ -8246,6 +8312,7 @@
     "name": "Heavy Fusion Cannon",
     "distance": 120,
     "health": 2100,
+    "armor": 5,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -8293,6 +8360,7 @@
     "name": "Factory Strider",
     "distance": 60,
     "health": 300,
+    "armor": 3,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -8346,6 +8414,7 @@
     "wind_down_time": 1,
     "rpm_multiplier": 0.333332986,
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 8,
@@ -8423,8 +8492,8 @@
     "firing_charge": 100,
     "charge_gain_per_second": 400,
     "charge_loss_per_second": 1000,
-    "beam_type": "BeamType_MediumDrone",
     "noise_timer": 0.25,
+    "beam_type": "MediumDrone",
     "customizations": {"beam_type": "BeamType_Medium"},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0},
@@ -8447,8 +8516,7 @@
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
-    "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_OrbitalStun"
+    "on_stick_damage_type": "DamageInfoType_None"
   },
   "725877384353361216": {"id": "725877384353361216", "remove_time": 2.5},
   "3374156467310513484": {
@@ -8498,6 +8566,7 @@
   "3177983950714174823": {
     "id": "3177983950714174823",
     "health": 450,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -8560,6 +8629,7 @@
     "name": "Factory Strider",
     "distance": 60,
     "health": 300,
+    "armor": 3,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -8617,6 +8687,7 @@
     "remove_time": 3.5,
     "distance": 75,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -8671,6 +8742,7 @@
     "remove_time": 2.5,
     "distance": 125,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -8719,8 +8791,10 @@
     "id": "12220563120145251703",
     "name": "Gas Mines",
     "prefix": "MD-8",
+    "explosion_type": "GasMine",
     "remove_time": 3.5,
     "health": 250,
+    "armor": 1,
     "panel_count": 6,
     "throwable_count": 8,
     "throw_delay": 2,
@@ -8739,6 +8813,7 @@
     "remove_time": 2.5,
     "distance": 25,
     "health": 600,
+    "armor": 1,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -8778,6 +8853,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 100,
+    "armor": 0,
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
@@ -8830,6 +8906,7 @@
     "name": "Fusion Autocannon",
     "distance": 120,
     "health": 2100,
+    "armor": 5,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -8873,6 +8950,7 @@
     "recharge_time": 8,
     "health": 1000,
     "health_changerate": 2,
+    "armor": 1,
     "holster_duration": 0.300000012,
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
@@ -8887,6 +8965,7 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -8969,7 +9048,8 @@
     "id": "16028040304287202855",
     "racked": ["12653822188347841538"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "9291384900638350902": {
     "id": "9291384900638350902",
@@ -9237,8 +9317,9 @@
     "magazines_max": 0,
     "backblast_angle": 20,
     "backblast_offset": 1,
-    "backblast_explosion_type": "ExplosionType_BackblastSmall",
+    "backblast_explosion_type": "BackblastSmall",
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -9321,6 +9402,7 @@
     "name": "Fusion Repeater",
     "distance": 60,
     "health": 300,
+    "armor": 3,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -9402,8 +9484,9 @@
     "magazines_max": 0,
     "backblast_angle": 20,
     "backblast_offset": 1,
-    "backblast_explosion_type": "ExplosionType_BackblastSmall",
+    "backblast_explosion_type": "BackblastSmall",
     "health": 250,
+    "armor": 3,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -9528,7 +9611,8 @@
     "id": "13534862741616025304",
     "racked": ["9869105320050739364"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "2692796710804508396": {
     "id": "2692796710804508396",
@@ -9549,7 +9633,8 @@
     "id": "15628185827517046516",
     "racked": ["13834130950471716570"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "6193421986545774326": {
     "id": "6193421986545774326",
@@ -9579,6 +9664,7 @@
     "remove_time": 2.5,
     "distance": 75,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -9710,7 +9796,8 @@
     "id": "5787948413593898778",
     "racked": ["12198302824036005241"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "12100643055971655455": {
     "id": "12100643055971655455",
@@ -9864,7 +9951,8 @@
     "id": "13125214096466681673",
     "racked": ["3358853937828503136"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "16576307969206587212": {
     "id": "16576307969206587212",
@@ -9883,13 +9971,15 @@
     "id": "5546703783041515346",
     "racked": ["10871298989420119782"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "2315516436421582687": {
     "id": "2315516436421582687",
     "racked": ["211331680192206384"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "4228803675738017635": {
     "id": "4228803675738017635",
@@ -9901,6 +9991,7 @@
     "name": "Factory Strider",
     "distance": 60,
     "health": 300,
+    "armor": 3,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -10056,6 +10147,7 @@
     "remove_time": 2.5,
     "distance": 125,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -10205,6 +10297,7 @@
     "id": "16085819457051082660",
     "name": "HIVE BREAKER DRILL",
     "health": 1500,
+    "armor": 0,
     "can_die_naturally": 0,
     "key": "HIVE BREAKER DRILL"
   },
@@ -10220,6 +10313,7 @@
     "remove_time": 2.5,
     "distance": 100,
     "health": 200,
+    "armor": 2,
     "aim_drag": 0.5,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -10272,6 +10366,7 @@
     "magazines_max": 12,
     "distance": 120,
     "health": 2100,
+    "armor": 0,
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -10349,7 +10444,8 @@
     "id": "12967812241745948652",
     "racked": ["744753118896166941"],
     "remove_time": 2.5,
-    "health": 200
+    "health": 200,
+    "armor": 2
   },
   "7579602584120852463": {
     "id": "7579602584120852463",
@@ -10358,8 +10454,7 @@
     "start_amount": 4,
     "max_amount": 4,
     "refill_amount": 2,
-    "on_stick_damage_type": "DamageInfoType_None",
-    "explosion_type": "ExplosionType_GasMine"
+    "on_stick_damage_type": "DamageInfoType_None"
   },
   "16671435828232852140": {
     "id": "16671435828232852140",
@@ -10390,17 +10485,17 @@
     "id": "16983968416304026806",
     "backblast_angle": 25,
     "backblast_offset": 1,
-    "backblast_explosion_type": "ExplosionType_BackblastMedium"
+    "backblast_explosion_type": "BackblastMedium"
   },
   "15986416455258940649": {
     "id": "15986416455258940649",
     "backblast_angle": 25,
     "backblast_offset": 1,
-    "backblast_explosion_type": "ExplosionType_BackblastSmall",
+    "backblast_explosion_type": "BackblastSmall",
     "name": "Missile Silo",
     "prefix": "MS-220",
     "health": 450,
-    "explosion_type": "ExplosionType_Mini_Missile_Silo",
+    "armor": 1,
     "key": "MS-220 Missile Silo"
   },
   "12198302824036005241": {"id": "12198302824036005241"},
@@ -10422,6 +10517,7 @@
     "id": "11601043503813400874",
     "distance": 50,
     "health": 100,
+    "armor": 1,
     "can_die_naturally": 0,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -10477,6 +10573,7 @@
     "id": "13383279112602229081",
     "distance": 50,
     "health": 100,
+    "armor": 1,
     "can_die_naturally": 0,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,
@@ -10489,6 +10586,7 @@
     "id": "6624453650490018537",
     "distance": 50,
     "health": 100,
+    "armor": 1,
     "can_die_naturally": 0,
     "aim_flinch_decrease": 1,
     "aim_flinch_max": 5,

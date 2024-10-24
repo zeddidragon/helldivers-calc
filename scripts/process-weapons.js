@@ -182,6 +182,22 @@ const stratByName = Object.fromEntries(
       }]
     }))
 
+function eatSubobjects(obj, prop) {
+  let arr = obj[prop]
+  if(!arr) {
+    return
+  }
+  if(!Array.isArray(arr)) {
+    arr = [arr]
+  }
+  for(const id of arr) {
+      const entity = { ...(shalzuth[id] || {}) }
+      delete entity.id
+      Object.assign(obj, entity)
+  }
+  delete obj[prop]
+}
+
 setup.stratagem = setup.stratagem
   .map(strat => {
     const name = strat.name || strat.fullname
@@ -194,36 +210,33 @@ setup.stratagem = setup.stratagem
       ...strat,
     }
     const entityQueue = []
-    for(const id of (obj.payload || [])) {
-      const entity = { ...(shalzuth[id] || {}) }
-      delete entity.id
-      Object.assign(obj, entity)
-    }
-    for(const id of (obj.racked || [])) {
-      const entity = { ...(shalzuth[id] || {}) }
-      delete entity.id
-      Object.assign(obj, entity)
-    }
-    if(obj.drone_path) {
-      const entity = { ...(shalzuth[obj.drone_path] || {}) }
-      delete entity.id
-      Object.assign(obj, entity)
-    }
-    for(const id of (obj.mounts || [])) {
-      const entity = { ...(shalzuth[id] || {}) }
-      delete entity.id
-      Object.assign(obj, entity)
-    }
-    delete obj.payload
-    delete obj.racked
-    delete obj.drone_path
-    delete obj.mounts
+    eatSubobjects(obj, 'payload')
+    eatSubobjects(obj, 'racked')
+    eatSubobjects(obj, 'drone_path')
+    eatSubobjects(obj, 'mounts')
+    eatSubobjects(obj, 'throwable_path')
     obj.name = strat.name || name || obj.name
     obj.fullname = strat.fullname || obj.fullname
+    if(obj.panel_count && obj.throwable_count) {
+      obj.salvos = obj.panel_count
+      obj.cap = obj.throwable_count
+    }
     if(obj.projectile_type) {
       obj.attack = [...(obj.attack || []), {
         medium: 'projectile',
         ref: obj.projectile_type,
+      }]
+    }
+    if(obj.beam_type) {
+      obj.attack = [...(obj.attack || []), {
+        medium: 'beam',
+        ref: obj.beam_type,
+      }]
+    }
+    if(obj.explosion_type) {
+      obj.attack = [...(obj.attack || []), {
+        medium: 'explosion',
+        ref: obj.explosion_type,
       }]
     }
     if(obj.damage_type) {

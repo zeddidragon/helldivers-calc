@@ -739,101 +739,36 @@ fullname = "AX/AR-23 \"Guard Dog\""
 [[stratagem]]
 category = "Backpack"
 fullname = "AX/LAS-5 \"Guard Dog\" Rover"
-health = 400
-armor = 4
-calltime = 5
-cooldown = 480
-[[stratagem.attack]]
-medium = "beam"
-ref = "MediumDrone"
 
 [[stratagem]]
 category = "Backpack"
 fullname = "AX/TX-13 \"Guard Dog\" Dog Breath"
-health = 400
-armor = 4
-calltime = 5
-cooldown = 480
 source = "chemical-agents"
 sourcepage = 3
 
 [[stratagem]]
 category = "Backpack"
 fullname = "SH-20 Ballistic Shield Backpack"
-health = 400
-armor = 4
-calltime = 5
-cooldown = 300
 
 [[stratagem]]
 category = "Backpack"
 fullname = "SH-32 Shield Generator Pack"
-health = 400
-armor = 4
-calltime = 5
-cooldown = 480
-shield = 150
-shieldregen = 150
-shielddelay = 60
-shieldbreakdelay = 12
-shieldradius = 1
-
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "FX-12 Shield Generator Relay"
-health = 450
-armor = 1
-limit = 30
-calltime = 3
-cooldown = 180
-shield = 4000
-shieldregen = 300
-shielddelay = 5
-shieldbreakdelay = 8
-shieldradius = 8
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "MD-6 Anti-Personnel Minefield"
-health = 250
-armor = 1
-calltime = 3
-cooldown = 180
-[[stratagem.attack]]
-medium = "projectile"
-ref = "ContactMine"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "ContactMine"
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "MD-17 Anti-tank Mines"
-health = 250
-armor = 1
-calltime = 3
-cooldown = 180
-[[stratagem.attack]]
-medium = "projectile"
-ref = "ContactMine"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "AntiTankMine"
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "MD-I4 Incendiary Mines"
-health = 250
-armor = 1
-calltime = 3
-cooldown = 180
-[[stratagem.attack]]
-medium = "projectile"
-ref = "ContactMine"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "IncendiaryMine"
 
 [[stratagem]]
 category = "Emplacement"
