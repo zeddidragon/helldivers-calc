@@ -566,7 +566,7 @@ async function loadData() {
       wpn.clipsbox = Math.max(Math.floor(wpn.clipsupply * 0.5), 1)
     }
 
-    if(wpn.chargefactor && wpn.chargeearly) {
+    if(false && wpn.chargefactor && wpn.chargeearly) {
       subobjects ||= []
       subobjects.push({
         ...wpn,

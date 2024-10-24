@@ -256,7 +256,7 @@ setup.stratagem = setup.stratagem
 
 let dbgCondition = false
 const keyed = {}
-for(const wpn of [...setup.weapon, ...setup.stratagem]) {
+for(const wpn of [...setup.weapon]) {
   const name = wpn.name || wpn.fullname
   let matched
   if(wpn.entity) {

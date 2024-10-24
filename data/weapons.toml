@@ -477,9 +477,6 @@ cooldown = 480
 reload = 3.6
 reloadearly = 5
 tags = ["laser"]
-[[weapon.attack]]
-medium = "beam"
-ref = "LaserCannon"
 
 [[weapon]]
 category = "SUP"
@@ -805,110 +802,46 @@ fullname = "A/ARC-3 Tesla Tower"
 [[stratagem]]
 category = "Orbital"
 name = "Orbital Precision Strike"
-calltime = 2
-cooldown = 90
-salvos = 1
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Orbital_Precision_Strike"
 
 [[stratagem]]
 category = "Orbital"
 name = "Orbital Gas Strike"
-calltime = 2
-cooldown = 75
-salvos = 1
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Orbital_Gas"
 
 [[stratagem]]
 category = "Orbital"
 name = "Orbital Smoke Strike"
-calltime = 2
-cooldown = 100
-salvos = 6
 
 [[stratagem]]
 category = "Orbital"
 name = "Orbital Airburst Strike"
-calltime = 2
-cooldown = 100
-salvos = 3
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Orbital_Cannon_110mm"
 
 [[stratagem]]
 category = "Orbital"
 name = "Orbital EMS Strike"
-calltime = 2
-cooldown = 75
-salvos = 1
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Orbital_Stunround"
 
 [[stratagem]]
 category = "Orbital"
 name = "Orbital Gatling Barrage"
-calltime = 2
-cooldown = 80
-salvos = 4
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Cannon_Eagle_23mm"
 
 [[stratagem]]
 category = "Orbital"
 name = "Orbital 120mm HE Barrage"
-calltime = 5
-cooldown = 240
-salvos = 5
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Orbital_Cannon_120mm_HE"
 
 [[stratagem]]
 category = "Orbital"
 name = "Orbital 380mm HE Barrage"
-calltime = 6
-cooldown = 240
-salvos = 5
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Orbital_Cannon_380mm_HE"
 
 [[stratagem]]
 category = "Orbital"
 name = "Orbital Walking Barrage"
-calltime = 3
-cooldown = 240
-salvos = 3
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Orbital_Cannon_380mm_HE"
 
 [[stratagem]]
 category = "Orbital"
 name = "Orbital Laser"
-calltime = 2
-cooldown = 300
-uses = 3
-limit = 25
-[[stratagem.attack]]
-medium = "damage"
-ref = "DPS_BeamHuge"
 
 [[stratagem]]
 category = "Orbital"
 name = "Orbital Railcannon Strike"
-calltime = 1
-cooldown = 210
-salvos = 1
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Orbital_Railcannon"
 
 [[stratagem]]
 category = "Eagle"

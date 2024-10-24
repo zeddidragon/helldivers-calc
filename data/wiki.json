@@ -85,12 +85,7 @@
         "y": 1
       },
       "supply": 7,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_5p5x50mm_ap"
-        }
-      ]
+      "attacks": []
     },
     "AR-23C Liberator Concussive": {
       "attachments": [
@@ -122,12 +117,7 @@
         "y": 24
       },
       "supply": 6,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_5p5x50mm_exp"
-        }
-      ]
+      "attacks": []
     },
     "AR-23A Liberator Carbine": {
       "attachments": [
@@ -166,12 +156,7 @@
         "y": 10
       },
       "supply": 8,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_5p5x50mm_fmj"
-        }
-      ]
+      "attacks": []
     },
     "AR-61 Tenderizer": {
       "attachments": [
@@ -213,12 +198,7 @@
         "y": 4
       },
       "supply": 7,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_Rico"
-        }
-      ]
+      "attacks": []
     },
     "BR-14 Adjudicator": {
       "attachments": [
@@ -254,12 +234,7 @@
         "y": 1
       },
       "supply": 8,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Battle_Rifle"
-        }
-      ]
+      "attacks": []
     },
     "R-63 Diligence": {
       "cap": 20,
@@ -328,12 +303,7 @@
         "y": 0.5
       },
       "supply": 6,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_9x70mm_hv"
-        }
-      ]
+      "attacks": []
     },
     "MP-98 Knight": {
       "attachments": [
@@ -368,12 +338,7 @@
       "tags": [
         "1h"
       ],
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Pistol_9x20mm_smj"
-        }
-      ]
+      "attacks": []
     },
     "SMG-37 Defender": {
       "attachments": [
@@ -450,12 +415,7 @@
       "tags": [
         "1h"
       ],
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Pistol_12x25mm_stun"
-        }
-      ]
+      "attacks": []
     },
     "SG-8 Punisher": {
       "cap": 16,
@@ -617,12 +577,7 @@
         "y": 60
       },
       "supply": 8,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Shotgun_12g_bir"
-        }
-      ]
+      "attacks": []
     },
     "SG-225IE Breaker Incendiary": {
       "attachments": [
@@ -657,12 +612,7 @@
       "tags": [
         "fire"
       ],
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Shotgun_12g_flm"
-        }
-      ]
+      "attacks": []
     },
     "CB-9 Exploding Crossbow": {
       "cap": 5,
@@ -688,12 +638,7 @@
         "y": 0.5
       },
       "supply": 8,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Crossbow_Bolt_exp"
-        }
-      ]
+      "attacks": []
     },
     "JAR-5 Dominator": {
       "attachments": [
@@ -772,12 +717,7 @@
         "jet",
         "shrapnel"
       ],
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rocket_JarPhoenix_20mm"
-        }
-      ]
+      "attacks": []
     },
     "SG-8P Punisher Plasma": {
       "cap": 8,
@@ -802,12 +742,7 @@
         "y": 8
       },
       "supply": 8,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Plasma_Punisher_Projectile"
-        }
-      ]
+      "attacks": []
     },
     "ARC-12 Blitzer": {
       "category": "Energy-Based",
@@ -903,12 +838,7 @@
         "y": 20
       },
       "supply": 3,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Laser_Long"
-        }
-      ]
+      "attacks": []
     },
     "PLAS-1 Scorcher": {
       "cap": 20,
@@ -935,12 +865,7 @@
         "y": 10
       },
       "supply": 5,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Plasma_Bolt_Medium"
-        }
-      ]
+      "attacks": []
     },
     "PLAS-101 Purifier": {
       "cap": 15,
@@ -966,12 +891,7 @@
         "y": 10
       },
       "supply": 6,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Plasma_Rifle_Charge"
-        }
-      ]
+      "attacks": []
     },
     "FLAM-66 Torcher": {
       "cap": 80,
@@ -1135,12 +1055,7 @@
       "tags": [
         "1h"
       ],
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Pistol_Magnum"
-        }
-      ]
+      "attacks": []
     },
     "GP-31 Grenade Pistol": {
       "cap": 1,
@@ -1329,12 +1244,7 @@
         "y": 6
       },
       "supply": 2,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_5p5x50mm_fmj"
-        }
-      ]
+      "attacks": []
     },
     "MG-43 Machine Gun": {
       "calltime": 3,
@@ -1366,12 +1276,7 @@
         "y": 4
       },
       "supply": 2,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_8x60mm_fmj"
-        }
-      ]
+      "attacks": []
     },
     "MG-206 Heavy Machine Gun": {
       "calltime": 3,
@@ -1403,12 +1308,7 @@
         "y": 5
       },
       "supply": 2,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_12p5x100mm_bchp"
-        }
-      ]
+      "attacks": []
     },
     "ARC-3 Arc Thrower": {
       "calltime": 3,
@@ -1525,12 +1425,7 @@
         "y": 0.1
       },
       "supply": 3,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_12p5x100mm_eit"
-        }
-      ]
+      "attacks": []
     },
     "GL-21 Grenade Launcher": {
       "calltime": 3,
@@ -1558,12 +1453,7 @@
         "y": 20
       },
       "supply": 3,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Grenade_40mm_HE"
-        }
-      ]
+      "attacks": []
     },
     "AC-8 Autocannon": {
       "calltime": 3,
@@ -1625,12 +1515,7 @@
         "y": 10
       },
       "supply": 10,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Railgun"
-        }
-      ]
+      "attacks": []
     },
     "LAS-98 Laser Cannon": {
       "box": 3,
@@ -1660,12 +1545,7 @@
       "tags": [
         "laser"
       ],
-      "attacks": [
-        {
-          "type": "beam",
-          "name": "LaserCannon"
-        }
-      ]
+      "attacks": []
     },
     "LAS-99 Quasar Cannon": {
       "calltime": 3,
@@ -1693,12 +1573,7 @@
         "y": 4
       },
       "supply": 6,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Laser_Pulse"
-        }
-      ]
+      "attacks": []
     },
     "EAT-17 Expendable Anti-Tank": {
       "calltime": 3,
@@ -1722,12 +1597,7 @@
         "x": 4,
         "y": 4
       },
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Grenade_75mm_HEAT"
-        }
-      ]
+      "attacks": []
     },
     "MLS-4X Commando": {
       "calltime": 3,
@@ -1751,12 +1621,7 @@
         "x": 0,
         "y": 0
       },
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Missile_66mm"
-        }
-      ]
+      "attacks": []
     },
     "GR-8 Recoilless Rifle": {
       "calltime": 3,
@@ -1783,12 +1648,7 @@
         "x": 4,
         "y": 4
       },
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Grenade_85mm_HEAT"
-        }
-      ]
+      "attacks": []
     },
     "FAF-14 Spear": {
       "calltime": 3,
@@ -1815,12 +1675,7 @@
         "x": 0,
         "y": 0
       },
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Missile_Faf"
-        }
-      ]
+      "attacks": []
     },
     "RL-77 Airburst Rocket Launcher": {
       "calltime": 3,
@@ -1847,12 +1702,7 @@
         "x": 4,
         "y": 4
       },
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Grenade_85mm_AirburstCluster"
-        }
-      ]
+      "attacks": []
     },
     "Break-Action Shotgun": {
       "cap": 2,
@@ -2215,7 +2065,6 @@
       "function_info": [
         "Firemode"
       ],
-      "projectile_type": "Rifle_5p5x50mm_ap",
       "rounds_per_minute": {
         "x": 0,
         "y": 660,
@@ -2229,14 +2078,10 @@
       },
       "num_low_ammo_rounds": 5,
       "burst_fire_rate": 660,
+      "projectile": "Rifle_5p5x50mm_ap",
       "customizations": {},
       "modifiers": [],
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_5p5x50mm_ap"
-        }
-      ]
+      "attacks": []
     },
     "AX/LAS-5 \"Guard Dog\" Rover": {
       "ref": "Drone_Laser_Rifle",
@@ -2721,7 +2566,6 @@
       "turn_speed_horizontal": 80,
       "vertical_limit_min": -60,
       "vertical_limit_max": 90,
-      "projectile_type": "Rifle_8x60mm_fmj",
       "rounds_per_minute": {
         "x": 630,
         "y": 630,
@@ -2734,16 +2578,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 20,
+      "projectile": "Rifle_8x60mm_fmj",
       "key": "A/MG-43 Machine Gun Sentry",
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_8x60mm_fmj"
-        }
-      ]
+      "attacks": []
     },
     "A/G-16 Gatling Sentry": {
       "ref": "TurretMachinegun",
@@ -2817,7 +2654,6 @@
       "turn_speed_horizontal": 80,
       "vertical_limit_min": -60,
       "vertical_limit_max": 90,
-      "projectile_type": "Rifle_8x60mm_fmj",
       "rounds_per_minute": {
         "x": 0,
         "y": 1600,
@@ -2830,16 +2666,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Rifle_8x60mm_fmj",
       "key": "A/G-16 Gatling Sentry",
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_8x60mm_fmj"
-        }
-      ]
+      "attacks": []
     },
     "E/MG-101 HMG Emplacement": {
       "ref": "TurretManned",
@@ -2907,7 +2736,6 @@
         "Automatic"
       ],
       "function_info": [],
-      "projectile_type": "Rifle_12p5x100mm_fmj",
       "rounds_per_minute": {
         "x": 450,
         "y": 600,
@@ -2920,16 +2748,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Rifle_12p5x100mm_fmj",
       "key": "E/MG-101 HMG Emplacement",
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_12p5x100mm_fmj"
-        }
-      ]
+      "attacks": []
     },
     "A/M-12 Mortar Sentry": {
       "ref": "TurretMortar",
@@ -3003,7 +2824,6 @@
       "turn_speed_horizontal": 55,
       "vertical_limit_min": 35,
       "vertical_limit_max": 89,
-      "projectile_type": "Grenade_Mortar_40mm_HE",
       "rounds_per_minute": {
         "x": 0,
         "y": 60,
@@ -3016,17 +2836,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Grenade_Mortar_40mm_HE",
       "key": "A/M-12 Mortar Sentry",
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1,
-      "burst": 3,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Grenade_Mortar_40mm_HE"
-        }
-      ]
+      "attacks": []
     },
     "A/M-23 EMS Mortar Sentry": {
       "ref": "TurretMortar_Staticfield",
@@ -3100,7 +2912,6 @@
       "turn_speed_horizontal": 55,
       "vertical_limit_min": 35,
       "vertical_limit_max": 89,
-      "projectile_type": "Grenade_Mortar_40mm_Staticfield",
       "rounds_per_minute": {
         "x": 0,
         "y": 60,
@@ -3113,17 +2924,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Grenade_Mortar_40mm_Staticfield",
       "key": "A/M-23 EMS Mortar Sentry",
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1,
-      "burst": 3,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Grenade_Mortar_40mm_Staticfield"
-        }
-      ]
+      "attacks": []
     },
     "A/MLS-4X Rocket Sentry": {
       "ref": "TurretRocket",
@@ -3200,7 +3003,6 @@
       "turn_speed_horizontal": 40,
       "vertical_limit_min": -45,
       "vertical_limit_max": 90,
-      "projectile_type": "Rocket_70mm_turret",
       "rounds_per_minute": {
         "x": 0,
         "y": 90,
@@ -3213,18 +3015,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Rocket_70mm_turret",
       "key": "A/MLS-4X Rocket Sentry",
-      "mags": 1,
-      "magstart": 1,
-      "supply": 1,
-      "burst": 4,
-      "box": 3,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rocket_70mm_turret"
-        }
-      ]
+      "attacks": []
     },
     "A/AC-8 Autocannon Sentry": {
       "ref": "TurretAutocannon",
@@ -3299,7 +3092,6 @@
       "turn_speed_horizontal": 20,
       "vertical_limit_min": -60,
       "vertical_limit_max": 70,
-      "projectile_type": "Cannon_40mm_APHE",
       "rounds_per_minute": {
         "x": 0,
         "y": 160,
@@ -3312,17 +3104,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_40mm_APHE",
       "key": "A/AC-8 Autocannon Sentry",
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1,
-      "burst": 3,
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Cannon_40mm_APHE"
-        }
-      ]
+      "attacks": []
     },
     "A/ARC-3 Tesla Tower": {
       "ref": "TurretTesla",
@@ -3394,9 +3178,6 @@
       "rounds_per_minute": -1,
       "arc_type": "TeslaTurret",
       "key": "A/ARC-3 Tesla Tower",
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1,
       "attacks": [
         {
           "type": "arc",
@@ -3500,7 +3281,6 @@
       "turn_speed_horizontal": 120,
       "vertical_limit_min": 0,
       "vertical_limit_max": 90,
-      "projectile_type": "Cannon_40mm_APHE",
       "rounds_per_minute": {
         "x": 0,
         "y": 300,
@@ -3513,6 +3293,7 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_40mm_APHE",
       "attacks": [
         {
           "type": "damage",
@@ -3521,10 +3302,6 @@
         {
           "type": "explosion",
           "name": "Vehicle_Explosion_CombatWalker"
-        },
-        {
-          "type": "projectile",
-          "name": "Cannon_40mm_APHE"
         }
       ]
     },
@@ -3610,7 +3387,6 @@
       "turn_speed_horizontal": 120,
       "vertical_limit_min": 0,
       "vertical_limit_max": 90,
-      "projectile_type": "Cannon_40mm_APHE",
       "rounds_per_minute": {
         "x": 0,
         "y": 300,
@@ -3623,6 +3399,7 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_40mm_APHE",
       "attacks": [
         {
           "type": "damage",
@@ -3631,10 +3408,6 @@
         {
           "type": "explosion",
           "name": "Vehicle_Explosion_CombatWalker"
-        },
-        {
-          "type": "projectile",
-          "name": "Cannon_40mm_APHE"
         }
       ]
     },

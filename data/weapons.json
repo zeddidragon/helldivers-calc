@@ -35,7 +35,6 @@
     },
     {
       "attachments": ["laser", "flashlight"],
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}],
       "burst": 3,
       "cap": 45,
       "capplus": 1,
@@ -54,11 +53,11 @@
       "source": "hd-mobilize",
       "sourcepage": 6,
       "spreadxy": {"x": 1, "y": 1},
-      "supply": 7
+      "supply": 7,
+      "attack": []
     },
     {
       "attachments": ["laser", "flashlight"],
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_exp"}],
       "cap": 60,
       "capplus": 1,
       "category": "AR",
@@ -75,11 +74,11 @@
       "source": "steel-vets",
       "sourcepage": 1,
       "spreadxy": {"x": 24, "y": 24},
-      "supply": 6
+      "supply": 6,
+      "attack": []
     },
     {
       "attachments": ["laser", "flashlight"],
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
       "burst": 3,
       "cap": 45,
       "capplus": 1,
@@ -98,11 +97,11 @@
       "source": "viper-commandos",
       "sourcepage": 1,
       "spreadxy": {"x": 10, "y": 10},
-      "supply": 8
+      "supply": 8,
+      "attack": []
     },
     {
       "attachments": ["flashlight"],
-      "attack": [{"type": "projectile", "name": "Rifle_Rico"}],
       "burst": 3,
       "cap": 35,
       "capplus": 1,
@@ -122,11 +121,11 @@
       "source": "polar-pat",
       "sourcepage": 1,
       "spreadxy": {"x": 4, "y": 4},
-      "supply": 7
+      "supply": 7,
+      "attack": []
     },
     {
       "attachments": ["flashlight"],
-      "attack": [{"type": "projectile", "name": "Battle_Rifle"}],
       "cap": 30,
       "capplus": 1,
       "category": "AR",
@@ -144,7 +143,8 @@
       "source": "demo-det",
       "sourcepage": 1,
       "spreadxy": {"x": 1, "y": 1},
-      "supply": 8
+      "supply": 8,
+      "attack": []
     },
     {
       "attack": [{"type": "projectile", "name": "Rifle_9x70mm_fmj"}],
@@ -168,7 +168,6 @@
       "supply": 8
     },
     {
-      "attack": [{"type": "projectile", "name": "Rifle_9x70mm_hv"}],
       "cap": 15,
       "capplus": 1,
       "category": "DMR",
@@ -186,11 +185,11 @@
       "source": "hd-mobilize",
       "sourcepage": 7,
       "spreadxy": {"x": 0.5, "y": 0.5},
-      "supply": 6
+      "supply": 6,
+      "attack": []
     },
     {
       "attachments": ["flashlight"],
-      "attack": [{"type": "projectile", "name": "Pistol_9x20mm_smj"}],
       "burst": 3,
       "cap": 50,
       "capplus": 1,
@@ -208,7 +207,8 @@
       "source": "dlc-super",
       "spreadxy": {"x": 25, "y": 25},
       "supply": 7,
-      "tags": ["1h"]
+      "tags": ["1h"],
+      "attack": []
     },
     {
       "attachments": ["flashlight"],
@@ -235,7 +235,6 @@
     },
     {
       "attachments": ["flashlight"],
-      "attack": [{"type": "projectile", "name": "Pistol_12x25mm_stun"}],
       "burst": 3,
       "cap": 45,
       "capplus": 1,
@@ -254,7 +253,8 @@
       "sourcepage": 2,
       "spreadxy": {"x": 20, "y": 20},
       "supply": 7,
-      "tags": ["1h"]
+      "tags": ["1h"],
+      "attack": []
     },
     {
       "attack": [{"type": "projectile", "name": "Shotgun_10g_buc"}],
@@ -338,7 +338,6 @@
     },
     {
       "attachments": ["flashlight"],
-      "attack": [{"type": "projectile", "name": "Shotgun_12g_bir"}],
       "cap": 26,
       "capplus": 1,
       "category": "SG",
@@ -355,11 +354,11 @@
       "source": "hd-mobilize",
       "sourcepage": 9,
       "spreadxy": {"x": 320, "y": 60},
-      "supply": 8
+      "supply": 8,
+      "attack": []
     },
     {
       "attachments": ["flashlight"],
-      "attack": [{"type": "projectile", "name": "Shotgun_12g_flm"}],
       "burst": 3,
       "cap": 25,
       "capplus": 1,
@@ -378,10 +377,10 @@
       "sourcepage": 2,
       "spreadxy": {"x": 300, "y": 300},
       "supply": 4,
-      "tags": ["fire"]
+      "tags": ["fire"],
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Crossbow_Bolt_exp"}],
       "cap": 5,
       "capplus": 1,
       "category": "EX",
@@ -397,7 +396,8 @@
       "source": "demo-det",
       "sourcepage": 3,
       "spreadxy": {"x": 0.5, "y": 0.5},
-      "supply": 8
+      "supply": 8,
+      "attack": []
     },
     {
       "attachments": ["flashlight"],
@@ -424,7 +424,6 @@
     },
     {
       "attachments": ["flashlight"],
-      "attack": [{"type": "projectile", "name": "Rocket_JarPhoenix_20mm"}],
       "cap": 5,
       "capplus": 1,
       "category": "EX",
@@ -443,10 +442,10 @@
       "sourcepage": 2,
       "spreadxy": {"x": 10, "y": 10},
       "supply": 6,
-      "tags": ["jet", "shrapnel"]
+      "tags": ["jet", "shrapnel"],
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Plasma_Punisher_Projectile"}],
       "cap": 8,
       "category": "NRG",
       "ergonomics": 62,
@@ -461,7 +460,8 @@
       "source": "cut-edge",
       "sourcepage": 2,
       "spreadxy": {"x": 8, "y": 8},
-      "supply": 8
+      "supply": 8,
+      "attack": []
     },
     {
       "attack": [{"type": "arc", "name": "ArcShotgun", "count": 5}],
@@ -498,7 +498,6 @@
       "tags": ["laser"]
     },
     {
-      "attack": [{"type": "projectile", "name": "Laser_Long"}],
       "box": 3,
       "category": "NRG",
       "ergonomics": 59,
@@ -517,10 +516,10 @@
       "source": "cut-edge",
       "sourcepage": 1,
       "spreadxy": {"x": 20, "y": 20},
-      "supply": 3
+      "supply": 3,
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Plasma_Bolt_Medium"}],
       "cap": 20,
       "category": "NRG",
       "ergonomics": 55,
@@ -536,10 +535,10 @@
       "source": "hd-mobilize",
       "sourcepage": 10,
       "spreadxy": {"x": 10, "y": 10},
-      "supply": 5
+      "supply": 5,
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Plasma_Rifle_Charge"}],
       "cap": 15,
       "category": "NRG",
       "charge": 1.3,
@@ -555,7 +554,8 @@
       "source": "polar-pat",
       "sourcepage": 3,
       "spreadxy": {"x": 10, "y": 10},
-      "supply": 6
+      "supply": 6,
+      "attack": []
     },
     {
       "cap": 80,
@@ -636,7 +636,6 @@
     },
     {
       "attachments": ["laser", "flashlight"],
-      "attack": [{"type": "projectile", "name": "Pistol_Magnum"}],
       "cap": 10,
       "capplus": 1,
       "category": "HG",
@@ -654,7 +653,8 @@
       "sourcepage": 3,
       "spreadxy": {"x": 30, "y": 30},
       "supply": 8,
-      "tags": ["1h"]
+      "tags": ["1h"],
+      "attack": []
     },
     {
       "attack": [{"type": "projectile", "name": "Grenade_40mm_HEAT"}],
@@ -752,7 +752,6 @@
       "spreadxy": {"x": 5, "y": 5}
     },
     {
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_fmj"}],
       "calltime": 3,
       "cap": 250,
       "capplus": 1,
@@ -770,10 +769,10 @@
       "rpms": [700, 850, 1150],
       "source": "support",
       "spreadxy": {"x": 6, "y": 6},
-      "supply": 2
+      "supply": 2,
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}],
       "calltime": 3,
       "cap": 175,
       "capplus": 1,
@@ -791,10 +790,10 @@
       "rpms": [630, 760, 900],
       "source": "support",
       "spreadxy": {"x": 4, "y": 4},
-      "supply": 2
+      "supply": 2,
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_bchp"}],
       "calltime": 3,
       "cap": 100,
       "capplus": 1,
@@ -812,7 +811,8 @@
       "rpms": [450, 600, 750],
       "source": "support",
       "spreadxy": {"x": 5, "y": 5},
-      "supply": 2
+      "supply": 2,
+      "attack": []
     },
     {
       "attack": [{"type": "arc", "name": "ArcThrower"}],
@@ -866,7 +866,6 @@
       "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_eit"}],
       "calltime": 3,
       "cap": 7,
       "capplus": 1,
@@ -884,10 +883,10 @@
       "scopes": [50, 100, 200],
       "source": "support",
       "spreadxy": {"x": 0.1, "y": 0.1},
-      "supply": 3
+      "supply": 3,
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Grenade_40mm_HE"}],
       "calltime": 3,
       "cap": 10,
       "capplus": 1,
@@ -904,7 +903,8 @@
       "rpm": 160,
       "source": "support",
       "spreadxy": {"x": 20, "y": 20},
-      "supply": 3
+      "supply": 3,
+      "attack": []
     },
     {
       "attack": [{"type": "projectile", "name": "Cannon_20mm_APHET"}],
@@ -927,7 +927,6 @@
       "spreadxy": {"x": 2, "y": 2}
     },
     {
-      "attack": [{"type": "projectile", "name": "Railgun"}],
       "calltime": 3,
       "cap": 1,
       "category": "SUP",
@@ -945,10 +944,10 @@
       "rpm": 60,
       "source": "support",
       "spreadxy": {"x": 10, "y": 10},
-      "supply": 10
+      "supply": 10,
+      "attack": []
     },
     {
-      "attack": [{"type": "beam", "name": "LaserCannon"}],
       "box": 3,
       "calltime": 3,
       "category": "SUP",
@@ -966,10 +965,10 @@
       "source": "support",
       "spreadxy": {"x": 10, "y": 10},
       "supply": 1,
-      "tags": ["laser"]
+      "tags": ["laser"],
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Laser_Pulse"}],
       "calltime": 3,
       "category": "SUP",
       "charge": 3.1,
@@ -984,10 +983,10 @@
       "rpms": [10, 10],
       "source": "support",
       "spreadxy": {"x": 4, "y": 4},
-      "supply": 6
+      "supply": 6,
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Grenade_75mm_HEAT"}],
       "calltime": 3,
       "cap": 1,
       "category": "SUP",
@@ -1001,10 +1000,10 @@
       "rounds": 0,
       "rpm": 600,
       "source": "support",
-      "spreadxy": {"x": 4, "y": 4}
+      "spreadxy": {"x": 4, "y": 4},
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Missile_66mm"}],
       "calltime": 3,
       "cap": 4,
       "category": "SUP",
@@ -1018,10 +1017,10 @@
       "rounds": 0,
       "rpm": 240,
       "source": "support",
-      "spreadxy": {"x": 0, "y": 0}
+      "spreadxy": {"x": 0, "y": 0},
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Grenade_85mm_HEAT"}],
       "calltime": 3,
       "cap": 1,
       "capplus": 1,
@@ -1038,10 +1037,10 @@
       "roundstart": 5,
       "rpm": 600,
       "source": "support",
-      "spreadxy": {"x": 4, "y": 4}
+      "spreadxy": {"x": 4, "y": 4},
+      "attack": []
     },
     {
-      "attack": [{"type": "projectile", "name": "Missile_Faf"}],
       "calltime": 3,
       "cap": 1,
       "capplus": 1,
@@ -1058,12 +1057,10 @@
       "roundstart": 3,
       "rpm": 240,
       "source": "support",
-      "spreadxy": {"x": 0, "y": 0}
+      "spreadxy": {"x": 0, "y": 0},
+      "attack": []
     },
     {
-      "attack": [
-        {"type": "projectile", "name": "Grenade_85mm_AirburstCluster"}
-      ],
       "calltime": 3,
       "cap": 1,
       "capplus": 1,
@@ -1080,7 +1077,8 @@
       "roundstart": 5,
       "rpm": 600,
       "source": "support",
-      "spreadxy": {"x": 4, "y": 4}
+      "spreadxy": {"x": 4, "y": 4},
+      "attack": []
     },
     {
       "attack": [{"type": "projectile", "name": "Shotgun_10g_mag"}],
@@ -1345,7 +1343,6 @@
       "fire_modes": ["Automatic", "Single", "Burst"],
       "num_burst_rounds": 3,
       "function_info": ["Firemode"],
-      "projectile_type": "Rifle_5p5x50mm_ap",
       "rounds_per_minute": {"x": 0, "y": 660, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -1355,9 +1352,10 @@
       },
       "num_low_ammo_rounds": 5,
       "burst_fire_rate": 660,
+      "projectile": "Rifle_5p5x50mm_ap",
       "customizations": {},
       "modifiers": [],
-      "attack": [{"type": "projectile", "name": "Rifle_5p5x50mm_ap"}]
+      "attack": []
     },
     {
       "ref": "Drone_Laser_Rifle",
@@ -1702,7 +1700,6 @@
       "turn_speed_horizontal": 80,
       "vertical_limit_min": -60,
       "vertical_limit_max": 90,
-      "projectile_type": "Rifle_8x60mm_fmj",
       "rounds_per_minute": {"x": 630, "y": 630, "z": 900},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -1711,11 +1708,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 20,
+      "projectile": "Rifle_8x60mm_fmj",
       "key": "A/MG-43 Machine Gun Sentry",
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}],
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1
+      "attack": []
     },
     {
       "ref": "TurretMachinegun",
@@ -1769,7 +1764,6 @@
       "turn_speed_horizontal": 80,
       "vertical_limit_min": -60,
       "vertical_limit_max": 90,
-      "projectile_type": "Rifle_8x60mm_fmj",
       "rounds_per_minute": {"x": 0, "y": 1600, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -1778,11 +1772,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Rifle_8x60mm_fmj",
       "key": "A/G-16 Gatling Sentry",
-      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}],
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1
+      "attack": []
     },
     {
       "ref": "TurretManned",
@@ -1828,7 +1820,6 @@
       "infinite_ammo": 0,
       "fire_modes": ["Automatic"],
       "function_info": [],
-      "projectile_type": "Rifle_12p5x100mm_fmj",
       "rounds_per_minute": {"x": 450, "y": 600, "z": 750},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -1837,11 +1828,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Rifle_12p5x100mm_fmj",
       "key": "E/MG-101 HMG Emplacement",
-      "attack": [{"type": "projectile", "name": "Rifle_12p5x100mm_fmj"}],
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1
+      "attack": []
     },
     {
       "ref": "TurretMortar",
@@ -1894,7 +1883,6 @@
       "turn_speed_horizontal": 55,
       "vertical_limit_min": 35,
       "vertical_limit_max": 89,
-      "projectile_type": "Grenade_Mortar_40mm_HE",
       "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -1903,12 +1891,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Grenade_Mortar_40mm_HE",
       "key": "A/M-12 Mortar Sentry",
-      "attack": [{"type": "projectile", "name": "Grenade_Mortar_40mm_HE"}],
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1,
-      "burst": 3
+      "attack": []
     },
     {
       "ref": "TurretMortar_Staticfield",
@@ -1961,7 +1946,6 @@
       "turn_speed_horizontal": 55,
       "vertical_limit_min": 35,
       "vertical_limit_max": 89,
-      "projectile_type": "Grenade_Mortar_40mm_Staticfield",
       "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -1970,14 +1954,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Grenade_Mortar_40mm_Staticfield",
       "key": "A/M-23 EMS Mortar Sentry",
-      "attack": [
-        {"type": "projectile", "name": "Grenade_Mortar_40mm_Staticfield"}
-      ],
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1,
-      "burst": 3
+      "attack": []
     },
     {
       "ref": "TurretRocket",
@@ -2032,7 +2011,6 @@
       "turn_speed_horizontal": 40,
       "vertical_limit_min": -45,
       "vertical_limit_max": 90,
-      "projectile_type": "Rocket_70mm_turret",
       "rounds_per_minute": {"x": 0, "y": 90, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2041,13 +2019,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Rocket_70mm_turret",
       "key": "A/MLS-4X Rocket Sentry",
-      "attack": [{"type": "projectile", "name": "Rocket_70mm_turret"}],
-      "mags": 1,
-      "magstart": 1,
-      "supply": 1,
-      "burst": 4,
-      "box": 3
+      "attack": []
     },
     {
       "ref": "TurretAutocannon",
@@ -2099,7 +2073,6 @@
       "turn_speed_horizontal": 20,
       "vertical_limit_min": -60,
       "vertical_limit_max": 70,
-      "projectile_type": "Cannon_40mm_APHE",
       "rounds_per_minute": {"x": 0, "y": 160, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2108,12 +2081,9 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_40mm_APHE",
       "key": "A/AC-8 Autocannon Sentry",
-      "attack": [{"type": "projectile", "name": "Cannon_40mm_APHE"}],
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1,
-      "burst": 3
+      "attack": []
     },
     {
       "ref": "TurretTesla",
@@ -2163,10 +2133,7 @@
       "rounds_per_minute": -1,
       "arc_type": "TeslaTurret",
       "key": "A/ARC-3 Tesla Tower",
-      "attack": [{"type": "arc", "name": "TeslaTurret"}],
-      "mags": 0,
-      "magstart": 0,
-      "capplus": 1
+      "attack": [{"type": "arc", "name": "TeslaTurret"}]
     },
     {
       "ref": "OrbitalShell",
@@ -2175,23 +2142,11 @@
       "stratcode": ["Right", "Right", "Up"],
       "calltime": 2,
       "cooldown": 90,
-      "salvos": 1,
-      "attack": [{"type": "projectile", "name": "Orbital_Precision_Strike"}],
-      "num_bombs": 1,
       "bomb_interval": 0.5,
-      "num_salvos": 1,
       "salvo_interval": 3,
       "area_size": 1,
-      "projectile_types": [
-        "ProjectileType_Orbital_Precision_Strike",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None"
-      ]
+      "projectile_type": "Orbital_Precision_Strike",
+      "attack": [{"type": "projectile", "name": "Orbital_Precision_Strike"}]
     },
     {
       "ref": "OrbitalGas",
@@ -2200,23 +2155,11 @@
       "stratcode": ["Right", "Right", "Down", "Right"],
       "calltime": 2,
       "cooldown": 75,
-      "salvos": 1,
-      "attack": [{"type": "projectile", "name": "Orbital_Gas"}],
-      "num_bombs": 1,
       "bomb_interval": 0.349999994,
-      "num_salvos": 1,
       "salvo_interval": 1,
       "area_size": 1,
-      "projectile_types": [
-        "ProjectileType_Orbital_Gas",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None"
-      ]
+      "projectile_type": "Orbital_Gas",
+      "attack": [{"type": "projectile", "name": "Orbital_Gas"}]
     },
     {
       "ref": "OrbitalSmoke",
@@ -2225,23 +2168,12 @@
       "stratcode": ["Right", "Right", "Down", "Up"],
       "calltime": 2,
       "cooldown": 100,
-      "salvos": 6,
-      "num_bombs": 1,
       "bomb_interval": 0,
-      "num_salvos": 6,
       "salvo_interval": 0,
       "area_size": 15,
-      "projectile_types": [
-        "ProjectileType_Orbital_Smoke",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None"
-      ],
-      "attack": []
+      "salvos": 6,
+      "projectile_type": "Orbital_Smoke",
+      "attack": [{"type": "projectile", "name": "Orbital_Smoke"}]
     },
     {
       "ref": "OrbitalShot",
@@ -2250,23 +2182,12 @@
       "stratcode": ["Right", "Right", "Right"],
       "calltime": 2,
       "cooldown": 100,
-      "salvos": 3,
-      "attack": [{"type": "projectile", "name": "Orbital_Cannon_110mm"}],
-      "num_bombs": 1,
       "bomb_interval": 0,
-      "num_salvos": 4,
       "salvo_interval": 4,
       "area_size": 2,
-      "projectile_types": [
-        "ProjectileType_Orbital_Cannon_110mm",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None"
-      ]
+      "salvos": 4,
+      "projectile_type": "Orbital_Cannon_110mm",
+      "attack": [{"type": "projectile", "name": "Orbital_Cannon_110mm"}]
     },
     {
       "ref": "OrbitalStun",
@@ -2275,23 +2196,11 @@
       "stratcode": ["Right", "Right", "Left", "Down"],
       "calltime": 2,
       "cooldown": 75,
-      "salvos": 1,
-      "attack": [{"type": "projectile", "name": "Orbital_Stunround"}],
-      "num_bombs": 1,
       "bomb_interval": 0.349999994,
-      "num_salvos": 1,
       "salvo_interval": 2,
       "area_size": 1,
-      "projectile_types": [
-        "ProjectileType_Orbital_Stunround",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None"
-      ]
+      "projectile_type": "Orbital_Stunround",
+      "attack": [{"type": "projectile", "name": "Orbital_Stunround"}]
     },
     {
       "ref": "OrbitalGatlingBarrage",
@@ -2299,24 +2208,14 @@
       "category": "Orbital",
       "stratcode": ["Right", "Down", "Left", "Up", "Up"],
       "calltime": 2,
-      "cooldown": 80,
-      "salvos": 4,
-      "attack": [{"type": "projectile", "name": "Cannon_Eagle_23mm"}],
-      "num_bombs": 60,
+      "cooldown": 70,
       "bomb_interval": 0.0450000018,
-      "num_salvos": 4,
       "salvo_interval": 0,
       "area_size": 7,
-      "projectile_types": [
-        "ProjectileType_Cannon_Eagle_23mm",
-        "ProjectileType_Cannon_Eagle_23mm_no_explosion",
-        "ProjectileType_Cannon_Eagle_23mm_no_explosion",
-        "ProjectileType_Cannon_Eagle_23mm_no_explosion",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None"
-      ]
+      "salvos": 4,
+      "cap": 60,
+      "projectile_type": "Cannon_Eagle_23mm",
+      "attack": [{"type": "projectile", "name": "Cannon_Eagle_23mm"}]
     },
     {
       "ref": "OrbitalStrike",
@@ -2324,24 +2223,14 @@
       "category": "Orbital",
       "stratcode": ["Right", "Right", "Down", "Left", "Right", "Down"],
       "calltime": 5,
-      "cooldown": 240,
-      "salvos": 5,
-      "attack": [{"type": "projectile", "name": "Orbital_Cannon_120mm_HE"}],
-      "num_bombs": 3,
+      "cooldown": 180,
       "bomb_interval": 0.75,
-      "num_salvos": 5,
       "salvo_interval": 2,
       "area_size": 27,
-      "projectile_types": [
-        "ProjectileType_Orbital_Cannon_120mm_HE",
-        "ProjectileType_Orbital_Cannon_120mm_HE_Cheap",
-        "ProjectileType_Orbital_Cannon_120mm_HE_Cheap",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None"
-      ]
+      "salvos": 5,
+      "cap": 3,
+      "projectile_type": "Orbital_Cannon_120mm_HE",
+      "attack": [{"type": "projectile", "name": "Orbital_Cannon_120mm_HE"}]
     },
     {
       "ref": "OrbitalBarrage",
@@ -2350,23 +2239,13 @@
       "stratcode": ["Right", "Down", "Up", "Up", "Left", "Down", "Down"],
       "calltime": 6,
       "cooldown": 240,
-      "salvos": 5,
-      "attack": [{"type": "projectile", "name": "Orbital_Cannon_380mm_HE"}],
-      "num_bombs": 3,
       "bomb_interval": 1.5,
-      "num_salvos": 5,
       "salvo_interval": 3,
       "area_size": 36,
-      "projectile_types": [
-        "ProjectileType_Orbital_Cannon_380mm_HE",
-        "ProjectileType_Orbital_Cannon_380mm_HE_Cheap",
-        "ProjectileType_Orbital_Cannon_380mm_HE_Cheap",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None"
-      ]
+      "salvos": 5,
+      "cap": 3,
+      "projectile_type": "Orbital_Cannon_380mm_HE",
+      "attack": [{"type": "projectile", "name": "Orbital_Cannon_380mm_HE"}]
     },
     {
       "ref": "OrbitalWalkingBarrage",
@@ -2375,23 +2254,13 @@
       "stratcode": ["Right", "Down", "Right", "Down", "Right", "Down"],
       "calltime": 3,
       "cooldown": 240,
-      "salvos": 3,
-      "attack": [{"type": "projectile", "name": "Orbital_Cannon_380mm_HE"}],
-      "num_bombs": 3,
       "bomb_interval": 1.5,
-      "num_salvos": 5,
       "salvo_interval": 3,
       "area_size": 25,
-      "projectile_types": [
-        "ProjectileType_Orbital_Cannon_380mm_HE",
-        "ProjectileType_Orbital_Cannon_380mm_HE_Cheap",
-        "ProjectileType_Orbital_Cannon_380mm_HE_Cheap",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None",
-        "ProjectileType_None"
-      ]
+      "salvos": 5,
+      "cap": 3,
+      "projectile_type": "Orbital_Cannon_380mm_HE",
+      "attack": [{"type": "projectile", "name": "Orbital_Cannon_380mm_HE"}]
     },
     {
       "ref": "OrbitalLaser",
@@ -2401,15 +2270,10 @@
       "stratcode": ["Right", "Down", "Up", "Right", "Down"],
       "calltime": 2,
       "cooldown": 300,
-      "limit": 25,
-      "attack": [
-        {"type": "damage", "name": "DPS_BeamHuge"},
-        {"type": "projectile", "name": "ProjectileType_None"}
-      ],
-      "duration": 25,
       "search_radius": 50,
-      "projectile_type": "ProjectileType_None",
-      "damage_info_type": "DamageInfoType_DPS_BeamHuge"
+      "limit": 25,
+      "damage_type": "DPS_BeamHuge",
+      "attack": [{"type": "damage", "name": "DPS_BeamHuge"}]
     },
     {
       "ref": "OrbitalRailcannon",
@@ -2418,15 +2282,10 @@
       "stratcode": ["Right", "Up", "Down", "Down", "Right"],
       "calltime": 1,
       "cooldown": 210,
-      "salvos": 1,
-      "attack": [
-        {"type": "projectile", "name": "Orbital_Railcannon"},
-        {"type": "projectile", "name": "ProjectileType_Orbital_Railcannon"}
-      ],
-      "duration": 2,
       "search_radius": 30,
-      "projectile_type": "ProjectileType_Orbital_Railcannon",
-      "damage_info_type": "DamageInfoType_None"
+      "limit": 2,
+      "projectile_type": "Orbital_Railcannon",
+      "attack": [{"type": "projectile", "name": "Orbital_Railcannon"}]
     },
     {
       "ref": "EagleAirstrike",
@@ -2439,7 +2298,7 @@
       "eaglestock": 2,
       "attack": [
         {"type": "projectile", "name": "Bomb_100kg"},
-        {"type": "projectile", "name": "ProjectileType_Bomb_100kg"}
+        {"type": "projectile", "name": "Bomb_100kg"}
       ],
       "magazine_capacity": 2000,
       "chambered": 0,
@@ -2472,7 +2331,6 @@
       "infinite_ammo": 0,
       "fire_modes": ["Automatic"],
       "function_info": [],
-      "projectile_type": "ProjectileType_Bomb_100kg",
       "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2481,12 +2339,14 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_Eagle_23mm",
       "airstrike_pattern": "EagleAirstrikePattern_6Z",
       "target_angle": 90,
       "search_radius": 60,
       "fire_duration": 1.5,
       "bomb_interval": 0.200000003,
-      "bomb_prediction_interval": 0.0500000007
+      "bomb_prediction_interval": 0.0500000007,
+      "projectile_type": "Bomb_100kg"
     },
     {
       "ref": "EagleAirstrikeNapalm",
@@ -2499,7 +2359,7 @@
       "eaglestock": 2,
       "attack": [
         {"type": "projectile", "name": "Bomb_Napalm"},
-        {"type": "projectile", "name": "ProjectileType_Bomb_Napalm"}
+        {"type": "projectile", "name": "Bomb_Napalm"}
       ],
       "magazine_capacity": 2000,
       "chambered": 0,
@@ -2532,7 +2392,6 @@
       "infinite_ammo": 0,
       "fire_modes": ["Automatic"],
       "function_info": [],
-      "projectile_type": "ProjectileType_Bomb_Napalm",
       "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2541,12 +2400,14 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_Eagle_23mm",
       "airstrike_pattern": "EagleAirstrikePattern_4line_Napalm_MK1",
       "target_angle": 90,
       "search_radius": 60,
       "fire_duration": 1.5,
       "bomb_interval": 0.200000003,
-      "bomb_prediction_interval": 0.0500000007
+      "bomb_prediction_interval": 0.0500000007,
+      "projectile_type": "Bomb_Napalm"
     },
     {
       "ref": "EagleBomb",
@@ -2559,7 +2420,7 @@
       "eaglestock": 1,
       "attack": [
         {"type": "projectile", "name": "Bomb_500kg"},
-        {"type": "projectile", "name": "ProjectileType_Bomb_500kg"}
+        {"type": "projectile", "name": "Bomb_500kg"}
       ],
       "magazine_capacity": 2000,
       "chambered": 0,
@@ -2592,7 +2453,6 @@
       "infinite_ammo": 0,
       "fire_modes": ["Automatic"],
       "function_info": [],
-      "projectile_type": "ProjectileType_Bomb_500kg",
       "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2601,12 +2461,14 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_Eagle_23mm",
       "airstrike_pattern": "EagleAirstrikePattern_Single",
       "target_angle": 180,
       "search_radius": 60,
       "fire_duration": 1.5,
       "bomb_interval": 0.0500000007,
-      "bomb_prediction_interval": 0.0500000007
+      "bomb_prediction_interval": 0.0500000007,
+      "projectile_type": "Bomb_500kg"
     },
     {
       "ref": "EagleCAS",
@@ -2619,7 +2481,7 @@
       "eaglestock": 4,
       "attack": [
         {"type": "projectile", "name": "Cannon_Eagle_23mm"},
-        {"type": "projectile", "name": "ProjectileType_Cannon_Eagle_23mm"}
+        {"type": "projectile", "name": "Cannon_Eagle_23mm"}
       ],
       "magazine_capacity": 2000,
       "chambered": 0,
@@ -2652,7 +2514,6 @@
       "infinite_ammo": 0,
       "fire_modes": ["Automatic"],
       "function_info": [],
-      "projectile_type": "ProjectileType_Cannon_Eagle_23mm",
       "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2661,12 +2522,14 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_Eagle_23mm",
       "airstrike_pattern": "EagleAirstrikePattern_6Z",
       "target_angle": 180,
       "search_radius": 60,
       "fire_duration": 1.5,
       "bomb_interval": 0.5,
-      "bomb_prediction_interval": 0.0500000007
+      "bomb_prediction_interval": 0.0500000007,
+      "projectile_type": "Cannon_Eagle_23mm"
     },
     {
       "ref": "EagleClusterbombs",
@@ -2679,7 +2542,7 @@
       "eaglestock": 4,
       "attack": [
         {"type": "projectile", "name": "ClusterBomb_100kg"},
-        {"type": "projectile", "name": "ProjectileType_ClusterBomb_100kg"}
+        {"type": "projectile", "name": "ClusterBomb_100kg"}
       ],
       "magazine_capacity": 2000,
       "chambered": 0,
@@ -2712,7 +2575,6 @@
       "infinite_ammo": 0,
       "fire_modes": ["Automatic"],
       "function_info": [],
-      "projectile_type": "ProjectileType_ClusterBomb_100kg",
       "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2721,12 +2583,14 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_Eagle_23mm",
       "airstrike_pattern": "EagleAirstrikePattern_8line_ClusterBomb",
       "target_angle": 90,
       "search_radius": 60,
       "fire_duration": 1.5,
       "bomb_interval": 0.100000001,
-      "bomb_prediction_interval": 0.0500000007
+      "bomb_prediction_interval": 0.0500000007,
+      "projectile_type": "ClusterBomb_100kg"
     },
     {
       "ref": "EagleRocket",
@@ -2772,7 +2636,6 @@
       "infinite_ammo": 0,
       "fire_modes": ["Automatic"],
       "function_info": [],
-      "projectile_type": "Rocket_110mm",
       "rounds_per_minute": {"x": 0, "y": 250, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2781,12 +2644,14 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Rocket_110mm",
       "airstrike_pattern": "EagleAirstrikePattern_6Z",
       "target_angle": 180,
       "search_radius": 20,
       "fire_duration": 2,
       "bomb_interval": 0.5,
-      "bomb_prediction_interval": 0.0500000007
+      "bomb_prediction_interval": 0.0500000007,
+      "projectile_type": "Rocket_110mm"
     },
     {
       "ref": "EagleAirstrikeSmoke",
@@ -2799,7 +2664,7 @@
       "eaglestock": 2,
       "attack": [
         {"type": "projectile", "name": "Bomb_Smoke"},
-        {"type": "projectile", "name": "ProjectileType_Bomb_Smoke"}
+        {"type": "projectile", "name": "Bomb_Smoke"}
       ],
       "magazine_capacity": 2000,
       "chambered": 0,
@@ -2832,7 +2697,6 @@
       "infinite_ammo": 0,
       "fire_modes": ["Automatic"],
       "function_info": [],
-      "projectile_type": "ProjectileType_Bomb_Smoke",
       "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2841,12 +2705,14 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_Eagle_23mm",
       "airstrike_pattern": "EagleAirstrikePattern_8line_ClusterBomb",
       "target_angle": 90,
       "search_radius": 60,
       "fire_duration": 2,
       "bomb_interval": 0.200000003,
-      "bomb_prediction_interval": 0.0500000007
+      "bomb_prediction_interval": 0.0500000007,
+      "projectile_type": "Bomb_Smoke"
     },
     {
       "ref": "DropoffCombatWalker",
@@ -2862,8 +2728,7 @@
       "armor": 0,
       "attack": [
         {"type": "damage", "name": "Ability_Cyborg_Lieutenant_Stomp"},
-        {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"},
-        {"type": "projectile", "name": "Cannon_40mm_APHE"}
+        {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"}
       ],
       "prefix": "EXO-45",
       "initial_fuel": {"x": 10000, "y": 10000},
@@ -2909,7 +2774,6 @@
       "turn_speed_horizontal": 120,
       "vertical_limit_min": 0,
       "vertical_limit_max": 90,
-      "projectile_type": "Cannon_40mm_APHE",
       "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2917,7 +2781,8 @@
         "heat_bleed_speed": 10,
         "heat_bleed_delay": 5
       },
-      "num_low_ammo_rounds": 4
+      "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_40mm_APHE"
     },
     {
       "ref": "DropoffCombatWalker_Autocannon",
@@ -2933,8 +2798,7 @@
       "armor": 0,
       "attack": [
         {"type": "damage", "name": "Ability_Cyborg_Lieutenant_Stomp"},
-        {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"},
-        {"type": "projectile", "name": "Cannon_40mm_APHE"}
+        {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"}
       ],
       "prefix": "EXO-49",
       "initial_fuel": {"x": 10000, "y": 10000},
@@ -2980,7 +2844,6 @@
       "turn_speed_horizontal": 120,
       "vertical_limit_min": 0,
       "vertical_limit_max": 90,
-      "projectile_type": "Cannon_40mm_APHE",
       "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
@@ -2988,7 +2851,8 @@
         "heat_bleed_speed": 10,
         "heat_bleed_delay": 5
       },
-      "num_low_ammo_rounds": 4
+      "num_low_ammo_rounds": 4,
+      "projectile": "Cannon_40mm_APHE"
     },
     {
       "ref": "EagleRearm",

@@ -56,7 +56,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -64,7 +63,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Hmg"
   },
   "7767754898735718469": {
     "id": "7767754898735718469",
@@ -136,7 +136,6 @@
     "turn_speed_horizontal": 10,
     "vertical_limit_min": 25,
     "vertical_limit_max": 80,
-    "projectile_type": "Cyborg_Mortar_Grenade_HE",
     "rounds_per_minute": {"x": 0, "y": 8, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -145,6 +144,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Mortar_Grenade_HE",
     "key": "Automaton Mortar Emplacement"
   },
   "11047871594297831536": {
@@ -180,7 +180,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_LauncherSidearm",
-    "projectile_type": "Cyborg_Flare",
     "rounds_per_minute": {"x": 0, "y": 425, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -189,6 +188,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Flare",
     "key": "Fusion Carbine"
   },
   "13028718365019299975": {
@@ -229,7 +229,6 @@
     "turn_speed_horizontal": 45,
     "vertical_limit_min": -27,
     "vertical_limit_max": 90,
-    "projectile_type": "Cannon_20mm_APHET",
     "rounds_per_minute": {"x": 0, "y": 80, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -237,7 +236,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_20mm_APHET"
   },
   "18102809172282470538": {
     "id": "18102809172282470538",
@@ -308,7 +308,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "projectile_type": "Plasma_Rifle_Charge",
     "rounds_per_minute": {"x": 0, "y": 1000, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -317,6 +316,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Plasma_Rifle_Charge",
     "customizations": {
       "magazine_capacity": 15,
       "magazines": 4,
@@ -394,7 +394,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Rifle_5p5x50mm_exp",
     "rounds_per_minute": {"x": 0, "y": 660, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -404,6 +403,7 @@
     },
     "num_low_ammo_rounds": 5,
     "burst_fire_rate": 660,
+    "projectile": "Rifle_5p5x50mm_exp",
     "customizations": {},
     "modifiers": []
   },
@@ -463,7 +463,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "Shotgun_12g_bir",
     "rounds_per_minute": {"x": 0, "y": 330, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -472,6 +471,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 2,
+    "projectile": "Shotgun_12g_bir",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3},
@@ -524,7 +524,7 @@
     "cooldown_time": 1,
     "spray_capsule_radius": 0.5,
     "ammo_cost": 1,
-    "projectile_type": "Cyborg_Flamethrower_Heavy"
+    "projectile": "Cyborg_Flamethrower_Heavy"
   },
   "6337264778388549835": {
     "id": "6337264778388549835",
@@ -573,7 +573,6 @@
     "turn_speed_horizontal": 180,
     "vertical_limit_min": 0,
     "vertical_limit_max": 0,
-    "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 1600, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -582,6 +581,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_8x60mm_fmj",
     "key": "A/G-16 Gatling Sentry"
   },
   "4416184955867381998": {
@@ -618,7 +618,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Rifle_5p5x50mm_exp",
     "rounds_per_minute": {"x": 0, "y": 660, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -628,6 +627,7 @@
     },
     "num_low_ammo_rounds": 5,
     "burst_fire_rate": 660,
+    "projectile": "Rifle_5p5x50mm_exp",
     "customizations": {},
     "modifiers": []
   },
@@ -666,7 +666,6 @@
     "turn_speed_horizontal": 45,
     "vertical_limit_min": -35,
     "vertical_limit_max": 35,
-    "projectile_type": "Cyborg_LightCannon",
     "rounds_per_minute": {"x": 0, "y": 120, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -675,6 +674,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightCannon",
     "key": "Heavy Fusion Repeater"
   },
   "721550233589928225": {
@@ -707,7 +707,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cannon_30mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -715,7 +714,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_30mm_APHE"
   },
   "6358746089464627494": {"id": "6358746089464627494"},
   "12765265282294763822": {
@@ -759,7 +759,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cannon_20mm_APHET",
     "rounds_per_minute": {"x": 0, "y": 240, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -767,7 +766,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_20mm_APHET"
   },
   "11335415903596859741": {
     "id": "11335415903596859741",
@@ -802,7 +802,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "ProjectileType_ClusterBomb_100kg",
     "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -811,6 +810,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_Eagle_23mm",
     "mounts": ["14855805920191068159", "14855805920191068159"],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "EagleAirstrikePattern_8line_ClusterBomb",
@@ -818,7 +818,8 @@
     "search_radius": 60,
     "fire_duration": 1.5,
     "bomb_interval": 0.100000001,
-    "bomb_prediction_interval": 0.0500000007
+    "bomb_prediction_interval": 0.0500000007,
+    "projectile_type": "ClusterBomb_100kg"
   },
   "10892987900330561893": {
     "id": "10892987900330561893",
@@ -858,7 +859,6 @@
     "turn_speed_horizontal": 30,
     "vertical_limit_min": -3,
     "vertical_limit_max": 4,
-    "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 0, "y": 400, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -867,6 +867,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Hmg",
     "key": "Heavy Fusion Repeater"
   },
   "9796573205647524202": {
@@ -914,7 +915,6 @@
     "turn_speed_horizontal": 80,
     "vertical_limit_min": -60,
     "vertical_limit_max": 90,
-    "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 1600, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -923,6 +923,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_8x60mm_fmj",
     "max_length": 150
   },
   "6670637945684439420": {
@@ -953,7 +954,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Rocket_110mm",
     "rounds_per_minute": {"x": 0, "y": 250, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -961,7 +961,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Rocket_110mm"
   },
   "7546486305997975964": {
     "id": "7546486305997975964",
@@ -996,7 +997,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 650, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1005,6 +1005,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Fusion Repeater"
   },
   "6582409209889722787": {
@@ -1040,7 +1041,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 0, "y": 500, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1049,25 +1049,17 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Hmg",
     "key": "Fusion Autocannon"
   },
   "3259427501513118129": {
     "id": "3259427501513118129",
-    "num_bombs": 3,
     "bomb_interval": 0.75,
-    "num_salvos": 5,
     "salvo_interval": 2,
     "area_size": 27,
-    "projectile_types": [
-      "ProjectileType_Orbital_Cannon_120mm_HE",
-      "ProjectileType_Orbital_Cannon_120mm_HE_Cheap",
-      "ProjectileType_Orbital_Cannon_120mm_HE_Cheap",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "salvos": 5,
+    "cap": 3,
+    "projectile_type": "Orbital_Cannon_120mm_HE"
   },
   "13601459612566041022": {
     "id": "13601459612566041022",
@@ -1111,7 +1103,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 80, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1171,7 +1162,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Cyborg_LightCannon",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1179,7 +1169,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightCannon"
   },
   "9264801226655597011": {
     "id": "9264801226655597011",
@@ -1219,7 +1210,6 @@
     "wield_duration": 1.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Grenade_75mm_HEAT",
     "rounds_per_minute": {"x": 0, "y": 600, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1227,27 +1217,19 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
+    "projectile": "Grenade_75mm_HEAT",
     "customizations": {},
     "modifiers": [],
     "key": "EAT-17 Expendable Anti-Tank"
   },
   "17250673437555536342": {
     "id": "17250673437555536342",
-    "num_bombs": 3,
     "bomb_interval": 1.5,
-    "num_salvos": 5,
     "salvo_interval": 3,
     "area_size": 36,
-    "projectile_types": [
-      "ProjectileType_Orbital_Cannon_380mm_HE",
-      "ProjectileType_Orbital_Cannon_380mm_HE_Cheap",
-      "ProjectileType_Orbital_Cannon_380mm_HE_Cheap",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "salvos": 5,
+    "cap": 3,
+    "projectile_type": "Orbital_Cannon_380mm_HE"
   },
   "11613148414962332127": {
     "id": "11613148414962332127",
@@ -1287,7 +1269,6 @@
     "turn_speed_horizontal": 45,
     "vertical_limit_min": -27,
     "vertical_limit_max": 90,
-    "projectile_type": "Rifle_12p5x100mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 500, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1295,25 +1276,17 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_12p5x100mm_fmj"
   },
   "14663462306863854060": {
     "id": "14663462306863854060",
-    "num_bombs": 3,
     "bomb_interval": 1.5,
-    "num_salvos": 5,
     "salvo_interval": 3,
     "area_size": 25,
-    "projectile_types": [
-      "ProjectileType_Orbital_Cannon_380mm_HE",
-      "ProjectileType_Orbital_Cannon_380mm_HE_Cheap",
-      "ProjectileType_Orbital_Cannon_380mm_HE_Cheap",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "salvos": 5,
+    "cap": 3,
+    "projectile_type": "Orbital_Cannon_380mm_HE"
   },
   "535319041333920260": {
     "id": "535319041333920260",
@@ -1389,7 +1362,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SniperRifle",
-    "projectile_type": "Rifle_12p5x100mm_eit",
     "rounds_per_minute": {"x": 0, "y": 400, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1397,6 +1369,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
+    "projectile": "Rifle_12p5x100mm_eit",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -14}
@@ -1433,7 +1406,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cannon_30mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1441,7 +1413,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_30mm_APHE"
   },
   "12611223767334871581": {
     "id": "12611223767334871581",
@@ -1533,7 +1506,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "projectile_type": "Rifle_12p5x100mm_bchp",
     "rounds_per_minute": {"x": 450, "y": 600, "z": 750},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1542,6 +1514,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 30,
+    "projectile": "Rifle_12p5x100mm_bchp",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
@@ -1607,7 +1580,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "projectile_type": "Cyborg_LightRocket",
     "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1616,6 +1588,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightRocket",
     "key": "Fusion Autocannon"
   },
   "14394260739264934509": {
@@ -1696,7 +1669,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "projectile_type": "Rifle_5p5x50mm_ap",
     "rounds_per_minute": {"x": 0, "y": 640, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1705,6 +1677,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_5p5x50mm_ap",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -10}
@@ -1739,7 +1712,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cyborg_LightCannon",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1747,7 +1719,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightCannon"
   },
   "12008625947668001407": {
     "id": "12008625947668001407",
@@ -1784,7 +1757,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
       "heat_build_per_shot": 0.5,
@@ -1793,6 +1765,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
+    "projectile": "Rifle_5p5x50mm_fmj",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1},
@@ -1851,7 +1824,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Grenade_85mm_AirburstCluster",
     "rounds_per_minute": {"x": 0, "y": 600, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1859,6 +1831,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
+    "projectile": "Grenade_85mm_AirburstCluster",
     "customizations": {},
     "modifiers": [],
     "key": "RL-77 Airburst Rocket Launcher"
@@ -1906,7 +1879,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
     "is_one_handed": 1,
-    "projectile_type": "Pistol_Magnum",
     "rounds_per_minute": {"x": 0, "y": 450, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1915,6 +1887,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Pistol_Magnum",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -1923,21 +1896,11 @@
   },
   "15741945895218221769": {
     "id": "15741945895218221769",
-    "num_bombs": 1,
     "bomb_interval": 0,
-    "num_salvos": 6,
     "salvo_interval": 0,
     "area_size": 15,
-    "projectile_types": [
-      "ProjectileType_Orbital_Smoke",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "salvos": 6,
+    "projectile_type": "Orbital_Smoke"
   },
   "5199653481743360714": {
     "id": "5199653481743360714",
@@ -1972,7 +1935,6 @@
     "infinite_ammo": 1,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Orbital_Cannon_380mm_HE",
     "rounds_per_minute": {"x": 0, "y": 240, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -1980,7 +1942,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Orbital_Cannon_380mm_HE"
   },
   "17238162226885792459": {
     "id": "17238162226885792459",
@@ -1993,21 +1956,11 @@
   },
   "8480614394778878677": {
     "id": "8480614394778878677",
-    "num_bombs": 1,
     "bomb_interval": 0,
-    "num_salvos": 4,
     "salvo_interval": 4,
     "area_size": 2,
-    "projectile_types": [
-      "ProjectileType_Orbital_Cannon_110mm",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "salvos": 4,
+    "projectile_type": "Orbital_Cannon_110mm"
   },
   "8536986223483970266": {
     "id": "8536986223483970266",
@@ -2047,7 +2000,6 @@
     "turn_speed_horizontal": 75,
     "vertical_limit_min": 75,
     "vertical_limit_max": 89,
-    "projectile_type": "Bug_Artillery",
     "rounds_per_minute": {"x": 0, "y": 120, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2056,6 +2008,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Bug_Artillery",
     "key": "Bile Spewer"
   },
   "7470354883998204659": {
@@ -2106,7 +2059,6 @@
     "turn_speed_horizontal": 30,
     "vertical_limit_min": -17,
     "vertical_limit_max": 15,
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2115,6 +2067,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Fusion Repeater"
   },
   "3371451580584923919": {
@@ -2200,7 +2153,7 @@
     "cooldown_time": 0.0500000007,
     "spray_capsule_radius": 1,
     "ammo_cost": 0,
-    "projectile_type": "Boomer_Nurser_AcidStream",
+    "projectile": "Boomer_Nurser_AcidStream",
     "key": "Nursing Spewer"
   },
   "3852172782311805734": {
@@ -2240,7 +2193,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
     "is_one_handed": 1,
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 1100, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2299,7 +2251,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "Shotgun_12g_buc",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2308,6 +2259,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 2,
+    "projectile": "Shotgun_12g_buc",
     "customizations": {
       "magazine_capacity": 16,
       "magazines": 5,
@@ -2369,7 +2321,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 80, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2438,7 +2389,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Special",
     "is_one_handed": 1,
-    "projectile_type": "Pistol_Stim",
     "rounds_per_minute": {"x": 0, "y": 70, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2446,6 +2396,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
+    "projectile": "Pistol_Stim",
     "key": "P-11 Stim Pistol"
   },
   "2877271129141764950": {
@@ -2542,7 +2493,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
     "is_one_handed": 1,
-    "projectile_type": "Pistol_9x20mm_smj",
     "rounds_per_minute": {"x": 0, "y": 1380, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2551,6 +2501,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Pistol_9x20mm_smj",
     "customizations": {
       "magazine_capacity": 50,
       "magazines": 5,
@@ -2597,7 +2548,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Rifle_5p5x50mm_ap",
     "rounds_per_minute": {"x": 0, "y": 660, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2607,6 +2557,7 @@
     },
     "num_low_ammo_rounds": 5,
     "burst_fire_rate": 660,
+    "projectile": "Rifle_5p5x50mm_ap",
     "customizations": {},
     "modifiers": []
   },
@@ -2655,7 +2606,6 @@
     "firing_charge": 100,
     "charge_gain_per_second": 200,
     "charge_loss_per_second": 75,
-    "projectile_type": "Laser_Long",
     "rounds_per_minute": {"x": 0, "y": 750, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2664,6 +2614,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Laser_Long",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6}
@@ -2672,10 +2623,9 @@
   },
   "17020640004553544635": {
     "id": "17020640004553544635",
-    "duration": 25,
     "search_radius": 50,
-    "projectile_type": "ProjectileType_None",
-    "damage_info_type": "DamageInfoType_DPS_BeamHuge"
+    "limit": 25,
+    "damage_type": "DPS_BeamHuge"
   },
   "4155583896232633279": {
     "id": "4155583896232633279",
@@ -2754,7 +2704,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
       "heat_build_per_shot": 0.5,
@@ -2763,6 +2712,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
+    "projectile": "Rifle_5p5x50mm_fmj",
     "customizations": {
       "magazine_capacity": 150,
       "magazines": 3,
@@ -2807,7 +2757,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cannon_30mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2815,7 +2764,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_30mm_APHE"
   },
   "2862976050209719244": {
     "id": "2862976050209719244",
@@ -2850,7 +2800,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "ProjectileType_Bomb_Napalm",
     "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2859,6 +2808,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_Eagle_23mm",
     "mounts": ["14855805920191068159", "14855805920191068159"],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "EagleAirstrikePattern_4line_Napalm_MK1",
@@ -2866,7 +2816,8 @@
     "search_radius": 60,
     "fire_duration": 1.5,
     "bomb_interval": 0.200000003,
-    "bomb_prediction_interval": 0.0500000007
+    "bomb_prediction_interval": 0.0500000007,
+    "projectile_type": "Bomb_Napalm"
   },
   "12218137513893139416": {
     "id": "12218137513893139416",
@@ -2914,7 +2865,6 @@
     "firing_charge": 10,
     "charge_gain_per_second": 200,
     "charge_loss_per_second": 75,
-    "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 10, "y": 300, "z": 10},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2922,7 +2872,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Hmg"
   },
   "11654668915819557853": {
     "id": "11654668915819557853",
@@ -2967,7 +2918,6 @@
     "turn_speed_horizontal": 50,
     "vertical_limit_min": -10,
     "vertical_limit_max": 90,
-    "projectile_type": "Missile_SAM",
     "rounds_per_minute": {"x": 0, "y": 180, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -2976,6 +2926,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Missile_SAM",
     "key": "SAM Launcher"
   },
   "6912088101323449320": {
@@ -3014,7 +2965,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "projectile_type": "Battle_Rifle",
     "rounds_per_minute": {"x": 0, "y": 550, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3023,6 +2973,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Battle_Rifle",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6}
@@ -3062,7 +3013,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "ProjectileType_Cannon_Eagle_23mm",
     "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3071,6 +3021,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_Eagle_23mm",
     "mounts": [],
     "payload": "EaglePayload_Strafe",
     "airstrike_pattern": "EagleAirstrikePattern_6Z",
@@ -3078,7 +3029,8 @@
     "search_radius": 60,
     "fire_duration": 1.5,
     "bomb_interval": 0.5,
-    "bomb_prediction_interval": 0.0500000007
+    "bomb_prediction_interval": 0.0500000007,
+    "projectile_type": "Cannon_Eagle_23mm"
   },
   "15365965494753326077": {
     "id": "15365965494753326077",
@@ -3115,7 +3067,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
       "heat_build_per_shot": 0.5,
@@ -3124,6 +3075,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
+    "projectile": "Rifle_5p5x50mm_fmj",
     "customizations": {
       "magazine_capacity": 150,
       "magazines": 3,
@@ -3179,7 +3131,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
     "is_one_handed": 1,
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3251,7 +3202,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Grenade_85mm_HEAT",
     "rounds_per_minute": {"x": 0, "y": 600, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3259,6 +3209,7 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
+    "projectile": "Grenade_85mm_HEAT",
     "customizations": {},
     "modifiers": [],
     "key": "GR-8 Recoilless Rifle"
@@ -3300,7 +3251,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "projectile_type": "Rifle_12p5x100mm_bchp",
     "rounds_per_minute": {"x": 450, "y": 600, "z": 750},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3309,6 +3259,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 30,
+    "projectile": "Rifle_12p5x100mm_bchp",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
@@ -3324,21 +3275,12 @@
   },
   "3397257356679758881": {
     "id": "3397257356679758881",
-    "num_bombs": 60,
     "bomb_interval": 0.0450000018,
-    "num_salvos": 4,
     "salvo_interval": 0,
     "area_size": 7,
-    "projectile_types": [
-      "ProjectileType_Cannon_Eagle_23mm",
-      "ProjectileType_Cannon_Eagle_23mm_no_explosion",
-      "ProjectileType_Cannon_Eagle_23mm_no_explosion",
-      "ProjectileType_Cannon_Eagle_23mm_no_explosion",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "salvos": 4,
+    "cap": 60,
+    "projectile_type": "Cannon_Eagle_23mm"
   },
   "6863983759145391137": {
     "id": "6863983759145391137",
@@ -3377,7 +3319,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cannon_30mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 175, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3385,7 +3326,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_30mm_APHE"
   },
   "4483950418716673108": {
     "id": "4483950418716673108",
@@ -3417,7 +3359,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cannon_30mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3425,7 +3366,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_30mm_APHE"
   },
   "3865797767236207742": {
     "id": "3865797767236207742",
@@ -3469,7 +3411,6 @@
     "firing_charge": 100,
     "charge_gain_per_second": 33,
     "charge_loss_per_second": 500,
-    "projectile_type": "Laser_Pulse",
     "rounds_per_minute": {"x": 0, "y": 10, "z": 10},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3478,6 +3419,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Laser_Pulse",
     "customizations": {},
     "modifiers": [],
     "key": "LAS-99 Quasar Cannon"
@@ -3515,7 +3457,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3523,7 +3464,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_8x60mm_fmj"
   },
   "424716889947522210": {
     "id": "424716889947522210",
@@ -3561,7 +3503,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
     "is_one_handed": 1,
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 900, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3611,7 +3552,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cannon_Eagle_23mm",
     "rounds_per_minute": {"x": 0, "y": 1800, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3619,7 +3559,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_Eagle_23mm"
   },
   "5510267968365085927": {
     "id": "5510267968365085927",
@@ -3657,7 +3598,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MarksmanRifle",
-    "projectile_type": "Rifle_9x70mm_hv",
     "rounds_per_minute": {"x": 0, "y": 350, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3666,6 +3606,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 3,
+    "projectile": "Rifle_9x70mm_hv",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -14}
@@ -3713,7 +3654,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Missile_Faf",
     "rounds_per_minute": {"x": 0, "y": 240, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3722,6 +3662,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Missile_Faf",
     "customizations": {},
     "modifiers": [],
     "key": "FAF-14 Spear"
@@ -3775,7 +3716,7 @@
     "cooldown_time": 15,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "FlamethrowerBAD"
+    "projectile": "FlamethrowerBAD"
   },
   "1051445694670701817": {
     "id": "1051445694670701817",
@@ -3816,7 +3757,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Rifle_12p5x100mm_fmj",
     "rounds_per_minute": {"x": 450, "y": 600, "z": 750},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3825,6 +3765,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_12p5x100mm_fmj",
     "key": "E/MG-101 HMG Emplacement"
   },
   "421324886246020354": {
@@ -3862,7 +3803,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "projectile_type": "Plasma_Punisher_Projectile",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3871,6 +3811,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Plasma_Punisher_Projectile",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
@@ -3910,7 +3851,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "ProjectileType_Bomb_500kg",
     "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3919,6 +3859,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_Eagle_23mm",
     "mounts": ["14855805920191068159", "14855805920191068159"],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "EagleAirstrikePattern_Single",
@@ -3926,7 +3867,8 @@
     "search_radius": 60,
     "fire_duration": 1.5,
     "bomb_interval": 0.0500000007,
-    "bomb_prediction_interval": 0.0500000007
+    "bomb_prediction_interval": 0.0500000007,
+    "projectile_type": "Bomb_500kg"
   },
   "2047310211000472840": {
     "id": "2047310211000472840",
@@ -3970,7 +3912,6 @@
     "turn_speed_horizontal": 90,
     "vertical_limit_min": -15,
     "vertical_limit_max": 60,
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -3979,6 +3920,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Factory Strider"
   },
   "12984499893943104780": {
@@ -4016,7 +3958,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
       "heat_build_per_shot": 0.5,
@@ -4025,6 +3966,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
+    "projectile": "Rifle_5p5x50mm_fmj",
     "customizations": {
       "magazine_capacity": 150,
       "magazines": 3,
@@ -4081,7 +4023,6 @@
     "turn_speed_horizontal": 90,
     "vertical_limit_min": -30,
     "vertical_limit_max": 90,
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4090,6 +4031,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Factory Strider"
   },
   "281046277510948131": {
@@ -4127,7 +4069,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MarksmanRifle",
-    "projectile_type": "Rifle_9x70mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 350, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4136,6 +4077,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 3,
+    "projectile": "Rifle_9x70mm_fmj",
     "customizations": {
       "reload": 3,
       "magazine_capacity": 20,
@@ -4188,7 +4130,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 0, "y": 400, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4197,6 +4138,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Hmg",
     "key": "Fusion Repeater"
   },
   "14231239742203987259": {
@@ -4257,7 +4199,7 @@
     "cooldown_time": 1,
     "spray_capsule_radius": 0.25,
     "ammo_cost": 1,
-    "projectile_type": "Cyborg_Flamethrower_Heavy"
+    "projectile": "Cyborg_Flamethrower_Heavy"
   },
   "294590291936179579": {
     "id": "294590291936179579",
@@ -4412,7 +4354,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 600, "y": 600, "z": 600},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4465,7 +4406,6 @@
     "turn_speed_horizontal": 80,
     "vertical_limit_min": -60,
     "vertical_limit_max": 90,
-    "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 630, "y": 630, "z": 900},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4474,6 +4414,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
+    "projectile": "Rifle_8x60mm_fmj",
     "key": "Gatling Sentry"
   },
   "1837707428311856638": {
@@ -4561,7 +4502,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Cyborg_LightRocket",
     "rounds_per_minute": {"x": 0, "y": 350, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4570,6 +4510,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightRocket",
     "key": "SR005 Rocket"
   },
   "12424973596508546593": {"id": "12424973596508546593", "remove_time": 6},
@@ -4609,7 +4550,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Grenade_40mm_HE",
     "rounds_per_minute": {"x": 0, "y": 160, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4618,6 +4558,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 3,
+    "projectile": "Grenade_40mm_HE",
     "key": "GL-21 Grenade Launcher"
   },
   "10844335154607830587": {
@@ -4696,7 +4637,6 @@
     "turn_speed_horizontal": 120,
     "vertical_limit_min": 0,
     "vertical_limit_max": 90,
-    "projectile_type": "Cannon_40mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4704,7 +4644,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_40mm_APHE"
   },
   "13164006426448262783": {
     "id": "13164006426448262783",
@@ -4741,7 +4682,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Rocket_JarPhoenix_20mm",
     "rounds_per_minute": {"x": 0, "y": 25, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4750,6 +4690,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rocket_JarPhoenix_20mm",
     "key": "R-36 Eruptor"
   },
   "15219556623070951071": {
@@ -4790,7 +4731,6 @@
     "turn_speed_horizontal": 60,
     "vertical_limit_min": -27,
     "vertical_limit_max": 60,
-    "projectile_type": "Cannon_40mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 220, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4798,7 +4738,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_40mm_APHE"
   },
   "15805795754758043311": {"id": "15805795754758043311"},
   "16361817941812852399": {
@@ -4863,7 +4804,6 @@
     "turn_speed_horizontal": 80,
     "vertical_limit_min": -60,
     "vertical_limit_max": 90,
-    "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 630, "y": 630, "z": 900},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4872,6 +4812,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
+    "projectile": "Rifle_8x60mm_fmj",
     "key": "A/MG-43 Machine Gun Sentry"
   },
   "9182363845171390146": {
@@ -4934,7 +4875,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "Shotgun_12g_fle",
     "rounds_per_minute": {"x": 0, "y": 220, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4943,6 +4883,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 2,
+    "projectile": "Shotgun_12g_fle",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -4988,7 +4929,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Missile_66mm",
     "rounds_per_minute": {"x": 0, "y": 240, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -4997,6 +4937,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Missile_66mm",
     "customizations": {},
     "modifiers": [],
     "key": "MLS-4X Commando"
@@ -5044,7 +4985,6 @@
     "turn_speed_horizontal": 50,
     "vertical_limit_min": -10,
     "vertical_limit_max": 90,
-    "projectile_type": "Missile_SAM",
     "rounds_per_minute": {"x": 0, "y": 180, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5053,6 +4993,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Missile_SAM",
     "key": "SAM Launcher"
   },
   "10871298989420119782": {
@@ -5202,7 +5143,6 @@
     "turn_speed_horizontal": 45,
     "vertical_limit_min": -35,
     "vertical_limit_max": 35,
-    "projectile_type": "Cyborg_LightCannon",
     "rounds_per_minute": {"x": 0, "y": 120, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5211,6 +5151,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightCannon",
     "key": "Heavy Fusion Repeater"
   },
   "16974551944278808389": {
@@ -5250,7 +5191,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Rocket_70mm",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5258,25 +5198,15 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Rocket_70mm"
   },
   "428906543397164902": {
     "id": "428906543397164902",
-    "num_bombs": 1,
     "bomb_interval": 0.349999994,
-    "num_salvos": 1,
     "salvo_interval": 1,
     "area_size": 1,
-    "projectile_types": [
-      "ProjectileType_Orbital_Gas",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "projectile_type": "Orbital_Gas"
   },
   "17910078671568111462": {
     "id": "17910078671568111462",
@@ -5322,7 +5252,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
     "is_one_handed": 1,
-    "projectile_type": "Pistol_12x25mm_stun",
     "rounds_per_minute": {"x": 0, "y": 475, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5331,6 +5260,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Pistol_12x25mm_stun",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0},
@@ -5399,7 +5329,6 @@
     "turn_speed_horizontal": 15,
     "vertical_limit_min": -60,
     "vertical_limit_max": 70,
-    "projectile_type": "Plasma_Bolt_Medium",
     "rounds_per_minute": {"x": 0, "y": 160, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5407,7 +5336,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Plasma_Bolt_Medium"
   },
   "1030663026357860236": {
     "id": "1030663026357860236",
@@ -5444,7 +5374,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
       "heat_build_per_shot": 0.5,
@@ -5453,6 +5382,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
+    "projectile": "Rifle_5p5x50mm_fmj",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5},
@@ -5570,7 +5500,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Railgun",
     "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5578,7 +5507,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Railgun"
   },
   "16120089938690525143": {
     "id": "16120089938690525143",
@@ -5613,7 +5543,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "projectile_type": "Cyborg_Shotgun",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5622,6 +5551,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Shotgun",
     "key": "Fusion Repeater"
   },
   "3041174345526908898": {
@@ -5654,7 +5584,6 @@
     "infinite_ammo": 1,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5662,7 +5591,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Hmg"
   },
   "16206931057077323763": {"id": "16206931057077323763"},
   "133122695844997115": {
@@ -5701,7 +5631,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 750, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5761,7 +5690,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "projectile_type": "Rifle_Rico",
     "rounds_per_minute": {"x": 0, "y": 600, "z": 850},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5770,6 +5698,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_Rico",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -6},
@@ -5810,7 +5739,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "projectile_type": "Cyborg_LightRocket",
     "rounds_per_minute": {"x": 0, "y": 600, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5819,6 +5747,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightRocket",
     "key": "Rocket Pod"
   },
   "5575761375102281771": {
@@ -5854,7 +5783,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "projectile_type": "Cyborg_LightCannon",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -5863,6 +5791,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightCannon",
     "key": "Fusion Autocannon"
   },
   "6280200573229258796": {"id": "6280200573229258796"},
@@ -6039,7 +5968,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "projectile_type": "Cyborg_LightRocket",
     "rounds_per_minute": {"x": 0, "y": 200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6048,6 +5976,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightRocket",
     "key": "Fusion Autocannon"
   },
   "16965724150372546684": {
@@ -6153,7 +6082,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 80, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6196,7 +6124,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "ProjectileType_Bomb_Smoke",
     "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6205,6 +6132,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_Eagle_23mm",
     "mounts": ["14855805920191068159", "14855805920191068159"],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "EagleAirstrikePattern_8line_ClusterBomb",
@@ -6212,7 +6140,8 @@
     "search_radius": 60,
     "fire_duration": 2,
     "bomb_interval": 0.200000003,
-    "bomb_prediction_interval": 0.0500000007
+    "bomb_prediction_interval": 0.0500000007,
+    "projectile_type": "Bomb_Smoke"
   },
   "507720195356997881": {
     "id": "507720195356997881",
@@ -6248,7 +6177,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 350, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6257,6 +6185,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Fusion Assault Gun"
   },
   "17083241647592728848": {
@@ -6338,7 +6267,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "projectile_type": "Rifle_12p5x100mm_bchp",
     "rounds_per_minute": {"x": 450, "y": 600, "z": 750},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6347,6 +6275,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 30,
+    "projectile": "Rifle_12p5x100mm_bchp",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -1}
@@ -6393,7 +6322,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Grenade_40mm_HE",
     "rounds_per_minute": {"x": 0, "y": 160, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6401,7 +6329,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 3
+    "num_low_ammo_rounds": 3,
+    "projectile": "Grenade_40mm_HE"
   },
   "1279722939363854678": {
     "id": "1279722939363854678",
@@ -6439,7 +6368,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 630, "y": 760, "z": 900},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6448,6 +6376,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
+    "projectile": "Rifle_8x60mm_fmj",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -6501,7 +6430,6 @@
     "turn_speed_horizontal": 80,
     "vertical_limit_min": -60,
     "vertical_limit_max": 90,
-    "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 1600, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6510,25 +6438,17 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_8x60mm_fmj",
     "key": "A/G-16 Gatling Sentry"
   },
   "11631307996670093680": {
     "id": "11631307996670093680",
-    "num_bombs": 5,
     "bomb_interval": 0.5,
-    "num_salvos": 5,
     "salvo_interval": 2,
     "area_size": 25,
-    "projectile_types": [
-      "ProjectileType_Orbital_Cannon_Napalm",
-      "ProjectileType_Orbital_Cannon_Napalm_Cheap",
-      "ProjectileType_Orbital_Cannon_Napalm_Cheap",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "salvos": 5,
+    "cap": 5,
+    "projectile_type": "Orbital_Cannon_Napalm"
   },
   "3969673985818503563": {
     "id": "3969673985818503563",
@@ -6645,7 +6565,6 @@
     "turn_speed_horizontal": 40,
     "vertical_limit_min": -45,
     "vertical_limit_max": 90,
-    "projectile_type": "Rocket_70mm_turret",
     "rounds_per_minute": {"x": 0, "y": 90, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6654,6 +6573,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rocket_70mm_turret",
     "key": "A/MLS-4X Rocket Sentry"
   },
   "851455025217071569": {
@@ -6689,7 +6609,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "ProjectileType_Cannon_20mm_APHET",
     "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6698,6 +6617,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_Eagle_23mm",
     "mounts": ["18223572581977941174", "18223572581977941174"],
     "payload": "EaglePayload_DoubleStrafe",
     "airstrike_pattern": "EagleAirstrikePattern_6Z",
@@ -6705,7 +6625,8 @@
     "search_radius": 60,
     "fire_duration": 1.5,
     "bomb_interval": 0.5,
-    "bomb_prediction_interval": 0.0500000007
+    "bomb_prediction_interval": 0.0500000007,
+    "projectile_type": "Cannon_20mm_APHET"
   },
   "13597248039561415123": {
     "id": "13597248039561415123",
@@ -6740,7 +6661,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 425, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6749,6 +6669,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Fusion Carbine"
   },
   "15991884556147755475": {
@@ -6814,7 +6735,6 @@
     "turn_speed_horizontal": 30,
     "vertical_limit_min": -2,
     "vertical_limit_max": 2,
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6823,6 +6743,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Fusion Repeater"
   },
   "12209482505501190673": {
@@ -6864,7 +6785,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Rifle_12p5x100mm_fmj",
     "rounds_per_minute": {"x": 450, "y": 600, "z": 750},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6873,6 +6793,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_12p5x100mm_fmj",
     "key": "E/MG-101 HMG Emplacement"
   },
   "16027418915446721044": {
@@ -6913,7 +6834,6 @@
     "turn_speed_horizontal": 60,
     "vertical_limit_min": -27,
     "vertical_limit_max": 60,
-    "projectile_type": "Cannon_40mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 220, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -6921,7 +6841,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_40mm_APHE"
   },
   "10719993517856893473": {
     "id": "10719993517856893473",
@@ -6970,7 +6891,7 @@
     "cooldown_time": 15,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "FlamethrowerBAD"
+    "projectile": "FlamethrowerBAD"
   },
   "3359716870288230953": {
     "id": "3359716870288230953",
@@ -7005,7 +6926,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "ProjectileType_Bomb_100kg",
     "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7014,6 +6934,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_Eagle_23mm",
     "mounts": ["14855805920191068159", "14855805920191068159"],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "EagleAirstrikePattern_6Z",
@@ -7021,7 +6942,8 @@
     "search_radius": 60,
     "fire_duration": 1.5,
     "bomb_interval": 0.200000003,
-    "bomb_prediction_interval": 0.0500000007
+    "bomb_prediction_interval": 0.0500000007,
+    "projectile_type": "Bomb_100kg"
   },
   "4140939466573601321": {
     "id": "4140939466573601321",
@@ -7056,7 +6978,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "ProjectileType_Rocket_110mm",
     "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7065,6 +6986,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_Eagle_23mm",
     "mounts": ["5344291599364980417", "5344291599364980417"],
     "payload": "EaglePayload_Rocket",
     "airstrike_pattern": "EagleAirstrikePattern_6Z",
@@ -7072,7 +6994,8 @@
     "search_radius": 20,
     "fire_duration": 2,
     "bomb_interval": 0.5,
-    "bomb_prediction_interval": 0.0500000007
+    "bomb_prediction_interval": 0.0500000007,
+    "projectile_type": "Rocket_110mm"
   },
   "18294292771580135983": {
     "id": "18294292771580135983",
@@ -7182,7 +7105,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "Shotgun_12g_flm",
     "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7191,6 +7113,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 2,
+    "projectile": "Shotgun_12g_flm",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -3}
@@ -7238,7 +7161,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 80, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7296,7 +7218,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cannon_30mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 175, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7304,7 +7225,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_30mm_APHE"
   },
   "14038927220542196401": {
     "id": "14038927220542196401",
@@ -7410,39 +7332,17 @@
   },
   "14454233564159978284": {
     "id": "14454233564159978284",
-    "num_bombs": 1,
     "bomb_interval": 0.5,
-    "num_salvos": 1,
     "salvo_interval": 3,
     "area_size": 1,
-    "projectile_types": [
-      "ProjectileType_Orbital_Precision_Strike",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "projectile_type": "Orbital_Precision_Strike"
   },
   "4400483397467331392": {
     "id": "4400483397467331392",
-    "num_bombs": 1,
     "bomb_interval": 5,
-    "num_salvos": 1,
     "salvo_interval": 5,
     "area_size": 5,
-    "projectile_types": [
-      "ProjectileType_Orbital_illumination_shot",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "projectile_type": "Orbital_illumination_shot"
   },
   "316723890334202692": {
     "id": "316723890334202692",
@@ -7586,10 +7486,9 @@
   },
   "12399142748360190921": {
     "id": "12399142748360190921",
-    "duration": 2,
     "search_radius": 30,
-    "projectile_type": "ProjectileType_Orbital_Railcannon",
-    "damage_info_type": "DamageInfoType_None"
+    "limit": 2,
+    "projectile_type": "Orbital_Railcannon"
   },
   "14942687850090605537": {
     "id": "14942687850090605537",
@@ -7627,7 +7526,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "projectile_type": "Rifle_5p5x50mm_exp",
     "rounds_per_minute": {"x": 0, "y": 320, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7636,6 +7534,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_5p5x50mm_exp",
     "customizations": {
       "magazine_capacity": 60,
       "magazines": 4,
@@ -7690,7 +7589,7 @@
     "cooldown_time": 15,
     "spray_capsule_radius": 0,
     "ammo_cost": 1,
-    "projectile_type": "FlamethrowerBAD"
+    "projectile": "FlamethrowerBAD"
   },
   "992939827990506476": {
     "id": "992939827990506476",
@@ -7734,7 +7633,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "projectile_type": "Plasma_Bolt_Medium",
     "rounds_per_minute": {"x": 0, "y": 350, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7743,6 +7641,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Plasma_Bolt_Medium",
     "customizations": {
       "magazine_capacity": 20,
       "magazines": 3,
@@ -7793,7 +7692,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_SMG",
     "is_one_handed": 1,
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 520, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7858,7 +7756,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
     "is_one_handed": 1,
-    "projectile_type": "Plasma_Bolt_Small",
     "rounds_per_minute": {"x": 0, "y": 400, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7867,6 +7764,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Plasma_Bolt_Small",
     "customizations": {
       "magazine_capacity": 9,
       "magazines": 4,
@@ -7925,7 +7823,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Cannon_20mm_APHET",
     "rounds_per_minute": {"x": 0, "y": 190, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7934,6 +7831,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_20mm_APHET",
     "customizations": {},
     "modifiers": [],
     "key": "AC-8 Autocannon"
@@ -7976,7 +7874,6 @@
     "infinite_ammo": 1,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cyborg_Orbital_Cannon",
     "rounds_per_minute": {"x": 0, "y": 240, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -7984,7 +7881,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Orbital_Cannon"
   },
   "8864800879179811976": {
     "id": "8864800879179811976",
@@ -8085,7 +7983,6 @@
     "turn_speed_horizontal": 75,
     "vertical_limit_min": 25,
     "vertical_limit_max": 90,
-    "projectile_type": "Cyborg_Aa",
     "rounds_per_minute": {"x": 0, "y": 800, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8094,6 +7991,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Aa",
     "key": "AA Emplacement"
   },
   "8896268509512551590": {
@@ -8137,7 +8035,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MarksmanRifle",
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8235,7 +8132,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Special",
     "is_one_handed": 1,
-    "projectile_type": "Grenade_40mm_HEAT",
     "rounds_per_minute": {"x": 0, "y": 900, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8244,6 +8140,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Grenade_40mm_HEAT",
     "customizations": {},
     "modifiers": [],
     "key": "GP-31 Grenade Pistol"
@@ -8286,7 +8183,6 @@
     "turn_speed_horizontal": 45,
     "vertical_limit_min": -27,
     "vertical_limit_max": 90,
-    "projectile_type": "Grenade_40mm_HE",
     "rounds_per_minute": {"x": 0, "y": 200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8294,7 +8190,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Grenade_40mm_HE"
   },
   "7103244170870631670": {
     "id": "7103244170870631670",
@@ -8338,7 +8235,6 @@
     "turn_speed_horizontal": 15,
     "vertical_limit_min": -10,
     "vertical_limit_max": 45,
-    "projectile_type": "Cyborg_HeavyCannon",
     "rounds_per_minute": {"x": 0, "y": 15, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8347,6 +8243,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_HeavyCannon",
     "mounts": ["3907162354404645355"],
     "key": "Heavy Fusion Cannon"
   },
@@ -8392,7 +8289,6 @@
     "turn_speed_horizontal": 90,
     "vertical_limit_min": -15,
     "vertical_limit_max": 60,
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8401,6 +8297,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Factory Strider"
   },
   "645713022044093730": {
@@ -8436,7 +8333,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8444,7 +8340,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_8x60mm_fmj"
   },
   "3199457897835937068": {
     "id": "3199457897835937068",
@@ -8552,7 +8449,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_MachineGun",
-    "projectile_type": "Cyborg_Mg",
     "rounds_per_minute": {"x": 0, "y": 900, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8561,6 +8457,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Mg",
     "key": "Fusion Repeater"
   },
   "3177983950714174823": {
@@ -8609,7 +8506,6 @@
     "firing_charge": 10,
     "charge_gain_per_second": 200,
     "charge_loss_per_second": 75,
-    "projectile_type": "Cyborg_Mg",
     "rounds_per_minute": {"x": 10, "y": 1200, "z": 10},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8617,7 +8513,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Mg"
   },
   "4111341420364086640": {
     "id": "4111341420364086640",
@@ -8661,7 +8558,6 @@
     "turn_speed_horizontal": 90,
     "vertical_limit_min": -20,
     "vertical_limit_max": 20,
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8670,6 +8566,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Factory Strider"
   },
   "17259437333005147504": {
@@ -8719,7 +8616,6 @@
     "turn_speed_horizontal": 80,
     "vertical_limit_min": -60,
     "vertical_limit_max": 90,
-    "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 1600, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8728,6 +8624,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_8x60mm_fmj",
     "key": "A/G-16 Gatling Sentry"
   },
   "5881843148917714292": {
@@ -8776,7 +8673,6 @@
     "turn_speed_horizontal": 55,
     "vertical_limit_min": 35,
     "vertical_limit_max": 89,
-    "projectile_type": "Grenade_Mortar_40mm_HE",
     "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8785,6 +8681,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Grenade_Mortar_40mm_HE",
     "key": "A/M-12 Mortar Sentry"
   },
   "12220563120145251703": {
@@ -8878,7 +8775,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "ProjectileType_Cannon_Eagle_23mm",
     "rounds_per_minute": {"x": 0, "y": 4000, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8887,6 +8783,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_Eagle_23mm",
     "mounts": ["16983968416304026806", "16983968416304026806"],
     "payload": "EaglePayload_Missile",
     "airstrike_pattern": "EagleAirstrikePattern_6Z",
@@ -8894,7 +8791,8 @@
     "search_radius": 300,
     "fire_duration": 1.5,
     "bomb_interval": 0.5,
-    "bomb_prediction_interval": 0.0500000007
+    "bomb_prediction_interval": 0.0500000007,
+    "projectile_type": "Cannon_Eagle_23mm"
   },
   "5289274991058480552": {
     "id": "5289274991058480552",
@@ -8932,7 +8830,6 @@
     "turn_speed_horizontal": 60,
     "vertical_limit_min": -10,
     "vertical_limit_max": 45,
-    "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8941,6 +8838,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Hmg",
     "key": "Fusion Autocannon"
   },
   "518600486455451088": {
@@ -8987,7 +8885,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cannon_30mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 175, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -8995,7 +8892,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_30mm_APHE"
   },
   "11616925890035912226": {
     "id": "11616925890035912226",
@@ -9031,7 +8929,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Plasma_Bolt_Medium",
     "rounds_per_minute": {"x": 0, "y": 150, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9041,6 +8938,7 @@
     },
     "num_low_ammo_rounds": 5,
     "burst_fire_rate": 150,
+    "projectile": "Plasma_Bolt_Medium",
     "customizations": {},
     "modifiers": []
   },
@@ -9088,7 +8986,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Special",
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 250, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9188,7 +9085,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "projectile_type": "Railgun",
     "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9197,6 +9093,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Railgun",
     "customizations": {},
     "modifiers": [],
     "key": "RS-422 Railgun"
@@ -9237,7 +9134,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "projectile_type": "Rifle_5p5x50mm_ap",
     "rounds_per_minute": {"x": 0, "y": 640, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9246,6 +9142,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_5p5x50mm_ap",
     "customizations": {
       "magazine_capacity": 45,
       "magazines": 6,
@@ -9298,7 +9195,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
-    "projectile_type": "Cyborg_LightRocket",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9306,7 +9202,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightRocket"
   },
   "9375653687096917621": {
     "id": "9375653687096917621",
@@ -9341,7 +9238,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Missile_Combat_Walker_MK2",
     "rounds_per_minute": {"x": 0, "y": 90, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9349,7 +9245,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Missile_Combat_Walker_MK2"
   },
   "8039414067817307766": {
     "id": "8039414067817307766",
@@ -9389,7 +9286,7 @@
     "cooldown_time": 0.0500000007,
     "spray_capsule_radius": 1,
     "ammo_cost": 0,
-    "projectile_type": "Boomer_AcidStream",
+    "projectile": "Boomer_AcidStream",
     "key": "Bile Spewer"
   },
   "5892418254001999486": {
@@ -9434,7 +9331,6 @@
     "turn_speed_horizontal": 90,
     "vertical_limit_min": -30,
     "vertical_limit_max": 30,
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9443,6 +9339,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Fusion Repeater"
   },
   "10266352102081711787": {
@@ -9508,7 +9405,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Missile_Combat_Walker",
     "rounds_per_minute": {"x": 0, "y": 90, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9516,7 +9412,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Missile_Combat_Walker"
   },
   "1573296579562737333": {
     "id": "1573296579562737333",
@@ -9553,7 +9450,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 700, "y": 850, "z": 1150},
     "heat_buildup": {
       "heat_build_per_shot": 0.5,
@@ -9562,6 +9458,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 20,
+    "projectile": "Rifle_5p5x50mm_fmj",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5},
@@ -9597,7 +9494,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Rocket_110mm",
     "rounds_per_minute": {"x": 0, "y": 250, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9605,7 +9501,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Rocket_110mm"
   },
   "13534862741616025304": {
     "id": "13534862741616025304",
@@ -9638,21 +9535,10 @@
   },
   "6193421986545774326": {
     "id": "6193421986545774326",
-    "num_bombs": 1,
     "bomb_interval": 0.349999994,
-    "num_salvos": 1,
     "salvo_interval": 2,
     "area_size": 1,
-    "projectile_types": [
-      "ProjectileType_Orbital_Stunround",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None",
-      "ProjectileType_None"
-    ]
+    "projectile_type": "Orbital_Stunround"
   },
   "7539955080993332996": {
     "id": "7539955080993332996",
@@ -9733,7 +9619,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "Shotgun_12g_bug",
     "rounds_per_minute": {"x": 0, "y": 180, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9742,6 +9627,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 2,
+    "projectile": "Shotgun_12g_bug",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -9781,7 +9667,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Pistol",
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 325, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9790,6 +9675,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Fusion Carbine"
   },
   "5787948413593898778": {
@@ -9836,7 +9722,6 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_AssaultRifle",
-    "projectile_type": "Rifle_5p5x50mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 920, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9845,6 +9730,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_5p5x50mm_fmj",
     "customizations": {
       "magazine_capacity": 45,
       "magazines": 6,
@@ -9892,7 +9778,6 @@
     "turn_speed_horizontal": 240,
     "vertical_limit_min": 35,
     "vertical_limit_max": 89.8000031,
-    "projectile_type": "SEAF_Gun_Explosive",
     "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9900,7 +9785,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "SEAF_Gun_Explosive"
   },
   "3270354809248583475": {
     "id": "3270354809248583475",
@@ -9936,7 +9822,6 @@
     "turn_speed_horizontal": 45,
     "vertical_limit_min": -60,
     "vertical_limit_max": 30,
-    "projectile_type": "Cyborg_Hmg",
     "rounds_per_minute": {"x": 0, "y": 500, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -9945,6 +9830,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Hmg",
     "key": "Heavy Fusion Repeater"
   },
   "13125214096466681673": {
@@ -10023,7 +9909,6 @@
     "turn_speed_horizontal": 90,
     "vertical_limit_min": -20,
     "vertical_limit_max": 20,
-    "projectile_type": "Cyborg_Rifle",
     "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -10032,6 +9917,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Rifle",
     "key": "Factory Strider"
   },
   "3109983482551492476": {
@@ -10074,7 +9960,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Special",
     "is_one_handed": 1,
-    "projectile_type": "ProjectileType_None",
     "rounds_per_minute": {"x": 0, "y": 650, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -10120,7 +10005,6 @@
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Explosive",
     "is_one_handed": 1,
-    "projectile_type": "Crossbow_Bolt_exp",
     "rounds_per_minute": {"x": 0, "y": 50, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -10129,6 +10013,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 1,
+    "projectile": "Crossbow_Bolt_exp",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": -5}
@@ -10181,7 +10066,6 @@
     "turn_speed_horizontal": 55,
     "vertical_limit_min": 35,
     "vertical_limit_max": 89,
-    "projectile_type": "Grenade_Mortar_40mm_Staticfield",
     "rounds_per_minute": {"x": 0, "y": 60, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -10190,6 +10074,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Grenade_Mortar_40mm_Staticfield",
     "key": "A/M-23 EMS Mortar Sentry"
   },
   "344970826846105488": {
@@ -10237,7 +10122,6 @@
     "turn_speed_horizontal": 80,
     "vertical_limit_min": -60,
     "vertical_limit_max": 90,
-    "projectile_type": "Rifle_8x60mm_fmj",
     "rounds_per_minute": {"x": 0, "y": 1600, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -10246,6 +10130,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Rifle_8x60mm_fmj",
     "max_length": 150,
     "key": "A/G-16 Gatling Sentry"
   },
@@ -10282,7 +10167,6 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Shotgun",
-    "projectile_type": "Cyborg_Shotgun",
     "rounds_per_minute": {"x": 0, "y": 55, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -10291,6 +10175,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_Shotgun",
     "key": "Fusion Carbine"
   },
   "16085819457051082660": {
@@ -10346,7 +10231,6 @@
     "turn_speed_horizontal": 20,
     "vertical_limit_min": -60,
     "vertical_limit_max": 70,
-    "projectile_type": "Cannon_40mm_APHE",
     "rounds_per_minute": {"x": 0, "y": 160, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -10355,6 +10239,7 @@
       "heat_bleed_delay": 5
     },
     "num_low_ammo_rounds": 4,
+    "projectile": "Cannon_40mm_APHE",
     "key": "A/AC-8 Autocannon Sentry"
   },
   "13283381034644230080": {
@@ -10392,7 +10277,6 @@
     "turn_speed_horizontal": 15,
     "vertical_limit_min": -10,
     "vertical_limit_max": 45,
-    "projectile_type": "Cyborg_HeavyCannon",
     "rounds_per_minute": {"x": 0, "y": 15, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -10400,7 +10284,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_HeavyCannon"
   },
   "12489093086854516709": {
     "id": "12489093086854516709",
@@ -10430,7 +10315,6 @@
     "infinite_ammo": 0,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "projectile_type": "Cyborg_LightCannon",
     "rounds_per_minute": {"x": 0, "y": 100, "z": 0},
     "heat_buildup": {
       "heat_build_per_shot": 1,
@@ -10438,7 +10322,8 @@
       "heat_bleed_speed": 10,
       "heat_bleed_delay": 5
     },
-    "num_low_ammo_rounds": 4
+    "num_low_ammo_rounds": 4,
+    "projectile": "Cyborg_LightCannon"
   },
   "12967812241745948652": {
     "id": "12967812241745948652",

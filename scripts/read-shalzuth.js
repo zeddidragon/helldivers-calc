@@ -222,7 +222,6 @@ const handlers = {
   AttachableComponent: null,
   ProjectileWeaponComponent(wpn, component) {
     copy([
-      'projectile_type',
       'rounds_per_minute',
       'heat_buildup',
       'num_low_ammo_rounds',
@@ -231,10 +230,7 @@ const handlers = {
       'burst_fire_rate',
       'infinite_ammo',
     ], { omit_falsey: true })(wpn, component)
-    const projectile = refs.projectile(component.projectile_type)
-    if(projectile) {
-      wpn.projectile_type = projectile
-    }
+    wpn.projectile = refs.projectile(component.projectile_type)
     if(component.speed_multiplier !== 1) {
       wpn.speed_multiplier = component.speed_multiplier
     }
@@ -302,10 +298,7 @@ const handlers = {
       'spray_capsule_radius',
       'ammo_cost',
     ])(wpn, component)
-    const projectile = refs.projectile(component.projectile_type)
-    if(projectile) {
-      wpn.projectile_type = projectile
-    }
+    wpn.projectile = refs.projectile(component.projectile_type)
     const damage = refs.damage(component.damage_info_type)
     if(damage) {
       wpn.damage_type = damage
@@ -423,16 +416,18 @@ const handlers = {
   IdleAbilityComponent: null,
   OverlapDamageComponent: null,
   SyncedHealthComponent: null,
-  EagleComponent: copy([
-    'payload',
-    'airstrike_pattern',
-    'projectile_type',
-    'target_angle',
-    'search_radius',
-    'fire_duration',
-    'bomb_interval',
-    'bomb_prediction_interval',
-  ]),
+  EagleComponent(wpn, component) {
+    copy([
+      'payload',
+      'airstrike_pattern',
+      'target_angle',
+      'search_radius',
+      'fire_duration',
+      'bomb_interval',
+      'bomb_prediction_interval',
+    ])(wpn, component)
+    wpn.projectile_type = refs.projectile(component.projectile_type)
+  },
   WeaponLaserComponent: copy([
     'max_length',
   ]),
@@ -521,14 +516,20 @@ const handlers = {
     'category_type',
     'block_radius',
   ]),
-  BombardmentComponent: copy([
-    'num_bombs',
-    'bomb_interval',
-    'num_salvos',
-    'salvo_interval',
-    'area_size',
-    'projectile_types',
-  ]),
+  BombardmentComponent(wpn, component) {
+    copy([
+      'bomb_interval',
+      'salvo_interval',
+      'area_size',
+    ])(wpn, component)
+    if(component.num_salvos > 1) {
+      wpn.salvos = component.num_salvos
+    }
+    if(component.num_bombs > 1) {
+      wpn.cap = component.num_bombs
+    }
+    wpn.projectile_type = refs.projectile(component.projectile_types[0])
+  },
   ThrowerComponent(wpn, component) {
     copy([
       'panel_count',
@@ -568,14 +569,14 @@ const handlers = {
   MotionComponent: null,
   OrbitalAbilityComponent(wpn, component) {
     copy([
-      'duration',
       'search_radius',
-      'projectile_type',
     ])(wpn, component)
+    wpn.limit = component.duration
+    wpn.projectile_type = refs.projectile(component.projectile_type)
     if(component.damage_dealer_zone) {
-      wpn.damage_info_type = component
+      wpn.damage_type = refs.damage(component
         .damage_dealer_zone
-        .damage_info_type
+        .damage_info_type)
     }
   },
   DepositComponent(wpn, component) {
