@@ -316,9 +316,6 @@ window.locals = {
 
     return v.toString(16).toUpperCase()
   },
-  allExplosion: () => {
-    return data.explosions
-  },
   hasTag,
   wikiLink: (wpn) => {
     const url = 'https://helldivers.wiki.gg/wiki'
@@ -447,7 +444,7 @@ function t(namespace, key, fallback, l = locals.lang) {
 }
 window.t = t
 
-function asEntries(map, namespace) {
+function asEntries(map, namespace, refspace = namespace) {
   return Object.entries(map).map(([ref, obj], i) => {
     const ret = {
       ...obj,
@@ -458,6 +455,7 @@ function asEntries(map, namespace) {
     if(obj.damageref) {
       ret.damage = locals.byRef.damage[obj.damageref]
     }
+    locals.byRef[refspace][ref] = ret
     return ret
   })
 }
@@ -506,9 +504,9 @@ async function loadData() {
   window.data = data
   window.translations[locals.lang] = translations
   locals.byRef = data
-  locals.damages = asEntries(data.damage, 'dmg')
-  locals.projectiles = asEntries(data.projectile, 'prj')
-  locals.explosions = asEntries(data.explosion, 'aoe')
+  locals.damages = asEntries(data.damage, 'dmg', 'damage')
+  locals.projectiles = asEntries(data.projectile, 'prj', 'projectile')
+  locals.explosions = asEntries(data.explosion, 'aoe', 'explosion')
   locals.beams = asEntries(data.beam, 'beam')
   locals.arcs = asEntries(data.arc, 'arc')
   if(locals.lang !== 'en') {
@@ -723,33 +721,36 @@ async function loadData() {
     let shotdmg2 = 0
     let maxRadius = [0, 0, 0]
     let prev = void 0
-    let subobjects = strat.attack?.map(({ type, name: ref, count }) => {
-      const obj = locals.byRef[type][ref] || {}
-      const parent = prev
-      prev = obj
-      const damage = rel(obj, 'damage')
-      const n = (count || obj.pellets || 1)
-      shotdmg += n * (damage?.dmg || 0)
-      shotdmg2 += n * (damage?.dmg2 || 0)
-      name = obj.name
-      if(type === 'explosion') {
-        for(let i = 0; i < 3; i++) {
-          maxRadius[i] = Math.max(maxRadius[i], obj[`r${i + 1}`])
+    let subobjects = strat.attack
+      ?.flatMap(unroll)
+      ?.map(({ type, name: ref, count }) => {
+        const obj = locals.byRef[type][ref] || {}
+        const parent = prev
+        prev = obj
+        const damage = rel(obj, 'damage')
+        const n = (count || obj.pellets || 1)
+        shotdmg += n * (damage?.dmg || 0)
+        shotdmg2 += n * (damage?.dmg2 || 0)
+        name = obj.name
+        console.log({ type, ref, count, obj })
+        if(type === 'explosion') {
+          for(let i = 0; i < 3; i++) {
+            maxRadius[i] = Math.max(maxRadius[i], obj[`r${i + 1}`])
+          }
         }
-      }
-      return {
-        ...(type === 'weapon' ? obj : {}),
-        parent,
-        type,
-        damage,
-        [type]: obj,
-        count,
-        name,
-        fullname: strat.name,
-        stratagem: strat,
-        ref,
-      }
-    })
+        return {
+          ...(type === 'weapon' ? obj : {}),
+          parent,
+          type,
+          damage,
+          [type]: obj,
+          count,
+          name,
+          fullname: strat.name,
+          stratagem: strat,
+          ref,
+        }
+      })
     const code = strat.stratcode || []
     const arrows = code.map(i => arrowMap[i]).join('')
     const stratorder = code.map(i => arrowOrder[i]).join('')

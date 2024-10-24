@@ -846,65 +846,30 @@ name = "Orbital Railcannon Strike"
 [[stratagem]]
 category = "Eagle"
 name = "Eagle Airstrike"
-cooldown = 15
-eaglestock = 2
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Bomb_100kg"
 
 [[stratagem]]
 category = "Eagle"
 name = "Eagle Napalm Airstrike"
-cooldown = 15
-eaglestock = 2
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Bomb_Napalm"
 
 [[stratagem]]
 category = "Eagle"
 name = "Eagle 500kg Bomb"
-cooldown = 15
-eaglestock = 1
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Bomb_500kg"
 
 [[stratagem]]
 category = "Eagle"
 name = "Eagle Strafing Run"
-cooldown = 15
-eaglestock = 4
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Cannon_Eagle_23mm"
 
 [[stratagem]]
 category = "Eagle"
 name = "Eagle Cluster Bomb"
-cooldown = 15
-eaglestock = 4
-[[stratagem.attack]]
-medium = "projectile"
-ref = "ClusterBomb_100kg"
 
 [[stratagem]]
 category = "Eagle"
 name = "Eagle 110mm Rocket Pods"
-cooldown = 15
-eaglestock = 2
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Rocket_110mm"
 
 [[stratagem]]
 category = "Eagle"
 name = "Eagle Smoke Strike"
-cooldown = 15
-eaglestock = 2
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Bomb_Smoke"
 
 [[stratagem]]
 category = "Vehicle"

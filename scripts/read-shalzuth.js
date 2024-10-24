@@ -230,7 +230,7 @@ const handlers = {
       'burst_fire_rate',
       'infinite_ammo',
     ], { omit_falsey: true })(wpn, component)
-    wpn.projectile = refs.projectile(component.projectile_type)
+    wpn.projectile_type = refs.projectile(component.projectile_type)
     if(component.speed_multiplier !== 1) {
       wpn.speed_multiplier = component.speed_multiplier
     }
