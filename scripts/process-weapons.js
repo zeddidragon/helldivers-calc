@@ -239,6 +239,12 @@ setup.stratagem = setup.stratagem
         ref: obj.explosion_type,
       }]
     }
+    if(obj.arc_type) {
+      obj.attack = [...(obj.attack || []), {
+        medium: 'arc',
+        ref: obj.arc_type,
+      }]
+    }
     if(obj.damage_type) {
       obj.attack = [...(obj.attack || []), {
         medium: 'damage',

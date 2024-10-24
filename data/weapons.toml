@@ -773,90 +773,34 @@ fullname = "MD-I4 Incendiary Mines"
 [[stratagem]]
 category = "Emplacement"
 fullname = "A/MG-43 Machine Gun Sentry"
-health = 200
-armor = 2
-calltime = 8
-cooldown = 120
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Rifle_8x60mm_fmj"
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "A/G-16 Gatling Sentry"
-health = 200
-armor = 2
-calltime = 8
-cooldown = 180
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Rifle_8x60mm_fmj"
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "E/MG-101 HMG Emplacement"
-health = 1000
-armor = 2
-calltime = 3
-cooldown = 180
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Rifle_12p5x100mm_fmj"
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "A/M-12 Mortar Sentry"
-health = 200
-armor = 2
-calltime = 8
-cooldown = 180
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Grenade_Mortar_40mm_HE"
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "A/M-23 EMS Mortar Sentry"
-health = 200
-armor = 2
-calltime = 8
-cooldown = 180
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Grenade_Mortar_40mm_Staticfield"
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "A/MLS-4X Rocket Sentry"
-health = 200
-armor = 2
-calltime = 8
-cooldown = 180
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Rocket_70mm_turret"
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "A/AC-8 Autocannon Sentry"
-health = 200
-armor = 2
-calltime = 8
-cooldown = 180
-[[stratagem.attack]]
-medium = "projectile"
-ref = "Cannon_40mm_APHE"
 
 [[stratagem]]
 category = "Emplacement"
 fullname = "A/ARC-3 Tesla Tower"
-health = 600
-armor = 1
-calltime = 3
-cooldown = 150
-[[stratagem.attack]]
-medium = "arc"
-ref = "TeslaTurret"
 
 [[stratagem]]
 category = "Orbital"

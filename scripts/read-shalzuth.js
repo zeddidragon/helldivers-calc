@@ -451,11 +451,13 @@ const handlers = {
     wpn.backblast_offset = component.offset
     wpn.backblast_explosion_type = refs.explosion(component.type)
   },
-  ArcWeaponComponent: copy([
-    'arc_type',
-    'rounds_per_minute',
-    'infinite_ammo',
-  ], { omit_falsey: true }),
+  ArcWeaponComponent(wpn, component) {
+    copy([
+      'rounds_per_minute',
+      'infinite_ammo',
+    ], { omit_falsey: true })(wpn, component)
+    wpn.arc_type = refs.arc(component.arc_type)
+  },
   WeaponHeatComponent: copy([
     'magazines',
     'magazines_refill',

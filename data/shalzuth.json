@@ -1345,8 +1345,8 @@
     "wield_duration": 0.300000012,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "arc_type": "ArcType_ArcShotgun",
     "rounds_per_minute": 45,
+    "arc_type": "ArcShotgun",
     "customizations": {},
     "modifiers": [
       {"type": "WeaponStatModifierType_Add_Ergonomics", "value": 0}
@@ -5119,8 +5119,8 @@
     "wield_duration": 0.5,
     "pickup_duration": 0.5,
     "equipment_type": "EquipmentType_Energy",
-    "arc_type": "ArcType_ArcThrower",
     "rounds_per_minute": -1,
+    "arc_type": "ArcThrower",
     "key": "ARC-3 Arc Thrower"
   },
   "7004572901293848370": {
@@ -8841,8 +8841,8 @@
     "infinite_ammo": 1,
     "fire_modes": ["Automatic"],
     "function_info": [],
-    "arc_type": "ArcType_TeslaTurret",
     "rounds_per_minute": -1,
+    "arc_type": "TeslaTurret",
     "key": "A/ARC-3 Tesla Tower"
   },
   "16121648674137865605": {
