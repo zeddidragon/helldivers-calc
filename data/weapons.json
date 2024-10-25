@@ -1101,75 +1101,78 @@
       "spreadxy": {"x": 60, "y": 60}
     },
     {
+      "attack": [{"type": "explosion", "name": "Frag"}],
       "category": "GrSt",
       "fullname": "G-6 Frag",
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
       "source": "hd-mobilize",
-      "sourcepage": 1,
-      "attack": []
+      "sourcepage": 1
     },
     {
+      "attack": [{"type": "explosion", "name": "HighExplosive"}],
       "category": "GrSt",
       "fullname": "G-12 High Explosive",
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
-      "source": "start",
-      "attack": []
+      "source": "start"
     },
     {
+      "attack": [{"type": "explosion", "name": "Incendiary"}],
       "category": "GrSt",
       "fullname": "G-10 Incendiary",
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
       "source": "steel-vets",
-      "sourcepage": 2,
-      "attack": []
+      "sourcepage": 2
     },
     {
+      "attack": [{"type": "explosion", "name": "Impact"}],
       "category": "GrSp",
       "fullname": "G-16 Impact",
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
-      "source": "start",
-      "attack": []
+      "source": "start"
     },
     {
+      "attack": [{"type": "explosion", "name": "Incendiary_Impact"}],
       "category": "GrSp",
       "fullname": "G-13 Incendiary Impact",
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
       "source": "polar-pat",
-      "sourcepage": 2,
-      "attack": []
+      "sourcepage": 2
     },
     {
+      "attack": [{"type": "explosion", "name": "Flash"}],
       "category": "GrSp",
       "fullname": "G-23 Stun",
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
       "source": "cut-edge",
-      "sourcepage": 2,
-      "attack": []
+      "sourcepage": 2
     },
     {
+      "attack": [{"type": "explosion", "name": "Grenade_Smoke"}],
       "category": "GrSp",
       "fullname": "G-3 Smoke",
       "rounds": 4,
       "roundsbox": 4,
       "roundstart": 3,
       "source": "hd-mobilize",
-      "sourcepage": 8,
-      "attack": []
+      "sourcepage": 8
     },
     {
-      "attack": [{"type": "damage", "name": "DPS_Thermite"}],
+      "attack": [
+        {"type": "damage", "name": "DPS_Thermite"},
+        {"type": "explosion", "name": "Thermite"}
+      ],
       "category": "GrSp",
       "fullname": "G-123 Thermite",
       "rounds": 3,
@@ -1189,14 +1192,14 @@
       "sourcepage": 3
     },
     {
+      "attack": [{"type": "explosion", "name": "GasGrenade"}],
       "category": "GrSp",
       "fullname": "G-4 Gas",
       "rounds": 4,
       "roundsbox": 2,
       "roundstart": 3,
       "source": "chemical-agents",
-      "sourcepage": 1,
-      "attack": []
+      "sourcepage": 1
     },
     {
       "attack": [{"type": "damage", "name": "Ability_Avatar_Melee"}],
@@ -2299,7 +2302,6 @@
       "stratcode": ["Up", "Right", "Down", "Right"],
       "calltime": 0,
       "cooldown": 15,
-      "magazine_capacity": 2000,
       "chambered": 0,
       "magazines": 0,
       "magazines_refill": 6,
@@ -2339,13 +2341,14 @@
       },
       "num_low_ammo_rounds": 4,
       "projectile_type": "Bomb_100kg",
-      "airstrike_pattern": "EagleAirstrikePattern_6Z",
+      "airstrike_pattern": "6Z",
       "target_angle": 90,
       "search_radius": 60,
       "fire_duration": 1.5,
       "bomb_interval": 0.200000003,
       "bomb_prediction_interval": 0.0500000007,
-      "attack": [{"type": "projectile", "name": "Bomb_100kg"}]
+      "attack": [{"type": "projectile", "name": "Bomb_100kg"}],
+      "cap": 6
     },
     {
       "ref": "EagleAirstrikeNapalm",
@@ -2355,7 +2358,6 @@
       "stratcode": ["Up", "Right", "Down", "Up"],
       "calltime": 0,
       "cooldown": 15,
-      "magazine_capacity": 2000,
       "chambered": 0,
       "magazines": 0,
       "magazines_refill": 6,
@@ -2395,13 +2397,14 @@
       },
       "num_low_ammo_rounds": 4,
       "projectile_type": "Bomb_Napalm",
-      "airstrike_pattern": "EagleAirstrikePattern_4line_Napalm_MK1",
+      "airstrike_pattern": "4line_Napalm_MK1",
       "target_angle": 90,
       "search_radius": 60,
       "fire_duration": 1.5,
       "bomb_interval": 0.200000003,
       "bomb_prediction_interval": 0.0500000007,
-      "attack": [{"type": "projectile", "name": "Bomb_Napalm"}]
+      "attack": [{"type": "projectile", "name": "Bomb_Napalm"}],
+      "cap": 4
     },
     {
       "ref": "EagleBomb",
@@ -2411,7 +2414,6 @@
       "stratcode": ["Up", "Right", "Down", "Down", "Down"],
       "calltime": 0,
       "cooldown": 15,
-      "magazine_capacity": 2000,
       "chambered": 0,
       "magazines": 0,
       "magazines_refill": 6,
@@ -2451,13 +2453,14 @@
       },
       "num_low_ammo_rounds": 4,
       "projectile_type": "Bomb_500kg",
-      "airstrike_pattern": "EagleAirstrikePattern_Single",
+      "airstrike_pattern": "Single",
       "target_angle": 180,
       "search_radius": 60,
       "fire_duration": 1.5,
       "bomb_interval": 0.0500000007,
       "bomb_prediction_interval": 0.0500000007,
-      "attack": [{"type": "projectile", "name": "Bomb_500kg"}]
+      "attack": [{"type": "projectile", "name": "Bomb_500kg"}],
+      "cap": 1
     },
     {
       "ref": "EagleCAS",
@@ -2467,7 +2470,6 @@
       "stratcode": ["Up", "Right", "Right"],
       "calltime": 0,
       "cooldown": 15,
-      "magazine_capacity": 2000,
       "chambered": 0,
       "magazines": 0,
       "magazines_refill": 6,
@@ -2507,13 +2509,14 @@
       },
       "num_low_ammo_rounds": 4,
       "projectile_type": "Cannon_Eagle_23mm",
-      "airstrike_pattern": "EagleAirstrikePattern_6Z",
+      "airstrike_pattern": "6Z",
       "target_angle": 180,
       "search_radius": 60,
       "fire_duration": 1.5,
       "bomb_interval": 0.5,
       "bomb_prediction_interval": 0.0500000007,
-      "attack": [{"type": "projectile", "name": "Cannon_Eagle_23mm"}]
+      "attack": [{"type": "projectile", "name": "Cannon_Eagle_23mm"}],
+      "cap": 100
     },
     {
       "ref": "EagleClusterbombs",
@@ -2523,7 +2526,6 @@
       "stratcode": ["Up", "Right", "Down", "Down", "Right"],
       "calltime": 0,
       "cooldown": 15,
-      "magazine_capacity": 2000,
       "chambered": 0,
       "magazines": 0,
       "magazines_refill": 6,
@@ -2563,13 +2565,14 @@
       },
       "num_low_ammo_rounds": 4,
       "projectile_type": "ClusterBomb_100kg",
-      "airstrike_pattern": "EagleAirstrikePattern_8line_ClusterBomb",
+      "airstrike_pattern": "8line_ClusterBomb",
       "target_angle": 90,
       "search_radius": 60,
       "fire_duration": 1.5,
       "bomb_interval": 0.100000001,
       "bomb_prediction_interval": 0.0500000007,
-      "attack": [{"type": "projectile", "name": "ClusterBomb_100kg"}]
+      "attack": [{"type": "projectile", "name": "ClusterBomb_100kg"}],
+      "cap": 8
     },
     {
       "ref": "EagleRocket",
@@ -2579,7 +2582,6 @@
       "stratcode": ["Up", "Right", "Up", "Left"],
       "calltime": 0,
       "cooldown": 15,
-      "magazine_capacity": 3,
       "chambered": 1,
       "magazines": 0,
       "magazines_refill": 6,
@@ -2619,13 +2621,14 @@
       },
       "num_low_ammo_rounds": 4,
       "projectile_type": "Rocket_110mm",
-      "airstrike_pattern": "EagleAirstrikePattern_6Z",
+      "airstrike_pattern": "6Z",
       "target_angle": 180,
       "search_radius": 20,
       "fire_duration": 2,
       "bomb_interval": 0.5,
       "bomb_prediction_interval": 0.0500000007,
-      "attack": [{"type": "projectile", "name": "Rocket_110mm"}]
+      "attack": [{"type": "projectile", "name": "Rocket_110mm", "count": 2}],
+      "cap": 6
     },
     {
       "ref": "EagleAirstrikeSmoke",
@@ -2635,7 +2638,6 @@
       "stratcode": ["Up", "Right", "Up", "Down"],
       "calltime": 0,
       "cooldown": 15,
-      "magazine_capacity": 2000,
       "chambered": 0,
       "magazines": 0,
       "magazines_refill": 6,
@@ -2675,13 +2677,14 @@
       },
       "num_low_ammo_rounds": 4,
       "projectile_type": "Bomb_Smoke",
-      "airstrike_pattern": "EagleAirstrikePattern_8line_ClusterBomb",
+      "airstrike_pattern": "8line_ClusterBomb",
       "target_angle": 90,
       "search_radius": 60,
       "fire_duration": 2,
       "bomb_interval": 0.200000003,
       "bomb_prediction_interval": 0.0500000007,
-      "attack": [{"type": "projectile", "name": "Bomb_Smoke"}]
+      "attack": [{"type": "projectile", "name": "Bomb_Smoke"}],
+      "cap": 8
     },
     {
       "ref": "DropoffCombatWalker",

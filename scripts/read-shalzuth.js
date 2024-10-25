@@ -427,6 +427,7 @@ const handlers = {
       'bomb_prediction_interval',
     ])(wpn, component)
     wpn.projectile_type = refs.projectile(component.projectile_type)
+    wpn.airstrike_pattern = refs.airstrike(component.airstrike_pattern)
   },
   WeaponLaserComponent: copy([
     'max_length',
@@ -496,19 +497,23 @@ const handlers = {
   SeatCollectionComponent: null,
   GuidanceTargetComponent: null,
   WeaponLinkerComponent: null,
-  ThrowableComponent: copy([
-    'throw_distance_min',
-    'throw_distance_max',
-    'use_angular_velocity',
-    'sticky',
-    'sticky_delay',
-    'is_impact_trigger',
-    'start_amount',
-    'max_amount',
-    'refill_amount',
-    'on_stick_damage_type',
-  ], { omit_falsey: true }),
-  ExplosiveComponent: null,
+  ThrowableComponent(wpn, component) {
+    copy([
+      'throw_distance_min',
+      'throw_distance_max',
+      'use_angular_velocity',
+      'sticky',
+      'sticky_delay',
+      'is_impact_trigger',
+      'start_amount',
+      'max_amount',
+      'refill_amount',
+    ], { omit_falsey: true })(wpn, component)
+    wpn.on_stick_damage_type = refs.damage(component.on_stick_damage_type)
+  },
+  ExplosiveComponent(wpn, component) {
+    wpn.explosion_type = refs.explosion(component.explosion_type)
+  },
   DamagePropagatorComponent: null,
   PowerGeneratedComponent: null,
   PhysicsWeaponComponent: null,
@@ -747,6 +752,7 @@ const refs = {
   crater: ref('TerrainDeformationType'),
   stratCategory: ref('StratagemCategoryType'),
   stratButton: ref('StratagemButtonDirection'),
+  airstrike: ref('EagleAirstrikePattern'),
 }
 
 const StratagemMaxUse = Math.pow(2, 32) - 1

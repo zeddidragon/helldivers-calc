@@ -198,6 +198,49 @@ function eatSubobjects(obj, prop) {
   delete obj[prop]
 }
 
+function push(obj, prop, ...pushed) {
+  obj[prop] = [...(obj[prop] || []), ...pushed]
+}
+
+const airstrikePatterns = {
+  // Used by:
+  // - Eagle Airstrike
+  // - Eagle Strafing Run
+  // - Eagle 110mm Rocket Pods
+  '6Z': (wpn) => {
+    wpn.cap = 6
+    if(wpn.name === 'Eagle 110mm Rocket Pods') {
+      wpn.attack[0].count = 2
+    }
+    if(wpn.name === 'Eagle Strafing Run') {
+      wpn.cap = Math.round(wpn.rounds_per_minute.y * wpn.fire_duration / 60)
+    }
+  },
+  'Single': (wpn) => {
+    wpn.cap = 1
+  },
+  '4line_Napalm_MK1': (wpn) => {
+    wpn.cap = 4
+  },
+  '8line_ClusterBomb': (wpn) => {
+    wpn.cap = 8
+  },
+  '8line_Napalm_ClusterBomb': (wpn) => {
+    wpn.cap = 8
+  },
+}
+function eagleAirstrike(wpn, strikeType) {
+  const cb = airstrikePatterns[strikeType]
+  wpn.cap = Math.round(wpn.fire_duration / (wpn.bomb_interval + wpn.bomb_prediction_interval))
+  if(!cb) {
+    console.error('Pattern not implemented: ', strikeType)
+  } else {
+    cb(wpn)
+  }
+  delete wpn.magazine_capacity
+  return
+}
+
 setup.stratagem = setup.stratagem
   .map(strat => {
     const name = strat.name || strat.fullname
@@ -214,6 +257,7 @@ setup.stratagem = setup.stratagem
     eatSubobjects(obj, 'racked')
     eatSubobjects(obj, 'drone_path')
     eatSubobjects(obj, 'mounts')
+    eatSubobjects(obj, 'mounts')
     eatSubobjects(obj, 'throwable_path')
     obj.name = strat.name || name || obj.name
     obj.fullname = strat.fullname || obj.fullname
@@ -222,34 +266,37 @@ setup.stratagem = setup.stratagem
       obj.cap = obj.throwable_count
     }
     if(obj.projectile_type) {
-      obj.attack = [...(obj.attack || []), {
+      push(obj, 'attack', {
         medium: 'projectile',
         ref: obj.projectile_type,
-      }]
+      })
     }
     if(obj.beam_type) {
-      obj.attack = [...(obj.attack || []), {
+      push(obj, 'attack',  {
         medium: 'beam',
         ref: obj.beam_type,
-      }]
+      })
     }
     if(obj.explosion_type) {
-      obj.attack = [...(obj.attack || []), {
+      push(obj, 'attack', {
         medium: 'explosion',
         ref: obj.explosion_type,
-      }]
+      })
     }
     if(obj.arc_type) {
-      obj.attack = [...(obj.attack || []), {
+      push(obj, 'attack', {
         medium: 'arc',
         ref: obj.arc_type,
-      }]
+      })
     }
     if(obj.damage_type) {
-      obj.attack = [...(obj.attack || []), {
+      push(obj, 'attack', {
         medium: 'damage',
         ref: obj.damage_type,
-      }]
+      })
+    }
+    if(obj.airstrike_pattern) {
+      eagleAirstrike(obj, obj.airstrike_pattern)
     }
     return obj
   })
