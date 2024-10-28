@@ -214,7 +214,11 @@ const airstrikePatterns = {
       wpn.cap = 6
     }
     if(wpn.name === 'Eagle 110mm Rocket Pods') {
-      wpn.attack[0].count = 2
+      // 110mm rockets redundantly listed on main body as well as left and right sidecs
+      wpn.attack = [{
+        count: 2,
+        ...wpn.attack[2],
+      }]
     }
     if(wpn.name === 'Eagle Strafing Run') {
       wpn.cap = Math.round(wpn.rounds_per_minute.y * wpn.fire_duration / 60)
@@ -267,7 +271,23 @@ setup.stratagem = setup.stratagem
     eatSubobjects(obj, 'payload')
     eatSubobjects(obj, 'racked')
     eatSubobjects(obj, 'drone_path')
-    eatSubobjects(obj, 'mounts')
+    for(const { id, side } of obj.mounts || []) {
+      if(side === 'Common') {
+        obj.mount = id
+        eatSubobjects(obj, 'mount')
+        continue
+      }
+      const weapon = {
+        ...shalzuth[id],
+        name: side,
+      }
+      push(obj, 'attack', {
+        medium: 'weapon',
+        side,
+        weapon,
+      })
+    }
+    delete obj.mounts
     eatSubobjects(obj, 'throwable_path')
     obj.name = strat.name || name || obj.name
     obj.fullname = strat.fullname || obj.fullname
@@ -525,6 +545,7 @@ for(const wpn of allWeapons) {
       type: atk.medium,
       name: atk.ref,
       count: atk.count,
+      weapon: atk.weapon,
     })
   })
   const category = names[`wpn.category.full;${wpn.category}`]

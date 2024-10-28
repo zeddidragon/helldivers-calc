@@ -465,9 +465,18 @@ function rel(obj, type, key = `${type}ref`) { // Gets child related to this obje
 }
 
 function unroll(attack)  {
-  const { type, name: ref, count } = attack
-  const obj = locals.byRef[type][ref] || {}
+  const { type, name: ref, count, weapon } = attack
+  const obj = type === 'weapon'
+    ? weapon
+    : locals.byRef[type][ref] || {}
   const arr = [attack]
+  if(type === 'weapon' && weapon.projectile_type) {
+    arr.push(...unroll({
+      type: 'projectile',
+      name: weapon.projectile_type,
+    }).slice(1))
+    console.log(arr, 'arrrrr')
+  }
   if(obj.ximpactref) {
     arr.push(...unroll({ type: 'explosion', name: obj.ximpactref, count }))
   }
@@ -723,8 +732,10 @@ async function loadData() {
     let prev = void 0
     let subobjects = strat.attack
       ?.flatMap(unroll)
-      ?.map(({ type, name: ref, count }) => {
-        const obj = locals.byRef[type][ref] || {}
+      ?.map(({ type, name: ref, count, weapon }) => {
+        const obj = type === 'weapon'
+          ? weapon
+          : (locals.byRef[type][ref] || {})
         const parent = prev
         prev = obj
         const damage = rel(obj, 'damage')
@@ -732,13 +743,12 @@ async function loadData() {
         shotdmg += n * (damage?.dmg || 0)
         shotdmg2 += n * (damage?.dmg2 || 0)
         name = obj.name
-        console.log({ type, ref, count, obj })
         if(type === 'explosion') {
           for(let i = 0; i < 3; i++) {
             maxRadius[i] = Math.max(maxRadius[i], obj[`r${i + 1}`])
           }
         }
-        return {
+        const ret = {
           ...(type === 'weapon' ? obj : {}),
           parent,
           type,
@@ -750,6 +760,13 @@ async function loadData() {
           stratagem: strat,
           ref,
         }
+        if(type === 'weapon' && obj.projectile_type) {
+          Object.assign(ret,
+            locals.byRef.projectile[obj.projectile_type],
+            { name: obj.name },
+          )
+        }
+        return ret
       })
     const code = strat.stratcode || []
     const arrows = code.map(i => arrowMap[i]).join('')
@@ -784,8 +801,7 @@ async function loadData() {
     }
   })
 
-  // locals.cats = Array.from(new Set(locals.weapons.map(wpn => wpn.category)))
-  locals.cats = []
+  locals.cats = Array.from(new Set(locals.weapons.map(wpn => wpn.category)))
   locals.sources = data.sources
   readState()
   render()

@@ -408,9 +408,14 @@ const handlers = {
   MountComponent(wpn, component) {
     wpn.mounts = component.infos
       .filter(info => info.path)
-      .map(info => info.path)
+      .map(info => {
+        return {
+          id: info.path,
+          side: refs.mount(info.mount_side),
+        }
+      })
     for(const mount of wpn.mounts) {
-      deferEntity(mount)
+      deferEntity(mount.id)
     }
   },
   IdleAbilityComponent: null,
@@ -753,6 +758,7 @@ const refs = {
   stratCategory: ref('StratagemCategoryType'),
   stratButton: ref('StratagemButtonDirection'),
   airstrike: ref('EagleAirstrikePattern'),
+  mount: ref('MountSide'),
 }
 
 const StratagemMaxUse = Math.pow(2, 32) - 1
@@ -868,8 +874,7 @@ function readTypeStatus(item) {
     name: item.debug_name,
     strength: float(item.strength),
     duration: float(item.duration),
-    damageref: refs.damage(item.damage_info_type),
-  }
+    damageref: refs.damage(item.damage_info_type), }
 }
 
 const types = {

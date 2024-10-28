@@ -706,27 +706,6 @@ fullname = "Status Effects#Gas"
 medium = "damage"
 ref = "DPS_Gas"
 
-[[weapon]]
-category = "Mounted"
-fullname = "Patriot Gatling Gun"
-[[weapon.attack]]
-medium = "projectile"
-ref = "Rifle_8x60mm_fmj"
-
-[[weapon]]
-category = "Mounted"
-fullname = "Patriot Rocket Pod"
-[[weapon.attack]]
-medium = "projectile"
-ref = "Missile_Combat_Walker"
-
-[[weapon]]
-category = "Mounted"
-fullname = "Emancipator Twin Autocannon"
-[[weapon.attack]]
-medium = "projectile"
-ref = "Cannon_30mm_APHE"
-
 [[stratagem]]
 category = "Backpack"
 fullname = "B-1 Supply Pack"
@@ -879,6 +858,12 @@ name = "Eagle Smoke Strike"
 [[stratagem]]
 category = "Vehicle"
 fullname = "EXO-45 Patriot Exosuit"
+[[stratagem.attack]]
+medium = "damage"
+ref = "Ability_Cyborg_Lieutenant_Stomp"
+[[stratagem.attack]]
+medium = "explosion"
+ref = "Vehicle_Explosion_CombatWalker"
 
 [[stratagem]]
 category = "Vehicle"

@@ -812,7 +812,10 @@
     },
     "num_low_ammo_rounds": 4,
     "projectile_type": "ClusterBomb_100kg",
-    "mounts": ["14855805920191068159", "14855805920191068159"],
+    "mounts": [
+      {"id": "14855805920191068159", "side": "Common"},
+      {"id": "14855805920191068159", "side": "Common"}
+    ],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "8line_ClusterBomb",
     "target_angle": 90,
@@ -1950,7 +1953,7 @@
     "max_fuel_usage": 4,
     "damaged_fuel_usage": 20,
     "distance": 200,
-    "mounts": ["9468080011357415026"]
+    "mounts": [{"id": "9468080011357415026", "side": "Common"}]
   },
   "8480614394778878677": {
     "id": "8480614394778878677",
@@ -2807,7 +2810,10 @@
     },
     "num_low_ammo_rounds": 4,
     "projectile_type": "Bomb_Napalm",
-    "mounts": ["14855805920191068159", "14855805920191068159"],
+    "mounts": [
+      {"id": "14855805920191068159", "side": "Common"},
+      {"id": "14855805920191068159", "side": "Common"}
+    ],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "4line_Napalm_MK1",
     "target_angle": 90,
@@ -3856,7 +3862,10 @@
     },
     "num_low_ammo_rounds": 4,
     "projectile_type": "Bomb_500kg",
-    "mounts": ["14855805920191068159", "14855805920191068159"],
+    "mounts": [
+      {"id": "14855805920191068159", "side": "Common"},
+      {"id": "14855805920191068159", "side": "Common"}
+    ],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "Single",
     "target_angle": 180,
@@ -4306,7 +4315,10 @@
     "damaged_fuel_usage": 20,
     "health": 600,
     "armor": 3,
-    "mounts": ["9388736439472594613", "645713022044093730"],
+    "mounts": [
+      {"id": "9388736439472594613", "side": "Left"},
+      {"id": "645713022044093730", "side": "Right"}
+    ],
     "key": "EXO-45 Patriot Exosuit"
   },
   "5910727434981086692": {
@@ -4753,7 +4765,7 @@
     "health": 2500,
     "armor": 3,
     "can_die_naturally": 0,
-    "mounts": ["9468080011357415026"]
+    "mounts": [{"id": "9468080011357415026", "side": "Common"}]
   },
   "4021120973472933563": {
     "id": "4021120973472933563",
@@ -6129,7 +6141,10 @@
     },
     "num_low_ammo_rounds": 4,
     "projectile_type": "Bomb_Smoke",
-    "mounts": ["14855805920191068159", "14855805920191068159"],
+    "mounts": [
+      {"id": "14855805920191068159", "side": "Common"},
+      {"id": "14855805920191068159", "side": "Common"}
+    ],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "8line_ClusterBomb",
     "target_angle": 90,
@@ -6613,7 +6628,10 @@
     },
     "num_low_ammo_rounds": 4,
     "projectile_type": "Cannon_20mm_APHET",
-    "mounts": ["18223572581977941174", "18223572581977941174"],
+    "mounts": [
+      {"id": "18223572581977941174", "side": "Right"},
+      {"id": "18223572581977941174", "side": "Left"}
+    ],
     "payload": "EaglePayload_DoubleStrafe",
     "airstrike_pattern": "6Z",
     "target_angle": 180,
@@ -6689,7 +6707,7 @@
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
-    "mounts": ["9182363845171390146"]
+    "mounts": [{"id": "9182363845171390146", "side": "Common"}]
   },
   "3907162354404645355": {
     "id": "3907162354404645355",
@@ -6929,7 +6947,10 @@
     },
     "num_low_ammo_rounds": 4,
     "projectile_type": "Bomb_100kg",
-    "mounts": ["14855805920191068159", "14855805920191068159"],
+    "mounts": [
+      {"id": "14855805920191068159", "side": "Common"},
+      {"id": "14855805920191068159", "side": "Common"}
+    ],
     "payload": "EaglePayload_Airstrike",
     "airstrike_pattern": "6Z",
     "target_angle": 90,
@@ -6980,7 +7001,10 @@
     },
     "num_low_ammo_rounds": 4,
     "projectile_type": "Rocket_110mm",
-    "mounts": ["5344291599364980417", "5344291599364980417"],
+    "mounts": [
+      {"id": "5344291599364980417", "side": "Right"},
+      {"id": "5344291599364980417", "side": "Left"}
+    ],
     "payload": "EaglePayload_Rocket",
     "airstrike_pattern": "6Z",
     "target_angle": 180,
@@ -7230,7 +7254,10 @@
     "damaged_fuel_usage": 20,
     "health": 600,
     "armor": 3,
-    "mounts": ["16570517418531528145", "18417602992972518459"],
+    "mounts": [
+      {"id": "16570517418531528145", "side": "Left"},
+      {"id": "18417602992972518459", "side": "Right"}
+    ],
     "key": "EXO-49 Emancipator Exosuit"
   },
   "13198259103089806061": {
@@ -8237,7 +8264,7 @@
     },
     "num_low_ammo_rounds": 4,
     "projectile_type": "Cyborg_HeavyCannon",
-    "mounts": ["3907162354404645355"],
+    "mounts": [{"id": "3907162354404645355", "side": "Common"}],
     "key": "Heavy Fusion Cannon"
   },
   "7672538193198738711": {
@@ -8777,7 +8804,10 @@
     },
     "num_low_ammo_rounds": 4,
     "projectile_type": "Cannon_Eagle_23mm",
-    "mounts": ["16983968416304026806", "16983968416304026806"],
+    "mounts": [
+      {"id": "16983968416304026806", "side": "Right"},
+      {"id": "16983968416304026806", "side": "Left"}
+    ],
     "payload": "EaglePayload_Missile",
     "airstrike_pattern": "6Z",
     "target_angle": 180,
@@ -10402,7 +10432,7 @@
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
-    "mounts": ["11756121139324203897"]
+    "mounts": [{"id": "11756121139324203897", "side": "Common"}]
   },
   "10871626090290489728": {
     "id": "10871626090290489728",
@@ -10458,7 +10488,7 @@
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
-    "mounts": ["13198259103089806061"]
+    "mounts": [{"id": "13198259103089806061", "side": "Common"}]
   },
   "6624453650490018537": {
     "id": "6624453650490018537",
@@ -10471,6 +10501,6 @@
     "aim_interpolation_speed": 3.1400001,
     "sway_multiplier": {"x": 1, "y": 0.5},
     "sway_frequency_multiplier": {"x": 1, "y": 1},
-    "mounts": ["3199457897835937068"]
+    "mounts": [{"id": "3199457897835937068", "side": "Common"}]
   }
 }
