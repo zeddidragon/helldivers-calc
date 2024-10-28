@@ -83,6 +83,11 @@ reloadearly = 1.9
 scopes = [50, 100, 200]
 
 [[weapon]]
+category = "DMR"
+fullname = "R-2124 Constitution"
+source = "liberty-day"
+
+[[weapon]]
 category = "SMG"
 fullname = "MP-98 Knight"
 source = "dlc-super"
@@ -874,16 +879,6 @@ name = "Eagle Smoke Strike"
 [[stratagem]]
 category = "Vehicle"
 fullname = "EXO-45 Patriot Exosuit"
-health = 600
-armor = 3
-cooldown = 600
-uses = 2
-[[stratagem.attack]]
-medium = "damage"
-ref = "Ability_Cyborg_Lieutenant_Stomp"
-[[stratagem.attack]]
-medium = "explosion"
-ref = "Vehicle_Explosion_CombatWalker"
 
 [[stratagem]]
 category = "Vehicle"

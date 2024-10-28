@@ -208,7 +208,11 @@ const airstrikePatterns = {
   // - Eagle Strafing Run
   // - Eagle 110mm Rocket Pods
   '6Z': (wpn) => {
-    wpn.cap = 6
+    if(wpn.magazine_capacity < 2000) {
+      wpn.cap = wpn.magazine_capacity
+    } else {
+      wpn.cap = 6
+    }
     if(wpn.name === 'Eagle 110mm Rocket Pods') {
       wpn.attack[0].count = 2
     }
@@ -253,10 +257,16 @@ setup.stratagem = setup.stratagem
       ...strat,
     }
     const entityQueue = []
+
+    // Usually we care only about the first payload item
+    // The second will be the delivery method,
+    // such as the hellpod or pelican
+    if(obj.payload?.length > 1) {
+      obj.payload = [obj.payload[0]]
+    }
     eatSubobjects(obj, 'payload')
     eatSubobjects(obj, 'racked')
     eatSubobjects(obj, 'drone_path')
-    eatSubobjects(obj, 'mounts')
     eatSubobjects(obj, 'mounts')
     eatSubobjects(obj, 'throwable_path')
     obj.name = strat.name || name || obj.name

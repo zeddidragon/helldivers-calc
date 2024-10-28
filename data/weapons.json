@@ -189,6 +189,22 @@
       "supply": 6
     },
     {
+      "attack": [{"type": "projectile", "name": "Rifle_Constitution"}],
+      "cap": 5,
+      "capplus": 1,
+      "category": "DMR",
+      "ergonomics": 65,
+      "fullname": "R-2124 Constitution",
+      "modes": ["Single"],
+      "recoilxy": {"x": 25, "y": 25},
+      "rounds": 99,
+      "roundstart": 60,
+      "roundsupply": 99,
+      "rpm": 60,
+      "source": "liberty-day",
+      "spreadxy": {"x": 0.1, "y": 0.1}
+    },
+    {
       "attachments": ["flashlight"],
       "attack": [{"type": "projectile", "name": "Pistol_9x20mm_smj"}],
       "burst": 3,
@@ -2628,7 +2644,7 @@
       "bomb_interval": 0.5,
       "bomb_prediction_interval": 0.0500000007,
       "attack": [{"type": "projectile", "name": "Rocket_110mm", "count": 2}],
-      "cap": 6
+      "cap": 3
     },
     {
       "ref": "EagleAirstrikeSmoke",
@@ -2696,58 +2712,44 @@
       "radius": 2,
       "cooldown": 600,
       "fullname": "EXO-45 Patriot Exosuit",
-      "health": 2500,
-      "armor": 0,
-      "attack": [
-        {"type": "damage", "name": "Ability_Cyborg_Lieutenant_Stomp"},
-        {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"},
-        {"type": "projectile", "name": "Cannon_40mm_APHE"}
-      ],
       "prefix": "EXO-45",
-      "initial_fuel": {"x": 10000, "y": 10000},
+      "initial_fuel": {"x": 6000, "y": 6000},
       "idle_fuel_usage": 0.100000001,
       "max_fuel_usage": 4,
       "damaged_fuel_usage": 20,
+      "health": 250,
+      "armor": 3,
       "key": "EXO-45 Patriot Exosuit",
-      "can_die_naturally": 0,
-      "magazine_capacity": 500,
-      "chambered": 1,
-      "magazines": 6,
+      "magazine_capacity": 1000,
+      "chambered": 0,
+      "magazines": 0,
       "magazines_refill": 6,
-      "magazines_max": 12,
-      "distance": 200,
-      "aim_drag": 0.5,
-      "aim_flinch_decrease": 1,
-      "aim_flinch_max": 5,
-      "aim_interpolation_speed": 3.1400001,
-      "sway_multiplier": {"x": 1, "y": 0.5},
-      "sway_frequency_multiplier": {"x": 1, "y": 1},
+      "magazines_max": 0,
+      "backblast_angle": 20,
+      "backblast_offset": 1,
+      "backblast_explosion_type": "BackblastSmall",
       "recoil_info": {
         "drift": {
-          "horizontal_recoil": 2.5,
-          "vertical_recoil": 10,
+          "horizontal_recoil": 8,
+          "vertical_recoil": 5,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
         },
         "climb": {
-          "horizontal_recoil": 2.5,
-          "vertical_recoil": 10,
+          "horizontal_recoil": 2,
+          "vertical_recoil": 5,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
         }
       },
-      "spread_info": {"horizontal": 1, "vertical": 1},
+      "spread_info": {"horizontal": 50, "vertical": 50},
       "noise_template": "NoiseTemplate_Weapon_Medium",
       "scope_responsiveness": 10,
       "ergonomics": 65,
       "infinite_ammo": 0,
       "fire_modes": ["Automatic"],
       "function_info": [],
-      "turn_speed_vertical": 120,
-      "turn_speed_horizontal": 120,
-      "vertical_limit_min": 0,
-      "vertical_limit_max": 90,
-      "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
+      "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
         "maximum_heat": 100,
@@ -2755,7 +2757,11 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
-      "projectile_type": "Cannon_40mm_APHE"
+      "projectile_type": "Rifle_8x60mm_fmj",
+      "wind_up_time": 1,
+      "wind_down_time": 1,
+      "rpm_multiplier": 0.333332986,
+      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}]
     },
     {
       "ref": "DropoffCombatWalker_Autocannon",
@@ -2767,58 +2773,46 @@
       "radius": 2,
       "cooldown": 600,
       "fullname": "EXO-49 Emancipator Exosuit",
-      "health": 2500,
-      "armor": 0,
+      "health": 250,
+      "armor": 3,
       "attack": [
         {"type": "damage", "name": "Ability_Cyborg_Lieutenant_Stomp"},
         {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"},
-        {"type": "projectile", "name": "Cannon_40mm_APHE"}
+        {"type": "projectile", "name": "Cannon_30mm_APHE"}
       ],
       "prefix": "EXO-49",
-      "initial_fuel": {"x": 10000, "y": 10000},
+      "initial_fuel": {"x": 6000, "y": 6000},
       "idle_fuel_usage": 0.100000001,
       "max_fuel_usage": 4,
       "damaged_fuel_usage": 20,
       "key": "EXO-49 Emancipator Exosuit",
-      "can_die_naturally": 0,
-      "magazine_capacity": 500,
-      "chambered": 1,
-      "magazines": 6,
+      "magazine_capacity": 100,
+      "chambered": 0,
+      "magazines": 0,
       "magazines_refill": 6,
-      "magazines_max": 12,
-      "distance": 200,
-      "aim_drag": 0.5,
-      "aim_flinch_decrease": 1,
-      "aim_flinch_max": 5,
-      "aim_interpolation_speed": 3.1400001,
-      "sway_multiplier": {"x": 1, "y": 0.5},
-      "sway_frequency_multiplier": {"x": 1, "y": 1},
+      "magazines_max": 0,
       "recoil_info": {
         "drift": {
-          "horizontal_recoil": 2.5,
-          "vertical_recoil": 10,
+          "horizontal_recoil": 20,
+          "vertical_recoil": 20,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
         },
         "climb": {
-          "horizontal_recoil": 2.5,
-          "vertical_recoil": 10,
+          "horizontal_recoil": 2,
+          "vertical_recoil": 20,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
         }
       },
-      "spread_info": {"horizontal": 1, "vertical": 1},
+      "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_Weapon_Medium",
       "scope_responsiveness": 10,
       "ergonomics": 65,
       "infinite_ammo": 0,
       "fire_modes": ["Automatic"],
       "function_info": [],
-      "turn_speed_vertical": 120,
-      "turn_speed_horizontal": 120,
-      "vertical_limit_min": 0,
-      "vertical_limit_max": 90,
-      "rounds_per_minute": {"x": 0, "y": 300, "z": 0},
+      "rounds_per_minute": {"x": 0, "y": 175, "z": 0},
       "heat_buildup": {
         "heat_build_per_shot": 1,
         "maximum_heat": 100,
@@ -2826,7 +2820,7 @@
         "heat_bleed_delay": 5
       },
       "num_low_ammo_rounds": 4,
-      "projectile_type": "Cannon_40mm_APHE"
+      "projectile_type": "Cannon_30mm_APHE"
     },
     {
       "ref": "EagleRearm",
