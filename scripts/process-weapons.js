@@ -396,14 +396,11 @@ setup.weapon = setup.weapon.map(wpn => {
 })
 
 const wikiRegister = {
-  damage: {},
-  projectile: {},
-  explosion: {},
-  beam: {},
-  arc: {},
+  ...data,
   weapon: {},
 }
-const register = {}
+delete wikiRegister.stratagem
+
 const tkeys = {
   weapon: 'wpnname',
   damage: 'dmg',
@@ -424,20 +421,8 @@ function getAtk(type, ref) {
 
 for(const prop of Object.keys(wikiRegister)) {
   const reg = wikiRegister[prop]
-  const plural = `${prop}s`
-  register[prop] = {}
-  for(const obj of (data[plural] || [])) {
-    const key = atkKey(prop, obj.enum)
-    refRegister[key] = obj
-    register[prop][obj.id] = obj
-  }
-}
-
-for(const prop of Object.keys(wikiRegister)) {
-  const reg = wikiRegister[prop]
-  const plural = `${prop}s`
-  for(const obj of (data[plural] || [])) {
-    const key = atkKey(prop, obj.enum)
+  for(const [ref, obj] of Object.entries(data[prop] || {})) {
+    const key = atkKey(prop, ref)
     let obj2 = {
       ...obj,
       enum: void 0,
@@ -445,39 +430,30 @@ for(const prop of Object.keys(wikiRegister)) {
       id: void 0,
     }
     if(prop === 'damage') {
-      const element = data.elements[obj.type]
+      const { element } = obj
       obj2 = {
         ...obj2,
-        element_name: obj.type ? names[`dmg.types.full;${element}`] : void 0,
-        status_name: obj.func1 ? data.statusNames[obj.func1 - 1] : void 0,
-        status_name2: obj.func2 ? data.statusNames[obj.func2 - 1] : void 0,
-        status_name3: obj.func3 ? data.statusNames[obj.func3 - 1] : void 0,
-        status_name4: obj.func4 ? data.statusNames[obj.func4 - 1] : void 0,
-        status_name5: obj.func5 ? data.statusNames[obj.func5 - 1] : void 0,
-        status_name6: obj.func6 ? data.statusNames[obj.func6 - 1] : void 0,
+        element: void 0,
+        status1: void 0,
+        status2: void 0,
+        status3: void 0,
+        status4: void 0,
+        element_name: names[`dmg.types.full;${element}`],
+        status_name: names[`dmg.effects.full;${obj.status1}`],
+        status_name2: names[`dmg.effects.full;${obj.status2}`],
+        status_name3: names[`dmg.effects.full;${obj.status3}`],
+        status_name4: names[`dmg.effects.full;${obj.status4}`],
       }
     }
-    if(obj.ximpactid) {
-      obj2.ximpactid = register.explosion[obj.ximpactid].enum
-    } else {
-      delete obj2.ximpactid
-    }
-    if(obj.xdelayid) {
-      obj2.xdelayid = register.explosion[obj.xdelayid].enum
-    } else {
-      delete obj2.xdelayid
-    }
-    if(obj.damageid) {
-      obj2.damageid = register.damage[obj.damageid].enum
-    } else {
-      delete obj2.damageid
-    }
-    if(obj.projectileid) {
-      obj2.projectileid = register.projectile[obj.projectileid].enum
-    } else {
-      delete obj2.projectileid
-    }
-    reg[obj.enum] = obj2
+    obj2.ximpactid = obj.ximpactref
+    delete obj2.ximpactref
+    obj2.xdelayid = obj.xdelayref
+    delete obj2.xdelayref
+    obj2.projectileid = obj.projectileref || obj.shrapnelref
+    delete obj2.projectileref
+    obj2.damageid = obj.damageref
+    delete obj2.damageref
+    reg[ref] = obj2
   }
 }
 
@@ -489,6 +465,9 @@ function unrollAttack(attack) {
     count,
   } = attack
   const obj = wikiRegister[type][name]
+  if(obj.shrapnel) {
+    console.log(obj)
+  }
   if(obj?.shrapnel && obj?.projectileid) {
     const projectile = wikiRegister.projectile[obj.projectileid]
     unrolled.push(...unrollAttack({
@@ -561,6 +540,7 @@ for(const wpn of allWeapons) {
     attacks,
   }
 }
+
 wikiRegister.weapon_order = weaponOrder
 
 fs.writeFileSync('data/wiki.json', JSON.stringify(wikiRegister, null, 2))

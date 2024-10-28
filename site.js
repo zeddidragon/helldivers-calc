@@ -464,36 +464,6 @@ function rel(obj, type, key = `${type}ref`) { // Gets child related to this obje
   return data[type][obj[key]]
 }
 
-function unroll(attack)  {
-  const { type, name: ref, count, weapon } = attack
-  const obj = type === 'weapon'
-    ? weapon
-    : locals.byRef[type][ref] || {}
-  const arr = [attack]
-  if(type === 'weapon' && weapon.projectile_type) {
-    arr.push(...unroll({
-      type: 'projectile',
-      name: weapon.projectile_type,
-    }).slice(1))
-    console.log(arr, 'arrrrr')
-  }
-  if(obj.ximpactref) {
-    arr.push(...unroll({ type: 'explosion', name: obj.ximpactref, count }))
-  }
-  if(obj.xdelayref && obj.xdelayref !== obj.ximpactref) {
-    arr.push(...unroll({ type: 'explosion', name: obj.xdelayref, count }))
-  }
-  if(obj.shrapnelref && obj.shrapnel) {
-    arr.push(...unroll({
-      type: 'projectile',
-      name: obj.shrapnelref,
-      count: obj.shrapnel,
-    }))
-  }
-  return arr
-}
-
-
 async function loadData() {
   const [
     manual,
@@ -530,7 +500,6 @@ async function loadData() {
     let shotdmgx = 0
     let prev = wpn
     let subobjects = wpn.attack
-      ?.flatMap(unroll)
       ?.map(({ type, name: ref, count }) => {
         const obj = locals.byRef[type][ref] || {}
         const parent = prev
@@ -731,7 +700,6 @@ async function loadData() {
     let maxRadius = [0, 0, 0]
     let prev = void 0
     let subobjects = strat.attack
-      ?.flatMap(unroll)
       ?.map(({ type, name: ref, count, weapon }) => {
         const obj = type === 'weapon'
           ? weapon
