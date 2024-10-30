@@ -15149,19 +15149,961 @@
         }
       ]
     },
-    "undefined": {
-      "ref": "EagleRearm",
-      "name": "Eagle Rearm",
+    "Orbital Precision Strike": {
+      "ref": "OrbitalShell",
+      "name": "Orbital Precision Strike",
       "stratcode": [
+        "Right",
+        "Right",
+        "Up"
+      ],
+      "calltime": 2,
+      "cooldown": 90,
+      "bomb_interval": 0.5,
+      "salvo_interval": 3,
+      "area_size": 1,
+      "projectile_type": "Orbital_Precision_Strike",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Orbital_Precision_Strike"
+        },
+        {
+          "type": "explosion",
+          "name": "PrecisionStrike"
+        }
+      ]
+    },
+    "Orbital Gas Strike": {
+      "ref": "OrbitalGas",
+      "name": "Orbital Gas Strike",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Down",
+        "Right"
+      ],
+      "calltime": 2,
+      "cooldown": 75,
+      "bomb_interval": 0.349999994,
+      "salvo_interval": 1,
+      "area_size": 1,
+      "projectile_type": "Orbital_Gas",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Orbital_Gas"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalGas"
+        }
+      ]
+    },
+    "Orbital Smoke Strike": {
+      "ref": "OrbitalSmoke",
+      "name": "Orbital Smoke Strike",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Down",
+        "Up"
+      ],
+      "calltime": 2,
+      "cooldown": 100,
+      "bomb_interval": 0,
+      "salvo_interval": 0,
+      "area_size": 15,
+      "salvos": 6,
+      "projectile_type": "Orbital_Smoke",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Orbital_Smoke"
+        },
+        {
+          "type": "explosion",
+          "name": "AirStrikeSmoke"
+        }
+      ]
+    },
+    "Orbital Airburst Strike": {
+      "ref": "OrbitalShot",
+      "name": "Orbital Airburst Strike",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Right"
+      ],
+      "calltime": 2,
+      "cooldown": 100,
+      "bomb_interval": 0,
+      "salvo_interval": 4,
+      "area_size": 2,
+      "salvos": 4,
+      "projectile_type": "Orbital_Cannon_110mm",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Orbital_Cannon_110mm"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalShot"
+        },
+        {
+          "type": "projectile",
+          "name": "Shrapnel_Heavy",
+          "count": 12
+        },
+        {
+          "type": "explosion",
+          "name": "HeavyShrapnel",
+          "count": 12
+        }
+      ]
+    },
+    "Orbital EMS Strike": {
+      "ref": "OrbitalStun",
+      "name": "Orbital EMS Strike",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Left",
+        "Down"
+      ],
+      "calltime": 2,
+      "cooldown": 75,
+      "bomb_interval": 0.349999994,
+      "salvo_interval": 2,
+      "area_size": 1,
+      "projectile_type": "Orbital_Stunround",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Orbital_Stunround"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalStun"
+        }
+      ]
+    },
+    "Orbital Gatling Barrage": {
+      "ref": "OrbitalGatlingBarrage",
+      "name": "Orbital Gatling Barrage",
+      "stratcode": [
+        "Right",
+        "Down",
+        "Left",
+        "Up",
+        "Up"
+      ],
+      "calltime": 2,
+      "cooldown": 70,
+      "bomb_interval": 0.0450000018,
+      "salvo_interval": 0,
+      "area_size": 7,
+      "salvos": 4,
+      "cap": 60,
+      "projectile_type": "Cannon_Eagle_23mm",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Cannon_Eagle_23mm"
+        },
+        {
+          "type": "explosion",
+          "name": "Cannon_23mm_silent"
+        }
+      ]
+    },
+    "Orbital 120mm HE Barrage": {
+      "ref": "OrbitalStrike",
+      "name": "Orbital 120mm HE Barrage",
+      "stratcode": [
+        "Right",
+        "Right",
+        "Down",
+        "Left",
+        "Right",
+        "Down"
+      ],
+      "calltime": 5,
+      "cooldown": 180,
+      "bomb_interval": 0.75,
+      "salvo_interval": 2,
+      "area_size": 27,
+      "salvos": 5,
+      "cap": 3,
+      "projectile_type": "Orbital_Cannon_120mm_HE",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Orbital_Cannon_120mm_HE"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalStrike"
+        }
+      ]
+    },
+    "Orbital 380mm HE Barrage": {
+      "ref": "OrbitalBarrage",
+      "name": "Orbital 380mm HE Barrage",
+      "stratcode": [
+        "Right",
+        "Down",
         "Up",
         "Up",
         "Left",
+        "Down",
+        "Down"
+      ],
+      "calltime": 6,
+      "cooldown": 240,
+      "bomb_interval": 1.5,
+      "salvo_interval": 3,
+      "area_size": 36,
+      "salvos": 5,
+      "cap": 3,
+      "projectile_type": "Orbital_Cannon_380mm_HE",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Orbital_Cannon_380mm_HE"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalBarrage"
+        }
+      ]
+    },
+    "Orbital Walking Barrage": {
+      "ref": "OrbitalWalkingBarrage",
+      "name": "Orbital Walking Barrage",
+      "stratcode": [
+        "Right",
+        "Down",
+        "Right",
+        "Down",
+        "Right",
+        "Down"
+      ],
+      "calltime": 3,
+      "cooldown": 240,
+      "bomb_interval": 1.5,
+      "salvo_interval": 3,
+      "area_size": 25,
+      "salvos": 5,
+      "cap": 3,
+      "projectile_type": "Orbital_Cannon_380mm_HE",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Orbital_Cannon_380mm_HE"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalBarrage"
+        }
+      ]
+    },
+    "Orbital Laser": {
+      "ref": "OrbitalLaser",
+      "name": "Orbital Laser",
+      "uses": 3,
+      "stratcode": [
+        "Right",
+        "Down",
         "Up",
+        "Right",
+        "Down"
+      ],
+      "calltime": 2,
+      "cooldown": 300,
+      "search_radius": 50,
+      "limit": 25,
+      "damage_type": "DPS_BeamHuge",
+      "attacks": [
+        {
+          "type": "damage",
+          "name": "DPS_BeamHuge"
+        }
+      ]
+    },
+    "Orbital Railcannon Strike": {
+      "ref": "OrbitalRailcannon",
+      "name": "Orbital Railcannon Strike",
+      "stratcode": [
+        "Right",
+        "Up",
+        "Down",
+        "Down",
+        "Right"
+      ],
+      "calltime": 1,
+      "cooldown": 210,
+      "search_radius": 30,
+      "limit": 2,
+      "projectile_type": "Orbital_Railcannon",
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Orbital_Railcannon"
+        },
+        {
+          "type": "explosion",
+          "name": "Railcannon_Impact"
+        }
+      ]
+    },
+    "Eagle Airstrike": {
+      "ref": "EagleAirstrike",
+      "name": "Eagle Airstrike",
+      "uses": 2,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Down",
         "Right"
       ],
       "calltime": 0,
-      "cooldown": 150,
-      "attacks": []
+      "cooldown": 15,
+      "chambered": 0,
+      "magazines": 0,
+      "magazines_refill": 6,
+      "magazines_max": 0,
+      "health": 100,
+      "armor": 0,
+      "aim_interpolation_speed": 3.1400001,
+      "sway_multiplier": {
+        "x": 1,
+        "y": 0.5
+      },
+      "sway_frequency_multiplier": {
+        "x": 1,
+        "y": 1
+      },
+      "recoil_info": {
+        "drift": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        },
+        "climb": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        }
+      },
+      "spread_info": {
+        "horizontal": 10,
+        "vertical": 10
+      },
+      "noise_template": "NoiseTemplate_None",
+      "scope_responsiveness": 10,
+      "ergonomics": 65,
+      "infinite_ammo": 0,
+      "fire_modes": [
+        "Automatic"
+      ],
+      "function_info": [],
+      "rounds_per_minute": {
+        "x": 0,
+        "y": 4000,
+        "z": 0
+      },
+      "heat_buildup": {
+        "heat_build_per_shot": 1,
+        "maximum_heat": 100,
+        "heat_bleed_speed": 10,
+        "heat_bleed_delay": 5
+      },
+      "num_low_ammo_rounds": 4,
+      "projectile_type": "Bomb_100kg",
+      "airstrike_pattern": "6Z",
+      "target_angle": 90,
+      "search_radius": 60,
+      "fire_duration": 1.5,
+      "bomb_interval": 0.200000003,
+      "bomb_prediction_interval": 0.0500000007,
+      "cap": 6,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Bomb_100kg"
+        },
+        {
+          "type": "explosion",
+          "name": "EagleBomb_100kg"
+        }
+      ]
+    },
+    "Eagle Napalm Airstrike": {
+      "ref": "EagleAirstrikeNapalm",
+      "name": "Eagle Napalm Airstrike",
+      "uses": 2,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Down",
+        "Up"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "chambered": 0,
+      "magazines": 0,
+      "magazines_refill": 6,
+      "magazines_max": 0,
+      "health": 100,
+      "armor": 0,
+      "aim_interpolation_speed": 3.1400001,
+      "sway_multiplier": {
+        "x": 1,
+        "y": 0.5
+      },
+      "sway_frequency_multiplier": {
+        "x": 1,
+        "y": 1
+      },
+      "recoil_info": {
+        "drift": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        },
+        "climb": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        }
+      },
+      "spread_info": {
+        "horizontal": 10,
+        "vertical": 10
+      },
+      "noise_template": "NoiseTemplate_None",
+      "scope_responsiveness": 10,
+      "ergonomics": 65,
+      "infinite_ammo": 0,
+      "fire_modes": [
+        "Automatic"
+      ],
+      "function_info": [],
+      "rounds_per_minute": {
+        "x": 0,
+        "y": 4000,
+        "z": 0
+      },
+      "heat_buildup": {
+        "heat_build_per_shot": 1,
+        "maximum_heat": 100,
+        "heat_bleed_speed": 10,
+        "heat_bleed_delay": 5
+      },
+      "num_low_ammo_rounds": 4,
+      "projectile_type": "Bomb_Napalm",
+      "airstrike_pattern": "4line_Napalm_MK1",
+      "target_angle": 90,
+      "search_radius": 60,
+      "fire_duration": 1.5,
+      "bomb_interval": 0.200000003,
+      "bomb_prediction_interval": 0.0500000007,
+      "cap": 4,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Bomb_Napalm"
+        },
+        {
+          "type": "explosion",
+          "name": "EagleBomb_Napalm"
+        }
+      ]
+    },
+    "Eagle 500kg Bomb": {
+      "ref": "EagleBomb",
+      "name": "Eagle 500kg Bomb",
+      "uses": 1,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "chambered": 0,
+      "magazines": 0,
+      "magazines_refill": 6,
+      "magazines_max": 0,
+      "health": 100,
+      "armor": 0,
+      "aim_interpolation_speed": 3.1400001,
+      "sway_multiplier": {
+        "x": 1,
+        "y": 0.5
+      },
+      "sway_frequency_multiplier": {
+        "x": 1,
+        "y": 1
+      },
+      "recoil_info": {
+        "drift": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        },
+        "climb": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        }
+      },
+      "spread_info": {
+        "horizontal": 10,
+        "vertical": 10
+      },
+      "noise_template": "NoiseTemplate_None",
+      "scope_responsiveness": 10,
+      "ergonomics": 65,
+      "infinite_ammo": 0,
+      "fire_modes": [
+        "Automatic"
+      ],
+      "function_info": [],
+      "rounds_per_minute": {
+        "x": 0,
+        "y": 4000,
+        "z": 0
+      },
+      "heat_buildup": {
+        "heat_build_per_shot": 1,
+        "maximum_heat": 100,
+        "heat_bleed_speed": 10,
+        "heat_bleed_delay": 5
+      },
+      "num_low_ammo_rounds": 4,
+      "projectile_type": "Bomb_500kg",
+      "airstrike_pattern": "Single",
+      "target_angle": 180,
+      "search_radius": 60,
+      "fire_duration": 1.5,
+      "bomb_interval": 0.0500000007,
+      "bomb_prediction_interval": 0.0500000007,
+      "cap": 1,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Bomb_500kg"
+        },
+        {
+          "type": "explosion",
+          "name": "500kg_Initial_Impact"
+        },
+        {
+          "type": "explosion",
+          "name": "EagleBomb_500kg"
+        }
+      ]
+    },
+    "Eagle Strafing Run": {
+      "ref": "EagleCAS",
+      "name": "Eagle Strafing Run",
+      "uses": 4,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "chambered": 0,
+      "magazines": 0,
+      "magazines_refill": 6,
+      "magazines_max": 0,
+      "health": 100,
+      "armor": 0,
+      "aim_interpolation_speed": 3.1400001,
+      "sway_multiplier": {
+        "x": 1,
+        "y": 0.5
+      },
+      "sway_frequency_multiplier": {
+        "x": 1,
+        "y": 1
+      },
+      "recoil_info": {
+        "drift": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        },
+        "climb": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        }
+      },
+      "spread_info": {
+        "horizontal": 10,
+        "vertical": 10
+      },
+      "noise_template": "NoiseTemplate_None",
+      "scope_responsiveness": 10,
+      "ergonomics": 65,
+      "infinite_ammo": 0,
+      "fire_modes": [
+        "Automatic"
+      ],
+      "function_info": [],
+      "rounds_per_minute": {
+        "x": 0,
+        "y": 4000,
+        "z": 0
+      },
+      "heat_buildup": {
+        "heat_build_per_shot": 1,
+        "maximum_heat": 100,
+        "heat_bleed_speed": 10,
+        "heat_bleed_delay": 5
+      },
+      "num_low_ammo_rounds": 4,
+      "projectile_type": "Cannon_Eagle_23mm",
+      "airstrike_pattern": "6Z",
+      "target_angle": 180,
+      "search_radius": 60,
+      "fire_duration": 1.5,
+      "bomb_interval": 0.5,
+      "bomb_prediction_interval": 0.0500000007,
+      "cap": 100,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Cannon_Eagle_23mm"
+        },
+        {
+          "type": "explosion",
+          "name": "Cannon_23mm_silent"
+        }
+      ]
+    },
+    "Eagle Cluster Bomb": {
+      "ref": "EagleClusterbombs",
+      "name": "Eagle Cluster Bomb",
+      "uses": 4,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Down",
+        "Down",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "chambered": 0,
+      "magazines": 0,
+      "magazines_refill": 6,
+      "magazines_max": 0,
+      "health": 100,
+      "armor": 0,
+      "aim_interpolation_speed": 3.1400001,
+      "sway_multiplier": {
+        "x": 1,
+        "y": 0.5
+      },
+      "sway_frequency_multiplier": {
+        "x": 1,
+        "y": 1
+      },
+      "recoil_info": {
+        "drift": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        },
+        "climb": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        }
+      },
+      "spread_info": {
+        "horizontal": 10,
+        "vertical": 10
+      },
+      "noise_template": "NoiseTemplate_None",
+      "scope_responsiveness": 10,
+      "ergonomics": 65,
+      "infinite_ammo": 0,
+      "fire_modes": [
+        "Automatic"
+      ],
+      "function_info": [],
+      "rounds_per_minute": {
+        "x": 0,
+        "y": 4000,
+        "z": 0
+      },
+      "heat_buildup": {
+        "heat_build_per_shot": 1,
+        "maximum_heat": 100,
+        "heat_bleed_speed": 10,
+        "heat_bleed_delay": 5
+      },
+      "num_low_ammo_rounds": 4,
+      "projectile_type": "ClusterBomb_100kg",
+      "airstrike_pattern": "8line_ClusterBomb",
+      "target_angle": 90,
+      "search_radius": 60,
+      "fire_duration": 1.5,
+      "bomb_interval": 0.100000001,
+      "bomb_prediction_interval": 0.0500000007,
+      "cap": 8,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "ClusterBomb_100kg"
+        },
+        {
+          "type": "explosion",
+          "name": "ClusterBomb"
+        },
+        {
+          "type": "projectile",
+          "name": "ClusterBomb_Bomb",
+          "count": 8
+        },
+        {
+          "type": "explosion",
+          "name": "HeavyShrapnel_Clusterbombs",
+          "count": 8
+        }
+      ]
+    },
+    "Eagle 110mm Rocket Pods": {
+      "ref": "EagleRocket",
+      "name": "Eagle 110mm Rocket Pods",
+      "uses": 2,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Up",
+        "Left"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "chambered": 0,
+      "magazines": 0,
+      "magazines_refill": 6,
+      "magazines_max": 0,
+      "health": 100,
+      "armor": 0,
+      "aim_interpolation_speed": 3.1400001,
+      "sway_multiplier": {
+        "x": 1,
+        "y": 0.5
+      },
+      "sway_frequency_multiplier": {
+        "x": 1,
+        "y": 1
+      },
+      "recoil_info": {
+        "drift": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        },
+        "climb": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        }
+      },
+      "spread_info": {
+        "horizontal": 10,
+        "vertical": 10
+      },
+      "noise_template": "NoiseTemplate_None",
+      "scope_responsiveness": 10,
+      "ergonomics": 65,
+      "infinite_ammo": 0,
+      "fire_modes": [
+        "Automatic"
+      ],
+      "function_info": [],
+      "rounds_per_minute": {
+        "x": 0,
+        "y": 4000,
+        "z": 0
+      },
+      "heat_buildup": {
+        "heat_build_per_shot": 1,
+        "maximum_heat": 100,
+        "heat_bleed_speed": 10,
+        "heat_bleed_delay": 5
+      },
+      "num_low_ammo_rounds": 4,
+      "projectile_type": "Rocket_110mm",
+      "airstrike_pattern": "6Z",
+      "target_angle": 180,
+      "search_radius": 20,
+      "fire_duration": 2,
+      "bomb_interval": 0.5,
+      "bomb_prediction_interval": 0.0500000007,
+      "cap": 6,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rocket_110mm",
+          "count": 2
+        },
+        {
+          "type": "explosion",
+          "name": "Rocket_110mm",
+          "count": 2
+        }
+      ]
+    },
+    "Eagle Smoke Strike": {
+      "ref": "EagleAirstrikeSmoke",
+      "name": "Eagle Smoke Strike",
+      "uses": 2,
+      "stratcode": [
+        "Up",
+        "Right",
+        "Up",
+        "Down"
+      ],
+      "calltime": 0,
+      "cooldown": 15,
+      "chambered": 0,
+      "magazines": 0,
+      "magazines_refill": 6,
+      "magazines_max": 0,
+      "health": 100,
+      "armor": 0,
+      "aim_interpolation_speed": 3.1400001,
+      "sway_multiplier": {
+        "x": 1,
+        "y": 0.5
+      },
+      "sway_frequency_multiplier": {
+        "x": 1,
+        "y": 1
+      },
+      "recoil_info": {
+        "drift": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        },
+        "climb": {
+          "horizontal_recoil": 0,
+          "vertical_recoil": 0,
+          "horizontal_bias": 0,
+          "random_amount": {
+            "x": 0.100000001,
+            "y": 1
+          }
+        }
+      },
+      "spread_info": {
+        "horizontal": 10,
+        "vertical": 10
+      },
+      "noise_template": "NoiseTemplate_None",
+      "scope_responsiveness": 10,
+      "ergonomics": 65,
+      "infinite_ammo": 0,
+      "fire_modes": [
+        "Automatic"
+      ],
+      "function_info": [],
+      "rounds_per_minute": {
+        "x": 0,
+        "y": 4000,
+        "z": 0
+      },
+      "heat_buildup": {
+        "heat_build_per_shot": 1,
+        "maximum_heat": 100,
+        "heat_bleed_speed": 10,
+        "heat_bleed_delay": 5
+      },
+      "num_low_ammo_rounds": 4,
+      "projectile_type": "Bomb_Smoke",
+      "airstrike_pattern": "8line_ClusterBomb",
+      "target_angle": 90,
+      "search_radius": 60,
+      "fire_duration": 2,
+      "bomb_interval": 0.200000003,
+      "bomb_prediction_interval": 0.0500000007,
+      "cap": 8,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Bomb_Smoke"
+        },
+        {
+          "type": "explosion",
+          "name": "OrbitalSmoke"
+        }
+      ]
     },
     "EXO-45 Patriot Exosuit": {
       "ref": "DropoffCombatWalker",
@@ -15480,6 +16422,20 @@
           }
         }
       ]
+    },
+    "Eagle Rearm": {
+      "ref": "EagleRearm",
+      "name": "Eagle Rearm",
+      "stratcode": [
+        "Up",
+        "Up",
+        "Left",
+        "Up",
+        "Right"
+      ],
+      "calltime": 0,
+      "cooldown": 150,
+      "attacks": []
     },
     "NUX-223 Hellbomb": {
       "ref": "DropoffHellbomb",

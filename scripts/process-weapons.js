@@ -547,12 +547,14 @@ const allWeapons = [
   ...setup.weapon,
   ...setup.stratagem,
 ]
+console.log(allWeapons)
 const weaponOrder = []
 let i = 0
 for(const wpn of allWeapons) {
+  const name = wpn.fullname || wpn.name
   const reg = wikiRegister.weapon
   const type = wpn.type
-  refRegister[atkKey('weapon', wpn.fullname)] = wpn
+  refRegister[atkKey('weapon', name)] = wpn
   const attacks = (wpn.attack || []).flatMap(atk => {
     const key = atkKey(atk.medium, atk.ref)
     const obj = refRegister[key]
@@ -568,7 +570,7 @@ for(const wpn of allWeapons) {
     weaponOrder[i++] = wpn.fullname
   }
   wpn.attack = attacks
-  reg[wpn.fullname] = {
+  reg[name] = {
     ...wpn,
     category,
     fullname: void 0,
