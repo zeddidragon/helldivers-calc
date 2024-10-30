@@ -331,9 +331,29 @@ setup.stratagem = setup.stratagem
     return obj
   })
 
+const stratWeapons = {}
+for(const [ref, strat] of Object.entries(data.stratagem)) {
+  const payload = shalzuth[strat.payload[0]]
+  if(!payload?.racked) { continue }
+  const racked = payload.racked
+    .map(id => shalzuth[id])
+    .filter(v => v)
+  if(!racked.length) {
+    continue
+  }
+  if(racked[0].key) {
+    stratWeapons[racked[0].key] = {
+      ref,
+      strat,
+      payload,
+      racked,
+    }
+  }
+}
+
 let dbgCondition = false
 const keyed = {}
-for(const wpn of [...setup.weapon]) {
+for(const wpn of setup.weapon) {
   const name = wpn.name || wpn.fullname
   let matched
   if(wpn.entity) {
@@ -366,6 +386,25 @@ for(const wpn of [...setup.weapon]) {
   if(dbgCondition) {
     console.log(name, matched, wpn)
     dbgCondition = false
+  }
+
+  if(stratWeapons[name]) {
+    const {
+      ref,
+      strat,
+      racked,
+    } = stratWeapons[name]
+    Object.assign(wpn, {
+      ref,
+    }, strat, wpn)
+    delete wpn.payload
+    delete wpn.weaponid
+    wpn.category = 'SUP'
+    racked.forEach(rack => {
+      shalzuthSchema.forEach(entry => {
+        applySchema(wpn, entry, rack)
+      })
+    })
   }
 
   // Remove/constrain some garbage data
@@ -465,9 +504,6 @@ function unrollAttack(attack) {
     count,
   } = attack
   const obj = wikiRegister[type][name]
-  if(obj.shrapnel) {
-    console.log(obj)
-  }
   if(obj?.shrapnel && obj?.projectileid) {
     const projectile = wikiRegister.projectile[obj.projectileid]
     unrolled.push(...unrollAttack({

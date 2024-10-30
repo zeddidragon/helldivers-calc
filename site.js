@@ -693,7 +693,12 @@ async function loadData() {
     l: 4,
     Left: 4,
   }
-  locals.stratagems = data.stratagems.map((strat, i) => {
+  const strats = [
+    ...data.weapons.filter(wpn => wpn.stratcode),
+    ...data.stratagems,
+  ]
+  console.log(strats)
+  locals.stratagems = strats.map((strat, i) => {
     const { ref } = strat
     let shotdmg = 0
     let shotdmg2 = 0
@@ -750,7 +755,6 @@ async function loadData() {
     if(subobjects?.[0] && subobjects[0].type !== 'weapon') {
       mainAttack = subobjects.shift()
     }
-    console.log({ mainAttack })
     return {
       ...(mainAttack || {}),
       ...strat,

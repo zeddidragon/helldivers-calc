@@ -64,6 +64,11 @@ attachments = ["flashlight"]
 
 [[weapon]]
 category = "DMR"
+fullname = "R-2124 Constitution"
+source = "liberty-day"
+
+[[weapon]]
+category = "DMR"
 fullname = "R-63 Diligence"
 source = "hd-mobilize"
 recoil = 35
@@ -81,11 +86,6 @@ sourcepage = 7
 reload = 3
 reloadearly = 1.9
 scopes = [50, 100, 200]
-
-[[weapon]]
-category = "DMR"
-fullname = "R-2124 Constitution"
-source = "liberty-day"
 
 [[weapon]]
 category = "SMG"
@@ -372,39 +372,28 @@ entity = "12008625947668001407"
 category = "SUP"
 fullname = "M-105 Stalwart"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 5.8
 reloadearly = 4.4
-rpms = [700, 850, 1150]
 
 [[weapon]]
 category = "SUP"
 fullname = "MG-43 Machine Gun"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 5.0
 reloadearly = 4.2
-rpms = [630, 760, 900]
 
 [[weapon]]
 entity = "2401215835282261016"
 category = "SUP"
 fullname = "MG-206 Heavy Machine Gun"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 5.5
 reloadearly = 3.9
-rpms = [450, 600, 750]
 
 [[weapon]]
 category = "SUP"
 fullname = "ARC-3 Arc Thrower"
 source = "support"
-calltime = 3
-cooldown = 480
 charge = 1
 [[weapon.attack]]
 medium = "arc"
@@ -414,8 +403,6 @@ ref = "ArcThrower"
 category = "SUP"
 fullname = "FLAM-40 Flamethrower"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 3.9
 limit = 12.5
 tags = ["fire"]
@@ -428,15 +415,11 @@ category = "SUP"
 fullname = "TX-41 Sterilizer"
 source = "chemical-agents"
 sourcepage = 2
-calltime = 7.75
-cooldown = 480
 
 [[weapon]]
 category = "SUP"
 fullname = "APW-1 Anti-Materiel Rifle"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 3.2
 reloadearly = 2.6
 scopes = [50, 100, 200]
@@ -445,8 +428,6 @@ scopes = [50, 100, 200]
 category = "SUP"
 fullname = "GL-21 Grenade Launcher"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 3.5
 reloadearly = 3
 
@@ -454,8 +435,6 @@ reloadearly = 3
 category = "SUP"
 fullname = "AC-8 Autocannon"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 5.2
 reloadearly = 1.7
 clips = 10
@@ -466,8 +445,6 @@ clipsize = 5
 category = "SUP"
 fullname = "RS-422 Railgun"
 source = "support"
-calltime = 3
-cooldown = 480
 chargeearly = 0.5
 charge = 3
 chargefactor = 1.5
@@ -477,8 +454,6 @@ reload = 1.3
 category = "SUP"
 fullname = "LAS-98 Laser Cannon"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 3.6
 reloadearly = 5
 tags = ["laser"]
@@ -487,32 +462,24 @@ tags = ["laser"]
 category = "SUP"
 fullname = "LAS-99 Quasar Cannon"
 source = "support"
-calltime = 3
-cooldown = 480
 charge = 3.1
 
 [[weapon]]
 category = "SUP"
 fullname = "EAT-17 Expendable Anti-Tank"
 source = "support"
-calltime = 3
-cooldown = 70
 rounds = 0
 
 [[weapon]]
 category = "SUP"
 fullname = "MLS-4X Commando"
 source = "support"
-calltime = 3
-cooldown = 120
 rounds = 0
 
 [[weapon]]
 category = "SUP"
 fullname = "GR-8 Recoilless Rifle"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 6.0
 rounds = 5
 roundstart = 5
@@ -521,8 +488,6 @@ roundstart = 5
 category = "SUP"
 fullname = "FAF-14 Spear"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 5
 rounds = 3
 roundstart = 3
@@ -531,8 +496,6 @@ roundstart = 3
 category = "SUP"
 fullname = "RL-77 Airburst Rocket Launcher"
 source = "support"
-calltime = 3
-cooldown = 480
 reload = 6.7
 rounds = 5
 roundstart = 5
@@ -709,8 +672,6 @@ ref = "DPS_Gas"
 [[stratagem]]
 category = "Backpack"
 fullname = "B-1 Supply Pack"
-health = 400
-armor = 4
 cap = 4
 
 [[stratagem]]

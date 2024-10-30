@@ -11742,6 +11742,34 @@
         }
       ]
     },
+    "R-2124 Constitution": {
+      "cap": 5,
+      "capplus": 1,
+      "category": "Marksman Rifle",
+      "ergonomics": 65,
+      "modes": [
+        "Single"
+      ],
+      "recoilxy": {
+        "x": 25,
+        "y": 25
+      },
+      "rounds": 99,
+      "roundstart": 60,
+      "roundsupply": 99,
+      "rpm": 60,
+      "source": "liberty-day",
+      "spreadxy": {
+        "x": 0.1,
+        "y": 0.1
+      },
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Rifle_Constitution"
+        }
+      ]
+    },
     "R-63 Diligence": {
       "cap": 20,
       "capplus": 1,
@@ -11813,34 +11841,6 @@
         {
           "type": "projectile",
           "name": "Rifle_9x70mm_hv"
-        }
-      ]
-    },
-    "R-2124 Constitution": {
-      "cap": 5,
-      "capplus": 1,
-      "category": "Marksman Rifle",
-      "ergonomics": 65,
-      "modes": [
-        "Single"
-      ],
-      "recoilxy": {
-        "x": 25,
-        "y": 25
-      },
-      "rounds": 99,
-      "roundstart": 60,
-      "roundsupply": 99,
-      "rpm": 60,
-      "source": "liberty-day",
-      "spreadxy": {
-        "x": 0.1,
-        "y": 0.1
-      },
-      "attacks": [
-        {
-          "type": "projectile",
-          "name": "Rifle_Constitution"
         }
       ]
     },
@@ -12843,16 +12843,18 @@
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
-      "ergonomics": 34,
+      "ergonomics": 28,
       "mags": 3,
       "magstart": 2,
       "modes": [
         "Automatic"
       ],
+      "name": "Stalwart",
       "recoilxy": {
         "x": 15,
         "y": 15
       },
+      "ref": "LightMachinegun",
       "reload": 5.8,
       "reloadearly": 4.4,
       "rpm": 1150,
@@ -12866,6 +12868,14 @@
         "x": 6,
         "y": 6
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Up",
+        "Left"
+      ],
       "supply": 2,
       "attacks": [
         {
@@ -12880,16 +12890,18 @@
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
-      "ergonomics": 10,
+      "ergonomics": 5,
       "mags": 3,
       "magstart": 2,
       "modes": [
         "Automatic"
       ],
+      "name": "Machine Gun",
       "recoilxy": {
         "x": 20,
         "y": 20
       },
+      "ref": "Machinegun",
       "reload": 5,
       "reloadearly": 4.2,
       "rpm": 900,
@@ -12903,6 +12915,13 @@
         "x": 4,
         "y": 4
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Right"
+      ],
       "supply": 2,
       "attacks": [
         {
@@ -12917,16 +12936,18 @@
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
-      "ergonomics": -1,
+      "ergonomics": -2,
       "mags": 2,
       "magstart": 1,
       "modes": [
         "Automatic"
       ],
+      "name": "Heavy Machine Gun",
       "recoilxy": {
         "x": 50,
         "y": 80
       },
+      "ref": "Heavy_Mg",
       "reload": 5.5,
       "reloadearly": 3.9,
       "rpm": 750,
@@ -12940,6 +12961,13 @@
         "x": 5,
         "y": 5
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Down",
+        "Down"
+      ],
       "supply": 2,
       "attacks": [
         {
@@ -12958,15 +12986,25 @@
         "ChargeWithSafetyOn",
         "ChargeWithSafetyOff"
       ],
+      "name": "Arc Thrower",
       "recoilxy": {
         "x": 40,
         "y": 40
       },
+      "ref": "ArcThrower",
       "source": "support",
       "spreadxy": {
         "x": 10,
         "y": 10
       },
+      "stratcode": [
+        "Down",
+        "Right",
+        "Down",
+        "Up",
+        "Left",
+        "Left"
+      ],
       "attacks": [
         {
           "type": "arc",
@@ -12987,16 +13025,25 @@
       "modes": [
         "Automatic"
       ],
+      "name": "Flamethrower",
       "recoilxy": {
         "x": 0,
         "y": 0
       },
+      "ref": "Flamethrower",
       "reload": 3.9,
       "source": "support",
       "spreadxy": {
         "x": 10,
         "y": 10
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Down",
+        "Up"
+      ],
       "supply": 4,
       "tags": [
         "fire"
@@ -13010,7 +13057,7 @@
     },
     "TX-41 Sterilizer": {
       "box": 3,
-      "calltime": 7.75,
+      "calltime": 3,
       "cap": 100,
       "category": "Support Weapon",
       "cooldown": 480,
@@ -13020,16 +13067,25 @@
       "modes": [
         "Automatic"
       ],
+      "name": "Sterilizer",
       "recoilxy": {
         "x": 2.5,
         "y": 10
       },
+      "ref": "Chem_Gun",
       "source": "chemical-agents",
       "sourcepage": 2,
       "spreadxy": {
         "x": 10,
         "y": 10
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Down",
+        "Left"
+      ],
       "supply": 4,
       "attacks": []
     },
@@ -13039,16 +13095,18 @@
       "capplus": 1,
       "category": "Support Weapon",
       "cooldown": 480,
-      "ergonomics": 21,
+      "ergonomics": 7,
       "mags": 6,
       "magstart": 4,
       "modes": [
         "Single"
       ],
+      "name": "Anti-Materiel Rifle",
       "recoilxy": {
         "x": 20,
         "y": 300
       },
+      "ref": "Sniper",
       "reload": 3.2,
       "reloadearly": 2.6,
       "rpm": 400,
@@ -13062,6 +13120,13 @@
         "x": 0.1,
         "y": 0.1
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Right",
+        "Up",
+        "Down"
+      ],
       "supply": 3,
       "attacks": [
         {
@@ -13083,10 +13148,12 @@
         "Automatic",
         "Single"
       ],
+      "name": "Grenade Launcher",
       "recoilxy": {
         "x": 170,
         "y": 175
       },
+      "ref": "GrenadeLauncher",
       "reload": 3.5,
       "reloadearly": 3,
       "rpm": 160,
@@ -13095,6 +13162,13 @@
         "x": 20,
         "y": 20
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Left",
+        "Down"
+      ],
       "supply": 3,
       "attacks": [
         {
@@ -13121,10 +13195,12 @@
         "Single",
         "Automatic"
       ],
+      "name": "Autocannon",
       "recoilxy": {
         "x": 200,
         "y": 450
       },
+      "ref": "AutomaticCannon",
       "reload": 5.2,
       "reloadearly": 1.7,
       "rpm": 190,
@@ -13133,6 +13209,14 @@
         "x": 2,
         "y": 2
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Up",
+        "Right"
+      ],
       "attacks": [
         {
           "type": "projectile",
@@ -13159,10 +13243,12 @@
         "ChargeWithSafetyOn",
         "ChargeWithSafetyOff"
       ],
+      "name": "Railgun",
       "recoilxy": {
         "x": 10,
         "y": 25
       },
+      "ref": "Railgun",
       "reload": 1.3,
       "rpm": 60,
       "source": "support",
@@ -13170,6 +13256,14 @@
         "x": 10,
         "y": 10
       },
+      "stratcode": [
+        "Down",
+        "Right",
+        "Down",
+        "Up",
+        "Left",
+        "Right"
+      ],
       "supply": 10,
       "attacks": [
         {
@@ -13191,10 +13285,12 @@
       "modes": [
         "Automatic"
       ],
+      "name": "Laser Cannon",
       "recoilxy": {
         "x": 0,
         "y": 0
       },
+      "ref": "LaserCannon",
       "reload": 3.6,
       "reloadearly": 5,
       "source": "support",
@@ -13202,6 +13298,13 @@
         "x": 10,
         "y": 10
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Down",
+        "Up",
+        "Left"
+      ],
       "supply": 1,
       "tags": [
         "laser"
@@ -13219,10 +13322,12 @@
       "modes": [
         "Single"
       ],
+      "name": "Quasar Cannon",
       "recoilxy": {
         "x": 40,
         "y": 40
       },
+      "ref": "LaserPulseCannon",
       "rpm": 10,
       "rpms": [
         10,
@@ -13233,6 +13338,13 @@
         "x": 4,
         "y": 4
       },
+      "stratcode": [
+        "Down",
+        "Down",
+        "Up",
+        "Left",
+        "Right"
+      ],
       "supply": 6,
       "attacks": [
         {
@@ -13246,7 +13358,7 @@
       ]
     },
     "EAT-17 Expendable Anti-Tank": {
-      "calltime": 3,
+      "calltime": 2,
       "cap": 1,
       "category": "Support Weapon",
       "cooldown": 70,
@@ -13256,10 +13368,12 @@
       "modes": [
         "Single"
       ],
+      "name": "Expendable Anti-Tank",
       "recoilxy": {
         "x": 2.5,
         "y": 10
       },
+      "ref": "LATOneshot",
       "rounds": 0,
       "rpm": 600,
       "source": "support",
@@ -13267,6 +13381,13 @@
         "x": 4,
         "y": 4
       },
+      "stratcode": [
+        "Down",
+        "Down",
+        "Left",
+        "Up",
+        "Right"
+      ],
       "attacks": [
         {
           "type": "projectile",
@@ -13289,10 +13410,12 @@
       "modes": [
         "Single"
       ],
+      "name": "Commando",
       "recoilxy": {
         "x": 2.5,
         "y": 10
       },
+      "ref": "LaserGuidedMissileLauncher",
       "rounds": 0,
       "rpm": 240,
       "source": "support",
@@ -13300,6 +13423,13 @@
         "x": 0,
         "y": 0
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Up",
+        "Down",
+        "Right"
+      ],
       "attacks": [
         {
           "type": "projectile",
@@ -13323,10 +13453,12 @@
       "modes": [
         "Single"
       ],
+      "name": "Recoilless Rifle",
       "recoilxy": {
         "x": 40,
         "y": 40
       },
+      "ref": "Recoilless",
       "reload": 6,
       "rounds": 5,
       "roundstart": 5,
@@ -13336,6 +13468,13 @@
         "x": 4,
         "y": 4
       },
+      "stratcode": [
+        "Down",
+        "Left",
+        "Right",
+        "Right",
+        "Left"
+      ],
       "attacks": [
         {
           "type": "projectile",
@@ -13359,10 +13498,12 @@
       "modes": [
         "Single"
       ],
+      "name": "Spear",
       "recoilxy": {
         "x": 2.5,
         "y": 10
       },
+      "ref": "FafMissileLauncher",
       "reload": 5,
       "rounds": 3,
       "roundstart": 3,
@@ -13372,6 +13513,13 @@
         "x": 0,
         "y": 0
       },
+      "stratcode": [
+        "Down",
+        "Down",
+        "Up",
+        "Down",
+        "Down"
+      ],
       "attacks": [
         {
           "type": "projectile",
@@ -13395,10 +13543,12 @@
       "modes": [
         "Single"
       ],
+      "name": "Airburst Rocket Launcher",
       "recoilxy": {
         "x": 40,
         "y": 40
       },
+      "ref": "Air_Burst_Rocket_Launcher",
       "reload": 6.7,
       "rounds": 5,
       "roundstart": 5,
@@ -13408,6 +13558,13 @@
         "x": 4,
         "y": 4
       },
+      "stratcode": [
+        "Down",
+        "Up",
+        "Up",
+        "Left",
+        "Right"
+      ],
       "attacks": [
         {
           "type": "projectile",
@@ -13714,10 +13871,10 @@
       ],
       "calltime": 5,
       "cooldown": 480,
-      "health": 200,
-      "armor": 2,
       "cap": 4,
       "remove_time": 2.5,
+      "health": 200,
+      "armor": 2,
       "type": "LoadoutItemType_Backpack",
       "prefix": "B-1",
       "capacity": 4,
@@ -15447,9 +15604,9 @@
     "AR-23A Liberator Carbine",
     "AR-61 Tenderizer",
     "BR-14 Adjudicator",
+    "R-2124 Constitution",
     "R-63 Diligence",
     "R-63CS Diligence Counter Sniper",
-    "R-2124 Constitution",
     "MP-98 Knight",
     "SMG-37 Defender",
     "SMG-72 Pummeler",
