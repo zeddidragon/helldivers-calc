@@ -275,7 +275,6 @@ fullname = "PLAS-101 Purifier"
 source = "polar-pat"
 recoil = 20
 sourcepage = 3
-charge = 1.3
 reload = 2.5
 
 [[weapon]]
@@ -358,6 +357,12 @@ reloadx = 4.8
 reloadxnum = 5
 roundattachments = ["flashlight"]
 tags = ["round", "1h"]
+
+[[weapon]]
+category = "HG"
+fullname = "PLAS-15 Loyalist"
+source = "truth-enforcers"
+sourcepage = 3
 
 [[weapon]]
 category = "HG"
@@ -449,9 +454,6 @@ clipsize = 5
 category = "SUP"
 fullname = "RS-422 Railgun"
 source = "support"
-chargeearly = 0.5
-charge = 3
-chargefactor = 1.5
 reload = 1.3
 
 [[weapon]]

@@ -254,40 +254,26 @@
     "type": "LoadoutItemType_PrimaryWeapon",
     "name": "Purifier",
     "prefix": "PLAS-101",
-    "charge_state_settings": [
+    "charges": [
       {
-        "charge_time": 0.00999999978,
-        "projectile_type": "ProjectileType_Plasma_Bolt_Charge_Medium",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 0.01,
+        "projectile_type": "Plasma_Bolt_Charge_Medium",
+        "speed": 1,
+        "damage": 0.5,
+        "penetration": 1,
+        "arcs": 0.7,
+        "chains": 0.8
       },
       {
-        "charge_time": 1,
-        "projectile_type": "ProjectileType_Plasma_Rifle_Charge",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
-      },
-      {
-        "charge_time": 1,
-        "projectile_type": "ProjectileType_Plasma_Rifle_Charge",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 1,
+        "projectile_type": "Plasma_Rifle_Charge",
+        "speed": 1,
+        "damage": 1,
+        "penetration": 1,
+        "arcs": 2.3,
+        "chains": 1.5
       }
     ],
-    "projectile_multipliers": {
-      "speed_multiplier_min": 1,
-      "speed_multiplier_overcharge": 1,
-      "damage_multiplier_min": 0.5,
-      "damage_multiplier_overcharge": 1,
-      "penetration_multiplier_min": 1,
-      "penetration_multiplier_overcharge": 1,
-      "distance_multiplier_min": 0.699999988,
-      "distance_multiplier_overcharge": 1.39999998,
-      "extra_arc_splits_min": 0.699999988,
-      "extra_arc_splits_overcharge": 2.29999995,
-      "extra_arc_chains_min": 0.800000012,
-      "extra_arc_chains_overcharge": 1.5
-    },
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 20,
@@ -5136,40 +5122,32 @@
     "type": "LoadoutItemType_SupportWeapon",
     "name": "Arc Thrower",
     "prefix": "ARC-3",
-    "charge_state_settings": [
+    "charges": [
       {
-        "charge_time": 1,
-        "projectile_type": "ProjectileType_None",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 1,
+        "speed": 0.7,
+        "damage": 1,
+        "penetration": 1,
+        "arcs": 0,
+        "chains": 0
       },
       {
-        "charge_time": 1.10000002,
-        "projectile_type": "ProjectileType_None",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 1.1,
+        "speed": 1.05,
+        "damage": 1,
+        "penetration": 1,
+        "arcs": 0,
+        "chains": 0
       },
       {
-        "charge_time": 1.20000005,
-        "projectile_type": "ProjectileType_None",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 1.2,
+        "speed": 1.4,
+        "damage": 1,
+        "penetration": 1,
+        "arcs": 0,
+        "chains": 0
       }
     ],
-    "projectile_multipliers": {
-      "speed_multiplier_min": 0.699999988,
-      "speed_multiplier_overcharge": 1.39999998,
-      "damage_multiplier_min": 1,
-      "damage_multiplier_overcharge": 1,
-      "penetration_multiplier_min": 1,
-      "penetration_multiplier_overcharge": 1,
-      "distance_multiplier_min": 1,
-      "distance_multiplier_overcharge": 1,
-      "extra_arc_splits_min": 0,
-      "extra_arc_splits_overcharge": 0,
-      "extra_arc_chains_min": 0,
-      "extra_arc_chains_overcharge": 0
-    },
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 40,
@@ -5580,40 +5558,32 @@
     "magazines_refill": 6,
     "magazines_max": 0,
     "remove_time": 2.5,
-    "charge_state_settings": [
+    "charges": [
       {
-        "charge_time": 1,
-        "projectile_type": "ProjectileType_None",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 1,
+        "speed": 0.7,
+        "damage": 1,
+        "penetration": 0.7,
+        "arcs": 0.7,
+        "chains": 0.8
       },
       {
-        "charge_time": 2,
-        "projectile_type": "ProjectileType_None",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 2,
+        "speed": 0.85,
+        "damage": 1.6,
+        "penetration": 0.85,
+        "arcs": 1.5,
+        "chains": 1.15
       },
       {
-        "charge_time": 3,
-        "projectile_type": "ProjectileType_None",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 3,
+        "speed": 1,
+        "damage": 2.2,
+        "penetration": 1,
+        "arcs": 2.3,
+        "chains": 1.5
       }
     ],
-    "projectile_multipliers": {
-      "speed_multiplier_min": 0.699999988,
-      "speed_multiplier_overcharge": 1,
-      "damage_multiplier_min": 1,
-      "damage_multiplier_overcharge": 2.20000005,
-      "penetration_multiplier_min": 0.699999988,
-      "penetration_multiplier_overcharge": 1,
-      "distance_multiplier_min": 0.699999988,
-      "distance_multiplier_overcharge": 1.39999998,
-      "extra_arc_splits_min": 0.699999988,
-      "extra_arc_splits_overcharge": 2.29999995,
-      "extra_arc_chains_min": 0.800000012,
-      "extra_arc_chains_overcharge": 1.5
-    },
     "health": 1000,
     "armor": 2,
     "aim_drag": 0.5,
@@ -7994,40 +7964,35 @@
     "type": "LoadoutItemType_SidearmWeapon",
     "name": "Loyalist",
     "prefix": "PLAS-15",
-    "charge_state_settings": [
+    "charges": [
       {
-        "charge_time": 0.00999999978,
-        "projectile_type": "ProjectileType_Plasma_Pistol_Charge_Medium",
-        "muzzle_flash_effect": "10055084526880791407",
-        "fire_single_audio": 0
+        "time": 0.01,
+        "projectile_type": "Plasma_Pistol_Charge_Medium",
+        "speed": 1,
+        "damage": 0.5,
+        "penetration": 0.55,
+        "arcs": 0.7,
+        "chains": 0.8
       },
       {
-        "charge_time": 1,
-        "projectile_type": "ProjectileType_Plasma_Pistol_Charge",
-        "muzzle_flash_effect": "8143194268241733506",
-        "fire_single_audio": 0
+        "time": 1,
+        "projectile_type": "Plasma_Pistol_Charge",
+        "speed": 1,
+        "damage": 0.75,
+        "penetration": 0.78,
+        "arcs": 1.5,
+        "chains": 1.15
       },
       {
-        "charge_time": 3,
-        "projectile_type": "ProjectileType_Plasma_Pistol_Charge",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 3,
+        "projectile_type": "Plasma_Pistol_Charge",
+        "speed": 1,
+        "damage": 1,
+        "penetration": 1,
+        "arcs": 2.3,
+        "chains": 1.5
       }
     ],
-    "projectile_multipliers": {
-      "speed_multiplier_min": 1,
-      "speed_multiplier_overcharge": 1,
-      "damage_multiplier_min": 0.5,
-      "damage_multiplier_overcharge": 1,
-      "penetration_multiplier_min": 0.550000012,
-      "penetration_multiplier_overcharge": 1,
-      "distance_multiplier_min": 0.699999988,
-      "distance_multiplier_overcharge": 1.39999998,
-      "extra_arc_splits_min": 0.699999988,
-      "extra_arc_splits_overcharge": 2.29999995,
-      "extra_arc_chains_min": 0.800000012,
-      "extra_arc_chains_overcharge": 1.5
-    },
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 2.5,
@@ -9342,40 +9307,32 @@
     "name": "Railgun",
     "prefix": "RS-422",
     "reload": 1.25,
-    "charge_state_settings": [
+    "charges": [
       {
-        "charge_time": 0.449999988,
-        "projectile_type": "ProjectileType_None",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 0.45,
+        "speed": 0.7,
+        "damage": 1,
+        "penetration": 1,
+        "arcs": 0.7,
+        "chains": 0.8
       },
       {
-        "charge_time": 0.5,
-        "projectile_type": "ProjectileType_None",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 0.5,
+        "speed": 0.85,
+        "damage": 1.75,
+        "penetration": 1,
+        "arcs": 1.5,
+        "chains": 1.15
       },
       {
-        "charge_time": 3,
-        "projectile_type": "ProjectileType_None",
-        "muzzle_flash_effect": 0,
-        "fire_single_audio": 0
+        "time": 3,
+        "speed": 1,
+        "damage": 2.5,
+        "penetration": 1,
+        "arcs": 2.3,
+        "chains": 1.5
       }
     ],
-    "projectile_multipliers": {
-      "speed_multiplier_min": 0.699999988,
-      "speed_multiplier_overcharge": 1,
-      "damage_multiplier_min": 1,
-      "damage_multiplier_overcharge": 2.5,
-      "penetration_multiplier_min": 1,
-      "penetration_multiplier_overcharge": 1,
-      "distance_multiplier_min": 0.699999988,
-      "distance_multiplier_overcharge": 1.39999998,
-      "extra_arc_splits_min": 0.699999988,
-      "extra_arc_splits_overcharge": 2.29999995,
-      "extra_arc_chains_min": 0.800000012,
-      "extra_arc_chains_overcharge": 1.5
-    },
     "recoil_info": {
       "drift": {
         "horizontal_recoil": 10,

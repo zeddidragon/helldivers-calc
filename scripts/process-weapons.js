@@ -66,6 +66,7 @@ const shalzuthSchema = [
       wpn.cap = cap.x + cap.y
     }
   }},
+  { source: 'charges', dest: 'charges' },
   { source: 'duration', dest: 'reload' },
   { source: 'magazines_max', dest: 'mags' },
   { source: 'magazines', dest: 'magstart' },
@@ -564,6 +565,15 @@ for(const wpn of allWeapons) {
   const reg = wikiRegister.weapon
   const type = wpn.type
   refRegister[atkKey('weapon', name)] = wpn
+  for(const charge of (wpn.charges || [])) {
+    if(charge.projectile_type) {
+      charge.attack = unrollAttack({
+        type: 'projectile',
+        name: charge.projectile_type
+      })
+      delete charge.projectile_type
+    }
+  }
   const attacks = (wpn.attack || []).flatMap(atk => {
     const {
       medium: type,

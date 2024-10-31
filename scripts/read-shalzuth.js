@@ -369,10 +369,32 @@ const handlers = {
   LoadoutEntryComponent: copy([
     'type',
   ]),
-  WeaponChargeComponent: copy([
-    'charge_state_settings',
-    'projectile_multipliers',
-  ]),
+  WeaponChargeComponent(wpn, component) {
+    const multis = component.projectile_multipliers
+    const length = component.charge_state_settings.length - 1
+    const minDmg = multis.damage_multiplier_min
+    const maxDmg = multis.damage_multiplier_overcharge
+    function tween(prop, step, length) {
+      const min = multis[`${prop}_min`]
+      const max = multis[`${prop}_overcharge`]
+      return +(min + (max - min) * step / length).toFixed(2)
+    }
+    wpn.charges = component.charge_state_settings
+      .map((charge, i) => {
+        return {
+          time: +charge.charge_time.toFixed(2),
+          projectile_type: refs.projectile(charge.projectile_type),
+          speed: tween('speed_multiplier', i, length),
+          damage: tween('damage_multiplier', i, length),
+          penetration: tween('penetration_multiplier', i, length),
+          arcs: tween('extra_arc_splits', i, length),
+          chains: tween('extra_arc_chains', i, length),
+        }
+      })
+      .filter((charge, i, arr) => {
+        return charge.time !== arr[i + 1]?.time
+      })
+  },
   AbilityDamageZoneComponent: null,
   VisibilityComponent: null,
   WeaponWindUpComponent: copy([

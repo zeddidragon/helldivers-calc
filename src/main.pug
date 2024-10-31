@@ -555,7 +555,8 @@ mixin arcsStubRow(arc, opts = {})
   if showIds
     td.arc.id= id(arc)
   td.arc.label(
-    title=t('table.td.arc', 'range', 'Arc range (m)')
+    title=t('table.td.arc', 'range', 'Arc range (m)'),
+    colspan=2
   )= t('table.td.arc.label', 'range', 'Arc')
   td.arc.velocity.stub= arc.velocity
   td.arc.range.stub= arc.range

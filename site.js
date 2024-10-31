@@ -213,8 +213,8 @@ function effectiveRpm(wpn) {
   return 0
 }
 
-function charged(wpn, val) {
-  return Math.floor(val * wpn.chargefactor)
+function charged(charge, val) {
+  return Math.floor(val * charge)
 }
 
 function hasTag(wpn, tag) {
@@ -493,7 +493,26 @@ async function loadData() {
       .then(res => res.json())
       .catch(() => ({}))
   }
-  locals.weapons = data.weapons.map((wpn, idx) => {
+  let weapons = data.weapons
+  weapons = weapons.flatMap(wpn => {
+    if(!wpn.charges) {
+      return []
+    }
+    return wpn.charges.map((charge, i) => {
+      const dmg = charge.damage
+      return {
+        ...wpn,
+        parent: i ? wpn : null,
+        name: i ? t(`wpnname.charge${i + 2}`, wpn.fullname) : wpn.name,
+        charge: charge.time,
+        damagefactor: charge.damage,
+        speedfactor: charge.speed,
+        penetrationfactor: charge.penetration,
+        attack: charge.attack || wpn.attack,
+      }
+    })
+  })
+  weapons = weapons.map((wpn, idx) => {
     const [, code, name] = /^(\w+-\d+\w*) (.*)$/.exec(wpn.fullname) || []
     let shotdmg = 0
     let shotdmg2 = 0
@@ -501,10 +520,32 @@ async function loadData() {
     let prev = wpn
     let subobjects = wpn.attack
       ?.map(({ type, name: ref, count }) => {
-        const obj = locals.byRef[type][ref] || {}
+        let obj = locals.byRef[type][ref] || {}
         const parent = prev
         prev = obj
-        const damage = rel(obj, 'damage')
+        let damage = rel(obj, 'damage')
+        if(wpn.damagefactor && wpn.damagefactor !== 1) {
+          damage = {
+            ...damage,
+            dmg: Math.floor(damage.dmg * wpn.damagefactor),
+            dmg2: Math.floor(damage.dmg2 * wpn.damagefactor),
+          }
+        }
+        if(wpn.penetrationfactor && wpn.penetrationfactor !== 1) {
+          damage = {
+            ...damage,
+            ap1: Math.floor(damage.ap1 * wpn.penetrationfactor),
+            ap2: Math.floor(damage.ap2 * wpn.penetrationfactor),
+            ap3: Math.floor(damage.ap3 * wpn.penetrationfactor),
+            ap4: Math.floor(damage.ap4 * wpn.penetrationfactor),
+          }
+        }
+        if(wpn.speedfactor && wpn.speedfactor !== 1 && obj.velocity) {
+          obj = {
+            ...obj,
+            velocity: +(obj.velocity * wpn.speedfactor).toFixed(2),
+          }
+        }
         const n = (count || 1) * (obj.pellets || 1)
         if(type === 'explosion') {
           shotdmgx += n * (damage?.dmg || 0)
@@ -540,29 +581,6 @@ async function loadData() {
     }
     if(wpn.clipsupply && !wpn.clipsbox) {
       wpn.clipsbox = Math.max(Math.floor(wpn.clipsupply * 0.5), 1)
-    }
-
-    if(false && wpn.chargefactor && wpn.chargeearly) {
-      subobjects ||= []
-      subobjects.push({
-        ...wpn,
-        parent: wpn,
-        name: t('wpnname.overcharge', wpn.fullname, `${name} (Overcharged)`),
-        charge: wpn.charge,
-        chargeearly: void 0,
-        damage: {
-          ...damage,
-          dmg: charged(wpn, damage.dmg),
-          dmg2: charged(wpn, damage.dmg2),
-          ap1: charged(wpn, damage.ap1),
-          ap2: charged(wpn, damage.ap2),
-          ap3: charged(wpn, damage.ap3),
-          ap4: charged(wpn, damage.ap4),
-          stun: charged(wpn, damage.stun),
-        },
-      })
-      wpn.charge = wpn.chargeearly
-      delete wpn.chargeearly
     }
 
     let dps
@@ -670,6 +688,7 @@ async function loadData() {
       subobjects,
     }
   })
+  locals.weapons = weapons
   locals.byRef.weapon = register(locals.weapons, 'name')
   // window.byRef = byRef
 

@@ -596,7 +596,32 @@
       ],
       "cap": 15,
       "category": "NRG",
-      "charge": 1.3,
+      "charges": [
+        {
+          "time": 0.01,
+          "speed": 1,
+          "damage": 0.5,
+          "penetration": 1,
+          "arcs": 0.7,
+          "chains": 0.8,
+          "attack": [
+            {"type": "projectile", "name": "Plasma_Bolt_Charge_Medium"},
+            {"type": "explosion", "name": "Plasma_Rifle_Charge_Medium"}
+          ]
+        },
+        {
+          "time": 1,
+          "speed": 1,
+          "damage": 1,
+          "penetration": 1,
+          "arcs": 2.3,
+          "chains": 1.5,
+          "attack": [
+            {"type": "projectile", "name": "Plasma_Rifle_Charge"},
+            {"type": "explosion", "name": "Plasma_Rifle_Charge"}
+          ]
+        }
+      ],
       "ergonomics": 55,
       "fullname": "PLAS-101 Purifier",
       "mags": 6,
@@ -777,6 +802,63 @@
       "tags": ["round", "1h"]
     },
     {
+      "attack": [
+        {"type": "projectile", "name": "Plasma_Bolt_Small"},
+        {"type": "explosion", "name": "Plasma_Bolt_Small"}
+      ],
+      "cap": 7,
+      "category": "HG",
+      "charges": [
+        {
+          "time": 0.01,
+          "speed": 1,
+          "damage": 0.5,
+          "penetration": 0.55,
+          "arcs": 0.7,
+          "chains": 0.8,
+          "attack": [
+            {"type": "projectile", "name": "Plasma_Pistol_Charge_Medium"},
+            {"type": "explosion", "name": "Plasma_Pistol_Charge_Medium"}
+          ]
+        },
+        {
+          "time": 1,
+          "speed": 1,
+          "damage": 0.75,
+          "penetration": 0.78,
+          "arcs": 1.5,
+          "chains": 1.15,
+          "attack": [
+            {"type": "projectile", "name": "Plasma_Pistol_Charge"},
+            {"type": "explosion", "name": "Plasma_Pistol_Charge"}
+          ]
+        },
+        {
+          "time": 3,
+          "speed": 1,
+          "damage": 1,
+          "penetration": 1,
+          "arcs": 2.3,
+          "chains": 1.5,
+          "attack": [
+            {"type": "projectile", "name": "Plasma_Pistol_Charge"},
+            {"type": "explosion", "name": "Plasma_Pistol_Charge"}
+          ]
+        }
+      ],
+      "ergonomics": 95,
+      "fullname": "PLAS-15 Loyalist",
+      "mags": 4,
+      "magstart": 2,
+      "modes": ["ChargeWithSafetyOn"],
+      "recoilxy": {"x": 2.5, "y": 10},
+      "rpm": 1000,
+      "source": "truth-enforcers",
+      "sourcepage": 3,
+      "spreadxy": {"x": 25, "y": 25},
+      "supply": 4
+    },
+    {
       "box": 3,
       "cap": 30,
       "category": "HG",
@@ -885,6 +967,32 @@
       "calltime": 3,
       "category": "SUP",
       "charge": 1,
+      "charges": [
+        {
+          "time": 1,
+          "speed": 0.7,
+          "damage": 1,
+          "penetration": 1,
+          "arcs": 0,
+          "chains": 0
+        },
+        {
+          "time": 1.1,
+          "speed": 1.05,
+          "damage": 1,
+          "penetration": 1,
+          "arcs": 0,
+          "chains": 0
+        },
+        {
+          "time": 1.2,
+          "speed": 1.4,
+          "damage": 1,
+          "penetration": 1,
+          "arcs": 0,
+          "chains": 0
+        }
+      ],
       "cooldown": 480,
       "ergonomics": 50,
       "fullname": "ARC-3 Arc Thrower",
@@ -1021,9 +1129,32 @@
       "calltime": 3,
       "cap": 1,
       "category": "SUP",
-      "charge": 3,
-      "chargeearly": 0.5,
-      "chargefactor": 1.5,
+      "charges": [
+        {
+          "time": 0.45,
+          "speed": 0.7,
+          "damage": 1,
+          "penetration": 1,
+          "arcs": 0.7,
+          "chains": 0.8
+        },
+        {
+          "time": 0.5,
+          "speed": 0.85,
+          "damage": 1.75,
+          "penetration": 1,
+          "arcs": 1.5,
+          "chains": 1.15
+        },
+        {
+          "time": 3,
+          "speed": 1,
+          "damage": 2.5,
+          "penetration": 1,
+          "arcs": 2.3,
+          "chains": 1.5
+        }
+      ],
       "cooldown": 480,
       "ergonomics": 35,
       "fullname": "RS-422 Railgun",
