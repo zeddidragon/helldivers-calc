@@ -496,14 +496,14 @@ async function loadData() {
   let weapons = data.weapons
   weapons = weapons.flatMap(wpn => {
     if(!wpn.charges) {
-      return []
+      return [wpn]
     }
     return wpn.charges.map((charge, i) => {
       const dmg = charge.damage
       return {
         ...wpn,
         parent: i ? wpn : null,
-        name: i ? t(`wpnname.charge${i + 2}`, wpn.fullname) : wpn.name,
+        tname: i ? t(`wpnname.charge${i + 1}`, wpn.fullname) : wpn.name,
         charge: charge.time,
         damagefactor: charge.damage,
         speedfactor: charge.speed,
@@ -661,7 +661,7 @@ async function loadData() {
       ...(damage || {}),
       idx,
       ...wpn,
-      name: t('wpnname', wpn.fullname || wpn.name),
+      name: wpn.tname || t('wpnname', wpn.fullname || wpn.name),
       sourceidx: (data.sources.indexOf(wpn.source) + 1) || Infinity,
       shotdmg,
       dps: iff(dps, (dps + dpsx)),

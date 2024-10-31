@@ -227,6 +227,24 @@
       "tags": ["1h"]
     },
     {
+      "attack": [{"type": "projectile", "name": "SMG_Rhino"}],
+      "burst": 3,
+      "cap": 25,
+      "capplus": 1,
+      "category": "SMG",
+      "ergonomics": 47,
+      "fullname": "SMG-32 Reprimand",
+      "mags": 9,
+      "magstart": 5,
+      "modes": ["Automatic", "Single", "Burst"],
+      "recoilxy": {"x": 25, "y": 40},
+      "rpm": 490,
+      "source": "truth-enforcers",
+      "sourcepage": 2,
+      "spreadxy": {"x": 50, "y": 50},
+      "supply": 9
+    },
+    {
       "attachments": ["flashlight"],
       "attack": [{"type": "projectile", "name": "Pistol_12x25mm_fmj"}],
       "burst": 3,

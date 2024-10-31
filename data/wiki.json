@@ -137,6 +137,7 @@
       "stun": 5,
       "push": 5,
       "param1": 10,
+      "name": "Flamethrower Ripley",
       "element_name": "Fire",
       "status_name": "Fire"
     },
@@ -151,6 +152,7 @@
       "stun": 5,
       "push": 5,
       "param1": 5,
+      "name": "Flamer Pistol",
       "element_name": "Fire",
       "status_name": "Fire"
     },
@@ -166,6 +168,7 @@
       "push": 5,
       "param1": 0.5,
       "param2": 0.5,
+      "name": "Spray Chem Gun",
       "element_name": "Gas",
       "status_name": "Gas",
       "status_name2": "Gas Confusion"
@@ -182,6 +185,7 @@
       "push": 5,
       "param1": 0.5,
       "param2": 0.5,
+      "name": "Drone Chem Gun",
       "element_name": "Gas",
       "status_name": "Gas",
       "status_name2": "Gas Confusion"
@@ -330,7 +334,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 20,
-      "push": 10
+      "push": 10,
+      "name": "FLame Pistol Base"
     },
     "Projectile_Plasma_Bolt": {
       "dmg": 100,
@@ -353,7 +358,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 20,
-      "push": 10
+      "push": 10,
+      "name": "Plasma Punisher"
     },
     "Projectile_Plasma_Pistol_Charge": {
       "dmg": 150,
@@ -364,7 +370,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 20,
-      "push": 10
+      "push": 10,
+      "name": "Plasma Pistol Charge"
     },
     "Projectile_Plasma_Rifle_Charge": {
       "dmg": 200,
@@ -655,7 +662,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 15,
-      "push": 10
+      "push": 10,
+      "name": "SMG Rhino"
     },
     "Projectile_Pistol_13x40mm_ap": {
       "dmg": 100,
@@ -1029,7 +1037,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 20,
-      "push": 14
+      "push": 14,
+      "name": "Rifle Constitution"
     },
     "Projectile_Rifle_9x70mm_ap": {
       "dmg": 100,
@@ -1266,6 +1275,7 @@
       "stun": 35,
       "push": 20,
       "param1": 100,
+      "name": "Shotgun Dragon 10g flm",
       "element_name": "Fire",
       "status_name": "Fire"
     },
@@ -2076,7 +2086,8 @@
       "ap4": 0,
       "demo": 40,
       "stun": 40,
-      "push": 30
+      "push": 30,
+      "name": "Missile SAM"
     },
     "Projectile_Strider_Spike": {
       "dmg": 300,
@@ -2183,7 +2194,8 @@
       "ap4": 0,
       "demo": 30,
       "stun": 20,
-      "push": 15
+      "push": 15,
+      "name": "Orbital Napalm"
     },
     "Explosion_Orbital_Napalm": {
       "dmg": 350,
@@ -2197,6 +2209,7 @@
       "push": 40,
       "param1": 100,
       "param2": 50,
+      "name": "Orbital Napalm",
       "element_name": "Fire",
       "status_name": "Fire",
       "status_name2": "BurningHeavy"
@@ -2536,7 +2549,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 35,
-      "push": 30
+      "push": 30,
+      "name": "Explosion Plasma Punisher"
     },
     "Explosion_Projectile_Plasma_Pistol_Charge_Medium": {
       "dmg": 75,
@@ -2547,7 +2561,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 10,
-      "push": 7
+      "push": 7,
+      "name": "Explosion Plasma Pistol Charge Medium"
     },
     "Explosion_Projectile_Plasma_Pistol_Charge": {
       "dmg": 225,
@@ -2558,7 +2573,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 35,
-      "push": 30
+      "push": 30,
+      "name": "Explosion Plasma Pistol Charge"
     },
     "Explosion_Projectile_Plasma_Rifle_Charge_Medium": {
       "dmg": 75,
@@ -2569,7 +2585,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 10,
-      "push": 7
+      "push": 7,
+      "name": "Explosion Plasma Rifle Charge Medium"
     },
     "Explosion_Projectile_Plasma_Rifle_Charge": {
       "dmg": 300,
@@ -2580,7 +2597,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 35,
-      "push": 30
+      "push": 30,
+      "name": "Explosion Plasma Rifle Charge"
     },
     "Explosion_Plasma_Cone": {
       "dmg": 400,
@@ -2709,7 +2727,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 10,
-      "push": 10
+      "push": 10,
+      "name": "Explosion Illuminate Small"
     },
     "Explosion_Prop_Barrel": {
       "dmg": 300,
@@ -2839,6 +2858,7 @@
       "stun": 20,
       "push": 15,
       "param1": 100,
+      "name": "Explosion Hand Grenade Incendiary Impact",
       "element_name": "Fire",
       "status_name": "Fire"
     },
@@ -2899,7 +2919,8 @@
       "ap4": 0,
       "demo": 20,
       "stun": 50,
-      "push": 40
+      "push": 40,
+      "name": "Explosion Vehicle Rocket Tank Body"
     },
     "Explosion_Vehicle_ThrusterDeath": {
       "dmg": 1,
@@ -2962,6 +2983,7 @@
       "stun": 20,
       "push": 20,
       "param1": 0,
+      "name": "Explosion Illuminate Harvester Pull",
       "status_name": "Confusion"
     },
     "Explosion_Prop_Small": {
@@ -3009,7 +3031,8 @@
       "ap4": 0,
       "demo": 30,
       "stun": 30,
-      "push": 40
+      "push": 40,
+      "name": "Explosion HandGrenade HighExplosive Impact"
     },
     "Explosion_Projectile_Cannon_Eagle_23mm": {
       "dmg": 350,
@@ -3569,6 +3592,7 @@
       "stun": 80,
       "push": 40,
       "param1": 100,
+      "name": "Explosion HellpodImpact FieryDrop",
       "element_name": "Fire",
       "status_name": "Fire"
     },
@@ -3605,7 +3629,8 @@
       "ap4": 0,
       "demo": 20,
       "stun": 40,
-      "push": 20
+      "push": 20,
+      "name": "Explosion Tentacle Impact"
     },
     "Explosion_Vehicle_DropshipCrash": {
       "dmg": 100,
@@ -3732,6 +3757,7 @@
       "push": 10,
       "param1": 100,
       "param2": 100,
+      "name": "Explosion Gas Grenade",
       "element_name": "Gas",
       "status_name": "Gas",
       "status_name2": "Gas Confusion"
@@ -4067,7 +4093,9 @@
       "demo": 20,
       "stun": 30,
       "push": 25,
-      "param1": 1
+      "param1": 1,
+      "name": "Explosion DustDevil",
+      "status_name": "DustDevil"
     },
     "DPS_BeamSmall": {
       "dmg": 250,
@@ -4454,7 +4482,8 @@
       "ap4": 9,
       "demo": 0,
       "stun": 0,
-      "push": 0
+      "push": 0,
+      "name": "DPS DeathMarch"
     },
     "Ability_Empty": {
       "dmg": 0,
@@ -4609,7 +4638,8 @@
       "ap4": 0,
       "demo": 40,
       "stun": 50,
-      "push": 50
+      "push": 50,
+      "name": "Ability Bug Impaler Melee Crush"
     },
     "Ability_Bot_Spawner_Obstacle": {
       "dmg": 1,
@@ -5033,7 +5063,8 @@
       "ap4": 0,
       "demo": 30,
       "stun": 25,
-      "push": 20
+      "push": 20,
+      "name": "Ability Illuminate Guy Staff Blunt Swipe"
     },
     "Ability_Illuminate_GuyStaff_OverheadSlash": {
       "dmg": 160,
@@ -5188,7 +5219,8 @@
       "ap4": 0,
       "demo": 10,
       "stun": 0,
-      "push": 0
+      "push": 0,
+      "name": "Explosion Illuminate Fake Enemies"
     },
     "Explosion_DarkFluid": {
       "dmg": 4000,
@@ -5200,6 +5232,7 @@
       "demo": 60,
       "stun": 10,
       "push": 10,
+      "name": "Explosion Dark Fluid",
       "element_name": "Acid"
     }
   },
@@ -5696,6 +5729,7 @@
       "damageid": "Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_Eagle_23mm_gatling_barrage": {
+      "name": "Cannon Eagle 23mm Gatling Barrage",
       "caliber": 23,
       "pellets": 1,
       "velocity": 1050,
@@ -5712,6 +5746,7 @@
       "damageid": "Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_Eagle_23mm_gatling_barrage_no_explosion": {
+      "name": "Cannon Eagle 23mm Gatling Barrage No Explosion",
       "caliber": 23,
       "pellets": 1,
       "velocity": 1050,
@@ -5905,6 +5940,7 @@
       "xangle": 90,
       "xproximity": 0.1,
       "xdelay": 0,
+      "name": "Cyborg Assault Walker Rocket",
       "ximpactid": "Cyborg_AssaultWalker_Projectile_LightRocket",
       "damageid": "Projectile_CyborgLightRocket"
     },
@@ -5921,6 +5957,7 @@
       "xangle": 90,
       "xproximity": 0,
       "xdelay": 0,
+      "name": "Cyborg Medium Rocket",
       "ximpactid": "Cyborg_Projectile_MediumRocket",
       "damageid": "Projectile_CyborgLightRocket"
     },
@@ -5937,6 +5974,7 @@
       "xangle": 90,
       "xproximity": 0.1,
       "xdelay": 0,
+      "name": "Cyborg Enclosed Scout Walker Rocket",
       "ximpactid": "Cyborg_Projectile_MediumRocket",
       "damageid": "Projectile_CyborgLightRocket"
     },
@@ -5970,6 +6008,7 @@
       "xangle": 90,
       "xproximity": 0,
       "xdelay": 0,
+      "name": "Cyborg Tank Rocket Launcher",
       "ximpactid": "Cyborg_Tank_Projectile_HeavyRocket",
       "damageid": "Projectile_CyborgLightRocket"
     },
@@ -6348,6 +6387,7 @@
       "xangle": 80,
       "xproximity": 0,
       "xdelay": 0,
+      "name": "illuminate Tripod Eye Cannon",
       "ximpactid": "illuminate_Projectile_TripodCannon",
       "damageid": "Projectile_CyborgHeavyCannon"
     },
@@ -6710,6 +6750,7 @@
       "damageid": "Projectile_Orbital_Cannon_380MM_HE"
     },
     "Orbital_Cannon_Napalm": {
+      "name": "Orbital Cannon Napalm",
       "caliber": 84,
       "pellets": 1,
       "velocity": 400,
@@ -6726,6 +6767,7 @@
       "damageid": "Projectile_Orbital_Napalm"
     },
     "Orbital_Cannon_Napalm_Cheap": {
+      "name": "Orbital Cannon Napalm Cheap",
       "caliber": 84,
       "pellets": 1,
       "velocity": 400,
@@ -7368,6 +7410,7 @@
       "damageid": "Projectile_Pistol_Magnum"
     },
     "SMG_Rhino": {
+      "name": "SMG Rhino",
       "caliber": 12,
       "pellets": 1,
       "velocity": 285,
@@ -7474,7 +7517,8 @@
       "penslow": 1,
       "xangle": 80,
       "xproximity": 0,
-      "xdelay": 0
+      "xdelay": 0,
+      "name": "Pistol Stim"
     },
     "Rifle_5p5x50mm_fmj": {
       "name": "Rifle 5.5x50mm Full Metal Jacket",
@@ -7954,6 +7998,7 @@
       "xangle": 80,
       "xproximity": 0,
       "xdelay": 0,
+      "name": "Rifle Constitution",
       "damageid": "Projectile_Rifle_Constitution"
     },
     "Rifle_9x70mm_ap": {
@@ -8588,6 +8633,7 @@
       "xangle": 80,
       "xproximity": 0,
       "xdelay": 0,
+      "name": "Shotgun Dragon 10g flm",
       "damageid": "Projectile_Shotgun_Dragon_10g_flm"
     },
     "Shotgun_10g_bug": {
@@ -8883,6 +8929,7 @@
       "damageid": "Projectile_Shrapnel_High_Velocity"
     },
     "Plasma_Pistol_Small": {
+      "name": "Plasma Pistol Small",
       "caliber": 10,
       "pellets": 1,
       "velocity": 550,
@@ -8898,6 +8945,7 @@
       "damageid": "Projectile_Plasma_Pistol_Base"
     },
     "Plasma_Pistol_Charge_Medium": {
+      "name": "Plasma Pistol Charge Medium",
       "caliber": 20,
       "pellets": 1,
       "velocity": 550,
@@ -8914,6 +8962,7 @@
       "damageid": "Projectile_Plasma_Pistol_Charge"
     },
     "Plasma_Pistol_Charge": {
+      "name": "Plasma Pistol Charge",
       "caliber": 20,
       "pellets": 1,
       "velocity": 350,
@@ -8999,6 +9048,7 @@
       "damageid": "Projectile_Plasma_Bolt"
     },
     "Plasma_Bolt_Charge_Medium": {
+      "name": "Plasma Bolt Charge Medium",
       "caliber": 20,
       "pellets": 1,
       "velocity": 550,
@@ -9342,6 +9392,7 @@
       "r2": 15,
       "r3": 20,
       "crater": "Small",
+      "name": "Bug Charger Acid Death",
       "damageid": "Explosion_Boomer_AcidDeath"
     },
     "Cyborg_HandGrenade_Antitank": {
@@ -9412,6 +9463,7 @@
       "r2": 2,
       "r3": 3.5,
       "crater": "Small",
+      "name": "Cyborg AssaultWalker Projectile Light Rocket",
       "damageid": "Explosion_Projectile_CyborgLightRocket"
     },
     "Cyborg_Projectile_MediumRocket": {
@@ -9419,6 +9471,7 @@
       "r2": 5,
       "r3": 9,
       "crater": "Large",
+      "name": "Cyborg Projectile Medium Rocket",
       "damageid": "Explosion_Projectile_CyborgHeavyRocket"
     },
     "Cyborg_Projectile_HeavyRocket": {
@@ -9434,6 +9487,7 @@
       "r2": 10,
       "r3": 20,
       "crater": "Large",
+      "name": "Cyborg Tank Projectile HeavyRocket",
       "damageid": "Explosion_Projectile_CyborgHeavyRocket"
     },
     "Cyborg_PlasmaBackpackOverload": {
@@ -9471,6 +9525,7 @@
       "r1": 0.9,
       "r2": 1,
       "r3": 1.1,
+      "name": "Cyborg Vehicle Rocket Tank Body",
       "damageid": "Explosion_Vehicle_RocketTankBody"
     },
     "Cyborg_Tank_Turret_Death": {
@@ -9630,6 +9685,7 @@
       "r2": 7,
       "r3": 9,
       "crater": "Scorch",
+      "name": "Incendiary Impact",
       "damageid": "Explosion_HandGrenade_Incendiary_Impact"
     },
     "Thermite": {
@@ -9713,6 +9769,7 @@
       "r2": 2,
       "r3": 2,
       "crater": "Scorch",
+      "name": "Plasma Pistol Charge Medium",
       "damageid": "Explosion_Projectile_Plasma_Pistol_Charge_Medium"
     },
     "Plasma_Pistol_Charge": {
@@ -9720,6 +9777,7 @@
       "r2": 3,
       "r3": 4,
       "crater": "Scorch",
+      "name": "Plasma Pistol Charge",
       "damageid": "Explosion_Projectile_Plasma_Pistol_Charge"
     },
     "Plasma_Rifle_Charge_Medium": {
@@ -9727,6 +9785,7 @@
       "r2": 2,
       "r3": 2,
       "crater": "Scorch",
+      "name": "Plasma Rifle Charge Medium",
       "damageid": "Explosion_Projectile_Plasma_Rifle_Charge_Medium"
     },
     "Plasma_Rifle_Charge": {
@@ -9925,6 +9984,7 @@
       "r2": 4.5,
       "r3": 6.5,
       "crater": "Small",
+      "name": "Cannon 23mm  Gatling Barrage Silent",
       "damageid": "Explosion_Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_23mm": {
@@ -9940,6 +10000,7 @@
       "r2": 5,
       "r3": 6.5,
       "crater": "Small",
+      "name": "Cannon 23mm Strafe",
       "damageid": "Explosion_Projectile_Cannon_Eagle_23mm"
     },
     "APHE_30mm": {
@@ -10046,6 +10107,7 @@
       "r2": 10,
       "r3": 11,
       "crater": "Scorch",
+      "name": "Orbital Napalm",
       "damageid": "Explosion_Orbital_Napalm"
     },
     "Orbital_Napalm_Cheap": {
@@ -10053,6 +10115,7 @@
       "r2": 10,
       "r3": 11,
       "crater": "Scorch",
+      "name": "Orbital Napalm Cheap",
       "damageid": "Explosion_Orbital_Napalm"
     },
     "OrbitalStun": {
@@ -10101,6 +10164,7 @@
       "r1": 2,
       "r2": 7,
       "r3": 7,
+      "name": "Gas Grenade",
       "damageid": "Explosion_Gas_Grenade"
     },
     "OrbitalSmoke": {
@@ -10178,38 +10242,44 @@
       "r2": 1.8,
       "r3": 1.8,
       "crater": "Medium",
+      "name": "Tentacle Impact",
       "damageid": "Explosion_TentacleImpact"
     },
     "TentacleImpactFake": {
       "r1": 5,
       "r2": 5,
       "r3": 5,
-      "crater": "Medium"
+      "crater": "Medium",
+      "name": "Tentacle Impact Fake"
     },
     "Impaler_Summon_Tentacles_Fake": {
       "r1": 5,
       "r2": 5,
       "r3": 5,
-      "crater": "Medium"
+      "crater": "Medium",
+      "name": "Impaler Summon Tentacles Fake"
     },
     "TentacleEmerge": {
       "r1": 1.8,
       "r2": 2.8,
       "r3": 2.8,
       "crater": "Medium",
+      "name": "Tentacle Emerge",
       "damageid": "Explosion_TentacleImpact"
     },
     "TentacleEmergeFake": {
       "r1": 5,
       "r2": 5,
       "r3": 5,
-      "crater": "Medium"
+      "crater": "Medium",
+      "name": "Tentacle Emerge Fake"
     },
     "HellpodImpact_FieryDrop": {
       "r1": 2,
       "r2": 4,
       "r3": 4,
       "crater": "Scorch",
+      "name": "HellpodImpact Fiery Drop",
       "damageid": "Explosion_HellpodImpact_FieryDrop"
     },
     "HellpodImpact_Silent": {
@@ -10278,6 +10348,7 @@
       "r2": 2,
       "r3": 3,
       "crater": "Small",
+      "name": "Default Overcharge",
       "damageid": "Explosion_RailgunOvercharge"
     },
     "RailgunOvercharge": {
@@ -10566,6 +10637,7 @@
       "r1": 2,
       "r2": 6,
       "r3": 6,
+      "name": "Gas Mine",
       "damageid": "Explosion_Gas_Grenade"
     },
     "ContactMine_MK2": {
@@ -10756,6 +10828,7 @@
       "r2": 2,
       "r3": 4,
       "crater": "Medium",
+      "name": "Illuminate SpawnerDeath",
       "damageid": "Explosion_Hellbomb"
     },
     "Illuminate_TripodDeath": {
@@ -10771,6 +10844,7 @@
       "r2": 5,
       "r3": 6,
       "crater": "Medium",
+      "name": "Tripod Crash Body",
       "damageid": "Explosion_Prop_Large"
     },
     "Tripod_Crash_Limb": {
@@ -10778,6 +10852,7 @@
       "r2": 1.5,
       "r3": 2.5,
       "crater": "Small",
+      "name": "Tripod Crash Limb",
       "damageid": "Explosion_Prop_Small"
     },
     "Illuminate_StaffGuyGroundImpale": {
@@ -10801,6 +10876,7 @@
       "r2": 6,
       "r3": 8,
       "crater": "Large",
+      "name": "illuminate Projectile TripodCannon",
       "damageid": "Explosion_Projectile_CyborgHeavyCannon"
     },
     "Illuminate_IllusionistSmallball": {
@@ -10816,6 +10892,7 @@
       "r2": 1.5,
       "r3": 2,
       "crater": "Scorch",
+      "name": "Illuminate Illusionist Droidball",
       "damageid": "Explosion_Illuminate_Small"
     },
     "Illuminate_AdeptCircle": {
@@ -10981,6 +11058,7 @@
       "r2": 6,
       "r3": 15,
       "crater": "Small",
+      "name": "Cyborg Grinder",
       "damageid": "Explosion_Prop_Barrel"
     },
     "Chemical_Backpack": {
@@ -11206,6 +11284,7 @@
       "r2": 1.5,
       "r3": 2,
       "crater": "Small",
+      "name": "Illuminate FakeEnemies Death",
       "damageid": "Explosion_Illuminate_FakeEnemies"
     },
     "Illuminate_DarkFluid_Death": {
@@ -11213,6 +11292,7 @@
       "r2": 10,
       "r3": 4,
       "crater": "Medium",
+      "name": "Illuminate DarkFluid Death",
       "damageid": "Explosion_DarkFluid"
     },
     "Illuminate_Harvester_Pull": {
@@ -11220,6 +11300,7 @@
       "r2": 10,
       "r3": 4,
       "crater": "Medium",
+      "name": "Illuminate Harvester Pull",
       "damageid": "Explosion_Illuminate_Harvester_Pull"
     }
   },
@@ -12107,6 +12188,38 @@
         }
       ]
     },
+    "SMG-32 Reprimand": {
+      "burst": 3,
+      "cap": 25,
+      "capplus": 1,
+      "category": "Submachine Gun",
+      "ergonomics": 47,
+      "mags": 9,
+      "magstart": 5,
+      "modes": [
+        "Automatic",
+        "Single",
+        "Burst"
+      ],
+      "recoilxy": {
+        "x": 25,
+        "y": 40
+      },
+      "rpm": 490,
+      "source": "truth-enforcers",
+      "sourcepage": 2,
+      "spreadxy": {
+        "x": 50,
+        "y": 50
+      },
+      "supply": 9,
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "SMG_Rhino"
+        }
+      ]
+    },
     "SMG-37 Defender": {
       "attachments": [
         "flashlight"
@@ -12804,6 +12917,7 @@
     },
     "FLAM-66 Torcher": {
       "cap": 80,
+      "category": "Special",
       "ergonomics": 45,
       "mags": 6,
       "magstart": 3,
@@ -16967,6 +17081,7 @@
     "R-63 Diligence",
     "R-63CS Diligence Counter Sniper",
     "MP-98 Knight",
+    "SMG-32 Reprimand",
     "SMG-37 Defender",
     "SMG-72 Pummeler",
     "SG-8 Punisher",

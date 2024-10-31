@@ -99,6 +99,12 @@ attachments = ["flashlight"]
 
 [[weapon]]
 category = "SMG"
+fullname = "SMG-32 Reprimand"
+source = "truth-enforcers"
+sourcepage = 2
+
+[[weapon]]
+category = "SMG"
 fullname = "SMG-37 Defender"
 source = "hd-mobilize"
 recoil = 10
