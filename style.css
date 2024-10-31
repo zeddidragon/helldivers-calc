@@ -169,8 +169,11 @@ td.name {
 .category.OrbitalFireSupport, .category.AR, .ap-5, .source.demo-det {
   color: #e88;
 }
-.category.SMG, .ap-8 {
+.category.SMG, .ap-8, .source.truth-enforcers {
   color: #ccc;
+}
+.source.truth-enforcers {
+  color: #aaa;
 }
 .category.SG, .ap-3, .source.chemical-agents {
   color: #8e8;

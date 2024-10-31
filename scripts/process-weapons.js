@@ -74,18 +74,25 @@ const shalzuthSchema = [
   { source: 'ammo_capacity', dest: 'rounds' },
   { source: 'ammo', dest: 'roundstart' },
   { source: 'ammo_refill', dest: 'roundsupply' },
-  { source: 'ammo_types', cb: (wpn, { primary_projectile_type: prj }) => {
-    // There's also alternate_projectile_type, as of this date not really used
-    if(wpn.attack) {
-      return
+  { source: 'ammo_types', cb: (wpn, {
+    primary_projectile_type: prj,
+    alternate_projectile_type: prj2,
+  }) => {
+    if(!wpn.attack) {
+      wpn.attack = []
     }
-    if(prj === 'ProjectileType_None') {
-      return
+    if(prj) {
+      wpn.attack[0] = {
+        medium: 'projectile',
+        ref: prj,
+      }
     }
-    wpn.attack = [{
-      medium: 'projectile',
-      ref: prj.replace('ProjectileType_', ''),
-    }]
+    if(prj2 && prj2 !== prj) {
+      wpn.attack[1] = {
+        medium: 'projectile',
+        ref: prj2,
+      }
+    }
   }},
   { source: 'projectile_type', cb: (wpn, prj) => {
     if(wpn.attack) {
@@ -93,7 +100,7 @@ const shalzuthSchema = [
     }
     wpn.attack = [{
       medium: 'projectile',
-      ref: prj.replace('ProjectileType_', ''),
+      ref: prj,
     }]
   }},
   { source: 'explosion_type', cb: (wpn, exp) => {

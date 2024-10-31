@@ -87,7 +87,14 @@ const deltaHandlers = {
   'magazines_max': toDelta,
   'chambered': toDelta,
   'underbarrel_path': null,
-  'ammo_types.primary_projectile_type': toDelta,
+  'ammo_types.primary_projectile_type': (wpn, value, key) => {
+    wpn.customizations.ammo_types = {
+      primary_projectile_type: refs.projectile(value),
+    }
+  },
+  'ammo_types.alternate_projectile_type': (wpn, value, key) => {
+    wpn.customizations.ammo_types.alternate_projectile_type = refs.projectile(value)
+  },
   'scope_zeroing.x': null,
   'scope_zeroing.y': null,
   'scope_zeroing.z': null,
@@ -105,7 +112,9 @@ const deltaHandlers = {
   'reload_anim_events[1].animation_event_wielder': null,
   'reload_anim_events[2].animation_event_wielder': null,
   'reload_anim_events[3].animation_event_wielder': null,
-  'projectile_type': toDelta,
+  'projectile_type': (wpn, value, key) => {
+    wpn.customizations[key] = refs.projectile(value)
+  },
   'magazine_adjusting_nodes[0]': null,
   'magazine_adjusting_nodes[1]': null,
   'magazine_adjusting_nodes[2]': null,
@@ -437,16 +446,22 @@ const handlers = {
   WeaponLaserComponent: copy([
     'max_length',
   ]),
-  WeaponRoundsComponent: copy([
-    'magazine_capacity',
-    'ammo_capacity',
-    'ammo_refill',
-    'ammo',
-    'reload_amount',
-    'chambered',
-    'infinite_ammo',
-    'ammo_types',
-  ], { omit_falsey: true }),
+  WeaponRoundsComponent(wpn, component) {
+    copy([
+      'magazine_capacity',
+      'ammo_capacity',
+      'ammo_refill',
+      'ammo',
+      'reload_amount',
+      'chambered',
+      'infinite_ammo',
+    ], { omit_falsey: true })(wpn, component)
+    const ammo = component.ammo_types
+    wpn.ammo_types = {
+      primary_projectile_type: refs.projectile(ammo.primary_projectile_type),
+      alternate_projectile_type: refs.projectile(ammo.alternate_projectile_type),
+    }
+  },
   BackblastComponent(wpn, component) {
     wpn.backblast_angle = component.angle
     wpn.backblast_offset = component.offset

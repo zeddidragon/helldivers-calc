@@ -220,6 +220,8 @@
   "wpn.source.label;viper-commandos": "Viper",
   "wpn.source.full;liberty-day": "Liberty Day",
   "wpn.source.label;liberty-day": "Oct 26th",
+  "wpn.source.full;truth-enforcers": "Truth Enforcers",
+  "wpn.source.label;truth-enforcers": "Truth",
   "table.th.prj;idx": "Internal order",
   "table.th.prj;id": "ID of projectile data (hex)",
   "table.th.prj;name": "Translated name of projectile",

@@ -321,6 +321,17 @@
       "push": 10,
       "name": "Laser Long"
     },
+    "Projectile_Plasma_Pistol_Base": {
+      "dmg": 100,
+      "dmg2": 50,
+      "ap1": 2,
+      "ap2": 2,
+      "ap3": 2,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 20,
+      "push": 10
+    },
     "Projectile_Plasma_Bolt": {
       "dmg": 100,
       "dmg2": 50,
@@ -339,6 +350,17 @@
       "ap1": 2,
       "ap2": 2,
       "ap3": 2,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 20,
+      "push": 10
+    },
+    "Projectile_Plasma_Pistol_Charge": {
+      "dmg": 150,
+      "dmg2": 75,
+      "ap1": 3,
+      "ap2": 3,
+      "ap3": 3,
       "ap4": 0,
       "demo": 10,
       "stun": 20,
@@ -623,6 +645,17 @@
       "stun": 15,
       "push": 10,
       "name": "Pistol Magnum"
+    },
+    "Projectile_SMG_Rhino": {
+      "dmg": 125,
+      "dmg2": 32,
+      "ap1": 3,
+      "ap2": 3,
+      "ap3": 3,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 15,
+      "push": 10
     },
     "Projectile_Pistol_13x40mm_ap": {
       "dmg": 100,
@@ -1249,8 +1282,8 @@
       "name": "Shotgun 10-Gauge Bugbite"
     },
     "Projectile_Shotgun_10g_fle": {
-      "dmg": 20,
-      "dmg2": 4,
+      "dmg": 35,
+      "dmg2": 10,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
@@ -1359,6 +1392,19 @@
       "push": 20,
       "name": "Shotgun 10-Gauge SCS"
     },
+    "Projectile_Shotgun_10g_stun": {
+      "dmg": 6,
+      "dmg2": 2,
+      "ap1": 2,
+      "ap2": 2,
+      "ap3": 2,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 15,
+      "push": 10,
+      "param1": 1,
+      "status_name": "Stun Medium"
+    },
     "Projectile_Shotgun_10g_slug": {
       "dmg": 250,
       "dmg2": 75,
@@ -1420,8 +1466,8 @@
       "name": "Shotgun 12-Gauge Bugbite"
     },
     "Projectile_Shotgun_12g_fle": {
-      "dmg": 20,
-      "dmg2": 4,
+      "dmg": 35,
+      "dmg2": 20,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
@@ -2483,6 +2529,28 @@
     "Explosion_Projectile_Plasma_Punisher": {
       "dmg": 150,
       "dmg2": 150,
+      "ap1": 3,
+      "ap2": 3,
+      "ap3": 3,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 35,
+      "push": 30
+    },
+    "Explosion_Projectile_Plasma_Pistol_Charge_Medium": {
+      "dmg": 75,
+      "dmg2": 75,
+      "ap1": 3,
+      "ap2": 0,
+      "ap3": 0,
+      "ap4": 0,
+      "demo": 10,
+      "stun": 10,
+      "push": 7
+    },
+    "Explosion_Projectile_Plasma_Pistol_Charge": {
+      "dmg": 225,
+      "dmg2": 225,
       "ap1": 3,
       "ap2": 3,
       "ap3": 3,
@@ -4376,6 +4444,17 @@
       "name": "DPS Bleeding",
       "element_name": "Bleed"
     },
+    "DPS_DeathMarch": {
+      "dmg": 5,
+      "dmg2": 5,
+      "ap1": 9,
+      "ap2": 9,
+      "ap3": 9,
+      "ap4": 9,
+      "demo": 0,
+      "stun": 0,
+      "push": 0
+    },
     "Ability_Empty": {
       "dmg": 0,
       "dmg2": 0,
@@ -5596,11 +5675,42 @@
       "xangle": 80,
       "xproximity": 0,
       "xdelay": 0,
-      "ximpactid": "Cannon_23mm_silent",
+      "ximpactid": "Cannon_23mm_strafe",
       "damageid": "Projectile_Cannon_Eagle_23mm"
     },
     "Cannon_Eagle_23mm_no_explosion": {
       "name": "Cannon Eagle 23mm no explosion",
+      "caliber": 23,
+      "pellets": 1,
+      "velocity": 1050,
+      "mass": 400,
+      "drag": 0.3,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "penslow": 0.25,
+      "xangle": 80,
+      "xproximity": 0,
+      "xdelay": 0,
+      "damageid": "Projectile_Cannon_Eagle_23mm"
+    },
+    "Cannon_Eagle_23mm_gatling_barrage": {
+      "caliber": 23,
+      "pellets": 1,
+      "velocity": 1050,
+      "mass": 400,
+      "drag": 0.3,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "penslow": 0.25,
+      "xangle": 80,
+      "xproximity": 0,
+      "xdelay": 0,
+      "ximpactid": "Cannon_23mm_gatling_barrage_silent",
+      "damageid": "Projectile_Cannon_Eagle_23mm"
+    },
+    "Cannon_Eagle_23mm_gatling_barrage_no_explosion": {
       "caliber": 23,
       "pellets": 1,
       "velocity": 1050,
@@ -5824,7 +5934,7 @@
       "liferandom": 0,
       "penslow": 0.25,
       "xangle": 90,
-      "xproximity": 0,
+      "xproximity": 0.1,
       "xdelay": 0,
       "ximpactid": "Cyborg_Projectile_MediumRocket",
       "damageid": "Projectile_CyborgLightRocket"
@@ -7256,6 +7366,21 @@
       "xdelay": 0,
       "damageid": "Projectile_Pistol_Magnum"
     },
+    "SMG_Rhino": {
+      "caliber": 12,
+      "pellets": 1,
+      "velocity": 285,
+      "mass": 15,
+      "drag": 0.3,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "penslow": 0.25,
+      "xangle": 80,
+      "xproximity": 0,
+      "xdelay": 0,
+      "damageid": "Projectile_SMG_Rhino"
+    },
     "Pistol_13x40mm_ap": {
       "name": "Pistol 13x40mm Penetrator",
       "caliber": 12,
@@ -8418,7 +8543,6 @@
       "damageid": "Projectile_Shotgun_10g_bir"
     },
     "Shotgun_10g_buc": {
-      "name": "Shotgun 10-Gauge Buckshot",
       "caliber": 8,
       "pellets": 9,
       "velocity": 385,
@@ -8431,6 +8555,7 @@
       "xangle": 80,
       "xproximity": 0,
       "xdelay": 0,
+      "name": "Shotgun 10-Gauge Buckshot",
       "damageid": "Projectile_Shotgun_10g_buc"
     },
     "TripleBarrelShotgun_10g_buc": {
@@ -8483,7 +8608,7 @@
     "Shotgun_10g_fle": {
       "name": "Shotgun 10-Gauge Flechette",
       "caliber": 8,
-      "pellets": 9,
+      "pellets": 11,
       "velocity": 385,
       "mass": 6,
       "drag": 0.3,
@@ -8626,6 +8751,21 @@
       "xdelayid": "Primary_ScatterShot",
       "damageid": "Projectile_Shotgun_10g_scs"
     },
+    "Shotgun_10g_stun": {
+      "caliber": 5.5,
+      "pellets": 20,
+      "velocity": 800,
+      "mass": 4.5,
+      "drag": 0.3,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "penslow": 0.25,
+      "xangle": 80,
+      "xproximity": 0,
+      "xdelay": 0,
+      "damageid": "Projectile_Shotgun_10g_stun"
+    },
     "Shotgun_10g_slug": {
       "name": "Shotgun 10-Gauge Slug",
       "caliber": 18,
@@ -8740,6 +8880,53 @@
       "ximpactid": "HeavyShrapnel_MK2",
       "damageid": "Projectile_Shrapnel_High_Velocity"
     },
+    "Plasma_Pistol_Small": {
+      "caliber": 10,
+      "pellets": 1,
+      "velocity": 550,
+      "mass": 10,
+      "drag": 1,
+      "gravity": 0.5,
+      "lifetime": 0,
+      "liferandom": 0,
+      "penslow": 0.35,
+      "xangle": 80,
+      "xproximity": 0,
+      "xdelay": 0,
+      "damageid": "Projectile_Plasma_Pistol_Base"
+    },
+    "Plasma_Pistol_Charge_Medium": {
+      "caliber": 20,
+      "pellets": 1,
+      "velocity": 550,
+      "mass": 25,
+      "drag": 1.5,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "penslow": 0.35,
+      "xangle": 80,
+      "xproximity": 0,
+      "xdelay": 0,
+      "ximpactid": "Plasma_Pistol_Charge_Medium",
+      "damageid": "Projectile_Plasma_Pistol_Charge"
+    },
+    "Plasma_Pistol_Charge": {
+      "caliber": 20,
+      "pellets": 1,
+      "velocity": 350,
+      "mass": 25,
+      "drag": 1.5,
+      "gravity": 1,
+      "lifetime": 0,
+      "liferandom": 0,
+      "penslow": 0.35,
+      "xangle": 80,
+      "xproximity": 0,
+      "xdelay": 0,
+      "ximpactid": "Plasma_Pistol_Charge",
+      "damageid": "Projectile_Plasma_Pistol_Charge"
+    },
     "Plasma_Bolt_Small": {
       "name": "Plasma Bolt Small",
       "caliber": 10,
@@ -8844,17 +9031,17 @@
     },
     "Plasma_Punisher_Projectile": {
       "name": "Punisher Plasma Bolt",
-      "caliber": 50,
+      "caliber": 20,
       "pellets": 1,
-      "velocity": 300,
-      "mass": 25,
-      "drag": 1.4,
-      "gravity": 1,
+      "velocity": 90,
+      "mass": 100,
+      "drag": 4,
+      "gravity": 3,
       "lifetime": 0,
       "liferandom": 0,
       "penslow": 0.35,
       "xangle": 360,
-      "xproximity": 0,
+      "xproximity": 0.5,
       "xdelay": 0,
       "ximpactid": "Plasma_Punisher",
       "damageid": "Projectile_Plasma_Punisher"
@@ -9227,7 +9414,7 @@
     },
     "Cyborg_Projectile_MediumRocket": {
       "r1": 1,
-      "r2": 6,
+      "r2": 5,
       "r3": 9,
       "crater": "Large",
       "damageid": "Explosion_Projectile_CyborgHeavyRocket"
@@ -9519,6 +9706,20 @@
       "name": "Plasma Bolt Large",
       "damageid": "Explosion_Projectile_Plasma_Punisher"
     },
+    "Plasma_Pistol_Charge_Medium": {
+      "r1": 1,
+      "r2": 2,
+      "r3": 2,
+      "crater": "Scorch",
+      "damageid": "Explosion_Projectile_Plasma_Pistol_Charge_Medium"
+    },
+    "Plasma_Pistol_Charge": {
+      "r1": 2.9,
+      "r2": 3,
+      "r3": 4,
+      "crater": "Scorch",
+      "damageid": "Explosion_Projectile_Plasma_Pistol_Charge"
+    },
     "Plasma_Rifle_Charge_Medium": {
       "r1": 1,
       "r2": 2,
@@ -9716,12 +9917,26 @@
       "name": "Cannon 23mm Silent",
       "damageid": "Explosion_Projectile_Cannon_Eagle_23mm"
     },
+    "Cannon_23mm_gatling_barrage_silent": {
+      "r1": 1.5,
+      "r2": 4.5,
+      "r3": 6.5,
+      "crater": "Small",
+      "damageid": "Explosion_Projectile_Cannon_Eagle_23mm"
+    },
     "Cannon_23mm": {
       "r1": 2.5,
       "r2": 5,
       "r3": 6.5,
       "crater": "Small",
       "name": "Cannon 23mm",
+      "damageid": "Explosion_Projectile_Cannon_Eagle_23mm"
+    },
+    "Cannon_23mm_strafe": {
+      "r1": 2.5,
+      "r2": 5,
+      "r3": 6.5,
+      "crater": "Small",
       "damageid": "Explosion_Projectile_Cannon_Eagle_23mm"
     },
     "APHE_30mm": {
@@ -11437,6 +11652,11 @@
     "DarkFluid": {
       "strength": 1,
       "duration": 10
+    },
+    "DeathMarch": {
+      "strength": 0,
+      "duration": 0.15,
+      "damageid": "DPS_DeathMarch"
     }
   },
   "elements": [
@@ -12030,6 +12250,41 @@
         }
       ]
     },
+    "SG-20 Halt": {
+      "cap": 16,
+      "capplus": 1,
+      "category": "Shotgun",
+      "ergonomics": 60,
+      "modes": [
+        "Single"
+      ],
+      "recoilxy": {
+        "x": 40,
+        "y": 40
+      },
+      "reload": 6.9,
+      "reloadone": 0.8,
+      "rounds": 60,
+      "roundstart": 32,
+      "roundsupply": 60,
+      "rpm": 80,
+      "source": "truth-enforcers",
+      "sourcepage": 1,
+      "spreadxy": {
+        "x": 150,
+        "y": 100
+      },
+      "attacks": [
+        {
+          "type": "projectile",
+          "name": "Shotgun_10g_fle"
+        },
+        {
+          "type": "projectile",
+          "name": "Shotgun_10g_stun"
+        }
+      ]
+    },
     "SG-451 Cookout": {
       "cap": 16,
       "capplus": 1,
@@ -12302,7 +12557,7 @@
       ]
     },
     "SG-8P Punisher Plasma": {
-      "cap": 8,
+      "cap": 10,
       "category": "Energy-Based",
       "ergonomics": 62,
       "mags": 8,
@@ -12312,11 +12567,11 @@
       ],
       "recoil": 110,
       "recoilxy": {
-        "x": 30,
-        "y": 30
+        "x": 40,
+        "y": 40
       },
       "reload": 2.5,
-      "rpm": 100,
+      "rpm": 80,
       "source": "cut-edge",
       "sourcepage": 2,
       "spreadxy": {
@@ -12367,7 +12622,7 @@
     "LAS-5 Scythe": {
       "box": 3,
       "category": "Energy-Based",
-      "ergonomics": 60,
+      "ergonomics": 54,
       "heatdown": 11.8,
       "limit": 8,
       "mags": 4,
@@ -14128,7 +14383,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 16,
@@ -14228,7 +14484,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -14348,7 +14605,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 16,
@@ -14417,7 +14675,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -14635,7 +14894,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -14728,7 +14988,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -14819,7 +15080,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 2,
@@ -14907,7 +15169,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 50,
@@ -15004,7 +15267,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 50,
@@ -15107,7 +15371,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 5,
@@ -15205,7 +15470,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 2,
@@ -15303,7 +15569,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 50,
@@ -15484,15 +15751,15 @@
       "area_size": 7,
       "salvos": 4,
       "cap": 60,
-      "projectile_type": "Cannon_Eagle_23mm",
+      "projectile_type": "Cannon_Eagle_23mm_gatling_barrage",
       "attacks": [
         {
           "type": "projectile",
-          "name": "Cannon_Eagle_23mm"
+          "name": "Cannon_Eagle_23mm_gatling_barrage"
         },
         {
           "type": "explosion",
-          "name": "Cannon_23mm_silent"
+          "name": "Cannon_23mm_gatling_barrage_silent"
         }
       ]
     },
@@ -15681,7 +15948,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -15771,7 +16039,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -15862,7 +16131,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -15955,7 +16225,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -15996,7 +16267,7 @@
         },
         {
           "type": "explosion",
-          "name": "Cannon_23mm_silent"
+          "name": "Cannon_23mm_strafe"
         }
       ]
     },
@@ -16046,7 +16317,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -16146,7 +16418,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -16238,7 +16511,8 @@
             "x": 0.100000001,
             "y": 1
           }
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {
         "horizontal": 10,
@@ -16520,6 +16794,7 @@
     "SMG-72 Pummeler",
     "SG-8 Punisher",
     "SG-8S Slugger",
+    "SG-20 Halt",
     "SG-451 Cookout",
     "SG-225 Breaker",
     "SG-225SP Breaker Spray&Pray",

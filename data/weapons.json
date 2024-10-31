@@ -313,6 +313,28 @@
       "spreadxy": {"x": 20, "y": 20}
     },
     {
+      "attack": [
+        {"type": "projectile", "name": "Shotgun_10g_fle"},
+        {"type": "projectile", "name": "Shotgun_10g_stun"}
+      ],
+      "cap": 16,
+      "capplus": 1,
+      "category": "SG",
+      "ergonomics": 60,
+      "fullname": "SG-20 Halt",
+      "modes": ["Single"],
+      "recoilxy": {"x": 40, "y": 40},
+      "reload": 6.9,
+      "reloadone": 0.8,
+      "rounds": 60,
+      "roundstart": 32,
+      "roundsupply": 60,
+      "rpm": 80,
+      "source": "truth-enforcers",
+      "sourcepage": 1,
+      "spreadxy": {"x": 150, "y": 100}
+    },
+    {
       "attack": [{"type": "projectile", "name": "Shotgun_Dragon_10g_flm"}],
       "cap": 16,
       "capplus": 1,
@@ -473,7 +495,7 @@
         {"type": "projectile", "name": "Plasma_Punisher_Projectile"},
         {"type": "explosion", "name": "Plasma_Punisher"}
       ],
-      "cap": 8,
+      "cap": 10,
       "category": "NRG",
       "ergonomics": 62,
       "fullname": "SG-8P Punisher Plasma",
@@ -481,9 +503,9 @@
       "magstart": 6,
       "modes": ["Single"],
       "recoil": 110,
-      "recoilxy": {"x": 30, "y": 30},
+      "recoilxy": {"x": 40, "y": 40},
       "reload": 2.5,
-      "rpm": 100,
+      "rpm": 80,
       "source": "cut-edge",
       "sourcepage": 2,
       "spreadxy": {"x": 8, "y": 8},
@@ -507,7 +529,7 @@
       "attack": [{"type": "beam", "name": "Medium"}],
       "box": 3,
       "category": "NRG",
-      "ergonomics": 60,
+      "ergonomics": 54,
       "fullname": "LAS-5 Scythe",
       "heatdown": 11.8,
       "limit": 8,
@@ -1531,7 +1553,8 @@
           "vertical_recoil": 10,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 16, "vertical": 16},
       "noise_template": "NoiseTemplate_Weapon_Small",
@@ -1596,7 +1619,8 @@
           "vertical_recoil": 0.5,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_Weapon_Medium",
@@ -1678,7 +1702,8 @@
           "vertical_recoil": 10,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 16, "vertical": 16},
       "noise_template": "NoiseTemplate_Weapon_Small",
@@ -1722,7 +1747,8 @@
           "vertical_recoil": 10,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_None",
@@ -1885,7 +1911,8 @@
           "vertical_recoil": 0,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_Weapon_Medium",
@@ -1949,7 +1976,8 @@
           "vertical_recoil": 3,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_Weapon_Medium",
@@ -2009,7 +2037,8 @@
           "vertical_recoil": 10,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 2, "vertical": 2},
       "noise_template": "NoiseTemplate_Weapon_Large",
@@ -2067,7 +2096,8 @@
           "vertical_recoil": 10,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 50, "vertical": 100},
       "noise_template": "NoiseTemplate_Weapon_Medium",
@@ -2133,7 +2163,8 @@
           "vertical_recoil": 10,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 50, "vertical": 50},
       "noise_template": "NoiseTemplate_Weapon_Medium",
@@ -2202,7 +2233,8 @@
           "vertical_recoil": 10,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 5, "vertical": 15},
       "noise_template": "NoiseTemplate_Weapon_Medium",
@@ -2267,7 +2299,8 @@
           "vertical_recoil": 10,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 2, "vertical": 2},
       "noise_template": "NoiseTemplate_Weapon_Medium",
@@ -2332,7 +2365,8 @@
           "vertical_recoil": 10,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 50, "vertical": 25},
       "noise_template": "NoiseTemplate_Weapon_Medium",
@@ -2442,10 +2476,10 @@
       "area_size": 7,
       "salvos": 4,
       "cap": 60,
-      "projectile_type": "Cannon_Eagle_23mm",
+      "projectile_type": "Cannon_Eagle_23mm_gatling_barrage",
       "attack": [
-        {"type": "projectile", "name": "Cannon_Eagle_23mm"},
-        {"type": "explosion", "name": "Cannon_23mm_silent"}
+        {"type": "projectile", "name": "Cannon_Eagle_23mm_gatling_barrage"},
+        {"type": "explosion", "name": "Cannon_23mm_gatling_barrage_silent"}
       ]
     },
     {
@@ -2559,7 +2593,8 @@
           "vertical_recoil": 0,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_None",
@@ -2618,7 +2653,8 @@
           "vertical_recoil": 0,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_None",
@@ -2677,7 +2713,8 @@
           "vertical_recoil": 0,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_None",
@@ -2737,7 +2774,8 @@
           "vertical_recoil": 0,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_None",
@@ -2763,7 +2801,7 @@
       "bomb_prediction_interval": 0.0500000007,
       "attack": [
         {"type": "projectile", "name": "Cannon_Eagle_23mm"},
-        {"type": "explosion", "name": "Cannon_23mm_silent"}
+        {"type": "explosion", "name": "Cannon_23mm_strafe"}
       ],
       "cap": 100
     },
@@ -2796,7 +2834,8 @@
           "vertical_recoil": 0,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_None",
@@ -2857,7 +2896,8 @@
           "vertical_recoil": 0,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_None",
@@ -2916,7 +2956,8 @@
           "vertical_recoil": 0,
           "horizontal_bias": 0,
           "random_amount": {"x": 0.100000001, "y": 1}
-        }
+        },
+        "wielder_animiation_recoil_amount_increment_per_shot": 0.5
       },
       "spread_info": {"horizontal": 10, "vertical": 10},
       "noise_template": "NoiseTemplate_None",

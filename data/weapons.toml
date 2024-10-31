@@ -127,8 +127,6 @@ recoil = 120
 sourcepage = 1
 reload = 6.9
 reloadone = 0.8
-rounds = 60
-roundstart = 32
 
 [[weapon]]
 category = "SG"
@@ -136,6 +134,14 @@ fullname = "SG-8S Slugger"
 source = "hd-mobilize"
 recoil = 120
 sourcepage = 8
+reload = 6.9
+reloadone = 0.8
+
+[[weapon]]
+category = "SG"
+fullname = "SG-20 Halt"
+source = "truth-enforcers"
+sourcepage = 1
 reload = 6.9
 reloadone = 0.8
 rounds = 60
@@ -148,8 +154,6 @@ source = "freedoms-flame"
 sourcepage = 1
 reload = 6.9
 reloadone = 0.8
-rounds = 60
-roundstart = 32
 
 [[weapon]]
 category = "SG"
