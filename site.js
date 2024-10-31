@@ -643,7 +643,7 @@ async function loadData() {
       ...(damage || {}),
       idx,
       ...wpn,
-      name: t('wpnname', wpn.fullname),
+      name: t('wpnname', wpn.fullname || wpn.name),
       sourceidx: (data.sources.indexOf(wpn.source) + 1) || Infinity,
       shotdmg,
       dps: iff(dps, (dps + dpsx)),
@@ -670,7 +670,7 @@ async function loadData() {
       subobjects,
     }
   })
-  // byRef.weapon = register(locals.weapons, 'fullname')
+  locals.byRef.weapon = register(locals.weapons, 'name')
   // window.byRef = byRef
 
   const arrowMap = {
@@ -697,7 +697,6 @@ async function loadData() {
     ...data.weapons.filter(wpn => wpn.stratcode),
     ...data.stratagems,
   ]
-  console.log(strats)
   locals.stratagems = strats.map((strat, i) => {
     const { ref } = strat
     let shotdmg = 0
@@ -705,10 +704,8 @@ async function loadData() {
     let maxRadius = [0, 0, 0]
     let prev = void 0
     let subobjects = strat.attack
-      ?.map(({ type, name: ref, count, weapon }) => {
-        const obj = type === 'weapon'
-          ? weapon
-          : (locals.byRef[type][ref] || {})
+      ?.map(({ type, name: ref, count }) => {
+        const obj = locals.byRef[type][ref] || {}
         const parent = prev
         prev = obj
         const damage = rel(obj, 'damage')

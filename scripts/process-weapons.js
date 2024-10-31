@@ -277,14 +277,17 @@ setup.stratagem = setup.stratagem
         eatSubobjects(obj, 'mount')
         continue
       }
+      const wpnName = `${name} - ${side}`
       const weapon = {
-        ...shalzuth[id],
-        name: side,
+        category: 'Mounted',
+        name: wpnName,
+        entity: id,
       }
+      setup.weapon.push(weapon)
       push(obj, 'attack', {
         medium: 'weapon',
         side,
-        weapon,
+        ref: wpnName,
       })
     }
     delete obj.mounts
@@ -354,7 +357,7 @@ for(const [ref, strat] of Object.entries(data.stratagem)) {
 let dbgCondition = false
 const keyed = {}
 for(const wpn of setup.weapon) {
-  const name = wpn.name || wpn.fullname
+  const name = wpn.ref || wpn.name || wpn.fullname
   let matched
   if(wpn.entity) {
     matched = shalzuth[wpn.entity]
@@ -547,7 +550,6 @@ const allWeapons = [
   ...setup.weapon,
   ...setup.stratagem,
 ]
-console.log(allWeapons)
 const weaponOrder = []
 let i = 0
 for(const wpn of allWeapons) {
@@ -556,13 +558,16 @@ for(const wpn of allWeapons) {
   const type = wpn.type
   refRegister[atkKey('weapon', name)] = wpn
   const attacks = (wpn.attack || []).flatMap(atk => {
-    const key = atkKey(atk.medium, atk.ref)
-    const obj = refRegister[key]
+    const {
+      medium: type,
+      count,
+      weapon,
+      ref = weapon.id,
+    } = atk
     return unrollAttack({
-      type: atk.medium,
-      name: atk.ref,
-      count: atk.count,
-      weapon: atk.weapon,
+      type,
+      name: ref,
+      count,
     })
   })
   const category = names[`wpn.category.full;${wpn.category}`]

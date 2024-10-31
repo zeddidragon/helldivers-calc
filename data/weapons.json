@@ -1363,6 +1363,101 @@
       "attack": [{"type": "damage", "name": "DPS_Gas"}],
       "category": "Status",
       "fullname": "Status Effects#Gas"
+    },
+    {
+      "attack": [
+        {"type": "projectile", "name": "Rocket_110mm"},
+        {"type": "explosion", "name": "Rocket_110mm"}
+      ],
+      "cap": 3,
+      "capplus": 1,
+      "category": "Mounted",
+      "ergonomics": 65,
+      "mags": 0,
+      "magstart": 0,
+      "modes": ["Automatic"],
+      "name": "Eagle 110mm Rocket Pods - Right",
+      "recoilxy": {"x": 0, "y": 0},
+      "rpm": 250,
+      "spreadxy": {"x": 5, "y": 5}
+    },
+    {
+      "attack": [
+        {"type": "projectile", "name": "Rocket_110mm"},
+        {"type": "explosion", "name": "Rocket_110mm"}
+      ],
+      "cap": 3,
+      "capplus": 1,
+      "category": "Mounted",
+      "ergonomics": 65,
+      "mags": 0,
+      "magstart": 0,
+      "modes": ["Automatic"],
+      "name": "Eagle 110mm Rocket Pods - Left",
+      "recoilxy": {"x": 0, "y": 0},
+      "rpm": 250,
+      "spreadxy": {"x": 5, "y": 5}
+    },
+    {
+      "attack": [
+        {"type": "projectile", "name": "Missile_Combat_Walker"},
+        {"type": "explosion", "name": "Combat_Walker_Missile"}
+      ],
+      "cap": 14,
+      "category": "Mounted",
+      "ergonomics": 65,
+      "mags": 0,
+      "magstart": 0,
+      "modes": ["Automatic"],
+      "name": "Patriot Exosuit - Left",
+      "recoilxy": {"x": 2.5, "y": 10},
+      "rpm": 90,
+      "spreadxy": {"x": 10, "y": 10}
+    },
+    {
+      "attack": [{"type": "projectile", "name": "Rifle_8x60mm_fmj"}],
+      "cap": 1000,
+      "category": "Mounted",
+      "ergonomics": 65,
+      "mags": 0,
+      "magstart": 0,
+      "modes": ["Automatic"],
+      "name": "Patriot Exosuit - Right",
+      "recoilxy": {"x": 8, "y": 5},
+      "rpm": 1200,
+      "spreadxy": {"x": 50, "y": 50}
+    },
+    {
+      "attack": [
+        {"type": "projectile", "name": "Cannon_30mm_APHE"},
+        {"type": "explosion", "name": "APHE_30mm"}
+      ],
+      "cap": 100,
+      "category": "Mounted",
+      "ergonomics": 65,
+      "mags": 0,
+      "magstart": 0,
+      "modes": ["Automatic"],
+      "name": "Emancipator Exosuit - Left",
+      "recoilxy": {"x": 20, "y": 20},
+      "rpm": 175,
+      "spreadxy": {"x": 10, "y": 10}
+    },
+    {
+      "attack": [
+        {"type": "projectile", "name": "Cannon_30mm_APHE"},
+        {"type": "explosion", "name": "APHE_30mm"}
+      ],
+      "cap": 100,
+      "category": "Mounted",
+      "ergonomics": 65,
+      "mags": 0,
+      "magstart": 0,
+      "modes": ["Automatic"],
+      "name": "Emancipator Exosuit - Right",
+      "recoilxy": {"x": 20, "y": 20},
+      "rpm": 175,
+      "spreadxy": {"x": 10, "y": 10}
     }
   ],
   "stratagems": [
@@ -2864,100 +2959,8 @@
       "attack": [
         {"type": "damage", "name": "Ability_Cyborg_Lieutenant_Stomp"},
         {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"},
-        {
-          "type": "weapon",
-          "weapon": {
-            "id": "9388736439472594613",
-            "magazine_capacity": 14,
-            "chambered": 0,
-            "magazines": 0,
-            "magazines_refill": 6,
-            "magazines_max": 0,
-            "backblast_angle": 20,
-            "backblast_offset": 1,
-            "backblast_explosion_type": "BackblastSmall",
-            "health": 250,
-            "armor": 3,
-            "recoil_info": {
-              "drift": {
-                "horizontal_recoil": 2.5,
-                "vertical_recoil": 10,
-                "horizontal_bias": 0,
-                "random_amount": {"x": 0.100000001, "y": 1}
-              },
-              "climb": {
-                "horizontal_recoil": 2.5,
-                "vertical_recoil": 10,
-                "horizontal_bias": 0,
-                "random_amount": {"x": 0.100000001, "y": 1}
-              }
-            },
-            "spread_info": {"horizontal": 10, "vertical": 10},
-            "noise_template": "NoiseTemplate_Weapon_Medium",
-            "scope_responsiveness": 10,
-            "ergonomics": 65,
-            "infinite_ammo": 0,
-            "fire_modes": ["Automatic"],
-            "function_info": [],
-            "rounds_per_minute": {"x": 0, "y": 90, "z": 0},
-            "heat_buildup": {
-              "heat_build_per_shot": 1,
-              "maximum_heat": 100,
-              "heat_bleed_speed": 10,
-              "heat_bleed_delay": 5
-            },
-            "num_low_ammo_rounds": 4,
-            "projectile_type": "Missile_Combat_Walker",
-            "name": "Left"
-          }
-        },
-        {
-          "type": "weapon",
-          "weapon": {
-            "id": "645713022044093730",
-            "magazine_capacity": 1000,
-            "chambered": 0,
-            "magazines": 0,
-            "magazines_refill": 6,
-            "magazines_max": 0,
-            "wind_up_time": 1,
-            "wind_down_time": 1,
-            "rpm_multiplier": 0.333332986,
-            "health": 250,
-            "armor": 3,
-            "recoil_info": {
-              "drift": {
-                "horizontal_recoil": 8,
-                "vertical_recoil": 5,
-                "horizontal_bias": 0,
-                "random_amount": {"x": 0.100000001, "y": 1}
-              },
-              "climb": {
-                "horizontal_recoil": 2,
-                "vertical_recoil": 5,
-                "horizontal_bias": 0,
-                "random_amount": {"x": 0.100000001, "y": 1}
-              }
-            },
-            "spread_info": {"horizontal": 50, "vertical": 50},
-            "noise_template": "NoiseTemplate_Weapon_Medium",
-            "scope_responsiveness": 10,
-            "ergonomics": 65,
-            "infinite_ammo": 0,
-            "fire_modes": ["Automatic"],
-            "function_info": [],
-            "rounds_per_minute": {"x": 0, "y": 1200, "z": 0},
-            "heat_buildup": {
-              "heat_build_per_shot": 1,
-              "maximum_heat": 100,
-              "heat_bleed_speed": 10,
-              "heat_bleed_delay": 5
-            },
-            "num_low_ammo_rounds": 4,
-            "projectile_type": "Rifle_8x60mm_fmj",
-            "name": "Right"
-          }
-        }
+        {"type": "weapon", "name": "Patriot Exosuit - Left"},
+        {"type": "weapon", "name": "Patriot Exosuit - Right"}
       ],
       "prefix": "EXO-45",
       "initial_fuel": {"x": 6000, "y": 6000},
@@ -2983,94 +2986,8 @@
       "attack": [
         {"type": "damage", "name": "Ability_Cyborg_Lieutenant_Stomp"},
         {"type": "explosion", "name": "Vehicle_Explosion_CombatWalker"},
-        {
-          "type": "weapon",
-          "weapon": {
-            "id": "16570517418531528145",
-            "magazine_capacity": 100,
-            "chambered": 0,
-            "magazines": 0,
-            "magazines_refill": 6,
-            "magazines_max": 0,
-            "health": 250,
-            "armor": 3,
-            "recoil_info": {
-              "drift": {
-                "horizontal_recoil": 20,
-                "vertical_recoil": 20,
-                "horizontal_bias": 0,
-                "random_amount": {"x": 0.100000001, "y": 1}
-              },
-              "climb": {
-                "horizontal_recoil": 2,
-                "vertical_recoil": 20,
-                "horizontal_bias": 0,
-                "random_amount": {"x": 0.100000001, "y": 1}
-              }
-            },
-            "spread_info": {"horizontal": 10, "vertical": 10},
-            "noise_template": "NoiseTemplate_Weapon_Medium",
-            "scope_responsiveness": 10,
-            "ergonomics": 65,
-            "infinite_ammo": 0,
-            "fire_modes": ["Automatic"],
-            "function_info": [],
-            "rounds_per_minute": {"x": 0, "y": 175, "z": 0},
-            "heat_buildup": {
-              "heat_build_per_shot": 1,
-              "maximum_heat": 100,
-              "heat_bleed_speed": 10,
-              "heat_bleed_delay": 5
-            },
-            "num_low_ammo_rounds": 4,
-            "projectile_type": "Cannon_30mm_APHE",
-            "name": "Left"
-          }
-        },
-        {
-          "type": "weapon",
-          "weapon": {
-            "id": "18417602992972518459",
-            "magazine_capacity": 100,
-            "chambered": 0,
-            "magazines": 0,
-            "magazines_refill": 6,
-            "magazines_max": 0,
-            "health": 250,
-            "armor": 3,
-            "recoil_info": {
-              "drift": {
-                "horizontal_recoil": 20,
-                "vertical_recoil": 20,
-                "horizontal_bias": 0,
-                "random_amount": {"x": 0.100000001, "y": 1}
-              },
-              "climb": {
-                "horizontal_recoil": 2,
-                "vertical_recoil": 20,
-                "horizontal_bias": 0,
-                "random_amount": {"x": 0.100000001, "y": 1}
-              }
-            },
-            "spread_info": {"horizontal": 10, "vertical": 10},
-            "noise_template": "NoiseTemplate_Weapon_Medium",
-            "scope_responsiveness": 10,
-            "ergonomics": 65,
-            "infinite_ammo": 0,
-            "fire_modes": ["Automatic"],
-            "function_info": [],
-            "rounds_per_minute": {"x": 0, "y": 175, "z": 0},
-            "heat_buildup": {
-              "heat_build_per_shot": 1,
-              "maximum_heat": 100,
-              "heat_bleed_speed": 10,
-              "heat_bleed_delay": 5
-            },
-            "num_low_ammo_rounds": 4,
-            "projectile_type": "Cannon_30mm_APHE",
-            "name": "Right"
-          }
-        }
+        {"type": "weapon", "name": "Emancipator Exosuit - Left"},
+        {"type": "weapon", "name": "Emancipator Exosuit - Right"}
       ],
       "prefix": "EXO-49",
       "initial_fuel": {"x": 6000, "y": 6000},
