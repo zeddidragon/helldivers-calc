@@ -495,22 +495,33 @@ async function loadData() {
   }
   let weapons = data.weapons
   weapons = weapons.flatMap(wpn => {
-    if(!wpn.charges) {
-      return [wpn]
+    if(wpn.charges) {
+      return wpn.charges.map((charge, i) => {
+        const dmg = charge.damage
+        return {
+          ...wpn,
+          parent: i ? wpn : null,
+          tname: i ? t(`wpnname.charge${i + 1}`, wpn.fullname) : wpn.name,
+          charge: charge.time,
+          damagefactor: charge.damage,
+          speedfactor: charge.speed,
+          penetrationfactor: charge.penetration,
+          attack: charge.attack || wpn.attack,
+        }
+      })
     }
-    return wpn.charges.map((charge, i) => {
-      const dmg = charge.damage
-      return {
+    if(wpn.altProjectile) {
+      return [{
         ...wpn,
-        parent: i ? wpn : null,
-        tname: i ? t(`wpnname.charge${i + 1}`, wpn.fullname) : wpn.name,
-        charge: charge.time,
-        damagefactor: charge.damage,
-        speedfactor: charge.speed,
-        penetrationfactor: charge.penetration,
-        attack: charge.attack || wpn.attack,
-      }
-    })
+        attack: wpn.attack.slice(0, 1),
+      }, {
+        ...wpn,
+        parent: wpn,
+        tname: t(`wpnname.alt1`, wpn.fullname),
+        attack: wpn.attack.slice(1, 2),
+      }]
+    }
+    return [wpn]
   })
   weapons = weapons.map((wpn, idx) => {
     const [, code, name] = /^(\w+-\d+\w*) (.*)$/.exec(wpn.fullname) || []

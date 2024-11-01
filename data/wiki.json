@@ -12367,6 +12367,7 @@
       ]
     },
     "SG-20 Halt": {
+      "altProjectile": "Shotgun_10g_stun",
       "cap": 16,
       "capplus": 1,
       "category": "Shotgun",

@@ -89,6 +89,7 @@ const shalzuthSchema = [
       }
     }
     if(prj2 && prj2 !== prj) {
+      wpn.altProjectile = prj2
       wpn.attack[1] = {
         medium: 'projectile',
         ref: prj2,

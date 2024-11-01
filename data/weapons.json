@@ -331,6 +331,7 @@
       "spreadxy": {"x": 20, "y": 20}
     },
     {
+      "altProjectile": "Shotgun_10g_stun",
       "attack": [
         {"type": "projectile", "name": "Shotgun_10g_fle"},
         {"type": "projectile", "name": "Shotgun_10g_stun"}
