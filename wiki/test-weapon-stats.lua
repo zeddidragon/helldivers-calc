@@ -45,3 +45,5 @@ frame.args = { "LAS-98 Laser Cannon" }
 print(getData.attackDataTemplate(frame))
 frame.args = { "EXO-45 Patriot Exosuit" }
 print(getData.attackDataTemplate(frame))
+frame.args = { "RS-422 Railgun" }
+print(getData.attackDataTemplate(frame))

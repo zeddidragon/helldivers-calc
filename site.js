@@ -534,10 +534,10 @@ async function loadData() {
         if(wpn.penetrationfactor && wpn.penetrationfactor !== 1) {
           damage = {
             ...damage,
-            ap1: Math.floor(damage.ap1 * wpn.penetrationfactor),
-            ap2: Math.floor(damage.ap2 * wpn.penetrationfactor),
-            ap3: Math.floor(damage.ap3 * wpn.penetrationfactor),
-            ap4: Math.floor(damage.ap4 * wpn.penetrationfactor),
+            ap1: Math.round(damage.ap1 * wpn.penetrationfactor),
+            ap2: Math.round(damage.ap2 * wpn.penetrationfactor),
+            ap3: Math.round(damage.ap3 * wpn.penetrationfactor),
+            ap4: Math.round(damage.ap4 * wpn.penetrationfactor),
           }
         }
         if(wpn.speedfactor && wpn.speedfactor !== 1 && obj.velocity) {
