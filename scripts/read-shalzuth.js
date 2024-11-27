@@ -374,10 +374,13 @@ const handlers = {
     const length = component.charge_state_settings.length - 1
     const minDmg = multis.damage_multiplier_min
     const maxDmg = multis.damage_multiplier_overcharge
+    const { projectile_multipliers: bounds } = component
     function tween(prop, step, length) {
-      const min = multis[`${prop}_min`]
-      const max = multis[`${prop}_overcharge`]
-      return +(min + (max - min) * step / length).toFixed(2)
+      switch(step) {
+        case 0: return +multis[`${prop}_min`].toFixed(2)
+        case 2: return +multis[`${prop}_overcharge`].toFixed(2)
+        default: return 1
+      }
     }
     wpn.charges = component.charge_state_settings
       .map((charge, i) => {

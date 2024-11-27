@@ -535,7 +535,7 @@ async function loadData() {
         const parent = prev
         prev = obj
         let damage = rel(obj, 'damage')
-        if(wpn.damagefactor && wpn.damagefactor !== 1) {
+        if(wpn.damagefactor && wpn.damagefactor !== 1 && type !== 'explosion') {
           damage = {
             ...damage,
             dmg: Math.floor(damage.dmg * wpn.damagefactor),
